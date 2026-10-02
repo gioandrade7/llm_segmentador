@@ -76,7 +76,7 @@ def main():
         janela_paginas=args.janela_paginas,
         max_ciclos=args.max_ciclos,
         exibir_analise=exibir_analise,
-        padrao=padrao,
+        padrao=padrao[1],
     )
 
     # ── Exibição ──────────────────────────────────────────────────────────────
