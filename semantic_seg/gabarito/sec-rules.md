@@ -1,0 +1,392 @@
+%%
+Gabarito de segmentação — sec-rules
+Texto-fonte: text_extraction/out/sec-rules/paginas
+Status: RASCUNHO gerado por regex a partir do texto-fonte — revisar linha a linha
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`
+- Indentação de 2 espaços por nível (filho 2 espaços à direita do pai)
+- Tipos: epígrafe, capítulo (TITLE II), seção (SEC. N), letra (a), número (1), maiúscula (A), romano (i) e (I)
+- O tipo diz a família do marcador, não o nível: (1) direto sob a seção quando não há (a), como na SEC. 201
+- Início do trecho copiado do texto extraído, a partir do marcador; formatação (**, <u>, #, -, >) pode ser omitida
+- Ordem das linhas = ordem do documento; o trecho de um nó vai até o início da próxima linha
+- Cada nó guarda só o próprio texto; o texto dos filhos pertence aos filhos
+- A seção começa na rubrica (`## FINDINGS`), que vem antes de `SEC. 201. ø80b–1¿`; o caput da seção fica nela.
+  Seções sem rubrica `##` (203A, 210A, 222, 223, 224) começam em `SEC. N.`
+- A epígrafe guarda as notas editoriais do início (ø…¿, [Title II…], [As Amended…]) até TITLE II
+- Itens na mesma linha são nós separados quando vêm após fim de frase, ';', ':' ou '—' — ex.: as exclusões (A)–(G) da def. (11)
+- Enumeração corrida separada por vírgulas NÃO vira nó: (A)–(D) da def. (2) ‘‘Bank’’
+- Ruído (não anotado): cabeçalho e rodapé corrente (G:\COMP…, nº de página, "Sec. N INVESTMENT ADVISERS ACT", "As Amended Through", "August 11, 2025", VerDate, tabelas de cabeçalho),
+  notas de rodapé (com ou sem '>'), e a SEC. 307 de outra lei transcrita na nota 8, inclusive os trechos dela intercalados na SEC. 204 ((b) PRESERVATION OF FEES, (c) AVAILABILITY OF PREEMPTION…)
+%%
+
+- Documento
+  - [epígrafe] INVESTMENT ADVISERS ACT OF 1940 øReferences in brackets
+  - [capítulo] TITLE II—INVESTMENT ADVISERS
+    - [seção] FINDINGS
+      - [número] (1) their advice, counsel, publications, writ
+      - [número] (2) their advice, counsel, publications, writ
+      - [número] (3) the foregoing transactions occur in such
+    - [seção] DEFINITIONS
+      - [letra] (a) When used in this title, unless the conte
+        - [número] (1) ‘‘Assignment’’ includes any direct or ind
+        - [número] (2) ‘‘Bank’’ means (A) a banking institution
+        - [número] (3) The term ‘‘broker’’ has the same meaning
+        - [número] (4) ‘‘Commission’’ means the Securities and E
+        - [número] (5) ‘‘Company’’ means a corporation, a partne
+        - [número] (6) ‘‘Convicted’’ includes a verdict, judgmen
+        - [número] (7) The term ‘‘dealer’’ has the same meaning
+        - [número] (8) ‘‘Director’’ means any director of a corp
+        - [número] (9) ‘‘Exchange’’ means any organization, asso
+        - [número] (10) ‘‘Interstate commerce’’ means trade, com
+        - [número] (11) ‘‘Investment adviser’’ means any person
+          - [maiúscula] (A) a bank, or any bank holding company as de
+          - [maiúscula] (B) any lawyer, accountant, engineer, or teac
+          - [maiúscula] (C) any broker or dealer whose performance of
+          - [maiúscula] (D) the publisher of any bona fide newspaper,
+          - [maiúscula] (E) any person whose advice, analyses, or rep
+          - [maiúscula] (F) any nationally recognized statistical rat
+          - [maiúscula] (G) any family office, as defined by rule, re
+        - [número] (12) ‘‘Investment company’’, affiliated perso
+        - [número] (13) ‘‘Investment supervisory services’’ mean
+        - [número] (14) ‘‘Means or instrumentality of interstate
+        - [número] (15) ‘‘National securities exchange’’ means a
+        - [número] (16) ‘‘Person’’ means a natural person or a c
+        - [número] (17) The term ‘‘person associated with an inv
+        - [número] (18) ‘‘Security’’ means any note, stock, trea
+        - [número] (19) ‘‘State’’ means any State of the United
+        - [número] (20) ‘‘Underwriter’’ means any person who has
+        - [número] (21) ‘‘Securities Act of 1933’’, ‘‘Securities
+        - [número] (22) ‘‘Business development company’’ means a
+          - [maiúscula] (A) the 70 per centum of the value of the tot
+          - [maiúscula] (B) such company need not be a closed-end com
+          - [maiúscula] (C) the securities which may be purchased pur
+        - [número] (23) ‘‘Foreign securities authority’’ means a
+        - [número] (24) ‘‘Foreign financial regulatory authority
+        - [número] (25) ‘‘Supervised person’’ means any partner,
+        - [número] (26) The term ‘‘separately identifiable depar
+          - [maiúscula] (A) that is under the direct supervision of a
+          - [maiúscula] (B) for which all of the records relating to
+        - [número] (27) The terms ‘‘security future’’ and ‘‘narr
+        - [número] (28) The term ‘‘credit rating agency’’ has th
+        - [número] (29) The term ‘‘private fund’’ means an issue
+        - [número] (30) The term ‘‘foreign private adviser’’ mea
+          - [maiúscula] (A) has no place of business in the United St
+          - [maiúscula] (B) has, in total, fewer than 15 clients and
+          - [maiúscula] (C) has aggregate assets under management att
+          - [maiúscula] (D) neither—
+            - [romano] (i) holds itself out generally to the public
+            - [romano] (ii) acts as—
+              - [romano] (I) an investment adviser to any investment c
+              - [romano] (II) a company that has elected to be a busin
+        - [número] (29)<sup>3</sup> The terms ‘‘commodity pool’’
+      - [letra] (b) No provision in this title shall apply to
+      - [letra] (c) CONSIDERATION OF PROMOTION OF EFFICIENCY,
+    - [seção] REGISTRATION OF INVESTMENT ADVISERS
+      - [letra] (a) Except as provided in subsection (b) and
+      - [letra] (b) The provisions of subsection (a) shall no
+        - [número] (1) any investment adviser, other than an inv
+        - [número] (2) any investment adviser whose only clients
+        - [número] (3) any investment adviser that is a foreign
+        - [número] (4) any investment adviser that is a charitab
+          - [maiúscula] (A) any such charitable organization;
+          - [maiúscula] (B) a fund that is excluded from the definiti
+          - [maiúscula] (C) a trust or other donative instrument desc
+        - [número] (5) any plan described in section 414(e) of t
+        - [número] (6)
+          - [maiúscula] (A) any investment adviser that is registered
+            - [romano] (i) an investment company registered under ti
+            - [romano] (ii) a company which has elected to be a busi
+          - [maiúscula] (B) any investment adviser that is registered
+        - [número] (7) any investment adviser, other than any en
+          - [maiúscula] (A) small business investment companies that
+          - [maiúscula] (B) entities that have received from the Smal
+          - [maiúscula] (C) applicants that are affiliated with 1 or
+        - [número] (8) any investment adviser, other than an ent
+          - [maiúscula] (A) rural business investment companies (as d
+          - [maiúscula] (B) companies that have submitted to the Secr
+            - [romano] (i) have received from the Secretary of Agric
+      - [letra] (c)
+        - [número] (1) An investment adviser, or any person who
+          - [maiúscula] (A) the name and form of organization under w
+          - [maiúscula] (B) the education, the business affiliations
+          - [maiúscula] (C) the nature of the business of such invest
+          - [maiúscula] (D) a balance sheet certified by an independe
+          - [maiúscula] (E) the nature and scope of the authority of
+          - [maiúscula] (F) the basis or bases upon which such invest
+          - [maiúscula] (G) whether such investment adviser, or any p
+          - [maiúscula] (H) a statement as to whether the principal b
+        - [número] (2) Within forty-five days of the date of the
+          - [maiúscula] (A) by order grant such registration; or
+          - [maiúscula] (B) institute proceedings to determine whethe
+      - [letra] (d) Any provision of this title (other than s
+      - [letra] (e) The Commission, by order, shall censure,
+        - [número] (1) has willfully made or caused to be made i
+        - [número] (2) has been convicted within ten years prece
+          - [maiúscula] (A) involves the purchase or sale of any secu
+          - [maiúscula] (B) arises out of the conduct of the business
+          - [maiúscula] (C) involves the larceny, theft, robbery, ext
+          - [maiúscula] (D) involves the violation of section 152, 13
+        - [número] (3) has been convicted during the 10-year per
+          - [maiúscula] (A) any crime that is punishable by imprisonm
+          - [maiúscula] (B) a substantially equivalent crime by a for
+        - [número] (4) is permanently or temporarily enjoined by
+        - [número] (5) has willfully violated any provision of t
+        - [número] (6) has willfully aided, abetted, counseled,
+          - [maiúscula] (A) there have been established procedures, a
+          - [maiúscula] (B) such person has reasonably discharged the
+        - [número] (7) is subject to any order of the Commission
+        - [número] (8) has been found by a foreign financial reg
+          - [maiúscula] (A) made or caused to be made in any applicat
+          - [maiúscula] (B) violated any foreign statute or regulatio
+          - [maiúscula] (C) aided, abetted, counseled, commanded, ind
+        - [número] (9) is subject to any final order of a State
+          - [maiúscula] (A) bars such person from association with an
+          - [maiúscula] (B) constitutes a final order based on violat
+      - [letra] (f) The Commission, by order, shall censure o
+      - [letra] (g) Any successor to the business of an inves
+      - [letra] (h) Any person registered under this section
+      - [letra] (i) MONEY PENALTIES IN ADMINISTRATIVE PROCEED
+        - [número] (1) AUTHORITY OF COMMISSION.—
+          - [maiúscula] (A) IN GENERAL.—In any proceeding instituted
+            - [romano] (i) has willfully violated any provision of t
+            - [romano] (ii) has willfully aided, abetted, counseled,
+            - [romano] (iii) has willfully made or caused to be made
+            - [romano] (iv) has failed reasonably to supervise, with
+          - [maiúscula] (B) CEASE-AND-DESIST PROCEEDINGS.—In any proc
+            - [romano] (i) is violating or has violated any provisio
+            - [romano] (ii) is or was a cause of the violation of an
+        - [número] (2) MAXIMUM AMOUNT OF PENALTY.—
+          - [maiúscula] (A) FIRST TIER.—The maximum amount of penalty
+          - [maiúscula] (B) SECOND TIER.—Notwithstanding subparagraph
+          - [maiúscula] (C) THIRD TIER.—Notwithstanding subparagraphs
+            - [romano] (i) the act or omission described in paragrap
+            - [romano] (ii) such act or omission directly or indirec
+        - [número] (3) DETERMINATION OF PUBLIC INTEREST.—In cons
+          - [maiúscula] (A) whether the act or omission for which suc
+          - [maiúscula] (B) the harm to other persons resulting eithe
+          - [maiúscula] (C) the extent to which any person was unjust
+          - [maiúscula] (D) whether such person previously has been f
+          - [maiúscula] (E) the need to deter such person and other p
+          - [maiúscula] (F) such other matters as justice may require
+        - [número] (4) EVIDENCE CONCERNING ABILITY TO PAY.—In an
+      - [letra] (j) AUTHORITY TO ENTER AN ORDER REQUIRING AN
+      - [letra] (k) CEASE-AND-DESIST PROCEEDINGS.—
+        - [número] (1) AUTHORITY OF THE COMMISSION.—If the Commi
+        - [número] (2) HEARING.—The notice instituting proceedin
+        - [número] (3) TEMPORARY ORDER.—
+          - [maiúscula] (A) IN GENERAL.—Whenever the Commission deter
+          - [maiúscula] (B) APPLICABILITY.—This paragraph shall apply
+        - [número] (4) REVIEW OF TEMPORARY ORDERS.—
+          - [maiúscula] (A) COMMISSION REVIEW.—At any time after the
+          - [maiúscula] (B) JUDICIAL REVIEW.—Within—
+            - [romano] (i) 10 days after the date the respondent was
+            - [romano] (ii) 10 days after the Commission renders a d
+          - [maiúscula] (C) NO AUTOMATIC STAY OF TEMPORARY ORDER.—The
+          - [maiúscula] (D) EXCLUSIVE REVIEW.—Section 213 of this tit
+        - [número] (5) AUTHORITY TO ENTER AN ORDER REQUIRING AN
+      - [letra] (l) EXEMPTION OF VENTURE CAPITAL FUND ADVISER
+        - [número] (1) IN GENERAL.—No investment adviser that ac
+        - [número] (2) ADVISERS OF SBICS.—For purposes of this s
+        - [número] (3) ADVISERS OF RBICS.—For purposes of this s
+      - [letra] (m) EXEMPTION OF AND REPORTING BY CERTAIN PRI
+        - [número] (1) IN GENERAL.—The Commission shall provide
+        - [número] (2) REPORTING.—The Commission shall require i
+        - [número] (3) ADVISERS OF SBICS.—For purposes of this s
+        - [número] (4) ADVISERS OF RBICS.—For purposes of this s
+      - [letra] (n) REGISTRATION AND EXAMINATION OF MID-SIZED
+    - [seção] SEC. 203A.
+      - [letra] (a) ADVISERS SUBJECT TO STATE AUTHORITIES.—
+        - [número] (1) IN GENERAL.—No investment adviser that is
+          - [maiúscula] (A) has assets under management of not less t
+          - [maiúscula] (B) is an adviser to an investment company re
+        - [número] (2) TREATMENT OF MID-SIZED INVESTMENT ADVISER
+          - [maiúscula] (A) IN GENERAL.—No investment adviser describ
+          - [maiúscula] (B) COVERED PERSONS.—An investment adviser de
+            - [romano] (i) is required to be registered as an invest
+            - [romano] (ii) has assets under management between—
+              - [romano] (I) the amount specified under subparagraph (
+              - [romano] (II) $100,000,000, or such higher amount as t
+        - [número] (3) DEFINITION.—For purposes of this subsecti
+      - [letra] (b) ADVISERS SUBJECT TO COMMISSION AUTHORITY.
+        - [número] (1) IN GENERAL.—No law of any State or politi
+          - [maiúscula] (A) that is registered under section 203 as a
+          - [maiúscula] (B) that is not registered under section 203
+          - [maiúscula] (C) that is not registered under section 203
+          - [maiúscula] (D) that is not registered under section 203
+        - [número] (2) LIMITATION.—Nothing in this subsection sh
+      - [letra] (c) EXEMPTIONS.—Notwithstanding subsection (a
+      - [letra] (d) STATE ASSISTANCE.—Upon request of the sec
+    - [seção] ANNUAL AND OTHER REPORTS
+      - [letra] (a) IN GENERAL.—Every investment adviser who
+      - [letra] (b) RECORDS AND REPORTS OF PRIVATE FUNDS.—
+        - [número] (1) IN GENERAL.—The Commission may require an
+          - [maiúscula] (A) to maintain such records of, and file wit
+          - [maiúscula] (B) to provide or make available to the Counc
+        - [número] (2) TREATMENT OF RECORDS.—The records and rep
+        - [número] (3) REQUIRED INFORMATION.—The records and rep
+          - [maiúscula] (A) the amount of assets under management and
+          - [maiúscula] (B) counterparty credit risk exposure;
+          - [maiúscula] (C) trading and investment positions;
+          - [maiúscula] (D) valuation policies and practices of the f
+          - [maiúscula] (E) types of assets held;
+          - [maiúscula] (F) side arrangements or side letters, whereb
+          - [maiúscula] (G) trading practices; and
+          - [maiúscula] (H) such other information as the Commission,
+        - [número] (4) MAINTENANCE OF RECORDS.—An investment adv
+        - [número] (5) FILING OF RECORDS.—The Commission shall i
+        - [número] (6) EXAMINATION OF RECORDS.—
+          - [maiúscula] (A) PERIODIC AND SPECIAL EXAMINATIONS.—The Co
+            - [romano] (i) shall conduct periodic inspections of the
+            - [romano] (ii) may conduct at any time and from time to
+          - [maiúscula] (B) AVAILABILITY OF RECORDS.—An investment ad
+        - [número] (7) INFORMATION SHARING.—
+          - [maiúscula] (A) IN GENERAL.—The Commission shall make ava
+          - [maiúscula] (B) CONFIDENTIALITY.—The Council shall mainta
+        - [número] (8) COMMISSION CONFIDENTIALITY OF REPORTS.—No
+          - [maiúscula] (A) to withhold information from Congress, up
+          - [maiúscula] (B) prevent the Commission from complying wit
+            - [romano] (i) a request for information from any other
+            - [romano] (ii) an order of a court of the United States
+        - [número] (9) OTHER RECIPIENTS CONFIDENTIALITY.—Any dep
+        - [número] (10) PUBLIC INFORMATION EXCEPTION.—
+          - [maiúscula] (A) IN GENERAL.—The Commission, the Council,
+          - [maiúscula] (B) PROPRIETARY INFORMATION.—For purposes of
+            - [romano] (i) the investment or trading strategies of t
+            - [romano] (ii) analytical or research methodologies;
+            - [romano] (iii) trading data;
+            - [romano] (iv) computer hardware or software containing
+            - [romano] (v) any additional information that the Commi
+        - [número] (11) ANNUAL REPORT TO CONGRESS.—The Commissio
+      - [letra] (c) FILING DEPOSITORIES.—The Commission may,
+        - [número] (1) to file with the Commission any fee, appl
+        - [número] (2) to pay the reasonable costs associated wi
+      - [letra] (d) ACCESS TO DISCIPLINARY AND OTHER INFORMAT
+        - [número] (1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUI
+          - [maiúscula] (A) IN GENERAL.—The Commission shall require
+          - [maiúscula] (B) APPLICABILITY.—This subsection shall appl
+        - [número] (2) RECOVERY OF COSTS.—An entity designated b
+        - [número] (3) LIMITATION ON LIABILITY.—An entity design
+      - [letra] (e) RECORDS OF PERSONS WITH CUSTODY OR USE.—
+        - [número] (1) IN GENERAL.—Records of persons having cus
+        - [número] (2) CERTAIN PERSONS SUBJECT TO OTHER REGULATI
+      - [letra] (f) DATA STANDARDS FOR REPORTS FILED UNDER TH
+        - [número] (1) REQUIREMENT.—The Commission shall, by rul
+        - [número] (2) CONSISTENCY.—The data standards required
+    - [seção] PREVENTION OF MISUSE OF NONPUBLIC INFORMATION
+    - [seção] INVESTMENT ADVISORY CONTRACTS
+      - [letra] (a) No investment adviser registered or requi
+        - [número] (1) provides for compensation to the investme
+        - [número] (2) fails to provide, in substance, that no a
+        - [número] (3) fails to provide, in substance, that the
+      - [letra] (b) Paragraph (1) of subsection (a) shall not
+        - [número] (1) be construed to prohibit an investment ad
+        - [número] (2) apply to an investment advisory contract
+          - [maiúscula] (A) an investment company registered under ti
+          - [maiúscula] (B) any other person (except a trust, governm
+        - [número] (3) apply with respect to any investment advi
+        - [número] (4) apply to an investment advisory contract
+      - [letra] (c) For purposes of paragraph (2) of subsecti
+      - [letra] (d) As used in paragraphs (2) and (3) of subs
+      - [letra] (e) The Commission, by rule or regulation, up
+      - [letra] (f) AUTHORITY TO RESTRICT MANDATORY PRE-DISPU
+    - [seção] PROHIBITED TRANSACTIONS BY REGISTERED INVESTM
+      - [número] (1) to employ any device, scheme, or artifice
+      - [número] (2) to engage in any transaction, practice, o
+      - [número] (3) acting as principal for his own account,
+      - [número] (4) to engage in any act, practice, or course
+    - [seção] EXEMPTIONS
+    - [seção] MATERIAL MISSTATEMENTS
+    - [seção] GENERAL PROHIBITIONS
+      - [letra] (a) It shall be unlawful for any person regis
+      - [letra] (b) No provision of subsection (a) shall be c
+      - [letra] (c) It shall be unlawful for any person regis
+      - [letra] (d) It shall be unlawful for any person indir
+    - [seção] ENFORCEMENT OF TITLE
+      - [letra] (a) Whenever it shall appear to the Commissio
+      - [letra] (b) For the purposes of any investigation or
+      - [letra] (c) In case of contumacy by, or refusal to ob
+      - [letra] (d) Whenever it shall appear to the Commissio
+      - [letra] (e) MONEY PENALTIES IN CIVIL ACTIONS.—
+        - [número] (1) AUTHORITY OF COMMISSION.—Whenever it shal
+        - [número] (2) AMOUNT OF PENALTY.—
+          - [maiúscula] (A) FIRST TIER.—The amount of the penalty sha
+          - [maiúscula] (B) SECOND TIER.—Notwithstanding subparagraph
+          - [maiúscula] (C) THIRD TIER.—Notwithstanding subparagraphs
+            - [romano] (I) the violation described in paragraph (1)
+            - [romano] (II) such violation directly or indirectly re
+        - [número] (3) PROCEDURES FOR COLLECTION.—
+          - [maiúscula] (A) PAYMENT OF PENALTY TO TREASURY.—A penalty
+          - [maiúscula] (B) COLLECTION OF PENALTIES.—If a person upon
+          - [maiúscula] (C) REMEDY NOT EXCLUSIVE.—The actions authori
+          - [maiúscula] (D) JURISDICTION AND VENUE.—For purposes of s
+        - [número] (4) SPECIAL PROVISIONS RELATING TO A VIOLATIO
+      - [letra] (f) AIDING AND ABETTING.—For purposes of any
+    - [seção] PUBLICITY
+      - [letra] (a) The information contained in any registra
+      - [letra] (b) Subject to the provisions of subsections
+        - [número] (1) in the case of any hearing which is publi
+        - [número] (2) in the case of a resolution or request fr
+      - [letra] (c) No provision of this title shall be const
+    - [seção] SEC. 210A.
+      - [letra] (a) EXAMINATION RESULTS AND OTHER INFORMATION
+        - [número] (1) The appropriate Federal banking agency sh
+          - [maiúscula] (A) with respect to the investment advisory a
+            - [romano] (i) bank holding company or savings and loan
+            - [romano] (ii) bank; or
+            - [romano] (iii) separately identifiable department or d
+          - [maiúscula] (B) in the case of a bank holding company or
+        - [número] (2) The Commission shall provide to the appro
+        - [número] (3) Notwithstanding any other provision of la
+      - [letra] (b) EFFECT ON OTHER AUTHORITY.—Nothing in thi
+      - [letra] (c) DEFINITION.—For purposes of this section,
+    - [seção] RULES, REGULATIONS, AND ORDERS
+      - [letra] (a) The Commission shall have authority from
+      - [letra] (b) Subject to the provisions of chapter 15 o
+      - [letra] (c) Orders of the Commission under this title
+      - [letra] (d) No provision of this title imposing any l
+      - [letra] (e) DISCLOSURE RULES ON PRIVATE FUNDS.—The Co
+      - [letra] (g)<sup>9</sup> STANDARD OF CONDUCT.—
+        - [número] (1) IN GENERAL.—The Commission may promulgate
+        - [número] (2) RETAIL CUSTOMER DEFINED.—For purposes of
+          - [maiúscula] (A) receives personalized investment advice a
+          - [maiúscula] (B) uses such advice primarily for personal,
+      - [letra] (h) OTHER MATTERS.—The Commission shall—
+        - [número] (1) facilitate the provision of simple and cl
+        - [número] (2) examine and, where appropriate, promulgat
+      - [letra] (i) HARMONIZATION OF ENFORCEMENT.—The enforce
+        - [número] (1) the enforcement authority of the Commissi
+        - [número] (2) the enforcement authority of the Commissi
+    - [seção] HEARINGS
+    - [seção] COURT REVIEW OF ORDERS
+      - [letra] (a) Any person or party aggrieved by an order
+      - [letra] (b) The commencement of proceedings under sub
+    - [seção] JURISDICTION OF OFFENSES AND SUITS
+      - [letra] (a) IN GENERAL.—The district courts of the Un
+      - [letra] (b) EXTRATERRITORIAL JURISDICTION.—The distri
+        - [número] (1) conduct within the United States that con
+        - [número] (2) conduct occurring outside the United Stat
+    - [seção] VALIDITY OF CONTRACTS
+      - [letra] (a) Any condition, stipulation, or provision
+      - [letra] (b) Every contract made in violation of any p
+    - [seção] ANNUAL REPORTS OF COMMISSION
+    - [seção] PENALTIES<sup>10</sup>
+    - [seção] HIRING AND LEASING AUTHORITY OF THE COMMISSIO
+      - [número] (1) to appoint and fix the compensation of su
+      - [número] (2) to lease and allocate such real property
+    - [seção] SEPARABILITY OF PROVISIONS
+    - [seção] SHORT TITLE
+    - [seção] EFFECTIVE DATE
+    - [seção] SEC. 222.
+      - [letra] (a) JURISDICTION OF STATE REGULATORS.—Nothing
+      - [letra] (b) DUAL COMPLIANCE PURPOSES.—No State may en
+        - [número] (1) is registered or licensed as such in the
+        - [número] (2) is in compliance with the applicable book
+      - [letra] (c) LIMITATION ON CAPITAL AND BOND REQUIREMEN
+        - [número] (1) is registered or licensed as such in the
+        - [número] (2) is in compliance with the applicable net
+      - [letra] (d) NATIONAL DE MINIMIS STANDARD.—No law of a
+        - [número] (1) does not have a place of business located
+        - [número] (2) during the preceding 12-month period, has
+    - [seção] SEC. 223.
+    - [seção] SEC. 224. ø 15 U.S.C. 80b–18c ¿ RULE OF CONST
