@@ -105,7 +105,6 @@ def construir_prompt_identificacao(
         Retorne **exclusivamente** um objeto JSON válido com as chaves:
 
         - `"tem_padrao"`          : booleano — o documento segue um padrão estrutural recorrente
-        - `"modo"`               : string — `"hierarquico"` (níveis encaixados), `"sequencia_plana"` (unidades independentes de mesmo nível, sem hierarquia entre si) ou `"topico"` (sem padrão; delimitação só por mudança de assunto)
         - `"hierarquia"`         : array de objetos `{{"nivel": inteiro, "nome": string, "exemplo": string}}` — do nível mais externo (1) ao mais interno. `nome` é como o nível se chama neste documento; `exemplo` é um marcador literal observado. Array vazio se `tem_padrao` for `false`
         - `"confianca"`          : string — `"alta"`, `"media"` ou `"baixa"`
         """
@@ -186,29 +185,27 @@ def formatar_padrao(padrao: dict) -> str:
 
     # ── Sem padrão: segmentação por mudança de assunto ────────────────────────
     if not padrao.get("tem_padrao"):
-        return f"""
+        return (False, f"""
         ## Estrutura deste documento
         {procedencia}
 
-        A análise **não encontrou** padrão estrutural recorrente neste documento: não há hierarquia de marcadores nem numeração sistemática em que se ancorar.
-{ressalva}
-        Portanto, **delimite os blocos por mudança de assunto**, não por marcadores. Um bloco termina onde o texto passa a tratar de outro tema. Não force uma hierarquia inexistente e não use a formatação (negrito, tamanho de fonte) como se fosse marcação estrutural confiável."""
+        A análise **não encontrou** padrão estrutural recorrente neste documento: não há hierarquia de marcadores nem numeração sistemática em que se ancorar.""")
 
     hierarquia = padrao.get("hierarquia") or []
-    modo       = (padrao.get("modo") or "hierarquico").lower()
+    # modo       = (padrao.get("modo") or "hierarquico").lower()
 
     # ── Sequência plana: unidades irmãs, sem encaixe ──────────────────────────
-    if modo == "sequencia_plana":
-        unidade = hierarquia[0] if hierarquia else {}
-        exemplo = unidade.get("exemplo") or ""
-        nome    = unidade.get("nome") or "unidade"
-        return f"""
-        ## Estrutura deste documento
-        {procedencia}
+#     if modo == "sequencia_plana":
+#         unidade = hierarquia[0] if hierarquia else {}
+#         exemplo = unidade.get("exemplo") or ""
+#         nome    = unidade.get("nome") or "unidade"
+#         return f"""
+#         ## Estrutura deste documento
+#         {procedencia}
 
-        Este documento **não é hierárquico**: é uma sequência de unidades independentes de mesmo nível, sem enumeração global que as encadeie. Unidade observada: **{nome}**{f' (ex.: `{exemplo}`)' if exemplo else ''}.
-{ressalva}
-        **Cada unidade é um bloco próprio.** Nunca agrupe duas unidades consecutivas num mesmo bloco, ainda que tratem de assunto parecido ou venham do mesmo órgão. Não procure níveis superiores: não existem."""
+#         Este documento **não é hierárquico**: é uma sequência de unidades independentes de mesmo nível, sem enumeração global que as encadeie. Unidade observada: **{nome}**{f' (ex.: `{exemplo}`)' if exemplo else ''}.
+# {ressalva}
+#         **Cada unidade é um bloco próprio.** Nunca agrupe duas unidades consecutivas num mesmo bloco, ainda que tratem de assunto parecido ou venham do mesmo órgão. Não procure níveis superiores: não existem."""
 
     # ── Hierárquico ───────────────────────────────────────────────────────────
     partes = []
@@ -221,7 +218,7 @@ def formatar_padrao(padrao: dict) -> str:
     # `nivel_de_corte` e `justificativa_corte` continuam no JSON do padrão, só
     # para registro: o gabarito é anotado no nível mais fino, então o prompt
     # corta em todo marcador e não usa mais um nível de corte.
-    return f"""
+    return (True,f"""
         ## Estrutura deste documento
         {procedencia}
 
@@ -237,4 +234,4 @@ def formatar_padrao(padrao: dict) -> str:
         - Se dois ou mais marcadores aparecem na mesma linha, cada um inicia um bloco.
         - A ordem acima é a típica, não uma regra: uma lista pode reaparecer dentro de um nível mais interno (ex.: itens `(1)`, `(2)` dentro de um `(iii)`). O que define o corte é a presença do marcador, não a posição dele na hierarquia.
         - Não agrupe unidades num mesmo bloco, nem irmãs nem uma unidade com as suas subdivisões.
-        - Marcadores que não estão na lista acima, mas têm a mesma função (numeração ou rótulo que abre uma unidade), também iniciam um bloco: a hierarquia foi inferida de uma amostra e pode estar incompleta."""
+        - Marcadores que não estão na lista acima, mas têm a mesma função (numeração ou rótulo que abre uma unidade), também iniciam um bloco: a hierarquia foi inferida de uma amostra e pode estar incompleta.""")

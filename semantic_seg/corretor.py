@@ -96,42 +96,21 @@ def construir_prompt_analise(
         ```
     """ if insights_atuais.strip() else ""
 
-    tem_padrao = bool(padrao.strip())
+
 
     # Com padrão externo, a tarefa é conferir conformidade; sem ele, o auditor
     # precisa deduzir a estrutura dos próprios blocos que está julgando.
-    if tem_padrao:
-        abertura = (
-            f"Um pipeline automático segmentou um documento em {total_blocos} bloco(s). "
-            "A estrutura do documento já foi identificada de forma independente e está "
-            "descrita abaixo. Sua tarefa é avaliar se os blocos a respeitam e, se não "
-            "respeitarem, escrever as diretrizes que corrigirão a próxima tentativa de "
-            "segmentação."
-        )
-        instrucao_avaliar = (
-            "A estrutura do documento **já foi identificada**, a partir de uma amostra "
-            "de páginas do texto fonte — não a partir destes blocos. **NÃO a re-deduza "
-            "dos blocos**: eles são justamente o objeto sob suspeita. Confira se a "
-            "segmentação respeita a estrutura especificada, de forma uniforme. Considere "
-            "a segmentação **inconsistente** se qualquer um destes problemas ocorrer:"
-        )
-        campo_padrao = ""
-    else:
-        abertura = (
-            f"Um pipeline automático segmentou um documento em {total_blocos} bloco(s). "
-            "Sua tarefa é avaliar se esses blocos seguem um padrão estrutural coerente "
-            "entre si e, se não seguirem, escrever as diretrizes que corrigirão a "
-            "próxima tentativa de segmentação."
-        )
-        instrucao_avaliar = (
-            " Verifique se a segmentação respeita o padrão passado de forma "
-            "uniforme. Considere a segmentação **inconsistente** se qualquer um destes "
-            "problemas ocorrer:"
-        )
-        campo_padrao = (
-            '\n        - `"padrao_identificado"` : string — o padrão estrutural que o '
-            "documento aparenta seguir, com os marcadores reais observados"
-        )
+    abertura = (
+        f"Um pipeline automático segmentou um documento em {total_blocos} bloco(s). "
+        "A estrutura do documento já foi identificada de forma independente e está "
+        "descrita abaixo. Sua tarefa é avaliar se os blocos a respeitam e, se não "
+        "respeitarem, escrever as diretrizes que corrigirão a próxima tentativa de "
+        "segmentação."
+    )
+    instrucao_avaliar = (
+        " Confira se a segmentação respeita a estrutura especificada, de forma uniforme. Considere "
+        "a segmentação **inconsistente** se qualquer um destes problemas ocorrer:"
+    )
 
     return f"""Você é um auditor de segmentação de documentos estruturados.
 
@@ -164,7 +143,6 @@ def construir_prompt_analise(
 
         ## Instruções de resposta
         Retorne **exclusivamente** um objeto JSON válido com as chaves:
-{campo_padrao}
         - `"inconsistencias"`     : array de strings — cada problema encontrado, citando os índices dos blocos envolvidos (ex.: "bloco [3] agrupa os subitens (a) a (w)"). Array vazio se não houver nenhum.
         - `"consistente"`         : booleano — `true` somente se nenhum dos cinco problemas acima ocorrer
         - `"insights"`            : string — as diretrizes para o próximo ciclo, em lista com marcadores. String vazia se `consistente` for `true`.
