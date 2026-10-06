@@ -4,7 +4,7 @@ Pesquisa de mestrado no **IComp/UFAM**: identificar e extrair automaticamente os
 
 ## O problema
 
-Documentos estruturados — um estatuto, uma portaria, um regulamento, um artigo — chegam como um PDF contínuo de dezenas de páginas contendo **muitas unidades independentes**: seções numeradas, artigos, itens. Para qualquer uso a jusante (busca, indexação, análise), é preciso primeiro saber onde cada unidade começa e termina.
+Documentos estruturados — um estatuto, uma portaria, um regulamento, um artigo — chegam como um documento contínuo de dezenas de páginas contendo **muitas unidades independentes**: seções numeradas, artigos, itens. Para qualquer uso a jusante (busca, indexação, análise), é preciso primeiro saber onde cada unidade começa e termina.
 
 Fazer isso por regex ou por regra de layout não generaliza entre coleções: cada uma numera e formata de um jeito — `SEC. 203`, `Section 3-02`, `Art. 14`, `III. METHODOLOGY` — e a mesma fonte muda de formato ao longo dos anos. O corpus do projeto é escolhido por **diversidade estrutural, não por domínio**, justamente porque é essa incompatibilidade entre coleções que torna difícil escrever um único segmentador.
 
@@ -36,7 +36,7 @@ A tarefa é **puramente segmentação**: não há classificação em categorias 
           ▼                                        ▼
   ┌──────────────────┐                   ┌──────────────────┐
   │   SEGMENTADOR    │─── blocos ───────▶│     AUDITOR      │
-  │ janela deslizante│  (resumo das      │ cinco patologias │
+  │ janela deslizante│  (resumo das      │                  │
   │  1 bloco/chamada │   bordas)         │                  │
   └──────────────────┘                   └──────────────────┘
           ▲                                        │
@@ -60,22 +60,16 @@ Ele responde a duas perguntas: o documento tem padrão estrutural? Se tem, qual 
 ```json
 {
   "tem_padrao": true,
-  "modo": "hierarquico",
   "hierarquia": [
     {"nivel": 1, "exemplo": "Section 3-02"},
     {"nivel": 2, "exemplo": "(a)"},
     {"nivel": 3, "exemplo": "(1)"}
   ],
-  "nivel_de_corte": 3,
   "confianca": "alta"
 }
 ```
 
-O `modo` pode ser `hierarquico` (níveis encaixados), `sequencia_plana` (unidades independentes de mesmo nível, numa sucessão sem enumeração global que as amarre) ou `topico` (sem padrão; delimitação só por mudança de assunto).
-
 `tem_padrao: false` é a **válvula de escape que o Auditor não tem**: o schema do Auditor o obriga a devolver um padrão e um veredito, então com entrada subdeterminada ele confabula. O Identificador pode dizer que não há padrão, ou declarar `confianca: "baixa"`.
-
-O `nivel_de_corte` é o parâmetro que, sem o Identificador, o laço tateia por tentativa e erro — cada tentativa custando uma re-segmentação completa do documento.
 
 ### Segmentador — janela deslizante
 
