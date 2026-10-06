@@ -1,0 +1,175 @@
+%%
+Gabarito de segmentação — sisu-rules
+Texto-fonte: text_extraction/out/sisu-rules/paginas
+Status: RASCUNHO gerado por regex a partir do texto-fonte — revisar linha a linha
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`
+- Indentação de 2 espaços por nível (filho 2 espaços à direita do pai)
+- Tipos: epígrafe, ementa, preâmbulo, capítulo, seção, artigo, parágrafo, inciso, alínea, item, fecho
+- Início do trecho copiado do texto extraído, a partir do marcador; formatação (**, <u>, #) pode ser omitida
+- Ordem das linhas = ordem do documento; o trecho de um nó vai até o início da próxima linha
+- Cada nó guarda só o próprio texto (caput/título); o texto dos filhos pertence aos filhos
+- Ruído (cabeçalho corrente, nº de página, nota final, cabeçalho do DOU) não é anotado
+- Notas "(Redação dada…)" ficam dentro do dispositivo que alteram
+- Comentários no fim da linha, após %%
+%%
+
+- Documento
+  - [epígrafe] PORTARIA NORMATIVA Nº 21, DE 5 DE NOVEMBRO
+  - [ementa] Dispõe sobre o Sistema de Seleção Unificada
+  - [preâmbulo] O MINISTRO DE ESTADO DA EDUCAÇÃO, no
+  - [capítulo] CAPÍTULO I
+    - [artigo] Art. 1º O Sistema de Seleção Unificada
+    - [artigo] Art. 2º O Sisu é o sistema
+      - [parágrafo] § 1º O processo de seleção dos
+      - [parágrafo] § 2º A Secretaria de Educação Superior
+    - [artigo] Art. 3º O Sisu utilizará as informações
+  - [capítulo] CAPÍTULO II
+    - [artigo] Art. 4º A participação das instituições públicas
+      - [parágrafo] § 1º O Termo de Adesão deverá
+      - [parágrafo] § 2º Para fins do processo seletivo
+      - [parágrafo] § 3º As informações divulgadas em editais
+      - [parágrafo] § 4º Somente poderão preencher o Termo
+      - [parágrafo] § 5º Ao assinarem o Termo de
+    - [artigo] Art. 5º No Termo de Adesão, a  %% 
+      - [inciso] I - os cursos e turnos participantes
+      - [inciso] II - o número de vagas reservadas
+      - [inciso] III - o número de vagas e
+      - [inciso] IV - os pesos e as notas
+      - [inciso] V - os documentos necessários para a
+        - [alínea] a) pela Portaria Normativa nº 18, de
+        - [alínea] b) pelos atos internos das instituições de
+      - [parágrafo] Parágrafo único. Não poderão ser oferecidas, por
+    - [artigo] Art. 6º É facultado à instituição de
+      - [parágrafo] Parágrafo único . No caso previsto no
+        - [inciso] I – as vagas serão preenchidas exclusivamente
+        - [inciso] II- o estudante não poderá optar pelo
+        - [inciso] III - a instituição deverá garantir que
+    - [artigo] Art. 7º O representante legal da instituição
+      - [inciso] I - fornecer as informações requeridas pelo
+      - [inciso] II - executar os procedimentos referentes ao
+      - [inciso] III - assinar o Termo de Adesão,
+      - [parágrafo] § 1º O representante legal poderá designar:
+        - [inciso] I - um responsável institucional, para praticar
+        - [inciso] II - colaboradores institucionais, para execução de
+      - [parágrafo] § 2º Somente poderão ser designados para
+      - [parágrafo] § 3º Os atos praticados pelo responsável
+    - [artigo] Art. 8º A instituição de ensino do
+      - [inciso] I - abster-se de cobrar quaisquer tipos
+      - [inciso] II - disponibilizar acesso gratuito à internet
+      - [inciso] III - manter os responsáveis pelo Sisu
+      - [inciso] IV - divulgar, em seu sítio eletrônico
+      - [inciso] V - efetuar a análise dos documentos
+        - [alínea] a) pela Portaria Normativa MEC nº 18,
+        - [alínea] b) pelos atos internos das instituições de
+      - [inciso] VI - efetuar as matrículas ou registros
+      - [inciso] VII - cumprir fielmente as obrigações constantes
+      - [inciso] VIII - conferir cumprimento às eventuais decisões
+      - [inciso] IX - disponibilizar meio digital para que
+      - [parágrafo] § 1º As instituições de ensino deverão
+      - [parágrafo] § 2º A execução de todos os
+    - [artigo] Art. 9º Os editais das instituições de
+  - [capítulo] CAPÍTULO III DO PROCESSO SELETIVO DO SISU
+    - [seção] Seção I Das disposições gerais
+      - [artigo] Art. 10. O processo seletivo do Sisu
+        - [inciso] I - oferta de vagas pelas instituições,
+        - [inciso] II - inscrição dos estudantes;
+        - [inciso] III - classificação e seleção dos estudantes
+        - [inciso] IV - classificação e seleção dos estudantes
+        - [inciso] V - lançamento, pelas instituições, das vagas
+      - [artigo] Art. 11. A cada processo seletivo do
+        - [parágrafo] Parágrafo único . Considera-se chamada regular aquela
+      - [artigo] Art. 12. Todos os procedimentos referentes a
+        - [inciso] I - a matrícula do estudante, que
+        - [inciso] II - a convocação dos estudantes em
+    - [seção] Seção II
+      - [artigo] Art. 13. Somente poderá se inscrever no
+      - [artigo] Art. 14. O estudante deverá efetuar sua
+        - [inciso] I - em ordem de preferência, as
+        - [inciso] II - a modalidade de concorrência, conforme
+        - [parágrafo] § 1º É vedada ao estudante a
+          - [alínea] a) em mais de uma modalidade de
+          - [alínea] b) na segunda edição anual do processo
+        - [parágrafo] § 2º Durante o período de inscrição
+        - [parágrafo] § 3º Para fins do disposto no
+      - [artigo] Art. 15. Ao se inscrever no processo
+        - [inciso] I - às vagas reservadas em decorrência
+        - [inciso] II - às vagas destinadas às demais
+        - [inciso] III - às vagas destinadas à ampla
+        - [parágrafo] Parágrafo único . Compete exclusivamente ao estudante
+      - [artigo] Art. 16. O Sisu disponibilizará ao estudante,
+        - [parágrafo] Parágrafo único. Considera-se nota de corte a
+      - [artigo] Art. 17. A inscrição do estudante no
+        - [inciso] I - a concordância expressa e irretratável
+        - [inciso] II - o consentimento com a utilização
+      - [artigo] Art. 18. O Ministério da Educação não
+    - [seção] Seção III Da Classificação e da Seleção
+      - [artigo] Art. 19. Encerrado o período de inscrição,
+        - [parágrafo] § 1º A nota final do estudante
+          - [inciso] I - a ponderação dos pesos eventualmente
+          - [inciso] II - os bônus eventualmente estabelecidos pelas
+      - [artigo] Art. 20. Os estudantes que optarem por
+        - [inciso] I - estudantes egressos de escola pública,
+          - [alínea] a) que se autodeclararam pretos, pardos e
+            - [item] 1. que sejam pessoas com deficiência;
+            - [item] 2. que não sejam pessoas com deficiência.
+          - [alínea] b) que não se autodeclararam pretos, pardos
+            - [item] 1. que sejam pessoas com deficiência;
+            - [item] 2. que não sejam pessoas com deficiência.
+        - [inciso] II - estudantes egressos de escolas públicas,
+          - [alínea] a) que se autodeclararam pretos, pardos e
+            - [item] 1. que sejam pessoas com deficiência;
+            - [item] 2. que não sejam pessoas com deficiência.
+          - [alínea] b) que não se autodeclararam pretos, pardos
+            - [item] 1. que sejam pessoas com deficiência;
+            - [item] 2. que não sejam pessoas com deficiência
+      - [artigo] Art. 21. A cada chamada regular do
+        - [parágrafo] § 1º Nos termos do disposto no
+          - [inciso] I - exclusivamente em sua 1ª opção,
+          - [inciso] II - em sua 2ª opção, caso
+        - [parágrafo] § 2º O estudante poderá consultar o
+      - [artigo] Art. 22. A seleção do estudante assegura
+    - [seção] Seção IV Da Lista de Espera
+      - [artigo] Art. 23. As vagas eventualmente remanescentes após  %% o parágrafo único continua na pág. 8 após a quebra de página
+        - [parágrafo] Parágrafo único . O estudante selecionado na
+      - [artigo] Art. 24. Para constar da lista de
+        - [parágrafo] § 1º O estudante apto a participar
+        - [parágrafo] § 2º A manifestação de interesse de
+        - [parágrafo] § 3º Compete exclusivamente ao estudante se
+      - [artigo] Art. 25. A lista de espera do
+      - [artigo] Art. 26. As instituições deverão assegurar a
+        - [parágrafo] Parágrafo único . Para fins de cumprimento
+          - [inciso] I - a classificação será na ordem
+          - [inciso] II - primeiramente a classificação de todos
+            - [alínea] a) caso o estudante inscrito na modalidade
+            - [alínea] b) caso o estudante não possua nota
+      - [artigo] Art. 27. Assegurado o número mínimo de
+      - [artigo] Art. 28. Se, após as chamadas regulares
+      - [artigo] Art. 29. As instituições de ensino poderão
+      - [artigo] Art. 30. Os prazos e procedimentos de
+        - [parágrafo] § 1º É de exclusiva responsabilidade do
+        - [parágrafo] § 2º A instituição deverá publicar, em
+    - [seção] Seção V Do lançamento das vagas ocupadas
+      - [artigo] Art. 31. Após as chamadas regulares e
+        - [parágrafo] Parágrafo único . O lançamento a que
+  - [capítulo] CAPÍTULO IV
+    - [artigo] Art. 32. Até que as instituições de
+      - [parágrafo] § 1º Para fins de cumprimento ao
+      - [parágrafo] § 2º O estudante referido no caput
+    - [artigo] Art. 33. É de exclusiva responsabilidade do
+      - [inciso] I - os prazos estabelecidos no edital
+      - [inciso] II - condições e documentação exigidas para
+      - [parágrafo] § 1º O disposto no inciso II
+      - [parágrafo] § 2º Eventuais comunicados do Ministério da
+    - [artigo] Art. 34. Compete exclusivamente à instituição de
+    - [artigo] Art. 35. A prestação de informações falsas
+    - [artigo] Art. 36. Em caso de impossibilidade de
+      - [parágrafo] Parágrafo único . A regularização de que
+    - [artigo] Art. 37. Ficam revogadas:
+      - [inciso] I - a Portaria Normativa MEC nº
+      - [inciso] II - a Portaria Normativa MEC nº
+      - [inciso] III - a Portaria Normativa MEC nº
+      - [inciso] IV - a Portaria Normativa MEC nº
+    - [artigo] Art. 38. Esta Portaria entra em vigor
+  - [fecho] ALOIZIO MERCADANTE OLIVA  %% assinatura

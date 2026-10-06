@@ -1,0 +1,227 @@
+%%
+Gabarito de segmentação — ppb_rules
+Texto-fonte: text_extraction/out/ppb_rules/paginas
+Status: RASCUNHO gerado por regex a partir do texto-fonte — revisar linha a linha
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`
+- Indentação de 2 espaços por nível (filho 2 espaços à direita do pai)
+- Tipos: capítulo, seção, letra (a), número (1), romano (i), maiúscula (A), letra-dupla ((a)), continuação
+- O tipo diz a família do marcador, não o nível: o pai é definido pelo conteúdo, ex. (1)–(6) dentro de (iii)
+- Início do trecho copiado do texto extraído, a partir do marcador; formatação (**, <u>, #, -) pode ser omitida
+- Ordem das linhas = ordem do documento; o trecho de um nó vai até o início da próxima linha
+- Cada nó guarda só o próprio texto; o texto dos filhos pertence aos filhos
+- Itens na mesma linha (((a)) … ((b)) … ((c))) são nós separados
+- [continuação] = parágrafo sem marcador que fecha uma lista: irmão dos itens, pertence ao pai; não tem filhos
+- Continuação após quebra de página fica no nó em que estava
+- Ruído (não anotado): número de página no fim de cada página (53–69)
+- Trecho do original: começa no CHAPTER 3 e termina no meio da Section 3-03
+- Comentários no fim da linha, após %%
+%%
+
+- Documento
+  - [capítulo] CHAPTER 3 – METHODS OF SOURCE SELECTION
+    - [seção] Section 3-01 POLICY.
+      - [letra] (a) Methods of Source Selection. Unless otherwise
+      - [letra] (b) Preference for Competitive Sealed Bidding. Except
+      - [letra] (c) Preference for Competitive Sealed Proposals in
+      - [letra] (d) “Special Case”. Agencies may elect to
+        - [número] (1) Methods of Source Selection for Which
+          - [romano] (i) Competitive sealed bidding from prequalified vendors,
+          - [romano] (ii) Competitive sealed bidding where the award
+          - [romano] (iii) Competitive sealed proposals (including multi-step process);
+          - [romano] (iv) Competitive sealed proposals from prequalified vendors;
+          - [romano] (v) Negotiated acquisition;
+          - [romano] (vi) Sole source procurement;
+          - [romano] (vii) Demonstration project for innovative products, approaches,
+          - [romano] (viii) Innovative procurement method; or
+          - [romano] (ix) Government-to-government purchase.
+        - [número] (2) “Special Case” Circumstances. A special case
+          - [romano] (i) specifications cannot be made sufficiently definite
+          - [romano] (ii) judgment is required in evaluating competing
+          - [romano] (iii) it is in the best interest
+          - [romano] (iv) there is only one available source,
+          - [romano] (v) testing, experimentation, or evaluation is required
+          - [romano] (vi) the need for advance screening of
+          - [romano] (vii) circumstances justifying the use of negotiated
+          - [romano] (viii) to test and evaluate the feasibility
+        - [número] (3) Source Selection in a Special Case.
+        - [número] (4) Special Case Determination. The determination that
+    - [seção] Section 3-02 COMPETITIVE SEALED BIDDING.
+      - [letra] (a) Application. This section shall apply to
+      - [letra] (b) Invitation for Bids.
+        - [número] (1) Use. The IFB is used to
+        - [número] (2) Content. The Invitation for Bids shall
+          - [romano] (i) instructions and information to bidders concerning
+          - [romano] (ii) the purchase description, delivery and performance
+          - [romano] (iii) the contract terms and conditions, including
+          - [romano] (iv) a statement regarding how the award
+            - [maiúscula] (A) for construction, a statement that award
+            - [maiúscula] (B) for purchase of goods and standard
+          - [romano] (v) if not included in the bid
+          - [romano] (vi) a provision indicating bidder liability for
+          - [romano] (vii) a provision that bidders should give
+          - [romano] (viii) a notice of the bidder’s rights
+          - [romano] (ix) a notice describing the City’s prompt
+          - [romano] (x) a notice that prices are irrevocable
+          - [romano] (xi) a requirement for acknowledgment of amendments;
+          - [romano] (xii) a provision concerning the submission and
+          - [romano] (xiii) a notice that contract award is
+          - [romano] (xiv) a notice that contract award is
+          - [romano] (xv) where applicable, a notice that contract
+          - [romano] (xvi) where applicable all information required pursuant
+          - [romano] (xvii) the name, address, and telephone number
+          - [romano] (xviii) the following statement: The New York
+          - [romano] (xix) a statement that the bidder will
+          - [romano] (xx) where applicable for construction contracts, the
+            - [maiúscula] (A) a specific description and exact location
+            - [maiúscula] (B) a reference to all applicable documents
+            - [maiúscula] (C) a statement establishing minimum insurance requirements
+            - [maiúscula] (D) a statement that the bidder will
+            - [maiúscula] (E) a statement of instructions relative to
+            - [maiúscula] (F) a statement that all bid documents
+            - [maiúscula] (G) the form in which the bid
+            - [maiúscula] (H) a requirement that for projects on
+            - [maiúscula] (I) a notice, for those contracts not
+            - [maiúscula] (J) a requirement that, where the preparation
+      - [letra] (c) Bidding Time. Bidding time is the
+      - [letra] (d) Bidder Submissions.
+        - [número] (1) Bid Form and Content. The IFB
+        - [número] (2) Bid Samples and Descriptive Literature. The
+      - [letra] (e) Public Notice.
+        - [número] (1) Notice of Solicitation.
+          - [romano] (i) Distribution. IFBs or notices of their
+            - [maiúscula] (A) the name of the agency and,
+            - [maiúscula] (B) title and brief description of the
+            - [maiúscula] (C) specific information about how, when, and
+            - [maiúscula] (D) the required fee or deposit amount,
+            - [maiúscula] (E) the time, date, and location of
+            - [maiúscula] (F) the date, time, and location and,
+            - [maiúscula] (G) the name and phone number of
+            - [maiúscula] (H) the citywide bidders list used.
+          - [romano] (ii) Publication. This subparagraph shall apply to
+            - [maiúscula] (A) Frequency. Notice of solicitation shall be
+            - [maiúscula] (B) Content. Such notice shall include:
+              - [letra-dupla] ((a)) agency name; ((b)) PIN; ((c)) title
+              - [letra-dupla] ((b)) PIN; ((c)) title and/or brief description
+              - [letra-dupla] ((c)) title and/or brief description of the
+              - [letra-dupla] ((d)) estimated quantity, if any;
+              - [letra-dupla] ((e)) how the solicitation documents may be
+              - [letra-dupla] ((f)) date and time by which, and
+              - [letra-dupla] ((g)) required vendor qualifications or eligibility requirements,
+              - [letra-dupla] ((h)) A statement, if applicable, that the
+        - [número] (2) Notice of Vendor Selection.
+          - [romano] (i) Frequency. Notice of vendor selection exceeding
+          - [romano] (ii) Content. Such notice shall include:
+            - [maiúscula] (A) agency name;
+            - [maiúscula] (B) PIN;
+            - [maiúscula] (C) title and/or brief description of the
+            - [maiúscula] (D) name and address of the vendor;
+            - [maiúscula] (E) dollar value of the contract; and
+            - [maiúscula] (F) procurement method by which the contract
+        - [número] (3) Public Availability. A copy of the
+      - [letra] (f) Bidders Lists.
+        - [número] (1) The CCPO shall compile citywide lists
+        - [número] (2) The CCPO and agencies, if authorized
+        - [número] (3) Application by vendors for placement on
+        - [número] (4) Vendors that fail to respond to
+        - [número] (5) Unless otherwise provided, inclusion or exclusion
+      - [letra] (g) Prequalified Vendor Lists. In accordance with
+      - [letra] (h) Pre-Bid or Pre-Solicitation Conferences. Pre-bid or
+      - [letra] (i) Amendments to IFBs.  %% (i) ambíguo: pode ser letra (depois de (h)) ou romano; lido como letra (negrito com título)
+        - [número] (1) Authority. The ACCO shall authorize the
+        - [número] (2) Form. Each amendment to an IFB
+        - [número] (3) Distribution. Amendments shall be sent to
+        - [número] (4) Timeliness. Amendments shall be distributed within
+      - [letra] (j) Pre-Opening Modification or Withdrawal of Bids.
+        - [número] (1) Procedure. Bids may be modified or
+        - [número] (2) Disposition of Bid Security. If a
+      - [letra] (k) Late Bids, Late Withdrawals, and Late
+        - [número] (1) Policy. Any bid received at the
+        - [número] (2) Exception. A late modification of a
+      - [letra] (l) Receipt, Opening, and Recording of Bids.
+        - [número] (1) Receipt. Upon its receipt, each bid
+        - [número] (2) Opening and Recording. Bids and modifications
+        - [número] (3) Confidential Data. The ACCO shall examine
+      - [letra] (m) Mistakes in Bids.
+        - [número] (1) General. Correction or withdrawal of a
+        - [número] (2) Mistakes Discovered Before Opening. A bidder
+        - [número] (3) Confirmation of Bid. When the Contracting
+          - [romano] (i) Minor Informalities. Minor informalities are matters
+            - [maiúscula] (A) return the number of signed bids
+            - [maiúscula] (B) acknowledge receipt of an amendment to
+          - [romano] (ii) Mistakes Where Intended Correct Bid Is
+          - [romano] (iii) Mistakes Where Intended Correct Bid Is
+            - [maiúscula] (A) the mistake was known or made
+            - [maiúscula] (B) the price bid was based on
+            - [maiúscula] (C) the bid was submitted in good
+            - [maiúscula] (D) the error in bid is actually
+            - [maiúscula] (E) it is possible to place the
+        - [número] (4) Mistakes Discovered After Vendor Selection. Mistakes
+        - [número] (5) Determinations Required. When a bid is
+      - [letra] (n) Withdrawal of Bids. Except as provided
+      - [letra] (o) Bid Evaluation and Vendor Selection.
+        - [número] (1) Vendor Selection.
+          - [romano] (i) Contracts for Construction. The responsible bidder
+          - [romano] (ii) Contracts for Purchase of Goods and
+          - [romano] (iii) If award will be made based
+            - [número] (1) features of the offered product or
+            - [número] (2) warranties and or maintenance to be
+            - [número] (3) references, past performance and reliability, including
+            - [número] (4) organization, staffing (both members of staff
+            - [número] (5) financial capability; and
+            - [número] (6) record of compliance with all federal,
+            - [continuação] The ACCO, or committee, may consider any  %% parágrafo sem marcador que fecha a lista; pertence ao pai
+          - [romano] (iv) If award will be made based
+        - [número] (2) Negotiation with the Apparent Lowest Responsive
+        - [número] (3) Award. Upon the determination of the
+      - [letra] (p) Low Tie Bids.
+        - [número] (1) Definition. Low Tie Bids are low
+        - [número] (2) Vendor Selection. In the case of
+          - [romano] (i) Select a certified New York City
+          - [romano] (ii) Select a New York City bidder;
+          - [romano] (iii) Select a certified New York State
+          - [romano] (iv) Select a New York State bidder;
+          - [romano] (v) Conduct a drawing. Tie bidders shall
+        - [número] (3) Record. A record shall be made
+      - [letra] (q) Single Bid. When a single bid
+      - [letra] (r) Alternate Bids. Unless alternate bids are
+      - [letra] (s) Notification of Non-Responsiveness or Non-Responsibility. If
+      - [letra] (t) Multiple Award Task Order or Purchase
+        - [número] (1) Determination. Multiple award task order contracts
+        - [número] (2) Method.
+          - [romano] (i) Multiple awards may be made for
+            - [maiúscula] (A) select the vendor that represents the
+            - [maiúscula] (B) the agency may solicit offers for
+            - [continuação] The agency may set forth an alternative  %% parágrafo sem marcador que fecha a lista; pertence ao pai
+          - [romano] (ii) The following list constitutes acceptable alternative
+            - [maiúscula] (A) rotation, or other non-discretionary method of
+            - [maiúscula] (B) assignment to or competition among particular
+            - [maiúscula] (C) assignment to a particular vendor based
+            - [maiúscula] (D) assignment to a particular vendor based
+            - [maiúscula] (E) any other method approved by the
+          - [romano] (iii) In the event that a vendor
+          - [romano] (iv) Price shall be the primary factor
+        - [número] (3) Duration. Unless otherwise approved by the
+      - [letra] (u) Rejection of Bids. The ACCO may
+      - [letra] (v) Resolicitation in Cases of Failed Bids
+        - [número] (1) This procedure may be used where
+        - [número] (2) When using this procedure, the ACCO
+          - [romano] (i) make a determination that:
+            - [maiúscula] (A) five or more bids have been
+            - [maiúscula] (B) all of the bids have been
+          - [romano] (ii) prepare a corrected solicitation containing the
+          - [romano] (iii) deliver the corrected solicitation at least
+      - [letra] (w) Disposition of Bids. All bids shall
+    - [seção] Section 3-03 COMPETITIVE SEALED PROPOSALS.
+      - [letra] (a) The Request for Proposals (RFP) –
+        - [número] (1) statement that the contract award will
+        - [número] (2) statement of work or scope of
+        - [número] (3) the specific criteria and the relative
+        - [número] (4) statement of how price will be
+          - [romano] (i) a notice that prices shall be
+          - [romano] (ii) if applicable, request for cost breakdown
+        - [número] (5) proposal submission requirements including requirements, if
+        - [número] (6) other information such as delivery dates
+          - [romano] (i) a statement of intent to award
+          - [romano] (ii) for client services only, a request

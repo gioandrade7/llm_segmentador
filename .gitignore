@@ -1,14 +1,19 @@
-# ── Módulo 1: scraper/ ────────────────────────────────────────
-scraper/pubs_extracted/
-scraper/*.log
-eval/
 
-# ── Módulo 2: text_extraction/ ───────────────────────────────
-text_extraction/out/
-text_extraction/data/
-data/pdf/
+# ── Módulo 1: text_extraction/ ───────────────────────────────
+# Saída de extração é ignorada, com uma exceção: out/ppb_rules/ é versionado
+# como fixture — o único documento que acompanha o repo já paginado.
+text_extraction/out/*
+!text_extraction/out/ppb_rules/
 
-# ── Módulo 3: semantic_seg/ ───────────────────────────────────
+# Os PDFs fonte de teste SÃO versionados (é o que torna o pipeline
+# reproduzível); o resto de data/ não.
+text_extraction/data/*
+!text_extraction/data/pdf/
+text_extraction/data/pdf/*
+!text_extraction/data/pdf/*.pdf
+
+# ── Módulo 2: semantic_seg/ ───────────────────────────────────
+# Tudo em resultados/ é saída de rodada: reproduzível, muda a cada execução.
 semantic_seg/data/
 semantic_seg/resultados/
 semantic_seg/out/
@@ -44,3 +49,5 @@ env/
 Thumbs.db
 *.swp
 *.swo
+
+text_extraction/*.pdf

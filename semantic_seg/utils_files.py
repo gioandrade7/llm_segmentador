@@ -1,18 +1,5 @@
 import os
-import json
-import yaml
 
-def carregar_config(caminho: str) -> dict:
-    with open(caminho, "r", encoding="utf-8") as f:
-        if caminho.endswith((".yaml", ".yml")):
-            data = yaml.safe_load(f)
-            # pub.yaml e similares são JSON com extensão .yaml
-            if isinstance(data, str):
-                return json.loads(data)
-            return data
-        return json.load(f)
- 
- 
 def carregar_paginas(diretorio: str, extensao: str = ".md") -> list[dict]:
     """
     Carrega todos os arquivos de um diretório como páginas individuais.
@@ -71,15 +58,18 @@ def montar_texto_completo(paginas: list[dict]) -> str:
     ]
     return "\n\n".join(partes)
 
-def _montar_janela(texto_completo: str, mapa: list[tuple[int, int]], 
+def _montar_janela(texto_completo: str, posicoes: list[int],
                    idx_pag_atual: int, pos_atual: int, pos_fim_jan: int) -> str:
     """
     Fatia o texto de pos_atual até pos_fim_jan.
     Se pos_atual estiver no meio de uma página (não coincide com o início
     do marcador), injeta o marcador dessa página no topo da janela para
     que o LLM saiba sempre em qual página está lendo.
+
+    `posicoes[idx]` é a posição de caractere do marcador da página `idx + 1`.
     """
-    pag_num, pag_pos = mapa[idx_pag_atual]
+    pag_num = idx_pag_atual + 1
+    pag_pos = posicoes[idx_pag_atual]
     janela = texto_completo[pos_atual:pos_fim_jan]
 
     # pos_atual está no meio da página → o marcador ficou para trás

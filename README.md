@@ -1,233 +1,114 @@
-# Pipeline de Extração Semântica de Documentos Jurídicos
+# Pipeline de Segmentação Semântica de Documentos Estruturados
 
-Projeto desenvolvido em colaboração entre o **IComp/UFAM** e o **JusBrasil**, com o objetivo de identificar e extrair automaticamente blocos semânticos de publicações do Diário Oficial da União (DOU).
+Pesquisa de mestrado no **IComp/UFAM**: identificar e extrair automaticamente os blocos semânticos de documentos estruturados — descobrir onde cada unidade independente do documento começa e termina.
 
----
+## O problema
 
-## Visão Geral do Pipeline
+Documentos estruturados — um estatuto, uma portaria, um regulamento, um artigo — chegam como um PDF contínuo de dezenas de páginas contendo **muitas unidades independentes**: seções numeradas, artigos, itens. Para qualquer uso a jusante (busca, indexação, análise), é preciso primeiro saber onde cada unidade começa e termina.
+
+Fazer isso por regex ou por regra de layout não generaliza entre coleções: cada uma numera e formata de um jeito — `SEC. 203`, `Section 3-02`, `Art. 14`, `III. METHODOLOGY` — e a mesma fonte muda de formato ao longo dos anos. O corpus do projeto é escolhido por **diversidade estrutural, não por domínio**, justamente porque é essa incompatibilidade entre coleções que torna difícil escrever um único segmentador.
+
+A aposta é que um LLM consegue inferir a estrutura do documento **a partir do próprio documento** e depois aplicá-la, sem configuração por tipo.
+
+## Visão geral
+
+A solução é o pipeline de segmentação, em `semantic_seg/`: três componentes, dois deles num laço. Ele recebe o documento já em **texto paginado** — um arquivo por página — e devolve a lista de blocos.
+
+A tarefa é **puramente segmentação**: não há classificação em categorias pré-definidas nem arquivo de configuração por tipo de documento — o prompt é genérico e se especializa em tempo de execução.
+
+> **Pré-processamento.** Converter o documento em formato digital em texto paginado é pré-requisito, não parte da solução. O `text_extraction/` está no repositório apenas para isso: lê a camada de texto nativa do documento. Qualquer extrator que produza um arquivo por página serve no lugar dele — o pipeline não sabe de onde o texto veio.
+
+> A escolha do extrator, ainda assim, não é neutra para o resultado: um erro de linearização de colunas na extração chega ao Segmentador como se fosse a ordem real do documento, e o laço de correção não tem como desfazê-lo.
+
+## Os três componentes
 
 ```
-┌─────────────────────┐     ┌──────────────────────┐     ┌──────────────────────┐
-│      scraper/       │────▶│  text_extraction/    │────▶│   semantic_seg/      │
-│                     │     │                      │     │                      │
-│  Scraping do DOU    │     │  PDF → Markdown      │     │  Identificação de    │
-│  → texto das pubs.  │     │  RTF → Texto         │     │  blocos semânticos   │
-└─────────────────────┘     └──────────────────────┘     └──────────────────────┘
-       Etapa 1                      Etapa 2                      Etapa 3
+          texto paginado  (`page_NNNN.md`)
+                    │
+                    │  amostra: N páginas contíguas do começo, do meio e do fim
+                    ▼
+          ┌──────────────────────┐
+          │    IDENTIFICADOR     │   1 chamada, antes de qualquer segmentação
+          └──────────────────────┘
+                    │
+                    │  padrão: modo, hierarquia, nível de corte, confiança
+          ┌─────────┴──────────────────────────────┐
+          ▼                                        ▼
+  ┌──────────────────┐                   ┌──────────────────┐
+  │   SEGMENTADOR    │─── blocos ───────▶│     AUDITOR      │
+  │ janela deslizante│  (resumo das      │ cinco patologias │
+  │  1 bloco/chamada │   bordas)         │                  │
+  └──────────────────┘                   └──────────────────┘
+          ▲                                        │
+          │                                   consistente?
+          └────────── insights ───────┬────── não │
+                    (novo ciclo)      │           │ sim
+                                      │           ▼
+                                      │     blocos finais
 ```
 
-Cada módulo pode ser executado de forma independente ou como parte do pipeline completo.
+Os três componentes são chamadas de LLM — não-determinísticos e com custo por chamada. O que é determinístico no módulo fica fora deles: a montagem do texto paginado e o reencontro das âncoras no documento.
 
----
+### Identificador — infere o padrão, uma vez
 
-## Estrutura do Projeto
+Roda **antes de qualquer segmentação** e recebe o **texto fonte**. É isso que quebra a circularidade do laço: o padrão passa a vir de uma fonte independente daquilo que está sob suspeita.
 
-```
-.
-├── README.md                    # Esta documentação
-├── requirements.txt             # Dependências Python unificadas
-├── .env.example                 # Template de variáveis de ambiente
-├── .gitignore
-│
-├── scraper/                     # Módulo 1 — Coleta de publicações
-│   ├── pub_scrapper.py          # Scraper principal do DOU (async + Selenium)
-│   └── dou_html_parser.py       # Parser HTML das páginas do DOU
-│
-├── text_extraction/             # Módulo 2 — Extração de texto
-│   ├── marker_test.py           # Pipeline PDF → Markdown (Marker + GPT-4o)
-│   └── rtf_txt.py               # Conversor RTF → Texto (leis em RTF)
-│
-└── semantic_seg/                # Módulo 3 — Segmentação semântica
-    ├── main.py                  # Ponto de entrada (CLI)
-    ├── utils_llm.py             # Pipeline de janela deslizante + chamadas LLM
-    ├── utils_files.py           # Carregamento e montagem de páginas
-    └── avaliar.py               # Avaliação com métricas (Precision/Recall/F1)
-```
+A amostra é de N páginas **contíguas** do começo, N do meio e N do fim. A contiguidade é deliberada: para decidir em que nível cortar, é preciso ver onde uma unidade termina e a próxima começa — uma página isolada mostra apenas o cabeçalho de uma unidade.
 
----
-
-## Instalação
-
-**1. Clone o repositório e instale as dependências:**
-
-```bash
-pip install -r requirements.txt
-```
-
-**2. Configure as variáveis de ambiente:**
-
-```bash
-cp .env.example .env
-# Edite .env com suas chaves de API
-```
-
-**3. Instale o ChromeDriver** (necessário para o módulo `scraper/`):
-
-O ChromeDriver deve ser compatível com a versão do Chrome instalada. Uma forma simples é usar o `webdriver-manager`:
-
-```bash
-pip install webdriver-manager
-```
-
----
-
-## Etapa 1 — Scraping do DOU (`scraper/`)
-
-Coleta todas as publicações de uma edição do DOU e salva cada uma como um arquivo `.txt`.
-
-**Como funciona:**
-1. Um driver Selenium abre a página do DOU, clica na árvore de publicações e coleta todos os links.
-2. Os cookies de sessão são capturados e repassados a um cliente `httpx` assíncrono.
-3. Até 20 publicações são baixadas simultaneamente via HTTP (sem overhead de browser).
-4. URLs que retornam 403 persistente são processadas por um pool de drivers Selenium como fallback.
-
-**Execução:**
-
-```bash
-cd scraper/
-python pub_scrapper.py
-```
-
-> Altere a variável `url` na função `main()` de `pub_scrapper.py` para a edição desejada:
-> `https://in.gov.br/leiturajornal?data=DD-MM-AAAA&secao=do1`
-
-**Saída:** Arquivos `Pub_000.txt`, `Pub_001.txt`, ... em `scraper/pubs_extracted/dou_secX_DD-MM/`.
-
----
-
-## Etapa 2 — Extração de Texto (`text_extraction/`)
-
-Converte documentos PDF ou RTF em texto estruturado (Markdown).
-
-### 2a. PDF → Markdown (`marker_test.py`)
-
-Processa um PDF página a página, usando o modelo local **Marker** para extração inicial e **GPT-4o** para correção das conversões.
-
-**Configuração** (via `.env`):
-
-| Variável | Descrição | Padrão |
-|---|---|---|
-| `OPENAI_API_KEY` | Chave da OpenAI | obrigatório |
-| `DOC_NAME` | Nome do documento (sem extensão) | `dou_sec1_13-01` |
-| `INPUT_PDF` | Pasta base dos PDFs | `data/pdf/` |
-| `OUTPUT_DIR` | Pasta de saída dos Markdowns | `text_extraction/out/` |
-| `REPAIR_MODEL` | Modelo OpenAI para correção | `gpt-4o` |
-| `START_PAGE` | Página inicial (sobrescreve checkpoint) | auto-detectado |
-
-**Execução:**
-
-```bash
-cd text_extraction/
-python marker_test.py
-```
-
-**Saída:** Para cada documento, uma pasta em `out/<DOC_NAME>/` contendo:
-- `page_NNNN.md` — Markdown final corrigido por página
-- `md_raw_page_NNNN.md` — Markdown bruto do Marker (para depuração)
-- `documento_final.md` — Documento completo concatenado
-
-**Retomada automática:** Se o processo for interrompido, basta rodar novamente — as páginas já processadas são detectadas e puladas.
-
-### 2b. RTF → Texto (`rtf_txt.py`)
-
-Converte arquivos RTF (leis em formato legado) para texto plano.
-
-```bash
-cd text_extraction/
-python rtf_txt.py
-```
-
-> Edite as variáveis `ano` e `rtf_path` no início do arquivo conforme necessário.
-
----
-
-## Etapa 3 — Segmentação Semântica (`semantic_seg/`)
-
-Percorre o documento (em Markdown paginado) e identifica todos os blocos semânticos via estratégia de **janela deslizante com LLM**.
-
-**Como funciona:**
-1. O texto do documento é montado como um único string com marcadores `<!-- PÁGINA N -->`.
-2. Uma janela de N páginas é enviada ao LLM, que identifica o primeiro bloco semântico completo.
-3. O ponteiro avança para além do fim do bloco e o processo se repete.
-4. Se o bloco parece truncado (termina na última página da janela), a janela é expandida automaticamente.
-
-**Arquivo de configuração JSON:**
+Ele responde a duas perguntas: o documento tem padrão estrutural? Se tem, qual é a hierarquia e **em que nível cortar** os blocos. O contrato de saída:
 
 ```json
 {
-  "tipo_documento": "Diário Oficial da União — Seção 1",
-  "descricao_geral": "Descrição do tipo de documento...",
-  "segmentos": [
-    {
-      "nome": "Atos Normativos Primários",
-      "descricao": "Leis, decretos e medidas provisórias..."
-    }
-  ]
+  "tem_padrao": true,
+  "modo": "hierarquico",
+  "hierarquia": [
+    {"nivel": 1, "exemplo": "Section 3-02"},
+    {"nivel": 2, "exemplo": "(a)"},
+    {"nivel": 3, "exemplo": "(1)"}
+  ],
+  "nivel_de_corte": 3,
+  "confianca": "alta"
 }
 ```
 
-**Execução:**
+O `modo` pode ser `hierarquico` (níveis encaixados), `sequencia_plana` (unidades independentes de mesmo nível, numa sucessão sem enumeração global que as amarre) ou `topico` (sem padrão; delimitação só por mudança de assunto).
 
-```bash
-cd semantic_seg/
-python main.py \
-    --config configs/dou_sec1.json \
-    --diretorio ../text_extraction/out/dou_sec1_06-01 \
-    --saida resultados/dou_sec1_06-01.json \
-    --model gpt-4o \
-    --janela-paginas 10
-```
+`tem_padrao: false` é a **válvula de escape que o Auditor não tem**: o schema do Auditor o obriga a devolver um padrão e um veredito, então com entrada subdeterminada ele confabula. O Identificador pode dizer que não há padrão, ou declarar `confianca: "baixa"`.
 
-**Argumentos:**
+O `nivel_de_corte` é o parâmetro que, sem o Identificador, o laço tateia por tentativa e erro — cada tentativa custando uma re-segmentação completa do documento.
 
-| Argumento | Descrição | Padrão |
-|---|---|---|
-| `--config` | Caminho para o JSON de configuração | obrigatório |
-| `--diretorio` | Pasta com os arquivos `.md` das páginas | obrigatório |
-| `--extensao` | Extensão dos arquivos de página | `.md` |
-| `--saida` | Arquivo JSON para salvar os blocos | nenhum |
-| `--model` | Modelo OpenAI | `gpt-4o` |
-| `--janela-paginas` | Páginas por janela de contexto | `10` |
-| `--so-resultado` | Suprime prompts no terminal | `False` |
+### Segmentador — janela deslizante
 
-**Saída JSON** (um objeto por bloco):
+Recebe o texto, o padrão do Identificador e os insights do ciclo anterior. O documento é montado como um único string com marcadores de página; uma janela de N páginas vai ao LLM, que identifica **apenas o primeiro bloco completo** dela. O ponteiro de caracteres avança para além do fim desse bloco e a janela desliza.
 
-```json
-{
-  "classificacao": "Atos Normativos Primários",
-  "titulo": "Portaria nº 123/2025",
-  "pagina_inicio": 3,
-  "pagina_fim": 5,
-  "offset_inicio": "primeiros ~80 chars do bloco...",
-  "offset_fim": "últimos ~80 chars do bloco...",
-  "motivo": "Justificativa da classificação",
-  "texto": "Texto completo extraído do bloco..."
-}
-```
+A posição de cada bloco é devolvida como **âncoras de texto** (`offset_inicio` / `offset_fim`: os primeiros e últimos caracteres do trecho), não como índices. Reencontrá-las no documento é o passo determinístico do módulo, feito em camadas de tolerância crescente, porque o LLM promete copiar literalmente e na prática come marcação markdown, acentos e espaços.
 
-### Avaliação (`avaliar.py`)
+Se o bloco termina na última página da janela, ele pode estar truncado: a janela dobra de tamanho e a chamada é repetida.
 
-Compara os blocos preditos com publicações de referência (gabarito) e calcula métricas de detecção e qualidade de texto.
+### Auditor — o que exige julgamento
 
-```bash
-cd semantic_seg/
-python avaliar.py \
-    --resultado resultados/dou_sec1_06-01.json \
-    --anotacoes ../scraper/pubs_extracted/dou_sec1_06-01 \
-    --threshold 0.5 \
-    --relatorio resultados/dou_sec1_06-01_relatorio.json
-```
+Recebe um **resumo das bordas** dos blocos (páginas, tamanho, título, os primeiros e os últimos caracteres de cada um) **mais o padrão vindo do Identificador** — fonte independente, não a própria saída do laço. Nunca recebe o texto fonte: mandar os blocos inteiros a cada ciclo custaria o mesmo que reenviar o documento.
 
-**Métricas calculadas:**
-- **Detecção:** Precision, Recall e F1 (nível de publicação, threshold = word_F1)
-- **Qualidade do texto:** word_F1 e char_F1 médios dos blocos corretamente detectados
+Ele não deduz a estrutura; **confere conformidade** contra a especificação do Identificador e procura cinco patologias:
 
-**Resultados obtidos** (DOU Seção 1): Precision 0.95 · Recall 0.77 · F1 0.85
+1. **Granularidade desigual** — blocos de níveis hierárquicos diferentes convivendo no resultado
+2. **Bloco englobante** — um bloco que agrupa várias unidades do padrão, onde cada uma deveria ser um bloco
+3. **Sobreposição ou duplicação** — dois blocos cobrindo essencialmente o mesmo trecho
+4. **Lacuna** — salto entre o fim de um bloco e o início do seguinte, indicando conteúdo não segmentado
+5. **Falha de âncora** — bloco cujas âncoras não foram reencontradas no texto, por não serem literais ou não serem únicas
 
----
+Se reprovar, escreve **diretrizes concretas** que voltam ao prompt do Segmentador, e o documento é re-segmentado do zero.
 
-## Limitações Conhecidas
+### O laço
 
-- O scraper extrai apenas texto de tags `<p>` — tabelas HTML não são capturadas.
-- O pipeline de segmentação depende de um arquivo de configuração JSON com as categorias de blocos específicas do tipo de documento processado.
-- O modelo local Marker pode apresentar erros em documentos com layout complexo (multi-coluna, tabelas densas); o GPT-4o corrige a maioria desses casos.
+Cada ciclo custa uma re-segmentação completa mais uma chamada de auditoria. Ele para quando o Auditor aprova, quando o Auditor reprova mas não produz diretriz nenhuma (sem diretriz não há o que reinjetar), ou quando um teto de ciclos é atingido.
+
+**Não há detecção de estagnação:** uma segmentação que se repete ciclo após ciclo sem ser aprovada só é interrompida pelo teto, e o padrão é rodar sem teto. Cada ciclo é salvo em disco, porque **o último não é necessariamente o melhor** — houve caso de o ciclo final ter cobertura menor que um intermediário.
+
+## Estado atual
+
+O pipeline roda de ponta a ponta e produz segmentações utilizáveis, mas nenhuma atingiu cobertura total e **não há como medi-las**: não existem anotações de referência nem código de avaliação no repositório.
+
+A consequência é que a aprovação do Auditor é um teste de **auto-consistência, não de correção**: ele compara os blocos com uma especificação estrutural, nunca com o documento, então uma segmentação uniformemente errada é um ponto fixo — é aprovada no primeiro ciclo. A validação externa contra gabarito é o próximo passo necessário, e junto com ela o experimento que ainda falta: verificar se a aprovação do Auditor de fato correlaciona com qualidade maior. Se não correlacionar, o critério de parada do laço é ruído.
+
+Instruções de execução, flags e os modos de falha já observados estão em [CLAUDE.md](CLAUDE.md).

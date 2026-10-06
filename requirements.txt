@@ -1,30 +1,19 @@
 # ─────────────────────────────────────────────────────────────
 # Pipeline de Extração Semântica de Documentos Jurídicos
-# Dependências unificadas dos três módulos
+# Dependências dos dois módulos: text_extraction/ e semantic_seg/
 # ─────────────────────────────────────────────────────────────
 
-# ── Módulo 1: scraper/ ────────────────────────────────────────
-# Scraping do Diário Oficial da União
-selenium>=4.20.0
-httpx[http2]>=0.27.0
-beautifulsoup4>=4.12.0
-lxml>=5.2.0
-requests>=2.31.0
-
-# ── Módulo 2: text_extraction/ ───────────────────────────────
-# Conversão PDF → Markdown e RTF → Texto
-marker-pdf>=0.3.0          # Conversão local PDF → Markdown
-pymupdf>=1.24.0            # Manipulação de PDFs em memória (fitz)
-openai>=1.30.0             # API OpenAI (GPT-4o para correção de Markdown)
-python-dotenv>=1.0.0       # Carregamento de variáveis de ambiente
+# ── Etapa 1: text_extraction/ ─────────────────────────────────
+# PDF → Markdown, RTF → Texto, download de edições do DOU
+pymupdf>=1.24.0            # Leitura e fusão de PDFs (fitz)
+pymupdf4llm>=0.0.17        # Engine preferencial do pdf_extract.py (Markdown com
+                           # detecção de coluna/tabela). Opcional: o import é
+                           # protegido e há dois fallbacks em pymupdf puro.
+httpx>=0.27.0              # Download das páginas em download_pdfs.py
 striprtf>=0.0.26           # Conversão RTF → Texto
 
-# ── Módulo 3: semantic_seg/ ───────────────────────────────────
+# ── Etapa 2: semantic_seg/ ────────────────────────────────────
 # Segmentação semântica via LLM
-# openai e python-dotenv já listados acima
-
-# ── Drivers ──────────────────────────────────────────────────
-# ChromeDriver deve ser instalado separadamente e compatível
-# com a versão do Chrome instalada no sistema.
-# Opção automatizada: pip install webdriver-manager
-# webdriver-manager>=4.0.0
+openai>=1.30.0             # API OpenAI
+python-dotenv>=1.0.0       # Carregamento do .env (OPENAI_API_KEY)
+matplotlib>=3.8            # Gráfico de P/R/F1 por ciclo em avaliar.py
