@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-D18-1325_v2",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-D18-1325.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 67,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 67,
+      "fronteiras_gabarito": 70,
+      "acertos": 67,
+      "precisao": 1.0,
+      "revocacao": 0.9571428571428572,
+      "f1": 0.9781021897810218,
+      "fins": {
+        "previstos": 67,
+        "gabarito": 70,
+        "fins_nao_localizados": 0,
+        "acertos": 67,
+        "precisao": 1.0,
+        "revocacao": 0.9571428571428572,
+        "f1": 0.9781021897810218
+      },
+      "blocos_exatos": {
+        "acertos": 66,
+        "precisao": 0.9850746268656716,
+        "revocacao": 0.9428571428571428,
+        "f1": 0.9635036496350364
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

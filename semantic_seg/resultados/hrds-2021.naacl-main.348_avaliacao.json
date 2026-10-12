@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-2021.naacl-main.348",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-2021.naacl-main.348.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 54,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 54,
+      "fronteiras_gabarito": 54,
+      "acertos": 51,
+      "precisao": 0.9444444444444444,
+      "revocacao": 0.9444444444444444,
+      "f1": 0.9444444444444444,
+      "fins": {
+        "previstos": 54,
+        "gabarito": 54,
+        "fins_nao_localizados": 0,
+        "acertos": 49,
+        "precisao": 0.9074074074074074,
+        "revocacao": 0.9074074074074074,
+        "f1": 0.9074074074074074
+      },
+      "blocos_exatos": {
+        "acertos": 48,
+        "precisao": 0.8888888888888888,
+        "revocacao": 0.8888888888888888,
+        "f1": 0.8888888888888888
+      },
+      "cobertura": 0.9603843633981218
+    }
+  ]
+}

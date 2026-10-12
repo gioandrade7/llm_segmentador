@@ -1,0 +1,35 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Seção principal numerada",
+      "exemplo": "# **3 Proposed Method**"
+    },
+    {
+      "nivel": 2,
+      "nome": "Subseção numerada",
+      "exemplo": "## **3.1 KG Encoder**"
+    },
+    {
+      "nivel": 3,
+      "nome": "Apêndice/seção suplementar identificada por letra",
+      "exemplo": "# **A Detail of Rule-Guided Path Reasoning**"
+    },
+    {
+      "nivel": 4,
+      "nome": "Subseção interna do apêndice identificada por letra",
+      "exemplo": "# **B Implementation Details**"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    8
+  ],
+  "total_paginas": 8
+}

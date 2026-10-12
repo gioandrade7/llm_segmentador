@@ -1,0 +1,632 @@
+[
+  {
+    "offset_inicio": "# **What Gets Echoed? Understanding the “Pointers” in Explanations of Persuasive Arguments** ",
+    "offset_fim": "Boulder, CO \n\ndavid.i.atkinson, kumar.srinivasan, chenhao.tan@colorado.edu ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "What Gets Echoed? Understanding the “Pointers” in Explanations of Persuasive Arguments",
+    "motivo": "Bloco de identificação do artigo, iniciado pelo título principal e contendo autores, afiliação, local e contatos. Termina imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
+    "texto": "# **What Gets Echoed? Understanding the “Pointers” in Explanations of Persuasive Arguments** \n\n**David Atkinson** and **Kumar Bhargav Srinivasan** and **Chenhao Tan** Department of Computer Science \n\nUniversity of Colorado Boulder \n\nBoulder, CO \n\ndavid.i.atkinson, kumar.srinivasan, chenhao.tan@colorado.edu "
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nExplanations are central to everyday life, and are a topic of growing",
+    "offset_fim": "depending on their source, be more likely to be echoed in the explanations.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco começa no marcador de título \"## **Abstract**\" e contém integralmente o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\", na mesma página.",
+    "texto": "## **Abstract** \n\nExplanations are central to everyday life, and are a topic of growing interest in the AI community. To investigate the process of providing natural language explanations, we leverage the dynamics of the /r/ChangeMyView subreddit to build a dataset with 36K naturally occurring explanations of why an argument is persuasive. We propose a novel word-level prediction task to investigate how explanations selectively reuse, or _echo_ , information from what is being explained (henceforth, _explanandum_ ). We develop features to capture the properties of a word in the explanandum, and show that our proposed features not only have relatively strong predictive power on the echoing of a word in an explanation, but also enhance neural methods of generating explanations. In particular, while the non-contextual properties of a word itself are more valuable for stopwords, the interaction between the constituent parts of an explanandum is crucial in predicting the echoing of content words. We also find intriguing patterns of a word being echoed. For example, although nouns are generally less likely to be echoed, subjects and objects can, depending on their source, be more likely to be echoed in the explanations."
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nExplanations are essential for understanding and learning (Keil, 2006). They can take many forms,",
+    "offset_fim": "that the proposed features can even improve performance in generating explanations with pointer networks. Our code and dataset is available at \n\n- https://chenhaot.com/papers/ explanation-pointers.html. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção principal \"## **1 Introduction**\" na página 1 e reúne sua introdução e lista de contribuições até imediatamente antes do próximo marcador estrutural, \"## **2 Related Work**\", na página 2.",
+    "texto": "## **1 Introduction** \n\nExplanations are essential for understanding and learning (Keil, 2006). They can take many forms, ranging from everyday explanations for questions such as why one likes Star Wars, to sophisticated formalization in the philosophy of science (Salmon, 2006), to simply highlighting features in recent work on interpretable machine learning (Ribeiro et al., 2016). \n\nAlthough everyday explanations are mostly encoded in natural language, natural language explanations remain understudied in NLP, partly due to a lack of appropriate datasets and problem \n\nformulations. To address these challenges, we leverage /r/ChangeMyView, a community dedicated to sharing counterarguments to controversial views on Reddit, to build a sizable dataset of naturally-occurring explanations. Specifically, in /r/ChangeMyView, an original poster (OP) first delineates the rationales for a (controversial) opinion (e.g., in Table 1, “most hit music artists today are bad musicians”). Members of /r/ChangeMyView are invited to provide counterarguments. If a counterargument changes the OP’s view, the OP awards a ∆ to indicate the change and is required to _explain why the counterargument is persuasive_ . In this work, we refer to what is being explained, including both the original post and the persuasive comment, as the _explanandum_ .<sup>1</sup> \n\nAn important advantage of explanations in /r/ChangeMyView is that the explanandum contains most of the required information to provide its explanation. These explanations often select key counterarguments in the persuasive comment and connect them with the original post. As shown in Table 1, the explanation naturally points to, or _echoes_ , part of the explanandum (including both the persuasive comment and the original post) and in this case highlights the argument of “music serving different purposes.” \n\nThese naturally-occurring explanations thus enable us to computationally investigate the selective nature of explanations: “people rarely, if ever, expect an explanation that consists of an actual and complete cause of an event. Humans are adept at selecting one or two causes from a sometimes infinite number of causes to be the explanation” (Miller, 2018). To understand the selective process of providing explanations, we formulate a word-level task to predict whether a word in an \n\n> 1The plural of _explanandum_ is explananda. \n\n2911 \n\n_Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing_ , pages 2911–2921, Hong Kong, China, November 3–7, 2019. _⃝_ c 2019 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\n**Original post (OP):** CMV: most hit music artists today are bad musicians Now I know, music is art and art has no rules, but this is only so true. Movies are art too but I think most of us can agree the emoji movie was objectively bad. That aside: I really feel like once you remove the persona and performances of the artists from the ”top 40” songs and listen to them as just a song, most are objectively bad. They’re super repetitive, the lyrics and painfully generic, and there’s hardly ever anything new or challenging. And from what I understand most of these artists don’t even write their own songs. Of course there are exceptions but I find them to be extremely rare. It seems to me they’re only popular become of who they are and how they look/perform. I realize this is probably a very snobbish view which is why I want to be enlightened, so can anyone convince me otherwise? Are they actually good musicians or just good performers? [one more paragraph ...] **Persuasive comment (PC):** Music appreciation is a skill, and it’s all about pattern recognition. When we’re children, we need songs that are really simple, repetitive and with easy to recognize patterns. The younger we are, the simpler the songs. Toddlers like nursery rhymes, lullabies, jingles. Teens like pop music. And teens spend more on music than anyone else. [four more paragraphs ...] Lastly, you have to consider that music can be listened to in different ways and for different purposes. You can listen to it alone on headphones, and think about what it means and how it makes you feel. Or you can dance to it with your friends. Or maybe you need something on in the background during a dinner party, or a house party, or while you study, or are trying to fall asleep, or work out. Pop music is really good in some of these situations, really bad in others. But it serves a definite purpose and isn’t bad in any essential way. **Explanation:** ∆ I guess I never _really looked_ at it as _music serving different purposes_ . I can _see_ how _pop music_ fills a certain _purpose_ , and I guess the _artist_ does _n’t_ necessarily have to be the _one_ to _write_ the _song_ (although I _appreciate_ it when they do). \n\nTable 1: An illustration of the pointers in an example explanation of /r/ChangeMyView. We color the words in the explanation based on whether it is used in the original post (e.g., _artist_ ), in the persuasive comment (e.g., _purpose_ ), or both (e.g., _music_ ). We stem all the words before matching and do not color stopwords for readability. \n\nexplanandum will be echoed in its explanation. \n\nInspired by the observation that words that are likely to be echoed are either frequent or rare, we propose a variety of features to capture how a word is used in the explanandum as well as its non-contextual properties in Section 4. We find that a word’s usage in the original post and in the persuasive argument are similarly related to being echoed, except in part-of-speech tags and grammatical relations. For instance, verbs in the original post are less likely to be echoed, while the relationship is reversed in the persuasive argument. \n\nWe further demonstrate that these features can significantly outperform a random baseline and even a neural model with significantly more knowledge of a word’s context. The difficulty of predicting whether content words (i.e., nonstopwords) are echoed is much greater than that of stopwords,<sup>2</sup> among which adjectives are the most difficult and nouns are relatively the easiest. This observation highlights the important role of nouns in explanations. We also find that the relationship between a word’s usage in the original post and in the persuasive comment is crucial for predicting the echoing of content words. Our proposed features can also improve the performance of pointer generator networks with coverage in generating explanations (See et al., 2017). \n\nTo summarize, our main contributions are: \n\n- We highlight the importance of computationally characterizing human explanations and formulate a concrete problem of predicting how information is selected from explananda to form explanations, including building a novel dataset of naturally-occurring explanations. \n\n- We provide a computational characterization of natural language explanations and demonstrate the U-shape in which words get echoed. \n\n- We identify interesting patterns in what gets echoed through a novel word-level classification task, including the importance of nouns in shaping explanations and the importance of contextual properties of both the original post and persuasive comment in predicting the echoing of content words. \n\n- We show that vanilla LSTMs fail to learn some of the features we develop and that the proposed features can even improve performance in generating explanations with pointer networks. Our code and dataset is available at \n\n- https://chenhaot.com/papers/ explanation-pointers.html. \n\n"
+  },
+  {
+    "offset_inicio": "## **2 Related Work** \n\nTo provide background for our study, we first present a brief overview",
+    "offset_fim": "self-described reasons for persuasion, instead of the structure of arguments or the factors that drive effective persuasion. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2 Related Work",
+    "motivo": "O bloco inicia no marcador da seção principal \"2 Related Work\" na página 2 e reúne todo o texto de revisão de literatura até imediatamente antes do próximo marcador estrutural, \"# **3 Dataset**\", na página 3.",
+    "texto": "## **2 Related Work** \n\nTo provide background for our study, we first present a brief overview of explanations for the NLP community, and then discuss the connection \n\n2We use the stopword list in NLTK. \n\n2912\n\n<!-- PÁGINA 3 -->\nof our study with pointer networks, linguistic accommodation, and argumentation mining. \n\nThe most developed discussion of explanations is in the philosophy of science. Extensive studies aim to develop formal models of explanations (e.g., the deductive-nomological model in Hempel and Oppenheim (1948), see Salmon (2006) and Woodward (2005) for a review). In this view, explanations are like proofs in logic. On the other hand, psychology and cognitive sciences examine “everyday explanations” (Keil, 2006; Lombrozo, 2006). These explanations tend to be selective, are typically encoded in natural language, and shape our understanding and learning in life despite the absence of “axioms.” Please refer to Wilson and Keil (1998) for a detailed comparison of these two modes of explanation. \n\nAlthough explanations have attracted significant interest from the AI community thanks to the growing interest on interpretable machine learning (Doshi-Velez and Kim, 2017; Lipton, 2016; Guidotti et al., 2019), such studies seldom refer to prior work in social sciences (Miller, 2018). Recent studies also show that explanations such as highlighting important features induce limited improvement on human performance in detecting deceptive reviews and media biases (Lai and Tan, 2019; Horne et al., 2019). Therefore, we believe that developing a computational understanding of everyday explanations is crucial for explainable AI. Here we provide a data-driven study of everyday explanations in the context of persuasion. \n\nIn particular, we investigate the “pointers” in explanations, inspired by recent work on pointer networks (Vinyals et al., 2015). Copying mechanisms allow a decoder to generate a token by copying from the source, and have been shown to be effective in generation tasks ranging from summarization to program synthesis (See et al., 2017; Ling et al., 2016; Gu et al., 2016). To the best of our knowledge, our work is the first to investigate the phenomenon of pointers in explanations. \n\nLinguistic accommodation and studies on quotations also examine the phenomenon of reusing words (Danescu-Niculescu-Mizil et al., 2011; Giles and Ogay, 2007; Leskovec et al., 2009; Simmons et al., 2011). For instance, DanescuNiculescu-Mizil et al. show that power differences are reflected in the echoing of function words; Tan et al. (2018) find that news media prefer to quote locally distinct sentences in political debates. In \n\ncomparison, our word-level formulation presents a fine-grained view of echoing words, and puts a stronger emphasis on content words than work on linguistic accommodation. \n\nFinally, our work is concerned with an especially challenging problem in social interaction: persuasion. A battery of studies have done work to enhance our understanding of persuasive arguments (Wang et al., 2017; Zhang et al., 2016; Habernal and Gurevych, 2016; Lukin et al., 2017; Durmus and Cardie, 2018), and the area of argumentation mining specifically investigates the structure of arguments (Lippi and Torroni, 2016; Walker et al., 2012; Somasundaran and Wiebe, 2009). We build on previous work by Tan et al. (2016) and leverage the dynamics of /r/ChangeMyView. Although our findings are certainly related to the persuasion process, we focus on understanding the self-described reasons for persuasion, instead of the structure of arguments or the factors that drive effective persuasion. "
+  },
+  {
+    "offset_inicio": "# **3 Dataset** \n\nOur dataset is derived from the /r/ChangeMyView subreddit, which has",
+    "offset_fim": "test set can therefore be used to assess generalization including potential changes in community norms and world events. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "3 Dataset — caput",
+    "motivo": "O bloco inicia na seção principal numerada “3 Dataset” e reúne a apresentação do corpus, a terminologia e a divisão dos dados. Termina imediatamente antes do rótulo de parágrafo em negrito “**Preprocessing.**”, que abre uma unidade distinta.",
+    "texto": "# **3 Dataset** \n\nOur dataset is derived from the /r/ChangeMyView subreddit, which has more than 720K subscribers (Tan et al., 2016). /r/ChangeMyView hosts conversations where someone expresses a view and others then try to change that person’s mind. Despite being fundamentally based on argument, /r/ChangeMyView has a reputation for being remarkably civil and productive (CMV moderators, 2019a), e.g., a journalist wrote “In a culture of brittle talking points that we guard with our lives, Change My View is a source of motion and surprise” (Heffernan, 2018). \n\nThe delta mechanism in /r/ChangeMyView allows members to acknowledge opinion changes and enables us to identify _explanations_ for opinion changes (CMV moderators, 2019b). Specifically, it requires “Any user, whether they’re the OP or not, should reply to a comment that changed their view with a delta symbol and _an explanation of the change_ .” As a result, we have access to tens of thousands of naturally-occurring explanations and associated explananda. In this work, we focus on the opinion changes of the original posters. \n\nThroughout this paper, we use the following terminology: \n\n- An **original post (OP)** is an initial post where the original poster justifies his or her opinion. We also use OP to refer to the original poster. \n\n2913\n\n<!-- PÁGINA 4 -->\n<!-- Start of picture text -->\n(a) Length correlations.<br><!-- End of picture text -->\n\n\n\n\n\n\n\n<!-- Start of picture text -->\n(b) Fraction of words that are echoed (c) Word-level echoing probability vs.<br>from the explanandum. document frequency.<br><!-- End of picture text -->\n\nFigure 1: Figure 1a shows the pairwise Pearson correlation coefficient between lengths of OP, PC, and explanation (all values are statistically significant with _p <_ 1e _−_ 10). Figure 1b shows the average fraction of words in an explanation that are in its OP or PC, and the fraction of words in a PC that are in its OP. In Figure 1c, the _y_ -axis represents the probability of a word in an OP or PC being echoed in the explanation, while the _x_ -axis shows the inverse document frequency of that word in training data. For each document frequency decile, we calculate the probability of a word in that decile being echoed, and plot those probabilities with the red line. In Figure 1b and Figure 1c, the (small) error bars represent standard errors. \n\n- A **persuasive comment (PC)** is a comment that directly leads to an opinion change on the part of the OP (i.e., winning a ∆). \n\n- A **top-level comment** is a comment that directly replies to an OP, and /r/ChangeMyView requires the top-level comment to “challenge at least one aspect of OPs stated view (however minor), unless they are asking a clarifying question.” \n\n- An **explanation** is a comment where an OP acknowledges a change in his or her view and provides an explanation of the change. As shown in Table 1, the explanation not only provides a rationale, it can also include other discourse acts, such as expressing gratitude. \n\nUsing https://pushshift.io, we collect the posts and comments in /r/ChangeMyView from January 17th, 2013 to January 31st, 2019, and extract tuples of (OP, PC, explanation). We use the tuples from the final six months of our dataset as the test set, those from the six months before that as the validation set, and the remaining tuples as the training set. The sets contain 5,270, 5,831, and 26,617 tuples respectively. Note that there is no overlap in time between the three sets and the test set can therefore be used to assess generalization including potential changes in community norms and world events. "
+  },
+  {
+    "offset_inicio": "**Preprocessing.** We perform a number of preprocessing steps, such as converting blockquotes",
+    "offset_fim": "1980). Refer to the supplementary material for more information on preprocessing. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "Preprocessing",
+    "motivo": "O bloco inicia no rótulo em negrito “Preprocessing.” e contém seu parágrafo completo; termina imediatamente antes do próximo rótulo estrutural em negrito, “Data statistics.”.",
+    "texto": "**Preprocessing.** We perform a number of preprocessing steps, such as converting blockquotes in Markdown to quotes, filtering explicit edits made by authors, mapping all URLs to a special @url@ token, and replacing hyperlinks with the link text. We ignore all triples that contain any deleted com- \n\nments or posts. We use spaCy for tokenization and tagging (Honnibal and Montani, 2017). We also use the NLTK implementation of the Porter stemming algorithm to store the stemmed version of each word, for later use in our prediction task (Loper and Bird, 2002; Porter, 1980). Refer to the supplementary material for more information on preprocessing. "
+  },
+  {
+    "offset_inicio": "**Data statistics.** Table 2 provides basic statistics of the training tuples and how they compare to other comments. We highlight the fact",
+    "offset_fim": "(OP, PC, explanation) tuples and ignore any other exchanges between an OP and a commenter.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "Data statistics",
+    "motivo": "O bloco inicia no rótulo em negrito \"Data statistics.\" e contém o parágrafo descritivo subsequente. Termina imediatamente antes do próximo rótulo analítico em negrito, \"The length of explanations...\".",
+    "texto": "**Data statistics.** Table 2 provides basic statistics of the training tuples and how they compare to other comments. We highlight the fact that PCs are on average longer than top-level comments, suggesting that PCs contain substantial counterarguments that directly contribute to opinion change. Therefore, we simplify the problem by focusing on the (OP, PC, explanation) tuples and ignore any other exchanges between an OP and a commenter."
+  },
+  {
+    "offset_inicio": "# **4 Understanding the Pointers in Explanations** \n\nTo further investigate how explanations select words from the explanandum, we formulate",
+    "offset_fim": "in which dissimilarity in word usage between the OP and PC was a predictive feature of successful persuasion.",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "4 Understanding the Pointers in Explanations",
+    "motivo": "O bloco inicia no marcador da seção 4, reúne sua formulação da tarefa de predição e análise de atributos, e termina imediatamente antes do próximo marcador estrutural, “# **5 Predicting Pointers**”.",
+    "texto": "# **4 Understanding the Pointers in Explanations** \n\nTo further investigate how explanations select words from the explanandum, we formulate a word-level prediction task to predict whether words in an OP or PC are echoed in its explanation. Formally, given a tuple of (OP, PC, explanation), we extract the unique stemmed words as _V_ OP _, V_ PC _, V_ EXP. We then define the label for each word in the OP or PC, _w ∈V_ OP _∪V_ PC, based on \n\n> 3A similar U-shape exists if we examine the probability of a PC echoing its OP, but does not show up if we compare an OP echoing a different, randomly chosen OP. It is worth noting that PCs can also be viewed as explaining why the OP is problematic. However, constructing a PC involves selecting from a large number of possible counter perspectives (all of which are unobservable). See the supplementary material for a detailed discussion. \n\nthe explanation as follows: \n\n\n\nOur prediction task is thus a straightforward binary classification task at the word level. We develop the following five groups of features to capture properties of how a word is used in the explanandum (see Table 3 for the full list): \n\n- Non-contextual properties of a word. These features are derived directly from the word and capture the general tendency of a word being echoed in explanations. \n\n- Word usage in an OP or PC (two groups). These features capture _how_ a word is used in an OP or PC. As a result, for each feature, we have two values for the OP and PC respectively. \n\n- How a word connects an OP and PC. These features look at the difference between word usage in the OP and PC. We expect this group to be the most important in our task. \n\n- General OP/PC properties. These features capture the general properties of a conversation. They can be used to characterize the background distribution of echoing. \n\nTable 3 further shows the intuition for including each feature, and condensed _t_ -test results after Bonferroni correction. Specifically, we test whether the words that were echoed in explanations have different feature values from those that were not echoed. In addition to considering all words, we also separately consider stopwords and content words in light of Figure 1c. Here, we highlight a few observations: \n\n- Although we expect more complicated words ( _#characters_ ) to be echoed more often, this is not the case on average. We also observe an interesting example of Simpson’s paradox in the results for Wordnet depth (Blyth, 1972): shallower words are more likely to be echoed across all words, but deeper words are more likely to be echoed in content words and stopwords. \n\n- OPs and PCs generally exhibit similar behavior for most features, except for part-of-speech and grammatical relation (subject, object, and other.) For instance, verbs in an OP are less likely to be echoed, while verbs in a PC are more likely to be echoed. \n\n2915\n\n<!-- PÁGINA 6 -->\n|Feature group|Features and intuitions|Echoed?|\n|---|---|---|\n|Non-contextual<br>properties|Inverse document frequency. As shown in Figure 1c, although document frequency<br>can have non-linear relationships with being copied, the average echoing probability is<br>greater for more common words.<br>Number of characters. Longer words tend to be more complicated, and may be more<br>likely to be echoed as part of the core argument.<br>Wordnet depth. Similar to number of characters, the depth in wordnet can indicate the<br>complexity of a word and we expect words with greater depth to be echoed.<br>Echoing likelihood. We also compute the general tendency of a word being echoed in<br>the training data. We expect the feature to be positively correlated with the label.|_↓↓↓↓_<br>_↓↓↓↓_<br>_↓↓↓↓_<sup>_RC,RS_</sup><br>_↑↑↑↑_|\n|How a word is<br>used in an OP<br>or PC (OP/PC<br>usage)|Part-of-speech (POS) tags. We compute the percentage of times that the surface forms <br>word appear as different part-of-speech tags. We expect nouns and verbs more likely <br>Results: verb in an OP_↓↓↓↓_<sup>_RS_</sup>, noun in an OP (_↓↓↓↓_), verb in a PC (_↑↑↑↑_), noun in a P<br>Subjects and objects from dependency labels. We compute the percentage of times that th<br>as subjects, objects, and others. We expect subjects and objects more likely to be ec<br>subjects in an OP:_↑↑↑↑_, objects in an OP:_↓↓↓↓_<sup>_RC_</sup>, others in an OP:_↑↑↑↑_<sup>_RC_</sup>, subjects<br>objects in a PC:_↓↓↓↓_; others in a PC:_↑↑↑↑_.<br>(Normalized) term frequency. We expect frequent terms to be echoed.<br>#surface forms. We expect words that have diverse surface forms to be echoed.<br>Location. For words that never show up in an OP or PC, the default value is 0.5. We exp<br>to be echoed. Results: location in an OP:_↑↑↑↑_(not significant in stopwords); location in<br>In quotes. We expect words in quotes to be echoed as they are already emphasized.<br>Entity. We expect entities to be echoed.|of a stemmed<br> to be echoed.<br>C:_↓↓↓↓_<sup>_RC_</sup>.<br>e word appears<br>hoed. Results:<br>in a PC:_↓↓↓↓_,<br>_↑↑↑↑_<br>_↑↑↑↑_<br>ect later words<br>i     a PC:_↑_<sup>_RS_</sup>.<br>_↑↑↑↑_<br>_↑↑↑↑_|\n|How a word<br>connects an OP<br>and PC (OP-PC<br>relation)|Occurs both in an OP and PC.<br>#Surface forms in an OP but not in the PC.<br>#Surface forms in a PC but not in the OP.<br>Jensen-Shannon (JS) distance between the OP and PC POS tag distributions of the word.<br>JS distance between subjects/objects distributions of the word in an OP and PC.|_↑↑↑↑_<br>_↓↓↓↓_<br>_↑↑↑↑_<sup>_RS_</sup><br>_↓↓↓↓_<br>_↓↓↓↓_|\n|General OP/PC<br>properties|OP length.<br>PC length.<br>Difference in #words.<br>Difference in average #characters in words.<br>Part-of-speech tags distributional differences between an OP and PC.<br>Depth of the PC in the thread.|_↓↓↓↓_<sup>_RS_</sup><br>_↑↑↑↑_<br>_↓↓↓↓_<sup>_RS_</sup><br>_↓↓↓↓_<br>_↓↓↓↓_<br>_↑↑↑↑_|\n\n\n\nTable 3: Features to capture the properties of a word in the context of an explanandum. The last column shows _t−_ test results after Bonferroni correction. _↑_ indicates that words that are echoed have a greater value in the feature, while _↓_ indicates the reverse. The number of arrows indicates the level of p-value: _↑↑↑↑_ : _p <_ 0 _._ 0001, _↑↑↑_ : _p <_ 0 _._ 001, _↑↑_ : _p <_ 0 _._ 01, _↑_ : _p <_ 0 _._ 05.<sup>_RC_</sup> and<sup>_RS_</sup> indicate that the direction is flipped in content words and stopwords respectively. We show significance testing results in a condensed format for space reasons. Refer to the supplementary material for the complete testing results. \n\n- Although nouns from both OPs and PCs are less likely to be echoed, within content words, subjects and objects from an OP are more likely to be echoed. Surprisingly, subjects and objects in a PC are less likely to be echoed, which suggests that the original poster tends to refer back to their own subjects and objects, or introduce new ones, when providing explanations. \n\n- Later words in OPs and PCs are more likely to be echoed, especially in OPs. This could relate to OPs summarizing their rationales at the end of their post and PCs putting their strongest points last. \n\n- Although the number of surface forms in an OP or PC is positively correlated with being echoed, the differences in surface forms show reverse trends: the more surface forms of a word that \n\nshow up only in the PC (i.e., not in the OP), the more likely a word is to be echoed. However, the reverse is true for the number of surface forms in only the OP. Such contrast echoes Tan et al. (2016), in which dissimilarity in word usage between the OP and PC was a predictive feature of successful persuasion."
+  },
+  {
+    "offset_inicio": "# **5 Predicting Pointers** \n\nWe further examine the effectiveness of our proposed features in a predictive setting.",
+    "offset_fim": "word-level task remains challenging, especially for content words. \n\n2916\n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "5 Predicting Pointers",
+    "motivo": "O bloco inicia na seção principal numerada 5 e contém seu parágrafo introdutório; termina imediatamente antes do marcador da subseção seguinte, \"# **5.1 Experiment setup**\", na página 7.",
+    "texto": "# **5 Predicting Pointers** \n\nWe further examine the effectiveness of our proposed features in a predictive setting. These features achieve strong performance in the word-level classification task, and can enhance neural models in both the word-level task and generating explanations. However, the word-level task remains challenging, especially for content words. \n\n2916\n\n"
+  },
+  {
+    "offset_inicio": "# **5.1 Experiment setup** \n\nWe consider two classifiers for our word-level classification",
+    "offset_fim": "method that predicts the positive label with 0.15 probability (the base rate of positive instances). ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "5.1 Experiment setup",
+    "motivo": "O bloco inicia no marcador da seção 5.1 e contém a descrição dos classificadores, configuração experimental e métrica de avaliação. Termina imediatamente antes do marcador da seção seguinte, \"# **5.2 Prediction Performance**\".",
+    "texto": "# **5.1 Experiment setup** \n\nWe consider two classifiers for our word-level classification task: logistic regression and gradient boosting tree (XGBoost) (Chen and Guestrin, 2016). We hypothesized that XGBoost would outperform logistic regression because our problem is non-linear, as shown in Figure 1c. \n\nTo examine the utility of our features in a neural framework, we further adapt our word-level task as a tagging task, and use LSTM as a baseline. Specifically, we concatenate an OP and PC with a special token as the separator so that an LSTM model can potentially distinguish the OP from PC, and then tag each word based on the label of its stemmed version. We use GloVe embeddings to initialize the word embeddings (Pennington et al., 2014). We concatenate our proposed features of the corresponding stemmed word to the word embedding; the resulting difference in performance between a vanilla LSTM demonstrates the utility of our proposed features. We scale all features to [0 _,_ 1] before fitting the models. As introduced in Section 3, we split our tuples of (OP, PC, explanation) into training, validation, and test sets, and use the validation set for hyperparameter tuning. Refer to the supplementary material for additional details in the experiment. \n\n**Evaluation metric.** Since our problem is imbalanced, we use the F1 score as our evaluation metric. For the tagging approach, we average the labels of words with the same stemmed version to obtain a single prediction for the stemmed word. To establish a baseline, we consider a random \n\nmethod that predicts the positive label with 0.15 probability (the base rate of positive instances). "
+  },
+  {
+    "offset_inicio": "# **5.2 Prediction Performance** \n\n",
+    "offset_fim": "# **5.2 Prediction Performance** \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "5.2 Prediction Performance",
+    "motivo": "O marcador da seção 5.2 inicia o bloco, que contém apenas seu caput/título. Conforme a correção de ciclo anterior, o corte ocorre imediatamente antes do subtítulo em negrito \"Overall performance (Figure 2a).\".",
+    "texto": "# **5.2 Prediction Performance** \n\n"
+  },
+  {
+    "offset_inicio": "**Overall performance (Figure 2a).** Although our word-level task is heavily imbalanced,",
+    "offset_fim": "nly removing a group of features. \n\n# of different groups of features, and model performance in different conditions.",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "Overall performance (Figure 2a)",
+    "motivo": "O bloco inicia no subtítulo em negrito que abre a análise de desempenho geral e inclui sua continuação, tabela e legenda na página 8. Termina imediatamente antes do próximo subtítulo em negrito, \"Ablation performance (Table 4).\"",
+    "texto": "**Overall performance (Figure 2a).** Although our word-level task is heavily imbalanced, all of our models outperform the random baseline by a wide margin. As expected, content words are much more difficult to predict than stopwords, but the best F1 score in content words more than doubles that of the random baseline (0.286 vs. 0.116). Notably, although we strongly improve on our random baseline, even our best F1 scores are relatively low, and this holds true regardless of the model used. Despite involving more tokens than standard tagging tasks (e.g., Marcus et al. (1994) and Plank et al. (2016)), predicting whether a word is going to be echoed in explanations remains a challenging problem. \n\nAlthough the vanilla LSTM model incorporates additional knowledge (in the form of word embeddings), the feature-based XGBoost and logistic regression models both outperform the vanilla LSTM model. Concatenating our proposed features with word embeddings leads to improved performance from the LSTM model, which becomes comparable to XGBoost. This suggests that our proposed features can be difficult to learn with an LSTM alone. \n\nDespite the non-linearity observed in Figure 1c, XGBoost only outperforms logistic regression by a small margin. In the rest of this section, we use XGBoost to further examine the effectiveness \n\n2917\n\n<!-- PÁGINA 8 -->\n||content|stop|||\n|---|---|---|---|---|\n|all features|0.286|0.600|||\n|random|0.116|0.205|||\n||for<br>content|ward<br>stop|back<br>content|ward<br>stop|\n|Non-contextual prop.|0.177|**0.582**|0.285|**0.561**|\n|OP usage|0.191|0.527|0.281|0.599|\n|PC usage|0.233|0.520|**0.275**|0.598|\n|OP-PC relation|**0.280**|0.542|0.289|0.600|\n|General OP/PC prop.|0.153|0.266|0.285|0.598|\n\n\n\nTable 4: Ablation performance with XGBoost on content words and stopwords (each ablated model is tuned based on performance on all words). “forward” refers to only using a group of features, while “backward” refers to only removing a group of features. \n\n# of different groups of features, and model performance in different conditions."
+  },
+  {
+    "offset_inicio": "**Ablation performance (Table 4).** First, if we only consider a single group of features, as we hypothesized, the relation",
+    "offset_fim": "approximated by OP and PC usage. Again, word-level properties are valuable for strong performance in stopwords. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Ablation performance (Table 4)",
+    "motivo": "O bloco inicia no subtítulo em negrito que abre uma análise distinta dentro da seção 5.2 e inclui seus parágrafos subsequentes. Termina imediatamente antes do próximo rótulo de análise em negrito, “Performance vs. word source (Figure 2c).”",
+    "texto": "**Ablation performance (Table 4).** First, if we only consider a single group of features, as we hypothesized, the relation between OP and PC is crucial and leads to almost as strong performance in content words as using all features. To further understand the strong performance of OP-PC relation, Figure 2b shows the feature importance in the ablated model, measured by the normalized total gain (see the supplementary material for feature importance in the full model). A word’s occurrence in both the OP and PC is clearly the most important feature, with distance between its POS tag distributions as the second most important. Recall that in Table 3 we show that words that have similar POS behavior between the OP and PC are more likely to be echoed in the explanation. \n\nOverall, it seems that word-level properties contribute the most valuable signals for predicting stopwords. If we restrict ourselves to only information in either an OP or PC, how a word is used in a PC is much more predictive of content word echoing (0.233 vs 0.191). This observation suggests that, for content words, the PC captures more valuable information than the OP. This finding is somewhat surprising given that the OP sets the topic of discussion and writes the explanation. \n\nAs for the effects of removing a group of features, we can see that there is little change in the performance on content words. This can be explained by the strong performance of the OP-PC relation on its own, and the possibility of the OPPC relation being approximated by OP and PC usage. Again, word-level properties are valuable for strong performance in stopwords. "
+  },
+  {
+    "offset_inicio": "**Performance vs. word source (Figure 2c).** We further break down the performance by where a word is from.",
+    "offset_fim": "prior studies have demonstrated the important role of stopwords for authorship attribution (Raghavan et al., 2010).",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Performance vs. word source (Figure 2c)",
+    "motivo": "É o primeiro bloco completo do trecho: inicia no subtítulo em negrito da seção 5.2 e inclui seus dois parágrafos, terminando imediatamente antes do próximo subtítulo em negrito, “Nouns are the most reliably predicted...”.",
+    "texto": "**Performance vs. word source (Figure 2c).** We further break down the performance by where a word is from. We can group a word based on whether it shows up only in an OP, a PC, or both OP and PC, as shown in Table 1. There is a striking difference between the performance in the three categories (e.g., for all words, 0.63 in OP & PC vs. 0.271 in PC only). The strong performance on words in both the OP and PC applies to stopwords and content words, even accounting for the shift in the random baseline, and recalls the importance of occurring both in OP and PC as a feature. \n\nFurthermore, the echoing of words from the PC is harder to predict (0.271) than from the OP (0.347) despite the fact that words only in PCs are more likely to be echoed than words only in OPs (13.5% vs. 8.6%). The performance difference is driven by stopwords, suggesting that our overall model is better at capturing signals for stopwords used in OPs. This might relate to the fact that the OP and the explanation are written by the same author; prior studies have demonstrated the important role of stopwords for authorship attribution (Raghavan et al., 2010)."
+  },
+  {
+    "offset_inicio": "**Nouns are the most reliably predicted partof-speech tag within content words (Table 5).** Next, we break down the performance by part-ofspeech tags.",
+    "offset_fim": "role of nouns in shaping explanations resonates with the high recall rate of nouns in memory tasks (Reynolds and Flagg, 1976).",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Nouns are the most reliably predicted part-of-speech tag",
+    "motivo": "O bloco começa no rótulo de parágrafo em negrito que introduz uma análise distinta dentro da seção 5.2 e abrange os dois parágrafos sobre desempenho por classe gramatical. Termina imediatamente antes do marcador da seção seguinte, \"# **5.3 The Effect on Generating Explanations**\".",
+    "texto": "**Nouns are the most reliably predicted partof-speech tag within content words (Table 5).** Next, we break down the performance by part-ofspeech tags. We focus on the part-of-speech tags that are semantically important, namely, nouns, proper nouns, verbs, adverbs, and adjectives. \n\nPrediction performance can be seen as a proxy for how reliably a part-of-speech tag is reused when providing explanations. Consistent with our expectations for the importance of nouns and verbs, our models achieve the best performance on nouns within content words. Verbs are more challenging, but become the least difficult tag to predict when we consider all words, likely due to stopwords such as “have.” Adjectives turn out to be the most challenging category, suggesting that adjectival choice is perhaps more arbitrary than other parts of speech, and therefore less central to the process of constructing an explanation. The important role of nouns in shaping explanations resonates with the high recall rate of nouns in memory tasks (Reynolds and Flagg, 1976)."
+  },
+  {
+    "offset_inicio": "# **5.3 The Effect on Generating Explanations** \n\nOne way to measure the ultimate success",
+    "offset_fim": "material), and that fully solving the generation task requires more work. \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "5.3 The Effect on Generating Explanations",
+    "motivo": "O bloco inicia no marcador da seção 5.3, continua através da quebra de página e das tabelas nele inseridas, e termina imediatamente antes do próximo marcador estrutural, \"# **6 Concluding Discussions**\".",
+    "texto": "# **5.3 The Effect on Generating Explanations** \n\nOne way to measure the ultimate success of understanding pointers in explanations is to be able to generate explanations. We use the pointer gen- \n\n2918\n\n<!-- PÁGINA 9 -->\n||content|all|random|\n|---|---|---|---|\n|noun|0.354|0.361|0.130|\n|adverb|0.342|0.411|0.127|\n|verb|0.306|0.466|0.122|\n|proper noun|0.280|0.336|0.109|\n|adjective|0.237|0.289|0.111|\n\n\n\nTable 5: Performance on five non-function part-ofspeech tags (sorted by performance within content words). As a comparison, we also show the performance of the random baseline on content words, which is relatively stable across part-of-speech tags. \n\n||ROUGE-1|ROUGE-2|ROUGE-L|\n|---|---|---|---|\n|w/o features|18.91|4.12|17.05|\n|with features|22.01|3.93|19.02|\n\n\n\nTable 6: ROUGE scores (F1) on the test dataset (Lin, 2004). The differences in ROUGE-1 and ROUGE-L are statistically significant with _p <_ 1e _−_ 10. \n\nerator network with coverage as our starting point (See et al., 2017; Klein et al., 2017) (see the supplementary material for details). We investigate whether concatenating our proposed features with word embeddings can improve generation performance, as measured by ROUGE scores. \n\nConsistent with results in sequence tagging for word-level echoing prediction, our proposed features can enhance a neural model with copying mechanisms (see Table 6). Specifically, their use leads to statistically significant improvement in ROUGE-1 and ROUGE-L, while slightly hurting the performance in ROUGE-2 (the difference is not statistically significant). We also find that our features can increase the likelihood of copying: an average of 17.59 unique words get copied to the generated explanation with our features, compared to 14.17 unique words without our features. For comparison, target explanations have an average of 34.81 unique words. We emphasize that generating explanations is a very challenging task (evidenced by the low ROUGE scores and examples in the supplementary material), and that fully solving the generation task requires more work. \n\n"
+  },
+  {
+    "offset_inicio": "# **6 Concluding Discussions** \n\nIn this work, we conduct the first large-scale empirical",
+    "offset_fim": "ms learn from (Hancock et al., 2018; Rajani et al., 2019; Camburu et al., 2018).",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "6 Concluding Discussions",
+    "motivo": "Bloco iniciado pelo marcador da seção 6 e contendo todos os seus parágrafos conclusivos; termina imediatamente antes do marcador da seção seguinte, “Acknowledgments”.",
+    "texto": "# **6 Concluding Discussions** \n\nIn this work, we conduct the first large-scale empirical study of everyday explanations in the context of persuasion. We assemble a novel dataset and formulate a word-level prediction task to understand the selective nature of explanations. Our results suggest that the relation between an OP \n\nand PC plays an important role in predicting the echoing of content words, while a word’s noncontextual properties matter for stopwords. We show that vanilla LSTMs fail to learn some of the features we develop and that our proposed features can improve the performance in generating explanations using pointer networks. We also demonstrate the important role of nouns in shaping explanations. \n\nAlthough our approach strongly outperforms random baselines, the relatively low F1 scores indicate that predicting which word is echoed in explanations is a very challenging task. It follows that we are only able to derive a limited understanding of how people choose to echo words in explanations. The extent to which explanation construction is fundamentally random (Nisbett and Wilson, 1977), or whether there exist other unidentified patterns, is of course an open question. We hope that our study and the resources that we release encourage further work in understanding the pragmatics of explanations. \n\nThere are many promising research directions for future work in advancing the computational understanding of explanations. First, although /r/ChangeMyView has the useful property that its explanations are closely connected to its explananda, it is important to further investigate the extent to which our findings generalize beyond /r/ChangeMyView and Reddit and establish universal properties of explanations. Second, it is important to connect the words in explanations that we investigate here to the structure of explanations in pyschology (Lombrozo, 2006). Third, in addition to understanding what goes into an explanation, we need to understand what makes an explanation effective. A better understanding of explanations not only helps develop explainable AI, but also informs the process of collecting explanations that machine learning systems learn from (Hancock et al., 2018; Rajani et al., 2019; Camburu et al., 2018)."
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nWe thank Kimberley Buchan, anonymous reviewers, and members",
+    "offset_fim": "ussions; Jason Baumgartner for sharing the dataset that enabled this research. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgments",
+    "motivo": "Bloco iniciado pelo título de seção \"Acknowledgments\" e encerrado antes do próximo marcador estrutural, \"References\", na página seguinte.",
+    "texto": "# **Acknowledgments** \n\nWe thank Kimberley Buchan, anonymous reviewers, and members of the NLP+CSS research group at CU Boulder for their insightful comments and discussions; Jason Baumgartner for sharing the dataset that enabled this research. "
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "References",
+    "motivo": "O título não numerado \"References\" inicia uma unidade própria; o bloco contém apenas esse cabeçalho e termina imediatamente antes da primeira entrada bibliográfica, \"- Colin R Blyth...\".",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Colin R Blyth. 1972. On Simpson’s paradox and the sure-thing principle. _Journal of",
+    "offset_fim": "sure-thing principle. _Journal of the American Statistical Association_ , 67(338):364–366.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Blyth (1972) — On Simpson’s paradox and the sure-thing principle",
+    "motivo": "É a primeira entrada bibliográfica visível. Cada referência é uma unidade própria; o bloco começa no marcador “- Colin R Blyth” e termina antes da entrada seguinte, de Oana-Maria Camburu.",
+    "texto": "- Colin R Blyth. 1972. On Simpson’s paradox and the sure-thing principle. _Journal of the American Statistical Association_ , 67(338):364–366."
+  },
+  {
+    "offset_inicio": "- Oana-Maria Camburu, Tim Rockt¨aschel, Thomas Lukasiewicz, and Phil Blunsom. 2018.",
+    "offset_fim": "Natural language inference with natural language explanations. In _Proceedings of NeurIPS_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Oana-Maria Camburu et al. (2018), e-SNLI",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho; inicia no marcador de item \"- Oana-Maria Camburu\" e termina imediatamente antes da entrada seguinte, \"- Tianqi Chen\".",
+    "texto": "- Oana-Maria Camburu, Tim Rockt¨aschel, Thomas Lukasiewicz, and Phil Blunsom. 2018. e-SNLI: Natural language inference with natural language explanations. In _Proceedings of NeurIPS_ ."
+  },
+  {
+    "offset_inicio": "- Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A scalable tree boosting system.",
+    "offset_fim": "n. 2016. XGBoost: A scalable tree boosting system. In _Proceedings of KDD_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Chen e Guestrin (2016), XGBoost",
+    "motivo": "É a primeira entrada bibliográfica completa visível; começa no marcador de item \"- Tianqi Chen...\" e termina imediatamente antes da entrada seguinte, \"- CMV moderators. 2019a.\".",
+    "texto": "- Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A scalable tree boosting system. In _Proceedings of KDD_ ."
+  },
+  {
+    "offset_inicio": "- CMV moderators. 2019a. CMV media coverage. https://changemyview.net/ subreddit/#media-coverage. [Online; accessed 27-Apr-2019].",
+    "offset_fim": "CMV media coverage. https://changemyview.net/ subreddit/#media-coverage. [Online; accessed 27-Apr-2019].",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "CMV moderators (2019a) — CMV media coverage",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item e termina imediatamente antes da entrada seguinte, \"CMV moderators. 2019b\".",
+    "texto": "- CMV moderators. 2019a. CMV media coverage. https://changemyview.net/ subreddit/#media-coverage. [Online; accessed 27-Apr-2019]."
+  },
+  {
+    "offset_inicio": "- CMV moderators. 2019b. The Delta System. https://www.reddit.com/r/ changemyview",
+    "offset_fim": "https://www.reddit.com/r/ changemyview/wiki/deltasystem. [Online; accessed 27-Apr-2019].",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "CMV moderators (2019b), The Delta System",
+    "motivo": "É a primeira entrada bibliográfica exibida, iniciada pelo marcador de item \"-\"; termina antes da entrada seguinte, de Cristian Danescu-Niculescu-Mizil et al.",
+    "texto": "- CMV moderators. 2019b. The Delta System. https://www.reddit.com/r/ changemyview/wiki/deltasystem. [Online; accessed 27-Apr-2019]."
+  },
+  {
+    "offset_inicio": "- Cristian Danescu-Niculescu-Mizil, Michael Gamon, and Susan Dumais. 2011. Mark my",
+    "offset_fim": "2011. Mark my words!: Linguistic style accommodation in social media. In _Proceedings of WWW_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Danescu-Niculescu-Mizil, Gamon e Dumais (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de item \"-\" e termina no ponto final imediatamente antes da entrada bibliográfica seguinte.",
+    "texto": "- Cristian Danescu-Niculescu-Mizil, Michael Gamon, and Susan Dumais. 2011. Mark my words!: Linguistic style accommodation in social media. In _Proceedings of WWW_ ."
+  },
+  {
+    "offset_inicio": "- Cristian Danescu-Niculescu-Mizil, Lillian Lee, Bo Pang, and Jon Kleinberg. Echoes of power: Language effects",
+    "offset_fim": "Language effects and power differences in social interaction. In _Proceedings of WWW_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Danescu-Niculescu-Mizil et al. — Echoes of power",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item com os autores e termina antes da entrada seguinte, de Finale Doshi-Velez e Been Kim.",
+    "texto": "- Cristian Danescu-Niculescu-Mizil, Lillian Lee, Bo Pang, and Jon Kleinberg. Echoes of power: Language effects and power differences in social interaction. In _Proceedings of WWW_ ."
+  },
+  {
+    "offset_inicio": "- Finale Doshi-Velez and Been Kim. 2017. Towards a rigorous science of interpretable",
+    "offset_fim": "rigorous science of interpretable machine learning. _arXiv preprint arXiv:1702.08608_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Doshi-Velez and Kim (2017)",
+    "motivo": "É a primeira entrada bibliográfica visível; começa no marcador \"- Finale Doshi-Velez...\" e termina imediatamente antes da entrada seguinte, \"- Esin Durmus...\".",
+    "texto": "- Finale Doshi-Velez and Been Kim. 2017. Towards a rigorous science of interpretable machine learning. _arXiv preprint arXiv:1702.08608_ ."
+  },
+  {
+    "offset_inicio": "- Esin Durmus and Claire Cardie. 2018. Exploring the role of prior beliefs for argument persuasion. In _Proceedings of NAACL_ .",
+    "offset_fim": "Exploring the role of prior beliefs for argument persuasion. In _Proceedings of NAACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Durmus and Cardie (2018) — Exploring the role of prior beliefs for argument persuasion",
+    "motivo": "É a primeira entrada bibliográfica visível; cada referência constitui uma unidade própria. O bloco começa no marcador \"-\" desta entrada e termina antes da referência seguinte, de Howard Giles e Tania Ogay.",
+    "texto": "- Esin Durmus and Claire Cardie. 2018. Exploring the role of prior beliefs for argument persuasion. In _Proceedings of NAACL_ ."
+  },
+  {
+    "offset_inicio": "- Howard Giles and Tania Ogay. 2007. Communication accommodation theory. _Explaining",
+    "offset_fim": "cation: Contemporary theories and exemplars_ , pages 293– 310.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Howard Giles and Tania Ogay (2007)",
+    "motivo": "É a primeira entrada bibliográfica visível; começa no marcador de item da referência de Giles e Ogay e termina imediatamente antes da próxima entrada, de Jiatao Gu et al.",
+    "texto": "- Howard Giles and Tania Ogay. 2007. Communication accommodation theory. _Explaining communication: Contemporary theories and exemplars_ , pages 293– 310."
+  },
+  {
+    "offset_inicio": "- Jiatao Gu, Zhengdong Lu, Hang Li, and Victor O. K. Li. 2016. Incorporating Copying",
+    "offset_fim": "2016. Incorporating Copying Mechanism in Sequence-to-Sequence Learning. In _Proceedings of ACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Gu et al. (2016) — Incorporating Copying Mechanism in Sequence-to-Sequence Learning",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador da referência de Jiatao Gu et al. e termina antes da entrada seguinte, de Riccardo Guidotti et al.",
+    "texto": "- Jiatao Gu, Zhengdong Lu, Hang Li, and Victor O. K. Li. 2016. Incorporating Copying Mechanism in Sequence-to-Sequence Learning. In _Proceedings of ACL_ ."
+  },
+  {
+    "offset_inicio": "- Riccardo Guidotti, Anna Monreale, Salvatore Ruggieri, Franco Turini, Fosca Giannotti,",
+    "offset_fim": "black box models. _ACM computing surveys (CSUR)_ , 51(5):93. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Guidotti et al. (2019) — A survey of methods for explaining black box models",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"- Riccardo Guidotti\" e termina imediatamente antes da entrada seguinte, de Ivan Habernal e Iryna Gurevych.",
+    "texto": "- Riccardo Guidotti, Anna Monreale, Salvatore Ruggieri, Franco Turini, Fosca Giannotti, and Dino Pedreschi. 2019. A survey of methods for explaining black box models. _ACM computing surveys (CSUR)_ , 51(5):93. "
+  },
+  {
+    "offset_inicio": "- Ivan Habernal and Iryna Gurevych. 2016. What makes a convincing argument? Empirical analysis and detecting attributes of convincingness in web argumentation.",
+    "offset_fim": "attributes of convincingness in web argumentation. In _Proceedings of EMNLP_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Habernal and Gurevych (2016)",
+    "motivo": "É a primeira entrada bibliográfica visível; começa no marcador de item \"-\" e termina imediatamente antes da próxima referência, iniciada por \"- Braden Hancock\".",
+    "texto": "- Ivan Habernal and Iryna Gurevych. 2016. What makes a convincing argument? Empirical analysis and detecting attributes of convincingness in web argumentation. In _Proceedings of EMNLP_ . "
+  },
+  {
+    "offset_inicio": "- Braden Hancock, Paroma Varma, Stephanie Wang, Martin Bringmann, Percy Liang, and",
+    "offset_fim": "2018. Training Classifiers with Natural Language Explanations. In _Proceedings of ACL_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Braden Hancock et al. (2018) — Training Classifiers with Natural Language Explanations",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item da referência de Hancock et al. e termina imediatamente antes da entrada seguinte, de Virgina Heffernan.",
+    "texto": "- Braden Hancock, Paroma Varma, Stephanie Wang, Martin Bringmann, Percy Liang, and Christopher R. 2018. Training Classifiers with Natural Language Explanations. In _Proceedings of ACL_ . "
+  },
+  {
+    "offset_inicio": "- Virgina Heffernan. 2018. Our best hope for civil discourse online is on ... Reddit. _Wired_ .",
+    "offset_fim": "Virgina Heffernan. 2018. Our best hope for civil discourse online is on ... Reddit. _Wired_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Virgina Heffernan (2018)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item e termina imediatamente antes da referência seguinte, de Carl G Hempel e Paul Oppenheim.",
+    "texto": "- Virgina Heffernan. 2018. Our best hope for civil discourse online is on ... Reddit. _Wired_ ."
+  },
+  {
+    "offset_inicio": "- Carl G Hempel and Paul Oppenheim. 1948. Studies in the logic of explanation. _Philosophy of science_ , 15(2):135–175.",
+    "offset_fim": "Carl G Hempel and Paul Oppenheim. 1948. Studies in the logic of explanation. _Philosophy of science_ , 15(2):135–175.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Hempel and Oppenheim (1948) — Studies in the logic of explanation",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências visível; inicia no marcador '-' da referência e termina antes da entrada seguinte, de Matthew Honnibal e Ines Montani.",
+    "texto": "- Carl G Hempel and Paul Oppenheim. 1948. Studies in the logic of explanation. _Philosophy of science_ , 15(2):135–175."
+  },
+  {
+    "offset_inicio": "- Matthew Honnibal and Ines Montani. 2017. spaCy 2: Natural language understanding with Bloom",
+    "offset_fim": "with Bloom embeddings, convolutional neural networks and incremental parsing.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Honnibal e Montani (2017) — spaCy 2",
+    "motivo": "É a primeira entrada bibliográfica visível; começa no marcador de lista da referência de Honnibal e Montani e termina imediatamente antes da entrada seguinte, de Benjamin D. Horne et al.",
+    "texto": "- Matthew Honnibal and Ines Montani. 2017. spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing."
+  },
+  {
+    "offset_inicio": "- Benjamin D Horne, Dorit Nevo, John O’Donovan, JinHee Cho, and Sibel Adali. 2019.",
+    "offset_fim": " Does ai assistance help everyone? In _Proceedings of ICWSM_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Horne et al. (2019) — Rating reliability and bias in news articles",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de lista “- Benjamin D Horne...” e termina imediatamente antes da entrada seguinte, “- Frank C Keil...”.",
+    "texto": "- Benjamin D Horne, Dorit Nevo, John O’Donovan, JinHee Cho, and Sibel Adali. 2019. Rating reliability and bias in news articles: Does ai assistance help everyone? In _Proceedings of ICWSM_ . "
+  },
+  {
+    "offset_inicio": "- Frank C Keil. 2006. Explanation and understanding. _Annu. Rev. Psychol._ , 57:227",
+    "offset_fim": "Frank C Keil. 2006. Explanation and understanding. _Annu. Rev. Psychol._ , 57:227–254. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Frank C Keil (2006) — Explanation and understanding",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de item “- Frank C Keil...” e termina imediatamente antes da entrada seguinte, “- Guillaume Klein...”.",
+    "texto": "- Frank C Keil. 2006. Explanation and understanding. _Annu. Rev. Psychol._ , 57:227–254. "
+  },
+  {
+    "offset_inicio": "- Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander M. Rush. 2017. OpenNMT: Open-source toolkit for neural machine translation. In _Proceedings of ACL_ . ",
+    "offset_fim": "Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander M. Rush. 2017. OpenNMT: Open-source toolkit for neural machine translation. In _Proceedings of ACL_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Klein et al. (2017), OpenNMT",
+    "motivo": "É a primeira entrada completa da lista de referências no trecho. Inicia no marcador de item “- Guillaume Klein...” e termina imediatamente antes da próxima referência, “- Vivian Lai...”.",
+    "texto": "- Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander M. Rush. 2017. OpenNMT: Open-source toolkit for neural machine translation. In _Proceedings of ACL_ . "
+  },
+  {
+    "offset_inicio": "- Vivian Lai and Chenhao Tan. 2019. On human predictions with explanations and predictions of machine learning models: A case study on deception detection. In _Proceedings of FAT*_ . ",
+    "offset_fim": "machine learning models: A case study on deception detection. In _Proceedings of FAT*_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Vivian Lai and Chenhao Tan (2019)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, de Jure Leskovec, Lars Backstrom e Jon Kleinberg.",
+    "texto": "- Vivian Lai and Chenhao Tan. 2019. On human predictions with explanations and predictions of machine learning models: A case study on deception detection. In _Proceedings of FAT*_ . "
+  },
+  {
+    "offset_inicio": "- Jure Leskovec, Lars Backstrom, and Jon Kleinberg. 2009. Meme-tracking and the dynamics of the news cycle.",
+    "offset_fim": "Lars Backstrom, and Jon Kleinberg. 2009. Meme-tracking and the dynamics of the news cycle. In _Proceedings of KDD_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Leskovec, Backstrom e Kleinberg (2009)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências visível. Inicia no marcador \"-\" com os autores e termina imediatamente antes da próxima entrada, de Chin-Yew Lin.",
+    "texto": "- Jure Leskovec, Lars Backstrom, and Jon Kleinberg. 2009. Meme-tracking and the dynamics of the news cycle. In _Proceedings of KDD_ ."
+  },
+  {
+    "offset_inicio": "- Chin-Yew Lin. 2004. ROUGE: A package for automatic evaluation of summaries. In _Text",
+    "offset_fim": "_ , pages 74–81, Barcelona, Spain. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Chin-Yew Lin (2004) — ROUGE",
+    "motivo": "É a primeira entrada bibliográfica identificável; começa no marcador de item \"-\" de Chin-Yew Lin e termina imediatamente antes da entrada seguinte, de Wang Ling.",
+    "texto": "- Chin-Yew Lin. 2004. ROUGE: A package for automatic evaluation of summaries. In _Text Summarization Branches Out: Proceedings of the ACL-04 Workshop_ , pages 74–81, Barcelona, Spain. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Wang Ling, Phil Blunsom, Edward Grefenstette, Karl Moritz Hermann, Tom´aˇs Koˇcisk´y,",
+    "offset_fim": "pages 599–609, Berlin, Germany. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Wang et al. (2016) — Latent predictor networks for code generation",
+    "motivo": "É a primeira entrada bibliográfica visível; cada referência constitui uma unidade própria. O bloco começa no marcador \"- Wang Ling\" e termina imediatamente antes da entrada seguinte, \"- Marco Lippi\".",
+    "texto": "- Wang Ling, Phil Blunsom, Edward Grefenstette, Karl Moritz Hermann, Tom´aˇs Koˇcisk´y, Fumin Wang, and Andrew Senior. 2016. Latent predictor networks for code generation. In _Proceedings of ACL_ , pages 599–609, Berlin, Germany. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Marco Lippi and Paolo Torroni. 2016. Argumentation mining: State of the art and emerging trends. _ACM Transactions on Internet Technology (TOIT)_ , 16(2):10.",
+    "offset_fim": "Argumentation mining: State of the art and emerging trends. _ACM Transactions on Internet Technology (TOIT)_ , 16(2):10.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Marco Lippi and Paolo Torroni (2016)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"- Marco Lippi...\" e termina após \"16(2):10.\", imediatamente antes da entrada de Zachary C Lipton.",
+    "texto": "- Marco Lippi and Paolo Torroni. 2016. Argumentation mining: State of the art and emerging trends. _ACM Transactions on Internet Technology (TOIT)_ , 16(2):10."
+  },
+  {
+    "offset_inicio": "- Zachary C Lipton. 2016. The mythos of model interpretability. _arXiv preprint arXiv:1606.03490_ .",
+    "offset_fim": "The mythos of model interpretability. _arXiv preprint arXiv:1606.03490_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Zachary C. Lipton (2016) — The mythos of model interpretability",
+    "motivo": "É a primeira entrada bibliográfica completa visível; começa no marcador de item \"- Zachary C Lipton\" e termina antes da entrada seguinte, de Tania Lombrozo.",
+    "texto": "- Zachary C Lipton. 2016. The mythos of model interpretability. _arXiv preprint arXiv:1606.03490_ ."
+  },
+  {
+    "offset_inicio": "- Tania Lombrozo. 2006. The structure and function of explanations. _Trends in cognitive sciences_ , 10(10):464–470.",
+    "offset_fim": "Tania Lombrozo. 2006. The structure and function of explanations. _Trends in cognitive sciences_ , 10(10):464–470.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Lombrozo (2006) — The structure and function of explanations",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de item \"- Tania Lombrozo\" e termina após \"464–470.\", imediatamente antes da entrada seguinte, de Edward Loper e Steven Bird.",
+    "texto": "- Tania Lombrozo. 2006. The structure and function of explanations. _Trends in cognitive sciences_ , 10(10):464–470."
+  },
+  {
+    "offset_inicio": "- Edward Loper and Steven Bird. 2002. NLTK: the natural language toolkit. _arXiv preprint cs/0205028_ .",
+    "offset_fim": "Steven Bird. 2002. NLTK: the natural language toolkit. _arXiv preprint cs/0205028_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Edward Loper e Steven Bird (2002)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. A unidade começa no marcador de item da referência e termina antes da entrada seguinte, de Stephanie M. Lukin et al.",
+    "texto": "- Edward Loper and Steven Bird. 2002. NLTK: the natural language toolkit. _arXiv preprint cs/0205028_ ."
+  },
+  {
+    "offset_inicio": "- Stephanie M Lukin, Pranav Anand, Marilyn Walker, and Steve Whittaker. 2017. Argument",
+    "offset_fim": "strength is in the eye of the beholder: Audience effects in persuasion. In _Proceedings of EACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Lukin et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Cada referência constitui uma unidade própria; o bloco começa no marcador \"-\" da entrada de Lukin et al. e termina após \"_Proceedings of EACL_ .\", antes do número de página e da próxima referência.",
+    "texto": "- Stephanie M Lukin, Pranav Anand, Marilyn Walker, and Steve Whittaker. 2017. Argument strength is in the eye of the beholder: Audience effects in persuasion. In _Proceedings of EACL_ ."
+  },
+  {
+    "offset_inicio": "- Mitchell P. Marcus, Beatrice Santorini, and Mary A. Marcinkiewicz. 1994. Building a large annotated corpus of english: The penn treebank.",
+    "offset_fim": "Building a large annotated corpus of english: The penn treebank. _Computational Linguistics_ , 19:313–330. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Marcus, Santorini e Marcinkiewicz (1994) — Penn Treebank",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de item “- Mitchell P. Marcus...” e termina imediatamente antes da entrada seguinte, “- Tim Miller...”.",
+    "texto": "- Mitchell P. Marcus, Beatrice Santorini, and Mary A. Marcinkiewicz. 1994. Building a large annotated corpus of english: The penn treebank. _Computational Linguistics_ , 19:313–330. "
+  },
+  {
+    "offset_inicio": "- Tim Miller. 2018. Explanation in artificial intelligence: Insights from the social",
+    "offset_fim": "cial intelligence: Insights from the social sciences. _Artificial Intelligence_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Tim Miller (2018) — Explanation in artificial intelligence",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto. Inicia no marcador de item \"- Tim Miller\" e termina imediatamente antes da entrada seguinte, \"- Richard E Nisbett\".",
+    "texto": "- Tim Miller. 2018. Explanation in artificial intelligence: Insights from the social sciences. _Artificial Intelligence_ . "
+  },
+  {
+    "offset_inicio": "- Richard E Nisbett and Timothy D Wilson. 1977. Telling more than we can know: Verbal",
+    "offset_fim": "reports on mental processes. _Psychological review_ , 84(3):231. \n\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Nisbett and Wilson (1977)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Richard E Nisbett...\" e termina antes da entrada seguinte, \"- Jeffrey Pennington...\".",
+    "texto": "- Richard E Nisbett and Timothy D Wilson. 1977. Telling more than we can know: Verbal reports on mental processes. _Psychological review_ , 84(3):231. \n\n"
+  },
+  {
+    "offset_inicio": "- Jeffrey Pennington, Richard Socher, and Christopher Manning. 2014. GloVe: Global Vectors for Word Representation.",
+    "offset_fim": "In _Proceedings of EMNLP_ , pages 1532–1543, Doha, Qatar. Association for Computational Linguistics.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Pennington, Socher e Manning (2014) — GloVe",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item da referência de Pennington et al. e termina imediatamente antes da entrada seguinte, de Barbara Plank et al.",
+    "texto": "- Jeffrey Pennington, Richard Socher, and Christopher Manning. 2014. GloVe: Global Vectors for Word Representation. In _Proceedings of EMNLP_ , pages 1532–1543, Doha, Qatar. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Barbara Plank, Anders Søgaard, and Goldberg Yoav. 2016. Multilingual part-of-speech tagging with bidirectional long short-term memory models and auxiliary loss.",
+    "offset_fim": "with bidirectional long short-term memory models and auxiliary loss. In _Proceedings of ACL (short papers)_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Barbara Plank, Anders Søgaard e Goldberg Yoav (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador de item '- Barbara Plank...' e termina imediatamente antes da próxima entrada, '- Martin F. Porter...'.",
+    "texto": "- Barbara Plank, Anders Søgaard, and Goldberg Yoav. 2016. Multilingual part-of-speech tagging with bidirectional long short-term memory models and auxiliary loss. In _Proceedings of ACL (short papers)_ . "
+  },
+  {
+    "offset_inicio": "- Martin F. Porter. 1980. An algorithm for suffix stripping. _Program_ , 14(2):130–137.",
+    "offset_fim": "- Martin F. Porter. 1980. An algorithm for suffix stripping. _Program_ , 14(2):130–137.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Martin F. Porter (1980)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item e termina antes da entrada seguinte, de Sindhu Raghavan et al.",
+    "texto": "- Martin F. Porter. 1980. An algorithm for suffix stripping. _Program_ , 14(2):130–137."
+  },
+  {
+    "offset_inicio": "- Sindhu Raghavan, Adriana Kovashka, and Raymond Mooney. 2010. Authorship attribution using probabilistic context-free grammars.",
+    "offset_fim": "attribution using probabilistic context-free grammars. In _Proceedings of ACL (short papers)_ , pages 38–42.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Raghavan, Kovashka e Mooney (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página. Inicia no marcador de item \"- Sindhu Raghavan\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Nazneen Fatema Rajani\".",
+    "texto": "- Sindhu Raghavan, Adriana Kovashka, and Raymond Mooney. 2010. Authorship attribution using probabilistic context-free grammars. In _Proceedings of ACL (short papers)_ , pages 38–42."
+  },
+  {
+    "offset_inicio": "- Nazneen Fatema Rajani, Bryan McCann, Caiming Xiong, and Richard Socher. 2019.",
+    "offset_fim": "Explain yourself! leveraging language models for commonsense reasoning. In _Proceedings of ACL_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Rajani et al. (2019) — Explain yourself!",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador de item e termina antes do próximo marcador de entrada bibliográfica.",
+    "texto": "- Nazneen Fatema Rajani, Bryan McCann, Caiming Xiong, and Richard Socher. 2019. Explain yourself! leveraging language models for commonsense reasoning. In _Proceedings of ACL_ ."
+  },
+  {
+    "offset_inicio": "   - Chenhao Tan, Hao Peng, and Noah A. Smith. 2018. You are no Jack Kennedy: On media selection of highlights from presidential debates. In _Proceedings of WWW_ . ",
+    "offset_fim": " Tan, Hao Peng, and Noah A. Smith. 2018. You are no Jack Kennedy: On media selection of highlights from presidential debates. In _Proceedings of WWW_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Chenhao Tan, Hao Peng e Noah A. Smith (2018)",
+    "motivo": "A primeira entrada visível é continuação de uma referência iniciada antes do trecho. Esta é a primeira referência bibliográfica completa, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da referência de Oriol Vinyals et al.",
+    "texto": "   - Chenhao Tan, Hao Peng, and Noah A. Smith. 2018. You are no Jack Kennedy: On media selection of highlights from presidential debates. In _Proceedings of WWW_ . "
+  },
+  {
+    "offset_inicio": "   - Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. In _Proceedings of NeurIPS_ , pages 2692–2700. ",
+    "offset_fim": "Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. In _Proceedings of NeurIPS_ , pages 2692–2700.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Vinyals, Fortunato e Jaitly (2015) — Pointer networks",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências na página 11; inicia no marcador de item \"-\" e termina antes da entrada seguinte, de Marilyn A. Walker.",
+    "texto": "   - Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. In _Proceedings of NeurIPS_ , pages 2692–2700."
+  },
+  {
+    "offset_inicio": "   - Marilyn A Walker, Pranav Anand, Robert Abbott, and Ricky Grant. 2012. Stance classification using dialogic properties",
+    "offset_fim": "2012. Stance classification using dialogic properties of persuasion. In _Proceedings of NAACL_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Walker et al. (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página. Inicia no marcador de item \"- Marilyn A Walker...\" e termina antes da entrada seguinte, \"- Lu Wang...\".",
+    "texto": "   - Marilyn A Walker, Pranav Anand, Robert Abbott, and Ricky Grant. 2012. Stance classification using dialogic properties of persuasion. In _Proceedings of NAACL_ ."
+  },
+  {
+    "offset_inicio": "- Lu Wang, Nick Beauchamp, Sarah Shugars, and Kechen Qin. 2017. Winning on the merits: The joint effects of content and style on debate outcomes.",
+    "offset_fim": "The joint effects of content and style on debate outcomes. _Transactions of the Association for Computational Linguistics_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Lu Wang et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador de item \"-\" e termina ao fim da referência, imediatamente antes da entrada de Robert A. Wilson e Frank Keil.",
+    "texto": "- Lu Wang, Nick Beauchamp, Sarah Shugars, and Kechen Qin. 2017. Winning on the merits: The joint effects of content and style on debate outcomes. _Transactions of the Association for Computational Linguistics_ ."
+  },
+  {
+    "offset_inicio": "- Robert A. Wilson and Frank Keil. 1998. The Shadows and Shallows of Explanation. _Minds",
+    "offset_fim": "The Shadows and Shallows of Explanation. _Minds and Machines_ , 8(1):137–159.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Robert A. Wilson and Frank Keil (1998)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Robert A. Wilson...\" e termina imediatamente antes da entrada seguinte, \"- James Woodward...\".",
+    "texto": "- Robert A. Wilson and Frank Keil. 1998. The Shadows and Shallows of Explanation. _Minds and Machines_ , 8(1):137–159."
+  },
+  {
+    "offset_inicio": "- James Woodward. 2005. _Making things happen: A theory of causal explanation_ . Oxford university press. ",
+    "offset_fim": "James Woodward. 2005. _Making things happen: A theory of causal explanation_ . Oxford university press. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: James Woodward (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; começa no marcador de item \"-\" e termina antes da entrada seguinte, de Justine Zhang et al.",
+    "texto": "- James Woodward. 2005. _Making things happen: A theory of causal explanation_ . Oxford university press. "
+  },
+  {
+    "offset_inicio": "- Justine Zhang, Ravi Kumar, Sujith Ravi, and Cristian Danescu-Niculescu-Mizil. 2016. Conversational flow in Oxford-style debates. In _Proceedings of NAACL_ .",
+    "offset_fim": "Cristian Danescu-Niculescu-Mizil. 2016. Conversational flow in Oxford-style debates. In _Proceedings of NAACL_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Justine Zhang et al. (2016) — Conversational flow in Oxford-style debates",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Justine Zhang\" e termina imediatamente antes da entrada seguinte, \"- Allan G Reynolds\".",
+    "texto": "- Justine Zhang, Ravi Kumar, Sujith Ravi, and Cristian Danescu-Niculescu-Mizil. 2016. Conversational flow in Oxford-style debates. In _Proceedings of NAACL_ . "
+  },
+  {
+    "offset_inicio": "- Allan G Reynolds and Paul W Flagg. 1976. Recognition memory for elements of sentences.",
+    "offset_fim": "Recognition memory for elements of sentences. _Memory & Cognition_ , 4(4):422–432. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Reynolds e Flagg (1976)",
+    "motivo": "É a primeira entrada bibliográfica completa da lista de referências; inicia no marcador de item e termina imediatamente antes da entrada seguinte.",
+    "texto": "- Allan G Reynolds and Paul W Flagg. 1976. Recognition memory for elements of sentences. _Memory & Cognition_ , 4(4):422–432. "
+  },
+  {
+    "offset_inicio": "- Marco Tulio Ribeiro, Sameer Singh, and Carlos Guestrin. 2016. Why should I trust you?:",
+    "offset_fim": "you?: Explaining the predictions of any classifier. In _Proceedings of KDD_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Ribeiro, Singh e Guestrin (2016)",
+    "motivo": "É a primeira entrada bibliográfica visível na página 11; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, de Wesley C. Salmon.",
+    "texto": "- Marco Tulio Ribeiro, Sameer Singh, and Carlos Guestrin. 2016. Why should I trust you?: Explaining the predictions of any classifier. In _Proceedings of KDD_ ."
+  },
+  {
+    "offset_inicio": "- Wesley C Salmon. 2006. _Four decades of scientific explanation_ . University of Pittsburgh press.",
+    "offset_fim": "- Wesley C Salmon. 2006. _Four decades of scientific explanation_ . University of Pittsburgh press.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Wesley C Salmon (2006)",
+    "motivo": "Primeira entrada bibliográfica da lista de referências; inicia no marcador de item e termina imediatamente antes da entrada seguinte, de Abigail See et al.",
+    "texto": "- Wesley C Salmon. 2006. _Four decades of scientific explanation_ . University of Pittsburgh press."
+  },
+  {
+    "offset_inicio": "- Abigail See, Peter J. Liu, and Christopher D. Manning. 2017. Get To The Point: Summarization with Pointer-Generator Networks. In _Proceedings of ACL_ .",
+    "offset_fim": "Abigail See, Peter J. Liu, and Christopher D. Manning. 2017. Get To The Point: Summarization with Pointer-Generator Networks. In _Proceedings of ACL_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Abigail See et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item “- Abigail See...” e termina imediatamente antes da entrada seguinte de Matthew P. Simmons et al.",
+    "texto": "- Abigail See, Peter J. Liu, and Christopher D. Manning. 2017. Get To The Point: Summarization with Pointer-Generator Networks. In _Proceedings of ACL_ ."
+  },
+  {
+    "offset_inicio": "- Matthew P Simmons, Lada A Adamic, and Eytan Adar. 2011. Memes online: Extracted, subtracted, injected, and recollected. In _Proceedings of ICWSM_ . ",
+    "offset_fim": "Matthew P Simmons, Lada A Adamic, and Eytan Adar. 2011. Memes online: Extracted, subtracted, injected, and recollected. In _Proceedings of ICWSM_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Simmons, Adamic e Adar (2011)",
+    "motivo": "É a primeira entrada individual da lista de referências; inicia no marcador de item e termina imediatamente antes da próxima referência, de Swapna Somasundaran e Janyce Wiebe.",
+    "texto": "- Matthew P Simmons, Lada A Adamic, and Eytan Adar. 2011. Memes online: Extracted, subtracted, injected, and recollected. In _Proceedings of ICWSM_ . "
+  },
+  {
+    "offset_inicio": "- Swapna Somasundaran and Janyce Wiebe. 2009. Recognizing stances in online debates. In _Proceedings of ACL_ .",
+    "offset_fim": "- Swapna Somasundaran and Janyce Wiebe. 2009. Recognizing stances in online debates. In _Proceedings of ACL_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Somasundaran and Wiebe (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item da referência e termina imediatamente antes da próxima entrada, iniciada por “- Chenhao Tan”.",
+    "texto": "- Swapna Somasundaran and Janyce Wiebe. 2009. Recognizing stances in online debates. In _Proceedings of ACL_ ."
+  },
+  {
+    "offset_inicio": "- Chenhao Tan, Vlad Niculae, Cristian DanescuNiculescu-Mizil, and Lillian Lee. 2016. Winning Arguments: Interaction Dynamics and Persuasion",
+    "offset_fim": "- Chenhao Tan, Vlad Niculae, Cristian DanescuNiculescu-Mizil, and Lillian Lee. 2016. Winning Arguments: Interaction Dynamics and Persuasion",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Tan et al. (2016)",
+    "motivo": "É uma entrada individual da lista de referências, iniciada pelo marcador de item \"-\" e encerrada antes do número de página 2921.",
+    "texto": "- Chenhao Tan, Vlad Niculae, Cristian DanescuNiculescu-Mizil, and Lillian Lee. 2016. Winning Arguments: Interaction Dynamics and Persuasion"
+  }
+]

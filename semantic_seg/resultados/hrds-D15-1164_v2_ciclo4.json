@@ -1,0 +1,461 @@
+[
+  {
+    "offset_inicio": "# **Learning Semantic Representations for Nonterminals in Hierarchical Phrase-Based Translation** \n\n**Xing Wang, Deyi Xiong",
+    "offset_fim": "xingwsuda@gmail.com, _{_ dyxiong, minzhang _}_ @suda.edu.cn ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Learning Semantic Representations for Nonterminals in Hierarchical Phrase-Based Translation",
+    "motivo": "É o bloco do título do artigo, com autoria, afiliação e contatos; inicia no marcador de título e termina imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
+    "texto": "# **Learning Semantic Representations for Nonterminals in Hierarchical Phrase-Based Translation** \n\n**Xing Wang, Deyi Xiong**<sup>_∗_</sup> and **Min Zhang** Soochow University, Suzhou, China 215006 \n\nxingwsuda@gmail.com, _{_ dyxiong, minzhang _}_ @suda.edu.cn "
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nIn hierarchical phrase-based translation, coarse-grained nonterminal _X_ s may generate inappropriate translations due to the lack of sufficient information",
+    "offset_fim": "model significantly improves translation quality on NIST test sets. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "É a primeira unidade marcada do documento; inicia em “## **Abstract**” e termina imediatamente antes do marcador da seção “## **1 Introduction**”.",
+    "texto": "## **Abstract** \n\nIn hierarchical phrase-based translation, coarse-grained nonterminal _X_ s may generate inappropriate translations due to the lack of sufficient information for phrasal substitution. In this paper we propose a framework to refine nonterminals in hierarchical translation rules with real-valued semantic representations. The semantic representations are learned via a weighted mean value and a minimum distance method using phrase vector representations obtained from large scale monolingual corpus. Based on the learned semantic vectors, we build a semantic nonterminal refinement model to measure semantic similarities between phrasal substitutions and nonterminal _X_ s in translation rules. Experiment results on ChineseEnglish translation show that the proposed model significantly improves translation quality on NIST test sets. "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nHierarchical phrase-based translation (Chiang, 2007) explores",
+    "offset_fim": "Experiment results are reported in Section 6. Finally, we conclude our work in Section 7. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "A seção numerada 1 começa no marcador “## **1 Introduction**” na página 1 e inclui seu texto contínuo até imediatamente antes do marcador da seção seguinte, “## **2 Related Work**”, na página 2.",
+    "texto": "## **1 Introduction** \n\nHierarchical phrase-based translation (Chiang, 2007) explores formal synchronous context free grammar (SCFG) rules for translation. Two types of nonterminal symbols are used in translation rules: nonterminal _X_ in ordinary SCFG rules and nonterminal _S_ in glue rules that are specially introduced to concatenate nonterminal _X_ s in a monotonic manner. The same generic symbol _X_ for all ordinary nonterminals makes it difficult to distinguish and select proper translation rules. \n\nIn order to address this issue, researchers either use syntactic labels to annotate nonterminal _X_ s (Zollmann and Venugopal, 2006; Zollmann and Vogel, 2011; Li et al., 2012; Hanneman and Lavie, 2013), or employ syntactic information \n\n> _∗_ Corresponding author \n\nfrom parse trees to refine nonterminals with realvalued vectors (Venugopal et al., 2009; Huang et al., 2013). In addition to syntactic knowledge, semantic structures are also leveraged to refine nonterminals (Gao and Vogel, 2011). All these efforts focus on incorporating linguistic knowledge into hierarchical translation rules. \n\nUnfortunately, syntactic or semantic parsers for many languages are not accessible due to the lack of labeled training data. In contrast, a large amount of unlabeled data are easily available. Therefore, can we mine syntactic or semantic properties for nonterminals from unlabeled data? Or can we exploit these data to refine nonterminals for SMT? \n\nLearning semantic representations for terminals (words, multi-word phrases or sentences) from unlabeled data has achieved substantial progress in recent years (Mitchell and Lapata, 2008; Turian et al., 2010; Socher et al., 2010; Mikolov et al., 2013c; Blunsom et al., 2014). These representations have been used successfully in various NLP tasks. However, there is no attempt to learn semantic representations for nonterminals from unlabeled data. In this paper we propose a framework to learn semantic representations for nonterminal _X_ s in translation rules. Our framework is established on the basis of realvalued vector representations learned for multiword phrases, which are substituted with nonterminal _X_ s during hierarchical rule extraction. We propose a weighted mean value and a minimum distance method to obtain nonterminal representations from representations of their phrasal substitutions. We further build a semantic nonterminal refinement model with semantic representations of nonterminals to compute similarities between phrasal substitutions and nonterminals. In doing so, we want to enhance phrasal substitution and translation rule selection during decoding. \n\nThe big challenge here is that thousands of tar- \n\n1391 \n\n_Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing_ , pages 1391–1400, Lisbon, Portugal, 17-21 September 2015. _⃝_ c 2015 Association for Computational Linguistics.\n\n<!-- PÁGINA 2 -->\nget phrasal substitutions will be generated for one single nonterminal during decoding. Computing vector representations for all these phrases will be very time-consuming. We therefore introduce two different methods to handle it. In the first method, we project representations of source phrases onto their target counterparts linearly/nonlinearly via a neural network. These projected vectors are used as approximations to real target representations to compute semantic similarities. In the second method, we decode sentences in two passes. The first pass collects target phrase candidates from n-best translations of sentences generated by the baseline. The second pass calculates vector representations of these collected target phrases and then computes similarities between them and target-side nonterminals. \n\nOur contributions are two-fold. First, we learn semantic representations for nonterminals from their phrasal substitutions with two different methods. This is the first time, to the best of our knowledge, to induce semantic representations for nonterminals from unlabeled data in the context of SMT. Second, we successfully address the issue of time-consuming target-side phrase-nonterminal similarity computation mentioned above. We incorporate both source-/target-side semantic nonterminal refinement model and their combination based on learned nonterminal representations into translation system. Experiment results show that our method can achieve an improvement of 1.16 BLEU points over the baseline system on NIST MT evaluation test sets. \n\nThe rest of this paper is organized as follows. Section 2 briefly reviews related work. Section 3 presents our approach of learning semantic vectors for nonterminals, followed by Section 4 describing the details of our semantic nonterminal refinement model. Section 5 introduces the integration of the proposed model into SMT. Experiment results are reported in Section 6. Finally, we conclude our work in Section 7. \n\n"
+  },
+  {
+    "offset_inicio": "## **2 Related Work** \n\nA variety of approaches have been explored for nonterminal refinement",
+    "offset_fim": "capture both syntactic and semantic properties (Turian et al., 2010; Socher et al., 2010). ",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2 Related Work",
+    "motivo": "O bloco inicia no marcador da seção 2 e reúne todo o texto de trabalho relacionado, atravessando a quebra de página, até imediatamente antes do marcador da seção 3.",
+    "texto": "## **2 Related Work** \n\nA variety of approaches have been explored for nonterminal refinement in hierarchical phrasebased translation. These approaches can be categorized into two groups: 1) augmenting the nonterminal symbol _X_ with informative labels, and 2) attaching distributional linguistic knowledge to each nonterminal in hierarchical rules. The former \n\nonly allows substitution operations with matched labels. The latter normally builds an additional model as a new feature of the log-linear model to incorporate attached knowledge. \n\nAmong approaches which directly refine the single label to more fine-grained labels, syntactic and semantic knowledge are explored in various ways. The syntactically augmented translation model (SAMT) proposed by Zollmann and Venugopal (2006) uses syntactic categories extracted from target-side parse trees to augment nonterminals in hierarchical rules. Unfortunately, there is a data sparseness problem in this model due to thousands of extracted syntactic categories. One solution to address this issue is to reduce the number of syntactic categories. Zollmann and Vogel (2011) use word tags, generated by either POS tagger or unsupervised word class induction, instead of syntactic categories. Hanneman and Lavie (2013) coarsen the label set by introducing a label collapsing algorithm to SAMT grammars (Zollmann and Venugopal, 2006). Yet another solution is easing restrictions on label matching. Shen et al. (2009) penalize substitution with unmatched labels while Chiang (2010) uses soft match features to model substitutions with various labels. Similar to Zollmann and Venugopal (2006), Hoang and Koehn (2010) decorate some hierarchical rules with source-side syntax information and use undecorated, decorated, and partially decorated rules in their translation model. Mylonakis and Sima’an (2011) employ source-side syntax-based labels to define a joint probability synchronous grammar. Combinatory Categorial Grammar (CCG) labels or CCG contextual labels are also used to enrich nonterminals (Almaghout et al., 2011; Weese et al., 2012). Li et al. (2012) incorporate head information extracted from source-side dependency structures into translation rules. Besides, semantic knowledge is also used to refine nonterminals. Gao and Vogel (2011) utilize target-side semantic roles to form SRL-aware SCFG rules. Most of approaches introduced here explicitly require syntactic or semantic parsers trained on manually labeled data. \n\nOn the other hand, efforts have also been directed towards attaching distributional linguistic knowledge to nonterminals. Venugopal et al. (2009) propose a preference grammar to annotate nonterminals based on preference distributions of syntactic categories. Huang et al. (2010) learn la- \n\n1392\n\n<!-- PÁGINA 3 -->\ntent syntactic distributions for each nonterminal. They use these distributions to decorate nonterminal _X_ s in SCFG rules with a real-valued feature vectors and utilize these vectors to measure the similarities between source phrases and applied rules. Similar to this work, Huang et al. (2013) utilize treebank tags based on dependency parsing to learn latent distributions. Cao et al. (2014) attach translation rules with dependency knowledge, which contains both dependency relations inside rules and dependency relations between rules and their contexts. \n\nThe difference of our work from these studies is that our semantic representations are learned from unlabeled bilingual (or monolingual) data and do not depend on any linguistic resources, e.g., parsers. We also believe that our model is able to exploit both syntactic and semantic information for nonterminals since vector representations learned in our way are able to capture both syntactic and semantic properties (Turian et al., 2010; Socher et al., 2010). "
+  },
+  {
+    "offset_inicio": "# **3 Learning Semantic Representations for Nonterminals** \n\nIn our framework, semantic",
+    "offset_fim": "Before discussing nonterminal representations, we briefly introduce vector representations for words and phrases. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3 Learning Semantic Representations for Nonterminals",
+    "motivo": "O bloco inicia no marcador da seção 3 e contém seu parágrafo introdutório. Termina imediatamente antes do marcador da subseção 3.1.",
+    "texto": "# **3 Learning Semantic Representations for Nonterminals** \n\nIn our framework, semantic representations for nonterminal _X_ s are automatically induced from word-aligned parallel corpus. In this section, we detail the essential component of our approach, i.e., how to learn semantic vectors for nonterminals and how to project source semantic vectors onto target language semantic space. Before discussing nonterminal representations, we briefly introduce vector representations for words and phrases. "
+  },
+  {
+    "offset_inicio": "## **3.1 Prerequisite: Learning Words and Phrases Representations** \n\nWe employ a neural method, specifically the continuous bag-of-words model",
+    "offset_fim": "structures of phrases or sentences. In this work, we adopt the unsupervised RAE to learn vector representations for phrases. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.1 Prerequisite: Learning Words and Phrases Representations",
+    "motivo": "O bloco inicia no marcador da subseção 3.1 e reúne todo o texto sobre representações de palavras e frases por RAE, terminando imediatamente antes do marcador da subseção 3.2.",
+    "texto": "## **3.1 Prerequisite: Learning Words and Phrases Representations** \n\nWe employ a neural method, specifically the continuous bag-of-words model (Mikolov et al., 2013a) to learn high-quality vector representations for words. Once we complete the training of the continuous bag-of-words model, word embeddings form an embedding matrix _M ∈_ R<sup>_d×|V |_</sup> , where _d_ is a pre-determined embedding dimensionality and each word _w_ in the vocabulary _V_ corresponds to a vector _⃗v ∈_ R<sup>_d_</sup> . Given the embedding matrix _M_ , mapping words to vectors can be done by simply looking up their respective columns in _M_ . \n\nWe further feed these learned word embeddings \n\nto recursive autoencoders (RAE) (Socher et al., 2011) for learning phrase representations. In traditional RAE (shown in Figure 1), given two input children representation vectors _⃗c_ 1 _∈_ R<sup>_d_</sup> and _c_ 2 _∈_ R<sup>_d_</sup> , their parent representation _⃗p_ can be calculated as follows: \n\n\n\nwhere [ _⃗c_ 1; _⃗c_ 2] _∈_ R<sup>2</sup><sup>_d_</sup> is the concatenation of vectors of two children, _W_<sup>(1)</sup> _∈_ R<sup>_d×_2</sup><sup>_d_</sup> is a weight matrix, _b_<sup>(1)</sup> _∈_ R<sup>_d_</sup> is a bias term, and _f_<sup>(1)</sup> is an element-wise activation function such as _tanh_ . The above output representation _⃗p_ can be used as a child vector to construct the representation for a larger subphrase. This process is repeated until a binary tree covering the whole input phrase is generated. \n\nIn order to evaluate how well the parent vector represents its children, we can reconstruct the children in a reconstruction layer: \n\n\n\nwhere _⃗c_ 1 _′_ and _⃗c_ 2 _′_ are the reconstructed children, _W_<sup>(2)</sup> is a weight matrix for reconstruction, _b_<sup>(2)</sup> is a bias term for reconstruction, and _f_<sup>(2)</sup> is an element-wise activation function. \n\nFor each node in the generated binary tree, we compute Euclidean distance between the original input vectors and the reconstructed vectors to measure the reconstruction error: \n\n\n\nBy minimizing the total reconstruction error over all nonterminal nodes, we can learn parameters of RAE. \n\nSocher et al. (2011) propose a greedy unsupervised RAE as an extension to the above traditional RAE. The main difference is that in the unsupervised RAE there is no tree structure which is given for traditional RAE. It can learn both representations and tree structures of phrases or sentences. In this work, we adopt the unsupervised RAE to learn vector representations for phrases. \n\n"
+  },
+  {
+    "offset_inicio": "## **3.2 Inducing Nonterminal Representations from Phrase Representations** \n\nAs we extract",
+    "offset_fim": "These centroids will help translation model capture semantic diversity to a certain degree. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "3.2 Inducing Nonterminal Representations from Phrase Representations",
+    "motivo": "O bloco começa no marcador da subseção 3.2 e reúne seu texto contínuo, atravessando a quebra de página e a figura; termina imediatamente antes do marcador da subseção 3.3.",
+    "texto": "## **3.2 Inducing Nonterminal Representations from Phrase Representations** \n\nAs we extract hierarchical rules from phrases by replacing subphrases with nonterminal symbols, a nonterminal _X_ is generalized from a number of \n\n1393\n\n<!-- PÁGINA 4 -->\nFigure 1: The architecture of a recursive autoencoder, adapted from (Socher et al., 2011). Blue nodes are original vectors and yellow nodes are reconstructed vectors which are used to compute reconstruction errors. \n\nsubphrases. We believe that these subphrases determine syntactic and semantic properties of the nonterminal _X_ . We therefore enrich each nonterminal _X_ with a semantic vector induced from vector representations of phrases that are replaced by the nonterminal during rule extraction. \n\nFor an SCFG rule, we can learn semantic vectors for nonterminals on both the source and target side. Due to the space limitation, we introduce the procedure of learning nonterminal vectors on the source side. Semantic vectors on the target side can be learned analogically. \n\nFor each source-side nonterminal _X_ of a hierarchical rule, we collect all source subphrases replaced by _X_ in a source subphrase set _P_ = _{p_ 1 _, p_ 2 _, · · · , pm}_ . We also count the number of times of these phrases being replaced by nonterminal _X_ on training data during rule extraction. We collect these numbers in a count set _C_ = _{c_ 1 _, c_ 2 _, · · · , cm}_ . Based on the phrase set _P_ , count set _C_ and learned phrase vector representations in _P_ , we can compute a semantic vector _⃗vx_ for nonterminal _X_ in each SCFG rule. \n\nWe propose two general approaches to obtain semantic vectors for nonterminals: a weighted mean value method and a minimum distance method. Given phrase vector representations _Pr_ = _{⃗p_ 1 _,⃗p_ 2 _, . . . ,⃗pm}_ , we calculate the semantic vector for a nonterminal generalized from these phrases as follows. \n\n**Weighted mean value method** (MV) computes semantic vector _⃗vx_ as: \n\n\n\n**Minimum distance method** (MD) finds a point in semantic space to minimize the sum of Eu- \n\nclidean distances of vectors in _⃗Pr_ to this point. Formally, \n\n\n\nWe use the stochastic gradient descent algorithm to find the minimal distance and the point _⃗vx_ . The component _vxj_ can be updated by _vxj ← vxj_ + _λ ∂v_<sup>_∂f_</sup> _xj_<sup>where</sup><sup>_f_is �</sup> _i_<sup>_m_</sup> =1 ~~��~~ _dj_ =1<sup>(</sup><sup>_pij−vxj_)2and</sup> _λ_ is the learning rate. \n\nSimilar to the center of gravity, the semantic vector _⃗vx_ learned by this method acts as a semantic centroid for all vectors of phrases that are substituted by _X_ . Nonterminals in different hierarchical translation rules will have different semantic centroids. These centroids will help translation model capture semantic diversity to a certain degree. "
+  },
+  {
+    "offset_inicio": "## **3.3 Mapping Source-Side Representations onto Target-Side Semantic Space** \n\nAs we discussed in Section 1, directly learning vector representations for target phrases is",
+    "offset_fim": "rameter matrices _W_<sup>(3)</sup> , _W_<sup>(4)</sup> and bias terms _b_<sup>(3)</sup> , _b_<sup>(4)</sup> . \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "3.3 Mapping Source-Side Representations onto Target-Side Semantic Space",
+    "motivo": "O bloco inicia no marcador da subseção 3.3 na página 4 e reúne sua explicação e objetivo de projeção, continuados na página 5. Termina imediatamente antes do marcador da seção seguinte, “# **4 Semantic Nonterminal Refinement Model**”.",
+    "texto": "## **3.3 Mapping Source-Side Representations onto Target-Side Semantic Space** \n\nAs we discussed in Section 1, directly learning vector representations for target phrases is very costly in practice. Inspired by Mikolov et al. (2013b), we adopt vector projection to alleviate this problem. Different from mapping representations from the source side to the target side by learning a linear matrix on word alignments (Mikolov et al., 2013b), we project source multiword phrase representations onto the target semantic space in a nonlinear manner as we believe that nonlinear relations between languages are more reasonable. Specifically, we use a neural network to achieve this goal. Our neural network is a multilayer feed-forward neural network with one hidden layer. The functional form can be written in the following equation: \n\n\n\nwhere _⃗src_ is the input vector which is learned in the source semantic space, _W_<sup>(3)</sup> denotes the weight matrix for connections between input and hidden neurons and _W_<sup>(4)</sup> denotes the weight matrix for links between hidden neurons and output, _b_<sup>(3)</sup> and _b_<sup>(4)</sup> are bias terms. To train the neural network, we optimize the following objective: \n\n\n\n1394\n\n<!-- PÁGINA 5 -->\nwhere _N_ is the number of training examples, _⃗trgi_ is the target vector representation for the _i_ th example learned by RAE and _⃗pi_ is the output of the neural network for the source vector representation _⃗srci_ of _i_ th example. _R_ ( _θ_ ) is the regularizer on parameters: \n\n\n\nwhere _W_ denotes parameters for parameter matrices _W_<sup>(3)</sup> , _W_<sup>(4)</sup> and bias terms _b_<sup>(3)</sup> , _b_<sup>(4)</sup> . \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Semantic Nonterminal Refinement Model** \n\nIn this section, we describe our semantic",
+    "offset_fim": "model on the basis of induced real-valued semantic vectors for nonterminals. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4 Semantic Nonterminal Refinement Model",
+    "motivo": "Bloco de abertura da seção 4, iniciado pelo seu título e contendo apenas o parágrafo introdutório; termina imediatamente antes do marcador da subseção 4.1.",
+    "texto": "# **4 Semantic Nonterminal Refinement Model** \n\nIn this section, we describe our semantic nonterminal refinement model on the basis of induced real-valued semantic vectors for nonterminals. \n\n"
+  },
+  {
+    "offset_inicio": "## **4.1 Nonterminal Representations in Hierarchical Rules** \n\nWe incorporate learned semantic",
+    "offset_fim": "we keep original translation rules intact and decorate nonterminals with their semantic representations.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4.1 Nonterminal Representations in Hierarchical Rules",
+    "motivo": "O bloco inicia no marcador da subseção 4.1 e contém seu texto e fórmulas até imediatamente antes do marcador da subseção seguinte, “## **4.2 The Model**”.",
+    "texto": "## **4.1 Nonterminal Representations in Hierarchical Rules** \n\nWe incorporate learned semantic representations of nonterminals into hierarchical rules. In particular, ordinary hierarchical rules take the following form: \n\nThere is another nonterminal _S_ in glue rules, which are formalized as follows: \n\n\n\n\n\nThis nonterminal _S_ is different from _X_ . We therefore treat it as a special case in the computation of semantic similarity. \n\nIn this work, we explore two approaches to compute similarity: one based on cosine similarity and the other based on Euclidean distance. \n\nGiven a phrase vector representation _⃗p_ and nonterminal _X_ semantic vector _⃗vx_ , **Cosine Similarity** (CS) is computed as: \n\n\n\nWe set _α_ for the Cosine Similarity between the glue rule and its corresponding phrase as follows: \n\n\n\nAs for **Euclidean Distance** (ED), it is computed according to the following formula: \n\n\n\nwhere _a_ / _b_ , _c_ / _d_ are strings of terminals on the source and target side, _s_ and _t_ are placeholders denoting the nonterminal _X_ on the source or target side, _Xs_ and _Xt_ are aligned to each other. \n\nRepresentations for nonterminals can be on either the source or target side. They are attached to hierarchical rules as follows: \n\n\n\nwhere _⃗vx._ is the source- or target-side semantic representation for nonterminal. In this way, we keep original translation rules intact and decorate nonterminals with their semantic representations."
+  },
+  {
+    "offset_inicio": "## **4.2 The Model** \n\nThe proposed semantic nonterminal refinement model estimates the",
+    "offset_fim": "and similarly we set _β_ for glue rules: ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4.2 The Model",
+    "motivo": "O bloco começa no marcador da subseção 4.2 e contém seu texto próprio, encerrando-se imediatamente antes do marcador da seção seguinte, “# **5 Decoding**”.",
+    "texto": "## **4.2 The Model** \n\nThe proposed semantic nonterminal refinement model estimates the semantic similarity between a phrase _p_ and nonterminal _X_ . The phrase _p_ and nonterminal _X_ will have a high similarity score in the representation space if they are semantically similar. The higher semantic similarity scores are, the more compatible nonterminals are with corresponding phrases. \n\n\n\nand similarly we set _β_ for glue rules: "
+  },
+  {
+    "offset_inicio": "# **5 Decoding** \n\nWe incorporate the proposed model as a new feature into the hier",
+    "offset_fim": "on a development set. Figure 2 shows the architecture of SMT system with the proposed semantic nonterminal refinement model. \n\n1395\n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "5 Decoding",
+    "motivo": "O bloco inicia no marcador da seção numerada “5 Decoding” e contém seu texto introdutório até imediatamente antes do próximo marcador estrutural, “6 Experiment”.",
+    "texto": "# **5 Decoding** \n\nWe incorporate the proposed model as a new feature into the hierarchical phrase-based translation system. Specifically, two features are added into the baseline system: \n\n1. Source-side semantic similarity between source phrases and nonterminals \n\n2. Target-side semantic similarity between target phrases and nonterminals \n\nWe compute source- and target-side similarities based on representations of nonterminals and phrasal substitutions for each applied rule, and sum up these similarities to calculate the total score of a derivation on the two features. \n\n1395\n\n<!-- PÁGINA 6 -->\n<!-- Start of picture text -->\nvector  semantic<br>semantic<br>representations   nonterminal<br>for words and  representations  refinement<br>for nonterminals<br>phrases model<br>other models<br>source   target<br>decoder<br>sentences sentences<br><!-- End of picture text -->\n\nFigure 2: Architecture of SMT system with the proposed semantic nonterminal refinement model. \n\nThe integration of the source-side semantic nonterminal refinement model into the decoder is trivial. For the target-side model, however, we have to consider the efficiency issue as we mentioned in Section 1. We introduce two different methods to integrate the target-side model into the decoder: 1) projection and 2) two-pass decoding. In the first integration method, a mapping neural network is trained to map source phrase representations onto the target semantic space as described in Section 3.3. The projection can be linear if we remove the hidden layer in the projection neural network. This is similar to the mapping matrix learned by Mikolov et al. (2013b). We calculate semantic similarities between projected representations of phrases and those of nonterminals. In the two-pass decoding, we collect target phrase candidates from 100-best translations for each source sentence generated by the baseline in the first pass and learn vector representations for these target phrase candidates. Then in the second pass, we decode source sentence with our target semantic nonterminal refinement model using learned target phrase vector representations. If a target phrase appears in the collected set, the target-side semantic nonterminal refinement model will calculate the semantic similarity between the target phrase and the corresponding nonterminal on the target semantic space; otherwise the model will give a penalty. This is because this phrase is not a desirable phrase as it is not used in 100-best translations. \n\nThe weights of these two features are tuned by the Minimum Error Rate Training (MERT)(Och, 2003), together with weights of other sub-models on a development set. Figure 2 shows the architecture of SMT system with the pro"
+  },
+  {
+    "offset_inicio": "# **6 Experiment** \n\nIn this section, we conducted a series of experiments on Chinese-to-English",
+    "offset_fim": "3. Does the combination of source and target semantic nonterminal refinement models provide further improvement? \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "6 Experiment",
+    "motivo": "É o bloco de abertura da seção 6, iniciado pelo marcador “# **6 Experiment**” e contendo apenas o texto introdutório e a lista de questões, até imediatamente antes do marcador da subseção “## **6.1 Setup**”.",
+    "texto": "# **6 Experiment** \n\nIn this section, we conducted a series of experiments on Chinese-to-English translation using large-scale bilingual training data, aiming at the following questions: \n\n1. Which approach is better for learning nonterminal representations, weighted mean value or minimum distance? \n\n2. Can the target-side semantic nonterminal refinement model improve translation quality? And which method is better for integrating the target-side semantic model into translation, projection or two-pass decoding? \n\n3. Does the combination of source and target semantic nonterminal refinement models provide further improvement? \n\n"
+  },
+  {
+    "offset_inicio": "## **6.1 Setup** \n\nOur training corpus contains 2.9M sentence pairs with 80.9M",
+    "offset_fim": "significantly better than Baseline at significance level _p <_ 0 _._ 01 and _p <_ 0 _._ 05 respectively.",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "6.1 Setup",
+    "motivo": "O bloco começa no marcador da subseção \"## **6.1 Setup**\" na página 6 e inclui seus parágrafos, notas e a Tabela 1; termina imediatamente antes do marcador da subseção seguinte \"## **6.2 Different Approaches to Learn Vector Representations for Nonterminals**\" na página 7.",
+    "texto": "## **6.1 Setup** \n\nOur training corpus contains 2.9M sentence pairs with 80.9M Chinese words and 86.4M English words from LDC data<sup>1</sup> . We used NIST MT03 as our development set, NIST MT06 as our development test set and MT08 as our final test set. \n\nWe ran Giza++ on the training corpus in both Chinese-to-English and English-to-Chinese directions and applied the “grow-diag-final” refinement rule (Koehn et al., 2003) to obtain word alignments. We used the SRI Language Modeling Toolkit<sup>2</sup> (Stolcke and others, 2002) to train our language models. MERT (Och, 2003) was adopted to tune feature weights of the decoder. We used the case-insensitive BLEU<sup>3</sup> as our evaluation metric. In order to alleviate the instability of MERT , we followed Clark et al. (2011) to perform three runs of MERT and reported average BLEU scores over the three runs for all our experiments. \n\nWe used word2vec toolkit<sup>4</sup> to train our word embeddings and set the vector dimension _d_ to 30. In our training experiment, we used the continuous bag-of-words model with a context window of size 5. The monolingual corpus, which was used to pre-train word embeddings, is extracted from \n\n> 1The corpora include LDC2003E14, LDC2004T07, LDC2005T06, LDC2005T10 and LDC2004T08 (Hong Kong Hansards/Laws/News). \n\n> 2http://www.speech.sri.com/projects/srilm/download.html \n\n> 3ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-v11b.pl \n\n> 4https://code.google.com/p/word2vec/ \n\n1396\n\n<!-- PÁGINA 7 -->\nthe above parallel corpus in SMT. To train vector representations for multi-word phrases, we randomly selected 1M bilingual sentences<sup>5</sup> as training set and used the unsupervised greedy RAE following (Socher et al., 2011). We used a learning rate of 10<sup>_−_3</sup> for our minimum distance method that learned the centroid of phrase representations as the vector representation of the corresponding nonterminal. \n\nFor projection neural network in Section 3.3, we set 300 units for the hidden layer and dimensionality of 30 for both input and output vectors. Learning rate was set to 10<sup>_−_3</sup> and the regularization coefficient _λL_ was set to 10<sup>_−_3</sup> . To construct the training set for the projection neural network, we selected phrase pairs from our rule table and used their representations on the source and target side as training examples. We randomly selected 5M examples as training set, 10k examples as development set and 10k examples as test set. The multi-layer projection neural network was trained with the back-propagation and stochastic gradient descent algorithm with a mini-batch size of 5k. \n\nOur baseline system is an in-house hierarchical phrase-based system (Chiang, 2007). The features used in the baseline system includes a 4-gram language model trained on the Xinhua section of the English Gigaword corpus, a 3-gram language model trained on the target part of the bilingual training data, bidirectional translation probabilities, bidirectional lexical weights, a word count, a phrase count and a glue rule count. \n\nIn order to compare our proposed models with previous methods on nonterminal refinement, we re-implemented a syntax mismatch model (SynMis) which was used by Huang et al. (2013) and integrated it into hierarchical phrase-based system. Syn-Mis model decorates each nonterminal with a distribution of head POS tags and uses this distribution to measure the degree of syntactic compatibility of translation rules with corresponding source spans. In order to obtain head POS tags for Syn-Mis model, we used the Stanford dependency parser<sup>6</sup> (Chang et al., 2009) to parse Chinese sentences in our training corpus and NIST development/test sets. \n\n> 5We choose bilingual sentences because we want to obtain bilingual training examples to train our projection neural network as described in Section 3.3. \n\n> 6http://nlp.stanford.edu/software/lex-parser.shtml \n\n||MT06|MT08|Avg|\n|---|---|---|---|\n|Baseline|30.54|23.58|27.06|\n|Syn-Mis|31.23<sup>_∗_</sup>|24.38<sup>_∗_</sup>|27.81|\n|MV + CS_α_= 1.0|31.44<sup>+</sup>|24.23<sup>_∗_</sup>|27.84|\n|MV + CS_α_= 0|31.63<sup>_∗_</sup>|24.51<sup>_∗_</sup>|28.07|\n|MV + CS_α_= -1.0|31.13|24.07<sup>_∗_</sup>|27.60|\n|MD + ED_β_ = 0|31.02<sup>+</sup>|23.74|27.38|\n|MD + ED_β_ = 0.5|31.35<sup>+</sup>|24.08<sup>_∗_</sup>|27.72|\n|MD + ED _β_ = 1.0|31.06|23.90<sup>+</sup>|27.48|\n\n\n\nTable 1: BLEU scores of our models against the baseline and Syn-Mis model. /*” and /+” : significantly better than Baseline at significance level _p <_ 0 _._ 01 and _p <_ 0 _._ 05 respectively."
+  },
+  {
+    "offset_inicio": "## **6.2 Different Approaches to Learn Vector Representations for Nonterminals** \n\nOur first group of experiments were carried out to investigate which approach is more appropriate to learn semantic vectors for nonterminals.",
+    "offset_fim": "learn semantic vectors for nonterminals and compute semantic similarities in the following experiments.",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "6.2 Different Approaches to Learn Vector Representations for Nonterminals",
+    "motivo": "O bloco inicia no marcador da subseção 6.2, na página 7, e reúne seus parágrafos de experimento e resultados até imediatamente antes do marcador da subseção seguinte, 6.3, na página 8.",
+    "texto": "## **6.2 Different Approaches to Learn Vector Representations for Nonterminals** \n\nOur first group of experiments were carried out to investigate which approach is more appropriate to learn semantic vectors for nonterminals. We only used the source-side semantic nonterminal refinement model in these experiments. In order to validate the effectiveness of the proposed approaches for learning nonterminal semantic vectors, we combined the minimum distance method (MD) with the Euclidean Distance (ED) because both of them are distance-based, and combined the weighted mean value method (MV) with the Cosine Similarity model (CS) as they belong to vector-based approaches. We chose _α_ = 1.0, 0, -1.0 and _β_ = 0, 0.5, 1.0 for glue rules to study the impact of these parameters. We compared our model with the baseline and Syn-Mis model. \n\nResults are shown in Table 1. From Table 1, we observe that the proposed two approaches are able to achieve significant improvements over the baseline. (MV + CS) and (MD + ED) achieve up to an absolute improvement of 1.09 and 0.81 (when _α_ = 0 and _β_ = 0.5) BLEU points respectively over the baseline on the development test set MT06. And the approach (MV + CS) with _α_ = 0 outperforms Syn-Mis by 0.4 BLEU points on MT06 without using any syntactic information. The approach (MV + CS) achieves better performance and it is more efficient than (MD + ED) where the computation of semantic centroids is time-consuming. Therefore, we adopt the approach (MV + CS) with _α_ = 0 to learn semantic vectors for nonterminals and compute semantic similarities in the following experiments."
+  },
+  {
+    "offset_inicio": "## **6.3 Effect of the Target Semantic Nonterminal Refinement Models** \n\nIn the second set of experiments, we further validate the effectiveness",
+    "offset_fim": "to improve the baseline system, although the gain is less than that of the source-side counterpart. \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "6.3 Effect of the Target Semantic Nonterminal Refinement Models",
+    "motivo": "O bloco inicia no marcador da subseção 6.3 e inclui seu texto, lista e tabela inserida, terminando imediatamente antes do marcador da subseção 6.4.",
+    "texto": "## **6.3 Effect of the Target Semantic Nonterminal Refinement Models** \n\nIn the second set of experiments, we further validate the effectiveness of semantic nonterminal vectors learned on the target side. In these experiments, learning vector representations and computing semantic similarities were performed on the target language semantic space. We also compared the two integration methods discussed in Section 5 for the target-side model. With regard to the projection method, we further compared the linear projection (the projection neural network without hidden layer) with the nonlinear projection (with hidden layer). Experiment results are shown in Table 2. \n\nFrom Table 2, we can see that \n\n- Two-pass decoding achieves the highest BLEU scores, which are higher than those of the baseline by 0.75 and 0.66 BLEU points on MT06 and MT08 respectively. The reason may be that noisy translation candidates are filtered out in the first pass. This finding is consistent with many other multiple-pass systems in natural language processing, e.g., two-pass parsing (Zettlemoyer and Collins, 2007). \n\n- Nonlinear projection achieves an improvement of 0.62 BLEU points over the baseline on MT06. It outperforms linear projection method on both sets. These empirical results support our assumption that nonlinear relations between languages are more reasonable than linear relations. \n\n- The results prove that the target-side semantic nonterminal refinement model is also able \n\n- 1 (MV + CS _α_ = 0) is used. \n\n> 2 Nonlinear Projection is used. \n\nTable 3: BLEU scores of the combination of the source- and target-side semantic nonterminal refine model. /*” and /+” : significantly better than Baseline at significance level _p <_ 0 _._ 01 and _p <_ 0 _._ 05 respectively. \n\nto improve the baseline system, although the gain is less than that of the source-side counterpart. \n\n"
+  },
+  {
+    "offset_inicio": "## **6.4 Combination of the Source and Target Models** \n\nFinally, we integrated both",
+    "offset_fim": "and 0.41 BLEU points over Syn-Mis model on average, which is shown in Table 3. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "6.4 Combination of the Source and Target Models",
+    "motivo": "O bloco inicia no cabeçalho da subseção 6.4 e contém seu único parágrafo. Termina imediatamente antes do marcador da seção seguinte, \"# **7 Conclusion**\".",
+    "texto": "## **6.4 Combination of the Source and Target Models** \n\nFinally, we integrated both the source- and targetside semantic nonterminal refinement models into the baseline system. In this experiment, we adopted nonlinear projection to obtain target semantic vector representations for target phrases. These two models collectively achieve a gain of up to 1.16 BLEU points over the baseline and 0.41 BLEU points over Syn-Mis model on average, which is shown in Table 3. "
+  },
+  {
+    "offset_inicio": "# **7 Conclusion** \n\nWe have presented a framework to refine nonterminal _X_ in hier",
+    "offset_fim": "xtend our work by using more contextual lexical information to derive semantic vectors for nonterminals.",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "7 Conclusion",
+    "motivo": "O bloco inicia no marcador da seção \"7 Conclusion\" na página 8 e inclui a continuação do texto na página 9, terminando imediatamente antes do marcador da seção final não numerada \"Acknowledgment\".",
+    "texto": "# **7 Conclusion** \n\nWe have presented a framework to refine nonterminal _X_ in hierarchical translation rules with semantic representations. The semantic vectors are derived from vector representations of phrasal substitutions, which are automatically learned using an unsupervised RAE. As the semantic nonterminal refinement model is capable of selecting more semantically similar translation rules, it achieves statistically significant improvements over the baseline on Chinese-to-English translation. Experiment results have shown that \n\n- Using (MV + CS) approach to learn semantic representations for nonterminals can achieve better performance than (MD + ED) in terms of BLEU scores. \n\n- Target-side semantic nonterminal refinement model is able to substantially improve translation quality over the baseline. Two-pass de- \n\n1398\n\n<!-- PÁGINA 9 -->\ncoding method is superior to the projection method. \n\n- The simultaneous incorporation of the source- and target-side models can achieve further improvements over a single-side model. \n\nFor the future work, we are interested in learning bilingual representations (Lauly et al., 2014; Gouws et al., 2014) for nonterminals. We also would like to extend our work by using more contextual lexical information to derive semantic vectors for nonterminals."
+  },
+  {
+    "offset_inicio": "# **Acknowledgment** \n\nThe work was sponsored by the National Natural Science Foundation",
+    "offset_fim": "We would like to thank three anonymous reviewers for their insightful comments.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgment",
+    "motivo": "Seção final não numerada iniciada por “# **Acknowledgment**”, contendo um único parágrafo e encerrada imediatamente antes do marcador “# **References**”.",
+    "texto": "# **Acknowledgment** \n\nThe work was sponsored by the National Natural Science Foundation of China (Grants No. 61403269, 61432013 and 61333018) and Natural Science Foundation of Jiangsu Province (Grant No. BK20140355). We would like to thank three anonymous reviewers for their insightful comments."
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "References",
+    "motivo": "O título não numerado “References” abre uma unidade própria e termina imediatamente antes da primeira entrada bibliográfica, “Hala Almaghout, Jie Jiang, and Andy Way. 2011.”",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Hala Almaghout, Jie Jiang, and Andy Way. 2011. Ccg contextual labels in hierarchical",
+    "offset_fim": "In _Proceedings of the 15th Annual Conference of the European Association for Machine Translation_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Hala Almaghout, Jie Jiang e Andy Way (2011)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada pelo marcador de item e encerrada imediatamente antes da referência seguinte, de Phil Blunsom et al.",
+    "texto": "- Hala Almaghout, Jie Jiang, and Andy Way. 2011. Ccg contextual labels in hierarchical phrase-based smt. In _Proceedings of the 15th Annual Conference of the European Association for Machine Translation_ ."
+  },
+  {
+    "offset_inicio": "- Phil Blunsom, Edward Grefenstette, Nal Kalchbrenner, et al. 2014. A convolutional neural network for modelling sentences.",
+    "offset_fim": "In _Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics_ . Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Phil Blunsom et al. 2014. A convolutional neural network for modelling sentences.",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de item \"- Phil Blunsom\" e termina antes da entrada seguinte, iniciada por \"- Hailong Cao\".",
+    "texto": "- Phil Blunsom, Edward Grefenstette, Nal Kalchbrenner, et al. 2014. A convolutional neural network for modelling sentences. In _Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics_ . Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Hailong Cao, Dongdong Zhang, Ming Zhou, and Tiejun Zhao. 2014. Soft dependency matching for hierarchical phrase-based machine translation. In _COLING_ .",
+    "offset_fim": "2014. Soft dependency matching for hierarchical phrase-based machine translation. In _COLING_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Hailong Cao et al. (2014) — Soft dependency matching for hierarchical phrase-based machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador '-' e encerrada imediatamente antes da referência seguinte, de Pi-Chuan Chang et al.",
+    "texto": "- Hailong Cao, Dongdong Zhang, Ming Zhou, and Tiejun Zhao. 2014. Soft dependency matching for hierarchical phrase-based machine translation. In _COLING_ ."
+  },
+  {
+    "offset_inicio": "- Pi-Chuan Chang, Huihsin Tseng, Dan Jurafsky, and Christopher D Manning. 2009. Discriminative reordering with chinese",
+    "offset_fim": "Syntax and Structure in Statistical Translation_ , pages 51–59. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Pi-Chuan Chang et al. (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador de item de Chang et al. e termina antes do marcador da referência seguinte, de David Chiang.",
+    "texto": "- Pi-Chuan Chang, Huihsin Tseng, Dan Jurafsky, and Christopher D Manning. 2009. Discriminative reordering with chinese grammatical relations features. In _Proceedings of the Third Workshop on Syntax and Structure in Statistical Translation_ , pages 51–59. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- David Chiang. 2007. Hierarchical phrase-based translation. _computational linguistics_",
+    "offset_fim": "Hierarchical phrase-based translation. _computational linguistics_ , 33(2):201–228.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "David Chiang (2007) — Hierarchical phrase-based translation",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador de item e encerrada imediatamente antes da referência seguinte, de David Chiang (2010).",
+    "texto": "- David Chiang. 2007. Hierarchical phrase-based translation. _computational linguistics_ , 33(2):201–228."
+  },
+  {
+    "offset_inicio": "- David Chiang. 2010. Learning to translate with source and target syntax. In _Proceed",
+    "offset_fim": "ociation for Computational Linguistics_ , pages 1443–1452. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "David Chiang (2010) — Learning to translate with source and target syntax",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho; começa no marcador da referência de David Chiang e termina imediatamente antes da referência de Jonathan H Clark.",
+    "texto": "- David Chiang. 2010. Learning to translate with source and target syntax. In _Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics_ , pages 1443–1452. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Jonathan H Clark, Chris Dyer, Alon Lavie, and Noah A Smith. 2011. Better hypothesis testing for statistical machine translation: Controlling for optimizer instability.",
+    "offset_fim": "Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: short papers-Volume 2_ , pages 176–181. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Jonathan H Clark et al. (2011) — Better hypothesis testing for statistical machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Inicia no marcador \"-\" da referência de Jonathan H Clark et al. e termina antes do marcador da referência seguinte, de Qin Gao e Stephan Vogel.",
+    "texto": "- Jonathan H Clark, Chris Dyer, Alon Lavie, and Noah A Smith. 2011. Better hypothesis testing for statistical machine translation: Controlling for optimizer instability. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: short papers-Volume 2_ , pages 176–181. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Qin Gao and Stephan Vogel. 2011. Utilizing target-side semantic role labels to assist hierarchical phrase-based machine translation.",
+    "offset_fim": "pages 107–115. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Qin Gao e Stephan Vogel (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida; inicia no marcador da referência de Qin Gao e termina antes da entrada seguinte, de Stephan Gouws et al.",
+    "texto": "- Qin Gao and Stephan Vogel. 2011. Utilizing target-side semantic role labels to assist hierarchical phrase-based machine translation. In _Proceedings of the Fifth Workshop on Syntax, Semantics and Structure in Statistical Translation_ , pages 107–115. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Stephan Gouws, Yoshua Bengio, and Greg Corrado. 2014. Bilbowa: Fast bilingual distributed",
+    "offset_fim": "Bilbowa: Fast bilingual distributed representations without word alignments. _arXiv preprint arXiv:1410.2455_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Stephan Gouws, Yoshua Bengio, and Greg Corrado (2014)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item e encerrada imediatamente antes da referência de Greg Hanneman e Alon Lavie.",
+    "texto": "- Stephan Gouws, Yoshua Bengio, and Greg Corrado. 2014. Bilbowa: Fast bilingual distributed representations without word alignments. _arXiv preprint arXiv:1410.2455_ ."
+  },
+  {
+    "offset_inicio": "- Greg Hanneman and Alon Lavie. 2013. Improving syntax-augmented machine translation by coarsening the label set.",
+    "offset_fim": "In _HLT-NAACL_ , pages 288–297. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Greg Hanneman and Alon Lavie (2013)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto. Inicia no marcador de item \"- Greg Hanneman...\" e termina antes da entrada seguinte, de Hieu Hoang e Philipp Koehn.",
+    "texto": "- Greg Hanneman and Alon Lavie. 2013. Improving syntax-augmented machine translation by coarsening the label set. In _HLT-NAACL_ , pages 288–297. \n\n- Hieu Hoang and Philipp Koehn. 2010. Improved translation with source syntax labels. In _Proceedings of the Joint Fifth Workshop on Statistical Machine Translation and MetricsMATR_ , pages 409–417. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Zhongqiang Huang, Martin ˇCmejrek, and Bowen Zhou. 2010. Soft syntactic constraints",
+    "offset_fim": "ages 138–147. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Zhongqiang Huang, Martin ˇCmejrek, and Bowen Zhou (2010)",
+    "motivo": "É a primeira entrada bibliográfica visível. Inicia no marcador de item da referência de Huang, ˇCmejrek e Zhou e termina imediatamente antes do marcador da referência seguinte, de Zhongqiang Huang, Jacob Devlin e Rabih Zbib.",
+    "texto": "- Zhongqiang Huang, Martin ˇCmejrek, and Bowen Zhou. 2010. Soft syntactic constraints for hierarchical phrase-based translation using latent syntactic distributions. In _Proceedings of the 2010 Conference on Empirical Methods in Natural Language Processing_ , pages 138–147. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Zhongqiang Huang, Jacob Devlin, and Rabih Zbib. 2013. Factored soft source syntactic",
+    "offset_fim": "of the 2013 Conference on Empirical Methods in Natural Language Processing_ , pages 556–566.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Huang, Devlin e Zbib (2013) — Factored soft source syntactic constraints",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador \"-\" da referência de Huang, Devlin e Zbib e termina antes do marcador da referência seguinte, de Philipp Koehn.",
+    "texto": "- Zhongqiang Huang, Jacob Devlin, and Rabih Zbib. 2013. Factored soft source syntactic constraints for hierarchical machine translation. In _Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing_ , pages 556–566."
+  },
+  {
+    "offset_inicio": "- Philipp Koehn, Franz Josef Och, and Daniel Marcu. 2003. Statistical phrase-based translation. In _Proceedings",
+    "offset_fim": "Chapter of the Association for Computational Linguistics on Human Language TechnologyVolume 1_ , pages 48–54. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Philipp Koehn, Franz Josef Och e Daniel Marcu (2003)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador da referência de Koehn, Och e Marcu e termina antes do marcador da referência seguinte, de Stanislas Lauly et al.",
+    "texto": "- Philipp Koehn, Franz Josef Och, and Daniel Marcu. 2003. Statistical phrase-based translation. In _Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language TechnologyVolume 1_ , pages 48–54. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Stanislas Lauly, Hugo Larochelle, Mitesh Khapra, Balaraman Ravindran, Vikas C Raykar, and Amrita Saha. 2014.",
+    "offset_fim": "In _Advances in Neural Information Processing Systems_ , pages 1853– 1861.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Stanislas Lauly et al. 2014 — An autoencoder approach to learning bilingual word representations",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho: inicia no marcador “- Stanislas Lauly...” e termina após “1861.”, imediatamente antes da entrada de Junhui Li et al.",
+    "texto": "- Stanislas Lauly, Hugo Larochelle, Mitesh Khapra, Balaraman Ravindran, Vikas C Raykar, and Amrita Saha. 2014. An autoencoder approach to learning bilingual word representations. In _Advances in Neural Information Processing Systems_ , pages 1853– 1861."
+  },
+  {
+    "offset_inicio": "- Junhui Li, Zhaopeng Tu, Guodong Zhou, and Josef van Genabith. 2012. Head-driven",
+    "offset_fim": "e 2_ , pages 33–37. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Junhui Li et al. (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada pelo marcador “- Junhui Li...” e encerrada antes do número de página 1399 e da referência seguinte.",
+    "texto": "- Junhui Li, Zhaopeng Tu, Guodong Zhou, and Josef van Genabith. 2012. Head-driven hierarchical phrasebased translation. In _Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics: Short Papers-Volume 2_ , pages 33–37. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013a. Efficient estimation",
+    "offset_fim": "2013a. Efficient estimation of word representations in vector space. _arXiv preprint arXiv:1301.3781_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Tomas Mikolov et al. (2013a) — Efficient estimation of word representations in vector space",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador de item \"- Tomas Mikolov...\" e encerrada imediatamente antes da referência seguinte, de Tomas Mikolov, Quoc V Le e Ilya Sutskever.",
+    "texto": "- Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013a. Efficient estimation of word representations in vector space. _arXiv preprint arXiv:1301.3781_ ."
+  },
+  {
+    "offset_inicio": "- Tomas Mikolov, Quoc V Le, and Ilya Sutskever. 2013b. Exploiting similarities among languages for machine translation.",
+    "offset_fim": "Exploiting similarities among languages for machine translation. _arXiv preprint arXiv:1309.4168_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Tomas Mikolov, Quoc V Le e Ilya Sutskever (2013b)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item da referência e termina imediatamente antes da referência seguinte, de Tomas Mikolov et al. (2013c).",
+    "texto": "- Tomas Mikolov, Quoc V Le, and Ilya Sutskever. 2013b. Exploiting similarities among languages for machine translation. _arXiv preprint arXiv:1309.4168_ ."
+  },
+  {
+    "offset_inicio": "- Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013c.",
+    "offset_fim": "In _Advances in Neural Information Processing Systems_ , pages 3111–3119.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Tomas Mikolov et al. (2013c)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador '-' da referência de Mikolov et al. e termina imediatamente antes da entrada de Jeff Mitchell e Mirella Lapata.",
+    "texto": "- Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013c. Distributed representations of words and phrases and their compositionality. In _Advances in Neural Information Processing Systems_ , pages 3111–3119."
+  },
+  {
+    "offset_inicio": "Jeff Mitchell and Mirella Lapata. 2008. Vector-based models of semantic composition. In _Proceedings of the 46st Annual Meeting on Association for Computational_",
+    "offset_fim": "_Proceedings of the 46st Annual Meeting on Association for Computational_ , pages 236–244. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Jeff Mitchell and Mirella Lapata (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa da página. Inicia na sequência literal da referência de Mitchell e Lapata e termina após “pages 236–244. ”, imediatamente antes da referência de Markos Mylonakis e Khalil Sima’an.",
+    "texto": "Jeff Mitchell and Mirella Lapata. 2008. Vector-based models of semantic composition. In _Proceedings of the 46st Annual Meeting on Association for Computational_ , pages 236–244. "
+  },
+  {
+    "offset_inicio": "- Markos Mylonakis and Khalil Sima’an. 2011. Learning hierarchical translation structure",
+    "offset_fim": "pages 642–652. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Markos Mylonakis and Khalil Sima’an (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia em “- Markos Mylonakis and Khalil Sima’an. 2011.” e termina antes da entrada seguinte, de Franz Josef Och.",
+    "texto": "- Markos Mylonakis and Khalil Sima’an. 2011. Learning hierarchical translation structure with linguistic annotations. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies-Volume 1_ , pages 642–652. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Franz Josef Och. 2003. Minimum error rate training in statistical machine translation.",
+    "offset_fim": "pages 160–167. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Franz Josef Och (2003) — Minimum error rate training in statistical machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Começa no marcador da referência de Franz Josef Och e termina antes do marcador da referência seguinte, de Libin Shen et al.",
+    "texto": "- Franz Josef Och. 2003. Minimum error rate training in statistical machine translation. In _Proceedings of the 41st Annual Meeting on Association for Computational Linguistics-Volume 1_ , pages 160–167. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Libin Shen, Jinxi Xu, Bing Zhang, Spyros Matsoukas, and Ralph Weischedel. 2009.",
+    "offset_fim": "es 72–80. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Libin Shen et al. (2009)",
+    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador “- Libin Shen...”, e termina imediatamente antes da entrada seguinte, “- Ashish Venugopal...”.",
+    "texto": "- Libin Shen, Jinxi Xu, Bing Zhang, Spyros Matsoukas, and Ralph Weischedel. 2009. Effective use of linguistic and contextual information for statistical machine translation. In _Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 1-Volume 1_ , pages 72–80. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "   - Ashish Venugopal, Andreas Zollmann, Noah A Smith, and Stephan Vogel. 2009. Preference",
+    "offset_fim": "ion for Computational Linguistics_ , pages 236–244. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Ashish Venugopal et al. 2009 — Preference grammars",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 10; inicia no marcador “- Ashish Venugopal...” e termina imediatamente antes da entrada de Jonathan Weese.",
+    "texto": "   - Ashish Venugopal, Andreas Zollmann, Noah A Smith, and Stephan Vogel. 2009. Preference grammars: Softening syntactic constraints to improve statistical machine translation. In _Proceedings of Human Language Technologies: The 2009 Annual Conference of the North American Chapter of the Association for Computational Linguistics_ , pages 236–244. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "   - Jonathan Weese, Chris Callison-Burch, and Adam Lopez. 2012. Using categorial grammar to label translation rules.",
+    "offset_fim": "In _Proceedings of the Seventh Workshop on Statistical Machine Translation_ , pages 222–231. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Jonathan Weese, Chris Callison-Burch, and Adam Lopez (2012)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item e autores; termina imediatamente antes da entrada seguinte, de Luke S Zettlemoyer e Michael Collins.",
+    "texto": "   - Jonathan Weese, Chris Callison-Burch, and Adam Lopez. 2012. Using categorial grammar to label translation rules. In _Proceedings of the Seventh Workshop on Statistical Machine Translation_ , pages 222–231. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "   - Luke S Zettlemoyer and Michael Collins. 2007. Online learning of relaxed ccg grammars",
+    "offset_fim": "_Proceedings of the 2007 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning_ , pages 678–687. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência — Luke S Zettlemoyer e Michael Collins (2007)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item de Luke S Zettlemoyer e Michael Collins e termina antes do marcador da referência seguinte, de Andreas Zollmann e Ashish Venugopal.",
+    "texto": "   - Luke S Zettlemoyer and Michael Collins. 2007. Online learning of relaxed ccg grammars for parsing to logical form. In _Proceedings of the 2007 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning_ , pages 678–687. "
+  },
+  {
+    "offset_inicio": "   - Andreas Zollmann and Ashish Venugopal. 2006. Syntax augmented machine translation via chart parsing. In _Proceedings",
+    "offset_fim": "ages 138–141. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Andreas Zollmann and Ashish Venugopal (2006)",
+    "motivo": "É a primeira entrada bibliográfica identificável da página; inicia no marcador de item e termina ao final da referência, imediatamente antes da entrada de Andreas Zollmann e Stephan Vogel.",
+    "texto": "   - Andreas Zollmann and Ashish Venugopal. 2006. Syntax augmented machine translation via chart parsing. In _Proceedings of the Workshop on Statistical Machine Translation_ , pages 138–141. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Andreas Zollmann and Stephan Vogel. 2011. A word-class approach to labeling pscfg rules for machine translation. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies-Volume 1_ , pages 1–11. Association for Computational Linguistics.",
+    "offset_fim": "Human Language Technologies-Volume 1_ , pages 1–11. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Andreas Zollmann and Stephan Vogel (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador \"-\" da referência de Zollmann e Vogel e termina antes do marcador da referência seguinte, de Richard Socher et al.",
+    "texto": "- Andreas Zollmann and Stephan Vogel. 2011. A word-class approach to labeling pscfg rules for machine translation. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies-Volume 1_ , pages 1–11. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Richard Socher, Christopher D Manning, and Andrew Y Ng. 2010. Learning continuous phrase representations and syntactic parsing with recursive neural networks.",
+    "offset_fim": "In _Proceedings of the NIPS-2010 Deep Learning and Unsupervised Feature Learning Workshop_ , pages 1–9.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Richard Socher, Christopher D. Manning e Andrew Y. Ng (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de item \"- Richard Socher...\" e termina após \"pages 1–9.\", imediatamente antes da referência seguinte de Richard Socher et al. (2011).",
+    "texto": "- Richard Socher, Christopher D Manning, and Andrew Y Ng. 2010. Learning continuous phrase representations and syntactic parsing with recursive neural networks. In _Proceedings of the NIPS-2010 Deep Learning and Unsupervised Feature Learning Workshop_ , pages 1–9."
+  },
+  {
+    "offset_inicio": "- Richard Socher, Jeffrey Pennington, Eric H Huang, Andrew Y Ng, and Christopher D Manning. 2011. Semi-supervised recursive autoencoders for predicting sentiment distributions.",
+    "offset_fim": "of the Conference on Empirical Methods in Natural Language Processing_ , pages 151–161. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Richard Socher et al. (2011) — Semi-supervised recursive autoencoders",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador da referência de Richard Socher et al. e termina imediatamente antes da referência seguinte, de Andreas Stolcke et al.",
+    "texto": "- Richard Socher, Jeffrey Pennington, Eric H Huang, Andrew Y Ng, and Christopher D Manning. 2011. Semi-supervised recursive autoencoders for predicting sentiment distributions. In _Proceedings of the Conference on Empirical Methods in Natural Language Processing_ , pages 151–161. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Andreas Stolcke et al. 2002. Srilm-an extensible language modeling toolkit. In _INTERSPEECH_ .",
+    "offset_fim": "- Andreas Stolcke et al. 2002. Srilm-an extensible language modeling toolkit. In _INTERSPEECH_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência — Andreas Stolcke et al. (2002)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador da referência de Andreas Stolcke et al. e termina antes da entrada seguinte, de Joseph Turian et al.",
+    "texto": "- Andreas Stolcke et al. 2002. Srilm-an extensible language modeling toolkit. In _INTERSPEECH_ ."
+  },
+  {
+    "offset_inicio": "- Joseph Turian, Lev Ratinov, and Yoshua Bengio. 2010. Word representations: a simple and general method for semi-supervised learning.",
+    "offset_fim": "In _Proceedings of the 48th annual meeting of the association for computational linguistics_ , pages 384–394. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Joseph Turian, Lev Ratinov e Yoshua Bengio (2010)",
+    "motivo": "É uma entrada bibliográfica individual, iniciada pelo nome dos autores e encerrada ao fim da referência, antes do número de página \"1400\".",
+    "texto": "- Joseph Turian, Lev Ratinov, and Yoshua Bengio. 2010. Word representations: a simple and general method for semi-supervised learning. In _Proceedings of the 48th annual meeting of the association for computational linguistics_ , pages 384–394. Association for Computational Linguistics."
+  }
+]

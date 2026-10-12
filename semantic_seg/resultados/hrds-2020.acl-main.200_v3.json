@@ -1,0 +1,281 @@
+[
+  {
+    "offset_inicio": "# **To Pretrain or Not to Pretrain: Examining the Benefits of Pretraining on Resource",
+    "offset_fim": "## **Sinong Wang, Madian Khabsa, Hao Ma** Faceboook AI, Seattle, USA \n\n_{_ sinongwang, mkhabsa, haom _}_ @fb.com \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "To Pretrain or Not to Pretrain: Examining the Benefits of Pretraining on Resource Rich Tasks",
+    "motivo": "O bloco inicia no título do documento e inclui autoria e afiliação, terminando imediatamente antes do marcador da unidade seguinte, “Abstract”.",
+    "texto": "# **To Pretrain or Not to Pretrain: Examining the Benefits of Pretraining on Resource Rich Tasks** \n\n## **Sinong Wang, Madian Khabsa, Hao Ma** Faceboook AI, Seattle, USA \n\n_{_ sinongwang, mkhabsa, haom _}_ @fb.com \n\n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nPretraining NLP models with variants of Masked Language Model (MLM)",
+    "offset_fim": "MLM-based models might reach a diminishing return point as the supervised data size increases significantly.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no título \"Abstract\" e contém integralmente o resumo, terminando imediatamente antes do marcador da seção principal \"1 Introduction\".",
+    "texto": "## **Abstract** \n\nPretraining NLP models with variants of Masked Language Model (MLM) objectives has recently led to a significant improvements on many tasks. This paper examines the benefits of pretrained models as a function of the number of training samples used in the downstream task. On several text classification tasks, we show that as the number of training examples grow into the millions, the accuracy gap between finetuning BERT-based model and training vanilla LSTM from scratch narrows to within 1%. Our findings indicate that MLM-based models might reach a diminishing return point as the supervised data size increases significantly."
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nLanguage modeling has emerged as an effective pretraining approach in wide variety",
+    "offset_fim": "eople to rethink the MLM pre-training paradigm in NLP, at least for resource rich tasks. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção \"1 Introduction\" na página 1 e reúne o texto introdutório que continua na página 2, terminando imediatamente antes do marcador da seção seguinte, \"2 Related Works\".",
+    "texto": "## **1 Introduction** \n\nLanguage modeling has emerged as an effective pretraining approach in wide variety of NLP models. Multiple techniques have been proposed, including bi-directional language modeling (Peters et al., 2018), masked language models (Devlin et al., 2018), and variants of denoising auto-encoder approaches (Lewis et al., 2019; Raffel et al., 2019; Joshi et al., 2019). Today, it is rare to examine a leaderboard without finding the top spots occupied by some variant of a pretraining method.<sup>1</sup> \n\nThe future of NLP appears to be paved by pretraining a universal contextual representation on wikipedia-like data at massive scale. Attempts along this path have pushed the frontier to up 10 _×_ to the size of wikipedia (Raffel et al., 2019). However, the success of these experiments is mixed: although improvements have been observed, the downstream task is usually data-limited. There is evidence that large-scale pretraining does not always lead to state-of-the-art results (Raffel et al., 2019), especially on tasks such as machine translation, where abundance of training data, and the \n\n> 1https://super.gluebenchmark.com/leaderboard \n\nexistence of strong augmentation methods such as back translation might have limited the benefit of pretraining. \n\nThis paper examines the pretraining benefits of downstream tasks as the number of training samples increases. To answer this question, we focus on multi-class text classification since: (i) it is one of most important problems in NLP with applications spanning multiple domains. (ii) large sums of training data exists for many text classification tasks, or can be obtained relatively cheaply through crowd workers (Snow et al., 2008). We choose three sentiment classification datasets: Yelp review (yel, 2019), Amazon sports and electronics review (Ni et al., 2019), ranging in size from 6 to 18 million examples.<sup>2</sup> \n\nWe finetune a RoBERTa model (Liu et al., 2019) with increments of the downstream dataset, and evaluate the performance at each increment. For example, on the Yelp dataset whose size is 6 million, we train the models on subsets of the data with each subset size being in the sequence (60k, 600K, 1.8M, 3M .., 6M). For comparison, we also train a vanilla BiLSTM, and another BiLSTM which uses pretrained Roberta token embeddings. We observe that when both models are trained on 1% of the data, the gap between BiLSTM and RoBERTa models is at its peak, but as the training dataset size increases, the BiLSTM model accuracy keeps on increasing whereas RoBERTa’s accuracy remain mostly flat. As the dataset size increases, the accuracy gap shrinks to within 1%. \n\nOur study suggests that collecting data and training on the target tasks is a solution worth considering, especially in production environments where accuracy is not the only considered factor, rather inference latency is often just as crucial. We benchmarked the inference latency of the these models on \n\n> 2These datasets are the largest publicly available classifiaction datasets that we are aware of. \n\n2209 \n\n_Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics_ , pages 2209–2213 July 5 - 10, 2020. _⃝_ c 2020 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nboth CPU and GPU for different batch sizes, and as expected, we observe at least 20 _×_ speedup for the BiLSTM compared to the RoBERTa. This paper provides new experimental evidence and discussions for people to rethink the MLM pre-training paradigm in NLP, at least for resource rich tasks. \n\n"
+  },
+  {
+    "offset_inicio": "# **2 Related Works** \n\nScaling the number of training examples has long been identified",
+    "offset_fim": " transformer model when the number of training samples increases. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Related Works",
+    "motivo": "A seção começa no marcador \"# **2 Related Works**\" e reúne seus dois parágrafos; termina imediatamente antes do próximo marcador de seção principal, \"# **3 Experiments**\".",
+    "texto": "# **2 Related Works** \n\nScaling the number of training examples has long been identified as source of improvement for machine learning models in multiple domains including NLP (Banko and Brill, 2001), computer vision (Deng et al., 2009; Sun et al., 2017) and speech (Amodei et al., 2016). Previous work has suggested that deep learning scaling may be predictable empirically (Hestness et al., 2017), with model size scaling sub-linearly with training data size. (Sun et al., 2017) concluded that accuracy increases logarithmally with respect to training data size. However, these studies have focused on training models in the the fully supervised setting, without pretraining. \n\nOne closer work is (He et al., 2019) where it is shown that randomly initialized standard computervision models perform no worse than their _ImageNet_ pretrained counterparts. However, our work focuses on text classification. We do not examine the benefit of pretraining, at large, rather we focus on the benefit of pretraining for resource rich tasks. Another concurrent work that is still under review, in (Nakkiran and Sutskever, 2020) observes that, in some translation task such as IWSLT14, small language models exhibit even lower test loss compared to the large transformer model when the number of training samples increases. \n\n"
+  },
+  {
+    "offset_inicio": "# **3 Experiments** \n\n",
+    "offset_fim": "# **3 Experiments** \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "3 Experiments",
+    "motivo": "É o bloco de caput da seção principal 3; contém apenas seu título e termina imediatamente antes do marcador da subseção 3.1.",
+    "texto": "# **3 Experiments** \n\n"
+  },
+  {
+    "offset_inicio": "## **3.1 Task and Data** \n\nWe focus on a multi-class sentiment classification task: given the user reviews, predict the rating in five points scale",
+    "offset_fim": "|Electronics|18.6M|11%|5%|7%|16%|61%|\n\n\n\nTable 1: Data size and percentage of samples in each (n)-star category \n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "3.1 Task and Data",
+    "motivo": "O bloco inicia no marcador da subseção 3.1 e contém sua descrição, lista de datasets, tabela e legenda, terminando imediatamente antes do marcador da subseção 3.2.",
+    "texto": "## **3.1 Task and Data** \n\nWe focus on a multi-class sentiment classification task: given the user reviews, predict the rating in five points scale _{_ 1 _,_ 2 _,_ 3 _,_ 4 _,_ 5 _}_ . The experiments are conducted on the following three benchmark datasets. \n\n- **Yelp Challenge** (yel, 2019) contains text reviews, tips, business and check-in sets in Yelp. We use the 6.7m user reviews with ratings as our dataset. \n\n- **Amazon Reviews** (Ni et al., 2019) contains product reviews (ratings, text, helpfulness \n\nvotes) from Amazon. We choose two categories: _sports / outdoors_ , and _electronics_ as two separate datasets. We only use the review text as input features. \n\nThe distribution across five ratings of each dataset is illustrated in Table 1. In our experiment, all the above data is split into 90% for training and 10% for testing. \n\n|Dataset|Size|1|2|3|4|5|\n|---|---|---|---|---|---|---|\n|Yelp|6.69M|15%|8%|11%|22%|44%|\n|Sports|11.9M|7%|5%|7%|16%|65%|\n|Electronics|18.6M|11%|5%|7%|16%|61%|\n\n\n\nTable 1: Data size and percentage of samples in each (n)-star category \n"
+  },
+  {
+    "offset_inicio": "## **3.2 Models** \n\nWe choose the following three types of pretrained and vanilla models: ",
+    "offset_fim": "For fair comparison, all the above models share the same vocabulary and BPE tokenizer (Sennrich et al., 2015). \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "3.2 Models",
+    "motivo": "O bloco começa no marcador da subseção 3.2 e contém a descrição dos três modelos e da configuração comum. Termina imediatamente antes do marcador da subseção seguinte, “3.3 Experimental Setup”.",
+    "texto": "## **3.2 Models** \n\nWe choose the following three types of pretrained and vanilla models: \n\n- **RoBERTa** (Liu et al., 2019) RoBERTa is a transformer-based model pretrained with masked language modeling objectives on a large corpus. We finetune our classification task on both Roberta-Base (12 layers, 768 hidden, 12 heads) and Roberta-Large (24 layers, 1024 hidden, 16 heads). \n\n- **LSTM** (Hochreiter and Schmidhuber, 1997) We use a bidirectional LSTM with a maxpooling layer on top of the hidden states, followed by a linear layer. Token embeddings of size 128 are randomly initialized. \n\n- **LSTM + Pretrained Token Embedding** Similar to the previous setup, except we initialized the token embeddings with Roberta pretrained token embedding (Base: 768-dimensional embedding, Large: 1024dimensional embedding). The embeddings are frozen during training. \n\nFor fair comparison, all the above models share the same vocabulary and BPE tokenizer (Sennrich et al., 2015). \n\n"
+  },
+  {
+    "offset_inicio": "## **3.3 Experimental Setup** \n\nWe use the Adam optimizer and the following hyper",
+    "offset_fim": "early stopping based on accuracy on the test set. The maximum sequence length of input was set to 512 for all models. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "3.3 Experimental Setup",
+    "motivo": "O bloco inicia no marcador da subseção 3.3 na página 2 e inclui a continuação do texto, figura e tabela não estruturais na página 3. Termina imediatamente antes do próximo marcador estrutural, “# **4 Results**”.",
+    "texto": "## **3.3 Experimental Setup** \n\nWe use the Adam optimizer and the following hyperparameter sweep for each model. (i) RoBERTa is finetuned with the following learning rates _{_ 5 _e −_ 6 _,_ 1 _e_ 5 _,_ 1 _._ 5 _e −_ 5 _,_ 2 _e −_ 5 _}_ , with linear warm up in the first 5% of steps followed by a linear \n\n2210\n\n<!-- PÁGINA 3 -->\nFigure 1: Accuracy Gap of Roberta, BiLSTM trained on different amount of data \n\n|Models|Yelp<br>Accuracy|∆|Sport<br>Accuracy|s<br>∆|Electron<br>Accuracy|ics<br>∆|Params|\n|---|---|---|---|---|---|---|---|\n|Roberta-Large|78.85|-|79.65|-|79.07|-|304M|\n|Roberta-Base|78.44|0.41|79.45|0.20|78.84|0.23|86M|\n|LSTM-4-512 + Large|77.14|1.71|78.80|0.85|78.16|0.92|25M|\n|LSTM-4-512 + Base|77.07|1.78|78.72|0.93|78.07|1.0|24M|\n|LSTM-4-256 + Large|77.02|1.83|78.76|0.89|78.12|0.95|7.4M|\n|LSTM-4-256 + Base|77.03|1.82|78.62|1.03|77.98|1.09|6.8M|\n|LSTM-4-256|76.37|2.48|78.38|1.27|77.76|1.31|4.8M|\n|LSTM-2-256|76.09|2.76|78.18|1.47|77.57|1.5|2.4M|\n\n\n\nTable 2: Test Accuracy of Roberta-base, BiLSTM, and BiLSTM with Roberta Pretrained Token Embedding when trained on the full dataset. The ∆ column shows the difference between each model’s accuracy and that of RobertaLarge. For LSTM models, LSTM-n-k denotes an LSTM model with n layers and k cells. + Large or + Base indicate the use of Roberta Large or Roberta Base token embeddings, respectively. The number of parameters does not count the size of embedding table. \n\ndecay to 0. The batch size is set to 32, with dropout being 0.1. (ii) For the LSTM, it is trained with a constant learning rate from the sequence: _{_ 2 _._ 5 _e −_ 4 _,_ 5 _e −_ 4 _,_ 7 _._ 5 _e −_ 4 _,_ 1 _e −_ 3 _}_ . The batch size is set to 64. We train each model on 8 GPUs for 10 epochs and perform early stopping based on accuracy on the test set. The maximum sequence length of input was set to 512 for all models. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Results** \n\n",
+    "offset_fim": "# **4 Results** \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "4 Results",
+    "motivo": "O título da seção 4 inicia uma unidade própria; ela termina imediatamente antes do marcador da subseção \"## **4.1 Impact of Data Size**\".",
+    "texto": "# **4 Results** \n\n"
+  },
+  {
+    "offset_inicio": "## **4.1 Impact of Data Size** \n\nWe first investigate the effect of varying the number",
+    "offset_fim": "despite an order of magnitude difference in the number of parameters. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "4.1 Impact of Data Size",
+    "motivo": "A seção numerada 4.1 inicia na página 3 e reúne seu texto contínuo, incluindo a continuação na página 4, até imediatamente antes do marcador da subseção 4.2.",
+    "texto": "## **4.1 Impact of Data Size** \n\nWe first investigate the effect of varying the number of training samples, for fixed model and training procedure. We train different models using _{_ 1% _,_ 10% _,_ 30% _,_ 50% _,_ 70% _,_ 90% _}_ amount of data to mimic the “low-resource”, “medium-resource” and “high-resource” regime. Figure 1 shows that the accuracy delta between the LSTM and RoBERTa models at different percentages of the \n\ntraining data. From the plot, we observe the following phenomena: \n\n(i) Pretrained models exhibit a diminishing return behavior as the size of the target data grows. When we increase the number of training examples, the accuracy gap between Roberta and LSTM shrinks. For example, when both models are trained with 1% of the Yelp dataset, the accuracy gap is around 9%. However, as we increases the amount of training data to 90%, the accuracy gap drops to within 2%. The same behaviour is observed on both Amazon review datasets, with the initial gap starting at almost 5% for 1% of the training data, then shrinking all the way to within one point when most of the training data is used. \n\n(ii) Using the pretrained RoBERTa token embeddings can further reduce the accuracy gap especially when training data is limited. For example, in the Yelp review data, a 4-layers LSTM with pretrained embeddings provides additional 3 per- \n\n2211\n\n<!-- PÁGINA 4 -->\ncent gain compared to its counterparts. As Table 2 shows, an LSTM with pretrained RoBERTa token embeddings always outperforms the ones with random token initialization. This suggests that the embeddings learned during pretraining RoBERTa may constitute an efficient approach for transfer learning the knowledge learned in these large MLM. \n\nWe further report the accuracy metric of each model using all the training data. The full results are listed in Table 2. We observe that the accuracy gap is less than 1% on the Amazon datasets. even compared to 24 layers RoBERTa-large model. As for the Yelp dataset, the accuracy gap is within 2 percent from the RoBERTa-large model, despite an order of magnitude difference in the number of parameters. \n\n"
+  },
+  {
+    "offset_inicio": "## **4.2 Inference Time** \n\nWe also investigate the inference time of the three type",
+    "offset_fim": "by less than 25%. This is due to the most additional parameters are from a simple linear transformation. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "4.2 Inference Time",
+    "motivo": "O bloco inicia no marcador da subseção 4.2 e inclui seus parágrafos e a tabela de inferência. Termina imediatamente antes do marcador da seção principal \"# **5 Discussion**\".",
+    "texto": "## **4.2 Inference Time** \n\nWe also investigate the inference time of the three type of models on GPU and CPU. The CPU inference time is tested on Intel Xeon E5-2698 v4 with batch size 128. The GPU inference time is tested on NVIDIA Quadro P100 with batch size _∈{_ 128 _,_ 256 _,_ 384 _}_ . The maximum sequence length is 512. We run 30 times for each settings and take the average. The results are listed in TABLE 3. \n\n|Model|CPU||GPU||\n|---|---|---|---|---|\n|Batch size|128|128|256|384|\n|Roberta-Base|323|16.1|16.1|16.1|\n|Roberta-Large|950|55.5|55.5|-|\n|LSTM-2-256|15.2|0.47|0.43|0.42|\n|LSTM-4-256|28.1|1.17|0.94|0.86|\n|LSTM-4-256+Base|35.2|1.33|1.09|1.02|\n|LSTM-4-256+Large|37.5|1.33|1.17|1.07|\n|LSTM-4-512+Base|64.8|3.52|3.20|3.13|\n|LSTM-4-512+Large|64.8|3.36|3.32|3.26|\n\n\n\nTable 3: Inference time (ms) of Roberta, BiLSTM on CPU and GPU \n\nNot surprisingly, the LSTM model is at least 20 time faster even when compared to the RobertaBase. Note that the P100 will be out of memory when batch size is 384 for Roberta-Large. Another observation is that although using the Roberta pretrained token embedding introduces 10 times more model parameters compared to vanilla BiLSTM, the inference time only increases by less than 25%. This is due to the most additional parameters are from a simple linear transformation. "
+  },
+  {
+    "offset_inicio": "# **5 Discussion** \n\nOur findings in this paper indicate that increasing the number of training",
+    "offset_fim": "findings suggest it might be feasible to gain accuracy for faster models by collecting more training examples. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "5 Discussion",
+    "motivo": "A seção inicia no marcador “# **5 Discussion**” e contém seus dois parágrafos completos, terminando imediatamente antes do marcador da seção seguinte, “# **6 Conclusion**”.",
+    "texto": "# **5 Discussion** \n\nOur findings in this paper indicate that increasing the number of training examples for ‘standard’ models such as LSTM leads to performance gains that are within 1 percent of their massively pretrained counterparts. Due to the fact that there is no good large scale question answering dataset, it is not clear if the same findings would hold on this type of NLP tasks, which are more challenging and semantic-based. In the future work, we will run more experiments if there are some other large scale open datasets. Despite sentiment analysis being a crucial text classification task, it is possible, though unlikely, that the patterns observed here are limited to sentiment analysis tasks only. The rationale behinds that is that pretrained LSTMs have kept up very well with transformer-based counterparts on many tasks (Radford et al.). \n\nOne way to interpret our results is that ‘simple’ models have better regularization effect when trained on large amount of data, as also evidenced in the concurrent work (Nakkiran and Sutskever, 2020).The other side of the argument in interpreting our results is that MLM based pretraining still leads to improvements even as the data size scales into the millions. In fact, with a pretrained model and 2 million training examples, it is possible to outperform an LSTM model that is trained with 3 _×_ more examples. \n\n# **6 Conclusion** \n\nFinetuning BERT-style models on resource-rich downstream tasks is not well studied. In this paper, we reported that, when the downstream task has sufficiently large amount of training exampes, i.e., millions, competitive accuracy results can be achieved by training a simple LSTM, at least for text classification tasks. We further discover that reusing the token embeddings learned during BERT pretraining in an LSTM model leads to significant improvements. The findings of this work have significant implications on both the practical aspect as well as the research on pretraining. For industrial applications where there is a trade-off typically between accuracy and latency, our findings suggest it might be feasible to gain accuracy for faster models by collecting more training examples. \n\n"
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "References",
+    "motivo": "O título “References” é uma unidade estrutural própria e termina imediatamente antes da primeira entrada bibliográfica, “2019. Yelp dataset challenge.”",
+    "texto": "# **References** \n\n"
+  },
+  {
+    "offset_inicio": "- Dario Amodei, Sundaram Ananthanarayanan, Rishita Anubhai, Jingliang Bai, Eric",
+    "offset_fim": "_International conference on machine learning_ , pages 173–182.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Amodei et al. (2016) — Deep Speech 2",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de referência \"- Dario Amodei...\" e termina antes da entrada seguinte, \"- Michele Banko...\".",
+    "texto": "- Dario Amodei, Sundaram Ananthanarayanan, Rishita Anubhai, Jingliang Bai, Eric Battenberg, Carl Case, Jared Casper, Bryan Catanzaro, Qiang Cheng, Guoliang Chen, et al. 2016. Deep speech 2: End-to-end speech recognition in english and mandarin. In _International conference on machine learning_ , pages 173–182."
+  },
+  {
+    "offset_inicio": "- Michele Banko and Eric Brill. 2001. Scaling to very very large corpora for natural language disambiguation.",
+    "offset_fim": "pages 26– 33. Association for Computational Linguistics.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Banko and Brill (2001)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item de Michele Banko e Eric Brill e termina imediatamente antes da entrada seguinte, de Jia Deng et al.",
+    "texto": "- Michele Banko and Eric Brill. 2001. Scaling to very very large corpora for natural language disambiguation. In _Proceedings of the 39th annual meeting on association for computational linguistics_ , pages 26– 33. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. 2009.",
+    "offset_fim": "In _2009 IEEE conference on computer vision and pattern recognition_ , pages 248–255. Ieee.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Referência: Jia Deng et al. (2009), ImageNet",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"-\" e termina antes do marcador da referência seguinte, de Jacob Devlin et al.",
+    "texto": "- Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. 2009. Imagenet: A large-scale hierarchical image database. In _2009 IEEE conference on computer vision and pattern recognition_ , pages 248–255. Ieee."
+  },
+  {
+    "offset_inicio": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding.",
+    "offset_fim": "ng. _arXiv preprint arXiv:1810.04805_ .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Referência: Devlin et al. (2018) — BERT",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página. Inicia no marcador \"- Jacob Devlin\" e termina após a referência a arXiv:1810.04805, imediatamente antes da entrada de Kaiming He et al.",
+    "texto": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. _arXiv preprint arXiv:1810.04805_ ."
+  },
+  {
+    "offset_inicio": "- Kaiming He, Ross Girshick, and Piotr Doll´ar. 2019. Rethinking imagenet pre-training.",
+    "offset_fim": "In _Proceedings of the IEEE International Conference on Computer Vision_ , pages 4918–4927.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "He, Girshick e Dollár (2019) — Rethinking ImageNet pre-training",
+    "motivo": "É a primeira entrada bibliográfica completa da lista de referências; inicia no marcador '-' e termina imediatamente antes da entrada seguinte, de Joel Hestness et al.",
+    "texto": "- Kaiming He, Ross Girshick, and Piotr Doll´ar. 2019. Rethinking imagenet pre-training. In _Proceedings of the IEEE International Conference on Computer Vision_ , pages 4918–4927."
+  },
+  {
+    "offset_inicio": "- Joel Hestness, Sharan Narang, Newsha Ardalani, Gregory Diamos, Heewoo Jun, Hassan",
+    "offset_fim": "Yanqi Zhou. 2017. Deep learning scaling is predictable, empirically. _arXiv preprint arXiv:1712.00409_ .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Hestness et al. (2017) — Deep learning scaling is predictable, empirically",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador '- Joel Hestness...' e termina após 'arXiv:1712.00409_ .', imediatamente antes da entrada de Jianmo Ni et al.",
+    "texto": "- Joel Hestness, Sharan Narang, Newsha Ardalani, Gregory Diamos, Heewoo Jun, Hassan Kianinejad, Md Patwary, Mostofa Ali, Yang Yang, and Yanqi Zhou. 2017. Deep learning scaling is predictable, empirically. _arXiv preprint arXiv:1712.00409_ ."
+  },
+  {
+    "offset_inicio": "   - Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects.",
+    "offset_fim": "(EMNLP-IJCNLP)_ , pages 188–197. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Ni, Li e McAuley (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada pelo marcador de item e encerrada imediatamente antes da entrada de Matthew E Peters et al.",
+    "texto": "   - Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 188–197. "
+  },
+  {
+    "offset_inicio": "   - Matthew E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations. _arXiv preprint arXiv:1802.05365_ . ",
+    "offset_fim": "Luke Zettlemoyer. 2018. Deep contextualized word representations. _arXiv preprint arXiv:1802.05365_ . ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Peters et al. (2018) — Deep contextualized word representations",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item da referência e termina imediatamente antes da entrada seguinte, de Alec Radford et al.",
+    "texto": "   - Matthew E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations. _arXiv preprint arXiv:1802.05365_ . "
+  },
+  {
+    "offset_inicio": "   - Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. Improving language understanding by generative pre-training.",
+    "offset_fim": "Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. Improving language understanding by generative pre-training.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Referência: Alec Radford et al. — Improving language understanding by generative pre-training",
+    "motivo": "É a primeira entrada bibliográfica visível na página. Inicia no marcador de item \"-\" e termina após \"pre-training.\", imediatamente antes da próxima referência, de Colin Raffel et al.",
+    "texto": "   - Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. Improving language understanding by generative pre-training."
+  },
+  {
+    "offset_inicio": "- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael",
+    "offset_fim": "with a unified text-to-text transformer. _arXiv preprint arXiv:1910.10683_ . ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Raffel et al. (2019) — Exploring the limits of transfer learning",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador '-' e termina imediatamente antes da entrada de Rico Sennrich et al.",
+    "texto": "- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2019. Exploring the limits of transfer learning with a unified text-to-text transformer. _arXiv preprint arXiv:1910.10683_ . "
+  },
+  {
+    "offset_inicio": "   - Rico Sennrich, Barry Haddow, and Alexandra Birch. 2015. Neural machine translation of rare words",
+    "offset_fim": "Neural machine translation of rare words with subword units. _arXiv preprint arXiv:1508.07909_ .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Rico Sennrich, Barry Haddow e Alexandra Birch (2015)",
+    "motivo": "É a primeira entrada bibliográfica visível na página. O bloco inicia no marcador de item \"-\" da referência e termina ao fim dessa citação, imediatamente antes da entrada seguinte, de Rion Snow et al.",
+    "texto": "   - Rico Sennrich, Barry Haddow, and Alexandra Birch. 2015. Neural machine translation of rare words with subword units. _arXiv preprint arXiv:1508.07909_ ."
+  },
+  {
+    "offset_inicio": "- Rion Snow, Brendan O’Connor, Daniel Jurafsky, and Andrew Y Ng. 2008. Cheap and fast—but is it good?: evaluating non-expert annotations for natural language tasks.",
+    "offset_fim": "In _Proceedings of the conference on empirical methods in natural language processing_ , pages 254–263. Association for Computational Linguistics.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Rion Snow et al. (2008)",
+    "motivo": "É a primeira entrada bibliográfica visível na página. O bloco começa no marcador de item “- Rion Snow” e termina ao fim da referência, imediatamente antes da entrada de Chen Sun et al.",
+    "texto": "- Rion Snow, Brendan O’Connor, Daniel Jurafsky, and Andrew Y Ng. 2008. Cheap and fast—but is it good?: evaluating non-expert annotations for natural language tasks. In _Proceedings of the conference on empirical methods in natural language processing_ , pages 254–263. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Chen Sun, Abhinav Shrivastava, Saurabh Singh, and Abhinav Gupta. 2017. Revisiting unreasonable effectiveness of data in deep learning era.",
+    "offset_fim": "deep learning era. In _Proceedings of the IEEE international conference on computer vision_ , pages 843–852.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Chen Sun et al. (2017) — Revisiting unreasonable effectiveness of data in deep learning era",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de item '-' e termina antes da entrada seguinte, iniciada por '- Sepp Hochreiter'.",
+    "texto": "- Chen Sun, Abhinav Shrivastava, Saurabh Singh, and Abhinav Gupta. 2017. Revisiting unreasonable effectiveness of data in deep learning era. In _Proceedings of the IEEE international conference on computer vision_ , pages 843–852."
+  },
+  {
+    "offset_inicio": "- Sepp Hochreiter and J¨urgen Schmidhuber. 1997. Long short-term memory. _Neural computation_",
+    "offset_fim": "Sepp Hochreiter and J¨urgen Schmidhuber. 1997. Long short-term memory. _Neural computation_ , 9(8):1735–1780.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Hochreiter e Schmidhuber (1997) — Long short-term memory",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de item e termina antes da entrada de Mandar Joshi et al.",
+    "texto": "- Sepp Hochreiter and J¨urgen Schmidhuber. 1997. Long short-term memory. _Neural computation_ , 9(8):1735–1780."
+  },
+  {
+    "offset_inicio": "- Mandar Joshi, Danqi Chen, Yinhan Liu, Daniel S Weld, Luke Zettlemoyer, and Omer Levy. 2019. Spanbert: Improving pre-training by representing and predicting spans.",
+    "offset_fim": "Spanbert: Improving pre-training by representing and predicting spans. _arXiv preprint arXiv:1907.10529_ .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Referência: Mandar Joshi et al. (2019), SpanBERT",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"-\" e termina imediatamente antes do marcador da referência seguinte.",
+    "texto": "- Mandar Joshi, Danqi Chen, Yinhan Liu, Daniel S Weld, Luke Zettlemoyer, and Omer Levy. 2019. Spanbert: Improving pre-training by representing and predicting spans. _arXiv preprint arXiv:1907.10529_ ."
+  },
+  {
+    "offset_inicio": "- Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed,",
+    "offset_fim": "pre-training for natural language generation, translation, and comprehension. _arXiv preprint arXiv:1910.13461_ . ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Referência: Mike Lewis et al. (2019), BART",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador '-' e termina imediatamente antes da próxima entrada, iniciada por '- Yinhan Liu'.",
+    "texto": "- Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, and Luke Zettlemoyer. 2019. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. _arXiv preprint arXiv:1910.13461_ . "
+  },
+  {
+    "offset_inicio": "- Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov.",
+    "offset_fim": "2019. Roberta: A robustly optimized bert pretraining approach. _arXiv preprint arXiv:1907.11692_ .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Liu et al. (2019) — Roberta: A robustly optimized bert pretraining approach",
+    "motivo": "É a primeira entrada bibliográfica identificável da página; inicia no marcador de item \"-\" e termina ao fim da citação, imediatamente antes da próxima entrada de referências.",
+    "texto": "- Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. _arXiv preprint arXiv:1907.11692_ ."
+  },
+  {
+    "offset_inicio": "- Kaplun G. Bansal Y. Yang T. Barak B. Nakkiran, P. and I. Sutskever. 2020. Deep",
+    "offset_fim": "2020. Deep double descent: Where bigger models and more data hurt. _ICLR 2020_ .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Kaplun et al. (2020) — Deep double descent",
+    "motivo": "É uma entrada bibliográfica individual da seção de referências; começa no marcador de item \"-\" e termina após a referência, antes da numeração de página.",
+    "texto": "- Kaplun G. Bansal Y. Yang T. Barak B. Nakkiran, P. and I. Sutskever. 2020. Deep double descent: Where bigger models and more data hurt. _ICLR 2020_ ."
+  }
+]

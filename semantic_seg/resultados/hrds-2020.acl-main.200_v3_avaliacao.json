@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-2020.acl-main.200_v3",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-2020.acl-main.200.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 31,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 31,
+      "fronteiras_gabarito": 38,
+      "acertos": 31,
+      "precisao": 1.0,
+      "revocacao": 0.8157894736842105,
+      "f1": 0.898550724637681,
+      "fins": {
+        "previstos": 31,
+        "gabarito": 38,
+        "fins_nao_localizados": 0,
+        "acertos": 31,
+        "precisao": 1.0,
+        "revocacao": 0.8157894736842105,
+        "f1": 0.898550724637681
+      },
+      "blocos_exatos": {
+        "acertos": 28,
+        "precisao": 0.9032258064516129,
+        "revocacao": 0.7368421052631579,
+        "f1": 0.8115942028985507
+      },
+      "cobertura": 0.9963247577681257
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-N13-1070",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-N13-1070.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 51,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 51,
+      "fronteiras_gabarito": 51,
+      "acertos": 51,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 51,
+        "gabarito": 51,
+        "fins_nao_localizados": 0,
+        "acertos": 51,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "blocos_exatos": {
+        "acertos": 51,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

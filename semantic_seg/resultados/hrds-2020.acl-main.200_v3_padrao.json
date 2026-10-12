@@ -1,0 +1,34 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Título do documento",
+      "exemplo": "To Pretrain or Not to Pretrain: Examining the Benefits of Pretraining on Resource Rich Tasks"
+    },
+    {
+      "nivel": 2,
+      "nome": "Seção principal numerada",
+      "exemplo": "1 Introduction"
+    },
+    {
+      "nivel": 3,
+      "nome": "Subseção numerada",
+      "exemplo": "3.1 Task and Data"
+    },
+    {
+      "nivel": 2,
+      "nome": "Referências",
+      "exemplo": "References"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "total_paginas": 5
+}

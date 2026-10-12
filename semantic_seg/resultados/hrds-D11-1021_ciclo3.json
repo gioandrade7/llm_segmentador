@@ -1,0 +1,326 @@
+[
+  {
+    "offset_inicio": "# **Bayesian Checking for Topic Models** ",
+    "offset_fim": "# **Bayesian Checking for Topic Models** ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Bayesian Checking for Topic Models",
+    "motivo": "O título do documento inicia a primeira unidade estrutural e termina imediatamente antes do próximo marcador, \"## **David Mimno**\".",
+    "texto": "# **Bayesian Checking for Topic Models** "
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nReal document collections do not fit the independence assumptions asserted by most",
+    "offset_fim": "will embed this function in a posterior predictive check and use it to evaluate and visualize topic models in new ways. \n\n227 \n\n_Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing_ , pages 227–237, Edinburgh, Scotland, UK, July 27–31, 2011. _⃝_ c 2011 Association for Computational Linguistics",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco começa no marcador literal \"## **Abstract**\" e termina imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\"; inclui o rodapé editorial da página por não ser uma unidade estrutural.",
+    "texto": "## **Abstract** \n\nReal document collections do not fit the independence assumptions asserted by most statistical topic models, but how badly do they violate them? We present a Bayesian method for measuring how well a topic model fits a corpus. Our approach is based on posterior predictive checking, a method for diagnosing Bayesian models in user-defined ways. Our method can identify where a topic model fits the data, where it falls short, and in which directions it might be improved. \n\n## **1 Introduction** \n\nProbabilistic topic models are a suite of machine learning algorithms that decompose a corpus into a set of topics and represent each document with a subset of those topics. The inferred topics often correspond with the underlying themes of the analyzed collection, and the topic modeling algorithm organizes the documents according to those themes. \n\nMost topic models are evaluated by their predictive performance on held out data. The idea is that topic models are fit to maximize the likelihood (or posterior probability) of a collection of documents, and so a good model is one that assigns high likelihood to a held out set (Blei et al., 2003; Wallach et al., 2009). \n\nBut this evaluation is not in line with how topic models are frequently used. Topic models seem to capture the underlying themes of a collection—indeed the monicker “topic model” is retrospective—and so we expect that these themes are useful for exploring, summarizing, and learning \n\nabout its documents (Mimno and McCallum, 2007; Chang et al., 2009). In such exploratory data analysis, however, we are not concerned with the fit to held out data. \n\nIn this paper, we develop and study new methods for evaluating topic models. Our methods are based on _posterior predictive checking_ , which is a model diagnosis technique from Bayesian statistics (Rubin, 1984; Gelman et al., 1996). The goal of a posterior predictive check (PPC) is to assess the validity of a Bayesian model without requiring a specific alternative model. Given data, we first compute a posterior distribution over the latent variables. Then, we estimate the probability of the observed data under the data-generating distribution that is induced by the posterior (the “posterior predictive distribution”). A data set that is unlikely calls the model into question, and consequently the posterior. PPCs can show where the model fits and doesn’t fit the observations. They can help identify the parts of the posterior that are worth exploring. \n\nThe key to a posterior predictive check is the _discrepancy function_ . This is a function of the data that measures a property of the model which is important to capture. While the model is often chosen for computational reasons, the discrepancy function might capture aspects of the data that are desirable but difficult to model. In this work, we will design a discrepancy function to measure an independence assumption that is implicit in the modeling assumptions but is not enforced in the posterior. We will embed this function in a posterior predictive check and use it to evaluate and visualize topic models in new ways. \n\n227 \n\n_Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing_ , pages 227–237, Edinburgh, Scotland, UK, July 27–31, 2011. _⃝_ c 2011 Association for Computational Linguistics"
+  },
+  {
+    "offset_inicio": "## **2 Probabilistic Topic Modeling** \n\nProbabilistic topic models are statistical models",
+    "offset_fim": "distributed variants (Asuncion et al., 2008), and online algorithms (Hoffman et al., 2010). ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Probabilistic Topic Modeling",
+    "motivo": "É a primeira unidade estrutural completa visível: inicia no marcador da seção 2 e termina imediatamente antes do marcador \"## **3 Checking Topic Models**\". Os itens numerados do processo generativo formam blocos internos separados.",
+    "texto": "## **2 Probabilistic Topic Modeling** \n\nProbabilistic topic models are statistical models of text that assume that a small number of distributions over words, called “topics,” are used to generate the observed documents. One of the simplest topic models is latent Dirichlet allocation (LDA) (Blei et al., 2003). In LDA, a set of _K_ topics describes a corpus; each document exhibits the topics with different proportions. The words are assumed exchangeable within each document; the documents are assumed exchangeable within the corpus. \n\nMore formally, let _φ_ 1 _, . . . , φK_ be _K_ topics, each of which is a distribution over a fixed vocabulary. \n\nFor each document, LDA assumes the following generative process \n\n1. Choose topic proportions _θd ∼_ Dirichlet( _α_ ). \n\n2. For each word \n\n   - (a) Choose topic assignment _zd,n ∼ θ_ . \n\n   - (b) Choose word _wd,n ∼ φzd,n_ . \n\nThis process articulates the statistical assumptions behind LDA: Each document is endowed with its own set of topic proportions _θd_ , but the same set of topics _φ_ 1: _K_ governs the whole collection. \n\nNotice that the probability of a word is independent of its document _θd_ given its topic assignment _zd,n_ (i.e., _wd,n ⊥⊥ θd | zd,n_ ). Two documents might have different overall probabilities of containing a word from the “vegetables” topic; however, all the words in the collection (regardless of their documents) drawn from that topic will be drawn from the same multinomial distribution. \n\nThe central computational problem for LDA is posterior inference. Given a collection of documents, the problem is to compute the conditional distribution of the hidden variables—the topics _φk_ , topic proportions _θd_ , and topic assignments _zd,n_ . Researchers have developed many algorithms for approximating this posterior, including sampling methods (Griffiths and Steyvers, 2004) (used in this paper), variational methods (Blei et al., 2003), distributed variants (Asuncion et al., 2008), and online algorithms (Hoffman et al., 2010). "
+  },
+  {
+    "offset_inicio": "## **3 Checking Topic Models** \n\nOnce approximated, the posterior distribution is used for the task at hand.",
+    "offset_fim": "components of the model that are discovered by the posterior. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 4,
+    "titulo": "3 Checking Topic Models",
+    "motivo": "O bloco inicia na seção principal \"3 Checking Topic Models\" e reúne seu texto introdutório. Termina imediatamente antes do próximo marcador estrutural, a subseção \"3.1 A realized discrepancy for LDA\", na página 4.",
+    "texto": "## **3 Checking Topic Models** \n\nOnce approximated, the posterior distribution is used for the task at hand. Topic models have been applied to many tasks, such as classification, prediction, collaborative filtering, and others. We focus on using them as an exploratory tool, where we assume that the topic model posterior provides a good decomposition of the corpus and that the topics provide good summaries of the corpus contents. \n\nBut what is meant by “good”? To answer this question, we turn to Bayesian model checking (Rubin, 1981; Gelman et al., 1996). The goal of Bayesian model checking is to assess whether the observed data matches the modeling assumptions in the directions that are important to the analysis. The \n\n228\n\n<!-- PÁGINA 3 -->\n<!-- Start of picture text -->\nTopic850 Topic371 Topic760<br>weekend Tickets Week<br>2 Broadway Through book<br>Times Street Warner<br>4 listing Road sales<br>selective Saturdays List<br>6 noteworthy Sundays Weeks<br>critics New woman<br>8 tickets Fridays bookstores<br>highly Jersey death<br>10 recommended Hours indicates<br>denotes Free Advice<br>12 booth Tuesdays Putnam<br>Tickets MUSEUM OF<br>14 Street Thursdays report<br>TKTS THEATER New<br>Topic628 Topic178 Topic632<br>Iraq agency job<br>2 Iraqi safety jobs<br>Hussein report working<br>4 Baghdad Federal office<br>Saddam Administration business<br>6 Shiite problems career<br>government investigation worked<br>8 al Safety employees<br>Iraqis violations hired<br>10 Sunni federal boss<br>Kurdish failed manager<br>12 forces inspector find<br>country review corporate<br>14 military department help<br>troops general experienc<br>Topic87 Topic750 Topic274<br>Roberts Four Leon<br>2 Grant Freeman Levy<br>Fort Seasons Hess<br>4 Worth Da Bard<br>Burke Vinci LEVY<br>6 Hunt Code Botstein<br>Kravis Thomson Atlas<br>8 Bass Wolff Shelby<br>Kohlberg Leonardo Panetta<br>10 Grace Brown Norma<br>Rothschild Three<br>12 Baron Dan HES<br>Borden Cliff David<br>14 Texas Holy Amerada<br>William da N<br>1 2 3 4 1 2 3 4 1 2 3 4<br>Score<br>Rank<br><!-- End of picture text -->\n\nFigure 1: **Visualization of variability within topics.** Nine randomly selected topics from the New York Times with low (top row), medium (middle row) and high (bottom row) mutual information between words and documents. The _y_ -axis shows term rank within the topic, with size proportional to log probability. The _x_ -axis represents divergence from the multinomial assumption for each word: terms that are uniformly distributed across documents are towards the left, while more specialized terms are to the right. Triangles represent real values, circles represent 20 replications of this same plot from the posterior of the model. \n\n229\n\n<!-- PÁGINA 4 -->\nintuition is that only when satisfied with the model should the modeler use the posterior to learn about her data. In complicated Bayesian models, such as topic models, Bayesian model checking can point to the parts of the posterior that better fit the observed data set and are more likely to suggest something meaningful about it. \n\nIn particular, we will develop posterior predictive checks (PPC) for topic models. In a PPC, we specify a _discrepancy function_ , which is a function of the data that measures an important property that we want the model to capture. We then assess whether the observed value of the function is similar to values of the function drawn from the posterior, through the distribution of the data that it induces. (This distribution of the data is called the “posterior predictive distribution.”) \n\nAn innovation in PPCs is the _realized discrepancy function_ (Gelman et al., 1996), which is a function of the data and any hidden variables that are in the model. Realized discrepancies induce a traditional discrepancy by marginalizing out the hidden variables. But they can also be used to evaluate assumptions about _latent_ variables in the posterior, especially when combined with techniques like MCMC sampling that provide realizations of them. In topic models, as we will see below, we use a realized discrepancy to factor the observations and to check specific components of the model that are discovered by the posterior. \n\n"
+  },
+  {
+    "offset_inicio": "# **3.1 A realized discrepancy for LDA** \n\nReturning to LDA, we design a discrepancy",
+    "offset_fim": "he bottom-left. It shows a loosely connected series of proper names with no overall theme. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "3.1 A realized discrepancy for LDA",
+    "motivo": "O bloco começa no marcador de subseção \"3.1\" e abrange seu texto até imediatamente antes do próximo marcador estrutural, \"3.2 Posterior Predictive Checks for LDA\", na página 5.",
+    "texto": "# **3.1 A realized discrepancy for LDA** \n\nReturning to LDA, we design a discrepancy function that checks the independence assumption of words given their topic assignments. As we mentioned above, given the topic assignment _z_ the word _w_ should be independent of its document _θ_ . Consider a decomposition of a corpus from LDA, which assigns every observed word _wd,n_ to a topic _zd,n_ . Now restrict attention to all the words assigned to the _k_ th topic and form two random variables: _W_ are the words assigned to the topic and _D_ are the document indices of the words assigned to that topic. If the LDA assumptions hold then knowing _W_ gives no information about _D_ because the words are drawn independently from the topic. \n\nWe measure this independence with the mutual \n\ninformation between _W_ and _D_ :<sup>1</sup> \n\n\n\nWhere _N_ ( _w, d, k_ ) is the number of tokens of type = _w_ in topic _k_ in document _d_ , with _N_ ( _w, k_ ) � _d_<sup>_N_(</sup><sup>_w, d, k_),</sup><sup>_N_(</sup><sup>_d, k_)=�</sup> _w_<sup>_N_(</sup><sup>_w, d, k_),and</sup> _N_ ( _k_ ) =<sup>�</sup> _w,d_<sup>_N_(</sup><sup>_w, d, k_).</sup> This function measures the divergence between the joint distribution over word and document index and the product of the marginal distributions. In the limit of infinite samples, independent random variables have mutual information of zero, but we expect finite samples to have non-zero values even for truly independent variables. Notice that this is a realized discrepancy; it depends on the latent assignments of observed words to topics. \n\nEq. 1 is defined as a sum over a set of documents and a set of words. We can rearrange this summation as a weighted sum of the _instantaneous mutual information_ between words and documents: \n\n\n\nThis quantity can be understood by considering the per-topic distribution of document labels, _p_ ( _d|k_ ). This distribution is formed by normalizing the counts of how many words assigned to topic _k_ appeared in each document. The first term of Eq. 2 is the entropy—some topics are evenly distributed across many documents (high entropy); others are concentrated in fewer documents (low entropy). \n\nThe second term conditions this distribution on a particular word type _w_ by normalizing the perdocument number of times _w_ appeared in each document (in topic _k_ ). If this distribution is close to _p_ ( _d|k_ ) then _H_ ( _D|W_ = _w, k_ ) will be close to _H_ ( _D|k_ ) and _IMI_ ( _w, D|k_ ) will be low. If, on the other hand, word _w_ occurs many times in only a few documents, it will have lower entropy over docu- \n\n> 1There are other choices of discrepancies, such as wordword point-wise mutual information scores (Newman et al., 2010). \n\n230\n\n<!-- PÁGINA 5 -->\nments than the overall distribution over documents for the topic and _IMI_ ( _w, D|k_ ) will be high. \n\nWe illustrate this discrepancy in Figure 1, which shows nine topics trained from the _New York Times_ .<sup>2</sup> Each row contains randomly selected topics from low, middle, and high ranges of MI, respectively. Each triangle represents a word. Its place on the _y_ - axis is its rank in the topic. Its place on the _x_ -axis is its _IMI_ ( _w|k_ ), with more uniformly distributed words (low IMI) to the left and more specific words (high IMI) to the right. (For now, ignore the other points in this figure.) IMI varies between topics, but tends to increase with rank as less frequent words appear in fewer documents. \n\nThe discrepancy captures different kinds of structure in the topics. The top left topic represents formulaic language, language that occurs verbatim in many documents. In particular, it models the boilerplate text “Here is a selective listing by critics of The Times of new or noteworthy...” Identifying repeated phrases is a common phenomenon in topic models. Most words show lower than expected IMI, indicating that word use in this topic is less variable than data drawn from a multinomial distribution. The middle-left topic is an example of a good topic, according to this discrepancy, which is related to Iraqi politics. The bottom-left topic is an example of the opposite extreme from the top-left. It shows a loosely connected series of proper names with no overall theme."
+  },
+  {
+    "offset_inicio": "## **3.2 Posterior Predictive Checks for LDA** \n\nIntuitively, the middle row of topics in Figure 1 are the sort of topics we look for in a model, while the top",
+    "offset_fim": "This matches our intuition that the former topic is more useful than the latter. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "3.2 Posterior Predictive Checks for LDA",
+    "motivo": "O bloco inicia no marcador da subseção 3.2, na página 5, e reúne seu texto contínuo até imediatamente antes do próximo marcador estrutural, \"4 Searching for Systematic Deviations\", na página 6.",
+    "texto": "## **3.2 Posterior Predictive Checks for LDA** \n\nIntuitively, the middle row of topics in Figure 1 are the sort of topics we look for in a model, while the top and bottom rows contain topics that are less useful. Using a PPC, we can formally measure the difference between these topics. For each of the real topics in Figure 1 we regenerated the same figure 20 times. We sampled new words for every token from the posterior distribution of the topic, and recalculated the rank and IMI for each word. These “shadow” figures are shown as gray circles. The density of those circles creates a reference distribution indicating the expected IMI values at each rank under the multinomial assumption. \n\n> 2Details about the corpus and model fitting are in Section 4.2. Similar figures for two other corpora are in the supplement. \n\nBy themselves, IMI scores give an indication of the distribution of a word between documents within a topic: small numbers are better, large numbers indicate greater discrepancy. These scores, however, are based on the specific allocation of words to topics. For example, lower-ranked, less frequent words within a topic tend to have higher IMI scores than higher-ranked, more frequent words. This difference may be due to greater violation of multinomial assumptions, but may also simply be due to smaller sample sizes, as the entropy _H_ ( _D|W_ = _w, k_ ) is estimated from fewer tokens. The reference distributions help distinguish between these two cases. \n\nIn more detail, we generate replications of the data by considering a Gibbs sampling state. This state assigns each observed word to a topic. We first record the number of instances of each term assigned to each topic, _N_ ( _w|k_ ). Then for each word _wd,n_ in the corpus, we sample a new observed word _wd,n_<sup>_rep_where</sup><sup>_P_(</sup><sup>_w_)</sup><sup>_∝N_(</sup><sup>_w|zd,n_).(Wedidnotuse</sup> smoothing parameters.) Finally, we recalculate the mutual information and instantenous mutual information for each topic. \n\nIn the top-left topic, most of the words have much lower IMI than the word at the same rank in replications, indicating lower than expected variability. The exception is the word _Broadway_ , which is more variable than expected. In the middle-left topic, IMI for the words _Iraqi_ and _Baghdad_ occur within the expected range. These words fit the multinomial assumption: any word assigned to this topic is equally likely to be _Iraqi_ . Values for the words _Shiite_ , _Sunni_ , and _Kurdish_ are more specific to particular documents than we expect under the model. In the bottom-left topic, almost all words occur with greater variability than expected. This topic combines many terms with only coincidental similarity, such as Mets pitcher Grant Roberts and the firm Kohlberg Kravis Roberts. \n\nTurning to an analysis of the full mutual information, Figure 2 shows the three left-hand topics from Figure 1: _Weekend_ , _Iraq_ , and _Roberts_ . The histogram represents MI scores for 100 replications of the topic, rescaled to have mean zero and unit variance. The observed value, also rescaled, and the mean replicated value (set to zero) are shown with vertical lines. The formulaic _Weekend_ topic has significantly lower than expected MI. The _Iraq_ \n\n231\n\n<!-- PÁGINA 6 -->\n<!-- Start of picture text -->\nTopic850<br>30<br>25<br>20<br>15<br>10<br>5<br>0<br>Topic628<br>30<br>25<br>20<br>15<br>10<br>5<br>0<br>Topic87<br>30<br>25<br>20<br>15<br>10<br>5<br>0<br>−20 0 20 40<br>Deviance<br>count<br><!-- End of picture text -->\n\nFigure 2: **News: Observed topic scores (vertical lines) relative to replicated scores, rescaled so that replications have zero mean and unit variance.** The _Weekend_ topic (top) has lower than expected MI. The _Iraq_ (middle) and _Roberts_ (bottom) topics both have MI greater than expected. \n\nand _Roberts_ topics have significantly greater than expected MI. \n\nFor most topics the actual discrepancy is outside the range of any replicated discrepancies. In their original formulation, PPCs prescribe computing a tail probability of a replicated discrepancy being greater than (or less than) the observed discrepancy under the posterior predictive distribution. For example if an observed value is greater than 70 of 100 replicated values, we report a PPC _p_ -value of 0.7. \n\nWhen the observed value is far outside the range of any replicated values, as in Figure 2, that tail probability will be degenerate at 0 or 1. So, we report instead a _deviance_ value, an alternative way of comparing an observed value to a reference distribution. We compute the distribution of the replicated discrepancies and compute its standard deviation. We then compute how many standard deviations the observed discrepancy is from the mean of the replicated discrepancies. \n\nThis score allows us to compare topics. The observed value for the _Weekend_ topic is 31.8 standard deviations below the mean replicated value, and thus has deviance of -31.8, which is lower than expected. The _Iraq_ topic has deviance of 16.8 and the _Roberts_ topic has deviance of 47.7. This matches our intuition that the former topic is more useful than the latter. "
+  },
+  {
+    "offset_inicio": "# **4 Searching for Systematic Deviations** \n\nWe demonstrated that the mutual information",
+    "offset_fim": "and that further modeling or visualization using that grouping might be useful. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "4 Searching for Systematic Deviations",
+    "motivo": "Bloco do caput da seção 4, iniciado no título da seção e encerrado imediatamente antes do marcador da subseção \"4.1 PPCs for systematic discrepancy\".",
+    "texto": "# **4 Searching for Systematic Deviations** \n\nWe demonstrated that the mutual information discrepancy function can detect violations of multinomial assumptions, in which instances of a term in a given topic are not independently distributed among documents. One way to address this lack of fit is to encode document-level extra-multinomial variance (“burstiness”) into the model using Dirichlet compound multinomial distributions (Doyle and Elkan, 2009). If there is no pattern to the deviations from multinomial word use across documents, this method is the best we can do. \n\nIn many corpora, however, there are systematic deviations that can be explained by additional variables. LDA is the simplest generative topic model, and researchers have developed many variants of LDA that account for a variety of variables that can be found or measured with a corpus. Examples include models that account for time (Blei and Lafferty, 2006), books (Mimno and McCallum, 2007), and aspect or perspective (Mei and Zhai, 2006; Lin et al., 2008; Paul et al., 2010). In this section, we show how we can use the mutual information discrepancy function of Equation 1 and PPCs to guide our choice in which topic model to fit. \n\nGreater deviance implies that a particular grouping better explains the variation in word use within a topic. The discrepancy functions are large when words appear more than expected in some groups and less than expected in others. We know that the individual documents show significantly more variation than we expect from replications from the model’s posterior distribution. If we combine documents randomly in a meaningless grouping, such deviance should decrease, as differences between documents are “smoothed out.” If a grouping of documents shows equal or greater deviation, we can assume that that grouping is maintaining the underlying structure of the systematic deviation from the multinomial assumption, and that further modeling or visualization using that grouping might be useful. \n\n"
+  },
+  {
+    "offset_inicio": "## **4.1 PPCs for systematic discrepancy** \n\nThe idea is that the words assigned to",
+    "offset_fim": "the deviation between mean replicated values and observed values of those functions. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "4.1 PPCs for systematic discrepancy",
+    "motivo": "O bloco inicia no marcador de subseção \"4.1 PPCs for systematic discrepancy\" na página 6 e inclui seu texto, figura e legenda associadas até imediatamente antes do próximo marcador estrutural, \"4.2 Case studies\", na página 7.",
+    "texto": "## **4.1 PPCs for systematic discrepancy** \n\nThe idea is that the words assigned to a topic should be independent of both document and any other variable that might be associated with the document. We simply replace the document index _d_ with another \n\n232\n\n<!-- PÁGINA 7 -->\n<!-- Start of picture text -->\nDocuments Months Desks<br>Iraq Iraq Iraq<br>Iraqi Iraqi Iraqi<br>Hussein Hussein Hussein<br>Baghdad Baghdad Baghdad<br>5 Saddam Saddam Saddam<br>Shiite Shiite Shiite<br>government government government<br>al al al<br>Iraqis Iraqis Iraqis<br>10 Sunni Sunni Sunni<br>Kurdish Kurdish Kurdish<br>forces forces forces<br>country country country<br>military military military<br>15 troops troops troops<br>leaders leaders leaders<br>city city city<br>Kur Kurds Kurds<br>securit security security<br>20 Sadr Sadr<br>0.0 0.5 1.0 1.5 2.0 2.5 0.0 0.5 1.0 1.5 2.0 2.5 0.0 0.5 1.0 1.5 2.0 2.5<br>Score<br>Rank<br><!-- End of picture text -->\n\nFigure 3: **Groupings decrease MI, but values are still larger than expected.** Three ways of grouping words in a topic from the _New York Times_ . The word _leaders_ varies more between desks than by time, while _Sadr_ varies more by time than desk. \n\nvariable _g_ in the discrepancy. For example, the New York Times articles are each associated with a particular news desk and also associated with a time stamp. If the topic modeling assumptions hold, the words are independent of both these variables. If we see a significant discrepancy relative to a grouping defined by a metadata feature, this systematic variability suggests that we might want to take that feature into account in the model. \n\nLet _G_ be a set of groups and let _γ ∈G_<sup>_D_</sup> be a grouping of _D_ documents. Let _N_ ( _w, g, k_ ) = � _d_<sup>_N_(</sup><sup>_w, d, k_)</sup><sup>_Iγ_</sup> _d_<sup>=</sup><sup>_g_, that is, the number of words of</sup> type _w_ in topic _k_ in documents in group _g_ , and define the other count variables similarly. We can now substitute these group-specific counts for the documentspecific counts in the discrepancy function in Eq. 1. Note that the previous discrepancy functions are equivalent to a trivial grouping, in which each document is the only member of its own group. In the following experiments we explore groupings by published volume, blog, preferred political candidate, and newspaper desk, and evaluate the effect of those groupings on the deviation between mean replicated values and observed values of those functions. \n\n"
+  },
+  {
+    "offset_inicio": "# **4.2 Case studies** \n\nWe analyze three corpora, each with its own metadata: the New",
+    "offset_fim": "|13k|2.2M|90k|100|\n|Parliament|540k|55M|52k|300|\n\n\n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "4.2 Case studies",
+    "motivo": "Bloco de caput da subseção 4.2, iniciado pelo seu marcador e encerrado imediatamente antes do marcador estrutural **New York Times articles.**.",
+    "texto": "# **4.2 Case studies** \n\nWe analyze three corpora, each with its own metadata: the New York Times Annotated Corpus (1987– 2007)<sup>3</sup> , the CMU 2008 political blog corpus (Eisenstein and Xing, 2010), and speeches from the British \n\nHouse of Commons from 1830–1891.<sup>4</sup> Descriptive statistics are presented in Table 1. The realization is represented by a single Gibbs sampling state after 1000 iterations of Gibbs sampling. \n\nTable 1: Statistics for models used as examples. \n\n|Name|Docs|Tokens|Vocab|Topics|\n|---|---|---|---|---|\n|News|1.8M|76M|121k|1000|\n|Blogs|13k|2.2M|90k|100|\n|Parliament|540k|55M|52k|300|\n\n\n\n"
+  },
+  {
+    "offset_inicio": "**New York Times articles.** Figure 3 shows three groupings of words for the middle-left topic in Figure 1: by document, by month of publication (e.g. May of 2005), and by desk (e.g. Editorial, Foreign, Financial).",
+    "offset_fim": "Iraq War. Individuals ( _Hussein_ , _Sadr_ , and _Maliki_ ) move on and off the stage.",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "New York Times articles.",
+    "motivo": "Bloco iniciado pelo marcador em negrito \"New York Times articles.\" e composto por seus parágrafos e figuras associadas; termina imediatamente antes do próximo marcador estrutural, \"Political blogs.\", na página 8.",
+    "texto": "**New York Times articles.** Figure 3 shows three groupings of words for the middle-left topic in Figure 1: by document, by month of publication (e.g. May of 2005), and by desk (e.g. Editorial, Foreign, Financial). Instantaneous mutual information values are significantly smaller for the larger groupings, but the actual values are still larger than expected under the model. We are interested in measuring the degree to which word usage varies within topics as a function of both time and the perspective of the article. For example, we may expect that word choice may differ between opinion articles, which overtly reflect an author’s views, and news articles, which take a more objective, factual approach. \n\nWe summarize each grouping by plotting the distribution of deviance scores for all topics. Results for all 1000 topics grouped by documents, months, and desks are shown in Figure 4. \n\n> 3http://www.ldc.upenn.edu \n\n> 4http://www.hansard-archive.parliament.uk/ \n\n233\n\n<!-- PÁGINA 8 -->\n<!-- Start of picture text -->\nDesks GGG GGGGGG GG G G GG G G GGG G G G G GG G G GG G GGGG<br>Months GGGG GGG G G G G G GGG GG GGG GG G G G G G G GGG<br>Documents G G G GGG GG GG G G GGGGG G G<br>0 100 200 300 400<br>Deviance<br>Grouping<br><!-- End of picture text -->\n\nFigure 4: **News: Lack of fit correlates best with desks.** We calculate the number of standard deviations between the mean replicated discrepancy and the actual discrepancy for each topic under three groupings. Boxes represent typical ranges, points represent outliers. \n\n\n\n<!-- Start of picture text -->\nKurdish<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>Hussein<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>Sunni<br>6e−04<br>4e−04<br>2e−04<br>0e+00<br>Sadr<br>0.0025<br>0.0020<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>Maliki<br>8e−04<br>6e−04<br>4e−04<br>2e−04<br>0e+00<br>Shiite<br>6e−04<br>4e−04<br>2e−04<br>0e+00<br>−2e−04<br>1987 1992 1997 2002 2007<br>Month<br>Score<br><!-- End of picture text -->\n\nFigure 5: **News: Events change word distributions.** Words with the largest MI from a topic on Iraq’s government are shown, with individual scores grouped by month. \n\nFinally, we can analyze how individual words interact with groupings like time or desk. Figure 5 breaks down the per-word discrepancy shown in Figure 3 by month, for the words with the largest overall discrepancy. _Kurdish_ is prominent during the Gulf War and the 1996 cruise missile strikes, but is less significant during the Iraq War. Individuals ( _Hussein_ , _Sadr_ , and _Maliki_ ) move on and off the stage."
+  },
+  {
+    "offset_inicio": "**Political blogs.** The CMU 2008 political blog corpus consists of six blogs, three",
+    "offset_fim": "or permuted “blogs” compared to 44 _._ 4 _±_ 29 _._ 6 for real blogs. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "Political blogs.",
+    "motivo": "Bloco iniciado pelo marcador em negrito “Political blogs.” e composto por sua análise e experimento de permutação; termina imediatamente antes do próximo marcador, “British parliament proceedings.”.",
+    "texto": "**Political blogs.** The CMU 2008 political blog corpus consists of six blogs, three of which supported Barack Obama and three of which supported John McCain. This corpus has previously been considered in the context of aspect-based topic models (Ahmed and Xing, 2010) that assign distinct word distributions to liberal and conservative bloggers. It is reasonable to expect that blogs with different political leanings will use measurably different language to describe the same themes, suggesting that there will be systematic deviations from a multinomial hypothesis of exchangeability of words within topics. Indeed, Ahmed and Xing obtained improved results with such a model. Figure 6 shows the distribution of standard deviations from the mean replicated value for a set of 150 topics grouped by document, blog, and preferred candidate. Deviance is greatest for blogs, followed by candidates and then documents. \n\n\n\n<!-- Start of picture text -->\nCandidates G G GG G G<br>Blogs GG GG<br>Documents G<br>0 100 200 300 400<br>Deviance<br>Grouping<br><!-- End of picture text -->\n\nFigure 6: **Blogs: Lack of fit correlates more with blog than preferred candidate.** Grouping by preferred candidate has only slightly higher average deviance than by documents, but the variance is greater. \n\nGrouping by blogs appears to show greater deviance from mean replicated values than grouping by candidates, indicating that there is further structure in word choice beyond a simple liberal/conservative split. Are these results, however, comparable? It may be that this difference is explained by the fact that there are six blogs and only \n\n234\n\n<!-- PÁGINA 9 -->\ntwo candidates. To determine whether this particular assignment of documents to blogs is responsible for the difference in discrepancy functions or whether any such split would have greater deviance, we compared random groupings to the real groupings and recalculate the PPC. We generated 10 such groupings by permuting document blog labels and another 10 by permuting document candidate labels, each time holding the topics fixed. The average number of standard deviations across topics was 6 _._ 6 _±_ 14 _._ 4 for permuted “candidates” compared to 37 _._ 9 _±_ 39 _._ 2 for the real corpus, and 10 _._ 6 _±_ 12 _._ 9 for permuted “blogs” compared to 44 _._ 4 _±_ 29 _._ 6 for real blogs. "
+  },
+  {
+    "offset_inicio": "**British parliament proceedings.** The parliament corpus is divided into 305 volumes, each comprising about three weeks of debates, with between 600 and 4000 speeches per session.",
+    "offset_fim": "Figure 8: **Parliament:** **_iron-clads_ introduced in 1860s.** High probability words ( _ships, vessels_ ) are variable, but show less concentrated discrepancy than _iron, wooden_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "British parliament proceedings",
+    "motivo": "Bloco iniciado pelo marcador em negrito \"British parliament proceedings.\" e encerrado imediatamente antes do próximo marcador estrutural, \"# **5 Calibration on Synthetic Data**\".",
+    "texto": "**British parliament proceedings.** The parliament corpus is divided into 305 volumes, each comprising about three weeks of debates, with between 600 and 4000 speeches per session. In addition to volumes, 10 Prime Ministers were in office during this period. \n\n\n\n<!-- Start of picture text -->\nPMs<br>Volumes GG<br>Documents<br>0 100 200 300 400<br>Deviance<br>Grouping<br><!-- End of picture text -->\n\nFigure 7: **Parliament: Lack-of-fit correlates with time (publication volume).** Correlation with prime ministers is not significantly better than with volume. \n\nGrouping by prime minister shows greater average deviance than grouping by volumes, even though there are substantially fewer divisions. Although such results would need to be accompanied by permutation experiments as in the blog corpus, this methodology may be of interest to historians. \n\nIn order to provide insight into the nature of temporal variation, we can group the terms in the summation in Equation 1 by word and rank the words by their contribution to the discrepancy function. Figure 8 shows the most “mismatching” words for a topic with the most probable words _ships, vessels, admiralty, iron, ship, navy_ , consistent with changes in naval technology during the Victorian era (that is, wooden ships to “iron clads”). Words that occur more prominently in the topic ( _ships, vessels_ ) are also variable, but more consistent across time. \n\n\n\n<!-- Start of picture text -->\niron<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>turret<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>clads<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>wooden<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>vessels<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>ships<br>0.0015<br>0.0010<br>0.0005<br>0.0000<br>1830 1835 1840 1845 1850 1855 1860 1865 1870 1875 1880 1885 1890<br>Volume<br>Score<br><!-- End of picture text -->\n\nFigure 8: **Parliament:** **_iron-clads_ introduced in 1860s.** High probability words ( _ships, vessels_ ) are variable, but show less concentrated discrepancy than _iron, wooden_ . "
+  },
+  {
+    "offset_inicio": "# **5 Calibration on Synthetic Data** \n\nA posterior predictive check asks “do observations sampled from the learned model",
+    "offset_fim": "is a good fit for _TopDocs_ (KS _p_ = 0 _._ 358) and _TopWordsDocs_ (KS _p_ = 0 _._ 069). \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 10,
+    "titulo": "5 Calibration on Synthetic Data",
+    "motivo": "O bloco começa no marcador da seção 5 e reúne seu texto, incluindo a Figura 9 e sua legenda, até imediatamente antes do próximo marcador estrutural, \"6 Conclusions\".",
+    "texto": "# **5 Calibration on Synthetic Data** \n\nA posterior predictive check asks “do observations sampled from the learned model look like the original data?” In the previous sections, we have considered PPCs that explore variability within a topic on a per-word basis, measure discrepancy at the topic level, and compare deviance over all topics between groupings of documents. Those results show that the PPC detects deviation from multinomial assumptions when it exists: as expected, variability in word choice aligns with known divisions in corpora, for example by time and author perspective. We now consider the opposite direction. When documents are generated from a multinomial topic model, PPCs should not detect systematic deviation. \n\nWe must also distinguish between lack of fit due to model misspecification and lack of fit due to approximate inference. In this section, we present synthetic data experiments where the learned model is precisely the model used to generate documents. We show that there is significant lack of fit introduced by approximate inference, which can be corrected by considering only parts of the model that are wellestimated. \n\nWe generated 10 synthetic corpora, each consisting of 100,000 100-word documents, drawn from 20 \n\n235\n\n<!-- PÁGINA 10 -->\n<!-- Start of picture text -->\nAll TopDocs TopWords TopWordsDocs<br>40<br>30<br>20<br>10<br>0<br>0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0<br>p<br>count<br><!-- End of picture text -->\n\nFigure 9: **Replicating only documents with large allocation in the topic leads to more uniform** _p_ **-values.** _p_ -values for 200 topics estimated from synthetic data generated from an LDA model are either uniform or skewed towards 1.0. Overly conservative _p_ -values would be clustered around 0.5. \n\ntopics over a vocabulary of 100 terms. Hyperparameters for both the document-topic and topic-term Dirichlet priors were 0 _._ 1 for each dimension. We then trained a topic model with the same hyperparameters and number of topics on each corpus, saving a Gibbs sampling state. \n\nWe can measure the fit of a PPC by examining the distribution of empirical _p_ -values, that is, the proportion of replications **_w_**<sup>_rep_</sup> that result in discrepancies less than the observed value. _p_ -values should be uniformly distributed on (0 _,_ 1). Non-uniform _p_ -values indicate a lack of _calibration_ . Unlike real collections, in synthetic corpora the range of discrepancies from these replicated collections often includes the real values, so _p_ -values are meaningful. A histogram of _p_ -values for 200 synthetic topics after 100 replications is shown in the left panel of Figure 9. \n\nPPCs have been criticized for reusing training data for model checking. For some models, the posterior distribution is too close to the data, so all replicated values are close to the real value, leading to _p_ -values clustered around 0.5 (Draper and Krnjajic, 2006; Bayarri and Castellanos, 2007). We test divergence from a uniform distribution with a Kolmogorov-Smirnov test. Our results indicate that LDA is not overfitting, but that the distribution is not uniform (KS _p <_ 0 _._ 00001). \n\nThe PPC framework allows us to choose discrepancy functions that reflect the relative importance of subsets of words and documents. The second panel in Figure 9 sums only over the 20 documents with the largest probability of the topic, the third sums over all documents but only over the top 10 most probable words, and the fourth sums over only the top words and documents. This test indicates \n\nthat the distribution of _p_ -values for the subset _TopWords_ is not uniform (KS _p <_ 0 _._ 00001), but that a uniform distribution is a good fit for _TopDocs_ (KS _p_ = 0 _._ 358) and _TopWordsDocs_ (KS _p_ = 0 _._ 069). \n\n"
+  },
+  {
+    "offset_inicio": "# **6 Conclusions** \n\nWe have developed a Bayesian model checking method for probabilistic topic models.",
+    "offset_fim": "that PPCs with the mutual information discrepancy function can identify model fit and model misfit. \n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "6 Conclusions",
+    "motivo": "O bloco começa no marcador de seção \"6 Conclusions\" e contém seus parágrafos conclusivos, terminando imediatamente antes do próximo marcador estrutural, \"Acknowledgments\".",
+    "texto": "# **6 Conclusions** \n\nWe have developed a Bayesian model checking method for probabilistic topic models. Conditioned on their topic assignment, the words of the documents are independently and identically distributed by a multinomial distribution. We developed a realized discrepancy function—the mutual information between words and document indices, conditioned on a topic—that checks this assumption. We embedded this function in a posterior predictive check. \n\nWe demonstrated that we can use this posterior predictive check to identify particular topics that fit the data, and particular topics that misfit the data in different ways. Moreover, our method provides a new way to visualize topic models. \n\nWe adapted the method to corpora with external variables. In this setting, the PPC provides a way to guide the modeler in searching through more complicated models that involve more variables. \n\nFinally, on simulated data, we demonstrated that PPCs with the mutual information discrepancy function can identify model fit and model misfit. \n\n"
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nDavid M. Blei is supported by ONR 175-6343, NSF CAREER 0745520,",
+    "offset_fim": "rant from Google. David Mimno is supported by a Digital Humanities Research grant from Google. Arthur Spirling and Andy \n\n236\n\n<!-- PÁGINA 11 -->\nEggers suggested the use of the Hansards corpus. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 11,
+    "titulo": "Acknowledgments",
+    "motivo": "Bloco iniciado pelo título “Acknowledgments” na página 10; seu texto continua na página 11 e termina imediatamente antes do próximo marcador estrutural, “References”.",
+    "texto": "# **Acknowledgments** \n\nDavid M. Blei is supported by ONR 175-6343, NSF CAREER 0745520, AFOSR 09NL202, the Alfred P. Sloan foundation, and a grant from Google. David Mimno is supported by a Digital Humanities Research grant from Google. Arthur Spirling and Andy \n\n236\n\n<!-- PÁGINA 11 -->\nEggers suggested the use of the Hansards corpus. "
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** \n\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "References",
+    "motivo": "O título \"References\" inicia a lista bibliográfica como uma divisão própria e seu bloco termina imediatamente antes da primeira entrada de referência, \"- Amr Ahmed and Eric Xing. 2010.\"",
+    "texto": "# **References** \n\n"
+  },
+  {
+    "offset_inicio": "- Amr Ahmed and Eric Xing. 2010. Staying informed: Supervised and semi-supervised multi-view topical analysis of ideological perspective. In _EMNLP_ . ",
+    "offset_fim": "Amr Ahmed and Eric Xing. 2010. Staying informed: Supervised and semi-supervised multi-view topical analysis of ideological perspective. In _EMNLP_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Ahmed and Xing (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida. Inicia no marcador de item \"- Amr Ahmed...\" e termina imediatamente antes da próxima referência, iniciada por \"- Arthur Asuncion...\".",
+    "texto": "- Amr Ahmed and Eric Xing. 2010. Staying informed: Supervised and semi-supervised multi-view topical analysis of ideological perspective. In _EMNLP_ . "
+  },
+  {
+    "offset_inicio": "- Arthur Asuncion, Padhraic Smyth, and Max Welling. 2008. Asynchronous distributed",
+    "offset_fim": "and Max Welling. 2008. Asynchronous distributed learning of topic models. In _NIPS_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Arthur Asuncion, Padhraic Smyth, and Max Welling. 2008.",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências na página 11; inicia no marcador de lista \"- Arthur Asuncion\" e termina imediatamente antes da entrada seguinte, \"- M.J. Bayarri\".",
+    "texto": "- Arthur Asuncion, Padhraic Smyth, and Max Welling. 2008. Asynchronous distributed learning of topic models. In _NIPS_ ."
+  },
+  {
+    "offset_inicio": "- M.J. Bayarri and M.E. Castellanos. 2007. Bayesian checking of the second levels of hierarchical models. _Statistical Science_ , 22(3):322–343. ",
+    "offset_fim": "Bayesian checking of the second levels of hierarchical models. _Statistical Science_ , 22(3):322–343. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "M.J. Bayarri and M.E. Castellanos (2007)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista com os autores e termina imediatamente antes da entrada seguinte, de Michael J. Paul et al.",
+    "texto": "- M.J. Bayarri and M.E. Castellanos. 2007. Bayesian checking of the second levels of hierarchical models. _Statistical Science_ , 22(3):322–343. "
+  },
+  {
+    "offset_inicio": "   - Michael J. Paul, ChengXiang Zhai, and Roxana Girju. 2010. Summarizing contrastive viewpoints in opinionated text. In _EMNLP_ . ",
+    "offset_fim": "   - Michael J. Paul, ChengXiang Zhai, and Roxana Girju. 2010. Summarizing contrastive viewpoints in opinionated text. In _EMNLP_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Paul, Zhai e Girju (2010)",
+    "motivo": "É a primeira entrada bibliográfica visível na página 11; inicia no marcador de lista \"- Michael J. Paul...\" e termina imediatamente antes da entrada seguinte, \"- Donald B. Rubin...\".",
+    "texto": "   - Michael J. Paul, ChengXiang Zhai, and Roxana Girju. 2010. Summarizing contrastive viewpoints in opinionated text. In _EMNLP_ . "
+  },
+  {
+    "offset_inicio": "   - Donald B. Rubin. 1981. Estimation in parallel randomized experiments. _Journal of Educational Statistics_ , 6:377–401. ",
+    "offset_fim": "Donald B. Rubin. 1981. Estimation in parallel randomized experiments. _Journal of Educational Statistics_ , 6:377–401. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Donald B. Rubin. 1981. Estimation in parallel randomized experiments.",
+    "motivo": "É a primeira entrada bibliográfica da página; cada referência constitui uma unidade própria e o bloco termina antes da referência seguinte, de D. Rubin (1984).",
+    "texto": "   - Donald B. Rubin. 1981. Estimation in parallel randomized experiments. _Journal of Educational Statistics_ , 6:377–401. "
+  },
+  {
+    "offset_inicio": "   - D. Rubin. 1984. Bayesianly justifiable and relevant frequency calculations for the applied statistician.",
+    "offset_fim": "for the applied statistician. _The Annals of Statistics_ , 12(4):1151–1172. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "D. Rubin (1984) — Bayesianly justifiable and relevant frequency calculations",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador de lista “-” e encerrada imediatamente antes da referência seguinte, de Hanna Wallach et al.",
+    "texto": "   - D. Rubin. 1984. Bayesianly justifiable and relevant frequency calculations for the applied statistician. _The Annals of Statistics_ , 12(4):1151–1172. "
+  },
+  {
+    "offset_inicio": "- Hanna Wallach, Iain Murray, Ruslan Salakhutdinov, and David Mimno. 2009. Evaluation",
+    "offset_fim": "David Mimno. 2009. Evaluation methods for topic models. In _ICML_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Hanna Wallach et al. (2009) — Evaluation methods for topic models",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista \"- Hanna Wallach\" e termina imediatamente antes da entrada seguinte, de David M. Blei e John D. Lafferty.",
+    "texto": "- Hanna Wallach, Iain Murray, Ruslan Salakhutdinov, and David Mimno. 2009. Evaluation methods for topic models. In _ICML_ ."
+  },
+  {
+    "offset_inicio": "- David M. Blei and John D. Lafferty. 2006. Dynamic topic models. In _ICML_ .",
+    "offset_fim": "- David M. Blei and John D. Lafferty. 2006. Dynamic topic models. In _ICML_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Blei e Lafferty (2006) — Dynamic topic models",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista \"-\" e termina imediatamente antes da próxima referência bibliográfica.",
+    "texto": "- David M. Blei and John D. Lafferty. 2006. Dynamic topic models. In _ICML_ ."
+  },
+  {
+    "offset_inicio": "- David Blei, Andrew Ng, and Michael Jordan. 2003. Latent Dirichlet allocation. _Journal of Machine Learning Research_ , 3:993–1022, January.",
+    "offset_fim": "Latent Dirichlet allocation. _Journal of Machine Learning Research_ , 3:993–1022, January.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "David Blei, Andrew Ng, and Michael Jordan. 2003. Latent Dirichlet allocation.",
+    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador de lista \"-\"; termina imediatamente antes da entrada seguinte, de Jonathan Chang et al.",
+    "texto": "- David Blei, Andrew Ng, and Michael Jordan. 2003. Latent Dirichlet allocation. _Journal of Machine Learning Research_ , 3:993–1022, January."
+  },
+  {
+    "offset_inicio": "- Jonathan Chang, Jordan Boyd-Graber, Chong Wang, Sean Gerrish, and David M. Blei. 2009. Reading tea leaves:",
+    "offset_fim": "How humans interpret topic models. In _Advances in Neural Information Processing Systems 22_ , pages 288–296.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Jonathan Chang et al. (2009) — Reading tea leaves",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista \"- Jonathan Chang\" e termina imediatamente antes da próxima referência, \"- Gabriel Doyle\".",
+    "texto": "- Jonathan Chang, Jordan Boyd-Graber, Chong Wang, Sean Gerrish, and David M. Blei. 2009. Reading tea leaves: How humans interpret topic models. In _Advances in Neural Information Processing Systems 22_ , pages 288–296."
+  },
+  {
+    "offset_inicio": "- Gabriel Doyle and Charles Elkan. 2009. Accounting for burstiness in topic models. In _ICML_ .",
+    "offset_fim": "- Gabriel Doyle and Charles Elkan. 2009. Accounting for burstiness in topic models. In _ICML_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Gabriel Doyle and Charles Elkan (2009)",
+    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador de lista; termina imediatamente antes da próxima referência, “David Draper and Milovan Krnjajic.”",
+    "texto": "- Gabriel Doyle and Charles Elkan. 2009. Accounting for burstiness in topic models. In _ICML_ ."
+  },
+  {
+    "offset_inicio": "- David Draper and Milovan Krnjajic. 2006. Bayesian model specification. Technical",
+    "offset_fim": "Bayesian model specification. Technical report, University of California, Santa Cruz.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "David Draper and Milovan Krnjajic. 2006.",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista e termina imediatamente antes da entrada seguinte, de Jacob Eisenstein e Eric Xing.",
+    "texto": "- David Draper and Milovan Krnjajic. 2006. Bayesian model specification. Technical report, University of California, Santa Cruz."
+  },
+  {
+    "offset_inicio": "- Jacob Eisenstein and Eric Xing. 2010. The CMU 2008 political blog corpus. Technical report, Carnegie Mellon University.",
+    "offset_fim": "- Jacob Eisenstein and Eric Xing. 2010. The CMU 2008 political blog corpus. Technical report, Carnegie Mellon University. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Jacob Eisenstein and Eric Xing. 2010. The CMU 2008 political blog corpus.",
+    "motivo": "É a primeira entrada bibliográfica visível na página 11; inicia no marcador de lista \"- Jacob Eisenstein...\" e termina imediatamente antes da próxima referência, iniciada por \"- A. Gelman...\".",
+    "texto": "- Jacob Eisenstein and Eric Xing. 2010. The CMU 2008 political blog corpus. Technical report, Carnegie Mellon University. "
+  },
+  {
+    "offset_inicio": "- A. Gelman, X.L. Meng, and H.S. Stern. 1996. posterior predictive assessment of model",
+    "offset_fim": "predictive assessment of model fitness via realized discrepancies. _Statistica Sinica_ , 6:733–807. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Gelman, Meng e Stern (1996)",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da referência seguinte, de Thomas L. Griffiths e Mark Steyvers.",
+    "texto": "- A. Gelman, X.L. Meng, and H.S. Stern. 1996. posterior predictive assessment of model fitness via realized discrepancies. _Statistica Sinica_ , 6:733–807. "
+  },
+  {
+    "offset_inicio": "- Thomas L. Griffiths and Mark Steyvers. 2004. Finding scientific topics. _PNAS_ ,",
+    "offset_fim": "Thomas L. Griffiths and Mark Steyvers. 2004. Finding scientific topics. _PNAS_ , 101(suppl. 1):5228–5235. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Thomas L. Griffiths and Mark Steyvers. 2004. Finding scientific topics.",
+    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador de lista, e termina imediatamente antes da entrada seguinte, de Matthew Hoffman, David Blei e Francis Bach.",
+    "texto": "- Thomas L. Griffiths and Mark Steyvers. 2004. Finding scientific topics. _PNAS_ , 101(suppl. 1):5228–5235. "
+  },
+  {
+    "offset_inicio": "- Matthew Hoffman, David Blei, and Francis Bach. 2010. Online learning for latent",
+    "offset_fim": "Blei, and Francis Bach. 2010. Online learning for latent dirichlet allocation. In _NIPS_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Matthew Hoffman, David Blei, and Francis Bach (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de lista e termina imediatamente antes da próxima referência, de Wei-Hao Lin et al.",
+    "texto": "- Matthew Hoffman, David Blei, and Francis Bach. 2010. Online learning for latent dirichlet allocation. In _NIPS_ ."
+  },
+  {
+    "offset_inicio": "- Wei-Hao Lin, Eric Xing, and Alexander Hauptmann. 2008. A joint topic and perspective model for ideological discourse. In _PKDD_ . ",
+    "offset_fim": "r. 2008. A joint topic and perspective model for ideological discourse. In _PKDD_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Lin, Xing e Hauptmann (2008)",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista e termina imediatamente antes da próxima referência bibliográfica.",
+    "texto": "- Wei-Hao Lin, Eric Xing, and Alexander Hauptmann. 2008. A joint topic and perspective model for ideological discourse. In _PKDD_ ."
+  },
+  {
+    "offset_inicio": "- Qiaozhu Mei and ChengXiang Zhai. 2006. A mixture model for contextual text mining. In _KDD_ .",
+    "offset_fim": "- Qiaozhu Mei and ChengXiang Zhai. 2006. A mixture model for contextual text mining. In _KDD_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Qiaozhu Mei e ChengXiang Zhai (2006)",
+    "motivo": "É a primeira entrada bibliográfica da página; cada referência constitui uma unidade própria e o bloco termina antes da referência seguinte, de David Mimno e Andrew McCallum.",
+    "texto": "- Qiaozhu Mei and ChengXiang Zhai. 2006. A mixture model for contextual text mining. In _KDD_ ."
+  },
+  {
+    "offset_inicio": "- David Mimno and Andrew McCallum. 2007. Organizing the OCA: learning faceted subjects from a library of digital books.",
+    "offset_fim": "2007. Organizing the OCA: learning faceted subjects from a library of digital books. In _JCDL_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "David Mimno and Andrew McCallum (2007)",
+    "motivo": "Entrada bibliográfica individual, iniciada pelo marcador de lista \"- David Mimno\" e encerrada imediatamente antes da próxima referência, \"- David Newman\".",
+    "texto": "- David Mimno and Andrew McCallum. 2007. Organizing the OCA: learning faceted subjects from a library of digital books. In _JCDL_ ."
+  },
+  {
+    "offset_inicio": "- David Newman, Jey Han Lau, Karl Grieser, and Timothy Baldwin. 2010. Automatic evaluation",
+    "offset_fim": "nference of the North American Chapter of the Association for Computational Linguistics_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: David Newman et al. (2010)",
+    "motivo": "Entrada individual da lista de referências, iniciada pelo marcador de lista \"-\" e encerrada antes da numeração de página.",
+    "texto": "- David Newman, Jey Han Lau, Karl Grieser, and Timothy Baldwin. 2010. Automatic evaluation of topic coherence. In _Human Language Technologies: The Annual Conference of the North American Chapter of the Association for Computational Linguistics_ ."
+  }
+]

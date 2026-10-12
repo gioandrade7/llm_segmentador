@@ -1,0 +1,65 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [14], iniciado em \"6.1 Setup\", é desproporcionalmente extenso e engloba a subseção 6.2 (situada antes de \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\" no bloco [15]), que deveria iniciar um bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Divida o conteúdo atualmente absorvido pelo bloco iniciado em \"6.1 Setup\" no marcador literal da subseção 6.2, preservando [14] apenas com o texto de 6.1 que precede esse marcador.\n- Crie um bloco próprio para a subseção 6.2, do seu título até imediatamente antes do título \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\".\n- Mantenha \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\" como início do bloco seguinte, sem incorporar seu título ou texto ao bloco de 6.2."
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 43,
+    "insights_aplicados": "- Divida o conteúdo atualmente absorvido pelo bloco iniciado em \"6.1 Setup\" no marcador literal da subseção 6.2, preservando [14] apenas com o texto de 6.1 que precede esse marcador.\n- Crie um bloco próprio para a subseção 6.2, do seu título até imediatamente antes do título \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\".\n- Mantenha \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\" como início do bloco seguinte, sem incorporar seu título ou texto ao bloco de 6.2.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [27] é um bloco englobante de referências: começa na entrada de Jonathan H. Clark et al. (2011), tem 2.601 caracteres e termina no meio de outra entrada (“...Short Papers-Vo”), agrupando diversas entradas bibliográficas que deveriam constituir blocos individuais. A sequência retoma apenas no bloco [28], com Mikolov et al. (2013a), evidenciando que as referências intermediárias foram absorvidas por [27]."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual bloco de referências iniciado por “Jonathan H Clark, Chris Dyer, Alon Lavie, and Noah A Smith. 2011.”: cada entrada bibliográfica subsequente que ele contém deve iniciar um bloco próprio, inclusive as entradas que continuam da página 9 para a página 10.\n- Preserve no primeiro bloco apenas a referência de Jonathan H. Clark et al. (2011), encerrando-a antes do início literal da próxima referência bibliográfica; não mantenha no mesmo bloco texto pertencente à entrada seguinte.\n- Continue separando individualmente todas as referências absorvidas entre a entrada de Clark et al. (2011) e “Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013a.”, usando o início literal de cada autoria/ano como âncora de um novo bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Divida o atual bloco de referências iniciado por “Jonathan H Clark, Chris Dyer, Alon Lavie, and Noah A Smith. 2011.”: cada entrada bibliográfica subsequente que ele contém deve iniciar um bloco próprio, inclusive as entradas que continuam da página 9 para a página 10.\n- Preserve no primeiro bloco apenas a referência de Jonathan H. Clark et al. (2011), encerrando-a antes do início literal da próxima referência bibliográfica; não mantenha no mesmo bloco texto pertencente à entrada seguinte.\n- Continue separando individualmente todas as referências absorvidas entre a entrada de Clark et al. (2011) e “Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013a.”, usando o início literal de cada autoria/ano como âncora de um novo bloco.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [40] está marcado como \"TEXTO NÃO EXTRAÍDO\", caracterizando falha de âncora para a referência de Jeff Mitchell e Mirella Lapata (2008), situada entre os blocos [39] e [41]."
+      ],
+      "consistente": false,
+      "insights": "- Recrie a referência de Jeff Mitchell e Mirella Lapata como um bloco próprio entre [39] e [41], usando como início uma sequência literal do corpo da referência, como “Jeff Mitchell and Mirella Lapata. 2008. Vector-based models of semantic composition.”, e encerrando-a imediatamente antes do início literal da referência “Markos Mylonakis and Khalil Sima’an. 2011.”; não use o título normalizado como âncora.\n- Preserve a entrada de Mitchell e Lapata integralmente no bloco dela, incluindo a continuação do título do periódico e as páginas, sem absorver qualquer trecho da referência de Markos Mylonakis e Khalil Sima’an."
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Recrie a referência de Jeff Mitchell e Mirella Lapata como um bloco próprio entre [39] e [41], usando como início uma sequência literal do corpo da referência, como “Jeff Mitchell and Mirella Lapata. 2008. Vector-based models of semantic composition.”, e encerrando-a imediatamente antes do início literal da referência “Markos Mylonakis and Khalil Sima’an. 2011.”; não use o título normalizado como âncora.\n- Preserve a entrada de Mitchell e Lapata integralmente no bloco dela, incluindo a continuação do título do periódico e as páginas, sem absorver qualquer trecho da referência de Markos Mylonakis e Khalil Sima’an.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [30] engloba duas entradas bibliográficas irmãs: a referência de Greg Hanneman e Alon Lavie (2013) e a referência de Hieu Hoang e Philipp Koehn (2010), que devem ser blocos distintos."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual bloco da referência de Greg Hanneman e Alon Lavie em duas entradas bibliográficas independentes: mantenha a entrada iniciada por “Greg Hanneman and Alon Lavie. 2013. Improving syntax-augmented machine translation by coarsening the label set.” em um bloco que termine imediatamente antes da entrada seguinte.\n- Inicie um novo bloco para a referência seguinte na ocorrência literal “Hieu Hoang and Philipp Koehn. 2010. Improved translation with source syntax labels.” e mantenha nele todo o restante dessa referência, até antes de “Zhongqiang Huang, Martin ˇCmejrek, and Bowen Zhou. 2010.”."
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_v2_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Divida o atual bloco da referência de Greg Hanneman e Alon Lavie em duas entradas bibliográficas independentes: mantenha a entrada iniciada por “Greg Hanneman and Alon Lavie. 2013. Improving syntax-augmented machine translation by coarsening the label set.” em um bloco que termine imediatamente antes da entrada seguinte.\n- Inicie um novo bloco para a referência seguinte na ocorrência literal “Hieu Hoang and Philipp Koehn. 2010. Improved translation with source syntax labels.” e mantenha nele todo o restante dessa referência, até antes de “Zhongqiang Huang, Martin ˇCmejrek, and Bowen Zhou. 2010.”.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_v2_ciclo5.json"
+  }
+]

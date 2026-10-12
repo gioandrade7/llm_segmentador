@@ -1,0 +1,25 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Seção principal numerada",
+      "exemplo": "# **2 Dataset Construction**"
+    },
+    {
+      "nivel": 2,
+      "nome": "Subseção numerada",
+      "exemplo": "## **2.1 Group Related Sentences**"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "total_paginas": 6
+}

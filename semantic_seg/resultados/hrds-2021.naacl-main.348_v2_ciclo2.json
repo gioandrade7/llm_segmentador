@@ -1,0 +1,470 @@
+[
+  {
+    "offset_inicio": "# **Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction** ",
+    "offset_fim": "**Jacopo Tagliabue** Coveo Labs New York, USA jtagliabue@coveo.com ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction",
+    "motivo": "Bloco de abertura do documento, contendo o título e as afiliações/autores. Inicia no marcador do título e termina imediatamente antes do marcador estrutural \"## **Abstract**\".",
+    "texto": "# **Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction** \n\n**Federico Bianchi**<sup>_∗_</sup> Bocconi University Milano, Italy f.bianchi@unibocconi.it \n\n**Ciro Greco** Coveo Labs New York, USA cgreco@coveo.com \n\n**Jacopo Tagliabue** Coveo Labs New York, USA jtagliabue@coveo.com "
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nWe investigate grounded language learning through real-world data, by",
+    "offset_fim": "provides better results and better generalizations than SOTA non-grounded models, such as word2vec and BERT. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco começa no marcador de título \"## **Abstract**\" e contém integralmente o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nWe investigate grounded language learning through real-world data, by modelling a teacher-learner dynamics through the natural interactions occurring between users and search engines; in particular, we explore the emergence of semantic generalization from unsupervised dense representations outside of synthetic environments. A grounding domain, a denotation function and a composition function are learned from user data only. We show how the resulting semantics for noun phrases exhibits compositional properties while being fully learnable without any explicit labelling. We benchmark our grounded semantics on compositionality and zero-shot inference tasks, and we show that it provides better results and better generalizations than SOTA non-grounded models, such as word2vec and BERT. "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nMost SOTA models in NLP are only _intratextual_ . Models based",
+    "offset_fim": "is sufficiently self-contained to be realistically mastered without human supervision. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção principal \"1 Introduction\" e inclui todo o texto introdutório, inclusive a lista de contribuições, até imediatamente antes do próximo marcador estrutural, \"# **2 Methods**\".",
+    "texto": "## **1 Introduction** \n\nMost SOTA models in NLP are only _intratextual_ . Models based on distributional semantics – such as standard and contextual word embeddings (Mikolov et al., 2013; Peters et al., 2018; Devlin et al., 2019) – learn representations of word meaning from patterns of co-occurrence in big corpora, with no reference to extra-linguistic entities. \n\nWhile successful in a range of cases, this approach does not take into consideration two fundamental facts about language. The first is that language is a referential device used to refer to extra-linguistic objects. Scholarly work in psycholinguistics (Xu and Tenenbaum, 2000), formal semantics (Chierchia and McConnell-Ginet, 2000) and philosophy of language (Quine, 1960) show that (at least some aspects of) linguistic meaning can be represented as a sort of mapping between linguistic and extra-linguistic entities. The second is \n\n> _∗_ Corresponding author. Authors contributed equally and are listed alphabetically. \n\nthat language may be learned based on its usage and that learners draw part of their generalizations from the observation of teachers’ behaviour (Tomasello, 2003). These ideas have been recently explored by work in grounded language learning, showing that allowing artificial agents to access human actions providing information on language meaning has several practical and scientific advantages (Yu et al., 2018; Chevalier-Boisvert et al., 2019). \n\nWhile most of the work in this area uses toy worlds and synthetic linguistic data, we explore grounded language learning offering an example in which unsupervised learning is combined with a language-independent grounding domain in a realworld scenario. In particular, we propose to use the interaction of users with a search engine as a setting for grounded language learning. In our setting, users produce search queries to find products on the web: queries and clicks on search results are used as a model for the teacher-learner dynamics. \n\nWe summarize the contributions of our work as follows: \n\n1. we provide a grounding domain composed of dense representations of extra-linguistic entities constructed in an unsupervised fashion from user data collected in the real world. In particular, we learn neural representations for our domain of objects leveraging prod2vec (Grbovic et al., 2015): crucially, building the grounding domain does not require any linguistic input and it is independently justified in the target domain (Tagliabue et al., 2020a). In this setting, lexical denotation can also be learned without explicit labelling, as we use the natural interactions between the users and the search engine to learn a noisy denotation for the lexicon (Bianchi et al., 2021). More specifically, we use _DeepSets_ (Cotter et al., 2018) constructed from user behavioural signals as the extra-linguistic reference of words. For in- \n\n4409 \n\n_Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , pages 4409–4415 June 6–11, 2021. ©2021 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nstance, the denotation of the word “shoes” is constructed from the clicks produced by real users on products that are in fact _shoes_ after having performed the query “shoes” in the search bar. Albeit domain specific, the resulting language is significantly richer than languages from agent-based models of language acquisition (Słowik et al., 2020; Fitzgerald and Tagliabue, 2020), as it is based on 26k entities from the inventory of a real website. \n\n2. We show that a dense domain built through unsupervised representations can support _compositionality_ . By replacing a discrete formal semantics of noun phrases (Heim and Kratzer, 1998) with functions learned over DeepSets, we test the generalization capability of the model on zero-shot inference: once we have learned the meaning of “Nike shoes”, we can reliably predict the meaning of “Adidas shorts”. In this respect, this work represents a major departure from previous work on the topic, where compositional behavior is achieved through either discrete structures built manually (Lu et al., 2018; Krishna et al., 2016), or embeddings of such structures (Hamilton et al., 2018). \n\n3. To the best of our knowledge, no dataset of this kind (product embeddings from shopping sessions and query-level data) is publicly available. As part of this project, we release our code and a curated dataset, to broaden the scope of what researchers can do on the topic<sup>1</sup> . \n\nMethodologically, our work draws inspiration from research at the intersection between Artificial Intelligence and Cognitive Sciences: as pointed out in recent papers (Bisk et al., 2020; Bender and Koller, 2020), extra-textual elements are crucial in advancing our comprehension of language acquisition and the notion of “meaning”. While synthetic environments are popular ways to replicate child-like abilities (Kosoy et al., 2020; Hill et al., 2020), our work calls the attention on real-world Information Retrieval systems as experimental settings: cooperative systems such as search engines offer new ways to study language grounding, in between the oversimplification of toy models and the \n\n> 1Please refer to the project repository for additional information: https://github.com/coveooss/ naacl-2021-grounded-semantics. \n\ndaunting task of providing a general account of the semantics of a natural language. The chosen IR domain is rich enough to provide a wealth of data and possibly to see practical applications, whereas at the same time it is sufficiently self-contained to be realistically mastered without human supervision. \n\n"
+  },
+  {
+    "offset_inicio": "# **2 Methods** \n\nFollowing our informal exposition in Section 1, we distinguish three components,",
+    "offset_fim": "dynamics to provide noisy labels (i.e. no human labeling was necessary at any stage of the training process). ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Methods",
+    "motivo": "O bloco começa no marcador da seção principal \"# **2 Methods**\" e contém apenas o parágrafo introdutório da seção, terminando imediatamente antes do próximo marcador estrutural, \"**Learning a representation space**\".",
+    "texto": "# **2 Methods** \n\nFollowing our informal exposition in Section 1, we distinguish three components, which are learned separately in a sequence: learning a languageindependent grounding domain, learning noisy denotation from search logs and finally learning functional composition. While only the first model (prod2vec) is completely unsupervised, it is important to remember that the other learning procedures are only weakly supervised, as the labelling is obtained by exploiting an existing user-machine dynamics to provide noisy labels (i.e. no human labeling was necessary at any stage of the training process). "
+  },
+  {
+    "offset_inicio": "**Learning a representation space** . We train product representation to provide a “dense ontology” for",
+    "offset_fim": "re-using tried and tested (Tagliabue et al., 2020b) neural representations is an advantage of the proposed semantics.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Learning a representation space",
+    "motivo": "O bloco inicia na subseção em negrito “Learning a representation space” e contém seu único parágrafo, terminando imediatamente antes do próximo marcador de subseção, “Learning lexical denotation”.",
+    "texto": "**Learning a representation space** . We train product representation to provide a “dense ontology” for the (small) world we want our language to describe. Those representations are known in product search as product embeddings (Grbovic et al., 2015): _prod2vec_ models are word2vec models in which words in a sentence are replaced by products in a shopping session. For this study, we pick CBOW (Mu et al., 2018) as our training algorithm, and select _d_ = 24 as vector size, optimizing hyperparameters as recommended by Bianchi et al. (2020); similar to what happens with word2vec, related products (e.g. two pairs of sneakers) end up closer in the embedding space. In the overall picture, the product space just constitutes a grounding domain, and re-using tried and tested (Tagliabue et al., 2020b) neural representations is an advantage of the proposed semantics."
+  },
+  {
+    "offset_inicio": "**Learning lexical denotation** . We interpret clicks on products in the search result page",
+    "offset_fim": "Chierchia and McConnell-Ginet, 2000) need to be replaced with matrix composition, as we explain in the ensuing section. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "Learning lexical denotation",
+    "motivo": "O bloco inicia no marcador de subseção em negrito “Learning lexical denotation” na página 2 e segue pela quebra de página até o fim do parágrafo, imediatamente antes do próximo marcador de subseção “Learning functional composition.” na página 3.",
+    "texto": "**Learning lexical denotation** . We interpret clicks on products in the search result page, after a query is issued, as a noisy “pointing” signal (Tagliabue and Cohn-Gordon, 2019), i.e., a map between text (“shoes”) and the target domain (a portion of the product space). In other words, our approach can be seen as a neural generalization of model-theoretic semantics, where the extension of “shoes” is not a discrete set of objects, but a region in the grounding space. Given a list of products clicked by shoppers after queries, we represent meaning through an order-invariant op- \n\n4410\n\n<!-- PÁGINA 3 -->\neration over product embeddings (average pooling weighted by empirical frequencies, similar to Yu et al. (2020)); following Cotter et al. (2018), we refer to this representation as a _DeepSet_ . Since words are now grounded in a dense domain, set-theoretic functions for NPs (Chierchia and McConnell-Ginet, 2000) need to be replaced with matrix composition, as we explain in the ensuing section. "
+  },
+  {
+    "offset_inicio": "**Learning functional composition.** Our functional composition will come from the composition of",
+    "offset_fim": "both models can be recursively composed, given the form of the function _f_ . ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "Learning functional composition",
+    "motivo": "A subseção em negrito inicia o primeiro bloco presente no trecho e seu conteúdo termina imediatamente antes do marcador da seção principal \"# **3 Experiments**\".",
+    "texto": "**Learning functional composition.** Our functional composition will come from the composition of DeepSet representations, where we want to learn a function _f_ : _DeepSet × DeepSet → DeepSet_ . We address functional composition by means of two models from the relevant literature (Hartung et al., 2017): one, _Additive Compositional Model_ ( **ADM** ), sums vectors together to build the final DeepSet representation. The second model is instead a _Matrix Compositional Model_ ( **MDM** ): given in input two DeepSets (for example, one for “Nike” and one for “shoes”) the function we learn as the form _Mv_ + _Nu_ , where the interaction between the two vectors is mediated through the learning of two matrices, _M_ and _N_ . Since the output of these processes is always a DeepSet, both models can be recursively composed, given the form of the function _f_ . "
+  },
+  {
+    "offset_inicio": "# **3 Experiments** ",
+    "offset_fim": "# **3 Experiments** ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3 Experiments",
+    "motivo": "O bloco inicia no marcador de seção principal “# **3 Experiments**” e contém apenas seu título/caput, terminando imediatamente antes do marcador de subseção “**Data.**”.",
+    "texto": "# **3 Experiments** "
+  },
+  {
+    "offset_inicio": "**Data.** We obtained catalog data, search logs and detailed behavioral data (anonym",
+    "offset_fim": "ty + sortal” (BGAS) quadruples.<sup>5</sup> \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "Data",
+    "motivo": "A subseção em negrito “Data.” inicia o primeiro bloco identificável e reúne os parágrafos de descrição e composição do conjunto de dados, incluindo as notas associadas. O bloco termina imediatamente antes do próximo marcador de subseção, “**Tasks and Metrics.**”.",
+    "texto": "**Data.** We obtained catalog data, search logs and detailed behavioral data (anonymized product interactions) from a partnering online shop, _Shop X_ . _Shop X_ is a mid-size Italian website in the sport apparel vertical<sup>2</sup> . Browsing and search data are sampled from one season (to keep the underlying catalog consistent), resulting in a total of 26 _,_ 057 distinct product embeddings, trained on more than 700 _,_ 000 anonymous shopping sessions. To prepare the final dataset, we start from comparable literature (Baroni and Zamparelli, 2010) and the analysis of linguistic and browsing behavior in _Shop X_ , and finally distill a set of NP queries for our compositional setting. \n\nIn particular, we build a rich, but tractable set by excluding queries that are too rare (<5 counts), queries with less than three different products clicked, and queries for which no existing product embedding is present. Afterwards, we zoom into NP-like constructions, by inspecting which features are frequently used in the query log (e.g. shoppers \n\n2For convenience of exposition, all queries and examples cited in the paper are translated into English. \n\nsearch for sport, not colors), and matching logs and NPs to produce the final set. Based on our experience with dozens of successful deployments in the space, NPs constitute the vast majority of queries in product search: thus, even if our intent is mainly theoretical, we highlight that the chosen types overlap significantly with real-world frequencies in the relevant domain. Due to the power-law distribution of queries, one-word queries are the majority of the dataset (60%); to compensate for sparsity we perform data augmentation for rare compositional queries (e.g. “Nike running shoes”): after we send a query to the existing search engine to get a result set, we simulate _n_ = 500 clicks by drawing products from the set with probability proportional to their overall popularity (Bianchi et al., 2021)<sup>3</sup> . \n\nThe final dataset consists of 104 “activity + sortal”<sup>4</sup> queries – “running shoes” –; 818 “brand + sortal” queries – “Nike shoes” –, and 47 “gender + sortal” queries – “women shoes”; our testing data consists of 521 “brand + activity + sortal” (BAS) triples, 157 “gender + activity + sortal” (GAS) triples, 406 “brand + gender + activity + sortal” (BGAS) quadruples.<sup>5</sup> \n\n"
+  },
+  {
+    "offset_inicio": "**Tasks and Metrics.** Our evaluation metrics are meant to compare the _real_ semantic representation of composed queries (“Nike shoes”) with the one predicted",
+    "offset_fim": "query and learn a linear projection \n\n> 6https://huggingface.co/Musixmatch/ umberto-commoncrawl-cased-v1",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "Tasks and Metrics",
+    "motivo": "O bloco inicia no marcador literal **Tasks and Metrics.** na página 3 e, conforme a diretriz de auditoria, inclui texto, tabelas, legendas e a subseção Models até imediatamente antes do marcador **Results.** na página 4.",
+    "texto": "**Tasks and Metrics.** Our evaluation metrics are meant to compare the _real_ semantic representation of composed queries (“Nike shoes”) with the one predicted by the tested models: in the case of the proposed semantics, that means evaluating how it predicts the DeepSet representation of “Nike shoes”, given the representation of “shoes” and “Nike”. Comparing target vs predicted representations is achieved by looking at the nearest neighbors of the predicted DeepSet, as intuitively complex queries behave as expected only if the two representations share many neighbors. For this reason, quantitative evaluation is performed using two well-known ranking metrics: _nDCG_ and _Jac-_ \n\n> 3Since the only objects users can click on are those returned by the search box, query representation may in theory be biased by the idiosyncrasies of the engine. In practice, we confirmed that the embedding quality is stable even when a sophisticated engine is replaced by simple Boolean queries over TF-IDF vectors, suggesting that any bias of this sort is likely to be very small and not important for the quality of the compositional semantics. \n\n> 4“Sortal” refers to a _type_ of object: _shoes_ and _polo_ are sortals, while _black_ and _Nike_ are not; “activity” is the sport activity for a product, e.g. _tennis_ for a racket. \n\n> 5Dataset size for our compositional tests is in line with intra-textual studies on compositionality (Baroni and Zamparelli, 2010; Rubinstein et al., 2015); moreover, the lexical atoms in our study reflect a real-world distribution that is independently generated, and not frequency on general English corpora. \n\n4411\n\n<!-- PÁGINA 4 -->\n|_LOBO_|_ADMp_|_MDMp_|_ADMv_|_MDMv_|**UM**|**W2V**|\n|---|---|---|---|---|---|---|\n|nDCG|0.1821|**0.2993**|0.1635|0.0240|0.0024|0.0098|\n|Jaccard|0.0713|**0.1175**|0.0450|0.0085|0.0009|0.0052|\n\n\n\nTable 1: Results on **LOBO** ( **bold** are best, underline second best). \n\n|_ZT_|_ADMp_|_MDMp_|_ADMv_|_MDMv_|**UM**|**W2V**|\n|---|---|---|---|---|---|---|\n|**BAS**(_brand + activity + sortal_)|||||||\n|nDCG|0.0810|**0.0988**|0.0600|0.0603|0.0312|0.0064|\n|Jaccard|0.0348|**0.0383**|0.0203|0.0214|0.0113|0.0023|\n|**GAS**(_gender + activity + sortal_)|||||||\n|nDCG|**0.0221**|0.0078|0.0097|0.0160|0.0190|0.0005|\n|Jaccard|**0.0083**|0.0022|0.0029|0.0056|0.0052|0.0001|\n|**BGAS**(_brand + gender + activity + sortal_)|||||||\n|nDCG|0.0332|**0.0375**|0.0118|0.0177|0.0124|0.0059|\n|Jaccard|0.0162|**0.0163**|0.0042|0.0061|0.0044|0.0019|\n\n\n\nTable 2: Results on **ZT** ( **bold** are best, underline second best). \n\n_card_ (Vasile et al., 2016; Jaccard, 1912). We focus on two tasks: leave-one-brand-out ( **LOBO** ) and zero-shot ( **ZT** ). In **LOBO** , we train models over the “brand + sortal” queries but we exclude from training a specific brand (e.g., “Nike”); in the test phase, we ask the models to predict the DeepSet for a seen sortal and an unseen brand. For **ZT** we train models over queries with two terms (“brand + sortal”, “activity + sortal” and “gender + sortal”) and see how well our semantics generalizes to compositions like “brand + activity + sortal”; the complex queries that we used at test time are new and unseen. \n\nto the product-space (essentially, training to predict the DeepSet representation from text). The generalization to different and longer queries for **UM** comes from the embeddings of the queries themselves. Instead, for **W2V** , we learn a compositional function that concatenates the two input DeepSets, projects them to 24 dimensions, pass them through a Rectified Linear Unit, and finally project them to the product space.<sup>7</sup> We run every model 15 times and report average results; RMSProp is the chosen optimizer, with a batch size of 200, 20% of the training set as validation set and early stopping with _patience_ = 10. \n\n**Models.** We benchmark our semantics (tagged as _p_ in the results table) based on **ADM** and **MDM** against three baselines: one is another grounded model, where prod2vec embeddings are replaced by image embeddings (tagged as _v_ in the results table), to test the representational capabilities of the chosen domain against a well-understood modality – image vectors are extracted with ResNet18, taking the average pooling of the last layer to obtain 512-dimensional vectors; two are intratextual models, where word embeddings are obtained from state-of-the-art distributional models, BERT ( **UM** ) (the Umberto model<sup>6</sup> ) and Word2Vec ( **W2V** ), trained on textual metadata from _Shop X_ catalog. For **UM** , we extract the 768 dimensional representation from the [CLS] embedding of the 12th layer of the query and learn a linear projection \n\n> 6https://huggingface.co/Musixmatch/ umberto-commoncrawl-cased-v1"
+  },
+  {
+    "offset_inicio": "**Results.** Table 1 shows the results on **LOBO** , with grounded models outperforming intra-textual ones, and prod2vec semantics (tagged as _p_ ) beating all baselines.",
+    "offset_fim": "exactly captured in this contest, the model ability to identify a similar item is remarkable. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "Results.",
+    "motivo": "O bloco inicia no marcador literal **Results.** na página 4 e inclui a continuação do texto, a figura e sua legenda na página 5; termina imediatamente antes do próximo marcador estrutural, # **4 Conclusions and Future Work**.",
+    "texto": "**Results.** Table 1 shows the results on **LOBO** , with grounded models outperforming intra-textual ones, and prod2vec semantics (tagged as _p_ ) beating all baselines. Table 2 reports performance for different complex query types in the zero-shot inference task: grounded models are superior, with the proposed model outperforming baselines across all types of queries. \n\n**MDM** typically outperforms **ADM** as a composition method, except for _GAS_ , where all models suffer from _gender_ sparsity; in that case, the best model is **ADM** , i.e. the one without an implicit bias from the training. In general, grounded models outperform intra-textual models, often by a wide margin, and prod2vec-based semantics outperforms image-based semantics, proving that the \n\n> 7First results with the same structure as ADM and MDM showed very low performances, thus we made the architecture more complex and non-linear. \n\n4412\n\n<!-- PÁGINA 5 -->\n<!-- Start of picture text -->\n“nike” “shoes”<br>Search Box nike shoes DeepSet Good<br>Composition<br>“adidas” “shoes”<br>Search Box adidas shoes DeepSetComposition Good<br>“nike” “shirt”<br>A nike jacket.<br>Search Box nike shirt DeepSetComposition Not completely<br>wrong<br><!-- End of picture text -->\n\nFigure 1: Examples of qualitative predictions made by MDM on the LOBO task. \n\nchosen latent grounding domain supports rich representational capabilities. The quantitative evaluations were confirmed by manually inspecting nearest neighbors for predicted DeepSets in the **LOBO** setting – as an example, **MDM** predicts for “Nike shoes” a DeepSet that has (correctly) all _shoes_ as neighbors in the space, while, for the same query, **UM** suggests _shorts_ as the answer. Figure 1 shows some examples of compositions obtained by the MDM model on the LOBO task; the last example shows that the model, given in input the query “Nike shirt”, does not reply with a shirt, but with a Nike jacket: even if the correct meaning of “shirt” was not exactly captured in this contest, the model ability to identify a similar item is remarkable. "
+  },
+  {
+    "offset_inicio": "# **4 Conclusions and Future Work** \n\nIn the spirit of Bisk et al. (2020), we argued",
+    "offset_fim": "computational hypotheses about language learning inspired by cognitive sciences (Carey and Bartlett, 1978).",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4 Conclusions and Future Work",
+    "motivo": "O bloco inicia no marcador da seção principal “4 Conclusions and Future Work” e contém seus dois parágrafos completos. Termina imediatamente antes do marcador estrutural seguinte, “Acknowledgments”.",
+    "texto": "# **4 Conclusions and Future Work** \n\nIn the spirit of Bisk et al. (2020), we argued for grounding linguistic meaning in artificial systems through experience. In our implementation, all the important pieces – domain, denotation, composition – are learned from behavioral data. By grounding meaning in (a representation of) objects and their properties, the proposed noun phrase semantics can be learned “bottom-up” like distributional models, but can generalize to unseen examples, like traditional symbolic models: the implicit, dense structure of the domain (e.g. the relative position in the space of _Nike_ products and _shoes_ ) underpins the explicit, discrete structure of queries picking objects in that domain (e.g. “Nike shoes”) – in other words, compositionality is an emergent phenomenon. While encouraging, our results are still preliminary: first, we plan on extending our semantics, starting with Boolean operators (e.g. “shoes \n\n_NOT_ Nike”); second, we plan to improve our representational capabilities, either through symbolic knowledge or more discerning embedding strategies; third, we wish to explore transformer-based architectures (Lee et al., 2019) as an alternative way to produce set-like representations. \n\nWe conceived our work as a testable application of a broader methodological stance, loosely following the agenda of the child-as-hacker (Rule et al., 2020) and child-as-scientist (Gopnik, 2012) programs. Our “search-engine-as-a-child” metaphor may encourage the use of abundant real-world search logs to test computational hypotheses about language learning inspired by cognitive sciences (Carey and Bartlett, 1978)."
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nWe wish to thank Christine Yu, Patrick John Chia and the anonymous",
+    "offset_fim": "Science and Analytics (BIDSA) and the Data and Marketing Insights (DMI) unit. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Acknowledgments",
+    "motivo": "O bloco começa no cabeçalho '# **Acknowledgments**' e contém todo o parágrafo de agradecimentos, terminando imediatamente antes do cabeçalho estrutural հաջinte '# **Ethical Considerations**'.",
+    "texto": "# **Acknowledgments** \n\nWe wish to thank Christine Yu, Patrick John Chia and the anonymous reviewers for useful comments on a previous draft. Federico Bianchi is a member of the Bocconi Institute for Data Science and Analytics (BIDSA) and the Data and Marketing Insights (DMI) unit. "
+  },
+  {
+    "offset_inicio": "# **Ethical Considerations** \n\nUser data has been collected in the process of providing",
+    "offset_fim": "sions and, as such, it does not contain any information that can be linked to individuals. \n\n4413\n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Ethical Considerations",
+    "motivo": "O bloco inicia no título de seção “Ethical Considerations” e contém seu único parágrafo. Termina antes do próximo marcador estrutural, “# **References**”, na página 6.",
+    "texto": "# **Ethical Considerations** \n\nUser data has been collected in the process of providing business services to the clients of _Coveo_ : user data is collected and processed in an anonymized fashion, in full compliance with existing legislation (GDPR). In particular, the target dataset uses only anonymous uuids to label sessions and, as such, it does not contain any information that can be linked to individuals. \n\n4413\n\n"
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "References",
+    "motivo": "O título \"References\" é uma divisão estrutural própria; seu bloco contém apenas o caput até imediatamente antes da primeira entrada bibliográfica, iniciada por \"- Marco Baroni...\".",
+    "texto": "# **References** \n\n"
+  },
+  {
+    "offset_inicio": "- Marco Baroni and Roberto Zamparelli. 2010. Nouns are vectors, adjectives are matrices: Representing adjective-noun constructions in semantic space.",
+    "offset_fim": "In _Proceedings of the 2010 Conference on Empirical Methods in Natural Language Processing_ , pages 1183–1193, Cambridge, MA. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Baroni e Zamparelli (2010)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador \"-\" e encerrada imediatamente antes da próxima entrada, de Emily M. Bender e Alexander Koller.",
+    "texto": "- Marco Baroni and Roberto Zamparelli. 2010. Nouns are vectors, adjectives are matrices: Representing adjective-noun constructions in semantic space. In _Proceedings of the 2010 Conference on Empirical Methods in Natural Language Processing_ , pages 1183–1193, Cambridge, MA. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Emily M. Bender and Alexander Koller. 2020. Climbing towards NLU: On meaning, form, and understanding in the age of data.",
+    "offset_fim": "pages 5185–5198, Online. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Bender e Koller (2020) — Climbing towards NLU",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da entrada seguinte, de Federico Bianchi et al. (2021).",
+    "texto": "- Emily M. Bender and Alexander Koller. 2020. Climbing towards NLU: On meaning, form, and understanding in the age of data. In _Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics_ , pages 5185–5198, Online. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Federico Bianchi, Jacopo Tagliabue, and Bingqing Yu. 2021. Query2Prod2Vec: Grounded Word Embeddings for eCommerce.",
+    "offset_fim": "eCommerce. In _NAACL-HLT_ . Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Bianchi, Tagliabue e Yu (2021) — Query2Prod2Vec",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item '-', e termina imediatamente antes do próximo marcador de referência bibliográfica ('- Federico Bianchi... 2020').",
+    "texto": "- Federico Bianchi, Jacopo Tagliabue, and Bingqing Yu. 2021. Query2Prod2Vec: Grounded Word Embeddings for eCommerce. In _NAACL-HLT_ . Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Federico Bianchi, Jacopo Tagliabue, Bingqing Yu, Luca Bigon, and Ciro Greco. 2020.",
+    "offset_fim": "2020 eCom workshop, July 2020, Virtual Event, published at http://ceur-ws.org (to appear)_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Bianchi et al. (2020) — Fantastic embeddings and how to align them",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador \"-\"; termina imediatamente antes da entrada seguinte, de Yonatan Bisk et al.",
+    "texto": "- Federico Bianchi, Jacopo Tagliabue, Bingqing Yu, Luca Bigon, and Ciro Greco. 2020. Fantastic embeddings and how to align them: Zero-shot inference in a multi-shop scenario. In _Proceedings of the SIGIR 2020 eCom workshop, July 2020, Virtual Event, published at http://ceur-ws.org (to appear)_ ."
+  },
+  {
+    "offset_inicio": "- Yonatan Bisk, Ari Holtzman, Jesse Thomason, Jacob Andreas, Yoshua Bengio, Joyce Chai, Mirella Lapata, Angeliki Lazaridou, Jonathan May, Aleksandr Nisnevich, Nicolas Pinto, and Joseph Turian.",
+    "offset_fim": "pages 8718–8735, Online. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Bisk et al. (2020) — Experience grounds language",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador '-' e termina ao fim da referência, imediatamente antes do marcador da referência seguinte (Carey e Bartlett).",
+    "texto": "- Yonatan Bisk, Ari Holtzman, Jesse Thomason, Jacob Andreas, Yoshua Bengio, Joyce Chai, Mirella Lapata, Angeliki Lazaridou, Jonathan May, Aleksandr Nisnevich, Nicolas Pinto, and Joseph Turian. 2020. Experience grounds language. In _Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)_ , pages 8718–8735, Online. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- S. Carey and E. Bartlett. 1978. Acquiring a single new word.",
+    "offset_fim": "- S. Carey and E. Bartlett. 1978. Acquiring a single new word.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Carey and Bartlett (1978) — Acquiring a single new word",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador \"-\"; termina no ponto final da referência, imediatamente antes da próxima entrada bibliográfica de Maxime Chevalier-Boisvert et al.",
+    "texto": "- S. Carey and E. Bartlett. 1978. Acquiring a single new word."
+  },
+  {
+    "offset_inicio": "- Maxime Chevalier-Boisvert, Dzmitry Bahdanau, Salem Lahlou, L. Willems, Chitwan Saharia, T. Nguyen, and Yoshua Bengio. 2019.",
+    "offset_fim": "Chitwan Saharia, T. Nguyen, and Yoshua Bengio. 2019. BabyAI: A platform to study the sample efficiency of grounded language learning. In _ICLR_ . ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Chevalier-Boisvert et al. (2019) — BabyAI",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador \"-\"; termina imediatamente antes do marcador da referência seguinte, \"- Gennaro Chierchia...\".",
+    "texto": "- Maxime Chevalier-Boisvert, Dzmitry Bahdanau, Salem Lahlou, L. Willems, Chitwan Saharia, T. Nguyen, and Yoshua Bengio. 2019. BabyAI: A platform to study the sample efficiency of grounded language learning. In _ICLR_ . "
+  },
+  {
+    "offset_inicio": "- Gennaro Chierchia and Sally McConnell-Ginet. 2000. _Meaning and Grammar (2nd Ed.): An",
+    "offset_fim": "Meaning and Grammar (2nd Ed.): An Introduction to Semantics_ . MIT Press, Cambridge, MA, USA. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Chierchia e McConnell-Ginet (2000) — Meaning and Grammar",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de item \"- Gennaro Chierchia...\" e termina imediatamente antes do marcador da referência seguinte, de Andrew Cotter et al.",
+    "texto": "- Gennaro Chierchia and Sally McConnell-Ginet. 2000. _Meaning and Grammar (2nd Ed.): An Introduction to Semantics_ . MIT Press, Cambridge, MA, USA. "
+  },
+  {
+    "offset_inicio": "- Andrew Cotter, Maya R. Gupta, Heinrich Jiang, James Muller, Taman Narayan, Serena",
+    "offset_fim": "Narayan, Serena Wang, and Tao Zhu. 2018. Interpretable set functions. _ArXiv_ , abs/1806.00050.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Cotter et al. (2018) — Interpretable set functions",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador '- Andrew Cotter' e encerrada imediatamente antes da entrada seguinte, '- Jacob Devlin'.",
+    "texto": "- Andrew Cotter, Maya R. Gupta, Heinrich Jiang, James Muller, Taman Narayan, Serena Wang, and Tao Zhu. 2018. Interpretable set functions. _ArXiv_ , abs/1806.00050."
+  },
+  {
+    "offset_inicio": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language understanding.",
+    "offset_fim": "Papers)_ , pages 4171–4186, Minneapolis, Minnesota. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Devlin et al. (2019) — BERT",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador '-' e encerrada imediatamente antes da entrada seguinte, de Nicole J. M. Fitzgerald e Jacopo Tagliabue.",
+    "texto": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language understanding. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4171–4186, Minneapolis, Minnesota. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Nicole J M Fitzgerald and Jacopo Tagliabue. 2020. On the plurality of graphs. In",
+    "offset_fim": "graphs. In _NETREASON Workshop at 24th European Conference on Artificial Intelligence_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Fitzgerald e Tagliabue (2020) — On the plurality of graphs",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item \"-\"; termina imediatamente antes da entrada seguinte, de Alison Gopnik.",
+    "texto": "- Nicole J M Fitzgerald and Jacopo Tagliabue. 2020. On the plurality of graphs. In _NETREASON Workshop at 24th European Conference on Artificial Intelligence_ ."
+  },
+  {
+    "offset_inicio": "- Alison Gopnik. 2012. Scientific thinking in young children: Theoretical advances, empirical research, and policy implications.",
+    "offset_fim": "Theoretical advances, empirical research, and policy implications. _Science (New York, N.Y.)_ , 337:1623–7.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Alison Gopnik (2012) — Scientific thinking in young children",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador '-' e encerrada imediatamente antes do marcador da referência seguinte, de Mihajlo Grbovic et al.",
+    "texto": "- Alison Gopnik. 2012. Scientific thinking in young children: Theoretical advances, empirical research, and policy implications. _Science (New York, N.Y.)_ , 337:1623–7."
+  },
+  {
+    "offset_inicio": "- Mihajlo Grbovic, Vladan Radosavljevic, Nemanja Djuric, Narayan Bhamidipati, Jaikit Savla, Varun Bhagwan, and Doug Sharp. 2015.",
+    "offset_fim": "E-commerce in your inbox: Product recommendations at scale. In _Proceedings of KDD ’15_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência bibliográfica — Grbovic et al. (2015)",
+    "motivo": "É a primeira entrada da lista de referências visível no texto. Inicia no marcador de item \"- Mihajlo Grbovic\" e termina após a citação de KDD ’15, imediatamente antes do próximo item, iniciado por \"- William L. Hamilton\".",
+    "texto": "- Mihajlo Grbovic, Vladan Radosavljevic, Nemanja Djuric, Narayan Bhamidipati, Jaikit Savla, Varun Bhagwan, and Doug Sharp. 2015. E-commerce in your inbox: Product recommendations at scale. In _Proceedings of KDD ’15_ ."
+  },
+  {
+    "offset_inicio": "- William L. Hamilton, Payal Bajaj, Marinka Zitnik, Dan Jurafsky, and Jure Leskovec.",
+    "offset_fim": "2018. Embedding logical queries on knowledge graphs. In _NeurIPS_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Hamilton et al. (2018) — Embedding logical queries on knowledge graphs",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador “-” e termina antes do marcador da referência seguinte, de Hartung et al.",
+    "texto": "- William L. Hamilton, Payal Bajaj, Marinka Zitnik, Dan Jurafsky, and Jure Leskovec. 2018. Embedding logical queries on knowledge graphs. In _NeurIPS_ ."
+  },
+  {
+    "offset_inicio": "- Matthias Hartung, Fabian Kaupmann, Soufian Jebbara, and Philipp Cimiano. 2017. Learning compositionality functions on word embeddings",
+    "offset_fim": "In _Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers_ , pages 54–64. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Hartung et al. (2017) — Learning compositionality functions",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada pelo marcador '-' e encerrada imediatamente antes da próxima entrada, de Irene Heim e Angelika Kratzer.",
+    "texto": "- Matthias Hartung, Fabian Kaupmann, Soufian Jebbara, and Philipp Cimiano. 2017. Learning compositionality functions on word embeddings for modelling attribute meaning in adjective-noun phrases. In _Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers_ , pages 54–64. "
+  },
+  {
+    "offset_inicio": "- Irene Heim and Angelika Kratzer. 1998. _Semantics in Generative Grammar_ . Wiley-Blackwell. ",
+    "offset_fim": "- Irene Heim and Angelika Kratzer. 1998. _Semantics in Generative Grammar_ . Wiley-Blackwell. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Heim and Kratzer (1998)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador '-' e encerrada imediatamente antes da próxima entrada, de Felix Hill et al.",
+    "texto": "- Irene Heim and Angelika Kratzer. 1998. _Semantics in Generative Grammar_ . Wiley-Blackwell. "
+  },
+  {
+    "offset_inicio": "- Felix Hill, O. Tieleman, Tamara von Glehn, N. Wong, Hamza Merzic, and Stephen",
+    "offset_fim": "nded language learning fast and slow. _ArXiv_ , abs/2009.01719. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Felix Hill et al. (2020) — Grounded language learning fast and slow",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador '-' na página 6 e encerrada imediatamente antes da próxima entrada, de Paul Jaccard.",
+    "texto": "- Felix Hill, O. Tieleman, Tamara von Glehn, N. Wong, Hamza Merzic, and Stephen Clark. 2020. Grounded language learning fast and slow. _ArXiv_ , abs/2009.01719. "
+  },
+  {
+    "offset_inicio": "- Paul Jaccard. 1912. The distribution of the flora in the alpine zone.1. _New Phytologist_",
+    "offset_fim": "Paul Jaccard. 1912. The distribution of the flora in the alpine zone.1. _New Phytologist_ , 11(2):37–50.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência bibliográfica — Paul Jaccard (1912)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador \"- Paul Jaccard\" e termina imediatamente antes do marcador da referência seguinte, \"- Eliza Kosoy\".",
+    "texto": "- Paul Jaccard. 1912. The distribution of the flora in the alpine zone.1. _New Phytologist_ , 11(2):37–50."
+  },
+  {
+    "offset_inicio": "- Eliza Kosoy, Jasmine Collins, David M. Chan, Jessica B. Hamrick, Sandy H. Huang,",
+    "offset_fim": "2020. Exploring exploration: Comparing children with RL agents in unified environments. In _ICLR Workshop on \"Bridging AI and Cognitive Science\"_ . ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Kosoy et al. (2020) — Exploring exploration",
+    "motivo": "É a primeira entrada bibliográfica visível: inicia no marcador \"- Eliza Kosoy\" e termina imediatamente antes do marcador da referência seguinte, \"- Ranjay Krishna\".",
+    "texto": "- Eliza Kosoy, Jasmine Collins, David M. Chan, Jessica B. Hamrick, Sandy H. Huang, A. Gopnik, and J. Canny. 2020. Exploring exploration: Comparing children with RL agents in unified environments. In _ICLR Workshop on \"Bridging AI and Cognitive Science\"_ . "
+  },
+  {
+    "offset_inicio": "- Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua Kravitz,",
+    "offset_fim": "annotations. _International Journal of Computer Vision_ , 123:32–73.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Ranjay Krishna et al. (2016), Visual genome",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item \"-\"; termina após \"123:32–73.\", imediatamente antes da referência de Juho Lee et al.",
+    "texto": "- Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David A. Shamma, Michael S. Bernstein, and Li Fei-Fei. 2016. Visual genome: Connecting language and vision using crowdsourced dense image annotations. _International Journal of Computer Vision_ , 123:32–73."
+  },
+  {
+    "offset_inicio": "- Juho Lee, Yoonho Lee, Jungtaek Kim, Adam Kosiorek, Seungjin Choi, and Yee Whye Teh. 2019.",
+    "offset_fim": "volume 97 of _Proceedings of Machine Learning Research_ , pages 3744–3753. PMLR.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Lee et al. (2019) — Set transformer",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de item “- Juho Lee...”, e termina em “PMLR.” imediatamente antes da próxima entrada, “- Di Lu...”.",
+    "texto": "- Juho Lee, Yoonho Lee, Jungtaek Kim, Adam Kosiorek, Seungjin Choi, and Yee Whye Teh. 2019. Set transformer: A framework for attention-based permutation-invariant neural networks. In _Proceedings of the 36th International Conference on Machine Learning_ , volume 97 of _Proceedings of Machine Learning Research_ , pages 3744–3753. PMLR."
+  },
+  {
+    "offset_inicio": "- Di Lu, Spencer Whitehead, Lifu Huang, Heng Ji, and Shih-Fu Chang. 2018. Entity",
+    "offset_fim": "ity-aware image caption generation. In _EMNLP_ . \n\n4414\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Di Lu et al. (2018) — Entity-aware image caption generation",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item \"-\" na página 6 e encerrada imediatamente antes da próxima entrada bibliográfica, no início da página 7.",
+    "texto": "- Di Lu, Spencer Whitehead, Lifu Huang, Heng Ji, and Shih-Fu Chang. 2018. Entity-aware image caption generation. In _EMNLP_ . \n\n4414\n"
+  },
+  {
+    "offset_inicio": "- Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Distributed representations of words and phrases",
+    "offset_fim": "In _Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2_ , NIPS’13, page 3111–3119, Red Hook, NY, USA. Curran Associates Inc.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Mikolov et al. (2013) — Distributed representations of words and phrases",
+    "motivo": "É a primeira entrada bibliográfica visível na página 7; inicia no marcador de item '-' e termina imediatamente antes da próxima entrada bibliográfica, de Cun Mu, Guang Yang e Zheng Yan.",
+    "texto": "- Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Distributed representations of words and phrases and their compositionality. In _Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2_ , NIPS’13, page 3111–3119, Red Hook, NY, USA. Curran Associates Inc."
+  },
+  {
+    "offset_inicio": "- Cun Mu, Guang Yang, and Zheng Yan. 2018. Revisiting skip-gram negative sampling model",
+    "offset_fim": "model with regularization. In _Proceedings of the 2019 Computing Conference_ .",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Cun Mu, Guang Yang, and Zheng Yan (2018)",
+    "motivo": "Trata-se da primeira entrada bibliográfica visível na página. O bloco inicia no marcador \"-\" da referência de Cun Mu et al. e termina após \"Conference_ .\", imediatamente antes do marcador da referência seguinte, de Matthew Peters et al.",
+    "texto": "- Cun Mu, Guang Yang, and Zheng Yan. 2018. Revisiting skip-gram negative sampling model with regularization. In _Proceedings of the 2019 Computing Conference_ ."
+  },
+  {
+    "offset_inicio": "- Matthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee,",
+    "offset_fim": "pages 2227–2237, New Orleans, Louisiana. Association for Computational Linguistics.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Peters et al. (2018) — Deep contextualized word representations",
+    "motivo": "Entrada bibliográfica individual: inicia no marcador de lista de Matthew Peters et al. e termina imediatamente antes da próxima referência, de W. V. O. Quine.",
+    "texto": "- Matthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations. In _Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)_ , pages 2227–2237, New Orleans, Louisiana. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- W. V. O. Quine. 1960. _Word & Object_ . MIT Press. ",
+    "offset_fim": "- W. V. O. Quine. 1960. _Word & Object_ . MIT Press. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "W. V. O. Quine (1960) — Word & Object",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"-\" e termina antes do próximo marcador de entrada, referente a Michael Tomasello.",
+    "texto": "- W. V. O. Quine. 1960. _Word & Object_ . MIT Press. "
+  },
+  {
+    "offset_inicio": "- Michael Tomasello. 2003. _Constructing a Language: A Usage-Based Theory of Language Acquisition_ . Harvard University Press, Cambridge, MA.",
+    "offset_fim": "Tomasello. 2003. _Constructing a Language: A Usage-Based Theory of Language Acquisition_ . Harvard University Press, Cambridge, MA.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência bibliográfica: Michael Tomasello (2003)",
+    "motivo": "A entrada bibliográfica iniciada por “- Michael Tomasello” é uma unidade de referência completa e termina imediatamente antes da entrada seguinte, de Flavian Vasile et al.",
+    "texto": "- Michael Tomasello. 2003. _Constructing a Language: A Usage-Based Theory of Language Acquisition_ . Harvard University Press, Cambridge, MA."
+  },
+  {
+    "offset_inicio": "- Flavian Vasile, Elena Smirnova, and Alexis Conneau. 2016. Meta-prod2vec: Product",
+    "offset_fim": "recommendation. In _Proceedings of the 10th ACM Conference on Recommender Systems_ .",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Flavian Vasile, Elena Smirnova e Alexis Conneau (2016) — Meta-prod2vec",
+    "motivo": "É a primeira entrada bibliográfica visível na página, iniciada pelo marcador '-' e encerrada imediatamente antes da próxima entrada, de Fei Xu e Joshua B. Tenenbaum.",
+    "texto": "- Flavian Vasile, Elena Smirnova, and Alexis Conneau. 2016. Meta-prod2vec: Product embeddings using side-information for recommendation. In _Proceedings of the 10th ACM Conference on Recommender Systems_ ."
+  },
+  {
+    "offset_inicio": "   - Fei Xu and Joshua B. Tenenbaum. 2000. Word learning as bayesian inference. In _In Proceedings",
+    "offset_fim": "f the 22nd Annual Conference of the Cognitive Science Society_ , pages 517–522. Erlbaum.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Fei Xu and Joshua B. Tenenbaum (2000)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da entrada seguinte, de Bingqing Yu et al.",
+    "texto": "   - Fei Xu and Joshua B. Tenenbaum. 2000. Word learning as bayesian inference. In _In Proceedings of the 22nd Annual Conference of the Cognitive Science Society_ , pages 517–522. Erlbaum."
+  },
+  {
+    "offset_inicio": "   - Bingqing Yu, Jacopo Tagliabue, Ciro Greco, and Federico Bianchi. 2020. “An",
+    "offset_fim": "WWW ’20, page 461–470, New York, NY, USA. Association for Computing Machinery.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência bibliográfica — Bingqing Yu et al. (2020)",
+    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador de item “-”, e termina antes do próximo item, “- Haonan Yu...”.",
+    "texto": "   - Bingqing Yu, Jacopo Tagliabue, Ciro Greco, and Federico Bianchi. 2020. “An Image is Worth a Thousand Features”: Scalable Product Representations for In-Session Type-Ahead Personalization. In _Companion Proceedings of the Web Conference 2020_ , WWW ’20, page 461–470, New York, NY, USA. Association for Computing Machinery."
+  },
+  {
+    "offset_inicio": "   - Haonan Yu, H. Zhang, and W. Xu. 2018. Interactive grounded language acquisition",
+    "offset_fim": "Interactive grounded language acquisition and generalization in a 2d world. In _ICLR_ . ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência bibliográfica: Haonan Yu, H. Zhang e W. Xu (2018)",
+    "motivo": "É a primeira entrada bibliográfica visível na página 7, iniciada pelo marcador \"-\" e encerrada imediatamente antes do marcador da referência seguinte, de Dana Rubinstein et al.",
+    "texto": "   - Haonan Yu, H. Zhang, and W. Xu. 2018. Interactive grounded language acquisition and generalization in a 2d world. In _ICLR_ . "
+  },
+  {
+    "offset_inicio": "- Dana Rubinstein, Effi Levi, Roy Schwartz, and Ari Rappoport. 2015. How well do distributional models capture different types of semantic knowledge?",
+    "offset_fim": "pages 726–730, Beijing, China. Association for Computational Linguistics.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Dana Rubinstein et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica da página; começa no marcador \"- Dana Rubinstein...\" e termina imediatamente antes do marcador da referência seguinte, \"- Joshua S Rule...\".",
+    "texto": "- Dana Rubinstein, Effi Levi, Roy Schwartz, and Ari Rappoport. 2015. How well do distributional models capture different types of semantic knowledge? In _Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)_ , pages 726–730, Beijing, China. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Joshua S Rule, Joshua B Tenenbaum, and Steven T Piantadosi. 2020. The child as",
+    "offset_fim": "Joshua B Tenenbaum, and Steven T Piantadosi. 2020. The child as hacker. _Trends in cognitive sciences_ , 24(11):900—915.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Joshua S. Rule, Joshua B. Tenenbaum e Steven T. Piantadosi (2020) — The child as hacker",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da próxima entrada bibliográfica.",
+    "texto": "- Joshua S Rule, Joshua B Tenenbaum, and Steven T Piantadosi. 2020. The child as hacker. _Trends in cognitive sciences_ , 24(11):900—915."
+  },
+  {
+    "offset_inicio": "- Agnieszka Słowik, Abhinav Gupta, William L. Hamilton, Mateja Jamnik, Sean B. Holden, and Christopher Joseph Pal. 2020.",
+    "offset_fim": "Christopher Joseph Pal. 2020. Exploring structural inductive biases in emergent communication. _ArXiv_ , abs/2002.01335.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Agnieszka Słowik et al. 2020",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador '-' e encerrada imediatamente antes da entrada bibliográfica seguinte.",
+    "texto": "- Agnieszka Słowik, Abhinav Gupta, William L. Hamilton, Mateja Jamnik, Sean B. Holden, and Christopher Joseph Pal. 2020. Exploring structural inductive biases in emergent communication. _ArXiv_ , abs/2002.01335."
+  },
+  {
+    "offset_inicio": "- Jacopo Tagliabue and Reuben Cohn-Gordon. 2019. Lexical learning as an online optimal experiment: Building efficient search engines through humanmachine collaboration.",
+    "offset_fim": "g efficient search engines through humanmachine collaboration. _ArXiv_ , abs/1910.14164. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Tagliabue and Cohn-Gordon (2019)",
+    "motivo": "É a primeira entrada bibliográfica visível na página. Inicia no marcador de item \"-\" e termina imediatamente antes do marcador \"-\" da referência seguinte.",
+    "texto": "- Jacopo Tagliabue and Reuben Cohn-Gordon. 2019. Lexical learning as an online optimal experiment: Building efficient search engines through humanmachine collaboration. _ArXiv_ , abs/1910.14164. "
+  },
+  {
+    "offset_inicio": "- Jacopo Tagliabue, Bingqing Yu, and Marie Beaulieu. 2020a. How to grow a (product)",
+    "offset_fim": "pages 7–18, Seattle, WA, USA. Association for Computational Linguistics.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Tagliabue, Yu e Beaulieu (2020a)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador \"-\" e encerrada imediatamente antes do marcador da referência seguinte.",
+    "texto": "- Jacopo Tagliabue, Bingqing Yu, and Marie Beaulieu. 2020a. How to grow a (product) tree: Personalized category suggestions for eCommerce type-ahead. In _Proceedings of The 3rd Workshop on e-Commerce and NLP_ , pages 7–18, Seattle, WA, USA. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Jacopo Tagliabue, Bingqing Yu, and Federico Bianchi. 2020b. The embeddings that came in from the cold: Improving vectors for new and rare products with content-based inference.",
+    "offset_fim": " ACM Conference on Recommender Systems_ , RecSys ’20, page 577–578, New York, NY, USA. Association for Computing Machinery.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Tagliabue, Yu e Bianchi (2020b)",
+    "motivo": "É uma entrada individual de bibliografia, iniciada pelo marcador de item \"-\" e encerrada antes do número de página \"4415\", que não integra a referência.",
+    "texto": "- Jacopo Tagliabue, Bingqing Yu, and Federico Bianchi. 2020b. The embeddings that came in from the cold: Improving vectors for new and rare products with content-based inference. In _Fourteenth ACM Conference on Recommender Systems_ , RecSys ’20, page 577–578, New York, NY, USA. Association for Computing Machinery."
+  }
+]

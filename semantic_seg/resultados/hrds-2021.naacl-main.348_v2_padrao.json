@@ -1,0 +1,30 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Seção principal numerada",
+      "exemplo": "1 Introduction"
+    },
+    {
+      "nivel": 2,
+      "nome": "Subseção temática em negrito sem numeração",
+      "exemplo": "Learning a representation space"
+    },
+    {
+      "nivel": 3,
+      "nome": "Item de bibliografia",
+      "exemplo": "- Marco Baroni and Roberto Zamparelli. 2010. Nouns are vectors, adjectives are matrices: Representing adjective-noun constructions in semantic space."
+    }
+  ],
+  "confianca": "media",
+  "paginas_amostradas": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7
+  ],
+  "total_paginas": 7
+}

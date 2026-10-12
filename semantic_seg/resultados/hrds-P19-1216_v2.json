@@ -1,0 +1,317 @@
+[
+  {
+    "offset_inicio": "# **Unsupervised Rewriter for Multi-Sentence Compression** \n\n**Yang Zhao**<sup>1</sup>",
+    "offset_fim": "4National Institute of Informatics, Tokyo, Japan aizawa@nii.ac.jp \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Unsupervised Rewriter for Multi-Sentence Compression",
+    "motivo": "O bloco inicia no título principal do artigo e reúne autoria e afiliações; termina imediatamente antes do marcador da seção \"Abstract\".",
+    "texto": "# **Unsupervised Rewriter for Multi-Sentence Compression** \n\n**Yang Zhao**<sup>1</sup> **, Xiaoyu Shen**<sup>2</sup> **, Wei Bi**<sup>3</sup> **, Akiko Aizawa**<sup>4</sup><sup>_,_1</sup> 1The University of Tokyo, Tokyo, Japan zhao@is.s.u-tokyo.ac.jp 2Max Planck Institute for Informatics, Saarland, Germany xshen@mpi-inf.mpg.de 3Tencent AI Lab, Shenzhen, China victoriabi@tencent.com 4National Institute of Informatics, Tokyo, Japan aizawa@nii.ac.jp \n\n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nMulti-sentence compression (MSC) aims to generate a grammatical but reduced",
+    "offset_fim": "A parallel corpus with more than 140,000 (sentence group, compression) pairs is also constructed as a by-product for future research. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco começa no marcador de seção \"## **Abstract**\" e contém integralmente o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nMulti-sentence compression (MSC) aims to generate a grammatical but reduced compression from multiple input sentences while retaining their key information. Previous dominating approach for MSC is the extractionbased word graph approach. A few variants further leveraged lexical substitution to yield more abstractive compression. However, two limitations exist. First, the word graph approach that simply concatenates fragments from multiple sentences may yield nonfluent or ungrammatical compression. Second, lexical substitution is often inappropriate without the consideration of context information. To tackle the above-mentioned issues, we present a neural rewriter for multisentence compression that does not need any parallel corpus. Empirical studies have shown that our approach achieves comparable results upon automatic evaluation and improves the grammaticality of compression based on human evaluation. A parallel corpus with more than 140,000 (sentence group, compression) pairs is also constructed as a by-product for future research. "
+  },
+  {
+    "offset_inicio": "# **1 Introduction** \n\nMulti-sentence compression (MSC) aims to generate a single",
+    "offset_fim": "future research. We release source code and data here<sup>1</sup> . \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador de seção principal \"# **1 Introduction**\" e inclui os parágrafos introdutórios que continuam na página 2, encerrando-se imediatamente antes do próximo marcador, \"# **2 Dataset Construction**\".",
+    "texto": "# **1 Introduction** \n\nMulti-sentence compression (MSC) aims to generate a single shorter and grammatical sentence that preserves important information from a group of related sentences. Over the past decade, multisentence compression has attracted considerable attention owing to its potential applications, such as compressing the content to be displayed on screens with limited size (e.g., mobile devices) and benefiting other natural language processing tasks, such as multi-document summarization (Banerjee et al., 2015), opinion summarization, and text simplification. Most existing works rely on the word graph approach initialized in (Filippova, 2010), which offers a simple solution that copies frag- \n\nments from different input sentences and concatenates them to form the final compression. Later on, a bunch of subsequent research works (Boudin and Morin, 2013; Banerjee et al., 2015; Luong et al., 2015; ShafieiBavani et al., 2016; Pontes et al., 2018; Nayeem et al., 2018) attempted to improve the word graph approach using a variety of strategies, such as keyphrase re-ranking. However, such extraction-based approach may yield nonfluent or ungrammatical compression. A previous study (Nayeem and Chali, 2017) has shown that word graph approaches produce more than 30% of the ungrammatical sentences (evaluated by a chart parser), which is partly due to the non-usage of rewording by these extraction-based approaches. In fact, human annotators tend to compress a sentence through several rewriting operations, such as substitution and rewording (Cohn and Lapata, 2008). Despite some research works that attempt to do the lexical substitution, it is often inappropriate without the consideration of context information. \n\nTo tackle the above-mentioned problems, we present herein an unsupervised rewriter to improve the grammaticality of compression while introducing an appropriate amount of novel words. Inspired by the unsupervised machine translation (Sennrich et al., 2015; Fevry and Phang, 2018), we adopted the back-translation technique to our setting. Unlike machine translation, in the case of compression task, multiple input sentences and single output compression usually do not have semantic equivalence, which complicates the application of the back-translation technique. Thus, we propose a rewriting scheme that first exploits word graph approach to produce coarse-grained compression ( _B_ ), based on which we substitute words with their shorter synonyms to yield paraphrased sentence ( _C_ ). A neural rewriter is subsequently applied to the semantically equivalent ( _B_ , _C_ ) pairs \n\n2235 \n\n_Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 2235–2240 Florence, Italy, July 28 - August 2, 2019. _⃝_ c 2019 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nin order to improve the grammaticality and encourage more novel words in compression. Our contributions are two-folds:(i) we present a neural rewriter for multi-sentence compression without any parallel data. This rewriter significantly improves the grammaticality and novel word rate, while maintaining the information coverage (informativeness) according to automatic evaluation and (ii) a large-scale multi-sentence compression corpus is introduced along with a manually created test set for future research. We release source code and data here<sup>1</sup> . \n\n"
+  },
+  {
+    "offset_inicio": "# **2 Dataset Construction** \n\nThe largest existing English corpus for multisentence",
+    "offset_fim": "The full procedure for the dataset construction is available here<sup>3</sup> . ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Dataset Construction",
+    "motivo": "O bloco inicia na seção principal numerada 2 e contém seu parágrafo introdutório; termina imediatamente antes do marcador da subseção 2.1.",
+    "texto": "# **2 Dataset Construction** \n\nThe largest existing English corpus for multisentence compression is the Cornell corpus (McKeown et al., 2010), which has only 300 instances. We introduce herein a large-scale dataset by compiling the English Gigaword<sup>2</sup> . After preprocessing (e.g., filtering strange punctuations, etc.), 1.37 million news articles were yielded to group related sentences. The full procedure for the dataset construction is available here<sup>3</sup> . "
+  },
+  {
+    "offset_inicio": "## **2.1 Group Related Sentences** \n\nThe prerequisite for multi-sentence compression is",
+    "offset_fim": "|4|816|\n|In total|140,572|\n\n\n\nTable 1: Statistics of created Giga-MSC dataset. \n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2.1 Group Related Sentences",
+    "motivo": "O bloco inicia no marcador da subseção 2.1 e inclui seu texto, notas, tabela e legenda associados. Termina imediatamente antes do marcador da subseção seguinte, “## **2.2 Giga-MSC Dataset Annotation**”.",
+    "texto": "## **2.1 Group Related Sentences** \n\nThe prerequisite for multi-sentence compression is that all input sentences should be related to the same topic or event. Inspired by (McKeown et al., 2010), if the sentences are too similar, one of the input sentences could be directly treated as a compression. In contrast, if the sentences are too dissimilar (no interaction), they may describe different events or topics. Both cases should be avoided because sentence compression would not be necessary. Here we use bi-gram similarity, which exhibited the highest accuracy (90%)<sup>4</sup> . We empirically arrived at 0.2 of the lower threshold of the bigram similarity to avoid very dissimilar sentences and 0.7 of the upper threshold of the bigram similarity to avoid near-identical sentences. As presented in Table 1, 140,572 sentence groups were finally yielded out of 1.37 million new articles. We refer to this as the Giga-MSC dataset. \n\n> 1http://github.com/code4ai \n\n> 2https://catalog.ldc.upenn.edu/LDC2011T07 English Gigaword, a comprehensive archive of newswire text data containing seven distinct international sources. \n\n> 3http://github.com/code4ai/data \n\n> 4Human judges were asked to evaluate whether the sentences in a group revolved around the same topic or event. A total of 45 out of 50 sentence groups were judged to be qualified. \n\n|# of sentences in agroup|# ofgroups|\n|---|---|\n|2|133,123|\n|3|6,633|\n|4|816|\n|In total|140,572|\n\n\n\nTable 1: Statistics of created Giga-MSC dataset. \n"
+  },
+  {
+    "offset_inicio": "## **2.2 Giga-MSC Dataset Annotation** \n\nWe randomly selected 150 sentences for human",
+    "offset_fim": "The score was 0 _._ 43, demonstrating that moderate agreement was reached. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2.2 Giga-MSC Dataset Annotation",
+    "motivo": "O bloco inicia no marcador da subseção 2.2 e contém integralmente o parágrafo de anotação humana, terminando imediatamente antes do próximo marcador estrutural, a seção 3.",
+    "texto": "## **2.2 Giga-MSC Dataset Annotation** \n\nWe randomly selected 150 sentences for human annotation, which were used as reference compression in the automatic evaluation. Two annotators<sup>5</sup> were asked to generate one single reduced grammatical compression that satisfies two conditions:(1) conveys the important content of all the input sentences and (2) should be grammatically correct. We are interested in how the human annotators will perform this task without vocabulary constraints; hence, we did not tell them to introduce as little new vocabulary as possible in their compression as several previous works did (Boudin and Morin, 2013; Luong et al., 2015). Inter-agreement score Fleiss’ Kappa (Artstein and Poesio, 2008) was also computed. The score was 0 _._ 43, demonstrating that moderate agreement was reached. \n\n"
+  },
+  {
+    "offset_inicio": "# **3 Methodology** \n\nFigure 1 illustrates our rewriting approach consisting of three steps. ",
+    "offset_fim": "# **3 Methodology** \n\nFigure 1 illustrates our rewriting approach consisting of three steps. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "3 Methodology",
+    "motivo": "O bloco inicia na seção principal numerada “3 Methodology” e contém seu texto introdutório; termina imediatamente antes do marcador da subseção “3.1 Step.1 (A → B)”.",
+    "texto": "# **3 Methodology** \n\nFigure 1 illustrates our rewriting approach consisting of three steps. "
+  },
+  {
+    "offset_inicio": "## **3.1 Step.1 (A** _→_ **B)** \n\nGiven m input sentences, _s_ 1 _, s_ 2 _, ..., sm_ , called _A_ , we use the keyphrase word graph approach",
+    "offset_fim": "(Boudin and Morin, 2013) to obtain coarsegrained compression, called _B_ .",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "3.1 Step.1 (A → B)",
+    "motivo": "O bloco inicia no marcador da subseção 3.1 e contém seu único parágrafo descritivo; termina imediatamente antes do próximo marcador estrutural, a subseção 3.2.",
+    "texto": "## **3.1 Step.1 (A** _→_ **B)** \n\nGiven m input sentences, _s_ 1 _, s_ 2 _, ..., sm_ , called _A_ , we use the keyphrase word graph approach (Boudin and Morin, 2013) to obtain coarsegrained compression, called _B_ ."
+  },
+  {
+    "offset_inicio": "## **3.2 Step.1 (B** _→_ **C)** \n\n_C_ is yielded by substituting words and phrases in _B_ with synonyms.",
+    "offset_fim": "Therefore, the next steps focus on creating pseudo parallel data to boost the fluency of _C_ while attempting to maintain the rate of novel words.",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "3.2 Step.1 (B → C)",
+    "motivo": "O bloco inicia no marcador da subseção 3.2, continua pela quebra de página e pela figura inserida, e termina imediatamente antes do marcador da subseção seguinte, 3.3.",
+    "texto": "## **3.2 Step.1 (B** _→_ **C)** \n\n_C_ is yielded by substituting words and phrases in _B_ with synonyms. We first identified all the multiword expressions in a sentence and determined all the synonyms in WordNet 3.0<sup>6</sup> . Keep in mind that our goal is to shorten the sentence as much as possible, we specifically substituted multiword expressions, such as _police_ _~~o~~ fficer, united_ _~~s~~ tates_ _~~o~~ f_ _~~a~~ merica_ , with their **shorter** synonyms _policeman and u.s._ . Because the size of synonyms in the WordNet dictionary is relatively limited, we also exploit PPDB 2.0<sup>7</sup> to replace \n\n> 5Both annotators are native English speakers and not authors of this paper. \n\n> 6https://wordnet.princeton.edu/ \n\n> 7https://paraphrase.prg \n\n2236\n\n<!-- PÁGINA 3 -->\nStep 1 Word graph approach Synonyms substitution A: m input sentences B: coarse-grained C: paraphrased compression s1, s2, … sm compression train backward model with 140k pairs Step 2 B: coarse-grained compression C: paraphrased compression feed 1 million C’ to pre-trained backward model and yield 1 million B’ as pseudo parallel data \n\nStep 3 B + B' C + C' train forward model with 1M + 140K pairs \n\nFigure 1: Graphic illustration for the rewriter model. _A_ refers to multiple input sentences. _B_ denotes a single compressed sentence using the word graph approach. _C_ is the paraphrased sentence. _C_<sup>_′_</sup> is a large-scale and indomain monolingual corpus, while _B_<sup>_′_</sup> refers to the predicted compression by a pre-trained backward model given _C_<sup>_′_</sup> as input. _B_ + _B_<sup>_′_</sup> and _C_ + _C_<sup>_′_</sup> are the mixing datasets. \n\nthe nouns, verbs, and adjectives with their shorter counterparts. For example, the verb _demonstrating_ is converted into _proved_ . By using the Giga-MSC dataset we created, 140,000 ( _A_ , _B_ , _C_ ) tuples are yielded. Lexical substitution might lead to nonfluency _C_ but significantly increases the number of novel words. Therefore, the next steps focus on creating pseudo parallel data to boost the fluency of _C_ while attempting to maintain the rate of novel words."
+  },
+  {
+    "offset_inicio": "## **3.3 Step2 (C** _→_ **B)** \n\nBecause the yielded _B_ and _C_ are semantically",
+    "offset_fim": "maintained a novel rate of approximately 8 _._ 9, as compared to _B_<sup>_′_</sup> . ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.3 Step2 (C → B)",
+    "motivo": "O bloco inicia no marcador da subseção 3.3 e contém seu único parágrafo, terminando imediatamente antes do marcador da subseção 3.4.",
+    "texto": "## **3.3 Step2 (C** _→_ **B)** \n\nBecause the yielded _B_ and _C_ are semantically equivalent, we train a backward model (C _→_ B) using 140,000 (C, B) pairs. The backward model consisted of a three-layer bi-directional LSTM encoder and a uni-directional decoder with attention mechanism. After the backward model was trained, one million grammatical in-domain sentences _C_<sup>_′_</sup> were given as input to generate one million _B_<sup>_′_</sup> The average length of _C_<sup>_′_</sup> was similar to that of _C_ (30.2 tokens). We also found that _C_<sup>_′_</sup> maintained a novel rate of approximately 8 _._ 9, as compared to _B_<sup>_′_</sup> . "
+  },
+  {
+    "offset_inicio": "## **3.4 Step.3 (B+B’** _→_ **C+C’)** \n\nWe merge the training data (coarse-grained compression",
+    "offset_fim": "expects that because the grammatical _C_<sup>_′_</sup> accepts the majority of \n\ntraining data, it will improve the fluency of _C_ . \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.4 Step.3 (B+B’ → C+C’)",
+    "motivo": "O bloco começa no marcador de subseção 3.4 e inclui seu parágrafo completo; termina imediatamente antes do próximo marcador estrutural, “# **4 Experiments**”.",
+    "texto": "## **3.4 Step.3 (B+B’** _→_ **C+C’)** \n\nWe merge the training data (coarse-grained compression _B_ and non-fluent paraphrasing compression _C_ ) and the pseudo parallel data (pseudo sentence _B_<sup>_′_</sup> and grammatical sentence _C_<sup>_′_</sup> ) to jointly learn a forward model that consisted of a threelayer LSTM encoder and decoder. The vocabulary and word embedding were shared between both backward and forward models. We expect that because the grammatical _C_<sup>_′_</sup> accepts the majority of \n\ntraining data, it will improve the fluency of _C_ ."
+  },
+  {
+    "offset_inicio": "# **4 Experiments** \n\n",
+    "offset_fim": "# **4 Experiments** \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "4 Experiments",
+    "motivo": "O bloco inicia no marcador da seção principal \"# **4 Experiments**\" e contém apenas seu título/caput, terminando imediatamente antes do marcador da subseção \"## **4.1 Datasets**\".",
+    "texto": "# **4 Experiments** \n\n"
+  },
+  {
+    "offset_inicio": "## **4.1 Datasets** \n\nWe used two datasets to evaluate the model performance. First is the Giga-MSC dataset detailed in Section 2.",
+    "offset_fim": "A total of 150 annotated sentences were used as the ground truth for testing. Second is the Cornell dataset (McKeown et al., 2010). \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "4.1 Datasets",
+    "motivo": "O bloco inicia no marcador da subseção 4.1 e contém sua descrição dos dois datasets, terminando imediatamente antes do próximo marcador estrutural, “## **4.2 Baseline Approaches**”.",
+    "texto": "## **4.1 Datasets** \n\nWe used two datasets to evaluate the model performance. First is the Giga-MSC dataset detailed in Section 2. A total of 150 annotated sentences were used as the ground truth for testing. Second is the Cornell dataset (McKeown et al., 2010). \n\n"
+  },
+  {
+    "offset_inicio": "## **4.2 Baseline Approaches** \n\nWe considered (#1) the word graph approach (Filippova, 2010),",
+    "offset_fim": "details are presented in Appendix 1. We release the source code here<sup>8</sup> .",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "4.2 Baseline Approaches",
+    "motivo": "O bloco inicia no marcador da subseção 4.2 e contém sua descrição dos métodos de baseline, terminando imediatamente antes do marcador da subseção 4.3.",
+    "texto": "## **4.2 Baseline Approaches** \n\nWe considered (#1) the word graph approach (Filippova, 2010), and an advanced version (#2) keyphrase-based word graph model (Boudin and Morin, 2013) augmented with keyphrase identification (Wan and Xiao, 2008), as our word graph baselines. Additionally, (#3) the hard paraphrasing (Hard-Para) approach directly substituted words and phrases with their shorter synonyms by using WordNet and PPDB 2.0 (size M is chosen with 463,433 paraphrasing pairs). (#4) Seq2seq model was trained using ( _B_ , _C_ ) pairs. We considered both of them as comparison approaches as well. The training details are presented in Appendix 1. We release the source code here<sup>8</sup> ."
+  },
+  {
+    "offset_inicio": "## **4.3 Out-of-Vocabulary (OOV) Word Handling** \n\nBoth datasets were from the news domain; hence, there are lots",
+    "offset_fim": "helps to decrease the novel words rate and increase the METEOR score on both datasets. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "4.3 Out-of-Vocabulary (OOV) Word Handling",
+    "motivo": "O bloco inicia no marcador da subseção 4.3, na página 3, e inclui seu texto contínuo e tabelas até imediatamente antes do próximo marcador estrutural, “# **5 Results and Analysis**”, na página 4.",
+    "texto": "## **4.3 Out-of-Vocabulary (OOV) Word Handling** \n\nBoth datasets were from the news domain; hence, there are lots of organizations and names that are out of vocabulary. We tackled this problem by exploiting the approach in (Fevry and Phang, 2018). \n\n> 8https://github.com/code4ai/code \n\n2237\n\n<!-- PÁGINA 4 -->\n|Model|METEOR|NN-1|NN-2|NN-3|NN-4|Comp. rate|\n|---|---|---|---|---|---|---|\n|_Ground truth_|-|8.6|28.0|40.0|49.1|0.50|\n|#1 WG (Filippova, 10)|0.29|0.0|0.0|2.8|6.8|0.34|\n|#2 KWG (Boudin+, 13)|0.36|0.0|0.0|1.1|3.1|0.52|\n|#3 Hard Para.|0.35|10.1|19.7|29.1|38.0|0.51|\n|#4 Seq2seqwith attention|0.33|12.7|24.0|34.7|44.4|0.49|\n|#5 Our rewriter(RWT)|**0.36**|9.0|17.4|25.7|33.8|0.50|\n\n\n\nTable 2: Results for the Giga-MSC dataset. \n\n|Model|METEOR|NN-1|NN-2|NN-3|NN-4|Comp. rate|\n|---|---|---|---|---|---|---|\n|_Ground truth_|-|5.2|15.8|23.2|29.6|0.49|\n|#1 WG (Filippova, 10)|0.33|0.0|1.7|5.5|9.8|0.34|\n|#2 KWG (Boudin+, 13)|**0.45**|0.0|1.8|4.6|8.0|0.52|\n|#3 Hard Para.|0.38|9.2|19.0|28.7|37.7|0.50|\n|#4 Seq2seqwith attention|0.37|8.4|18.3|27.6|36.3|0.52|\n|#5 Our rewriter(RWT)|0.40|8.1|17.0|26.0|34.3|0.50|\n\n\n\nTable 3: Results for the Cornell dataset. \n\nGiven an input sequence, we first identified all OOV tokens and numbered them in order. We stored the map from the numbered OOV tokens (e.g., OOV1 and OOV2) to words. The corresponding word embeddings were also assigned to each numbered OOV token. We then applied the same numbering system to the target. At the inference, we replaced any output OOV tokens with their corresponding words using the map that was stored beforehand, which allowed us to produce words that were not in the vocabulary. \n\nGiga-MSC dataset, while only 5.2% of novel unigrams exist in that of the Cornell dataset, (ii) Hard Para.(#3), Seq2seq (#4), and our rewriter (#5) significantly increase the number of novel n-grams, and the proposed rewriter (#5) seemed to be a better trade-off between the information coverage (measured by METEOR) and the introduction of novel n-grams across all methods, (iii) on comparing with Seq2seq (#4) and our rewriter (#5), we found that adding pseudo data helps to decrease the novel words rate and increase the METEOR score on both datasets. \n\n"
+  },
+  {
+    "offset_inicio": "# **5 Results and Analysis** \n\nMETEOR metric (n-gram overlap with synonyms) was used for automatic evaluation.",
+    "offset_fim": "phrases such as salt lake city are fixed collocations. This may degrade the informativeness of the compression. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "5 Results and Analysis",
+    "motivo": "O bloco inicia no marcador da seção principal 5, na página 4, e inclui todo o conteúdo, tabelas e avaliações que continuam na página 5. Termina imediatamente antes do próximo marcador de seção principal, “# **6 Conclusion**”.",
+    "texto": "# **5 Results and Analysis** \n\nMETEOR metric (n-gram overlap with synonyms) was used for automatic evaluation. The novel n- gram rate<sup>9</sup> (e.t., NN-1, NN-2, NN-3, and NN-4) was also computed to investigate the number of novel words that could be introduced by the models. Table 2 and Table 3 present the results and below are our observations: (i) keyphrase word graph approach (#2) is a strong baseline according to the METEOR metric. In comparison, the proposed rewriter (#5) yields comparable result on the METEOR metric for the Giga-MSC dataset but lower result for the Cornell dataset. We speculate that it may be due to the difference in the ground-truth compression. 8.6% of novel unigrams exist in the ground-truth compression of the \n\n> 9Novel n-gram rate = 1 _−_ _<u>|S|∩CC| |</u>_ where S refers to the set of words from all input sentences while C refers set of words from compression. \n\n|Method|Informativeness|Grammaticality|\n|---|---|---|\n|KWG|1.06|1.19|\n|RWT|1.02|**1.40**_†_|\n\n\n\nTable 4: Human evaluation for informativeness and grammaticality. _†_ stands for significantly better than KWG with 0.95 confidence. \n\n**Human Evaluation** As METEOR metric cannot measure the grammaticality of compression, we asked two human raters<sup>10</sup> to assess 50 compressed sentences out of the Giga-MSC test dataset in terms of informativeness and grammaticality. We used 0-2 point scale (2 pts: excellent; 1 pts: good; 0 pts: poor), similar to previous work (we recommend readers to refer to Appendix 2 for the 0-2 scale point evaluation details). Table 4 shows the \n\n> 10Both raters are native English speakers and not authors of this paper. \n\n2238\n\n<!-- PÁGINA 5 -->\n|_Sentence_1|Alleged Russian mobster Alimzhan Tokhtakhounov, accused of conspiring to fix skat-<br>ing events at the 2002 Winter Olympics in salt lake city, has returned to Moscow, the<br>Kommersant dailyreported wednesday.<br>i|\n|---|---|\n|_Sentence_2|US prosecutors accused Tokhtakhounov of conspiring to fix the artistic skating events<br>at the salt lake city games with the assistance of the French and Russianjudges.|\n|KWG|US prosecutors accused Tokhtakhounov,accused of<br>conspiring to fix the artistic skat-|\n||ing events at the salt lake city, has returned to Moscow, the Kommersant daily reported<br>wednesday.|\n|RWT|Tokhtakhounov, accused of**conspiracy**to fix the artistic skating events at the salt lake<br>**town**,has returned to Moscow,the Kommersant dailyreported.|\n\n\n\nTable 5: Case study. The words in bold are paraphrase, while the underlined words are ungrammatical parts in the compression. KWG refers to word-graph baseline and RWT refers to our rewriter. \n\naverage ratings for informativeness and readability. From that, we found that our rewriter (RWT) significantly improved the grammaticality of compression in comparison with the keyphrase word graph approach, implying that the pseudo data may contribute to the language modeling of the decoder, thereby improving the grammaticality. \n\n**Context Awareness Evaluation** Because several novel words were introduced in Hard Para. (#3), Seq2seq (#4), and our rewriter (#5), we were interested to determine whether the compressions generated by these models were context-aware. We herein considered an out-of-the-box contextaware encoder, BERT (Devlin et al., 2018). The evaluation proceeded as follows: As for a sentence with _N_ words, _S_ = [ _w_ 1 _, w_ 2 _, ..., wN_ ], we sequentially masked each word at a time and calculated the average likelihood using this formula: _CXT_ ( _S_ ) = _n_<sup><u>1</u></sup> � _ni_ =1<sup>_−logp_(</sup><sup>_wi|c_)</sup> \n\nwhere _c_ = [ _w_ 1 _, ...wi−_ 1 _, wi_ +1 _, ..., wn_ ]. We used the implementation mentioned in<sup>11</sup> . The low likelihood _CTX_ ( _S_ ) may suggest a better context awareness. As presented in Table 6, the proposed rewriter achieves the lowest likelihood on both datasets, thereby indicating better context awareness in its generated compression. \n\n**Case Study** To illustrate the pros and cons of the proposed rewriter, as listed in Table 5, we conducted a case study where two sentences were given as input and two compression outputs were produced by KWG and RWT. We observed that the RWT corrected the ungrammatical parts (e.t., underlined words,) generated by KWG. However, paraphrasing was not always accurate because \n\n|Method|Giga-|MSC|Cor|nell|\n|---|---|---|---|---|\n||Base|Large|Base|Large|\n|Hard Para.|354.6|473.6|273.1|316.7|\n|Seq2seq|249.1|219.1|326.1|388.3|\n|Ours|**148.5**|**158.4**|**203.9**|**277.4**|\n\n\n\nTable 6: Context awareness scores for three models. Base and Large refer to the different model configurations of BERT. \n\nphrases such as salt lake city are fixed collocations. This may degrade the informativeness of the compression. \n\n"
+  },
+  {
+    "offset_inicio": "# **6 Conclusion** \n\nIn this work, we propose a coarse-to-fine rewriter for multi-sentence",
+    "offset_fim": "In the future, we will consider extending the current approach to the single document or multiple document summarization. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "6 Conclusion",
+    "motivo": "O bloco inicia no marcador da seção principal “6 Conclusion” e contém integralmente seu parágrafo conclusivo, terminando imediatamente antes do próximo marcador de seção, “Acknowledgments”.",
+    "texto": "# **6 Conclusion** \n\nIn this work, we propose a coarse-to-fine rewriter for multi-sentence compression with a specific focus on improving the quality of compression. The experimental results show that the proposed method produced more grammatical sentences, meanwhile introducing novel words in the compression. Furthermore, we presented an approach for the evaluation of context-awareness which may shed light on automatic evaluation for quality of sentence by virtue of pre-trained models. In the future, we will consider extending the current approach to the single document or multiple document summarization. \n\n"
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nThis study is supported by the Japan Science and Technology",
+    "offset_fim": "fessor McKeown for referring us to their data. \n\n> 11https://github.com/xu-song/bert-as-language-model \n\n2239",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Acknowledgments",
+    "motivo": "É a primeira seção principal identificável, iniciada por “# **Acknowledgments**”, contendo o parágrafo de agradecimentos e a nota associada. Termina antes do marcador da próxima seção principal, “# **References**”, na página 6.",
+    "texto": "# **Acknowledgments** \n\nThis study is supported by the Japan Science and Technology Agencys (JST) CREST program JPMJCR1513. We are thankful to the reviewers’ helpful comments. We also thank professor McKeown for referring us to their data. \n\n> 11https://github.com/xu-song/bert-as-language-model \n\n2239"
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "References",
+    "motivo": "O marcador de seção \"# **References**\" abre a unidade. Ela contém apenas o título até a primeira entrada bibliográfica, que inicia uma unidade própria.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Ron Artstein and Massimo Poesio. 2008. Inter-coder agreement for computational linguistics.",
+    "offset_fim": "Inter-coder agreement for computational linguistics. _Computational Linguistics_ , 34(4):555–596.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Artstein e Poesio (2008)",
+    "motivo": "É a primeira entrada bibliográfica, que constitui uma unidade própria; inicia no marcador de item \"-\" e termina antes da entrada seguinte de Siddhartha Banerjee et al.",
+    "texto": "- Ron Artstein and Massimo Poesio. 2008. Inter-coder agreement for computational linguistics. _Computational Linguistics_ , 34(4):555–596."
+  },
+  {
+    "offset_inicio": "- Siddhartha Banerjee, Prasenjit Mitra, and Kazunari Sugiyama. 2015. Multi-document",
+    "offset_fim": "Multi-document abstractive summarization using ilp based multi-sentence compression. In _IJCAI_ , pages 1208–1214.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Banerjee, Mitra e Sugiyama (2015)",
+    "motivo": "É a primeira entrada bibliográfica visível; cada referência constitui uma unidade própria. O bloco começa no marcador '-' da entrada e termina antes da referência seguinte, de Barzilay e McKeown.",
+    "texto": "- Siddhartha Banerjee, Prasenjit Mitra, and Kazunari Sugiyama. 2015. Multi-document abstractive summarization using ilp based multi-sentence compression. In _IJCAI_ , pages 1208–1214."
+  },
+  {
+    "offset_inicio": "- Regina Barzilay and Kathleen R McKeown. 2005. Sentence fusion for multidocument",
+    "offset_fim": "for multidocument news summarization. _Computational Linguistics_ , 31(3):297– 328.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Regina Barzilay and Kathleen R McKeown (2005)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador da referência de Barzilay e McKeown e termina antes da entrada seguinte, de Florian Boudin e Emmanuel Morin.",
+    "texto": "- Regina Barzilay and Kathleen R McKeown. 2005. Sentence fusion for multidocument news summarization. _Computational Linguistics_ , 31(3):297– 328."
+  },
+  {
+    "offset_inicio": "- Florian Boudin and Emmanuel Morin. 2013. Keyphrase extraction for n-best reranking",
+    "offset_fim": "In _North American Chapter of the Association for Computational Linguistics (NAACL)_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Florian Boudin and Emmanuel Morin (2013)",
+    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador de lista \"-\". Forma uma unidade própria e termina imediatamente antes da entrada seguinte, de Trevor Cohn e Mirella Lapata.",
+    "texto": "- Florian Boudin and Emmanuel Morin. 2013. Keyphrase extraction for n-best reranking in multi-sentence compression. In _North American Chapter of the Association for Computational Linguistics (NAACL)_ ."
+  },
+  {
+    "offset_inicio": "- Trevor Cohn and Mirella Lapata. 2008. Sentence compression beyond word deletion. In",
+    "offset_fim": "es 137–144. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Trevor Cohn and Mirella Lapata (2008)",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista “- Trevor Cohn...” e termina imediatamente antes da entrada seguinte, “- Jacob Devlin...”.",
+    "texto": "- Trevor Cohn and Mirella Lapata. 2008. Sentence compression beyond word deletion. In _Proceedings of the 22nd International Conference on Computational Linguistics-Volume 1_ , pages 137–144. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding.",
+    "offset_fim": "ing. _arXiv preprint arXiv:1810.04805_ . ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Devlin et al. (2018) — BERT",
+    "motivo": "É a primeira entrada bibliográfica completa da lista de referências; inicia no marcador de item e termina antes da entrada seguinte, de Mir Tafseer Nayeem et al.",
+    "texto": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. _arXiv preprint arXiv:1810.04805_ . "
+  },
+  {
+    "offset_inicio": "- Mir Tafseer Nayeem, Tanvir Ahmed Fuad, and Yllias Chali. 2018. Abstractive unsupervised multidocument summarization using paraphrastic sentence fusion.",
+    "offset_fim": "In _Proceedings of the 27th International Conference on Computational Linguistics_ , pages 1191–1204.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Nayeem, Fuad e Chali (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa da página. Inicia no marcador de item \"-\" e termina após a citação de páginas 1191–1204, imediatamente antes da próxima referência.",
+    "texto": "- Mir Tafseer Nayeem, Tanvir Ahmed Fuad, and Yllias Chali. 2018. Abstractive unsupervised multidocument summarization using paraphrastic sentence fusion. In _Proceedings of the 27th International Conference on Computational Linguistics_ , pages 1191–1204."
+  },
+  {
+    "offset_inicio": "   - Elvys Linhares Pontes, St´ephane Huet, Thiago Gouveia da Silva, Andr´ea carneiro",
+    "offset_fim": "e Twelfth Workshop on Graph-Based Methods for Natural Language Processing (TextGraphs-12)_ , pages 18–27.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência bibliográfica — Pontes et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica individual da página, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, de Rico Sennrich et al.",
+    "texto": "   - Elvys Linhares Pontes, St´ephane Huet, Thiago Gouveia da Silva, Andr´ea carneiro Linhares, and JuanManuel Torres-Moreno. 2018. Multi-sentence compression with word vertex-labeled graphs and integer linear programming. In _Proceedings of the Twelfth Workshop on Graph-Based Methods for Natural Language Processing (TextGraphs-12)_ , pages 18–27."
+  },
+  {
+    "offset_inicio": "- Rico Sennrich, Barry Haddow, and Alexandra Birch. 2015. Improving neural machine translation models with monolingual data.",
+    "offset_fim": "Improving neural machine translation models with monolingual data. _arXiv preprint arXiv:1511.06709_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Rico Sennrich, Barry Haddow e Alexandra Birch (2015)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista \"-\" e termina ao fim da referência, imediatamente antes da entrada de Elaheh ShafieiBavani et al.",
+    "texto": "- Rico Sennrich, Barry Haddow, and Alexandra Birch. 2015. Improving neural machine translation models with monolingual data. _arXiv preprint arXiv:1511.06709_ ."
+  },
+  {
+    "offset_inicio": "- Elaheh ShafieiBavani, Mohammad Ebrahimi, Raymond K Wong, and Fang Chen. 2016.",
+    "offset_fim": "for multi-sentence compression. In _Asian Conference on Machine Learning_ , pages 414–429.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: ShafieiBavani et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item e termina imediatamente antes da próxima referência, que começa com “- Xiaojun Wan”.",
+    "texto": "- Elaheh ShafieiBavani, Mohammad Ebrahimi, Raymond K Wong, and Fang Chen. 2016. An efficient approach for multi-sentence compression. In _Asian Conference on Machine Learning_ , pages 414–429."
+  },
+  {
+    "offset_inicio": "   - Xiaojun Wan and Jianguo Xiao. 2008. Collabrank: towards a collaborative approach",
+    "offset_fim": "al Conference on Computational Linguistics-Volume 1_ , pages 969–976. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Xiaojun Wan and Jianguo Xiao (2008) — Collabrank",
+    "motivo": "É a primeira entrada bibliográfica completa da página; começa no marcador de item e termina antes da entrada seguinte, de Thibault Fevry e Jason Phang.",
+    "texto": "   - Xiaojun Wan and Jianguo Xiao. 2008. Collabrank: towards a collaborative approach to single-document keyphrase extraction. In _Proceedings of the 22nd International Conference on Computational Linguistics-Volume 1_ , pages 969–976. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Thibault Fevry and Jason Phang. 2018. Unsupervised sentence compression using denoising autoencoders.",
+    "offset_fim": "compression using denoising autoencoders. _arXiv preprint arXiv:1809.02669_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Fevry and Phang (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"-\" e termina antes da próxima referência, de Katja Filippova.",
+    "texto": "- Thibault Fevry and Jason Phang. 2018. Unsupervised sentence compression using denoising autoencoders. _arXiv preprint arXiv:1809.02669_ ."
+  },
+  {
+    "offset_inicio": "- Katja Filippova. 2010. Multi-sentence compression: Finding shortest paths in word",
+    "offset_fim": "the 23rd International Conference on Computational Linguistics_ , pages 322–330. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência bibliográfica: Katja Filippova (2010)",
+    "motivo": "É a primeira entrada individual da lista de referências. Inicia no marcador '-' com a referência de Filippova e termina antes do marcador '-' da referência seguinte.",
+    "texto": "- Katja Filippova. 2010. Multi-sentence compression: Finding shortest paths in word graphs. In _Proceedings of the 23rd International Conference on Computational Linguistics_ , pages 322–330. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- An-Vinh Luong, Nhi-Thao Tran, Van-Giau Ung, and Minh-Quoc Nghiem. 2015. Word",
+    "offset_fim": "nowledge and Systems Engineering (KSE), 2015 Seventh International Conference on_ , pages 55–60. IEEE.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Luong et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Inicia no marcador de lista \"- An-Vinh Luong...\" e termina em \"IEEE.\", imediatamente antes da entrada de Kathleen McKeown et al.",
+    "texto": "- An-Vinh Luong, Nhi-Thao Tran, Van-Giau Ung, and Minh-Quoc Nghiem. 2015. Word graph-based multi-sentence compression: Re-ranking candidates using frequent words. In _Knowledge and Systems Engineering (KSE), 2015 Seventh International Conference on_ , pages 55–60. IEEE."
+  },
+  {
+    "offset_inicio": "- Kathleen McKeown, Sara Rosenthal, Kapil Thadani, and Coleman Moore. 2010. Time-efficient creation of an accurate sentence fusion corpus.",
+    "offset_fim": "ages 317–320. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência bibliográfica — McKeown et al. (2010)",
+    "motivo": "A primeira entrada bibliográfica é uma unidade própria; inicia no marcador de lista com os autores e termina no ponto final da referência, imediatamente antes da entrada de Mir Tafseer Nayeem e Yllias Chali.",
+    "texto": "- Kathleen McKeown, Sara Rosenthal, Kapil Thadani, and Coleman Moore. 2010. Time-efficient creation of an accurate sentence fusion corpus. In _Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics_ , pages 317–320. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Mir Tafseer Nayeem and Yllias Chali. 2017. Paraphrastic fusion for abstractive multi-sentence compression generation. In _Proceedings of the 2017 ACM on Conference on Information and Knowledge Management_ , pages 2223–2226. ACM.",
+    "offset_fim": "Proceedings of the 2017 ACM on Conference on Information and Knowledge Management_ , pages 2223–2226. ACM.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Mir Tafseer Nayeem e Yllias Chali (2017)",
+    "motivo": "É uma entrada individual de referência bibliográfica, iniciada pelo marcador de lista \"-\" e encerrada após \"ACM.\", antes do número de página 2240.",
+    "texto": "- Mir Tafseer Nayeem and Yllias Chali. 2017. Paraphrastic fusion for abstractive multi-sentence compression generation. In _Proceedings of the 2017 ACM on Conference on Information and Knowledge Management_ , pages 2223–2226. ACM."
+  }
+]

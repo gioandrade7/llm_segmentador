@@ -1,0 +1,542 @@
+[
+  {
+    "offset_inicio": "# **Hard-Coded Gaussian Attention for Neural Machine Translation** \n\n**Weiqiu You**",
+    "offset_fim": "University of Massachusetts Amherst \n\n_{_ wyou,simengsun,miyyer _}_ @cs.umass.edu \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Hard-Coded Gaussian Attention for Neural Machine Translation",
+    "motivo": "Bloco de título do documento, com autoria e afiliação; inicia no marcador de título principal e termina imediatamente antes do marcador \"## **Abstract**\".",
+    "texto": "# **Hard-Coded Gaussian Attention for Neural Machine Translation** \n\n**Weiqiu You**<sup>_∗_</sup> **, Simeng Sun**<sup>_∗_</sup> **, Mohit Iyyer** College of Information and Computer Sciences University of Massachusetts Amherst \n\n_{_ wyou,simengsun,miyyer _}_ @cs.umass.edu \n\n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nRecent work has questioned the importance of the Transformer’s multi-headed attention for achieving",
+    "offset_fim": "which we hope will guide future work into the development of simpler and more efficient attention-based models.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "Bloco iniciado pelo marcador \"## **Abstract**\" e encerrado imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nRecent work has questioned the importance of the Transformer’s multi-headed attention for achieving high translation quality. We push further in this direction by developing a “hardcoded” attention variant without _any_ learned parameters. Surprisingly, replacing all learned self-attention heads in the encoder and decoder with fixed, input-agnostic Gaussian distributions minimally impacts BLEU scores across four different language pairs. However, additionally hard-coding cross attention (which connects the decoder to the encoder) significantly lowers BLEU, suggesting that it is more important than self-attention. Much of this BLEU drop can be recovered by adding just a _single_ learned cross attention head to an otherwise hard-coded Transformer. Taken as a whole, our results offer insight into which components of the Transformer are actually important, which we hope will guide future work into the development of simpler and more efficient attention-based models."
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nThe Transformer (Vaswani et al., 2017) has become the architecture",
+    "offset_fim": "We hope our work will spur further development of simpler, more efficient models for neural machine translation. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção principal \"1 Introduction\" e inclui todo o texto introdutório, figuras e notas associadas através da página 2. Termina imediatamente antes do próximo marcador estrutural, \"## **2 Background**\".",
+    "texto": "## **1 Introduction** \n\nThe Transformer (Vaswani et al., 2017) has become the architecture of choice for neural machine translation. Instead of using recurrence to contextualize source and target token representations, Transformers rely on multi-headed attention mechanisms (MHA), which speed up training by enabling parallelization across timesteps. Recent work has called into question how much MHA contributes to translation quality: for example, a significant fraction of attention heads in a pretrained Transformer can be pruned without appreciable loss in BLEU (Voita et al., 2019; Michel et al., 2019), and self-attention can be replaced by less expensive modules such as convolutions (Yang et al., 2018; Wu et al., 2019). \n\nIn this paper, we take this direction to an extreme by developing a variant of MHA without \n\n> * Authors contributed equally. \n\n\n\n<!-- Start of picture text -->\nStandard Transformer : scaled dot product of<br>learned query and key vectors<br>Jane went to the office<br>Ours : fixed Gaussian distributions<br>centered around nearby tokens<br><!-- End of picture text -->\n\nFigure 1: Three heads of learned self-attention (top) as well as our hard-coded attention (bottom) given the query word “to”. In our variant, each attention head is a Gaussian distribution centered around a different token within a local window. \n\n_any_ learned parameters (Section 3). Concretely, we replace each attention head with a “hard-coded” version, which is simply a standard normal distribution centered around a particular position in the sequence (Figure 1).<sup>1</sup> When we replace all encoder and decoder self-attention mechanisms with our hard-coded variant, we achieve almost identical BLEU scores to the baseline Transformer for four different language pairs (Section 4).<sup>2</sup> \n\nThese experiments maintain fully learned MHA _cross attention_ , which allows the decoder to condition its token representations on the encoder’s outputs. We next attempt to additionally replace cross attention with a hard-coded version, which results in substantial drops of 5-10 BLEU. Motivated to find the minimal number of learned attention \n\n> 1In Figure 1, the hard-coded head distribution centered on the word “to” (shown in green) is [0 _._ 054 _,_ 0 _._ 24 _,_ 0 _._ 40 _,_ 0 _._ 24 _,_ 0 _._ 054]. \n\n> 2Our code is available at https://github.com/ fallcat/stupidNMT \n\n7689 \n\n_Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics_ , pages 7689–7700 July 5 - 10, 2020. _⃝_ c 2020 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\n<!-- Start of picture text -->\nEncoder Self-Attention Decoder Self-Attention Decoder Cross-Attention<br>Head 1<br>30<br>Head 2<br>20<br>10<br>0<br>L1 L2 L3 L4 L5 L1 L2 L3 L4 L5 L1 L2 L3 L4 L5<br>Layer<br>Distance<br><!-- End of picture text -->\n\nFigure 2: Most learned attention heads for a Transformer trained on IWSLT16 En-De focus on a local window around the query position. The x-axis plots each head of each layer, while the y-axis refers to the distance between the query position and the argmax of the attention head distribution (averaged across the entire dataset). \n\nparameters needed to make up this deficit, we explore configurations with only _one_ learned cross attention head in total, which performs just slightly worse (1-3 BLEU) than the baseline. \n\nBy replacing MHA with hard-coded attention, we improve memory efficiency (26.4% more tokens per batch) and decoding speed (30.2% increase in sentences decoded per second) without significantly lowering BLEU, although these efficiency improvements are capped by other more computationally-expensive components of the model (Section 5). We also perform analysis experiments (Section 6.2) on linguistic properties (e.g., long-distance subject-verb agreement) that MHA is able to better model than hard-coded attention. Finally, we develop further variants of hard-coded attention in Section 6.3, including a version without any attention weights at all. \n\nOur hard-coded Transformer configurations have intuitively severe limitations: attention in a particular layer is highly concentrated on a local window in which fixed weights determine a token’s importance. Nevertheless, the strong performance of these limited models indicates that the flexibility enabled by fully-learned MHA is not as crucial as commonly believed: perhaps attention is not _all_ you need. We hope our work will spur further development of simpler, more efficient models for neural machine translation. \n\n"
+  },
+  {
+    "offset_inicio": "## **2 Background** \n\nIn this section, we first briefly review the Transformer architecture of Vaswani et al.",
+    "offset_fim": "a trained Transformer model, which motivates the ideas discussed afterwards.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Background",
+    "motivo": "Bloco de caput da seção 2, iniciado no marcador “2 Background” e encerrado imediatamente antes do marcador da subseção “2.1 Multi-headed Transformer attention”.",
+    "texto": "## **2 Background** \n\nIn this section, we first briefly review the Transformer architecture of Vaswani et al. (2017) with a focus on its multi-headed attention. Then, we provide an analysis of the learned attention head distributions of a trained Transformer model, which motivates the ideas discussed afterwards."
+  },
+  {
+    "offset_inicio": "### **2.1 Multi-headed Transformer attention** \n\nThe Transformer is an encoder-decoder",
+    "offset_fim": "Transformer: encoder self-attention, decoder self-attention, and cross attention.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2.1 Multi-headed Transformer attention",
+    "motivo": "O bloco inicia no marcador da subseção 2.1 e contém sua explicação completa sobre atenção Transformer. Termina antes do marcador da subseção seguinte, \"## **2.2 Learned heads mostly focus on local windows**\", na página 3.",
+    "texto": "### **2.1 Multi-headed Transformer attention** \n\nThe Transformer is an encoder-decoder model formed by stacking layers of attention blocks. Each encoder block contains a self-attention layer followed by layer normalization, a residual connection, and a feed-forward layer. Decoder blocks are identical to those of the encoder except they also include a cross attention layer, which connects the encoder’s representations to the decoder. \n\nTo compute a single head of self-attention given a sequence of token representations **_t_** 1 _...n_ , we first project these representations to queries **_q_** 1 _...n_ , keys **_k_** 1 _...n_ , and values **_v_** 1 _...n_ using three different linear projections. Then, to compute the self-attention distribution at a particular position _i_ in the sequence, we take the scaled dot product between the query vector **_q_** _i_ and all of the key vectors (represented by matrix **K** ). We then use this distribution to compute a weighted average of the values ( **V** ): \n\n\n\nwhere _dk_ is the dimensionality of the key vector. \n\nFor MHA, we use different projection matrices to obtain the query, key, and value representations for each head. The key difference between selfattention and cross attention is that the queries and keys come from different sources: specifically, the keys are computed by passing the encoder’s final layer token representations through a linear projection. To summarize, MHA is used in three different components of the Transformer: encoder self-attention, decoder self-attention, and cross attention."
+  },
+  {
+    "offset_inicio": "## **2.2 Learned heads mostly focus on local windows** \n\nThe intuition behind MHA is",
+    "offset_fim": "with “hard-coded” patterns that focus on local windows will significantly affect translation quality. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "2.2 Learned heads mostly focus on local windows",
+    "motivo": "O bloco inicia no marcador da subseção 2.2 e contém sua análise sobre a atenção aprendida até imediatamente antes do próximo marcador estrutural, “# **3 Hard-coded Gaussian attention**”.",
+    "texto": "## **2.2 Learned heads mostly focus on local windows** \n\nThe intuition behind MHA is that each head can focus on a different type of information (e.g., syntactic or semantic patterns). While some heads have been shown to possess interpretable patterns (Voita et al., 2019; Correia et al., 2019), other work has cautioned against using attention patterns to explain a model’s behavior (Jain and Wallace, 2019). In our analysis, we specifically examine the behavior of a head with respect to the current query token’s position in the sequence. We train a baseline Transformer model (five layers, two heads per layer) on the IWSLT 2016 En _→_ De dataset, and compute aggregated statistics on its learned heads. \n\nFigure 2 shows that outside of a few layers, most of the model’s heads focus their attention (i.e., the argmax of the attention distribution) on a local neighborhood around the current sequence position. For example, both self-attention heads in the first layer of the encoder tend to focus on just a one to two token window around the current position. The decoder self-attention and cross attention heads show higher variability, but most of their heads are still on average focused on local information. These results beg the question of whether replacing self-attention with “hard-coded” patterns that focus on local windows will significantly affect translation quality. "
+  },
+  {
+    "offset_inicio": "# **3 Hard-coded Gaussian attention** \n\nWhile learned attention enables model flexibility",
+    "offset_fim": "Section 4 contains a more fleshed out experimental section with many more datasets and language pairs. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3 Hard-coded Gaussian attention",
+    "motivo": "O bloco começa no marcador da seção principal 3 e inclui seu texto introdutório até imediatamente antes do marcador da subseção 3.1.",
+    "texto": "# **3 Hard-coded Gaussian attention** \n\nWhile learned attention enables model flexibility (e.g., a head can “look” far away from the current position if it needs to), it is unclear from the above analysis how crucial this flexibility is. To examine this question, we replace the attention distribution computation in Equation 1 (i.e., scaled dot product of queries and keys) with a fixed Gaussian distribution.<sup>3</sup> In doing so, we remove _all_ learned parameters from the attention computation: the mean of the Gaussian is determined by the position _i_ of the current query token, and the standard deviation is always set to 1.<sup>4</sup> As Transformers contain both self-attention and cross attention, the rest of this section details how we replace both of these components with simplified versions. We will re- \n\n> 3 Yang et al. (2018) implement a similar idea, except the mean and standard deviation of their Gaussians are learned with separate neural modules. \n\n> 4Preliminary experiments with other standard deviation values did not yield significant differences, so we do not vary the standard deviation for any experiments in this paper. \n\nfer to experimental results on the relatively small IWSLT16 English-German dataset throughout this section to contextualize the impact of the various design decisions we describe. Section 4 contains a more fleshed out experimental section with many more datasets and language pairs. "
+  },
+  {
+    "offset_inicio": "## **3.1 Hard-coded self-attention** \n\nIn self-attention, the queries and keys are",
+    "offset_fim": "model achieves slightly _higher_ BLEU than the baseline Transformer ( **30.3** vs **30.0** BLEU). ",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "3.1 Hard-coded self-attention",
+    "motivo": "É o primeiro marcador estrutural presente no trecho. O bloco começa em “3.1 Hard-coded self-attention”, inclui a continuação na página 4 e termina imediatamente antes do marcador da subseção 3.2.",
+    "texto": "## **3.1 Hard-coded self-attention** \n\nIn self-attention, the queries and keys are derived from the same token representations and as such have the same length _n_ . The baseline Transformer (BASE) computes the self-attention distribution at position _i_ by taking the dot product between the query representation **_q_** _i_ and all of the key vectors **_k_** 1 _...n_ . We instead use a fixed Gaussian distribution centered around position _i −_ 1 (token to the left), _i_ (the query token), or _i_ + 1 (token to the right). More formally, we replace Equation 1 with \n\n\n\nThe mean of the Gaussian _f_ ( _i_ ) and its standard deviation _σ_<sup>2</sup> are both hyperparameters; for all of our experiments, we set _σ_ to 1 and _f_ ( _i_ ) to either _i −_ 1, _i_ or _i_ + 1, depending on the head configuration.<sup>5</sup> Note that this definition is completely agnostic to the input representation: the distributions remain the same regardless of what sentence is fed in or what layer we are computing the attention at. Additionally, our formulation removes the query and key projections from the attention computation; the Gaussians are used to compute a weighted average of the value vectors.<sup>6</sup> \n\nInstead of learning different query and key projection matrices to define different heads, we simply design head distributions with different means. Figure 1 shows an example of our hard-coded selfattention for a simple sentence. We iterate over different configurations of distribution means _f_ ( _i_ ) on the IWSLT16 En-De dataset, while keeping the cross attention learned.<sup>7</sup> Our best validation result with hard-coded self-attention (HC-SA) replaces encoder self-attention with distributions centered around _i −_ 1 and _i_ + 1 and decoder self-attention with distributions centered around _i −_ 1 and _i_ . This \n\n> 5The Gaussian distribution is cut off on the borders of the sentence and is not renormalized to sum to one. \n\n> 6Preliminary models that additionally remove the value projections performed slightly worse when we hard-coded cross attention, so we omit them from the paper. \n\n> 7See Appendix for a table describing the effects of varying _f_ ( _i_ ) on IWSLT16 En-De BLEU score. We find in general that hard-coded heads within each layer should focus on different tokens within the local window for optimal performance. \n\n7691\n\n<!-- PÁGINA 4 -->\nmodel achieves slightly _higher_ BLEU than the baseline Transformer ( **30.3** vs **30.0** BLEU). "
+  },
+  {
+    "offset_inicio": "## **3.2 Alternatives to cross attention** \n\nWe turn next to cross attention, which on its",
+    "offset_fim": "The last two columns show the average number of tokens for source and target sentences, respectively. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "3.2 Alternatives to cross attention",
+    "motivo": "O bloco começa no marcador da subseção 3.2 e reúne seus parágrafos e a Tabela 1 até imediatamente antes do próximo marcador estrutural, “# **4 Large-scale Experiments**”.",
+    "texto": "## **3.2 Alternatives to cross attention** \n\nWe turn next to cross attention, which on its face seems more difficult to replace with hard-coded distributions. Unlike self-attention, the queries and keys in cross attention are not derived from the same token representations; rather, the queries come from the decoder while the keys come from the encoder. Since the number of queries can now be different from the number of keys, setting the distribution means by position is less trivial than it is for self-attention. Here, we describe two methods to simplify cross attention, starting with a fully hard-coded approach and moving onto a minimal learned configuration. \n\n**Hard-coded cross attention:** We begin with a simple solution to the problem of queries and keys having variable lengths. Given a training dataset, we compute the length ratio _γ_ by dividing the average source sentence length by the average target sentence length. Then, to define a hard-coded cross attention distribution for target position _i_ , we center the Gaussian on positions _⌊γi −_ 1 _⌋_ , _⌊γi⌋_ , and _⌊γi_ + 1 _⌋_ of the source sentence. When we implement this version of hard-coded cross attention and also hard-code the encoder and decoder self-attention as described previously (HC-ALL), our BLEU score on IWSLT16 En-De drops from **30.3** to **21.1** . Clearly, cross attention is more important for maintaining translation quality than self-attention. Michel et al. (2019) notice a similar phenomenon when pruning heads from a pretrained Transformer: removing certain cross attention heads can substantially lower BLEU. \n\n**Learning a single cross attention head:** Prior to the advent of the Transformer, many neural machine translation architectures relied on just a single cross attention “head” (Bahdanau et al., 2015). The Transformer has many heads at many layers, but how many of these are actually necessary? Here, we depart from the parameter-free approach by instead removing cross attention at all but the final layer of the decoder, where we include only a single learned head (SH-X). Note that this is the only learned head in the entire model, as both the encoder and decoder self-attention is hard-coded. On IWSLT16 En-De, our BLEU score improves from **21.1** to **28.1** , less than 2 BLEU under the BASE Transformer. \n\n||Train|Test|Len SRC|Len TGT|\n|---|---|---|---|---|\n|IWSLT16 En-De|196,884|993|28.5|29.6|\n|IWSLT17 En-Ja|223,108|1,452|22.9|16.0|\n|WMT16 En-Ro|612,422|1,999|27.4|28.3|\n|WMT14 En-De|4,500,966|3,003|28.5|29.6|\n|WMT14 En-Fr|10,493,816|3,003|26.0|28.8|\n\n\n\nTable 1: Statistics of the datasets used. The last two columns show the average number of tokens for source and target sentences, respectively. "
+  },
+  {
+    "offset_inicio": "# **4 Large-scale Experiments** \n\nThe previous section developed hard-coded configurations",
+    "offset_fim": "tion nevertheless proves robust, as we observe similar trends with our hard-coded Transformers across all of datasets.<sup>8</sup> ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "4 Large-scale Experiments",
+    "motivo": "Bloco de caput da seção 4, iniciado no marcador de seção principal e encerrado imediatamente antes do marcador da subseção 4.1 Datasets.",
+    "texto": "# **4 Large-scale Experiments** \n\nThe previous section developed hard-coded configurations and presented results on the relatively small IWSLT16 En-De dataset. Here, we expand our experiments to include a variety of different datasets, language pairs, and model sizes. For all hard-coded head configurations, we use the optimal IWSLT16 En-De setting detailed in Section 3.1 and perform no additional tuning on the other datasets. This configuration nevertheless proves robust, as we observe similar trends with our hard-coded Transformers across all of datasets.<sup>8</sup> "
+  },
+  {
+    "offset_inicio": "## **4.1 Datasets** \n\nWe experiment with four language pairs, English _↔{_ German, Romanian, French, Japanese",
+    "offset_fim": "train and evaluate on IWSLT 2017 En _↔_ Ja TED talk dataset. More dataset statistics are shown in Table 1. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "4.1 Datasets",
+    "motivo": "O bloco começa no marcador da subseção 4.1 e contém integralmente a descrição dos conjuntos de dados, terminando imediatamente antes do marcador da subseção seguinte, \"## **4.2 Architectures**\".",
+    "texto": "## **4.1 Datasets** \n\nWe experiment with four language pairs, English _↔{_ German, Romanian, French, Japanese _}_ to show the consistency of our proposed attention variants. For the En-De pair, we use both the small IWSLT 2016<sup>9</sup> and the larger WMT 2014 datasets. For all datasets except WMT14 En _→_ De and WMT14 En _→_ Fr,<sup>10</sup> we run experiments in both directions. For English-Japanese, we train and evaluate on IWSLT 2017 En _↔_ Ja TED talk dataset. More dataset statistics are shown in Table 1. "
+  },
+  {
+    "offset_inicio": "## **4.2 Architectures** \n\nOur BASE model is the original Transformer from Vaswani",
+    "offset_fim": "e scores using SacreBLEU (Post, 2018) to be able to compare with other work.<sup>13</sup> ",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "4.2 Architectures",
+    "motivo": "O bloco inicia no marcador da subseção 4.2 na página 4 e inclui seu texto, notas e tabela até imediatamente antes do próximo marcador estrutural, \"## **4.3 Summary of results**\", na página 5.",
+    "texto": "## **4.2 Architectures** \n\nOur BASE model is the original Transformer from Vaswani et al. (2017), reimplemented in PyTorch (Paszke et al., 2019) by Akoury et al. (2019).<sup>11</sup> To implement hard-coded attention, we only modify the attention functions in this codebase and keep everything else the same. For the two small IWSLT datasets, we follow prior work \n\n> 8Code and scripts to reproduce our experimental results to be released after blind review. \n\n> 9We report BLEU on the IWSLT16 En-De dev set following previous work (Gu et al., 2018; Lee et al., 2018; Akoury et al., 2019). For other datasets, we report test BLEU. \n\n> 10As the full WMT14 En _→_ Fr is too large for us to feasibly train on, we instead follow Akoury et al. (2019) and train on just the Europarl / Common Crawl subset, while evaluating using the full dev/test sets. \n\n> 11https://github.com/dojoteef/synst \n\n7692\n\n<!-- PÁGINA 5 -->\n||BASE|HC-SA|HC-ALL|SH-X|\n|---|---|---|---|---|\n|IWSLT16 En-De|30.0|30.3|21.1|28.2|\n|IWSLT16 De-En|34.4|34.8|25.7|33.3|\n|IWSLT17 En-Ja|20.9|20.7|10.6|18.5|\n|IWSLT17 Ja-En|11.6|10.9|6.1|10.1|\n|WMT16 En-Ro|33.0|32.9|25.5|30.4|\n|WMT16 Ro-En|33.1|32.8|26.2|31.7|\n|WMT14 En-De|26.8|26.3|21.7|23.5|\n|WMT14 En-Fr|40.3|39.1|35.6|37.1|\n\n\n\nTable 2: Comparison of the discussed Transformer variants on six smaller datasets (top)<sup>14</sup> and two larger datasets (bottom). Hard-coded self-attention (HC-SA) achieves almost identical BLEU scores to BASE across all datasets, while a model with only one cross attention head (SH-X) performs slightly worse. \n\nby using a small Transformer architecture with embedding size 288, hidden size 507, four heads,<sup>12</sup> five layers, and a learning rate 3e-4 with a linear scheduler. For the larger datasets, we use the standard Tranformer base model, with embedding size 512, hidden size 2048, eight heads, six layers, and a warmup scheduler with 4,000 warmup steps. For all experiments, we report BLEU scores using SacreBLEU (Post, 2018) to be able to compare with other work.<sup>13</sup>"
+  },
+  {
+    "offset_inicio": "## **4.3 Summary of results** \n\nBroadly, the trends we observed on IWSLT16 EnDe in the previous section are consistent for all of the datasets and language pairs.",
+    "offset_fim": "suggests that we may be able to obtain memory or decoding speed improvements, which we investigate in the next section. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4.3 Summary of results",
+    "motivo": "O bloco inicia no marcador da subseção 4.3 e reúne seu resumo e conclusões; termina imediatamente antes do marcador da nova seção principal “# **5 Bigger Batches & Decoding Speedups**”.",
+    "texto": "## **4.3 Summary of results** \n\nBroadly, the trends we observed on IWSLT16 EnDe in the previous section are consistent for all of the datasets and language pairs. Our findings are summarized as follows: \n\n- A Transformer with hard-coded self-attention in the encoder and decoder and learned cross attention (HC-SA) achieves almost equal BLEU scores to the BASE Transformer. \n\n- Hard-coding both cross attention and selfattention (HC-ALL) considerably drops BLEU compared to BASE, suggesting cross attention is more important for translation quality. \n\n- A configuration with hard-coded self- \n\n> 12For hard-coded configurations, we duplicate heads to fit this architecture (e.g., we have two heads per layer in the encoder with means of _i_ + 1 and _i −_ 1). \n\n> 13SacreBLEU signature: BLEU+case.mixed+lang.LANG +numrefs.1+smooth.exp+test.TEST+tok.intl+version.1.2.11, with LANG _∈{_ en-de, de-en, en-fr _}_ and TEST _∈ {_ wmt14/full, iwslt2017/tst2013 _}_ . For WMT16 EnRo and IWSLT17 En-Ja, we follow previous work for preprocessing (Sennrich et al., 2016), encoding the latter with a 32K sentencepiece vocabulary \n\n> (https://github.com/google/sentencepiece) and measuring the de-tokenized BLEU with SacreBLEU. \n\nattention and a single learned cross attention head in the final decoder layer (SH-X) consistently performs 1-3 BLEU worse than BASE. \n\nThese results motivate a number of interesting analysis experiments (e.g., what kinds of phenomena is MHA better at handling than hard-coded attention), which we describe in Section 6. The strong performance of our highly-simplified models also suggests that we may be able to obtain memory or decoding speed improvements, which we investigate in the next section. "
+  },
+  {
+    "offset_inicio": "# **5 Bigger Batches & Decoding Speedups** \n\nWe have thus far motivated our work as an",
+    "offset_fim": "gap between BASE-FF and BASE is 1.8, while the gap between HC-SA and HC-SA-FF is 3.2. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "5 Bigger Batches & Decoding Speedups",
+    "motivo": "O bloco começa no marcador da seção 5 e inclui seu texto, tabela e figura associados até imediatamente antes do próximo marcador estrutural, \"# **6 Analysis**\", na página 6.",
+    "texto": "# **5 Bigger Batches & Decoding Speedups** \n\nWe have thus far motivated our work as an exploration of which components of the Transformer are necessary to obtain high translation quality. Our results demonstrate that encoder and decoder self-attention can be replaced with hard-coded attention distributions without loss in BLEU, and that MHA brings minor improvements over singleheaded cross attention. In this section, we measure efficiency improvements in terms of batch size increases and decoding speedup. \n\n**Experimental setup:** We run experiments on WMT16 En-Ro with the larger architecture to support our conclusions.<sup>15</sup> For each model variant discussed below, we present its memory efficiency as the maximum number of tokens per batch allowed during training on a single GeForce RTX 2080 Ti. Additionally, we provide inference speed as the number of sentences per second each model can decode on a 2080 Ti, reporting the average of five runs with a batch size of 256. \n\n**Hard-coding self-attention yields small efficiency gains:** Table 7 summarizes our profiling experiments. Hard-coding self-attention and preserving learned cross attention allows us to fit 17% more tokens into a single batch, while also providing a 6% decoding speedup compared to BASE on the larger architecture used for WMT16 En-Ro. The improvements in both speed and memory usage are admittedly limited, which motivates us to measure the maximum efficiency gain if we only modify self-attention (i.e., preserving learned cross attention). We run a set of upper bound experiments where we entirely remove self-attention in the encoder and decoder. The resulting encoder \n\n> 15Experiments with the smaller IWSLT16 En-De model are described in the Appendix. \n\n7693\n\n<!-- PÁGINA 6 -->\n|Model|BLEU|sent/sec|tokens/batch|\n|---|---|---|---|\n|BASE|33.0|26.8|9.2K|\n|HC-SA|32.9|28.4|10.8K|\n|SH-X|30.3|34.9|11.7K|\n|BASE/-SA|27.0|30.1|11.8K|\n|SH-X/-SA|15.0|37.6|13.3K|\n\n\n\nTable 3: Decoding speedup (in terms of sentences per second) and memory improvements (max tokens per batch) on WMT16 En-Ro for a variety of models. The last two rows refer to BASE and SH-X configurations whose self-attention is completely removed. \n\nthus just becomes a stack of feed-forward layers on top of the initial subword embeddings. Somewhat surprisingly, the resulting model still achieves a fairly decent BLEU of **27.0** compared to the BASE model’s **33.0** . As for the efficiency gains, we can fit 27% more tokens into a single batch, and decoding speed improves by 12.3% over BASE. This relatively low upper bound for HC-SA shows that simply hard-coding self-attention does not guarantee significant speedup. Previous work that simplifies attention (Wu et al., 2019; Michel et al., 2019) also report efficiency improvements of similar low magnitudes. \n\n**Single-headed cross attention speeds up decoding:** Despite removing learned self-attention from both the encoder and decoder, we did not observe huge efficiency or speed gains. However, reducing the source attention to just a single head results in more significant improvements. By only keeping single-headed cross attention in the last layer, we are able to achieve 30.2% speed up and fit in 26.4% more tokens to the memory compared to BASE . Compared to HC-SA, SH-X obtains a 22.9% speedup and 8.0% bigger batch size. \n\nFrom our profiling experiments, most of the speed and memory considerations of the Transformer are associated with the large feed-forward layers that we do not modify in any of our experiments, which caps the efficiency gains from modifying the attention implementation. While we did not show huge efficiency improvements on modern GPUs, it remains possible that (1) a more tailored implementation could leverage the model simplifications we have made, and (2) that these differences are larger on other hardware (e.g., CPUs). We leave these questions for future work. \n\n\n\n<!-- Start of picture text -->\nWMT2016 En-Ro<br>1.8<br>3.2<br>30<br>BASE<br>HC-SA<br>25 BASE/-FF<br>HC-SA/-FF<br>1 2 3 4 5 6<br>number of layers<br>BLEU<br><!-- End of picture text -->\n\nFigure 3: BLEU performance on WMT16 En-Ro before and after removing all feed-forward layers from the models. BASE and HC-SA achieve almost identical BLEU scores, but HC-SA relies more on the feedforward layers than the vanilla Transformer. As shown on the plot, with a four layer encoder and decoder, the BLEU gap between BASE-FF and BASE is 1.8, while the gap between HC-SA and HC-SA-FF is 3.2. "
+  },
+  {
+    "offset_inicio": "# **6 Analysis** \n\nTaken as a whole, our experimental results suggest that many of the components in the Transformer can be replaced by highly-simplified versions without adversely affecting translation quality.",
+    "offset_fim": "and also examine different attention configurations that naturally follow from our experiments (Section 6.3). ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "6 Analysis",
+    "motivo": "Bloco de caput da seção principal 6, iniciado pelo marcador \"# **6 Analysis**\" e encerrado imediatamente antes do marcador da subseção \"## **6.1 Why does hard-coded self-attention work so well?**\".",
+    "texto": "# **6 Analysis** \n\nTaken as a whole, our experimental results suggest that many of the components in the Transformer can be replaced by highly-simplified versions without adversely affecting translation quality. In this section, we explain how hard-coded self-attention does not degrade translation quality (Section 6.1), perform a detailed analysis of the behavior of our various models by comparing the types of errors made by learned versus hard-coded attention (Section 6.2), and also examine different attention configurations that naturally follow from our experiments (Section 6.3). "
+  },
+  {
+    "offset_inicio": "## **6.1 Why does hard-coded self-attention work so well?** \n\nGiven the good performance",
+    "offset_fim": "compensate for modeling both hard-coded decoder self-attention and cross attention. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "6.1 Why does hard-coded self-attention work so well?",
+    "motivo": "O bloco inicia no marcador da subseção 6.1 e reúne seu texto, incluindo a continuação após a quebra de página e a Figura 4, até imediatamente antes do marcador da subseção 6.2.",
+    "texto": "## **6.1 Why does hard-coded self-attention work so well?** \n\nGiven the good performance of HC-SA on multiple datasets, it is natural to ask why hard-coding selfattention does not deteriorate translation quality. We conjecture that feed-forward (FF) layers play a more important role in HC-SA than in BASE by compensating for the loss of learned dynamic selfattention. To test this hypothesis, we conduct an analysis experiment in which we train four model configurations while varying the number of layers: BASE, BASE without feed-forward layers (BASE/FF), HC-SA and HC-SAwithout feed-forward layers (HC-SA/-FF). As shown in Figure 3, BASE and HCSA have similar performance and both -FF models have consistently lower BLEU scores. However, HC-SA without FF layers performs much worse \n\n7694\n\n<!-- PÁGINA 7 -->\n<!-- Start of picture text -->\nWMT En-De<br>28<br>26<br>24<br>22<br>20 BASE<br>HC-SA<br>18<br>HC-ALL<br>16 SH-X<br><10 10-20 20-30 30-40 >40<br>reference length<br>BLEU<br><!-- End of picture text -->\n\nFigure 4: BLEU difference vs. BASE as a function of reference length on the WMT14 En-De test set. When cross attention is hard-coded (HC-ALL), the BLEU gap worsens as reference length increases. \n\ncompared to its BASE counterpart. This result confirms our hypothesis that FF layers are more important in HC-SA and capable of recovering the potential performance degradation brought by hardcoded self-attention. Taking a step back to hardcoding cross attention, the failure of hard-coding cross attention might be because the feed-forward layers of the decoder are not powerful enough to compensate for modeling both hard-coded decoder self-attention and cross attention. "
+  },
+  {
+    "offset_inicio": "# **6.2 Error analysis of hard-coded models** \n\n**Is learned attention more important for longer sentences?** Since hard-coded attention",
+    "offset_fim": "fully hard-coded HC-ALL model clearly deteriorates as reference length increases.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "6.2 Error analysis of hard-coded models (caput)",
+    "motivo": "O bloco inicia no marcador da seção 6.2 e contém seu texto introdutório até imediatamente antes da primeira pergunta em negrito, que abre uma análise subdividida e, portanto, um novo bloco.",
+    "texto": "# **6.2 Error analysis of hard-coded models** \n\n**Is learned attention more important for longer sentences?** Since hard-coded attention is much less flexible than learned attention and can struggle to encode global information, we are curious to see if its performance declines as a function of sentence length. To measure this, we categorize the WMT14 En-De test set into five bins by reference length and plot the decrease in BLEU between BASE and our hard-coded configurations for each bin. Somewhat surprisingly, Figure 4 shows that the BLEU gap between BASE and HC-SA seems to be roughly constant across all bins.<sup>16</sup> However, the fully hard-coded HC-ALL model clearly deteriorates as reference length increases."
+  },
+  {
+    "offset_inicio": "**Does hard-coding attention produce any systematic linguistic errors?** For a more fine-grained analysis, we run experiments on LingEval97",
+    "offset_fim": "This result confirms that self-attention is important for modeling some long-distance phenomena, and that cross attention may be even more crucial. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Does hard-coding attention produce any systematic linguistic errors?",
+    "motivo": "Bloco de análise iniciado pela pergunta em negrito da seção 6.2; inclui a tabela, notas e parágrafos associados, terminando imediatamente antes da próxima pergunta em negrito.",
+    "texto": "**Does hard-coding attention produce any systematic linguistic errors?** For a more fine-grained analysis, we run experiments on LingEval97 (Sennrich, 2017), an English _→_ German dataset consisting of contrastive \n\n> 16We note that gradients will flow across long distances if the number of layers is large enough, since the effective window size increases with multiple layers (van den Oord et al., 2016; Kalchbrenner et al., 2016). \n\n|Error type|BASE|HC-SA|HC-ALL|\n|---|---|---|---|\n|np-agreement|**54.2**|53.5|53.5|\n|subj-verb-agreement|**87.5**|85.8|82.5|\n|subj-adequacy|**87.3**|85.0|80.3|\n|polarity-particle-nicht-del|**94.0**|91.4|83.2|\n|polarity-particle-kein-del|**91.4**|88.3|79.9|\n|polarity-affix-del|**91.6**|90.8|83.1|\n|polarity-particle-nicht-ins|**92.6**|92.5|89.8|\n|polarity-particle-kein-ins|94.8|96.7|**98.7**|\n|polarity-affix-ins|**91.9**|90.6|84.3|\n|auxiliary|**89.1**|87.5|85.6|\n|verb-particle|**74.7**|72.7|70.2|\n|compound|88.1|**89.5**|80.5|\n|transliteration|97.6|**97.9**|93.4|\n\n\n\nTable 4: Accuracy for each error type in the LingEval97 contrastive set. Hard-coding self-attention results in slightly lower accuracy for most error types, while more significant degradation is observed when hardcoding self and cross attention. We refer readers to Sennrich (2017) for descriptions of each error type. \n\ntranslation pairs. This dataset measures targeted errors on thirteen different linguistic phenomena such as agreement and adequacy. BASE and HC-SA perform<sup>17</sup> very similarly across all error types (Table 4), which is perhaps unsurprising given that their BLEU scores are almost identical. Interestingly, the category with the highest decrease from BASE for both HC-SA and HC-ALL is _deleted negations_ ;<sup>18</sup> HC-ALL is 11% less accurate (absolute) at detecting these substitutions than BASE (94% vs 83%). On the other hand, both HC-SA and HC-ALL are actually better than BASE at detecting _inserted negations_ , with HC-ALL achieving a robust 98.7% accuracy. We leave further exploration of this phenomenon to future work. Finally, we observe that for the subject-verb agreement category, the discrepancy between BASE and the hard-coded models increases as the distance between subject-verb increases (Figure 5). This result confirms that self-attention is important for modeling some long-distance phenomena, and that cross attention may be even more crucial. "
+  },
+  {
+    "offset_inicio": "**Do hard-coded models struggle when learned self-attention focuses on non-local information?** Since hard-coded models concentrate most of the attention probability mass on local tokens,",
+    "offset_fim": "gap between BASE and SH-X remains relatively constant across all bins. HC-SA even outperforms BASE for sentences with fewer off-diagonal tokens. \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "Do hard-coded models struggle when learned self-attention focuses on non-local information?",
+    "motivo": "O bloco inicia na pergunta em negrito que abre uma análise da seção 6.2 e inclui o texto, figuras e notas associados. Termina imediatamente antes do marcador da seção 6.3, na página 8.",
+    "texto": "**Do hard-coded models struggle when learned self-attention focuses on non-local information?** Since hard-coded models concentrate most of the attention probability mass on local tokens, they might underperform on sentences for which the \n\n> 17Accuracy is computed by counting how many references have lower token-level cross entropy loss than their contrastive counterparts. \n\n> 18Specifically, when _ein_ is replaced with negation _kein_ . \n\n7695\n\n<!-- PÁGINA 8 -->\n<!-- Start of picture text -->\nLingEval: subject-verb agreement<br>0.90<br>0.85<br>0.80<br>0.75<br>0.70 BASE<br>HC-SA<br>0.65 HC-ALL<br>5 10 >15<br>subject-verb distance<br>Accuracy<br><!-- End of picture text -->\n\nFigure 5: Hard-coded models become increasingly worse than BASE at subject-verb agreement as the dependency grows longer. \n\n\n\n<!-- Start of picture text -->\nIWSLT De-En Decoder Self-Attention<br>45 BASE<br>HC-SA<br>40 SH-X<br>35 HC-ALL<br>30<br>25<br>20<br>15<br>40%-60% 60%-80% 80%-100%<br>Percent off Diagonal<br>BLEU<br><!-- End of picture text -->\n\nFigure 6: Hard-coded attention performs better for sentences with low off-diagonality (i.e., sentences for which the BASE model’s learned attention focuses close to the query position for most of their tokens). \n\nlearned heads of the BASE model focus on tokens far from the current query position. We define a token to be “off-diagonal” when the maximum probability of that token’s attention is at least two steps away from query position. A sentence’s “off-diagonality” is then the proportion of off-diagonal tokens within the sentence. We bin the sentences in IWSLT En-De development set by their off-diagonality and analyze the translation quality of our models on these different bins. Figure 6 shows that for decoder self attention, the BLEU gap between HC-ALL and BASE increases as off-diagonality increases, while the gap between BASE and SH-X remains relatively constant across all bins. HC-SA even outperforms BASE for sentences with fewer off-diagonal tokens. \n\n"
+  },
+  {
+    "offset_inicio": "# **6.3 Other hard-coded model configurations** \n\n",
+    "offset_fim": "# **6.3 Other hard-coded model configurations** \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "6.3 Other hard-coded model configurations",
+    "motivo": "É o bloco de caput da seção 6.3; inicia no marcador da seção e termina imediatamente antes da pergunta em negrito “Is it important for the Gaussian to span the entire sequence?”, que abre uma subseção analítica própria.",
+    "texto": "# **6.3 Other hard-coded model configurations** \n\n"
+  },
+  {
+    "offset_inicio": "**Is it important for the Gaussian to span the entire sequence?** One natural question",
+    "offset_fim": "size to 3 in all experiments, so the kernel weights become [0 _._ 242 _,_ 0 _._ 399 _,_ 0 _._ 242]. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Is it important for the Gaussian to span the entire sequence?",
+    "motivo": "É a primeira subseção em negrito da seção 6.3; inicia no marcador de pergunta e termina imediatamente antes da próxima pergunta em negrito, “Are any attention weights necessary at all?”.",
+    "texto": "**Is it important for the Gaussian to span the entire sequence?** One natural question about the hard-coded attention strategy described in Sec- \n\n||Original<br>Conv|(window=3)|Indexing|\n|---|---|---|---|\n|En-De|30.3|30.1|29.8|\n|En-Ro|32.4|32.3|31.4|\n\n\n\nTable 5: Comparison of three implementations of HCSA. Truncating the distribution to a three token span has little impact, while removing the weights altogether slightly lowers BLEU. \n\ntion 3 is whether it is necessary to assign some probability to all tokens in the sequence. After all, the probabilities outside a local window become very marginal, so perhaps it is unnecessary to preserve them. We take inspiration from Wu et al. (2019), who demonstrate that lightweight convolutions can replace self-attention in the Transformer without harming BLEU, by recasting our hard-coded attention as a convolution with a hard-coded 1-D kernel. While this decision limits the Gaussian distribution to span over just tokens within a fixed window around the query token, it does not appreciably impact BLEU (second column of Table 5). We set the window size to 3 in all experiments, so the kernel weights become [0 _._ 242 _,_ 0 _._ 399 _,_ 0 _._ 242]. "
+  },
+  {
+    "offset_inicio": "**Are any attention weights necessary at all?** The previous setting with constrained window",
+    "offset_fim": "results in less than 1 BLEU drop across two datasets, which offers an interesting avenue for future efficiency improvements. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Are any attention weights necessary at all?",
+    "motivo": "É a primeira subseção analítica aberta por pergunta em negrito na seção 6.3; começa nesse marcador e termina imediatamente antes da próxima pergunta em negrito, \"Where should we add additional cross attention heads?\".",
+    "texto": "**Are any attention weights necessary at all?** The previous setting with constrained window size suggests another follow-up: is it necessary to have any attention weights within this local window at all? A highly-efficient alternative is to have each head simply select a single value vector associated with a token in the window. Here, our implementation requires no explicit multiplication with a weight vector, as we can compute each head’s representation by simply indexing into the value vectors. Mathematically, this is equivalent to convolving with a binary kernel (e.g., convolution with [1 _,_ 0 _,_ 0] is equivalent to indexing the left token representation). The third column of Table 5 shows that this indexing approach results in less than 1 BLEU drop across two datasets, which offers an interesting avenue for future efficiency improvements. "
+  },
+  {
+    "offset_inicio": "**Where should we add additional cross attention heads?** Our experiments with cross",
+    "offset_fim": "significantly better BLEU than adding all of them to the same layer. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "Where should we add additional cross attention heads?",
+    "motivo": "A pergunta em negrito abre uma subseção de análise própria da seção 6.3. O texto e a Figura 7 continuam na página 9 e o bloco termina imediatamente antes do marcador da seção principal \"# **7 Related Work**\".",
+    "texto": "**Where should we add additional cross attention heads?** Our experiments with cross attention so far have been limited to learning just a single head, as we have mainly been interested in minimal configurations. If we have a larger budget of cross attention heads, where should we put them? Is it better to have more cross attention heads in the last layer in the decoder (and no heads anywhere else), or to distribute them across multiple layers \n\n7696\n\n<!-- PÁGINA 9 -->\n<!-- Start of picture text -->\nWMT2016 En-Ro<br>30.5<br>Multiple heads same layer<br>Single head across layers<br>29.5<br>28.5<br>27.5<br>1 2 3 4<br>Number of learned heads<br>BLEU<br><!-- End of picture text -->\n\nFigure 7: Adding more cross attention heads in the same layer helps less than adding individual heads across different layers. \n\nof the decoder? Experiments on the WMT16 EnRo dataset<sup>19</sup> (Figure 7) indicate that distributing learned heads over multiple layers leads to significantly better BLEU than adding all of them to the same layer. "
+  },
+  {
+    "offset_inicio": "# **7 Related Work** \n\nAttention mechanisms were first introduced to augment vanilla recurrent models",
+    "offset_fim": "translation. Other work has also explored modeling locality (Shaw et al., 2018; Yang et al., 2018). ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "7 Related Work",
+    "motivo": "O bloco inicia no marcador da seção principal 7 e contém seus três parágrafos. Termina imediatamente antes do próximo marcador de seção, \"# **8 Conclusion**\".",
+    "texto": "# **7 Related Work** \n\nAttention mechanisms were first introduced to augment vanilla recurrent models (Kalchbrenner and Blunsom, 2013; Sutskever et al., 2014; Bahdanau et al., 2015; Luong et al., 2015; Chorowski et al., 2015; Wu et al., 2016; Miceli Barone et al., 2017) but have become the featured component of the state-of-the-art Transformer architecture (Vaswani et al., 2017) for NMT. We review recent research that focuses on analysing and improving multiheaded attention, and draw connections to our work. \n\nThe intuitive advantage of MHA is that different heads can focus on different types of information, all of which will eventually be helpful for translation. Voita et al. (2019) find that some heads focus on adjacent tokens to the query (mirroring our analysis in Section 2), while others focus on specific dependency relations or rare tokens. Correia et al. (2019) discover that some heads are sensitive to subword clusters or interrogative words. Tang et al. (2018) shows that the number of MHA heads affects the ability to model long-range dependencies. Michel et al. (2019) show that pruning many heads from a pretrained model does not significantly impact BLEU scores. Similarly, Voita et al. (2019) prune many encoder self-attention heads without degrading BLEU, while Tang et al. (2019) further \n\n19We used the smaller IWSLT En-De architecture for this experiment. \n\nsimplify the Transformer by removing the entire encoder for a drop of three BLEU points. In contrast to existing literature on model pruning, we _train_ our models without learned attention heads instead of removing them post-hoc. \n\nThere have been many efforts to modify MHA in Transformers. One such direction is to inject linguistic knowledge through auxiliary supervised tasks (Garg et al., 2019; Pham et al., 2019). Other work focuses on improving inference speed: Yang et al. (2018) replace decoder self-attention with a simple average attention network, assigning equal weights to target-side previous tokens.<sup>20</sup> Wu et al. (2019) also speed up decoding by replacing selfattention with convolutions that have time-step dependent kernels; we further simplify this work with our fixed convolutional kernels in Section 6. Cui et al. (2019) also explore fixed attention while retaining some learned parameters, and Vashishth et al. (2019) show that using uniform or random attention deteriorates performances on paired sentences tasks including machine translation. Other work has also explored modeling locality (Shaw et al., 2018; Yang et al., 2018). "
+  },
+  {
+    "offset_inicio": "# **8 Conclusion** \n\nIn this paper, we present “hard-coded” Gaussian attention, which",
+    "offset_fim": "provides a foundation for future work into simpler and more computationally efficient neural machine translation. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "8 Conclusion",
+    "motivo": "O bloco inicia no marcador de seção “# **8 Conclusion**” e reúne os parágrafos conclusivos até imediatamente antes do próximo marcador de mesmo nível, “# **Acknowledgments**”.",
+    "texto": "# **8 Conclusion** \n\nIn this paper, we present “hard-coded” Gaussian attention, which while lacking any learned parameters can rival multi-headed attention for neural machine translation. Our experiments suggest that encoder and decoder self-attention is not crucial for translation quality compared to cross attention. We further find that a model with hard-coded selfattention and just a single cross attention head performs slightly worse than a baseline Transformer. Our work provides a foundation for future work into simpler and more computationally efficient neural machine translation. "
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nWe thank the anonymous reviewers for their thoughtful comments,",
+    "offset_fim": "result is similar to the indexing implementation we describe in Section 6.3. \n\n7697",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgments",
+    "motivo": "O bloco inicia no título de seção “Acknowledgments” na página 9 e reúne seus dois parágrafos, encerrando-se antes do próximo marcador estrutural, “# **References**”, na página 10.",
+    "texto": "# **Acknowledgments** \n\nWe thank the anonymous reviewers for their thoughtful comments, Omer Levy for general guidance and for suggesting some of our efficiency experiments, the UMass NLP group for helpful comments on earlier drafts, Nader Akoury for assisting with modifications to his Transformer codebase, and Kalpesh Krishna for advice on the structure of the paper. \n\n20In preliminary experiments, we find that using uniform distributions for encoder self-attention decreases BLEU. This result is similar to the indexing implementation we describe in Section 6.3. \n\n7697"
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "References",
+    "motivo": "O título da lista de referências forma um bloco próprio e termina imediatamente antes da primeira entrada bibliográfica, iniciada por “- Nader Akoury...”.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Nader Akoury, Kalpesh Krishna, and Mohit Iyyer. 2019. Syntactically supervised transformers for faster neural machine translation.",
+    "offset_fim": "pages 1269–1281, Florence, Italy. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Akoury, Krishna e Iyyer (2019)",
+    "motivo": "É a primeira entrada bibliográfica presente no trecho. Inicia no marcador de item “- Nader Akoury...” e termina imediatamente antes da entrada seguinte, “- Dzmitry Bahdanau...”.",
+    "texto": "- Nader Akoury, Kalpesh Krishna, and Mohit Iyyer. 2019. Syntactically supervised transformers for faster neural machine translation. In <u>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,</u> pages 1269–1281, Florence, Italy. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural machine translation by jointly learning to align and translate. In <u>3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings.</u> ",
+    "offset_fim": "International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings.</u> ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Bahdanau, Cho e Bengio (2015)",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco começa na referência de Bahdanau, Cho e Bengio e termina imediatamente antes da referência seguinte, de Jan K Chorowski et al.",
+    "texto": "- Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural machine translation by jointly learning to align and translate. In <u>3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings.</u> "
+  },
+  {
+    "offset_inicio": "- Jan K Chorowski, Dzmitry Bahdanau, Dmitriy Serdyuk, Kyunghyun Cho, and Yoshua Bengio. 2015. Attention-based models for speech recognition.",
+    "offset_fim": "<u>Advances in Neural Information Processing Systems 28,</u> pages 577–585. Curran Associates, Inc. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Chorowski et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Jan K Chorowski...\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Gonc¸alo M. Correia...\".",
+    "texto": "- Jan K Chorowski, Dzmitry Bahdanau, Dmitriy Serdyuk, Kyunghyun Cho, and Yoshua Bengio. 2015. Attention-based models for speech recognition. In C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, and R. Garnett, editors, <u>Advances in Neural Information Processing Systems 28,</u> pages 577–585. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Gonc¸alo M. Correia, Vlad Niculae, and Andr´e F. T. Martins. 2019. Adaptively sparse transformers.",
+    "offset_fim": "pages 2174–2184, Hong Kong, China. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Correia, Niculae e Martins (2019)",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco começa na referência de Gonc¸alo M. Correia et al. e termina imediatamente antes da referência seguinte, iniciada por “- Hongyi Cui”.",
+    "texto": "- Gonc¸alo M. Correia, Vlad Niculae, and Andr´e F. T. Martins. 2019. Adaptively sparse transformers. In <u>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP),</u> pages 2174–2184, Hong Kong, China. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Hongyi Cui, Shohei Iida, Po-Hsuan Hung, Takehito Utsuro, and Masaaki Nagata. 2019.",
+    "offset_fim": "Generation and Translation,</u> pages 206–214, Hong Kong. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Hongyi Cui et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no item \"- Hongyi Cui...\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Sarthak Garg...\".",
+    "texto": "- Hongyi Cui, Shohei Iida, Po-Hsuan Hung, Takehito Utsuro, and Masaaki Nagata. 2019. Mixed multihead self-attention for neural machine translation. In <u>Proceedings of the 3rd Workshop on Neural Generation and Translation,</u> pages 206–214, Hong Kong. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Sarthak Garg, Stephan Peitz, Udhyakumar Nallasamy, and Matthias Paulik. 2019. Jointly learning to align and translate with transformer models.",
+    "offset_fim": "pages 4452–4461, Hong Kong, China. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Garg et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho; cada referência forma uma unidade própria. O bloco começa no marcador “- Sarthak Garg...” e termina imediatamente antes da referência seguinte, iniciada por “- Jiatao Gu...”.",
+    "texto": "- Sarthak Garg, Stephan Peitz, Udhyakumar Nallasamy, and Matthias Paulik. 2019. Jointly learning to align and translate with transformer models. In <u>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP),</u> pages 4452–4461, Hong Kong, China. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, and Richard Socher. 2018.",
+    "offset_fim": "translation. In <u>International Conference on Learning Representations.</u>",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Jiatao Gu et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de item e encerrada imediatamente antes da referência seguinte, de Sarthak Jain e Byron C. Wallace.",
+    "texto": "- Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, and Richard Socher. 2018. Non-autoregressive neural machine translation. In <u>International Conference on Learning Representations.</u>"
+  },
+  {
+    "offset_inicio": "- Sarthak Jain and Byron C. Wallace. 2019. Attention is not Explanation. In <u>Proceedings of the 2019 Conference of the North American Chapter",
+    "offset_fim": "Long and Short Papers), pages 3543–3556, Minneapolis, Minnesota.</u> Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Sarthak Jain e Byron C. Wallace (2019)",
+    "motivo": "Cada entrada da lista de referências é uma unidade própria. O bloco começa na entrada de Sarthak Jain e Byron C. Wallace e termina imediatamente antes da entrada seguinte, iniciada por “- Nal Kalchbrenner and Phil Blunsom”.",
+    "texto": "- Sarthak Jain and Byron C. Wallace. 2019. Attention is not Explanation. In <u>Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 3543–3556, Minneapolis, Minnesota.</u> Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Nal Kalchbrenner and Phil Blunsom. 2013. Recurrent continuous translation models. In",
+    "offset_fim": "pages 1700–1709, Seattle, Washington, USA. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Kalchbrenner and Blunsom (2013) — Recurrent continuous translation models",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho; cada referência constitui uma unidade própria e o bloco termina imediatamente antes da referência seguinte, iniciada por “- Nal Kalchbrenner, Lasse Espeholt...”.",
+    "texto": "- Nal Kalchbrenner and Phil Blunsom. 2013. Recurrent continuous translation models. In <u>Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing,</u> pages 1700–1709, Seattle, Washington, USA. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves,",
+    "offset_fim": "Neural machine translation in linear time. <u>arXiv preprint arXiv:1610.10099.</u> ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Kalchbrenner et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de item \"- Nal Kalchbrenner\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Jason Lee\".",
+    "texto": "- Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Koray Kavukcuoglu. 2016. Neural machine translation in linear time. <u>arXiv preprint arXiv:1610.10099.</u> "
+  },
+  {
+    "offset_inicio": "- Jason Lee, Elman Mansimov, and Kyunghyun Cho. 2018. Deterministic non-autoregressive neural sequence modeling by iterative refinement.",
+    "offset_fim": "pages 1173–1182, Brussels, Belgium. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Lee, Mansimov e Cho (2018)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada pelo marcador de item “- Jason Lee...” e encerrada imediatamente antes da entrada seguinte, “- Thang Luong...”.",
+    "texto": "- Jason Lee, Elman Mansimov, and Kyunghyun Cho. 2018. Deterministic non-autoregressive neural sequence modeling by iterative refinement. In <u>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing,</u> pages 1173–1182, Brussels, Belgium. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Thang Luong, Hieu Pham, and Christopher D. Manning. 2015. Effective approaches to",
+    "offset_fim": "pages 1412–1421, Lisbon, Portugal. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Thang Luong, Hieu Pham e Christopher D. Manning (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho; inicia no marcador de item \"- Thang Luong\" e termina imediatamente antes da referência seguinte, iniciada por \"- Antonio Valerio Miceli Barone\".",
+    "texto": "- Thang Luong, Hieu Pham, and Christopher D. Manning. 2015. Effective approaches to attention-based neural machine translation. In <u>Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing,</u> pages 1412–1421, Lisbon, Portugal. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Antonio Valerio Miceli Barone, Jindˇrich Helcl, Rico Sennrich, Barry Haddow, and Alexandra Birch. 2017. Deep architectures for neural machine translation.",
+    "offset_fim": "pages 99–107, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Barone et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de item e termina imediatamente antes da entrada seguinte, iniciada por “- Paul Michel”.",
+    "texto": "- Antonio Valerio Miceli Barone, Jindˇrich Helcl, Rico Sennrich, Barry Haddow, and Alexandra Birch. 2017. Deep architectures for neural machine translation. In <u>Proceedings of the Second Conference on Machine Translation,</u> pages 99–107, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Paul Michel, Omer Levy, and Graham Neubig. 2019. Are sixteen heads really better",
+    "offset_fim": "nformation Processing Systems 32,</u> pages 14014– 14024. Curran Associates, Inc. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Michel, Levy e Neubig (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de item \"- Paul Michel...\" e termina imediatamente antes da próxima entrada bibliográfica, iniciada por \"- A¨aron van den Oord...\".",
+    "texto": "- Paul Michel, Omer Levy, and Graham Neubig. 2019. Are sixteen heads really better than one? In H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alch´e-Buc, E. Fox, and R. Garnett, editors, <u>Advances in Neural Information Processing Systems 32,</u> pages 14014– 14024. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- A¨aron van den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals,",
+    "offset_fim": "nthesis Workshop, Sunnyvale, CA, USA, 13-15 September 2016, page 125. ISCA.</u> ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Aäron van den Oord et al. (2016), WaveNet",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho; inicia no marcador de item e termina imediatamente antes da referência seguinte, de Adam Paszke et al.",
+    "texto": "- A¨aron van den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew W. Senior, and Koray Kavukcuoglu. 2016. Wavenet: A generative model for raw audio. In <u>The 9th ISCA Speech Synthesis Workshop, Sunnyvale, CA, USA, 13-15 September 2016, page 125. ISCA.</u> "
+  },
+  {
+    "offset_inicio": "- Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan,",
+    "offset_fim": "pages 8024–8035. Curran Associates, Inc. \n\n7698",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Adam Paszke et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item da referência de Paszke et al. e termina antes da próxima entrada bibliográfica, iniciada por “- Thuong Pham” na página 11.",
+    "texto": "- Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. 2019. Pytorch: An imperative style, high-performance deep learning library. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alch´e-Buc, E. Fox, and R. Garnett, editors, <u>Advances in Neural Information Processing Systems 32,</u> pages 8024–8035. Curran Associates, Inc. \n\n7698"
+  },
+  {
+    "offset_inicio": "- Thuong Pham, Dominik Mach´aˇcek, and Ondˇrej Bojar. 2019. Promoting the knowledge of source syntax",
+    "offset_fim": "source syntax in transformer nmt is not needed. <u>Computacion´ y Sistemas, 23.</u> ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Thuong Pham et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; cada referência constitui uma unidade própria. O bloco começa na entrada de Thuong Pham e termina imediatamente antes da referência de Matt Post.",
+    "texto": "- Thuong Pham, Dominik Mach´aˇcek, and Ondˇrej Bojar. 2019. Promoting the knowledge of source syntax in transformer nmt is not needed. <u>Computacion´ y Sistemas, 23.</u> "
+  },
+  {
+    "offset_inicio": "- Matt Post. 2018. A call for clarity in reporting BLEU scores. In <u>Proceedings",
+    "offset_fim": "pages 186– 191, Belgium, Brussels. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Matt Post (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item “- Matt Post...” e termina imediatamente antes da entrada seguinte, “- Rico Sennrich...”.",
+    "texto": "- Matt Post. 2018. A call for clarity in reporting BLEU scores. In <u>Proceedings of the Third Conference on Machine Translation: Research Papers,</u> pages 186– 191, Belgium, Brussels. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Rico Sennrich. 2017. How grammatical is characterlevel neural machine translation? assessing MT quality with contrastive translation pairs. In <u>",
+    "offset_fim": "pages 376–382, Valencia, Spain. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Rico Sennrich (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de item \"- Rico Sennrich. 2017.\" e termina imediatamente antes da entrada bibliográfica seguinte, também iniciada por \"- Rico Sennrich\".",
+    "texto": "- Rico Sennrich. 2017. How grammatical is characterlevel neural machine translation? assessing MT quality with contrastive translation pairs. In <u>Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers,</u> pages 376–382, Valencia, Spain. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Edinburgh neural machine ",
+    "offset_fim": "pages 371–376, Berlin, Germany. Association for Computational Linguistics.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Sennrich, Haddow e Birch (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador da referência de Rico Sennrich et al. e termina imediatamente antes da entrada seguinte, iniciada por “- Peter Shaw”.",
+    "texto": "- Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Edinburgh neural machine translation systems for WMT 16. In <u>Proceedings of the First Conference on Machine Translation: Volume 2, Shared Task Papers,</u> pages 371–376, Berlin, Germany. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Peter Shaw, Jakob Uszkoreit, and Ashish Vaswani. 2018. Self-attention with relative position representations. In <u>Proceedings",
+    "offset_fim": "pages 464– 468, New Orleans, Louisiana. Association for Computational Linguistics.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Shaw, Uszkoreit e Vaswani (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da referência seguinte, de Ilya Sutskever et al.",
+    "texto": "- Peter Shaw, Jakob Uszkoreit, and Ashish Vaswani. 2018. Self-attention with relative position representations. In <u>Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers),</u> pages 464– 468, New Orleans, Louisiana. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Ilya Sutskever, Oriol Vinyals, and Quoc V Le. 2014. Sequence to sequence learning",
+    "offset_fim": "editors, <u>Advances in Neural Information Processing Systems 27, pages</u> 3104–3112. Curran Associates, Inc.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Sutskever, Vinyals e Le (2014)",
+    "motivo": "É a primeira entrada individual da lista de referências. Inicia no marcador de item “- Ilya Sutskever...” e termina antes da próxima entrada, iniciada por “- Gongbo Tang...”.",
+    "texto": "- Ilya Sutskever, Oriol Vinyals, and Quoc V Le. 2014. Sequence to sequence learning with neural networks. In Z. Ghahramani, M. Welling, C. Cortes, N. D. Lawrence, and K. Q. Weinberger, editors, <u>Advances in Neural Information Processing Systems 27, pages</u> 3104–3112. Curran Associates, Inc."
+  },
+  {
+    "offset_inicio": "- Gongbo Tang, Mathias M¨uller, Annette Rios, and Rico Sennrich. 2018. Why self-attention? a targeted evaluation of neural machine translation architectures.",
+    "offset_fim": "pages 4263–4272, Brussels, Belgium. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Tang et al. (2018)",
+    "motivo": "A primeira unidade completa do trecho é uma entrada individual da lista de referências. Ela começa no marcador de item \"- Gongbo Tang...\" e termina imediatamente antes da próxima entrada bibliográfica iniciada por \"- Gongbo Tang, Rico Sennrich...\".",
+    "texto": "- Gongbo Tang, Mathias M¨uller, Annette Rios, and Rico Sennrich. 2018. Why self-attention? a targeted evaluation of neural machine translation architectures. In <u>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing,</u> pages 4263–4272, Brussels, Belgium. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Gongbo Tang, Rico Sennrich, and Joakim Nivre. 2019. Understanding neural machine translation by simplification: The case of encoder-free models.",
+    "offset_fim": "Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019),</u> pages 1186–1193, Varna, Bulgaria. INCOMA Ltd. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Gongbo Tang et al. (2019)",
+    "motivo": "Cada entrada da lista de referências constitui uma unidade própria. O bloco começa na referência de Gongbo Tang et al. e termina imediatamente antes da entrada seguinte, iniciada por “- Shikhar Vashishth”.",
+    "texto": "- Gongbo Tang, Rico Sennrich, and Joakim Nivre. 2019. Understanding neural machine translation by simplification: The case of encoder-free models. In <u>Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019),</u> pages 1186–1193, Varna, Bulgaria. INCOMA Ltd. "
+  },
+  {
+    "offset_inicio": "- Shikhar Vashishth, Shyam Upadhyay, Gaurav Singh Tomar, and Manaal Faruqui. 2019. Attention interpretability across nlp tasks.",
+    "offset_fim": "2019. Attention interpretability across nlp tasks. <u>arXiv preprint arXiv:1909.11218.</u> ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Vashishth et al. (2019)",
+    "motivo": "É a primeira entrada completa da lista de referências; inicia no marcador '-' de Shikhar Vashishth e termina imediatamente antes da entrada seguinte, iniciada por '- Ashish Vaswani'.",
+    "texto": "- Shikhar Vashishth, Shyam Upadhyay, Gaurav Singh Tomar, and Manaal Faruqui. 2019. Attention interpretability across nlp tasks. <u>arXiv preprint arXiv:1909.11218.</u> "
+  },
+  {
+    "offset_inicio": "- Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N",
+    "offset_fim": "Systems 30,</u> pages 5998–6008. Curran Associates, Inc.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Vaswani et al. (2017)",
+    "motivo": "A primeira unidade completa é a primeira entrada da lista de referências, iniciada por \"- Ashish Vaswani\" e encerrada antes da entrada seguinte, \"- Elena Voita\".",
+    "texto": "- Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz \n\nKaiser, and Illia Polosukhin. 2017. Attention is all you need. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett, editors, <u>Advances in Neural Information Processing Systems 30,</u> pages 5998–6008. Curran Associates, Inc."
+  },
+  {
+    "offset_inicio": "- Elena Voita, David Talbot, Fedor Moiseev, Rico Sennrich, and Ivan Titov. 2019. Analyzing multi-head self-attention:",
+    "offset_fim": "pages 5797–5808, Florence, Italy. Association for Computational Linguistics.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Voita et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada pelo marcador de item \"- Elena Voita\" e encerrada imediatamente antes da entrada seguinte, \"- Felix Wu\".",
+    "texto": "- Elena Voita, David Talbot, Fedor Moiseev, Rico Sennrich, and Ivan Titov. 2019. Analyzing multi-head self-attention: Specialized heads do the heavy lifting, the rest can be pruned. In <u>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,</u> pages 5797–5808, Florence, Italy. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Felix Wu, Angela Fan, Alexei Baevski, Yann Dauphin, and Michael Auli. 2019. Pay less attention with lightweight",
+    "offset_fim": "Pay less attention with lightweight and dynamic convolutions. In <u>International Conference on Learning Representations.</u> ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Wu et al. (2019)",
+    "motivo": "É a primeira entrada individual da lista de referências presente no trecho. Começa no marcador de item \"- Felix Wu...\" e termina imediatamente antes da próxima referência, iniciada por \"- Yonghui Wu...\".",
+    "texto": "- Felix Wu, Angela Fan, Alexei Baevski, Yann Dauphin, and Michael Auli. 2019. Pay less attention with lightweight and dynamic convolutions. In <u>International Conference on Learning Representations.</u> "
+  },
+  {
+    "offset_inicio": "- Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang",
+    "offset_fim": "e translation. <u>arXiv preprint arXiv:1609.08144.</u> ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Wu et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto. Inicia no marcador de item \"- Yonghui Wu...\" e termina antes da próxima entrada bibliográfica, iniciada por \"- Baosong Yang...\".",
+    "texto": "- Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. 2016. Google’s neural machine translation system: Bridging the gap between human and machine translation. <u>arXiv preprint arXiv:1609.08144.</u> "
+  },
+  {
+    "offset_inicio": "- Baosong Yang, Zhaopeng Tu, Derek F. Wong, Fandong Meng, Lidia S. Chao, and Tong Zhang. 2018. Modeling localness",
+    "offset_fim": "pages 4449–4458, Brussels, Belgium. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Baosong Yang et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Baosong Yang\" e termina imediatamente antes do próximo marcador estrutural, o apêndice A.",
+    "texto": "- Baosong Yang, Zhaopeng Tu, Derek F. Wong, Fandong Meng, Lidia S. Chao, and Tong Zhang. 2018. Modeling localness for self-attention networks. In <u>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing,</u> pages 4449–4458, Brussels, Belgium. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "# **A Mixed position for hard-coded self-attention works the best** \n\n|Enc-Config|Dec-Config|BLEU|",
+    "offset_fim": "and ( _l_ , _c_ ) for decoder. Each cell shows settings we used in the lowest and highest layer. \n\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "A Mixed position for hard-coded self-attention works the best",
+    "motivo": "O bloco começa no marcador de apêndice A e inclui sua tabela e respectiva legenda. Termina imediatamente antes do próximo marcador de apêndice, “# **B Memory efficiency and inference speedups**”.",
+    "texto": "# **A Mixed position for hard-coded self-attention works the best** \n\n|Enc-Config|Dec-Config|BLEU|\n|---|---|---|\n|(_l_,_l_)|(_l_,_l_)|27.4|\n|(_l_,_l_)|(_c_,_c_)|27.8|\n|(_l_,_l_)|(_l_,_c_)|28.1|\n|(_l_,_r_)|(_l_,_c_)|**30.3**|\n\n\n\nTable 6: Search for best hard-coded configuration for hard-coded self-attention. ‘ _l_ ’ stands for left, focusing on _i −_ 1, ‘ _r_ ’ for _i_ + 1 and ‘ _c_ ’ for _i_ . Middle layers are ( _l_ , _r_ ) for encoder and ( _l_ , _c_ ) for decoder. Each cell shows settings we used in the lowest and highest layer. \n\n"
+  },
+  {
+    "offset_inicio": "# **B Memory efficiency and inference speedups** \n\nTable 7 summarizes the results of",
+    "offset_fim": "two rows refer to BASE and SH-X configurations whose self-attention is completely removed. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 12,
+    "titulo": "B Memory efficiency and inference speedups",
+    "motivo": "O bloco começa no marcador de apêndice B na página 11 e reúne o parágrafo, a figura e a tabela de profiling até imediatamente antes do próximo marcador de apêndice, “# **C Off-diagonal Analysis**”, na página 12.",
+    "texto": "# **B Memory efficiency and inference speedups** \n\nTable 7 summarizes the results of our profiling experiments on IWSLT16 En-De development set. \n\n7699\n\n<!-- PÁGINA 12 -->\n<!-- Start of picture text -->\nIWSLT En-De Encoder Self-Attention IWSLT En-De Decoder Self-Attention IWSLT De-En Encoder Self-Attention<br>BASE<br>30 40 HC-SA 40<br>SH-X<br>25 35 HC-ALL 35<br>BASE 30 30 BASE<br>20<br>HC-SA HC-SA<br>25 25<br>SH-X SH-X<br>15 HC-ALL 20 20 HC-ALL<br>40%-60% 60%-80% 80%-100% 40%-60% 60%-80% 80%-100% 40%-60% 60%-80% 80%-100%<br>Percent off Diagonal Percent off Diagonal Percent off Diagonal<br>BLEU BLEU BLEU<br><!-- End of picture text -->\n\nFigure 8: Off-diagonal analysis for IWSLT En-De/De-En self-attention \n\n|Model|BLEU|sent/sec|tokens/batch|\n|---|---|---|---|\n|BASE|30.0|43.1|14.1k|\n|HC-SA|30.3|44.0|15.1k|\n|SH-X|28.1|50.1|16k|\n|BASE/-SA|22.8|46.1|16.1k|\n|SH-X/-SA|14.9|54.9|17k|\n\n\n\nTable 7: Decoding speedup (in terms of sentences per second) and memory improvements (max tokens per batch) on IWSLT16 En-De for a variety of models. The last two rows refer to BASE and SH-X configurations whose self-attention is completely removed. "
+  },
+  {
+    "offset_inicio": "# **C Off-diagonal Analysis** \n\nIn addition to IWSLT16 De-En decoder selfattention analysis,",
+    "offset_fim": "IWSLT16 En-De encoder and decoder self-attention, and IWSLT16 De-En encoder self-attention in Figures 8.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "C Off-diagonal Analysis",
+    "motivo": "O bloco inicia no marcador de apêndice \"C\" e contém seu único parágrafo descritivo. Não há outro marcador estrutural no trecho fornecido; o número 7700 é rodapé/paginação, não conteúdo da unidade.",
+    "texto": "# **C Off-diagonal Analysis** \n\nIn addition to IWSLT16 De-En decoder selfattention analysis, we provide here the off-diagonal analysis results on IWSLT16 En-De encoder and decoder self-attention, and IWSLT16 De-En encoder self-attention in Figures 8."
+  }
+]

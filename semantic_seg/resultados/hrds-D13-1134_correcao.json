@@ -1,0 +1,27 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 35,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [1] é englobante: reúne o título do artigo, o material pré-textual/resumo e a seção numerada \"1 Introduction\", que deveriam iniciar blocos distintos nos seus respectivos marcadores.",
+        "O bloco [12] é englobante: termina já contendo o marcador de item \"- **Binary features**\", mas não há bloco próprio para esse item antes do início da seção 4 no bloco [13]."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual bloco inicial no marcador do resumo (\"**Abstract**\", se presente) e no marcador \"# **1 Introduction**\"; mantenha o título do artigo e os metadados anteriores no bloco do título, e crie um bloco próprio para cada unidade iniciada por esses marcadores.\n- No trecho final da subseção de modelo observacional, encerre o bloco de \"Salience features\" imediatamente antes de \"- **Binary features**\". Inicie um bloco próprio em \"- **Binary features**\" e estenda-o até imediatamente antes de \"# **4 Evaluation**\".\n- Não deixe o marcador \"- **Binary features**\" anexado ao fim do texto de \"Salience features\", mesmo quando ele ocorre no fim de uma página ou linha."
+    },
+    "arquivo_blocos": "resultados/hrds-D13-1134_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "- Divida o atual bloco inicial no marcador do resumo (\"**Abstract**\", se presente) e no marcador \"# **1 Introduction**\"; mantenha o título do artigo e os metadados anteriores no bloco do título, e crie um bloco próprio para cada unidade iniciada por esses marcadores.\n- No trecho final da subseção de modelo observacional, encerre o bloco de \"Salience features\" imediatamente antes de \"- **Binary features**\". Inicie um bloco próprio em \"- **Binary features**\" e estenda-o até imediatamente antes de \"# **4 Evaluation**\".\n- Não deixe o marcador \"- **Binary features**\" anexado ao fim do texto de \"Salience features\", mesmo quando ele ocorre no fim de uma página ou linha.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D13-1134_ciclo2.json"
+  }
+]

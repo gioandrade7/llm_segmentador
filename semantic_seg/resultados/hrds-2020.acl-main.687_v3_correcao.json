@@ -1,0 +1,41 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [17] é englobante: reúne a seção 6.2 inteira, incluindo vários parágrafos abertos por perguntas em negrito que funcionam como subtítulos sem marcador numérico e devem iniciar blocos próprios; o título \"6.2 Error analysis of hard-coded models\" também deve permanecer em um bloco de caput separado quando não houver texto introdutório antes do primeiro subtítulo.",
+        "O bloco [18] é englobante: reúne a seção 6.3 e seus subsequentes subtítulos em negrito, como \"Is it important for the Gaussian to span the entire sequence?\". Cada subtítulo em negrito que abre um parágrafo deve iniciar um bloco próprio, separado do caput \"6.3 Other hard-coded model configurations\"."
+      ],
+      "consistente": false,
+      "insights": "- Na seção 6.2, crie um bloco de caput iniciado em \"6.2 Error analysis of hard-coded models\" e corte antes de cada pergunta em negrito que abre uma análise; mantenha cada pergunta e os parágrafos, figuras e tabelas associados até a próxima pergunta em negrito.\n- Na seção 6.3, crie um bloco de caput iniciado em \"6.3 Other hard-coded model configurations\" e separe cada subseção aberta por pergunta em negrito, começando por \"Is it important for the Gaussian to span the entire sequence?\"; não deixe todas essas análises dentro de um único bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.687_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 59,
+    "insights_aplicados": "- Na seção 6.2, crie um bloco de caput iniciado em \"6.2 Error analysis of hard-coded models\" e corte antes de cada pergunta em negrito que abre uma análise; mantenha cada pergunta e os parágrafos, figuras e tabelas associados até a próxima pergunta em negrito.\n- Na seção 6.3, crie um bloco de caput iniciado em \"6.3 Other hard-coded model configurations\" e separe cada subseção aberta por pergunta em negrito, começando por \"Is it important for the Gaussian to span the entire sequence?\"; não deixe todas essas análises dentro de um único bloco.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6] engloba o fim da subseção 2.2 e o marcador da nova seção principal \"3 Hard-coded Gaussian attention\". Esse marcador deveria iniciar um bloco de caput próprio, antes do bloco [7], que inicia a subseção 3.1.",
+        "O bloco [9] agrupa o caput da seção 4 com a subseção 4.1 (Datasets), enquanto o bloco [10] já inicia diretamente em 4.2. A subseção 4.1 deve ser extraída como bloco próprio, separado do caput de \"4 Large-scale Experiments\" e de 4.2."
+      ],
+      "consistente": false,
+      "insights": "- Ao encontrar o marcador \"3 Hard-coded Gaussian attention\" no fim do trecho da seção 2.2, encerre 2.2 imediatamente antes dele e crie um bloco de caput próprio iniciado nesse marcador; deixe \"3.1 Hard-coded self-attention\" em seu bloco separado.\n- Na seção 4, separe o caput iniciado em \"4 Large-scale Experiments\" da subseção \"4.1 Datasets\"; crie um bloco próprio para 4.1 e encerre-o imediatamente antes de \"4.2 Architectures\".\n- Na seção 6.2, crie um bloco de caput iniciado em \"6.2 Error analysis of hard-coded models\" e corte antes de cada pergunta em negrito que abre uma análise; mantenha cada pergunta e os parágrafos, figuras e tabelas associados até a próxima pergunta em negrito.\n- Na seção 6.3, crie um bloco de caput iniciado em \"6.3 Other hard-coded model configurations\" e separe cada subseção aberta por pergunta em negrito, começando por \"Is it important for the Gaussian to span the entire sequence?\"; mantenha cada análise até a próxima pergunta em negrito ou até o próximo marcador de seção."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.687_v3_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 60,
+    "insights_aplicados": "- Ao encontrar o marcador \"3 Hard-coded Gaussian attention\" no fim do trecho da seção 2.2, encerre 2.2 imediatamente antes dele e crie um bloco de caput próprio iniciado nesse marcador; deixe \"3.1 Hard-coded self-attention\" em seu bloco separado.\n- Na seção 4, separe o caput iniciado em \"4 Large-scale Experiments\" da subseção \"4.1 Datasets\"; crie um bloco próprio para 4.1 e encerre-o imediatamente antes de \"4.2 Architectures\".\n- Na seção 6.2, crie um bloco de caput iniciado em \"6.2 Error analysis of hard-coded models\" e corte antes de cada pergunta em negrito que abre uma análise; mantenha cada pergunta e os parágrafos, figuras e tabelas associados até a próxima pergunta em negrito.\n- Na seção 6.3, crie um bloco de caput iniciado em \"6.3 Other hard-coded model configurations\" e separe cada subseção aberta por pergunta em negrito, começando por \"Is it important for the Gaussian to span the entire sequence?\"; mantenha cada análise até a próxima pergunta em negrito ou até o próximo marcador de seção.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.687_v3_ciclo3.json"
+  }
+]

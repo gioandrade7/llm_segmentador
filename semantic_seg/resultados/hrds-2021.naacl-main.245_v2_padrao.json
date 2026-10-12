@@ -1,0 +1,30 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "título do documento",
+      "exemplo": "# **Faithfully Explainable Recommendation via Neural Logic Reasoning**"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção principal numerada",
+      "exemplo": "# **3 Proposed Method**"
+    },
+    {
+      "nivel": 3,
+      "nome": "subseção numerada",
+      "exemplo": "## **3.1 KG Encoder**"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    8
+  ],
+  "total_paginas": 8
+}

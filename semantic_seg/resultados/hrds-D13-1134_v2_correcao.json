@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 29,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [12] engloba o texto da seção \"5 Conclusion and future work\" e a divisão não numerada \"Acknowledgments\" (incluindo o trecho de financiamento), que deve iniciar um bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Divida o bloco iniciado em \"5 Conclusion and future work\" quando aparecer o marcador não numerado \"Acknowledgments\": mantenha no bloco da conclusão apenas seu texto e crie outro bloco iniciado em \"Acknowledgments\", com todo o parágrafo de agradecimentos e financiamento até \"References\"."
+    },
+    "arquivo_blocos": "resultados/hrds-D13-1134_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 30,
+    "insights_aplicados": "- Divida o bloco iniciado em \"5 Conclusion and future work\" quando aparecer o marcador não numerado \"Acknowledgments\": mantenha no bloco da conclusão apenas seu texto e crie outro bloco iniciado em \"Acknowledgments\", com todo o parágrafo de agradecimentos e financiamento até \"References\".",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D13-1134_v2_ciclo2.json"
+  }
+]

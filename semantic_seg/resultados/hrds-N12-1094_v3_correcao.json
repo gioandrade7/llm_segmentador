@@ -1,0 +1,40 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [4] engloba a seção 2 \"Data Analysis\" e a subseção 2.1 \"Data sets\" (a próxima subseção apresentada é 2.2 no bloco [5]); o marcador 2.1 deveria iniciar um bloco próprio.",
+        "O bloco [7] provavelmente retém o marcador e/ou o caput da seção 3, pois o bloco seguinte [8] já começa diretamente em 3.1 \"Bootstrapping for Visual Text\"; a seção 3 deve constituir bloco separado antes de 3.1."
+      ],
+      "consistente": false,
+      "insights": "- Divida a área atualmente coberta pelo bloco [4] no marcador `2.1 Data sets`: mantenha em um bloco o caput de `2 Data Analysis` anterior a esse marcador e crie outro bloco iniciado em `2.1 Data sets`, antes de `2.2 Formalizing visual text`.\n- Localize e corte no marcador da seção 3 que antecede `3.1 Bootstrapping for Visual Text`; crie um bloco próprio para o título/caput da seção 3, mesmo se ela tiver apenas o título, e inicie um bloco separado em `3.1`.\n- Não deixe o texto final de `2.4 Annotating Visual Text` absorver o título ou o caput da seção 3; encerre o bloco 2.4 imediatamente antes desse marcador."
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "- Divida a área atualmente coberta pelo bloco [4] no marcador `2.1 Data sets`: mantenha em um bloco o caput de `2 Data Analysis` anterior a esse marcador e crie outro bloco iniciado em `2.1 Data sets`, antes de `2.2 Formalizing visual text`.\n- Localize e corte no marcador da seção 3 que antecede `3.1 Bootstrapping for Visual Text`; crie um bloco próprio para o título/caput da seção 3, mesmo se ela tiver apenas o título, e inicie um bloco separado em `3.1`.\n- Não deixe o texto final de `2.4 Annotating Visual Text` absorver o título ou o caput da seção 3; encerre o bloco 2.4 imediatamente antes desse marcador.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [7] e [8] não isolam a seção 3: o marcador/título da seção 3, imediatamente anterior a `3.1 Bootstrapping for Visual Text`, foi absorvido pelo bloco [7] ou ficou em lacuna, pois não há bloco próprio para essa unidade."
+      ],
+      "consistente": false,
+      "insights": "- Localize o marcador da seção 3 imediatamente antes de `3.1 Bootstrapping for Visual Text` (a seção intitulada `3 Learning Visual Text`) e encerre o bloco de `2.4 Annotating Visual Text` imediatamente antes dele.\n- Crie um bloco próprio iniciado em `3 Learning Visual Text`, contendo somente o título e qualquer caput da seção 3 que anteceda `3.1`, mesmo que esse bloco contenha apenas o título.\n- Inicie outro bloco, separado, em `3.1 Bootstrapping for Visual Text`; não use esse subtítulo como substituto do bloco obrigatório da seção 3."
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094_v3_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "- Localize o marcador da seção 3 imediatamente antes de `3.1 Bootstrapping for Visual Text` (a seção intitulada `3 Learning Visual Text`) e encerre o bloco de `2.4 Annotating Visual Text` imediatamente antes dele.\n- Crie um bloco próprio iniciado em `3 Learning Visual Text`, contendo somente o título e qualquer caput da seção 3 que anteceda `3.1`, mesmo que esse bloco contenha apenas o título.\n- Inicie outro bloco, separado, em `3.1 Bootstrapping for Visual Text`; não use esse subtítulo como substituto do bloco obrigatório da seção 3.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094_v3_ciclo3.json"
+  }
+]

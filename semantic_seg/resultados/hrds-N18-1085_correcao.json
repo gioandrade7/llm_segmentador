@@ -1,0 +1,145 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 84,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6] contém o texto da subseção 1.3 e também o marcador da seção principal \"2 Exact Sequential Sampling\" no fim; esse marcador inicia uma unidade distinta, que deveria terminar antes do bloco [7] (2.1).",
+        "O bloco [14] contém o texto da seção 4 e também o marcador \"5 Training the Sampler Heuristic\" no fim. O bloco [15], que contém o texto da seção 5, ficou sem o seu marcador/título inicial; a seção 5 deve ser um bloco próprio iniciado por esse marcador."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco da subseção 1.3 imediatamente antes de `## **2 Exact Sequential Sampling**`; crie um bloco próprio para essa seção 2, mesmo que ele contenha apenas o título antes de `2.1 Exact sampling from HMMs`.\n- Termine o bloco da seção 4 imediatamente antes de `# **5 Training the Sampler Heuristic**`.\n- Inicie o bloco que contém `We now consider training the parameters _φ_ of our sampler` com o marcador literal `# **5 Training the Sampler Heuristic**`, preservando o título junto ao texto da seção 5."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 84,
+    "insights_aplicados": "- Termine o bloco da subseção 1.3 imediatamente antes de `## **2 Exact Sequential Sampling**`; crie um bloco próprio para essa seção 2, mesmo que ele contenha apenas o título antes de `2.1 Exact sampling from HMMs`.\n- Termine o bloco da seção 4 imediatamente antes de `# **5 Training the Sampler Heuristic**`.\n- Inicie o bloco que contém `We now consider training the parameters _φ_ of our sampler` com o marcador literal `# **5 Training the Sampler Heuristic**`, preservando o título junto ao texto da seção 5.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [14], iniciado em `3.3 Neural approximation of logprob-to-go`, é englobante: ele absorve a seção principal 4 (e possivelmente suas subdivisões) antes do início do bloco [15]. A seção 4 deveria iniciar em bloco próprio, e não permanecer dentro de [14]."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco iniciado por `## **3.3 Neural approximation of logprob-to-go**` imediatamente antes do marcador da seção principal 4, cujo início literal é `# **4 `.\n- Crie um bloco próprio para a seção 4, começando no marcador completo dessa seção e incluindo o texto dela até o próximo marcador estrutural.\n- Dentro da seção 4, se houver marcadores numerados de subseção, corte em cada um deles e gere um bloco próprio para cada subseção; não mantenha essas unidades dentro do bloco da seção 4 nem dentro de 3.3.\n- Termine o último bloco da seção 4 imediatamente antes de `# **5 Training the Sampler Heuristic**`.\n- Inicie o bloco da seção 5 exatamente em `# **5 Training the Sampler Heuristic**`, mantendo seu título e seu texto no mesmo bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 84,
+    "insights_aplicados": "- Termine o bloco iniciado por `## **3.3 Neural approximation of logprob-to-go**` imediatamente antes do marcador da seção principal 4, cujo início literal é `# **4 `.\n- Crie um bloco próprio para a seção 4, começando no marcador completo dessa seção e incluindo o texto dela até o próximo marcador estrutural.\n- Dentro da seção 4, se houver marcadores numerados de subseção, corte em cada um deles e gere um bloco próprio para cada subseção; não mantenha essas unidades dentro do bloco da seção 4 nem dentro de 3.3.\n- Termine o último bloco da seção 4 imediatamente antes de `# **5 Training the Sampler Heuristic**`.\n- Inicie o bloco da seção 5 exatamente em `# **5 Training the Sampler Heuristic**`, mantendo seu título e seu texto no mesmo bloco.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [2] e [3] violam o corte no marcador estrutural `## **1 Introduction**`: o marcador foi anexado ao fim de [2], enquanto o texto da introdução ficou em [3] sem o seu marcador.",
+        "Os blocos [8] e [9] violam o corte no marcador estrutural `## **2.3 The logprob-to-go for OOHMMs**`: o marcador foi anexado ao fim de [8], e [9] começa diretamente no corpo da subseção, sem o título.",
+        "Há uma lacuna provável entre [80] e [81]: o bloco da seção A termina de forma truncada em \"and\", antes do início do marcador da seção B, indicando que parte do conteúdo da Appendix A não foi incluída em nenhum bloco."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco `## **Abstract**` imediatamente antes do marcador literal `## **1 Introduction**`; inicie o bloco da introdução nesse próprio marcador, incluindo nele todo o texto que hoje aparece em [3].\n- Termine o bloco `## **2.2 Exact sampling from OOHMMs**` imediatamente antes de `## **2.3 The logprob-to-go for OOHMMs**`; inicie um bloco próprio de 2.3 nesse marcador e inclua nele o texto que começa em `Let us now work out the definition of Ht for OOHMMs`.\n- Ao segmentar a Appendix A, mantenha no bloco iniciado por `# **A The logprob-to-go for HMMs**` todo o conteúdo subsequente, inclusive fórmulas e texto após `base case ... = 1 and`, até imediatamente antes de `# **B Gradients for Training the Proposal Distribution**`; não descarte conteúdo entre esses dois marcadores."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 85,
+    "insights_aplicados": "- Termine o bloco `## **Abstract**` imediatamente antes do marcador literal `## **1 Introduction**`; inicie o bloco da introdução nesse próprio marcador, incluindo nele todo o texto que hoje aparece em [3].\n- Termine o bloco `## **2.2 Exact sampling from OOHMMs**` imediatamente antes de `## **2.3 The logprob-to-go for OOHMMs**`; inicie um bloco próprio de 2.3 nesse marcador e inclua nele o texto que começa em `Let us now work out the definition of Ht for OOHMMs`.\n- Ao segmentar a Appendix A, mantenha no bloco iniciado por `# **A The logprob-to-go for HMMs**` todo o conteúdo subsequente, inclusive fórmulas e texto após `base case ... = 1 and`, até imediatamente antes de `# **B Gradients for Training the Proposal Distribution**`; não descarte conteúdo entre esses dois marcadores.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [9], iniciado em `## **2.2 Exact sampling from OOHMMs**`, engloba a subseção marcada `## **2.3 The logprob-to-go for OOHMMs**`, que deveria iniciar um bloco próprio.",
+        "O bloco [80] da Appendix A termina abruptamente no meio da frase (`... base case ... = 1 and`) e há uma lacuna de conteúdo antes do início do bloco [81] (`# **B Gradients for Training the Proposal Distribution**`).",
+        "Os blocos [81] e [82] dividem indevidamente a mesma unidade `# **B Gradients for Training the Proposal Distribution**`: [82] começa no meio da frase final de [81], sem marcador estrutural que justifique um novo bloco."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco `## **2.2 Exact sampling from OOHMMs**` imediatamente antes do marcador literal `## **2.3 The logprob-to-go for OOHMMs**`; inicie um bloco próprio de 2.3 nesse marcador, incluindo o texto que começa em `Let us now work out the definition of Ht for OOHMMs`.\n- Na Appendix A, mantenha no bloco iniciado por `# **A The logprob-to-go for HMMs**` todo o conteúdo subsequente, inclusive fórmulas e texto após `base case ... = 1 and`, até imediatamente antes de `# **B Gradients for Training the Proposal Distribution**`; não interrompa nem descarte esse conteúdo.\n- Mantenha toda a Appendix B em um único bloco iniciado por `# **B Gradients for Training the Proposal Distribution**` e terminado imediatamente antes de `# **C Implementation Details**`; em particular, não separe o trecho que continua com `gradient for any rescaled version of the unnormalized distribution`."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "- Termine o bloco `## **2.2 Exact sampling from OOHMMs**` imediatamente antes do marcador literal `## **2.3 The logprob-to-go for OOHMMs**`; inicie um bloco próprio de 2.3 nesse marcador, incluindo o texto que começa em `Let us now work out the definition of Ht for OOHMMs`.\n- Na Appendix A, mantenha no bloco iniciado por `# **A The logprob-to-go for HMMs**` todo o conteúdo subsequente, inclusive fórmulas e texto após `base case ... = 1 and`, até imediatamente antes de `# **B Gradients for Training the Proposal Distribution**`; não interrompa nem descarte esse conteúdo.\n- Mantenha toda a Appendix B em um único bloco iniciado por `# **B Gradients for Training the Proposal Distribution**` e terminado imediatamente antes de `# **C Implementation Details**`; em particular, não separe o trecho que continua com `gradient for any rescaled version of the unnormalized distribution`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [14] incorpora indevidamente o marcador `# **4 Particle smoothing**` no seu fim, em vez de encerrar a seção 3.3 antes dele e iniciar a seção 4 em bloco próprio; não há bloco para o conteúdo da seção 4 antes do bloco [15], que já inicia a seção 5.",
+        "O bloco [16] engloba a seção 6 e sua primeira subdivisão (a tarefa de etiquetagem descrita antes de `6.2 String source separation`), que deveria iniciar em um bloco separado no marcador `6.1`.",
+        "O bloco [18] engloba a seção 7 e a primeira subdivisão de avaliação que precede `7.2 Results`; além disso, termina no fragmento `the KL divergence`, evidenciando que o restante dessa unidade não foi segmentado antes do bloco [19].",
+        "O bloco [78] termina no meio da frase da Appendix A, em `base case ... = 1 and`, e o bloco seguinte [79] já inicia a Appendix B; há uma lacuna de conteúdo não segmentado entre os blocos [78] e [79]."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `## **3.3 Neural approximation of logprob-to-go**` imediatamente antes do marcador literal `# **4 Particle smoothing**`; inicie nesse marcador um bloco próprio para toda a seção 4 e só o termine imediatamente antes de `# **5 Training the Sampler Heuristic**`.\n- Na seção 6, separe o caput iniciado por `# **6 Models for the Experiments**` da primeira subdivisão: inicie um bloco próprio no marcador `6.1` que introduz a tarefa de etiquetagem e contém o texto que termina em `We test the sampler on held-out sentences.`; termine-o antes de `## **6.2 String source separation**`.\n- Na seção 7, crie um bloco próprio no marcador `7.1`, para a unidade de avaliação que começa após o caput de `# **7 Experiments**`; preserve nela a continuação da definição da KL divergence e encerre-a imediatamente antes de `## **7.2 Results**`.\n- Na Appendix A, mantenha no bloco iniciado por `# **A The logprob-to-go for HMMs**` todo o conteúdo subsequente, inclusive fórmulas e o texto que continua após `base case ... = 1 and`, até imediatamente antes de `# **B Gradients for Training the Proposal Distribution**`; não interrompa nem descarte esse conteúdo."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 84,
+    "insights_aplicados": "- Encerre o bloco `## **3.3 Neural approximation of logprob-to-go**` imediatamente antes do marcador literal `# **4 Particle smoothing**`; inicie nesse marcador um bloco próprio para toda a seção 4 e só o termine imediatamente antes de `# **5 Training the Sampler Heuristic**`.\n- Na seção 6, separe o caput iniciado por `# **6 Models for the Experiments**` da primeira subdivisão: inicie um bloco próprio no marcador `6.1` que introduz a tarefa de etiquetagem e contém o texto que termina em `We test the sampler on held-out sentences.`; termine-o antes de `## **6.2 String source separation**`.\n- Na seção 7, crie um bloco próprio no marcador `7.1`, para a unidade de avaliação que começa após o caput de `# **7 Experiments**`; preserve nela a continuação da definição da KL divergence e encerre-a imediatamente antes de `## **7.2 Results**`.\n- Na Appendix A, mantenha no bloco iniciado por `# **A The logprob-to-go for HMMs**` todo o conteúdo subsequente, inclusive fórmulas e o texto que continua após `base case ... = 1 and`, até imediatamente antes de `# **B Gradients for Training the Proposal Distribution**`; não interrompa nem descarte esse conteúdo.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [80] está truncado: termina no fragmento \"and\" após a definição do caso-base de β_t, embora a Appendix A deva continuar até o marcador da Appendix B. Há uma lacuna de conteúdo entre [80] e [81]."
+      ],
+      "consistente": false,
+      "insights": "- Reextraia integralmente a Appendix A: inicie no marcador literal `# **A The logprob-to-go for HMMs**` e mantenha no mesmo bloco todas as fórmulas, recorrências e parágrafos que seguem a frase sobre o caso-base `( **_β_** _T_ ) _y_ = 1 and`; encerre-o somente imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`. Não use o fragmento final `and` como fim de bloco nem descarte o conteúdo restante da página 12."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 81,
+    "insights_aplicados": "- Reextraia integralmente a Appendix A: inicie no marcador literal `# **A The logprob-to-go for HMMs**` e mantenha no mesmo bloco todas as fórmulas, recorrências e parágrafos que seguem a frase sobre o caso-base `( **_β_** _T_ ) _y_ = 1 and`; encerre-o somente imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`. Não use o fragmento final `and` como fim de bloco nem descarte o conteúdo restante da página 12.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [5] contém indevidamente o marcador da subseção irmã `### **1.3 Applications**` no fim; a subseção 1.3 não foi gerada como bloco próprio antes do início da seção 2 em [6].",
+        "O bloco [6] engloba a seção 2 e sua subseção 2.1; deveria terminar imediatamente antes do marcador de `2.1 Exact sampling from HMMs`, que deve iniciar um bloco próprio antes de [7].",
+        "O bloco [19] contém indevidamente o marcador da seção irmã `# **8 Related Work**` no fim; não há bloco próprio para a seção 8 entre [19] e [20], indicando lacuna do conteúdo dessa seção.",
+        "O bloco [77] ainda está truncado no fragmento `and` após o caso-base da Appendix A; há lacuna entre [77] e [78], pois fórmulas, recorrências e texto restante da Appendix A não foram extraídos."
+      ],
+      "consistente": false,
+      "insights": "- Ao encontrar `### **1.3 Applications**`, encerre o bloco de `1.2 Relationship to particle filtering` imediatamente antes desse marcador e crie um bloco próprio para 1.3, que vai até imediatamente antes de `## **2 Exact Sequential Sampling**`.\n- Na seção 2, separe o caput `## **2 Exact Sequential Sampling**` da subseção `## **2.1 Exact sampling from HMMs**`: o bloco do caput termina antes de 2.1, e o bloco 2.1 termina imediatamente antes de `## **2.2 Exact sampling from OOHMMs**`.\n- Ao localizar `# **8 Related Work**`, inicie um bloco próprio nesse marcador e extraia todo o seu texto até imediatamente antes de `# **9 Conclusion**`; não deixe o marcador 8 no final do bloco `7.2 Results`.\n- Reextraia integralmente a Appendix A: inicie no marcador literal `# **A The logprob-to-go for HMMs**` e mantenha no mesmo bloco todas as fórmulas, recorrências e parágrafos que seguem a frase sobre o caso-base `( **_β_** _T_ ) _y_ = 1 and`; encerre-o somente imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`. Não use o fragmento final `and` como fim de bloco nem descarte o conteúdo restante da página 12."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 84,
+    "insights_aplicados": "- Ao encontrar `### **1.3 Applications**`, encerre o bloco de `1.2 Relationship to particle filtering` imediatamente antes desse marcador e crie um bloco próprio para 1.3, que vai até imediatamente antes de `## **2 Exact Sequential Sampling**`.\n- Na seção 2, separe o caput `## **2 Exact Sequential Sampling**` da subseção `## **2.1 Exact sampling from HMMs**`: o bloco do caput termina antes de 2.1, e o bloco 2.1 termina imediatamente antes de `## **2.2 Exact sampling from OOHMMs**`.\n- Ao localizar `# **8 Related Work**`, inicie um bloco próprio nesse marcador e extraia todo o seu texto até imediatamente antes de `# **9 Conclusion**`; não deixe o marcador 8 no final do bloco `7.2 Results`.\n- Reextraia integralmente a Appendix A: inicie no marcador literal `# **A The logprob-to-go for HMMs**` e mantenha no mesmo bloco todas as fórmulas, recorrências e parágrafos que seguem a frase sobre o caso-base `( **_β_** _T_ ) _y_ = 1 and`; encerre-o somente imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`. Não use o fragmento final `and` como fim de bloco nem descarte o conteúdo restante da página 12.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [7] e [8] pulam a unidade estrutural 2.1: o bloco [7] engloba o caput de `2 Exact Sequential Sampling` e o conteúdo de `2.1 Exact sampling from HMMs`, sem criar o bloco próprio exigido para 2.1.",
+        "Os blocos [12] e [13] fragmentam indevidamente a subseção `3.3 Neural approximation of logprob-to-go`: [13] começa com continuação sem marcador do texto iniciado em [12], em vez de esse texto permanecer no bloco de 3.3 até a seção 4.",
+        "O bloco [80] termina no meio da frase da Appendix A, após `and`, e há uma lacuna de conteúdo antes do início de [81], que já é a Appendix B. A Appendix A não foi reextraída integralmente."
+      ],
+      "consistente": false,
+      "insights": "- Na seção 2, crie três blocos consecutivos: o caput iniciado em `## **2 Exact Sequential Sampling**`, a subseção iniciada em `## **2.1 Exact sampling from HMMs**` e a subseção iniciada em `## **2.2 Exact sampling from OOHMMs**`. Encerre cada bloco imediatamente antes do próximo desses marcadores, mesmo que a profundidade Markdown dos dois marcadores de subseção seja igual à do caput.\n- Não encerre `3.3 Neural approximation of logprob-to-go` no fim da página 6 nem no comentário `<!-- actual model ... -->`. Mantenha no mesmo bloco o parágrafo que começa com `Arguably _φ_ has a harder modeling job than _θ_` e todo o texto subsequente, até imediatamente antes de `# **4 Particle smoothing**`.\n- Reextraia integralmente a Appendix A usando como início literal `# **A The logprob-to-go for HMMs**` e como limite final o marcador literal `# **B Gradients for Training the Proposal Distribution**`. Inclua todas as fórmulas, recorrências e parágrafos entre esses dois marcadores; não trate o fim de página nem a palavra final `and` da frase sobre `( **_β_** _T_ ) _y_ = 1 and` como término da unidade."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 85,
+    "insights_aplicados": "- Na seção 2, crie três blocos consecutivos: o caput iniciado em `## **2 Exact Sequential Sampling**`, a subseção iniciada em `## **2.1 Exact sampling from HMMs**` e a subseção iniciada em `## **2.2 Exact sampling from OOHMMs**`. Encerre cada bloco imediatamente antes do próximo desses marcadores, mesmo que a profundidade Markdown dos dois marcadores de subseção seja igual à do caput.\n- Não encerre `3.3 Neural approximation of logprob-to-go` no fim da página 6 nem no comentário `<!-- actual model ... -->`. Mantenha no mesmo bloco o parágrafo que começa com `Arguably _φ_ has a harder modeling job than _θ_` e todo o texto subsequente, até imediatamente antes de `# **4 Particle smoothing**`.\n- Reextraia integralmente a Appendix A usando como início literal `# **A The logprob-to-go for HMMs**` e como limite final o marcador literal `# **B Gradients for Training the Proposal Distribution**`. Inclua todas as fórmulas, recorrências e parágrafos entre esses dois marcadores; não trate o fim de página nem a palavra final `and` da frase sobre `( **_β_** _T_ ) _y_ = 1 and` como término da unidade.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [81] e [82]: o bloco [81] (Appendix A) termina de modo truncado em \"and\", logo após a definição do caso-base de β_T, embora a Appendix A deva continuar até imediatamente antes do marcador da Appendix B. Isso viola o limite estrutural entre os marcadores `# **A The logprob-to-go for HMMs**` e `# **B Gradients for Training the Proposal Distribution**`."
+      ],
+      "consistente": false,
+      "insights": "- Reextraia integralmente a Appendix A, iniciando no marcador literal `# **A The logprob-to-go for HMMs**` e terminando imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`.\n- Não encerre a Appendix A na página 12, após uma fórmula, nem na palavra `and` da frase que define o caso-base `( **_β_** _T_ ) _y_ = 1 and`; capture toda a continuação dessa frase, as recorrências, fórmulas e parágrafos subsequentes até a Appendix B.\n- Preserve `# **B Gradients for Training the Proposal Distribution**` como o início do bloco seguinte, sem incorporá-lo ao bloco da Appendix A."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 85,
+    "insights_aplicados": "- Reextraia integralmente a Appendix A, iniciando no marcador literal `# **A The logprob-to-go for HMMs**` e terminando imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`.\n- Não encerre a Appendix A na página 12, após uma fórmula, nem na palavra `and` da frase que define o caso-base `( **_β_** _T_ ) _y_ = 1 and`; capture toda a continuação dessa frase, as recorrências, fórmulas e parágrafos subsequentes até a Appendix B.\n- Preserve `# **B Gradients for Training the Proposal Distribution**` como o início do bloco seguinte, sem incorporá-lo ao bloco da Appendix A.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [81] e [82] apresentam uma lacuna: [81] (Appendix A) termina logo após o início da definição do caso-base de β_t, com apenas 359 caracteres, embora a Appendix A deva continuar com a conclusão da frase, recorrências, fórmulas e texto explicativo até o início da Appendix B. O conteúdo restante da Appendix A foi omitido antes de [82]."
+      ],
+      "consistente": false,
+      "insights": "- Reextraia integralmente a Appendix A, iniciando no marcador literal `# **A The logprob-to-go for HMMs**` e terminando imediatamente antes do marcador literal `# **B Gradients for Training the Proposal Distribution**`.\n- Não encerre o bloco da Appendix A na página 12 logo após a primeira fórmula nem na palavra `and` da frase que define o caso-base `( **_β_** _T_ ) _y_ = 1 and`; inclua toda a continuação dessa frase, as recorrências, fórmulas e parágrafos da Appendix A.\n- Use `# **B Gradients for Training the Proposal Distribution**` como âncora de término exclusiva da Appendix A e como início do bloco seguinte; não incorpore esse marcador nem qualquer texto da Appendix B ao bloco da Appendix A.\n- Verifique especificamente a transição entre as páginas 12 e 13: a Appendix A não pode ficar reduzida ao trecho introdutório de 359 caracteres se houver conteúdo antes do marcador da Appendix B."
+    },
+    "arquivo_blocos": "resultados/hrds-N18-1085_ciclo10.json"
+  }
+]

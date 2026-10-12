@@ -1,0 +1,134 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [19] trata o conteúdo da Table 4, iniciado por \"Prompt:\", como uma unidade estrutural autônoma. Como é conteúdo de tabela seguido de sua legenda, ele não deveria iniciar bloco próprio; deve permanecer no bloco da unidade textual anterior, [14]."
+      ],
+      "consistente": false,
+      "insights": "- Não inicie um bloco em `**Prompt:**` na página 5: esse texto é uma célula/conteúdo da Table 4, e `Table 4: Sample generated...` é sua legenda.\n- Incorpore todo o conteúdo da Table 4, incluindo o prompt, a amostra gerada e a legenda, ao bloco `**Multi-tasking Fine-Tuning:**`, sem criar uma unidade para a tabela."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- Não inicie um bloco em `**Prompt:**` na página 5: esse texto é uma célula/conteúdo da Table 4, e `Table 4: Sample generated...` é sua legenda.\n- Incorpore todo o conteúdo da Table 4, incluindo o prompt, a amostra gerada e a legenda, ao bloco `**Multi-tasking Fine-Tuning:**`, sem criar uma unidade para a tabela.",
+    "analise": {
+      "inconsistencias": [
+        "Lacuna: o conteúdo da Table 4 (incluindo `Prompt:`, a amostra gerada e a legenda `Table 4: Sample generated...`) não aparece em nenhum bloco. Ele deveria estar incorporado ao bloco [13] (`**Multi-tasking Fine-Tuning:**`), mas [13] termina na página 4 e o bloco seguinte na página 5 é [18], `Acknowledgements`."
+      ],
+      "consistente": false,
+      "insights": "- Não omita a Table 4, mesmo que sua posição diagramada na página 5 fique separada visualmente do texto de resultados.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4: o texto que começa em `**Prompt:**`, a resposta/amostra gerada e a legenda que começa em `Table 4: Sample generated...`.\n- Não inicie bloco em `**Prompt:**`, nem na legenda `Table 4: Sample generated...`: ambos são conteúdo de tabela, não divisões estruturais.\n- Faça o bloco `**Multi-tasking Fine-Tuning:**` alcançar a tabela antes de iniciar `6 Related Work`; não deixe o conteúdo da tabela sem bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Não omita a Table 4, mesmo que sua posição diagramada na página 5 fique separada visualmente do texto de resultados.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4: o texto que começa em `**Prompt:**`, a resposta/amostra gerada e a legenda que começa em `Table 4: Sample generated...`.\n- Não inicie bloco em `**Prompt:**`, nem na legenda `Table 4: Sample generated...`: ambos são conteúdo de tabela, não divisões estruturais.\n- Faça o bloco `**Multi-tasking Fine-Tuning:**` alcançar a tabela antes de iniciar `6 Related Work`; não deixe o conteúdo da tabela sem bloco.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [13] é englobante: além da subdivisão **Multi-tasking Fine-Tuning:** e da Table 4, ele não separa as seções numeradas subsequentes `6 Related Work` e `7 Conclusion`, que devem iniciar blocos próprios antes de `Acknowledgements` [14]."
+      ],
+      "consistente": false,
+      "insights": "- Não omita a Table 4, mesmo que sua posição diagramada na página 5 fique separada visualmente do texto de resultados.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4: o texto que começa em `**Prompt:**`, a resposta/amostra gerada e a legenda que começa em `Table 4: Sample generated...`.\n- Não inicie bloco em `**Prompt:**`, nem na legenda `Table 4: Sample generated...`: ambos são conteúdo de tabela, não divisões estruturais.\n- Após encerrar o texto e a Table 4 de `**Multi-tasking Fine-Tuning:**`, corte obrigatoriamente em `6 Related Work` e crie um bloco próprio para essa seção.\n- Corte novamente em `7 Conclusion` e crie um bloco próprio para essa seção; não a mantenha dentro do bloco de `**Multi-tasking Fine-Tuning:**` nem de `6 Related Work`.\n- Faça os blocos de `6 Related Work` e `7 Conclusion` precederem o bloco `**Acknowledgements.**`; não salte diretamente da Table 4 para os agradecimentos."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- Não omita a Table 4, mesmo que sua posição diagramada na página 5 fique separada visualmente do texto de resultados.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4: o texto que começa em `**Prompt:**`, a resposta/amostra gerada e a legenda que começa em `Table 4: Sample generated...`.\n- Não inicie bloco em `**Prompt:**`, nem na legenda `Table 4: Sample generated...`: ambos são conteúdo de tabela, não divisões estruturais.\n- Após encerrar o texto e a Table 4 de `**Multi-tasking Fine-Tuning:**`, corte obrigatoriamente em `6 Related Work` e crie um bloco próprio para essa seção.\n- Corte novamente em `7 Conclusion` e crie um bloco próprio para essa seção; não a mantenha dentro do bloco de `**Multi-tasking Fine-Tuning:**` nem de `6 Related Work`.\n- Faça os blocos de `6 Related Work` e `7 Conclusion` precederem o bloco `**Acknowledgements.**`; não salte diretamente da Table 4 para os agradecimentos.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [15] e [16]: o conteúdo da Table 4 — incluindo o campo `**Prompt:**`, a amostra de texto gerada e a legenda `Table 4: Sample generated...` — não foi incorporado ao bloco de `**Multi-tasking Fine-Tuning:**`, apesar de pertencer a essa subdivisão."
+      ],
+      "consistente": false,
+      "insights": "- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, ainda que ele esteja diagramado na página 5 e separado visualmente do parágrafo dessa subseção na página 4.\n- Inclua nesse mesmo bloco o trecho iniciado por `**Prompt:**`, a resposta ou amostra gerada subsequente e a legenda iniciada por `Table 4: Sample generated...`.\n- Não inicie blocos em `**Prompt:**` nem em `Table 4: Sample generated...`, pois ambos são conteúdo interno da tabela, não divisões estruturais.\n- Depois de incluir integralmente a Table 4 no bloco `**Multi-tasking Fine-Tuning:**`, corte em `6 Related Work`, criando o bloco próprio da seção, e corte novamente em `7 Conclusion`.\n- Mantenha os blocos `6 Related Work` e `7 Conclusion` antes de `**Acknowledgements.**`; não salte da Table 4 diretamente para os agradecimentos."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, ainda que ele esteja diagramado na página 5 e separado visualmente do parágrafo dessa subseção na página 4.\n- Inclua nesse mesmo bloco o trecho iniciado por `**Prompt:**`, a resposta ou amostra gerada subsequente e a legenda iniciada por `Table 4: Sample generated...`.\n- Não inicie blocos em `**Prompt:**` nem em `Table 4: Sample generated...`, pois ambos são conteúdo interno da tabela, não divisões estruturais.\n- Depois de incluir integralmente a Table 4 no bloco `**Multi-tasking Fine-Tuning:**`, corte em `6 Related Work`, criando o bloco próprio da seção, e corte novamente em `7 Conclusion`.\n- Mantenha os blocos `6 Related Work` e `7 Conclusion` antes de `**Acknowledgements.**`; não salte da Table 4 diretamente para os agradecimentos.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre o bloco [13], que termina na legenda da Table 4, e o bloco [14] (`Acknowledgements`): as seções `6 Related Work` e `7 Conclusion`, que deveriam ocorrer nesse intervalo, não foram segmentadas.",
+        "As diretrizes do ciclo anterior para cortar em `6 Related Work` e `7 Conclusion` não foram aplicadas; o salto de [13] para [14] omite duas unidades estruturais obrigatórias."
+      ],
+      "consistente": false,
+      "insights": "- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated...`; não crie blocos nesses elementos, pois são conteúdo interno da tabela.\n- Após o fim da legenda da Table 4, continue a leitura do texto da página 5 e localize literalmente o cabeçalho `6 Related Work`; crie um bloco próprio iniciado nesse cabeçalho, com todo o texto da seção até o próximo marcador.\n- Corte novamente no cabeçalho `7 Conclusion`, criando um bloco próprio para essa seção e seu texto, antes de `**Acknowledgements.**`.\n- Não salte da Table 4 diretamente para `**Acknowledgements.**`: preserve e segmente integralmente o intervalo textual entre a tabela e os agradecimentos.\n- Mantenha `**Acknowledgements.**` como bloco separado, iniciado somente depois do término de `7 Conclusion`.\n- Use como âncoras de corte os textos literais e distintos `6 Related Work`, `7 Conclusion` e `**Acknowledgements.**`, para evitar que o conteúdo dessas seções seja perdido entre janelas ou confundido com a tabela."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated...`; não crie blocos nesses elementos, pois são conteúdo interno da tabela.\n- Após o fim da legenda da Table 4, continue a leitura do texto da página 5 e localize literalmente o cabeçalho `6 Related Work`; crie um bloco próprio iniciado nesse cabeçalho, com todo o texto da seção até o próximo marcador.\n- Corte novamente no cabeçalho `7 Conclusion`, criando um bloco próprio para essa seção e seu texto, antes de `**Acknowledgements.**`.\n- Não salte da Table 4 diretamente para `**Acknowledgements.**`: preserve e segmente integralmente o intervalo textual entre a tabela e os agradecimentos.\n- Mantenha `**Acknowledgements.**` como bloco separado, iniciado somente depois do término de `7 Conclusion`.\n- Use como âncoras de corte os textos literais e distintos `6 Related Work`, `7 Conclusion` e `**Acknowledgements.**`, para evitar que o conteúdo dessas seções seja perdido entre janelas ou confundido com a tabela.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [13] e [14]: o bloco [13] termina no parágrafo de `**Multi-tasking Fine-Tuning:**` e não contém o conteúdo nem a legenda da Table 4, que deveria permanecer dentro desse bloco antes do cabeçalho `6 Related Work`."
+      ],
+      "consistente": false,
+      "insights": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e mantenha-o aberto até imediatamente antes do cabeçalho literal `6 Related Work`.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4 que ocorre após seu parágrafo, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda literal `Table 4: Sample generated...`; esses elementos são conteúdo interno da tabela e não iniciam blocos.\n- Não encerre `**Multi-tasking Fine-Tuning:**` na frase `Other metrics are negligibly affected by the auxiliary tasks.` se a Table 4 ainda aparecer na sequência visual ou textual da página.\n- Após o término da legenda da Table 4, localize o cabeçalho literal `6 Related Work` e inicie nele um bloco próprio; não deixe nenhum conteúdo entre a tabela e esse cabeçalho sem cobertura.\n- Mantenha `6 Related Work` como bloco de caput separado, mesmo quando ficar sem texto antes do primeiro subtítulo em negrito.\n- Corte em `**Story Generation:**` e em `**Common Sense Reasoning:**`, produzindo um bloco independente para cada subtítulo de Related Work.\n- Corte novamente no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão e seu texto antes de `**Acknowledgements.**`.\n- Mantenha `**Acknowledgements.**` em bloco separado, iniciado somente depois do término de `7 Conclusion`."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e mantenha-o aberto até imediatamente antes do cabeçalho literal `6 Related Work`.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4 que ocorre após seu parágrafo, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda literal `Table 4: Sample generated...`; esses elementos são conteúdo interno da tabela e não iniciam blocos.\n- Não encerre `**Multi-tasking Fine-Tuning:**` na frase `Other metrics are negligibly affected by the auxiliary tasks.` se a Table 4 ainda aparecer na sequência visual ou textual da página.\n- Após o término da legenda da Table 4, localize o cabeçalho literal `6 Related Work` e inicie nele um bloco próprio; não deixe nenhum conteúdo entre a tabela e esse cabeçalho sem cobertura.\n- Mantenha `6 Related Work` como bloco de caput separado, mesmo quando ficar sem texto antes do primeiro subtítulo em negrito.\n- Corte em `**Story Generation:**` e em `**Common Sense Reasoning:**`, produzindo um bloco independente para cada subtítulo de Related Work.\n- Corte novamente no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão e seu texto antes de `**Acknowledgements.**`.\n- Mantenha `**Acknowledgements.**` em bloco separado, iniciado somente depois do término de `7 Conclusion`.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [14] e [15]: o bloco [14] termina em “Other metrics are negligibly affected by the auxiliary tasks.”, mas o conteúdo subsequente da Table 4 — incluindo Prompt, amostra/resposta gerada e legenda — não foi incorporado antes do início de [15] em “6 Related Work”."
+      ],
+      "consistente": false,
+      "insights": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e mantenha-o aberto até imediatamente antes do cabeçalho literal `6 Related Work`.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4 que aparece após o seu parágrafo, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated...`; esses elementos são conteúdo interno de tabela e não iniciam blocos.\n- Não encerre o bloco `**Multi-tasking Fine-Tuning:**` na frase `Other metrics are negligibly affected by the auxiliary tasks.` quando a Table 4 ainda ocorrer depois dela na ordem extraída ou visual da página.\n- Depois do término da legenda da Table 4, localize o cabeçalho literal `6 Related Work` e inicie nele um bloco próprio, sem deixar conteúdo entre a tabela e esse cabeçalho sem cobertura.\n- Mantenha `6 Related Work` como bloco de caput separado, mesmo que não contenha texto antes do primeiro subtítulo em negrito.\n- Corte em `**Story Generation:**` e em `**Common Sense Reasoning:**`, produzindo um bloco independente para cada subtítulo de Related Work.\n- Corte no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão e seu texto até antes de `**Acknowledgements.**`.\n- Mantenha `**Acknowledgements.**` em bloco separado, iniciado imediatamente após o término de `7 Conclusion`."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e mantenha-o aberto até imediatamente antes do cabeçalho literal `6 Related Work`.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4 que aparece após o seu parágrafo, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated...`; esses elementos são conteúdo interno de tabela e não iniciam blocos.\n- Não encerre o bloco `**Multi-tasking Fine-Tuning:**` na frase `Other metrics are negligibly affected by the auxiliary tasks.` quando a Table 4 ainda ocorrer depois dela na ordem extraída ou visual da página.\n- Depois do término da legenda da Table 4, localize o cabeçalho literal `6 Related Work` e inicie nele um bloco próprio, sem deixar conteúdo entre a tabela e esse cabeçalho sem cobertura.\n- Mantenha `6 Related Work` como bloco de caput separado, mesmo que não contenha texto antes do primeiro subtítulo em negrito.\n- Corte em `**Story Generation:**` e em `**Common Sense Reasoning:**`, produzindo um bloco independente para cada subtítulo de Related Work.\n- Corte no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão e seu texto até antes de `**Acknowledgements.**`.\n- Mantenha `**Acknowledgements.**` em bloco separado, iniciado imediatamente após o término de `7 Conclusion`.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [14] e [19] tratam a Table 4 de forma inconsistente: o conteúdo e a legenda da tabela, que pertencem à subdivisão `**Multi-tasking Fine-Tuning:**`, foram incluídos no bloco [19] (`7 Conclusion`), enquanto o bloco [14] foi encerrado antes da tabela."
+      ],
+      "consistente": false,
+      "insights": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e mantenha-o aberto até imediatamente antes do cabeçalho literal `6 Related Work`.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated by GPT2 ...`; esses elementos são conteúdo interno de tabela e não iniciam blocos.\n- Não encerre o bloco `**Multi-tasking Fine-Tuning:**` na frase `Other metrics are negligibly affected by the auxiliary tasks.` se a Table 4 ainda aparecer depois dela na ordem extraída ou visual.\n- Mesmo que a ordem de extração apresente a Table 4 após o texto de `7 Conclusion`, associe a tabela ao bloco `**Multi-tasking Fine-Tuning:**`; não a inclua no bloco iniciado por `7 Conclusion`.\n- Depois da legenda da Table 4, localize o cabeçalho literal `6 Related Work` e inicie nele um bloco próprio, sem deixar conteúdo entre a tabela e esse cabeçalho sem cobertura.\n- Mantenha `6 Related Work` como bloco de caput separado, mesmo que não contenha texto antes do primeiro subtítulo em negrito.\n- Corte em `**Story Generation:**`, `**Common Sense Reasoning:**` e `**Multi-task Learning:**`, produzindo um bloco independente para cada subtítulo de Related Work.\n- Corte no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão e seu texto até antes de `**Acknowledgements.**`.\n- Mantenha `**Acknowledgements.**` em bloco separado, iniciado imediatamente após o término de `7 Conclusion`.\n- Mantenha `References` em bloco próprio e preserve cada entrada bibliográfica subsequente como um bloco independente."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e mantenha-o aberto até imediatamente antes do cabeçalho literal `6 Related Work`.\n- Incorpore ao bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive o trecho iniciado por `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated by GPT2 ...`; esses elementos são conteúdo interno de tabela e não iniciam blocos.\n- Não encerre o bloco `**Multi-tasking Fine-Tuning:**` na frase `Other metrics are negligibly affected by the auxiliary tasks.` se a Table 4 ainda aparecer depois dela na ordem extraída ou visual.\n- Mesmo que a ordem de extração apresente a Table 4 após o texto de `7 Conclusion`, associe a tabela ao bloco `**Multi-tasking Fine-Tuning:**`; não a inclua no bloco iniciado por `7 Conclusion`.\n- Depois da legenda da Table 4, localize o cabeçalho literal `6 Related Work` e inicie nele um bloco próprio, sem deixar conteúdo entre a tabela e esse cabeçalho sem cobertura.\n- Mantenha `6 Related Work` como bloco de caput separado, mesmo que não contenha texto antes do primeiro subtítulo em negrito.\n- Corte em `**Story Generation:**`, `**Common Sense Reasoning:**` e `**Multi-task Learning:**`, produzindo um bloco independente para cada subtítulo de Related Work.\n- Corte no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão e seu texto até antes de `**Acknowledgements.**`.\n- Mantenha `**Acknowledgements.**` em bloco separado, iniciado imediatamente após o término de `7 Conclusion`.\n- Mantenha `References` em bloco próprio e preserve cada entrada bibliográfica subsequente como um bloco independente.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [13] é englobante: iniciado em `**Multi-tasking Fine-Tuning:**`, ele absorve unidades estruturais posteriores que deveriam estar separadas, incluindo `6 Related Work`, seus subtítulos em negrito (`**Story Generation:**`, `**Common Sense Reasoning:**` e `**Multi-task Learning:**`) e `7 Conclusion`."
+      ],
+      "consistente": false,
+      "insights": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e encerre-o imediatamente antes do cabeçalho literal `6 Related Work`; não absorva nenhuma seção posterior nesse bloco.\n- Mantenha no bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive `**Prompt:**`, a resposta/amostra gerada e a legenda `Table 4: Sample generated by GPT2 ...`; esses trechos são conteúdo interno de tabela e não iniciam blocos.\n- Não encerre `**Multi-tasking Fine-Tuning:**` em `Other metrics are negligibly affected by the auxiliary tasks.` quando a Table 4 ainda estiver presente na extração.\n- Se a ordem extraída deslocar a Table 4 para depois de trechos das seções 6 ou 7, associe a tabela ao bloco `**Multi-tasking Fine-Tuning:**`, sem incorporá-la a `7 Conclusion`.\n- Localize o cabeçalho literal `6 Related Work` mesmo quando ele aparecer antes da Table 4 na ordem extraída, e crie nele um bloco de caput próprio.\n- Corte `6 Related Work` em cada subtítulo: crie blocos independentes iniciados em `**Story Generation:**`, `**Common Sense Reasoning:**` e `**Multi-task Learning:**`.\n- Corte no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão; não o deixe dentro de `**Multi-tasking Fine-Tuning:**` nem de `6 Related Work`.\n- Encerre `7 Conclusion` imediatamente antes de `**Acknowledgements.**` e mantenha `**Acknowledgements.**` como bloco independente.\n- Preserve `References` como bloco próprio e mantenha cada entrada bibliográfica subsequente em seu bloco individual, como já ocorre."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e encerre-o imediatamente antes do cabeçalho literal `6 Related Work`; não absorva nenhuma seção posterior nesse bloco.\n- Mantenha no bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive `**Prompt:**`, a resposta/amostra gerada e a legenda `Table 4: Sample generated by GPT2 ...`; esses trechos são conteúdo interno de tabela e não iniciam blocos.\n- Não encerre `**Multi-tasking Fine-Tuning:**` em `Other metrics are negligibly affected by the auxiliary tasks.` quando a Table 4 ainda estiver presente na extração.\n- Se a ordem extraída deslocar a Table 4 para depois de trechos das seções 6 ou 7, associe a tabela ao bloco `**Multi-tasking Fine-Tuning:**`, sem incorporá-la a `7 Conclusion`.\n- Localize o cabeçalho literal `6 Related Work` mesmo quando ele aparecer antes da Table 4 na ordem extraída, e crie nele um bloco de caput próprio.\n- Corte `6 Related Work` em cada subtítulo: crie blocos independentes iniciados em `**Story Generation:**`, `**Common Sense Reasoning:**` e `**Multi-task Learning:**`.\n- Corte no cabeçalho literal `7 Conclusion`, criando um bloco próprio para a conclusão; não o deixe dentro de `**Multi-tasking Fine-Tuning:**` nem de `6 Related Work`.\n- Encerre `7 Conclusion` imediatamente antes de `**Acknowledgements.**` e mantenha `**Acknowledgements.**` como bloco independente.\n- Preserve `References` como bloco próprio e mantenha cada entrada bibliográfica subsequente em seu bloco individual, como já ocorre.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [13] (`Multi-tasking Fine-Tuning`) é englobante: com 5.007 caracteres e abrangendo as págs. 4–5, absorve as unidades posteriores `6 Related Work`, seus subtítulos em negrito, `7 Conclusion` e/ou seu conteúdo, pois não há blocos próprios para essas unidades antes de [14].",
+        "Há lacuna estrutural entre [13] e [14]: os marcadores esperados `6 Related Work` e `7 Conclusion`, previstos pela estrutura e pelas diretrizes anteriores, não aparecem como blocos independentes."
+      ],
+      "consistente": false,
+      "insights": "- Inicie o bloco `**Multi-tasking Fine-Tuning:**` nesse rótulo e encerre-o antes do cabeçalho literal `6 Related Work`; não absorva seções posteriores nesse bloco.\n- Localize `6 Related Work` mesmo que a ordem de extração o apresente antes ou depois da Table 4, e crie um bloco de caput próprio iniciado nesse cabeçalho.\n- Dentro de `6 Related Work`, corte em cada subtítulo em negrito: crie blocos independentes em `**Story Generation:**`, `**Common Sense Reasoning:**` e `**Multi-task Learning:**`.\n- Inicie um bloco próprio no cabeçalho literal `7 Conclusion`; não o incorpore a `**Multi-tasking Fine-Tuning:**`, a `6 Related Work` nem a seus subtítulos.\n- Encerre o bloco `7 Conclusion` imediatamente antes de `**Acknowledgements.**` e mantenha `**Acknowledgements.**` como bloco independente.\n- Mantenha no bloco `**Multi-tasking Fine-Tuning:**` todo o conteúdo da Table 4, inclusive `**Prompt:**`, a amostra/resposta gerada e a legenda `Table 4: Sample generated by GPT2 ...`; esses elementos são conteúdo interno de tabela, não novos blocos.\n- Se a Table 4 surgir na extração depois de trechos de `6 Related Work` ou `7 Conclusion`, reassocie-a a `**Multi-tasking Fine-Tuning:**` sem deixar que ela estenda esse bloco sobre os cabeçalhos das seções 6 e 7.\n- Preserve `References` como bloco próprio e mantenha cada entrada bibliográfica subsequente em um bloco individual."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1615_v3_ciclo10.json"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "prefixo": "resultados/hrds-D13-1134_v2",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-D13-1134.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 29,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 29,
+      "fronteiras_gabarito": 30,
+      "acertos": 29,
+      "precisao": 1.0,
+      "revocacao": 0.9666666666666667,
+      "f1": 0.983050847457627,
+      "fins": {
+        "previstos": 29,
+        "gabarito": 30,
+        "fins_nao_localizados": 0,
+        "acertos": 29,
+        "precisao": 1.0,
+        "revocacao": 0.9666666666666667,
+        "f1": 0.983050847457627
+      },
+      "blocos_exatos": {
+        "acertos": 28,
+        "precisao": 0.9655172413793104,
+        "revocacao": 0.9333333333333333,
+        "f1": 0.9491525423728815
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 2,
+      "blocos": 30,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 30,
+      "fronteiras_gabarito": 30,
+      "acertos": 30,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 30,
+        "gabarito": 30,
+        "fins_nao_localizados": 0,
+        "acertos": 30,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "blocos_exatos": {
+        "acertos": 30,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

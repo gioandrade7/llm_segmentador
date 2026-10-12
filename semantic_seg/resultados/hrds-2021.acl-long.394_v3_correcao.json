@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 50,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "Lacuna entre os blocos [5] e [6]: a seção principal 3 não foi segmentada. O bloco [6] começa diretamente em \"3.1 Branch Selector\", mas deve existir antes dele um bloco próprio iniciado pelo marcador da seção 3, contendo seu título e eventual texto introdutório anterior à subseção 3.1."
+      ],
+      "consistente": false,
+      "insights": "- Localize e crie um bloco separado para o marcador da seção principal 3, situado entre o fim de \"2.2 Seq2Tree Model\" e o início de \"3.1 Branch Selector\". Inclua nesse bloco o título da seção 3 e todo texto de abertura que anteceder \"3.1\"; encerre-o imediatamente antes desse marcador.\n- Preserve \"3.1 Branch Selector\" como bloco independente, sem incorporá-lo ao bloco da seção 3."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Localize e crie um bloco separado para o marcador da seção principal 3, situado entre o fim de \"2.2 Seq2Tree Model\" e o início de \"3.1 Branch Selector\". Inclua nesse bloco o título da seção 3 e todo texto de abertura que anteceder \"3.1\"; encerre-o imediatamente antes desse marcador.\n- Preserve \"3.1 Branch Selector\" como bloco independente, sem incorporá-lo ao bloco da seção 3.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394_v3_ciclo2.json"
+  }
+]

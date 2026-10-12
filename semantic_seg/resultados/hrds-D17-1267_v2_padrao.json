@@ -1,0 +1,40 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "título do documento",
+      "exemplo": "Identifying Cognate Sets Across Dictionaries of Related Languages"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção numerada",
+      "exemplo": "1 Introduction"
+    },
+    {
+      "nivel": 3,
+      "nome": "subseção numerada",
+      "exemplo": "4.1 Data Sets"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção final não numerada",
+      "exemplo": "Acknowledgments"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção final não numerada",
+      "exemplo": "References"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    5,
+    6,
+    9,
+    10
+  ],
+  "total_paginas": 10
+}

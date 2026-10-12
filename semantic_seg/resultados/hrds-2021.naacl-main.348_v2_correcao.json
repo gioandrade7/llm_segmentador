@@ -1,0 +1,39 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna aparente entre os blocos [9] e [10]: o bloco [9] termina no meio da oração \"learn a linear projection\", enquanto o bloco seguinte já inicia a subseção \"Results\". O restante da descrição de métricas/baselines — e eventuais tabelas, legendas ou texto corrido nesse intervalo — não foi incluído no bloco [9]."
+      ],
+      "consistente": false,
+      "insights": "- Ao segmentar **Tasks and Metrics**, preserve no mesmo bloco todo o texto da subseção até o marcador literal **Results.**; não encerre o bloco após \"learn a linear projection\", pois essa oração continua.\n- Inclua em **Tasks and Metrics** quaisquer tabelas, legendas e texto associado que ocorram antes de **Results.**, pois eles não iniciam unidades estruturais independentes neste documento.\n- Inicie o bloco seguinte exatamente em **Results.** somente depois de capturar integralmente o conteúdo que completa a subseção anterior."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.348_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Ao segmentar **Tasks and Metrics**, preserve no mesmo bloco todo o texto da subseção até o marcador literal **Results.**; não encerre o bloco após \"learn a linear projection\", pois essa oração continua.\n- Inclua em **Tasks and Metrics** quaisquer tabelas, legendas e texto associado que ocorram antes de **Results.**, pois eles não iniciam unidades estruturais independentes neste documento.\n- Inicie o bloco seguinte exatamente em **Results.** somente depois de capturar integralmente o conteúdo que completa a subseção anterior.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [10] (\"Tasks and Metrics\") termina no meio da oração \"learn a linear projection\", antes do marcador seguinte \"Results.\" do bloco [11], caracterizando uma lacuna de conteúdo na subseção."
+      ],
+      "consistente": false,
+      "insights": "- Ao segmentar **Tasks and Metrics**, mantenha no mesmo bloco todo o conteúdo da subseção desde o marcador **Tasks and Metrics.** até imediatamente antes do marcador literal **Results.**.\n- Não encerre **Tasks and Metrics** após o trecho \"learn a linear projection\": localize e inclua a continuação dessa oração e todo o texto subsequente que ainda pertença à subseção.\n- Inclua no bloco **Tasks and Metrics** todas as tabelas, legendas, notas de rodapé, URLs e texto explicativo situados entre **Tasks and Metrics.** e **Results.**; esses elementos não iniciam blocos independentes.\n- Inicie o bloco de resultados somente no marcador literal **Results.**, depois de capturar integralmente o trecho final de **Tasks and Metrics**."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.348_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Ao segmentar **Tasks and Metrics**, mantenha no mesmo bloco todo o conteúdo da subseção desde o marcador **Tasks and Metrics.** até imediatamente antes do marcador literal **Results.**.\n- Não encerre **Tasks and Metrics** após o trecho \"learn a linear projection\": localize e inclua a continuação dessa oração e todo o texto subsequente que ainda pertença à subseção.\n- Inclua no bloco **Tasks and Metrics** todas as tabelas, legendas, notas de rodapé, URLs e texto explicativo situados entre **Tasks and Metrics.** e **Results.**; esses elementos não iniciam blocos independentes.\n- Inicie o bloco de resultados somente no marcador literal **Results.**, depois de capturar integralmente o trecho final de **Tasks and Metrics**.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.348_v2_ciclo3.json"
+  }
+]

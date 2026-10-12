@@ -1,0 +1,44 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 50,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [2] agrupa o Abstract com o marcador da seção principal \"1 Introduction\"; o marcador de seção foi capturado no fim do bloco anterior e não inicia um bloco próprio.",
+        "Há uma lacuna entre os blocos [10] e [11]: após a seção 4.2, a numeração salta para \"6 Experiment\", indicando que a seção principal 5 e seu conteúdo não foram segmentados.",
+        "O bloco [12] captura no seu fim o marcador \"6.2 Different Approaches to Learn Vector Representations for Nonterminals\", mas não há bloco próprio para a subseção 6.2 antes do bloco [13], que já inicia a subseção 6.3.",
+        "O bloco [30] invade o início da referência seguinte (termina com \"- Zhon\"), enquanto o bloco [31] inicia a mesma referência de Zhongqiang Huang; a fronteira entre essas duas entradas bibliográficas está sobreposta ou duplicada."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco do Abstract imediatamente antes de \"1 Introduction\" e crie um bloco próprio para \"1 Introduction\", incluindo todo o texto introdutório até \"2 Related Work\".\n- Entre \"4.2 The Model\" e \"6 Experiment\", localize e segmente separadamente a seção principal 5 e quaisquer subseções que ela contenha; não salte da seção 4 diretamente para a 6.\n- Faça \"6.2 Different Approaches to Learn Vector Representations for Nonterminals\" iniciar um bloco próprio, com seu texto até imediatamente antes de \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\".\n- Nas referências, termine a entrada de Hieu Hoang e Philipp Koehn imediatamente antes do marcador \"- Zhongqiang Huang, Jacob Devlin, and Rabih Zbib. 2013.\"; inicie então uma nova entrada para essa referência, sem repetir nem deixar fragmentos como \"- Zhon\" no bloco anterior."
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Encerre o bloco do Abstract imediatamente antes de \"1 Introduction\" e crie um bloco próprio para \"1 Introduction\", incluindo todo o texto introdutório até \"2 Related Work\".\n- Entre \"4.2 The Model\" e \"6 Experiment\", localize e segmente separadamente a seção principal 5 e quaisquer subseções que ela contenha; não salte da seção 4 diretamente para a 6.\n- Faça \"6.2 Different Approaches to Learn Vector Representations for Nonterminals\" iniciar um bloco próprio, com seu texto até imediatamente antes de \"6.3 Effect of the Target Semantic Nonterminal Refinement Models\".\n- Nas referências, termine a entrada de Hieu Hoang e Philipp Koehn imediatamente antes do marcador \"- Zhongqiang Huang, Jacob Devlin, and Rabih Zbib. 2013.\"; inicie então uma nova entrada para essa referência, sem repetir nem deixar fragmentos como \"- Zhon\" no bloco anterior.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [12] engloba o caput da seção 5, os itens numerados 1 e 2 da lista de features e o texto que retoma a seção após a lista; cada marcador de item deve iniciar sua própria unidade, e a retomada sem marcador deve ficar separada do último item.",
+        "O bloco [13] engloba o texto introdutório da seção 6 e os três itens numerados das perguntas experimentais; os itens 1, 2 e 3 são unidades distintas e devem iniciar blocos próprios.",
+        "O bloco [45] reúne pelo menos duas entradas bibliográficas: a referência de Jonathan Weese, Chris Callison-Burch e Adam Lopez termina após “Association for Computational Linguistics.”, mas o bloco prossegue com outra referência que termina em “Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning, pages 678–687.”."
+      ],
+      "consistente": false,
+      "insights": "- Na seção 5, encerre o bloco do caput “5 Decoding” imediatamente antes do item “1. Source-side semantic similarity...”; crie um bloco para cada um dos itens 1 e 2 da lista de features.\n- Após o item 2 da lista na seção 5, separe o parágrafo sem marcador que retoma a explicação da seção — incluindo o texto sobre o conjunto de desenvolvimento e a Figure 2 — em um bloco próprio, distinto do item 2.\n- Na seção 6, mantenha o enunciado introdutório de “6 Experiment” em seu caput e corte antes de “1. Which approach is better...”; crie blocos independentes para as perguntas numeradas 1, 2 e 3, nesta ordem.\n- Divida o bloco bibliográfico [45] logo após o fim da entrada “Jonathan Weese, Chris Callison-Burch, and Adam Lopez. 2012. Using categorial grammar to label translation rules. ... Association for Computational Linguistics.”; inicie outro bloco na entrada bibliográfica seguinte, em vez de mantê-la no mesmo bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 58,
+    "insights_aplicados": "- Na seção 5, encerre o bloco do caput “5 Decoding” imediatamente antes do item “1. Source-side semantic similarity...”; crie um bloco para cada um dos itens 1 e 2 da lista de features.\n- Após o item 2 da lista na seção 5, separe o parágrafo sem marcador que retoma a explicação da seção — incluindo o texto sobre o conjunto de desenvolvimento e a Figure 2 — em um bloco próprio, distinto do item 2.\n- Na seção 6, mantenha o enunciado introdutório de “6 Experiment” em seu caput e corte antes de “1. Which approach is better...”; crie blocos independentes para as perguntas numeradas 1, 2 e 3, nesta ordem.\n- Divida o bloco bibliográfico [45] logo após o fim da entrada “Jonathan Weese, Chris Callison-Burch, and Adam Lopez. 2012. Using categorial grammar to label translation rules. ... Association for Computational Linguistics.”; inicie outro bloco na entrada bibliográfica seguinte, em vez de mantê-la no mesmo bloco.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D15-1164_ciclo3.json"
+  }
+]

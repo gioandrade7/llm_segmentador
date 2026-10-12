@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 63,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [8] engloba uma subunidade iniciada pelo título em negrito \"Overall performance (Figure 2a).\" dentro da seção 5.2, em vez de separar o caput de \"5.2 Prediction Performance\" e essa subunidade; o mesmo bloco pode reunir outros subtítulos em negrito da análise de desempenho."
+      ],
+      "consistente": false,
+      "insights": "- Na seção \"5.2 Prediction Performance\", corte antes de \"**Overall performance (Figure 2a).**\": deixe o marcador \"5.2\" no bloco de caput e inicie um bloco próprio nesse subtítulo em negrito.\n- Dentro da seção 5.2, procure os demais rótulos de parágrafo em negrito que introduzem análises distintas e inicie um bloco em cada um deles; não os mantenha agrupados no bloco iniciado por \"Overall performance\"."
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1289_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 70,
+    "insights_aplicados": "- Na seção \"5.2 Prediction Performance\", corte antes de \"**Overall performance (Figure 2a).**\": deixe o marcador \"5.2\" no bloco de caput e inicie um bloco próprio nesse subtítulo em negrito.\n- Dentro da seção 5.2, procure os demais rótulos de parágrafo em negrito que introduzem análises distintas e inicie um bloco em cada um deles; não os mantenha agrupados no bloco iniciado por \"Overall performance\".",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D19-1289_v3_ciclo2.json"
+  }
+]

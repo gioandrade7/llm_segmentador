@@ -1,0 +1,95 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [46] agrupa duas entradas bibliográficas distintas de Keyulu Xu et al.: a referência de 2018a, “Representation learning on graphs with jumping knowledge networks”, e a referência de 2018b, “Graph2seq: Graph to sequence learning with attention-based neural networks”. Cada entrada deve constituir um bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Separe o bloco de referências atualmente correspondente a Keyulu Xu et al. em dois blocos: inicie um em “- Keyulu Xu, Chengtao Li, Yonglong Tian...” para a obra de 2018a e outro na ocorrência seguinte de “Keyulu Xu et al. 2018b. Graph2seq: Graph to sequence learning with attention-based neural networks.”\n- Preserve as blocos distintos todas as demais entradas de References; não una obras diferentes apenas por terem os mesmos autores."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Separe o bloco de referências atualmente correspondente a Keyulu Xu et al. em dois blocos: inicie um em “- Keyulu Xu, Chengtao Li, Yonglong Tian...” para a obra de 2018a e outro na ocorrência seguinte de “Keyulu Xu et al. 2018b. Graph2seq: Graph to sequence learning with attention-based neural networks.”\n- Preserve as blocos distintos todas as demais entradas de References; não una obras diferentes apenas por terem os mesmos autores.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [22] engloba a unidade \"6 Conclusion\" e o marcador de unidade subsequente \"# **Acknowledgments**\"; o marcador de agradecimentos deveria iniciar um bloco próprio, mesmo que fique apenas com o título antes de \"References\"."
+      ],
+      "consistente": false,
+      "insights": "- Separe o bloco de \"6 Conclusion\" imediatamente antes da ocorrência literal de \"# **Acknowledgments**\"; inicie aí um bloco próprio de \"Acknowledgments\", mesmo que ele contenha somente esse título.\n- Mantenha \"# **References**\" em bloco separado de \"Acknowledgments\" e preserve cada entrada bibliográfica subsequente como bloco próprio.\n- Preserve separados os dois trabalhos de Xu nas referências: a entrada de \"- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a\" e a entrada seguinte de \"- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq\" não devem ser unidas.\n- Não una entradas distintas de References apenas por terem autores ou sobrenomes semelhantes."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "- Separe o bloco de \"6 Conclusion\" imediatamente antes da ocorrência literal de \"# **Acknowledgments**\"; inicie aí um bloco próprio de \"Acknowledgments\", mesmo que ele contenha somente esse título.\n- Mantenha \"# **References**\" em bloco separado de \"Acknowledgments\" e preserve cada entrada bibliográfica subsequente como bloco próprio.\n- Preserve separados os dois trabalhos de Xu nas referências: a entrada de \"- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a\" e a entrada seguinte de \"- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq\" não devem ser unidas.\n- Não una entradas distintas de References apenas por terem autores ou sobrenomes semelhantes.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [13], iniciado em \"3.2 Parameter Settings\", engloba também a unidade subsequente 3.3; falta um bloco próprio iniciado no marcador de 3.3 antes do bloco [14].",
+        "O bloco [15], iniciado em \"3.5 Results on Syntax-based NMT\", engloba as unidades estruturais posteriores da seção 4 que antecedem \"4.3 Case Study\"; faltam blocos próprios para o caput da seção 4 e para as subseções 4.1 e 4.2 antes do bloco [16]."
+      ],
+      "consistente": false,
+      "insights": "- Corte o bloco de \"3.2 Parameter Settings\" no marcador da subseção 3.3 e crie um bloco próprio para 3.3, com seu título e todo o texto até imediatamente antes de \"3.4 Results on AMR-to-text Generation\".\n- Após o fim de \"3.5 Results on Syntax-based NMT\", localize o marcador da seção principal 4 e crie um bloco próprio para o caput de \"4 ...\", sem absorvê-lo no bloco de 3.5.\n- Dentro da seção 4, crie blocos separados iniciados nos marcadores 4.1 e 4.2; termine o bloco de 4.2 imediatamente antes de \"4.3 Case Study\", que deve permanecer em seu bloco próprio.\n- Separe o bloco de \"6 Conclusion\" imediatamente antes da ocorrência literal de \"# **Acknowledgments**\"; inicie aí um bloco próprio de \"Acknowledgments\", mesmo que ele contenha somente esse título.\n- Mantenha \"# **References**\" em bloco separado de \"Acknowledgments\" e preserve cada entrada bibliográfica subsequente como bloco próprio.\n- Preserve separados os dois trabalhos de Xu nas referências: a entrada de \"- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a\" e a entrada seguinte de \"- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq\" não devem ser unidas.\n- Não una entradas distintas de \"References\" apenas por terem autores ou sobrenomes semelhantes."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Corte o bloco de \"3.2 Parameter Settings\" no marcador da subseção 3.3 e crie um bloco próprio para 3.3, com seu título e todo o texto até imediatamente antes de \"3.4 Results on AMR-to-text Generation\".\n- Após o fim de \"3.5 Results on Syntax-based NMT\", localize o marcador da seção principal 4 e crie um bloco próprio para o caput de \"4 ...\", sem absorvê-lo no bloco de 3.5.\n- Dentro da seção 4, crie blocos separados iniciados nos marcadores 4.1 e 4.2; termine o bloco de 4.2 imediatamente antes de \"4.3 Case Study\", que deve permanecer em seu bloco próprio.\n- Separe o bloco de \"6 Conclusion\" imediatamente antes da ocorrência literal de \"# **Acknowledgments**\"; inicie aí um bloco próprio de \"Acknowledgments\", mesmo que ele contenha somente esse título.\n- Mantenha \"# **References**\" em bloco separado de \"Acknowledgments\" e preserve cada entrada bibliográfica subsequente como bloco próprio.\n- Preserve separados os dois trabalhos de Xu nas referências: a entrada de \"- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a\" e a entrada seguinte de \"- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq\" não devem ser unidas.\n- Não una entradas distintas de \"References\" apenas por terem autores ou sobrenomes semelhantes.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [18], iniciado em \"4.1 Effect of Layer Aggregation Method\", engloba também a subseção 4.2, que deveria iniciar um bloco próprio; há salto direto de [18] para [19] (\"4.3 Case Study\").",
+        "O bloco [21] agrega o conteúdo de \"6 Conclusion\" e a unidade autônoma \"Acknowledgments\"; o marcador de agradecimentos deveria iniciar um bloco separado antes de \"References\"."
+      ],
+      "consistente": false,
+      "insights": "- Dentro da seção 4, localize o marcador da subseção `4.2` (a subseção entre `4.1 Effect of Layer Aggregation Method` e `4.3 Case Study`) e inicie nele um bloco próprio; termine o bloco de 4.1 imediatamente antes desse marcador e termine o bloco de 4.2 imediatamente antes de `4.3 Case Study`.\n- Separe o bloco de `6 Conclusion` imediatamente antes da ocorrência literal de `# **Acknowledgments**`; inicie nesse marcador um bloco próprio de `Acknowledgments`, com todo o texto de agradecimentos até antes de `# **References**`.\n- Mantenha `# **References**` em bloco separado de `Acknowledgments` e preserve cada entrada bibliográfica subsequente como um bloco próprio.\n- Preserve separados os dois trabalhos de Xu nas referências: a entrada iniciada por `- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a` e a entrada seguinte iniciada por `- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq`.\n- Não una entradas distintas de `References` apenas por terem autores ou sobrenomes semelhantes."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Dentro da seção 4, localize o marcador da subseção `4.2` (a subseção entre `4.1 Effect of Layer Aggregation Method` e `4.3 Case Study`) e inicie nele um bloco próprio; termine o bloco de 4.1 imediatamente antes desse marcador e termine o bloco de 4.2 imediatamente antes de `4.3 Case Study`.\n- Separe o bloco de `6 Conclusion` imediatamente antes da ocorrência literal de `# **Acknowledgments**`; inicie nesse marcador um bloco próprio de `Acknowledgments`, com todo o texto de agradecimentos até antes de `# **References**`.\n- Mantenha `# **References**` em bloco separado de `Acknowledgments` e preserve cada entrada bibliográfica subsequente como um bloco próprio.\n- Preserve separados os dois trabalhos de Xu nas referências: a entrada iniciada por `- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a` e a entrada seguinte iniciada por `- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq`.\n- Não una entradas distintas de `References` apenas por terem autores ou sobrenomes semelhantes.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [12], iniciado em `3.1 Data and preprocessing`, não separa a subseção `3.2`, que deveria constituir um bloco próprio antes do bloco [13], iniciado em `3.3 Metrics and Baselines`.",
+        "O bloco [18], iniciado em `4.2 Effect of Subgraphs`, engloba também a subseção `4.3 Case Study`; esta deve começar em bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Dentro do trecho atualmente coberto pelo bloco `3.1 Data and preprocessing`, localize o marcador literal iniciado por `3.2` e inicie nele um bloco próprio; encerre o bloco de `3.1` imediatamente antes desse marcador e encerre o novo bloco de `3.2` imediatamente antes de `3.3 Metrics and Baselines`.\n- Dentro da seção 4, localize o marcador `4.3 Case Study` após `4.2 Effect of Subgraphs`; encerre o bloco de `4.2` imediatamente antes dele e crie um bloco próprio para `4.3`, incluindo seu texto até o próximo marcador de seção.\n- Mantenha `6 Conclusion` separado de `Acknowledgments`: inicie um bloco de agradecimentos em `# **Acknowledgments**` e termine-o imediatamente antes de `# **References**`.\n- Mantenha `# **References**` como bloco próprio e preserve cada entrada bibliográfica subsequente, iniciada por `-`, em seu próprio bloco, sem unir referências adjacentes.\n- Preserve em blocos distintos as referências iniciadas por `- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a` e por `- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Dentro do trecho atualmente coberto pelo bloco `3.1 Data and preprocessing`, localize o marcador literal iniciado por `3.2` e inicie nele um bloco próprio; encerre o bloco de `3.1` imediatamente antes desse marcador e encerre o novo bloco de `3.2` imediatamente antes de `3.3 Metrics and Baselines`.\n- Dentro da seção 4, localize o marcador `4.3 Case Study` após `4.2 Effect of Subgraphs`; encerre o bloco de `4.2` imediatamente antes dele e crie um bloco próprio para `4.3`, incluindo seu texto até o próximo marcador de seção.\n- Mantenha `6 Conclusion` separado de `Acknowledgments`: inicie um bloco de agradecimentos em `# **Acknowledgments**` e termine-o imediatamente antes de `# **References**`.\n- Mantenha `# **References**` como bloco próprio e preserve cada entrada bibliográfica subsequente, iniciada por `-`, em seu próprio bloco, sem unir referências adjacentes.\n- Preserve em blocos distintos as referências iniciadas por `- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a` e por `- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [12] engloba indevidamente as subseções irmãs 3.1 Data and preprocessing e 3.2; o marcador 3.2 e seu conteúdo não receberam bloco próprio antes do bloco [13], iniciado em 3.3.",
+        "O bloco [18] engloba indevidamente as subseções irmãs 4.2 Effect of Subgraphs e 4.3 Case Study; o marcador 4.3 e seu conteúdo não receberam bloco próprio antes do bloco [19], iniciado em 5 Related Work."
+      ],
+      "consistente": false,
+      "insights": "- Dentro do trecho atualmente coberto por `3.1 Data and preprocessing`, localize o marcador literal iniciado por `3.2`, encerre o bloco de `3.1` imediatamente antes dele e crie um bloco próprio de `3.2`, terminando-o imediatamente antes de `3.3 Metrics and Baselines`.\n- Dentro da seção 4, localize o marcador `4.3 Case Study` após `4.2 Effect of Subgraphs`, encerre o bloco de `4.2` imediatamente antes dele e crie um bloco próprio para `4.3`, incluindo seu texto até imediatamente antes de `5 Related Work`.\n- Mantenha `6 Conclusion` separado de `Acknowledgments`: inicie o bloco de agradecimentos em `# **Acknowledgments**` e termine-o imediatamente antes de `# **References**`.\n- Mantenha `# **References**` como bloco próprio e preserve cada entrada bibliográfica subsequente iniciada por `-` em um bloco próprio, sem unir referências adjacentes.\n- Preserve em blocos distintos as referências iniciadas por `- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a` e por `- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "- Dentro do trecho atualmente coberto por `3.1 Data and preprocessing`, localize o marcador literal iniciado por `3.2`, encerre o bloco de `3.1` imediatamente antes dele e crie um bloco próprio de `3.2`, terminando-o imediatamente antes de `3.3 Metrics and Baselines`.\n- Dentro da seção 4, localize o marcador `4.3 Case Study` após `4.2 Effect of Subgraphs`, encerre o bloco de `4.2` imediatamente antes dele e crie um bloco próprio para `4.3`, incluindo seu texto até imediatamente antes de `5 Related Work`.\n- Mantenha `6 Conclusion` separado de `Acknowledgments`: inicie o bloco de agradecimentos em `# **Acknowledgments**` e termine-o imediatamente antes de `# **References**`.\n- Mantenha `# **References**` como bloco próprio e preserve cada entrada bibliográfica subsequente iniciada por `-` em um bloco próprio, sem unir referências adjacentes.\n- Preserve em blocos distintos as referências iniciadas por `- Keyulu Xu, Chengtao Li, Yonglong Tian... 2018a` e por `- Kun Xu, Lingfei Wu, Zhiguo Wang... 2018b. Graph2seq`.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.640_v2_ciclo7.json"
+  }
+]

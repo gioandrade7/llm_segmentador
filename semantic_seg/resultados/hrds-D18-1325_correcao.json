@@ -1,0 +1,40 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 65,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [5] contém a subseção \"2.1 Hierarchical Attention Network\" e incorpora, no seu final, o marcador da unidade irmã \"2.2 Context Gating\"; o marcador 2.2 deveria iniciar um bloco próprio, mesmo que contenha apenas o título.",
+        "O bloco [6] contém a subseção \"2.3 Integrated Model\" e incorpora, no seu final, o marcador da seção principal \"3 Experimental Setup\"; a seção 3 deveria iniciar um bloco próprio antes do bloco [7] (\"3.1 Datasets and Evaluation Metrics\")."
+      ],
+      "consistente": false,
+      "insights": "- Separe o marcador final \"2.2 Context Gating\" do bloco iniciado em \"2.1 Hierarchical Attention Network\" e crie um bloco próprio para 2.2, ainda que não haja texto após o título antes de \"2.3 Integrated Model\".\n- Encerre o bloco \"2.3 Integrated Model\" imediatamente antes de \"3 Experimental Setup\" e crie um bloco próprio para o caput da seção 3, mesmo que esse bloco contenha somente o título antes de \"3.1 Datasets and Evaluation Metrics\".\n- Ao encontrar títulos de seção ou subseção no fim de uma janela, não os anexe ao bloco anterior: use o próprio marcador como início do próximo bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-D18-1325_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 65,
+    "insights_aplicados": "- Separe o marcador final \"2.2 Context Gating\" do bloco iniciado em \"2.1 Hierarchical Attention Network\" e crie um bloco próprio para 2.2, ainda que não haja texto após o título antes de \"2.3 Integrated Model\".\n- Encerre o bloco \"2.3 Integrated Model\" imediatamente antes de \"3 Experimental Setup\" e crie um bloco próprio para o caput da seção 3, mesmo que esse bloco contenha somente o título antes de \"3.1 Datasets and Evaluation Metrics\".\n- Ao encontrar títulos de seção ou subseção no fim de uma janela, não os anexe ao bloco anterior: use o próprio marcador como início do próximo bloco.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [16] engloba duas unidades estruturais: a seção \"5 Related Work\" e o marcador de divisão \"Acknowledgments\", que aparece no fim do bloco e deveria iniciar um bloco próprio antes de \"References\"."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco iniciado em \"5 Related Work\" imediatamente antes do marcador \"Acknowledgments\"; não anexe esse título ao texto de Related Work.\n- Crie um bloco próprio iniciado em \"Acknowledgments\", abrangendo somente seu eventual texto até imediatamente antes de \"References\", mesmo que contenha apenas o título.\n- Separe o marcador final \"2.2 Context Gating\" do bloco iniciado em \"2.1 Hierarchical Attention Network\" e crie um bloco próprio para 2.2, ainda que não haja texto após o título antes de \"2.3 Integrated Model\".\n- Encerre o bloco \"2.3 Integrated Model\" imediatamente antes de \"3 Experimental Setup\" e crie um bloco próprio para o caput da seção 3, mesmo que esse bloco contenha somente o título antes de \"3.1 Datasets and Evaluation Metrics\".\n- Ao encontrar títulos de seção ou subseção no fim de uma janela, incluindo \"Acknowledgments\", não os anexe ao bloco anterior: use o próprio marcador como início do próximo bloco."
+    },
+    "arquivo_blocos": "resultados/hrds-D18-1325_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 67,
+    "insights_aplicados": "- Encerre o bloco iniciado em \"5 Related Work\" imediatamente antes do marcador \"Acknowledgments\"; não anexe esse título ao texto de Related Work.\n- Crie um bloco próprio iniciado em \"Acknowledgments\", abrangendo somente seu eventual texto até imediatamente antes de \"References\", mesmo que contenha apenas o título.\n- Separe o marcador final \"2.2 Context Gating\" do bloco iniciado em \"2.1 Hierarchical Attention Network\" e crie um bloco próprio para 2.2, ainda que não haja texto após o título antes de \"2.3 Integrated Model\".\n- Encerre o bloco \"2.3 Integrated Model\" imediatamente antes de \"3 Experimental Setup\" e crie um bloco próprio para o caput da seção 3, mesmo que esse bloco contenha somente o título antes de \"3.1 Datasets and Evaluation Metrics\".\n- Ao encontrar títulos de seção ou subseção no fim de uma janela, incluindo \"Acknowledgments\", não os anexe ao bloco anterior: use o próprio marcador como início do próximo bloco.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D18-1325_ciclo3.json"
+  }
+]
