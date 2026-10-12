@@ -97,7 +97,9 @@ def construir_prompt_identificacao(
         ```
 
         ## Como responder
-        - Cite os **marcadores literais** que você observou, não descrições abstratas como "títulos numerados".
+        - Cite os **marcadores literais** que você observou, não descrições abstratas.
+        - Legendas de figura e de tabela e o conteúdo de tabelas não são níveis da hierarquia, mesmo quando numerados: não os inclua.
+        - Listas numeradas ou de itens no meio do texto corrido (passos de um método, contribuições, definições — `(1)`, `1.`, `(i)`, `•`, `-`) não são níveis da hierarquia. Só inclua uma família de marcadores de lista quando ela estrutura o documento em divisões próprias.
         - Se o documento **não** tiver padrão recorrente — texto corrido, seções sem marcação sistemática — responda `"tem_padrao": false`. Isso é uma resposta legítima e útil; não invente uma hierarquia que você não observou.
         - Se a amostra for insuficiente para decidir com segurança, use `"confianca": "baixa"`.
 
@@ -234,4 +236,7 @@ def formatar_padrao(padrao: dict) -> str:
         - Se dois ou mais marcadores aparecem na mesma linha, cada um inicia um bloco.
         - A ordem acima é a típica, não uma regra: uma lista pode reaparecer dentro de um nível mais interno (ex.: itens `(1)`, `(2)` dentro de um `(iii)`). O que define o corte é a presença do marcador, não a posição dele na hierarquia.
         - Não agrupe unidades num mesmo bloco, nem irmãs nem uma unidade com as suas subdivisões.
-        - Marcadores que não estão na lista acima, mas têm a mesma função (numeração ou rótulo que abre uma unidade), também iniciam um bloco: a hierarquia foi inferida de uma amostra e pode estar incompleta.""")
+        - Marcadores que não estão na lista acima, mas têm a mesma função (numeração ou rótulo que abre uma unidade), também iniciam um bloco: a hierarquia foi inferida de uma amostra e pode estar incompleta. As exceções vêm a seguir.
+        - Exceção: legendas de figura e de tabela e o conteúdo de tabelas não são unidades estruturais, mesmo numerados. Não iniciam bloco e ficam dentro do bloco em que aparecem no texto.
+        - Exceção: listas numeradas ou de itens dentro do texto de uma unidade (`(1)`, `1.`, `(i)`, `a)`, `•`, `-`), cujos marcadores **não** estão na hierarquia acima, são um artefato do bloco semântico em que aparecem, não unidades. Não divida a lista nem inicie bloco em nenhum item: a lista inteira, com o texto que a introduz e o que a segue, fica no mesmo bloco. Vale também para itens de lista que começam por um termo em negrito (`- **Semantic features** …`): o que os torna itens é o marcador de lista (`-`, `•`, `(1)`, `1.`), não o negrito. Um título em negrito que abre um parágrafo **sem** marcador de lista (`**Setting**`, `**Definition 1**`, `**Results** The results…`) não é item de lista: é uma unidade e inicia bloco. Quando o marcador da lista **está** na hierarquia acima (incisos, alíneas, itens de uma norma), cada item é uma unidade e inicia bloco.
+        - Cada entrada de uma lista de referências bibliográficas é uma unidade e inicia um bloco próprio, com ou sem marcador (`[1]`, `1.` ou autor-ano, como `Eve V. Clark. 2009.`). O título da lista (`References`, `Referências`) é um bloco à parte, como o de qualquer divisão.""")

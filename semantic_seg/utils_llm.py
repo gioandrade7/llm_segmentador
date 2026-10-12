@@ -79,6 +79,9 @@ def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") ->
         ## Regras importantes (genéricas)
         - **Literalidade dos offsets**: `offset_inicio` e `offset_fim` devem ser trechos **literalmente presentes** no texto acima, **copiados sem qualquer modificação** — incluindo formatação markdown (`**`, `_`, `#`, etc.), pontuação, quebras de linha e maiúsculas/minúsculas. **NUNCA parafraseie, descreva, abrevie ou explique** o bloco nos offsets; eles servem apenas para localizar o trecho no texto fonte.
         - **Unicidade dos offsets**: cada offset deve ser suficientemente longo e distintivo para localização inequívoca no texto. Em caso de itens parecidos, escolha trechos mais longos ou mais únicos.
+        - **Precisão do corte — aspectos físicos e semânticos**: antes de fixar os offsets, confira os dois lados de cada corte.
+          - *Físico*: o `offset_inicio` começa exatamente no marcador ou título que abre a unidade — onde ele abre a linha, com a sua formatação (`#`, `**`, numeração) —, e não numa menção a ele no corpo, numa tabela ou numa legenda. O `offset_fim` termina no último caractere do texto da unidade, imediatamente antes do marcador da unidade seguinte.
+          - *Semântico*: o bloco contém todo o texto que pertence à unidade e nada da seguinte. Uma quebra de página, de coluna, uma figura ou uma tabela no meio da unidade não a encerra: se o parágrafo ou o assunto continua depois dela, o bloco também continua, até o marcador da próxima unidade.
         - Se o texto não contiver nenhum bloco semântico identificável, retorne `"offset_inicio": null` e todos os valores como `null` ou `0`.
         """
 
