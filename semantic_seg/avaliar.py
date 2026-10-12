@@ -14,6 +14,20 @@ pela menor distância.
     precisão  = fronteiras previstas que casam / fronteiras previstas
     revocação = fronteiras do gabarito que casam / fronteiras do gabarito
 
+Os inícios sozinhos não veem um bloco que termina cedo demais: o texto entre o
+fim dele e o início do seguinte fica sem bloco e nada acusa. Por isso há
+também três medidas pelo fim:
+
+- **fins** — P/R/F1 do fim de cada bloco (`offset_fim`) contra o fim de cada
+  nó. O fim previsto casa se cair entre o fim do nó e o início do seguinte: o
+  que há nesse intervalo é ruído (número de página, rodapé), e terminar antes
+  ou depois dele é igualmente certo. Os fins são comparados no último char
+  alfanumérico, e a tolerância alarga o intervalo nos dois lados. Nós sem
+  âncora de fim no gabarito (` ⟶ `) terminam no início do seguinte.
+- **blocos exatos** — P/R/F1 de blocos cujo início e fim casam com o mesmo nó.
+- **cobertura** — fração dos chars alfanuméricos de conteúdo do gabarito (o
+  texto dentro dos nós, sem o ruído) que caem dentro de algum bloco previsto.
+
 Uso:
     python avaliar.py resultados/sisu-rules resultados/conference_v2
     python avaliar.py resultados/conference_v2 --gabarito gabarito/conference.md
@@ -50,13 +64,16 @@ def _gabarito_padrao(prefixo: str) -> str:
     return os.path.join(DIR_GABARITO, f"{nome}.md")
 
 
-def inicios_previstos(texto: str, blocos: list[dict]) -> tuple[list[int], int]:
+def spans_previstos(texto: str, blocos: list[dict]) -> tuple[list[tuple[int, int]], int]:
     """
-    Posição de início de cada bloco no texto-fonte, refazendo o ponteiro do
-    pipeline: `offset_inicio` é buscado a partir do fim do bloco anterior
-    (com fallback para logo após o início anterior). Devolve `(inícios, perdidos)`.
+    Posições `(início, fim)` de cada bloco no texto-fonte, refazendo o ponteiro
+    do pipeline: `offset_inicio` é buscado a partir do fim do bloco anterior
+    (com fallback para logo após o início anterior) e `offset_fim` a partir do
+    início. `fim` é -1 quando o `offset_fim` não é localizado. Devolve
+    `(spans, perdidos)`, com os blocos cujo início não é localizado contados
+    em `perdidos`.
     """
-    inicios, perdidos = [], 0
+    spans, perdidos = [], 0
     pos_fim = pos_ini_ant = 0
     for b in blocos:
         ini, _ = _localizar_ancora(texto, b.get("offset_inicio") or "", pos_fim)
@@ -65,11 +82,11 @@ def inicios_previstos(texto: str, blocos: list[dict]) -> tuple[list[int], int]:
         if ini == -1:
             perdidos += 1
             continue
-        inicios.append(ini)
         pos_ini_ant = ini + 1
         _, fim = _localizar_ancora(texto, b.get("offset_fim") or "", ini, preferir_sufixo=True)
+        spans.append((ini, fim))
         pos_fim = fim if fim != -1 else ini + 1
-    return inicios, perdidos
+    return spans, perdidos
 
 
 def _para_normalizado(texto: str, posicoes: list[int]) -> list[int]:
@@ -87,6 +104,76 @@ def _para_normalizado(texto: str, posicoes: list[int]) -> list[int]:
             i += 1
         saida.append(i)
     return saida
+
+
+def _fim_normalizado(texto: str, posicoes: list[int]) -> list[int]:
+    """
+    Índice normalizado do último char alfanumérico antes de cada posição (fim
+    exclusivo) — o espelho de `_para_normalizado`: `Art. 2º.` e `Art. 2º`
+    terminam no mesmo ponto. -1 se não houver nenhum.
+    """
+    norm, mapa = _normalizar_texto_cached(texto)
+    saida = []
+    for p in posicoes:
+        i = bisect_left(mapa, p) - 1
+        while i >= 0 and not norm[i].isalnum():
+            i -= 1
+        saida.append(i)
+    return saida
+
+
+def _intervalos_de_fim(texto: str, nos: list[dict]) -> list[tuple[int, int]]:
+    """
+    Para cada nó, o intervalo normalizado `[fim, limite]` em que um fim previsto
+    acerta: do último char de conteúdo do nó até o último char antes do início
+    do nó seguinte (o ruído entre os dois).
+    """
+    norm, _ = _normalizar_texto_cached(texto)
+    fins = _fim_normalizado(texto, [n["fim"] for n in nos])
+    proximos = _para_normalizado(texto, [n["inicio"] for n in nos[1:]]) + [len(norm)]
+    return [(f, max(f, prox - 1)) for f, prox in zip(fins, proximos)]
+
+
+def _distancia(p: int, intervalo: tuple[int, int]) -> int:
+    a, b = intervalo
+    return 0 if a <= p <= b else min(abs(p - a), abs(p - b))
+
+
+def casar_fins(previstos: list[int], intervalos: list[tuple[int, int]], tolerancia: int) -> dict[int, int]:
+    """Casamento um-para-um, guloso pela menor distância: {índice previsto: índice do nó}."""
+    pares = sorted(
+        (d, i, j)
+        for i, p in enumerate(previstos)
+        for j, iv in enumerate(intervalos)
+        if (d := _distancia(p, iv)) <= tolerancia
+    )
+    casados, usados_g = {}, set()
+    for _, i, j in pares:
+        if i not in casados and j not in usados_g:
+            casados[i] = j
+            usados_g.add(j)
+    return casados
+
+
+def cobertura(texto: str, nos: list[dict], spans: list[tuple[int, int]]) -> float:
+    """Fração dos chars alfanuméricos de conteúdo do gabarito dentro de algum bloco."""
+    norm, mapa = _normalizar_texto_cached(texto)
+
+    def marcar(intervalos):
+        dentro = bytearray(len(norm))
+        for ini, fim in intervalos:
+            dentro[bisect_left(mapa, ini):bisect_left(mapa, fim)] = b"\x01" * (
+                bisect_left(mapa, fim) - bisect_left(mapa, ini))
+        return dentro
+
+    conteudo = marcar((n["inicio"], n["fim"]) for n in nos)
+    coberto = marcar((ini, fim) for ini, fim in spans if fim != -1)
+    total = acertos = 0
+    for i, c in enumerate(norm):
+        if conteudo[i] and c.isalnum():
+            total += 1
+            acertos += coberto[i]
+    return acertos / total if total else 0.0
 
 
 def casar(previstas: list[int], gabarito: list[int], tolerancia: int) -> int:
@@ -117,15 +204,27 @@ def metricas(acertos: int, n_prev: int, n_gab: int) -> dict:
 def avaliar(prefixo: str, caminho_gabarito: str, tolerancia: int) -> dict:
     texto, nos = carregar_gabarito(caminho_gabarito)
     # Dois nós podem cair no mesmo ponto normalizado; fronteira é um conjunto.
-    gab = sorted(set(_para_normalizado(texto, [n["inicio"] for n in nos])))
+    inicios_gab = _para_normalizado(texto, [n["inicio"] for n in nos])
+    gab = sorted(set(inicios_gab))
+    intervalos = _intervalos_de_fim(texto, nos)
 
     linhas = []
     for ciclo, caminho in _ciclos(prefixo):
         with open(caminho, encoding="utf-8") as f:
             blocos = json.load(f)
-        inicios, perdidos = inicios_previstos(texto, blocos)
-        prev = sorted(set(_para_normalizado(texto, inicios)))
+        spans, perdidos = spans_previstos(texto, blocos)
+        inicios = _para_normalizado(texto, [ini for ini, _ in spans])
+        prev = sorted(set(inicios))
         acertos = casar(prev, gab, tolerancia)
+
+        # Fins: só os blocos cujo `offset_fim` foi localizado concorrem.
+        com_fim = [k for k, (_, fim) in enumerate(spans) if fim != -1]
+        fins = _fim_normalizado(texto, [spans[k][1] for k in com_fim])
+        casados = casar_fins(fins, intervalos, tolerancia)
+        # Bloco exato: o fim casou com o nó j e o início coincide com o de j.
+        exatos = sum(1 for i, j in casados.items()
+                     if abs(inicios[com_fim[i]] - inicios_gab[j]) <= tolerancia)
+
         linhas.append({
             "ciclo": ciclo,
             "blocos": len(blocos),
@@ -134,6 +233,11 @@ def avaliar(prefixo: str, caminho_gabarito: str, tolerancia: int) -> dict:
             "fronteiras_gabarito": len(gab),
             "acertos": acertos,
             **metricas(acertos, len(prev), len(gab)),
+            "fins": {"previstos": len(fins), "gabarito": len(nos),
+                     "fins_nao_localizados": len(spans) - len(com_fim),
+                     "acertos": len(casados), **metricas(len(casados), len(fins), len(nos))},
+            "blocos_exatos": {"acertos": exatos, **metricas(exatos, len(spans), len(nos))},
+            "cobertura": cobertura(texto, nos, spans),
         })
     return {
         "prefixo": prefixo,
@@ -227,13 +331,20 @@ def main():
             continue
 
         print(f"\n{prefixo}  ×  {caminho_gab}")
-        print(f"  {'ciclo':>5} {'blocos':>6} {'prev':>5} {'gab':>5} {'acert':>5}  {'P':>5} {'R':>5} {'F1':>5}")
+        print(f"  {'':>5} {'':>6} {'':>5} {'':>5} {'início':^23}  {'fim':^17}  {'bloco':^5}")
+        print(f"  {'ciclo':>5} {'blocos':>6} {'prev':>5} {'gab':>5} {'acert':>5}  {'P':>5} {'R':>5} {'F1':>5}"
+              f"  {'P':>5} {'R':>5} {'F1':>5}  {'F1':>5}  {'cobert':>6}")
         for l in resultado["ciclos"]:
+            fi, bl = l["fins"], l["blocos_exatos"]
             print(f"  {l['ciclo']:>5} {l['blocos']:>6} {l['fronteiras_previstas']:>5} "
                   f"{l['fronteiras_gabarito']:>5} {l['acertos']:>5}  "
-                  f"{l['precisao']:>5.3f} {l['revocacao']:>5.3f} {l['f1']:>5.3f}"
+                  f"{l['precisao']:>5.3f} {l['revocacao']:>5.3f} {l['f1']:>5.3f}  "
+                  f"{fi['precisao']:>5.3f} {fi['revocacao']:>5.3f} {fi['f1']:>5.3f}  "
+                  f"{bl['f1']:>5.3f}  {l['cobertura']:>6.1%}"
                   + (f"  ({l['ancoras_nao_localizadas']} âncora(s) não localizada(s))"
-                     if l["ancoras_nao_localizadas"] else ""))
+                     if l["ancoras_nao_localizadas"] else "")
+                  + (f"  ({fi['fins_nao_localizados']} fim(ns) não localizado(s))"
+                     if fi["fins_nao_localizados"] else ""))
 
         with open(f"{prefixo}_avaliacao.json", "w", encoding="utf-8") as f:
             json.dump(resultado, f, ensure_ascii=False, indent=2)

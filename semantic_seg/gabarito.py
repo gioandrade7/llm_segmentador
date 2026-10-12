@@ -11,6 +11,27 @@ Cada nó guarda só o próprio texto: do início da sua âncora até o início d
 âncora do nó seguinte, em ordem de documento. A indentação (2 espaços por
 nível) dá a hierarquia. O texto-fonte vem da linha `Texto-fonte:` do cabeçalho.
 
+O fim de um nó pode ser dado explicitamente, por uma segunda âncora depois de
+` ⟶ ` — o final literal do último trecho de conteúdo do nó:
+
+      - [seção] 1 Introduction ⟶ in the rest of the paper.
+
+O texto entre esse fim e o início do nó seguinte é ruído (número de página,
+rodapé, legenda) e não pertence a nó nenhum. Sem ` ⟶ `, o nó vai até o início
+do seguinte, como antes. A âncora de fim é buscada entre o início do nó e o do
+seguinte, e vale a última ocorrência nesse intervalo.
+
+A âncora de fim é comparada em forma compacta: o texto normalizado do
+`anchor.py` sem espaços, diacríticos soltos (`¨ ´ ¸`…) e marcadores `•`. É o
+que dois extratores do mesmo PDF escrevem igual — eles espaçam pontuação e
+fórmulas de jeitos diferentes (`Maliki)` × `_Maliki_ )`, `0.069` × `0 _._ 069`)
+e põem o diacrítico solto em lugares diferentes (`Ju¨rgen` × `J¨urgen`). A
+âncora de início usa primeiro o matching do pipeline (`anchor.py`) e, se ele
+falhar, a mesma forma compacta. Se a ocorrência achada não abre uma linha e há,
+na mesma página, outra que abre, vale esta: um título curto (`COPA`, `SWAG`)
+costuma ser citado antes no corpo, numa tabela ou legenda, e o nó começa onde
+ele abre a linha.
+
 Uso:
     python gabarito.py gabarito/sisu-rules.md
     python gabarito.py gabarito/sisu-rules.md --trechos   # mostra o texto de cada nó
@@ -23,7 +44,9 @@ import os
 import re
 from collections import Counter
 
-from anchor import _localizar_ancora
+from bisect import bisect_left, bisect_right
+
+from anchor import _localizar_ancora, _normalizar, _normalizar_texto_cached
 from utils_files import carregar_paginas, montar_texto_completo
 
 RAIZ_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -33,7 +56,7 @@ TIPOS = {
     "epígrafe", "ementa", "preâmbulo", "capítulo", "seção", "artigo",
     "parágrafo", "inciso", "alínea", "item", "fecho",
     # artigo científico (conference)
-    "título", "resumo", "palavras-chave", "subseção", "referências", "referência",
+    "título", "resumo", "palavras-chave", "subseção", "subsubseção", "referências", "referência",
     # regras com enumeração por família de marcador (ppb_rules)
     "letra", "número", "romano", "maiúscula", "letra-dupla", "continuação",
 }
@@ -45,17 +68,53 @@ _FAMILIAS = {"letra", "número", "romano", "maiúscula", "letra-dupla", "continu
 # Ordem do mais grosso ao mais fino: um filho tem de ser mais fino que o pai.
 # Inciso sob artigo ou sob parágrafo é válido; artigo sob parágrafo não. Tipos
 # fora daqui (epígrafe, título, resumo…) são folhas diretas da raiz.
-_ORDEM = {"capítulo": 1, "seção": 2, "referências": 2, "subseção": 3, "referência": 3,
+_ORDEM = {"capítulo": 1, "seção": 2, "referências": 2, "subseção": 3, "referência": 3, "subsubseção": 4,
           "artigo": 3, "parágrafo": 4, "inciso": 5, "alínea": 6, "item": 7,
           **{f: 8 for f in ("letra", "número", "romano", "maiúscula", "letra-dupla", "continuação")}}
 
-_LINHA_NO = re.compile(r"^(?P<ind> *)- \[(?P<tipo>[^\]]+)\] (?P<ancora>.+)$")
+_LINHA_NO = re.compile(r"^(?P<ind> *)- \[(?P<tipo>[^\]]+)\] (?P<ancora>.+?)(?: ⟶ (?P<ancora_fim>.+))?$")
 _LINHA_RAIZ = re.compile(r"^- Documento\s*$")
 _FONTE = re.compile(r"^Texto-fonte:\s*(?P<caminho>\S+)", re.M)
 
 
 class ErroGabarito(Exception):
     pass
+
+
+_compacto_cache: tuple = (None, None)
+
+# Diacríticos soltos (não combinantes) e marcadores de lista: cada extrator os
+# põe num lugar diferente, então ficam fora da forma compacta.
+_IGNORAR = set("¨ˇ´`˜ˆ¸˚˘˙˝•")
+
+
+def _chave(ancora: str) -> str:
+    """Âncora na forma compacta (ver `_compacto`)."""
+    return "".join(c for c in _normalizar(ancora)[0] if not c.isspace() and c not in _IGNORAR)
+
+
+def _compacto(texto: str) -> tuple[str, list[int]]:
+    """Texto normalizado sem espaços nem `_IGNORAR`, e a posição de cada char no original."""
+    global _compacto_cache
+    if _compacto_cache[0] is not texto:
+        norm, mapa = _normalizar_texto_cached(texto)
+        pares = [(c, mapa[i]) for i, c in enumerate(norm) if not c.isspace() and c not in _IGNORAR]
+        _compacto_cache = (texto, ("".join(c for c, _ in pares), [m for _, m in pares]))
+    return _compacto_cache[1]
+
+
+def _localizar_fim(texto: str, ancora: str, inicio: int, limite: int) -> int:
+    """
+    Fim (exclusivo, no texto original) da última ocorrência de `ancora` dentro
+    de `[inicio, limite)`, na forma compacta. -1 se não houver.
+    """
+    compacto, mapa = _compacto(texto)
+    alvo = _chave(ancora)
+    if not alvo:
+        return -1
+    a, b = bisect_left(mapa, inicio), bisect_right(mapa, limite - 1)
+    i = compacto.rfind(alvo, a, b)
+    return -1 if i == -1 else mapa[i + len(alvo) - 1] + 1
 
 
 def _sem_comentarios(conteudo: str) -> list[str]:
@@ -139,6 +198,7 @@ def ler_esboco(caminho: str) -> tuple[str, list[dict]]:
             "profundidade": prof,
             "pai": pilha[-1] if pilha else None,
             "ancora": m.group("ancora").strip(),
+            "ancora_fim": (m.group("ancora_fim") or "").strip(),
         })
         pilha.append(len(nos) - 1)
 
@@ -147,29 +207,71 @@ def ler_esboco(caminho: str) -> tuple[str, list[dict]]:
     return texto, nos
 
 
+def localizar_inicio(texto: str, ancora: str, pos: int) -> int:
+    """Início da primeira ocorrência de `ancora` a partir de `pos`: `anchor.py`, depois forma compacta."""
+    ini, _ = _localizar_ancora(texto, ancora, pos)
+    if ini != -1:
+        return ini
+    compacto, mapa = _compacto(texto)
+    alvo = _chave(ancora)
+    i = compacto.find(alvo, bisect_left(mapa, pos)) if alvo else -1
+    return -1 if i == -1 else mapa[i]
+
+
+def abre_linha(texto: str, pos: int) -> bool:
+    """`pos` abre uma linha, descontada a marcação que a precede (`- `, `#`, `**`, `>`)."""
+    j = pos - 1
+    while j >= 0 and texto[j] in " \t*#-_>":
+        j -= 1
+    return j < 0 or texto[j] == "\n"
+
+
+def _preferir_inicio_de_linha(texto: str, ancora: str, ini: int) -> int:
+    """A primeira ocorrência de `ancora` que abre uma linha, na página de `ini`; senão `ini`."""
+    if abre_linha(texto, ini):
+        return ini
+    pagina, p = _pagina(texto, ini), ini + 1
+    while (k := localizar_inicio(texto, ancora, p)) != -1 and _pagina(texto, k) == pagina:
+        if abre_linha(texto, k):
+            return k
+        p = k + 1
+    return ini
+
+
 def resolver_ancoras(texto: str, nos: list[dict]) -> None:
     """
     Acrescenta `inicio`/`fim` (posições no texto-fonte) a cada nó.
 
     Cada âncora é buscada a partir do início da anterior, com o matching
     tolerante do `anchor.py` (ignora `**`, `<u>`, `#`, acentos, espaços). O
-    `fim` de um nó é o `inicio` do seguinte; o do último é o fim do texto.
+    `fim` de um nó é o fim da última ocorrência da sua `ancora_fim` antes do
+    início do seguinte; sem `ancora_fim`, é o próprio início do seguinte (o do
+    último nó é o fim do texto).
     """
     erros, pos = [], 0
     for no in nos:
-        ini, _ = _localizar_ancora(texto, no["ancora"], pos)
+        ini = localizar_inicio(texto, no["ancora"], pos)
         if ini == -1:
             erros.append(f"linha {no['linha']}: âncora não encontrada depois do nó anterior: {no['ancora']!r}")
             continue
+        ini = _preferir_inicio_de_linha(texto, no["ancora"], ini)
         no["inicio"] = ini
         pos = ini + 1
     if erros:
         raise ErroGabarito("\n".join(erros))
 
-    for atual, seguinte in zip(nos, nos[1:]):
-        atual["fim"] = seguinte["inicio"]
-    if nos:
-        nos[-1]["fim"] = len(texto)
+    limites = [seguinte["inicio"] for seguinte in nos[1:]] + [len(texto)]
+    for no, limite in zip(nos, limites):
+        no["fim"] = limite
+        if not no["ancora_fim"]:
+            continue
+        fim = _localizar_fim(texto, no["ancora_fim"], no["inicio"], limite)
+        if fim == -1:
+            erros.append(f"linha {no['linha']}: âncora de fim não encontrada antes do nó seguinte: {no['ancora_fim']!r}")
+        else:
+            no["fim"] = fim
+    if erros:
+        raise ErroGabarito("\n".join(erros))
 
 
 def carregar_gabarito(caminho: str) -> tuple[str, list[dict]]:
