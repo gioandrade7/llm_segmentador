@@ -1,0 +1,61 @@
+{
+  "prefixo": "resultados/hrds-2021.acl-long.394_v2",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-2021.acl-long.394.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 48,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 48,
+      "fronteiras_gabarito": 52,
+      "acertos": 48,
+      "precisao": 1.0,
+      "revocacao": 0.9230769230769231,
+      "f1": 0.9600000000000001,
+      "fins": {
+        "previstos": 48,
+        "gabarito": 52,
+        "fins_nao_localizados": 0,
+        "acertos": 46,
+        "precisao": 0.9583333333333334,
+        "revocacao": 0.8846153846153846,
+        "f1": 0.9199999999999999
+      },
+      "blocos_exatos": {
+        "acertos": 45,
+        "precisao": 0.9375,
+        "revocacao": 0.8653846153846154,
+        "f1": 0.9
+      },
+      "cobertura": 0.8921593972744396
+    },
+    {
+      "ciclo": 2,
+      "blocos": 51,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 51,
+      "fronteiras_gabarito": 52,
+      "acertos": 51,
+      "precisao": 1.0,
+      "revocacao": 0.9807692307692307,
+      "f1": 0.9902912621359222,
+      "fins": {
+        "previstos": 51,
+        "gabarito": 52,
+        "fins_nao_localizados": 0,
+        "acertos": 50,
+        "precisao": 0.9803921568627451,
+        "revocacao": 0.9615384615384616,
+        "f1": 0.970873786407767
+      },
+      "blocos_exatos": {
+        "acertos": 50,
+        "precisao": 0.9803921568627451,
+        "revocacao": 0.9615384615384616,
+        "f1": 0.970873786407767
+      },
+      "cobertura": 0.975957454666322
+    }
+  ]
+}

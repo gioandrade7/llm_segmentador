@@ -1,0 +1,55 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [16] termina contendo o marcador de seção principal \"# **3.3 Manual Analysis**\", que deveria iniciar um bloco próprio. O bloco [17], que traz o texto dessa seção, começa depois do marcador e, portanto, ficou sem a sua âncora/título estrutural."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco **On Argument Roles** imediatamente antes de `# **3.3 Manual Analysis**`.\n- Inicie o bloco seguinte exatamente em `# **3.3 Manual Analysis**` e mantenha nele o texto que começa em `To further investigate in detail what type of errors...`; não deixe o título 3.3 anexado ao fim do bloco anterior."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.667_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 44,
+    "insights_aplicados": "- Encerre o bloco **On Argument Roles** imediatamente antes de `# **3.3 Manual Analysis**`.\n- Inicie o bloco seguinte exatamente em `# **3.3 Manual Analysis**` e mantenha nele o texto que começa em `To further investigate in detail what type of errors...`; não deixe o título 3.3 anexado ao fim do bloco anterior.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [10] é englobante: começa no marcador interno `**Setting**` de 3.1 e abrange múltiplas unidades subsequentes, incluindo a seção principal ausente `3.2 Full Argument Detection` e seus blocos internos rotulados, que deveriam iniciar blocos separados.",
+        "Há uma lacuna estrutural entre os blocos [14] (`On Argument Roles`) e [15] (`3.3 Manual Analysis`): a numeração evidencia que a seção `3.2 Full Argument Detection` não foi segmentada como unidade própria e foi absorvida pelo bloco [10]."
+      ],
+      "consistente": false,
+      "insights": "- Mantenha o bloco `## **3.1 Argument Linking with Gold Spans**` separado, mesmo que ele contenha apenas o título antes do primeiro rótulo interno.\n- Divida o atual bloco englobante iniciado em `**Setting**` em blocos independentes a cada ocorrência dos rótulos `**Setting**` e `**Results**` pertencentes à seção 3.1; não absorva o resultado de 3.1 no bloco de configuração.\n- Inicie um bloco próprio exatamente no marcador `# **3.2 Full Argument Detection**`; não o anexe ao texto de `3.1 Argument Linking with Gold Spans` nem ao `**Setting**` anterior.\n- Após `# **3.2 Full Argument Detection**`, inicie blocos separados para cada rótulo interno, incluindo o `**Setting**` dessa seção e o `**Results**` que já aparece no bloco [11]; mantenha também `**Ablation**`, `**On Sentence Distances**` e `**On Argument Roles**` como blocos distintos.\n- Encerre o bloco `**On Argument Roles**` imediatamente antes de `# **3.3 Manual Analysis**`.\n- Inicie o bloco seguinte exatamente em `# **3.3 Manual Analysis**` e mantenha nele o texto que começa em `To further investigate in detail what type of errors...`; não deixe o título 3.3 anexado ao fim do bloco anterior."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.667_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "- Mantenha o bloco `## **3.1 Argument Linking with Gold Spans**` separado, mesmo que ele contenha apenas o título antes do primeiro rótulo interno.\n- Divida o atual bloco englobante iniciado em `**Setting**` em blocos independentes a cada ocorrência dos rótulos `**Setting**` e `**Results**` pertencentes à seção 3.1; não absorva o resultado de 3.1 no bloco de configuração.\n- Inicie um bloco próprio exatamente no marcador `# **3.2 Full Argument Detection**`; não o anexe ao texto de `3.1 Argument Linking with Gold Spans` nem ao `**Setting**` anterior.\n- Após `# **3.2 Full Argument Detection**`, inicie blocos separados para cada rótulo interno, incluindo o `**Setting**` dessa seção e o `**Results**` que já aparece no bloco [11]; mantenha também `**Ablation**`, `**On Sentence Distances**` e `**On Argument Roles**` como blocos distintos.\n- Encerre o bloco `**On Argument Roles**` imediatamente antes de `# **3.3 Manual Analysis**`.\n- Inicie o bloco seguinte exatamente em `# **3.3 Manual Analysis**` e mantenha nele o texto que começa em `To further investigate in detail what type of errors...`; não deixe o título 3.3 anexado ao fim do bloco anterior.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [5] e [6]: a subseção `2.2 Argument Head-Word Detector`, esperada entre `2.1 BERT-based Encoder` e `2.3 Head-to-span Expander`, não foi segmentada.",
+        "O bloco [6] agrupa indevidamente o fim da subseção `2.3 Head-to-span Expander` com o marcador de uma nova seção principal, `# **3 Experiment**`.",
+        "O texto introdutório da seção 3 está separado de seu marcador: o bloco [7] começa em `We conduct all experiments...`, mas o título `# **3 Experiment**` foi capturado no fim do bloco [6]."
+      ],
+      "consistente": false,
+      "insights": "- Localize a subseção `2.2 Argument Head-Word Detector` entre `2.1 BERT-based Encoder` e `2.3 Head-to-span Expander`; inicie nela um bloco próprio e preserve todo o seu texto até imediatamente antes de `2.3`.\n- Encerre o bloco `2.1 BERT-based Encoder` imediatamente antes do marcador de `2.2 Argument Head-Word Detector`; não deixe o conteúdo ou o título de 2.2 sem bloco.\n- Mantenha `2.3 Head-to-span Expander` como bloco próprio e encerre-o imediatamente antes de `# **3 Experiment**`.\n- Inicie um bloco próprio exatamente em `# **3 Experiment**` e inclua nele o texto que começa em `We conduct all experiments` até imediatamente antes de `## **3.1 Argument Linking with Gold Spans**`.\n- Mantenha o bloco `## **3.1 Argument Linking with Gold Spans**` separado, mesmo que contenha apenas o título antes do primeiro rótulo interno.\n- Na seção 3.1, inicie blocos independentes em `**Setting**` e em `**Results**`; não absorva o resultado no bloco de configuração.\n- Mantenha `## **3.2 Full Argument Detection**` em bloco próprio e, depois dele, separe os blocos iniciados por `**Setting**`, `**Results**`, `**Ablation**`, `**On Sentence Distances**` e `**On Argument Roles**`.\n- Encerre `**On Argument Roles**` imediatamente antes de `# **3.3 Manual Analysis**` e inicie neste marcador o bloco que contém `To further investigate in detail what type of errors...`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.667_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Localize a subseção `2.2 Argument Head-Word Detector` entre `2.1 BERT-based Encoder` e `2.3 Head-to-span Expander`; inicie nela um bloco próprio e preserve todo o seu texto até imediatamente antes de `2.3`.\n- Encerre o bloco `2.1 BERT-based Encoder` imediatamente antes do marcador de `2.2 Argument Head-Word Detector`; não deixe o conteúdo ou o título de 2.2 sem bloco.\n- Mantenha `2.3 Head-to-span Expander` como bloco próprio e encerre-o imediatamente antes de `# **3 Experiment**`.\n- Inicie um bloco próprio exatamente em `# **3 Experiment**` e inclua nele o texto que começa em `We conduct all experiments` até imediatamente antes de `## **3.1 Argument Linking with Gold Spans**`.\n- Mantenha o bloco `## **3.1 Argument Linking with Gold Spans**` separado, mesmo que contenha apenas o título antes do primeiro rótulo interno.\n- Na seção 3.1, inicie blocos independentes em `**Setting**` e em `**Results**`; não absorva o resultado no bloco de configuração.\n- Mantenha `## **3.2 Full Argument Detection**` em bloco próprio e, depois dele, separe os blocos iniciados por `**Setting**`, `**Results**`, `**Ablation**`, `**On Sentence Distances**` e `**On Argument Roles**`.\n- Encerre `**On Argument Roles**` imediatamente antes de `# **3.3 Manual Analysis**` e inicie neste marcador o bloco que contém `To further investigate in detail what type of errors...`.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.667_ciclo4.json"
+  }
+]

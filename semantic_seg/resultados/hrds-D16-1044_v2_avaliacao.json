@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-D16-1044_v2",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-D16-1044.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 79,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 79,
+      "fronteiras_gabarito": 80,
+      "acertos": 79,
+      "precisao": 1.0,
+      "revocacao": 0.9875,
+      "f1": 0.9937106918238994,
+      "fins": {
+        "previstos": 79,
+        "gabarito": 80,
+        "fins_nao_localizados": 0,
+        "acertos": 79,
+        "precisao": 1.0,
+        "revocacao": 0.9875,
+        "f1": 0.9937106918238994
+      },
+      "blocos_exatos": {
+        "acertos": 78,
+        "precisao": 0.9873417721518988,
+        "revocacao": 0.975,
+        "f1": 0.9811320754716981
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

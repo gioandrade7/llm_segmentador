@@ -1,0 +1,452 @@
+[
+  {
+    "offset_inicio": "# **Down-stream effects of tree-to-dependency conversions** \n\n**Jakob Elming, Anders",
+    "offset_fim": "Center for Language Technology, University of Copenhagen _†_ Institute for Informatics, University of Oslo",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Down-stream effects of tree-to-dependency conversions",
+    "motivo": "O marcador de título de nível superior abre o bloco de identificação do documento, contendo título, autores e afiliações. Ele termina imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
+    "texto": "# **Down-stream effects of tree-to-dependency conversions** \n\n**Jakob Elming, Anders Johannsen, Sigrid Klerke, Emanuele Lapponi**<sup>_†_</sup> **, Hector Martinez, Anders Søgaard** Center for Language Technology, University of Copenhagen _†_ Institute for Informatics, University of Oslo"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nDependency analysis relies on morphosyntactic evidence, as well as semantic",
+    "offset_fim": "showing that it has dramatic impact on end results. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no marcador de seção \"## **Abstract**\" e contém todo o resumo, terminando imediatamente antes do próximo marcador hierárquico, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nDependency analysis relies on morphosyntactic evidence, as well as semantic evidence. In some cases, however, morphosyntactic evidence seems to be in conflict with semantic evidence. For this reason dependency grammar theories, annotation guidelines and tree-to-dependency conversion schemes often differ in how they analyze various syntactic constructions. Most experiments for which constituent-based treebanks such as the Penn Treebank are converted into dependency treebanks rely blindly on one of four-five widely used tree-to-dependency conversion schemes. This paper evaluates the down-stream effect of choice of conversion scheme, showing that it has dramatic impact on end results. \n\n"
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nAnnotation guidelines used in modern dependency treebanks and tree",
+    "offset_fim": "<sup>7</sup> and tagged using the in-built Mate POS tagger. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia na seção principal \"1 Introduction\" e reúne seu texto introdutório, incluindo a continuação entre páginas, até imediatamente antes do marcador de subsubseção \"### **Approach in this work**\".",
+    "texto": "## **1 Introduction** \n\nAnnotation guidelines used in modern dependency treebanks and tree-to-dependency conversion schemes for converting constituent-based treebanks into dependency treebanks are typically based on a specific dependency grammar theory, such as the Prague School’s Functional Generative Description, Meaning-Text Theory, or Hudson’s Word Grammar. In practice most parsers constrain dependency structures to be tree-like structures such that each word has a single syntactic head, limiting diversity between annotation a bit; but while many dependency treebanks taking this format agree on how to analyze many syntactic constructions, there are still many constructions these treebanks analyze differently. See Figure 1 for a standard overview of clear and more difficult cases. \n\nThe difficult cases in Figure 1 are difficult for the following reason. In the easy cases morphosyntactic and semantic evidence cohere. Verbs govern subjects morpho-syntactically and seem semantically more important. In the difficult cases, however, morpho-syntactic evidence is _in conflict_ with the semantic evidence. While auxiliary verbs have the same distribution as finite verbs in head position and share morpho-syntactic properties with them, and govern the infinite main verbs, main verbs seem semantically superior, expressing the main predicate. There may be distributional evidence that complementizers head verbs syntactically, but the verbs seem more important from a semantic point of view. \n\nTree-to-dependency conversion schemes used to convert constituent-based treebanks into dependency-based ones also take different stands on the difficult cases. In this paper we consider four different conversion schemes: the Yamada-Matsumoto conversion scheme **yamada** ,<sup>1</sup> the CoNLL 2007 format **conll07** ,<sup>2</sup> the conversion scheme **ewt** used in the English Web Treebank (Petrov and McDonald, 2012),<sup>3</sup> and the **lth** conversion scheme (Johansson \n\n> 1The Yamada-Matsumoto scheme can be replicated by running penn2malt.jar available at http://w3.msi.vxu.se/ _∼_ nivre/research/Penn2Malt.html. We used Malt dependency labels (see website). The YamadaMatsumoto scheme is an elaboration of the Collins scheme (Collins, 1999), which is not included in our experiments. \n\n> 2The CoNLL 2007 conversion scheme can be obtained by running pennconverter.jar available at http://nlp.cs.lth.se/software/treebank converter/with the ’conll07’ flag set. \n\n> 3The EWT conversion scheme can be replicated using the Stanford converter available at http://nlp.stanford.edu/software/stanford-dependencies.shtml \n\n617 \n\n_Proceedings of NAACL-HLT 2013_ , pages 617–626, Atlanta, Georgia, 9–14 June 2013. _⃝_ c 2013 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\n|**Clear cases**||**Difficult cases**||\n|---|---|---|---|\n|Head|Dependent|?|?|\n|Verb|Subject|Auxiliary|Main verb|\n|Verb|Object|Complementizer|Verb|\n|Noun|Attribute|Coordinator|Conjuncts|\n|Verb|Adverbial|Preposition|Nominal<br>Punctuation|\n\n\n\nFigure 1: Clear and difficult cases in dependency annotation. \n\nand Nugues, 2007).<sup>4</sup> We list the differences in Figure 2. An example of differences in analysis is presented in Figure 3. \n\nIn order to access the impact of these conversion schemes on down-stream performance, we need extrinsic rather than intrinsic evaluation. In general it is important to remember that while researchers developing learning algorithms for part-of-speech (POS) tagging and dependency parsing seem obsessed with accuracies, POS sequences or dependency structures have no interest on their own. The accuracies reported in the literature are only interesting insofar they correlate with the usefulness of the structures predicted by our systems. Fortunately, POS sequences and dependency structures _are_ useful in many applications. When we consider tree-todependency conversion schemes, down-stream evaluation becomes particularly important since some schemes are more fine-grained than others, leading to lower performance as measured by intrinsic evaluation metrics. \n\n### **Approach in this work** \n\nIn our experiments below we apply a state-of-the-art parser to five different natural language processing (NLP) tasks where syntactic features are known to be effective: negation resolution, semantic role labeling (SRL), statistical machine translation (SMT), sentence compression and perspective classification. In all five tasks we use the four tree-to-dependency conversion schemes mentioned above and evaluate them in terms of down-stream performance. We also compare our systems to baseline systems not rely- \n\n> 4The LTH conversion scheme can be obtained by running pennconverter.jar available at http://nlp.cs.lth.se/software/treebank converter/ with the ’oldLTH’ flag set. \n\ning on syntactic features, when possible, and to results in the literature, when comparable results exist. Note that negation resolution and SRL are not end applications. It is not easy to generalize across five very different tasks, but the tasks will serve to show that the choice of conversion scheme has significant impact on down-stream performance. \n\nWe used the most recent release of the Mate parser first described in Bohnet (2010),<sup>5</sup> trained on Sections 2–21 of the Wall Street Journal section of the English Treebank (Marcus et al., 1993). The graphbased parser is similar to, except much faster, and performs slightly better than the MSTParser (McDonald et al., 2005), which is known to perform well on long-distance dependencies often important for down-stream applications (McDonald and Nivre, 2007; Galley and Manning, 2009; Bender et al., 2011). This choice may of course have an effect on what conversion schemes seem superior (Johansson and Nugues, 2007). Sentence splitting was done using splitta,<sup>6</sup> , and the sentences were then tokenized using PTB-style tokenization<sup>7</sup> and tagged using the in-built Mate POS tagger. \n\n"
+  },
+  {
+    "offset_inicio": "### **Previous work** \n\nThere has been considerable work on down-stream evaluation of syntactic parsers in the literature,",
+    "offset_fim": "our results indicate that learnability and downstream performance do not correlate well. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "Previous work",
+    "motivo": "O bloco inicia no marcador de subsubseção \"### **Previous work**\" na página 2 e reúne o texto contínuo da revisão de trabalhos anteriores, inclusive a continuação após a quebra de página. Termina imediatamente antes do próximo marcador estrutural, \"# **2 Applications**\", na página 3.",
+    "texto": "### **Previous work** \n\nThere has been considerable work on down-stream evaluation of syntactic parsers in the literature, but most previous work has focused on evaluating parsing models rather than linguistic theories. No one has, to the best of our knowledge, compared the impact of choice of tree-to-dependency conversion scheme across several NLP tasks. \n\nJohansson and Nugues (2007) compare the impact of **yamada** and **lth** on semantic role labeling \n\n> 5http://code.google.com/p/mate-tools/ \n\n> 6http://code.google.com/p/splitta/ \n\n> 7http://www.cis.upenn.edu/ _∼_ treebank/tokenizer.sed \n\n618\n\n<!-- PÁGINA 3 -->\n|FORM1|FORM2|**yamada**|**conll07**|**ewt**|**lth**|\n|---|---|---|---|---|---|\n|Auxiliary|Main verb|1|1|2|2|\n|Complementizer|Verb|1|2|2|2|\n|Coordinator|Conjuncts|2|1|2|2|\n|Preposition|Nominal|1|1|1|2|\n\n\n\nFigure 2: Head decisions in conversions. Note: yamada also differ from CoNLL 2007 in proper names. \n\n\n\nFigure 3: CoNLL 2007 (blue) and LTH (red) dependency conversions. \n\nperformance, showing that **lth** leads to superior performance. \n\nMiyao et al. (2008) measure the impact of syntactic parsers in an information extraction system identifying protein-protein interactions in biomedical research articles. They evaluate dependency parsers, constituent-based parsers and deep parsers. \n\nMiwa et al. (2010) evaluate down-stream performance of linguistic representations and parsing models in biomedical event extraction, but do not evaluate linguistic representations directly, evaluating representations and models jointly. \n\nBender et al. (2011) compare several parsers across linguistic representations on a carefully designed evaluation set of hard, but relatively frequent syntactic constructions. They compare dependency parsers, constituent-based parsers and deep parsers. The authors argue in favor of evaluating parsers on diverse and richly annotated data. Others have discussed various ways of evaluating across annotation guidelines or translating structures to a common format (Schwartz et al., 2011; Tsarfaty et al., 2012). \n\nHall et al. (2011) discuss optimizing parsers for specific down-stream applications, but consider only a single annotation scheme. \n\nYuret et al. (2012) present an overview of the SemEval-2010 Evaluation Exercises on Semantic \n\nEvaluation track on recognition textual entailment using dependency parsing. They also compare several parsers using the heuristics of the winning system for inference. While the shared task is an example of down-stream evaluation of dependency parsers, the evaluation examples only cover a subset of the textual entailments relevant for practical applications, and the heuristics used in the experiments assume a fixed set of dependency labels ( **ewt** labels). \n\nFinally, Schwartz et al. (2012) compare the above conversion schemes and several combinations thereof in terms of learnability. This is very different from what is done here. While learnability may be a theoretically motivated parameter, our results indicate that learnability and downstream performance do not correlate well. \n\n"
+  },
+  {
+    "offset_inicio": "# **2 Applications** \n\nDependency parsing has proven useful for a wide range of NLP",
+    "offset_fim": "between predicate and its head, its arguments, dependents or siblings. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "2 Applications",
+    "motivo": "O bloco inicia no marcador de seção principal “# **2 Applications**” na página 3 e inclui o texto introdutório que continua na página 4. Termina imediatamente antes do próximo marcador estrutural, “## **2.1 Negation resolution**”.",
+    "texto": "# **2 Applications** \n\nDependency parsing has proven useful for a wide range of NLP applications, including statistical machine translation (Galley and Manning, 2009; Xu et al., 2009; Elming and Haulrich, 2011) and sentiment analysis (Joshi and Penstein-Rose, 2009; Johansson and Moschitti, 2010). This section describes the applications and experimental set-ups included in this study. \n\nIn the five applications considered below we \n\n619\n\n<!-- PÁGINA 4 -->\nuse syntactic features in slightly different ways. While our statistical machine translation and sentence compression systems use dependency relations as additional information about words and _on a par_ with POS, our negation resolution system uses dependency paths, conditioning decisions on both dependency arcs and labels. In perspective classification, we use dependency triples (e.g. SUBJ(John, snore)) as features, while the semantic role labeling system conditions on a lot of information, including the word form of the head, the dependent and the argument candidates, the concatenation of the dependency labels of the predicate, and the labeled dependency relations between predicate and its head, its arguments, dependents or siblings. \n\n"
+  },
+  {
+    "offset_inicio": "## **2.1 Negation resolution** \n\nNegation resolution (NR) is the task of finding negation cues, e.g.",
+    "offset_fim": "rightful cue. The scores are produced using the evaluation script provided by the *SEM organizers.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "2.1 Negation resolution",
+    "motivo": "O bloco inicia no marcador da subseção 2.1 e inclui sua descrição, exemplo, tabela/figura e parágrafos subsequentes. Termina imediatamente antes do marcador da subseção seguinte, “## **2.2 Semantic role labeling**”.",
+    "texto": "## **2.1 Negation resolution** \n\nNegation resolution (NR) is the task of finding negation cues, e.g. the word _not_ , and determining their _scope_ , i.e. the tokens they affect. NR has recently seen considerable interest in the NLP community (Morante and Sporleder, 2012; Velldal et al., 2012) and was the topic of the 2012 *SEM shared task (Morante and Blanco, 2012). \n\nThe data set used in this work, the Conan Doyle corpus (CD),<sup>8</sup> was released in conjunction with the *SEM shared task. The annotations in CD extend on cues and scopes by introducing annotations for in-scope events that are negated in factual contexts. The following is an example from the corpus showing the annotations for cues (bold), scopes (underlined) and negated events (italicized): \n\n## (1) Since we have been so **un** _fortunate_ as to miss him [. . . ] \n\nCD-style scopes can be discontinuous and overlapping. Events are a portion of the scope that is semantically negated, with its truth value reversed by the negation cue. \n\nThe NR system used in this work (Lapponi et al., 2012), one of the best performing systems in the *SEM shared task, is a CRF model for scope resolution that relies heavily on features extracted from dependency graphs. The feature model contains token distance, direction, _n_ -grams of word forms, lemmas, POS and combinations thereof, as well as the syntactic features presented in Figure 4. The results in our \n\n> 8http://www.clips.ua.ac.be/sem2012-st-neg/data.html \n\n|**Syntactic**|constituent<br>dependency relation<br>parent head POS<br>grand parent head POS<br>word form+dependency relation<br>POS+dependency relation|\n|---|---|\n|**Cue-dependent**|directed dependency distance<br>bidirectional dependency distance<br>dependency path<br>lexicalized dependency path|\n\n\n\nFigure 4: Features used to train the conditional random field models \n\nexperiments are obtained from configurations that differ only in terms of tree-to-dependency conversions, and are trained on the training set and tested on the development set of CD. Since the negation cue classification component of the system does not rely on dependency features at all, the models are tested using gold cues. \n\nTable 1 shows F1 scores for scopes, events and full negations, where a true positive correctly assigns both scope tokens and events to the rightful cue. The scores are produced using the evaluation script provided by the *SEM organizers."
+  },
+  {
+    "offset_inicio": "## **2.2 Semantic role labeling** \n\nSemantic role labeling (SRL) is the attempt to determine",
+    "offset_fim": "trees using our different conversion schemes. We rely on gold standard argument identification and focus solely on the performance metric semantic labeled F1. \n\n> 9http://nlp.cs.lth.se/software/semantic parsing: propbank nombank frames \n\n> 10http://code.google.com/p/clearparser/ \n\n620\n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "2.2 Semantic role labeling",
+    "motivo": "O bloco inicia no marcador da subseção 2.2 e contém seus dois parágrafos e notas de rodapé; termina antes do próximo marcador estrutural, “## **2.3 Statistical machine translation**”, na página 5.",
+    "texto": "## **2.2 Semantic role labeling** \n\nSemantic role labeling (SRL) is the attempt to determine semantic predicates in running text and label their arguments with semantic roles. In our experiments we have reproduced the second bestperforming system in the CoNLL 2008 shared task in syntactic and semantic parsing (Johansson and Nugues, 2008).<sup>9</sup> \n\nThe English training data for the CoNLL 2008 shared task were obtained from PropBank and NomBank. For licensing reasons, we used OntoNotes 4.0, which includes PropBank, but not NomBank. This means that our system is only trained to classify verbal predicates. We used the Clearparser conversion tool<sup>10</sup> to convert the OntoNotes 4.0 and subsequently supplied syntactic dependency trees using our different conversion schemes. We rely on gold standard argument identification and focus solely on the performance metric semantic labeled F1. \n\n> 9http://nlp.cs.lth.se/software/semantic parsing: propbank nombank frames \n\n> 10http://code.google.com/p/clearparser/ \n\n620\n\n"
+  },
+  {
+    "offset_inicio": "## **2.3 Statistical machine translation** \n\nThe effect of the different conversion schemes was also",
+    "offset_fim": "All SMT results reported below are averages based on 5 MERT runs following Clark et al. (2011).",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "2.3 Statistical machine translation",
+    "motivo": "O bloco inicia no marcador da subseção 2.3 e reúne todo o texto sobre o experimento de SMT, incluindo a nota de rodapé e a continuação após a quebra de linha, terminando imediatamente antes do marcador da subseção 2.4.",
+    "texto": "## **2.3 Statistical machine translation** \n\nThe effect of the different conversion schemes was also evaluated on SMT. We used the _reordering by parsing_ framework described by Elming and Haulrich (2011). This approach integrates a syntactically informed reordering model into a phrasebased SMT system. The model learns to predict the word order of the translation based on source sentence information such as syntactic dependency relations. Syntax-informed SMT is known to be useful for translating between languages with different word orders (Galley and Manning, 2009; Xu et al., 2009), e.g. English and German. \n\nThe baseline SMT system is created as described in the guidelines from the original shared task.<sup>11</sup> Only modifications are that we use truecasing instead of lowercasing and recasing, and allow training sentences of up to 80 words. We used data from the English-German restricted task: _∼_ 3M parallel words of news, _∼_ 46M parallel words of Europarl, and _∼_ 309M words of monolingual Europarl and news. We use newstest2008 for tuning, newstest2009 for development, and newstest2010 for testing. Distortion limit was set to 10, which is also where the baseline system performed best. The phrase table and the lexical reordering model is trained on the union of all parallel data with a max phrase length of 7, and the 5-gram language model is trained on the entire monolingual data set. \n\nWe test four different experimental systems that only differ with the baseline in the addition of a syntactically informed reordering model. The baseline system was one of the tied best performing system in the WMT 2011 shared task on this dataset. The four experimental systems have reordering models that are trained on the first 25,000 sentences of the parallel news data that have been parsed with each of the tree-to-dependency conversion schemes. The reordering models condition reordering on the word forms, POS, and syntactic dependency relations of the words to be reordered, as described in Elming and Haulrich (2011). The paper shows that while reordering by parsing leads to significant improvements in standard metrics such as BLEU (Papineni et al., 2002) and METEOR (Lavie and Agarwal, 2007), improvements are more spelled out with hu- \n\n> 11 http://www.statmt.org/wmt11/translation-task.html \n\nman judgements. All SMT results reported below are averages based on 5 MERT runs following Clark et al. (2011)."
+  },
+  {
+    "offset_inicio": "## **2.4 Sentence compression** \n\nSentence compression is a restricted form of sentence",
+    "offset_fim": "thereoff. The augmented syntactic feature model simply adds dependency labels within the same window.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "2.4 Sentence compression",
+    "motivo": "O bloco inicia no marcador da subseção 2.4 e reúne seus dois parágrafos. Termina imediatamente antes do marcador da subseção seguinte, “## **2.5 Perspective classification**”.",
+    "texto": "## **2.4 Sentence compression** \n\nSentence compression is a restricted form of sentence simplification with numerous usages, including text simplification, summarization and recognizing textual entailment. The most commonly used dataset in the literature is the Ziff-Davis corpus.<sup>12</sup> A widely used baseline for sentence compression experiments is Knight and Marcu (2002), who introduce two models: the noisy-channel model and a decision tree-based model. Both are tree-based methods that find the most likely compressed syntactic tree and outputs the yield of this tree. McDonald et al. (2006) instead use syntactic features to directly find the most likely compressed sentence. \n\nHere we learn a discriminative HMM model (Collins, 2002) of sentence compression using MIRA (Crammer and Singer, 2003), comparable to previously explored models of noun phrase chunking. Our model is thus neither tree-based nor sentence-based. Instead we think of sentence compression as a sequence labeling problem. We compare a model informed by word forms and predicted POS with models also informed by predicted dependency labels. The baseline feature model conditions emission probabilities on word forms and POS using a _±_ 2 window and combinations thereoff. The augmented syntactic feature model simply adds dependency labels within the same window."
+  },
+  {
+    "offset_inicio": "## **2.5 Perspective classification** \n\nFinally, we include a document classification dataset from Lin and Hauptmann",
+    "offset_fim": "learning (Cortes and Vapnik, 1995), tuning the kernel (linear or polynomial with degree 3) and _C_ = _{_ 0 _._ 1 _,_ 1 _,_ 5 _,_ 10 _}_ . \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "2.5 Perspective classification",
+    "motivo": "O bloco inicia no marcador da subseção 2.5, na página 5, e inclui a continuação do texto, a tabela e o parágrafo na página 6. Termina imediatamente antes do próximo marcador estrutural, “# **3 Results and discussion**”.",
+    "texto": "## **2.5 Perspective classification** \n\nFinally, we include a document classification dataset from Lin and Hauptmann (2006).<sup>13</sup> The dataset consists of blog posts posted at bitterlemons.org by Israelis and Palestinians. The bitterlemons.org website is set up to ”contribute to mutual understanding through the open exchange of ideas.” In the dataset, each blog post is labeled as either Israeli or Palestinian. Our baseline model is just a standard bagof-words model, and the system adds dependency triplets to the bag-of-words model in a way similar to Joshi and Penstein-Rose (2009). We do not remove stop words, since perspective classification is \n\n> 12LDC Catalog No.: LDC93T3A. \n\n> 13https://sites.google.com/site/weihaolinatcmu/data \n\n621\n\n<!-- PÁGINA 6 -->\n||bl|**yamada**|**conll07**|**ewt**|**lth**|\n|---|---|---|---|---|---|\n|DEPRELS|-|12|21|47|41|\n|PTB-23 (LAS)|-|**88.99**|88.52|81.36<sup>_∗_</sup>|87.52|\n|PTB-23 (UAS)|-|90.21|90.12|84.22<sup>_∗_</sup>|**90.29**|\n|Neg: scope F1|-|**81.27**|80.43|78.70|79.57|\n|Neg: event F1|-|76.19|72.90|73.15|**76.24**|\n|Neg: full negation F1|-|**67.94**|63.24|61.60|64.31|\n|SentComp_F_1|68.47|**72.07**|64.29|71.56|71.56|\n|SMT-dev-Meteor|35.80|36.06|36.06|**36.16**|36.08|\n|SMT-test-Meteor|37.25|37.48|37.50|**37.58**|37.51|\n|SMT-dev-BLEU|13.66|**14.14**|14.09|14.04|14.06|\n|SMT-test-BLEU|14.67|15.04|15.04|14.96|**15.11**|\n|SRL-22-gold|-|81.35|83.22|**84.72**|84.01|\n|SRL-23-gold|-|79.09|80.85|80.39|**82.01**|\n|SRL-22-pred|-|74.41|76.22|**78.29**|66.32|\n|SRL-23-pred|-|73.42|74.34|**75.80**|64.06|\n|bitterlemons.org|96.08|**97.06**|95.58|96.08|96.57|\n\n\n\nTable 1: Results.<sup>_∗_</sup> : Low parsing results on PTB-23 using **ewt** are explained by changes between the PTB-III and the Ontonotes 4.0 release of the English Treebank. \n\nsimilar to authorship attribution, where stop words are known to be informative. We evaluate performance doing cross-validation over the official training data, setting the parameters of our learning algorithm for each fold doing cross-validation over the actual training data. We used soft-margin support vector machine learning (Cortes and Vapnik, 1995), tuning the kernel (linear or polynomial with degree 3) and _C_ = _{_ 0 _._ 1 _,_ 1 _,_ 5 _,_ 10 _}_ . \n\n"
+  },
+  {
+    "offset_inicio": "# **3 Results and discussion** \n\nOur results are presented in Table 1. The parsing results",
+    "offset_fim": "**yamada** and **lth** annotations, which have 12 and 41 dependency labels, respectively. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 8,
+    "titulo": "3 Results and discussion",
+    "motivo": "O bloco inicia no marcador da seção principal “3 Results and discussion” na página 6 e reúne toda a discussão de resultados, incluindo tabelas, figuras e texto contínuo, até imediatamente antes do próximo marcador de seção principal, “4 Conclusions”, na página 8.",
+    "texto": "# **3 Results and discussion** \n\nOur results are presented in Table 1. The parsing results are obtained relying on predicted POS rather than, as often done in the dependency parsing literature, relying on gold-standard POS. Note that they comply with the result in Schwartz et al. (2012) that Yamada-Matsumoto-style annotation is more easily learnable. \n\nThe **negation resolution** results are significantly better using syntactic features in **yamada** annotation. It is not surprising that a syntactically oriented conversion scheme performs well in this task. Since Lapponi et al. (2012) used Maltparser (Nivre et al., 2007) with the freely available pre-trained parsing model for English,<sup>14</sup> we decided to also run that parser with the gold-standard cues, in ad- \n\n> 14http://www.maltparser.org/mco/english parser/engmalt.html \n\ndition to Mate. The pre-trained model was trained on Sections 2–21 of the Wall Street Journal section of the English Treebank (Marcus et al., 1993), augmented with 4000 sentences from the QuestionBank,<sup>15</sup> which was converted using the Stanford converter and thus similar to the **ewt** annotations used here. The results were better than using **ewt** with Mate trained on Sections 2–21 alone, but worse than the results obtained here with **yamada** conversion scheme. _F_ 1 score on full negation was 66.92%. \n\nThe case-sensitive BLEU evaluation of the **SMT** systems indicates that choice of conversion scheme has no significant impact on overall performance. The difference to the baseline system is significant ( _p <_ 0 _._ 01), showing that the reordering model leads to improvement using any of the schemes. However, the conversion schemes lead to very different translations. This can be seen, for example, by the fact that the relative tree edit distance between translations of different syntactically informed SMT systems is 12% higher than within each system (across different MERT optimizations). \n\nThe reordering approach puts a lot of weight on the syntactic dependency relations. As a consequence, the number of relation types used in the conversion schemes proves important. Consider the \n\n> 15http://www.computing.dcu.ie/ _∼_ jjudge/qtreebank/ \n\n622\n\n<!-- PÁGINA 7 -->\n|REFERENCE:|Zum Gl¨uck kam ich beim Strassenbahnfahren an die richtige Stelle .|\n|---|---|\n|SOURCE:|Luckily , on the way to the tram , I found the right place .|\n|**yamada**:|Gl¨ucklicherweise hat auf dem Weg zur S-Bahn , stellte ich fest , dass der richtige Ort .|\n|**conll07**:|Gl¨ucklicherweise hat auf dem Weg zur S-Bahn , stellte ich fest , dass der richtige Ort .|\n|**ewt**:|Zum Gl¨uck fand ich auf dem Weg zur S-Bahn , am richtigen Platz .|\n|**lth:**|Zum Gl¨uck fand ich auf dem Weg zur S-Bahn , am richtigen Platz .|\n|BASELINE:|Zum Gl¨uck hat auf dem Weg zur S-Bahn , ich fand den richtigen Platz .|\n\n\n\nFigure 5: Examples of SMT output. \n\n|ORIGINAL:|* 68000 sweden ab of uppsala , sweden , introduced the teleserve , an integrated answering<br>machine and voice-message handler that links a macintosh to touch-tone phones .|\n|---|---|\n|BASELINE:|68000 sweden ab introduced the teleserve an integrated answering<br>machine and voice-message handler .|\n|**yamada**|68000 sweden ab introduced the teleserve integrated answering<br>machine and voice-message handler .|\n|**conll07**|68000 sweden ab**sweden**introduced the teleserve integrated answering<br>machine and voice-message handler .|\n|**ewt**|68000 sweden ab introduced the teleserve integrated answering<br>machine and voice-message handler .|\n|**lth**|68000 sweden ab introduced the teleserve**an**integrated answering<br>machine and voice-message handler .|\n|HUMAN:|68000 sweden ab introduced the teleserve integrated answering<br>machine and voice-message handler .|\n\n\n\nFigure 6: Examples of sentence compression output. \n\nexample in Figure 5. German requires the verb in second position, which is obeyed in the much better translations produced by the **ewt** and **lth** systems. Interestingly, the four schemes produce virtually identical structures for the source sentence, but they differ in their labeling. Where **conll07** and **yamada** use the same relation for the first two constituents (ADV and vMOD, respectively), **ewt** and **lth** distinguish between them (ADVMOD/PREP and ADV/LOC). This distinction may be what enables the better translation, since the model may learn to move the verb after the sentence adverbial. In the other schemes, sentence adverbials are not distinguished from locational adverbials. Generally, **ewt** and **lth** have more than twice as many relation types as the other schemes. \n\nThe schemes **ewt** and **lth** lead to better **SRL** performance than **conll07** and **yamada** when relying on gold-standard syntactic dependency trees. This supports the claims put forward in Johansson and Nugues (2007). These annotations also happen to use a larger set of dependency labels, however, and syntactic structures may be harder to reconstruct, as reflected by labeled attachment scores \n\n(LAS) in syntactic parsing. The biggest drop in SRL performance going from gold-standard to predicted syntactic trees is clearly for the **lth** scheme, at an average 17.8% absolute loss ( **yamada** 5.8%; **conll07** 6.8%; **ewt** 5.5%; **lth** 17.8%). \n\nThe **ewt** scheme resembles **lth** in most respects, but in preposition-noun dependencies it marks the preposition as the head rather than the noun. This is an important difference for SRL, because semantic arguments are often nouns embedded in prepositional phrases, like agents in passive constructions. It may also be that the difference in performance is simply explained by the syntactic analysis of prepositional phrases being easier to reconstruct. \n\nThe **sentence compression** results are generally much better than the models proposed in Knight and Marcu (2002). Their noisy channel model obtains an _F_ 1 compression score of 14.58%, whereas the decision tree-based model obtains an _F_ 1 compression score of 31.71%. While _F_ 1 scores should be complemented by human judgements, as there are typically many good sentence compressions of any source sentence, we believe that error reductions of more than 50% indicate that the models used here \n\n623\n\n<!-- PÁGINA 8 -->\n<!-- Start of picture text -->\n0.40<br>srl<br>0.35 neg<br>0.30<br>0.25<br>0.20<br>0.15<br>0.10<br>0.05<br>0.00ADV AMOD CC COORDDEP EXP GAP IOBJ LGS NMOD OBJ P PMOD PRD PRN PRT ROOT SBJ VC VMOD<br>Labels<br><!-- End of picture text -->\n\nFigure 7: Distributions of dependency labels in the Yamada-Matsumoto scheme \n\n(though previously unexplored in the literature) are fully competitive with state-of-the-art models. \n\nWe also see that the models using syntactic features perform better than our baseline model, except for the model using **conll07** dependency annotation. This may be surprising to some, since distributional information is often considered important in sentence compression (Knight and Marcu, 2002). Some output examples are presented in Figure 6. Unsurprisingly, it is seen that the baseline model produces grammatically incorrect output, and that most of our syntactic models correct the error leading to ungrammaticality. The model using **ewt** annotation is an exception. We also see that **conll07** introduces another error. We believe that this is due to the way the **conll07** tree-to-dependency conversion scheme handles coordination. While the word _Sweden_ is not coordinated, it occurs in a context, surrounded by commas, that is very similar to coordinated items. \n\nIn **perspective classification** we see that syntactic features based on **yamada** and **lth** annotations lead to improvements, with **yamada** leading to slightly better results than **lth** . The fact that a syntactically oriented conversion scheme leads to the best results may reflect that perspective classification, like authorship attribution, is less about content than stylistics. \n\nWhile **lth** seems to lead to the overall best results, we stress the fact that the five tasks considered here are incommensurable. What is more interesting is that, task to task, results are so different. The semantically oriented conversion schemes, **ewt** and **lth** , lead to the best results in SRL, but with a significant drop for **lth** when relying on predicted parses, while the **yamada** scheme is competitive in the other \n\nfour tasks. This may be because distributional information is more important in these tasks than in SRL. \n\nThe distribution of dependency labels seems relatively stable across applications, but differences in data may of course also affect the usefulness of different annotations. Note that **conll07** leads to very good results for negation resolution, but bad results for SRL. See Figure 7 for the distribution of labels in the **conll07** conversion scheme on the SRL and negation scope resolution data. Many differences relate to differences in sentence length. The negation resolution data is literary text with shorter sentences, which therefore uses more punctuation and has more root dependencies than newspaper articles. On the other hand we do see very few predicate dependencies in the SRL data. This may affect downstream results when classifying verbal predicates in SRL. We also note that the number of dependency labels have less impact on results in general than we would have expected. The number of dependency labels and the lack of support for some of them may explain the drop with predicted syntactic parses in our SRL results, but generally we obtain our best results with **yamada** and **lth** annotations, which have 12 and 41 dependency labels, respectively. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Conclusions** \n\nWe evaluated four different tree-to-dependency conversion schemes,",
+    "offset_fim": "exactly what conversion scheme is used, e.g. Ivanova et al. (2012). ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "4 Conclusions",
+    "motivo": "O bloco inicia no marcador de seção \"# **4 Conclusions**\" e contém seu parágrafo conclusivo completo, terminando imediatamente antes do marcador da unidade seguinte, \"# **Acknowledgements**\".",
+    "texto": "# **4 Conclusions** \n\nWe evaluated four different tree-to-dependency conversion schemes, putting more or less emphasis on syntactic or semantic evidence, in five down-stream applications, including SMT and negation resolution. Our results show why it is important to be precise about exactly what tree-to-dependency conversion scheme is used. Tools like pennconverter.jar gives us a wide range of options when converting constituent-based treebanks, and even small differences may have significant impact on down-stream performance. The small differences are also important for more linguistic comparisons that also tend to gloss over exactly what conversion scheme is used, e.g. Ivanova et al. (2012). "
+  },
+  {
+    "offset_inicio": "# **Acknowledgements** \n\nHector Martinez is funded by the ERC grant CLARA No. 238405,",
+    "offset_fim": "ard is funded by the ERC Starting Grant LOWLANDS No. 313695. \n\n624",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Acknowledgements",
+    "motivo": "O bloco inicia no título de seção “Acknowledgements” e contém seu único parágrafo, encerrando-se antes do próximo marcador de seção, “References”, na página seguinte.",
+    "texto": "# **Acknowledgements** \n\nHector Martinez is funded by the ERC grant CLARA No. 238405, and Anders Søgaard is funded by the ERC Starting Grant LOWLANDS No. 313695. \n\n624"
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "References",
+    "motivo": "O título \"References\" abre a lista bibliográfica como unidade própria. O bloco termina imediatamente antes da primeira entrada bibliográfica, que inicia em \"- Emily Bender...\" e constitui uma unidade separada.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Emily Bender, Dan Flickinger, Stephan Oepen, and Yi Zhang. 2011. Parser evaluation over local and nonlocal dependencies in a large corpus. In _EMNLP_ . ",
+    "offset_fim": "Emily Bender, Dan Flickinger, Stephan Oepen, and Yi Zhang. 2011. Parser evaluation over local and nonlocal dependencies in a large corpus. In _EMNLP_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Bender et al. (2011) — Parser evaluation over local and nonlocal dependencies",
+    "motivo": "É a primeira entrada bibliográfica do trecho; cada referência constitui uma unidade própria. O bloco começa no marcador '-' da entrada de Emily Bender et al. e termina antes do marcador '-' da referência seguinte, de Bernd Bohnet.",
+    "texto": "- Emily Bender, Dan Flickinger, Stephan Oepen, and Yi Zhang. 2011. Parser evaluation over local and nonlocal dependencies in a large corpus. In _EMNLP_ . "
+  },
+  {
+    "offset_inicio": "- Bernd Bohnet. 2010. Top accuracy and fast dependency parsing is not a contradiction. In",
+    "offset_fim": "Top accuracy and fast dependency parsing is not a contradiction. In _COLING_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Bernd Bohnet (2010) — Top accuracy and fast dependency parsing is not a contradiction",
+    "motivo": "É a primeira entrada bibliográfica do trecho; cada referência constitui uma unidade própria. O bloco inicia no marcador '-' da entrada de Bohnet e termina antes do marcador '-' da referência seguinte, de Jonathan H. Clark et al.",
+    "texto": "- Bernd Bohnet. 2010. Top accuracy and fast dependency parsing is not a contradiction. In _COLING_ ."
+  },
+  {
+    "offset_inicio": "- Jonathan H. Clark, Chris Dyer, Alon Lavie, and Noah A. Smith. 2011. Better hypothesis testing for statistical machine translation: controlling for optimizer instability. In _ACL_ . ",
+    "offset_fim": "is. 2011. Better hypothesis testing for statistical machine translation: controlling for optimizer instability. In _ACL_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Clark et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica individual visível. Inicia no marcador de item “- Jonathan H. Clark...” e termina antes da entrada bibliográfica seguinte, “- Mike Collins. 1999...”.",
+    "texto": "- Jonathan H. Clark, Chris Dyer, Alon Lavie, and Noah A. Smith. 2011. Better hypothesis testing for statistical machine translation: controlling for optimizer instability. In _ACL_ ."
+  },
+  {
+    "offset_inicio": "- Mike Collins. 1999. _Head-driven statistical models for natural language parsing_ . Ph.D. thesis, University of Pennsylvania.",
+    "offset_fim": "- Mike Collins. 1999. _Head-driven statistical models for natural language parsing_ . Ph.D. thesis, University of Pennsylvania.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Mike Collins (1999) — Head-driven statistical models for natural language parsing",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Começa no marcador de item \"- Mike Collins\" e termina antes da entrada bibliográfica seguinte, \"- Michael Collins. 2002\".",
+    "texto": "- Mike Collins. 1999. _Head-driven statistical models for natural language parsing_ . Ph.D. thesis, University of Pennsylvania."
+  },
+  {
+    "offset_inicio": "- Michael Collins. 2002. Discriminative training methods for Hidden Markov Models. In",
+    "offset_fim": "2002. Discriminative training methods for Hidden Markov Models. In _EMNLP_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Michael Collins (2002) — Discriminative training methods for Hidden Markov Models",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de item \"-\" e termina ao fim da referência, imediatamente antes da entrada de Corinna Cortes e Vladimir Vapnik.",
+    "texto": "- Michael Collins. 2002. Discriminative training methods for Hidden Markov Models. In _EMNLP_ ."
+  },
+  {
+    "offset_inicio": "- Corinna Cortes and Vladimir Vapnik. 1995. Supportvector networks. _Machine Learning_ ,",
+    "offset_fim": "Corinna Cortes and Vladimir Vapnik. 1995. Supportvector networks. _Machine Learning_ , 20(3):273–297. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Cortes e Vapnik (1995) — Supportvector networks",
+    "motivo": "É a primeira entrada da lista de referências; inicia no marcador de item e termina imediatamente antes da entrada bibliográfica seguinte, de Koby Crammer e Yoram Singer.",
+    "texto": "- Corinna Cortes and Vladimir Vapnik. 1995. Supportvector networks. _Machine Learning_ , 20(3):273–297. "
+  },
+  {
+    "offset_inicio": "- Koby Crammer and Yoram Singer. 2003. Ultraconservative algorithms for multiclass problems. In _JMLR_ .",
+    "offset_fim": "- Koby Crammer and Yoram Singer. 2003. Ultraconservative algorithms for multiclass problems. In _JMLR_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Crammer e Singer (2003)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item da referência de Koby Crammer e Yoram Singer e termina antes da entrada bibliográfica seguinte, de Jakob Elming e Martin Haulrich.",
+    "texto": "- Koby Crammer and Yoram Singer. 2003. Ultraconservative algorithms for multiclass problems. In _JMLR_ ."
+  },
+  {
+    "offset_inicio": "- Jakob Elming and Martin Haulrich. 2011. Reordering by parsing. In _Proceedings",
+    "offset_fim": " International Workshop on Using Linguistic Information for Hybrid Machine Translation (LIHMT-2011)_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Elming e Haulrich (2011) — Reordering by parsing",
+    "motivo": "É a primeira entrada bibliográfica visível; começa no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, \"- Michel Galley and Christopher Manning...\".",
+    "texto": "- Jakob Elming and Martin Haulrich. 2011. Reordering by parsing. In _Proceedings of International Workshop on Using Linguistic Information for Hybrid Machine Translation (LIHMT-2011)_ . "
+  },
+  {
+    "offset_inicio": "- Michel Galley and Christopher Manning. 2009. Quadratic-time dependency parsing for machine translation. In _ACL_ . ",
+    "offset_fim": "Michel Galley and Christopher Manning. 2009. Quadratic-time dependency parsing for machine translation. In _ACL_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica: Michel Galley and Christopher Manning (2009)",
+    "motivo": "A primeira entrada bibliográfica é uma unidade própria; inicia no marcador de item “- Michel Galley...” e termina imediatamente antes da referência seguinte, “- Keith Hall...”.",
+    "texto": "- Michel Galley and Christopher Manning. 2009. Quadratic-time dependency parsing for machine translation. In _ACL_ . "
+  },
+  {
+    "offset_inicio": "- Keith Hall, Ryan McDonald, Jason Katz-Brown, and Michael Ringgaard. 2011. Training",
+    "offset_fim": "2011. Training dependency parsers by jointly optimizing multiple objectives. In _EMNLP_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Hall et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica visível; cada referência constitui uma unidade própria. O bloco começa no marcador \"- Keith Hall\" e termina antes da entrada seguinte, de Angelina Ivanova et al.",
+    "texto": "- Keith Hall, Ryan McDonald, Jason Katz-Brown, and Michael Ringgaard. 2011. Training dependency parsers by jointly optimizing multiple objectives. In _EMNLP_ . "
+  },
+  {
+    "offset_inicio": "- Angelina Ivanova, Stephan Oepen, Lilja Øvrelid, and Dan Flickinger. 2012. Who did",
+    "offset_fim": "and Dan Flickinger. 2012. Who did what to whom? a contrastive study of syntactico-semantic dependencies. In _LAW_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Ivanova et al. (2012) — Who did what to whom?",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de item \"-\" e termina imediatamente antes da entrada bibliográfica seguinte, de Richard Johansson e Alessandro Moschitti.",
+    "texto": "- Angelina Ivanova, Stephan Oepen, Lilja Øvrelid, and Dan Flickinger. 2012. Who did what to whom? a contrastive study of syntactico-semantic dependencies. In _LAW_ ."
+  },
+  {
+    "offset_inicio": "- Richard Johansson and Alessandro Moschitti. 2010. Syntactic and semantic structure",
+    "offset_fim": "2010. Syntactic and semantic structure for opinion expression detection. In _CoNLL_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Richard Johansson and Alessandro Moschitti (2010)",
+    "motivo": "É a primeira entrada individual da lista de referências. Inicia no marcador \"-\" da referência e termina antes da entrada bibliográfica seguinte.",
+    "texto": "- Richard Johansson and Alessandro Moschitti. 2010. Syntactic and semantic structure for opinion expression detection. In _CoNLL_ ."
+  },
+  {
+    "offset_inicio": "- Richard Johansson and Pierre Nugues. 2007. Extended constituent-to-dependency conversion for English. In _NODALIDA_ .",
+    "offset_fim": "- Richard Johansson and Pierre Nugues. 2007. Extended constituent-to-dependency conversion for English. In _NODALIDA_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Johansson e Nugues (2007)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Cada referência constitui uma unidade própria; o bloco inicia nesta entrada e termina imediatamente antes da referência seguinte.",
+    "texto": "- Richard Johansson and Pierre Nugues. 2007. Extended constituent-to-dependency conversion for English. In _NODALIDA_ ."
+  },
+  {
+    "offset_inicio": "- Richard Johansson and Pierre Nugues. 2008. Dependency-based syntactic-semantic analysis with propbank and nombank. In _CoNLL_ .",
+    "offset_fim": "- Richard Johansson and Pierre Nugues. 2008. Dependency-based syntactic-semantic analysis with propbank and nombank. In _CoNLL_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica: Johansson e Nugues (2008)",
+    "motivo": "Cada entrada da lista de referências é uma unidade própria. O bloco começa na primeira referência da página 9 e termina imediatamente antes da referência seguinte, de Mahesh Joshi e Carolyn Penstein-Rose.",
+    "texto": "- Richard Johansson and Pierre Nugues. 2008. Dependency-based syntactic-semantic analysis with propbank and nombank. In _CoNLL_ ."
+  },
+  {
+    "offset_inicio": "- Mahesh Joshi and Carolyn Penstein-Rose. 2009. Generalizing dependency features for opinion mining. In _ACL_ .",
+    "offset_fim": "- Mahesh Joshi and Carolyn Penstein-Rose. 2009. Generalizing dependency features for opinion mining. In _ACL_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica: Mahesh Joshi e Carolyn Penstein-Rose (2009)",
+    "motivo": "É a primeira entrada individual da lista de referências; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, de Kevin Knight e Daniel Marcu.",
+    "texto": "- Mahesh Joshi and Carolyn Penstein-Rose. 2009. Generalizing dependency features for opinion mining. In _ACL_ ."
+  },
+  {
+    "offset_inicio": "- Kevin Knight and Daniel Marcu. 2002. Summarization beyond sentence extraction: a probabilistic approach to sentence compression.",
+    "offset_fim": "Summarization beyond sentence extraction: a probabilistic approach to sentence compression. _Artificial Intelligence_ , 139:91–107.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica: Kevin Knight and Daniel Marcu (2002)",
+    "motivo": "É a primeira entrada individual da lista de referências; inicia em “- Kevin Knight...” e termina imediatamente antes da entrada seguinte, de Emanuele Lapponi et al.",
+    "texto": "- Kevin Knight and Daniel Marcu. 2002. Summarization beyond sentence extraction: a probabilistic approach to sentence compression. _Artificial Intelligence_ , 139:91–107."
+  },
+  {
+    "offset_inicio": "- Emanuele Lapponi, Erik Velldal, Lilja Øvrelid, and Jonathon Read. 2012. UiO2:",
+    "offset_fim": "Read. 2012. UiO2: Sequence-labeling negation using dependency features. In _*SEM_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Lapponi et al. (2012), UiO2",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item e termina antes da entrada seguinte, de Alon Lavie e Abhaya Agarwal.",
+    "texto": "- Emanuele Lapponi, Erik Velldal, Lilja Øvrelid, and Jonathon Read. 2012. UiO2: Sequence-labeling negation using dependency features. In _*SEM_ ."
+  },
+  {
+    "offset_inicio": "- Alon Lavie and Abhaya Agarwal. 2007. Meteor: an automatic metric for mt evaluation with high levels of correlation with human judgments. In _WMT_ .",
+    "offset_fim": "Meteor: an automatic metric for mt evaluation with high levels of correlation with human judgments. In _WMT_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Alon Lavie and Abhaya Agarwal (2007)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, de Wei-Hao Lin e Alexander Hauptmann.",
+    "texto": "- Alon Lavie and Abhaya Agarwal. 2007. Meteor: an automatic metric for mt evaluation with high levels of correlation with human judgments. In _WMT_ ."
+  },
+  {
+    "offset_inicio": "- Wei-Hao Lin and Alexander Hauptmann. 2006. Are these documents written from different perspectives? In _COLING-ACL_ .",
+    "offset_fim": "Wei-Hao Lin and Alexander Hauptmann. 2006. Are these documents written from different perspectives? In _COLING-ACL_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Wei-Hao Lin and Alexander Hauptmann (2006)",
+    "motivo": "É a primeira entrada individual da lista de referências. Inicia no marcador de item \"-\" e termina imediatamente antes da entrada bibliográfica seguinte, de Mitchell Marcus et al.",
+    "texto": "- Wei-Hao Lin and Alexander Hauptmann. 2006. Are these documents written from different perspectives? In _COLING-ACL_ ."
+  },
+  {
+    "offset_inicio": "- Mitchell Marcus, Mary Marcinkiewicz, and Beatrice Santorini. 1993. Building a large annotated corpus of English:",
+    "offset_fim": "Building a large annotated corpus of English: the Penn Treebank. _Computational Linguistics_ , 19(2):313–330.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Mitchell Marcus et al. (1993) — Penn Treebank",
+    "motivo": "É a primeira entrada bibliográfica, que constitui uma unidade própria. Inicia no marcador \"-\" com a referência de Marcus et al. e termina antes da entrada seguinte, de Ryan McDonald e Joakim Nivre.",
+    "texto": "- Mitchell Marcus, Mary Marcinkiewicz, and Beatrice Santorini. 1993. Building a large annotated corpus of English: the Penn Treebank. _Computational Linguistics_ , 19(2):313–330."
+  },
+  {
+    "offset_inicio": "- Ryan McDonald and Joakim Nivre. 2007. Characterizing the errors of data-driven dependency parsers.",
+    "offset_fim": "ers. In _EMNLP-CoNLL_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "McDonald e Nivre (2007) — Characterizing the errors of data-driven dependency parsers",
+    "motivo": "É a primeira entrada bibliográfica completa visível; cada referência constitui uma unidade própria e o bloco termina imediatamente antes da entrada seguinte, iniciada por “- Ryan McDonald, Fernando Pereira...”.",
+    "texto": "- Ryan McDonald and Joakim Nivre. 2007. Characterizing the errors of data-driven dependency parsers. In _EMNLP-CoNLL_ . "
+  },
+  {
+    "offset_inicio": "- Ryan McDonald, Fernando Pereira, Kiril Ribarov, and Jan Hajiˇc. 2005. Non-projective dependency parsing using spanning tree algorithms.",
+    "offset_fim": "_Proceedings of the Conference on Human Language Technology and Empirical Methods in Natural Language Processing 2005_ , pages 523–530, Vancouver, British Columbia.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Ryan McDonald et al. (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"-\" e termina antes da próxima referência, também marcada por \"-\".",
+    "texto": "- Ryan McDonald, Fernando Pereira, Kiril Ribarov, and Jan Hajiˇc. 2005. Non-projective dependency parsing using spanning tree algorithms. In _Proceedings of the Conference on Human Language Technology and Empirical Methods in Natural Language Processing 2005_ , pages 523–530, Vancouver, British Columbia."
+  },
+  {
+    "offset_inicio": "- Ryan McDonald. 2006. Discriminative sentence compression with soft syntactic evidence. In _EACL_ .",
+    "offset_fim": "- Ryan McDonald. 2006. Discriminative sentence compression with soft syntactic evidence. In _EACL_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Ryan McDonald (2006) — Discriminative sentence compression",
+    "motivo": "É a primeira entrada bibliográfica visível; cada referência constitui uma unidade própria. O bloco começa no marcador '-' da referência de Ryan McDonald e termina antes da referência seguinte, de Makoto Miwa.",
+    "texto": "- Ryan McDonald. 2006. Discriminative sentence compression with soft syntactic evidence. In _EACL_ ."
+  },
+  {
+    "offset_inicio": "- Makoto Miwa, Sampo Pyysalo, Tadayoshi Hara, and Jun’ichi Tsujii. 2010. Evaluating dependency representation for event extraction. In _COLING_ .",
+    "offset_fim": "2010. Evaluating dependency representation for event extraction. In _COLING_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Miwa et al. (2010)",
+    "motivo": "É a primeira entrada bibliográfica visível; cada referência constitui uma unidade própria. O bloco começa no marcador “-” da entrada de Miwa et al. e termina antes do marcador “-” da referência seguinte.",
+    "texto": "- Makoto Miwa, Sampo Pyysalo, Tadayoshi Hara, and Jun’ichi Tsujii. 2010. Evaluating dependency representation for event extraction. In _COLING_ ."
+  },
+  {
+    "offset_inicio": "- Yusuke Miyao, Rune Sæ tre, Kenji Sagae, Takuya Matsuzaki, and Jun’ichi Tsujii. 2008. Task-oriented evaluation of syntactic parsers and their representations.",
+    "offset_fim": "Task-oriented evaluation of syntactic parsers and their representations. In _ACL_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Miyao et al. (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida. Cada referência constitui uma unidade própria; o bloco inicia no marcador \"-\" desta entrada e termina antes do marcador \"-\" da referência de Roser Morante e Eduardo Blanco.",
+    "texto": "- Yusuke Miyao, Rune Sæ tre, Kenji Sagae, Takuya Matsuzaki, and Jun’ichi Tsujii. 2008. Task-oriented evaluation of syntactic parsers and their representations. In _ACL_ . "
+  },
+  {
+    "offset_inicio": "- Roser Morante and Eduardo Blanco. 2012. *sem 2012 shared task: Resolving the",
+    "offset_fim": "2012. *sem 2012 shared task: Resolving the scope and focus of negation. In _*SEM_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Roser Morante and Eduardo Blanco (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa; inicia no marcador de item e termina imediatamente antes da entrada seguinte de Roser Morante e Caroline Sporleder.",
+    "texto": "- Roser Morante and Eduardo Blanco. 2012. *sem 2012 shared task: Resolving the scope and focus of negation. In _*SEM_ . "
+  },
+  {
+    "offset_inicio": "- Roser Morante and Caroline Sporleder. 2012. Modality and negation: An introduction to the special issue. _Computational linguistics_ , 38(2):223–260.",
+    "offset_fim": "Modality and negation: An introduction to the special issue. _Computational linguistics_ , 38(2):223–260.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Roser Morante and Caroline Sporleder (2012)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências. Inicia no marcador de item e termina antes da próxima referência, de Joakim Nivre et al.",
+    "texto": "- Roser Morante and Caroline Sporleder. 2012. Modality and negation: An introduction to the special issue. _Computational linguistics_ , 38(2):223–260."
+  },
+  {
+    "offset_inicio": "- Joakim Nivre, Johan Hall, Jens Nilsson, Atanas Chanev, G¨ulsen Eryigit, Sandra K¨ubler,",
+    "offset_fim": "languageindependent system for data-driven dependency parsing. _Natural Language Engineering_ , 13(2):95–135. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica — Joakim Nivre et al. (2007)",
+    "motivo": "Cada entrada de referências é uma unidade própria. O bloco começa no marcador de item da referência de Nivre et al. e termina antes do marcador da referência seguinte, de Papineni et al.",
+    "texto": "- Joakim Nivre, Johan Hall, Jens Nilsson, Atanas Chanev, G¨ulsen Eryigit, Sandra K¨ubler, Svetoslav Marinov, and Erwin Marsi. 2007. MaltParser: a languageindependent system for data-driven dependency parsing. _Natural Language Engineering_ , 13(2):95–135. "
+  },
+  {
+    "offset_inicio": "- Kishore Papineni, Salim Roukos, Todd Ward, and WeiJing Zhu. 2002. Bleu: a method for automatic evaluation of machine translation. In _ACL_ . ",
+    "offset_fim": "- Kishore Papineni, Salim Roukos, Todd Ward, and WeiJing Zhu. 2002. Bleu: a method for automatic evaluation of machine translation. In _ACL_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Papineni et al. 2002 — Bleu",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho; cada referência constitui uma unidade própria e termina imediatamente antes da referência seguinte.",
+    "texto": "- Kishore Papineni, Salim Roukos, Todd Ward, and WeiJing Zhu. 2002. Bleu: a method for automatic evaluation of machine translation. In _ACL_ . "
+  },
+  {
+    "offset_inicio": "- Slav Petrov and Ryan McDonald. 2012. Overview of the 2012 Shared Task on Parsing the Web. In _Notes of the First Workshop on Syntactic Analysis of NonCanonical Language (SANCL)_ . ",
+    "offset_fim": "2012 Shared Task on Parsing the Web. In _Notes of the First Workshop on Syntactic Analysis of NonCanonical Language (SANCL)_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Petrov e McDonald (2012) — Overview of the 2012 Shared Task on Parsing the Web",
+    "motivo": "É a primeira entrada bibliográfica do trecho; cada referência constitui uma unidade própria. O bloco começa no marcador '-' da entrada e termina antes da próxima referência, de Roy Schwartz et al.",
+    "texto": "- Slav Petrov and Ryan McDonald. 2012. Overview of the 2012 Shared Task on Parsing the Web. In _Notes of the First Workshop on Syntactic Analysis of NonCanonical Language (SANCL)_ . "
+  },
+  {
+    "offset_inicio": "- Roy Schwartz, and Omri Abend, Roi Reichart, and Ari Rappoport. 2011. Neutralizing",
+    "offset_fim": "tically problematic annotations in unsupervised dependency parsing evaluation. In _ACL_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Schwartz et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica identificável; inicia no marcador de item \"-\" e termina antes da entrada bibliográfica seguinte.",
+    "texto": "- Roy Schwartz, and Omri Abend, Roi Reichart, and Ari Rappoport. 2011. Neutralizing linguistically problematic annotations in unsupervised dependency parsing evaluation. In _ACL_ . "
+  },
+  {
+    "offset_inicio": "- Roy Schwartz, Omri Abend, and Ari Rappoport. 2012. Learnability-based syntactic annotation design. In _COLING_ .",
+    "offset_fim": "Roy Schwartz, Omri Abend, and Ari Rappoport. 2012. Learnability-based syntactic annotation design. In _COLING_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Roy Schwartz, Omri Abend, and Ari Rappoport (2012)",
+    "motivo": "É a primeira entrada bibliográfica, uma unidade própria da lista de referências. Começa no marcador '-' com os autores e termina no ponto final da citação, antes do número de página e da entrada seguinte.",
+    "texto": "- Roy Schwartz, Omri Abend, and Ari Rappoport. 2012. Learnability-based syntactic annotation design. In _COLING_ ."
+  },
+  {
+    "offset_inicio": "- Reut Tsarfaty, Joakim Nivre, and Evelina Andersson. 2012. Cross-framework evaluation for statistical parsing. In _EACL_ .",
+    "offset_fim": "and Evelina Andersson. 2012. Cross-framework evaluation for statistical parsing. In _EACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Tsarfaty, Nivre e Andersson (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa da lista de referências; inicia no marcador de item e termina imediatamente antes da entrada seguinte, de Erik Velldal et al.",
+    "texto": "- Reut Tsarfaty, Joakim Nivre, and Evelina Andersson. 2012. Cross-framework evaluation for statistical parsing. In _EACL_ ."
+  },
+  {
+    "offset_inicio": "- Erik Velldal, Lilja Øvrelid, Jonathon Read, and Stephan Oepen. 2012. Speculation and negation: Rules, rankers, and the role of synta.",
+    "offset_fim": "e role of synta. _Computational linguistics_ , 38(2):369–410. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Erik Velldal et al. (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa da página. Inicia no marcador de item \"- Erik Velldal\" e termina imediatamente antes da entrada seguinte, \"- Peng Xu\".",
+    "texto": "- Erik Velldal, Lilja Øvrelid, Jonathon Read, and Stephan Oepen. 2012. Speculation and negation: Rules, rankers, and the role of synta. _Computational linguistics_ , 38(2):369–410. "
+  },
+  {
+    "offset_inicio": "- Peng Xu, Jaeho Kang, Michael Ringgaard, and Franz Och. 2009. Using a dependency parser to improve SMT for subject-object-verb languages. In _NAACLHLT_ , Boulder, Colorado.",
+    "offset_fim": "Peng Xu, Jaeho Kang, Michael Ringgaard, and Franz Och. 2009. Using a dependency parser to improve SMT for subject-object-verb languages. In _NAACLHLT_ , Boulder, Colorado. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Peng Xu et al. (2009)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da próxima referência de Deniz Yuret et al.",
+    "texto": "- Peng Xu, Jaeho Kang, Michael Ringgaard, and Franz Och. 2009. Using a dependency parser to improve SMT for subject-object-verb languages. In _NAACLHLT_ , Boulder, Colorado. "
+  },
+  {
+    "offset_inicio": "- Deniz Yuret, Laura Rimell, and Aydin Han. 2012. Parser evaluation using textual entailments.",
+    "offset_fim": "Parser evaluation using textual entailments. _Language Resources and Evaluation_ , Published online 31 October 2012.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Deniz Yuret, Laura Rimell, and Aydin Han (2012)",
+    "motivo": "É uma entrada bibliográfica individual, que constitui uma unidade própria de referências. Inicia no marcador de item e termina ao fim da citação, antes da numeração de página.",
+    "texto": "- Deniz Yuret, Laura Rimell, and Aydin Han. 2012. Parser evaluation using textual entailments. _Language Resources and Evaluation_ , Published online 31 October 2012."
+  }
+]

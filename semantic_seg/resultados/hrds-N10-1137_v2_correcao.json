@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [40] está marcado como \"TEXTO NÃO EXTRAÍDO\", caracterizando falha de âncora para a entrada bibliográfica de Wu e Fung (2009)."
+      ],
+      "consistente": false,
+      "insights": "- Refaça o bloco da referência de Wu e Fung usando como início o trecho literal \"- Wu, D. and P. Fung. 2009. Semantic Roles for SMT: A Hybrid Two-Pass Model.\" e como término o ponto imediatamente anterior ao início literal da entrada \"- Yedidia, J., W. Freeman, and Y. Weiss. 2003.\".\n- Não use o título normalizado \"Wu e Fung (2009) — Semantic Roles for SMT\" como âncora; ancore a entrada pelos caracteres efetivamente extraídos da referência, incluindo autores, ano e o começo do título."
+    },
+    "arquivo_blocos": "resultados/hrds-N10-1137_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "- Refaça o bloco da referência de Wu e Fung usando como início o trecho literal \"- Wu, D. and P. Fung. 2009. Semantic Roles for SMT: A Hybrid Two-Pass Model.\" e como término o ponto imediatamente anterior ao início literal da entrada \"- Yedidia, J., W. Freeman, and Y. Weiss. 2003.\".\n- Não use o título normalizado \"Wu e Fung (2009) — Semantic Roles for SMT\" como âncora; ancore a entrada pelos caracteres efetivamente extraídos da referência, incluindo autores, ano e o começo do título.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-N10-1137_v2_ciclo2.json"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 34,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.200_ciclo1.json"
+  }
+]

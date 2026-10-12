@@ -1,0 +1,147 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [17] e [18]: o bloco [17] termina no meio da frase, em \"Also, more grams\", e o bloco seguinte já começa na seção \"5.3 Fine-tuning Results\". O restante da seção 5.2, incluindo a continuação dessa frase e eventual conteúdo de tabelas/legendas associado, não foi segmentado."
+      ],
+      "consistente": false,
+      "insights": "- Complete o bloco da seção `5.2 Zero-shot Results` até imediatamente antes do marcador `5.3 Fine-tuning Results`; não encerre o bloco após `Also, more grams`, pois essa frase continua.\n- Preserve no bloco 5.2 qualquer texto, tabela ou legenda que apareça entre a continuação de `Also, more grams` e o título `5.3 Fine-tuning Results`, sem tratar tabelas ou legendas como novos blocos."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "- Complete o bloco da seção `5.2 Zero-shot Results` até imediatamente antes do marcador `5.3 Fine-tuning Results`; não encerre o bloco após `Also, more grams`, pois essa frase continua.\n- Preserve no bloco 5.2 qualquer texto, tabela ou legenda que apareça entre a continuação de `Also, more grams` e o título `5.3 Fine-tuning Results`, sem tratar tabelas ou legendas como novos blocos.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6], iniciado em `3.1 Problem Formulation`, incorpora indevidamente o marcador da unidade seguinte `3.2 Sequence Scoring Method` no seu final. Esse marcador deveria iniciar um bloco próprio; a ausência desse bloco também deixa sem segmentação autônoma o conteúdo de 3.2 antes de `N-grams sequence scoring`.",
+        "Há uma lacuna entre os blocos [15] e [16]: o bloco [15] termina no meio da frase (`Also, more grams`) e o bloco [16] já começa em `5.3 Fine-tuning Results`, omitindo a continuação de `5.2 Zero-shot Results` e qualquer conteúdo intermediário."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `3.1 Problem Formulation` imediatamente antes do marcador literal `3.2 Sequence Scoring Method`; não deixe esse marcador no final do bloco 3.1.\n- Crie um bloco próprio iniciado em `3.2 Sequence Scoring Method` e capture nele todo o seu conteúdo até imediatamente antes do título `N-grams sequence scoring`. Mesmo que não haja texto além do título antes desse subtítulo, mantenha `3.2 Sequence Scoring Method` como bloco separado.\n- Complete o bloco da seção `5.2 Zero-shot Results` até imediatamente antes do marcador `5.3 Fine-tuning Results`; não o encerre após `Also, more grams`, pois essa frase continua.\n- Preserve no bloco `5.2 Zero-shot Results` todo o texto, tabela e legenda entre a continuação de `Also, more grams` e o título `5.3 Fine-tuning Results`, sem tratar tabelas ou legendas como novos blocos."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "- Encerre o bloco `3.1 Problem Formulation` imediatamente antes do marcador literal `3.2 Sequence Scoring Method`; não deixe esse marcador no final do bloco 3.1.\n- Crie um bloco próprio iniciado em `3.2 Sequence Scoring Method` e capture nele todo o seu conteúdo até imediatamente antes do título `N-grams sequence scoring`. Mesmo que não haja texto além do título antes desse subtítulo, mantenha `3.2 Sequence Scoring Method` como bloco separado.\n- Complete o bloco da seção `5.2 Zero-shot Results` até imediatamente antes do marcador `5.3 Fine-tuning Results`; não o encerre após `Also, more grams`, pois essa frase continua.\n- Preserve no bloco `5.2 Zero-shot Results` todo o texto, tabela e legenda entre a continuação de `Also, more grams` e o título `5.3 Fine-tuning Results`, sem tratar tabelas ou legendas como novos blocos.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [7] engloba a unidade iniciada pelo subtítulo `N-grams sequence scoring`, que deveria iniciar um bloco próprio separado de `3.2 Sequence Scoring Method`.",
+        "O bloco [15], iniciado em `5.1 Task probing`, não foi encerrado no marcador da seção `5.2 Zero-shot Results`; além disso, há uma lacuna entre o fim de [15] (`Also, more grams`) e o início de [16] (`5.3 Fine-tuning Results`), que omite a seção 5.2 e sua continuação.",
+        "O bloco [22] agrupa duas entradas bibliográficas distintas: a referência de Andrew Gordon, Zornitsa Kozareva e Melissa Roemmele e a entrada iniciada por `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.`."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `3.1 Problem Formulation` imediatamente antes do marcador literal `3.2 Sequence Scoring Method`, sem incorporar esse marcador ao bloco 3.1.\n- Crie um bloco iniciado em `3.2 Sequence Scoring Method` e encerre-o imediatamente antes do subtítulo `N-grams sequence scoring`.\n- Crie um bloco próprio iniciado em `N-grams sequence scoring` e mantenha nele seu conteúdo até o próximo marcador de unidade, sem tratar fórmulas, figuras, tabelas ou legendas como novos blocos.\n- Localize o marcador `5.2 Zero-shot Results` dentro do trecho posterior a `5.1 Task probing`; encerre o bloco `5.1 Task probing` imediatamente antes dele e crie um bloco próprio para 5.2.\n- Capture integralmente `5.2 Zero-shot Results`, incluindo a continuação iniciada por `Also, more grams`, as tabelas e as legendas, até imediatamente antes de `5.3 Fine-tuning Results`.\n- Na lista de referências, encerre a entrada de Andrew Gordon, Zornitsa Kozareva e Melissa Roemmele imediatamente antes de `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.`.\n- Crie uma entrada bibliográfica independente iniciada por `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.` e encerre-a antes da próxima referência, iniciada por `Vid Kocijan`. "
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Encerre o bloco `3.1 Problem Formulation` imediatamente antes do marcador literal `3.2 Sequence Scoring Method`, sem incorporar esse marcador ao bloco 3.1.\n- Crie um bloco iniciado em `3.2 Sequence Scoring Method` e encerre-o imediatamente antes do subtítulo `N-grams sequence scoring`.\n- Crie um bloco próprio iniciado em `N-grams sequence scoring` e mantenha nele seu conteúdo até o próximo marcador de unidade, sem tratar fórmulas, figuras, tabelas ou legendas como novos blocos.\n- Localize o marcador `5.2 Zero-shot Results` dentro do trecho posterior a `5.1 Task probing`; encerre o bloco `5.1 Task probing` imediatamente antes dele e crie um bloco próprio para 5.2.\n- Capture integralmente `5.2 Zero-shot Results`, incluindo a continuação iniciada por `Also, more grams`, as tabelas e as legendas, até imediatamente antes de `5.3 Fine-tuning Results`.\n- Na lista de referências, encerre a entrada de Andrew Gordon, Zornitsa Kozareva e Melissa Roemmele imediatamente antes de `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.`.\n- Crie uma entrada bibliográfica independente iniciada por `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.` e encerre-a antes da próxima referência, iniciada por `Vid Kocijan`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [17] (`5.2 Zero-shot Results`) termina no meio da frase, em `Also, more grams`, e o bloco [18] já inicia `5.3 Fine-tuning Results`; há uma lacuna de conteúdo não segmentado entre os blocos [17] e [18], correspondente à continuação de 5.2 (incluindo resultados/tabelas/legendas posteriores)."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `3.1 Problem Formulation` imediatamente antes do marcador literal `3.2 Sequence Scoring Method`, sem incorporar esse marcador ao bloco 3.1.\n- Crie um bloco iniciado em `3.2 Sequence Scoring Method` e encerre-o imediatamente antes do subtítulo `N-grams sequence scoring`.\n- Crie um bloco próprio iniciado em `N-grams sequence scoring` e mantenha nele seu conteúdo até o próximo marcador de unidade, sem tratar fórmulas, figuras, tabelas ou legendas como novos blocos.\n- Localize o marcador `5.2 Zero-shot Results` dentro do trecho posterior a `5.1 Task probing`; encerre o bloco `5.1 Task probing` imediatamente antes dele e crie um bloco próprio para 5.2.\n- Não encerre `5.2 Zero-shot Results` na quebra de página nem após o trecho `Also, more grams`: recupere e inclua toda a continuação dessa frase, os parágrafos subsequentes, tabelas, valores e legendas da seção, até imediatamente antes do marcador literal `5.3 Fine-tuning Results`.\n- Na lista de referências, encerre a entrada de Andrew Gordon, Zornitsa Kozareva e Melissa Roemmele imediatamente antes de `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.`.\n- Crie uma entrada bibliográfica independente iniciada por `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.` e encerre-a antes da próxima referência, iniciada por `Vid Kocijan`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 39,
+    "insights_aplicados": "- Encerre o bloco `3.1 Problem Formulation` imediatamente antes do marcador literal `3.2 Sequence Scoring Method`, sem incorporar esse marcador ao bloco 3.1.\n- Crie um bloco iniciado em `3.2 Sequence Scoring Method` e encerre-o imediatamente antes do subtítulo `N-grams sequence scoring`.\n- Crie um bloco próprio iniciado em `N-grams sequence scoring` e mantenha nele seu conteúdo até o próximo marcador de unidade, sem tratar fórmulas, figuras, tabelas ou legendas como novos blocos.\n- Localize o marcador `5.2 Zero-shot Results` dentro do trecho posterior a `5.1 Task probing`; encerre o bloco `5.1 Task probing` imediatamente antes dele e crie um bloco próprio para 5.2.\n- Não encerre `5.2 Zero-shot Results` na quebra de página nem após o trecho `Also, more grams`: recupere e inclua toda a continuação dessa frase, os parágrafos subsequentes, tabelas, valores e legendas da seção, até imediatamente antes do marcador literal `5.3 Fine-tuning Results`.\n- Na lista de referências, encerre a entrada de Andrew Gordon, Zornitsa Kozareva e Melissa Roemmele imediatamente antes de `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.`.\n- Crie uma entrada bibliográfica independente iniciada por `Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019.` e encerre-a antes da próxima referência, iniciada por `Vid Kocijan`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [2] agrupa o resumo com o marcador da seção principal `1 Introduction`: ele termina incluindo esse marcador, que deveria iniciar um bloco próprio.",
+        "O bloco [3] contém o texto da seção 1, mas não começa no seu marcador `1 Introduction`, que foi indevidamente incorporado ao fim do bloco [2].",
+        "O bloco [7] incorpora o subtítulo estrutural `N-grams sequence scoring` ao seu final, sem criar o bloco independente exigido para essa unidade.",
+        "O bloco [13] incorpora o marcador da seção principal `5 Experiments` após o conteúdo de `Swag and HellaSwag`; esse marcador deveria iniciar um bloco próprio.",
+        "O bloco [14] contém o caput de `5 Experiments`, mas começa depois do marcador da seção, que foi retido indevidamente no bloco [13].",
+        "Há uma lacuna após o bloco [16]: `5.2 Zero-shot Results` termina no meio da frase `Also, more grams`, e o conteúdo restante da seção até `5.3 Fine-tuning Results` não foi segmentado."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `Abstract` imediatamente antes do marcador literal `1 Introduction`; não deixe esse marcador no fim do resumo.\n- Crie um bloco próprio iniciado em `1 Introduction`, incluindo o marcador e todo o texto introdutório subsequente, até imediatamente antes de `2 Related Work`.\n- Encerre o bloco `3.2 Sequence Scoring Method` imediatamente antes do subtítulo literal `N-grams sequence scoring`.\n- Crie um bloco próprio iniciado em `N-grams sequence scoring` e inclua nele todo o seu conteúdo até imediatamente antes de `3.3 SSM-based fine-tuning`; não trate fórmulas, figuras, tabelas ou legendas internas como novos blocos.\n- Encerre o bloco `Swag and HellaSwag` imediatamente antes do marcador literal `5 Experiments`, sem incorporar esse marcador ao bloco da base de dados.\n- Crie o bloco de caput da seção iniciado em `5 Experiments`, incluindo esse marcador e o texto introdutório da seção até imediatamente antes de `5.1 Task probing`.\n- Localize `5.2 Zero-shot Results` e recupere sua continuação após `Also, more grams`; mantenha no mesmo bloco o restante da frase, os parágrafos, resultados, tabelas e legendas associados, até imediatamente antes de `5.3 Fine-tuning Results`.\n- Não encerre `5.2 Zero-shot Results` em quebra de página, rodapé, número de página ou legenda de tabela; use exclusivamente o próximo marcador estrutural `5.3 Fine-tuning Results` como limite final."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "- Encerre o bloco `Abstract` imediatamente antes do marcador literal `1 Introduction`; não deixe esse marcador no fim do resumo.\n- Crie um bloco próprio iniciado em `1 Introduction`, incluindo o marcador e todo o texto introdutório subsequente, até imediatamente antes de `2 Related Work`.\n- Encerre o bloco `3.2 Sequence Scoring Method` imediatamente antes do subtítulo literal `N-grams sequence scoring`.\n- Crie um bloco próprio iniciado em `N-grams sequence scoring` e inclua nele todo o seu conteúdo até imediatamente antes de `3.3 SSM-based fine-tuning`; não trate fórmulas, figuras, tabelas ou legendas internas como novos blocos.\n- Encerre o bloco `Swag and HellaSwag` imediatamente antes do marcador literal `5 Experiments`, sem incorporar esse marcador ao bloco da base de dados.\n- Crie o bloco de caput da seção iniciado em `5 Experiments`, incluindo esse marcador e o texto introdutório da seção até imediatamente antes de `5.1 Task probing`.\n- Localize `5.2 Zero-shot Results` e recupere sua continuação após `Also, more grams`; mantenha no mesmo bloco o restante da frase, os parágrafos, resultados, tabelas e legendas associados, até imediatamente antes de `5.3 Fine-tuning Results`.\n- Não encerre `5.2 Zero-shot Results` em quebra de página, rodapé, número de página ou legenda de tabela; use exclusivamente o próximo marcador estrutural `5.3 Fine-tuning Results` como limite final.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [16] e [17]: o bloco [16] (`5.2 Zero-shot Results`) termina no meio da frase, em `Also, more grams`, e omite a continuação da seção antes do início de `5.3 Fine-tuning Results` no bloco [17]."
+      ],
+      "consistente": false,
+      "insights": "- Localize o marcador literal `5.2 Zero-shot Results` e gere um único bloco que comece nele.\n- Não encerre `5.2 Zero-shot Results` após `Also, more grams`: recupere a continuação da frase e todo o conteúdo subsequente da seção, incluindo parágrafos, resultados, tabelas, figuras e respectivas legendas.\n- Termine o bloco `5.2 Zero-shot Results` exclusivamente imediatamente antes do marcador literal `5.3 Fine-tuning Results`; não use quebra de página, número de página, rodapé ou fim de janela como limite.\n- Inicie `5.3 Fine-tuning Results` em bloco separado, preservando-o como o próximo bloco após o término completo de `5.2 Zero-shot Results`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Localize o marcador literal `5.2 Zero-shot Results` e gere um único bloco que comece nele.\n- Não encerre `5.2 Zero-shot Results` após `Also, more grams`: recupere a continuação da frase e todo o conteúdo subsequente da seção, incluindo parágrafos, resultados, tabelas, figuras e respectivas legendas.\n- Termine o bloco `5.2 Zero-shot Results` exclusivamente imediatamente antes do marcador literal `5.3 Fine-tuning Results`; não use quebra de página, número de página, rodapé ou fim de janela como limite.\n- Inicie `5.3 Fine-tuning Results` em bloco separado, preservando-o como o próximo bloco após o término completo de `5.2 Zero-shot Results`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [17] (`5.2 Zero-shot Results`) termina no meio da frase, em `Also, more grams`, e há uma lacuna de conteúdo antes do início do bloco [18] (`5.3 Fine-tuning Results`). A seção 5.2 foi truncada em vez de terminar imediatamente antes do marcador da seção 5.3."
+      ],
+      "consistente": false,
+      "insights": "- Localize o marcador literal `5.2 Zero-shot Results` e gere um único bloco iniciado nesse marcador.\n- Não encerre o bloco `5.2 Zero-shot Results` após o trecho `Also, more grams`: recupere a continuação dessa frase e todo o restante da seção 5.2, inclusive parágrafos, resultados, tabelas, figuras e legendas que ocorram antes da próxima seção.\n- Ao atravessar a quebra entre as páginas 6 e 7, trate números de página, rodapés e marcadores de página como conteúdo incidental; eles não podem encerrar a seção 5.2.\n- Termine o bloco `5.2 Zero-shot Results` somente imediatamente antes do marcador literal `5.3 Fine-tuning Results`.\n- Inicie `5.3 Fine-tuning Results` em um bloco separado, imediatamente após o término integral de `5.2 Zero-shot Results`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "- Localize o marcador literal `5.2 Zero-shot Results` e gere um único bloco iniciado nesse marcador.\n- Não encerre o bloco `5.2 Zero-shot Results` após o trecho `Also, more grams`: recupere a continuação dessa frase e todo o restante da seção 5.2, inclusive parágrafos, resultados, tabelas, figuras e legendas que ocorram antes da próxima seção.\n- Ao atravessar a quebra entre as páginas 6 e 7, trate números de página, rodapés e marcadores de página como conteúdo incidental; eles não podem encerrar a seção 5.2.\n- Termine o bloco `5.2 Zero-shot Results` somente imediatamente antes do marcador literal `5.3 Fine-tuning Results`.\n- Inicie `5.3 Fine-tuning Results` em um bloco separado, imediatamente após o término integral de `5.2 Zero-shot Results`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [16], iniciado em `5.1 Task probing`, engloba indevidamente o marcador `5.2 Zero-shot Results` no seu final; a seção 5.2 deveria iniciar um bloco próprio.",
+        "Há uma lacuna de conteúdo entre o marcador `5.2 Zero-shot Results`, capturado no fim do bloco [16], e o início de `5.3 Fine-tuning Results` no bloco [17]: não foi produzido o bloco com o texto integral da seção 5.2."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `5.1 Task probing` imediatamente antes do marcador literal `5.2 Zero-shot Results`; não deixe esse marcador no fim do bloco de 5.1.\n- Localize o marcador literal `5.2 Zero-shot Results` e crie um bloco separado que comece exatamente nesse marcador.\n- Recupere, após `5.2 Zero-shot Results`, toda a continuação da seção 5.2, incluindo a frase iniciada por `Also, more grams`, os parágrafos seguintes, resultados, tabelas, figuras e respectivas legendas, até o próximo título de seção.\n- Ao passar das páginas 6 para 7, ignore números de página, rodapés, URLs de notas e comentários de mudança de página; esses elementos não podem interromper nem substituir o conteúdo da seção 5.2.\n- Termine o bloco `5.2 Zero-shot Results` somente imediatamente antes do marcador literal `5.3 Fine-tuning Results`.\n- Inicie `5.3 Fine-tuning Results` em um bloco próprio, sem absorver texto pertencente à seção 5.2."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Encerre o bloco `5.1 Task probing` imediatamente antes do marcador literal `5.2 Zero-shot Results`; não deixe esse marcador no fim do bloco de 5.1.\n- Localize o marcador literal `5.2 Zero-shot Results` e crie um bloco separado que comece exatamente nesse marcador.\n- Recupere, após `5.2 Zero-shot Results`, toda a continuação da seção 5.2, incluindo a frase iniciada por `Also, more grams`, os parágrafos seguintes, resultados, tabelas, figuras e respectivas legendas, até o próximo título de seção.\n- Ao passar das páginas 6 para 7, ignore números de página, rodapés, URLs de notas e comentários de mudança de página; esses elementos não podem interromper nem substituir o conteúdo da seção 5.2.\n- Termine o bloco `5.2 Zero-shot Results` somente imediatamente antes do marcador literal `5.3 Fine-tuning Results`.\n- Inicie `5.3 Fine-tuning Results` em um bloco próprio, sem absorver texto pertencente à seção 5.2.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [1] e [2] fragmentam indevidamente a abertura e a seção 1: o marcador `1 Introduction` foi absorvido pelo bloco do título/documento, e a continuação da introdução na página 2 foi emitida como um bloco sem marcador, em vez de integrar um único bloco da seção 1 até `2 Related Work`.",
+        "Os blocos [6] e [7] cortam incorretamente o subtítulo não numerado `N-grams sequence scoring`: o marcador foi deixado no fim de [6], enquanto [7] começa apenas no texto posterior; o título deve iniciar o bloco correspondente.",
+        "Os blocos [13] e [14] cortam incorretamente a seção `5 Experiments`: o marcador `5 Experiments` está no fim de [13], e [14] contém apenas o texto posterior sem o seu marcador.",
+        "Os blocos [15], [16], [17] e [18] apresentam desordenação e lacuna na seção `5.2 Zero-shot Results`: [16], rotulado como continuação de 5.1, contém a continuação da frase final de [17] (`Also, more grams give increasingly better results...`) e texto de resultados zero-shot que deve suceder [17]. Assim, [17] termina prematuramente e a seção 5.2 fica incompleta antes de `5.3 Fine-tuning Results` em [18]."
+      ],
+      "consistente": false,
+      "insights": "- Separe o bloco do título do documento dos marcadores de abertura que aparecem na primeira página: inicie um bloco próprio em `Abstract`, se esse cabeçalho estiver presente, e outro em `1 Introduction`.\n- Faça o bloco `1 Introduction` começar exatamente nesse marcador e incluir sua continuação na página 2, inclusive o texto que atualmente inicia `tuned during the pre-training phase`, até imediatamente antes de `2 Related Work`; não crie um bloco autônomo para essa continuação sem marcador.\n- Encerre `3.2 Sequence Scoring Method` imediatamente antes de `N-grams sequence scoring`; crie um bloco próprio iniciado pelo marcador literal `N-grams sequence scoring` e mantenha nele todo o texto posterior até `3.3 SSM-based fine-tuning`.\n- Encerre `Swag and HellaSwag` imediatamente antes do marcador `5 Experiments`; faça o bloco da seção 5 começar exatamente em `5 Experiments` e incluir o parágrafo introdutório que atualmente está separado como `Seção 5 — introdução`.\n- Não trate a mudança de coluna, página, número de página, rodapé ou nota como limite de `5.1 Task probing` nem como motivo para emitir uma continuação sem marcador; encerre 5.1 somente antes de `5.2 Zero-shot Results`.\n- Faça `5.2 Zero-shot Results` começar exatamente nesse marcador e inclua, na ordem textual correta, a continuação após `Also, more grams`, incluindo `give increasingly better results but the trend inverts after 4-grams` e os parágrafos subsequentes de resultados zero-shot que foram deslocados para o atual bloco [16].\n- Não emita o trecho iniciado por `give increasingly better results` como continuação de `5.1 Task probing`: reposicione-o dentro do mesmo bloco de `5.2 Zero-shot Results`, após a frase `Also, more grams`.\n- Termine `5.2 Zero-shot Results` somente imediatamente antes de `5.3 Fine-tuning Results`; inicie `5.3 Fine-tuning Results` em bloco próprio e mantenha nele apenas seu conteúdo e suas subdivisões posteriores."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 39,
+    "insights_aplicados": "- Separe o bloco do título do documento dos marcadores de abertura que aparecem na primeira página: inicie um bloco próprio em `Abstract`, se esse cabeçalho estiver presente, e outro em `1 Introduction`.\n- Faça o bloco `1 Introduction` começar exatamente nesse marcador e incluir sua continuação na página 2, inclusive o texto que atualmente inicia `tuned during the pre-training phase`, até imediatamente antes de `2 Related Work`; não crie um bloco autônomo para essa continuação sem marcador.\n- Encerre `3.2 Sequence Scoring Method` imediatamente antes de `N-grams sequence scoring`; crie um bloco próprio iniciado pelo marcador literal `N-grams sequence scoring` e mantenha nele todo o texto posterior até `3.3 SSM-based fine-tuning`.\n- Encerre `Swag and HellaSwag` imediatamente antes do marcador `5 Experiments`; faça o bloco da seção 5 começar exatamente em `5 Experiments` e incluir o parágrafo introdutório que atualmente está separado como `Seção 5 — introdução`.\n- Não trate a mudança de coluna, página, número de página, rodapé ou nota como limite de `5.1 Task probing` nem como motivo para emitir uma continuação sem marcador; encerre 5.1 somente antes de `5.2 Zero-shot Results`.\n- Faça `5.2 Zero-shot Results` começar exatamente nesse marcador e inclua, na ordem textual correta, a continuação após `Also, more grams`, incluindo `give increasingly better results but the trend inverts after 4-grams` e os parágrafos subsequentes de resultados zero-shot que foram deslocados para o atual bloco [16].\n- Não emita o trecho iniciado por `give increasingly better results` como continuação de `5.1 Task probing`: reposicione-o dentro do mesmo bloco de `5.2 Zero-shot Results`, após a frase `Also, more grams`.\n- Termine `5.2 Zero-shot Results` somente imediatamente antes de `5.3 Fine-tuning Results`; inicie `5.3 Fine-tuning Results` em bloco próprio e mantenha nele apenas seu conteúdo e suas subdivisões posteriores.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [7] e [8] cortam no local correto, mas o marcador `N-grams sequence scoring` foi retido no fim de [7], enquanto [8] começa somente no parágrafo seguinte. O marcador deve pertencer ao bloco da unidade que inicia.",
+        "Os blocos [13] e [14] apresentam a mesma falha de atribuição de marcador: `5 Experiments` ficou no fim de [13], mas o bloco [14], que contém o caput da seção 5, não começa no seu próprio marcador.",
+        "O bloco [15] é englobante: inicia em `5.1 Task probing`, mas se estende até a página 6 sem que exista um bloco para a subseção intermediária `5.2 Zero-shot Results`. Essa subseção e seu conteúdo foram absorvidos por [15].",
+        "Há uma lacuna estrutural entre [15] e [16]: falta o bloco iniciado literalmente em `5.2 Zero-shot Results`, que deve conter todo o conteúdo dessa subseção até `5.3 Fine-tuning Results`."
+      ],
+      "consistente": false,
+      "insights": "- Separe o bloco do título do documento dos cabeçalhos iniciais: crie um bloco próprio em `Abstract` e outro em `1 Introduction`.\n- Faça `1 Introduction` começar exatamente nesse marcador e inclua sua continuação na página 2, inclusive o trecho que começa em `tuned during the pre-training phase`, até imediatamente antes de `2 Related Work`.\n- Encerre `3.2 Sequence Scoring Method` imediatamente antes de `N-grams sequence scoring`; inicie o bloco seguinte no próprio texto literal `N-grams sequence scoring`, incluindo esse cabeçalho e todo o seu conteúdo até `3.3 SSM-based fine-tuning`.\n- Encerre `Swag and HellaSwag` imediatamente antes de `5 Experiments`; inicie o bloco da seção 5 no marcador literal `5 Experiments` e mantenha nele o parágrafo introdutório até `5.1 Task probing`.\n- Não use mudança de coluna, página, número de página, rodapé ou nota como limite de `5.1 Task probing`; mantenha seu conteúdo no mesmo bloco somente até o marcador `5.2 Zero-shot Results`.\n- Localize o marcador literal `5.2 Zero-shot Results` e crie um bloco próprio nele. Inclua nesse bloco, na ordem textual correta, o trecho após `Also, more grams`, incluindo `give increasingly better results but the trend inverts after 4-grams`, e os demais parágrafos de resultados zero-shot.\n- Não atribua a `5.1 Task probing` o trecho iniciado por `give increasingly better results`; reposicione-o no bloco de `5.2 Zero-shot Results`, após a frase `Also, more grams`.\n- Termine `5.2 Zero-shot Results` imediatamente antes de `5.3 Fine-tuning Results`; inicie `5.3 Fine-tuning Results` em bloco próprio e preserve separadamente os cabeçalhos internos `Comparison settings` e `COPA and CommonsenseQA results`."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.357_ciclo10.json"
+  }
+]

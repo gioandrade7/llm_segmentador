@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-N19-1291_v3",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/hrds-N19-1291.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 37,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 37,
+      "fronteiras_gabarito": 37,
+      "acertos": 37,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 37,
+        "gabarito": 37,
+        "fins_nao_localizados": 0,
+        "acertos": 37,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "blocos_exatos": {
+        "acertos": 37,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

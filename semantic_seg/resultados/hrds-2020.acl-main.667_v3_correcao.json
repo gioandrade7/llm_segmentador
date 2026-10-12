@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [12] é englobante: reúne a seção \"3.2 Full Argument Detection\" com unidades internas iniciadas por títulos em negrito, incluindo \"Setting\" e os demais títulos corridos dessa subseção, que devem iniciar blocos próprios."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual trecho da seção `3.2 Full Argument Detection` em cada título em negrito que abre parágrafo: crie um bloco para `3.2 Full Argument Detection` somente com seu eventual texto de abertura e inicie blocos separados em `**Setting**`, `**Results**` e em qualquer outro subtítulo em negrito subsequente (como a análise dos resultados).\n- Não mantenha `**Setting**` no mesmo bloco do marcador `3.2 Full Argument Detection`, nem una o texto de resultados/análise ao bloco de configuração; cada subtítulo em negrito dessa subseção deve levar consigo apenas o texto até o próximo subtítulo ou marcador de seção."
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.667_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Divida o atual trecho da seção `3.2 Full Argument Detection` em cada título em negrito que abre parágrafo: crie um bloco para `3.2 Full Argument Detection` somente com seu eventual texto de abertura e inicie blocos separados em `**Setting**`, `**Results**` e em qualquer outro subtítulo em negrito subsequente (como a análise dos resultados).\n- Não mantenha `**Setting**` no mesmo bloco do marcador `3.2 Full Argument Detection`, nem una o texto de resultados/análise ao bloco de configuração; cada subtítulo em negrito dessa subseção deve levar consigo apenas o texto até o próximo subtítulo ou marcador de seção.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2020.acl-main.667_v3_ciclo2.json"
+  }
+]

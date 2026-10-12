@@ -1,0 +1,560 @@
+[
+  {
+    "offset_inicio": "# **DAG-Structured Long Short-Term Memory for Semantic Compositionality** \n\n|**Xiaodan Zhu**",
+    "offset_fim": "|zhu2048@gmail.com|psobh090@uottawa.ca|hongyu.guo@nrc-cnrc.gc.ca|",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "DAG-Structured Long Short-Term Memory for Semantic Compositionality",
+    "motivo": "O bloco inicia no título principal do artigo e reúne autoria, afiliações e contatos. Termina imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
+    "texto": "# **DAG-Structured Long Short-Term Memory for Semantic Compositionality** \n\n|**Xiaodan Zhu**|**Parinaz Sobhani**|**Hongyu Guo**|\n|---|---|---|\n|National Research Council Canada|EECS, University of Ottawa|National Research Council Canada|\n|1200 Montreal Road, M50|800 King Edward Avenue|1200 Montreal Road, M50|\n|Ottawa, ON K1A 0R6, Canada|Ottawa, ON K1N 6N5, Canada|Ottawa, ON K1A 0R6, Canada|\n|zhu2048@gmail.com|psobh090@uottawa.ca|hongyu.guo@nrc-cnrc.gc.ca|"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nRecurrent neural networks, particularly long short-term memory (LSTM), have",
+    "offset_fim": "state-of-the-art performance, outperforming models that lack this ability.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no marcador de título \"## **Abstract**\" e contém todo o resumo até imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nRecurrent neural networks, particularly long short-term memory (LSTM), have recently shown to be very effective in a wide range of sequence modeling problems, core to which is effective learning of distributed representation for subsequences as well as the sequences they form. An assumption in almost all the previous models, however, posits that the learned representation (e.g., a distributed representation for a sentence), is fully compositional from the atomic components (e.g., representations for words), while non-compositionality is a basic phenomenon in human languages. In this paper, we relieve the assumption by extending the chain-structured LSTM to directed acyclic graphs (DAGs), with the aim to endow linear-chain LSTMs with the capability of considering compositionality together with non-compositionality in the same semantic composition framework. From a more general viewpoint, the proposed models incorporate additional prior knowledge into recurrent neural networks, which is interesting to us, considering most NLP tasks have relatively small training data and appropriate prior knowledge could be beneficial to help cover missing semantics. Our experiments on sentiment composition demonstrate that the proposed models achieve the state-of-the-art performance, outperforming models that lack this ability."
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nRecurrent neural networks, particularly long shortterm memory (LSTM), have recently shown to be ",
+    "offset_fim": "by unifying the compositional strength of LSTM with external semantic knowledge.",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção 1 e reúne todo o texto introdutório, atravessando a quebra de página, até imediatamente antes do marcador da seção seguinte, \"## **2 Related Work**\".",
+    "texto": "## **1 Introduction** \n\nRecurrent neural networks, particularly long shortterm memory (LSTM), have recently shown to be \n\nvery effective in a wide range of sequence modeling problems, including speech recognition (Graves et al., 2013), automatic machine translation (Sutskever et al., 2014; Cho et al., 2014), and image-to-text conversion (Vinyals et al., 2014), among many others. The specific memory copying and gating configurations in LSTM’s memory blocks render an effective mechanism in capturing both short and distant interplays in an input sequence. \n\nIn modeling sequences, core to many problems is to learn effective distributed representations for subsequences and the sequences they form. A strong assumption in most previous models, however, posits that the learned representation (e.g., a distributed representation for a sentence) is fully compositional from the atomic components (e.g., representations for words), while non-compositionality is a basic phenomenon in human languages and other modalities, which does not only include rather rigid cases such as idiomatic expressions (e.g., _kick the bucket_ ) but also _soft_ cases that are harder to make a binary judgment. \n\nA framework with the capability to consider both compositionality and non-compositionality in semantic composition are of theoretic interest. From a more pragmatical viewpoint, if one is able to holistically obtain the representations for a sequence (e.g., for the bigram _must try_ in a customer-review corpus for sentiment analysis), it would be desirable that a composition model has the ability to choose the sources of knowledge it can trust more: the composition of subsequences of this sequence, the holistic representation, or a soft combination of them, in the process of semantic composition. In such situations, \n\n917 \n\n_Proceedings of NAACL-HLT 2016_ , pages 917–926, San Diego, California, June 12-17, 2016. _⃝_ c 2016 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nwhether this sequence ( _must try_ ) is indeed compositional or non-compositional may often be blurry or may not be an explicit concern of applications. \n\nIn this paper, we extend the popular chainstructured LSTM to directed acyclic graph (DAG) structures, with the aim to endow conventional LSTM with the capability of considering compositionality and non-compositionality together. From a more general viewpoint, the proposed models are along the line of incorporating external knowledge into recurrent neural models, which is interesting to us, considering that most NLP tasks have relatively limited amount of training data, and external prior knowledge could be beneficial to help cover missing semantics. The proposed models unify the compositional power of recurrent neural networks (RNN) and additional prior knowledge. In general, neural nets are powerful approaches for composition, which can fit very complicated compositional functions underlying the annotated data (Cybenko, 1989; Hornik, 1991). Over that, externally obtained semantics could help cope with missing information in limited training data. \n\nWe demonstrated the models’ effectiveness in sentiment composition, a popular semantic composition problem that optimizes a sentiment objective. We show that the proposed models achieve the stateof-the-art performance on two benchmark datasets, without any feature engineering, by unifying the compositional strength of LSTM with external semantic knowledge."
+  },
+  {
+    "offset_inicio": "## **2 Related Work** ",
+    "offset_fim": "## **2 Related Work** \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Related Work",
+    "motivo": "O bloco inicia na seção numerada “2 Related Work” e termina antes do marcador temático “**Linear and Structured RNN**”, sua primeira subdivisão; portanto contém apenas o título/caput da seção.",
+    "texto": "## **2 Related Work** \n\n"
+  },
+  {
+    "offset_inicio": "**Linear and Structured RNN** Linear-chain RNN, particularly LSTM, has been applied to",
+    "offset_fim": "orporate external semantics including non-compositional or holistically learned semantics. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Linear and Structured RNN",
+    "motivo": "O bloco inicia no marcador temático em negrito \"**Linear and Structured RNN**\" e inclui seus parágrafos introdutórios até imediatamente antes do próximo marcador temático, \"**Compositionality**\".",
+    "texto": "**Linear and Structured RNN** Linear-chain RNN, particularly LSTM, has been applied to a wide range of problems as in (Graves et al., 2013; Sutskever et al., 2014; Cho et al., 2014; Vinyals et al., 2014), among many others. While the models take a linear encoding process to absorb input symbols, they are capable of implicitly capturing rather complicated structures embedded in the input sequences. \n\nRecent research has also moved beyond linearchain LSTM. For example, in (Tai et al., 2015; Zhu et al., 2015b; Le and Zuidema, 2015), LSTM was extended to tree structures. The results show that tree-structured LSTM achieves the-state-of-the-art performance on semantic tasks such as paraphrasing \n\ndetection and sentiment analysis, due to its abilities in capturing both local and long-distance interplay over the structures. \n\nIn this work, we proposed DAG-structured LSTM for modeling sequences of text. Unlike the treestructured LSTM, where the structures are used for considering syntax, the proposed models leverage DAG structures to incorporate external semantics including non-compositional or holistically learned semantics. "
+  },
+  {
+    "offset_inicio": "**Compositionality** Semantic composition exists in multiple modalities, including images and vision (Lake, 2014; Hummel, 2001; Socher et al., 2011; van the",
+    "offset_fim": "potentially confuse the embedding of the component words _kick_ or _bucket_ .",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "Compositionality",
+    "motivo": "O bloco inicia no marcador temático em negrito **Compositionality** na página 2 e reúne os parágrafos introdutórios sobre composição semântica. Termina imediatamente antes do próximo marcador estrutural, # **3 DAG-Structured LSTM**, na página 3.",
+    "texto": "**Compositionality** Semantic composition exists in multiple modalities, including images and vision (Lake, 2014; Hummel, 2001; Socher et al., 2011; van der Velde and de Kamps, 2006). In human languages, the recent years have seen extensive interests on distributional approaches. The research includes the influential pioneering work that examined a number of explicit forms of compositional functions (Mitchell and Lapata, 2008). \n\nMore recent works explored neural networks, e.g., (Socher et al., 2013; Irsoy and Cardie, 2014; Kalchbrenner et al., 2014; Tai et al., 2015; Le and Zuidema, 2015; Zhu et al., 2015c) among many others, which extended the success of word-level embeddings (Collobert et al., 2011; Mikolov et al., 2013; Chen et al., 2015) and modeled sentences through semantic composition. In general, neural models can fit very complicated functions and can be a universal approximator (Cybenko, 1989; Hornik, 1991). \n\nIn obtaining the distributed representation for longer spans of text from its subsequences, previous neural models assume full compositionality from the atomic components and disregard noncompositionality and in general prior semantics. Some very recent work (Zhu et al., 2015a) has started to address this problem in recursive neural networks with the assumption of the availability of parse information. In this work, we extend the general sequence models, chain-structured LSTM, to directed acyclic graphs (DAGs) in order to consider prior semantics, including non-compositional or holistically learned semantics. We utilize DAG structures to unify different sources of semantics. \n\nFrom the decomposition direction, modeling nonconstitutionality could potentially help learn the representations for the atomic components (e.g., words) \n\n918\n\n<!-- PÁGINA 3 -->\nas well, by avoiding backpropagating unnecessary errors to the atom level. For example, the errors received by the block _kick the bucket_ , may not need to be passed down to the word level and potentially confuse the embedding of the component words _kick_ or _bucket_ ."
+  },
+  {
+    "offset_inicio": "# **3 DAG-Structured LSTM** \n\nThe DAG-structured LSTM aims to integrate compositional,",
+    "offset_fim": "weight matrices; e.g., the two yellow blocks share the same parameters.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3 DAG-Structured LSTM",
+    "motivo": "A seção numerada 3 inicia no marcador de nível 1 e contém seus parágrafos introdutórios até imediatamente antes do marcador da subseção 3.1.",
+    "texto": "# **3 DAG-Structured LSTM** \n\nThe DAG-structured LSTM aims to integrate compositional, non-compositional, and in general external semantics in semantic composition. Figure 1 depicts an example of DAG-structured LSTM (referred to as DAG-LSTM in the remainder of the paper) in modeling a sentence. \n\nThe proposed DAG-LSTM networks consist of four types of nodes, denoted in Figure 1 with different colors. The blue nodes (0, 1, 2, 6, and 7) correspond to normal chain-structured LSTM memory blocks. The yellow nodes (5 and 8) model noncompositional knowledge. The purple nodes (3 and 4), which we call _fork blocks_ or _fork nodes_ in this paper, are the modified versions of regular LSTM nodes, summarizing history for different types of outgoing blocks. The merging memory block is depicted in red (node 9), aiming at infusing information from multiple histories and deciding which sources will be considered more. Each category of these four types of memory blocks share its own parameters or weight matrices; e.g., the two yellow blocks share the same parameters."
+  },
+  {
+    "offset_inicio": "## **3.1 Compositional and Non-compositional Memory Blocks** \n\nThe conventional components of DAG-LSTM",
+    "offset_fim": "nowledge, from both human heuristics/annotation and from automatically learned resources.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.1 Compositional and Non-compositional Memory Blocks",
+    "motivo": "O bloco inicia no marcador da subseção 3.1 e contém sua explicação completa sobre blocos de memória composicionais e não composicionais, terminando imediatamente antes do marcador da subseção 3.2.",
+    "texto": "## **3.1 Compositional and Non-compositional Memory Blocks** \n\nThe conventional components of DAG-LSTM in Figure 1 are nodes 0, 1, 2, 6, and 7, which implement linear-chain LSTM memory blocks that we will not discuss in detail here (refer to (Graves, 2012) for a good introduction and discussion.) \n\nThe yellow nodes (blocks 5 and 8) model noncompositional knowledge. In general, the goal is incorporating external, holistic knowledge. Specifically for the sentiment composition task that we experiment with in this paper, we leverage two different types of such external knowledge: (1) sentiment of words and ngrams holistically learned from external, larger corpora, and (2) sentiment of words and phrases from human prior, i.e., annotation assigned \n\nby human subjects. We concatenate these two resources (in form of vectors) to be a longer vector for nodes 5 and 8. Note that the models allow both the number of hidden units and the embedding spaces of a non-compositional node to be different from those of a compositional node. \n\nAccordingly, the DAG-LSTM employs two types of paths, compositional path (shortened as c-path) and non-compositional path (nc-path), to incorporate different knowledge sources. For example, the c-path in the figure connects nodes 3, 4, 6, 7, and 9, which model the regular sequential compositional procedure. The two nc-paths explore noncompositional knowledge. The path 4-5-9 considers the composition vector accumulated at node 4 so far with the non-compositional knowledge of the phrase _must try_ . Similarly, the path 3-8-9 considers holistic representation for the negated phrase _not must try_ . Note that negation by itself has shown to be a rather complicated non-linear function (Zhu et al., 2014a), if being modeled only compositionally. The model here provides the flexibility to consider both compositional and non-compositional representations. All knowledge from these three paths are then merged, to obtain the comprehensive representation so far, at node 9. Later in the experiment section, we will discuss how to obtain prior non-compositional knowledge, from both human heuristics/annotation and from automatically learned resources."
+  },
+  {
+    "offset_inicio": "## **3.2 Fork Memory Blocks** \n\nThe fork blocks (node 3 and 4) summarize history",
+    "offset_fim": "the _tanh_ activation of _x_ . The superscript _T_ over the weight matrices means matrix transpose.",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "3.2 Fork Memory Blocks",
+    "motivo": "O bloco inicia no marcador da subseção 3.2 e reúne seu texto, incluindo a continuação na página 4, até imediatamente antes do marcador da subseção seguinte, \"## **3.3 Merging Blocks**\".",
+    "texto": "## **3.2 Fork Memory Blocks** \n\nThe fork blocks (node 3 and 4) summarize history obtained so far for different types of outgoing blocks (node 5 and 6 from node 4) that are either compositional or non-compositional. More specifically, the cell and output vectors of a fork node will be passed to multiple paths as intuitively shown in Figure 2. While the forward propagation of a fork block is the same as that of a regular LSTM block, during backpropagation, the errors are summed over multiple outgoing blocks and passed back to the memory cell and output layer of the current node. \n\nMore specifically, for each memory block, assume that the error passed to the hidden vector is _ϵ_<sup>_h_</sup> _t_<sup>.The derivatives of the output gate</sup><sup>_δ_</sup> _t_<sup>_o_, forget gate</sup> _δt_<sup>_f_and input gate</sup><sup>_δ_</sup> _t_<sup>_i_are computed as follows:</sup> \n\n919\n\n<!-- PÁGINA 4 -->\n**Figure 1:** An example of DAG-LSTM in modeling a sentence. Nodes with different colors contain different types of LSTM memory blocks. \n\n\n\n\n\n\n\n\n\nwhere _σ_<sup>_′_</sup> ( _x_ ) is the element-wise derivative of the logistic function over vector _x_ . Since it can be computed with the activation of _x_ , we relax the notation a bit to write it over the activated vectors in these equations. The underscript _p_ is representative of parent over different paths (both non-compositional paths and compositional path). _ϵ_<sup>_c_</sup> _t_<sup>isthederivative</sup> over the cell vector and it is calculated as follows: \n\n\n\nwhere _g_<sup>_′_</sup> ( _x_ ) is the element-wise derivative of the _tanh_ function. It can also be directly calculated from \n\nthe _tanh_ activation of _x_ . The superscript _T_ over the weight matrices means matrix transpose."
+  },
+  {
+    "offset_inicio": "## **3.3 Merging Blocks** \n\nMerging blocks (node 9 in Figure 1) accumulate and summarize",
+    "offset_fim": "to the future blocks. _⊗_ denotes a Hadamard product, and the ”s” shape sign is a squashing function (in this paper the _tanh_ function).",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "3.3 Merging Blocks",
+    "motivo": "O bloco inicia no marcador da subseção 3.3, continua através da quebra de página e da legenda da Figura 2, e termina imediatamente antes do próximo marcador estrutural, \"# **4 Experiment Set-Up**\".",
+    "texto": "## **3.3 Merging Blocks** \n\nMerging blocks (node 9 in Figure 1) accumulate and summarize multiple histories. For the specific example in Figure 1, the merging block combines information from two non-compositional paths and one compositional path. \n\n**Binarization** In this paper, we propose to _binarize_ the nodes in the merging process. Taking Figure 1 as an example, binarization is performed as depicted in the bottom subfigure. We merge the compositional path (c-path) with one of the non-compositional path (nc-path) and then another. With this binarization trick, we can handle nodes with any number of incoming edges (degrees) with the same architecture of memory block. We made all the binarized merging nodes (the three dotted-lined nodes in the lower subfigure of Figure 1) to share the same parameters (weight matrices), as during merging we should treat compositional and non-compositional history (5, 7, 8) in the same way, by their content but not by how many words they contain. Note that since the dimen- \n\n920\n\n<!-- PÁGINA 5 -->\nsion of the output vectors and memory cell vectors of different paths are the same, one has the choice of using other variants of memory blocks such as those described in (Tai et al., 2015; Le and Zuidema, 2015; Zhu et al., 2015c). \n\nAgain, note that we use merging node to consider noncompositional and prior knowledge in DAG, but the above tree-LSTM was proposed to wire with syntactic structures to consider syntactic information. In addition, in DAG, the merging nodes work together with fork nodes to correctly forwardpropagate and back-propagate compositional and non-compositional knowledge jointly. \n\n\n\n**Figure 2:** An example of a fork memory block. Both the hidden vectors _ht_ and cell vectors _ct_ are passed along multiple outgoing paths to the future blocks. _⊗_ denotes a Hadamard product, and the ”s” shape sign is a squashing function (in this paper the _tanh_ function)."
+  },
+  {
+    "offset_inicio": "# **4 Experiment Set-Up** \n\nIn this paper, we study the proposed models on a semantic composition task that determine the sentiment",
+    "offset_fim": "of a text span, which has not been well modeled yet and more work would be desirable.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4 Experiment Set-Up",
+    "motivo": "O bloco inicia na seção numerada \"4 Experiment Set-Up\" e contém seus parágrafos introdutórios. Termina imediatamente antes do marcador da subseção \"4.1 Data and Evaluation Metric\".",
+    "texto": "# **4 Experiment Set-Up** \n\nIn this paper, we study the proposed models on a semantic composition task that determine the sentiment of a piece of text. We use social-media messages from the official SemEval Sentiment Analysis in Twitter competition. Analyzing social-media text has attracted extensive attention (Nakov et al., 2016; Kiritchenko et al., 2014; Mohammad et al., 2014; Mohammad et al., 2015; Zhu et al., 2014b; Mohammad et al., 2013a) and have many applications. Sen- \n\ntimental analysis of such data presents a unique set of challenges as well; for example, the tweet posts are often short, use informal languages, and are often not linguistically well-formed. Syntactic analysis such as parsing is much less reliable in such data than in news articles, and sequential models without depending on deep linguistic analysis (e.g., parsing) are adopted by most previous work. \n\nIn obtaining the sentiment of a text span, e.g., a sentence, early work often factorized the problem to consider smaller pieces of component words or phrases with bag-of-words or bag-of-phrases models (Liu and Zhang, 2012; Pang and Lee, 2008). More recent work has started to model composition process (Choi and Cardie, 2008; Moilanen and Pulman, 2007; Socher et al., 2012; Socher et al., 2013; Irsoy and Cardie, 2014; Kalchbrenner et al., 2014; Tai et al., 2015; Zhu et al., 2015b; Le and Zuidema, 2015), more closely. In general, the composition process is critical in the formation of the sentiment of a text span, which has not been well modeled yet and more work would be desirable."
+  },
+  {
+    "offset_inicio": "## **4.1 Data and Evaluation Metric** \n\nIn our experiments, we use the official data",
+    "offset_fim": "official specification, we use macro-averaged F-score to evaluate the performances.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4.1 Data and Evaluation Metric",
+    "motivo": "O bloco inicia no marcador da subseção 4.1 e contém sua descrição dos dados e da métrica de avaliação. Termina antes do marcador seguinte, \"## **4.2 Prior Knowledge**\", que abre uma nova unidade na página 6.",
+    "texto": "## **4.1 Data and Evaluation Metric** \n\nIn our experiments, we use the official data from the SemEval-2013 (Wilson et al., 2013) and SemEval2014 (Rosenthal et al., 2014) Sentiment Analysis in Twitter challenges. The task attempts to determine the sentiment category of a tweet; that is, detecting whether an entire tweet message conveys a positive, negative, or neutral sentiment. \n\nTo give a rough idea about the data, the SemEval2013 tweets were collected through the public streaming Twitter API during a period of one year: between January 2012 and January 2013. The dataset is comprised of 5,192 positive and 2,150 negative and 6,383 neutral tweets split into the training (8,258 tweets), development (1,654 tweets), and test (3,813 tweets) sets. For more details, please refer to (Wilson et al., 2013; Rosenthal et al., 2014). In our experiments, we report our results on the official in-domain (tweets) test data but not out-ofdomain (e.g., SMS) test data to better observe the supervised performances of our models but not the domain adaptation performance. \n\nFollowing the official specification, we use macro-averaged F-score to evaluate the performances."
+  },
+  {
+    "offset_inicio": "## **4.2 Prior Knowledge** \n\nAs briefly discussed in Section 3, we use two different sources",
+    "offset_fim": "human annotators. Below, we introduce them in further details.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "4.2 Prior Knowledge",
+    "motivo": "O bloco começa no marcador da subseção 4.2 e contém seu parágrafo introdutório. Termina imediatamente antes do marcador temático de nível interno **Automatically Learned Knowledge**.",
+    "texto": "## **4.2 Prior Knowledge** \n\nAs briefly discussed in Section 3, we use two different sources of prior, non-compositional knowledge. These two types of resources encode: (1) sentiment of ngrams automatically learned from an external, much larger corpus, and (2) sentiment of ngrams assigned by human annotators. Below, we introduce them in further details."
+  },
+  {
+    "offset_inicio": "**Automatically Learned Knowledge** Following the method proposed in (Mohammad et al.,",
+    "offset_fim": "sentiment embeddings, such as those learned in (Tang et al., 2014).",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Automatically Learned Knowledge",
+    "motivo": "O bloco inicia no marcador temático em negrito \"Automatically Learned Knowledge\" e abrange seus parágrafos até imediatamente antes do próximo marcador temático, \"Manually Encoded Semantics\".",
+    "texto": "**Automatically Learned Knowledge** Following the method proposed in (Mohammad et al., 2013b), we learn sentimental ngrams from Tweets, e.g., the sentiment knowledge for the bigram _must try_ . The unsupervised approach utilizes _hashtags_ , which can be regarded as conveying freely available (but noisy) human annotation of sentiment. More specifically, certain words in tweets are specially marked with the hash character (#) to indicate the topic, sentiment polarity, or emotions such as joy, sadness, angry, and surprised. With enough data, such artificial annotation can be used to learn the sentiment of ngrams by their likelihood of co-occurring with such hashtagged words. \n\nMore specifically, a collection of 78 seed hashtags closely related to _positive_ and _negative_ such as _#good, #excellent, #bad,_ and _#terrible_ were used (32 positive and 36 negative). These terms were chosen from entries for _positive_ and _negative_ in the Roget’s Thesaurus. A set of 775,000 tweets that contain at least a positive hashtag or a negative hashtag were used as the learning corpus. A tweet was considered positive if it had one of the 32 positive seed hashtags, and negative if it had one of the 36 negative seed hashtags. The association score for an ngram _w_ was calculated from these pseudo-labeled tweets as follows: \n\n_score_ ( _w_ ) = _PMI_ ( _w, positive_ ) _− PMI_ ( _w, negative_ ) (6) \n\nwhere PMI stands for pointwise mutual information, and the two terms in the formula calculate the PMI between the target ngram and the pseudo-labeled positive tweets as well as that between the ngram and the negative tweets, respectively. Accordingly, a positive _score(.)_ indicates association with positive sentiment, whereas a negative score indicates association with negative sentiment. \n\nWe use in our experiments the unigrams, bigrams and trigrams learned from the dataset with the occurrences higher than 5. We assign these ngrams into one of the 5 bins according to their sentiment scores obtained with Formula 6: ( _−∞, −_ 2], ( _−_ 2 _, −_ 1], ( _−_ 1 _,_ 1), [1 _,_ 2), and [2 _,_ + _∞_ ). Each ngram is now given a one-hot vector, indicating the polarity and strength of its sentiment. For example, a bigram with a score of -1.5 will be assigned a 5- dimensional vector [0 _,_ 1 _,_ 0 _,_ 0 _,_ 0], indicating a weak negative. Note that we can also take into other forms of sentiment embeddings, such as those learned in (Tang et al., 2014)."
+  },
+  {
+    "offset_inicio": "**Manually Encoded Semantics** In addition, we also leveraged prior knowledge from human,",
+    "offset_fim": "_weak negative_ , _neutral_ , _weak positive_ , _strong positive_ , respectively.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Manually Encoded Semantics",
+    "motivo": "O bloco inicia no marcador temático em negrito “Manually Encoded Semantics” e contém a descrição completa da semântica codificada manualmente, terminando imediatamente antes do marcador da subseção “## **4.3 Training Details**”.",
+    "texto": "**Manually Encoded Semantics** In addition, we also leveraged prior knowledge from human, i.e., manually encoded semantics, for the task here. This includes a widely used sentiment lexicon, the MPQA Subjectivity Lexicon (Wilson et al., 2005), which encodes the prior knowledge that the human annotators have about the sentiment of words. The MPQA, which draws from the General Inquirer and other sources, has sentiment labels for about 8,000 words. The contained words marked with their prior polarity (positive or negative) and a discrete strength of evaluative intensity (strong or weak). We convert them to value -1.0, -0.5, 0, 0.5, 1, corresponding to _strong negative_ , _weak negative_ , _neutral_ , _weak positive_ , _strong positive_ , respectively."
+  },
+  {
+    "offset_inicio": "## **4.3 Training Details** \n\nOur networks aim to minimize the cross-entropy error (Socher",
+    "offset_fim": "size of the hidden units to 10, batch size to 10 and learning rate to 0.1, which achieved the best performance during development.",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "4.3 Training Details",
+    "motivo": "O bloco inicia no marcador da subseção 4.3, na página 6, e reúne seus detalhes de treinamento, incluindo o parágrafo que continua na página 7. Termina imediatamente antes do próximo marcador estrutural, \"# **5 Results**\".",
+    "texto": "## **4.3 Training Details** \n\nOur networks aim to minimize the cross-entropy error (Socher et al., 2013). The models learn the weight matrices used in those different memory blocks described above in addition to learning word embedding. For all Twitter messages, the error is calculated as a regularized sum: \n\n\n\nwhere _y_<sup>_seni_</sup> _∈_ R<sup>_c×_1</sup> is predicted distribution and _t_<sup>_i_</sup> _∈_ R<sup>_c×_1</sup> the target distribution. _c_ is the number of classes or categories, and _j ∈ c_ denotes the _j_ - th element of the multinomial target distribution; _i_ iterates over root nodes, _θ_ are model parameters, and _λ_ is a regularization parameter. We tuned our model against the development data set. \n\n922\n\n<!-- PÁGINA 7 -->\nThe DAG-LSTM and LSTM results reported here are all obtained by setting the size of the hidden units to 10, batch size to 10 and learning rate to 0.1, which achieved the best performance during development."
+  },
+  {
+    "offset_inicio": "# **5 Results** ",
+    "offset_fim": "# **5 Results** ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "5 Results",
+    "motivo": "O bloco inicia no marcador de seção \"# **5 Results**\" e termina imediatamente antes do marcador da subseção \"## **5.1 Overall Performance**\"; não há texto próprio adicional entre eles.",
+    "texto": "# **5 Results** "
+  },
+  {
+    "offset_inicio": "## **5.1 Overall Performance** \n\nTable 1 presents the macro-averaged F-scores of different",
+    "offset_fim": "the same or less than the top official system we compare to in Table 1. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "5.1 Overall Performance",
+    "motivo": "A unidade começa no marcador da subseção 5.1 e inclui seus parágrafos e a Tabela 1; termina imediatamente antes do marcador da subseção seguinte, \"## **5.2 Effect of DAG Paths**\".",
+    "texto": "## **5.1 Overall Performance** \n\nTable 1 presents the macro-averaged F-scores of different models on the official test sets of the SemEval-2013 and SemEval-2014 Sentiment Analysis in Twitter. The first row of results show the majority baseline where a majority classifier simply predicts all test cases into the most frequent class observed in training data. SVM is a support vector machine classifier applied to unigram features, as reported in (Nakov et al., 2016). In addition, we list the results of top three models described in the official reports of SemEval-2013 (Wilson et al., 2013) and SemEval-2014 (Rosenthal et al., 2014), respectively. \n\n|**Method**|**SemEval-13**|**SemEval-14**|\n|---|---|---|\n|Majority baseline|29.19|34.46|\n|Unigram (SVM)|56.95|58.58|\n|3<sup>_rd_ </sup>best model|64.86|69.95|\n|2<sup>_nd_ </sup>best model|65.27|70.14|\n|The best model|69.02|70.96|\n|LSTM-DAG|70.88|71.97|\n\n\n\n**Table 1:** Performances of different models in official evaluation metric (macro F-scores) on the test sets of SemEval-2013 and SemEval-2014 Sentiment Analysis in Twitter in predicting the sentiment of the tweet messages. \n\nThe results show DAG-LSTM achieves a macroaveraged F-score of 70.88% on the SemEval-2013 test set and 71.97% on the SemEval-2014 test set, which outperform the models officially reported in the competition. Note that DAG-LSTM performs no feature engineering, but unifies LSTM with the external semantic knowledge to perform semantic composition within the DAG structures, where LSTM, as discussed earlier in the paper, possesses strong modeling and composition power through capturing distant interplay and complicated structures embedded in sequences, while prior knowl- \n\nedge used covers missing semantics in the limited training data. \n\nNote that further improvement, including that reported in (Zhu et al., 2014b), is additionally possible, which was achieved by building better resources through discriminating affirmative and negative context. Such improvement could be orthogonally combined with our model, while in this paper, we are interested in the basic modeling problems and leave such engineering as future work. Note also that the external resources we use in this paper is the same or less than the top official system we compare to in Table 1. "
+  },
+  {
+    "offset_inicio": "## **5.2 Effect of DAG Paths** \n\nTo provide a more detailed analysis on the effect of",
+    "offset_fim": "DAG-LSTM helps choose more reliable resources, e.g., composition from lower-order ngrams.",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "5.2 Effect of DAG Paths",
+    "motivo": "O bloco inicia no marcador da subseção 5.2, na página 7, e reúne seu texto, tabela e continuação na página 8. Termina imediatamente antes do marcador da seção seguinte, `# **6 Conclusions and Discussions**`.",
+    "texto": "## **5.2 Effect of DAG Paths** \n\nTo provide a more detailed analysis on the effect of different paths in DAG-LSTM, Table 2 include the ablation results obtained by removing different types of paths gradually. The table show that by removing all the paths that incorporate the prior semantics, a regular LSTM (last row of the table) achieves the f-scores of a 64.0% and 66.4% on the two test sets, which is far less than the best result we have achieved; But the performance of the regular LSTM is still much better than that of unigram-based SVM reported in Table 1, suggesting the usefulness of the LSTM composition compared to bag-of-word models. \n\n|**Method**<br>**SemEval-13 **|**SemEval-14**|\n|---|---|\n|DAG-LSTM||\n|Full paths<br>70.88|71.97|\n|Full –_{_autoPaths_}_<br>69.36|69.27|\n|Full –_{_triPaths_}_<br>70.16|70.77|\n|Full –_{_triPaths, biPaths_}_<br>69.55|69.93|\n|Full –_{_manuPaths_}_<br>69.88|70.58|\n|LSTM without DAG||\n|Full – _{_autoPaths,manuPaths_}_<br>64.00|66.40|\n\n\n\n**Table 2:** Ablation performances (macro-averaged F-scores) of DAG-LSTM with different types of paths being removed. \n\nWhen removing the paths corresponding to automatic lexicons, the performance dropped to 69.36% and 69.27% on the SemEval-2013 and SemEval2014 dataset, respectively. If removing all paths corresponding to manual lexicons, the performance \n\n923\n\n<!-- PÁGINA 8 -->\ndropped to 69.88% and 70.58%. In both test sets, the paths corresponds to automatic lexicon have more impact on the ablation performance than manuallexicon paths, which agree with the observation reported in previous top systems that use conventional feature-based classifiers (Mohammad et al., 2013a), suggesting the usefulness of the automatically acquired semantics. The table also lists more details of removing trigram and bigram paths. \n\nIn addition to the ablation models reported in Table 2, we also created an additional model that incorporated into the basic chain LSTM the external knowledge only for longest n-grams but not for their substrings. This experiment is supposed to investigate the effect of DAG structures that integrate knowledge for different granularities of ngrams in comparison to the LSTM that incorporates the external knowledge only for the longest n-grams. On SemEval-2014 official set, the performance (Macro-F) of this model is 69.37, compared with DAG-LSTM (71.97) and chain LSTM (66.40). On Semeval-2013, Macro-F is 68.81, compared with DAG-LSTM (70.88) and chain LSTM (64.00). After some manual analysis, we observe that in tweets where DAG-LSTM works better than this baseline model, the prior sentiment of the longest n-grams is often noisy and not very reliable; in this case, the weight matrix of DAG-LSTM helps choose more reliable resources, e.g., composition from lower-order ngrams."
+  },
+  {
+    "offset_inicio": "# **6 Conclusions and Discussions** \n\nIn obtaining the distributed representation for longer",
+    "offset_fim": "rather straightforward to adapt the proposed idea to other architectures of recurrent neural networks. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "6 Conclusions and Discussions",
+    "motivo": "O bloco inicia no marcador da seção 6 e contém seus parágrafos conclusivos até imediatamente antes do próximo marcador estrutural, \"# **Acknowledgments**\".",
+    "texto": "# **6 Conclusions and Discussions** \n\nIn obtaining the distributed representation for longer text spans from its subsequences, previous neural models assume fully compositionality from the atomic components and often disregard the noncompositionality and in general prior semantics. In this paper, we extend chain-structured LSTM to a directed acyclic graph (DAG) structure, with the aim to provide the popular chain LSTM with the capability of considering both compositionality and noncompositionality in a single semantic composition framework. We demonstrated the models’ effectiveness in a sentiment composition task, a popular semantic composition problem that optimizes a sentiment objective. We use two official SemEval datasets to detect the sentiment expressed by social- \n\nmedia messages. The proposed models achieve the state-of-the-art performance without any feature engineering, through unifying the composition strength of LSTM with external holistic semantics. We consider our work as an attempt towards unifying the strong modeling power of neural models with proper prior or external knowledge. This is an intriguing direction for us, as most NLP tasks lack training data, compared with speech recognition or image classification where neural models have achieved more significant successes. \n\nWhile we specifically treat LSTM in this paper, it should be rather straightforward to adapt the proposed idea to other architectures of recurrent neural networks. "
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nThe second author of this paper was supported by the Natural Sciences",
+    "offset_fim": "the Natural Sciences and Engineering Research Council of Canada under the CREATE program.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Acknowledgments",
+    "motivo": "O bloco inicia no marcador de seção \"# **Acknowledgments**\" e contém seu único parágrafo, terminando imediatamente antes do próximo marcador de seção, \"# **References**\".",
+    "texto": "# **Acknowledgments** \n\nThe second author of this paper was supported by the Natural Sciences and Engineering Research Council of Canada under the CREATE program."
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "References",
+    "motivo": "O título \"References\" é uma unidade própria; termina imediatamente antes da primeira entrada bibliográfica, pois cada referência inicia um bloco separado.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Zhigang Chen, Wei Lin, Qian Chen, Si Wei, Hui Jiang, and Xiaodan Zhu. 2015. Revisiting word embedding for contrasting meaning.",
+    "offset_fim": "2015. Revisiting word embedding for contrasting meaning. In _Proceedings of ACL_ . ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Zhigang Chen et al. (2015)",
+    "motivo": "Cada entrada da lista de referências constitui uma unidade própria. O bloco começa na entrada de Chen et al. e termina imediatamente antes da referência seguinte, de Kyunghyun Cho et al.",
+    "texto": "- Zhigang Chen, Wei Lin, Qian Chen, Si Wei, Hui Jiang, and Xiaodan Zhu. 2015. Revisiting word embedding for contrasting meaning. In _Proceedings of ACL_ . "
+  },
+  {
+    "offset_inicio": "- Kyunghyun Cho, Bart van Merrienboer, C¸ aglar G¨ulc¸ehre, Fethi Bougares, Holger",
+    "offset_fim": "r. 2014. Learning phrase representations using RNN encoder-decoder for statistical machine translation. _CoRR_ , abs/1406.1078. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Kyunghyun Cho et al. (2014)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"-\" de Kyunghyun Cho e termina imediatamente antes da referência seguinte, também iniciada por \"-\".",
+    "texto": "- Kyunghyun Cho, Bart van Merrienboer, C¸ aglar G¨ulc¸ehre, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using RNN encoder-decoder for statistical machine translation. _CoRR_ , abs/1406.1078."
+  },
+  {
+    "offset_inicio": "- Yejin Choi and Claire Cardie. 2008. Learning with compositional semantics as structural inference for subsentential sentiment analysis.",
+    "offset_fim": "In _Proceedings of the Conference on Empirical Methods in Natural Language Processing_ , EMNLP ’08, pages 793–801, Honolulu, Hawaii.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Yejin Choi and Claire Cardie (2008)",
+    "motivo": "A primeira unidade identificável é uma entrada individual da lista de referências, iniciada pelo marcador '-' e encerrada imediatamente antes da referência seguinte.",
+    "texto": "- Yejin Choi and Claire Cardie. 2008. Learning with compositional semantics as structural inference for subsentential sentiment analysis. In _Proceedings of the Conference on Empirical Methods in Natural Language Processing_ , EMNLP ’08, pages 793–801, Honolulu, Hawaii."
+  },
+  {
+    "offset_inicio": "- R. Collobert, J. Weston, L. Bottou, M. Karlen, K. Kavukcuoglu, and P. Kuksa. 2011. Natural language processing",
+    "offset_fim": "2011. Natural language processing (almost) from scratch. _JMLR_ , 12:2493–2537. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Collobert et al. (2011) — Natural language processing (almost) from scratch",
+    "motivo": "É a primeira entrada bibliográfica visível; começa no marcador '-' da referência de Collobert et al. e termina imediatamente antes da próxima entrada, iniciada por '- George Cybenko.'",
+    "texto": "- R. Collobert, J. Weston, L. Bottou, M. Karlen, K. Kavukcuoglu, and P. Kuksa. 2011. Natural language processing (almost) from scratch. _JMLR_ , 12:2493–2537. "
+  },
+  {
+    "offset_inicio": "- George Cybenko. 1989. Approximations by superpositions of sigmoidal functions. _Mathematics",
+    "offset_fim": "Approximations by superpositions of sigmoidal functions. _Mathematics of Control, Signals, and Systems_ , 2(4):303–314.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: George Cybenko (1989)",
+    "motivo": "Trata-se da primeira entrada bibliográfica, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da referência seguinte, de Alex Graves et al.",
+    "texto": "- George Cybenko. 1989. Approximations by superpositions of sigmoidal functions. _Mathematics of Control, Signals, and Systems_ , 2(4):303–314."
+  },
+  {
+    "offset_inicio": "- Alex Graves, Abdel-rahman Mohamed, and Geoffrey E. Hinton. 2013. Speech recognition with deep recurrent neural networks.",
+    "offset_fim": "Speech recognition with deep recurrent neural networks. _CoRR_ , abs/1303.5778. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Graves, Mohamed e Hinton (2013) — Speech recognition with deep recurrent neural networks",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Alex Graves...\" e termina antes da próxima referência, iniciada por \"- Alex Graves. 2012.\".",
+    "texto": "- Alex Graves, Abdel-rahman Mohamed, and Geoffrey E. Hinton. 2013. Speech recognition with deep recurrent neural networks. _CoRR_ , abs/1303.5778. "
+  },
+  {
+    "offset_inicio": "- Alex Graves. 2012. _Supervised sequence labelling with recurrent neural networks_ , volume 385. Springer. ",
+    "offset_fim": "Alex Graves. 2012. _Supervised sequence labelling with recurrent neural networks_ , volume 385. Springer. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Alex Graves (2012) — Supervised sequence labelling with recurrent neural networks",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho fornecido; inicia no marcador de item \"- Alex Graves\" e termina antes do próximo item bibliográfico, \"- Kurt Hornik\".",
+    "texto": "- Alex Graves. 2012. _Supervised sequence labelling with recurrent neural networks_ , volume 385. Springer. "
+  },
+  {
+    "offset_inicio": "- Kurt Hornik. 1991. Approximation capabilities of multilayer feedforward networks. _Neural Networks_ , 4(2):251–257. ",
+    "offset_fim": "Approximation capabilities of multilayer feedforward networks. _Neural Networks_ , 4(2):251–257. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Kurt Hornik (1991)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador da referência de Kurt Hornik e termina imediatamente antes da entrada seguinte, de John E Hummel.",
+    "texto": "- Kurt Hornik. 1991. Approximation capabilities of multilayer feedforward networks. _Neural Networks_ , 4(2):251–257. "
+  },
+  {
+    "offset_inicio": "- John E Hummel. 2001. Complementary solutions to the binding problem in vision: Implications",
+    "offset_fim": "Implications for shape perception and object recognition. _Visual cognition_ , 8(35):489–517. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "John E Hummel. 2001.",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, de Ozan Irsoy e Claire Cardie.",
+    "texto": "- John E Hummel. 2001. Complementary solutions to the binding problem in vision: Implications for shape perception and object recognition. _Visual cognition_ , 8(35):489–517. "
+  },
+  {
+    "offset_inicio": "- Ozan Irsoy and Claire Cardie. 2014. Deep recursive neural networks for compositionality in language. In Z.",
+    "offset_fim": "editors, _Advances in Neural Information Processing Systems 27_ , pages 2096–2104. Curran Associates, Inc.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Ozan Irsoy and Claire Cardie (2014)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida; inicia no marcador de item da referência de Irsoy e Cardie e termina imediatamente antes da entrada seguinte, de Nal Kalchbrenner et al.",
+    "texto": "- Ozan Irsoy and Claire Cardie. 2014. Deep recursive neural networks for compositionality in language. In Z. Ghahramani, M. Welling, C. Cortes, N.D. Lawrence, and K.Q. Weinberger, editors, _Advances in Neural Information Processing Systems 27_ , pages 2096–2104. Curran Associates, Inc."
+  },
+  {
+    "offset_inicio": "- Nal Kalchbrenner, Edward Grefenstette, and Phil Blunsom. 2014. A convolutional",
+    "offset_fim": "of the 52nd Annual Meeting of the Association for Computational Linguistics_ , June.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Kalchbrenner, Grefenstette e Blunsom (2014)",
+    "motivo": "A primeira unidade completa visível é uma entrada bibliográfica individual, iniciada pelo marcador de lista \"- Nal Kalchbrenner\" e encerrada imediatamente antes da referência seguinte, iniciada por \"- Svetlana Kiritchenko\".",
+    "texto": "- Nal Kalchbrenner, Edward Grefenstette, and Phil Blunsom. 2014. A convolutional neural network for modelling sentences. _Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics_ , June."
+  },
+  {
+    "offset_inicio": "- Svetlana Kiritchenko, Xiaodan Zhu, and Saif Mohammad. 2014. Sentiment analysis of short informal texts.",
+    "offset_fim": "Sentiment analysis of short informal texts. _Journal of Artificial Intelligence Research_ , 50:724– 762, August.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Kiritchenko, Zhu e Mohammad (2014)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte de Brenden M Lake.",
+    "texto": "- Svetlana Kiritchenko, Xiaodan Zhu, and Saif Mohammad. 2014. Sentiment analysis of short informal texts. _Journal of Artificial Intelligence Research_ , 50:724– 762, August."
+  },
+  {
+    "offset_inicio": "- Brenden M Lake. 2014. _Towards more human-like concept learning in machines : compositionality,",
+    "offset_fim": "Ph.D. thesis, Massachusetts Institute of Technology. Department of Brain and Cognitive Sciences.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Brenden M Lake (2014)",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da referência seguinte.",
+    "texto": "- Brenden M Lake. 2014. _Towards more human-like concept learning in machines : compositionality, causality, and learning-to-learn_ . Ph.D. thesis, Massachusetts Institute of Technology. Department of Brain and Cognitive Sciences."
+  },
+  {
+    "offset_inicio": "- Phong Le and Willem Zuidema. 2015. Compositional distributional semantics with long short",
+    "offset_fim": "ributional semantics with long short term memory. _CoRR_ , abs/1503.02510. \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Phong Le e Willem Zuidema (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Phong Le...\" e termina imediatamente antes da referência seguinte, iniciada por \"- Bing Liu...\".",
+    "texto": "- Phong Le and Willem Zuidema. 2015. Compositional distributional semantics with long short term memory. _CoRR_ , abs/1503.02510. \n\n"
+  },
+  {
+    "offset_inicio": "- Bing Liu and Lei Zhang. 2012. A survey of opinion mining and sentiment analysis. In Charu C. Aggarwal and ChengXiang Zhai,",
+    "offset_fim": "ChengXiang Zhai, editors, _Mining Text Data_ , pages 415–463. Springer US.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Bing Liu and Lei Zhang (2012)",
+    "motivo": "É a primeira entrada bibliográfica individual da lista de referências, iniciada pelo marcador '-' e encerrada imediatamente antes da referência seguinte, de Tomas Mikolov et al.",
+    "texto": "- Bing Liu and Lei Zhang. 2012. A survey of opinion mining and sentiment analysis. In Charu C. Aggarwal and ChengXiang Zhai, editors, _Mining Text Data_ , pages 415–463. Springer US."
+  },
+  {
+    "offset_inicio": "- Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013.",
+    "offset_fim": "es and their compositionality. In _Advances in neural information processing systems_ , pages 3111–3119.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Mikolov et al. (2013)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista da referência de Tomas Mikolov et al. e termina imediatamente antes do marcador da referência seguinte.",
+    "texto": "- Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. In _Advances in neural information processing systems_ , pages 3111–3119."
+  },
+  {
+    "offset_inicio": "- Jeff Mitchell and Mirella Lapata. 2008. Vector-based models of semantic composition.",
+    "offset_fim": "In _Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics_ , June.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Mitchell e Lapata (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"-\" com os autores e termina imediatamente antes da referência seguinte, de Mohammad et al. (2013a).",
+    "texto": "- Jeff Mitchell and Mirella Lapata. 2008. Vector-based models of semantic composition. In _Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics_ , June."
+  },
+  {
+    "offset_inicio": "- S. Mohammad, S. Kiritchenko, and X. Zhu. 2013a. NRC-Canada: Building the state-of-the-art in sentiment analysis of tweets.",
+    "offset_fim": "Semantic Evaluation_ , SemEval ’13, Atlanta, Georgia, USA, June.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Mohammad, Kiritchenko e Zhu (2013a)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item “- S. Mohammad...” e termina antes da próxima referência, iniciada por “- Saif M. Mohammad...”.",
+    "texto": "- S. Mohammad, S. Kiritchenko, and X. Zhu. 2013a. NRC-Canada: Building the state-of-the-art in sentiment analysis of tweets. In _Proceedings of the International Workshop on Semantic Evaluation_ , SemEval ’13, Atlanta, Georgia, USA, June."
+  },
+  {
+    "offset_inicio": "- Saif M. Mohammad, Bonnie J. Dorr, Graeme Hirst, and Peter D. Turney. 2013b. Computing lexical contrast.",
+    "offset_fim": "Computing lexical contrast. _Computational Linguistics_ , 39(3):555–590.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica — Mohammad et al. (2013b)",
+    "motivo": "É a primeira entrada individual da lista de referências visível no texto. Inicia no marcador de item \"- Saif M. Mohammad\" e termina imediatamente antes da próxima referência iniciada por \"- Saif Mohammad\".",
+    "texto": "- Saif M. Mohammad, Bonnie J. Dorr, Graeme Hirst, and Peter D. Turney. 2013b. Computing lexical contrast. _Computational Linguistics_ , 39(3):555–590."
+  },
+  {
+    "offset_inicio": "- Saif Mohammad, Xiaodan Zhu, and Joel Martin. 2014. Semantic role labeling of emotions in tweets. In ",
+    "offset_fim": "tweets. In \n\n_Proceedings of ACL Workshop on Computational Approaches to Subjectivity_ , June.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Mohammad, Zhu e Martin (2014)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"- Saif Mohammad...\" e termina antes da próxima referência iniciada por \"- Saif Mohammad, Xiaodan Zhu, Svetlana Kiritchenko...\".",
+    "texto": "- Saif Mohammad, Xiaodan Zhu, and Joel Martin. 2014. Semantic role labeling of emotions in tweets. In \n\n_Proceedings of ACL Workshop on Computational Approaches to Subjectivity_ , June."
+  },
+  {
+    "offset_inicio": "- Saif Mohammad, Xiaodan Zhu, Svetlana Kiritchenko, and Joel Martin. 2015. Sentiment",
+    "offset_fim": "tweets. _Information Processing and Management_ , 51:480–499.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica — Saif Mohammad et al. (2015)",
+    "motivo": "É a primeira entrada individual da lista de referências. Inicia no marcador de item \"-\" da referência de Mohammad et al. e termina após \"51:480–499.\", imediatamente antes da referência de Karo Moilanen e Stephen Pulman.",
+    "texto": "- Saif Mohammad, Xiaodan Zhu, Svetlana Kiritchenko, and Joel Martin. 2015. Sentiment, emotion, purpose, and style in electoral tweets. _Information Processing and Management_ , 51:480–499."
+  },
+  {
+    "offset_inicio": "- Karo Moilanen and Stephen Pulman. 2007. Sentiment composition. In _Proceedings of RANLP 2007_ , Borovets, Bulgaria.",
+    "offset_fim": "In _Proceedings of RANLP 2007_ , Borovets, Bulgaria.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Moilanen e Pulman (2007) — Sentiment composition",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"-\" e termina imediatamente antes da entrada seguinte, de Preslav Nakov et al.",
+    "texto": "- Karo Moilanen and Stephen Pulman. 2007. Sentiment composition. In _Proceedings of RANLP 2007_ , Borovets, Bulgaria."
+  },
+  {
+    "offset_inicio": "- Preslav Nakov, Sara Rosenthal, Svetlana Kiritchenko, Saif M. Mohammad, Zornitsa Kozareva,",
+    "offset_fim": "_Language Resources and Evaluation_ , 50(1):35–65. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica — Nakov et al. (2016)",
+    "motivo": "É a primeira entrada de referência bibliográfica visível no trecho. Inicia no marcador de item “- Preslav Nakov...” e termina antes da próxima entrada, “- Bo Pang and Lillian Lee...”.",
+    "texto": "- Preslav Nakov, Sara Rosenthal, Svetlana Kiritchenko, Saif M. Mohammad, Zornitsa Kozareva, Alan Ritter, Veselin Stoyanov, and Xiaodan Zhu. 2016. Developing a successful semeval task in sentiment analysis of twitter and other social media texts. _Language Resources and Evaluation_ , 50(1):35–65. "
+  },
+  {
+    "offset_inicio": "- Bo Pang and Lillian Lee. 2008. Opinion mining and sentiment analysis. _Foundations and Trends",
+    "offset_fim": "Opinion mining and sentiment analysis. _Foundations and Trends in Information Retrieval_ , 2(1–2):1–135.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Pang e Lee (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item com os autores e termina antes da próxima referência, de Sara Rosenthal et al.",
+    "texto": "- Bo Pang and Lillian Lee. 2008. Opinion mining and sentiment analysis. _Foundations and Trends in Information Retrieval_ , 2(1–2):1–135."
+  },
+  {
+    "offset_inicio": "- Sara Rosenthal, Preslav Nakov, Alan Ritter, and Veselin Stoyanov. 2014. Semeval-",
+    "offset_fim": "2014. Semeval-2014 task 9: Sentiment analysis in twitter. _Proc. SemEval_ , pages 73–80.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Rosenthal et al. (2014)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia em “- Sara Rosenthal...” e termina imediatamente antes da referência seguinte, “- Richard Socher...”.",
+    "texto": "- Sara Rosenthal, Preslav Nakov, Alan Ritter, and Veselin Stoyanov. 2014. Semeval-2014 task 9: Sentiment analysis in twitter. _Proc. SemEval_ , pages 73–80."
+  },
+  {
+    "offset_inicio": "- Richard Socher, Cliff Chiung-Yu Lin, Andrew Y. Ng, and Christopher D. Manning. 2011.",
+    "offset_fim": "the 28th International Conference on Machine Learning, ICML_ , pages 129–136, Washington, USA. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Socher et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Richard Socher...\" e termina antes da entrada seguinte, também iniciada por \"- Richard Socher, Brody Huval...\".",
+    "texto": "- Richard Socher, Cliff Chiung-Yu Lin, Andrew Y. Ng, and Christopher D. Manning. 2011. Parsing natural scenes and natural language with recursive neural networks. In _Proceedings of the 28th International Conference on Machine Learning, ICML_ , pages 129–136, Washington, USA. "
+  },
+  {
+    "offset_inicio": "- Richard Socher, Brody Huval, Christopher D. Manning, and Andrew Y. Ng. 2012. Semantic compositionality through recursive matrix-vector spaces.",
+    "offset_fim": "_ , EMNLP ’12, Jeju, Korea. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica: Socher et al. (2012)",
+    "motivo": "Cada entrada da lista de referências bibliográficas constitui uma unidade própria. O bloco começa na entrada de Richard Socher et al. (2012) e termina antes da entrada bibliográfica seguinte.",
+    "texto": "- Richard Socher, Brody Huval, Christopher D. Manning, and Andrew Y. Ng. 2012. Semantic compositionality through recursive matrix-vector spaces. In _Proceedings of the Conference on Empirical Methods in Natural Language Processing_ , EMNLP ’12, Jeju, Korea. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Richard Socher, Alex Perelygin, Jean Y. Wu, Jason Chuang, Christopher D. Manning,",
+    "offset_fim": "EMNLP ’13, Seattle, USA. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Socher et al. (2013)",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia na entrada de Richard Socher et al. e termina antes da referência seguinte, de Ilya Sutskever et al.",
+    "texto": "- Richard Socher, Alex Perelygin, Jean Y. Wu, Jason Chuang, Christopher D. Manning, Andrew Y. Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In _Proceedings of the Conference on Empirical Methods in Natural Language Processing_ , EMNLP ’13, Seattle, USA. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to sequence learning with neural networks.",
+    "offset_fim": "Sequence to sequence learning with neural networks. _CoRR_ , abs/1409.3215. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Sutskever, Vinyals e Le (2014)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho; inicia no marcador de item e termina antes da próxima referência bibliográfica.",
+    "texto": "- Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to sequence learning with neural networks. _CoRR_ , abs/1409.3215. "
+  },
+  {
+    "offset_inicio": "- Kai Sheng Tai, Richard Socher, and C hristopher D. Manning. 2015. Improved semantic representations from tree-structured long short-term memory networks.",
+    "offset_fim": "Improved semantic representations from tree-structured long short-term memory networks. _CoRR_ , abs/1503.00075. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Kai Sheng Tai, Richard Socher e Christopher D. Manning (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Kai Sheng Tai\" e termina imediatamente antes da entrada seguinte, \"- Duyu Tang\".",
+    "texto": "- Kai Sheng Tai, Richard Socher, and C hristopher D. Manning. 2015. Improved semantic representations from tree-structured long short-term memory networks. _CoRR_ , abs/1503.00075. "
+  },
+  {
+    "offset_inicio": "- Duyu Tang, Furu Wei, Nan Yang, Ming Zhou, Ting Liu, and Bing Qin. 2014. Lear",
+    "offset_fim": "fic word embedding for twitter sentiment classification. In _Proceedings of ACL_ , Baltimore, Maryland, USA, June.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Tang et al. (2014)",
+    "motivo": "É a primeira entrada bibliográfica individual presente no excerto. Inicia no marcador de item \"- Duyu Tang\" e termina no ponto final da referência, antes da numeração de página e da entrada seguinte.",
+    "texto": "- Duyu Tang, Furu Wei, Nan Yang, Ming Zhou, Ting Liu, and Bing Qin. 2014. Learning sentiment-specific word embedding for twitter sentiment classification. In _Proceedings of ACL_ , Baltimore, Maryland, USA, June."
+  },
+  {
+    "offset_inicio": "- F. van der Velde and M. de Kamps. 2006. Neural blackboard architectures of combinatorial structures in cognition. _Behavioral and Brain Sciences_ , 29:37–70.",
+    "offset_fim": "F. van der Velde and M. de Kamps. 2006. Neural blackboard architectures of combinatorial structures in cognition. _Behavioral and Brain Sciences_ , 29:37–70.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "F. van der Velde and M. de Kamps (2006)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item “-” e termina antes da entrada seguinte, de Oriol Vinyals et al.",
+    "texto": "- F. van der Velde and M. de Kamps. 2006. Neural blackboard architectures of combinatorial structures in cognition. _Behavioral and Brain Sciences_ , 29:37–70."
+  },
+  {
+    "offset_inicio": "- Oriol Vinyals, Alexander Toshev, Samy Bengio, and Dumitru Erhan. 2014. Show and tell: A neural image caption generator.",
+    "offset_fim": "2014. Show and tell: A neural image caption generator. _CoRR_ , abs/1411.4555.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Oriol Vinyals et al. (2014)",
+    "motivo": "É a primeira entrada individual da lista de referências na página 10; inicia em “- Oriol Vinyals...” e termina imediatamente antes da referência seguinte, iniciada por “- Theresa Wilson...”.",
+    "texto": "- Oriol Vinyals, Alexander Toshev, Samy Bengio, and Dumitru Erhan. 2014. Show and tell: A neural image caption generator. _CoRR_ , abs/1411.4555."
+  },
+  {
+    "offset_inicio": "- Theresa Wilson, Janyce Wiebe, and Paul Hoffmann. 2005. Recognizing contextual polarity in phrase-level sentiment analysis.",
+    "offset_fim": "HLT ’05, pages 347–354, Stroudsburg, PA, USA. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Theresa Wilson, Janyce Wiebe e Paul Hoffmann (2005)",
+    "motivo": "Cada entrada de referência bibliográfica constitui uma unidade própria. O bloco começa no marcador '-' desta referência e termina imediatamente antes da referência seguinte, também iniciada por '-'.",
+    "texto": "- Theresa Wilson, Janyce Wiebe, and Paul Hoffmann. 2005. Recognizing contextual polarity in phrase-level sentiment analysis. In _Proceedings of the Conference on Human Language Technology and Empirical Methods in Natural Language Processing_ , HLT ’05, pages 347–354, Stroudsburg, PA, USA. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Theresa Wilson, Zornitsa Kozareva, Preslav Nakov, Sara Rosenthal, Veselin Stoyanov,",
+    "offset_fim": "Proceedings of the International Workshop on Semantic Evaluation_ , SemEval ’13, Atlanta, Georgia, USA, June.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Wilson et al. (2013)",
+    "motivo": "Cada entrada da lista de referências é uma unidade própria. O bloco inicia na entrada de Theresa Wilson et al. e termina antes da entrada seguinte, de Xiaodan Zhu et al.",
+    "texto": "- Theresa Wilson, Zornitsa Kozareva, Preslav Nakov, Sara Rosenthal, Veselin Stoyanov, and Alan Ritter. 2013. SemEval-2013 Task 2: Sentiment analysis in Twitter. In _Proceedings of the International Workshop on Semantic Evaluation_ , SemEval ’13, Atlanta, Georgia, USA, June."
+  },
+  {
+    "offset_inicio": "- Xiaodan Zhu, Hongyu Guo, Saif Mohammad, and Svetlana Kiritchenko. 2014a. An empirical study on the effect of negation words on sentiment.",
+    "offset_fim": "words on sentiment. In _Proceedings of ACL_ , Baltimore, Maryland, USA, June.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Zhu et al. (2014a)",
+    "motivo": "É a primeira entrada individual da lista de referências na página 10; inicia no marcador de item e termina antes da entrada seguinte de Xiaodan Zhu et al. (2014b).",
+    "texto": "- Xiaodan Zhu, Hongyu Guo, Saif Mohammad, and Svetlana Kiritchenko. 2014a. An empirical study on the effect of negation words on sentiment. In _Proceedings of ACL_ , Baltimore, Maryland, USA, June."
+  },
+  {
+    "offset_inicio": "- Xiaodan Zhu, Svetlana Kiritchenko, and Saif Mohammad. 2014b. Nrc-canada-2014: Recent improvements in the",
+    "offset_fim": "the sentiment analysis of tweets. In _Proceedings of the International Workshop on Semantic Evaluation_ , August.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Xiaodan Zhu, Svetlana Kiritchenko e Saif Mohammad (2014b)",
+    "motivo": "É a primeira entrada bibliográfica completa da página. Inicia no marcador de item \"-\" e termina ao fim da referência, imediatamente antes da próxima entrada bibliográfica iniciada por \"- Xiaodan Zhu, Hongyu Guo\".",
+    "texto": "- Xiaodan Zhu, Svetlana Kiritchenko, and Saif Mohammad. 2014b. Nrc-canada-2014: Recent improvements in the sentiment analysis of tweets. In _Proceedings of the International Workshop on Semantic Evaluation_ , August."
+  },
+  {
+    "offset_inicio": "- Xiaodan Zhu, Hongyu Guo, and Parinaz Sobhani. 2015a. Neural networks for integrating compositional and non-compositional sentiment in sentiment composition.",
+    "offset_fim": "sition. In _Proceedings of Joint Conference on Lexical and Computational Semantics_ , June. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Zhu, Guo e Sobhani (2015a)",
+    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de item e termina antes da entrada bibliográfica seguinte.",
+    "texto": "- Xiaodan Zhu, Hongyu Guo, and Parinaz Sobhani. 2015a. Neural networks for integrating compositional and non-compositional sentiment in sentiment composition. In _Proceedings of Joint Conference on Lexical and Computational Semantics_ , June. "
+  },
+  {
+    "offset_inicio": "- Xiaodan Zhu, Parinaz Sobhani, and Hongyu Guo. 2015b. Long short-term memory over",
+    "offset_fim": "recursive structures. In _Proceedings of International Conference on Machine Learning_ , July.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Zhu, Sobhani e Guo (2015b)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item e termina antes da entrada bibliográfica seguinte.",
+    "texto": "- Xiaodan Zhu, Parinaz Sobhani, and Hongyu Guo. 2015b. Long short-term memory over recursive structures. In _Proceedings of International Conference on Machine Learning_ , July."
+  },
+  {
+    "offset_inicio": "- Xiaodan Zhu, Parinaz Sobhani, and Hongyu Guo. 2015c. Long short-term memory over",
+    "offset_fim": "Hongyu Guo. 2015c. Long short-term memory over tree structures. _CoRR_ , abs/1503.04881.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Xiaodan Zhu et al. (2015c)",
+    "motivo": "É uma entrada individual de referências bibliográficas, iniciada pelo marcador de item \"-\" e contendo integralmente uma única citação; termina antes do número de página 926.",
+    "texto": "- Xiaodan Zhu, Parinaz Sobhani, and Hongyu Guo. 2015c. Long short-term memory over tree structures. _CoRR_ , abs/1503.04881."
+  }
+]

@@ -1,0 +1,884 @@
+[
+  {
+    "offset_inicio": "# **Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors** \n\n**Fenia Christopoulou**",
+    "offset_fim": "{efstathia.christopoulou, sophia.ananiadou}@manchester.ac.uk \n\nmakoto-miwa@toyota-ti.ac.jp \n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors",
+    "motivo": "Bloco de frontispício identificado pelo título principal do artigo e pelos autores, afiliações e contatos; termina imediatamente antes do marcador estrutural \"## **Abstract**\".",
+    "texto": "# **Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors** \n\n**Fenia Christopoulou**<sup>1</sup> **, Makoto Miwa**<sup>2,3</sup> **, Sophia Ananiadou**<sup>1</sup> \n\n1National Centre for Text Mining, \n\nDepartment of Computer Science, The University of Manchester, United Kingdom \n\n2Toyota Technological Institute, Nagoya, 468-8511, Japan \n\n3Artificial Intelligence Research Center, National Institute of Advanced Industrial Science and Technology, Japan \n\n{efstathia.christopoulou, sophia.ananiadou}@manchester.ac.uk \n\nmakoto-miwa@toyota-ti.ac.jp \n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nWe propose a multi-task, probabilistic approach to facilitate distantly supervised relation extraction",
+    "offset_fim": "the Knowledge Base, offering interpretability and further improving results<sup>1</sup> . ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no marcador \"## **Abstract**\" e contém todo o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nWe propose a multi-task, probabilistic approach to facilitate distantly supervised relation extraction by bringing closer the representations of sentences that contain the same Knowledge Base pairs. To achieve this, we bias the latent space of sentences via a Variational Autoencoder (VAE) that is trained jointly with a relation classifier. The latent code guides the pair representations and influences sentence reconstruction. Experimental results on two datasets created via distant supervision indicate that multi-task learning results in performance benefits. Additional exploration of employing Knowledge Base priors into the VAE reveals that the sentence space can be shifted towards that of the Knowledge Base, offering interpretability and further improving results<sup>1</sup> . "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nDistant supervision (DS) is a setting where information from existing, structured knowledge, such as",
+    "offset_fim": "- Compare existing approaches on data without train-test pair overlaps to enforce fairer comparison between models. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco começa no marcador de seção \"## **1 Introduction**\" e reúne todo o texto introdutório, incluindo as contribuições, até imediatamente antes do próximo marcador, \"## **2 Proposed Approach**\".",
+    "texto": "## **1 Introduction** \n\nDistant supervision (DS) is a setting where information from existing, structured knowledge, such as Knowledge Bases (KB), is exploited to automatically annotate raw data. For the task of relation extraction, this setting was popularised by Mintz et al. (2009). Sentences containing a pair of interest were annotated as positive instances of a relation, if and only if the pair was found to share this relation in the KB. However, due to the strictness of this assumption, relaxations were proposed, such as the at-least-one assumption introduced by Riedel et al. (2010): Instead of assuming that all sentences in which a known related pair appears express the relationship, we assume that at least one of these sentences (namely a _bag_ of sentences) expresses the relationship. Figure 1 shows example bags for two entity pairs. \n\n> 1Source code is available at https://github.com/ fenchri/dsre-vae \n\n\n\n<!-- Start of picture text -->\nEntity 1 Entity 2 Relation<br>Link Steve Jobs Apple /business/company/founders<br>Prediction Ray Nagin New Orleans /people/person/place_of_birth<br>Among other reasons ,  Apple  's chief executive ,  Steve Jobs  , ...<br>About  Apple  's  Steve Jobs  , who bought out ... bag 1<br>Mayor  Ray Nagin  born in  New Orleans  has already  ...<br>C.  Ray Nagin  , the mayor of   New Orleans  , ... bag 2<br><!-- End of picture text -->\n\nFigure 1: Example of the bag-level setting in distantly supervised relation extraction and the main idea of our approach. Sentences are adapted from the NYT10 dataset (Riedel et al., 2010). \n\nThe usefulness of distantly supervised relation extraction (DSRE) is reflected in facilitating automatic data annotation, as well as the usage of such data to train models for KB population (Ji and Grishman, 2011). However, DSRE suffers from noisy instances, long-tail relations and unbalanced bag sizes. Typical noise reduction methods have focused on using attention (Lin et al., 2016; Ye and Ling, 2019) or reinforcement learning (Qin et al., 2018b; Wu et al., 2019). For long-tail relations, relation type hierarchies and entity descriptors have been proposed (She et al., 2018; Zhang et al., 2019; Hu et al., 2019), while the limited bag size is usually tackled through incorporation of external data (Beltagy et al., 2019), information from KBs (Vashishth et al., 2018) or pre-trained language models (Alt et al., 2019). Our goal is not to investigate noise reduction, since it has already been widely addressed. Instead, we aim to propose a more general framework that can be easily combined with existing noise reduction methods or pre-trained language models. \n\nMethods that combine information from Knowledge Bases in the form of pre-trained Knowledge Graph (KG) embeddings have been particularly effective in DSRE. This is expected since they capture broad associations between entities, \n\n11 \n\n_Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , pages 11–26 June 6–11, 2021. ©2021 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nthus assisting the detection of facts. Existing approaches either encourage explicit agreement between sentence- and KB-level classification decisions (Weston et al., 2013; Xu and Barbosa, 2019), minimise the distance between KB pairs and sentence embeddings (Wang et al., 2018) or directly incorporate KB embeddings into the training process in the form of attention queries (Han et al., 2018; She et al., 2018; Hu et al., 2019). Although these signals are beneficial, direct usage of KB embeddings into the model often requires explicit KB representations of entities and relations, leading to poor generalisation to unseen examples. In addition, forcing decisions between KB and text to be the same makes the connection between contextagnostic (from the KB) and context-aware (from sentences) pairs rigid, as they often express different things. \n\nVariational Autoencoders (VAEs) (Kingma and Welling, 2013) are latent variable encoder-decoder models that parameterise posterior distributions using neural networks. As such, they learn an effective latent space which can be easily manipulated. Sentence reconstruction via encoder-decoder networks helps sentence expressivity by learning semantic or syntactic similarities in the sentence space. On the other hand, signals from a KB can assist detection of factual relations. We aim to combine these two using a VAE together with a bag-level relation classifier. We then either force each sentence’s latent code to be close to the Normal distribution (Bowman et al., 2016), or to a prior distribution obtained from KB embeddings. This latent code is employed into sentence representations for classification and is responsible for sentence reconstruction. As it is influenced by the prior we essentially inject signals from the KB to the target task. In addition, sentence reconstruction learns to preserve elements that are useful for the bag relation. To the best of our knowledge, this is the first attempt to combine a VAE with a bag-level classifier for DSRE. \n\nFinally, there are methods for DSRE that follow a rather flawed evaluation setting, where several test pairs are included in the training set. Under this setting, the generalisability of such methods can be exaggerated. We test these approaches under data without overlaps and find that their performance is severely deprecated. With this comparison, we aim to promote evaluation on the amended version of existing DSRE data that can prevent memori- \n\nsation of test pair relations. Our contributions are threefold: \n\n- Propose a multi-task learning setting for DSRE. Our results suggest that combination of both bag classification and bag reconstruction improves the target task. \n\n- Propose a probabilistic model to make the space of sentence representations resemble that of a KB, promoting interpretability. \n\n- Compare existing approaches on data without train-test pair overlaps to enforce fairer comparison between models. \n\n"
+  },
+  {
+    "offset_inicio": "## **2 Proposed Approach** ",
+    "offset_fim": "## **2 Proposed Approach** ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Proposed Approach",
+    "motivo": "O primeiro marcador estrutural presente inicia a seção 2; seu bloco de caput contém apenas o título e termina imediatamente antes do marcador da subseção 2.1.",
+    "texto": "## **2 Proposed Approach** "
+  },
+  {
+    "offset_inicio": "### **2.1 Task Description** \n\nIn DSRE, the bag setting is typically adopted. A model’s input",
+    "offset_fim": "the task is considered a multi-label classification problem. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2.1 Task Description",
+    "motivo": "O bloco inicia no marcador da subseção 2.1 e contém sua descrição completa da tarefa, terminando imediatamente antes do próximo marcador estrutural, \"### **2.2 Overall Framework**\".",
+    "texto": "### **2.1 Task Description** \n\nIn DSRE, the bag setting is typically adopted. A model’s input is a pair of named entities _e_ 1 _, e_ 2 (mapped to a Knowledge Base), and a bag of sentences _B_ = _{s_ 1 _, s_ 2 _, . . . , sn}_ , where the pair occurs, retrieved from a raw corpus. The goal of the task is to identify the relation(s), from a predefined set _R_ , that the two entities share, based on the sentences in the bag _B_ . Since each pair can share multiple relations at the same time, the task is considered a multi-label classification problem. "
+  },
+  {
+    "offset_inicio": "### **2.2 Overall Framework** \n\nOur proposed approach is illustrated in Figure 2. The main",
+    "offset_fim": " information used in the representation and reconstruction of each sentence in the bag. Naturally, both branches have an effect on one another during training. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2.2 Overall Framework",
+    "motivo": "O bloco inicia no marcador da subseção 2.2 e contém seu texto introdutório completo, encerrando imediatamente antes do próximo marcador estrutural, “### **2.3 Bag Reconstruction**”.",
+    "texto": "### **2.2 Overall Framework** \n\nOur proposed approach is illustrated in Figure 2. The main goal is to create a joint learning setting where a bag of sentences is encoded and reconstructed and, at the same time, the bag representation is used to predict relation(s) shared between two given entities. The architecture receives as input a bag of sentences for a given pair and outputs (i) predicted relations for the pair and (ii) the reconstructed sentences in the bag. The two outputs are produced by two branches: the left branch, corresponding to bag classification and the right branch, corresponding to bag reconstruction. Both branches start from a shared encoder and they communicate via the latent code of a VAE that is responsible for the information used in the representation and reconstruction of each sentence in the bag. Naturally, both branches have an effect on one another during training. \n\n"
+  },
+  {
+    "offset_inicio": "### **2.3 Bag Reconstruction** \n\nAutoencoders (Rumelhart et al., 1986) are encoderdecoder neural networks",
+    "offset_fim": "prior distribution that we assume to be similar to the distribution of the data. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2.3 Bag Reconstruction",
+    "motivo": "O bloco inicia no marcador \"### **2.3 Bag Reconstruction**\" na página 2 e inclui seu texto introdutório, inclusive a continuação após a figura na página 3. Termina imediatamente antes do próximo marcador, \"### **2.3.1 Encoder**\".",
+    "texto": "### **2.3 Bag Reconstruction** \n\nAutoencoders (Rumelhart et al., 1986) are encoderdecoder neural networks that are trained in an unsupervised manner, i.e., to reconstruct their input \n\n12\n\n<!-- PÁGINA 3 -->\n<!-- Start of picture text -->\nreconstructed<br>Task sentences in the bag<br>Task<br>Loss<br>Classifier ... Reco<br>Loss<br>bag Decoder<br>representation<br>Sentence-level<br>Attention<br>KLD<br>Loss<br>sentence<br>representations<br>Argument Linear Linear<br>Representation<br>Encoder<br>... bag of sentences for a pair<br><!-- End of picture text -->\n\nFigure 2: Schematic of the model architecture. \n\n(e.g. a sentence). They learn an informative representation of the input into a dense and smaller feature vector, namely the latent code. This intermediate representation is then used to fully reconstruct the original input. Variational Autoencoders (VAE) (Kingma and Welling, 2013) offer better generalisation capabilities compared to the former by sampling the features of the latent code from a prior distribution that we assume to be similar to the distribution of the data. \n\n"
+  },
+  {
+    "offset_inicio": "### **2.3.1 Encoder** \n\nWe form the input of the network similarly to previous work.",
+    "offset_fim": "This trick essentially forms the posterior as a function of the normal distribution. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "2.3.1 Encoder",
+    "motivo": "O bloco inicia no marcador da subseção \"2.3.1 Encoder\" e contém todo o seu texto, encerrando imediatamente antes do próximo marcador estrutural, \"### **2.3.2 Decoder**\".",
+    "texto": "### **2.3.1 Encoder** \n\nWe form the input of the network similarly to previous work. Each sentence in the input bag is transformed into a sequence of vectors. Words and positions are mapped into real-valued vectors via word embedding **E**<sup>(</sup><sup>_w_)</sup> and position embedding layers **E**<sup>(</sup><sup>_p_)</sup> , similarly to Lin et al. (2016). The concatenation of word ( **w** ) and position ( **p** ) embeddings **x** _t_ = [ **w** _t_ ; **p**<sup>(</sup> _t_<sup>_e_1)</sup> ; **p**<sup>(</sup> _t_<sup>_e_2)</sup> ] forms the representation of each word in the input sentence. A Bidirectional Long-Short Term Memory (BiLSTM) network (Hochreiter and Schmidhuber, 1997) acts as the encoder, producing contextualised representations for each word. \n\nThe representations of the left-to-right and rightto-left passes of the BiLSTM are summed to produce the output representation of each word _t_ , **o** _t_ =<sup>_−→_</sup> **o** _t_ +<sup>_←−_</sup> **o** _t_ , as well as the representations of the last hidden **h** =<sup>_−→_</sup> **h** +<sup>_←−_</sup> **h** and cell states **c** =<sup>_−→_</sup> **c** +<sup>_←−_</sup> **c** of the input sentence. We use the last hidden and cell states of each sentence _s_ to construct the pa- \n\nrameters of a posterior distribution _qφ_ ( **z** _|_ **s** ) using two linear layers, \n\n\n\nwhere **_µ_** and **_σ_**<sup>2</sup> are the parameters of a multivariate Gaussian, representing the feature space of the sentence. This distribution is approximated via a latent code **z** , using the reparameterisation trick (Kingma and Welling, 2013) to enable back-propagation, as follows: \n\n\n\nThis trick essentially forms the posterior as a function of the normal distribution. \n\n"
+  },
+  {
+    "offset_inicio": "### **2.3.2 Decoder** \n\nThe decoder network is a uni-directional LSTM network, that",
+    "offset_fim": "latent code for word prediction, similar to Bowman et al. (2016). \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "2.3.2 Decoder",
+    "motivo": "O bloco começa no marcador da subseção “2.3.2 Decoder” e contém seus dois parágrafos. Termina imediatamente antes do próximo marcador estrutural, “### **2.3.3 Learning**”.",
+    "texto": "### **2.3.2 Decoder** \n\nThe decoder network is a uni-directional LSTM network, that reconstructs each sentence in the input bag. The input is formed in two steps. Firstly, the latent code **z** is given as the initial hidden state of the decoder **h**<sup>_′_</sup> 0<sup>via a linear layer transformation.</sup> Secondly, the same latent code is concatenated with the representation of each word **w** _t_ in the input sequence of the decoder. \n\n\n\nA percentage of words in the decoder’s input is randomly replaced by the UNK word to force the decoder to rely on the latent code for word prediction, similar to Bowman et al. (2016). \n\n"
+  },
+  {
+    "offset_inicio": "### **2.3.3 Learning** \n\nThe optimisation objective of the VAE, namely Evidence",
+    "offset_fim": "prior and the VAE essentially behaves as a standard autoencoder (Bowman et al., 2016). ",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "2.3.3 Learning",
+    "motivo": "O bloco inicia no marcador da subseção 2.3.3, na página 3, e inclui sua continuação na página 4. Termina imediatamente antes do próximo marcador estrutural, \"## **2.4 Bag Classification**\".",
+    "texto": "### **2.3.3 Learning** \n\nThe optimisation objective of the VAE, namely Evidence Lower BOund (ELBO), is the combination of two losses. The first is the reconstruction loss that corresponds to the cross entropy between the actual sentence _s_ and its reconstruction _s_ ˆ. The second is the Kullback-Leibler divergence ( _D_ KL) between a prior distribution _pθ_ ( **z** ), which the latent code is assumed to follow, and the posterior _qφ_ ( **z** _|_ **h** ), which the decoder produces, \n\n\n\nThe first loss is responsible for the accurate reconstruction of each word in the input, while the second acts as a regularisation term that encourages the posterior of each sentence to be close to \n\n13\n\n<!-- PÁGINA 4 -->\nthe prior. Typically, an additional parameter _β_ is introduced in front of the _D_ KL to overcome KL vanishing, a phenomenon where the posterior collapses to the prior and the VAE essentially behaves as a standard autoencoder (Bowman et al., 2016). "
+  },
+  {
+    "offset_inicio": "## **2.4 Bag Classification** \n\nMoving on to the left branch of Figure 2, in order",
+    "offset_fim": "tence inside it. We realise this using information produced by the VAE as follows. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "2.4 Bag Classification",
+    "motivo": "O bloco inicia no marcador \"## **2.4 Bag Classification**\" e contém seu parágrafo introdutório, terminando imediatamente antes do próximo marcador estrutural, \"## **2.4.1 Sentence Representation**\".",
+    "texto": "## **2.4 Bag Classification** \n\nMoving on to the left branch of Figure 2, in order to represent a bag we first need to represent each sentence inside it. We realise this using information produced by the VAE as follows. "
+  },
+  {
+    "offset_inicio": "## **2.4.1 Sentence Representation** \n\nGiven the contextualised output of the encoder",
+    "offset_fim": "the latent code of the sentence that was produced by the VAE, as described in Equation (2). ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "2.4.1 Sentence Representation",
+    "motivo": "O bloco começa no marcador da subseção 2.4.1 e contém sua definição e explicação até imediatamente antes do próximo marcador estrutural, “## **2.4.2 Bag Representation**”.",
+    "texto": "## **2.4.1 Sentence Representation** \n\nGiven the contextualised output of the encoder **o** , we construct entity representations **e** 1 and **e** 2 for a given pair in a sentence by averaging the word representations included in each entity. A sentence representation **s** is formed as follows: \n\n\n\nwhere _|ei|_ corresponds to the number of words inside the mention span of entity _ei_ and **z** is the latent code of the sentence that was produced by the VAE, as described in Equation (2). "
+  },
+  {
+    "offset_inicio": "## **2.4.2 Bag Representation** \n\nIn order to form a unified bag representation _B_",
+    "offset_fim": "_yr_ is the ground truth for this relation with possible values 1 or 0. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "2.4.2 Bag Representation",
+    "motivo": "O bloco inicia no marcador de subseção \"## **2.4.2 Bag Representation**\" e contém sua descrição e equações até imediatamente antes do próximo marcador estrutural, \"## **2.5 Knowledge Base Priors**\".",
+    "texto": "## **2.4.2 Bag Representation** \n\nIn order to form a unified bag representation _B_ for a pair, we adopt the popular selective attention approach introduced by Lin et al. (2016). In particular, we first map relations into real-valued vectors, via a relation embedding layer **E**<sup>(</sup><sup>_r_)</sup> . Each relation embedding is then used as a query over the sentences in the bag, resulting in _|R|_ bag representations for each pair, \n\n\n\nwhere **r** is the embedding associated with relation _r_ , **s** _i_ is the representation of sentence _si ∈ B_ , _ar_<sup>(</sup><sup>_si_)</sup> is the weight of sentence _si_ with relation _r_ and **B** _r_ is the final bag representation for relation _r_ . \n\nDuring classification, we select the probability of predicting a relation category _r_ , using the bag representation that was constructed when the respective relation embedding **r** was the query. Binary cross entropy loss is applied on the resulting predictions, \n\nwhere **W** _c_ and **b** _c_ are learned parameters of the classifier, _σ_ is the sigmoid activation function, _p_ ( _r|B_ ) is the probability associated with relation _r_ given a bag _B_ and _yr_ is the ground truth for this relation with possible values 1 or 0. \n\n"
+  },
+  {
+    "offset_inicio": "## **2.5 Knowledge Base Priors** \n\nIn the scenario where no KB information is incorporated",
+    "offset_fim": "prior. Finally, KB priors are only used during training. Consequently, the model does not use any direct KB information during inference. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "2.5 Knowledge Base Priors",
+    "motivo": "O bloco inicia no marcador da subseção 2.5 e inclui todo o texto sobre os priors guiados por KB, terminando imediatamente antes do próximo marcador, \"## **2.6 Training Objective**\".",
+    "texto": "## **2.5 Knowledge Base Priors** \n\nIn the scenario where no KB information is incorporated into the model, we simply assume that the prior distribution of the latent code _pθ_ ( **z** ) is a standard Gaussian with zero mean and identity covariance _N_ ( **0** _,_ **I** ). \n\nTo integrate information about the nature of triples into the bag-level classifier, we create KBguided priors as an alternative to the standard Gaussian. In particular, we train a link prediction model, such as TransE (Bordes et al., 2013), on a subset of the Knowledge Graph that was used to originally create the dataset. Using the link prediction model, we obtain entity embeddings for the subset KB. A KB-guided prior can thus be constructed for each pair, as another Gaussian distribution with mean value equal to the KB pair representation and covariance as the identity matrix, \n\n\n\nwhere **e** _h_ and **e** _t_ are the vectors for entities _e_ head and _e_ tail as resulted from training a link prediction algorithm on a KB. \n\nThe link prediction algorithm is trained to make representations of pairs expressing the same relations to be close in space. Hence, by using KB priors we try to force the distribution of sentences in a bag to follow the distribution of the pair in the KB. If one of the pair entities does not exist in the KB subset, the mean vector of the pair’s prior will be zero, resulting in a standard Gaussian prior. Finally, KB priors are only used during training. Consequently, the model does not use any direct KB information during inference. "
+  },
+  {
+    "offset_inicio": "## **2.6 Training Objective** \n\nWe train jointly bag classification and sentence reconstruction. The final optimisation objective ",
+    "offset_fim": "sification loss more than the ELBO to allow the model to better fit the target task. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "2.6 Training Objective",
+    "motivo": "O bloco inicia no marcador da subseção 2.6, continua da página 4 para a 5 e termina imediatamente antes do próximo marcador estrutural, # **3 Experimental Settings**.",
+    "texto": "## **2.6 Training Objective** \n\nWe train jointly bag classification and sentence reconstruction. The final optimisation objective \n\n14\n\n<!-- PÁGINA 5 -->\nis formed as, \n\n\n\nwhere _λ_ corresponds to a weight in [0 _,_ 1]. We weigh the classification loss more than the ELBO to allow the model to better fit the target task. "
+  },
+  {
+    "offset_inicio": "# **3 Experimental Settings** \n\n|Dataset|Split|Instances|Bags|NA (%)|\n|---|---|---|---|---|\n||",
+    "offset_fim": "Table 1: Datasets statistics. ‘NA’ correponds to the ‘no relation’ category. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "3 Experimental Settings",
+    "motivo": "O bloco inicia no marcador da seção 3 e contém seu caput, incluindo a Tabela 1 e sua legenda. Termina imediatamente antes do próximo marcador estrutural, \"## **3.1 Datasets**\".",
+    "texto": "# **3 Experimental Settings** \n\n|Dataset|Split|Instances|Bags|NA (%)|\n|---|---|---|---|---|\n||Train|469,290|252,044|93.4|\n|NYT10<br>|Val.|53,321|28,109|93.5|\n|# Relations: 53|Test|172,448|96,678|97.9|\n||Train|1,050,246|575,620|64.8|\n|WIKIDISTANT<br>|Val.|29,145|14,748|70.6|\n|# Relations: 454|Test|28,897|15,509|72.0|\n\n\n\nTable 1: Datasets statistics. ‘NA’ correponds to the ‘no relation’ category. "
+  },
+  {
+    "offset_inicio": "## **3.1 Datasets** \n\nWe experiment with the following two datasets: **NYT10.** The widely used New York Times dataset",
+    "offset_fim": "pairs in the test set from the resulting KB, which contains approximately 20 million triples after pruning. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "3.1 Datasets",
+    "motivo": "O bloco inicia no marcador da subseção 3.1 e contém toda a descrição dos conjuntos NYT10 e WIKIDISTANT, terminando imediatamente antes do próximo marcador, \"## **3.2 Evaluation Metrics**\".",
+    "texto": "## **3.1 Datasets** \n\nWe experiment with the following two datasets: **NYT10.** The widely used New York Times dataset (Riedel et al., 2010) contains 53 relation categories including a negative relation (NA) indicating no relation between two entities. We use the version of the data provided by the OpenNRE framework (Han et al., 2019), which removes overlapping pairs between train and test data. The dataset statistics are shown in Table 1. Additional information can be found in Appendix A.1. \n\nFor the choice of the Knowledge Base, we use a subset of Freebase<sup>2</sup> that includes 3 million entities with the most connections, similar to Xu and Barbosa (2019). For all pairs appearing in the test set of NYT10 (both positive and negative), we remove all links in the subset of Freebase to ensure that we will not memorise any relations between them (Weston et al., 2013). The resulting KB contains approximately 24 million triples. \n\n**WIKIDISTANT.** The WikiDistant dataset is almost double the size of the NYT10 and contains 454 target relation categories, including the negative relation. It was recently introduced by Han et al. (2020) as a cleaner and more well structured bag-level dataset compared to NYT10, with fewer negative instances. \n\nFor the Knowledge Base, we use the version of Wikidata<sup>3</sup> provided by Wang et al. (2019b) (in particular the transductive split<sup>4</sup> ), containing approximately 5 million entities. Similarly to Freebase, we remove all links between pairs in the test set from the resulting KB, which contains approximately 20 million triples after pruning. "
+  },
+  {
+    "offset_inicio": "## **3.2 Evaluation Metrics** \n\nFollowing prior work, we consider the PrecisionRecall Area Under the Curve (AUC) as the primary ",
+    "offset_fim": "percentage of correct classifications for the top _N_ most confident predictions.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "3.2 Evaluation Metrics",
+    "motivo": "O bloco inicia no marcador da subseção 3.2 e inclui seu texto e notas associadas, encerrando-se imediatamente antes do próximo marcador estrutural, \"## **3.3 Training**\".",
+    "texto": "## **3.2 Evaluation Metrics** \n\nFollowing prior work, we consider the PrecisionRecall Area Under the Curve (AUC) as the primary \n\n> 2https://developers.google.com/freebase \n\n> 3https://www.wikidata.org/ \n\n> 4https://deepgraphlearning.github.io/ project/wikidata5m \n\nmetric for both datasets. We additionally report Precision at _N_ (P@N), that measures the percentage of correct classifications for the top _N_ most confident predictions."
+  },
+  {
+    "offset_inicio": "## **3.3 Training** \n\nTo obtain the KB priors, we train TransE on the subsets of",
+    "offset_fim": "or prediction on the validation and test sets, all sentences (with full length) are used. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "3.3 Training",
+    "motivo": "O bloco começa no marcador de subseção \"## **3.3 Training**\" e inclui seus dois parágrafos. Termina imediatamente antes do próximo marcador estrutural, \"## **3.4 Baselines**\", ainda na página 5.",
+    "texto": "## **3.3 Training** \n\nTo obtain the KB priors, we train TransE on the subsets of Freebase and Wikidata using the implementation of the DGL-KE toolkit (Zheng et al., 2020) for 500K steps and a dimensionality equal to the dimension of the latent code. The main model was implemented with PyTorch (Paszke et al., 2019). We use the Adam (Kingma and Ba, 2014) optimiser with learning rate 0 _._ 001. KL logistic annealing is incorporated only in the case where the prior is the Normal distribution to avoid KL vanishing (Bowman et al., 2016). Early stopping is used to determine the best epoch based on the AUC score on the validation set. Words in the vocabulary are initialised with pre-trained, 50-dimensional GloVe embeddings (Pennington et al., 2014). \n\nWe limit the vocabulary size to the top 40K and 50K most frequent words for NYT10 and WIKIDISTANT, respectively. To enable fast training, we use Adaptive Softmax (Grave et al., 2017). The maximum sentence length is restricted to 50 for NYT10 and 30 words for WIKIDISTANT. Each bag in the training set is allowed to contain maximum 500 sentences selected randomly. For prediction on the validation and test sets, all sentences (with full length) are used. "
+  },
+  {
+    "offset_inicio": "## **3.4 Baselines** \n\nIn this work we compare with various models applied on the NYT10",
+    "offset_fim": "final model ( _pθ_ ( _z_ ) _∼N_ ( _µ_ KB _, I_ )) corresponds to our proposed model with KB priors. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "3.4 Baselines",
+    "motivo": "O bloco inicia no marcador de subseção \"## **3.4 Baselines**\" na página 5 e reúne seu texto, tabelas e comparações até imediatamente antes do próximo marcador estrutural, \"# **4 Results**\", na página 6.",
+    "texto": "## **3.4 Baselines** \n\nIn this work we compare with various models applied on the NYT10 dataset: **PCNN-ATT** (Lin et al., 2016) is one of the first neural models that uses a PCNN encoder and selective attention over the instances in a bag, similar to our approach. **RESIDE** (Vashishth et al., 2018), utilises syntactic, entity and relation type information as additional input to the network to assist classification. **JOINT** \n\n15\n\n<!-- PÁGINA 6 -->\n|||N|YT 52|0K|||NYT 57|0K||\n|---|---|---|---|---|---|---|---|---|---|\n|Method|Encoder|AUC (%)|P|@N (%|)|AUC (%)|P|@N (%|)|\n||||100|200|300||100|200|300|\n|Baseline||34.94|74.0|67.5|67.0|43.59|84.0|77.0|75.3|\n|+_pθ_(_z_)_∼N_(0_, I_)|BiLSTM|38.59|74.0|74.5|71.6|44.64|80.0|76.0|75.6|\n|+_pθ_(_z_)_∼N_(_µ_KB_, I_)||42.89|83.0|75.5|73.0|45.52|81.0|77.5|73.6|\n|PCNN-ATT(Lin et al.,2016)|PCNN|32.66|71.0|67.5|62.6|36.25|76.0|72.5|64.0|\n|JOINT NRE(Han et al.,2018)|CNN|30.62|60.0|57.0|55.3|40.15|75.8|-|68.0|\n|RESIDE(Vashishth et al.,2018)|BiGRU|35.80|80.0|69.0|65.3|41.60|84.0|78.5|75.6|\n|INTRA-INTER BAG(Ye and Ling,2019)|PCNN|34.41|82.0|74.0|69.0|42.20|91.8|84.0|78.7|\n|DISTRE(Alt et al.,2019)|GPT-2|42.20|68.0|67.0|65.3|-|-|-|-|\n\n\n\nTable 2: Performance comparison between different methods on the NYT10 test set for the two different versions of the dataset. Results in the 520K column are re-runs of existing implementations, except for DISTRE. Results on the 570K column are taken from the respective publications. \n\n|Method|AUC (%)|P|@N (%|)|\n|---|---|---|---|---|\n|||100|200|300|\n|Baseline<br>|28.54|94.0|93.0|88.3|\n|+_pθ_(_z_)_∼N_(0_, I_)|30.59|96.0|93.5|89.3|\n|+_pθ_(_z_)_∼N_(_µ_KB_, I_)|29.54|92.0|89.0|90.0|\n|PCNN-ATT(Han et al.,2020)|22.20|-|-|-|\n|_w/o non KB-prior pairs (72%_|_of trainin_|_g pairs_|_preser_|_ved)_|\n|Baseline|26.16|88.0|85.0|82.6|\n|+_pθ_(_z_)_∼N_(0_, I_)<br>|27.46|90.0|88.0|84.6|\n|+_pθ_(_z_)_∼N_(_µ_KB_, I_)|28.38|94.0|95.0|89.3|\n\n\n\nTable 3: Performance comparison on the WIKIDISTANT test set. \n\n**NRE** (Han et al., 2018) jointly trains a textual relation extraction component and a link prediction component by sharing attention query vectors among the two. **INTRA-INTER BAG** (Ye and Ling, 2019) applies two attention mechanisms inside and across bags to enforce similarity between bags that share the same relations. **DISTRE** (Alt et al., 2019) uses a pre-trained Transformer model, instead of a recurrent or convolutional encoder, fine-tuned on the NYT10 dataset. \n\nWe report results on both the filtered data (520K) that do not contain train-test pair overlaps, as well as the non-filtered version (570K) to better compare with prior work<sup>5</sup> . With the exception of DISTRE, all prior approaches were originally applied on the 570K version. Hence, performance of prior work on the 520K version corresponds to re-runs of existing implementations (via their open-source code). For the non-filtered version, results are taken from the respective publications<sup>6</sup> . \n\n> 5More information about the two versions can be found in Appendix A.1 \n\n> 6For PCNN-ATT we re-run both the 520K and the 570K ver- \n\nFor the WIKIDISTANT dataset, we compare with the **PCNN-ATT** model as this is the only model currently applied on this data (Han et al., 2020). We also compare our proposed approach with two additional baselines. The first baseline model (Baseline) does not use the VAE component at all. In this case the sentence representation is simply created using the last hidden state of the encoder, **s** = [ **h** ; **e** 1; **e** 2], instead of the latent code. The second model ( _pθ_ ( _z_ ) _∼N_ (0 _, I_ )) incorporates reconstruction with a standard Gaussian prior and the final model ( _pθ_ ( _z_ ) _∼N_ ( _µ_ KB _, I_ )) corresponds to our proposed model with KB priors. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Results** \n\nThe results of the proposed approach versus existing methods on the NYT10 dataset are shown in Table 2.",
+    "offset_fim": "positive impact under this setting, indicating the importance of high coverage in prior-associated pairs. We use this setting for the remainder of the paper.",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "4 Results",
+    "motivo": "O bloco inicia no marcador da seção “4 Results” na página 6 e abrange seu texto contínuo, incluindo a continuação na página 7, até imediatamente antes do próximo marcador estrutural “# **5 Analysis**”.",
+    "texto": "# **4 Results** \n\nThe results of the proposed approach versus existing methods on the NYT10 dataset are shown in Table 2. The addition of reconstruction further improves performance by 3.6 percentage points (pp), while KB priors offer an additional of 4.3pp. Compared with DISTRE, our model achieves comparable performance, even if it does not use a pretrained language model. As we observe from the precision-recall curve in Figure 3, our model is competitive with DISTRE for up to 35% of the recall range but for the tail of the distribution a pretrained language model has better results. This can be attributed to the world knowledge it has obtained via pre-training, which is much more vast than a KB subset. Overall, for the reduced version of the dataset VAE with KB-guided priors surpasses the entire recall range of all previous methods. For the 570K version, our model is superior to other approaches in terms of AUC score, even for the baseline. We speculate this is because we incorpo- \n\n> sions using the OpenNRE toolkit. \n\n16\n\n<!-- PÁGINA 7 -->\n<!-- Start of picture text -->\n1.0<br>PCNN-ATT<br>0.9 JointNRE<br>RESIDE<br>Intra-Inter<br>0.8<br>DISTRE<br>baseline<br>0.7 (0, I)<br>( , I)<br>0.6<br>0.5<br>0.4<br>0.3<br>0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7<br>Recall<br>Precision<br><!-- End of picture text -->\n\nFigure 3: Precision-Recall curves for the NYT10 (520K version) test set. \n\nrate argument representations into the bag representation. As a result, overlapping pairs between training and test set have learnt strong argument representations. \n\nRegarding the results on the WIKIDISTANT dataset in Table 3, once again we observe that reconstruction helps improve performance. However, it appears that KB priors have a negative effect. We find that in the NYT10 dataset 96% of the training pairs are associated with a prior. Instead, this portion is only 72% for WIKIDISTANT. The reason for this discrepancy could be the reduced coverage that potentially causes a confusion between the two signals<sup>7</sup> . To test this hypothesis, we re-run our models on a subset of the training data, removing pairs that do not have a KB prior. As observed in the second half of Table 3, priors do seem to have a positive impact under this setting, indicating the importance of high coverage in prior-associated pairs. We use this setting for the remainder of the paper."
+  },
+  {
+    "offset_inicio": "# **5 Analysis** \n\nWe then check whether the latent space has indeed learned some information",
+    "offset_fim": "for the _statistical leader_ relationship between _wayne rooney_ and _england national team_ . ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "5 Analysis",
+    "motivo": "O bloco inicia no marcador da seção 5 e reúne todo o texto analítico subsequente; termina imediatamente antes do próximo marcador estrutural, \"# **6 Related Work**\", na página 8.",
+    "texto": "# **5 Analysis** \n\nWe then check whether the latent space has indeed learned some information about the KB triples, by visualising the t-SNE plots of the priors, i.e. the **_µ_** KB vectors as resulted from training TransE (Equation (8)) and the posteriors, i.e. the **_µ_** vectors as resulted from the VAE encoder (Equation (1)). \n\nFigure 4a illustrates the space of the priors in Freebase for the most frequent relation categories in the NYT10 training set<sup>8</sup> . As it can be observed, \n\n> 7If a pair does not have a KB prior it will be assigned the Normal prior instead. \n\n> 8We plot t-SNEs for the training set instead of the validation/test sets because the WIKIDISTANT validation set contains too few pairs belonging to the top-10 categories. NYT10 validation set t-SNE can be found in the Appendix A.5 \n\nthe separation is obvious for most categories, with a few overlaps. Relations _place of birth_ , _place lived_ and _place of death_ appear to reside in the same region. This is expected as these relations can be shared by a pair simultaneously. Another overlap is identified for _contains_ , _administrative divisions_ and _capital_ . Again, these are similar relations found between certain entity types (e.g. location, province, city). Figure 4b shows the t-SNE plot for a collection of latent vectors (random selection of 2 sentences in a positive bag). The space is very similar to that of the KB and the same overlapping regions are clearly observed. A difference is that it appears to be less compact, as not all sentences in a bag express the exact same relation. \n\nSimilar observations stand for Wikidata priors, as shown in Figure 4c. By looking at the space of the posteriors, we can see that although for most categories separation is achieved, there are 2 relations that are not so well separated in the posterior space. We find that _has part_ (cyan) and _part of_ (orange) are opposite relations, that TransE can effectively learn thanks to its properties. However, the model appears to not be able to fully separate the two. These relations are expressed in the same manner, by only changing the order of the arguments. As there is no restriction regarding the argument order in our model directionality can sometimes be an issue. \n\nFinally, in order to check how the prior constraints affect sentence reconstruction, we illustrate reconstructions of sentences in the validation set of the NYT10 in Table 4 and WIKIDISTANT in Table 5. In detail, we give the input sentence to the network and employ greedy decoding using either the mean of the latent code or a random sample. \n\nManual inspection of reconstruction reveals that KB-priors generate longer sentences than the Normal prior by repeating several words (especially the UNK). In fact, VAE with KB-priors fails to generate plausible and grammatical examples for NYT10, as shown in Table 4. Instead, reconstructions for WIKIDISTANT are slightly better, due to the less noisy nature of the dataset. In both cases, we see that the reconstructions contain words that are useful for the target relation, e.g. words that refer to places such as _new york_ , _new jersey_ for the relation _contains_ between _bay village_ and _ohio_ , or sport-related terms (football, team, league) for the _statistical leader_ relationship between _wayne rooney_ and _england national team_ . "
+  },
+  {
+    "offset_inicio": "# **6 Related Work** ",
+    "offset_fim": "# **6 Related Work** ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "6 Related Work",
+    "motivo": "O marcador de seção inicia um bloco de caput próprio e vazio; ele termina imediatamente antes do marcador temático subsequente \"**Distantly Supervised RE.**\", que inicia outra unidade.",
+    "texto": "# **6 Related Work** "
+  },
+  {
+    "offset_inicio": "**Distantly Supervised RE.** Methods developed for DSRE have been around for a long time,",
+    "offset_fim": "descriptors (Ji et al., 2017; She et al., 2018; Hu et al., 2019) or Knowledge Bases (Weston et al., 2013; Xu and Barbosa, 2019; Li et al., 2020b). ",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "Distantly Supervised RE.",
+    "motivo": "É o primeiro marcador temático presente no trecho. O bloco começa nesse rótulo na página 8, continua na página 9 e termina imediatamente antes do próximo marcador, \"## **Sequence-to-Sequence Methods.**\".",
+    "texto": "**Distantly Supervised RE.** Methods developed for DSRE have been around for a long time, building upon the idea of distant supervision (Mintz et al., 2009) with the widely used NYT10 corpus by Riedel et al. (2010). Methods investigating this problem can be divided into several categories. Initial approaches were mostly graphical models, adopted to perform multi-instance learning (Riedel et al., 2010), sentential evaluation (Hoffmann et al., 2011; Bai and Ritter, 2019) or multi-instance learning and multi-label classification (Surdeanu et al., 2012). Subsequent approaches utilised neural models, with the approach of Zeng et al. (2015) introducing Piecewise Convolutional Neural Networks (PCNN) into the task. Later approaches focused on noise reduction via \n\nselection of informative instances using either soft constraints, i.e., attention mechanisms (Lin et al., 2016; Ye and Ling, 2019; Yuan et al., 2019), or hard constraints by explicitly selecting non-noisy instances with reinforcement (Feng et al., 2018; Qin et al., 2018b,a; Wu et al., 2019; Yang et al., 2019) and curriculum learning (Huang and Du, 2019). Noise at the word level was addressed in Liu et al. (2018a) via sub-tree parsing on sentences. Adversarial training has been shown to improve DSRE in Wu et al. (2017), while additional unlabelled examples were exploited to assist classification with Generative Adversarial Networks (GAN) (Goodfellow et al., 2014) in Li et al. (2019). Recent methods use additional information from external resources such as entity types and relations (Vashishth et al., 2018), entity \n\n18\n\n<!-- PÁGINA 9 -->\ndescriptors (Ji et al., 2017; She et al., 2018; Hu et al., 2019) or Knowledge Bases (Weston et al., 2013; Xu and Barbosa, 2019; Li et al., 2020b). "
+  },
+  {
+    "offset_inicio": "## **Sequence-to-Sequence Methods.** Autoencoders \n\nand variational autoencoders have been investigated lately for relation extraction",
+    "offset_fim": "tion of sequences from triples (Trisedya et al., 2018; Zhu et al., 2019). ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Sequence-to-Sequence Methods",
+    "motivo": "O bloco inicia no marcador temático \"## **Sequence-to-Sequence Methods.**\" e termina imediatamente antes do próximo marcador, \"**VAE Priors.**\", na mesma página.",
+    "texto": "## **Sequence-to-Sequence Methods.** Autoencoders \n\nand variational autoencoders have been investigated lately for relation extraction, primarily for detection of relations between entity mentions in sentences. Marcheggiani and Titov (2016) proposed discrete-state VAEs for link prediction, reconstructing one of the two entities of a pair at a time. Ma et al. (2019) investigated conditional VAEs for sentence-level relation extraction, showing that they can generate relation-specific sentences. Our overall approach shares similarities with this work since we also use VAEs for RE, though in a bag rather than a sentence-level setting. VAEs have also been investigated for RE in the biomedical domain (Zhang and Lu, 2019), where additional non-labelled examples were incorporated to assist classification. This work also has commonalities with our work but the major difference is that the former uses two different encoders while we use only one, shared among bag classification and bag reconstruction. Other SEQ2SEQ methods treat RE as a sequence generation task. Encoder-decoder networks were proposed for joint extraction of entities and relations (Trisedya et al., 2019; Nayak and Ng, 2020), generation of triples from sequences (Liu et al., 2018b) or generation of sequences from triples (Trisedya et al., 2018; Zhu et al., 2019). "
+  },
+  {
+    "offset_inicio": "**VAE Priors.** Different types of prior distributions have been proposed for VAEs, such as the VampPrior (Tomczak and Welling, 2018), Gaussian mixture priors",
+    "offset_fim": "n DSRE using a link prediction model to parameterise their mean vector. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "VAE Priors",
+    "motivo": "O bloco começa no rótulo temático **VAE Priors.** e inclui todo o seu parágrafo. Termina imediatamente antes do próximo marcador estrutural, # **7 Conclusions**.",
+    "texto": "**VAE Priors.** Different types of prior distributions have been proposed for VAEs, such as the VampPrior (Tomczak and Welling, 2018), Gaussian mixture priors (Dilokthanakul et al., 2016), Learned Accept/Reject Sampling (LARs) priors (Bauer and Mnih, 2019), non-parametric priors (Goyal et al., 2017) and others. User-specific priors have been used in collaborative filtering for item recommendation (Karamanolakis et al., 2018), while topicguided priors were employed for generation of topic-specific sentences (Wang et al., 2019a). In our approach we investigate how to incorporate KB-oriented Gaussian priors in DSRE using a link prediction model to parameterise their mean vector. "
+  },
+  {
+    "offset_inicio": "# **7 Conclusions** \n\nWe proposed a probabilistic approach for distantly supervised relation extraction, which incorporates ",
+    "offset_fim": "has been shown to further improve their performance (Peters et al., 2019). ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "7 Conclusions",
+    "motivo": "O bloco começa no marcador da seção 7 e contém todos os parágrafos de conclusão, terminando imediatamente antes do próximo marcador estrutural, \"# **Acknowledgements**\".",
+    "texto": "# **7 Conclusions** \n\nWe proposed a probabilistic approach for distantly supervised relation extraction, which incorporates \n\ncontext agnostic knowledge base triples information as latent signals into context aware bag-level entity pairs. Our method is based on a variational autoencoder that is trained jointly with a relation classifier. KB information via a link prediction model is used in the form of prior distributions on the VAE for each pair. The proposed approach brings close sentences that contain the same KB pairs and it does not require any external information during inference time. \n\nExperimental results suggest that jointly reconstructing sentences with relation classification is helpful for distantly supervised RE and KB priors further boost performance. Analysis of the generated latent representations showed that we can indeed manipulate the space of sentences to match the space of KB triples, while reconstruction is enforced to keep topic-related terms. \n\nFuture work will target experimentation with different link prediction models and handling of noninformative sentences. Finally, incorporating large pre-trained language models (LMs) into VAEs is a recent and promising study (Li et al., 2020a) which can be combined with KBs as injecting such information into LMs has been shown to further improve their performance (Peters et al., 2019). "
+  },
+  {
+    "offset_inicio": "# **Acknowledgements** \n\nThis research was supported by BBSRC Japan Partnering Award [Grant ID:",
+    "offset_fim": "The authors would like to thank the anonymous reviewers for their instructive comments. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgements",
+    "motivo": "O bloco começa no marcador de seção \"# **Acknowledgements**\" e contém seu único parágrafo, terminando imediatamente antes do próximo marcador estrutural, \"# **References**\".",
+    "texto": "# **Acknowledgements** \n\nThis research was supported by BBSRC Japan Partnering Award [Grant ID: BB/P025684/1] and based on results obtained from a project, JPNP20006, commissioned by the New Energy and Industrial Technology Development Organization (NEDO). The authors would like to thank the anonymous reviewers for their instructive comments. "
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "References",
+    "motivo": "O título da seção de referências forma um bloco de caput próprio e termina imediatamente antes da primeira entrada bibliográfica, iniciada por “- Christoph Alt...”.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Christoph Alt, Marc Hübner, and Leonhard Hennig. 2019. Fine-tuning pre-trained transformer",
+    "offset_fim": "ings_ , pages 1388– 1398, Florence, Italy. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Alt, Hübner e Hennig (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista com os autores e termina imediatamente antes da próxima entrada, iniciada por “- Fan Bai and Alan Ritter.”",
+    "texto": "- Christoph Alt, Marc Hübner, and Leonhard Hennig. 2019. Fine-tuning pre-trained transformer language models to distantly supervised relation extraction. In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 1388– 1398, Florence, Italy. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Fan Bai and Alan Ritter. 2019. Structured Minimally Supervised Learning for Neural Relation Extraction. In _Proceedings of the 2019 Conference",
+    "offset_fim": "pages 3057–3069, Minneapolis, Minnesota. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica — Bai e Ritter (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia-se com o marcador de lista e autoria/ano de Fan Bai e Alan Ritter e termina antes da próxima entrada, iniciada por “- Matthias Bauer and Andriy Mnih. 2019.” na página 10.",
+    "texto": "- Fan Bai and Alan Ritter. 2019. Structured Minimally Supervised Learning for Neural Relation Extraction. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 3057–3069, Minneapolis, Minnesota. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Matthias Bauer and Andriy Mnih. 2019. Resampled priors for variational autoencoders.",
+    "offset_fim": "e 22nd International Conference on Artificial Intelligence and Statistics_ , pages 66–75. PMLR. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Bauer and Mnih (2019) — Resampled priors for variational autoencoders",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista com os autores Bauer e Mnih e termina imediatamente antes da próxima referência, iniciada por “- Iz Beltagy”.",
+    "texto": "- Matthias Bauer and Andriy Mnih. 2019. Resampled priors for variational autoencoders. In _The 22nd International Conference on Artificial Intelligence and Statistics_ , pages 66–75. PMLR. "
+  },
+  {
+    "offset_inicio": "- Iz Beltagy, Kyle Lo, and Waleed Ammar. 2019. Combining distant and direct supervision for neural relation extraction. In _Proceedings of the 2019 Conference of the North American Chapter",
+    "offset_fim": "pages 1858–1867, Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Beltagy, Lo e Ammar (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, de Antoine Bordes et al. (2013).",
+    "texto": "- Iz Beltagy, Kyle Lo, and Waleed Ammar. 2019. Combining distant and direct supervision for neural relation extraction. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 1858–1867, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Antoine Bordes, Nicolas Usunier, Alberto GarciaDuran, Jason Weston, and Oksana",
+    "offset_fim": " 2787–2795. Curran Associates, Inc. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Bordes et al. (2013) — Translating embeddings for modeling multirelational data",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada por hífen e autoria/ano, e termina imediatamente antes da próxima referência, iniciada por “- Samuel R. Bowman”.",
+    "texto": "- Antoine Bordes, Nicolas Usunier, Alberto GarciaDuran, Jason Weston, and Oksana Yakhnenko. 2013. Translating embeddings for modeling multirelational data. In _Advances in Neural Information Processing Systems_ , volume 26, pages 2787–2795. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Samuel R. Bowman, Luke Vilnis, Oriol Vinyals, Andrew Dai, Rafal Jozefowicz, and",
+    "offset_fim": "pages 10–21, Berlin, Germany. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Bowman et al. (2016) — Generating sentences from a continuous space",
+    "motivo": "É a primeira entrada bibliográfica, iniciada por hífen e autoria/ano. Termina imediatamente antes da próxima referência, iniciada por “- Nat Dilokthanakul”.",
+    "texto": "- Samuel R. Bowman, Luke Vilnis, Oriol Vinyals, Andrew Dai, Rafal Jozefowicz, and Samy Bengio. 2016. Generating sentences from a continuous space. In _Proceedings of The 20th SIGNLL Conference on Computational Natural Language Learning_ , pages 10–21, Berlin, Germany. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Nat Dilokthanakul, Pedro AM Mediano, Marta Garnelo, Matthew CH Lee, Hugh Salimbeni, Kai Arulkumaran, and Murray Shanahan.",
+    "offset_fim": "tering with gaussian mixture variational autoencoders. _arXiv preprint arXiv:1611.02648_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Dilokthanakul et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen, e constitui uma unidade própria. Termina imediatamente antes da próxima referência, iniciada por “- Jun Feng”.",
+    "texto": "- Nat Dilokthanakul, Pedro AM Mediano, Marta Garnelo, Matthew CH Lee, Hugh Salimbeni, Kai Arulkumaran, and Murray Shanahan. 2016. Deep unsupervised clustering with gaussian mixture variational autoencoders. _arXiv preprint arXiv:1611.02648_ ."
+  },
+  {
+    "offset_inicio": "- Jun Feng, Minlie Huang, Li Zhao, Yang Yang, and Xiaoyan Zhu. 2018. Reinforcement",
+    "offset_fim": "classification from noisy data. In _Proceedings of the AAAI Conference on Artificial Intelligence_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Feng et al. (2018) — Reinforcement learning for relation classification",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen e autoria/ano; termina imediatamente antes da próxima referência, iniciada por “- Ian Goodfellow”.",
+    "texto": "- Jun Feng, Minlie Huang, Li Zhao, Yang Yang, and Xiaoyan Zhu. 2018. Reinforcement learning for relation classification from noisy data. In _Proceedings of the AAAI Conference on Artificial Intelligence_ . "
+  },
+  {
+    "offset_inicio": "- Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,",
+    "offset_fim": "nformation Processing Systems_ , volume 27, pages 2672–2680. Curran Associates, Inc. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Goodfellow et al. (2014), Generative Adversarial Nets",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, iniciada por “- Prasoon Goyal”.",
+    "texto": "- Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. 2014. Generative Adversarial Nets. In _Advances in Neural Information Processing Systems_ , volume 27, pages 2672–2680. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Prasoon Goyal, Zhiting Hu, Xiaodan Liang, Chenyu Wang, and Eric P Xing. 2017. Nonparametric variational auto-encoders for hierarchical representation learning.",
+    "offset_fim": "representation learning. In _Proceedings of the IEEE International Conference on Computer Vision_ , pages 5094–5102. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Goyal et al. (2017)",
+    "motivo": "A primeira unidade completa é a entrada bibliográfica iniciada por hífen de Prasoon Goyal et al.; termina imediatamente antes da próxima entrada, iniciada por “- Édouard Grave”.",
+    "texto": "- Prasoon Goyal, Zhiting Hu, Xiaodan Liang, Chenyu Wang, and Eric P Xing. 2017. Nonparametric variational auto-encoders for hierarchical representation learning. In _Proceedings of the IEEE International Conference on Computer Vision_ , pages 5094–5102. "
+  },
+  {
+    "offset_inicio": "- Édouard Grave, Armand Joulin, Moustapha Cissé, David Grangier, and Hervé Jégou. 2017. Efficient softmax approximation for GPUs.",
+    "offset_fim": "_Proceedings of Machine Learning Research_ , pages 1302–1310. PMLR. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Grave et al. (2017) — Efficient softmax approximation for GPUs",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista e autoria/ano, e termina imediatamente antes da entrada seguinte, iniciada por “- Xu Han”.",
+    "texto": "- Édouard Grave, Armand Joulin, Moustapha Cissé, David Grangier, and Hervé Jégou. 2017. Efficient softmax approximation for GPUs. In _Proceedings of the 34th International Conference on Machine Learning_ , volume 70 of _Proceedings of Machine Learning Research_ , pages 1302–1310. PMLR. "
+  },
+  {
+    "offset_inicio": "- Xu Han, Tianyu Gao, Yankai Lin, Hao Peng, Yaoliang Yang, Chaojun Xiao, Zhiy",
+    "offset_fim": "pages 745–758, Suzhou, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Han et al. (2020)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista e autores/ano, e termina imediatamente antes da próxima referência iniciada por “- Xu Han, Tianyu Gao, Yuan Yao...”.",
+    "texto": "- Xu Han, Tianyu Gao, Yankai Lin, Hao Peng, Yaoliang Yang, Chaojun Xiao, Zhiyuan Liu, Peng Li, Jie Zhou, and Maosong Sun. 2020. More data, more relations, more context and more openness: A review and outlook for relation extraction. In _Proceedings of the 1st_ \n\n   - _Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing_ , pages 745–758, Suzhou, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Xu Han, Tianyu Gao, Yuan Yao, Deming Ye, Zhiyuan Liu, and Maosong Sun. 2019.",
+    "offset_fim": "pages 169–174, Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Han et al. (2019) — OpenNRE",
+    "motivo": "É a primeira entrada bibliográfica visível no texto, iniciada por hífen e autoria/ano, e termina imediatamente antes da entrada seguinte, de Xu Han, Zhiyuan Liu e Maosong Sun (2018).",
+    "texto": "- Xu Han, Tianyu Gao, Yuan Yao, Deming Ye, Zhiyuan Liu, and Maosong Sun. 2019. OpenNRE: An open and extensible toolkit for neural relation extraction. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP): System Demonstrations_ , pages 169–174, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Xu Han, Zhiyuan Liu, and Maosong Sun. 2018. Neural knowledge acquisition via mutual attention between knowledge graph and text.",
+    "offset_fim": "text. In _Proceedings of the AAAI Conference on Artificial Intelligence_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Han, Liu e Sun (2018)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por hífen no trecho fornecido; começa em “- Xu Han...” e termina imediatamente antes da entrada seguinte, “- Sepp Hochreiter...”.",
+    "texto": "- Xu Han, Zhiyuan Liu, and Maosong Sun. 2018. Neural knowledge acquisition via mutual attention between knowledge graph and text. In _Proceedings of the AAAI Conference on Artificial Intelligence_ . "
+  },
+  {
+    "offset_inicio": "- Sepp Hochreiter and Jürgen Schmidhuber. 1997. Long short-term memory. _Neural Computation_ , 9(8):1735– 1780.",
+    "offset_fim": "Hochreiter and Jürgen Schmidhuber. 1997. Long short-term memory. _Neural Computation_ , 9(8):1735– 1780. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Hochreiter and Schmidhuber (1997)",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador de lista e constitui uma unidade própria; termina imediatamente antes da próxima referência, iniciada por “- Raphael Hoffmann”.",
+    "texto": "- Sepp Hochreiter and Jürgen Schmidhuber. 1997. Long short-term memory. _Neural Computation_ , 9(8):1735– 1780. "
+  },
+  {
+    "offset_inicio": "- Raphael Hoffmann, Congle Zhang, Xiao Ling, Luke Zettlemoyer, and Daniel S. Weld. 2011.",
+    "offset_fim": "pages 541–550, Portland, Oregon, USA. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Hoffmann et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, iniciada por “- Linmei Hu”.",
+    "texto": "- Raphael Hoffmann, Congle Zhang, Xiao Ling, Luke Zettlemoyer, and Daniel S. Weld. 2011. Knowledgebased weak supervision for information extraction of overlapping relations. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies_ , pages 541–550, Portland, Oregon, USA. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Linmei Hu, Luhao Zhang, Chuan Shi, Liqiang Nie, Weili Guan, and Cheng Yang. 2019. Improving distantly-supervised relation extraction with joint label embedding.",
+    "offset_fim": "pages 3821–3829, Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Hu et al. (2019) — Improving distantly-supervised relation extraction with joint label embedding",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista da referência de Hu et al. e termina imediatamente antes da próxima entrada, de Yuyun Huang e Jinhua Du.",
+    "texto": "- Linmei Hu, Luhao Zhang, Chuan Shi, Liqiang Nie, Weili Guan, and Cheng Yang. 2019. Improving distantly-supervised relation extraction with joint label embedding. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 3821–3829, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yuyun Huang and Jinhua Du. 2019. Self-attention enhanced CNNs and collaborative curriculum learning for distantly supervised relation extraction.",
+    "offset_fim": "pages 389–398, Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Huang and Du (2019)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada por hífen e autoria/ano, e termina imediatamente antes da próxima referência, iniciada por “- Guoliang Ji”.",
+    "texto": "- Yuyun Huang and Jinhua Du. 2019. Self-attention enhanced CNNs and collaborative curriculum learning for distantly supervised relation extraction. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 389–398, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Guoliang Ji, Kang Liu, Shizhu He, and Jun Zhao. 2017. Distant supervision for relation extraction with sentence-level attention and entity descriptions.",
+    "offset_fim": "In _Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence_ , AAAI’17, page 3060–3066. AAAI Press. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Ji et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"-\" com autoria/ano e termina imediatamente antes da próxima referência, iniciada por \"- Heng Ji and Ralph Grishman\".",
+    "texto": "- Guoliang Ji, Kang Liu, Shizhu He, and Jun Zhao. 2017. Distant supervision for relation extraction with sentence-level attention and entity descriptions. In _Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence_ , AAAI’17, page 3060–3066. AAAI Press. "
+  },
+  {
+    "offset_inicio": "- Heng Ji and Ralph Grishman. 2011. Knowledge base population: Successful approaches and challenges. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human_ ",
+    "offset_fim": "_Language Technologies_ , pages 1148–1158, Portland, Oregon, USA. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 11,
+    "titulo": "Heng Ji and Ralph Grishman (2011)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, iniciada por “- Giannis Karamanolakis”.",
+    "texto": "- Heng Ji and Ralph Grishman. 2011. Knowledge base population: Successful approaches and challenges. In _Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human_ \n\n20\n\n<!-- PÁGINA 11 -->\n_Language Technologies_ , pages 1148–1158, Portland, Oregon, USA. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Giannis Karamanolakis, Kevin Raji Cherian, Ananth Ravi Narayan, Jie Yuan, Da Tang,",
+    "offset_fim": "age 10–14, New York, NY, USA. Association for Computing Machinery. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Karamanolakis et al. (2018)",
+    "motivo": "A entrada bibliográfica iniciada por hífen constitui uma unidade própria e termina imediatamente antes da referência seguinte, iniciada por “- Diederik P Kingma and Jimmy Ba. 2014.”",
+    "texto": "- Giannis Karamanolakis, Kevin Raji Cherian, Ananth Ravi Narayan, Jie Yuan, Da Tang, and Tony Jebara. 2018. Item recommendation with variational autoencoders and heterogeneous priors. In _Proceedings of the 3rd Workshop on Deep Learning for Recommender Systems_ , DLRS 2018, page 10–14, New York, NY, USA. Association for Computing Machinery. "
+  },
+  {
+    "offset_inicio": "- Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. _arXiv preprint arXiv:1412.6980_ . ",
+    "offset_fim": "hod for stochastic optimization. _arXiv preprint arXiv:1412.6980_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Kingma e Ba (2014) — Adam",
+    "motivo": "A primeira unidade é uma entrada bibliográfica iniciada por hífen. Ela começa na referência de Kingma e Ba e termina imediatamente antes do hífen que inicia a referência seguinte, de Kingma e Welling.",
+    "texto": "- Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. _arXiv preprint arXiv:1412.6980_ . "
+  },
+  {
+    "offset_inicio": "- Diederik P Kingma and Max Welling. 2013. Autoencoding variational bayes. _arXiv",
+    "offset_fim": "2013. Autoencoding variational bayes. _arXiv preprint arXiv:1312.6114_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Kingma e Welling (2013)",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador de lista e termina imediatamente antes da próxima referência, iniciada por “- Chunyuan Li”.",
+    "texto": "- Diederik P Kingma and Max Welling. 2013. Autoencoding variational bayes. _arXiv preprint arXiv:1312.6114_ . "
+  },
+  {
+    "offset_inicio": "- Chunyuan Li, Xiang Gao, Yuan Li, Baolin Peng, Xiujun Li, Yizhe Zhang, and Jianfeng Gao. 2020a. Optimus: Organizing sentences via pre-trained modeling of a latent space.",
+    "offset_fim": "pages 4678–4699, Online. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Li et al. (2020a) — Optimus",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador de lista e termina imediatamente antes da próxima referência, iniciada por “- Pengshuai Li”.",
+    "texto": "- Chunyuan Li, Xiang Gao, Yuan Li, Baolin Peng, Xiujun Li, Yizhe Zhang, and Jianfeng Gao. 2020a. Optimus: Organizing sentences via pre-trained modeling of a latent space. In _Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)_ , pages 4678–4699, Online. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Pengshuai Li, Xinsong Zhang, Weijia Jia, and Hai Zhao. 2019. GAN driven semi-distant supervision for relation extraction. In _Proceedings of the 2019 Conference of the North American Chapter",
+    "offset_fim": "pages 3026–3035, Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Li et al. (2019) — GAN driven semi-distant supervision for relation extraction",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de lista e termina imediatamente antes da próxima referência, iniciada por “- Yang Li”.",
+    "texto": "- Pengshuai Li, Xinsong Zhang, Weijia Jia, and Hai Zhao. 2019. GAN driven semi-distant supervision for relation extraction. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 3026–3035, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yang Li, Guodong Long, Tao Shen, Tianyi Zhou, Lina Yao, Huan Huo, and Jing Jiang. 2020b.",
+    "offset_fim": "_Proceedings of the AAAI Conference on Artificial Intelligence_ , pages 8269–8276. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Li et al. (2020b) — Self-attention enhanced selective gate",
+    "motivo": "É a primeira entrada bibliográfica presente no trecho. Inicia no marcador de lista com a autoria de Yang Li e termina imediatamente antes da próxima referência, iniciada por “- Yankai Lin”.",
+    "texto": "- Yang Li, Guodong Long, Tao Shen, Tianyi Zhou, Lina Yao, Huan Huo, and Jing Jiang. 2020b. Self-attention enhanced selective gate with entity-aware embedding for distantly supervised relation extraction. In _Proceedings of the AAAI Conference on Artificial Intelligence_ , pages 8269–8276. "
+  },
+  {
+    "offset_inicio": "- Yankai Lin, Shiqi Shen, Zhiyuan Liu, Huanbo Luan, and Maosong Sun. 2016. Neural relation extraction with selective attention over instances.",
+    "offset_fim": "pages 2124–2133, Berlin, Germany. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Lin et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen e autoria/ano, e termina imediatamente antes da próxima referência, iniciada por “- Tianyi Liu”.",
+    "texto": "- Yankai Lin, Shiqi Shen, Zhiyuan Liu, Huanbo Luan, and Maosong Sun. 2016. Neural relation extraction with selective attention over instances. In _Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 2124–2133, Berlin, Germany. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Tianyi Liu, Xinsong Zhang, Wanhao Zhou, and Weijia Jia. 2018a. Neural relation extraction via innersentence noise reduction and transfer learning.",
+    "offset_fim": "pages 2195–2204, Brussels, Belgium. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Tianyi Liu et al. (2018a)",
+    "motivo": "É a primeira entrada bibliográfica visível no texto. Inicia no marcador de lista com a autoria e termina imediatamente antes da próxima referência, iniciada por “- Yue Liu”.",
+    "texto": "- Tianyi Liu, Xinsong Zhang, Wanhao Zhou, and Weijia Jia. 2018a. Neural relation extraction via innersentence noise reduction and transfer learning. In _Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing_ , pages 2195–2204, Brussels, Belgium. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yue Liu, Tongtao Zhang, Zhicheng Liang, Heng Ji, and Deborah L. McGuinness. 2018b.",
+    "offset_fim": "endto-end application for deriving triples from natural language text. _CEUR Workshop Proceedings_ , 2180. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Yue Liu et al. (2018b)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item “- Yue Liu...” e termina imediatamente antes da próxima referência, iniciada por “- Fenglong Ma...”.",
+    "texto": "- Yue Liu, Tongtao Zhang, Zhicheng Liang, Heng Ji, and Deborah L. McGuinness. 2018b. Seq2rdf: An endto-end application for deriving triples from natural language text. _CEUR Workshop Proceedings_ , 2180. "
+  },
+  {
+    "offset_inicio": "- Fenglong Ma, Yaliang Li, Chenwei Zhang, Jing Gao, Nan Du, and Wei Fan. 2019. Mcvae: Margin-based conditional variational autoencoder",
+    "offset_fim": "WWW ’19, page 3041–3048, New York, NY, USA. Association for Computing Machinery. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Ma et al. (2019) — Mcvae",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de item \"-\" com autores e ano e termina imediatamente antes da próxima referência, de Diego Marcheggiani e Ivan Titov.",
+    "texto": "- Fenglong Ma, Yaliang Li, Chenwei Zhang, Jing Gao, Nan Du, and Wei Fan. 2019. Mcvae: Margin-based conditional variational autoencoder for relation classification and pattern generation. In _The World Wide Web Conference_ , WWW ’19, page 3041–3048, New York, NY, USA. Association for Computing Machinery. "
+  },
+  {
+    "offset_inicio": "- Diego Marcheggiani and Ivan Titov. 2016. Discretestate variational autoencoders for joint discovery and factorization of relations.",
+    "offset_fim": "factorization of relations. _Transactions of the Association for Computational Linguistics_ , 4:231–244. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Marcheggiani and Titov (2016)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de lista com autoria/ano e termina imediatamente antes da próxima referência, de Mike Mintz et al. (2009).",
+    "texto": "- Diego Marcheggiani and Ivan Titov. 2016. Discretestate variational autoencoders for joint discovery and factorization of relations. _Transactions of the Association for Computational Linguistics_ , 4:231–244. "
+  },
+  {
+    "offset_inicio": "- Mike Mintz, Steven Bills, Rion Snow, and Daniel Jurafsky. 2009. Distant supervision for relation extraction without labeled data.",
+    "offset_fim": "pages 1003–1011, Suntec, Singapore. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Mintz et al. (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, iniciada por “- Tapas Nayak...”.",
+    "texto": "- Mike Mintz, Steven Bills, Rion Snow, and Daniel Jurafsky. 2009. Distant supervision for relation extraction without labeled data. In _Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP_ , pages 1003–1011, Suntec, Singapore. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Tapas Nayak and Hwee Tou Ng. 2020. Effective modeling of encoder-decoder architecture for joint entity and relation extraction.",
+    "offset_fim": "_Proceedings of the AAAI Conference on Artificial Intelligence_ , 34(05):8528– 8535. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Tapas Nayak and Hwee Tou Ng (2020)",
+    "motivo": "É a primeira entrada bibliográfica individual visível no texto. Inicia no marcador de lista \"- Tapas Nayak...\" e termina imediatamente antes da próxima entrada, iniciada por \"- Adam Paszke...\".",
+    "texto": "- Tapas Nayak and Hwee Tou Ng. 2020. Effective modeling of encoder-decoder architecture for joint entity and relation extraction. _Proceedings of the AAAI Conference on Artificial Intelligence_ , 34(05):8528– 8535. "
+  },
+  {
+    "offset_inicio": "- Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan,",
+    "offset_fim": "s 32_ , pages 8024–8035. Curran Associates, Inc. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Paszke et al. (2019)",
+    "motivo": "A primeira entrada bibliográfica iniciada por hífen forma uma unidade própria. Começa em “- Adam Paszke...” e termina imediatamente antes da próxima referência, iniciada por “- Jeffrey Pennington...”.",
+    "texto": "- Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. 2019. PyTorch: An Imperative Style, High-Performance Deep Learning Library. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alché-Buc, E. Fox, and R. Garnett, editors, _Advances in Neural Information Processing Systems 32_ , pages 8024–8035. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Jeffrey Pennington, Richard Socher, and Christopher Manning. 2014. GloVe: Global vectors for word representation.",
+    "offset_fim": "pages 1532–1543, Doha, Qatar. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Pennington, Socher e Manning (2014)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, de Matthew E. Peters et al. (2019).",
+    "texto": "- Jeffrey Pennington, Richard Socher, and Christopher Manning. 2014. GloVe: Global vectors for word representation. In _Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)_ , pages 1532–1543, Doha, Qatar. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Matthew E. Peters, Mark Neumann, Robert Logan, Roy Schwartz, Vidur Joshi, Sameer Singh, and Noah A. Smith. 2019.",
+    "offset_fim": "_ , pages 43–54, Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Peters et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, iniciada por “- Pengda Qin”.",
+    "texto": "- Matthew E. Peters, Mark Neumann, Robert Logan, Roy Schwartz, Vidur Joshi, Sameer Singh, and Noah A. Smith. 2019. Knowledge enhanced contextual word representations. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 43–54, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Pengda Qin, Weiran Xu, and William Yang Wang. 2018a. DSGAN: Generative adversarial training for distant supervision relation extraction.",
+    "offset_fim": "pages 496–505, Melbourne, Australia. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Qin, Xu e Wang (2018a), DSGAN",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho; inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, iniciada por “- Pengda Qin, Weiran Xu, and William Yang Wang. 2018b.” na página 12.",
+    "texto": "- Pengda Qin, Weiran Xu, and William Yang Wang. 2018a. DSGAN: Generative adversarial training for distant supervision relation extraction. In _Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 496–505, Melbourne, Australia. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Pengda Qin, Weiran Xu, and William Yang Wang. 2018b. Robust distant supervision relation extraction via deep reinforcement learning.",
+    "offset_fim": "(Volume 1: Long Papers)_ , pages 2137–2147, Melbourne, Australia. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Qin, Xu e Wang (2018b)",
+    "motivo": "É a primeira entrada bibliográfica identificável no trecho. Inicia no marcador de lista \"- Pengda Qin\" e termina imediatamente antes da próxima entrada, iniciada por \"- Sebastian Riedel\".",
+    "texto": "- Pengda Qin, Weiran Xu, and William Yang Wang. 2018b. Robust distant supervision relation extraction via deep reinforcement learning. In _Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 2137–2147, Melbourne, Australia. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Sebastian Riedel, Limin Yao, and Andrew McCallum. 2010. Modeling relations and their mentions without labeled text. In _Machine Learning and Knowledge Discovery in Databases_ ,",
+    "offset_fim": "Knowledge Discovery in Databases_ , pages 148–163, Berlin, Heidelberg. Springer Berlin Heidelberg. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Riedel, Yao e McCallum (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho fornecido; inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, iniciada por “- D. E. Rumelhart”.",
+    "texto": "- Sebastian Riedel, Limin Yao, and Andrew McCallum. 2010. Modeling relations and their mentions without labeled text. In _Machine Learning and Knowledge Discovery in Databases_ , pages 148–163, Berlin, Heidelberg. Springer Berlin Heidelberg. "
+  },
+  {
+    "offset_inicio": "- D. E. Rumelhart, G. E. Hinton, and R. J. Williams. 1986. _Learning Internal",
+    "offset_fim": "_Learning Internal Representations by Error Propagation_ , page 318–362. MIT Press, Cambridge, MA, USA. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica: Rumelhart, Hinton e Williams (1986)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, iniciada por “- Heng She”.",
+    "texto": "- D. E. Rumelhart, G. E. Hinton, and R. J. Williams. 1986. _Learning Internal Representations by Error Propagation_ , page 318–362. MIT Press, Cambridge, MA, USA. "
+  },
+  {
+    "offset_inicio": "- Heng She, Bin Wu, Bai Wang, and Renjun Chi. 2018. Distant supervision for relation extraction with hierarchical attention",
+    "offset_fim": "entity descriptions. In _International Joint Conference on Neural Networks (IJCNN)_ , pages 1–8.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Heng She et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica individual do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, de Mihai Surdeanu et al. (2012).",
+    "texto": "- Heng She, Bin Wu, Bai Wang, and Renjun Chi. 2018. Distant supervision for relation extraction with hierarchical attention and entity descriptions. In _International Joint Conference on Neural Networks (IJCNN)_ , pages 1–8."
+  },
+  {
+    "offset_inicio": "- Mihai Surdeanu, Julie Tibshirani, Ramesh Nallapati, and Christopher D. Manning. 2012.",
+    "offset_fim": "pages 455–465, Jeju Island, Korea. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Surdeanu et al. (2012)",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador de lista e autoria/ano. Ela termina imediatamente antes da próxima referência, iniciada por “- Jakub Tomczak and Max Welling. 2018.”",
+    "texto": "- Mihai Surdeanu, Julie Tibshirani, Ramesh Nallapati, and Christopher D. Manning. 2012. Multi-instance multi-label learning for relation extraction. In _Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning_ , pages 455–465, Jeju Island, Korea. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Jakub Tomczak and Max Welling. 2018. Vae with a vampprior. In _International Conference on Artificial Intelligence and Statistics_ , pages 1214–1223. ",
+    "offset_fim": "- Jakub Tomczak and Max Welling. 2018. Vae with a vampprior. In _International Conference on Artificial Intelligence and Statistics_ , pages 1214–1223. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Tomczak and Welling (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Começa no marcador de lista com os autores e termina imediatamente antes da próxima referência, de Bayu Distiawan Trisedya et al.",
+    "texto": "- Jakub Tomczak and Max Welling. 2018. Vae with a vampprior. In _International Conference on Artificial Intelligence and Statistics_ , pages 1214–1223. "
+  },
+  {
+    "offset_inicio": "- Bayu Distiawan Trisedya, Jianzhong Qi, Rui Zhang, and Wei Wang. 2018. GTR-LSTM",
+    "offset_fim": "s 1627–1637, Melbourne, Australia. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Trisedya et al. (2018) — GTR-LSTM",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador de lista e autoria/ano; constitui uma unidade própria e termina imediatamente antes da referência seguinte, iniciada por “- Bayu Distiawan Trisedya, Gerhard Weikum...”.",
+    "texto": "- Bayu Distiawan Trisedya, Jianzhong Qi, Rui Zhang, and Wei Wang. 2018. GTR-LSTM: A triple encoder for sentence generation from RDF data. In _Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 1627–1637, Melbourne, Australia. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Bayu Distiawan Trisedya, Gerhard Weikum, Jianzhong Qi, and Rui Zhang. 2019. Neural",
+    "offset_fim": "s 229–240, Florence, Italy. Association for Computational Linguistics. \n\n",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica: Trisedya et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por hífen e encerrada imediatamente antes da próxima referência, de Shikhar Vashishth et al.",
+    "texto": "- Bayu Distiawan Trisedya, Gerhard Weikum, Jianzhong Qi, and Rui Zhang. 2019. Neural relation extraction for knowledge base enrichment. In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 229–240, Florence, Italy. Association for Computational Linguistics. \n\n"
+  },
+  {
+    "offset_inicio": "- Shikhar Vashishth, Rishabh Joshi, Sai Suman Prayaga, Chiranjib Bhattacharyya, and Partha Talukdar. 2018.",
+    "offset_fim": "pages 1257–1266, Brussels, Belgium. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Vashishth et al. (2018) — RESIDE",
+    "motivo": "É a primeira entrada bibliográfica visível no trecho, iniciada por hífen e autoria/ano; termina imediatamente antes da próxima entrada, iniciada por “- Guanying Wang”.",
+    "texto": "- Shikhar Vashishth, Rishabh Joshi, Sai Suman Prayaga, Chiranjib Bhattacharyya, and Partha Talukdar. 2018. RESIDE: Improving distantly-supervised neural relation extraction using side information. In _Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing_ , pages 1257–1266, Brussels, Belgium. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Guanying Wang, Wen Zhang, Ruoxu Wang, Yalin Zhou, Xi Chen, Wei Zhang, Hai Zhu, and Huajun Chen.",
+    "offset_fim": "pages 2246– 2255, Brussels, Belgium. Association for Computational Linguistics.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica — Guanying Wang et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, iniciada por “- Wenlin Wang”.",
+    "texto": "- Guanying Wang, Wen Zhang, Ruoxu Wang, Yalin Zhou, Xi Chen, Wei Zhang, Hai Zhu, and Huajun Chen. \n\n2018. Label-free distant supervision for relation extraction via knowledge graph embedding. In _Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing_ , pages 2246– 2255, Brussels, Belgium. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Wenlin Wang, Zhe Gan, Hongteng Xu, Ruiyi Zhang, Guoyin Wang, Dinghan Shen, Changyou Chen, and Lawrence Carin. 2019a.",
+    "offset_fim": "Topic-guided variational autoencoders for text generation. _arXiv preprint arXiv:1903.07137_ . ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Wenlin Wang et al. (2019a)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, iniciada por “- Xiaozhi Wang”.",
+    "texto": "- Wenlin Wang, Zhe Gan, Hongteng Xu, Ruiyi Zhang, Guoyin Wang, Dinghan Shen, Changyou Chen, and Lawrence Carin. 2019a. Topic-guided variational autoencoders for text generation. _arXiv preprint arXiv:1903.07137_ . "
+  },
+  {
+    "offset_inicio": "- Xiaozhi Wang, Tianyu Gao, Zhaocheng Zhu, Zhiyuan Liu, Juanzi Li, and Jian Tang.",
+    "offset_fim": "representation. _arXiv preprint arXiv:1911.06136_ . ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica — Wang et al. (2019b), Kepler",
+    "motivo": "Cada entrada bibliográfica iniciada por hífen constitui uma unidade própria. Este bloco começa na referência de Xiaozhi Wang et al. e termina imediatamente antes da próxima entrada, iniciada por “- Jason Weston”.",
+    "texto": "- Xiaozhi Wang, Tianyu Gao, Zhaocheng Zhu, Zhiyuan Liu, Juanzi Li, and Jian Tang. 2019b. Kepler: A unified model for knowledge embedding and pretrained language representation. _arXiv preprint arXiv:1911.06136_ . "
+  },
+  {
+    "offset_inicio": "- Jason Weston, Antoine Bordes, Oksana Yakhnenko, and Nicolas Usunier. 2013. Connecting language and knowledge bases with embedding models for relation extraction.",
+    "offset_fim": "ages 1366–1371, Seattle, Washington, USA. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Weston et al. (2013)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista com autoria/ano e termina imediatamente antes da próxima referência, iniciada por “- Shanchan Wu”.",
+    "texto": "- Jason Weston, Antoine Bordes, Oksana Yakhnenko, and Nicolas Usunier. 2013. Connecting language and knowledge bases with embedding models for relation extraction. In _Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing_ , pages 1366–1371, Seattle, Washington, USA. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Shanchan Wu, Kai Fan, and Qiong Zhang. 2019. Improving distantly supervised relation extraction with neural noise converter and conditional optimal selector.",
+    "offset_fim": "ence on Artificial Intelligence_ , volume 33, pages 7273–7280. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica — Shanchan Wu, Kai Fan e Qiong Zhang (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen, e termina imediatamente antes da próxima referência, iniciada por “- Yi Wu”.",
+    "texto": "- Shanchan Wu, Kai Fan, and Qiong Zhang. 2019. Improving distantly supervised relation extraction with neural noise converter and conditional optimal selector. In _Proceedings of the AAAI Conference on Artificial Intelligence_ , volume 33, pages 7273–7280. "
+  },
+  {
+    "offset_inicio": "- Yi Wu, David Bamman, and Stuart Russell. 2017. Adversarial training for relation extraction. In _Proceedings",
+    "offset_fim": "pages 1778–1783, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica: Wu, Bamman e Russell (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por hífen e encerrada imediatamente antes da próxima referência, de Peng Xu e Denilson Barbosa.",
+    "texto": "- Yi Wu, David Bamman, and Stuart Russell. 2017. Adversarial training for relation extraction. In _Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_ , pages 1778–1783, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Peng Xu and Denilson Barbosa. 2019. Connecting language and knowledge with heterogeneous representations for neural relation extraction.",
+    "offset_fim": "pages 3201–3206, Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Peng Xu and Denilson Barbosa (2019)",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador de lista e termina imediatamente antes da próxima referência, iniciada por “- Kaijia Yang”.",
+    "texto": "- Peng Xu and Denilson Barbosa. 2019. Connecting language and knowledge with heterogeneous representations for neural relation extraction. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 3201–3206, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Kaijia Yang, Liang He, Xin-yu Dai, Shujian Huang, and Jiajun Chen. 2019. Exploiting noisy data in distant supervision relation classification.",
+    "offset_fim": "Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Yang et al. (2019)",
+    "motivo": "A primeira unidade é uma entrada bibliográfica iniciada por hífen. Ela começa com a referência de Kaijia Yang et al. e termina imediatamente antes da próxima entrada, iniciada por “- Zhi-Xiu Ye”.",
+    "texto": "- Kaijia Yang, Liang He, Xin-yu Dai, Shujian Huang, and Jiajun Chen. 2019. Exploiting noisy data in distant supervision relation classification. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 3216–3225, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Zhi-Xiu Ye and Zhen-Hua Ling. 2019. Distant supervision relation extraction with intra-bag and inter-bag attentions. In _Proceedings",
+    "offset_fim": "es 2810–2819, Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Ye and Ling (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen e autoria/ano; termina antes do número de página 22 e da próxima entrada bibliográfica.",
+    "texto": "- Zhi-Xiu Ye and Zhen-Hua Ling. 2019. Distant supervision relation extraction with intra-bag and inter-bag attentions. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 2810–2819, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yujin Yuan, Liyuan Liu, Siliang Tang, Zhongfei Zhang, Yueting Zhuang, Sh",
+    "offset_fim": " the AAAI Conference on Artificial Intelligence_ , volume 33, pages 419–426. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Referência bibliográfica — Yuan et al. (2019)",
+    "motivo": "A primeira unidade estrutural identificável é uma entrada bibliográfica iniciada por hífen; ela termina imediatamente antes da próxima referência, iniciada por “- Daojian Zeng”.",
+    "texto": "- Yujin Yuan, Liyuan Liu, Siliang Tang, Zhongfei Zhang, Yueting Zhuang, Shiliang Pu, Fei Wu, and Xiang Ren. 2019. Cross-relation cross-bag attention for distantly-supervised relation extraction. In _Proceedings of the AAAI Conference on Artificial Intelligence_ , volume 33, pages 419–426. "
+  },
+  {
+    "offset_inicio": "- Daojian Zeng, Kang Liu, Yubo Chen, and Jun Zhao. 2015. Distant supervision for relation extraction via piecewise convolutional neural networks.",
+    "offset_fim": "pages 1753–1762, Lisbon, Portugal. Association for Computational Linguistics. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Referência bibliográfica — Zeng et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por hífen e autoria/ano; termina imediatamente antes da próxima referência, de Ningyu Zhang et al. (2019).",
+    "texto": "- Daojian Zeng, Kang Liu, Yubo Chen, and Jun Zhao. 2015. Distant supervision for relation extraction via piecewise convolutional neural networks. In _Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing_ , pages 1753–1762, Lisbon, Portugal. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Ningyu Zhang, Shumin Deng, Zhanlin Sun, Guanying Wang, Xi Chen, Wei Zhang,",
+    "offset_fim": "pages 3016–3025, Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Referência: Ningyu Zhang et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho. Inicia no marcador de lista e termina imediatamente antes da próxima referência, iniciada por “- Yijia Zhang”.",
+    "texto": "- Ningyu Zhang, Shumin Deng, Zhanlin Sun, Guanying Wang, Xi Chen, Wei Zhang, and Huajun Chen. 2019. Long-tail relation extraction via knowledge graph embeddings and graph convolution networks. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 3016–3025, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yijia Zhang and Zhiyong Lu. 2019. Exploring semisupervised variational autoencoders",
+    "offset_fim": "_Methods_ , 166:112 – 119. Deep Learning in Bioinformatics. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Referência: Yijia Zhang and Zhiyong Lu (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho, iniciada por hífen e autores/ano; termina imediatamente antes da próxima referência, iniciada por “- Da Zheng”.",
+    "texto": "- Yijia Zhang and Zhiyong Lu. 2019. Exploring semisupervised variational autoencoders for biomedical relation extraction. _Methods_ , 166:112 – 119. Deep Learning in Bioinformatics. "
+  },
+  {
+    "offset_inicio": "- Da Zheng, Xiang Song, Chao Ma, Zeyuan Tan, Zihao Ye, Jin Dong, Hao Xiong, Zheng",
+    "offset_fim": " SIGIR ’20, page 739–748, New York, NY, USA. Association for Computing Machinery. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Referência: Zheng et al. (2020)",
+    "motivo": "A primeira unidade completa é uma entrada bibliográfica iniciada por hífen e autoria. Ela termina imediatamente antes da próxima referência, iniciada por “- Yaoming Zhu”.",
+    "texto": "- Da Zheng, Xiang Song, Chao Ma, Zeyuan Tan, Zihao Ye, Jin Dong, Hao Xiong, Zheng Zhang, and George Karypis. 2020. Dgl-ke: Training knowledge graph embeddings at scale. In _Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval_ , SIGIR ’20, page 739–748, New York, NY, USA. Association for Computing Machinery. "
+  },
+  {
+    "offset_inicio": "- Yaoming Zhu, Juncheng Wan, Zhiming Zhou, Liheng Chen, Lin Qiu, Weinan Zhang, Xin",
+    "offset_fim": "ACM SIGIR Conference on Research and Development in Information Retrieval_ , pages 455– 464. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Referência bibliográfica — Zhu et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica do trecho e constitui uma unidade própria, iniciada por hífen e encerrada antes do texto não marcado seguinte.",
+    "texto": "- Yaoming Zhu, Juncheng Wan, Zhiming Zhou, Liheng Chen, Lin Qiu, Weinan Zhang, Xin Jiang, and Yong Yu. 2019. Triple-to-text: Converting rdf triples into high-quality natural languages via optimizing an inverse kl divergence. In _Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval_ , pages 455– 464. "
+  },
+  {
+    "offset_inicio": "47 _,_ 477 instances, which is approximately 27 _._ 5% of the testing instances. The version was corrected later on but there still remain methods that use the non-filtered data.",
+    "offset_fim": "aining data are obtained using distant supervision, while test data are manually annotated (Hoffmann et al., 2011). ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "A.1 The NYT10 Dataset",
+    "motivo": "O trecho inicial é a continuação da subseção A.1 e permanece coeso até imediatamente antes do marcador \"## **A.2 Data Pre-processing Details**\", que inicia a próxima unidade.",
+    "texto": "47 _,_ 477 instances, which is approximately 27 _._ 5% of the testing instances. The version was corrected later on but there still remain methods that use the non-filtered data. Recently, Han et al. (2019) released a finalised version removing the overlaps, resulting in 522 _,_ 611 total training instances. In our experiments we evaluate the proposed model on both versions. \n\nIt is also important to note that NYT10 has been used by the community in two settings: bag-level and sentence-level. In the bag-level setting, a pair’s relation is defined based on a bag of sentences that contain the pair. On the contrary, in the sentencelevel setting a pair’s relation is predicted for each sentence. Training data are obtained using distant supervision, while test data are manually annotated (Hoffmann et al., 2011). "
+  },
+  {
+    "offset_inicio": "## **A.2 Data Pre-processing Details** \n\nWe found that the dataset includes several duplicate",
+    "offset_fim": "|Duplicates|62,327|-|-|\n||Outliers|5,570|-|-|\n\n\n\n# **A Appendix**",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "A.2 Data Pre-processing Details",
+    "motivo": "O bloco inicia no marcador de A.2 e contém seu texto introdutório e a tabela subsequente. Ele termina imediatamente antes do próximo marcador estrutural, # **A Appendix**.",
+    "texto": "## **A.2 Data Pre-processing Details** \n\nWe found that the dataset includes several duplicate instances, i.e. the exact same sentence with the exact same pair. We remove such cases from our training data since they can bias the training process. However, they are preserved on the validation and test sets for a fair comparison with other methods. We convert the dataset to lowercase and replace all digits with the hash character (#). We randomly select 10% of the training bags as our validation set. \n\n|||Train|Validation|Test|\n|---|---|---|---|---|\n|d|Instances|400,100|53,319|172,448|\n|esse|Bags|248,352|28,108|96,678|\n|oc|Facts|16,338|1,823|1,950|\n|Pr|Negatives|233,092|26,301|94,917|\n||Instances|469,290|53,321|-|\n||Bags|252,044|28,109|-|\n||Duplicates|62,327|-|-|\n||Outliers|5,570|-|-|\n\n\n\n# **A Appendix**"
+  },
+  {
+    "offset_inicio": "## **A.1 The NYT10 Dataset** \n\nAs described in Bai and Ritter (2019), the NYT10",
+    "offset_fim": " between the training and the test set. The amount of overlaps is significant and accounts for ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "A.1 The NYT10 Dataset",
+    "motivo": "O bloco inicia no marcador de subseção A.1 e contém o texto introdutório sobre as versões do NYT10. Termina imediatamente antes do próximo rótulo estrutural visível, **Sentence Length Filtering.**, que abre a unidade seguinte de pré-processamento.",
+    "texto": "## **A.1 The NYT10 Dataset** \n\nAs described in Bai and Ritter (2019), the NYT10 dataset has been released in several versions. The original one, follows the setting of Riedel et al. (2010), where two sets of data were created. Later versions (Lin et al., 2016) merged the two sets in order to construct a larger dataset. This merging resulted into 570 _,_ 300 instances for training. However, in this version of the data exist overlaps in pairs between the training and the test set. The amount of overlaps is significant and accounts for "
+  },
+  {
+    "offset_inicio": "**Sentence Length Filtering.** We restrict the length of a sentence to 50 words for",
+    "offset_fim": "oved for the validation and test sets. Relevant statistics are shown in Tables 6, 7 and 8. \n\n",
+    "pagina_inicio": 13,
+    "pagina_fim": 14,
+    "titulo": "Sentence Length Filtering",
+    "motivo": "O bloco inicia no rótulo temático **Sentence Length Filtering.** na página 13 e inclui sua continuação e tabelas associadas até imediatamente antes do próximo rótulo estrutural, **Vocabulary construction.**, na página 14.",
+    "texto": "**Sentence Length Filtering.** We restrict the length of a sentence to 50 words for the NYT10 dataset and to 30 for the WIKIDISTANT dataset. If at least one of the arguments of a pair is located in a span after the maximum sentence length, then the sentence is resized to contain the words from the first argument until the second. We also add a maximum number of 5 words to the left and 5 words to the right if the total length allows. If the length of the resized sentence is still larger than \n\n23\n\n<!-- PÁGINA 14 -->\n|||Train|Validation|Test|\n|---|---|---|---|---|\n|ed|Instances|434,453|62,333|172,448|\n|ess|Bags|258,843|29,303|96,678|\n|oc|Facts|17,387|1,942|1,950|\n|Pr|Negatives|242,644|27,374|94,917|\n||Instances|507,755|-|-|\n||Bags|262,649|-|-|\n||Duplicates|66,130|-|-|\n||Outliers|5,856|-|-|\n\n\n\nTable 7: Statistics of the NYT10 (570K version) dataset. \n\n|||Train|Validation|Test|\n|---|---|---|---|---|\n|ed|Instances|1,000,765|29,145|28,897|\n|ess|Bags|572,215|14,748|15,509|\n|oc|Facts|201,356|4,333|4,333|\n|Pr|Negatives|370,859|10,415|11,176|\n||Instances|1,050,246|-|-|\n||Bags|575,620|-|-|\n||Duplicates|43,978|-|-|\n||Outliers|5,503|-|-|\n\n\n\nTable 8: Statistics of the WIKIDISTANT dataset. \n\nthe maximum sentence length, the sentence is removed from the training set. The reason for this choice is that we want to construct contextualised argument representations. Without the arguments inside the sentence, such representations cannot be formed. We call such removed sentences _outliers_ . Outliers are not removed for the validation and test sets. Relevant statistics are shown in Tables 6, 7 and 8. \n\n"
+  },
+  {
+    "offset_inicio": "**Vocabulary construction.** In order to construct the word vocabulary, we use the unique sentences contained in the training set, as resulted from the removal of duplicate instances",
+    "offset_fim": "to 50K for WIKIDISTANT with a coverage of 96%. Other words are replaced with the UNK token. ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "Vocabulary construction",
+    "motivo": "O bloco começa no rótulo temático \"**Vocabulary construction.**\" e contém seu parágrafo explicativo completo. Termina imediatamente antes do próximo marcador estrutural, \"## **A.3 Hyper-parameter Settings**\".",
+    "texto": "**Vocabulary construction.** In order to construct the word vocabulary, we use the unique sentences contained in the training set, as resulted from the removal of duplicate instances and the sentence length filtering. Since each sentence in the dataset can contain multiple pairs, it is repeated for each pair. Using non-unique sentences can lead to counting larger frequencies for certain words and producing a misleading vocabulary. We restrict the vocabulary to contain the 40K most frequent words for NYT10, with a coverage of 97 _._ 78% in the training set and to 50K for WIKIDISTANT with a coverage of 96%. Other words are replaced with the UNK token. "
+  },
+  {
+    "offset_inicio": "## **A.3 Hyper-parameter Settings** \n\n**DSRE Models.** Table 9 shows the parameters",
+    "offset_fim": "arisation norm|3|\n\n\n\nTable 10: Knowledge Base Embeddings hyperparameters. \n\n24\n\n<!-- PÁGINA 15 -->\n",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "A.3 Hyper-parameter Settings",
+    "motivo": "O bloco inicia no marcador de seção A.3 e inclui os parâmetros de modelos DSRE e embeddings de base de conhecimento, com suas tabelas e legendas. Termina imediatamente antes do próximo marcador estrutural, “## **A.4 WIKIDISTANT Relation Categories**”.",
+    "texto": "## **A.3 Hyper-parameter Settings** \n\n**DSRE Models.** Table 9 shows the parameters used for training the model on the NYT10 and \n\nWIKIDISTANT dataset. In the VAE setting Adaptive Softmax (Grave et al., 2017) was incorporated instead of regular Softmax for faster training. We used three clusters by splitting the vocabulary in _⌊_<sup>_<u>|</u>_</sup> 15<sup>_V_</sup><sup>_<u>|</u>⌋_and</sup><sup>_⌊_3</sup> 15<sup>_<u>|V|</u>⌋_words.</sup> \n\n|Parameter|NYT|WIKI|\n|---|---|---|\n|Batch size|128|128|\n|Max bag size|500|500|\n|Learning rate|0.001<br>|0.001<br>|\n|Weight decay|10<sup>_−_6</sup>|10<sup>_−_6</sup>|\n|Gradient clipping|10|5|\n|Optimiser|Adam|Adam|\n|Early stopping patience|5|5|\n|Task loss weight_λ_|0.8, 0.9|0.9|\n|Word embedding**E**<sup>(</sup><sup>_w_) </sup>dim.<br>|50|50|\n|Relation embedding**E**<sup>(</sup><sup>_r_) </sup>dim.<br>|64|128|\n|Position embedding**E**<sup>(</sup><sup>_p_) </sup>dim.|8|8|\n|Latent code_z_dim.|64|64|\n|Teacher force|0.3|0.3|\n|Encoder dim.|256|256|\n|Encoder layers|1|1|\n|Decoder dim.|256|256|\n|Decoder layers|1|1|\n|Input dropout|0.3|0.3|\n|Word dropout|0.3|0.1|\n\n\n\nTable 9: Models hyper-parameters for each dataset. \n\n**Knowledge Base Embeddings.** In order to train KB entity embeddings we used the DGL-KE toolkit (Zheng et al., 2020). We use the same set of hyper-parameters for both Freebase and Wikidata as shown in Table 10. For Freebase we select 5 _,_ 000 triples as the validation set, while for Wikidata we use the validation set provided in the transductive setting (5 _,_ 136 triples). \n\n|Parameter|Value|\n|---|---|\n|Model|TransE_l2|\n|Emb. size|64|\n|Max train step|500,000|\n|Batch size|1024|\n|Negative sample size|256|\n|Learning rate|0.1|\n|Gamma|10.0|\n|Negative adversarial sampling|True|\n|Adversarial temperature|1.0|\n|Regularisation coefficient|10<sup>_−_7</sup>|\n|Regularisation norm|3|\n\n\n\nTable 10: Knowledge Base Embeddings hyperparameters. \n\n24\n\n<!-- PÁGINA 15 -->\n"
+  },
+  {
+    "offset_inicio": "## **A.4 WIKIDISTANT Relation Categories** \n\nSince WIKIDISTANT contains 454 relations,",
+    "offset_fim": "Table 11: Explanations of the top 10 most frequent WIKIDISTANT relation categories. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "A.4 WIKIDISTANT Relation Categories",
+    "motivo": "O bloco inicia no marcador da subseção A.4 e reúne seu parágrafo explicativo e a tabela/legenda associada. Termina imediatamente antes do próximo marcador estrutural, \"## **A.5 Additional Plots**\".",
+    "texto": "## **A.4 WIKIDISTANT Relation Categories** \n\nSince WIKIDISTANT contains 454 relations, their labels are used directly from the WikiData properties<sup>9</sup> . Here, we add explanations about the top 10 most frequent categories used in Figures 4c, 4d. \n\n|P17|country|\n|---|---|\n|P3373|sibling|\n|P131|located in the administrative<br>territorial entity|\n|P54|member sports team|\n|P175|performer|\n|P161|cast member|\n|P361|part of|\n|P50|author|\n|P150|contains administrative terri-<br>torial entity|\n|P527|has part|\n\n\n\nTable 11: Explanations of the top 10 most frequent WIKIDISTANT relation categories. "
+  },
+  {
+    "offset_inicio": "## **A.5 Additional Plots** \n\nFigure 5 illustrates the t-SNE plot of the latent",
+    "offset_fim": "Figure 6: Precision-Recall curves for the NYT10 (570K) test set. \n\n26",
+    "pagina_inicio": 15,
+    "pagina_fim": 16,
+    "titulo": "A.5 Additional Plots",
+    "motivo": "O bloco inicia no marcador estrutural \"## **A.5 Additional Plots**\" e segue até o fim do texto fornecido, sem outro marcador de unidade; inclui as descrições e legendas das figuras nas páginas 15 e 16.",
+    "texto": "## **A.5 Additional Plots** \n\nFigure 5 illustrates the t-SNE plot of the latent space for the NYT10 validation set. We observe similar clusters to that of the KB (Figure 4a). \n\nFigure 6 illustrates the PR-curves for the nonfiltered version of the NYT10 dataset (570K). Here, KB-priors perform comparably with Normal prior but mostly improve the tail of the distribution (after 50% of the recall range). We could not obtain the PR curve for the JOINTNRE method, thus it is not present in the figure. \n\n> 9https://www.wikidata.org/wiki/Wikidata: List_of_properties \n\n25\n\n<!-- PÁGINA 16 -->\n<!-- Start of picture text -->\n80 nationality 1.0<br>contains PCNN-ATT<br>60 place_of_birthplace_lived 0.9 RESIDE<br>place_of_death Intra-Inter<br>40 neighborhood company _ of 0.8 baseline(0, I)<br>20 admin_divisionscountry 0.7 ( , I)<br>capital<br>0<br>0.6<br>20<br>0.5<br>40<br>0.4<br>60<br>0.3<br>60 40 20 0 20 40 60 0.0 0.1 0.2 0.3 0.4 0.5 0. 6 0.7<br>Recall<br>Precision<br><!-- End of picture text -->\n\nFigure 5: t-SNE plot of the latent vector ( _µ_ ) for the NYT10 (520K) validation set, when using KB priors during training. \n\nFigure 6: Precision-Recall curves for the NYT10 (570K) test set. \n\n26"
+  }
+]

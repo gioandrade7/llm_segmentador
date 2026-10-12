@@ -1,0 +1,30 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "seção principal",
+      "exemplo": "## **1 Introduction**"
+    },
+    {
+      "nivel": 2,
+      "nome": "subseção",
+      "exemplo": "### **2.1 Task Description**"
+    },
+    {
+      "nivel": 3,
+      "nome": "subseção de apêndice",
+      "exemplo": "## **A.4 WIKIDISTANT Relation Categories**"
+    }
+  ],
+  "confianca": "media",
+  "paginas_amostradas": [
+    1,
+    2,
+    8,
+    9,
+    15,
+    16
+  ],
+  "total_paginas": 16
+}

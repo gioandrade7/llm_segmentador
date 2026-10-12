@@ -1,0 +1,41 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 35,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [3] inclui indevidamente o marcador de seção principal \"2 Background\" no seu final, embora tenha começado em \"1 Introduction\"; esse marcador deveria iniciar um bloco próprio antes do bloco [4].",
+        "O bloco [11], iniciado em \"6.1 Experimental Environment and Datasets\" e estendido das págs. 6 a 9, engloba a subseção numerada \"6.2\" que deveria estar entre as subseções 6.1 e 6.3; a passagem direta do bloco [11] para o bloco [12] indica que essa unidade foi absorvida."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco de \"1 Introduction\" imediatamente antes de \"2 Background\" e crie um bloco próprio iniciado por \"2 Background\", mesmo que ele contenha apenas o título antes de \"2.1 Latent Dirichlet Allocation and SCVB0\".\n- Dentro do trecho atualmente coberto por \"6.1 Experimental Environment and Datasets\" (bloco [11]), localize o marcador \"6.2\" e corte-o em um bloco independente; mantenha no bloco 6.1 somente o texto anterior a esse marcador e encerre o bloco 6.2 imediatamente antes de \"6.3 Performance for MMSGTM\".\n- Preserve \"6.3 Performance for MMSGTM\" como bloco separado, sem anexar a ele qualquer texto iniciado por \"6.2\"."
+    },
+    "arquivo_blocos": "resultados/hrds-N19-1291_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 36,
+    "insights_aplicados": "- Encerre o bloco de \"1 Introduction\" imediatamente antes de \"2 Background\" e crie um bloco próprio iniciado por \"2 Background\", mesmo que ele contenha apenas o título antes de \"2.1 Latent Dirichlet Allocation and SCVB0\".\n- Dentro do trecho atualmente coberto por \"6.1 Experimental Environment and Datasets\" (bloco [11]), localize o marcador \"6.2\" e corte-o em um bloco independente; mantenha no bloco 6.1 somente o texto anterior a esse marcador e encerre o bloco 6.2 imediatamente antes de \"6.3 Performance for MMSGTM\".\n- Preserve \"6.3 Performance for MMSGTM\" como bloco separado, sem anexar a ele qualquer texto iniciado por \"6.2\".",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6], iniciado em \"2.2 MMSG Topic Model\", incorpora indevidamente o marcador \"2.3 Metropolis-Hastings-Walker Sampler\" no seu final; esse marcador deveria iniciar um bloco próprio.",
+        "Os blocos [11] e [12] dividem artificialmente a mesma unidade \"6.1 Experimental Environment and Datasets\": o bloco [12] começa com a continuação literal \"_ 6 million articles...\", sem novo marcador estrutural, em vez de o conteúdo permanecer em um único bloco 6.1."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco \"2.2 MMSG Topic Model\" imediatamente antes do marcador \"2.3 Metropolis-Hastings-Walker Sampler\" e crie um bloco próprio iniciado por esse marcador, ainda que o trecho associado seja muito curto.\n- Não trate a quebra de página entre \"The _Wikipedia_ corpus contained 4 _.\" e \"_ 6 million articles from the online\" como fronteira estrutural: mantenha ambos os trechos no único bloco \"6.1 Experimental Environment and Datasets\".\n- Inicie \"6.2 Performance for LDA\" em bloco independente no seu marcador e encerre-o imediatamente antes de \"6.3 Performance for MMSGTM\".\n- Preserve \"6.3 Performance for MMSGTM\" como bloco independente, sem anexar texto pertencente a 6.2.\n- Mantenha \"2 Background\" como bloco de caput separado, encerrado antes de \"2.1 Latent Dirichlet Allocation and SCVB0\", e mantenha \"1 Introduction\" encerrado antes de \"2 Background\"."
+    },
+    "arquivo_blocos": "resultados/hrds-N19-1291_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 37,
+    "insights_aplicados": "- Encerre o bloco \"2.2 MMSG Topic Model\" imediatamente antes do marcador \"2.3 Metropolis-Hastings-Walker Sampler\" e crie um bloco próprio iniciado por esse marcador, ainda que o trecho associado seja muito curto.\n- Não trate a quebra de página entre \"The _Wikipedia_ corpus contained 4 _.\" e \"_ 6 million articles from the online\" como fronteira estrutural: mantenha ambos os trechos no único bloco \"6.1 Experimental Environment and Datasets\".\n- Inicie \"6.2 Performance for LDA\" em bloco independente no seu marcador e encerre-o imediatamente antes de \"6.3 Performance for MMSGTM\".\n- Preserve \"6.3 Performance for MMSGTM\" como bloco independente, sem anexar texto pertencente a 6.2.\n- Mantenha \"2 Background\" como bloco de caput separado, encerrado antes de \"2.1 Latent Dirichlet Allocation and SCVB0\", e mantenha \"1 Introduction\" encerrado antes de \"2 Background\".",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-N19-1291_ciclo3.json"
+  }
+]

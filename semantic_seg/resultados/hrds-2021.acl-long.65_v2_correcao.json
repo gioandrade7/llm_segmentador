@@ -1,0 +1,40 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 83,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [18] (5.5 Overall Performance) está marcado como \"TEXTO NÃO EXTRAÍDO\", caracterizando falha de âncora.",
+        "Os blocos [18] e [19] apresentam sobreposição/duplicação: o trecho sobre a contribuição de regularizar esses vetores de atenção ser maior do que regularizar a self-attention do decoder aparece no fim previsto de [18] e novamente no fim de [19]."
+      ],
+      "consistente": false,
+      "insights": "- Reextraia a seção 5.5 Overall Performance como bloco próprio, iniciando em \"5.5 Overall Performance\" e terminando imediatamente antes de \"5.6 Analysis\".\n- Para a âncora de 5.5, use trechos literais e distintivos do corpo da seção, como o início \"Before delving into the main results, we note that we explored regularizing\", e um trecho final exclusivo imediatamente anterior ao marcador \"5.6 Analysis\"; não use uma âncora que também ocorra em 5.6.\n- Faça o bloco 5.6 Analysis iniciar em \"5.6 Analysis\" e encerrar antes de \"6 Related Work\"; remova dele o texto conclusivo pertencente a 5.5, em especial a frase sobre regularizar attention vectors versus decoder self-attention.\n- Preserve 5.5 e 5.6 como blocos irmãos separados, sem repetir entre eles o parágrafo ou a conclusão de 5.5."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.65_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "- Reextraia a seção 5.5 Overall Performance como bloco próprio, iniciando em \"5.5 Overall Performance\" e terminando imediatamente antes de \"5.6 Analysis\".\n- Para a âncora de 5.5, use trechos literais e distintivos do corpo da seção, como o início \"Before delving into the main results, we note that we explored regularizing\", e um trecho final exclusivo imediatamente anterior ao marcador \"5.6 Analysis\"; não use uma âncora que também ocorra em 5.6.\n- Faça o bloco 5.6 Analysis iniciar em \"5.6 Analysis\" e encerrar antes de \"6 Related Work\"; remova dele o texto conclusivo pertencente a 5.5, em especial a frase sobre regularizar attention vectors versus decoder self-attention.\n- Preserve 5.5 e 5.6 como blocos irmãos separados, sem repetir entre eles o parágrafo ou a conclusão de 5.5.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6], intitulado \"3.2 Tasks and Data Quality\", engloba também a subseção estrutural 3.3, pois salta diretamente para o bloco [7] \"3.4 Analysis of the Highlighted Words\" sem que exista um bloco próprio para 3.3."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual conteúdo do bloco 3.2 em dois blocos irmãos: faça \"3.2 Tasks and Data Quality\" terminar imediatamente antes do marcador literal \"3.3 Results\".\n- Extraia \"3.3 Results\" como bloco próprio, iniciado no seu marcador e encerrado imediatamente antes de \"3.4 Analysis of the Highlighted Words\"; mantenha nele os resultados sobre variações de acurácia conforme o contexto e antecedentes.\n- Preserve \"3.4 Analysis of the Highlighted Words\" como bloco separado, iniciando em seu próprio marcador, sem incorporar texto de 3.3.\n- Não reaplique as instruções anteriores sobre 5.5 e 5.6: nesta extração, os blocos [17] e [18] já estão separados nos marcadores corretos, sem sobreposição aparente."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.65_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 83,
+    "insights_aplicados": "- Divida o atual conteúdo do bloco 3.2 em dois blocos irmãos: faça \"3.2 Tasks and Data Quality\" terminar imediatamente antes do marcador literal \"3.3 Results\".\n- Extraia \"3.3 Results\" como bloco próprio, iniciado no seu marcador e encerrado imediatamente antes de \"3.4 Analysis of the Highlighted Words\"; mantenha nele os resultados sobre variações de acurácia conforme o contexto e antecedentes.\n- Preserve \"3.4 Analysis of the Highlighted Words\" como bloco separado, iniciando em seu próprio marcador, sem incorporar texto de 3.3.\n- Não reaplique as instruções anteriores sobre 5.5 e 5.6: nesta extração, os blocos [17] e [18] já estão separados nos marcadores corretos, sem sobreposição aparente.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.65_v2_ciclo3.json"
+  }
+]

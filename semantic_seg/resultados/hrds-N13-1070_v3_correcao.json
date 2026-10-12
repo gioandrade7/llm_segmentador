@@ -1,0 +1,52 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 50,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [3] engloba mais de uma unidade estrutural: além de \"1 Introduction\", ele contém a subsubseção não numerada \"Approach in this work\", que deveria iniciar um bloco próprio antes do bloco [4] \"Previous work\"."
+      ],
+      "consistente": false,
+      "insights": "- Divida o conteúdo atualmente reunido em \"1 Introduction\" no marcador `### **Approach in this work**`: mantenha no bloco de `## **1 Introduction**` somente o texto anterior a esse marcador e crie um bloco próprio iniciado por `### **Approach in this work**`, terminando imediatamente antes de `### **Previous work**`.\n- Preserve `### **Previous work**` como bloco separado, sem incorporar nele o texto de `Approach in this work` nem o caput de `1 Introduction`."
+    },
+    "arquivo_blocos": "resultados/hrds-N13-1070_v3_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 50,
+    "insights_aplicados": "- Divida o conteúdo atualmente reunido em \"1 Introduction\" no marcador `### **Approach in this work**`: mantenha no bloco de `## **1 Introduction**` somente o texto anterior a esse marcador e crie um bloco próprio iniciado por `### **Approach in this work**`, terminando imediatamente antes de `### **Previous work**`.\n- Preserve `### **Previous work**` como bloco separado, sem incorporar nele o texto de `Approach in this work` nem o caput de `1 Introduction`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [3] engloba indevidamente o caput de `## **1 Introduction**` e a subsubseção marcada `### **Approach in this work**`; esta última deveria constituir um bloco próprio antes do bloco [4], `### **Previous work**`."
+      ],
+      "consistente": false,
+      "insights": "- Divida o bloco de `## **1 Introduction**` exatamente no marcador literal `### **Approach in this work**`: deixe em `1 Introduction` apenas o texto anterior a esse marcador.\n- Crie um bloco próprio iniciado em `### **Approach in this work**` e termine-o imediatamente antes do marcador literal `### **Previous work**`.\n- Mantenha `### **Previous work**` como o bloco seguinte e separado; não incorpore nele o texto de `Approach in this work` nem o caput de `1 Introduction`.\n- Ao processar a janela que contém o fim de `1 Introduction`, procure explicitamente o marcador `Approach in this work`, mesmo que ele esteja distante do início da janela ou em mudança de página, para não voltar a absorvê-lo no bloco englobante."
+    },
+    "arquivo_blocos": "resultados/hrds-N13-1070_v3_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "- Divida o bloco de `## **1 Introduction**` exatamente no marcador literal `### **Approach in this work**`: deixe em `1 Introduction` apenas o texto anterior a esse marcador.\n- Crie um bloco próprio iniciado em `### **Approach in this work**` e termine-o imediatamente antes do marcador literal `### **Previous work**`.\n- Mantenha `### **Previous work**` como o bloco seguinte e separado; não incorpore nele o texto de `Approach in this work` nem o caput de `1 Introduction`.\n- Ao processar a janela que contém o fim de `1 Introduction`, procure explicitamente o marcador `Approach in this work`, mesmo que ele esteja distante do início da janela ou em mudança de página, para não voltar a absorvê-lo no bloco englobante.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [2] engloba indevidamente duas unidades: o caput de `## **1 Introduction**` e a subsubseção `### **Approach in this work**`, que deveria iniciar um bloco próprio antes do bloco [3]."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual bloco de `## **1 Introduction**` no marcador literal `### **Approach in this work**`.\n- Faça o bloco `1 Introduction` terminar imediatamente antes de `### **Approach in this work**`, conservando nele somente o texto introdutório anterior.\n- Crie um bloco próprio que comece em `### **Approach in this work**` e inclua todo o seu texto até imediatamente antes de `### **Previous work**`.\n- Mantenha `### **Previous work**` como o bloco seguinte, sem incorporar o texto de `Approach in this work`.\n- Na janela que abrange o final da introdução e a página 2, procure explicitamente o marcador literal `### **Approach in this work**`, inclusive se estiver distante do início da janela ou próximo de uma quebra de página."
+    },
+    "arquivo_blocos": "resultados/hrds-N13-1070_v3_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Divida o atual bloco de `## **1 Introduction**` no marcador literal `### **Approach in this work**`.\n- Faça o bloco `1 Introduction` terminar imediatamente antes de `### **Approach in this work**`, conservando nele somente o texto introdutório anterior.\n- Crie um bloco próprio que comece em `### **Approach in this work**` e inclua todo o seu texto até imediatamente antes de `### **Previous work**`.\n- Mantenha `### **Previous work**` como o bloco seguinte, sem incorporar o texto de `Approach in this work`.\n- Na janela que abrange o final da introdução e a página 2, procure explicitamente o marcador literal `### **Approach in this work**`, inclusive se estiver distante do início da janela ou próximo de uma quebra de página.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-N13-1070_v3_ciclo4.json"
+  }
+]

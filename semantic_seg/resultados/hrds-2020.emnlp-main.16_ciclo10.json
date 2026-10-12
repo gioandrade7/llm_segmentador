@@ -1,0 +1,569 @@
+[
+  {
+    "offset_inicio": "# **Learning Which Features Matter: RoBERTa Acquires a Preference for Linguistic Generalizations (Eventually)** ",
+    "offset_fim": "New York University \n\nCorrespondence: warstadt@nyu.edu \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Título e autoria do artigo",
+    "motivo": "O bloco começa no título principal do documento e reúne autores, afiliações e contato; termina imediatamente antes do próximo marcador estrutural, \"## **Abstract**\".",
+    "texto": "# **Learning Which Features Matter: RoBERTa Acquires a Preference for Linguistic Generalizations (Eventually)** \n\n**Alex Warstadt,**<sup>1</sup> **Yian Zhang,**<sup>2</sup> **Haau-Sing Li,**<sup>3</sup> **Haokun Liu,**<sup>3</sup> **Samuel R. Bowman**<sup>1</sup><sup>_,_2</sup><sup>_,_3</sup> 1Dept. of Linguistics, 2Dept. of Computer Science, 3Center for Data Science \n\nNew York University \n\nCorrespondence: warstadt@nyu.edu \n\n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nOne reason pretraining on self-supervised linguistic tasks is effective is that",
+    "offset_fim": "likely room to improve the rate at which models learn which features matter. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco começa no marcador \"## **Abstract**\" e termina imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\", ambos na página 1.",
+    "texto": "## **Abstract** \n\nOne reason pretraining on self-supervised linguistic tasks is effective is that it teaches models features that are helpful for language understanding. However, we want pretrained models to learn not only to represent linguistic features, but also to _use_ those features preferentially during fine-turning. With this goal in mind, we introduce a new English-language diagnostic set called MSGS (the Mixed Signals Generalization Set), which consists of 20 ambiguous binary classification tasks that we use to test whether a pretrained model prefers linguistic or surface generalizations during finetuning. We pretrain RoBERTa models from scratch on quantities of data ranging from 1M to 1B words and compare their performance on MSGS to the publicly available RoBERTaBASE. We find that models can learn to represent linguistic features with little pretraining data, but require far more data to learn to _prefer_ linguistic generalizations over surface ones. Eventually, with about 30B words of pretraining data, RoBERTaBASE does demonstrate a linguistic bias with some regularity. We conclude that while self-supervised pretraining is an effective way to learn helpful inductive biases, there is likely room to improve the rate at which models learn which features matter. "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nSelf-supervised pretraining through language modeling on massive datasets has",
+    "offset_fim": "dataset, our pretrained RoBERTas, and all our code: https://github.com/nyu-mll/msgs. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção 1 e abrange todo o texto introdutório, incluindo figura e tabela, até imediatamente antes do próximo marcador estrutural, \"## **2 Inductive Bias**\".",
+    "texto": "## **1 Introduction** \n\nSelf-supervised pretraining through language modeling on massive datasets has revolutionized NLP. One reason this method works is that pretraining shapes a model’s hypothesis space, giving it inductive biases that help it learn linguistic tasks (Howard and Ruder, 2018). Numerous probing studies have provided support for this idea by showing that language models learn representations that encode linguistic features (Gulordava et al., 2019; Tenney et al., 2019; Hewitt and Manning, 2019). \n\nHowever, feature learning is just the first step to acquiring helpful inductive biases. Models must \n\n\n\n<!-- Start of picture text -->\nThe boy who hugged a cat is sneezing.Label=1 Ambiguous Training Data A boy who is hugging the cat sneezed.Label=0<br>Label=1 Label=0<br>The guest is saying that a boat sinks. A guest said that the boat is sinking.<br>Hypothesis Space ?<br>Linguistic Generalization:  Surface Generalization:<br>Is the main verb in the “-ing” form? Does the word “the” precede “a”?<br>The boy who hugged a cat is sneezing.<br>1   2   3   4      5 6   7  8<br>A boy who hugged the cat is sneezing.<br>1 2   3   4     5   6   7  8<br>Disambiguating Test Data<br>Test behavior: Linguistic bias observed Test behavior: Surface bias observed<br>Label=1,Prediction=1 Label=1,Prediction=0<br>A rumor that the CEO lost is spreading. A rumor that the CEO lost is spreading.<br>Label=0,Prediction=0 Label=0,Prediction=1<br>The rumor that a CEO is losing spread.  The rumor that a CEO is losing spread.<br><!-- End of picture text -->\n\nFigure 1: Example of an ambiguous experiment (without inoculation). A model is trained on ambiguous data whose labels are consistent with either a linguistic or a surface generalization, and tested on disambiguating data whose labels support only the linguistic generalization. Light green and dark red shading represents data or features associated with the positive and negative labels/predictions, respectively. \n\nalso be able to learn which features matter. The NLU datasets these models are often fine-tuned on are ambiguous and contain artifacts, and often support multiple possible generalizations. Neural networks are not mind readers: Models that have been shown to represent linguistic features sometimes fail to use them during fine-tuning on NLU tasks, instead adopting shallow surface generalizations (Jia and Liang, 2017; McCoy et al., 2019). To this end, recent work in probing pretrained models advocates for shifting the focus of study away from whether they represent linguistic features and in favor of whether they learn _useful_ representations of those features (Voita and Titov, 2020; Pimentel et al., 2020; Elazar et al., 2020). \n\nWe investigate how RoBERTa (Liu et al., 2019b) acquires language-specific inductive biases during self-supervised pretraining. We track separately \n\n217 \n\n_Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing_ , pages 217–235, November 16–20, 2020. _⃝_ c 2020 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\n||**Feature type**|**Feature description**|**Positive example**|**Negative example**|\n|---|---|---|---|---|\n||Absolute position|Is the first token of S “the”?|The cat chased a mouse.|A cat chased a mouse.|\n|**ce**|Length|Is S longer than_n_(e.g., 3) words?|The cat chased a mouse.|The cat meowed.|\n|**rfa**|Lexical content|Does S contain “the”?|That cat chased the mouse.|That cat chased a mouse.|\n|**Su**|Relative position|Does “the” precede “a”?|The cat chased a mouse.|A cat chased the mouse.|\n||Orthography|Does S appear in title case?|The Cat Chased a Mouse.|The cat chased a mouse.|\n|**ic**|Morphology|Does S have an irregular past verb?|The cats slept.|The cats meow.|\n|**uist**|Syn. category|Does S have an adjective?|Lincoln was tall.|Lincoln was president.|\n|**ng**|Syn. construction|Is S the control construction?|Sue is eager to sleep.|Sue is likely to sleep.|\n|**Li**|Syn. position|Is the main verb in “ing” form?|Cats who eat mice are purring.|Cats who are eating mice purr.|\n\n\n\nTable 1: Schematic examples of the linguistic and surface features in our experiments. \n\nhow RoBERTa’s representation of linguistic features and its preferences for linguistic generalizations over surface generalizations change as the amount of pretraining data increases. We pretrain RoBERTa from scratch on datasets ranging from 1M to 1B words and evaluate these models alongside RoBERTaBASE in a series of experiments to probe the inductive biases of a pretrained model at the time of fine-tuning on a downstream task. \n\nWe probe these models in three kinds of experiments: First, we conduct _control_ experiments where we fine-tune models on unambiguous binary classification tasks to test whether they learn to represent simple linguistic and surface features. Second, we conduct _ambiguous_ experiments following the _poverty of the stimulus_ design (Wilson, 2006), as illustrated in Figure 1. In these experiments, we fine-tune a pretrained model on an ambiguous binary classification task in which the training set is consistent with both a linguistic generalization and a surface one. We then test the classifier on disambiguating data to reveal which generalization the model adopted, and by extension its preference among the two features. Third, we conduct _inoculation_ experiments (following Liu et al., 2019a) to test how hard it is to sway a model with a surface bias to adopt a linguistic generalization. We do this by introducing small amounts of disambiguating data into an otherwise ambiguous training set. We automatically generate data for all these tasks, and call the resulting dataset MSGS (Mixed Signals Generalization Set), pronounced “messages”. \n\nThe results show that RoBERTa acquires a stronger linguistic bias as pretraining increases. RoBERTaBASE has the strongest linguistic bias, and requires little to no inoculating data to reliably make the linguistic generalization. In general, models with more pretraining data can generally be induced to adopt linguistic generalizations with less \n\ninoculating data. We also find a large gap between the amount of pretraining data that RoBERTa needs to learn the linguistic features necessary to generalize out-of-domain and the amount it needs to learns that it should _prefer_ those features when generalizing. The control experiments on unambiguous data reveal that models with little pretraining do actually represent the linguistic features, but nonetheless show a strong surface bias. In other words, the main contribution of pretraining to linguistic bias learning is devoted not to extracting features, but to learning which features matter. \n\nWe conclude that helpful inductive biases can be learned through pretraining, but current models require abundant data to do so. The implications of this conclusion point in two directions: First, we can probably continue to pretrain on increasingly massive training sets to improve on the generalization and few-shot learning abilities of models like T5 (Raffel et al., 2019) and GPT3 (Brown et al., 2020). Second, since models learn useful features early, there is hope that future advances could accelerate by reducing the amount of data needed to learn which features matter. To aid in this effort, we release the MSGS dataset, our pretrained RoBERTas, and all our code: https://github.com/nyu-mll/msgs. \n\n"
+  },
+  {
+    "offset_inicio": "## **2 Inductive Bias** \n\n**Background: Learning Inductive Bias** Any finite set of training examples shown",
+    "offset_fim": "one has a stronger linguistic bias than the other if it requires less inoculation data to be swayed towards the linguistic generalization. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2 Inductive Bias",
+    "motivo": "O bloco inicia no marcador da seção 2, na página 2, e reúne seu texto introdutório e metodológico até imediatamente antes do próximo marcador estrutural, \"## **3 Evaluation Data**\", na página 3.",
+    "texto": "## **2 Inductive Bias** \n\n**Background: Learning Inductive Bias** Any finite set of training examples shown to a learning algorithm like a neural network is consistent with infinitely many generalizable decision functions. Inductive biases are a learner’s preferences among these functions. An inductive bias can eliminate certain possible functions altogether, or result in a preference for some over others (Haussler, 1988). For instance, an RNN classifier is capable of representing _any_ function, but prefers ones that focus \n\n218\n\n<!-- PÁGINA 3 -->\nmostly on local relationships within the input sequence (Dhingra et al., 2018; Ravfogel et al., 2019). \n\nSome recent work seeks to design neural architectures that build in desirable inductive biases (Dyer et al., 2016; Battaglia et al., 2018), or compares the immutable biases of different architectures (McCoy et al., 2020; Hu et al., 2020). However, inductive biases can also be _learned_ by biological (Harlow, 1949) and artificial systems alike (Lake et al., 2017). In the language model finetuning paradigm proposed by Howard and Ruder (2018) and popularized by models such as BERT (Devlin et al., 2019), a pretrained neural network plays the role of the learner. Pretraining adjusts a model’s weights so that it will navigate the hypothesis space during training on a downstream task more effectively than a randomly initialized model. \n\nThere is a difference between learning to extract a linguistic feature and acquiring a bias towards using it when generalizing. There is ample evidence that BERT encodes features such as syntactic category and constituency (Tenney et al., 2019; Clark et al., 2019; Hewitt and Manning, 2019). The acquisition of linguistic features is a _prerequisite_ for a linguistic bias. However, these findings do not tell us if the model will make use of these features to form generalizations during target task training, or if it will fall back on surface features that account for most of the data. \n\n**Methods: Measuring Inductive Bias** We conduct three kinds of experiments to probe a model’s preference for linguistic or surface generalizations: unambiguous control experiments, fully ambiguous experiments, and partially ambiguous inoculation experiments. Figure 1 gives an overview of the ambiguous experiment design. \n\nFirst, it only makes sense to compare a model’s preference between two features if it actually represents both features. This is the goal behind _control experiments_ , in which we fine-tune RoBERTa to classify sentences based on a single linguistic or surface feature in a totally unambiguous setting. \n\nSecond, we conduct _ambiguous experiments_ on models that pass the controls. We fine-tune a pretrained model on a binary sentence classification task using _ambiguous_ data, which equally supports both a simple linguistic generalization and a simple surface one. For example, Figure 1 shows a linguistic task where sentences in the positive class are defined by having a main verb in the “ing” form. We make the training data ambiguous by introducing a \n\nsurface feature that distinguishes the two classes: In all (and only) training examples with label 1, the word “the” precedes the word “a”. Based on this training data, a model could reasonably adopt either a linguistic generalization or a surface one. \n\nWe then test the classifier on disambiguating data to observe which generalization it made. In this kind of data, the labels align with the linguistic generalization, and contradict the surface one: For example, in Figure 1, “a” now always precedes “the” in the positive test examples with label 1. We quantify a model’s inductive bias using a metric we call the _linguistic bias score_ (LBS). We define LBS as the Matthews correlation between the model predictions and the labels on the disambiguating test set (Matthews, 1975). If LBS is 1, the learner shows a systematic linguistic bias. If LBS is -1, it shows a systematic surface bias. If LBS is 0, it shows neither bias. \n\nFinally, while the fully ambiguous experiments probe models’ biases in an idealized setting, training data in more naturalistic contexts often does contain some evidence supporting a linguistic generalization over a simple surface one. To simulate this, we also conduct a series of _inoculation experiments_ (following Liu et al., 2019a), in which we introduce small amounts of disambiguating data into an otherwise ambiguous training set. For each experiment, we replace 0.1%, 0.3%, or 1% of the training data with examples that support the linguistic generalization and contradict the surface one. These experiments allow us to compare the strength of linguistic bias in models that show an overall surface bias: If two models adopt the surface generalization in the fully ambiguous case, we can still say that one has a stronger linguistic bias than the other if it requires less inoculation data to be swayed towards the linguistic generalization. \n\n"
+  },
+  {
+    "offset_inicio": "## **3 Evaluation Data** \n\nWe introduce MSGS (Mixed Signals Generalization Set), pronounced “messages”, a dataset",
+    "offset_fim": "See the Appendix for a more detailed description of the implementation details for each feature. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 5,
+    "titulo": "3 Evaluation Data",
+    "motivo": "O bloco começa no marcador da seção 3 e reúne todo o seu conteúdo nas páginas 3–5. Termina imediatamente antes do próximo marcador estrutural, \"# **4 Models, Pretraining, & Fine-Tuning**\".",
+    "texto": "## **3 Evaluation Data** \n\nWe introduce MSGS (Mixed Signals Generalization Set), pronounced “messages”, a dataset we design to be used in poverty of the stimulus and inoculation experiments. With the goal of contrasting inductive biases that are helpful and harmful in most NLP applications, the tasks in MSGS test a model’s preferences for generalizations based on linguistic or surface features. \n\n**Features under Study** Table 3 illustrates the 4 linguistic features and 5 surface features we con- \n\n219\n\n<!-- PÁGINA 4 -->\n|**Dom.**|**Split**|**LL**|**LS**|**Sentence**|\n|---|---|---|---|---|\n|In|Train (Ambiguous)|1<br>0|1<br>0|These men weren’t hating that this person who sang tunes destroyed the vase.<br>These men hated that this person who sang tunes was destroying some vase.|\n||Inoc. (Disamb.)|1<br>0|0<br>1|These men weren’t hating that this person who sang tunes destroyed some vase.<br>These men hated that this person who sang tunes was destroying the vase.|\n|Out|Test (Disamb.)|1<br>0|0<br>1|These reports that all students built that school were impressing some children.<br>These reports that all students were building the school had impressed some children.|\n||Aux. (Ambiguous)|1<br>0|1<br>0|These reports that all students built the school were impressing some children.<br>These reports that all students were building that school had impressed some children.|\n\n\n\nTable 2: A full paradigm from the SYNTACTIC POSITION _×_ LEXICAL CONTENT task. **LL** and **LS** mark the presence of the linguistic feature ( _Is the main verb in the “ing” form?_ ) and surface feature ( _Does S contain “the”?_ ), respectively. _Dom._ is short for _domain_ . \n\nsider.<sup>1</sup> Each feature is meant to be representative of a broad category of features (e.g. morphological features), though the precise implementation of each feature is necessarily much narrower (e.g. _Does the sentence have an irregular past verb?_ ). Forming generalizations based on surface features entails knowledge of the identity of certain words (in our case, only “the” and “a”), the positional indices of words in the string, the total number of words in a string, or whether certain characters are lowercase or uppercase.<sup>2</sup> Forming generalizations based on linguistic features requires more abstract knowledge of tense and inflectional morphemes, parts of speech, the control construction,<sup>3</sup> and hierarchical syntactic structures, none of which are encoded in the surface string. \n\n**Dataset Structure** MSGS contains 20 ambiguous binary classification tasks each gotten by pairing one of 4 linguistic features with one of 5 surface features. We write FEAT1 _×_ FEAT2 to denote a task that combines features FEAT1 and FEAT2. Each ambiguous dataset contains 50k sentences split into \n\n> 1We explored a slightly larger set of linguistic features and excluded several based on initial experiments showing our models did not encode them. For example, we constructed a task with the objective of identifying sentences that contain antonyms (e.g. _The little girl likes the big dog._ ), but found that only RoBERTaBASE could solve the unambiguous control task. \n\n> 2Although these are surface properties of the string, they are not all trivial for RoBERTa due to its subword tokenization. \n\n> 3The _control construction_ is a syntactic construction in which a semantic argument of a predicate fills or _controls_ an argument slot of an embedded verb. The _raising construction_ is superficially similar, but the filler of the embedded argument slot is not a _semantic_ argument of the main predicate (Sag et al., 2003). For instance, _Sue is eager to sleep_ is an example of control because the NP _Sue_ is the semantic subject of both _eager_ and _sleep_ . By contrast, _Sue is likely to sleep_ is an example of raising because _Sue_ is the semantic subject of _sleep_ , but not of _likely_ . These two phenomena have different syntactic derivations in some theories (Chomsky, 1981). \n\ntraining, evaluation, and inoculation sets. MSGS also includes 9 unambiguous _control tasks_ —one for each feature. Each control dataset contains 30k sentences split into training and evaluation sets. \n\nFor ambiguous tasks, we generate data in paradigms of 8 sentences following a 2 _×_ 2 _×_ 2 design, as shown in Table 2. We vary the following three features: a binary linguistic feature, a binary surface feature, and the domain from which the sentence is sampled. We generate in-domain and out-of-domain sentences from different templates (see _§_ 3:Data Generation for more detail). \n\nAs shown in Table 2, we split the data into four contrasting pairs with different purposes: (1) _Training data_ is ambiguous in-domain data makes up 99% to 100% of the training set. (2) _Inoculating data_ is disambiguating in-domain data which makes up 0.1% to 1% of the training set in experiments with inoculation. We show the classifier only the linguistic label ( **LL** ) to nudge it towards adopting a linguistic generalization. (3) _Test data_ is disambiguating out-of-domain data used to test whether the model adopted the linguistic or surface generalization. (4) _Auxiliary data_ is ambiguous out-of-domain data used to test how well the model adapts to the out-of-domain templates, regardless of which generalization it makes. \n\nFor control tasks, we generate data in paradigms of 4 sentences following a 2 _×_ 2 design by varying the feature and domain. We use control tasks to test whether each pretrained model represents each feature well enough to fine-tune an effective classifier in an unambiguous setting. \n\n**Data Generation** The data is generated from templates using a generation toolkit from Warstadt et al. (2020). This toolkit includes a vocabulary of over 3000 entries labeled with grammatical fea- \n\n220\n\n<!-- PÁGINA 5 -->\n<!-- Start of picture text -->\nAbsolute position Length Lexical content Relative position Orthography<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1M 10M 100M 1B 30B<br>Morphology Syntactic category Syntactic position Syntactic construction<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1M 10M 100M 1B 30B 1M 10M 100M 1B 30B 1M 10M 100M 1B 30B 1M 10M 100M 1B 30B<br>Pretraining Dataset Size<br>Surface<br>Matthews Correlation<br>Linuisticg<br><!-- End of picture text -->\n\nFigure 2: Results on the main experiments measured in Matthews correlation for the surface control tasks (top) and linguistic control tasks (bottom). Note: For surface tasks a positive score represents a surface generalization. \n\ntures that allow for lexical variation in the data while maintaining grammatical well-formedness. Although generated sentences often describe unlikely or implausible scenarios (e.g., _The lawyer was sinking all canoes_ ), semantic plausibility is independent of all the features we examine, so this should not affect a model that genuinely encodes these features. To prevent out-of-vocabulary tokens affecting our results, we ensure that every word stem in the vocabulary appears in the pretraining datasets for our RoBERTa models (see _§_ 4.1). \n\nOur experimental logic only makes sense if we are reasonably confident that models can only achieve high test performance by genuinely adopting a linguistic generalization. However, training models on generated data can easily lead to overfitting, and classifiers trained and tested on data from the same domain can achieve perfect performance even on arbitrary tasks with random labels (Hewitt and Liang, 2019). For this reason, our primary evaluations test models’ ability to _generalize_ outof-domain. We manipulate domain in two ways: \n\nFirst, we generate training data and test data for each dataset from separate in-domain and out-ofdomain templates. Thus a model cannot succeed at test time simply by recognizing a template or a key part of a template. For example, in the SYNTACTIC POSITION _×_ LEXICAL CONTENT paradigm shown in Table 2, the in-domain data contrasts the main verb with a verb in a relative clause embedded in the complement clause of a verb; while the out-ofdomain data contrasts the main verb with a verb in the complement clause of a noun. In most tasks, \n\neach domain itself is generated from multiple templates as well to widen the domain and encourage better generalization during training. \n\nSecond, on tasks that test lexical knowledge (for instance, the knowledge that _slept_ is an irregular past verb and _meow_ is not), we divide the crucial lexical items into in-domain and out-of-domain sets. Thus, a model cannot succeed by memorizing the keywords associated with each class. See the Appendix for a more detailed description of the implementation details for each feature. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Models, Pretraining, & Fine-Tuning** \n\nWe test 13 RoBERTa models in our main",
+    "offset_fim": " from scratch, and also test RoBERTaBASE pretrained by Liu et al. (2019b). ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4 Models, Pretraining, & Fine-Tuning",
+    "motivo": "É o caput da seção 4, iniciado por seu cabeçalho e encerrado imediatamente antes do marcador da subseção \"## **4.1 Pretraining**\".",
+    "texto": "# **4 Models, Pretraining, & Fine-Tuning** \n\nWe test 13 RoBERTa models in our main experiments: We pretrain 12 from scratch, and also test RoBERTaBASE pretrained by Liu et al. (2019b). "
+  },
+  {
+    "offset_inicio": "## **4.1 Pretraining** \n\n**Pretraining Data** We pretrain RoBERTa using scaled-down",
+    "offset_fim": "parameters and validation perplexities of the selected models are listed in the Appendix. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "4.1 Pretraining",
+    "motivo": "O bloco inicia no cabeçalho numerado \"## **4.1 Pretraining**\" na página 5 e reúne seu conteúdo até imediatamente antes do próximo marcador estrutural, \"## **4.2 Fine-Tuning**\", na página 6.",
+    "texto": "## **4.1 Pretraining** \n\n**Pretraining Data** We pretrain RoBERTa using scaled-down recreations of the dataset used by Devlin et al. (2019) to train BERT, i.e English Wikipedia (2.5 billion tokens) and BookCorpus (800 million tokens). Both are included in the RoBERTa pretraining data.<sup>4</sup> We download the latest Wikipedia dump as of Feb 1, 2020. The original BookCorpus (Zhu et al., 2015) is no longer available, so we collect similar data from Smashwords, the original source of BookCorpus.<sup>5</sup> \n\n> 4RoBERTa uses English Wikipedia, BookCorpus, CCNews, OpenWebText, and STORIES in pretraining. \n\n> 5We collect our data using the Wikipedia XML dump https://dumps.wikimedia.org/mirrors.html and dataprocessing code https://github.com/attardi/wikiextractor, and a Smashwords crawler https://github.com/soskek/bookcorpus. \n\n221\n\n<!-- PÁGINA 6 -->\n<!-- Start of picture text -->\nInoculation rate: 0% Inoculation rate: 0.1% Inoculation rate: 0.3% Inoculation rate: 1.0%<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1M 10M100M 1B 30B 1M 10M100M 1B 30B 1M 10M100M 1B 30B 1M 10M100M 1B 30B<br>Pretraining Dataset Size<br>Linguistic Bias Score (LBS)<br><!-- End of picture text -->\n\nFigure 3: Results measured in LBS for each pretraining and inoculating data amount, aggregated over the 20 tasks in MSGS. We exclude models that fail the corresponding controls, as described in Section 5. High density near LBS of 1 means many models in that group have a linguistic bias; high density near -1 means many models have a surface bias. Models with stronger linguistic bias achieve higher LBS with less inoculation data. \n\nWe pretrain RoBERTa on four training sets containing different numbers of words: 1M, 10M, 100M, and 1B.<sup>6</sup> To make these datasets, we sample entire Wikipedia articles and Smashwords books independently, keeping the proportions of Wikipedia and Smashwords text approximately constant. \n\n**Model Sizes** Model size is the only hyperparameter we systematically search over during pretraining. We consider smaller model sizes to prevent overfitting on small training sets. The detailed configurations of the model sizes are summarized in the Appendix. We use RoBERTaBASE from Liu et al. (2019b) as our largest model size. The other configurations represent a scale roughly based on settings used in Sanh et al. (2019), Vaswani et al. (2017), Jiao et al. (2019), and Tsai et al. (2019). \n\n**Search Range** For dropout, attention dropout, learning rate decay, weight decay and the Adam parameters, we adopt the same parameter values used in Liu et al. (2019b). We fix warm up steps to be 6% of max steps, peak learning rate to be 5e-4, early stopping patience to be 100M tokens, and heuristically define the search range of model size, max steps and batch size for each training set. \n\n**Search Results** We randomly sample hyperparameters from the search range and train 25 models for each of the 1M, 10M, 100M datasets. We train 10 models on the largest (1B) dataset due to resource limitations. For each training set size, we choose three of the resulting models to evaluate. In order to avoid confounds caused by different model sizes, for each training set we choose three models \n\n> 6The publicly available RoBERTaBASE is trained on 160GB of data, which we estimate to be about 30B words. \n\nof the same size that have the lowest perplexity. The hyperparameters and validation perplexities of the selected models are listed in the Appendix. \n\n"
+  },
+  {
+    "offset_inicio": "## **4.2 Fine-Tuning** \n\nWe loosely follow the hyperparameter settings that Liu et al.",
+    "offset_fim": "We evaluate model performance using LBS (see _§_ 2:Methods: Measuring Inductive Bias). ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "4.2 Fine-Tuning",
+    "motivo": "O bloco começa no cabeçalho numerado \"4.2 Fine-Tuning\" e contém seus parágrafos próprios, terminando imediatamente antes do próximo marcador estrutural, \"# **5 Results & Discussion**\".",
+    "texto": "## **4.2 Fine-Tuning** \n\nWe loosely follow the hyperparameter settings that Liu et al. (2019b) used for fine-tuning on GLUE tasks (Wang et al., 2018), and use the following learning rates: _{_ 1E-5, 2E-5, 3E-5 _}_ . We depart from Liu et al. in using a batch size of 16 and training for 5 epochs without early-stopping in all runs. These changes are based on pilots that showed that larger batch sizes and longer fine-tuning were no more effective for our tasks. \n\nWe conduct 3,471 fine-tuning runs: We fine-tune 13 RoBERTa models: (3 random initializations) _×_ (4 pretraining data amounts) + (1 RoBERTabase). We fine-tune each model 267 times: (3 learning rates) _×_ ((9 control tasks) + (20 ambiguous tasks) _×_ (4 inoculation amounts)). We evaluate model performance using LBS (see _§_ 2:Methods: Measuring Inductive Bias). "
+  },
+  {
+    "offset_inicio": "# **5 Results & Discussion** \n\nWe have several main findings: (1) models learn to",
+    "offset_fim": "ing consistently poor results. \n\n# **6 Related work**",
+    "pagina_inicio": 6,
+    "pagina_fim": 8,
+    "titulo": "5 Results & Discussion",
+    "motivo": "O bloco inicia no marcador da seção 5 e reúne todo o seu texto, figuras e notas até imediatamente antes do próximo marcador estrutural, \"# **6 Related work**\", na página 8.",
+    "texto": "# **5 Results & Discussion** \n\nWe have several main findings: (1) models learn to _represent_ both surface features and linguistic features with relatively little data; (2) RoBERTa begins to acquire a linguistic bias with over 1B words of pretraining data; (3) increasing pretraining data strengthens linguistic bias; (4) there is considerable variation in models’ preferences between specific pairs of linguistic and surface features. \n\n**Control results** Figure 2 shows the results for the controls. Performance is near ceiling for most models and features. Because we evaluate all the \n\n222\n\n<!-- PÁGINA 7 -->\n<!-- Start of picture text -->\nAbsolute position Length Lexical content Relative position Orthography<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1.0<br>0.5<br>0.0<br>-0.5<br>-1.0<br>1M 10M 100M 1B 30B 1M 10M 100M 1B 30B 1M 10M 100M 1B 30B 1M 10M 100M 1B 30B 1M 10M 100M 1B 30B<br>Pretraining Dataset Size<br>Failed control Inoculation rate: 0% Inoculation rate: 0.1% Inoculation rate: 0.3% Inoculation rate: 1.0%<br>Morphology<br>Syn. category<br>Linguistic Bias Score (LBS)<br>Syn. position<br>Syn. construction<br><!-- End of picture text -->\n\nFigure 4: Results of the ambiguous binary classification tasks measured in LBS for every (linguistic feature, surface feature) pair. Each plot in the matrix shows the results on the disambiguating test items after training on an ambiguous task. All experiments on the same row investigate the same linguistic feature; all experiments on the same column investigate the same surface feature. Each data point represents one run. The x-axis of the point is the pretraining size of the model, and the y-axis is its LBS. Models with stronger linguistic bias achieve higher LBS with less inoculation data. Gray points show runs where the corresponding controls did not pass. A blackand-white version of this figure separating color channels into separate plots, can be found in the Appendix. \n\nmodels out-of-domain, this result cannot be explained by the models simply memorizing the features from the task training data. Thus, we conclude that most pretrained models we test encode both linguistic and surface features. \n\nThe only exceptions are the syntactic category and syntactic construction features, for which models with less than 100M perform poorly. In subsequent plots, we filter out results where the controls are not passed. Specifically, if a particular combination of model checkpoint and learning rate achieves a Matthews correlation of less than 0.7 on the control task for feature _F_ , we eliminate all results with this combination for any task involving _F_ in Figure 3, or represent them as gray points in Figure 4. \n\n**Main Experiment Results** Figure 3 summarizes the main experiment results. For a given amount of pretraining and inoculation data, we consider all classifiers trained on all 20 tasks in MSGS and plot \n\nthe density of their linguistic bias scores (LBSs). \n\nThe results in the leftmost box (with 0% inoculation) show that only RoBERTaBASE demonstrates a consistent linguistic bias in the fully unambiguous setting. That said, it still adopts the surface bias much of the time. The other models show a clear surface bias overall. The results of experiments with inoculation data show that models with more pretraining data require less inoculation data to be swayed towards the linguistic generalization. We consistently observe, for each pretraining quantity, a phase transition where the linguistic generalization begins to overtake the surface generalization upon exposure to a certain amount of inoculating data. For example, the 1B model goes through this transition between 0.1% and 0.3% inoculating data. The 100M and 10M models go through this transition between 0.3% and 1% inoculating data. The phase transition comes earlier for models with \n\n223\n\n<!-- PÁGINA 8 -->\nmore pretraining, indicating they have a stronger linguistic bias. We also notice distinctive behavior for the models at the extreme ends of pretraining data quantity: The 1M model never completes the transition, suggesting it has a strong surface bias, and RoBERTaBASE appears to be in the middle of this transition with 0% inoculating data, suggesting that even more pretraining data could produce a model with a more consistent linguistic bias. \n\nThese findings are echoed in individual task results in Figure 4.<sup>7</sup> In each plot, models with the same amount of inoculation data (i.e. points with a given color) have higher LBS as the amount of pretraining data increases. Notably, on ambiguous tasks involving LEXICAL CONTENT, RoBERTaBASE usually favors generalizations based on linguistic features without any inoculating data, which no other pretrained model does. We find this result quite striking: Even if the labels are perfectly correlated with the presence or absence of the word “the”, RoBERTaBASE overlooks that fact in favor of a deeper generalization based on an abstract feature like the inflectional form of a verb in a particular syntactic position. Furthermore, this preference is clearly _acquired_ through additional pretraining. The results for MORPHOLOGY _×_ ORTHOGRAPHY is a typical illustration of the differences between models. The 1M model never adopts the linguistic generalization based on the morphological feature, though it eventually rejects the surface generalization. The 100M and 1B models make robust linguistic generalizations only with 1.0% inoculating data. By contrast, RoBERTaBASE requires only 0.1% inoculating data (i.e. 10 out of 10k examples) to adopt the linguistic generalization. \n\n**Surface Biases of RoBERTa** Our results also suggest some specific conclusions about which kinds of surface features RoBERTa pays attention to.<sup>8</sup> For instance, these models have little preference for sentence length. As shown in the second column of Figure 4, most of the models form linguistic generalizations rather than generalizations based on sentence length, even with no inoculating data. By contrast, the models strongly prefer generalizations based on orthography—and to a lesser extent lexical content and word order—over \n\n> 7Analogous results for the held out training-condition data, inoculation data, and auxiliary data are in the Appendix. \n\n> 8MSGS does not come close to representing the full range of possible relevant lexical or syntactic features, preventing us from making strong conclusions about which specific linguistic features RoBERTa has biases in favor of. \n\nlinguistic generalizations. \n\n**The Success of Pretrained Models** Our findings provide insight into why pretraining on massive datasets is so successful. While linguistic feature learning is a major effect of pretraining, it is far from the end of the story: Pretraining also helps models learn which features are central to language. However, this second kind of learning seems to require far more exposure to data with current models and pretraining techniques. Therefore, massive datasets are needed to teach models which features are useful for generalizing. \n\nThe data scale at which we observe RoBERTa beginning to show a linguistic bias (between 1B and 30B words) is similar to the amount of pretraining data used by the first pretrained LMs to achieve major successes at NLU tasks, such as ELMo (Peters et al., 2018) and BERT (Devlin et al., 2019). This suggests a crucial data threshold below which language model pretraining is unlikely to be significantly helpful for most applications with current model architectures, and may explain the manyyear gap between the development of neural LMs and the first major applications of LM pretraining: The early LMs must have not have been trained sufficiently to cross that threshold, yielding consistently poor results. \n\n# **6 Related work**"
+  },
+  {
+    "offset_inicio": "# **7 Future Work & Conclusion** \n\nOur experiments shed light on the relationship between",
+    "offset_fim": "selfsupervised pretraining tasks can more efficiently equip neural networks with better inductive biases. \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "7 Future Work & Conclusion",
+    "motivo": "O bloco começa no marcador da seção 7 na página 9 e inclui seus três parágrafos de conclusão, terminando imediatamente antes do marcador seguinte, # **Acknowledgments**.",
+    "texto": "# **7 Future Work & Conclusion** \n\nOur experiments shed light on the relationship between pretraining data and an inductive bias towards linguistic generalization. Our results indicate that, although some abstract linguistic features are learnable from relatively small amounts of pretraining data, models require significant pretraining after discovering these features to develop a bias towards _using_ them when generalizing. This gives some insight into why extensive pretraining helps general-purpose neural networks adapt to downstream tasks with relative ease. \n\nWe also introduce MSGS, a new diagnostic dataset for probing the inductive biases of learning algorithms using the poverty of the stimulus design and inoculation, and also introduce a set of 12 RoBERTa models we pretrain on smaller data quantities. These models could prove to be a helpful resource for future studies looking to study learning curves of various kinds with respect to the quantity of pretraining data. \n\nFinally, while our results naturally lead to the conclusion that we should continue to pursue models with ever more pretraining, such as GPT-3 (Brown et al., 2020), we do not wish to suggest that this will be the only or best way to build models with stronger inductive biases. Future work might use MSGS as a diagnostic tool to measure how effectively new model architectures and selfsupervised pretraining tasks can more efficiently equip neural networks with better inductive biases. \n\n"
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nThis project has benefited from financial support to SB by Eric and Wendy Schmidt (made by recommendation of the Schmidt Futures program)",
+    "offset_fim": "or(s) and do not necessarily reflect the views of the National Science Foundation. \n\n225",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgments",
+    "motivo": "O bloco começa no marcador de seção \"# **Acknowledgments**\" na página 9 e contém todo o texto de agradecimentos, terminando imediatamente antes do próximo marcador estrutural \"# **References**\" na página 10.",
+    "texto": "# **Acknowledgments** \n\nThis project has benefited from financial support to SB by Eric and Wendy Schmidt (made by recommendation of the Schmidt Futures program), by Samsung Research (under the project _Improving Deep Learning using Latent Structure_ ), by Intuit, Inc., and in-kind support by the NYU HighPerformance Computing Center and by NVIDIA Corporation (with the donation of a Titan V GPU). This material is based upon work supported by the National Science Foundation under Grant No. 1850208 and 1922658. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. \n\n225"
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** \n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "References",
+    "motivo": "O bloco começa no marcador de seção \"# **References**\" e termina imediatamente antes da primeira entrada bibliográfica iniciada por \"- Peter W Battaglia...\", que constitui uma unidade própria.",
+    "texto": "# **References** \n\n"
+  },
+  {
+    "offset_inicio": "- Peter W Battaglia, Jessica B Hamrick, Victor Bapst, Alvaro Sanchez-Gonzalez, Vinicius Zambaldi",
+    "offset_fim": "Razvan Pascanu. 2018. Relational inductive biases, deep learning, and graph networks. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Battaglia et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por '-' e encerrada imediatamente antes da próxima referência iniciada por '-'.",
+    "texto": "- Peter W Battaglia, Jessica B Hamrick, Victor Bapst, Alvaro Sanchez-Gonzalez, Vinicius Zambaldi, Mateusz Malinowski, Andrea Tacchetti, David Raposo, Adam Santoro, Ryan Faulkner, Caglar Gulcehre, Francis Song, Andrew Ballard, Justin Gilmer, George Dahl Dahl, Ashish Vaswani, Kelsey Allen, Charles Nash, Victoria Langston, Chris Dyer, Nicolas Heess, Daan Wierstral, Pushmeet Kohli, Matt Botvinick, Oriol Vinyals, Yujia Li Li, and Razvan Pascanu. 2018. Relational inductive biases, deep learning, and graph networks. "
+  },
+  {
+    "offset_inicio": "- Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla",
+    "offset_fim": "Ilya Sutskever, and Dario Amodei. 2020. Language models are few-shot learners. ArXiv preprint 2005.14165. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Brown et al. (2020) — Language models are few-shot learners",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador '-' de Tom B. Brown e termina imediatamente antes da próxima referência, iniciada por '- Noam Chomsky'.",
+    "texto": "- Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language models are few-shot learners. ArXiv preprint 2005.14165. "
+  },
+  {
+    "offset_inicio": "- Noam Chomsky. 1981. _Lectures on government and binding_ . Walter de Gruyter. ",
+    "offset_fim": "- Noam Chomsky. 1981. _Lectures on government and binding_ . Walter de Gruyter. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Noam Chomsky (1981)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por marcador '-' no trecho fornecido; começa na referência de Chomsky e termina imediatamente antes da próxima entrada, de Kevin Clark et al.",
+    "texto": "- Noam Chomsky. 1981. _Lectures on government and binding_ . Walter de Gruyter. "
+  },
+  {
+    "offset_inicio": "- Kevin Clark, Urvashi Khandelwal, Omer Levy, and Christopher D Manning. 2019. Wh",
+    "offset_fim": "What does BERT look at? An analysis of BERT’s attention. ArXiv preprint 1906.04341. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Kevin Clark et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto; inicia no marcador '-' de Kevin Clark e termina imediatamente antes da próxima referência, iniciada por '- Jacob Devlin'.",
+    "texto": "- Kevin Clark, Urvashi Khandelwal, Omer Levy, and Christopher D Manning. 2019. What does BERT look at? An analysis of BERT’s attention. ArXiv preprint 1906.04341. "
+  },
+  {
+    "offset_inicio": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT:",
+    "offset_fim": "h American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4171–4186. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Devlin et al. (2019), BERT",
+    "motivo": "É a primeira entrada bibliográfica iniciada por hífen no trecho fornecido; começa com a referência de Jacob Devlin et al. e termina imediatamente antes da próxima entrada, “- Bhuwan Dhingra...”.",
+    "texto": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language understanding. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4171–4186. "
+  },
+  {
+    "offset_inicio": "- Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William Cohen, and Ruslan Salakhutdinov.",
+    "offset_fim": "ion of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)_ , pages 42–48. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Bhuwan Dhingra et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por \"-\" no trecho fornecido; começa nesse marcador e termina imediatamente antes da próxima entrada bibliográfica, de Chris Dyer et al.",
+    "texto": "- Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William Cohen, and Ruslan Salakhutdinov. 2018. Neural models for reasoning over multiple mentions using coreference. In _Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)_ , pages 42–48."
+  },
+  {
+    "offset_inicio": "- Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, and Noah A. Smith. 2016. Recurrent neural network grammars. In _Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , pages 199–209, San Diego, California.",
+    "offset_fim": "pages 199–209, San Diego, California. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Chris Dyer et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto, iniciada por '-' e encerrada imediatamente antes da próxima referência, '- Yanai Elazar...'.",
+    "texto": "- Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, and Noah A. Smith. 2016. Recurrent neural network grammars. In _Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , pages 199–209, San Diego, California. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yanai Elazar, Shauli Ravfogel, Alon Jacovi, and Yoav Goldberg. 2020. When BERT",
+    "offset_fim": "Amnesic probing of linguistic properties and MLM predictions. ArXiv preprint 2006.00995. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Yanai Elazar et al. (2020)",
+    "motivo": "O trecho é a primeira entrada bibliográfica iniciada por \"-\" na página 10 e termina imediatamente antes da próxima referência, iniciada por \"- Kanishk Gandhi\".",
+    "texto": "- Yanai Elazar, Shauli Ravfogel, Alon Jacovi, and Yoav Goldberg. 2020. When BERT forgets how to POS: Amnesic probing of linguistic properties and MLM predictions. ArXiv preprint 2006.00995. "
+  },
+  {
+    "offset_inicio": "- Kanishk Gandhi and Brenden M Lake. 2019. Mutual exclusivity as a challenge for neural networks. _arXiv preprint arXiv:1906.10197_ .",
+    "offset_fim": "as a challenge for neural networks. _arXiv preprint arXiv:1906.10197_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Kanishk Gandhi and Brenden M Lake (2019)",
+    "motivo": "A primeira unidade completa no trecho é uma entrada bibliográfica iniciada por hífen. Ela começa na referência de Gandhi e Lake e termina imediatamente antes da próxima referência, iniciada por “- Kristina Gulordava”.",
+    "texto": "- Kanishk Gandhi and Brenden M Lake. 2019. Mutual exclusivity as a challenge for neural networks. _arXiv preprint arXiv:1906.10197_ ."
+  },
+  {
+    "offset_inicio": "- Kristina Gulordava, Piotr Bojanowski, Edouard Grave, Tal Linzen, and Marco Baroni.",
+    "offset_fim": "Colorless green recurrent networks dream hierarchically. _Proceedings of the Society for Computation in Linguistics_ , 2(1):363–364. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Gulordava et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por \"-\" no trecho fornecido; constitui uma unidade própria e termina imediatamente antes da referência seguinte, também iniciada por \"-\".",
+    "texto": "- Kristina Gulordava, Piotr Bojanowski, Edouard Grave, Tal Linzen, and Marco Baroni. 2019. Colorless green recurrent networks dream hierarchically. _Proceedings of the Society for Computation in Linguistics_ , 2(1):363–364. "
+  },
+  {
+    "offset_inicio": "- Kristina Gulordava, Thomas Brochhagen, and Gemma Boleda. 2020. Which one is the",
+    "offset_fim": "achieving mutual exclusivity with neural networks. _arXiv preprint arXiv:2004.03902_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Gulordava, Brochhagen e Boleda (2020)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada por '-', e termina imediatamente antes da próxima referência iniciada por '- Harry F Harlow...'.",
+    "texto": "- Kristina Gulordava, Thomas Brochhagen, and Gemma Boleda. 2020. Which one is the dax? achieving mutual exclusivity with neural networks. _arXiv preprint arXiv:2004.03902_ ."
+  },
+  {
+    "offset_inicio": "- Harry F Harlow. 1949. The formation of learning sets. _Psychological review_ , 56(1):51. ",
+    "offset_fim": "- Harry F Harlow. 1949. The formation of learning sets. _Psychological review_ , 56(1):51. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Harry F. Harlow (1949)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por '-' no trecho fornecido; começa no marcador da referência e termina imediatamente antes da próxima entrada, de David Haussler.",
+    "texto": "- Harry F Harlow. 1949. The formation of learning sets. _Psychological review_ , 56(1):51. "
+  },
+  {
+    "offset_inicio": "- David Haussler. 1988. Quantifying inductive bias: Ai learning algorithms and valiant’s learning framework. _Artificial intelligence_ , 36(2):177–221.",
+    "offset_fim": "Quantifying inductive bias: Ai learning algorithms and valiant’s learning framework. _Artificial intelligence_ , 36(2):177–221. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: David Haussler (1988)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por marcador '-' no trecho fornecido; começa em '- David Haussler...' e termina imediatamente antes da referência seguinte, '- John Hewitt and Percy Liang...'.",
+    "texto": "- David Haussler. 1988. Quantifying inductive bias: Ai learning algorithms and valiant’s learning framework. _Artificial intelligence_ , 36(2):177–221. "
+  },
+  {
+    "offset_inicio": "- John Hewitt and Percy Liang. 2019. Designing and interpreting probes with control tasks.",
+    "offset_fim": "pages 2733–2743, Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Hewitt e Liang (2019)",
+    "motivo": "A primeira unidade completa é a entrada bibliográfica iniciada por \"- John Hewitt and Percy Liang\"; termina imediatamente antes do marcador \"-\" da referência seguinte.",
+    "texto": "- John Hewitt and Percy Liang. 2019. Designing and interpreting probes with control tasks. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 2733–2743, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- John Hewitt and Christopher D Manning. 2019. A structural probe for finding syntax in",
+    "offset_fim": "Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4129–4138. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — John Hewitt and Christopher D. Manning (2019)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por marcador '-' no trecho fornecido; começa em '- John Hewitt...' e termina imediatamente antes da próxima referência, '- Jeremy Howard and Sebastian Ruder...'.",
+    "texto": "- John Hewitt and Christopher D Manning. 2019. A structural probe for finding syntax in word representations. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4129–4138. "
+  },
+  {
+    "offset_inicio": "- Jeremy Howard and Sebastian Ruder. 2018. Universal language model fine-tuning for text",
+    "offset_fim": "of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 328–339. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Howard e Ruder (2018)",
+    "motivo": "A primeira entrada bibliográfica visível inicia com o marcador \"- Jeremy Howard...\" e termina imediatamente antes da próxima referência, iniciada por \"- Jennifer Hu...\".",
+    "texto": "- Jeremy Howard and Sebastian Ruder. 2018. Universal language model fine-tuning for text classification. In _Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 328–339. "
+  },
+  {
+    "offset_inicio": "- Jennifer Hu, Jon Gauthier, Peng Qian, Ethan Wilcox, and Roger P Levy. 2020. A systematic assessment of syntactic generalization",
+    "offset_fim": "systematic assessment of syntactic generalization in neural language models. _arXiv preprint arXiv:2005.03692_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Jennifer Hu et al. (2020)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto, iniciada por '-' e encerrada imediatamente antes da próxima referência, também iniciada por '-'.",
+    "texto": "- Jennifer Hu, Jon Gauthier, Peng Qian, Ethan Wilcox, and Roger P Levy. 2020. A systematic assessment of syntactic generalization in neural language models. _arXiv preprint arXiv:2005.03692_ . "
+  },
+  {
+    "offset_inicio": "- Rohan Jha, Charles Lovering, and Ellie Pavlick. 2020. When does data augmentation",
+    "offset_fim": "data augmentation help generalization in nlp? _arXiv preprint arXiv:2004.15012_ . \n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Rohan Jha, Charles Lovering, and Ellie Pavlick (2020)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador '-' na página 10. Termina imediatamente antes da próxima referência, iniciada por '- Robin Jia and Percy Liang'.",
+    "texto": "- Rohan Jha, Charles Lovering, and Ellie Pavlick. 2020. When does data augmentation help generalization in nlp? _arXiv preprint arXiv:2004.15012_ . \n\n"
+  },
+  {
+    "offset_inicio": "- Robin Jia and Percy Liang. 2017. Adversarial examples for evaluating reading comprehension systems. In _Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_ , pages 2021–2031. ",
+    "offset_fim": "In _Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_ , pages 2021–2031. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Robin Jia and Percy Liang (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho fornecido, iniciada por '-' na página 10 e encerrada imediatamente antes da próxima referência, iniciada por '- Xiaoqi Jiao'.",
+    "texto": "- Robin Jia and Percy Liang. 2017. Adversarial examples for evaluating reading comprehension systems. In _Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_ , pages 2021–2031. "
+  },
+  {
+    "offset_inicio": "- Xiaoqi Jiao, Yichun Yin, Lifeng Shang, Xin Jiang, Xiao Chen, Linlin Li, Fang",
+    "offset_fim": "bert for natural language understanding. _arXiv preprint arXiv:1909.10351_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Xiaoqi Jiao et al. (2019), TinyBERT",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por marcador \"-\" na página 10 e encerrada imediatamente antes da próxima entrada bibliográfica, de Brenden Lake e Marco Baroni, na página 11.",
+    "texto": "- Xiaoqi Jiao, Yichun Yin, Lifeng Shang, Xin Jiang, Xiao Chen, Linlin Li, Fang Wang, and Qun Liu. 2019. Tinybert: Distilling bert for natural language understanding. _arXiv preprint arXiv:1909.10351_ . "
+  },
+  {
+    "offset_inicio": "- Brenden Lake and Marco Baroni. 2018. Generalization without systematicity: On the",
+    "offset_fim": "In _International Conference on Machine Learning_ , pages 2879–2888. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Brenden Lake e Marco Baroni (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador '-' e termina imediatamente antes do próximo marcador '-' da referência seguinte.",
+    "texto": "- Brenden Lake and Marco Baroni. 2018. Generalization without systematicity: On the compositional skills of sequence-to-sequence recurrent networks. In _International Conference on Machine Learning_ , pages 2879–2888. "
+  },
+  {
+    "offset_inicio": "- Brenden M Lake, Tomer D Ullman, Joshua B Tenenbaum, and Samuel J Gershman. 2017.",
+    "offset_fim": "Building machines that learn and think like people. _Behavioral and brain sciences_ , 40. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Lake et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por hífen no trecho fornecido; constitui uma unidade própria e termina imediatamente antes da referência seguinte, iniciada por “- Nelson Liu”.",
+    "texto": "- Brenden M Lake, Tomer D Ullman, Joshua B Tenenbaum, and Samuel J Gershman. 2017. Building machines that learn and think like people. _Behavioral and brain sciences_ , 40. "
+  },
+  {
+    "offset_inicio": "- Nelson Liu, Roy F Schwartz, and Noah A Smith. 2019a. Challenge. _manuscript_ . ",
+    "offset_fim": "- Nelson Liu, Roy F Schwartz, and Noah A Smith. 2019a. Challenge. _manuscript_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Nelson Liu, Roy F Schwartz e Noah A Smith (2019a)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho; inicia no marcador de lista '-' e termina imediatamente antes da próxima entrada, iniciada por '- Yinhan Liu'.",
+    "texto": "- Nelson Liu, Roy F Schwartz, and Noah A Smith. 2019a. Challenge. _manuscript_ . "
+  },
+  {
+    "offset_inicio": "- Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy,",
+    "offset_fim": "2019b. Roberta: A robustly optimized bert pretraining approach. _arXiv preprint arXiv:1907.11692_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Yinhan Liu et al. (2019b)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por \"-\" e encerrada imediatamente antes da próxima referência, iniciada por \"- Brian W. Matthews\".",
+    "texto": "- Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019b. Roberta: A robustly optimized bert pretraining approach. _arXiv preprint arXiv:1907.11692_ ."
+  },
+  {
+    "offset_inicio": "- Brian W. Matthews. 1975. Comparison of the predicted and observed secondary structure",
+    "offset_fim": "phage lysozyme. _Biochimica et Biophysica Acta (BBA)Protein Structure_ , 405(2):442–451.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Brian W. Matthews (1975)",
+    "motivo": "Cada entrada bibliográfica iniciada por \"-\" é uma unidade própria. O bloco começa na referência de Matthews e termina imediatamente antes da próxima entrada, iniciada por \"- R Thomas McCoy\".",
+    "texto": "- Brian W. Matthews. 1975. Comparison of the predicted and observed secondary structure of t4 phage lysozyme. _Biochimica et Biophysica Acta (BBA)Protein Structure_ , 405(2):442–451."
+  },
+  {
+    "offset_inicio": "- R Thomas McCoy, Robert Frank, and Tal Linzen. 2018. Revisiting the poverty of the",
+    "offset_fim": "hierarchical bias in recurrent neural networks. In _Proceedings of the 40th Annual Conference of the Cognitive Science Society._ ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: McCoy, Frank e Linzen (2018)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por \"-\" no trecho fornecido; começa nesse marcador e termina imediatamente antes da próxima referência iniciada por \"- R. Thomas McCoy\".",
+    "texto": "- R Thomas McCoy, Robert Frank, and Tal Linzen. 2018. Revisiting the poverty of the stimulus: hierarchical generalization without a hierarchical bias in recurrent neural networks. In _Proceedings of the 40th Annual Conference of the Cognitive Science Society._ "
+  },
+  {
+    "offset_inicio": "- R. Thomas McCoy, Robert Frank, and Tal Linzen. 2020. Does syntax need to grow on",
+    "offset_fim": "networks. _Transactions of the Association for Computational Linguistics_ , 8:125–140. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "McCoy, Frank e Linzen (2020)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia com o marcador de lista '-' e termina imediatamente antes da próxima referência iniciada por '-'.",
+    "texto": "- R. Thomas McCoy, Robert Frank, and Tal Linzen. 2020. Does syntax need to grow on trees? sources of hierarchical inductive bias in sequence-to-sequence networks. _Transactions of the Association for Computational Linguistics_ , 8:125–140. "
+  },
+  {
+    "offset_inicio": "- R Thomas McCoy, Ellie Pavlick, and Tal Linzen. 2019. Right for the wrong reasons:",
+    "offset_fim": "inference. _Proceedings of the Association for Computational Linguistics_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: McCoy, Pavlick e Linzen (2019)",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador '-' na página 11 e termina imediatamente antes da próxima entrada, também iniciada por '-'.",
+    "texto": "- R Thomas McCoy, Ellie Pavlick, and Tal Linzen. 2019. Right for the wrong reasons: Diagnosing syntactic heuristics in natural language inference. _Proceedings of the Association for Computational Linguistics_ ."
+  },
+  {
+    "offset_inicio": "- Junghyun Min, R Thomas McCoy, Dipanjan Das, Emily Pitler, and Tal Linzen. 2020. Syntactic data augmentation",
+    "offset_fim": "augmentation increases robustness to inference heuristics. _arXiv preprint arXiv:2004.11999_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Min et al. (2020)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada por \"-\", e termina imediatamente antes da próxima referência iniciada por \"- Matthew Peters\".",
+    "texto": "- Junghyun Min, R Thomas McCoy, Dipanjan Das, Emily Pitler, and Tal Linzen. 2020. Syntactic data augmentation increases robustness to inference heuristics. _arXiv preprint arXiv:2004.11999_ ."
+  },
+  {
+    "offset_inicio": "- Matthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018.",
+    "offset_fim": "Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)_ , volume 1, pages 2227–2237. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Peters et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por \"-\" no trecho fornecido e termina imediatamente antes do próximo marcador \"-\", que inicia a referência de Pimentel et al. (2020).",
+    "texto": "- Matthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations. In _Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)_ , volume 1, pages 2227–2237. "
+  },
+  {
+    "offset_inicio": "- Tiago Pimentel, Josef Valvoda, Rowan Hall Maudslay, Ran Zmigrod, Adina Williams",
+    "offset_fim": "pages 4609–4622, Online. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Tiago Pimentel et al. (2020)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de lista \"- Tiago Pimentel\" e termina imediatamente antes da próxima entrada, iniciada por \"- Colin Raffel\".",
+    "texto": "- Tiago Pimentel, Josef Valvoda, Rowan Hall Maudslay, Ran Zmigrod, Adina Williams, and Ryan Cotterell. 2020. Information-theoretic probing for linguistic structure. In _Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics_ , pages 4609–4622, Online. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael",
+    "offset_fim": "Exploring the limits of transfer learning with a unified text-to-text transformer. _arXiv e-prints_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Colin Raffel et al. (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho, iniciada por '-' e encerrada imediatamente antes da próxima referência, de Pranav Rajpurkar et al.",
+    "texto": "- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. 2019. Exploring the limits of transfer learning with a unified text-to-text transformer. _arXiv e-prints_ . "
+  },
+  {
+    "offset_inicio": "- Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad:",
+    "offset_fim": "_Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing_ , pages 2383–2392. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Rajpurkar et al. (2016), SQuAD",
+    "motivo": "É a primeira entrada bibliográfica, iniciada por marcador '-', e termina imediatamente antes da próxima referência iniciada por '- Shauli Ravfogel'.",
+    "texto": "- Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for machine comprehension of text. In _Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing_ , pages 2383–2392. "
+  },
+  {
+    "offset_inicio": "- Shauli Ravfogel, Yoav Goldberg, and Tal Linzen. 2019. Studying the inductive biases of rnns with synthetic variations of natural languages.",
+    "offset_fim": "natural languages. In _Proceedings of NAACL-HLT_ , pages 3532–3542. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Shauli Ravfogel, Yoav Goldberg e Tal Linzen (2019)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por marcador '-' no trecho fornecido; começa nessa referência e termina imediatamente antes da próxima entrada, iniciada por '- Ivan A. Sag'.",
+    "texto": "- Shauli Ravfogel, Yoav Goldberg, and Tal Linzen. 2019. Studying the inductive biases of rnns with synthetic variations of natural languages. In _Proceedings of NAACL-HLT_ , pages 3532–3542. "
+  },
+  {
+    "offset_inicio": "- Ivan A. Sag, Thomas Wasow, and Emily M. Bender. 2003. _Syntactic Theory: A Formal Introduction_ , 2 edition. CSLI Publications. ",
+    "offset_fim": "_Syntactic Theory: A Formal Introduction_ , 2 edition. CSLI Publications. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Sag, Wasow e Bender (2003)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por '-' no trecho. Começa no marcador da referência e termina imediatamente antes da próxima entrada, de Victor Sanh et al.",
+    "texto": "- Ivan A. Sag, Thomas Wasow, and Emily M. Bender. 2003. _Syntactic Theory: A Formal Introduction_ , 2 edition. CSLI Publications. "
+  },
+  {
+    "offset_inicio": "- Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf. 2019. Distilbert,",
+    "offset_fim": "smaller, faster, cheaper and lighter. _arXiv preprint arXiv:1910.01108_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Sanh et al. (2019), DistilBERT",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada por marcador '-' e encerrada imediatamente antes da próxima referência, também iniciada por '-'.",
+    "texto": "- Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf. 2019. Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter. _arXiv preprint arXiv:1910.01108_ . "
+  },
+  {
+    "offset_inicio": "- Marten van Schijndel, Aaron Mueller, and Tal Linzen. 2019. Quantity doesn’t buy quality syntax with neural language models.",
+    "offset_fim": "Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Marten van Schijndel, Aaron Mueller e Tal Linzen (2019)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por “-” no trecho fornecido; começa nesse marcador e termina imediatamente antes da entrada seguinte, iniciada por “- Ian Tenney”.",
+    "texto": "- Marten van Schijndel, Aaron Mueller, and Tal Linzen. 2019. Quantity doesn’t buy quality syntax with neural language models. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 5831–5837, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R. Thomas McCoy,",
+    "offset_fim": "sentence structure in contextualized word representations. In _Proceedings of ICLR_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Ian Tenney et al. (2019)",
+    "motivo": "A primeira entrada bibliográfica inicia com o marcador '-' na página 11 e termina imediatamente antes do próximo marcador '-', que introduz a referência de Henry Tsai et al.",
+    "texto": "- Ian Tenney, Patrick Xia, Berlin Chen, Alex Wang, Adam Poliak, R. Thomas McCoy, Najoung Kim, Benjamin Van Durme, Samuel R Bowman, Dipanjan Das, et al. 2019. What do you learn from context? Probing for sentence structure in contextualized word representations. In _Proceedings of ICLR_ . "
+  },
+  {
+    "offset_inicio": "- Henry Tsai, Jason Riesa, Melvin Johnson, Naveen Arivazhagan, Xin Li, and Amelia Archer. 2019.",
+    "offset_fim": "Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 3623– 3627. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Tsai et al. (2019)",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada por hífen, e termina imediatamente antes da próxima referência iniciada por \"- Ashish Vaswani\".",
+    "texto": "- Henry Tsai, Jason Riesa, Melvin Johnson, Naveen Arivazhagan, Xin Li, and Amelia Archer. 2019. Small and practical bert models for sequence labeling. In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)_ , pages 3623– 3627. "
+  },
+  {
+    "offset_inicio": "- Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017.",
+    "offset_fim": "R. Garnett, editors, _Advances in Neural Information Processing Systems 30_ , pages 5998–6008. Curran Associates, Inc. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Vaswani et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto; inicia no marcador '-' e termina imediatamente antes da próxima referência, de Elena Voita e Ivan Titov.",
+    "texto": "- Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett, editors, _Advances in Neural Information Processing Systems 30_ , pages 5998–6008. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Elena Voita and Ivan Titov. 2020. Informationtheoretic probing with minimum description length.",
+    "offset_fim": "Elena Voita and Ivan Titov. 2020. Informationtheoretic probing with minimum description length. ArXiv preprint 2003.12298. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Elena Voita e Ivan Titov (2020)",
+    "motivo": "A entrada iniciada por hífen é uma unidade bibliográfica individual. Começa na referência de Voita e Titov, na página 11, e termina antes da próxima entrada bibliográfica, que inicia na página 12.",
+    "texto": "- Elena Voita and Ivan Titov. 2020. Informationtheoretic probing with minimum description length. ArXiv preprint 2003.12298. "
+  },
+  {
+    "offset_inicio": "- Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel R.",
+    "offset_fim": "2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP_ , pages 353–355. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica: Wang et al. (2018), GLUE",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada por \"- Alex Wang\" e encerrada imediatamente antes da próxima entrada iniciada por \"- Alex Warstadt\".",
+    "texto": "- Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel R. Bowman. 2018. GLUE: A multi-task benchmark and analysis platform for natural language understanding. In _Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP_ , pages 353–355. "
+  },
+  {
+    "offset_inicio": "- Alex Warstadt and Samuel R Bowman. 2020. Can neural networks acquire a structural bias from raw linguistic data? In _Proceedings of the 42nd Annual Conference of the Cognitive Science Society._ ",
+    "offset_fim": "Can neural networks acquire a structural bias from raw linguistic data? In _Proceedings of the 42nd Annual Conference of the Cognitive Science Society._ ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência: Alex Warstadt and Samuel R Bowman (2020)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por \"-\" no texto fornecido; forma uma unidade própria e termina imediatamente antes da referência seguinte, também iniciada por \"-\".",
+    "texto": "- Alex Warstadt and Samuel R Bowman. 2020. Can neural networks acquire a structural bias from raw linguistic data? In _Proceedings of the 42nd Annual Conference of the Cognitive Science Society._ "
+  },
+  {
+    "offset_inicio": "- Alex Warstadt, Alicia Parrish, Haokun Liu, Anhad Mohananey, Wei Peng, Sheng-Fu",
+    "offset_fim": "for English. _Transactions of the Association for Computational Linguistics_ , 8:377–392. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica — Alex Warstadt et al. (2020)",
+    "motivo": "A entrada iniciada por \"- Alex Warstadt\" é uma referência bibliográfica individual e termina imediatamente antes da próxima entrada, iniciada por \"- Adina Williams\".",
+    "texto": "- Alex Warstadt, Alicia Parrish, Haokun Liu, Anhad Mohananey, Wei Peng, Sheng-Fu Wang, and Samuel R. Bowman. 2020. BLiMP: The benchmark of linguistic minimal pairs for English. _Transactions of the Association for Computational Linguistics_ , 8:377–392. "
+  },
+  {
+    "offset_inicio": "- Adina Williams, Nikita Nangia, and Samuel Bowman. 2018. A broad-coverage challenge corpus for sentence understanding through inference.",
+    "offset_fim": "for sentence understanding through inference. In _Proceedings of NAACL 2018_ , volume 1, pages 1112–1122. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica — Williams, Nangia e Bowman (2018)",
+    "motivo": "É a primeira entrada bibliográfica iniciada por marcador de lista (-) no trecho fornecido; começa em “- Adina Williams...” e termina imediatamente antes da próxima entrada, “- Colin Wilson...”.",
+    "texto": "- Adina Williams, Nikita Nangia, and Samuel Bowman. 2018. A broad-coverage challenge corpus for sentence understanding through inference. In _Proceedings of NAACL 2018_ , volume 1, pages 1112–1122. "
+  },
+  {
+    "offset_inicio": "- Colin Wilson. 2006. Learning phonology with substantive bias: An experimental and",
+    "offset_fim": "dy of velar palatalization. _Cognitive science_ , 30(5):945–982. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica: Colin Wilson (2006)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada por \"-\", e termina imediatamente antes da próxima referência iniciada por \"- Yukun Zhu\".",
+    "texto": "- Colin Wilson. 2006. Learning phonology with substantive bias: An experimental and computational study of velar palatalization. _Cognitive science_ , 30(5):945–982. "
+  },
+  {
+    "offset_inicio": "- Yukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015.",
+    "offset_fim": "books. In _Proceedings of the IEEE international conference on computer vision_ , pages 19– 27. \n\n228",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "Referência bibliográfica: Zhu et al. (2015)",
+    "motivo": "O trecho inicia uma entrada bibliográfica marcada por hífen e termina antes do próximo marcador estrutural, o apêndice “A Data Description” na página 13.",
+    "texto": "- Yukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015. Aligning books and movies: Towards story-like visual explanations by watching movies and reading books. In _Proceedings of the IEEE international conference on computer vision_ , pages 19– 27. \n\n228"
+  },
+  {
+    "offset_inicio": "# **A Data Description** \n\nMSGS contains 5 surface features and 4 linguistic features,",
+    "offset_fim": "templates varying the position of the clauses. The set of _-ing_ verbs is not split between domains. \n\n230",
+    "pagina_inicio": 13,
+    "pagina_fim": 14,
+    "titulo": "A Data Description",
+    "motivo": "O bloco inicia no marcador de apêndice \"# **A Data Description**\" na página 13 e reúne sua descrição e a Tabela 3 até imediatamente antes do próximo marcador estrutural, \"# **B Pretraining Details**\", na página 15.",
+    "texto": "# **A Data Description** \n\nMSGS contains 5 surface features and 4 linguistic features, summarized in Table 3 (repeated from the main body of the paper, for convenience). Implementation details for the features are described below. The implementation of one feature sometimes depends on other feature it is paired with in an ambiguous dataset. \n\n**Absolute position** This feature is 1 _iff_ the sentence begins with the word “the”. We generally ensure that sentences bearing a value for this feature contains two clauses and four determiners total. Some sentences in SYNTACTIC CATEGORY _×_ ABSOLUTE POSITION contain fewer than four NPs. The in-domain and out-of-domain sentences differ in the order or position of the clauses. \n\n**Length** This feature is 1 _iff_ the sentence exceeds some number of tokens. The exact threshold varies depending on the linguistic feature in an ambiguous task, since different linguistic features lead to sentences of different length, on average. In mixed tasks, we vary the length of sentences by adjoining subordinate clauses (e.g. _If Sue wakes_ ) of varying length to the clause in which the linguistic feature is varied. \n\n**Lexical content** This feature is 1 _iff_ the sentence contains _the_ . The sentences generally contain at least two clauses and four determiners. The position of _the_ varies between in-domain and out-ofdomain sentences. \n\n**Relative position** This feature is 1 when _the_ precedes _a_ , and 0 when _a_ precedes _the_ . The sentences generally contain at least two clauses and four determiners. Thus, there are six different configurations in which _the_ precedes _a_ , and these are separated into in-domain and out-of-domain templates. \n\n**Orthography** This feature is 1 _iff_ the sentence appears in title case. In the control paradigm, the sentences generally contain two clauses, whose positions are varied between in-domain and out-ofdomain sentences. \n\n**Lexical semantics** This feature is 1 _iff_ the sentence contains a pair of antonyms. In sentences with label 0, there is a pair of words in a hypernym/hyponym or synonym relation. There are 21 pairs of adjective antonyms and 21 pairs of verb antonyms (not accounting for different inflectional forms). To prevent the task being solvable \n\nusing lexical content, these pairs are divided into indomain and out-of-domain sets. There are different templates corresponding to whether the antonyms are adjectives, intransitive verbs, or transitive verbs. Each template appears in both in-domain and outof-domain sentences. \n\n**Morphology** This feature is 1 when the sentence contains an irregular past tense verb, and 0 when it contains a 3rd person present plural verb (identical to the bare form). Sentences either contain an irregular past tense verb or a regular 3rd person present plural verb (identical to the bare form). We do this because other verb forms can be identified by inflectional morphemes such as _-s_ or auxiliaries such as _have_ , and so discrimination between them could in some cases reduce to a lexical content task. The verbs are divided into in-domain and out-of-domain sets. \n\n**Syntactic category** This feature is 1 _iff_ the sentence contains an adjective. To diversify the templates, we consider all grammatical combinations of a noun, an adjective, a locative PP, and a proper name (e.g., _Sue is the tall actress in the park_ , or _The actress is Sue_ ). In out-of-domain sentences we also include single-word nominal predicates like _president_ (see the example in Table 3 to control for the fact that predicative adjectives are always a single, lowercase word. This gives a total of 19 templates divided into in-domain and out-of-domain sets, some with adjectives and some without. The set of adjectives is also split between domains. \n\n**Syntactic construction** This feature has value 1 _iff_ the sentence contains the control construction. In the control construction a semantic argument of a predicate fills or _controls_ an argument slot of an embedded verb (Sag et al., 2003). For instance, in _Sue is eager to sleep_ , the NP _Sue_ surfaces as the syntactic subject of _eager_ , but _Sue_ is also understood as the semantic subject of _sleep_ . This contrasts with the _raising_ construction in _Sue is likely to sleep_ , where _Sue_ is again surfaces as the syntactic subject of _likely_ in the main clause, and is the semantic subject of _sleep_ in the embedded position, but is not a semantic argument of _likely_ . Different predicates are compatible with control and raising: _eager_ is a control predicate and _likely_ is a raising predicate. We include control and raising predicates of three kinds: subject control/raising verbs, object control/raising verbs, and control/raising adjectives. Specific predicates are divided into in-domain and \n\n229\n\n<!-- PÁGINA 14 -->\n||**Feature type**|**Feature description**|**Positive example**|**Negative example**|\n|---|---|---|---|---|\n||Absolute position|Is the first token of S “the”?|The cat chased a mouse.|A cat chased a mouse.|\n|**ce**|Length|Is S longer than_n_(e.g., 3) words?|The cat chased a mouse.|The cat meowed.|\n|**rfa**|Lexical content|Does S contain “the”?|That cat chased the mouse.|That cat chased a mouse.|\n|**Su**|Relative position|Does “the” precede “a”?|The cat chased a mouse.|A cat chased the mouse.|\n||Orthography|Does S appear in title case?|The Cat Chased a Mouse.|The cat chased a mouse.|\n|**ic**|Morphology|Does S have an irregular verb?|The cat slept.|The cat meows.|\n|**uist**|Syn. category|Does S have an adjective?|Lincoln was tall.|Lincoln was president.|\n|**ng**|Syn. construction|Is S the control construction?|Sue is eager to sleep.|Sue is likely to sleep.|\n|**Li**|Syn. position|Is the main verb in “ing” form?|Cats who eat mice are purring.|Cats who are eating mice purr.|\n\n\n\nTable 3: Schematic examples of the linguistic and surface features. \n\nout-of-domain sets, but all three kinds of predicates appear in both domains. \n\n**Syntactic position** All sentences contain at one or two embedded clauses. We include six sentence types, divided into in-domain and out-of-domain. For example, some sentences contain a relative clause within a relative clause, or a verb phrase with a complement clause. Each sentence type is generated from multiple templates varying the position of the clauses. The set of _-ing_ verbs is not split between domains. \n\n230"
+  },
+  {
+    "offset_inicio": "# **B Pretraining Details** \n\n|**Name**|**L**|**AH**|**HS**|**FFN**|**P**|\n|---|---|---",
+    "offset_fim": "training parameters of the 12 models we use in our experiments. \n\n231\n\n<!-- PÁGINA 16 -->",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "B Pretraining Details",
+    "motivo": "O bloco inicia no marcador do apêndice B na página 15 e contém suas tabelas e legendas. Termina imediatamente antes do marcador do apêndice C (“Additional Results”), que começa na página 16.",
+    "texto": "# **B Pretraining Details** \n\n|**Name**|**L**|**AH**|**HS**|**FFN**|**P**|\n|---|---|---|---|---|---|\n|Base|12|12|768|3072|125M|\n|Med|6|12|768|3072|82M|\n|Med-Small|6|8|512|2048|45M|\n|Small|4|8|384|1200|26M|\n|XSmall|3|4|256|1024|15M|\n\n\n\nTable 4: The RoBERTa model sizes we search over during pretraining. AH = number of attention heads; HS = hidden size; FFN = feed-forward network dimension; P = number of parameters. \n\n|**Training Size**|**Model Size**|**Max Steps**|**Batch Size**|**Validation Perplexity**|\n|---|---|---|---|---|\n|1B|BASE|31K|4096|3.84|\n|1B|BASE|100K|512|3.93|\n|1B|BASE|31K|1024|4.25|\n|100M|BASE|31K|1024|4.61|\n|100M|BASE|100K|512|4.99|\n|100M|BASE|31K|512|5.02|\n|10M|BASE|10K|512|10.78|\n|10M|BASE|10K|1024|11.31|\n|10M|BASE|31K|512|11.58|\n|1M|MED-SMALL|10K|512|134.18|\n|1M|MED-SMALL|31K|512|139.39|\n|1M|MED-SMALL|100K|512|153.38|\n\n\n\nTable 5: The pretraining parameters of the 12 models we use in our experiments. \n\n231\n\n<!-- PÁGINA 16 -->"
+  },
+  {
+    "offset_inicio": "|**C**<br>**Additional Re**|**sults**|||||\n|---|---|---|---|---|---|\n|Absoluteposition",
+    "offset_fim": "Figure 7: Results on the held-out inoculation-condition items (in-domain/unmixed) measured in LBS. \n\n233",
+    "pagina_inicio": 16,
+    "pagina_fim": 17,
+    "titulo": "C Additional Results",
+    "motivo": "O marcador do apêndice C aparece no início da página 16, fragmentado na tabela. O bloco inclui as Figuras 5–7 e termina imediatamente antes do marcador do apêndice D na página 18.",
+    "texto": "|**C**<br>**Additional Re**|**sults**|||||\n|---|---|---|---|---|---|\n|Absoluteposition<br>Morphology|Length|Lexical content|Relativeposition|Orthography|-0.5<br>0.0<br>0.5<br>1.0|\n|Syntactic category|||||-1.0<br>-10<br>-0.5<br>0.0<br>0.5<br>1.0|\n|Syntactic position|||||.<br>-10<br>-0.5<br>0.0<br>0.5<br>1.0|\n|1M<br>10M<br>100M<br>1B<br>base<br>Syntactic construction<br>Failed control<br>I<br>Figure 5: Res|1M<br>10M<br>100M<br>1B<br>base<br>noculation rate: 0%<br>Ino<br>ults on the held-out tra|1M<br>10M<br>100M<br>1B<br>base<br>culation rate: 0.1%<br>Ino<br>ining-condition items|1M<br>10M<br>100M<br>1B<br>base<br>culation rate: 0.3%<br>Ino<br>(in-domain/mixed) m|1M<br>10M<br>100M<br>1B<br>base<br>culation rate: 1.0%<br>easured in LBS.|.<br>-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|<br>Absoluteposition<br>Morphology|<br>Length|<br>Lexical content|<br>Relativeposition|<br>Orthography|-0.5<br>0.0<br>0.5<br>1.0|\n||||||-1.0|\n|Syntactic category|||||-0.5<br>0.0<br>0.5<br>1.0|\n|Syntactic position|||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n||||||-1.0|\n|yntactic construction|||||-0.5<br>0.0<br>0.5<br>1.0|\n|1M<br>10M<br>100M<br>1B<br>base<br>S<br>Failed control<br>I|1M<br>10M<br>100M<br>1B<br>base<br>noculation rate: 0%<br>Ino|1M<br>10M<br>100M<br>1B<br>base<br>culation rate: 0.1%<br>Ino|1M<br>10M<br>100M<br>1B<br>base<br>culation rate: 0.3%<br>Ino|1M<br>10M<br>100M<br>1B<br>base<br>culation rate: 1.0%|-1.0|\n\n\n\nFigure 6: Results on the held-out auxiliary-condition items (out-of-domain/mixed) measured in LBS. \n\n232\n\n<!-- PÁGINA 17 -->\n|Absol|utep|osition|Length|Lexi|cal con|tent|Relat|ivepo|sition|Ort|ho|gra|phy||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|Morphology||||||||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|Syntactic category||||||||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|sition||||||||||||||0.5<br>1.0|\n|tic po||||||||||||||0.0|\n|Syntac||||||||||||||-1.0<br>-0.5|\n|Syntactic construction||||||||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|1M<br>10M<br>Faile|100M<br>d con|1B<br>base<br>trol<br>I|1M<br>10M<br>100M<br>1B<br>base<br>noculation rate: 0%<br>Ino|1M<br>10M<br>culation rate|100M<br>: 0.1%|1B<br>base<br>Ino|1M<br>10M<br>culation rate|100M<br>: 0.3%|1B<br>base<br>Ino|1M<br>10M<br>culation rate:|10<br>1.0|0M<br>%|1B<br>base||\n\n\n\nFigure 7: Results on the held-out inoculation-condition items (in-domain/unmixed) measured in LBS. \n\n233"
+  },
+  {
+    "offset_inicio": "# **D Black and white versions of Fig. 4** \n\n|Absoluteposition|L|ength|Lexical content||Relativepo|sition|Orthography|1.0|",
+    "offset_fim": "Figure 11: Results of the mixed binary classification tasks with 1% inoculation data. \n\n235",
+    "pagina_inicio": 18,
+    "pagina_fim": 19,
+    "titulo": "D Black and white versions of Fig. 4",
+    "motivo": "O bloco começa no marcador do apêndice D na página 18 e inclui as tabelas/figuras e respectivas legendas até o fim do texto fornecido na página 19, sem outro marcador estrutural subsequente.",
+    "texto": "# **D Black and white versions of Fig. 4** \n\n|Absoluteposition|L|ength|Lexical content||Relativepo|sition|Orthography|1.0|\n|---|---|---|---|---|---|---|---|---|\n|Morphology||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>|\n|Syntactic category||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|Syntactic position||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0<br>|\n|1M<br>10M<br>100M<br>1B<br>base<br>Syntactic construction<br>Figure<br>Absoluteposition|1M<br>10M<br>8: Result     i<br>L|100M<br>1B<br>base<br>s of the mixe  i<br>ength|1M<br>10M<br>100M<br>1B<br>d binary classific<br>Lexical content|base<br>iation|1M<br>10M<br>100M<br>i tasks with no<br>Relativepo|1B<br>base<br>i    inocula<br>sition|1M<br>10M<br>100M<br>1B<br>base<br>i    tion data.<br>Orthography|-1.0<br>-0.5<br>0.0<br>0.5<br>1.0<br>1.0|\n|Morphology||||||||-0.5<br>0.0<br>0.5|\n|||||||||-1.0|\n|Syntactic category||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|Syntactic position||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|ntactic construction||||||||-0.5<br>0.0<br>0.5<br>1.0|\n|1M<br>10M<br>100M<br>1B<br>base<br>Sy|1M<br>10M|100M<br>1B<br>base|1M<br>10M<br>100M<br>1B|base|1M<br>10M<br>100M|1B<br>base|1M<br>10M<br>100M<br>1B<br>base|-1.0|\n\n\n\nFigure 9: Results of the mixed binary classification tasks with 0.1% inoculation data. \n\n234\n\n<!-- PÁGINA 19 -->\n|Absoluteposition|Length|Lexical content|Relativeposition|Orth|o|gr|aphy|1.0|\n|---|---|---|---|---|---|---|---|---|\n|Morphology||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>|\n|Syntactic category||||||||-0.5<br>0.0<br>0.5<br>1.0|\n|||||||||-1.0|\n|Syntactic position||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0<br>|\n|1M<br>10M<br>100M<br>1B<br>base<br>Syntactic construction<br>Figure 10<br>Absoluteposition|1M<br>10M<br>100M<br>1B<br>base<br>: Results of the mixed  i<br>Length|1M<br>10M<br>100M<br>1B<br>base<br>binary classification<br>Lexical content|1M<br>10M<br>100M<br>1B<br>base<br>i tasks with 0.3% inocu<br>Relativeposition|1M<br>10M<br>1<br>i    lation dat<br>Orth|0<br>i     a.<br>o|0<br>i<br>gr|M<br>1B<br>ba<br>aphy|se<br>-1.0<br>-0.5<br>0.0<br>0.5<br>1.0<br>1.0|\n|Morphology||||||||-0.5<br>0.0<br>0.5|\n|||||||||-1.0|\n|Syntactic category||||||||-0.5<br>0.0<br>0.5<br>1.0|\n|||||||||-1.0|\n|Syntactic position||||||||-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n|1M<br>10M<br>100M<br>1B<br>base<br>Syntactic construction|1M<br>10M<br>100M<br>1B<br>base|1M<br>10M<br>100M<br>1B<br>base|1M<br>10M<br>100M<br>1B<br>base|1M<br>10M<br>1|0|0|M<br>1B<br>ba|se<br>-1.0<br>-0.5<br>0.0<br>0.5<br>1.0|\n\n\n\nFigure 11: Results of the mixed binary classification tasks with 1% inoculation data. \n\n235"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 36,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [14] engloba duas unidades estruturais: inicia em \"5.3 Analysis on Unsupervised Models\" e termina contendo o marcador de seção principal \"6 Conclusion\", que deveria iniciar um bloco próprio antes de [15]."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco de \"5.3 Analysis on Unsupervised Models\" imediatamente antes do marcador literal \"# **6 Conclusion**\".\n- Crie um bloco próprio iniciado em \"# **6 Conclusion**\", mesmo que, na ordem extraída, ele contenha apenas o título antes de \"# **Acknowledgments**\"."
+    },
+    "arquivo_blocos": "resultados/hrds-P19-1588_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 36,
+    "insights_aplicados": "- Termine o bloco de \"5.3 Analysis on Unsupervised Models\" imediatamente antes do marcador literal \"# **6 Conclusion**\".\n- Crie um bloco próprio iniciado em \"# **6 Conclusion**\", mesmo que, na ordem extraída, ele contenha apenas o título antes de \"# **Acknowledgments**\".",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [4], iniciado em \"2 Related Work\", avança para conteúdo técnico da seção 3 (termina com a continuação de fórmula \"σ(·) ... function\"), embora devesse terminar antes do marcador \"3 Keyphrase Extraction Framework\"; o bloco [5] inicia essa seção, mas sua continuação fica estruturalmente repartida com o bloco [4].",
+        "O bloco [15] engloba o marcador \"# **Acknowledgments**\" no fim do conteúdo de \"6 Conclusion\", em vez de encerrar imediatamente antes desse novo marcador e criar uma unidade própria para os agradecimentos."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco de \"2 Related Work\" imediatamente antes do marcador de seção \"3 Keyphrase Extraction Framework\"; não deixe no bloco 2 texto de fórmulas, funções ou explicações do framework que pertençam à seção 3.\n- Inicie um único bloco de \"3 Keyphrase Extraction Framework\" no marcador literal da seção e reúna nele todo o conteúdo técnico subsequente da seção 3, incluindo as continuações de fórmulas como \"_tanh_ (·)\", a normalização de pesos de atenção e a descrição da função, até \"4 Experiment Settings\".\n- Encerre o bloco de \"6 Conclusion\" imediatamente antes do marcador literal \"# **Acknowledgments**\"; o marcador de agradecimentos não pode permanecer no fim do bloco de conclusão.\n- Crie um bloco próprio iniciado em \"# **Acknowledgments**\", mesmo que ele contenha apenas o título ou um trecho muito curto antes de \"# **References**\".\n- Mantenha \"# **References**\" como bloco separado dos agradecimentos e preserve cada entrada bibliográfica posterior como bloco individual, como já ocorre nos blocos [17] a [36]."
+    },
+    "arquivo_blocos": "resultados/hrds-P19-1588_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 35,
+    "insights_aplicados": "- Encerre o bloco de \"2 Related Work\" imediatamente antes do marcador de seção \"3 Keyphrase Extraction Framework\"; não deixe no bloco 2 texto de fórmulas, funções ou explicações do framework que pertençam à seção 3.\n- Inicie um único bloco de \"3 Keyphrase Extraction Framework\" no marcador literal da seção e reúna nele todo o conteúdo técnico subsequente da seção 3, incluindo as continuações de fórmulas como \"_tanh_ (·)\", a normalização de pesos de atenção e a descrição da função, até \"4 Experiment Settings\".\n- Encerre o bloco de \"6 Conclusion\" imediatamente antes do marcador literal \"# **Acknowledgments**\"; o marcador de agradecimentos não pode permanecer no fim do bloco de conclusão.\n- Crie um bloco próprio iniciado em \"# **Acknowledgments**\", mesmo que ele contenha apenas o título ou um trecho muito curto antes de \"# **References**\".\n- Mantenha \"# **References**\" como bloco separado dos agradecimentos e preserve cada entrada bibliográfica posterior como bloco individual, como já ocorre nos blocos [17] a [36].",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [4] e [5] repartem incorretamente a seção 3: [4], rotulado \"2 Related Work\", retém conteúdo técnico do framework (incluindo a predição de scores de atenção e a introdução de \"where We and be are parameters\"), enquanto [5] começa no marcador da seção 3 já no meio da continuação da fórmula.",
+        "O bloco [10] engloba o marcador de seção principal \"# **5 Result**\" no seu final, embora esse marcador deva iniciar um bloco próprio antes da subseção 5.1.",
+        "Falta o bloco-caput da seção \"5 Result\": o bloco [11] começa diretamente em \"5.1 Overall Comparisons\", sem um bloco iniciado no marcador de nível 2 da seção 5.",
+        "O bloco [13] engloba o marcador de seção principal \"# **6 Conclusion**\" no seu final; esse marcador deveria iniciar o bloco da conclusão.",
+        "O bloco [14], correspondente à conclusão, engloba no seu final o marcador \"# **Acknowledgments**\". Falta um bloco próprio de agradecimentos entre a conclusão e o bloco [15] de referências."
+      ],
+      "consistente": false,
+      "insights": "- Encerre \"2 Related Work\" antes do primeiro trecho técnico que continua o framework da seção 3; em particular, não deixe nessa seção a predição dos scores de atenção, a normalização dos pesos nem a explicação iniciada por \"where We and be are parameters\".\n- Inicie \"3 Keyphrase Extraction Framework\" no marcador literal \"**3 Keyphrase Extraction Framework**\" e associe a esse bloco também as continuações de fórmula e de texto que a extração em duas colunas possa ter colocado antes ou depois desse cabeçalho, incluindo \"_tanh_ (·)\", a normalização dos pesos de atenção e a descrição dos parâmetros, até \"4 Experiment Settings\".\n- Encerre \"4.4 Baseline Models\" imediatamente antes do marcador literal \"# **5 Result**\"; não mantenha esse marcador no fim do bloco 4.4.\n- Crie um bloco-caput próprio iniciado em \"# **5 Result**\", mesmo que contenha somente o título, e termine-o imediatamente antes de \"## **5.1 Overall Comparisons**\".\n- Encerre \"5.3 Analysis on Unsupervised Models\" imediatamente antes do marcador literal \"# **6 Conclusion**\"; não deixe o marcador da conclusão no bloco 5.3.\n- Inicie o bloco \"6 Conclusion\" em \"# **6 Conclusion**\", incluindo seu texto de conclusão, e encerre-o imediatamente antes de \"# **Acknowledgments**\".\n- Crie um bloco próprio iniciado em \"# **Acknowledgments**\", mesmo se ele contiver apenas o título ou um trecho curto, e encerre-o antes de \"# **References**\".\n- Mantenha \"# **References**\" como bloco separado dos agradecimentos e preserve cada entrada bibliográfica subsequente como um bloco individual."
+    },
+    "arquivo_blocos": "resultados/hrds-P19-1588_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 36,
+    "insights_aplicados": "- Encerre \"2 Related Work\" antes do primeiro trecho técnico que continua o framework da seção 3; em particular, não deixe nessa seção a predição dos scores de atenção, a normalização dos pesos nem a explicação iniciada por \"where We and be are parameters\".\n- Inicie \"3 Keyphrase Extraction Framework\" no marcador literal \"**3 Keyphrase Extraction Framework**\" e associe a esse bloco também as continuações de fórmula e de texto que a extração em duas colunas possa ter colocado antes ou depois desse cabeçalho, incluindo \"_tanh_ (·)\", a normalização dos pesos de atenção e a descrição dos parâmetros, até \"4 Experiment Settings\".\n- Encerre \"4.4 Baseline Models\" imediatamente antes do marcador literal \"# **5 Result**\"; não mantenha esse marcador no fim do bloco 4.4.\n- Crie um bloco-caput próprio iniciado em \"# **5 Result**\", mesmo que contenha somente o título, e termine-o imediatamente antes de \"## **5.1 Overall Comparisons**\".\n- Encerre \"5.3 Analysis on Unsupervised Models\" imediatamente antes do marcador literal \"# **6 Conclusion**\"; não deixe o marcador da conclusão no bloco 5.3.\n- Inicie o bloco \"6 Conclusion\" em \"# **6 Conclusion**\", incluindo seu texto de conclusão, e encerre-o imediatamente antes de \"# **Acknowledgments**\".\n- Crie um bloco próprio iniciado em \"# **Acknowledgments**\", mesmo se ele contiver apenas o título ou um trecho curto, e encerre-o antes de \"# **References**\".\n- Mantenha \"# **References**\" como bloco separado dos agradecimentos e preserve cada entrada bibliográfica subsequente como um bloco individual.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [8] e [9] cortam incorretamente a subseção 4.3: o marcador \"## **4.3 Implementation Details**\" ficou no fim do bloco [8], embora o texto próprio dessa subseção esteja no bloco [9], que não começa no seu marcador.",
+        "O bloco [14] engloba ao menos duas unidades estruturais: a subseção \"5.3 Analysis on Unsupervised Models\" e a seção \"6 Conclusion\"; o marcador e o bloco próprio da conclusão estão ausentes.",
+        "Os blocos [4] e [5] ainda apresentam ordenação/atribuição inconsistente na transição para a seção 3: [4], rotulado \"2 Related Work\", retém texto técnico que pertence ao framework, enquanto [5] começa a seção 3 já com uma continuação de fórmula (\"_tanh_ ( _·_ )\") antes da formulação principal."
+      ],
+      "consistente": false,
+      "insights": "- Encerre \"2 Related Work\" antes do primeiro trecho técnico do framework da seção 3; não mantenha nessa seção a predição dos scores de atenção, a normalização dos pesos de atenção, a explicação dos parâmetros nem continuações de fórmulas do framework.\n- Inicie \"3 Keyphrase Extraction Framework\" no marcador literal \"**3 Keyphrase Extraction Framework**\" e incorpore a esse bloco os fragmentos técnicos deslocados pela extração em duas colunas, incluindo \"_tanh_ ( _·_ )\", a normalização dos pesos de atenção e a descrição dos parâmetros, até \"# **4 Experiment Settings**\".\n- Encerre o bloco \"4.2 Eye-tracking Corpus\" imediatamente antes do marcador literal \"## **4.3 Implementation Details**\"; não deixe esse marcador no fim do bloco 4.2.\n- Inicie o bloco \"4.3 Implementation Details\" no próprio marcador \"## **4.3 Implementation Details**\" e inclua nele o texto de treinamento que começa por \"In the training phrase\"; encerre-o antes de \"## **4.4 Baseline Models**\".\n- Encerre \"4.4 Baseline Models\" imediatamente antes de \"# **5 Result**\" e mantenha \"5 Result\" como bloco-caput separado, encerrado antes de \"## **5.1 Overall Comparisons**\".\n- Encerre \"5.3 Analysis on Unsupervised Models\" imediatamente antes do marcador literal \"# **6 Conclusion**\"; não incorpore o texto conclusivo à subseção 5.3.\n- Crie o bloco próprio \"6 Conclusion\" iniciado em \"# **6 Conclusion**\", com todo o texto da conclusão, e encerre-o imediatamente antes de \"# **Acknowledgments**\".\n- Mantenha \"# **Acknowledgments**\" como bloco próprio, separado de \"# **References**\", e preserve cada referência bibliográfica subsequente em um bloco individual."
+    },
+    "arquivo_blocos": "resultados/hrds-P19-1588_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 37,
+    "insights_aplicados": "- Encerre \"2 Related Work\" antes do primeiro trecho técnico do framework da seção 3; não mantenha nessa seção a predição dos scores de atenção, a normalização dos pesos de atenção, a explicação dos parâmetros nem continuações de fórmulas do framework.\n- Inicie \"3 Keyphrase Extraction Framework\" no marcador literal \"**3 Keyphrase Extraction Framework**\" e incorpore a esse bloco os fragmentos técnicos deslocados pela extração em duas colunas, incluindo \"_tanh_ ( _·_ )\", a normalização dos pesos de atenção e a descrição dos parâmetros, até \"# **4 Experiment Settings**\".\n- Encerre o bloco \"4.2 Eye-tracking Corpus\" imediatamente antes do marcador literal \"## **4.3 Implementation Details**\"; não deixe esse marcador no fim do bloco 4.2.\n- Inicie o bloco \"4.3 Implementation Details\" no próprio marcador \"## **4.3 Implementation Details**\" e inclua nele o texto de treinamento que começa por \"In the training phrase\"; encerre-o antes de \"## **4.4 Baseline Models**\".\n- Encerre \"4.4 Baseline Models\" imediatamente antes de \"# **5 Result**\" e mantenha \"5 Result\" como bloco-caput separado, encerrado antes de \"## **5.1 Overall Comparisons**\".\n- Encerre \"5.3 Analysis on Unsupervised Models\" imediatamente antes do marcador literal \"# **6 Conclusion**\"; não incorpore o texto conclusivo à subseção 5.3.\n- Crie o bloco próprio \"6 Conclusion\" iniciado em \"# **6 Conclusion**\", com todo o texto da conclusão, e encerre-o imediatamente antes de \"# **Acknowledgments**\".\n- Mantenha \"# **Acknowledgments**\" como bloco próprio, separado de \"# **References**\", e preserve cada referência bibliográfica subsequente em um bloco individual.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-P19-1588_ciclo5.json"
+  }
+]

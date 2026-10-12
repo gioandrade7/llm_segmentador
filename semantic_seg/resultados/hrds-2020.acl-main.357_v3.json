@@ -1,0 +1,371 @@
+[
+  {
+    "offset_inicio": "# **Pre-training Is (Almost) All You Need: An Application to Commonsense Reasoning** ",
+    "offset_fim": "Samsung Strategy and Innovation Center \n\n_{_ a.tamborrino,n.pellicano,b.pannier,p.voitot,l.naudin _}_ @samsung.com ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Pre-training Is (Almost) All You Need: An Application to Commonsense Reasoning",
+    "motivo": "Bloco de título do artigo, com autores, afiliação e contato; começa no título principal e termina imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
+    "texto": "# **Pre-training Is (Almost) All You Need: An Application to Commonsense Reasoning** \n\n## **Alexandre Tamborrino**<sup>_∗_</sup> **, Nicola Pellican`o**<sup>_∗_</sup> **, Baptiste Pannier**<sup>_∗_</sup> **, Pascal Voitot, Louise Naudin** \n\nSamsung Strategy and Innovation Center \n\n_{_ a.tamborrino,n.pellicano,b.pannier,p.voitot,l.naudin _}_ @samsung.com "
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nFine-tuning of pre-trained transformer models has become the standard approach for",
+    "offset_fim": "requires less annotated data than the standard classifier approach to reach equivalent performances. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no título \"## **Abstract**\" e reúne todo o resumo até imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nFine-tuning of pre-trained transformer models has become the standard approach for solving common NLP tasks (Devlin et al., 2019). Most of the existing approaches rely on a randomly initialized classifier on top of such networks. We argue that this fine-tuning procedure is sub-optimal as the pre-trained model has no prior on the specific classifier labels, while it might have already learned an intrinsic textual representation of the task. In this paper, we introduce a new scoring method that casts a plausibility ranking task in a full-text format and leverages the masked language modeling head tuned during the pre-training phase. We study commonsense reasoning tasks where the model must rank a set of hypotheses given a premise, focusing on the COPA (Gordon et al., 2012), Swag (Zellers et al., 2018), HellaSwag (Zellers et al., 2019) and CommonsenseQA (Talmor et al., 2019) datasets. By exploiting our scoring method without fine-tuning, we are able to produce strong baselines (e.g. 80% test accuracy on COPA) that are comparable to supervised approaches. Moreover, when fine-tuning directly on the proposed scoring function, we show that our method provides a much more stable training phase across random restarts (e.g _×_ 10 standard deviation reduction on COPA test accuracy) and requires less annotated data than the standard classifier approach to reach equivalent performances. "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nRecent advances in natural language processing have been made using sequential transfer learning",
+    "offset_fim": "accuracy gap between our proposed method and the standard classifier ones. This makes our method advantageous in small dataset context. \n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador de seção numerada \"1 Introduction\" na página 1 e reúne todo o texto introdutório, incluindo sua continuação na página 2, até imediatamente antes do próximo marcador de seção, \"2 Related Work\".",
+    "texto": "## **1 Introduction** \n\nRecent advances in natural language processing have been made using sequential transfer learning over large pre-trained transformer models. From these models, most NLP tasks can be addressed by adding a classifier on top of the transformer embedding outputs (Devlin et al., 2019; Liu et al., 2019) . \n\n> _∗_ Equal contribution. \n\nIn this paper, we tackle a subset of NLP tasks consisting in plausibility ranking. Such tasks can be formalised as follows: given a unique premise _p_ and a set of hypotheses _H_ = _{hi}i_ =1 _...n_ , the task consists in returning the appropriate hypothesis _h_<sup>_∗_</sup> _∈ H_ that matches _p_ (see Section 3 for more details). A natural task that fits into this problem formulation is commonsense reasoning. Thus, it will be the main focus of the present paper. \n\nTraditionally, this problem is solved by jointly classifying each pair ( _p, hi_ ) _i_ =1 _...n_ . For instance, assuming a Masked Language Modeling (MLM) model is used, an example from the COPA dataset (Gordon et al., 2012) is commonly casted into two distinct examples: \n\n- [CLS] The man broke his toe. [SEP] He dropped a hammer on his foot. [SEP] _→_ correct \n\n- [CLS] The man broke his toe. [SEP] He got a hole in his sock. [SEP] _→_ incorrect \n\nThe special token [CLS] (used for sentence level tasks) is then provided to a classifier in order to predict the label of the given example; [SEP] is a special separator token. This format will be referred to as _separated-sentence_ . For such a task, the use of the randomly initialized head can appear sub-optimal since the pre-trained model does not integrate any prior on the specific classifier label. To validate this intuition, we cast the MLM model inputs into a _full-text_ format. Thus, the separation token is dropped and potentially replaced by conjunction words that are fully specific to the task. The previously illustrated correct example will be turned into: [CLS] The man broke his toe <u>because</u> he dropped a hammer on his foot [SEP]. Using this input format, we apply a new bidirectional word-level scoring function that leverages the MLM head (Devlin et al., 2019) \n\n3878 \n\n_Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics_ , pages 3878–3887 July 5 - 10, 2020. _⃝_ c 2020 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\ntuned during the pre-training phase (see Figure 1 for an overview of the proposed approach). This method produces strong zero-shot<sup>1</sup> baselines on the COPA (Gordon et al., 2012), Swag (Zellers et al., 2018), HellaSwag (Zellers et al., 2019) and CommonsenseQA (Talmor et al., 2019) datasets. Then, we fine-tune this new scoring function with a margin-based loss as proposed in (Li et al., 2019). Using RoBERTa _LARGE_ , our results reveal that this new training procedure leads to better accuracy and much more stable training trajectories which is an important feature since large MLM models are known to be unstable on several tasks (Devlin et al., 2019; Phang et al., 2018). Finally, we find that a progressive decrease of the training dataset size results in a progressive increase of the accuracy gap between our proposed method and the standard classifier ones. This makes our method advantageous in small dataset context. \n"
+  },
+  {
+    "offset_inicio": "## **2 Related Work** \n\nIn (Trinh and Le, 2018), researchers have shown that a RNN",
+    "offset_fim": "comparison in terms of accuracy and training stability across random restarts between the proposed method and standard classifers.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Related Work",
+    "motivo": "O bloco inicia na seção numerada \"2 Related Work\" e contém seus parágrafos e lista interna; termina imediatamente antes do próximo marcador estrutural, \"3 Method\".",
+    "texto": "## **2 Related Work** \n\nIn (Trinh and Le, 2018), researchers have shown that a RNN Language Model pretrained on a large amount of data can be used to efficiently score sentences in a zero-shot setting. They used the Winograd Schema Challenge (WSC-273) dataset (Levesque et al., 2012) which mostly consists of a pronoun disambiguation task that requires commonsense reasoning. In their approach, the pronoun to disambiguate is replaced by the different candidates. Then, each version of the sentence is scored using the likelihood of the sequence under the forward autoregressive factorization. They showed that targeting the likelihood of the tokens placed after the candidate words performs better than a full-sentence likelihood estimation. This result highlights the fact that the choice of the targeted sub-sequence for the likelihood estimation has an important impact on the overall performance of the model. More recently, analysis of relational knowledge contained in pre-trained BERT models has been the subject of different studies (Petroni et al., 2019; Poerner et al., 2019). Results have shown evidences that BERT models memorize reasoning about entity names and commonsense knowledge, making MLM models appropriate candidates to commonsense oriented tasks. \n\nFrom a supervised learning perspective, (Li et al., 2019) proposed to replace the traditional \n\n> 1For the following of our paper, we will note as _zero-shot setting_ the use of the pre-trained model without fine-tuning. \n\ncross-entropy loss with a margin-based one one the COPA dataset. The authors argued that crossentropy based methods are not adapted for plausibility ranking tasks since they force the scores to adopt extreme values (near 0 or 1). In contrast, a margin-based objective function appeared to be a natural way to rank a set of hypotheses. Both approaches were compared using the [CLS] token of the BERT-base model and a _separated-sentence_ input format. The margin-based objective function surpassed the cross-entropy one by increasing the Test set accuracy from 73.4% to 75.4%. \n\nAdopting a token level scoring approach (Kocijan et al., 2019) used a BERT model with a mixture between a margin-based and a MLM loss on WSC-273 to score the different pronouns to disambiguate. This approach allows the authors to improve the previous state of the art by 8.8%. Despite being the closest method to the one proposed in this paper, our approach differs from three points: \n\n- We generalize the scoring method by targeting different contiguous sub-sequences for the likelihood estimation. To do so, different datasets are recasted in a _full-text format_ . \n\n- We also focus on targeting the premise avoiding inner statistical biases of different hypotheses (e.g. word frequencies, punctuation, variable sequence lengths etc...). \n\n- The objective of the present paper is to propose a direct comparison in terms of accuracy and training stability across random restarts between the proposed method and standard classifers."
+  },
+  {
+    "offset_inicio": "## **3 Method** ",
+    "offset_fim": "## **3 Method** ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "3 Method",
+    "motivo": "A seção numerada 3 inicia no marcador \"## **3 Method**\" e termina imediatamente antes do marcador da subseção \"### **3.1 Problem Formulation**\"; não há texto de caput entre os dois marcadores.",
+    "texto": "## **3 Method** "
+  },
+  {
+    "offset_inicio": "### **3.1 Problem Formulation** \n\nGiven an input premise _p_ = ( _p_<sup>(1)</sup> _, p_<sup>(2)</sup> _,",
+    "offset_fim": "our method is formulated on a commonsense task but not limited to it. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "3.1 Problem Formulation",
+    "motivo": "O bloco inicia no marcador da subseção 3.1, na página 2, e inclui sua continuação após a figura na página 3. Termina imediatamente antes do marcador da subseção seguinte, “3.2 Sequence Scoring Method”.",
+    "texto": "### **3.1 Problem Formulation** \n\nGiven an input premise _p_ = ( _p_<sup>(1)</sup> _, p_<sup>(2)</sup> _, . . . , p_<sup>(</sup><sup>_Lp_)</sup> ), and a set of candidate hypotheses: \n\n\n\nwe aim to identify the fitting hypothesis _h_<sup>_∗_</sup> _∈ H_ which correctly matches _p_ . The values _Lp_ and _{Li}i_ =1 _...n_ are the sequence lengths of premise and hypotheses respectively. In a commonsense settings, such problem corresponds to find premise-hypothesis implications by exploiting some prior commonsense knowledge. Since \n\n3879\n\n<!-- PÁGINA 3 -->\n<!-- Start of picture text -->\nSSM SSM<br>shared weights<br>1 2 3 4 5<br>Ro a Ro a<br>1 [CLS] [MASK] man broke his toe because he dropped a hammer on his foot [SEP] . . .<br>2 [CLS] The [MASK] broke his toe because he dropped a hammer on his foot [SEP] ...<br>3 [CLS] The man [MASK] his toe because he dropped a hammer on his foot [SEP] ...<br>4 [CLS] The man broke [MASK] toe because he dropped a hammer on his foot [SEP] ...<br>5 [CLS] The man broke his [MASK] because he dropped a hammer on his foot [SEP] ...<br><!-- End of picture text -->\n\nFigure 1: Overview of the proposed method for the task _t_ = COPA. Two _full-text_ sequences (Section 3.1), **s** _true_ and **s** _false_ , are given as input (gold and distractor premise/hypothesis pairs respectively). Circled numbers explicitly mark input and output of five different versions of a given sentence, where each has a different premise word masked. The output probabilities _Pi_<sup>(</sup><sup>_k_)</sup> = _P_ ( _p_<sup>(</sup><sup>_k_)</sup> _|_ **s**<sup>_\\_</sup> _i_<sup>_p_(</sup><sup>_k_)</sup> ) contribute to the score computation ( _target premise score Si_<sup>_p_in this example, see Section 3.2).When fine-tuning on the task is performed, gold and distractor scores</sup> are used for margin-based loss computation (Section 3.3). \n\nour scoring method consumes input sequences in a _full-text_ format (see Section 3.2), our method is formulated on a commonsense task but not limited to it. \n\n"
+  },
+  {
+    "offset_inicio": "## **3.2 Sequence Scoring Method** \n\nThe proposed Sequence Scoring Method (SSM), takes",
+    "offset_fim": "rget premise word can only be affected by the change of hypothesis context. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "3.2 Sequence Scoring Method",
+    "motivo": "O bloco inicia no marcador da subseção 3.2, na página 3, e reúne sua descrição e discussão até imediatamente antes do próximo título estrutural, “N-grams sequence scoring”, na página 4.",
+    "texto": "## **3.2 Sequence Scoring Method** \n\nThe proposed Sequence Scoring Method (SSM), takes as input a pair _⟨p, hi⟩_ returns a score representing the likelihood of _hi_ of being implied by _p_ . \n\nFirst, a transform operator _T_ converts _⟨p, hi⟩_ pair into a _full-text_ input. Such operator, in it’s simplest form, just concatenates the two sequences. However, in general _T_ can be constrained on the task _t_ . \n\n\n\nwhere **s** _i_ is the resulting _full-text_ input, while _c_<sup>_t_</sup> _l_<sup>,</sup> _c_<sup>_t_</sup> _m_<sup>,and</sup><sup>_ct_</sup> _r_<sup>areleft,middleandrightconjunction</sup> sequences of the task. For example, Swag will have no conjunction, since the correct hypothesis is the natural continuation of the premise, while COPA will have _because/so_ middle conjunctions due to its cause/effect nature (see Section 4). \n\nGiven the _full-text_ input, the scorer aims to exploit the pre-training task of word masking in or- \n\nder to compute its result. Let us consider the masking of a word _w_ which contributes to make sense of the matching between _p_ and _hi_ . The intuition is that the confidence of the network in recovering such word is directly related to the score of _⟨p, hi⟩_ . Let us define, inspired by the notation of (Song et al., 2019), **s**<sup>_\\_</sup> _i_<sup>_w_</sup> as the sentence **s** _i_ with the tokens of _w_ replaced by the [MASK] token. \n\nThe _target premise score_ is calculated as follows: \n\n\n\nwhere premise words are masked one by one in order to compute their relevance with respect to the given hypothesis. Masked word probability is estimated from direct inference on a model pretrained on MLM task. The computational complexity of such method grows linearly with _Lp_ (requiring _Lp_ examples per forward pass). Alternatively, the _target hypothesis score_ is computed as: \n\n\n\n3880\n\n<!-- PÁGINA 4 -->\nThe _target hypothesis score_ needs normalization by _Li_ in order to allow comparison between variable candidate hypothesis length. The best hypothesis will be taken as the one maximizing the target premise (or hypothesis) score: \n\n\n\nAs demonstrated in Section 5.2, the _target premise score_ allows for a fairer comparison between different hypotheses. In fact, they present inherent differences in terms of statistical frequency of words, sequence length or may exhibit more or less strong inter-dependency between words (e.g. composite words reinforce each other confidence). Such variance could introduce a bias in the relative significance of each hypothesis alone (independently from the premise). On the opposite, different probabilities on the same target premise word can only be affected by the change of hypothesis context. \n\n"
+  },
+  {
+    "offset_inicio": "## **N-grams sequence scoring** \n\nWe can extend the proposed SSM by scoring the reconstruction not only of single words, but of entire n-grams.",
+    "offset_fim": "The n-gram sequence scoring accumulates masked language model probabilities from every gram size till _n_ . ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "N-grams sequence scoring",
+    "motivo": "O bloco inicia no título de subseção “N-grams sequence scoring” e contém seus parágrafos explicativos; termina imediatamente antes do próximo marcador de subseção, “## **3.3 SSM-based fine-tuning**”.",
+    "texto": "## **N-grams sequence scoring** \n\nWe can extend the proposed SSM by scoring the reconstruction not only of single words, but of entire n-grams. Adding n-grams probabilities to the logarithmic mean combination not only robustifies the scoring methods, but helps to better model the joint probability of (dependent) close words, especially in a zero-shot setting. Let us note as _p_<sup>(</sup><sup>_u_:</sup><sup>_v_)</sup> as the sub-sequence of _p_ spanning between indexes _u_ and _v_ (included). The _partial target premise score_ for g-grams (i.e. mask windows of size _g_ ) can be expressed as: \n\n\n\nBy definition the target premise score in Equation 2 is equivalent to 1-gram partial target premise score (i.e. _Si_<sup>_p_≜</sup><sup>_S_</sup> _i_<sup>_p,_1</sup> ). The n-gram sequence scoring accumulates masked language model probabilities from every gram size till _n_ . "
+  },
+  {
+    "offset_inicio": "## **3.3 SSM-based fine-tuning** \n\nThe proposed score function, since it does not",
+    "offset_fim": "independent computation of _target premise score_ for each hypothesis _hi_ . \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "3.3 SSM-based fine-tuning",
+    "motivo": "O bloco começa no marcador de subseção numerada \"3.3\" e contém seu parágrafo introdutório. Termina imediatamente antes do próximo título de unidade, \"Loss function\".",
+    "texto": "## **3.3 SSM-based fine-tuning** \n\nThe proposed score function, since it does not imply any addition of a head module, can be directly applied without any retraining (see Section 5.2). It can also be directly used when fine-tuning on the \n\ntask. The different masked inputs needed to compute the _target premise score_ , **s**<sup>_\\_</sup> _i_<sup>_p_(</sup><sup>_j_)</sup> � � _j_ =1 _..Lp_<sup>, are</sup> batched together in order to compute score _Si_<sup>_p_in</sup> one forward pass. The model acts as a siamese network that performs independent computation of _target premise score_ for each hypothesis _hi_ . \n\n"
+  },
+  {
+    "offset_inicio": "## **Loss function** \n\nAs already noted in (Li et al., 2019), multiple choice tasks",
+    "offset_fim": "since it always leads to a decrease of the model performance for various weighted contributions of the MLM term. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "Loss function",
+    "motivo": "O bloco inicia no título em negrito \"Loss function\" e contém seus parágrafos explicativos; termina imediatamente antes do próximo marcador de seção, \"# **4 Datasets**\".",
+    "texto": "## **Loss function** \n\nAs already noted in (Li et al., 2019), multiple choice tasks (e.g. COPA) are more naturally expressed as _learning to rank_ problems. For this reason we adopt as objective function a **marginbased loss** in contrast to cross-entropy loss. Given ground truth sentence index _i_<sup>_∗_</sup> , the loss is specified as: \n\n\n\nwhere _η_ is a margin threshold hyperparameter. \n\nAccording to our preliminary experiments, we do not add a second MLM component in the general loss (as in (Kocijan et al., 2019)), since it always leads to a decrease of the model performance for various weighted contributions of the MLM term. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Datasets** \n\nThe commonsense reasoning datasets that we focus on are COPA (Gordon et al., 2012), Swag",
+    "offset_fim": "Table 1 shows examples of _fulltext_ format and _separated-sentence_ format for all datasets. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "4 Datasets",
+    "motivo": "Bloco de abertura da seção 4, iniciado no marcador de seção e contendo seu parágrafo introdutório; termina imediatamente antes do marcador da subseção \"COPA\".",
+    "texto": "# **4 Datasets** \n\nThe commonsense reasoning datasets that we focus on are COPA (Gordon et al., 2012), Swag (Zellers et al., 2018), HellaSwag (Zellers et al., 2019) and CommonsenseQA (Talmor et al., 2019). All these datasets share the premise-hypothesis task format. Table 1 shows examples of _fulltext_ format and _separated-sentence_ format for all datasets. \n\n"
+  },
+  {
+    "offset_inicio": "## **COPA** \n\nCOPA (Choice of Plausible Alternatives) (Gordon et al., 2012) is a",
+    "offset_fim": " unmodified. We choose the SuperGLUE split (Wang et al., 2019). \n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "COPA",
+    "motivo": "O bloco inicia no título de seção \"## **COPA**\" na página 4 e reúne sua descrição, tabela e continuação textual até imediatamente antes do próximo marcador de seção, \"## **CommonsenseQA**\", na página 5.",
+    "texto": "## **COPA** \n\nCOPA (Choice of Plausible Alternatives) (Gordon et al., 2012) is a commonsense causal reasoning task where two candidate hypotheses are given. COPA itself is composed of two sub-tasks: _effect_ samples and _cause_ samples. The _effect_ and _cause_ samples have respectively _implies_ and _implied by_ relation with the correct hypothesis. The _full-text_ format of COPA is built by using the conjunction words because (resp. so) as middle conjunctions for _cause_ (resp. _effect_ ) samples. Concerning the _separated-sentence_ format, we reverse the premise and hypothesis order for _cause_ samples in \n\n3881\n\n<!-- PÁGINA 5 -->\n|**Dataset**|**Full-text format**|**Separated-sentence format**|\n|---|---|---|\n|COPA (effect)|[CLS]I knocked on my neighbor’s door**so**my<br>neighbor invited me in. [SEP]|[CLS] I knocked on my neighbor’s door.<br>[SEP]My neighbor invited me in. [SEP]|\n|COPA (cause)|[CLS] The man broke his toe **because** he<br>dropped a hammer on his foot. [SEP]|[CLS] He dropped a hammer on his foot.<br>[SEP]The man broke his toe. [SEP]|\n|CommonsenseQA|[CLS]_Q:_Where on a river can you hold a cup<br>upright to catch water on a sunny day? **A:**wa-<br>terfall[SEP]|[CLS]Q: Where on a river can you hold a cup<br>upright to catch water on a sunny day? [SEP]<br>A: waterfall[SEP]|\n|Swag|[CLS]We notice a man in a kayak and a yel-<br>low helmet coming in from the left. As he ap-<br>proaches, his kayak flips upside-down. [SEP]|[CLS]We notice a man in a kayak and a yel-<br>low helmet coming in from the left. [SEP]<br>As he approaches, his kayak flips upside-down.<br>[SEP]|\n|HellaSwag|[CLS]A man is standing in front of a camera.<br>He starts playing a harmonica for the camera.<br>He rocks back and forth to the music as he goes.<br>[SEP]|[CLS]A man is standing in front of a camera.<br>He starts playing a harmonica for the camera.<br>[SEP]He rocks back and forth to the music as<br>he goes. [SEP]|\n\n\n\nTable 1: Examples of _full-text_ format and _separated-sentence_ format for gold premise-hypothesis pairs. Left conjunction _c_<sup>_t_</sup> _l_<sup>is highlighted in italic blue, middle conjunction</sup><sup>_c_</sup> _m_<sup>_t_in bold red.</sup> \n\norder to convert all _cause_ samples into _effect_ samples. This has the benefit to present a unique task to the model, and our experiments show that this give better results than keeping _cause_ samples and _effect_ samples unmodified. We choose the SuperGLUE split (Wang et al., 2019). \n"
+  },
+  {
+    "offset_inicio": "## **CommonsenseQA** \n\nCommonsenseQA (Talmor et al., 2019) is a multiple-choice commonsense question",
+    "offset_fim": "original validation set evenly, treating last 611 samples as Test set Test<sup>_∗_</sup> .",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "CommonsenseQA",
+    "motivo": "O bloco inicia no título “CommonsenseQA” e contém sua descrição completa, terminando imediatamente antes do próximo título de unidade, “Swag and HellaSwag”.",
+    "texto": "## **CommonsenseQA** \n\nCommonsenseQA (Talmor et al., 2019) is a multiple-choice commonsense question answering dataset where each question has one correct answer and four distractor answers. To create the _full-text_ format, we prepend Q: to the question, A: to the answer, and then concatenate the question and the answer ( stands for space character). For the _separated-sentence_ format, we also use the Q: and A: prefixes to follow the best recommendation from the FairSeq repo on how to fine-tune RoBERTa on CommonsenseQA<sup>2</sup> . Since the benchmark Test set is private, for our zeroshot and fine-tuning stability studies we have split the original validation set evenly, treating last 611 samples as Test set Test<sup>_∗_</sup> ."
+  },
+  {
+    "offset_inicio": "## **Swag and HellaSwag** \n\nSwag (Situations With Adversarial Generations) (Zel",
+    "offset_fim": "uning study on Swag and HellaSwag as explained in Section 5.3). \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Swag and HellaSwag",
+    "motivo": "O bloco inicia no título \"Swag and HellaSwag\" e reúne a descrição dos dois datasets. Termina imediatamente antes do marcador da seção numerada \"# **5 Experiments**\".",
+    "texto": "## **Swag and HellaSwag** \n\nSwag (Situations With Adversarial Generations) (Zellers et al., 2018) is a multiple choice commonsense dataset about grounded situations. Each premise is a video caption with four answer choices about what might happen next in the scene. The correct answer is the video caption for the next event in the video. The other negative an- \n\n> 2https://github.com/pytorch/fairseq/tree/ master/examples/roberta/commonsense ~~q~~ a \n\nswers are created via Adversarial Filtering: generated by language modeling models and filtered by discriminator models. HellaSwag (Zellers et al., 2019) is an evolved version of Swag using better generators and discriminators models for Adversarial Filtering. Since the benchmark test set is private, we evaluate our zero-shot setting on the Val set (we do not perform a fine-tuning study on Swag and HellaSwag as explained in Section 5.3). \n\n"
+  },
+  {
+    "offset_inicio": "# **5 Experiments** \n\nIn this section we first apply our scoring method in a zero-shot",
+    "offset_fim": " Our implementation use PyTorch and the HuggingFace Transformers library (Wolf et al., 2019). ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "5 Experiments",
+    "motivo": "Bloco de abertura da seção 5, iniciado pelo marcador numerado “5 Experiments” e encerrado imediatamente antes do próximo marcador estrutural, “5.1 Task probing”.",
+    "texto": "# **5 Experiments** \n\nIn this section we first apply our scoring method in a zero-shot setting on the four aforementioned datasets. Then we fine-tune our scoring method while varying the percentage of the training data used and compare it to approaches that use a randomly initialized classifier head. We use RoBERTa _LARGE_ (Liu et al., 2019) for our pretrained model as RoBERTa _LARGE_ fine-tuned with a classification layer on top has very competitive results on those datasets. Our implementation use PyTorch and the HuggingFace Transformers library (Wolf et al., 2019). "
+  },
+  {
+    "offset_inicio": "## **5.1 Task probing** \n\nBefore assessing our zero-shot and fine-tuning results, we",
+    "offset_fim": "hypotheses. Therefore we refrain from doing more zero-shot experiments on both datasets. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "5.1 Task probing",
+    "motivo": "O bloco começa no marcador da subseção 5.1, na página 5, e reúne todo o texto subsequente até imediatamente antes do próximo marcador estrutural, “## **5.2 Zero-shot Results**”, na página 6.",
+    "texto": "## **5.1 Task probing** \n\nBefore assessing our zero-shot and fine-tuning results, we perform a task probing by evaluating the zero-shot score we obtain by removing the premise from the input and only scoring the hypotheses. If the score is significantly better than a random baseline, it means that the task is not actually solved by commonsense reasoning, but by using statistical biases in the hypotheses. This probing method has been already used on several \n\n3882\n\n<!-- PÁGINA 6 -->\n|**Dataset**|**Mode**|**Acc**<sup>1</sup> **(%)**|**Target**|**Grams**|**Test Acc(%)**|\n|---|---|---|---|---|---|\n|COPA|hyp-only|54.6|premise|1|74.0|\n||random|50.0|hypothesis|1|69.8|\n|CommonsenseQA|hyp-only|22.0|premise|2|76.2|\n||random|20.0|premise|3|79.0|\n|Swag|hyp-only|60.6|premise|4|**80.0**|\n||random|25.0|premise|5|79.4|\n|HellaSwag|hyp-only<br>random|50.8<br>25.0|Tabl|e 3: COPA|zero-shot result|\n\n\n\nTable 3: COPA zero-shot results. \n\n|**Target**|**Grams**|**Test**<sup>_∗_</sup>**Acc(%)**|\n|---|---|---|\n|premise|1|47.8|\n|hypothesis|1|37.4|\n|premise|2|53.2|\n|premise|3|53.7|\n|premise|4|**56.1**|\n|premise|5|55.2|\n\n\n\nTable 2: Commonsense reasoning task probing. _hyponly_ stands for hypothesis only, _random_ for random baseline. 1COPA is evaluated on Test, CommonsenseQA is evaluated on Test<sup>_∗_</sup> , Swag and HellaSwag are evaluated on Val (see Section 4). \n\ndatasets to show that the underlying task was not really solved by the top-performing models (Niven and Kao, 2019; Zellers et al., 2019). \n\nTable 4: CommonsenseQA zero-shot results. \n\nThe results of the task probing evaluation are reported in Table 2. While COPA and CommonsenseQA have a _hypothesis only_ score close to the random baseline, the score of both Swag and HellaSwag are significantly higher than their random baseline (more than twice). This confirms the study from (Zellers et al., 2019) that shows that Swag’s false hypotheses were generated using a weak generator, therefore the authors argue that the fine-tuning process on a BERT model on Swag learns to pick up the statistical cues left by the weak generator. Our results show that RoBERTa _LARGE_ can leverage these distributional biases without the fine-tuning phase. We argue that the human-written pre-training corpora of RoBERTa biases it to give better score to humanwritten language rather than model-generated sentences. As shown in (Holtzman et al., 2019), there is indeed still a strong distributional differences between human text and machine text. Furthermore, our result also highlights that HellaSwag still exhibits a strong bias due to its generation scheme when evaluated with RoBERTa _LARGE_ . \n\ngive increasingly better results but the trend inverts after 4-grams, which may be due to the fact that masked models are not trained to mask large chunks of text. It is interesting to note that our zero-shot result is significantly better than a BERT _LARGE_ cross-entropy model fined-tuned on the COPA training set (80.0% vs. 70.6% accuracy) (Wang et al., 2019), while being comparable for CommonsenseQA<sup>3</sup> . Moreover, when we intentionally switch the so and because conjunction words on COPA to make the samples erroneous, the accuracy drops significantly (64.4%). We reckon this is an indicator that our scoring method effectively reuse the pre-learned representation the _full-text_ format of the task. \n\nConcerning Swag and HellaSwag, the _target hypothesis_ mode is significantly better than the _target premise_ mode (see Table 5), as expected from our task probing work in Section 5.1. For example, on HellaSwag, the _target hypothesis_ mode is only 8% better than the _hypothesis only_ mode (58.8% versus 50.8%), which confirms that on this setting our zero-shot method is mainly taking advantage of the bias in the hypotheses. Therefore we refrain from doing more zero-shot experiments on both datasets. \n\n"
+  },
+  {
+    "offset_inicio": "## **5.2 Zero-shot Results** \n\nFor both COPA and CommonsenseQA, the best performing",
+    "offset_fim": "the hypotheses make the score comparison noisier. Also, more grams ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "5.2 Zero-shot Results",
+    "motivo": "O bloco inicia no marcador da subseção 5.2 e contém seu único parágrafo próprio, terminando imediatamente antes do marcador da subseção seguinte, 5.3 Fine-tuning Results.",
+    "texto": "## **5.2 Zero-shot Results** \n\nFor both COPA and CommonsenseQA, the best performing scoring method uses the _target premise_ and 4-grams settings as shown in Tables 3 and 4. Targeting the premise gives better results than targeting the hypothesis, which reinforces our argument that targeting the hypothesis may be harder as the differences between the hypotheses make the score comparison noisier. Also, more grams "
+  },
+  {
+    "offset_inicio": "## **5.3 Fine-tuning Results** \n\nFollowing the strong bias of Swag and HellaSwag",
+    "offset_fim": "compare results for which models learn the actual premise-hypothesis commonsense reasoning task. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "5.3 Fine-tuning Results",
+    "motivo": "O bloco inicia na subseção numerada 5.3 e reúne seu texto introdutório, que continua após a quebra de página e elementos gráficos/tabela. Termina imediatamente antes do título estrutural seguinte, \"Comparison settings\".",
+    "texto": "## **5.3 Fine-tuning Results** \n\nFollowing the strong bias of Swag and HellaSwag that was shown in Section 5.1 using our scoring method with RoBERTa _LARGE_ , we decide to not \n\n> 3https://www.tau-nlp.org/csqa-leaderboard \n\n3883\n\n<!-- PÁGINA 7 -->\n<!-- Start of picture text -->\n1.0 0.95<br>Head CE<br>Head Margin<br>0.9 Ours 0.90<br>0.8 0.85<br>0.7 0.80<br>0.6 0.75<br>Head CE<br>Head Margin<br>0.5 0.70 Ours<br>Ours (ZS 1-gram)<br>Ours (ZS 4-gram)<br>0.4 0.65<br>10.0% 50.0% 100.0% 10.0% 50.0% 100.0%<br>% of training set used % of training set used<br>(a) (b)<br>Figure 2: COPA fine-tuning results on Test set. The whole training set corresponds to 400 examples.<br>0.8 0.80<br>Head CE<br>Head Margin<br>0.7 Ours<br>0.70<br>0.6<br>0.60<br>0.5<br>0.4 0.50<br>Head CE<br>0.3 0.40 Head Margin<br>Ours<br>Ours (ZS 1-gram)<br>0.2<br>Ours (ZS 4-gram)<br>0.30<br>1.0% 5.0% 10.0% 100.0% 1.0% 10.0% 100.0%<br>% of training set used % of training set used<br>(a) (b)<br>Accuracy<br>Best accuracy<br>Accuracy<br>Best accuracy<br><!-- End of picture text -->\n\nFigure 3: CommonsenseQA fine-tuning results on Test<sup>_∗_</sup> set. The whole training set corresponds to 9741 examples. \n\n|**Dataset**|**Target**|**Val Acc(%)**|\n|---|---|---|\n|Swag|premise|48.3|\n|Swag|hypothesis|**72.5**|\n|HellaSwag|premise|37.1|\n|HellaSwag|hypothesis|**58.8**|\n\n\n\nTable 5: Swag/HellaSwag zero-shot results (1-Gram). \n\ninclude them into our fine-tuning study to be sure to compare results for which models learn the actual premise-hypothesis commonsense reasoning task. \n\n"
+  },
+  {
+    "offset_inicio": "## **Comparison settings** \n\nIn order to make fair comparisons, we train and compare three different model settings: ",
+    "offset_fim": "For the margin-based loss ( _ours_ and _head margin_ ), we set _η_ = 0 _._ 5 after a few trials.",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "Comparison settings",
+    "motivo": "O bloco inicia no título “Comparison settings” e reúne sua descrição e parâmetros experimentais, terminando imediatamente antes do próximo título de seção, “COPA and CommonsenseQA results”.",
+    "texto": "## **Comparison settings** \n\nIn order to make fair comparisons, we train and compare three different model settings: \n\n- Our scoring method with _target premise_ mode, 1-gram, margin-based loss, _full-text_ \n\nformat ( _ours_ ). \n\n- A randomly initialized classifier with crossentropy loss and _separated-sentence_ format ( _head CE_ ). The cross-entropy loss is computed on the probability of the correct candidate, normalized over all candidates in the set (see Equation 1 in (Li et al., 2019)). \n\n- A randomly initialized classifier with marginbased loss and _full-text_ format ( _head margin_ ) \n\nThe _head margin_ setting is an ablated version of our scoring method to verify that our reuse of the MLM head actually provides a significant advantage over a randomly initialized head. For our method, we report results only for the best performing scoring method which is the _target premise_ mode. Experiments showed us that varying the number of grams produce comparable re- \n\n3884\n\n<!-- PÁGINA 8 -->\nsults, so we use the 1-gram setting for computational efficiency. We reckon that the enriched bidirectional context granted by N-gram score can be directly learned when fine-tuning on the task. \n\nFor each dataset, we train the three model settings for 20 random seeds each. For each seed, we pick the best performing model on the validation set and report its accuracy on the Test set. We then compute the max accuracy, mean accuracy and standard deviation of each model setting on the Test set. For all model settings, following the recommended hyper-parameters to fine-tune RoBERTa _LARGE_ (Liu et al., 2019), we set a learning rate of 1e-5, a warm-up ratio of 6% of the total number of training steps, a linear learning rate decay and a weight decay of 0.01. We use a batch size of 8 for COPA (4 for the 10% training percentage setting) and 16 for CommonsenseQA. For the margin-based loss ( _ours_ and _head margin_ ), we set _η_ = 0 _._ 5 after a few trials."
+  },
+  {
+    "offset_inicio": "## **COPA and CommonsenseQA results** \n\nOn both COPA and CommonsenseQA, our method",
+    "offset_fim": "fine-tuning BERT-like architectures is known to be unstable across random restarts as shown in (Phang et al., 2018). ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "COPA and CommonsenseQA results",
+    "motivo": "O bloco inicia no título de subseção “COPA and CommonsenseQA results” e reúne todos os seus parágrafos de resultados até imediatamente antes do próximo marcador estrutural, “# **6 Conclusions**”.",
+    "texto": "## **COPA and CommonsenseQA results** \n\nOn both COPA and CommonsenseQA, our method outperforms both the _head CE_ and _head margin_ methods in terms of mean accuracy and max/best accuracy (see Figure 2 and Figure 3). Moreover, we find that a progressive decrease of the training dataset size results in a progressive increase of the best accuracy gap between our method and the other ones. This confirms our intuition that our methods is the most advantageous when few training data is available. \n\nFor example, when using 1% of training data of CommonsenseQA, our method achieves an accuracy of 56.7% on the Test<sup>_∗_</sup> set (vs. 40.2% for the _head CE_ approach). Using the whole training data, our approach still outperforms other methods but by a lower margin (76.4% accuracy versus 75.4% for _head CE_ ). In addition, when evaluated on the CommonsenseQA private Test set, our approach gets 71.6% accuracy which is close to RoBERTa _LARGE_ cross-entropy (Liu et al., 2019) under an important hyper-parameter grid search<sup>4</sup> (72.1% accuracy). \n\nWhen using 100% of the COPA training set (400 train samples), our method outperforms the _head CE_ setting per 5 points and the _head margin_ setting per 3 points, achieving an accuracy of 92.4% on the Test set. This result allows our approach to reach the second place in the Su- \n\n> 4https://github.com/pytorch/fairseq/tree/ master/examples/roberta/commonsense ~~q~~ a \n\nperGLUE leaderboard<sup>5</sup> (Wang et al., 2019) between RoBERTa _LARGE_ (Liu et al., 2019) and the T5 model composed of 11 billions of parameters (Raffel et al., 2019) (respectively 90.6 and 94.8 % accuracy on the Test set). \n\nWe also notice that our method provides a much more stable training relative to the random seed as shown by the box plots in Figure 2 a) and 3 a). When training on the full COPA dataset, our method exhibits a _×_ 10 standard deviation reduction on the test accuracy compared to the _head CE_ setting (1.35% versus 12.8%). Our intuition is that the improved stability is due to the better reuse of the pre-trained model priors and the absence of new randomly initialized weights. This is important result towards easier experiment comparisons as fine-tuning BERT-like architectures is known to be unstable across random restarts as shown in (Phang et al., 2018). "
+  },
+  {
+    "offset_inicio": "# **6 Conclusions** \n\nIn this work, we presented a new method for plausibility ranking",
+    "offset_fim": "bringing more commonsense knowledge in the model. \n\n> 5https://super.gluebenchmark.com/leaderboard \n\n3885",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "6 Conclusions",
+    "motivo": "O bloco inicia no marcador de seção numerada “6 Conclusions” e contém os parágrafos conclusivos e a nota de rodapé até imediatamente antes do marcador da próxima unidade, “References”, na página 9.",
+    "texto": "# **6 Conclusions** \n\nIn this work, we presented a new method for plausibility ranking tasks, specifically targeting commonsense ranking problem. We define a scoring function that leverages the MLM head of large pre-trained bidirectional transformer models. We establish strong results in a zero-shot setting on four commonsense reasoning datasets, comparable to supervised approaches. We then fine-tune such model using a margin-based loss on the proposed scoring function, and provide a comparative study with state of the art randomly initialized head methods. Our study demonstrates that the direct use of MLM over custom head yields increasingly superior performance gain when decreasing training data size. The proposed approach outperforms state-of-the-art training methods in terms of both test accuracy and training stability. \n\nFuture works include applying such scoring method on broader classification tasks like Natural Language Inference and Sentiment Analysis. We also think that our token-level scoring method could be used during the self-supervised pretraining phase to extend traditional next sentence prediction and sequence ordering tasks, bringing more commonsense knowledge in the model. \n\n> 5https://super.gluebenchmark.com/leaderboard \n\n3885"
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "References",
+    "motivo": "O título \"References\" é uma unidade própria e termina imediatamente antes da primeira entrada bibliográfica, pois cada referência constitui um bloco separado.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of",
+    "offset_fim": "pages 4171–4186, Minneapolis, Minnesota. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Devlin et al. (2019) — BERT",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de item \"-\"; termina imediatamente antes da entrada seguinte, de Andrew Gordon et al.",
+    "texto": "- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language understanding. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4171–4186, Minneapolis, Minnesota. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Andrew Gordon, Zornitsa Kozareva, and Melissa Roemmele. 2012. SemEval-2012 task",
+    "offset_fim": "ings of the Sixth International Workshop on Semantic Evaluation (SemEval 2012)_ , pages 394–398, Montr´eal, Canada. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Andrew Gordon, Zornitsa Kozareva e Melissa Roemmele (2012)",
+    "motivo": "É a primeira entrada individual da lista de referências; inicia no marcador '-' seguido dos autores e termina imediatamente antes da próxima referência, de Ari Holtzman et al.",
+    "texto": "- Andrew Gordon, Zornitsa Kozareva, and Melissa Roemmele. 2012. SemEval-2012 task 7: Choice of plausible alternatives: An evaluation of commonsense causal reasoning. In _*SEM 2012: The First Joint Conference on Lexical and Computational Semantics – Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation (SemEval 2012)_ , pages 394–398, Montr´eal, Canada. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019. The curious case of",
+    "offset_fim": "Yejin Choi. 2019. The curious case of neural text degeneration. _ArXiv_ , abs/1904.09751.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Holtzman et al. (2019) — The curious case of neural text degeneration",
+    "motivo": "É a primeira entrada bibliográfica completa; cada referência constitui uma unidade própria. O bloco começa no marcador \"-\" da entrada de Ari Holtzman et al. e termina antes do marcador da referência seguinte.",
+    "texto": "- Ari Holtzman, Jan Buys, Maxwell Forbes, and Yejin Choi. 2019. The curious case of neural text degeneration. _ArXiv_ , abs/1904.09751."
+  },
+  {
+    "offset_inicio": "- Vid Kocijan, Ana-Maria Cretu, Oana-Maria Camburu, Yordan Yordanov, and Thomas Lukasiewicz. 2019.",
+    "offset_fim": "pages 4837–4842, Florence, Italy. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Kocijan et al. (2019) — A surprisingly robust trick for the Winograd schema challenge",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item e termina antes do próximo item de referência, iniciado por “- Hector J. Levesque”.",
+    "texto": "- Vid Kocijan, Ana-Maria Cretu, Oana-Maria Camburu, Yordan Yordanov, and Thomas Lukasiewicz. 2019. A surprisingly robust trick for the Winograd schema challenge. In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 4837–4842, Florence, Italy. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Hector J. Levesque, Ernest Davis, and Leora Morgenstern. 2012. The winograd schema",
+    "offset_fim": "ng Representation and Reasoning_ , KR’12, pages 552–561. AAAI Press.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Levesque, Davis e Morgenstern (2012)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item e termina antes do marcador da referência seguinte.",
+    "texto": "- Hector J. Levesque, Ernest Davis, and Leora Morgenstern. 2012. The winograd schema challenge. In _Proceedings of the Thirteenth International Conference on Principles of Knowledge Representation and Reasoning_ , KR’12, pages 552–561. AAAI Press."
+  },
+  {
+    "offset_inicio": "- Zhongyang Li, Tongfei Chen, and Benjamin Van Durme. 2019. Learning to rank for plausible plausibility. In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_",
+    "offset_fim": "pages 4818–4823, Florence, Italy. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Zhongyang Li, Tongfei Chen e Benjamin Van Durme (2019)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador '-' da referência de Li, Chen e Van Durme e termina imediatamente antes do marcador da referência seguinte, de Yinhan Liu et al.",
+    "texto": "- Zhongyang Li, Tongfei Chen, and Benjamin Van Durme. 2019. Learning to rank for plausible plausibility. In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 4818–4823, Florence, Italy. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke S. Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. _ArXiv_ , abs/1907.11692. ",
+    "offset_fim": "Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. _ArXiv_ , abs/1907.11692. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Liu et al. (2019) — Roberta: A robustly optimized bert pretraining approach",
+    "motivo": "É a primeira entrada bibliográfica visível. Cada referência é uma unidade própria; o bloco começa no marcador '-' desta entrada e termina imediatamente antes da referência de Timothy Niven e Hung-Yu Kao.",
+    "texto": "- Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke S. Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. _ArXiv_ , abs/1907.11692. "
+  },
+  {
+    "offset_inicio": "- Timothy Niven and Hung-Yu Kao. 2019. Probing neural network comprehension of natural language arguments.",
+    "offset_fim": "pages 4658–4664, Florence, Italy. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica: Timothy Niven and Hung-Yu Kao (2019)",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador “-” e encerrada imediatamente antes da referência de Fabio Petroni et al.",
+    "texto": "- Timothy Niven and Hung-Yu Kao. 2019. Probing neural network comprehension of natural language arguments. In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 4658–4664, Florence, Italy. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Fabio Petroni, Tim Rockt¨aschel, Sebastian Riedel, Patrick Lewis, Anton Bakhtin,",
+    "offset_fim": "pages 2463–2473, Hong Kong, China. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Petroni et al. (2019) — Language models as knowledge bases?",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Fabio Petroni\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Jason Phang\".",
+    "texto": "- Fabio Petroni, Tim Rockt¨aschel, Sebastian Riedel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, and Alexander Miller. 2019. Language models as \n\nknowledge bases? In _Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLPIJCNLP)_ , pages 2463–2473, Hong Kong, China. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Jason Phang, Thibault F´evry, and Samuel R Bowman. 2018. Sentence encoders on stilts:",
+    "offset_fim": "Supplementary training on intermediate labeled-data tasks. _arXiv preprint arXiv:1811.01088_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Phang, Févry e Bowman (2018) — Sentence encoders on stilts",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Jason Phang\" e termina ao fim da sua referência, imediatamente antes da entrada de Nina Poerner.",
+    "texto": "- Jason Phang, Thibault F´evry, and Samuel R Bowman. 2018. Sentence encoders on stilts: Supplementary training on intermediate labeled-data tasks. _arXiv preprint arXiv:1811.01088_ ."
+  },
+  {
+    "offset_inicio": "- Nina Poerner, Ulli Waltinger, and Hinrich Sch¨utze. 2019. Bert is not a know",
+    "offset_fim": "): Factual knowledge vs. name-based reasoning in unsupervised qa. _arXiv preprint arXiv:1911.03681_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Poerner, Waltinger e Schütze (2019) — Bert is not a knowledge base (yet)",
+    "motivo": "É a primeira entrada bibliográfica completa; cada referência constitui uma unidade própria. Inicia no marcador “- Nina Poerner...” e termina imediatamente antes da referência de Colin Raffel.",
+    "texto": "- Nina Poerner, Ulli Waltinger, and Hinrich Sch¨utze. 2019. Bert is not a knowledge base (yet): Factual knowledge vs. name-based reasoning in unsupervised qa. _arXiv preprint arXiv:1911.03681_ ."
+  },
+  {
+    "offset_inicio": "- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael",
+    "offset_fim": "transfer learning with a unified text-to-text transformer. _arXiv preprint arXiv:1910.10683_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Raffel et al. (2019) — Exploring the limits of transfer learning",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de item e termina imediatamente antes da entrada seguinte, de Kaitao Song et al.",
+    "texto": "- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2019. Exploring the limits of transfer learning with a unified text-to-text transformer. _arXiv preprint arXiv:1910.10683_ . "
+  },
+  {
+    "offset_inicio": "- Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, and TieYan Liu. 2019. MASS: Masked sequence to sequence pre-training for language generation.",
+    "offset_fim": "_Proceedings of Machine Learning Research_ , pages 5926–5936, Long Beach, California, USA. PMLR.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Song et al. (2019) — MASS",
+    "motivo": "É a primeira entrada bibliográfica completa; começa no marcador da referência e termina antes da entrada seguinte, de Alon Talmor et al.",
+    "texto": "- Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, and TieYan Liu. 2019. MASS: Masked sequence to sequence pre-training for language generation. In _Proceedings of the 36th International Conference on Machine Learning_ , volume 97 of _Proceedings of Machine Learning Research_ , pages 5926–5936, Long Beach, California, USA. PMLR."
+  },
+  {
+    "offset_inicio": "- Alon Talmor, Jonathan Herzig, Nicholas Lourie, and Jonathan Berant. 2019. CommonsenseQA: A question answering challenge targeting commonsense knowledge.",
+    "offset_fim": "pages 4149–4158, Minneapolis, Minnesota. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Talmor et al. (2019) — CommonsenseQA",
+    "motivo": "É a primeira entrada bibliográfica completa exibida; inicia no marcador de item “- Alon Talmor...” e termina antes da entrada seguinte, “- Trieu H. Trinh...”.",
+    "texto": "- Alon Talmor, Jonathan Herzig, Nicholas Lourie, and Jonathan Berant. 2019. CommonsenseQA: A question answering challenge targeting commonsense knowledge. In _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ , pages 4149–4158, Minneapolis, Minnesota. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Trieu H. Trinh and Quoc V. Le. 2018. A simple method for commonsense reasoning.",
+    "offset_fim": "A simple method for commonsense reasoning. _ArXiv_ , abs/1806.02847.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Trieu H. Trinh and Quoc V. Le (2018)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"-\" e termina imediatamente antes do marcador da referência seguinte.",
+    "texto": "- Trieu H. Trinh and Quoc V. Le. 2018. A simple method for commonsense reasoning. _ArXiv_ , abs/1806.02847."
+  },
+  {
+    "offset_inicio": "- Alex Wang, Yada Pruksachatkun, Nikita Nangia, Amanpreet Singh, Julian Michael,",
+    "offset_fim": " 3275. Curran Associates, Inc. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Wang et al. (2019) — SuperGLUE",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador '-' da referência de Alex Wang e termina imediatamente antes da entrada seguinte, de Thomas Wolf.",
+    "texto": "- Alex Wang, Yada Pruksachatkun, Nikita Nangia, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. 2019. Superglue: A stickier benchmark for general-purpose language understanding systems. In H. Wallach, H. Larochelle, A. Beygelzimer, F. dAlch´e-Buc, E. Fox, and R. Garnett, editors, _Advances in Neural Information Processing Systems 32_ , pages 3261– 3275. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue,",
+    "offset_fim": "Huggingface’s transformers: State-of-the-art natural language processing. _ArXiv_ , abs/1910.03771.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Thomas Wolf et al. (2019) — Huggingface’s transformers",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de item \"- Thomas Wolf\" e termina antes do próximo marcador \"- Rowan Zellers\".",
+    "texto": "- Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, R’emi Louf, Morgan Funtowicz, and Jamie Brew. 2019. Huggingface’s transformers: State-of-the-art natural language processing. _ArXiv_ , abs/1910.03771."
+  },
+  {
+    "offset_inicio": "- Rowan Zellers, Yonatan Bisk, Roy Schwartz, and Yejin Choi. 2018. SWAG: A large-scale adversarial dataset for grounded commonsense inference.",
+    "offset_fim": "pages 93–104, Brussels, Belgium. Association for Computational Linguistics.",
+    "pagina_inicio": 9,
+    "pagina_fim": 10,
+    "titulo": "Zellers et al. (2018) — SWAG",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de item \"-\" na página 9; continua na página 10 e termina imediatamente antes da próxima entrada bibliográfica iniciada por \"- Rowan Zellers, Ari Holtzman\".",
+    "texto": "- Rowan Zellers, Yonatan Bisk, Roy Schwartz, and Yejin Choi. 2018. SWAG: A large-scale adversarial dataset for grounded commonsense inference. \n\n3886\n\n<!-- PÁGINA 10 -->\nIn _Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing_ , pages 93–104, Brussels, Belgium. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. 2019.",
+    "offset_fim": "pages 4791–4800, Florence, Italy. Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Zellers et al. (2019), HellaSwag",
+    "motivo": "Entrada bibliográfica individual, iniciada pelo marcador de lista e encerrada após a editora; o número 3887 é rodapé/paginação, não parte da referência.",
+    "texto": "- Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. 2019. HellaSwag: Can a machine really finish your sentence? In _Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics_ , pages 4791–4800, Florence, Italy. Association for Computational Linguistics."
+  }
+]

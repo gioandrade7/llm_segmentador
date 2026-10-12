@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [17] agrega o texto da seção \"Acknowledgments\" com o marcador/título da divisão \"References\" no seu final. \"References\" deve iniciar um bloco próprio, antes da primeira entrada bibliográfica [18]."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco de \"Acknowledgments\" imediatamente antes do marcador `# **References**`.\n- Crie um bloco exclusivo iniciado em `# **References**`, contendo apenas o título da lista de referências e qualquer texto introdutório subsequente, até imediatamente antes da entrada `- B. Alexe, T. Deselaers, and V. Ferrari. 2010.`.\n- Mantenha cada entrada bibliográfica seguinte em seu bloco próprio, como já ocorre dos blocos [18] a [56]; não incorpore a primeira referência ao bloco do título \"References\"."
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "- Encerre o bloco de \"Acknowledgments\" imediatamente antes do marcador `# **References**`.\n- Crie um bloco exclusivo iniciado em `# **References**`, contendo apenas o título da lista de referências e qualquer texto introdutório subsequente, até imediatamente antes da entrada `- B. Alexe, T. Deselaers, and V. Ferrari. 2010.`.\n- Mantenha cada entrada bibliográfica seguinte em seu bloco próprio, como já ocorre dos blocos [18] a [56]; não incorpore a primeira referência ao bloco do título \"References\".",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094_ciclo2.json"
+  }
+]

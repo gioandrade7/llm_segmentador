@@ -1,0 +1,35 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "seção principal",
+      "exemplo": "# **4 Particle smoothing**"
+    },
+    {
+      "nivel": 2,
+      "nome": "subseção",
+      "exemplo": "### **1.1 What this paper provides**"
+    },
+    {
+      "nivel": 3,
+      "nome": "apêndice",
+      "exemplo": "# **A The logprob-to-go for HMMs**"
+    },
+    {
+      "nivel": 4,
+      "nome": "subseção de apêndice",
+      "exemplo": "**Inclusive KL Divergence**"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    6,
+    7,
+    12,
+    13
+  ],
+  "total_paginas": 13
+}

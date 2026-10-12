@@ -1,0 +1,587 @@
+[
+  {
+    "offset_inicio": "# **Document-Level Neural Machine Translation with Hierarchical Attention Networks** \n\n**Lesly",
+    "offset_fim": "´Ecole Polytechnique F´ed´erale de Lausanne (EPFL), Switzerland \n\n_{_ lmiculicich, dram, npappas, jhenderson _}_ @idiap.ch \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Document-Level Neural Machine Translation with Hierarchical Attention Networks",
+    "motivo": "É o bloco inicial delimitado pelo título do artigo e termina imediatamente antes do próximo marcador estrutural, \"## **Abstract**\".",
+    "texto": "# **Document-Level Neural Machine Translation with Hierarchical Attention Networks** \n\n**Lesly Miculicich**<sup>_† ‡_</sup> **Dhananjay Ram**<sup>_† ‡_</sup> **Nikolaos Pappas**<sup>_†_</sup> **James Henderson**<sup>_†_</sup> _†_ Idiap Research Institute, Switzerland \n\n_‡_ ´Ecole Polytechnique F´ed´erale de Lausanne (EPFL), Switzerland \n\n_{_ lmiculicich, dram, npappas, jhenderson _}_ @idiap.ch \n\n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nNeural Machine Translation (NMT) can be improved by including document-level contextual information.",
+    "offset_fim": "and that both the encoder and decoder benefit from context in complementary ways. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco começa no marcador \"Abstract\" e contém seu resumo completo, terminando imediatamente antes do próximo marcador estrutural, \"1 Introduction\".",
+    "texto": "## **Abstract** \n\nNeural Machine Translation (NMT) can be improved by including document-level contextual information. For this purpose, we propose a hierarchical attention model to capture the context in a structured and dynamic manner. The model is integrated in the original NMT architecture as another level of abstraction, conditioning on the NMT model’s own previous hidden states. Experiments show that hierarchical attention significantly improves the BLEU score over a strong NMT baseline with the state-of-the-art in context-aware methods, and that both the encoder and decoder benefit from context in complementary ways. "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nNeural machine translation (NMT) (Bahdanau et al., 2015; Wu et al., 2016; Vaswani et al., 2017)",
+    "offset_fim": "an ablation study of the contribution of each HAN configuration, showing that contextual information obtained from source and target sides are complementary. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador da seção principal \"1 Introduction\" e contém seus parágrafos e contribuições até imediatamente antes do próximo marcador estrutural, \"2 The Proposed Approach\".",
+    "texto": "## **1 Introduction** \n\nNeural machine translation (NMT) (Bahdanau et al., 2015; Wu et al., 2016; Vaswani et al., 2017) trains an encoder-decoder network on sentence pairs to maximize the likelihood of predicting a target-language sentence given the corresponding source-language sentence, without considering the document context. By ignoring discourse connections between sentences and other valuable contextual information, this simplification potentially degrades the coherence and cohesion of a translated document (Hardmeier, 2012; Meyer and Webber, 2013; Sim Smith, 2017). Recent studies (Tiedemann and Scherrer, 2017; Jean et al., 2017; Wang et al., 2017; Tu et al., 2018) have demonstrated that adding contextual information to the NMT model improves the general translation performance, and more importantly, improves the coherence and cohesion of the translated text (Bawden et al., 2018; Lapshinova-Koltunski and Hardmeier, 2017). Most of these methods use an additional encoder (Jean et al., 2017; Wang et al., 2017) to extract contextual information from previous source-side sentences. However, this requires additional parameters and it does not ex- \n\nploit the representations already learned by the NMT encoder. More recently, Tu et al. (2018) have shown that a cache-based memory network performs better than the above encoder-based methods. The cache-based memory keeps past context as a set of words, where each cell corresponds to one unique word keeping the hidden representations learned by the NMT while translating it. However, in this method, the word representations are stored irrespective of the sentences where they occur, and those vector representations are disconnected from the original NMT network. \n\nWe propose to use a hierarchical attention network (HAN) (Yang et al., 2016) to model the contextual information in a structured manner using word-level and sentence-level abstractions. In contrast to the hierarchical recurrent neural network (HRNN) used by (Wang et al., 2017), here the attention allows dynamic access to the context by selectively focusing on different sentences and words for each predicted word. In addition, we integrate two HANs in the NMT model to account for target and source context. The HAN encoder helps in the disambiguation of source-word representations, while the HAN decoder improves the target-side lexical cohesion and coherence. The integration is done by (i) re-using the hidden representations from both the encoder and decoder of previous sentence translations and (ii) providing input to both the encoder and decoder for the current translation. This integration method enables it to jointly optimize for multiple-sentences. Furthermore, we extend the original HAN with a multi-head attention (Vaswani et al., 2017) to capture different types of discourse phenomena. \n\nOur main contributions are the following: (i) We propose a HAN framework for translation to capture context and inter-sentence connections in a structured and dynamic manner. (ii) We integrate the HAN in a very competitive NMT ar- \n\n2947 _Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing_ , pages 2947–2954 Brussels, Belgium, October 31 - November 4, 2018. _⃝_ c 2018 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nchitecture (Vaswani et al., 2017) and show significant improvement over two strong baselines on multiple data sets. (iii) We perform an ablation study of the contribution of each HAN configuration, showing that contextual information obtained from source and target sides are complementary. \n\n"
+  },
+  {
+    "offset_inicio": "# **2 The Proposed Approach** \n\nThe goal of NMT is to maximize the likelihood of a set",
+    "offset_fim": "ctively. The contexts **Dx**<sup>**n**</sup> and **Dy**<sup>**n**</sup> are modeled with HANs. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 The Proposed Approach",
+    "motivo": "O bloco inicia no marcador de seção principal “2 The Proposed Approach” e termina imediatamente antes do próximo marcador estrutural, “2.1 Hierarchical Attention Network”.",
+    "texto": "# **2 The Proposed Approach** \n\nThe goal of NMT is to maximize the likelihood of a set of sentences in a target language represented as sequences of words **y** = ( _y_ 1 _, ..., yt_ ) given a set of input sentences in a source language **x** = ( _x_ 1 _, ..., xm_ ) as: \n\n\n\nso, the translation of a document **D** is made by translating each of its sentences independently. In this study, we introduce dependencies on the previous sentences from the source and target sides: \n\n\n\n= where **Dx**<sup>**n**</sup> = ( **x**<sup>**n**</sup><sup>_−_</sup><sup>**k**</sup> _, ...,_ **x**<sup>**n**</sup><sup>_−_</sup><sup>**1**</sup> ) and **Dy**<sup>**n**</sup> ( **y**<sup>**n**</sup><sup>_−_</sup><sup>**k**</sup> _, ...,_ **y**<sup>**n**</sup><sup>_−_</sup><sup>**1**</sup> ) denote the previous _k_ sentences from source and target sides respectively. The contexts **Dx**<sup>**n**</sup> and **Dy**<sup>**n**</sup> are modeled with HANs. "
+  },
+  {
+    "offset_inicio": "## **2.1 Hierarchical Attention Network** \n\nThe proposed HAN has two levels of abstraction.",
+    "offset_fim": "Each layer is followed by a normalization layer (Lei Ba et al., 2016). \n\n## **2.2 Context Gating**",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2.1 Hierarchical Attention Network",
+    "motivo": "É a primeira unidade estrutural completa visível: inicia no marcador de subseção \"2.1\" e termina imediatamente antes do próximo marcador, \"2.2 Context Gating\".",
+    "texto": "## **2.1 Hierarchical Attention Network** \n\nThe proposed HAN has two levels of abstraction. The word-level abstraction summarizes information from each previous sentence _j_ into a vector _s_<sup>_j_</sup> as: \n\n\n\n\n\nwhere _h_ denotes a hidden state of the NMT network. In particular, _ht_ is the last hidden state of the word to be encoded, or decoded at time step _t_ , and _h_<sup>_j_</sup> _i_<sup>isthelasthiddenstateofthe</sup><sup>_i_-thword</sup> of the _j_ -th sentence of the context. The function _fw_ is a linear transformation to obtain the _query qw_ . We used the MultiHead attention function proposed by (Vaswani et al., 2017) to capture different types of relations among words. It matches the _query_ against each of the hidden representations _h_<sup>_j_</sup> _i_<sup>(used as</sup><sup>_value_and</sup><sup>_key_for the attention).</sup> \n\nThe sentence-level abstraction summarizes the contextual information required at time _t_ in _dt_ as: \n\n\n\nFigure 1: Integration of HAN during encoding at time step _t_ , _h_<sup>˜</sup> _t_ is the context-aware hidden state of the word _xt_ . Similar architecture is used during decoding. \n\n\n\n\n\nwhere _fs_ is a linear transformation, _qs_ is the query for the attention function, FFN is a position-wise feed-forward layer (Vaswani et al., 2017). Each layer is followed by a normalization layer (Lei Ba et al., 2016). \n\n## **2.2 Context Gating**"
+  },
+  {
+    "offset_inicio": "## **2.3 Integrated Model** \n\nThe context can be used during encoding or decoding a",
+    "offset_fim": "eplacement of _ht_ during the final classification layer. \n\n# **3 Experimental Setup**",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2.3 Integrated Model",
+    "motivo": "É a primeira unidade completa iniciada pelo marcador de subseção \"## **2.3 Integrated Model**\"; termina imediatamente antes do próximo marcador estrutural, \"# **3 Experimental Setup**\", na página 3.",
+    "texto": "## **2.3 Integrated Model** \n\nThe context can be used during encoding or decoding a word, and it can be taken from previously encoded source sentences, previously decoded target sentences, or from previous alignment vectors (i.e. context vectors (Bahdanau et al., 2015)). The different configurations will define the input _query_ and _values_ of the attention function. In this work we experiment with five of them: one at encoding time, three at decoding time, and one combining both. At encoding time the _query_ is a function of the hidden state _hxt_ of the current word to be encoded _xt_ , and the _values_ are the encoded states of previous sentences _h_<sup>_j_</sup> _xi_<sup>(HANencoder).</sup> At decoding time, the _query_ is a function of the hidden state _hyt_ of the current word to be decoded _yt_ , and the _values_ can be (a) the encoded states of previous sentences _h_<sup>_j_</sup> _xi_<sup>(HAN decoder</sup><sup>_source_),</sup> \n\n2948\n\n<!-- PÁGINA 3 -->\n(b) the decoded states of previous sentences _h_<sup>_j_</sup> _yi_ (HAN decoder), and (c) the alignment vectors _c_<sup>_j_</sup> _i_ (HAN decoder _alignment_ ). Finally, we combine complementary target-source sides of the context by joining HAN encoder and HAN decoder. Figure 1 shows the integration of the HAN encoder with the NMT model; a similar architecture is applied to the decoder. The output _h_<sup>˜</sup> _t_ is used by the NMT model as replacement of _ht_ during the final classification layer. \n\n# **3 Experimental Setup**"
+  },
+  {
+    "offset_inicio": "## **3.1 Datasets and Evaluation Metrics** \n\nWe carry out experiments with Chinese-to-English (Zh-En)",
+    "offset_fim": "proposed by Koehn (2004) (implementations by Koehn et al. (2007)). \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.1 Datasets and Evaluation Metrics",
+    "motivo": "O bloco inicia no marcador de subseção 3.1 e inclui seus parágrafos sobre conjuntos de dados e métricas; termina imediatamente antes do próximo marcador, \"## **3.2 Model Configuration and Training**\".",
+    "texto": "## **3.1 Datasets and Evaluation Metrics** \n\nWe carry out experiments with Chinese-to-English (Zh-En) and Spanish-to-English (Es-En) sets on three different domains: talks, subtitles, and news. \n\nTED Talks is part of the IWSLT 2014 and 2015 (Cettolo et al., 2012, 2015) evaluation campaigns<sup>1</sup> . We use _dev2010_ for development; and _tst20102012_ (Es-En), _tst2010-2013_ (Zh-En) for testing. The Zh-En subtitles corpus is a compilation of TV subtitles designed for research on context (Wang et al., 2018). In contrast to the other sets, it has three references to compare. The Es-En corpus is a subset of OpenSubtitles2018 (Lison and Tiedemann, 2016)<sup>2</sup> . We randomly select two episodes for development and testing each. Finally, we use the Es-En News-Commentaries11<sup>3</sup> corpus which has document-level delimitation. We evaluate on WMT sets (Bojar et al., 2013): _newstest2008_ for development, and _newstest2009-2013_ for testing. A similar corpus for Zh-En is too small to be comparable. Table 2 shows the corpus statistics. \n\nFor evaluation, we use BLEU score (Papineni et al., 2002) ( _multi-blue_ ) on _tokenized_ text, and we measure significance with the paired bootstrap resampling method proposed by Koehn (2004) (implementations by Koehn et al. (2007)). \n\n"
+  },
+  {
+    "offset_inicio": "## **3.2 Model Configuration and Training** \n\nAs baselines, we use a NMT transformer, and a context-aware NMT",
+    "offset_fim": "the whole network. We use _k_ = 3 previous sentences, which gave the best performance on the development set. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.2 Model Configuration and Training",
+    "motivo": "O bloco inicia no marcador de subseção «3.2 Model Configuration and Training» e termina imediatamente antes do próximo marcador estrutural, «4 Experimental Results».",
+    "texto": "## **3.2 Model Configuration and Training** \n\nAs baselines, we use a NMT transformer, and a context-aware NMT transformer with cache memory which we implemented for comparison following the best model described by Tu et al. (2018), with memory size of 25 words. We used the OpenNMT (Klein et al., 2017) implementation of the transformer network. The configuration is the same as the model called “base model” in the \n\n> 1https://wit3.fbk.eu \n\n> 2http://www.opensubtitles.org \n\n> 3http://opus.nlpl.eu/News-Commentary11.php \n\noriginal paper (Vaswani et al., 2017). The encoder and decoder are composed of 6 hidden layers each. All hidden states have dimension of 512, dropout of 0.1, and 8 heads for the multi-head attention. The target and source vocabulary size is 30K. The optimization and regularization methods were the same as proposed by Vaswani et al. (2017). Inspired by Tu et al. (2018) we trained the models in two stages. First we optimize the parameters for the NMT without the HAN, then we proceed to optimize the parameters of the whole network. We use _k_ = 3 previous sentences, which gave the best performance on the development set. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Experimental Results** \n\n",
+    "offset_fim": "# **4 Experimental Results** \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "4 Experimental Results",
+    "motivo": "O título da seção principal inicia uma unidade própria; o bloco termina imediatamente antes do marcador da subseção \"4.1 Translation Performance\".",
+    "texto": "# **4 Experimental Results** \n\n"
+  },
+  {
+    "offset_inicio": "## **4.1 Translation Performance** \n\nTable 1 shows the BLEU scores for different models. The baseline",
+    "offset_fim": "best performance for TED talks and news is archived with 3, while for subtitles it is similar between 3 and 7. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "4.1 Translation Performance",
+    "motivo": "O bloco inicia no marcador de subseção \"4.1 Translation Performance\" e inclui seus dois parágrafos. Termina imediatamente antes do próximo marcador estrutural, \"4.2 Accuracy of Pronoun/Noun Translations\".",
+    "texto": "## **4.1 Translation Performance** \n\nTable 1 shows the BLEU scores for different models. The baseline NMT transformer already has better performance than previously published results on these datasets, and we replicate previous previous improvements from the cache method over the this stronger baseline. All of our proposed HAN models perform at least as well as the cache method. The best scores are obtained by the combined encoder and decoder HAN model, which is significantly better than the cache method on all datasets without compromising training speed (2.3K vs 2.6K tok/sec). An important portion of the improvement comes from the HAN encoder, which can be attributed to the fact that the sourceside always contains correct information, while the target-side may contain erroneous predictions at testing time. But combining HAN decoder with HAN encoder further improves translation performance, showing that they contribute complementary information. The three ways of incorporating information into the decoder all perform similarly. \n\nTable 3 shows the performance of our best HAN model with a varying number _k_ of previous sentences in the test-set. We can see that the best performance for TED talks and news is archived with 3, while for subtitles it is similar between 3 and 7. "
+  },
+  {
+    "offset_inicio": "## **4.2 Accuracy of Pronoun/Noun Translations** \n\nWe evaluate coreference and anaphora using the reference-based metric: accuracy of pronoun translation",
+    "offset_fim": "Subtitles is a challenging corpus for personal pronoun disambiguation because it usually involves dialogue between multiple speakers. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "4.2 Accuracy of Pronoun/Noun Translations",
+    "motivo": "O bloco inicia no marcador da subseção 4.2, na página 3, e inclui seu texto e tabelas até imediatamente antes do próximo marcador estrutural, a subseção 4.3, na página 4.",
+    "texto": "## **4.2 Accuracy of Pronoun/Noun Translations** \n\nWe evaluate coreference and anaphora using the reference-based metric: accuracy of pronoun translation (Miculicich Werlen and Popescu-Belis, 2017b), which can be extended for nouns. The list of evaluated pronouns is predefined in the metric, while the list of nouns was extracted using NLTK POS tagging (Bird, 2006). The upper part \n\n2949\n\n<!-- PÁGINA 4 -->\n||**Z**|**TED**<br>**h–En**|**Talks**<br>**E**|**s–En**|**Zh**|**Sub**<br>**–En** <sup>4</sup>|**titles**<br>**E**|**s–En**|**E**|**News**<br>**s–En**|\n|---|---|---|---|---|---|---|---|---|---|---|\n|**Models**|BLEU|∆<br>|BLEU|∆|BLEU|∆|BLEU|∆|BLEU|∆|\n|NMT transformer|16.87||35.44||28.60||35.20||21.36||\n|+ cache(Tu et al.,2018)|17.32|(+0_._45)<sup>_∗∗∗_</sup>|36.46|(+1_._02)<sup>_∗∗∗_</sup>|28.86|(+0_._26)|35.49|(+0_._29)|22.36|(+1_._00)<sup>_∗∗∗_</sup>|\n|+ HAN encoder|17.61|(+0_._74)<sup>_~~∗∗∗~~_</sup><br>_††_|36.91|(+1_._47)<sup>_~~∗∗∗~~_</sup><br>_††_|29.35|(+0_._75)<sup>_~~∗~~_</sup><br>_†_|35.96|(+0_._76)<sup>_~~∗~~_</sup><br>_†_|22.36|(+1_._00)<sup>_~~∗∗∗~~_</sup>|\n|+ HAN decoder|17.39|(+0_._52)<sup>_∗∗∗_</sup>|37.01|(+1_._57)<sup>_∗∗∗_</sup><br>_†††_|<sup>29.21 </sup>|<sup>(+0</sup><sup>_._61)</sup><sup>_∗_</sup>|<sup>35.50 </sup>|<sup>(+0</sup><sup>_._30)</sup>|22.62|(+1_._26)<sup>_∗∗∗_</sup><br>_†††_|\n|+ HAN decoder_source_|17.56|(+0_._69)<sup>_∗∗∗_</sup><br>_††_|36.94|(+1_._50)<sup>_∗∗∗_</sup><br>_††_|28.92|(+0_._32)|35.71|(+0_._51)<sup>_∗_</sup>|22.68|(+1_._32)<sup>_∗∗∗_</sup><br>_†††_|\n|+ HAN decoder_alignment_|17.48|(+0_._61)<sup>_∗∗∗_</sup><br>_†_|37.03|(+1_._60)<sup>_∗∗∗_</sup><br>_†††_|<sup>28.87 </sup>|<sup>(+0</sup><sup>_._27)</sup>|35.63|(+0_._43)|22.59|(+1_._23)<sup>_∗∗∗_</sup><br>_†††_|\n|+ HAN encoder + HAN decod|er **17.79**|(+0_._92)<sup>_∗∗∗_</sup><br>_†††_|<sup>**37.24** </sup>|<sup>(+1</sup><sup>_._80)</sup><sup>_∗∗∗_</sup><br>_†††_|<sup>**29.67** </sup>|<sup>(+1</sup><sup>_._07)</sup><sup>_∗∗_</sup><br>_†_|**36.23**|(+1_._03)<sup>_∗∗_</sup><br>_††_|<sup>**22.76** </sup>|<sup>(+1</sup><sup>_._40)</sup><sup>_∗∗∗_</sup><br>_†††_|\n\n\n\nTable 1: BLEU score for the different configurations of the HAN model, and two baselines. The highest score per dataset is marked in bold. ∆ denotes the difference in BLEU score with respect of the NMT transformer. The significance values with respect to the NMT and the cache method are denoted by _∗_ , and _†_ respectively. The repetitions correspond to the p-values:<sup>_∗_</sup> _†_<sup>_< ._05</sup><sup>_,∗∗_</sup> _††_<sup>_< ._01</sup><sup>_,∗∗∗_</sup> _†††_<sup>_< ._001.</sup> \n\n||**TED**|**Talks**|**Subt**|**itles**|**News**|\n|---|---|---|---|---|---|\n||Zh–En|Es–En|Zh–En|Es–En|Es–En|\n|Training|0.2M|0.2M|2.2M|4.0M|0.2M|\n|Development|0.8K|0.8K|1.1K|1.0K|1.9K|\n|Test|5.5K|4.7K|1.2K|1.0K|13.5K|\n\n\n\nTable 2: Dataset statistics in # sentence pairs. \n\nof Table 4 shows the results. For nouns, the joint HAN achieves the best accuracy with a significant improvement compared to other models, showing that target and source contextual information are complementary. Similarity for pronouns, the joint model has the best result for TED talks and news. However, HAN encoder alone is better in the case of subtitles. Here HAN decoder produces mistakes by repeating past translated personal pronouns. Subtitles is a challenging corpus for personal pronoun disambiguation because it usually involves dialogue between multiple speakers. "
+  },
+  {
+    "offset_inicio": "## **4.3 Cohesion and Coherence Evaluation** \n\nWe use the metric proposed by Wong and Kit",
+    "offset_fim": "he joint HAN model consistently obtains the best coherence score, but close to other HAN models. Most of the improvement comes from the HAN decoder. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "4.3 Cohesion and Coherence Evaluation",
+    "motivo": "A subseção 4.3 inicia no seu marcador e termina imediatamente antes do próximo marcador estrutural, \"## **4.4 Qualitative Analysis**\", na mesma página.",
+    "texto": "## **4.3 Cohesion and Coherence Evaluation** \n\nWe use the metric proposed by Wong and Kit (2012) to evaluate lexical cohesion. It is defined as the ratio between the number of repeated and lexically similar content words over the total number of content words in a target document. The lexical similarity is obtained using WordNet. Table 4 (bottom-left) displays the average ratio per tested document. In some cases, HAN decoder achieves the best score because it produces a larger quantity of repetitions than other models. However, as previously demonstrated in 4.2, repetitions do not always make the translation better. Although HAN boosts lexical cohesion, the scores are still far from the human reference, so there is room for improvement in this aspect. \n\nFor coherence, we use a metric based on Latent Semantic Analysis (LSA) (Foltz et al., 1998). LSA is used to obtain sentence representations, then cosine similarity is calculated from one sentence to \n\n||**TED**|**Talks**|**Subt**|**itles**|**News**|\n|---|---|---|---|---|---|\n|**_k_**|Zh–En|Es–En|Zh–En|Es–En|Es–En|\n|1|17.70|37.20|29.35|36.20|22.46|\n|3|**17.79**|**37.24**|29.67|**36.23**|**22.76**|\n|5|17.49|37.11|**29.69**|36.22|22.54|\n|7|17.00|37.22|29.64|36.21|22.64|\n\n\n\nTable 3: Performance for variable context sizes _k_ with the HAN encoder + HAN decoder. \n\nthe next, and the results are averaged to get a document score. We employed the pre-trained LSA model _Wiki-6_ from (Stefanescu et al., 2014). Table 4 (bottom-right) shows the average coherence score of documents. The joint HAN model consistently obtains the best coherence score, but close to other HAN models. Most of the improvement comes from the HAN decoder. "
+  },
+  {
+    "offset_inicio": "## **4.4 Qualitative Analysis** \n\nTable 5 shows an example where HAN helped to generate the correct translation. The",
+    "offset_fim": "terpretable inter-sentence connections. More samples with different attention heads are shown in the Appendix **??** . ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "4.4 Qualitative Analysis",
+    "motivo": "O bloco inicia no marcador de subseção \"## **4.4 Qualitative Analysis**\" e contém seu único parágrafo analítico. Termina imediatamente antes do próximo marcador estrutural, \"# **5 Related Work**\".",
+    "texto": "## **4.4 Qualitative Analysis** \n\nTable 5 shows an example where HAN helped to generate the correct translation. The first box shows the current sentence with the analyzed word in bold; and the second, the past context at source and target. For the context visualization we use the toolkit provided by Pappas and Popescu-Belis (2017). Red corresponds to sentences, and blue to words. The intensity of color is proportional to the weight. We see that HAN correctly translates the ambiguous Spanish pronoun “ _su_ ” into the English “ _his_ ”. The HAN decoder highlighted a previous mention of “ _his_ ”, and the HAN encoder highlighted the antecedent “ _Nathaniel_ ”. This shows that HAN can capture interpretable inter-sentence connections. More samples with different attention heads are shown in the Appendix **??** . "
+  },
+  {
+    "offset_inicio": "# **5 Related Work** \n\n**Statistical Machine Translation (SMT)** Initial studies were based on cache memories (Tiede- ",
+    "offset_fim": "anaphoric pronouns, and Maruf and Haffari (2018) proposed a document-level NMT using memory-networks. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "5 Related Work",
+    "motivo": "O bloco inicia no marcador da seção principal \"5 Related Work\" na página 4 e inclui seu conteúdo contínuo, com tabelas e legendas não estruturais, até imediatamente antes do próximo marcador de seção, \"6 Conclusion\", na página 5.",
+    "texto": "# **5 Related Work** \n\n**Statistical Machine Translation (SMT)** Initial studies were based on cache memories (Tiede- \n\n> 4 _NIST BLEU_ : NMT transformer 35.99, cache 36.52, and HAN 37.15. \n\n2950\n\n<!-- PÁGINA 5 -->\n|||**Noun**|**Transla**|**tion**|||**Prono**|**un Tran**|**slation**||\n|---|---|---|---|---|---|---|---|---|---|---|\n||**TED**|**Talks**|**Subt**|**itles**|**News**|**TED**|**Talks**|**Subt**|**itles**|**News**|\n|**Model**|Zh–En|Es–En|Zh–En|Es–En|Zh–En|Es–En|Zh–En|Es–En|Zh–En|Es–En|\n|NMT Transformer|40.16|65.97|46.65|61.79|47.94|63.44|68.00|69.71|65.83|47.22|\n|+ cache|40.87|66.75|46.00|61.87|49.91|63.53|68.66|69.97|66.27|49.34|\n|+ HAN encoder|41.93|67.75|46.78|61.52|50.06|64.05|69.17|**71.04**|**68.56**|49.57|\n|+ HAN decoder|41.61|67.35|46.78|61.99|50.03|64.02|69.36|70.50|67.03|49.33|\n|+ HAN encoder + HAN decoder|**42.99**|**67.81**|**47.43**|**62.30**|**50.40**|**64.35**|**69.60**|70.60|67.47|**49.59**|\n|||**Lexi**|**cal cohe**|**sion**|||**C**|**oherenc**|**e**||\n|NMT Transformer|54.26|51.98|51.87|51.77|30.06|0.298|0.299|0.283|0.262|0.279|\n|+ HAN encoder|54.87|52.35|51.89|52.33|30.34|0.304|0.299|0.285|0.262|0.280|\n|+ HAN decoder|54.95|**52.43**|**52.33**|52.43|30.41|0.302|0.301|0.287|0.265|0.282|\n|+ HAN enc. + HAN dec.|**55.40**|52.36|51.94|**52.75**|**30.58**|**0.305**|**0.302**|**0.287**|**0.265**|**0.282**|\n|Human reference|56.08|57.02|54.81|58.19|35.12|0.310|0.314|0.296|0.270|0.298|\n\n\n\nTable 4: Evaluation on discourse phenomena. Noun and pronoun translation: Accuracy with respect to a human reference. Lexical cohesion: Ratio of repeated and lexically similar words over the number of content words. Coherence: Average cosine similarity of consecutive sentences (i.e. average of LSA word-vectors) \n\nCurrently Translated Sentence Src.: y esto es un escape de **su** estado atormentado . Ref.: and that is an escape from **his** tormented state . Base: and this is an escape from **_its_** _< unk >_ state . Cache: and this is an escape from **_their_** state . HAN: and this is an escape from **his** _< unk >_ state . Context from Previous Sentences HAN decoder context with target. _Query_ : **his** (En) HAN encoder context with source. _Query_ : **su** (Es) \n\n\n\nTable 5: Example of pronoun disambiguation using HAN (TED Talks Es-En). \n\nmann, 2010; Gong et al., 2011). However, most of the work explicitly models discourse phenomena (Sim Smith, 2017) such as lexical cohesion (Meyer and Popescu-Belis, 2012; Xiong et al., 2013; Lo´aiciga and Grisot, 2016; Pu et al., 2017; Mascarell, 2017), coherence (Born et al., 2017), and coreference (Rios Gonzales and Tuggener, 2017; Miculicich Werlen and PopescuBelis, 2017a). Hardmeier et al. (2013) introduced the document-level SMT paradigm. \n\n**Sentence-level NMT** Initial studies on NMT enhanced the sentence-level context by using memory networks (Wang et al., 2016), self-attention (Miculicich Werlen et al., 2018; Zhang et al., 2016), and latent variables (Yang et al., 2017). **Document-level NMT** Tiedemann and Scherrer (2017) use the concatenation of multiple sentences \n\nas NMT’s input/output, Jean et al. (2017) add a context encoder for the previous source sentence, Wang et al. (2017) includes a HRNN to summarize source-side context, and Tu et al. (2018) use a dynamic cache memory to store representations of previously translated words. Recently, Bawden et al. (2018) proposed test-sets for evaluating discourse in NMT, Voita et al. (2018) shows that context-aware NMT improves the of anaphoric pronouns, and Maruf and Haffari (2018) proposed a document-level NMT using memory-networks. "
+  },
+  {
+    "offset_inicio": "# **6 Conclusion** \n\nWe proposed a hierarchical multi-head HAN NMT model<sup>5</sup>",
+    "offset_fim": "discourse connections with the help of annotated data, which may further improve translation quality. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "6 Conclusion",
+    "motivo": "O bloco inicia no marcador da seção \"6 Conclusion\" e contém todo o seu parágrafo conclusivo, terminando imediatamente antes do próximo marcador estrutural, \"Acknowledgments\".",
+    "texto": "# **6 Conclusion** \n\nWe proposed a hierarchical multi-head HAN NMT model<sup>5</sup> to capture inter-sentence connections. We integrated context from source and target sides by directly connecting representations from previous sentence translations into the current sentence translation. The model significantly outperforms two competitive baselines, and the ablation study shows that target and source context is complementary. It also improves lexical cohesion and coherence, and the translation of nouns and pronouns. The qualitative analysis shows that the model is able to identify important previous sentences and words for the correct prediction. In future work, we plan to explicitly model discourse connections with the help of annotated data, which may further improve translation quality. "
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nWe are grateful for the support of the European Union under",
+    "offset_fim": "available at https://github.com/idiap/HAN_NMT. Project Towards Document-Level NMT (Miculicich Werlen, 2017) ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "Acknowledgments",
+    "motivo": "O bloco começa no marcador de seção “Acknowledgments” e contém seu parágrafo e nota associada, terminando imediatamente antes do próximo marcador estrutural, “References”, na página 6.",
+    "texto": "# **Acknowledgments** \n\nWe are grateful for the support of the European Union under the Horizon 2020 SUMMA project n. 688139, see www.summa-project.eu. \n\n> 5Code available at https://github.com/idiap/HAN_NMT. Project Towards Document-Level NMT (Miculicich Werlen, 2017) "
+  },
+  {
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "References",
+    "motivo": "O título \"References\" inicia a lista bibliográfica como uma divisão estrutural própria e seu bloco termina imediatamente antes da primeira entrada bibliográfica, \"Dzmitry Bahdanau...\".",
+    "texto": "# **References** \n\n"
+  },
+  {
+    "offset_inicio": "- Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural machine translation by jointly learning to align and translate.",
+    "offset_fim": "In _Proceedings of the International Conference on Learning Representations_ , San Diego, USA. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Bahdanau, Cho e Bengio (2015) — Neural machine translation by jointly learning to align and translate",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, de Rachel Bawden et al.",
+    "texto": "- Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural machine translation by jointly learning to align and translate. In _Proceedings of the International Conference on Learning Representations_ , San Diego, USA. "
+  },
+  {
+    "offset_inicio": "- Rachel Bawden, Rico Sennrich, Alexandra Birch, and Barry Haddow. 2018. Evaluating discourse",
+    "offset_fim": " New Orleans, USA. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Rachel Bawden et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de lista \"- Rachel Bawden\" e termina imediatamente antes da entrada seguinte, \"- Steven Bird\".",
+    "texto": "- Rachel Bawden, Rico Sennrich, Alexandra Birch, and Barry Haddow. 2018. Evaluating discourse phenomena in neural machine translation. In _Proceedings of the 16th Annual Conference of North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , New Orleans, USA. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Steven Bird. 2006. Nltk: The natural language toolkit. In _Proceedings of the COL",
+    "offset_fim": "Interactive Presentation Sessions_ , pages 69–72. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Steven Bird (2006) — Nltk: The natural language toolkit",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista \"- Steven Bird\" e termina imediatamente antes da próxima entrada, \"- Ondˇrej Bojar\".",
+    "texto": "- Steven Bird. 2006. Nltk: The natural language toolkit. In _Proceedings of the COLING/ACL 2006 Interactive Presentation Sessions_ , pages 69–72. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Ondˇrej Bojar, Christian Buck, Chris Callison-Burch, Christian Federmann, Barry Haddow,",
+    "offset_fim": "pages 1–44, Sofia, Bulgaria. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Bojar et al. (2013) — Findings of the 2013 Workshop on Statistical Machine Translation",
+    "motivo": "É a primeira entrada bibliográfica listada na página 6; inicia no marcador de item “-” e termina imediatamente antes da entrada seguinte, “- Leo Born...”.",
+    "texto": "- Ondˇrej Bojar, Christian Buck, Chris Callison-Burch, Christian Federmann, Barry Haddow, Philipp Koehn, Christof Monz, Matt Post, Radu Soricut, and Lucia Specia. 2013. Findings of the 2013 Workshop on Statistical Machine Translation. In _Proceedings of the Eighth Workshop on Statistical Machine Translation_ , pages 1–44, Sofia, Bulgaria. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Leo Born, Mohsen Mesgar, and Michael Strube. 2017. Using a graph-based coherence",
+    "offset_fim": "Discourse in Machine Translation_ , pages 26–35, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Born, Mesgar e Strube (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista “- Leo Born...” e termina imediatamente antes da entrada seguinte, “- Mauro Cettolo...”.",
+    "texto": "- Leo Born, Mohsen Mesgar, and Michael Strube. 2017. Using a graph-based coherence model in documentlevel machine translation. In _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 26–35, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Mauro Cettolo, Christian Girardi, and Marcello Federico. 2012. WIT<sup>3</sup> : Web inventory of transcribed and translated talks.",
+    "offset_fim": "of the European Association for Machine Translation (EAMT)_ , pages 261–268, Trento, Italy. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Cettolo, Girardi e Federico (2012) — WIT³",
+    "motivo": "É a primeira entrada bibliográfica visível do texto. Inicia no marcador de lista \"- Mauro Cettolo...\" e termina imediatamente antes da próxima entrada bibliográfica, iniciada por \"- Mauro Cettolo, Jan Niehues...\".",
+    "texto": "- Mauro Cettolo, Christian Girardi, and Marcello Federico. 2012. WIT<sup>3</sup> : Web inventory of transcribed and translated talks. In _Proceedings of the 16_<sup>_th_</sup> _Conference of the European Association for Machine Translation (EAMT)_ , pages 261–268, Trento, Italy. "
+  },
+  {
+    "offset_inicio": "- Mauro Cettolo, Jan Niehues, Sebastian St¨uker, Luisa Bentivogli, Roldano Cattoni,",
+    "offset_fim": "evaluation campaign. In _In proceedins of the International Workshop on Spoken Language Translation_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Mauro Cettolo et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de item \"- Mauro Cettolo\" e termina imediatamente antes da entrada seguinte, de Peter W. Foltz et al.",
+    "texto": "- Mauro Cettolo, Jan Niehues, Sebastian St¨uker, Luisa Bentivogli, Roldano Cattoni, and Marcello Federico. 2015. The IWSLT 2015 evaluation campaign. In _In proceedins of the International Workshop on Spoken Language Translation_ ."
+  },
+  {
+    "offset_inicio": "- Peter W Foltz, Walter Kintsch, and Thomas K Landauer. 1998. The measurement of",
+    "offset_fim": "tent semantic analysis. _Discourse processes_ , 25(2-3):285–307. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Foltz, Kintsch e Landauer (1998)",
+    "motivo": "É a primeira entrada bibliográfica visível. Inicia no marcador de item \"- Peter W Foltz\" e termina imediatamente antes da próxima entrada, iniciada por \"- Zhengxian Gong\".",
+    "texto": "- Peter W Foltz, Walter Kintsch, and Thomas K Landauer. 1998. The measurement of textual coherence with latent semantic analysis. _Discourse processes_ , 25(2-3):285–307. \n\n"
+  },
+  {
+    "offset_inicio": "- Zhengxian Gong, Min Zhang, and Guodong Zhou. 2011. Cache-based document-level statistical machine translation. In _Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing_",
+    "offset_fim": "pages 909–919, Edinburgh, Scotland, UK. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Gong, Zhang e Zhou (2011) — Cache-based document-level statistical machine translation",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista \"- Zhengxian Gong\" e termina antes da próxima referência, iniciada por \"- Christian Hardmeier\".",
+    "texto": "- Zhengxian Gong, Min Zhang, and Guodong Zhou. 2011. Cache-based document-level statistical machine translation. In _Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing_ , pages 909–919, Edinburgh, Scotland, UK. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Christian Hardmeier. 2012. Discourse in statistical machine translation. a survey and a case",
+    "offset_fim": "nal of linguistics, psycholinguistics and computational linguistics_ , (11). ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Christian Hardmeier (2012) — Discourse in statistical machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho fornecido; inicia no marcador de item e termina imediatamente antes da entrada de Christian Hardmeier, Sara Stymne et al. (2013).",
+    "texto": "- Christian Hardmeier. 2012. Discourse in statistical machine translation. a survey and a case study. _Discours. Revue de linguistique, psycholinguistique et informatique. A journal of linguistics, psycholinguistics and computational linguistics_ , (11). "
+  },
+  {
+    "offset_inicio": "- Christian Hardmeier, Sara Stymne, J¨org Tiedemann, and Joakim Nivre. 2013. cder for phrase-based statistical machine translation.",
+    "offset_fim": "pages 193–198, Sofia, Bulgaria. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Hardmeier et al. 2013 — cder for phrase-based statistical machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista de Christian Hardmeier et al. e termina imediatamente antes da entrada seguinte, de Sebastien Jean et al.",
+    "texto": "- Christian Hardmeier, Sara Stymne, J¨org Tiedemann, and Joakim Nivre. 2013. cder for phrase-based statistical machine translation. In _Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics: System Demonstrations_ , pages 193–198, Sofia, Bulgaria. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Sebastien Jean, Stanislas Lauly, Orhan Firat, and Kyunghyun Cho. 2017. Does neural machine",
+    "offset_fim": "Does neural machine translation benefit from larger context? _arXiv preprint arXiv:1704.05135_ .",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Jean et al. (2017) — Does neural machine translation benefit from larger context?",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Sebastien Jean\" e termina imediatamente antes da próxima referência, iniciada por \"- Guillaume Klein\".",
+    "texto": "- Sebastien Jean, Stanislas Lauly, Orhan Firat, and Kyunghyun Cho. 2017. Does neural machine translation benefit from larger context? _arXiv preprint arXiv:1704.05135_ ."
+  },
+  {
+    "offset_inicio": "- Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander M. Rush. 2017.",
+    "offset_fim": "OpenNMT: Open-source toolkit for neural machine translation. In _Proc. ACL_ . ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Klein et al. 2017 — OpenNMT",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista de Guillaume Klein e termina imediatamente antes da entrada de Philipp Koehn.",
+    "texto": "- Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander M. Rush. 2017. OpenNMT: Open-source toolkit for neural machine translation. In _Proc. ACL_ . "
+  },
+  {
+    "offset_inicio": "- Philipp Koehn. 2004. Statistical significance tests for machine translation evaluation. In _Proceedings of EMNLP 2004_",
+    "offset_fim": "pages 388–395, Barcelona, Spain. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Philipp Koehn (2004) — Statistical significance tests for machine translation evaluation",
+    "motivo": "É a primeira entrada bibliográfica visível: inicia com o marcador de lista '- Philipp Koehn. 2004.' e termina imediatamente antes da próxima entrada bibliográfica iniciada por '- Philipp Koehn, Hieu Hoang...'.",
+    "texto": "- Philipp Koehn. 2004. Statistical significance tests for machine translation evaluation. In _Proceedings of EMNLP 2004_ , pages 388–395, Barcelona, Spain. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Philipp Koehn, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan, Wade Shen,",
+    "offset_fim": "_Proceedings of the 45th Annual Meeting of the Association for Computational Linguistics Companion Volume Proceedings of the Demo and Poster Sessions_ , pages 177–180, Prague, Czech Republic. Association for Computational Linguistics.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Koehn et al. (2007), Moses",
+    "motivo": "É a primeira entrada bibliográfica visível. Inicia no marcador de item \"- Philipp Koehn\" e termina imediatamente antes da próxima referência, \"- Ekaterina Lapshinova-Koltunski\".",
+    "texto": "- Philipp Koehn, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan, Wade Shen, Christine Moran, Richard Zens, Chris Dyer, Ondrej Bojar, Alexandra Constantin, and Evan Herbst. 2007. Moses: Open source toolkit for statistical machine translation. In _Proceedings of the 45th Annual Meeting of the Association for Computational Linguistics Companion Volume Proceedings of the Demo and Poster Sessions_ , pages 177–180, Prague, Czech Republic. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Ekaterina Lapshinova-Koltunski and Christian Hardmeier. 2017. Discovery of discourse-related language contrasts through alignment discrepancies in english-german translation.",
+    "offset_fim": "pages 73–81, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Lapshinova-Koltunski and Hardmeier (2017)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada por marcador de lista. Termina imediatamente antes da próxima entrada, iniciada por “- Jimmy Lei Ba”.",
+    "texto": "- Ekaterina Lapshinova-Koltunski and Christian Hardmeier. 2017. Discovery of discourse-related language contrasts through alignment discrepancies in english-german translation. In _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 73–81, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E. Hinton. 2016. Layer normalization.",
+    "offset_fim": "Layer normalization. In _NISP 2016 - Deep Learning Symposium paper_ . ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Ba, Kiros e Hinton (2016) — Layer normalization",
+    "motivo": "É a primeira entrada bibliográfica identificável na página 6; inicia no marcador de lista e termina imediatamente antes da entrada seguinte, de Pierre Lison e Jörg Tiedemann.",
+    "texto": "- Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E. Hinton. 2016. Layer normalization. In _NISP 2016 - Deep Learning Symposium paper_ . "
+  },
+  {
+    "offset_inicio": "- Pierre Lison and J¨org Tiedemann. 2016. OpenSubtitles2016: Extracting large parallel",
+    "offset_fim": "onference on Language Resources and Evaluation (LREC 2016)_ . European Language Resources Association. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Pierre Lison e Jörg Tiedemann (2016) — OpenSubtitles2016",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista da referência de Lison e Tiedemann e termina imediatamente antes da próxima entrada, de Sharid Loáiciga e Cristina Grisot.",
+    "texto": "- Pierre Lison and J¨org Tiedemann. 2016. OpenSubtitles2016: Extracting large parallel corpora from movie and tv subtitles. In _In Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016)_ . European Language Resources Association. "
+  },
+  {
+    "offset_inicio": "- Sharid Lo´aiciga and Cristina Grisot. 2016. Predicting and using a pragmatic component of lexical aspect.",
+    "offset_fim": "Predicting and using a pragmatic component of lexical aspect. _LiLT (Linguistic Issues in Language Technology)_ , 13. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Lo´aiciga e Grisot (2016) — Predicting and using a pragmatic component of lexical aspect",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de lista \"- Sharid Lo´aiciga...\" e termina imediatamente antes da próxima referência, \"- Sameen Maruf...\".",
+    "texto": "- Sharid Lo´aiciga and Cristina Grisot. 2016. Predicting and using a pragmatic component of lexical aspect. _LiLT (Linguistic Issues in Language Technology)_ , 13. "
+  },
+  {
+    "offset_inicio": "- Sameen Maruf and Gholamreza Haffari. 2018. Document context neural machine translation with memory networks. In _Proceedings of the 56th Annual Meeting",
+    "offset_fim": "(Volume 1: Long Papers)_ , pages 1275– 1284. Association for Computational Linguistics. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "Referência: Sameen Maruf e Gholamreza Haffari (2018)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista; termina antes da próxima referência, que começa na página 7.",
+    "texto": "- Sameen Maruf and Gholamreza Haffari. 2018. Document context neural machine translation with memory networks. In _Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)_ , pages 1275– 1284. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Laura Mascarell. 2017. Lexical chains meet word embeddings in document-level statistical machine translation. In _Proceedings of the Third Workshop on Discourse in Machine Translation_",
+    "offset_fim": "_Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 99– 109, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Laura Mascarell (2017) — Lexical chains meet word embeddings",
+    "motivo": "É a primeira entrada bibliográfica completa visível: começa no marcador de lista \"- Laura Mascarell\" e termina imediatamente antes da próxima referência, iniciada por \"- Thomas Meyer and Andrei Popescu-Belis\".",
+    "texto": "- Laura Mascarell. 2017. Lexical chains meet word embeddings in document-level statistical machine translation. In _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 99– 109, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Thomas Meyer and Andrei Popescu-Belis. 2012. Using sense-labeled discourse connectives for statistical machine translation. In _Proceedings of the Joint Workshop",
+    "offset_fim": "tion (ESIRMT) and Hybrid Approaches to Machine Translation (HyTra)_ , pages 129–138. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Meyer e Popescu-Belis (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista com os autores e termina imediatamente antes da próxima entrada, iniciada por “- Thomas Meyer and Bonnie Webber”.",
+    "texto": "- Thomas Meyer and Andrei Popescu-Belis. 2012. Using sense-labeled discourse connectives for statistical machine translation. In _Proceedings of the Joint Workshop on Exploiting Synergies between Information Retrieval and Machine Translation (ESIRMT) and Hybrid Approaches to Machine Translation (HyTra)_ , pages 129–138. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Thomas Meyer and Bonnie Webber. 2013. Implicitation of discourse connectives in (machine) translation.",
+    "offset_fim": "on Discourse in Machine Translation_ , pages 19–26, Sofia, Bulgaria. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Thomas Meyer and Bonnie Webber (2013)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista “-” e encerrada imediatamente antes da próxima entrada bibliográfica, “- Lesly Miculicich Werlen. 2017.”",
+    "texto": "- Thomas Meyer and Bonnie Webber. 2013. Implicitation of discourse connectives in (machine) translation. In _Proceedings of the Workshop on Discourse in Machine Translation_ , pages 19–26, Sofia, Bulgaria. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Lesly Miculicich Werlen. 2017. Towards documentlevel neural machine translation. Technical report, Idiap.",
+    "offset_fim": "- Lesly Miculicich Werlen. 2017. Towards documentlevel neural machine translation. Technical report, Idiap.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Lesly Miculicich Werlen (2017)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada por marcador de lista, e termina imediatamente antes da próxima entrada bibliográfica iniciada por “- Lesly Miculicich Werlen, Nikolaos Pappas...”.",
+    "texto": "- Lesly Miculicich Werlen. 2017. Towards documentlevel neural machine translation. Technical report, Idiap."
+  },
+  {
+    "offset_inicio": "- Lesly Miculicich Werlen, Nikolaos Pappas, Dhananjay Ram, and Andrei Popescu-Belis.",
+    "offset_fim": "pages 1366– 1379. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência: Miculicich Werlen et al. (2018)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da entrada seguinte, também marcada por \"-\".",
+    "texto": "- Lesly Miculicich Werlen, Nikolaos Pappas, Dhananjay Ram, and Andrei Popescu-Belis. 2018. Selfattentive residual decoder for neural machine translation. In _Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)_ , pages 1366– 1379. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Lesly Miculicich Werlen and Andrei Popescu-Belis. 2017a. Using coreference links to improve spanishto-english machine translation.",
+    "offset_fim": "(CORBON 2017)_ , pages 30–40, Valencia, Spain. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Lesly Miculicich Werlen and Andrei Popescu-Belis (2017a)",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista e termina imediatamente antes da próxima entrada bibliográfica.",
+    "texto": "- Lesly Miculicich Werlen and Andrei Popescu-Belis. 2017a. Using coreference links to improve spanishto-english machine translation. In _Proceedings of the 2nd Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2017)_ , pages 30–40, Valencia, Spain. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Lesly Miculicich Werlen and Andrei Popescu-Belis. 2017b. Validation of an automatic metric for the accuracy of pronoun translation (APT).",
+    "offset_fim": "in _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 17–25, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência: Miculicich Werlen e Popescu-Belis (2017b)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, de Kishore Papineni et al.",
+    "texto": "- Lesly Miculicich Werlen and Andrei Popescu-Belis. 2017b. Validation of an automatic metric for the accuracy of pronoun translation (APT). In _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 17–25, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Kishore Papineni, Salim Roukos, Todd Ward, and WeiJing Zhu. 2002. BLEU: a method for automatic evaluation of machine translation.",
+    "offset_fim": "pages 311–318, Philadelphia, Pennsylvania, USA. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Papineni et al. (2002) — BLEU",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista “- Kishore Papineni...” e termina imediatamente antes da próxima referência, “- Nikolaos Pappas...”.",
+    "texto": "- Kishore Papineni, Salim Roukos, Todd Ward, and WeiJing Zhu. 2002. BLEU: a method for automatic evaluation of machine translation. In _Proceedings of 40th Annual Meeting of the Association for Computational Linguistics_ , pages 311–318, Philadelphia, Pennsylvania, USA. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Nikolaos Pappas and Andrei Popescu-Belis. 2017. Multilingual hierarchical attention",
+    "offset_fim": "pages 1015–1025, Taipei, Taiwan. Asian Federation of Natural Language Processing. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Pappas e Popescu-Belis (2017)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, de Xiao Pu et al.",
+    "texto": "- Nikolaos Pappas and Andrei Popescu-Belis. 2017. Multilingual hierarchical attention networks for document classification. In _Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)_ , pages 1015–1025, Taipei, Taiwan. Asian Federation of Natural Language Processing. "
+  },
+  {
+    "offset_inicio": "- Xiao Pu, Laura Mascarell, and Andrei Popescu-Belis. 2017. Consistent translation of",
+    "offset_fim": "Chapter of the Association for Computational Linguistics: Volume 1, Long Papers_ , pages 948–957. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Xiao Pu, Laura Mascarell e Andrei Popescu-Belis (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de lista \"- Xiao Pu...\" e termina imediatamente antes da próxima referência, \"- Annette Rios Gonzales...\".",
+    "texto": "- Xiao Pu, Laura Mascarell, and Andrei Popescu-Belis. 2017. Consistent translation of repeated nouns using syntactic and semantic cues. In _Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers_ , pages 948–957. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Annette Rios Gonzales and Don Tuggener. 2017. Coreference resolution of elided",
+    "offset_fim": "Volume 2, Short Papers_ , pages 657–662. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência: Annette Rios Gonzales and Don Tuggener (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista da referência de Gonzales e Tuggener e termina imediatamente antes do próximo marcador de lista, da referência de Karin Sim Smith.",
+    "texto": "- Annette Rios Gonzales and Don Tuggener. 2017. Coreference resolution of elided subjects and possessive pronouns in spanish-english statistical machine translation. In _Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers_ , pages 657–662. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Karin Sim Smith. 2017. On integrating discourse in machine translation. In _Proceedings of the Third Workshop on Discourse in Machine Translation_ ,",
+    "offset_fim": "pages 110–121, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Karin Sim Smith (2017) — On integrating discourse in machine translation",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista \"- Karin Sim Smith\" e encerrada imediatamente antes da próxima entrada, \"- Dan Stefanescu\".",
+    "texto": "- Karin Sim Smith. 2017. On integrating discourse in machine translation. In _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 110–121, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Dan Stefanescu, Rajendra Banjade, and Vasile Rus. 2014. Latent semantic analysis models on wikipedia and tasa.",
+    "offset_fim": "on Language Resources and Evaluation (LREC-2014)_ . European Language Resources Association (ELRA).",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Dan Stefanescu, Rajendra Banjade, and Vasile Rus. 2014",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista \"- Dan Stefanescu\" e termina imediatamente antes da próxima entrada, \"- J¨org Tiedemann\".",
+    "texto": "- Dan Stefanescu, Rajendra Banjade, and Vasile Rus. 2014. Latent semantic analysis models on wikipedia and tasa. In _Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC-2014)_ . European Language Resources Association (ELRA)."
+  },
+  {
+    "offset_inicio": "- J¨org Tiedemann. 2010. Context adaptation in statistical machine translation using",
+    "offset_fim": "pages 8–15, Uppsala, Sweden. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Jörg Tiedemann (2010) — Context adaptation in statistical machine translation",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de item \"-\" e termina imediatamente antes da próxima referência, também iniciada por \"-\".",
+    "texto": "- J¨org Tiedemann. 2010. Context adaptation in statistical machine translation using models with exponentially decaying cache. In _Proceedings of the 2010 Workshop on Domain Adaptation for Natural Language Processing_ , pages 8–15, Uppsala, Sweden. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- J¨org Tiedemann and Yves Scherrer. 2017. Neural machine translation with extended",
+    "offset_fim": "pages 82–92, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Tiedemann e Scherrer (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista do item e termina imediatamente antes da próxima referência, de Zhaopeng Tu et al.",
+    "texto": "- J¨org Tiedemann and Yves Scherrer. 2017. Neural machine translation with extended context. In _Proceedings of the Third Workshop on Discourse in Machine Translation_ , pages 82–92, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Zhaopeng Tu, Yang Liu, Zhengdong Lu, Xiaohua Liu, and Hang Li. 2017. Context",
+    "offset_fim": "neural machine translation. _Transactions of the Association for Computational Linguistics_ , 5:87–99. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Tu et al. 2017 — Context gates for neural machine translation",
+    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista e termina imediatamente antes da próxima entrada bibliográfica, também marcada por hífen.",
+    "texto": "- Zhaopeng Tu, Yang Liu, Zhengdong Lu, Xiaohua Liu, and Hang Li. 2017. Context gates for neural machine translation. _Transactions of the Association for Computational Linguistics_ , 5:87–99. "
+  },
+  {
+    "offset_inicio": "- Zhaopeng Tu, Yang Liu, Shuming Shi, and Tong Zhang. 2018. Learning to remember translation history",
+    "offset_fim": "a continuous cache. _Transactions of the Association for Computational Linguistics_ , 6. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Tu et al. (2018) — Learning to remember translation history with a continuous cache",
+    "motivo": "É a primeira entrada bibliográfica visível: inicia no marcador de lista “- Zhaopeng Tu...” e termina antes da próxima entrada, “- Ashish Vaswani...”.",
+    "texto": "- Zhaopeng Tu, Yang Liu, Shuming Shi, and Tong Zhang. 2018. Learning to remember translation history with a continuous cache. _Transactions of the Association for Computational Linguistics_ , 6. "
+  },
+  {
+    "offset_inicio": "- Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N",
+    "offset_fim": "ing Systems 30_ , pages 5998–6008. Curran Associates, Inc. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência: Vaswani et al. (2017), Attention is all you need",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista “- Ashish Vaswani...” e encerrada imediatamente antes da próxima entrada, “- Elena Voita...”.",
+    "texto": "- Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In _Advances in Neural Information Processing Systems 30_ , pages 5998–6008. Curran Associates, Inc. "
+  },
+  {
+    "offset_inicio": "- Elena Voita, Pavel Serdyukov, Rico Sennrich, and Ivan Titov. 2018. Context-aware neural machine translation learns anaphora resolution. In _Proceedings of the 56th Annual Meeting of the Association for_ ",
+    "offset_fim": "_Computational Linguistics (Volume 1: Long Papers)_ , pages 1264–1274. Association for Computational Linguistics. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "Voita et al. (2018) — Context-aware neural machine translation learns anaphora resolution",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista “- Elena Voita...”; continua da página 7 para a 8 e termina imediatamente antes da próxima entrada, “- Longyue Wang...”.",
+    "texto": "- Elena Voita, Pavel Serdyukov, Rico Sennrich, and Ivan Titov. 2018. Context-aware neural machine translation learns anaphora resolution. In _Proceedings of the 56th Annual Meeting of the Association for_ \n\n2953\n\n<!-- PÁGINA 8 -->\n_Computational Linguistics (Volume 1: Long Papers)_ , pages 1264–1274. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Longyue Wang, Zhaopeng Tu, Shuming Shi, Tong Zhang, Yvette Graham, and Qun Liu.",
+    "offset_fim": "pages 1480–1489, San Diego, California. Association for Computational Linguistics. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Longyue Wang et al. (2018)",
+    "motivo": "O bloco começa na primeira entrada bibliográfica marcada por hífen e termina imediatamente antes da próxima entrada marcada, iniciada por “- Biao Zhang”.",
+    "texto": "- Longyue Wang, Zhaopeng Tu, Shuming Shi, Tong Zhang, Yvette Graham, and Qun Liu. 2018. Translating pro-drop languages with reconstruction models. In _Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence_ , pages 1–9, New Orleans, Louisiana, USA. AAAI Press. \n\npages 1480–1489, San Diego, California. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Biao Zhang, Deyi Xiong, jinsong su, Hong Duan, and Min Zhang. 2016. Variational neural machine translation.",
+    "offset_fim": "pages 521–530, Austin, Texas. Association for Computational Linguistics. \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Biao Zhang et al. (2016) — Variational neural machine translation",
+    "motivo": "É a primeira entrada bibliográfica visível na página 8, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da entrada seguinte, \"- Longyue Wang\".",
+    "texto": "- Biao Zhang, Deyi Xiong, jinsong su, Hong Duan, and Min Zhang. 2016. Variational neural machine translation. In _Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing_ , pages 521–530, Austin, Texas. Association for Computational Linguistics. \n\n"
+  },
+  {
+    "offset_inicio": "- Longyue Wang, Zhaopeng Tu, Andy Way, and Qun Liu. 2017. Exploiting cross-sentence context for neural machine translation.",
+    "offset_fim": "pages 2826–2831, Copenhagen, Denmark. Association for Computational Linguistics. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Longyue Wang et al. (2017) — Exploiting cross-sentence context for neural machine translation",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item \"- Longyue Wang\" e termina imediatamente antes da próxima entrada, \"- Mingxuan Wang\".",
+    "texto": "- Longyue Wang, Zhaopeng Tu, Andy Way, and Qun Liu. 2017. Exploiting cross-sentence context for neural machine translation. In _Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_ , pages 2826–2831, Copenhagen, Denmark. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Mingxuan Wang, Zhengdong Lu, Hang Li, and Qun Liu. 2016. Memory-enhanced decoder",
+    "offset_fim": "pages 278–286, Austin, Texas. Association for Computational Linguistics.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Wang et al. (2016) — Memory-enhanced decoder for neural machine translation",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista e pelos autores; termina imediatamente antes da entrada seguinte, de Billy T. M. Wong e Chunyu Kit.",
+    "texto": "- Mingxuan Wang, Zhengdong Lu, Hang Li, and Qun Liu. 2016. Memory-enhanced decoder for neural machine translation. In _Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing_ , pages 278–286, Austin, Texas. Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- Billy T. M. Wong and Chunyu Kit. 2012. Extending machine translation evaluation metrics with lexical cohesion to document level. In _Proceedings of the 2012 Joint",
+    "offset_fim": "pages 1060–1068, Jeju Island, Korea. Association for Computational Linguistics. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Billy T. M. Wong and Chunyu Kit (2012)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista “-”, e termina imediatamente antes da próxima referência, iniciada por “- Yonghui Wu”.",
+    "texto": "- Billy T. M. Wong and Chunyu Kit. 2012. Extending machine translation evaluation metrics with lexical cohesion to document level. In _Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning_ , pages 1060–1068, Jeju Island, Korea. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey,",
+    "offset_fim": "Bridging the gap between human and machine translation. _arXiv preprint arXiv:1609.08144_ . ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Yonghui Wu et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, iniciada por \"- Deyi Xiong\".",
+    "texto": "- Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. 2016. Google’s neural machine translation system: Bridging the gap between human and machine translation. _arXiv preprint arXiv:1609.08144_ . "
+  },
+  {
+    "offset_inicio": "- Deyi Xiong, Yang Ding, Min Zhang, and Chew Lim Tan. 2013. Lexical chain based cohesion models for document-level statistical machine translation.",
+    "offset_fim": "pages 1563–1573, Seattle, Washington, USA. Association for Computational Linguistics. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Xiong et al. (2013) — Lexical chain based cohesion models",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista “- Deyi Xiong” e encerrada imediatamente antes da próxima entrada, “- Zichao Yang”.",
+    "texto": "- Deyi Xiong, Yang Ding, Min Zhang, and Chew Lim Tan. 2013. Lexical chain based cohesion models for document-level statistical machine translation. In _Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing_ , pages 1563–1573, Seattle, Washington, USA. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Zichao Yang, Zhiting Hu, Yuntian Deng, Chris Dyer, and Alex Smola. 2017. Neural machine translation with recurrent attention modeling.",
+    "offset_fim": "pages 383–387, Valencia, Spain. Association for Computational Linguistics. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência bibliográfica: Yang et al. (2017)",
+    "motivo": "A primeira entrada bibliográfica começa no marcador de item \"- Zichao Yang...\" e termina imediatamente antes do próximo item de referência, \"- Zichao Yang, Diyi Yang...\".",
+    "texto": "- Zichao Yang, Zhiting Hu, Yuntian Deng, Chris Dyer, and Alex Smola. 2017. Neural machine translation with recurrent attention modeling. In _Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers_ , pages 383–387, Valencia, Spain. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Zichao Yang, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola, and Eduard Hovy.",
+    "offset_fim": "the Association for Computational Linguistics: Human Language Technologies_ , ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência: Yang et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de lista \"-\". O bloco vai até o fim do texto bibliográfico disponível antes do número de página.",
+    "texto": "- Zichao Yang, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola, and Eduard Hovy. 2016. Hierarchical attention networks for document classification. In _Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , "
+  }
+]

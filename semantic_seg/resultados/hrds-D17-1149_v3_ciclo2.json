@@ -1,0 +1,623 @@
+[
+  {
+    "offset_inicio": "## **Abstract** \n\nPhrases play an important role in natural language understanding and machine",
+    "offset_fim": "riments on the Chinese _→_ English translation show that the proposed model achieves significant improvements over the baseline on various test sets. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no marcador de seção “## **Abstract**” e contém integralmente o resumo, terminando imediatamente antes do próximo marcador estrutural, “## **1 Introduction**”.",
+    "texto": "## **Abstract** \n\nPhrases play an important role in natural language understanding and machine translation (Sag et al., 2002; Villavicencio et al., 2005). However, it is difficult to integrate them into current neural machine translation (NMT) which reads and generates sentences word by word. In this work, we propose a method to translate phrases in NMT by integrating a phrase memory storing target phrases from a phrase-based statistical machine translation (SMT) system into the encoder-decoder architecture of NMT. At each decoding step, the phrase memory is first re-written by the SMT model, which dynamically generates relevant target phrases with contextual information provided by the NMT model. Then the proposed model reads the phrase memory to make probability estimations for all phrases in the phrase memory. If phrase generation is carried on, the NMT decoder selects an appropriate phrase from the memory to perform phrase translation and updates its decoding state by consuming the words in the selected phrase. Otherwise, the NMT decoder generates a word from the vocabulary as the general NMT decoder does. Experiment results on the Chinese _→_ English translation show that the proposed model achieves significant improvements over the baseline on various test sets."
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nNeural machine translation (NMT) has been receiving increasing attention due to its impressive ",
+    "offset_fim": "Finally we discuss related work in Section 5 and conclude the paper in Section 6. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco começa no marcador da seção numerada “1 Introduction” na página 1 e inclui todo o texto introdutório que continua na página 2, terminando imediatamente antes do próximo marcador de seção, “2 Background”.",
+    "texto": "## **1 Introduction** \n\nNeural machine translation (NMT) has been receiving increasing attention due to its impressive \n\n> _∗_ Corresponding author \n\ntranslation performance (Kalchbrenner and Blunsom, 2013; Cho et al., 2014; Sutskever et al., 2014; Bahdanau et al., 2015; Wu et al., 2016). Significantly different from conventional statistical machine translation (SMT) (Brown et al., 1993; Koehn et al., 2003; Chiang, 2005), NMT adopts a big neural network to perform the entire translation process in one shot, for which an encoderdecoder architecture is widely used. Specifically, the encoder encodes a source sentence into a continuous vector representation, then the decoder uses the continuous vector representation to generate the corresponding target translation word by word. \n\nThe word-by-word generation philosophy in NMT makes it difficult to translate multi-word phrases. Phrases, especially multi-word expressions, are crucial for natural language understanding and machine translation (Sag et al., 2002; Villavicencio et al., 2005) as the meaning of a phrase cannot be always deducible from the meanings of its individual words or parts. Unfortunately current NMT is essentially a word-based or character-based (Chung et al., 2016; Costa-juss`a and Fonollosa, 2016; Luong and Manning, 2016) translation system where phrases are not considered as translation units. In contrast, phrases are much better than words as translation units in SMT and have made a significant advance in translation quality. Therefore, a natural question arises: Can we translate phrases in NMT? \n\nRecently, there have been some attempts on multi-word phrase generation in NMT (Stahlberg et al., 2016b; Zhang and Zong, 2016). However these efforts constrain NMT to generate either syntactic phrases or domain phrases in the wordby-word generation framework. To explore the phrase generation in NMT beyond the word-byword generation framework, we propose a novel architecture that integrates a phrase-based SMT \n\n1421 \n\n_Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_ , pages 1421–1431 Copenhagen, Denmark, September 7–11, 2017. _⃝_ c 2017 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nmodel into NMT. Specifically, we add an auxiliary phrase memory to store target phrases in symbolic form. At each decoding step, guided by the decoding information from the NMT decoder, the SMT model dynamically generates relevant target phrase translations and writes them to the memory. Then the NMT decoder scores phrases in the phrase memory and selects a proper phrase or word with the highest probability. If the phrase generation is carried out, the NMT decoder generates a multi-word phrase and updates its decoding state by consuming the words in the selected phrase. \n\nFurthermore, in order to enhance the ability of the NMT decoder to effectively select appropriate target phrases, we modify the encoder of NMT to make it fit for exploring structural information of source sentences. Particularly, we integrate syntactic chunk information into the NMT encoder, to enrich the source-side representation. We validate our proposed model on the Chinese _→_ English translation task. Experiment results show that the proposed model significantly outperforms the conventional attention-based NMT by 1.07 BLEU points on multiple NIST test sets. \n\nThe rest of this paper is organized as follows. Section 2 briefly introduces the attentionbased NMT as background knowledge. Section 3 presents our proposed model which incorporates the phrase memory into the NMT encoder-decoder architecture, as well as the reading and writing procedures of the phrase memory. Section 4 presents our experiments on the Chinese _→_ English translation task and reports the experiment results. Finally we discuss related work in Section 5 and conclude the paper in Section 6. \n\n"
+  },
+  {
+    "offset_inicio": "## **2 Background** \n\nNeural machine translation often adopts the encoder-decoder architecture with recurrent neural networks",
+    "offset_fim": "earch a target sentence **y** ˆ that approximately maximizes the conditional probability _P_ ( **y** _|_ **x** )",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Background",
+    "motivo": "O bloco inicia no marcador de seção \"2 Background\" e contém toda a exposição de contexto até imediatamente antes do próximo marcador de seção, \"3 Approach\".",
+    "texto": "## **2 Background** \n\nNeural machine translation often adopts the encoder-decoder architecture with recurrent neural networks (RNN) to model the translation process. The bidirectional RNN encoder which consists of a forward RNN and a backward RNN reads a source sentence **x** = _x_ 1 _, x_ 2 _, ..., xTx_ and transforms it into word annotations of the entire source sentence **h** = _h_ 1 _, h_ 2 _, ..., hTx_ . The decoder uses the annotations to emit a target sentence **y** = _y_ 1 _, y_ 2 _, ..., yTy_ in a word-by-word manner. \n\nIn the training phase, given a parallel sentence ( **x** _,_ **y** ), NMT models the conditional probability as \n\nfollows, \n\n\n\nwhere _yi_ is the target word emitted by the decoder at step _i_ and **y** _<_ **i** = _y_ 1 _, y_ 2 _, ..., yi−_ 1. The conditional probability _P_ ( _yi|_ **y** _<_ **i** _,_ **x** ) is computed as \n\n_P_ ( _yi|_ **y** _<_ **i** _,_ **x** ) = _softmax_ ( _f_ ( _si, yi−_ 1 _, ci_ )) (2) where _f_ ( _·_ ) is a non-linear function and _si_ is the hidden state of the decoder at step _i_ : \n\n\n\nwhere _g_ ( _·_ ) is a non-linear function. Here we adopt Gated Recurrent Unit (Cho et al., 2014) as the recurrent unit for the encoder and decoder. _ci_ is the context vector, computed as a weighted sum of the annotations **h** : \n\n\n\nwhere _hj_ is the annotation of source word _xj_ and its weight _αt,j_ is computed by the attention model. We train the attention-based NMT model by maximizing the log-likelihood: \n\n\n\ngiven the training data with _N_ bilingual sentences (Cho, 2015). \n\nIn the testing phase, given a source sentence **x** , we use beam search strategy to search a target sentence **y** ˆ that approximately maximizes the conditional probability _P_ ( **y** _|_ **x** )"
+  },
+  {
+    "offset_inicio": "## **3 Approach** \n\nIn this section, we introduce the proposed model which incorporates a",
+    "offset_fim": "The NMT decoder performs phrase generation using the balancer and the phrase memory. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "3 Approach",
+    "motivo": "O bloco inicia no marcador da seção 3 e contém seu parágrafo introdutório e a legenda da Figura 1, que não constitui unidade estrutural. Termina imediatamente antes do marcador da subseção 3.1 Framework.",
+    "texto": "## **3 Approach** \n\nIn this section, we introduce the proposed model which incorporates a phrase memory into the encoder-decoder architecture of NMT. Inspired by the recent work on attaching an external structure to the encoder-decoder architecture (Gulcehre et al., 2016; Gu et al., 2016; Tang et al., 2016; Wang et al., 2017), we adopt a similar approach to incorporate the phrase memory into NMT. \n\n1422\n\n<!-- PÁGINA 3 -->\nFigure 1: Architecture of the NMT decoder with the phrase memory. The NMT decoder performs phrase generation using the balancer and the phrase memory. \n\n"
+  },
+  {
+    "offset_inicio": "# **3.1 Framework** \n\nFigure 1 shows an example. Given the generated words “ _President",
+    "offset_fim": "_λ_ can be treated as the estimated importance of the phrase to be generated. We expect _λ_ to be high if the phrase is appropriate at the current decoding step. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "3.1 Framework",
+    "motivo": "O bloco começa no marcador da subseção 3.1 e contém seu texto introdutório até imediatamente antes do título autônomo em negrito “Well-Formed Phrases”, que inicia uma nova unidade.",
+    "texto": "# **3.1 Framework** \n\nFigure 1 shows an example. Given the generated words “ _President Bush emphasized that_ ”, the model generates the next fragment either from a word generation mode or a phrase generation mode. If the model selects the word generation mode, it generates a word by the NMT decoder as in the standard NMT framework. Otherwise, it generates a multi-word phrase by enquiring a phrase memory, which is written by an SMT decoder based on the dynamic decoding information from the NMT model for each step. The trade-off between word generation mode and phrase generation mode is balanced by a weight _λ_ , which is produced by a neural network based _balancer_ . \n\nFormally, a generated translation **y** = _{y_ 1 _, y_ 2 _, . . . , yTy }_ consists of two sets of fragments: words generated by NMT decoder **w** = _{w_ 1 _, w_ 2 _, . . . , wK}_ and phrases generated from the phrase memory **p** = _{p_ 1 _, p_ 2 _, . . . , pL}_ . The probability of generating **y** is calculated by \n\n\n\nwhere _Pword_ ( _wk_ ) is the probability of generating the word _wk_ (see Equation 2), _Pphrase_ ( _pl_ ) is that of generating the phrase _pl_ which will be described in Section 3.2, and _t_ ( _·_ ) is the decoding step to generate the corresponding fragment. \n\nThe balancing weight _λ_ is produced by the _balancer_ – a multi-layer network. The balancer network takes as input the decoding information, including the context vector _ci_ , the previous decoding state _si−_ 1 and the previous generated word _yi−_ 1: \n\n\n\nwhere _σ_ ( _·_ ) is a sigmoid function and _fb_ ( _·_ ) is the activation function. Intuitively, the weight _λ_ can be treated as the estimated importance of the phrase to be generated. We expect _λ_ to be high if the phrase is appropriate at the current decoding step. \n\n"
+  },
+  {
+    "offset_inicio": "**Well-Formed Phrases** We employ a sourceside chunker to chunk the source sentence,",
+    "offset_fim": "_dt_ is the tag embedding dimensionality. [ _·_ ] is the vector concatenation operation. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "Well-Formed Phrases",
+    "motivo": "O bloco inicia no título autônomo em negrito “Well-Formed Phrases” e reúne sua explicação, que continua na página 4, até imediatamente antes do próximo marcador estrutural, “3.2 Phrase Memory”.",
+    "texto": "**Well-Formed Phrases** We employ a sourceside chunker to chunk the source sentence, and only phrases that corresponds to a source chunk are used in our model. We restrict ourselves to the well-formed chunk phrases based on the following considerations: (1) In order to take advantage of dynamic programming, we restrict ourselves to non-overlap phrases.<sup>1</sup> (2) We explicitly utilize the boundary information of the source-side chunk phrases, to better guide the proposed model to adopt a target phrase at an appropriate decoding step. (3) We enable the model to exploit the syntactic categories of chunk phrases to enhance the proposed model with its selection preference for special target phrases. With these information, we enrich the context vector _ci_ to enable the proposed model to make better decisions, as described below. \n\nFollowing the commonly-used strategy in sequence tagging tasks (Xue and Shen, 2003), we allow the words in a phrase to share the same chunk tag and introduce a special tag for the beginning word. For example, the phrase “ &E S� (information security)” is tagged as a noun phrase “NP”, and the tag sequence should be “NP ~~B~~ NP”. Partially motivated by the work on integrating linguistic features into NMT (Sennrich and Haddow, 2016), we represent the encoder input as the combination of word embeddings and chunking tag embeddings, instead of word embeddings alone in the conventional NMT. The new input is formulated as follows: \n\n\n\n1Overlapped phrases may result in a high dimensionality in translation hypothesis representation and make it hard to employ shared fragments for efficient dynamic programming. \n\n1423\n\n<!-- PÁGINA 4 -->\nwhere _E_<sup>_w_</sup> _∈_ R<sup>_dw×|VNMT |_</sup> is a word embedding matrix and _dw_ is the word embedding dimensionality, _E_<sup>_t_</sup> _∈_ R<sup>_dt×|VT AG|_</sup> is a tag embedding matrix and _dt_ is the tag embedding dimensionality. [ _·_ ] is the vector concatenation operation. "
+  },
+  {
+    "offset_inicio": "# **3.2 Phrase Memory** \n\nThe phrase memory stores relevant target phrases provided by an",
+    "offset_fim": "The probability calculation is controlled with parameters, which are trained together with the parameters from the NMT model. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "3.2 Phrase Memory",
+    "motivo": "O bloco inicia no marcador da subseção 3.2 e reúne a descrição da escrita e leitura da memória de frases. Termina imediatamente antes do próximo marcador estrutural, \"3.3 Training\".",
+    "texto": "# **3.2 Phrase Memory** \n\nThe phrase memory stores relevant target phrases provided by an SMT model, which is trained on the same bilingual corpora. At each decoding step, the memory is firstly erased and re-written by the SMT model, the decoding of which is based on the translation information provided by the NMT model. Then, the proposed model enquires phrases along with their probabilities _Pphrase_ from the memory. \n\n**Writing to Phrase Memory** Given a partial = translation **y** _<i {y_ 1 _, y_ 2 _, . . . , yt−_ 1 _}_ generated from NMT, the SMT model picks potential phrases extracted from the translation table. The phrases are scored with multiple SMT features, including the language model score, the translation probabilities, the reordering score, and so on. Specially, the reordering score depends on alignment information between source and target words, which is derived from attention distribution produced by the NMT model (Wang et al., 2017). SMT coverage vector in (Wang et al., 2017) is also introduced to avoid repeat phrasal recommendations. In our work, the potential phrase is phrase with high SMT score which is defined as following: \n\n\n\nwhere _pl_ is a target phrase and _x_ ( _pl_ ) is its corresponding source span. _hm_ ( _pl, x_ ( _pl_ )) is a SMT feature function and _wm_ is its weight. The feature weights can be tuned by the minimum error rate training (MERT) algorithm (Och, 2003). \n\nThis leads to a better interaction between SMT and NMT models. It should be emphasized that our memory is dynamically updated at each decoding step based on the decoding history from both SMT and NMT models. \n\nThe proposed model is very flexible, where the phrase memory can be either fully dynamically generated by an SMT model or directly extracted from a bilingual dictionary, or any other bilingual resources storing idiomatic translations or bilin- \n\ngual multi-word expressions, which may lead to a further improvement.<sup>2</sup> \n\n**Reading Phrase Memory** When phrases are read from the memory, they are rescored by a neural network based score function. The score function takes as input the phrase itself and decoding information from NMT ( _i_ = _t_ ( _pl_ ) denotes the current decoding step): \n\n\n\nwhere _gs_ ( _·_ ) is either an identity or a non-linear function. _e_ ( _pl_ ) is the representation of phrase _pl_ , which is modeled by a recurrent neural networks. Again, _si_ is the decoder state, _yi−_ 1 is the lastly generated word, and _ci_ is the context vector. The scores are normalized for all phrases in the phrase memory, and the probability for phrase _pl_ is calculated as \n\n\n\nThe probability calculation is controlled with parameters, which are trained together with the parameters from the NMT model. \n\n"
+  },
+  {
+    "offset_inicio": "# **3.3 Training** \n\nFormally, we train both the default parameters of standard NMT and the new parameters associated with phrase generation",
+    "offset_fim": "higher balance weight _λ_ and phrase probability _Pphrase_ when a phrase is selected from the memory, and lower scores in other cases. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "3.3 Training",
+    "motivo": "O bloco inicia no marcador da subseção 3.3 e contém seu texto de treinamento até imediatamente antes do próximo marcador, “3.4 Decoding”.",
+    "texto": "# **3.3 Training** \n\nFormally, we train both the default parameters of standard NMT and the new parameters associated with phrase generation on a set of training examples _{_ [ **x**<sup>_n_</sup> _,_ **y**<sup>_n_</sup> ] _}_<sup>_N_</sup> _n_ =1<sup>:</sup> \n\n\n\nwhere _P_ ( **y**<sup>_n_</sup> _|_ **x**<sup>_n_</sup> ) is defined in Equation 7. Ideally, the trained model is expected to produce a higher balance weight _λ_ and phrase probability _Pphrase_ when a phrase is selected from the memory, and lower scores in other cases. "
+  },
+  {
+    "offset_inicio": "# **3.4 Decoding** \n\nDuring testing, the NMT decoder generates a target sentence which consists of a mixture",
+    "offset_fim": "All translation hypotheses are placed in the corresponding beams according to the number of generated target words. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "3.4 Decoding",
+    "motivo": "O bloco inicia no marcador de subseção “3.4 Decoding”, na página 4, e reúne o texto contínuo da estratégia de decodificação até imediatamente antes do próximo marcador estrutural, “4 Experiments”, na página 5.",
+    "texto": "# **3.4 Decoding** \n\nDuring testing, the NMT decoder generates a target sentence which consists of a mixture of words and phrases. Due to the different granularities of words and phrases, we design a variant of beam search strategy: At decoding step _i_ , we first compute _Pphrase_ for all phrases in the phrase memory \n\n> 2Bilingual resources can be utilized in two ways: First, we can store the bilingual resources in a static memory and keep all items available to NMT in the whole decoding period. Second, we can integrate the bilingual resources into SMT and then dynamically feed them into the phrase memory. \n\n1424\n\n<!-- PÁGINA 5 -->\nand _Pword_ for all words in NMT vocabulary. Then the balancer outputs a balancing weight _λi_ , which is used to scale the phrase and word probabilities : _λi × Pphrase_ and (1 _− λi_ ) _× Pword_ . Now outputs are normalized probabilities on the concatenation of phrase memory and the general NMT vocabulary. At last, the NMT decoder generates a proper phrase or word of the highest probability. \n\nIf a target phrase in the phrase memory has the highest probability, the decoder generates the target phrase to complete the multi-word phrase generation process, and updates its decoding state by consuming the words in the selected phrase as described in Equation 3. All translation hypotheses are placed in the corresponding beams according to the number of generated target words. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Experiments** \n\nIn this section, we evaluated the effectiveness of our model on",
+    "offset_fim": "|Others|0.2%|0%|0.2%|0%|\n|Sum|100%|44.5%|58.9%|13.2%|",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "4 Experiments",
+    "motivo": "O bloco inicia no marcador de seção \"4 Experiments\" na página 5 e reúne seu texto introdutório, configurações e tabelas até imediatamente antes do próximo marcador estrutural, \"4.1 Main Results\", na página 6.",
+    "texto": "# **4 Experiments** \n\nIn this section, we evaluated the effectiveness of our model on the Chinese _→_ English machine translation task. The training corpora consisted of about 1.25 million sentence pairs<sup>3</sup> with 27.9 million Chinese words and 34.5 million English words respectively. We used NIST 2006 (NIST06) dataset as development set, and NIST 2004 (NIST04), 2005 (NIST05) and 2008 (NIST08) datasets as test sets. We report experiment results with case-insensitive BLEU score<sup>4</sup> . \n\nWe compared our proposed model with two state-of-the-art systems: \n\n- **Moses** : a state-of-the-art phrase-based SMT system (Koehn et al., 2007) with its default settings, where feature function weights are tuned by the minimum error rate training (MERT) algorithm (Och, 2003). \n\n- **RNNSearch** : an in-house implementation of the attention-based NMT system (Bahdanau et al., 2015) with its default settings. \n\nFor Moses, we used the full bilingual training data to train the phrase-based SMT model and the target portion of the bilingual training data to train a 4-gram language model using KenLM<sup>5</sup> . We ran Giza++ on the training data in both Chinese-to-English and English-to-Chinese \n\n> 3The corpus includes LDC2002E18, LDC2003E07, LDC2003E14, Hansards portion of LDC2004T07, LDC2004T08 and LDC2005T06. \n\ndirections and applied the “grow-diag-final” refinement rule (Koehn et al., 2003) to obtain word alignments. The maximum phrase length is set to 7. \n\nFor RNNSearch, we generally followed settings in the previous work (Bahdanau et al., 2015; Tu et al., 2017a,b). We only kept a shortlist of the most frequent 30,000 words in Chinese and English, covering approximately 97.7% and 99.3% of the data in the two languages respectively. We constrained our source and target sequences to have a maximum length of 50 words in the training data. The size of embedding layer of both sides was set to 620 and the size of hidden layer was set to 1000. We used a minibatch stochastic gradient descent (SGD) algorithm of size 80 together with Adadelta (Zeiler, 2012) to train the NMT models. The decay rates _ρ_ and _ϵ_ were set as 0 _._ 95 and 10<sup>_−_6</sup> . We clipped the gradient norm to 1.0 (Pascanu et al., 2013). We also adopted the dropout technique. Dropout was applied only on the output layer and the dropout rate was set to 0.5. We used a simple beam search decoder with beam size 10 to find the most likely translation. \n\nFor the proposed model, we used a Chinese chunker<sup>6</sup> (Zhu et al., 2015) to chunk the sourceside Chinese sentences. 13 chunking tags appeared in our chunked sentences and the size of chunking tag embedding was set to 10. We used the trained phrase-based SMT to translate the source-side chunks. The top 5 translations according to their translation scores (Equation 10) were kept and among them multi-word phrases were used as phrasal recommendations for each source chunk phrase. For a source-side chunk phrase, if there exists phrasal recommendations from SMT, the output chunk tag was used as its chunking tag feature as described in Section 3.1. Otherwise, the words in the chunk were treated as general words by being tagged with the default tag. In the phrase memory, we only keep the top 7 target translations with highest SMT scores at each decoding step. We used a forward neural network with two hidden layers for both the balancer (Equation 8) and the scoring function (Equation 11). The numbers of units in the hidden layers were set to 2000 and 500 respectively. We used a backward RNN encoder to learn the phrase representations of target phrases in the phrase memory. \n\n> 4ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-v11b.pl \n\n> 5https://kheafield.com/code/kenlm/ \n\n> 6http://www.niuparser.com/ \n\n1425\n\n<!-- PÁGINA 6 -->\n|SYSTEM|NIST04|NIST05|NIST08|Avg|\n|---|---|---|---|---|\n|Moses|34.74|31.99|23.69|30.14|\n|RNNSearch|37.80|34.70|24.93|32.48|\n|+memory|38.21|35.15|25.48_†_|32.95|\n|+memory+chunkingtag|38.83_‡_|35.72_‡_|26.09_‡_|33.55|\n\n\n\nTable 1: Main experiment results on the NIST Chinese-English translation task. BLEU scores in the table are case insensitive. Moses and RNNSearch are SMT and NMT baseline system respectively. “ _†_ ”: significantly better than RNNSearch ( _p <_ 0 _._ 05); “ _‡_ ”: significantly better than RNNSearch ( _p <_ 0 _._ 01). \n\n||NIST04|NIST05|NIST08|\n|---|---|---|---|\n|+memory|34.3%|29.4%|22.2%|\n|+chunkingtag|66.4%|63.1%|58.4%|\n\n\n\nTable 2: Percentages of sentences that contain phrases generated by the proposed model. \n\n|Te|A|ll|N|ew|\n|---|---|---|---|---|\n|yp|Total|Correct|Total|Correct|\n|NP|81.0%|38.7%|46.0%|11.5%|\n|VP|8.0%|1.7%|6.5%|0.8%|\n|QP|10.8%|4.1%|6.2%|0.9%|\n|Others|0.2%|0%|0.2%|0%|\n|Sum|100%|44.5%|58.9%|13.2%|"
+  },
+  {
+    "offset_inicio": "## **4.1 Main Results** \n\nTable 1 reports main results of different models measured in",
+    "offset_fim": "Considering BLEU scores reported in Table 1, we believe that the chunking tag feature benefits the proposed model on its phrase generation. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "4.1 Main Results",
+    "motivo": "O bloco começa no marcador numerado 4.1 e reúne seu texto introdutório e resultados principais. Termina imediatamente antes do título autônomo em negrito \"Number of Sentences Affected by Generated Phrases\", que inicia uma unidade própria conforme as correções.",
+    "texto": "## **4.1 Main Results** \n\nTable 1 reports main results of different models measured in terms of BLEU score. We observe that our implementation of RNNSearch outperforms Moses by 2.34 BLEU points. ( _+memory_ ) which is the proposed model with the phrase memory obtains an improvement of 0.47 BLEU points over the baseline RNNSearch. With the sourceside chunking tag feature, ( _+memory+chunking tag_ ) outperforms the baseline RNNSearch by 1.07 BLEU points, showing the effectiveness of chunking syntactic categories on the selection of appropriate target phrases. From here on, we use “ _+memory+chunking tag_ ” as the default setting in the following experiments if not otherwise stated. \n\n**Number of Sentences Affected by Generated Phrases** We also check the number of translations that contain phrases generated by the proposed model, as shown in Table 2. As seen, a large portion of translations take the recommended phrases, and the number increases when the chunking tag feature is used.<sup>7</sup> Considering BLEU scores reported in Table 1, we believe that the chunking tag feature benefits the proposed model on its phrase generation. \n\n"
+  },
+  {
+    "offset_inicio": "## **4.2 Analysis on Generated Phrases** \n\n**Syntactic Categories of Generated Phrases**",
+    "offset_fim": "Table 4: Percentages of phrases with different word counts to the total number of generated ones. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "4.2 Analysis on Generated Phrases — Syntactic Categories of Generated Phrases",
+    "motivo": "O bloco inicia no marcador numerado 4.2 e termina imediatamente antes do próximo título autônomo em negrito, “Number of Words in Generated Phrases”. Inclui o texto, notas e a tabela/legenda que ocorrem antes desse próximo marcador.",
+    "texto": "## **4.2 Analysis on Generated Phrases** \n\n**Syntactic Categories of Generated Phrases** We first investigate which category of phrases is more likely to be selected by the proposed approach. There are some phrases, such as \n\n> 7The numbers on NIST08 are relatively lower since part of the test set contains sentences from Web forums, which contain less multi-word expressions. \n\nTable 3: Percentages of phrase categories to the total number of generated ones. “All” denotes all generated phrases, and “New” means new phrases that cannot be found in translations generated by the baseline system. “Total” is the total number of generated phrases and “Correct” denotes the fully correct ones. \n\nnoun phrases (NPs, e.g., “national laboratory” and “vietnam airlines”) and quantifier phrases (QPs, e.g., “15 seconds” and “two weeks”) , that we expect to be favored by our approach. Statistics shown in Table 3 confirm our hypothesis. Let’s first concern all generated phrases (i.e., column “All”): most selected phrases are noun phrases (81.0%) and quantifier phrases (10.8%). Among them, 44.5% percent of them are fully correct<sup>8</sup> . Specifically, NPs have relative higher generation accuracy (i.e., 47 _._ 8% = 38 _._ 7% _/_ 81 _._ 0%) while VPs have lower accuracy (i.e., 21 _._ 2% = 1 _._ 7% _/_ 8 _._ 0%). By looking into the wrong cases, we found most errors are related to verb tense, which is the drawback of SMT models. \n\nConcerning the newly introduced phrases that cannot be found in baseline translations (i.e., column “New”), 13.2% of generated phrases are both new and fully correct, which contribute most to the performance improvement. We can also find that most newly introduced verb phrases and quantifier phrases are not correct, the patterns of which can be well learned by word-based NMT models. \n\n> 8Fully correct means that the generated phrases can be retrieved in corresponding references as a whole unit. \n\n1426\n\n<!-- PÁGINA 7 -->\n|Wd|A|ll|N|ew|\n|---|---|---|---|---|\n|ors|Total|Correct|Total|Correct|\n|2|66.2%|33.6%|34.9%|9.1%|\n|3|20.7%|8.4%|13.4%|3.2%|\n|4|7.4%|1.9%|5.4%|0.6%|\n|⩾5|5.7%|0.6%|5.2%|0.3%|\n\n\n\nTable 4: Percentages of phrases with different word counts to the total number of generated ones. \n\n"
+  },
+  {
+    "offset_inicio": "**Number of Words in Generated Phrases** Table 4 lists the distribution of generated",
+    "offset_fim": "he overall results demonstrate that neural machine translation benefits from phrase translation. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Number of Words in Generated Phrases",
+    "motivo": "O bloco inicia no título autônomo em negrito e contém seu texto, tabela e legenda associados. Termina imediatamente antes do próximo título autônomo em negrito, “Effect of Generated Phrases on Translation Performance”.",
+    "texto": "**Number of Words in Generated Phrases** Table 4 lists the distribution of generated phrases based on the number of inside words. As seen, most generated phrases are short phrases (e.g., 2- gram and 3-gram phrases), which also contribute most to the new and fully correct phrases (i.e., 12 _._ 3% = 9 _._ 1%+3 _._ 2%). Focusing on long phrases (e.g., order⩾ 4), most of them are newly introduced (10 _._ 6% out of 13 _._ 1%). Unfortunately, only a few portion of these phrases are fully correct, since long phrases have higher chance to contain one or two unmatched words. \n\n|SYSTEM|Test|\n|---|---|\n|+memory|32.95|\n|+memory+NULL|31.63|\n|+memory +chunking tag|33.55|\n|+memory+chunkingtag+NULL|30.81|\n\n\n\nTable 5: Additional experiment results on the translation task to directly measure the improvement obtained by the phrase generation. “+NULL” denotes that we replace the generated target phrases with a special symbol /NULL0 in test sets. BLEU scores in the table are case insensitive. \n\n**Effect of Generated Phrases on Translation Performance** Note that the proposed model benefits not only from fully matched phrases, but also from partially matched phrases. For example, the baseline system translates “ I[ Ê˜ ø � ˜ oÝ” in a word-by-word manner and outputs “state aviation and space department”. The generated phrase provided by SMT is “national aviation and space administration”, but the only correct reference is “national aeronautics and space administration”. The generated phrase is not fully correct but still useful. \n\nTo directly measure the improvement obtained by the phrase generation, we replace the generated target phrases with a special symbol “NULL” in \n\ntest sets. As shown in Table 5, when deleting the generated target phrases, (“ _+memory+chunking tag_ ”) and (“ _+memory_ ”) translation performances decrease by 2.74 BLEU points and 1.32 BLEU points respectively. Moreover, translation performances on NIST08 decrease less than those on NIST04 and NIST05 in both settings. The reason is that NIST08 which contains sentences from web data has little influence on generating target phrases which are provided from a different domain<sup>9</sup> . The overall results demonstrate that neural machine translation benefits from phrase translation. "
+  },
+  {
+    "offset_inicio": "## **4.3 Effect of Balancer** \n\n|Weight|Test|\n|---|---|\n|Dynamic|33.55|\n|Constant(_λ_= 0_._1)|31.35|",
+    "offset_fim": "neural network based balancer is an essential component for the proposed model.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "4.3 Effect of Balancer",
+    "motivo": "O bloco inicia no marcador da subseção 4.3 e inclui a tabela, legenda e discussão sobre o balancer; termina imediatamente antes do marcador da subseção 4.4.",
+    "texto": "## **4.3 Effect of Balancer** \n\n|Weight|Test|\n|---|---|\n|Dynamic|33.55|\n|Constant(_λ_= 0_._1)|31.35|\n\n\n\nTable 6: Translation performance with a variety of balancing weight strategies. “Dynamic” is the proposed approach and “Constant ( _λ_ = 0 _._ 1)” denotes fixing the balancing weight to 0.1. BLEU scores in the table are case insensitive. \n\nThe balancer which is used to coordinate the phrase generation and word generation is very crucial for the proposed model. We conducted an additional experiment to validate the effectiveness of the neural network based balancer. We use the setting “+memory +chunking tag” as baseline system to conduct the experiments. In this experiment, we fixed the balancing weight _λ_ (Equation 8) to 0.1 during training and testing and report the results. As shown in Table 6, we find that using the fixed value for the balancing weight ( _Constant (λ_ = 0 _._ 1 _)_ ) decreases the translation performance sharply. This demonstrates that the neural network based balancer is an essential component for the proposed model."
+  },
+  {
+    "offset_inicio": "## **4.4 Comparison to Word-Level Recommendations and Discussions** \n\nOur approach is related",
+    "offset_fim": "we believe that the proposed model will get further improvement by using external resources. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "4.4 Comparison to Word-Level Recommendations and Discussions",
+    "motivo": "O bloco começa no marcador da subseção 4.4, atravessa a quebra de página e inclui a Tabela 7 e a discussão subsequente. Termina imediatamente antes do marcador da próxima seção, \"# **5 Related work**\".",
+    "texto": "## **4.4 Comparison to Word-Level Recommendations and Discussions** \n\nOur approach is related to our previous work (Wang et al., 2017) which integrates the SMT word-level knowledge into NMT. To make a comparison, we conducted experiments followed settings in (Wang et al., 2017). The comparison results are reported in Table 7. We find that our approach is marginally better than the word-level \n\n9The parallel training data are mainly from news domain. \n\n1427\n\n<!-- PÁGINA 8 -->\n|SYSTEM|Test|\n|---|---|\n|+word level recommendation|33.27|\n|+memory+chunkingtag|33.55|\n\n\n\nTable 7: Experiment results on the translation task. “+word level recommendation” is the proposed model in (Wang et al., 2017). BLEU scores in the table are case insensitive. \n\nmodel proposed in (Wang et al., 2017) by 0.28 BLEU points. \n\nIn our approach, the SMT model translates source-side chunk phrases using the NMT decoding information. Although we use high-quality target phrases as phrasal recommendations, our approach still suffers from the errors in segmentation and chunking. For example, the target phrase “laptop computers” cannot be recommended by the SMT model if the Chinese phrase “Ã J > M” is not chunked as a phrase unit. This is the reason why some sentences do not have corresponding phrasal recommendations (Table 2). Therefore, our approach can be further enhanced if we can reduce the error propagations from the segmenter or chunker, for example, by using n-best chunk sequences instead of the single best chunk sequence. \n\nAdditionally, we also observe that some target phrasal recommendations have been also generated by the baseline system in a word-by-word manner. These phrases, even taken as parts of final translations by the proposed model, do not lead to improvements in terms of BLEU as they have already occurred in translations from the baseline system. For example, the proposed model successfully carries out the phrase generation mode to generate a target phrase “guangdong province” (the translation of Chinese phrase “2 À Ž”) which has appeared in the baseline system. \n\nAs external resources, e.g., bilingual dictionary, which are complementary to the SMT phrasal recommendations, are compatible with the proposed model, we believe that the proposed model will get further improvement by using external resources. "
+  },
+  {
+    "offset_inicio": "# **5 Related work** \n\nOur work is related to the following research topics on NMT: ",
+    "offset_fim": "# **5 Related work** \n\nOur work is related to the following research topics on NMT: ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "5 Related work",
+    "motivo": "É o caput da seção numerada 5, iniciado no seu marcador e encerrado imediatamente antes do título autônomo em negrito “Generating phrases for NMT”, que abre uma nova unidade.",
+    "texto": "# **5 Related work** \n\nOur work is related to the following research topics on NMT: "
+  },
+  {
+    "offset_inicio": "**Generating phrases for NMT** In these studies, the generated NMT multi-word phrases",
+    "offset_fim": "modify the encoder to incorporate structural information to enhance the capability of NMT in phrase translation.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Generating phrases for NMT",
+    "motivo": "O bloco inicia no título autônomo em negrito “Generating phrases for NMT” e contém seu parágrafo completo. Termina imediatamente antes do próximo título autônomo em negrito, “Incorporating linguistic information into NMT”.",
+    "texto": "**Generating phrases for NMT** In these studies, the generated NMT multi-word phrases are either from an SMT model or a bilingual dictio- \n\nnary. In syntactically guided neural machine translation (SGNMT), the NMT decoder uses phrase translations produced by the hierarchical phrasebased SMT system Hiero, as hard decoding constraints. In this way, syntactic phrases are generated by the NMT decoder (Stahlberg et al., 2016b). Zhang and Zong (2016) use an SMT translation system, which is integrated an additional bilingual dictionary, to synthesize pseudo-parallel sentences and feed the sentences into the training of NMT in order to translate low-frequency words or phrases. Tang et al. (2016) propose an external phrase memory that stores phrase pairs in symbolic forms for NMT. During decoding, the NMT decoder enquires the phrase memory and properly generates phrase translations. The significant differences between these efforts and ours are 1) that we dynamically generate phrase translations via an SMT model, and 2) that at the same time we modify the encoder to incorporate structural information to enhance the capability of NMT in phrase translation."
+  },
+  {
+    "offset_inicio": "## **Incorporating linguistic information into NMT** \n\nNMT is essentially a sequence to sequence mapping",
+    "offset_fim": "et al. (2016) integrate topic knowledge into NMT for domain/topic adaptation. \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "Incorporating linguistic information into NMT",
+    "motivo": "O bloco começa no título em negrito que abre a unidade temática e inclui o parágrafo contínuo através da quebra de página. Termina imediatamente antes do próximo título autônomo em negrito, “Combining NMT and SMT”.",
+    "texto": "## **Incorporating linguistic information into NMT** \n\nNMT is essentially a sequence to sequence mapping network that treats the input/output units, eg., words, subwords (Sennrich et al., 2016), characters (Chung et al., 2016; Costa-juss`a and Fonollosa, 2016), as non-linguistic symbols. However, linguistic information can be viewed as the taskspecific knowledge, which may be a useful supplementary to the sequence to sequence mapping network. To this end, various kinds of linguistic annotations have been introduced into NMT to improve its translation performance. Sennrich and Haddow (2016) enrich the input units of NMT with various linguistic features, including lemmas, part-of-speech tags, syntactic dependency labels and morphological features. Garc´ıa-Mart´ınez et al. (2016) propose factored NMT using the morphological and grammatical decomposition of the words (factors) in output units. Eriguchi et al. (2016) explore the phrase structures of input sentences and propose a tree-to-sequence attention model for the vanilla NMT model. Li et al. (2017) propose to linearize source-side parse trees to obtain structural label sequences and explicitly incorporated the structural sequences into NMT, while Aharoni and Goldberg (2017) propose to incorporate target-side syntactic information into NMT by serializing the target sequences into linearized, lexicalized constituency trees. Zhang \n\n1428\n\n<!-- PÁGINA 9 -->\net al. (2016) integrate topic knowledge into NMT for domain/topic adaptation. \n\n"
+  },
+  {
+    "offset_inicio": "**Combining NMT and SMT** A variety of approaches have been explored for leveraging",
+    "offset_fim": "improve the attention mechanism in NMT (Cohn et al., 2016; Mi et al., 2016; Liu et al., 2016). ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Combining NMT and SMT",
+    "motivo": "O título em negrito abre uma unidade autônoma na página 9; o bloco reúne o parágrafo subsequente e termina imediatamente antes do marcador de seção \"# **6 Conclusion**\".",
+    "texto": "**Combining NMT and SMT** A variety of approaches have been explored for leveraging the advantages of both NMT and conventional SMT. He et al. (2016) integrate SMT features with the NMT model under the log-linear framework in order to help NMT alleviate the limited vocabulary problem (Luong et al., 2015; Jean et al., 2015) and coverage problem (Tu et al., 2016). Arthur et al. (2016) observe that NMT is prone to making mistakes in translating low-frequency content words and therefore attempt at incorporating discrete translation lexicons into the NMT model, to alliterate the imprecise translation problem (Wang et al., 2017). Motivated by the complementary strengths of syntactical SMT and NMT, different combination schemes of Hiero and NMT have been exploited to form SGNMT (Stahlberg et al., 2016a,b). Wang et al. (2017) propose an approach to incorporate the SMT model into attention-based NMT. They combine NMT posteriors with SMT word recommendations through linear interpolation implemented by a gating function which dynamically assigns the weights. Niehues et al. (2016) propose to use SMT to pre-translate the inputs into target translations and employ the target pre-translations as input sequences in NMT. Zhou et al. (2017) propose a neural system combination framework to directly combine NMT and SMT outputs. The combination of NMT and SMT has been also introduced in interactive machine translation to improve the system’s suggestion quality (Wuebker et al., 2016). In addition, word alignments from the traditional SMT pipeline are also used to improve the attention mechanism in NMT (Cohn et al., 2016; Mi et al., 2016; Liu et al., 2016). "
+  },
+  {
+    "offset_inicio": "# **6 Conclusion** \n\nIn this paper, we have presented a novel model to translate source phrases and generate target phrase translations in NMT",
+    "offset_fim": "Experiment results on Chinese _→_ English translation have demonstrated that the proposed model can significantly improve the translation performance. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "6 Conclusion",
+    "motivo": "O bloco inicia no marcador da seção numerada \"6 Conclusion\" e contém seus dois parágrafos conclusivos, terminando imediatamente antes do marcador da unidade seguinte, \"Acknowledgments\".",
+    "texto": "# **6 Conclusion** \n\nIn this paper, we have presented a novel model to translate source phrases and generate target phrase translations in NMT by integrating the phrase memory into the encoder-decoder architecture. At decoding, the SMT model dynamically generates relevant target phrases with contextual information provided by the NMT model and writes them to the phrase memory. Then the proposed model reads the phrase memory and uses the balancer to make probability estimations for the phrases in the phrase memory. Finally the NMT decoder selects \n\na phrase from the phrase memory or a word from the vocabulary of the highest probability to generate. Experiment results on Chinese _→_ English translation have demonstrated that the proposed model can significantly improve the translation performance. "
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nWe would like to thank three anonymous reviewers for their insightful comments, and also acknowledge Zhengdong Lu, Lili Mou for useful discussions.",
+    "offset_fim": "This work was supported by the National Natural Science Foundation of China (Grants No.61525205, 61373095 and 61622209). \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgments",
+    "motivo": "Bloco iniciado pelo título de seção \"Acknowledgments\" e encerrado imediatamente antes do próximo marcador de seção, \"References\".",
+    "texto": "# **Acknowledgments** \n\nWe would like to thank three anonymous reviewers for their insightful comments, and also acknowledge Zhengdong Lu, Lili Mou for useful discussions. This work was supported by the National Natural Science Foundation of China (Grants No.61525205, 61373095 and 61622209). \n\n"
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "References",
+    "motivo": "O título da lista de referências forma um bloco próprio e termina imediatamente antes da primeira entrada bibliográfica, “Roee Aharoni and Yoav Goldberg. 2017.”.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- Roee Aharoni and Yoav Goldberg. 2017. Towards string-to-tree neural machine translation. _arXiv preprint arXiv:1704.04743_ .",
+    "offset_fim": "string-to-tree neural machine translation. _arXiv preprint arXiv:1704.04743_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Roee Aharoni and Yoav Goldberg (2017)",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador de item e encerrada imediatamente antes da referência seguinte, de Philip Arthur et al.",
+    "texto": "- Roee Aharoni and Yoav Goldberg. 2017. Towards string-to-tree neural machine translation. _arXiv preprint arXiv:1704.04743_ ."
+  },
+  {
+    "offset_inicio": "- Philip Arthur, Graham Neubig, and Satoshi Nakamura. 2016. Incorporating discrete",
+    "offset_fim": "translation. In _Proceedings of the 2016 Conference on EMNLP_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Philip Arthur, Graham Neubig e Satoshi Nakamura (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item da referência de Arthur et al. e termina imediatamente antes da referência seguinte, de Bahdanau et al.",
+    "texto": "- Philip Arthur, Graham Neubig, and Satoshi Nakamura. 2016. Incorporating discrete translation lexicons into neural machine translation. In _Proceedings of the 2016 Conference on EMNLP_ . "
+  },
+  {
+    "offset_inicio": "- Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural machine translation by jointly learning to align and translate.",
+    "offset_fim": "2015. Neural machine translation by jointly learning to align and translate. In _ICLR_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Bahdanau, Cho e Bengio (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador de item \"-\" e termina antes da entrada seguinte, de Peter F. Brown et al.",
+    "texto": "- Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. Neural machine translation by jointly learning to align and translate. In _ICLR_ . "
+  },
+  {
+    "offset_inicio": "- Peter F Brown, Vincent J Della Pietra, Stephen A Della Pietra, and Robert L Mercer.",
+    "offset_fim": "1993. The mathematics of statistical machine translation: Parameter estimation. _Computational linguistics_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Brown et al. (1993)",
+    "motivo": "É a primeira entrada bibliográfica do trecho; inicia no marcador de item com os autores e termina imediatamente antes da entrada seguinte, de David Chiang.",
+    "texto": "- Peter F Brown, Vincent J Della Pietra, Stephen A Della Pietra, and Robert L Mercer. 1993. The mathematics of statistical machine translation: Parameter estimation. _Computational linguistics_ ."
+  },
+  {
+    "offset_inicio": "- David Chiang. 2005. A hierarchical phrase-based model for statistical machine translation. In _Proceedings of the 43rd ACL_ .",
+    "offset_fim": "A hierarchical phrase-based model for statistical machine translation. In _Proceedings of the 43rd ACL_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência bibliográfica — David Chiang (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item “- David Chiang...” e termina imediatamente antes da entrada seguinte, de Kyunghyun Cho.",
+    "texto": "- David Chiang. 2005. A hierarchical phrase-based model for statistical machine translation. In _Proceedings of the 43rd ACL_ ."
+  },
+  {
+    "offset_inicio": "- Kyunghyun Cho. 2015. Natural language understanding with distributed representation. _arXiv preprint_ .",
+    "offset_fim": "2015. Natural language understanding with distributed representation. _arXiv preprint_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Kyunghyun Cho (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador da referência e termina imediatamente antes da entrada seguinte, de Kyunghyun Cho et al. (2014).",
+    "texto": "- Kyunghyun Cho. 2015. Natural language understanding with distributed representation. _arXiv preprint_ ."
+  },
+  {
+    "offset_inicio": "- Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. 2014.",
+    "offset_fim": "translation. In _Proceedings of the 2014 Conference on EMNLP_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Cho et al. (2014)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Cada referência constitui uma unidade própria; o bloco começa no marcador '-' da entrada de Cho et al. e termina antes da entrada seguinte, de Chung et al.",
+    "texto": "- Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using rnn encoder–decoder for statistical machine translation. In _Proceedings of the 2014 Conference on EMNLP_ ."
+  },
+  {
+    "offset_inicio": "- Junyoung Chung, Kyunghyun Cho, and Yoshua Bengio. 2016. A character-level decoder",
+    "offset_fim": "segmentation for neural machine translation. In _Proceedings of the 54th ACL_ , pages 1693–1703, Berlin, Germany.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Chung, Cho e Bengio (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador de item da referência de Junyoung Chung et al. e termina imediatamente antes da referência seguinte, de Trevor Cohn et al.",
+    "texto": "- Junyoung Chung, Kyunghyun Cho, and Yoshua Bengio. 2016. A character-level decoder without explicit segmentation for neural machine translation. In _Proceedings of the 54th ACL_ , pages 1693–1703, Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Trevor Cohn, Cong Duy Vu Hoang, Ekaterina Vymolova, Kaisheng Yao, Chris Dyer,",
+    "offset_fim": "nal neural translation model. In _Proceedings of NAACL 2016_ , San Diego, California.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Trevor Cohn et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; começa no marcador de item \"- Trevor Cohn\" e termina antes da paginação 1429 e da referência seguinte.",
+    "texto": "- Trevor Cohn, Cong Duy Vu Hoang, Ekaterina Vymolova, Kaisheng Yao, Chris Dyer, and Gholamreza Haffari. 2016. Incorporating structural alignment biases into an attentional neural translation model. In _Proceedings of NAACL 2016_ , San Diego, California."
+  },
+  {
+    "offset_inicio": "- Marta R. Costa-juss`a and Jos´e A. R. Fonollosa. 2016. Character-based neural machine translation. In _Proceedings of the 54th ACL_ , pages 357–361, Berlin, Germany.",
+    "offset_fim": "Character-based neural machine translation. In _Proceedings of the 54th ACL_ , pages 357–361, Berlin, Germany.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Costa-jussà e Fonollosa (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de lista \"- Marta R. Costa-juss`a\" e termina após \"Germany.\", imediatamente antes da próxima referência marcada por hífen.",
+    "texto": "- Marta R. Costa-juss`a and Jos´e A. R. Fonollosa. 2016. Character-based neural machine translation. In _Proceedings of the 54th ACL_ , pages 357–361, Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Akiko Eriguchi, Kazuma Hashimoto, and Yoshimasa Tsuruoka. 2016. Tree-to-sequence attentional neural machine translation.",
+    "offset_fim": "In _Proceedings of the 54th ACL_ , pages 823–833, Berlin, Germany.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Eriguchi, Hashimoto e Tsuruoka (2016)",
+    "motivo": "A primeira entrada bibliográfica completa do trecho inicia no marcador de item \"- Akiko Eriguchi...\" e termina antes da entrada bibliográfica seguinte, \"- Mercedes Garc´ıa-Mart´ınez...\".",
+    "texto": "- Akiko Eriguchi, Kazuma Hashimoto, and Yoshimasa Tsuruoka. 2016. Tree-to-sequence attentional neural machine translation. In _Proceedings of the 54th ACL_ , pages 823–833, Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Mercedes Garc´ıa-Mart´ınez, Lo¨ıc Barrault, and Fethi Bougares. 2016. Factored neural machine translation.",
+    "offset_fim": "Fethi Bougares. 2016. Factored neural machine translation. _arXiv preprint arXiv:1609.04621_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: García-Martínez, Barrault e Bougares (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista da referência e termina imediatamente antes da referência seguinte, de Jiatao Gu et al.",
+    "texto": "- Mercedes Garc´ıa-Mart´ınez, Lo¨ıc Barrault, and Fethi Bougares. 2016. Factored neural machine translation. _arXiv preprint arXiv:1609.04621_ ."
+  },
+  {
+    "offset_inicio": "- Jiatao Gu, Zhengdong Lu, Hang Li, and Victor O.K. Li. 2016. Incorporating copying",
+    "offset_fim": "sequence-to-sequence learning. In _Proceedings of the 54th ACL_ , Berlin, Germany.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Jiatao Gu et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item da referência de Gu et al. e termina antes do marcador da referência seguinte, de Caglar Gulcehre et al.",
+    "texto": "- Jiatao Gu, Zhengdong Lu, Hang Li, and Victor O.K. Li. 2016. Incorporating copying mechanism in sequence-to-sequence learning. In _Proceedings of the 54th ACL_ , Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Caglar Gulcehre, Sungjin Ahn, Ramesh Nallapati, Bowen Zhou, and Yoshua Bengio. 2016. Pointing the unknown words.",
+    "offset_fim": "the unknown words. In _Proceedings of ACL 2016_ , Berlin, Germany. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Gulcehre et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida; inicia no marcador de lista da referência de Caglar Gulcehre et al. e termina imediatamente antes da entrada seguinte, de Wei He et al.",
+    "texto": "- Caglar Gulcehre, Sungjin Ahn, Ramesh Nallapati, Bowen Zhou, and Yoshua Bengio. 2016. Pointing the unknown words. In _Proceedings of ACL 2016_ , Berlin, Germany. "
+  },
+  {
+    "offset_inicio": "- Wei He, Zhongjun He, Hua Wu, and Haifeng Wang. 2016. Improved neural machine",
+    "offset_fim": " with smt features. In _Proceedings of the 30th AAAI Conference on Artificial Intelligence_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Wei He et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Começa no marcador de lista da referência de Wei He et al. e termina imediatamente antes da entrada seguinte, de Sébastien Jean et al.",
+    "texto": "- Wei He, Zhongjun He, Hua Wu, and Haifeng Wang. 2016. Improved neural machine translation with smt features. In _Proceedings of the 30th AAAI Conference on Artificial Intelligence_ ."
+  },
+  {
+    "offset_inicio": "- S´ebastien Jean, Kyunghyun Cho, Roland Memisevic, and Yoshua Bengio. 2015. On using very large target vocabulary for neural machine translation.",
+    "offset_fim": "neural machine translation. In _Proceedings of the 53rd ACL and the 7th IJCNLP_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: S´ebastien Jean et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de item da referência de Jean et al. e termina imediatamente antes da entrada seguinte, de Nal Kalchbrenner e Phil Blunsom.",
+    "texto": "- S´ebastien Jean, Kyunghyun Cho, Roland Memisevic, and Yoshua Bengio. 2015. On using very large target vocabulary for neural machine translation. In _Proceedings of the 53rd ACL and the 7th IJCNLP_ . "
+  },
+  {
+    "offset_inicio": "- Nal Kalchbrenner and Phil Blunsom. 2013. Recurrent continuous translation models. In",
+    "offset_fim": "2013. Recurrent continuous translation models. In _Proceedings of the 2013 Conference on EMNLP_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Kalchbrenner e Blunsom (2013)",
+    "motivo": "É a primeira entrada individual da lista de referências; inicia no marcador de item e termina imediatamente antes da referência seguinte.",
+    "texto": "- Nal Kalchbrenner and Phil Blunsom. 2013. Recurrent continuous translation models. In _Proceedings of the 2013 Conference on EMNLP_ ."
+  },
+  {
+    "offset_inicio": "- Philipp Koehn, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan, Wade Shen, Christine Moran, Richard Zens, Chris Dyer, Ondrej Bojar, Alexandra Constantin, and Evan Herbst. 2007. Moses: Open source toolkit for statistical machine translation.",
+    "offset_fim": "In _Proceedings of the 45th ACL Companion Volume Proceedings of the Demo and Poster Sessions_ , pages 177–180, Prague, Czech Republic.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Koehn et al. (2007), Moses",
+    "motivo": "É a primeira entrada individual da lista de referências visível no trecho. Inicia no marcador de item '-' e termina antes da entrada seguinte, também iniciada por '-'.",
+    "texto": "- Philipp Koehn, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan, Wade Shen, Christine Moran, Richard Zens, Chris Dyer, Ondrej Bojar, Alexandra Constantin, and Evan Herbst. 2007. Moses: Open source toolkit for statistical machine translation. In _Proceedings of the 45th ACL Companion Volume Proceedings of the Demo and Poster Sessions_ , pages 177–180, Prague, Czech Republic."
+  },
+  {
+    "offset_inicio": "- Philipp Koehn, Franz Josef Och, and Daniel Marcu. 2003. Statistical phrase-based translation. In _Proceedings of the 2003 NAACL_ .",
+    "offset_fim": "2003. Statistical phrase-based translation. In _Proceedings of the 2003 NAACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Koehn, Och e Marcu (2003)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item da referência de Koehn, Och e Marcu e termina imediatamente antes da próxima referência, iniciada por “- Junhui Li”.",
+    "texto": "- Philipp Koehn, Franz Josef Och, and Daniel Marcu. 2003. Statistical phrase-based translation. In _Proceedings of the 2003 NAACL_ ."
+  },
+  {
+    "offset_inicio": "- Junhui Li, Deyi Xiong, Zhaopeng Tu, Muhua Zhu, Min Zhang, and Guodong Zhou. 2017.",
+    "offset_fim": "Modeling source syntax for neural machine translation. _arXiv preprint arXiv:1705.01020_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Junhui Li et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Cada referência constitui uma unidade própria; o bloco começa no marcador \"-\" da entrada e termina antes da referência seguinte, de Lemao Liu et al.",
+    "texto": "- Junhui Li, Deyi Xiong, Zhaopeng Tu, Muhua Zhu, Min Zhang, and Guodong Zhou. 2017. Modeling source syntax for neural machine translation. _arXiv preprint arXiv:1705.01020_ ."
+  },
+  {
+    "offset_inicio": "- Lemao Liu, Masao Utiyama, Andrew Finch, and Eiichiro Sumita. 2016. Neural machine translation with supervised attention.",
+    "offset_fim": "In _Proceedings of COLING 2016_ , pages 3093–3102, Osaka, Japan.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Liu et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Lemao Liu...\" e termina antes da entrada seguinte, \"- Minh-Thang Luong...\".",
+    "texto": "- Lemao Liu, Masao Utiyama, Andrew Finch, and Eiichiro Sumita. 2016. Neural machine translation with supervised attention. In _Proceedings of COLING 2016_ , pages 3093–3102, Osaka, Japan."
+  },
+  {
+    "offset_inicio": "- Minh-Thang Luong and Christopher D. Manning. 2016. Achieving open vocabulary neural machine translation with hybrid word-character models.",
+    "offset_fim": "models. In _Proceedings of the 54th ACL_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Luong e Manning (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de item \"- Minh-Thang Luong...\" e termina imediatamente antes da entrada seguinte, de Thang Luong et al. (2015).",
+    "texto": "- Minh-Thang Luong and Christopher D. Manning. 2016. Achieving open vocabulary neural machine translation with hybrid word-character models. In _Proceedings of the 54th ACL_ . "
+  },
+  {
+    "offset_inicio": "- Thang Luong, Ilya Sutskever, Quoc Le, Oriol Vinyals, and Wojciech Zaremba. 2015. Addressing the rare word problem in neural machine translation. In _Proceedings of the 53rd ACL and the 7th IJCNLP_ . ",
+    "offset_fim": "Addressing the rare word problem in neural machine translation. In _Proceedings of the 53rd ACL and the 7th IJCNLP_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Thang Luong et al. (2015)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Thang Luong\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Haitao Mi\".",
+    "texto": "- Thang Luong, Ilya Sutskever, Quoc Le, Oriol Vinyals, and Wojciech Zaremba. 2015. Addressing the rare word problem in neural machine translation. In _Proceedings of the 53rd ACL and the 7th IJCNLP_ . "
+  },
+  {
+    "offset_inicio": "- Haitao Mi, Zhiguo Wang, and Abe Ittycheriah. 2016. Supervised attentions for",
+    "offset_fim": "for neural machine translation. In _Proceedings of EMNLP 2016_ , pages 2283–2288, Austin, Texas. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Haitao Mi et al. (2016) — Supervised attentions for neural machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Haitao Mi...\" e termina imediatamente antes da entrada seguinte, \"- Jan Niehues...\".",
+    "texto": "- Haitao Mi, Zhiguo Wang, and Abe Ittycheriah. 2016. Supervised attentions for neural machine translation. In _Proceedings of EMNLP 2016_ , pages 2283–2288, Austin, Texas. "
+  },
+  {
+    "offset_inicio": "- Jan Niehues, Eunah Cho, Thanh-Le Ha, and Alex Waibel. 2016. Pre-translation for neural machine translation. In _Proceedings of COLING 2016_ , Osaka, Japan.",
+    "offset_fim": "2016. Pre-translation for neural machine translation. In _Proceedings of COLING 2016_ , Osaka, Japan.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Niehues et al. (2016)",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador de item “-” e encerrada imediatamente antes da referência seguinte, de Franz Josef Och.",
+    "texto": "- Jan Niehues, Eunah Cho, Thanh-Le Ha, and Alex Waibel. 2016. Pre-translation for neural machine translation. In _Proceedings of COLING 2016_ , Osaka, Japan."
+  },
+  {
+    "offset_inicio": "- Franz Josef Och. 2003. Minimum error rate training in statistical machine translation.",
+    "offset_fim": "error rate training in statistical machine translation. In _Proceedings of the 41st ACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Franz Josef Och (2003)",
+    "motivo": "É a primeira entrada bibliográfica completa exibida. Inicia no marcador de item \"- Franz Josef Och...\" e termina antes da entrada bibliográfica seguinte, de Razvan Pascanu et al.",
+    "texto": "- Franz Josef Och. 2003. Minimum error rate training in statistical machine translation. In _Proceedings of the 41st ACL_ ."
+  },
+  {
+    "offset_inicio": "- Razvan Pascanu, Tomas Mikolov, and Yoshua Bengio. 2013. On the difficulty of training recurrent neural networks.",
+    "offset_fim": "In _Proceedings of the 30th International Conference on Machine Learning, ICML 2013_ , pages 1310õ–1318.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Pascanu, Mikolov e Bengio (2013)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador de item e encerrada imediatamente antes da entrada seguinte, de Ivan A. Sag et al.",
+    "texto": "- Razvan Pascanu, Tomas Mikolov, and Yoshua Bengio. 2013. On the difficulty of training recurrent neural networks. In _Proceedings of the 30th International Conference on Machine Learning, ICML 2013_ , pages 1310õ–1318."
+  },
+  {
+    "offset_inicio": "- Ivan A Sag, Timothy Baldwin, Francis Bond, Ann Copestake, and Dan Flickinger. 2002.",
+    "offset_fim": "In _International Conference on Intelligent Text Processing and Computational Linguistics_ , pages 1–15. Springer.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Sag et al. (2002) — Multiword expressions",
+    "motivo": "A primeira entrada bibliográfica é uma unidade própria; inicia no marcador \"- Ivan A Sag...\" e termina em \"Springer.\", imediatamente antes da entrada de Rico Sennrich e Barry Haddow.",
+    "texto": "- Ivan A Sag, Timothy Baldwin, Francis Bond, Ann Copestake, and Dan Flickinger. 2002. Multiword expressions: A pain in the neck for nlp. In _International Conference on Intelligent Text Processing and Computational Linguistics_ , pages 1–15. Springer."
+  },
+  {
+    "offset_inicio": "- Rico Sennrich and Barry Haddow. 2016. Linguistic input features improve neural machine translation.",
+    "offset_fim": "_Proceedings of the First Conference on Machine Translation_ , pages 83–91, Berlin, Germany.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Rico Sennrich and Barry Haddow (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de item \"- Rico Sennrich...\" e termina antes da próxima referência, também iniciada por \"-\".",
+    "texto": "- Rico Sennrich and Barry Haddow. 2016. Linguistic input features improve neural machine translation. In _Proceedings of the First Conference on Machine Translation_ , pages 83–91, Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Neural machine translation of rare words with subword units.",
+    "offset_fim": "In _Proceedings of the 54th ACL_ , pages 1715–1725, Berlin, Germany.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica: Sennrich, Haddow e Birch (2016)",
+    "motivo": "É a primeira entrada completa da lista de referências exibida. O bloco começa no marcador '-' e termina ao fim da referência, imediatamente antes da entrada de Felix Stahlberg et al. (2016a).",
+    "texto": "- Rico Sennrich, Barry Haddow, and Alexandra Birch. 2016. Neural machine translation of rare words with subword units. In _Proceedings of the 54th ACL_ , pages 1715–1725, Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Felix Stahlberg, Adri`a de Gispert, Eva Hasler, and Bill Byrne. 2016a. Neural",
+    "offset_fim": "by minimising the bayes-risk with respect to syntactic translation lattices. _arXiv preprint arXiv:1612.03791_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Stahlberg et al. (2016a)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de lista da referência de Felix Stahlberg et al. e termina imediatamente antes do marcador da referência seguinte.",
+    "texto": "- Felix Stahlberg, Adri`a de Gispert, Eva Hasler, and Bill Byrne. 2016a. Neural machine translation by minimising the bayes-risk with respect to syntactic translation lattices. _arXiv preprint arXiv:1612.03791_ ."
+  },
+  {
+    "offset_inicio": "- Felix Stahlberg, Eva Hasler, Aurelien Waite, and Bill Byrne. 2016b. Syntactically guided neural machine translation.",
+    "offset_fim": "In _Proceedings of the 54th ACL (Volume 2: Short Papers)_ , Berlin, Germany. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Stahlberg et al. (2016b)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Cada referência constitui uma unidade própria; o bloco começa no marcador de item e termina antes da referência seguinte.",
+    "texto": "- Felix Stahlberg, Eva Hasler, Aurelien Waite, and Bill Byrne. 2016b. Syntactically guided neural machine translation. In _Proceedings of the 54th ACL (Volume 2: Short Papers)_ , Berlin, Germany. "
+  },
+  {
+    "offset_inicio": "- Ilya Sutskever, Oriol Vinyals, and Quoc V Le. 2014. Sequence to sequence learning with neural networks.",
+    "offset_fim": "2014. Sequence to sequence learning with neural networks. In _Advances in Neural Information Processing Systems 27_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Sutskever, Vinyals e Le (2014)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de lista da referência e termina antes da entrada seguinte, de Yaohua Tang et al. (2016).",
+    "texto": "- Ilya Sutskever, Oriol Vinyals, and Quoc V Le. 2014. Sequence to sequence learning with neural networks. In _Advances in Neural Information Processing Systems 27_ ."
+  },
+  {
+    "offset_inicio": "- Yaohua Tang, Fandong Meng, Zhengdong Lu, Hang Li, and Philip LH Yu. 2016. Neural",
+    "offset_fim": "ural machine translation with external phrase memory. _arXiv preprint arXiv:1606.01792_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Tang et al. (2016)",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia na entrada de Yaohua Tang et al. e termina antes da próxima referência, de Zhaopeng Tu et al.",
+    "texto": "- Yaohua Tang, Fandong Meng, Zhengdong Lu, Hang Li, and Philip LH Yu. 2016. Neural machine translation with external phrase memory. _arXiv preprint arXiv:1606.01792_ ."
+  },
+  {
+    "offset_inicio": "- Zhaopeng Tu, Yang Liu, Zhengdong Lu, Xiaohua Liu, and Hang Li. 2017a. Context",
+    "offset_fim": "Context gates for neural machine translation. _Transactions of the Association of Computational Linguistics_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Tu et al. 2017a — Context gates for neural machine translation",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Cada referência constitui uma unidade própria; esta começa no marcador de lista com os autores e termina no ponto final da citação, antes do rodapé da página e da referência seguinte.",
+    "texto": "- Zhaopeng Tu, Yang Liu, Zhengdong Lu, Xiaohua Liu, and Hang Li. 2017a. Context gates for neural machine translation. _Transactions of the Association of Computational Linguistics_ ."
+  },
+  {
+    "offset_inicio": "- Zhaopeng Tu, Yang Liu, Lifeng Shang, Xiaohua Liu, and Hang Li. 2017b. Neural machine translation with reconstruction.",
+    "offset_fim": "h reconstruction. In _Proceedings of the 31th AAAI Conference on Artificial Intelligence_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Tu et al. (2017b)",
+    "motivo": "É a primeira entrada completa da lista de referências na página 11; começa no marcador de item \"-\" e termina imediatamente antes da referência seguinte.",
+    "texto": "- Zhaopeng Tu, Yang Liu, Lifeng Shang, Xiaohua Liu, and Hang Li. 2017b. Neural machine translation with reconstruction. In _Proceedings of the 31th AAAI Conference on Artificial Intelligence_ ."
+  },
+  {
+    "offset_inicio": "- Zhaopeng Tu, Zhengdong Lu, Yang Liu, Xiaohua Liu, and Hang Li. 2016. Modeling coverage for neural machine translation. In _Proceedings of the 54th ACL_ . ",
+    "offset_fim": "- Zhaopeng Tu, Zhengdong Lu, Yang Liu, Xiaohua Liu, and Hang Li. 2016. Modeling coverage for neural machine translation. In _Proceedings of the 54th ACL_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Zhaopeng Tu et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Zhaopeng Tu\" e termina imediatamente antes da entrada seguinte, \"- Aline Villavicencio\".",
+    "texto": "- Zhaopeng Tu, Zhengdong Lu, Yang Liu, Xiaohua Liu, and Hang Li. 2016. Modeling coverage for neural machine translation. In _Proceedings of the 54th ACL_ . "
+  },
+  {
+    "offset_inicio": "- Aline Villavicencio, Francis Bond, Anna Korhonen, and Diana McCarthy. 2005. Introduction to the special issue",
+    "offset_fim": "Introduction to the special issue on multiword expressions: Having a crack at a hard nut. _Computer Speech & Language_ , 19(4):365–377.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Villavicencio et al. (2005)",
+    "motivo": "É a primeira entrada completa da lista de referências, iniciada pelo marcador de item “- Aline Villavicencio...” e encerrada imediatamente antes da referência seguinte.",
+    "texto": "- Aline Villavicencio, Francis Bond, Anna Korhonen, and Diana McCarthy. 2005. Introduction to the special issue on multiword expressions: Having a crack at a hard nut. _Computer Speech & Language_ , 19(4):365–377."
+  },
+  {
+    "offset_inicio": "- Xing Wang, Zhengdong Lu, Zhaopeng Tu, Hang Li, Deyi Xiong, and Min Zhang. 2017.",
+    "offset_fim": "vised by statistical machine translation. In _Proceedings of the 31th AAAI Conference on Artificial Intelligence_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Xing Wang et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa da lista de referências. Inicia no marcador de item \"-\" e termina no ponto final imediatamente anterior à próxima referência.",
+    "texto": "- Xing Wang, Zhengdong Lu, Zhaopeng Tu, Hang Li, Deyi Xiong, and Min Zhang. 2017. Neural machine translation advised by statistical machine translation. In _Proceedings of the 31th AAAI Conference on Artificial Intelligence_ ."
+  },
+  {
+    "offset_inicio": "- Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey,",
+    "offset_fim": "Google’s neural machine translation system: Bridging the gap between human and machine translation. _arXiv preprint arXiv:1609.08144_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Wu et al. (2016) — Google’s neural machine translation system",
+    "motivo": "É a primeira entrada individual da lista de referências, iniciada pelo marcador “- Yonghui Wu...” e encerrada imediatamente antes da entrada seguinte, “- Joern Wuebker...”.",
+    "texto": "- Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. 2016. Google’s neural machine translation system: Bridging the gap between human and machine translation. _arXiv preprint arXiv:1609.08144_ ."
+  },
+  {
+    "offset_inicio": "- Joern Wuebker, Spence Green, John DeNero, Sasa Hasan, and Minh-Thang Luong. 2016.",
+    "offset_fim": "Models and inference for prefix-constrained machine translation. In _Proceedings of the 54th ACL_ , pages 66– 75, Berlin, Germany.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Wuebker et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de lista da referência e termina antes da referência seguinte, de Nianwen Xue e Libin Shen.",
+    "texto": "- Joern Wuebker, Spence Green, John DeNero, Sasa Hasan, and Minh-Thang Luong. 2016. Models and inference for prefix-constrained machine translation. In _Proceedings of the 54th ACL_ , pages 66– 75, Berlin, Germany."
+  },
+  {
+    "offset_inicio": "- Nianwen Xue and Libin Shen. 2003. Chinese word segmentation as lmr tagging. In _Proceedings of the Second SIGHAN Workshop on Chinese Language Processing_ , pages 176–179, Sapporo, Japan.",
+    "offset_fim": "Chinese word segmentation as lmr tagging. In _Proceedings of the Second SIGHAN Workshop on Chinese Language Processing_ , pages 176–179, Sapporo, Japan.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Nianwen Xue and Libin Shen (2003)",
+    "motivo": "É a primeira entrada completa da lista de referências na página 11; começa no marcador '-' da referência e termina no ponto final imediatamente antes da entrada de Matthew D Zeiler.",
+    "texto": "- Nianwen Xue and Libin Shen. 2003. Chinese word segmentation as lmr tagging. In _Proceedings of the Second SIGHAN Workshop on Chinese Language Processing_ , pages 176–179, Sapporo, Japan."
+  },
+  {
+    "offset_inicio": "- Matthew D Zeiler. 2012. Adadelta: an adaptive learning rate method. _arXiv preprint arXiv:1212.5701_ .",
+    "offset_fim": "Matthew D Zeiler. 2012. Adadelta: an adaptive learning rate method. _arXiv preprint arXiv:1212.5701_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Matthew D Zeiler (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Matthew D Zeiler\" e termina antes da próxima referência, de Jiajun Zhang e Chengqing Zong.",
+    "texto": "- Matthew D Zeiler. 2012. Adadelta: an adaptive learning rate method. _arXiv preprint arXiv:1212.5701_ ."
+  },
+  {
+    "offset_inicio": "- Jiajun Zhang and Chengqing Zong. 2016. Bridging neural machine translation and bilingual dictionaries.",
+    "offset_fim": "Bridging neural machine translation and bilingual dictionaries. _arXiv preprint arXiv:1610.07272_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Jiajun Zhang e Chengqing Zong (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Entradas de referências são unidades próprias; o bloco começa no marcador \"-\" desta referência e termina antes da referência seguinte.",
+    "texto": "- Jiajun Zhang and Chengqing Zong. 2016. Bridging neural machine translation and bilingual dictionaries. _arXiv preprint arXiv:1610.07272_ ."
+  },
+  {
+    "offset_inicio": "- Jian Zhang, Liangyou Li, Andy Way, and Qun Liu. 2016. Topic-informed neural",
+    "offset_fim": " translation. In _Proceedings of COLING 2016_ , pages 1807–1817, Osaka, Japan.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica — Jian Zhang et al. (2016)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia em “- Jian Zhang...” e termina antes da entrada seguinte, “- Long Zhou...”.",
+    "texto": "- Jian Zhang, Liangyou Li, Andy Way, and Qun Liu. 2016. Topic-informed neural machine translation. In _Proceedings of COLING 2016_ , pages 1807–1817, Osaka, Japan."
+  },
+  {
+    "offset_inicio": "- Long Zhou, Wenpeng Hu, Jiajun Zhang, and Chengqing Zong. 2017. Neural system combination for machine translation.",
+    "offset_fim": "2017. Neural system combination for machine translation. _arXiv preprint arXiv:1704.06393_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: Long Zhou et al. (2017)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; começa no marcador de item \"- Long Zhou\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Jingbo Zhu\".",
+    "texto": "- Long Zhou, Wenpeng Hu, Jiajun Zhang, and Chengqing Zong. 2017. Neural system combination for machine translation. _arXiv preprint arXiv:1704.06393_ ."
+  },
+  {
+    "offset_inicio": "- Jingbo Zhu, Muhua Zhu, Qiang Wang, and Tong Xiao. 2015. Niuparser: A chinese syntactic and semantic parsing toolkit.",
+    "offset_fim": "Niuparser: A chinese syntactic and semantic parsing toolkit. In _Proceedings of ACL-IJCNLP 2015 System Demonstrations_ , Beijing, China.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência bibliográfica: Jingbo Zhu et al. (2015)",
+    "motivo": "Trata-se de uma entrada individual da lista de referências, que constitui uma unidade própria. O bloco começa no marcador de item \"-\" e termina ao fim da referência, antes do número de página.",
+    "texto": "- Jingbo Zhu, Muhua Zhu, Qiang Wang, and Tong Xiao. 2015. Niuparser: A chinese syntactic and semantic parsing toolkit. In _Proceedings of ACL-IJCNLP 2015 System Demonstrations_ , Beijing, China."
+  }
+]

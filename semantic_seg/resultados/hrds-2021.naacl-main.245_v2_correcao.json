@@ -1,0 +1,53 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [31] está marcado como \"TEXTO NÃO EXTRAÍDO (âncoras não localizadas no documento)\", caracterizando falha de âncora na referência de Sanjay Subramanian et al. (2020)."
+      ],
+      "consistente": false,
+      "insights": "- Reextraia a referência bibliográfica de Sanjay Subramanian et al. (2020) como um bloco próprio, entre as referências de Sofia Serrano e Noah A. Smith (2019) e Maartje ter Hoeve et al. (2018).\n- Para esse bloco, escolha âncoras literais, contínuas e suficientemente distintivas do texto extraído, começando por \"- Sanjay Subramanian, Ben Bogin, Nitish Gupta\" e terminando no trecho literal final da referência; não use como âncora texto atravessado por quebra de página, como \"Jonathan\" seguido de conteúdo da página seguinte, nem marcadores de página."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.245_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Reextraia a referência bibliográfica de Sanjay Subramanian et al. (2020) como um bloco próprio, entre as referências de Sofia Serrano e Noah A. Smith (2019) e Maartje ter Hoeve et al. (2018).\n- Para esse bloco, escolha âncoras literais, contínuas e suficientemente distintivas do texto extraído, começando por \"- Sanjay Subramanian, Ben Bogin, Nitish Gupta\" e terminando no trecho literal final da referência; não use como âncora texto atravessado por quebra de página, como \"Jonathan\" seguido de conteúdo da página seguinte, nem marcadores de página.",
+    "analise": {
+      "inconsistencias": [
+        "Os blocos [45] e [46] dividem artificialmente a seção não subdividida \"B Implementation Details\": [45] termina no meio da frase (\"We restrict the length of candidate rules to be\") e [46] começa com a continuação (\"fθ, with ...\"), além de haver lacuna textual aparente entre eles (incluindo \"3. We implement KG encoder\"). O trecho iniciado por \"fθ\" não é uma subseção estrutural."
+      ],
+      "consistente": false,
+      "insights": "- Reextraia a seção \"B Implementation Details\" como um único bloco, iniciado em \"# **B Implementation Details**\" e terminado imediatamente antes de \"# **C Dataset Statistics**\".\n- Não crie um bloco nem um marcador de subseção em \"_fθ_, with the dimensionality of entity and relation embeddings set as 100\"; esse trecho continua o parágrafo de implementação iniciado em B e deve permanecer no mesmo bloco.\n- Preserve, dentro do bloco B, a continuidade literal da frase: \"We restrict the length of candidate rules to be 3. We implement KG encoder _fθ_, with ...\". Não deixe \"to be\" no fim de um bloco nem inicie outro em \"_fθ_\".\n- Inclua no mesmo bloco B o texto de treinamento, a tabela e a legenda \"**Table 3:** Training detail for three datasets. KGE = KG encoder. NLM = neural logic model.\", ignorando marcadores de página."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.245_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 44,
+    "insights_aplicados": "- Reextraia a seção \"B Implementation Details\" como um único bloco, iniciado em \"# **B Implementation Details**\" e terminado imediatamente antes de \"# **C Dataset Statistics**\".\n- Não crie um bloco nem um marcador de subseção em \"_fθ_, with the dimensionality of entity and relation embeddings set as 100\"; esse trecho continua o parágrafo de implementação iniciado em B e deve permanecer no mesmo bloco.\n- Preserve, dentro do bloco B, a continuidade literal da frase: \"We restrict the length of candidate rules to be 3. We implement KG encoder _fθ_, with ...\". Não deixe \"to be\" no fim de um bloco nem inicie outro em \"_fθ_\".\n- Inclua no mesmo bloco B o texto de treinamento, a tabela e a legenda \"**Table 3:** Training detail for three datasets. KGE = KG encoder. NLM = neural logic model.\", ignorando marcadores de página.",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [6] e [7]: a subseção 3.2, situada entre \"3.1 KG Encoder\" e \"3.3 Rule-Guided Path Reasoner\", não foi segmentada em bloco próprio.",
+        "O bloco [23] apresenta falha de âncora (\"TEXTO NÃO EXTRAÍDO\"), embora corresponda a uma entrada bibliográfica que deveria ser extraída como bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Localize a subseção numerada 3.2 que ocorre após o fim de \"## **3.1 KG Encoder**\" e antes de \"# **3.3 Rule-Guided Path Reasoner**\"; crie um bloco próprio iniciado no seu cabeçalho literal e terminado imediatamente antes do cabeçalho 3.3. Não deixe esse intervalo sem cobertura.\n- Reextraia a referência de Laurens van der Maaten e Geoffrey Hinton como um bloco próprio, usando como âncora inicial um prefixo literal e distintivo presente no texto fonte, como \"- Laurens van der Maaten and Geoffrey Hinton. 2008.\", e terminando imediatamente antes da referência seguinte iniciada por \"- Seungwhan Moon\". Não use um título editorializado como âncora.\n- Mantenha \"# **B Implementation Details**\" como um único bloco, do respectivo cabeçalho até imediatamente antes de \"# **C Dataset Statistics**\", sem criar subseção em \"_fθ_, with the dimensionality of entity and relation embeddings set as 100\".\n- Preserve no bloco B a frase contínua \"We restrict the length of candidate rules to be 3. We implement KG encoder _fθ_, with ...\", bem como o texto de treinamento, a Tabela 3 e sua legenda; ignore marcadores de página nesse trecho."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.245_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "- Localize a subseção numerada 3.2 que ocorre após o fim de \"## **3.1 KG Encoder**\" e antes de \"# **3.3 Rule-Guided Path Reasoner**\"; crie um bloco próprio iniciado no seu cabeçalho literal e terminado imediatamente antes do cabeçalho 3.3. Não deixe esse intervalo sem cobertura.\n- Reextraia a referência de Laurens van der Maaten e Geoffrey Hinton como um bloco próprio, usando como âncora inicial um prefixo literal e distintivo presente no texto fonte, como \"- Laurens van der Maaten and Geoffrey Hinton. 2008.\", e terminando imediatamente antes da referência seguinte iniciada por \"- Seungwhan Moon\". Não use um título editorializado como âncora.\n- Mantenha \"# **B Implementation Details**\" como um único bloco, do respectivo cabeçalho até imediatamente antes de \"# **C Dataset Statistics**\", sem criar subseção em \"_fθ_, with the dimensionality of entity and relation embeddings set as 100\".\n- Preserve no bloco B a frase contínua \"We restrict the length of candidate rules to be 3. We implement KG encoder _fθ_, with ...\", bem como o texto de treinamento, a Tabela 3 e sua legenda; ignore marcadores de página nesse trecho.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2021.naacl-main.245_v2_ciclo4.json"
+  }
+]

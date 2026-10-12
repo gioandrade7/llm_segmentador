@@ -1,0 +1,40 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "título do artigo",
+      "exemplo": "Learning Semantic Representations for Nonterminals in Hierarchical Phrase-Based Translation"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção numerada",
+      "exemplo": "1 Introduction"
+    },
+    {
+      "nivel": 3,
+      "nome": "subseção numerada",
+      "exemplo": "4.1 Nonterminal Representations in Hierarchical Rules"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção final não numerada",
+      "exemplo": "Acknowledgment"
+    },
+    {
+      "nivel": 2,
+      "nome": "seção final não numerada",
+      "exemplo": "References"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    5,
+    6,
+    9,
+    10
+  ],
+  "total_paginas": 10
+}
