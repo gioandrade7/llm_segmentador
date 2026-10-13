@@ -13,13 +13,9 @@ text_extraction/data/pdf/*
 !text_extraction/data/pdf/*.pdf
 
 # ── Módulo 2: semantic_seg/ ───────────────────────────────────
-# Tudo em resultados/ é saída de rodada: reproduzível, muda a cada execução.
-# Exceção: as rodadas sobre os documentos HRDoc (hrds-*) são versionadas, porque
-# custam chamadas de API e sustentam a comparação base × _v2 × _v3. Os logs
-# continuam fora (regra *.log abaixo).
+# resultados/ é versionado inteiro (uma pasta por documento): as rodadas custam
+# chamadas de API para refazer. Os logs continuam fora (regra *.log abaixo).
 semantic_seg/data/
-semantic_seg/resultados/*
-!semantic_seg/resultados/hrds-*
 semantic_seg/out/
 
 # ── Ambiente e credenciais ────────────────────────────────────

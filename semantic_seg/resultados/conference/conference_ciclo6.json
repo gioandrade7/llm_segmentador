@@ -1,0 +1,425 @@
+[
+  {
+    "offset_inicio": "# Enhancing Anti-Money Laundering: Development of a Synthetic Transaction Monitoring Dataset \n\nBerkan Oztas Deniz Cetinkaya",
+    "offset_fim": "**_Index Terms_ —Anti-Money Laundering (AML), Transaction Monitoring, Synthetic Dataset, Machine Learning, Artificial Intelligence** ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Enhancing Anti-Money Laundering: Development of a Synthetic Transaction Monitoring Dataset",
+    "motivo": "O bloco inicia no título do artigo e reúne autoria, afiliações, resumo e termos de índice. Termina imediatamente antes do marcador de seção principal \"## I. INTRODUCTION\".",
+    "texto": "# Enhancing Anti-Money Laundering: Development of a Synthetic Transaction Monitoring Dataset \n\nBerkan Oztas Deniz Cetinkaya Festus Adedoyin _Computing and Informatics Computing and Informatics Computing and Informatics Bournemouth University Bournemouth University Bournemouth University_ Bournemouth, United Kingdom Bournemouth, United Kingdom Bournemouth, United Kingdom boztsa@bournemouth.ac.uk dcetinkaya@bournemouth.ac.uk fadedoyin@bournemouth.ac.uk \n\nMarcin Budka Huseyin Dogan Gokhan Aksu _Computing and Informatics Computing and Informatics AML Transaction Monitoring Bournemouth University Bournemouth University Danske Bank Group_ Bournemouth, United Kingdom Bournemouth, United Kingdom London, United Kingdom mbudka@bournemouth.ac.uk hdogan@bournemouth.ac.uk gokhan.aksu@uk.danskebank.com \n\n**_Abstract_ —Money laundering remains a continuous global problem, necessitating the development of new enhanced transaction monitoring methods. Current anti-money laundering (AML) procedures within the industry are inefficient, and access to transaction monitoring data is limited due to legal and privacy constraints, with available data lacking true labels and diversity. This study presents a new AML transaction generator and uses it to create a dataset called SAML-D. The SAML-D dataset contains 12 features and 28 typologies, expanding beyond the existing datasets by incorporating a wider range of typologies, geographic locations, high-risk countries, and high-risk payment types. The typologies are created based on existing datasets, the literature, and semi-structured interviews with AML specialists. Additionally, machine learning experiments are conducted to present the applicability of the dataset within the field of AML and results are compared to an existing dataset. The primary purpose of the generator and dataset is to provide researchers with an additional resource to evaluate their models and facilitate comparative analysis of their results, potentially assisting the development of more advanced and capable transaction monitoring methods.** \n\n**_Index Terms_ —Anti-Money Laundering (AML), Transaction Monitoring, Synthetic Dataset, Machine Learning, Artificial Intelligence** "
+  },
+  {
+    "offset_inicio": "## I. INTRODUCTION \n\nMoney laundering is a continuous global problem and refers to the",
+    "offset_fim": "machine learning algorithms, demonstrating the utility of our data and establishing a comparison point. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "I. INTRODUCTION",
+    "motivo": "O bloco inicia no marcador da seção principal “I. INTRODUCTION” e reúne todo o texto introdutório até imediatamente antes do próximo marcador, “II. RELATED WORK”.",
+    "texto": "## I. INTRODUCTION \n\nMoney laundering is a continuous global problem and refers to the process of converting criminally attained money to appear as arising from legitimate sources [1]. Money launders often require the use of banks to launder their funds, leaving complex transactional and behavioral patterns. The anti-money laundering (AML) unit in banks is required to conduct transaction monitoring to detect and report suspicious activities to the authorities [2]. Currently, most financial institutions utilize rules-based techniques to monitor transactions. Rulesbased approaches lead to high false positive rates of 95% [3], creating redundant investigations and increasing operational costs for banks. Given the challenges associated with rulesbased approaches, there has been an increasing amount of \n\nattention in developing machine learning approaches to reduce false positives and achieve more effective results [4]. \n\nAlthough, machine learning approaches are showing promising results, accessing data is challenging. Real financial transaction data consisting of money laundering behaviors is not generally available, due to legal and privacy reasons [5] [6]. In cases where anonymized real data is available, the labeling of money laundering transactions is limited due to a lack of ground truths, and laundering transactions often going undetected [7]. The availability of synthetic money laundering data is limited with these datasets often having significant shortcomings, such as the absence of critical features or a lack of diverse money laundering typologies. \n\nThis paper introduces a novel synthetic AML transaction generator. The dataset is in tabular format and includes various features of ’suspicious’ and ’normal’ transactions conducted by different entities. The key contributions of this study involve an extension of both normal and suspicious typologies in the dataset, improving upon existing synthetic alternatives. Including new features such as geographic locations and highrisk countries adds a layer of complexity and brings a greater degree of realism to the dataset. A current challenge in the domain is comparing the results of different studies and machine learning algorithms as experiments are conducted using different datasets [8]. Our dataset can address these challenges by serving as a benchmark dataset for researchers, enabling comparison and consequently supporting more meaningful analysis. Additionally, we conducted a set of preliminary experiments using simple machine learning algorithms, demonstrating the utility of our data and establishing a comparison point. "
+  },
+  {
+    "offset_inicio": "## II. RELATED WORK \n\nAMLSim project introduces a two-component method for generating",
+    "offset_fim": "confidentiality issues (V1–V28), while the others are Time, Amount, and Class. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "II. RELATED WORK",
+    "motivo": "O bloco inicia no marcador de seção \"II. RELATED WORK\" na página 1. A continuação \"tor’ creates...\" na página 2 recompõe o primeiro parágrafo de II apesar da ordem de extração em colunas; a seção termina após a discussão de PaySim e Credit Card Fraud Detection, imediatamente antes de \"III. METHODOLOGY\".",
+    "texto": "## II. RELATED WORK \n\nAMLSim project introduces a two-component method for generating synthetic banking transaction data using a multiagent-based simulator [9]. The ‘Transaction Graph Genera-\n\n<!-- PÁGINA 2 -->\nIII. METHODOLOGY \n\ntor’ creates accounts and attributes based on an input CSV account file and establishes basic interactions between them. Suspicious transactions are then added using another CSV alert parameter file. The ‘Transaction Simulator’ uses a multi-agent program to simulate transactions within the network. The simulator mimics real-world transactions, aiming for an accurate portrayal of real-life financial behaviors. Moreover, the number of transactions can be modified during generation. Several datasets with varying amounts of transactions are provided. In this paper, we focus on the analysis of the ‘100Kvertices10Medges’ dataset. To our knowledge, AMLSim is the only synthetic dataset utilized to asses new transaction monitoring approaches in the current literature [10] [11]. However, there are limitations to AMLSim such as its singular transaction type. \n\nThe IT-AML dataset [12] is a synthetic representation of financial transactions created via a multi-agent virtual world model. The dataset is not derived from anonymized real-world individuals, rather it represents an entirely synthetic construct where various entities interact in ways that mimic real-world financial transactions. The dataset includes a collection of good and bad actors, with the latter attempting to launder money following one of the eight incorporated typologies: Fan-Out, Fan-In, Cycle, Bipartite, Stack, Random, Scatter Gather, and Gather Scatter. The typologies from AMLSim are used. The IT-AML dataset expands on the AMLSim dataset by incorporating more transaction types and typologies, making it a valuable AML dataset. A selection of datasets is provided, with varying numbers of transactions and illicit activities included. In this paper we utilized the HI-Small <u>Trans.csv set.</u> \n\nMoney Laundering Data Production (MLDP) is a dataset created during a Master’s project that simulates financial transactions [13], incorporating suspicious transactions based on traditional stages of money laundering. Despite its attention to the key money laundering stages, MLDP includes a limited number of transactions and lacks detail about the different types of money laundering methods, providing room for improvement in future synthetic datasets. \n\nOther transactional datasets have been created for the purpose of fraud detection. Although these datasets were not designed for AML purposes, they offer valuable insights such as the size and features of the datasets, due to the domain’s similarities. PaySim [14] takes a different approach by utilizing a simulator to generate synthetic financial datasets based on a month-long sample of real mobile money transactions. The method focuses on replicating the statistical patterns observed in the original dataset. The resulting dataset is vast, containing millions of transactions and unique sender/receiver IDs. The Credit Card Fraud Detection dataset [15] is a real dataset from 2013 and focuses on credit card transactions made by European cardholders. The data consists of a low percentage of fraudulent transactions and provides a large number of features for each transaction. However, 28 out of the 31 features are PCA-transformed because of confidentiality issues (V1–V28), while the others are Time, Amount, and Class. "
+  },
+  {
+    "offset_inicio": "# IV. DATASET DESCRIPTION \n\nA total of 12 features are contained in the dataset which",
+    "offset_fim": "e selected from the literature, and the typologies produced by the authors. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "IV. DATASET DESCRIPTION",
+    "motivo": "É a primeira unidade completa cujo marcador de seção está presente no trecho. Inicia em “# IV. DATASET DESCRIPTION” e termina imediatamente antes do marcador da subseção “# _A. Typologies_”.",
+    "texto": "# IV. DATASET DESCRIPTION \n\nA total of 12 features are contained in the dataset which were chosen due to their associations with anti-money laundering transactions. Fig2, presents a preview of the generated transactions. The synthetic dataset contains a comprehensive perspective of transactions across multiple banks, focusing on the United Kingdom, as opposed to creating a singular bank viewpoint of the transactions. This broader view of transaction flows enables the measurement of performance enhancements in transaction monitoring, highlighting the potential if banks were to share data. This could be valuable to encourage data sharing amongst financial institutions in the future [27]. \n\nCreating an individual bank’s viewpoint of transactions can be achieved by slightly modifying the generator. \n\nThe dataset includes ‘Time’ and ‘Date’ features denoting transactional chronology essential to identifying money laundering techniques. ’Sender’ and ’Receiver’ account details, together with time and date, uncover behavioral patterns and complex banking connections. The ‘Amount’ feature presents the transaction amounts and can highlight potentially suspicious activities through unusual transaction values. ‘Payment Type’ represents various transaction methods, each carrying distinct risk levels and regulations. The payment types included in our dataset are; credit card, debit card, cash, automated clearing house (ACH) transfers, cross-border, and cheque. Geographic context, inserted through ‘Sender Bank Location’ and ‘Receiver Bank Location’, identifies high-risk regions. High-risk countries such as Mexico, Turkey, Morocco, and the United Arab Emirates are included [21] [22]. ‘Payment Currency’ and ‘Receiver Currency’ align with location features, with mismatched instances adding complexity. Finally, the binary ‘Is Suspicious’ feature differentiates between normal and suspicious transactions, with ‘Type’ further classifying the typologies, providing deeper insights into prevalent or high-risk transactional typologies. \n\n# _A. Typologies_ \n\nA total of 28 typologies are included in the dataset, split between 11 normal and 17 suspicious. The typologies were chosen based on existing datasets [9], money laundering literature [28], and through semi-structured interviews with AML specialists. The typologies can be expressed using graphical networks to visualize the structure and flow of the transactions. There are 15 different graphical network structures for the 28 typologies. Fig 3, presents three out of the 15 different types of structures that the various typologies adopt. Multiple typologies have the same structure to increase complexity, however, the parameters can diverge significantly (i.e. transaction amounts, duration, receiver location, and entities involved). The typologies with the same structure will have different parameter values that also overlap with each other to increase intricacy, mimic real-world situations, and make detection harder. This section discusses some of the typologies included in our dataset, the ones that are selected from the literature, and the typologies produced by the authors. \n\n"
+  },
+  {
+    "offset_inicio": "# V. RESULTS \n\nWe used the proposed generator and typologies to create a synthetic transactional dataset for transaction monitoring.",
+    "offset_fim": "ally available AML datasets and perform statistical analysis. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "V. RESULTS",
+    "motivo": "É a primeira unidade completa iniciada por um marcador estrutural no trecho fornecido. Começa em “# V. RESULTS” e termina imediatamente antes da subseção “# _A. Comparison_”.",
+    "texto": "# V. RESULTS \n\nWe used the proposed generator and typologies to create a synthetic transactional dataset for transaction monitoring. The parameters of the dataset were drawn from various sources to enhance credibility and practicality. The knowledge and experience of an AML specialist’s input was the main source, which played a fundamental role in deciding the parameters for the normal and suspicious typologies. The criteria for setting the parameters were also determined from assessing the AML literature [36] and existing transaction datasets [9] [12]. In this section, we compare our dataset to publicly available AML datasets and perform statistical analysis."
+  },
+  {
+    "offset_inicio": "# _A. Comparison_ \n\nThis section presents the analysis and comparison of datasets specifically designed for money laundering research.",
+    "offset_fim": "features and typologies facilitating effective and complex analysis of transaction monitoring approaches. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "A. Comparison",
+    "motivo": "A subseção inicia no marcador “# _A. Comparison_” na página 4 e abrange seu texto contínuo, incluindo as tabelas, até imediatamente antes do marcador da subseção seguinte, “# _B. Experiment_”, na página 5.",
+    "texto": "# _A. Comparison_ \n\nThis section presents the analysis and comparison of datasets specifically designed for money laundering research. These datasets comprise of AMLSim, IT-AML, MLDP, and\n\n<!-- PÁGINA 5 -->\nTABLE I \n\nCOMPARISON OF DIFFERENT TRANSACTION DATASETS \n\n|**Dataset Name**|**No. of**<br>**Features**|**No. of**<br>**Transactions**|**No. of**<br>**Accounts**|**No. of SAR**<br>**transactions**|**Types of Transactions**|\n|---|---|---|---|---|---|\n|**AMLSim**|8|12 476 012|100 000|17052 (0.137%)|1 - Transfer|\n|**PaySim**|11|6 362 620|6 353 307|8213 (0.129%)|5 - Cash-in, Cash-out, Debit,<br>Payment, Transfer|\n|**IT-AML**|11|5 078 345|515 000|5177 (0.102%)|7 - Credit Card, ACH, Wire,<br>Cheque, Cash, Bitcoin,<br>Reinvestment|\n|**Credit Card Fraud Detection**|31 (anonymized)|284 807|N/a|484 (0.172%)|N/a|\n|**MLDP**|7|2340|2340|1399 (60%)|2 - Transfer, Cash-in|\n|**SAML-D**|12|9 411 384|749 507|11658 (0.124%)|6 - Credit Card, Debit Card, ACH,<br>Cheque, Cash, Cross border|\n\n\n\nTABLE II \n\nCOMPARATIVE ANALYSIS OF KEY CHARACTERISTICS ACROSS TRANSACTION DATASETS \n\n||**AMLSim**|**PaySim**|**IT-AML**|**Credit Card**<br>**Fraud Detection**|**MLDP**|**SAML-D**|\n|---|---|---|---|---|---|---|\n|**Suspicious Typology Explanation**|Yes (3)|No|Yes (8)|No|No|Yes (17)|\n|**Normal Typology Explanation**|Yes (6)|No|Yes (6)|No|No|Yes (11)|\n|**Model Multiple Currencies**|No|No|Yes|N/A|No|Yes|\n|**Model Geographic Locations**|No|No|No|N/A|No|Yes|\n|**Labelled Typologies**|Yes|No|No|No|No|Yes|\n\n\n\nour newly proposed Synthetic Anti-Money Laundering Dataset (SAML-D). Tables I and II provide a comparison of the datasets. \n\nThe AMLSim, IT-AML, and SAML-D datasets all include a practical and large amount of transactions. They incorporate a realistic ratio of money laundering to normal transactions, producing an imbalanced dataset that represents real-world circumstances accurately. Additionally, these datasets provide flexibility by allowing for an adjustable volume of transactions during the generation phase. Conversely, the MLDP dataset offers a comparatively limited scope with only 2340 transactions. Moreover, due to an unrealistic proportion of money laundering to normal transactions, the MLDP dataset deviates from what is typically considered as real-world contexts. The IT-AML and SAML-D datasets both include various types of transactions, hence offering a more complete perspective than other datasets in comparison. For instance, AMLSim and MLDP include one and two transaction types respectively, presenting a more simplified view of transaction dynamics. The SAML-D dataset includes 28 typologies offering a richer and more nuanced scope compared to the 14 in IT-AML, 9 in AMLSim, and 3 in MLDP. The explanations for each typology are available in the SAML-D, IT-AML, and AMLSim datasets, facilitating a deeper understanding of the data. Whereas, in the MLDP dataset no explanation of the types of money laundering activities is given, though they are labeled within the data. Likewise, the SALM-D dataset labels each typology, enhancing the interpretability of the dataset meaning \n\na higher accuracy and performance can be reached. The typology label feature is not present in either AMLSim or ITAML. A unique characteristic of the IT-AML and SAML-D datasets is the incorporation of transactions involving multiple currencies, which adds a layer of complexity and a higher degree of realism to these datasets. The SAML-D dataset further enhances its value and realism through the addition of geographic locations, even featuring high-risk countries. This feature aligns the dataset more closely with features often employed in the industry. \n\nOverall, our proposed dataset, SAML-D, provides a detailed and robust resource for transaction monitoring in the field of AML. SAML-D contributes to the AML domain by introducing innovative features and typologies facilitating effective and complex analysis of transaction monitoring approaches. \n\n"
+  },
+  {
+    "offset_inicio": "# _B. Experiment_ \n\nIn this section we conduct basic machine learning experiments on",
+    "offset_fim": "exploring more advanced or tailored machine learning models. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 7,
+    "titulo": "B. Experiment",
+    "motivo": "O bloco inicia no marcador de subseção “B. Experiment” na página 5 e reúne todo o relato dos experimentos, incluindo a continuação após figuras e quebra de página. Termina imediatamente antes do próximo marcador estrutural, “VI. CONCLUSION”, na página 7.",
+    "texto": "# _B. Experiment_ \n\nIn this section we conduct basic machine learning experiments on our newly developed dataset, SAML-D, and the AMLSim dataset, to detect suspicious transactions. The AMLSim dataset serves as our comparison point due to its utilization within the AML literature. We aim to establish the SAML-D dataset’s suitability, purpose, and applicability within the field of AML. \n\nThe machine learning algorithms chosen for our experiments comprise various approaches to better capture the dataset’s dynamics. These include Support Vector Machines (SVM), a distance-based model adept at handling complex\n\n<!-- PÁGINA 6 -->\nclass boundaries; Na¨ıve Bayes (NB), a probabilistic model, Decision Trees, a tree-based model ideal for understanding feature importance and their interplay; and Random Forest, an ensemble model. These methods were chosen as they are some of the most utilized techniques in the literature [8] [37]. \n\nData analysis was the first step to get a better understanding of the data, identify the datatypes for each feature, and check for missing values. Next, the data was pre-processed, transforming it into a suitable format for the chosen machine learning algorithms. Preprocessing involved converting categorical features, such as payment type, into numerical form by the use of one-hot encoding and label encoding. This allowed the algorithms to interpret the information more effectively [37]. The date feature was split into year, month, and day, while the is fraud feature in AMLSim was converted from a boolean datatype to an integer. After redundant columns were dropped, both datasets were standardized rescaling the numerical variables to a comparable scale. This was especially important for the transaction amount feature, given its excessive range. Also, some algorithms like SVM are sensitive to the scale of the input features and therefore perform better on standardized data. \n\nWe adopted a 70-15-15 stratified train-validation-test split for our experiments. The 70% training data enabled to effectively fit the model to the data, while the 15% validation data was utilized for preliminary performance evaluation. Finally, the 15% test data was used to evaluate the models. This approach helped prevent model overfitting and enabled generalized results. Due to the constraint of a single GPU, our experiments were conducted on a representative subset of the datasets. \n\nThe evaluation metrics used to assess the performance of our models include the True Positive Rate (TPR), True Negative Rate (TNR), False Positive Rate (FPR), False Negative Rate (FNR), and Area Under the Curve (AUC) score. These metrics are widely used in the AML literature and provide valuable insights into the model’s performance [38]. The TPR measures the proportion of actual suspicious transactions that are correctly identified. Assessing the TPR is crucial, as missing suspicious transactions can result in significant consequences for banks in the form of fines and potential legal action by authorities. The TNR indicates the percentage of normal transactions that are correctly labeled as normal. The evaluation metrics also assessed the model’s error. The FPR quantifies the transactions that are incorrectly labeled as suspicious by the model, which can lead to high operational costs and wasted resources for banks. On the contrary, the FNR presents the rate of suspicious transactions that are mislabelled as normal and go undetected by the institution. A high FNR can result in reputational damage and regulatory fines. The AUC score represents the model’s overall performance and efficiency in classifying between normal and money laundering transactions. In summary, the chosen evaluation methods provide both an overview of the model’s performance and a nuanced analysis of its specific elements. \n\nAll the model’s performances had a lower TPR and higher \n\n\n\nFig. 4. Experiments results for the SAML-D dataset \n\n\n\nFig. 5. Experiments results for the AMLSim dataset \n\n\n\nFig. 6. Comparison of AUC score for the SAML-D and AMLSim datasets \n\nFNR on the SAML-D dataset compared to the AMLSim dataset, as shown in Fig 4 and Fig 5. The results indicate that these models encountered challenges in detecting money laundering transactions in the SAML-D dataset, implying a higher level of complexity or deception in the money laundering structures and patterns. Despite the lower FPR observed in the AMLSim dataset, the models successfully detected most of the money laundering transactions. This capability is crucial and of greater importance for financial institutions than having a model with a higher FPR, as failure to detect suspicious behaviors could potentially lead to fines and reputational damage. The AUC score presents a similar trend with the SAML-D dataset attaining a lower score for\n\n<!-- PÁGINA 7 -->\nevery model, shown in Fig 6. This emphasizes the difficulty these machine learning models had in detecting suspicious transactions in the SAML-D dataset. Our findings demonstrate that while these machine learning models perform well on the AMLSim dataset their performance weakens on the SAML dataset. This highlights the need for sophisticated and robust models. Potential approaches could involve feature engineering to produce more predictive attributes and exploring more advanced or tailored machine learning models. "
+  },
+  {
+    "offset_inicio": "# VI. CONCLUSION \n\nIn conclusion, this research addresses the challenge of accessing AML",
+    "offset_fim": "complex machine learning algorithms on the SAML-D \n\ndataset, leading to further improvements in detecting suspicious activities. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "VI. CONCLUSION",
+    "motivo": "Inicia no marcador da seção VI e reúne todos os parágrafos conclusivos, terminando imediatamente antes do marcador da próxima unidade, \"# REFERENCES\".",
+    "texto": "# VI. CONCLUSION \n\nIn conclusion, this research addresses the challenge of accessing AML transaction monitoring data, which is typically unavailable due to legal and privacy constraints, or limited in terms of true labels and diversity. Our novel synthetic AML transaction generator provides a valuable resource to advance transaction monitoring in the field of AML. Using the generator a dataset called SAML-D was created. The primary purpose of the generator and dataset is to provide researchers with an additional resource to evaluate their models and facilitate a comparative analysis of their results. \n\nThe SAML-D dataset contains 12 features and 28 typologies, including both ’normal’ and ’suspicious’ entities. The typologies were chosen and created based on existing datasets, the literature, and 8 semi-structured interviews with AML specialists. Our approach brings significant enhancements compared to other synthetic datasets such as AMLSim, ITAML, and MLDP. Key enhancements include the introduction of geographic locations and the attention given to high-risk payment types, giving the dataset a high degree of realism that reflects the complexities seen in real-world industry situations. Additionally, the SAML-D dataset includes a vaster selection of typologies offering a richer and more nuanced scope compared to the other datasets. \n\nIn testing the SAML-D dataset against the more established AMLSim dataset through machine learning experiments, we found that models had more difficulty identifying suspicious transactions within the SAML-D dataset. This implies a higher level of complexity and difficulty in the money laundering patterns and structures, making SAML-D a valuable resource for future studies in this domain. \n\nDespite its contribution, it is vital to recognize that the SAML-D dataset has limitations. As it is a synthetic dataset, it will not fully capture the intricacy and unpredictability of realworld transactions. Some parameters, while based on informed estimations and expert consultations, may not embody all realworld scenarios. Moreover, the typologies included will not encapsulate all possible money laundering strategies, particularly due to the criminal’s ever-changing techniques. However, the SAML-D dataset offers a resource for researchers and practitioners to conduct experiments and compare their findings, potentially assisting the development of more advanced and capable transaction monitoring methods. \n\nAs for future work, we aim to conduct experiments with more complex machine learning algorithms on the SAML-D \n\ndataset, leading to further improvements in detecting suspicious activities. "
+  },
+  {
+    "offset_inicio": "# REFERENCES",
+    "offset_fim": "# REFERENCES",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "REFERENCES",
+    "motivo": "O título da lista de referências constitui um bloco próprio e termina imediatamente antes da primeira entrada bibliográfica, iniciada por \"- [1]\".",
+    "texto": "# REFERENCES"
+  },
+  {
+    "offset_inicio": "- [1] M. S. Korejo, R. Rajamanickam, and M. H. Md. Said, ”The concept of money",
+    "offset_fim": "Money Laundering Control, vol. 24, no. 4, pp. 725-736, 2021.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [1]",
+    "motivo": "A entrada bibliográfica [1] constitui uma unidade própria, iniciada no marcador “[1]” e encerrada imediatamente antes da referência seguinte, “[2]”.",
+    "texto": "- [1] M. S. Korejo, R. Rajamanickam, and M. H. Md. Said, ”The concept of money laundering: a quest for legal definition,” Journal of Money Laundering Control, vol. 24, no. 4, pp. 725-736, 2021."
+  },
+  {
+    "offset_inicio": "- [2] M. A. Naheem, ”Money laundering: A primer for banking staff,” International",
+    "offset_fim": "nal of Disclosure and Governance, vol. 13, no. 2, pp.135-56, 2016.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [2]",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia em “- [2]” e termina antes da entrada seguinte, “- [3]”.",
+    "texto": "- [2] M. A. Naheem, ”Money laundering: A primer for banking staff,” International Journal of Disclosure and Governance, vol. 13, no. 2, pp.135-56, 2016."
+  },
+  {
+    "offset_inicio": "[3] E. Eifrem, ”How graph technology can map patterns to mitigate moneylaundering ri",
+    "offset_fim": "map patterns to mitigate moneylaundering risk,” Computer Fraud & Security, vol. 2019, no. 10, pp.6-8, 2019.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [3] — E. Eifrem",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador [3] e encerrada imediatamente antes do marcador da referência seguinte, [4].",
+    "texto": "[3] E. Eifrem, ”How graph technology can map patterns to mitigate moneylaundering risk,” Computer Fraud & Security, vol. 2019, no. 10, pp.6-8, 2019."
+  },
+  {
+    "offset_inicio": "- [4] A. I. Canhoto, ”Leveraging machine learning in the global fight against money laundering and terrorism financing: An affordances perspective,”",
+    "offset_fim": "ournal of Business Research, pp. 441-452, 2021. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [4] — A. I. Canhoto",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho fornecido; inicia em “[4]” e termina imediatamente antes da referência seguinte, “[5]”.",
+    "texto": "- [4] A. I. Canhoto, ”Leveraging machine learning in the global fight against money laundering and terrorism financing: An affordances perspective,” Journal of Business Research, pp. 441-452, 2021. "
+  },
+  {
+    "offset_inicio": "- [5] M. Jullum, A. Løland, R. B. Huseby, G. Anonsen, and J. Lorentzen, ”De-<sup>˚</sup> tecting money laundering transactions with machine learning,” Journal of Money Laundering Control, vol. 23, no. 1, pp. 173-186, 2020. ",
+    "offset_fim": "ng transactions with machine learning,” Journal of Money Laundering Control, vol. 23, no. 1, pp. 173-186, 2020. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [5]",
+    "motivo": "A primeira unidade completa é a entrada bibliográfica [5], que começa no marcador “- [5]” e termina imediatamente antes do marcador da referência seguinte, “- [6]”.",
+    "texto": "- [5] M. Jullum, A. Løland, R. B. Huseby, G. Anonsen, and J. Lorentzen, ”De-<sup>˚</sup> tecting money laundering transactions with machine learning,” Journal of Money Laundering Control, vol. 23, no. 1, pp. 173-186, 2020. "
+  },
+  {
+    "offset_inicio": "- [6] X. Cheng et al., ”Combating emerging financial risks in the big data era: A perspective review,” Fundamental Research, vol. 1, no. 5, pp. 595-606, 2021. ",
+    "offset_fim": "”Combating emerging financial risks in the big data era: A perspective review,” Fundamental Research, vol. 1, no. 5, pp. 595-606, 2021. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [6] — X. Cheng et al.",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada pelo marcador “- [6]” e encerrada imediatamente antes do marcador da referência seguinte, “- [7] Europol”.",
+    "texto": "- [6] X. Cheng et al., ”Combating emerging financial risks in the big data era: A perspective review,” Fundamental Research, vol. 1, no. 5, pp. 595-606, 2021. "
+  },
+  {
+    "offset_inicio": "- [7] Europol, ”From Suspicion to Action: Converting financial intelligence into greater",
+    "offset_fim": "https://www.europol.europa.eu/cms/sites/default/files/documents/ ql-01-17-932-en-c <u>pf</u> final.pdf.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [7] — Europol",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador “[7]” e encerrada imediatamente antes do marcador da referência seguinte, “[8]”.",
+    "texto": "- [7] Europol, ”From Suspicion to Action: Converting financial intelligence into greater operational impact,” 2017. Available: https://www.europol.europa.eu/cms/sites/default/files/documents/ ql-01-17-932-en-c <u>pf</u> final.pdf."
+  },
+  {
+    "offset_inicio": "- [8] B. Oztas, D. Cetinkaya, F. Adedoyin, and M. Budka, “Enhancing Transaction",
+    "offset_fim": "in 2022 IEEE International Conference on eBusiness Engineering (ICEBE), pp. 26–28, 2022.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [8]",
+    "motivo": "A referência bibliográfica [8] é uma unidade individual; inicia no marcador \"[8]\" e termina imediatamente antes do marcador da referência [9].",
+    "texto": "- [8] B. Oztas, D. Cetinkaya, F. Adedoyin, and M. Budka, “Enhancing Transaction Monitoring Controls to Detect Money Laundering Using Machine Learning,” in 2022 IEEE International Conference on eBusiness Engineering (ICEBE), pp. 26–28, 2022."
+  },
+  {
+    "offset_inicio": "- [9] T. Suzumura and H. Kanezashi, ”Anti-Money Laundering Datasets: InPlusLab Anti-Money Laundering DataDatasets,” 2021.",
+    "offset_fim": "2021. [Online]. Available: http://github.com/IBM/AMLSim/.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [9]",
+    "motivo": "A entrada bibliográfica [9] é uma unidade individual; inicia no marcador \"- [9]\" e termina imediatamente antes da referência [10].",
+    "texto": "- [9] T. Suzumura and H. Kanezashi, ”Anti-Money Laundering Datasets: InPlusLab Anti-Money Laundering DataDatasets,” 2021. [Online]. Available: http://github.com/IBM/AMLSim/."
+  },
+  {
+    "offset_inicio": "- [10] A. Tundis, S. Nemalikanti, and M. M¨uhlh¨auser, ”Fighting Organized Crime by Automatically Detecting Money",
+    "offset_fim": "Proceedings of the 16th International Conference on Availability, Reliability and Security, Vienna, Austria, 2021, Art. No. 38.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [10]",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador [10] e encerrada imediatamente antes do marcador da referência seguinte, [11].",
+    "texto": "- [10] A. Tundis, S. Nemalikanti, and M. M¨uhlh¨auser, ”Fighting Organized Crime by Automatically Detecting Money Laundering-Related Financial Transactions,” in Proceedings of the 16th International Conference on Availability, Reliability and Security, Vienna, Austria, 2021, Art. No. 38."
+  },
+  {
+    "offset_inicio": "- [11] M. Shokry, A. Ehab, M. A. Rizka, and N. M. Labib, ”Counter terrorism finance by detecting money laundering hidden networks using unsupervised machine learning algorithm,”",
+    "offset_fim": "using unsupervised machine learning algorithm,” International Conference on ICT, Society & Human Beings, pp. 89-97, 2020.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [11]",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador “[11]” e termina antes do marcador da referência seguinte, “[12]”.",
+    "texto": "- [11] M. Shokry, A. Ehab, M. A. Rizka, and N. M. Labib, ”Counter terrorism finance by detecting money laundering hidden networks using unsupervised machine learning algorithm,” International Conference on ICT, Society & Human Beings, pp. 89-97, 2020."
+  },
+  {
+    "offset_inicio": "- [12] E. Altman et al., ”Realistic Synthetic Financial Transactions for AntiMoney Laundering Models,”",
+    "offset_fim": "Money Laundering Models,” arXiv preprint arXiv:2306.16424, 2023.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [12] — E. Altman et al.",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco começa no marcador “[12]” e termina imediatamente antes do marcador “[13]”.",
+    "texto": "- [12] E. Altman et al., ”Realistic Synthetic Financial Transactions for AntiMoney Laundering Models,” arXiv preprint arXiv:2306.16424, 2023."
+  },
+  {
+    "offset_inicio": "- [13] M. Mahootiha, ”Money laundering data,” 2020. [Online]. Available: https://www.kaggle.com/datasets/maryam1212/money-laundering-data.",
+    "offset_fim": "- [13] M. Mahootiha, ”Money laundering data,” 2020. [Online]. Available: https://www.kaggle.com/datasets/maryam1212/money-laundering-data.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [13]",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador [13] e termina antes do marcador da referência seguinte, [14].",
+    "texto": "- [13] M. Mahootiha, ”Money laundering data,” 2020. [Online]. Available: https://www.kaggle.com/datasets/maryam1212/money-laundering-data."
+  },
+  {
+    "offset_inicio": "- [14] E. A. Lopez-Rojas and S. Axelsson, ”Money laundering detection using synthetic",
+    "offset_fim": "Workshop of the Swedish Artificial Intelligence Society (SAIS), Link¨oping University Electronic Press, Link¨oping University, 2012.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [14]",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador [14] e termina imediatamente antes do marcador da referência seguinte, [15].",
+    "texto": "- [14] E. A. Lopez-Rojas and S. Axelsson, ”Money laundering detection using synthetic data,” in Annual Workshop of the Swedish Artificial Intelligence Society (SAIS), Link¨oping University Electronic Press, Link¨oping University, 2012."
+  },
+  {
+    "offset_inicio": "- [15] Y. A. Le Borgne, W. Siblini, B. Lebichot, and G. Bontempi, Reproducible",
+    "offset_fim": "https://github.com/Fraud-Detection-Handbook/ fraud-detection-handbook.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [15]",
+    "motivo": "A referência bibliográfica [15] é a primeira unidade completa do trecho, iniciada em seu marcador e encerrada imediatamente antes da referência [16].",
+    "texto": "- [15] Y. A. Le Borgne, W. Siblini, B. Lebichot, and G. Bontempi, Reproducible Machine Learning for Credit Card Fraud Detection - Practical Handbook, Universit´e Libre de Bruxelles, 2022. [Online]. Available: https://github.com/Fraud-Detection-Handbook/ fraud-detection-handbook."
+  },
+  {
+    "offset_inicio": "- [16] S. H. Chen and R. Venkatachalam, “Agent-based modelling as a foundation for big data,” Journal of Economic Methodology,",
+    "offset_fim": "foundation for big data,” Journal of Economic Methodology, vol. 24, no. 4, pp. 362–383, 2017.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [16]",
+    "motivo": "A referência bibliográfica [16] é uma unidade individual; inicia em “- [16]” e termina após “2017.”, imediatamente antes da referência [17].",
+    "texto": "- [16] S. H. Chen and R. Venkatachalam, “Agent-based modelling as a foundation for big data,” Journal of Economic Methodology, vol. 24, no. 4, pp. 362–383, 2017."
+  },
+  {
+    "offset_inicio": "[17] D. Valbuena, P. H. Verburg, and A. K. Bregt, “A method to define a typology for agent-based analysis in regional land-use research,”",
+    "offset_fim": "analysis in regional land-use research,” Agriculture, Ecosystems & Environment, vol. 128, no. 1, pp. 27–36, 2008.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [17]",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada pelo marcador [17] e encerrada imediatamente antes da entrada seguinte, [18].",
+    "texto": "[17] D. Valbuena, P. H. Verburg, and A. K. Bregt, “A method to define a typology for agent-based analysis in regional land-use research,” Agriculture, Ecosystems & Environment, vol. 128, no. 1, pp. 27–36, 2008."
+  },
+  {
+    "offset_inicio": "- [18] K. Plaksiy, A. Nikiforov, and N. Miloslavskaya, “Applying big data",
+    "offset_fim": "terrorism,” in 2018 6th International Conference on Future Internet of Things and Cloud Workshops (FiCloudW), pp. 70–77, IEEE, 2018.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [18]",
+    "motivo": "Entrada bibliográfica individual iniciada pelo marcador “[18]” e encerrada imediatamente antes da referência [19].",
+    "texto": "- [18] K. Plaksiy, A. Nikiforov, and N. Miloslavskaya, “Applying big data technologies to detect cases of money laundering and counter financing of terrorism,” in 2018 6th International Conference on Future Internet of Things and Cloud Workshops (FiCloudW), pp. 70–77, IEEE, 2018."
+  },
+  {
+    "offset_inicio": "- [19] Ping. He, “A typological study on money laundering,” Journal of Money Laundering",
+    "offset_fim": "y Laundering Control, vol. 13, no. 1, pp. 15–32, 2010.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [19]",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia em “[19]” e termina ao fim da referência, imediatamente antes do marcador “[20]”.",
+    "texto": "- [19] Ping. He, “A typological study on money laundering,” Journal of Money Laundering Control, vol. 13, no. 1, pp. 15–32, 2010."
+  },
+  {
+    "offset_inicio": "- [20] S. M. Irwin, A. Raymond Choo, and L. Liu, “Modelling of money laundering",
+    "offset_fim": "ering and terrorism financing typologies,” Journal of Money Laundering Control, vol. 15, no. 3, pp. 316–335, 2012.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Referência [20]",
+    "motivo": "Entrada bibliográfica individual, iniciada pelo marcador “[20]” e encerrada imediatamente antes do marcador da referência seguinte “[21]”, na página 8.",
+    "texto": "- [20] S. M. Irwin, A. Raymond Choo, and L. Liu, “Modelling of money laundering and terrorism financing typologies,” Journal of Money Laundering Control, vol. 15, no. 3, pp. 316–335, 2012."
+  },
+  {
+    "offset_inicio": "- [21] “National risk assessment of money laundering and terrorist financing 2020,” UK Government, 2020. [Online]. Available:",
+    "offset_fim": "https://www.gov.uk/government/publications/national-risk-assessmentof-money-laundering-and-terrorist-financing-2020",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [21]",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador “[21]” e termina imediatamente antes do marcador da referência seguinte, “[22]”.",
+    "texto": "- [21] “National risk assessment of money laundering and terrorist financing 2020,” UK Government, 2020. [Online]. Available: https://www.gov.uk/government/publications/national-risk-assessmentof-money-laundering-and-terrorist-financing-2020"
+  },
+  {
+    "offset_inicio": "- [22] “High-risk and other monitored jurisdictions - June 2023,” Financial Action",
+    "offset_fim": "https://www.fatf-gafi.org/en/publications/High-risk-and-othermonitored-jurisdictions/Increased-monitoring-june-2023.html ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [22] — FATF, High-risk and other monitored jurisdictions",
+    "motivo": "A primeira unidade completa é a entrada bibliográfica [22], iniciada em “- [22]” e encerrada imediatamente antes do marcador da referência seguinte, “- [23]”.",
+    "texto": "- [22] “High-risk and other monitored jurisdictions - June 2023,” Financial Action Task Force (FATF), 2023. [Online]. Available: https://www.fatf-gafi.org/en/publications/High-risk-and-othermonitored-jurisdictions/Increased-monitoring-june-2023.html "
+  },
+  {
+    "offset_inicio": "- [23] M. C. Johnson, and S. R. Kessler, “The art and science of semi-structured",
+    "offset_fim": "prehensive guide for researchers,” Qualitative Research Journal, vol. 21, pp. 131–147, 2019. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [23]",
+    "motivo": "A entrada bibliográfica [23] é uma unidade de referência individual; inicia no marcador “- [23]” e termina imediatamente antes do marcador da referência seguinte, “- [24]”.",
+    "texto": "- [23] M. C. Johnson, and S. R. Kessler, “The art and science of semi-structured interviewing: A comprehensive guide for researchers,” Qualitative Research Journal, vol. 21, pp. 131–147, 2019. "
+  },
+  {
+    "offset_inicio": "- [24] J. de J. Rocha-Salazar, M. J. Segovia-Vargas, and M. del M. CamachoMi˜nano,",
+    "offset_fim": "indicator,” Expert Systems with Applications, vol. 169, 114470, 2021. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [24]",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada pelo marcador “[24]” (com o prefixo de lista) e encerrada imediatamente antes da entrada seguinte, “[25]”.",
+    "texto": "- [24] J. de J. Rocha-Salazar, M. J. Segovia-Vargas, and M. del M. CamachoMi˜nano, “Money laundering and terrorism financing detection using neural networks and an abnormality indicator,” Expert Systems with Applications, vol. 169, 114470, 2021. "
+  },
+  {
+    "offset_inicio": "- [25] R. Desrousseaux, G. Bernard and J. -J. Mariage, “Profiling Money Laundering",
+    "offset_fim": "International Conference on Tools with Artificial Intelligence (ICTAI), Washington, DC, USA, 2021, pp. 364–369.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [25]",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador “[25]” e termina no ponto final da referência, imediatamente antes do marcador “[26]”.",
+    "texto": "- [25] R. Desrousseaux, G. Bernard and J. -J. Mariage, “Profiling Money Laundering with Neural Networks: a Case Study on Environmental Crime Detection,” in 2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI), Washington, DC, USA, 2021, pp. 364–369."
+  },
+  {
+    "offset_inicio": "- [26] Z. Rouhollahi, A. Beheshti, S. Mousaeirad, and S. R. Goluguri, “Towards",
+    "offset_fim": "Integration and Web Intelligence, Linz, Austria, 2022, pp. 538—546.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [26]",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador “- [26]” e termina no ponto final da referência, imediatamente antes do marcador da referência [27].",
+    "texto": "- [26] Z. Rouhollahi, A. Beheshti, S. Mousaeirad, and S. R. Goluguri, “Towards Proactive Financial Crime and Fraud Detection through Artificial Intelligence and RegTech Technologies,” in The 23rd International Conference on Information Integration and Web Intelligence, Linz, Austria, 2022, pp. 538—546."
+  },
+  {
+    "offset_inicio": "- [27] M. Betron, “The state of anti-fraud and AML measures in the banking industry,”",
+    "offset_fim": "Computer Fraud & Security, vol. 2012, no. 5, pp. 5–7, 2012.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [27] — M. Betron",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia em “- [27]” e termina após “2012.”, imediatamente antes da referência [28].",
+    "texto": "- [27] M. Betron, “The state of anti-fraud and AML measures in the banking industry,” Computer Fraud & Security, vol. 2012, no. 5, pp. 5–7, 2012."
+  },
+  {
+    "offset_inicio": "- [28] J. Simser, “Money laundering: emerging threats and trends,” Journal of Money",
+    "offset_fim": "emerging threats and trends,” Journal of Money Laundering Control, vol. 16, no. 1, pp. 41–54, 2013.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [28] — J. Simser",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador [28] e termina após “2013.”, imediatamente antes da entrada seguinte, marcada por [29].",
+    "texto": "- [28] J. Simser, “Money laundering: emerging threats and trends,” Journal of Money Laundering Control, vol. 16, no. 1, pp. 41–54, 2013."
+  },
+  {
+    "offset_inicio": "- [29] H. Heinrich-B¨oll-Stiftung and R. Sch¨onenberg, Eds., Transnational Organized",
+    "offset_fim": "Hallenge to Democracy, Transcript Verlag, 2013. [Online]. Available: http://www.jstor.org/stable/j.ctv1fxh0d ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [29]",
+    "motivo": "A primeira unidade completa é a entrada bibliográfica [29], que começa no marcador \"- [29]\" e termina imediatamente antes do marcador da referência seguinte, \"- [30]\".",
+    "texto": "- [29] H. Heinrich-B¨oll-Stiftung and R. Sch¨onenberg, Eds., Transnational Organized Crime: Analyses of a Global Challenge to Democracy, Transcript Verlag, 2013. [Online]. Available: http://www.jstor.org/stable/j.ctv1fxh0d "
+  },
+  {
+    "offset_inicio": "- [30] M. Riccardi and M. Levi, “Cash, Crime and Anti-Money Laundering,” in",
+    "offset_fim": "ds. Cham: Palgrave Macmillan, 2018. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [30]",
+    "motivo": "A entrada bibliográfica [30] é uma unidade própria e começa no marcador “- [30]”; termina imediatamente antes do marcador da referência seguinte, “- [31]”.",
+    "texto": "- [30] M. Riccardi and M. Levi, “Cash, Crime and Anti-Money Laundering,” in The Palgrave Handbook of Criminal and Terrorism Financing Law, C. King, C. Walker, and J. Gurul´e, Eds. Cham: Palgrave Macmillan, 2018. "
+  },
+  {
+    "offset_inicio": "- [31] M. Starnini et al., “Smurf-Based Anti-money Laundering in TimeEvolving Transaction Networks,” in Machine Learning",
+    "offset_fim": "N. Kourtellis, B. Hammer, and J. A. Lozano, Eds. Cham: Springer, 2021.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [31]",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia no marcador “[31]” e termina ao fim da referência, imediatamente antes da entrada “[32]”.",
+    "texto": "- [31] M. Starnini et al., “Smurf-Based Anti-money Laundering in TimeEvolving Transaction Networks,” in Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track, vol. 12978, Y. Dong, N. Kourtellis, B. Hammer, and J. A. Lozano, Eds. Cham: Springer, 2021."
+  },
+  {
+    "offset_inicio": "- [32] M. M. El-Banna, M. H. Khafagy and H. M. El Kadi, “Smurf Detector: a Detection",
+    "offset_fim": "in 2020 International Conference on Innovative Trends in Communication and Computer Engineering (ITCE), Aswan, Egypt, 2020, pp. 64–71.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [32]",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia em “- [32]” e termina ao fim da referência, imediatamente antes do marcador “- [33]”.",
+    "texto": "- [32] M. M. El-Banna, M. H. Khafagy and H. M. El Kadi, “Smurf Detector: a Detection technique of criminal entities involved in Money Laundering,” in 2020 International Conference on Innovative Trends in Communication and Computer Engineering (ITCE), Aswan, Egypt, 2020, pp. 64–71."
+  },
+  {
+    "offset_inicio": "- [33] B. Unger and E. M. Busuioc, “The Scale and Impacts of Money Laundering,”",
+    "offset_fim": "n]. Available: http://www.loc.gov/catdir/toc/ecip074/2006035573.html",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [33] — B. Unger e E. M. Busuioc",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador “- [33]” e termina imediatamente antes da entrada seguinte, “- [34]”.",
+    "texto": "- [33] B. Unger and E. M. Busuioc, “The Scale and Impacts of Money Laundering,” Edward Elgar, Cheltenham, UK; Northampton, MA, 2007. [Online]. Available: http://www.loc.gov/catdir/toc/ecip074/2006035573.html"
+  },
+  {
+    "offset_inicio": "- [34] J. McDowell and G. Novis, “The consequences of money laundering and financial",
+    "offset_fim": "crime,” Econ. Perspect., An Electron. J. U.S. Dep. State, vol. 6, no. 2, May 2001.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [34]",
+    "motivo": "Cada entrada bibliográfica constitui uma unidade própria. O bloco inicia em “- [34]” e termina no ponto final da referência, imediatamente antes da entrada “[35].”",
+    "texto": "- [34] J. McDowell and G. Novis, “The consequences of money laundering and financial crime,” Econ. Perspect., An Electron. J. U.S. Dep. State, vol. 6, no. 2, May 2001."
+  },
+  {
+    "offset_inicio": "- [35] S. Gao, D. Xu, H. Wang and Y. Wang, “Intelligent Anti-Money Laundering",
+    "offset_fim": "t. Conf. Serv. Oper. Logist., Informatics, Shanghai, China, 2006, pp. 851-856.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [35]",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia em “- [35]” e termina ao fim da referência, imediatamente antes de “- [36]”.",
+    "texto": "- [35] S. Gao, D. Xu, H. Wang and Y. Wang, “Intelligent Anti-Money Laundering System,” in 2006 IEEE Int. Conf. Serv. Oper. Logist., Informatics, Shanghai, China, 2006, pp. 851-856."
+  },
+  {
+    "offset_inicio": "- [36] M. A. Naheem, “Money laundering: A primer for banking staff,” Int. J. Disclos.",
+    "offset_fim": "n. 13, no. 2, pp. 135-156, May 2016.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [36] — M. A. Naheem",
+    "motivo": "É uma entrada bibliográfica individual, iniciada pelo marcador [36] e encerrada imediatamente antes da referência seguinte, [37].",
+    "texto": null
+  },
+  {
+    "offset_inicio": "- [37] R. M. Suresh and R. Padmajavalli, “An overview of data preprocessing in data and web usage mining,”",
+    "offset_fim": "in 2006 1st Int. Conf. Digit. Inform. Manage., pp. 193-198, IEEE, 2006.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [37]",
+    "motivo": "A referência [37] é a primeira unidade bibliográfica completa visível; inicia no marcador “- [37]” e termina antes do marcador da referência seguinte, “- [38]”.",
+    "texto": "- [37] R. M. Suresh and R. Padmajavalli, “An overview of data preprocessing in data and web usage mining,” in 2006 1st Int. Conf. Digit. Inform. Manage., pp. 193-198, IEEE, 2006."
+  },
+  {
+    "offset_inicio": "- [38] A. A. S. Alsuwailem and A. K. J. Saudagar, “Anti-money laundering systems: a systematic literature review,” J. Money Laund. Control, vol. 23, no. 4, pp. 833-848, 2020.",
+    "offset_fim": "- [38] A. A. S. Alsuwailem and A. K. J. Saudagar, “Anti-money laundering systems: a systematic literature review,” J. Money Laund. Control, vol. 23, no. 4, pp. 833-848, 2020.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Referência [38]",
+    "motivo": "Entrada bibliográfica individual, iniciada pelo marcador [38] e completa até o fim do texto fornecido, sem outro marcador de referência subsequente.",
+    "texto": "- [38] A. A. S. Alsuwailem and A. K. J. Saudagar, “Anti-money laundering systems: a systematic literature review,” J. Money Laund. Control, vol. 23, no. 4, pp. 833-848, 2020."
+  }
+]

@@ -1,0 +1,1586 @@
+[
+  {
+    "offset_inicio": "# **CHAPTER 3 – METHODS OF SOURCE SELECTION** ",
+    "offset_fim": "# **CHAPTER 3 – METHODS OF SOURCE SELECTION** ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "CHAPTER 3 – METHODS OF SOURCE SELECTION",
+    "motivo": "O capítulo inicia no título de nível 1 e termina imediatamente antes do marcador da Section 3-01, que abre a unidade seguinte.",
+    "texto": "# **CHAPTER 3 – METHODS OF SOURCE SELECTION** "
+  },
+  {
+    "offset_inicio": "# **<u>Section 3-01 POLICY.</u>** \n\n**(a) Methods of Source Selection.** Unless",
+    "offset_fim": "nt project for innovative products, approaches, or technologies; \n\n- (viii) Innovative procurement method; or \n\n- (ix) Government-to-government purchase. \n\n53\n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Section 3-01 POLICY — caput",
+    "motivo": "O bloco inicia no marcador da Seção 3-01 e termina imediatamente antes do próximo marcador estrutural, “(2) ‘Special Case’ Circumstances”, na página 2. Inclui o texto introdutório da seção e suas unidades subsequentes até o corte seguinte.",
+    "texto": "# **<u>Section 3-01 POLICY.</u>** \n\n**(a) Methods of Source Selection.** Unless otherwise authorized by law, all City procurements shall be made by one of the methods authorized by these Rules. \n\n**(b) Preference for Competitive Sealed Bidding.** Except as otherwise provided in these Rules, contracts shall be awarded by competitive sealed bidding. In the case of construction, where appropriate in the judgment of the ACCO, and in accordance with these Rules, competitive sealed bidding from prequalified vendors or any other appropriate procurement method may be used. \n\n**(c) Preference for Competitive Sealed Proposals in Certain Contracts.** Procurement by competitive sealed proposals, including, where applicable, through HHS Accelerator, is the preferred method for awarding contracts for non-commodity data processing equipment and for information technology, non-commodity data processing, architectural, engineering, client, legal, accounting, financial, training, educational, cultural, medical, managed care, employee health benefits, scientific management, research, performing arts, and systems consultation services, and/or other similar services. A “Special Case” determination is not required for such procurements. \n\n**(d) “Special Case”.** Agencies may elect to use one of the methods of source selection listed herein, after making the determination that it is not practicable or not advantageous to the City to use competitive sealed bidding as required by this section. \n\n(1) <u>Methods of Source Selection for Which “Special Case” Determination Is Required: A</u> “Special Case” determination is required for each case in which one of the following methods of source selection is used: \n\n- (i) Competitive sealed bidding from prequalified vendors, except as provided in Section 3-10(a) of these Rules; \n\n(ii) Competitive sealed bidding where the award will be made to the bidder whose bid represents the best value to the City; \n\n- (iii) Competitive sealed proposals (including multi-step process); \n\n- (iv) Competitive sealed proposals from prequalified vendors; \n\n- (v) Negotiated acquisition; \n\n- (vi) Sole source procurement; \n\n- (vii) Demonstration project for innovative products, approaches, or technologies; \n\n- (viii) Innovative procurement method; or \n\n- (ix) Government-to-government purchase. \n\n53"
+  },
+  {
+    "offset_inicio": "(2) “Special Case” Circumstances. A special case is a circumstance recognized by these Rules in which it is not practicable",
+    "offset_fim": "to use competitive sealed bidding for one of the following reasons: ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(2) “Special Case” Circumstances",
+    "motivo": "Inicia no marcador estrutural (2) e contém apenas o caput que define a circunstância especial; termina imediatamente antes do próximo marcador estrutural, (i).",
+    "texto": "(2) “Special Case” Circumstances. A special case is a circumstance recognized by these Rules in which it is not practicable or not advantageous to the City to use competitive sealed bidding for one of the following reasons: "
+  },
+  {
+    "offset_inicio": "(i) specifications cannot be made sufficiently definite and certain to permit selection based on bid price or evaluated bid price alone;",
+    "offset_fim": "specifications cannot be made sufficiently definite and certain to permit selection based on bid price or evaluated bid price alone;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(i) Specifications insufficiently definite",
+    "motivo": "O trecho inicia no marcador romano (i) e termina antes do próximo marcador de mesma lista, (ii), formando uma unidade autônoma.",
+    "texto": "(i) specifications cannot be made sufficiently definite and certain to permit selection based on bid price or evaluated bid price alone;"
+  },
+  {
+    "offset_inicio": "(ii) judgment is required in evaluating competing proposals, and it is in the best interest of the City to require a balancing of price, quality, and other factors; ",
+    "offset_fim": "in the best interest of the City to require a balancing of price, quality, and other factors; ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(ii) Julgamento na avaliação de propostas concorrentes",
+    "motivo": "O primeiro bloco completo inicia no marcador romano “(ii)” e termina imediatamente antes do próximo marcador estrutural, “(iii)”, na mesma página.",
+    "texto": "(ii) judgment is required in evaluating competing proposals, and it is in the best interest of the City to require a balancing of price, quality, and other factors; "
+  },
+  {
+    "offset_inicio": "(iii) it is in the best interest of the City for goods or standard services to be awarded",
+    "offset_fim": "the basis of best value to the City by optimizing quality, cost, and efficiency;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(iii) Best value to the City",
+    "motivo": "O trecho inicia no marcador estrutural (iii) e termina imediatamente antes do próximo marcador, (iv).",
+    "texto": "(iii) it is in the best interest of the City for goods or standard services to be awarded on the basis of best value to the City by optimizing quality, cost, and efficiency;"
+  },
+  {
+    "offset_inicio": "(iv) there is only one available source, as set forth in these Rules;",
+    "offset_fim": "(iv) there is only one available source, as set forth in these Rules;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(iv) Fonte única disponível",
+    "motivo": "O bloco inicia no marcador romano (iv) e contém integralmente sua única cláusula, terminando imediatamente antes do próximo marcador estrutural (v).",
+    "texto": "(iv) there is only one available source, as set forth in these Rules;"
+  },
+  {
+    "offset_inicio": "(v) testing, experimentation, or evaluation is required to determine the feasibility and application of an innovative product,",
+    "offset_fim": "testing, experimentation, or evaluation is required to determine the feasibility and application of an innovative product, approach, or technology not currently used by the City;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(v) Testing, experimentation, or evaluation",
+    "motivo": "O item romano (v) inicia uma unidade estrutural e contém uma única condição. O bloco termina imediatamente antes do marcador seguinte, (vi).",
+    "texto": "(v) testing, experimentation, or evaluation is required to determine the feasibility and application of an innovative product, approach, or technology not currently used by the City;"
+  },
+  {
+    "offset_inicio": "(vi) the need for advance screening of qualifications is paramount and prequalification",
+    "offset_fim": "qualifications is paramount and prequalification is appropriate for one of the reasons set forth in these Rules; ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(vi) Need for advance screening of qualifications",
+    "motivo": "O bloco inicia no marcador estrutural (vi) e contém sua única sentença, terminando imediatamente antes do próximo marcador, (vii).",
+    "texto": "(vi) the need for advance screening of qualifications is paramount and prequalification is appropriate for one of the reasons set forth in these Rules; "
+  },
+  {
+    "offset_inicio": "(vii) circumstances justifying the use of negotiated acquisition as set forth in these Rules; or",
+    "offset_fim": "circumstances justifying the use of negotiated acquisition as set forth in these Rules; or",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(vii) Circunstâncias que justificam aquisição negociada",
+    "motivo": "O trecho inicia no marcador romano (vii) e contém integralmente sua única oração; termina imediatamente antes do próximo marcador, (viii).",
+    "texto": "(vii) circumstances justifying the use of negotiated acquisition as set forth in these Rules; or"
+  },
+  {
+    "offset_inicio": "(viii) to test and evaluate the feasibility and application of innovative procurement methods not currently used by the City or provided for in these Rules. ",
+    "offset_fim": "to test and evaluate the feasibility and application of innovative procurement methods not currently used by the City or provided for in these Rules. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(viii) Teste e avaliação de métodos inovadores de contratação",
+    "motivo": "O item romano (viii) é o primeiro marcador estrutural presente no excerto e constitui uma unidade autônoma. Seu texto termina imediatamente antes do próximo marcador, (3).",
+    "texto": "(viii) to test and evaluate the feasibility and application of innovative procurement methods not currently used by the City or provided for in these Rules. "
+  },
+  {
+    "offset_inicio": "(3) <u>Source Selection in a Special Case. Upon determining that there is a special case,</u>",
+    "offset_fim": "among those listed in Section 3-01 above which is practicable and advantageous to the City. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(3) Source Selection in a Special Case",
+    "motivo": "É a primeira unidade iniciada pelo marcador (3); contém seu enunciado completo e termina imediatamente antes do marcador seguinte, (4).",
+    "texto": "(3) <u>Source Selection in a Special Case. Upon determining that there is a special case,</u> the Contracting Officer shall select the most competitive alternate method of source selection among those listed in Section 3-01 above which is practicable and advantageous to the City. "
+  },
+  {
+    "offset_inicio": "(4) <u>Special Case Determination. The determination that there is a special case, and the</u> reasons",
+    "offset_fim": "shall require the written approval of the CCPO prior to initiating negotiations. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(4) Special Case Determination",
+    "motivo": "O bloco inicia no marcador (4) e contém integralmente a determinação e as exigências de aprovação, terminando imediatamente antes do marcador da nova unidade “Section 3-02 COMPETITIVE SEALED BIDDING.”.",
+    "texto": "(4) <u>Special Case Determination. The determination that there is a special case, and the</u> reasons that the method of source selection is the most competitive that is appropriate under the circumstances, shall be made in writing in advance of issuing solicitations, as part of any presolicitation review required by these Rules, and shall be approved by the ACCO. Procurements by negotiated acquisition shall require the written approval of the CCPO prior to initiating negotiations. "
+  },
+  {
+    "offset_inicio": "# **<u>Section 3-02 COMPETITIVE SEALED BIDDING.</u>**",
+    "offset_fim": "# **<u>Section 3-02 COMPETITIVE SEALED BIDDING.</u>**",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Section 3-02 COMPETITIVE SEALED BIDDING",
+    "motivo": "O título da Seção 3-02 inicia uma unidade própria e é seguido imediatamente pela subdivisão estrutural (a), que inicia o bloco seguinte.",
+    "texto": "# **<u>Section 3-02 COMPETITIVE SEALED BIDDING.</u>**"
+  },
+  {
+    "offset_inicio": "**(a) Application.** This section shall apply to all procurements made by competitive sealed bidding.",
+    "offset_fim": "**(a) Application.** This section shall apply to all procurements made by competitive sealed bidding.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(a) Application",
+    "motivo": "A unidade inicia no marcador de alínea “(a)” e contém sua única frase. Termina imediatamente antes do próximo marcador estrutural, “(b) Invitation for Bids”.",
+    "texto": "**(a) Application.** This section shall apply to all procurements made by competitive sealed bidding."
+  },
+  {
+    "offset_inicio": "- **(b) Invitation for Bids.** ",
+    "offset_fim": "- **(b) Invitation for Bids.** ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(b) Invitation for Bids",
+    "motivo": "O bloco inicia no marcador “(b)” e contém apenas seu título; termina imediatamente antes do marcador estrutural seguinte, “(1) Use.”.",
+    "texto": "- **(b) Invitation for Bids.** "
+  },
+  {
+    "offset_inicio": "(1) <u>Use. The IFB is used to initiate a competitive sealed bid procurement.</u> ",
+    "offset_fim": "(1) <u>Use. The IFB is used to initiate a competitive sealed bid procurement.</u> ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(1) Use",
+    "motivo": "O item numerado (1) inicia a primeira unidade presente e contém apenas sua frase. Termina imediatamente antes do próximo marcador, “(2) Content”, no início da página 3.",
+    "texto": "(1) <u>Use. The IFB is used to initiate a competitive sealed bid procurement.</u> "
+  },
+  {
+    "offset_inicio": "- (2) <u>Content. The Invitation for Bids shall include the following:</u> ",
+    "offset_fim": "- (2) <u>Content. The Invitation for Bids shall include the following:</u> ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(2) Content",
+    "motivo": "O bloco inicia no marcador (2) e contém apenas seu caput; termina imediatamente antes do marcador da subdivisão (i).",
+    "texto": "- (2) <u>Content. The Invitation for Bids shall include the following:</u> "
+  },
+  {
+    "offset_inicio": "(i) instructions and information to bidders concerning the bid submission requirements, including",
+    "offset_fim": "whether such conferences are mandatory); and the location where bids are to be submitted;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(i) Instruções e informações aos licitantes",
+    "motivo": "O texto inicia no marcador estrutural (i) e termina imediatamente antes do próximo marcador de mesmo nível, (ii).",
+    "texto": "(i) instructions and information to bidders concerning the bid submission requirements, including the time and date set for receipt of the bids; requirements for the electronic submission of bids, if any; time, date, and location of any pre-bid conferences (and a statement whether such conferences are mandatory); and the location where bids are to be submitted;"
+  },
+  {
+    "offset_inicio": "(ii) the purchase description, delivery and performance schedule, and any special instructions necessary;",
+    "offset_fim": "(ii) the purchase description, delivery and performance schedule, and any special instructions necessary;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(ii) Purchase description and schedule",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador romano “(ii)” e termina no ponto e vírgula imediatamente antes do próximo marcador, “(iii)”.",
+    "texto": "(ii) the purchase description, delivery and performance schedule, and any special instructions necessary;"
+  },
+  {
+    "offset_inicio": "(iii) the contract terms and conditions, including warranty and bonding or other security requirements, as applicable;",
+    "offset_fim": "the contract terms and conditions, including warranty and bonding or other security requirements, as applicable;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(iii) Contract terms and conditions",
+    "motivo": "O primeiro marcador estrutural presente é o inciso romano (iii), na página 3. Seu bloco contém apenas essa disposição e termina imediatamente antes do marcador seguinte, (iv).",
+    "texto": "(iii) the contract terms and conditions, including warranty and bonding or other security requirements, as applicable;"
+  },
+  {
+    "offset_inicio": "(iv) a statement regarding how the award will be made:",
+    "offset_fim": "(iv) a statement regarding how the award will be made:",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(iv) Statement regarding how the award will be made",
+    "motivo": "O bloco inicia no marcador estrutural (iv) e termina imediatamente antes do próximo marcador estrutural, (A), na mesma página.",
+    "texto": "(iv) a statement regarding how the award will be made:"
+  },
+  {
+    "offset_inicio": "- (A) for construction, a statement that award shall be made to the lowest responsive and responsible bidder;",
+    "offset_fim": "for construction, a statement that award shall be made to the lowest responsive and responsible bidder;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(A) Award for construction",
+    "motivo": "O item (A) é a primeira unidade completa no trecho e termina imediatamente antes do marcador do item estrutural seguinte, (B).",
+    "texto": "- (A) for construction, a statement that award shall be made to the lowest responsive and responsible bidder;"
+  },
+  {
+    "offset_inicio": "- (B) for purchase of goods and standard services, a statement that award shall be made to the lowest responsive and responsible bidder or to the bidder whose bid represents the best value to the City by optimizing quality, cost and efficiency. If award will be made on the basis of best value to the City, such statement shall include how best value will be determined in accordance with Section 3-02(o) of these Rules; ",
+    "offset_fim": "statement shall include how best value will be determined in accordance with Section 3-02(o) of these Rules; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(B) Critério de adjudicação para bens e serviços padrão",
+    "motivo": "O trecho inicia no marcador estrutural (B) e termina imediatamente antes do próximo marcador, (v), ambos na página 3.",
+    "texto": "- (B) for purchase of goods and standard services, a statement that award shall be made to the lowest responsive and responsible bidder or to the bidder whose bid represents the best value to the City by optimizing quality, cost and efficiency. If award will be made on the basis of best value to the City, such statement shall include how best value will be determined in accordance with Section 3-02(o) of these Rules; "
+  },
+  {
+    "offset_inicio": "(v) if not included in the bid documents, a notice of where vendors may obtain a copy of all contractual terms and conditions or other project-related material; ",
+    "offset_fim": "a copy of all contractual terms and conditions or other project-related material; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(v) Notice of contractual terms and conditions",
+    "motivo": "O item romano (v) é a primeira unidade completa visível e termina imediatamente antes do marcador seguinte, (vi).",
+    "texto": "(v) if not included in the bid documents, a notice of where vendors may obtain a copy of all contractual terms and conditions or other project-related material; "
+  },
+  {
+    "offset_inicio": "(vi) a provision indicating bidder liability for bidder failure to execute contract and to provide any required security within ten days after notice of award pursuant to Section 313(d) of the Charter; ",
+    "offset_fim": "(vi) a provision indicating bidder liability for bidder failure to execute contract and to provide any required security within ten days after notice of award pursuant to Section 313(d) of the Charter; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(vi) Provisão sobre responsabilidade do licitante",
+    "motivo": "O trecho inicia no marcador romano (vi) e termina imediatamente antes do próximo marcador estrutural, (vii), na mesma página.",
+    "texto": "(vi) a provision indicating bidder liability for bidder failure to execute contract and to provide any required security within ten days after notice of award pursuant to Section 313(d) of the Charter; "
+  },
+  {
+    "offset_inicio": "(vii) a provision that bidders should give specific attention to the identification of those portions of their bids that they deem to be confidential proprietary information or trade secrets",
+    "offset_fim": "such materials, upon request, should not be disclosed by the City. Such information must be easily separable from the non-confidential sections of the bid;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(vii) Informação confidencial e segredos comerciais",
+    "motivo": "O bloco começa no marcador romano (vii) e contém integralmente sua disposição, terminando imediatamente antes do próximo marcador estrutural, (viii).",
+    "texto": "(vii) a provision that bidders should give specific attention to the identification of those portions of their bids that they deem to be confidential proprietary information or trade secrets and provide any justification why such materials, upon request, should not be disclosed by the City. Such information must be easily separable from the non-confidential sections of the bid;"
+  },
+  {
+    "offset_inicio": "(viii) a notice of the bidder’s rights to appeal certain decisions; ",
+    "offset_fim": "(viii) a notice of the bidder’s rights to appeal certain decisions; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(viii) Notice of bidder’s appeal rights",
+    "motivo": "O item (viii) é a primeira unidade completa visível e termina antes do marcador do item seguinte, (ix).",
+    "texto": "(viii) a notice of the bidder’s rights to appeal certain decisions; "
+  },
+  {
+    "offset_inicio": "(ix) a notice describing the City’s prompt payment policy, including an explanation of the requirements for invoicing;",
+    "offset_fim": "(ix) a notice describing the City’s prompt payment policy, including an explanation of the requirements for invoicing;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(ix) Notice of prompt payment policy",
+    "motivo": "O bloco inicia no marcador romano “(ix)” e contém integralmente o item sobre a política de pagamento imediato. Termina antes do próximo marcador estrutural, “(x)”.",
+    "texto": "(ix) a notice describing the City’s prompt payment policy, including an explanation of the requirements for invoicing;"
+  },
+  {
+    "offset_inicio": "(x) a notice that prices are irrevocable until contract award, unless the bid is withdrawn,",
+    "offset_fim": "expiration of fortyfive days from bid opening and only in writing received by the agency and in advance of award; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(x) Irrevogabilidade e retirada de propostas",
+    "motivo": "O primeiro bloco inicia no marcador romano “(x)” na página 3 e termina imediatamente antes do próximo marcador estrutural, “(xi)”.",
+    "texto": "(x) a notice that prices are irrevocable until contract award, unless the bid is withdrawn, and that bids may be withdrawn only after the expiration of fortyfive days from bid opening and only in writing received by the agency and in advance of award; "
+  },
+  {
+    "offset_inicio": "(xi) a requirement for acknowledgment of amendments;",
+    "offset_fim": "(xi) a requirement for acknowledgment of amendments;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "(xi) acknowledgment of amendments",
+    "motivo": "O item romano (xi) inicia a primeira unidade presente e contém apenas sua exigência própria; termina imediatamente antes do marcador seguinte, (xii), na página 4.",
+    "texto": "(xi) a requirement for acknowledgment of amendments;"
+  },
+  {
+    "offset_inicio": "(xii) a provision concerning the submission and consideration of alternate bids, if applicable; ",
+    "offset_fim": "(xii) a provision concerning the submission and consideration of alternate bids, if applicable; ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xii) Provision concerning alternate bids",
+    "motivo": "O item romano (xii) é o primeiro marcador estrutural presente e forma uma unidade própria, encerrada imediatamente antes do marcador seguinte, (xiii).",
+    "texto": "(xii) a provision concerning the submission and consideration of alternate bids, if applicable; "
+  },
+  {
+    "offset_inicio": "(xiii) a notice that contract award is subject to provisions of the MacBride Principles Law;",
+    "offset_fim": "(xiii) a notice that contract award is subject to provisions of the MacBride Principles Law;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xiii) Notice of MacBride Principles Law",
+    "motivo": "O bloco inicia no marcador estrutural (xiii) e contém apenas sua disposição, encerrando-se imediatamente antes do próximo marcador, (xiv).",
+    "texto": "(xiii) a notice that contract award is subject to provisions of the MacBride Principles Law;"
+  },
+  {
+    "offset_inicio": "(xiv) a notice that contract award is subject, if applicable, to Section 6-129 of the New York City Administrative Code (M/WBE and EBE program),",
+    "offset_fim": "as well as to applicable provisions of federal, State, and local laws and executive orders requiring affirmative action and equal employment opportunity; ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xiv) Aviso sobre sujeição à Seção 6-129 e leis de ação afirmativa",
+    "motivo": "O item romano (xiv) inicia uma unidade estrutural e termina imediatamente antes do próximo marcador irmão, (xv), na mesma página.",
+    "texto": "(xiv) a notice that contract award is subject, if applicable, to Section 6-129 of the New York City Administrative Code (M/WBE and EBE program), as well as to applicable provisions of federal, State, and local laws and executive orders requiring affirmative action and equal employment opportunity; "
+  },
+  {
+    "offset_inicio": "(xv) where applicable, a notice that contract award is subject to completion of a ",
+    "offset_fim": "naire and review of that information by the Department of Investigation; ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xv) Notice regarding VENDEX questionnaire",
+    "motivo": "O item (xv) é a primeira unidade completa visível e termina imediatamente antes do marcador do item irmão (xvi).",
+    "texto": "(xv) where applicable, a notice that contract award is subject to completion of a VENDEX questionnaire and review of that information by the Department of Investigation; "
+  },
+  {
+    "offset_inicio": "(xvi) where applicable all information required pursuant to Section 312(a) of the Charter; ",
+    "offset_fim": "(xvi) where applicable all information required pursuant to Section 312(a) of the Charter; ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xvi) Informação exigida pela Seção 312(a) da Charter",
+    "motivo": "O bloco inicia no marcador romano (xvi) e termina imediatamente antes do próximo marcador estrutural, (xvii), na mesma página.",
+    "texto": "(xvi) where applicable all information required pursuant to Section 312(a) of the Charter; "
+  },
+  {
+    "offset_inicio": "(xvii) the name, address, and telephone number of a contact person to whom questions",
+    "offset_fim": "contact person to whom questions and correspondence relating to the bid solicitation can be addressed;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xvii) Contact person",
+    "motivo": "O item (xvii) é a primeira unidade iniciada por marcador no trecho. Começa em seu próprio marcador e termina imediatamente antes do próximo marcador, (xviii).",
+    "texto": "(xvii) the name, address, and telephone number of a contact person to whom questions and correspondence relating to the bid solicitation can be addressed;"
+  },
+  {
+    "offset_inicio": "(xviii) the following statement: The New York City Comptroller is charged with the",
+    "offset_fim": "Comptroller, Bureau of Contract Administration, 1 Centre Street, Room 727, New York, NY 10007, (212) 669- 2323; and",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xviii) Statement concerning the New York City Comptroller",
+    "motivo": "Inicia no marcador estrutural (xviii) e contém integralmente a declaração exigida; termina imediatamente antes do próximo marcador, (xix).",
+    "texto": "(xviii) the following statement: The New York City Comptroller is charged with the audit of contracts in New York City. Any vendor who believes that there has been unfairness, favoritism, or impropriety in the bid process should inform the Comptroller, Bureau of Contract Administration, 1 Centre Street, Room 727, New York, NY 10007, (212) 669- 2323; and"
+  },
+  {
+    "offset_inicio": "(xix) a statement that the bidder will be required to comply, if applicable, with §",
+    "offset_fim": "on-the-job training opportunities and payment of prevailing wages and living wages; and ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xix) Declaração de cumprimento das leis trabalhistas",
+    "motivo": "O bloco inicia no marcador estrutural (xix) e contém sua declaração completa. Termina imediatamente antes do próximo marcador estrutural, (xx).",
+    "texto": "(xix) a statement that the bidder will be required to comply, if applicable, with § 220/230 of the New York State Labor Law, § 6-109 of the New York Administrative Code, Mayoral Executive Order 102 of 2006, and with all other federal, State, and local labor laws and regulations, including but not limited to providing on-the-job training opportunities and payment of prevailing wages and living wages; and "
+  },
+  {
+    "offset_inicio": "(xx) where applicable for construction contracts, the following shall be additionally included: ",
+    "offset_fim": "er will be required to meet all licensing or permit requirements required to perform the construction; ",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "(xx) Construction contracts additional inclusions",
+    "motivo": "O bloco inicia no marcador estrutural “(xx)” e contém apenas seu caput. Termina imediatamente antes do próximo marcador estrutural, “(A)”, que abre uma subdivisão própria.",
+    "texto": "(xx) where applicable for construction contracts, the following shall be additionally included: \n\n(A) a specific description and exact location of the construction and the date and time for the bidder to visit the job site when the solicitation requires a mandatory pre-bid visit to and examination of the job site; \n\n(B) a reference to all applicable documents which will subsequently become a part of the contract, such as the specifications and the terms and conditions approved by Corporation Counsel; \n\n(C) a statement establishing minimum insurance requirements which the City will require of the bidder if successful and conveying to the bidder any insurance coverage which the City will carry that will afford the contractor insurance coverage; \n\n(D) a statement that the bidder will be required to meet all licensing or permit requirements required to perform the construction; "
+  },
+  {
+    "offset_inicio": "- (E) a statement of instructions relative to the return of bid documents if the bidder elects not to submit a bid thereunder and notification to the City of the bidder declining to bid; ",
+    "offset_fim": "the bidder elects not to submit a bid thereunder and notification to the City of the bidder declining to bid; ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(E) Instruções para devolução de documentos de licitação",
+    "motivo": "O primeiro marcador estrutural visível é “(E)”. Seu bloco contém apenas a declaração correspondente e termina imediatamente antes do marcador seguinte, “(F)”.",
+    "texto": "- (E) a statement of instructions relative to the return of bid documents if the bidder elects not to submit a bid thereunder and notification to the City of the bidder declining to bid; "
+  },
+  {
+    "offset_inicio": "(G) the form in which the bid is to be submitted (either specified in the invitation",
+    "offset_fim": "either specified in the invitation for bids or referenced as part of the specifications or attached forms); ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(G) Form of bid submission",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador estrutural (G) e termina imediatamente antes do próximo marcador estrutural, (H).",
+    "texto": "(G) the form in which the bid is to be submitted (either specified in the invitation for bids or referenced as part of the specifications or attached forms); "
+  },
+  {
+    "offset_inicio": "(H) a requirement that for projects on which more than one prime contractor will be involved, all bidders examine",
+    "offset_fim": "idders examine the invitation for bid packages for all other parts of the project; and ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(H) Requirement for examination of bid packages",
+    "motivo": "O bloco inicia no marcador estrutural (H) e contém integralmente sua exigência, terminando imediatamente antes do próximo marcador, (I).",
+    "texto": "(H) a requirement that for projects on which more than one prime contractor will be involved, all bidders examine the invitation for bid packages for all other parts of the project; and "
+  },
+  {
+    "offset_inicio": "- (I) a notice, for those contracts not otherwise subject to Section 6- 129 of the New York Administrative Code (M/WBE and EBE Program), that contract award is subject to the provisions of Section 6-108.1 of the New York City Administrative Code relating to the LBE program and its implementing rules; and ",
+    "offset_fim": "provisions of Section 6-108.1 of the New York City Administrative Code relating to the LBE program and its implementing rules; and ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(I) Notice regarding LBE program",
+    "motivo": "O texto começa no marcador estrutural (I) e contém uma única exigência de aviso. Termina imediatamente antes do próximo marcador estrutural, (J), na mesma página.",
+    "texto": "- (I) a notice, for those contracts not otherwise subject to Section 6- 129 of the New York Administrative Code (M/WBE and EBE Program), that contract award is subject to the provisions of Section 6-108.1 of the New York City Administrative Code relating to the LBE program and its implementing rules; and "
+  },
+  {
+    "offset_inicio": "(J) a requirement that, where the preparation of separate specifications is not required for plumbing and gas fitting; steam heating, hot water heating, ventilating and air conditioning apparatus;",
+    "offset_fim": " names each subcontractor that the bidder will use to perform such work on the contract, and the agreed-upon amount to be paid to each. ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(J) Lista selada de subcontratados",
+    "motivo": "O trecho inicia no marcador estrutural (J) e termina imediatamente antes do próximo marcador estrutural, **(c) Bidding Time.**.",
+    "texto": "(J) a requirement that, where the preparation of separate specifications is not required for plumbing and gas fitting; steam heating, hot water heating, ventilating and air conditioning apparatus; and electric wiring and standard illumination fixtures pursuant to New York General Municipal Law Section 101, the bidder shall submit with its bid a separate sealed list that names each subcontractor that the bidder will use to perform such work on the contract, and the agreed-upon amount to be paid to each. "
+  },
+  {
+    "offset_inicio": "**(c) Bidding Time.** Bidding time is the period of time between the date of public advertisement of the IFB and the time and date set for receipt of bids.",
+    "offset_fim": "The bidding time shall be not less than fifteen days before the bid opening date.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(c) Bidding Time",
+    "motivo": "A unidade começa no marcador “(c)” e contém seu texto integral, encerrando-se imediatamente antes do marcador da subdivisão seguinte, “(d) Bidder Submissions”.",
+    "texto": "**(c) Bidding Time.** Bidding time is the period of time between the date of public advertisement of the IFB and the time and date set for receipt of bids. The bidding time shall be not less than fifteen days before the bid opening date."
+  },
+  {
+    "offset_inicio": "# **(d) Bidder Submissions.**",
+    "offset_fim": "# **(d) Bidder Submissions.**",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(d) Bidder Submissions",
+    "motivo": "O bloco inicia no marcador de subdivisão “(d)” e contém apenas seu título, terminando imediatamente antes do marcador da primeira subdivisão interna “(1) Bid Form and Content.”",
+    "texto": "# **(d) Bidder Submissions.**"
+  },
+  {
+    "offset_inicio": "(1) <u>Bid Form and Content. The IFB will provide a form on which the bidder must insert</u> the bid price,",
+    "offset_fim": "all bidders whose bids are to be considered pursuant to Section 3-02(o)(1)(iii) of these Rules.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "(1) Bid Form and Content",
+    "motivo": "O bloco inicia no marcador (1) e contém integralmente suas regras sobre formulário e conteúdo da proposta. Termina antes do próximo marcador estrutural, “(2) Bid Samples and Descriptive Literature”, na página 6.",
+    "texto": "(1) <u>Bid Form and Content. The IFB will provide a form on which the bidder must insert</u> the bid price, or other information requested, if any, pursuant to Section 3-02(o)(1) of these Rules, and must sign and submit along with all other necessary submissions. Bids must be typewritten or written legibly in ink. Erasures or alterations shall be initialed by the signer in ink or by electronic signature. All bids must be signed in ink or by electronic signature. The bid invitation also will also require that the bid be submitted in a sealed envelope, addressed as required in the bid documents. Where award will be made to the bidder whose bid represents the best value to the City, the IFB may also provide that other information requested, if any, may be submitted up to thirty (30) days from the bid opening by all bidders whose bids are to be considered pursuant to Section 3-02(o)(1)(iii) of these Rules."
+  },
+  {
+    "offset_inicio": "- (2) <u>Bid Samples and Descriptive Literature. The IFB shall state that the submission of</u> bid samples",
+    "offset_fim": "any attempt by a bidder to condition the bid, will not be deemed to vary any of the provisions of the IFB. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(2) Bid Samples and Descriptive Literature",
+    "motivo": "É a primeira unidade marcada no trecho fornecido; inicia em “(2)” e termina imediatamente antes do próximo marcador estrutural, “(e) Public Notice”.",
+    "texto": "- (2) <u>Bid Samples and Descriptive Literature. The IFB shall state that the submission of</u> bid samples and descriptive literature, regardless of any attempt by a bidder to condition the bid, will not be deemed to vary any of the provisions of the IFB. "
+  },
+  {
+    "offset_inicio": "# **(e) Public Notice.** \n\n",
+    "offset_fim": "# **(e) Public Notice.** \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(e) Public Notice",
+    "motivo": "O marcador de subdivisão “(e)” inicia uma unidade própria, composta apenas por seu título, e o bloco termina imediatamente antes do marcador subordinado “(1) Notice of Solicitation.”.",
+    "texto": "# **(e) Public Notice.** \n\n"
+  },
+  {
+    "offset_inicio": "(1) <u>Notice of Solicitation.</u> ",
+    "offset_fim": "(1) <u>Notice of Solicitation.</u> ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(1) Notice of Solicitation",
+    "motivo": "A unidade inicia no marcador (1) e contém apenas seu título/caput; termina imediatamente antes do marcador seguinte, (i) Distribution.",
+    "texto": "(1) <u>Notice of Solicitation.</u> "
+  },
+  {
+    "offset_inicio": "(i) <u>Distribution. IFBs or notices of their availability must be electronically</u> mailed to a sufficient number of vendors, including all vendors",
+    "offset_fim": "additional five (5) days must be allowed. Notices of availability must indicate, at minimum: ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(i) Distribution",
+    "motivo": "A unidade inicia no marcador (i) e contém o caput sobre distribuição de IFBs; termina imediatamente antes do próximo marcador estrutural, (A).",
+    "texto": "(i) <u>Distribution. IFBs or notices of their availability must be electronically</u> mailed to a sufficient number of vendors, including all vendors on the appropriate citywide bidders list established by the CCPO for the purpose of securing competition. IFBs or notices of their availability may be sent electronically to vendors on agency-specific bidders lists, in addition to the appropriate citywide bidders list maintained by the CCPO, only with approval of the CCPO. Such IFBs or notices must be sent electronically at least fifteen (15) days in advance of the due date for bids, or at least twenty-two (22) days in advance of the due date for bids which are subject to Section 6-129 of the New York City Administrative Code (M/WBE and EBE program). An agency may, upon request of a vendor, provide IFBs or notices by mail, fax, hand delivery, or otherwise. Where the notice does not include all IFB documents, an additional five (5) days must be allowed. Notices of availability must indicate, at minimum: "
+  },
+  {
+    "offset_inicio": "- (A) the name of the agency and, if appropriate, the specific division or bureau soliciting the bids;",
+    "offset_fim": "the name of the agency and, if appropriate, the specific division or bureau soliciting the bids;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(A) Nome da agência solicitante",
+    "motivo": "O primeiro trecho inicia no marcador estrutural de alínea “(A)” e termina imediatamente antes da próxima alínea estrutural “(B)”.",
+    "texto": "- (A) the name of the agency and, if appropriate, the specific division or bureau soliciting the bids;"
+  },
+  {
+    "offset_inicio": "- (B) title and brief description of the goods, services, or construction required; ",
+    "offset_fim": "- (B) title and brief description of the goods, services, or construction required; ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(B) Title and brief description",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador estrutural (B) e termina antes do próximo marcador, (C).",
+    "texto": "- (B) title and brief description of the goods, services, or construction required; "
+  },
+  {
+    "offset_inicio": "- (C) specific information about how, when, and where the IFB is available; ",
+    "offset_fim": "- (C) specific information about how, when, and where the IFB is available; ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(C) Informação sobre disponibilidade do IFB",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador (C) e termina imediatamente antes do próximo marcador estrutural, (D).",
+    "texto": "- (C) specific information about how, when, and where the IFB is available; "
+  },
+  {
+    "offset_inicio": "- (D) the required fee or deposit amount, if any, for obtaining the IFB; ",
+    "offset_fim": "- (D) the required fee or deposit amount, if any, for obtaining the IFB; ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(D) Required fee or deposit amount",
+    "motivo": "O trecho começa no marcador estrutural (D) e termina imediatamente antes do próximo marcador estrutural, (E), na mesma página.",
+    "texto": "- (D) the required fee or deposit amount, if any, for obtaining the IFB; "
+  },
+  {
+    "offset_inicio": "- (E) the time, date, and location of any pre-bid conference or site visit, if any,",
+    "offset_fim": "the time, date, and location of any pre-bid conference or site visit, if any, and if attendance is mandatory;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(E) Informação sobre conferência pré-bid ou visita ao local",
+    "motivo": "O item (E) inicia uma unidade estrutural por alínea e termina imediatamente antes do marcador da alínea seguinte, (F).",
+    "texto": "- (E) the time, date, and location of any pre-bid conference or site visit, if any, and if attendance is mandatory;"
+  },
+  {
+    "offset_inicio": "- (F) the date, time, and location and, if applicable, a link to access the livestreaming of the opening,",
+    "offset_fim": "dentification of bids on a publicly accessible website, for the receipt and opening of bids; ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(F) Data, horário e local para recebimento e abertura de propostas",
+    "motivo": "O trecho inicia no marcador estrutural “(F)” e termina imediatamente antes do próximo marcador, “(G)”, na mesma página.",
+    "texto": "- (F) the date, time, and location and, if applicable, a link to access the livestreaming of the opening, reading, and identification of bids on a publicly accessible website, for the receipt and opening of bids; "
+  },
+  {
+    "offset_inicio": "- (G) the name and phone number of the agency contact person, including email address, if applicable; and ",
+    "offset_fim": "- (G) the name and phone number of the agency contact person, including email address, if applicable; and ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(G) Nome e telefone do contato da agência",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador estrutural (G) e termina imediatamente antes do próximo marcador estrutural, (H).",
+    "texto": "- (G) the name and phone number of the agency contact person, including email address, if applicable; and "
+  },
+  {
+    "offset_inicio": "- (H) the citywide bidders list used. ",
+    "offset_fim": "- (H) the citywide bidders list used. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "(H) the citywide bidders list used",
+    "motivo": "É a primeira unidade visível: inicia no marcador de alínea maiúscula “(H)” e termina imediatamente antes do próximo marcador estrutural, “(ii) Publication”.",
+    "texto": "- (H) the citywide bidders list used. "
+  },
+  {
+    "offset_inicio": "(ii) <u>Publication. This subparagraph shall apply to competitive sealed bids</u> above",
+    "offset_fim": "accelerated procurements, which shall appear not less than three business days before the bid opening date.",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "(ii) Publication",
+    "motivo": "A unidade inicia no marcador “(ii) Publication” na página 6 e seu texto continua na página 7, encerrando-se imediatamente antes do próximo marcador estrutural “- (A) Frequency.”",
+    "texto": "(ii) <u>Publication. This subparagraph shall apply to competitive sealed bids</u> above the small purchase limits except that it shall not apply where vendors will be solicited from a PQL. \n\n- (A) <u>Frequency. Notice of solicitation shall be published at lease once in</u> the City Record and shall be posted on the City’s website in a location that is accessible by the public simultaneously with its publication not less than fifteen days before the bid opening date with the exception of \n\n58\n\n<!-- PÁGINA 7 -->\naccelerated procurements, which shall appear not less than three business days before the bid opening date."
+  },
+  {
+    "offset_inicio": "- (B) <u>Content. Such notice shall include:</u> ",
+    "offset_fim": "- (B) <u>Content. Such notice shall include:</u> ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(B) Content",
+    "motivo": "A unidade inicia no marcador \"(B)\" e contém apenas seu enunciado introdutório; termina imediatamente antes da subdivisão seguinte, \"((a))\".",
+    "texto": "- (B) <u>Content. Such notice shall include:</u> "
+  },
+  {
+    "offset_inicio": "((a))   agency name; ",
+    "offset_fim": "((a))   agency name; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(a) agency name",
+    "motivo": "É a primeira unidade marcada no texto. Inicia em \"((a))\" e termina imediatamente antes do próximo marcador, \"((b))\", na mesma linha.",
+    "texto": "((a))   agency name; "
+  },
+  {
+    "offset_inicio": "((b))   PIN; ",
+    "offset_fim": "((b))   PIN; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(b) PIN",
+    "motivo": "O texto inicia no marcador de subdivisão ((b)) e contém apenas “PIN;”, encerrando-se imediatamente antes do próximo marcador, ((c)).",
+    "texto": "((b))   PIN; "
+  },
+  {
+    "offset_inicio": "((c))   title and/or brief description of the goods, services, or construction to be procured; ",
+    "offset_fim": "((c))   title and/or brief description of the goods, services, or construction to be procured; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(c) Title and/or brief description",
+    "motivo": "O trecho inicia no marcador ((c)) e termina imediatamente antes do próximo marcador de mesma lista, ((d)).",
+    "texto": "((c))   title and/or brief description of the goods, services, or construction to be procured; "
+  },
+  {
+    "offset_inicio": "((d))   estimated quantity, if any; ",
+    "offset_fim": "((d))   estimated quantity, if any; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(d) estimated quantity",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador ((d)) e termina imediatamente antes do próximo marcador, ((e)).",
+    "texto": "((d))   estimated quantity, if any; "
+  },
+  {
+    "offset_inicio": "((e))   how the solicitation documents may be obtained; ",
+    "offset_fim": "((e))   how the solicitation documents may be obtained; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(e) Obtenção dos documentos de solicitação",
+    "motivo": "O item marcado por ((e)) inicia uma unidade estrutural e termina imediatamente antes do próximo marcador, ((f)), na mesma página.",
+    "texto": "((e))   how the solicitation documents may be obtained; "
+  },
+  {
+    "offset_inicio": "((f))   date and time by which, and the location where, bids must be submitted and will be publicly opened",
+    "offset_fim": "a link to access the livestreaming of the opening, reading, and identification of bids on a publicly accessible website; and ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(f) Prazo, local e transmissão da abertura de propostas",
+    "motivo": "O bloco inicia no marcador ((f)) e contém sua previsão sobre data, hora, local e transmissão da abertura das propostas. Termina imediatamente antes do próximo marcador estrutural, ((g)), na mesma linha.",
+    "texto": "((f))   date and time by which, and the location where, bids must be submitted and will be publicly opened and if applicable, a link to access the livestreaming of the opening, reading, and identification of bids on a publicly accessible website; and "
+  },
+  {
+    "offset_inicio": "# (2) <u>Notice of Vendor Selection.</u> ",
+    "offset_fim": "# (2) <u>Notice of Vendor Selection.</u> ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(2) Notice of Vendor Selection",
+    "motivo": "É a primeira unidade completa iniciada por marcador no trecho fornecido; contém apenas seu título/caput e termina imediatamente antes da subdivisão seguinte, “(i) Frequency.”.",
+    "texto": "# (2) <u>Notice of Vendor Selection.</u> "
+  },
+  {
+    "offset_inicio": "(i) <u>Frequency. Notice of vendor selection exceeding the small purchase</u> limits shall be published once in the City Record within fifteen days after registration of the contract. ",
+    "offset_fim": "limits shall be published once in the City Record within fifteen days after registration of the contract. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(i) Frequency",
+    "motivo": "O bloco inicia no marcador (i) e contém sua regra integral sobre a frequência de publicação. Termina imediatamente antes do próximo marcador estrutural, (ii) Content.",
+    "texto": "(i) <u>Frequency. Notice of vendor selection exceeding the small purchase</u> limits shall be published once in the City Record within fifteen days after registration of the contract. "
+  },
+  {
+    "offset_inicio": "(ii) <u>Content. Such notice shall include:</u> ",
+    "offset_fim": "(ii) <u>Content. Such notice shall include:</u> ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(ii) Content",
+    "motivo": "A unidade inicia no marcador (ii) e contém apenas seu enunciado introdutório, encerrando-se imediatamente antes do próximo marcador estrutural, (A).",
+    "texto": "(ii) <u>Content. Such notice shall include:</u> "
+  },
+  {
+    "offset_inicio": "- (A) agency name; ",
+    "offset_fim": "- (A) agency name; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(A) agency name",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador estrutural (A) e termina imediatamente antes do próximo marcador, (B).",
+    "texto": "- (A) agency name; "
+  },
+  {
+    "offset_inicio": "(B) PIN;",
+    "offset_fim": "(B) PIN;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(B) PIN",
+    "motivo": "É a primeira unidade estrutural completa no trecho, aberta pelo marcador de alínea maiúscula (B) e encerrada imediatamente antes do marcador seguinte, (C).",
+    "texto": "(B) PIN;"
+  },
+  {
+    "offset_inicio": "(C) title and/or brief description of the goods, services, or construction procured;",
+    "offset_fim": "(C) title and/or brief description of the goods, services, or construction procured;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(C) Title and/or brief description",
+    "motivo": "O bloco inicia no marcador estrutural (C) e contém seu único enunciado, terminando imediatamente antes do próximo marcador, (D).",
+    "texto": "(C) title and/or brief description of the goods, services, or construction procured;"
+  },
+  {
+    "offset_inicio": "(3) <u>Public Availability. A copy of the IFB shall be available for public inspection at a</u> location in the agency offices designated by the ACCO.",
+    "offset_fim": "Public Availability. A copy of the IFB shall be available for public inspection at a</u> location in the agency offices designated by the ACCO. ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(3) Public Availability",
+    "motivo": "O item numerado (3) inicia uma unidade estrutural própria e termina imediatamente antes do próximo marcador, “(f) Bidders Lists”.",
+    "texto": "(3) <u>Public Availability. A copy of the IFB shall be available for public inspection at a</u> location in the agency offices designated by the ACCO. "
+  },
+  {
+    "offset_inicio": "# **(f) Bidders Lists.**",
+    "offset_fim": "# **(f) Bidders Lists.**",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "(f) Bidders Lists",
+    "motivo": "O bloco inicia no marcador de subdivisão (f) e contém apenas seu título/caput, encerrando-se imediatamente antes do marcador da subdivisão interna (1).",
+    "texto": "# **(f) Bidders Lists.**"
+  },
+  {
+    "offset_inicio": "(1) The CCPO shall compile citywide lists of vendors interested in being solicited for bids. In addition, the CCPO may",
+    "offset_fim": "have been certified by DSBS as minority owned, women owned and emerging business enterprises.",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "(1) Listas de licitantes",
+    "motivo": "A unidade inicia no marcador (1) na página 7 e contém a continuação do parágrafo na página 8, encerrando-se imediatamente antes do marcador (2).",
+    "texto": "(1) The CCPO shall compile citywide lists of vendors interested in being solicited for bids. In addition, the CCPO may authorize one or more agencies to maintain citywide or agency bidders lists. Bidders lists shall be classified by standard categories of goods, services, and construction that are sufficiently detailed to provide meaningful distinctions among categories. Bidders lists shall include the names, addresses, EIN, e-mail addresses, \n\n59\n\n<!-- PÁGINA 8 -->\nand telephone numbers of the vendors. In addition, bidders lists shall indicate which of the listed businesses have been certified by DSBS as minority owned, women owned and emerging business enterprises."
+  },
+  {
+    "offset_inicio": "(2) The CCPO and agencies, if authorized by the CCPO to maintain bidders lists, shall",
+    "offset_fim": "ur. Every effort shall be made to publish notice in a manner that encourages minority, women and emerging business enterprises to certify with DSBS. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(2) Publicação de aviso sobre listas de licitantes",
+    "motivo": "O bloco inicia no marcador estruturado (2) e contém integralmente a regra sobre a publicação contínua de avisos; termina imediatamente antes do próximo marcador, (3).",
+    "texto": "(2) The CCPO and agencies, if authorized by the CCPO to maintain bidders lists, shall cause to be continuously published in the City Record notice of the availability of applications for vendors to be added to citywide bidders lists or agency bidders lists for goods, services, and construction regularly procured by the City. Every effort shall be made to publish notice in a manner that encourages minority, women and emerging business enterprises to certify with DSBS."
+  },
+  {
+    "offset_inicio": "(3) Application by vendors for placement on the citywide bidders lists or an agency’s bidders list shall be continuously available on request from the vendor.",
+    "offset_fim": "Application by vendors for placement on the citywide bidders lists or an agency’s bidders list shall be continuously available on request from the vendor.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(3) Application by vendors for bidders lists",
+    "motivo": "A unidade inicia no marcador numerado (3) e contém sua regra integral; termina imediatamente antes do próximo marcador estrutural, (4).",
+    "texto": "(3) Application by vendors for placement on the citywide bidders lists or an agency’s bidders list shall be continuously available on request from the vendor."
+  },
+  {
+    "offset_inicio": "(4) Vendors that fail to respond to solicitations or notices of availability of procurement opportunities on three consecutive invitations within one standard category may be removed by the CCPO",
+    "offset_fim": " reinstatement shall be the responsibility of the vendor. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(4) Remoção e reinstalação de fornecedores em listas de licitantes",
+    "motivo": "É a primeira unidade completa identificável: inicia no marcador (4) e termina imediatamente antes do marcador subsequente (5).",
+    "texto": "(4) Vendors that fail to respond to solicitations or notices of availability of procurement opportunities on three consecutive invitations within one standard category may be removed by the CCPO from the applicable bidders list or by the ACCO from the applicable agency bidder list after notice to the vendor. A “No Bid” statement on a returned bid shall be considered a response. Vendors may also be removed from a citywide bidders list pursuant to procedures prescribed by the CCPO. Application for reinstatement shall be the responsibility of the vendor. "
+  },
+  {
+    "offset_inicio": "(5) Unless otherwise provided, inclusion or exclusion of the name of a vendor on a bidders list does not indicate that the vendor is responsible",
+    "offset_fim": "responsible in respect to a particular procurement or otherwise is capable of successfully performing a City contract. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(5) Inclusão ou exclusão em lista de licitantes",
+    "motivo": "O bloco inicia no marcador numerado (5) e contém seu único parágrafo, terminando imediatamente antes do próximo marcador estrutural, **(g) Prequalified Vendor Lists.**",
+    "texto": "(5) Unless otherwise provided, inclusion or exclusion of the name of a vendor on a bidders list does not indicate that the vendor is responsible in respect to a particular procurement or otherwise is capable of successfully performing a City contract. "
+  },
+  {
+    "offset_inicio": "**(g) Prequalified Vendor Lists.** In accordance with these Rules, bids may be solicited from a list of prequalified vendors.",
+    "offset_fim": "**(g) Prequalified Vendor Lists.** In accordance with these Rules, bids may be solicited from a list of prequalified vendors.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(g) Prequalified Vendor Lists",
+    "motivo": "A unidade inicia no marcador estrutural “(g)” e contém um único parágrafo; termina imediatamente antes do próximo marcador estrutural, “(h) Pre-Bid or Pre-Solicitation Conferences”.",
+    "texto": "**(g) Prequalified Vendor Lists.** In accordance with these Rules, bids may be solicited from a list of prequalified vendors."
+  },
+  {
+    "offset_inicio": "**(h) Pre-Bid or Pre-Solicitation Conferences.** Pre-bid or pre-solicitation conf",
+    "offset_fim": "attendance shall be kept of all conferences, and shall be made available and shall be posted on the City’s website. \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(h) Pre-Bid or Pre-Solicitation Conferences",
+    "motivo": "O bloco inicia no marcador (h) e contém integralmente as regras sobre conferências pré-proposta. Termina imediatamente antes do marcador da unidade seguinte, (i) Amendments to IFBs.",
+    "texto": "**(h) Pre-Bid or Pre-Solicitation Conferences.** Pre-bid or pre-solicitation conferences may be conducted by the ACCO to explain the procurement requirements. Written notice of any conference shall be provided to all prospective vendors. A pre-bid conference should be held long enough after the IFB has been issued to allow bidders to become familiar with the solicitation documents, but sufficiently before bid opening to allow consideration of the conference results in preparing their bids. Nothing stated at the pre-bid conference shall change the IFB unless a change is made by amendment as provided in this section. A summary or transcript of the conference shall be prepared and shall be made available and shall be posted on the City’s website. A record of attendance shall be kept of all conferences, and shall be made available and shall be posted on the City’s website. \n\n"
+  },
+  {
+    "offset_inicio": "# **(i) Amendments to IFBs.** ",
+    "offset_fim": "# **(i) Amendments to IFBs.** ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(i) Amendments to IFBs",
+    "motivo": "O bloco inicia no marcador (i) e contém apenas seu título/caput, encerrando-se imediatamente antes do próximo marcador estrutural, (1) Authority.",
+    "texto": "# **(i) Amendments to IFBs.** "
+  },
+  {
+    "offset_inicio": "- (1) <u>Authority. The ACCO shall authorize the issuance of any amendment.</u> ",
+    "offset_fim": "- (1) <u>Authority. The ACCO shall authorize the issuance of any amendment.</u> ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(1) Authority",
+    "motivo": "É a primeira unidade visível: inicia no marcador estruturado “(1)” e contém apenas sua frase, terminando imediatamente antes do próximo marcador “(2)”.",
+    "texto": "- (1) <u>Authority. The ACCO shall authorize the issuance of any amendment.</u> "
+  },
+  {
+    "offset_inicio": "- (2) <u>Form. Each amendment to an IFB shall be identified as such, shall be set forth in</u> writing,",
+    "offset_fim": "consideration of its bid. The amendment shall reference the portion of the IFB it amends.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(2) Form",
+    "motivo": "A unidade inicia no marcador numerado (2) e contém integralmente sua regra sobre a forma das emendas ao IFB, encerrando-se imediatamente antes do marcador seguinte, (3) Distribution.",
+    "texto": "- (2) <u>Form. Each amendment to an IFB shall be identified as such, shall be set forth in</u> writing, and shall require that the bidder acknowledge receipt of all amendments issued as a condition for consideration of its bid. The amendment shall reference the portion of the IFB it amends."
+  },
+  {
+    "offset_inicio": "(3) <u>Distribution. Amendments shall be sent to all prospective vendors known to have</u> received an IFB.",
+    "offset_fim": "(3) <u>Distribution. Amendments shall be sent to all prospective vendors known to have</u> received an IFB.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "(3) Distribution",
+    "motivo": "O bloco inicia no marcador estrutural (3) e contém integralmente sua única frase, terminando antes do próximo marcador estrutural, (4), no início da página 9.",
+    "texto": "(3) <u>Distribution. Amendments shall be sent to all prospective vendors known to have</u> received an IFB."
+  },
+  {
+    "offset_inicio": "(4) <u>Timeliness. Amendments shall be distributed within a reasonable time to allow</u> prospective vendors",
+    "offset_fim": "dment. A notice of amendment shall be posted on the City’s website. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(4) Timeliness",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador estrutural “(4)” e termina após seu texto, imediatamente antes do marcador da subdivisão seguinte “(j)”.",
+    "texto": "(4) <u>Timeliness. Amendments shall be distributed within a reasonable time to allow</u> prospective vendors to consider them in preparing their bids. If the time and date set for receipt of bids will not permit such preparation, such time shall be increased to the extent possible, and stated in the amendment or shall be communicated by electronic mail, facsimile, or telephone and confirmed in the amendment. A notice of amendment shall be posted on the City’s website. "
+  },
+  {
+    "offset_inicio": "# **(j) Pre-Opening Modification or Withdrawal of Bids.** \n\n",
+    "offset_fim": "# **(j) Pre-Opening Modification or Withdrawal of Bids.** \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(j) Pre-Opening Modification or Withdrawal of Bids",
+    "motivo": "O marcador (j) inicia uma unidade própria; seu bloco contém apenas o título/caput e termina imediatamente antes do marcador subordinado (1) Procedure.",
+    "texto": "# **(j) Pre-Opening Modification or Withdrawal of Bids.** \n\n"
+  },
+  {
+    "offset_inicio": "(1) <u>Procedure. Bids may be modified or withdrawn by written notice received in the</u>",
+    "offset_fim": "ated in the IFB before the time and date set for bid opening. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(1) Procedure",
+    "motivo": "O bloco inicia no marcador numerado “(1)” e contém integralmente o procedimento até imediatamente antes do próximo marcador estrutural “(2)”, na mesma página.",
+    "texto": "(1) <u>Procedure. Bids may be modified or withdrawn by written notice received in the</u> office designated in the IFB before the time and date set for bid opening. "
+  },
+  {
+    "offset_inicio": "(2) <u>Disposition of Bid Security. If a bid is withdrawn in accordance with this section,</u> the bid security, if any, shall be returned to the bidder.",
+    "offset_fim": "accordance with this section,</u> the bid security, if any, shall be returned to the bidder.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(2) Disposition of Bid Security",
+    "motivo": "O trecho inicia no marcador numerado (2) e contém sua disposição completa; termina imediatamente antes do próximo marcador estrutural, “(k) Late Bids, Late Withdrawals, and Late Modifications.”",
+    "texto": "(2) <u>Disposition of Bid Security. If a bid is withdrawn in accordance with this section,</u> the bid security, if any, shall be returned to the bidder."
+  },
+  {
+    "offset_inicio": "# **(k) Late Bids, Late Withdrawals, and Late Modifications.**",
+    "offset_fim": "# **(k) Late Bids, Late Withdrawals, and Late Modifications.**",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(k) Late Bids, Late Withdrawals, and Late Modifications",
+    "motivo": "O marcador (k) inicia uma unidade estrutural; seu bloco contém apenas o título, pois o marcador subsequente (1) inicia imediatamente uma subdivisão independente.",
+    "texto": "# **(k) Late Bids, Late Withdrawals, and Late Modifications.**"
+  },
+  {
+    "offset_inicio": "(1) <u>Policy. Any bid received at the location designated in the solicitation after the time",
+    "offset_fim": "Late bids and modifications shall not be opened until after registration of the contract.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(1) Policy",
+    "motivo": "Unidade iniciada pelo marcador estruturado (1) e encerrada imediatamente antes do próximo marcador, (2) Exception.",
+    "texto": "(1) <u>Policy. Any bid received at the location designated in the solicitation after the time</u> and date set for receipt of bids is late and shall not be considered. Any request for withdrawal or modification received at the location designated in the solicitation after the time and date set for receipt of bids is late and shall not be considered. Late bids and modifications shall not be opened until after registration of the contract."
+  },
+  {
+    "offset_inicio": "(2) <u>Exception. A late modification of a successful bid that makes its terms more</u> favorable to the City shall be considered",
+    "offset_fim": "shall be considered at any time it is received and may be accepted upon the approval of the ACCO. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(2) Exception",
+    "motivo": "O bloco inicia no marcador estrutural (2) e contém seu único parágrafo, encerrando-se imediatamente antes do próximo marcador, “# **(l) Receipt, Opening, and Recording of Bids.**”.",
+    "texto": "(2) <u>Exception. A late modification of a successful bid that makes its terms more</u> favorable to the City shall be considered at any time it is received and may be accepted upon the approval of the ACCO. "
+  },
+  {
+    "offset_inicio": "# **(l) Receipt, Opening, and Recording of Bids.**",
+    "offset_fim": "# **(l) Receipt, Opening, and Recording of Bids.**",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(l) Receipt, Opening, and Recording of Bids",
+    "motivo": "O marcador (l) abre uma unidade própria; seu bloco contém apenas o título e termina imediatamente antes da subdivisão (1) Receipt.",
+    "texto": "# **(l) Receipt, Opening, and Recording of Bids.**"
+  },
+  {
+    "offset_inicio": "(1) <u>Receipt. Upon its receipt, each bid and modification shall be time- and date-</u> stamped, but not opened, and stored",
+    "offset_fim": "the agency may not disclose the identity of any bidder.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "(1) Receipt",
+    "motivo": "Inicia no marcador estrutural (1) e contém integralmente a regra sobre recebimento e guarda das propostas; termina imediatamente antes do marcador (2) Opening and Recording.",
+    "texto": "(1) <u>Receipt. Upon its receipt, each bid and modification shall be time- and date-</u> stamped, but not opened, and stored in a secure location until the time and date set for bid opening. Before bid opening the agency may not disclose the identity of any bidder."
+  },
+  {
+    "offset_inicio": "(2) <u>Opening and Recording. Bids and modifications will be opened publicly, at the</u> time, date,",
+    "offset_fim": "pursuant to Section 3-02(b)(2)(xx)(J) of these Rules will be returned to such bidders unopened after the contract award. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 10,
+    "titulo": "(2) Opening and Recording",
+    "motivo": "A unidade inicia no marcador estrutural (2) na página 9 e inclui a continuação do parágrafo na página 10, terminando imediatamente antes do próximo marcador estrutural, (3) Confidential Data.",
+    "texto": "(2) <u>Opening and Recording. Bids and modifications will be opened publicly, at the</u> time, date, and location designated in the IFB. The name of each bidder, the bid price, and such other information as is deemed appropriate will be read aloud or otherwise made available. These requirements may be met through access to a computer terminal at the location where bids are to be opened, provided that paper documents are available upon request at the time of in-person bid opening. This information also will be recorded at the time of bid opening. The bids will be tabulated or a bid abstract prepared and made available for public inspection. The opened bids will be available for public inspection within five days of bid opening but in any case before vendor selection except to the extent the bidder designates trade secrets or other proprietary data to be confidential. Material so designated must accompany the bid and must be readily separable from the bid in order to facilitate public inspection of the nonconfidential portion of the bid. Prices, makes, and model or catalog numbers of the items offered, deliveries, and terms of payment will be publicly available at a reasonable time after bid opening but in any event before vendor selection regardless of any designation to the contrary at the time of bid opening. For bids on construction contracts submitted in accordance with Section 3-02(b)(2)(xx)(J) of these Rules, the sealed list of subcontractors submitted with \n\n61\n\n<!-- PÁGINA 10 -->\nthe low bid will be opened after such low bid has been announced and the names of the subcontractors shall be announced. The sealed lists of subcontractors submitted by all other bidders pursuant to Section 3-02(b)(2)(xx)(J) of these Rules will be returned to such bidders unopened after the contract award. "
+  },
+  {
+    "offset_inicio": "(3) <u>Confidential Data. The ACCO shall examine the bids to determine the validity of</u> any requests for nondisclosure of trade secrets",
+    "offset_fim": "Any decision not to honor a request for confidentiality shall be communicated in writing to the bidder making the submission. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "(3) Confidential Data",
+    "motivo": "Inicia no marcador estrutural (3) e contém integralmente o parágrafo sobre confidencialidade; termina imediatamente antes do próximo marcador, “(m) Mistakes in Bids.”",
+    "texto": "(3) <u>Confidential Data. The ACCO shall examine the bids to determine the validity of</u> any requests for nondisclosure of trade secrets and other proprietary data identified in writing. Nondisclosure is permissible only if approved by Agency Counsel. Any decision not to honor a request for confidentiality shall be communicated in writing to the bidder making the submission. "
+  },
+  {
+    "offset_inicio": "# **(m) Mistakes in Bids.** ",
+    "offset_fim": "# **(m) Mistakes in Bids.** ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "(m) Mistakes in Bids",
+    "motivo": "O marcador (m) abre uma unidade própria, composta apenas por seu título; ela termina imediatamente antes do marcador subsequente (1), que inicia outra subdivisão.",
+    "texto": "# **(m) Mistakes in Bids.** "
+  },
+  {
+    "offset_inicio": "(1) <u>General. Correction or withdrawal of a bid because of an inadvertent, non-",
+    "offset_fim": "only to the extent that it is not contrary to the interest of the City or the fair treatment of other bidders.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "(1) General",
+    "motivo": "O bloco inicia no marcador (1) e contém integralmente o caput sobre correção ou retirada de proposta por erro não decorrente de julgamento. Termina imediatamente antes do próximo marcador estrutural, (2) Mistakes Discovered Before Opening.",
+    "texto": "(1) <u>General. Correction or withdrawal of a bid because of an inadvertent, non-</u> judgmental mistake in the bid requires careful consideration to protect the integrity of the competitive bidding system, and to assure fairness. If the mistake is attributable to an error in judgment, the bid may not be corrected. Bid correction or withdrawal by reason of a non-judgmental mistake is permissible, but only to the extent that it is not contrary to the interest of the City or the fair treatment of other bidders."
+  },
+  {
+    "offset_inicio": "(2) <u>Mistakes Discovered Before Opening. A bidder may correct mistakes discovered</u> before",
+    "offset_fim": "by withdrawing or correcting the bid as provided in Section 3-02(j) of these Rules.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "(2) Mistakes Discovered Before Opening",
+    "motivo": "A unidade inicia no marcador (2) e contém seu enunciado completo, terminando imediatamente antes do próximo marcador estrutural, (3).",
+    "texto": "(2) <u>Mistakes Discovered Before Opening. A bidder may correct mistakes discovered</u> before the time and date set for bid opening by withdrawing or correcting the bid as provided in Section 3-02(j) of these Rules."
+  },
+  {
+    "offset_inicio": "(3) <u>Confirmation of Bid. When the Contracting Officer knows or has reason to</u> conclude after bids have been publicly opened that a mistake has been made,",
+    "offset_fim": "the bid may be corrected or withdrawn upon approval of the ACCO if the following conditions are met: ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "(3) Confirmation of Bid",
+    "motivo": "O bloco inicia no marcador (3) e contém seu texto introdutório completo, encerrando-se imediatamente antes da subdivisão seguinte, marcada por (i).",
+    "texto": "(3) <u>Confirmation of Bid. When the Contracting Officer knows or has reason to</u> conclude after bids have been publicly opened that a mistake has been made, such officer shall request from the bidder written verification of the bid. If the bidder alleges mistake, the bid may be corrected or withdrawn upon approval of the ACCO if the following conditions are met: "
+  },
+  {
+    "offset_inicio": "(i) <u>Minor Informalities. Minor informalities are matters of form, rather than</u>",
+    "offset_fim": "are typographical errors, errors in extending unit prices, transposition errors, and arithmetical errors. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 11,
+    "titulo": "(i) Minor Informalities",
+    "motivo": "Inicia no marcador romano (i) e inclui sua explicação e exemplos; termina imediatamente antes do marcador subsequente (iii) na página 11.",
+    "texto": "(i) <u>Minor Informalities. Minor informalities are matters of form, rather than</u> substance, evident from the bid document or insignificant mistakes that can be waived or corrected without prejudice to other bidders; that is, the effect on price, quantity, quality, delivery, or contractual conditions is negligible. The Contracting Officer may waive such informalities or allow the bidder to correct them depending on which is in the best interest of the City. Examples include the failure of a bidder to: \n\n- (A) return the number of signed bids required by the IFB, or \n\n- (B) acknowledge receipt of an amendment to the IFB, but only if it is clear from the bid that the bidder received the amendment and intended to be bound by its terms, or the amendment involved had a negligible effect on price, quantity, quality, or delivery. \n\n(ii) <u>Mistakes Where Intended Correct Bid Is Evident. If the mistake and the</u> intended correct bid are clearly evident on the face of the bid document, the bid shall be corrected to the intended correct bid and may not be withdrawn. Examples of mistakes that may be clearly evident on the face of the bid \n\n62\n\n<!-- PÁGINA 11 -->\ndocument are typographical errors, errors in extending unit prices, transposition errors, and arithmetical errors. "
+  },
+  {
+    "offset_inicio": "(iii) <u>Mistakes Where Intended Correct Bid Is Not Evident. Mistakes may not</u> be",
+    "offset_fim": "the following determination, which shall be approved by the ACCO: ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(iii) Mistakes Where Intended Correct Bid Is Not Evident",
+    "motivo": "O bloco inicia no marcador romano (iii) e contém seu caput até imediatamente antes da primeira alínea subordinada, marcada por (A).",
+    "texto": "(iii) <u>Mistakes Where Intended Correct Bid Is Not Evident. Mistakes may not</u> be corrected after bid opening. A bidder may be permitted to withdraw a bid where a unilateral error or mistake has been discovered in the bid and the Contracting Officer makes the following determination, which shall be approved by the ACCO: "
+  },
+  {
+    "offset_inicio": "- (A) the mistake was known or made known to the agency prior to vendor selection or within three days after the opening of the bid, whichever period is shorter;",
+    "offset_fim": "or within three days after the opening of the bid, whichever period is shorter;",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(A) Condição de conhecimento da proposta equivocada",
+    "motivo": "O trecho inicia na alínea estrutural (A) e termina imediatamente antes da próxima alínea estrutural, (B).",
+    "texto": "- (A) the mistake was known or made known to the agency prior to vendor selection or within three days after the opening of the bid, whichever period is shorter;"
+  },
+  {
+    "offset_inicio": "- (B) the price bid was based on an error of such magnitude that enforcement would be unconscionable; ",
+    "offset_fim": "- (B) the price bid was based on an error of such magnitude that enforcement would be unconscionable; ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(B) Erro de magnitude que torna a execução inconcebível",
+    "motivo": "O primeiro marcador estrutural visível é a alínea (B), que inicia uma unidade própria e termina imediatamente antes da alínea (C).",
+    "texto": "- (B) the price bid was based on an error of such magnitude that enforcement would be unconscionable; "
+  },
+  {
+    "offset_inicio": "- (C) the bid was submitted in good faith and the bidder submits credible evidence that",
+    "offset_fim": "evidence that the mistake was a clerical error as opposed to a judgment error; ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(C) Condição de boa-fé e erro clerical",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador estrutural (C) e termina imediatamente antes do próximo marcador estrutural, (D).",
+    "texto": "- (C) the bid was submitted in good faith and the bidder submits credible evidence that the mistake was a clerical error as opposed to a judgment error; "
+  },
+  {
+    "offset_inicio": "- (D) the error in bid is actually due to an unintentional and substantial arithmetic error or unintentional omission",
+    "offset_fim": "inspection of the original work paper, documents, or materials used in the preparation of the bid sought to be withdrawn; and ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(D) Erro substancial não intencional na proposta",
+    "motivo": "O primeiro marcador estrutural visível é “(D)” na página 11. O bloco contém integralmente sua condição e termina imediatamente antes do marcador seguinte, “(E)”.",
+    "texto": "- (D) the error in bid is actually due to an unintentional and substantial arithmetic error or unintentional omission of a substantial quantity of work, labor, material, goods, or services made directly in the compilation of the bid, which unintentional arithmetic error or unintentional omission can be clearly shown by objective evidence drawn from inspection of the original work paper, documents, or materials used in the preparation of the bid sought to be withdrawn; and "
+  },
+  {
+    "offset_inicio": "- (E) it is possible to place the City in the same condition that had existed prior to",
+    "offset_fim": "Under no circumstances shall a bid be amended or revised to rectify the error or mistake.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(E) Condição para retirada de lance",
+    "motivo": "O bloco inicia no marcador de alínea “(E)” e contém toda a regra sobre a retirada do lance e devolução da garantia. Termina imediatamente antes do próximo marcador estrutural, “(4) Mistakes Discovered After Vendor Selection.”",
+    "texto": "- (E) it is possible to place the City in the same condition that had existed prior to the receipt of the bid. Upon the approval of the ACCO, the bid may be withdrawn, and the bid bond or other security returned to the bidder. If the bid was the low bid or the bid that represents best value, then the contract shall either be awarded to the next lowest bidder or bidder that represents the next best value to the City, as appropriate, or resolicited pursuant to these Rules. Under no circumstances shall a bid be amended or revised to rectify the error or mistake."
+  },
+  {
+    "offset_inicio": "(4) <u>Mistakes Discovered After Vendor Selection. Mistakes shall not be corrected after</u> vendor selection except where the ACCO, subject to the approval of the CCPO, makes a determination that it would be unconscionable not to allow the mistake to be corrected.",
+    "offset_fim": "approval of the CCPO, makes a determination that it would be unconscionable not to allow the mistake to be corrected. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(4) Mistakes Discovered After Vendor Selection",
+    "motivo": "O bloco inicia no marcador estrutural (4) e contém integralmente sua regra; termina imediatamente antes do próximo marcador estrutural, (5).",
+    "texto": "(4) <u>Mistakes Discovered After Vendor Selection. Mistakes shall not be corrected after</u> vendor selection except where the ACCO, subject to the approval of the CCPO, makes a determination that it would be unconscionable not to allow the mistake to be corrected. "
+  },
+  {
+    "offset_inicio": "(5) <u>Determinations Required. When a bid is corrected or withdrawn, or correction or</u> withdrawal is denied, the ACCO shall prepare a determination",
+    "offset_fim": "showing that the relief was granted or denied in accordance with these Rules.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(5) Determinations Required",
+    "motivo": "O bloco inicia no marcador estrutural (5) e contém integralmente a determinação exigida; termina imediatamente antes do próximo marcador, **(n) Withdrawal of Bids.**",
+    "texto": "(5) <u>Determinations Required. When a bid is corrected or withdrawn, or correction or</u> withdrawal is denied, the ACCO shall prepare a determination showing that the relief was granted or denied in accordance with these Rules."
+  },
+  {
+    "offset_inicio": "**(n) Withdrawal of Bids.** Except as provided for in Section 3-02(j) of these Rules",
+    "offset_fim": "thereafter, a bidder may withdraw its bid only in writing and in advance of an actual award. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "(n) Withdrawal of Bids",
+    "motivo": "Unidade iniciada pelo marcador estrutural **(n); contém sua regra integral e termina imediatamente antes do próximo marcador, (o), na página 12.",
+    "texto": "**(n) Withdrawal of Bids.** Except as provided for in Section 3-02(j) of these Rules a bidder may not withdraw its bid before the expiration of forty-five days after the date of the opening of bids; thereafter, a bidder may withdraw its bid only in writing and in advance of an actual award. "
+  },
+  {
+    "offset_inicio": "# **(o) Bid Evaluation and Vendor Selection.**",
+    "offset_fim": "# **(o) Bid Evaluation and Vendor Selection.**",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(o) Bid Evaluation and Vendor Selection",
+    "motivo": "O marcador (o) inicia uma unidade própria, composta apenas de seu título, e termina imediatamente antes do marcador subordinado (1) Vendor Selection.",
+    "texto": "# **(o) Bid Evaluation and Vendor Selection.**"
+  },
+  {
+    "offset_inicio": "# (1) <u>Vendor Selection.</u>",
+    "offset_fim": "# (1) <u>Vendor Selection.</u>",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(1) Vendor Selection",
+    "motivo": "A unidade inicia no marcador numerado “(1)” e contém apenas seu título/caput; termina imediatamente antes da primeira subdivisão marcada, “(i) Contracts for Construction.”",
+    "texto": "# (1) <u>Vendor Selection.</u>"
+  },
+  {
+    "offset_inicio": "(i) <u>Contracts for Construction. The responsible bidder whose bid meets the</u> requirements and objectively measurable",
+    "offset_fim": "be evaluated for any requirement or criterion that is not disclosed in the IFB. ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(i) Contracts for Construction",
+    "motivo": "Inicia no marcador estrutural (i) e contém integralmente a regra de seleção para contratos de construção; termina imediatamente antes do marcador seguinte, (ii).",
+    "texto": "(i) <u>Contracts for Construction. The responsible bidder whose bid meets the</u> requirements and objectively measurable evaluation criteria set forth in the IFB, and whose bid price is the lowest responsive and responsible bid price or, if the IFB has so stated, the lowest responsive and responsible evaluated bid price, shall be selected for the contract. A bid shall not be evaluated for any requirement or criterion that is not disclosed in the IFB. "
+  },
+  {
+    "offset_inicio": "(ii) <u>Contracts for Purchase of Goods and Standard Services. Prior to the bid,</u>",
+    "offset_fim": "whose bid represents the best value to the City by optimizing quality, cost and efficiency, will be selected for the contract.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(ii) Contracts for Purchase of Goods and Standard Services",
+    "motivo": "O bloco inicia no marcador estrutural (ii) e contém seu texto integral, encerrando-se imediatamente antes do próximo marcador estrutural, (iii).",
+    "texto": "(ii) <u>Contracts for Purchase of Goods and Standard Services. Prior to the bid,</u> the ACCO will determine whether the goods or standard services will be awarded to the lowest responsive and responsible bidder or to the responsive and responsible bidder whose bid represents the best value to the City. The responsive and responsible bidder whose bid meets the requirements and objectively measurable evaluation criteria set forth in the IFB, and whose bid price is the lowest, or whose bid represents the best value to the City by optimizing quality, cost and efficiency, will be selected for the contract."
+  },
+  {
+    "offset_inicio": "(iii) If award will be made based on best value, best value may be determined by the",
+    "offset_fim": "including any bids that have been adjusted pursuant to subparagraph (iv) of this paragraph, or such higher percentage as approved by the CCPO either on an individual basis or by category or class. Such factors may include: ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(iii) Determinação de best value",
+    "motivo": "O bloco inicia no marcador romano (iii) e contém seu caput até imediatamente antes do próximo marcador estrutural, (1), que abre a primeira subdivisão listada.",
+    "texto": "(iii) If award will be made based on best value, best value may be determined by the ACCO, or the ACCO may convene a committee to make such determination. Any such committee must consist of persons with knowledge, expertise and experience sufficient to make a fair and reasonable determination. As set forth below the ACCO, or the committee as the case may be, may determine best value by consideration of price together with other factors deemed relevant by the ACCO and set forth in the IFB. In making such determination the ACCO, or committee, must consider the low responsive bid and the next low responsive bids that are within ten percent (10%) of the low responsive bid in price, including any bids that have been adjusted pursuant to subparagraph (iv) of this paragraph, or such higher percentage as approved by the CCPO either on an individual basis or by category or class. Such factors may include: "
+  },
+  {
+    "offset_inicio": "(1) features of the offered product or service set forth in detailed specifications for the product offered; ",
+    "offset_fim": "(1) features of the offered product or service set forth in detailed specifications for the product offered; ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(1) Features of the offered product or service",
+    "motivo": "O primeiro marcador estrutural visível é “(1)”. Seu bloco contém apenas o item iniciado por esse marcador e termina imediatamente antes do próximo marcador estrutural, “(2)”.",
+    "texto": "(1) features of the offered product or service set forth in detailed specifications for the product offered; "
+  },
+  {
+    "offset_inicio": "(2) warranties and or maintenance to be provided with the product or service; ",
+    "offset_fim": "(2) warranties and or maintenance to be provided with the product or service; ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(2) Warranties and maintenance",
+    "motivo": "O item numerado (2) é a primeira unidade completa visível; inicia no seu marcador e termina imediatamente antes do próximo marcador estrutural, (3).",
+    "texto": "(2) warranties and or maintenance to be provided with the product or service; "
+  },
+  {
+    "offset_inicio": "(3) references, past performance and reliability, including reliability or durability of the product being offered and current or past experience with the provision of similar goods or services;",
+    "offset_fim": "reliability or durability of the product being offered and current or past experience with the provision of similar goods or services;",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(3) References, past performance and reliability",
+    "motivo": "O trecho inicia no marcador estrutural (3) e termina antes do próximo marcador, (4), formando uma unidade autônoma.",
+    "texto": "(3) references, past performance and reliability, including reliability or durability of the product being offered and current or past experience with the provision of similar goods or services;"
+  },
+  {
+    "offset_inicio": "(4) organization, staffing (both members of staff and particular abilities and experience), and ability to undertake the type and complexity of the work; ",
+    "offset_fim": "staffing (both members of staff and particular abilities and experience), and ability to undertake the type and complexity of the work; ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(4) Organization, staffing, and ability",
+    "motivo": "O bloco inicia no marcador estrutural (4) e termina imediatamente antes do próximo marcador, (5), na mesma página.",
+    "texto": "(4) organization, staffing (both members of staff and particular abilities and experience), and ability to undertake the type and complexity of the work; "
+  },
+  {
+    "offset_inicio": "(5) financial capability; and ",
+    "offset_fim": "(5) financial capability; and ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "titulo": "(5) financial capability",
+    "motivo": "O item numerado (5) inicia a primeira unidade presente e termina imediatamente antes do marcador do item irmão (6), no início da página 13.",
+    "texto": "(5) financial capability; and "
+  },
+  {
+    "offset_inicio": "(6) record of compliance with all federal, State and local laws, rules, licensing requirements, where applicable, and executive orders, including but not limited to compliance with existing labor standards and prevailing wage laws. ",
+    "offset_fim": "shall be completed to record the evaluation of the bids and shall be signed and dated by all members of the committee.",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(6) Record of compliance",
+    "motivo": "O bloco inicia no marcador estrutural “(6)” e reúne seu texto e o parágrafo subsequente sem marcador, terminando imediatamente antes do próximo marcador estrutural “(iv)”.",
+    "texto": "(6) record of compliance with all federal, State and local laws, rules, licensing requirements, where applicable, and executive orders, including but not limited to compliance with existing labor standards and prevailing wage laws. \n\nThe ACCO, or committee, may consider any and all information related to such factors in determining best value and may require additional information to be submitted by the bidders with the bid, or alternatively, within up to thirty (30) days from the bid opening from all bidders whose bids are to be considered pursuant to in Section 3-02(o)(1)(iii) of these Rules. If a committee is used to evaluate the bids, then written evaluation forms shall be completed to record the evaluation of the bids and shall be signed and dated by all members of the committee."
+  },
+  {
+    "offset_inicio": "(iv) If award will be made based on best value, a vendor that is an M/WBE or State-certified M/WBE",
+    "offset_fim": " approval from the CCPO. The price preference percentage, if any, shall be included in the IFB.",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(iv) Preferência de preço para M/WBE",
+    "motivo": "O bloco inicia no marcador estrutural (iv) e contém integralmente a regra de preferência de preço, terminando imediatamente antes do próximo marcador estrutural, (2).",
+    "texto": "(iv) If award will be made based on best value, a vendor that is an M/WBE or State-certified M/WBE must, except with the approval of the CCPO, be given a price preference of 10% and will be evaluated as if the bid price were 10% lower. A price preference of a different percentage may be given with approval from the CCPO. The price preference percentage, if any, shall be included in the IFB."
+  },
+  {
+    "offset_inicio": "(2) <u>Negotiation with the Apparent Lowest Responsive and Responsible Bidder or Responsive and Responsible Bidder Providing Best Value. Upon determination of the</u>",
+    "offset_fim": "all bids in accordance with this section. The result of negotiations, if any, shall be documented in the Recommendation for Award. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(2) Negotiation with the Apparent Lowest Responsive and Responsible Bidder or Responsive and Responsible Bidder Providing Best Value",
+    "motivo": "O bloco inicia no marcador estrutural (2) e contém integralmente suas regras de negociação, terminando imediatamente antes do próximo marcador estrutural, (3) Award.",
+    "texto": "(2) <u>Negotiation with the Apparent Lowest Responsive and Responsible Bidder or Responsive and Responsible Bidder Providing Best Value. Upon determination of the</u> apparent lowest responsive and responsible bidder or responsive and responsible bidder providing best value, pursuant to Section 3-02(0)(1) of these Rules, and prior to award, the Contracting Officer may elect to open negotiations with the selected vendor in an effort to improve the bid to the City with respect to the price only if award will be made to the lowest responsive and responsible bidder, or if award will be made to the responsive and responsible bidder whose bid represents the best value to the City, with respect to any of the factors considered in determining best value. In the event the apparent winning bidder declines to negotiate, the Contracting Officer may elect to either award the contract to the apparent winning bidder or may, upon written approval by the ACCO, reject all bids in accordance with this section. The result of negotiations, if any, shall be documented in the Recommendation for Award. "
+  },
+  {
+    "offset_inicio": "(3) <u>Award. Upon the determination of the apparent winning bidder pursuant to Section</u> 3-02(o)(1) of these Rules, a Recommendation for Award shall be approved by the ACCO",
+    "offset_fim": "the reasons that the bid represents the best value to the City and the factors considered by the agency. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(3) Award",
+    "motivo": "Inicia no marcador numerado (3) e contém integralmente o parágrafo de adjudicação; termina imediatamente antes do próximo marcador estrutural, (p) Low Tie Bids.",
+    "texto": "(3) <u>Award. Upon the determination of the apparent winning bidder pursuant to Section</u> 3-02(o)(1) of these Rules, a Recommendation for Award shall be approved by the ACCO and the contract shall be awarded to that bidder. Where the award is based on best value to the City, the ACCO shall set forth in the Recommendation for Award the reasons that the bid represents the best value to the City and the factors considered by the agency. "
+  },
+  {
+    "offset_inicio": "# **(p) Low Tie Bids.**",
+    "offset_fim": "# **(p) Low Tie Bids.**",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(p) Low Tie Bids",
+    "motivo": "O bloco inicia no marcador de subdivisão (p) e contém apenas seu título/caput; termina imediatamente antes do marcador estrutural seguinte, (1) Definition.",
+    "texto": "# **(p) Low Tie Bids.**"
+  },
+  {
+    "offset_inicio": "(1) <u>Definition. Low Tie Bids are low responsive bids from responsible bidders that are</u> identical in price, meeting all",
+    "offset_fim": "requirements and criteria set forth in the IFB when the selection of the winning bidder is based on price alone. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(1) Definition — Low Tie Bids",
+    "motivo": "O bloco inicia no marcador estrutural “(1)” e contém sua definição integral, encerrando-se imediatamente antes do próximo marcador estrutural “(2) Vendor Selection.”",
+    "texto": "(1) <u>Definition. Low Tie Bids are low responsive bids from responsible bidders that are</u> identical in price, meeting all the requirements and criteria set forth in the IFB when the selection of the winning bidder is based on price alone. "
+  },
+  {
+    "offset_inicio": "(2) <u>Vendor Selection. In the case of low tie bids, the ACCO shall break the tie in the</u> following order of priority.",
+    "offset_fim": "(2) <u>Vendor Selection. In the case of low tie bids, the ACCO shall break the tie in the</u> following order of priority.",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "(2) Vendor Selection",
+    "motivo": "A unidade inicia no marcador numerado (2) e contém apenas seu enunciado introdutório; termina imediatamente antes do próximo marcador, (i), na página 14.",
+    "texto": "(2) <u>Vendor Selection. In the case of low tie bids, the ACCO shall break the tie in the</u> following order of priority."
+  },
+  {
+    "offset_inicio": "(i) Select a certified New York City minority owned, woman-owned or emerging business entity bidder; ",
+    "offset_fim": "(i) Select a certified New York City minority owned, woman-owned or emerging business entity bidder; ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(i) Seleção de licitante certificado de NYC",
+    "motivo": "É a primeira unidade identificável no trecho, aberta pelo marcador romano (i) e encerrada imediatamente antes do marcador (ii).",
+    "texto": "(i) Select a certified New York City minority owned, woman-owned or emerging business entity bidder; "
+  },
+  {
+    "offset_inicio": "- (ii) Select a New York City bidder; ",
+    "offset_fim": "- (ii) Select a New York City bidder; ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(ii) Select a New York City bidder",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador romano (ii) e termina antes do marcador seguinte, (iii).",
+    "texto": "- (ii) Select a New York City bidder; "
+  },
+  {
+    "offset_inicio": "(iii) Select a certified New York State small, minority or woman-owned business bidder;",
+    "offset_fim": "(iii) Select a certified New York State small, minority or woman-owned business bidder;",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(iii) Select a certified New York State small, minority or woman-owned business bidder",
+    "motivo": "O primeiro marcador estrutural visível é o inciso romano “(iii)”. Seu texto termina no ponto e vírgula, imediatamente antes do próximo inciso “(iv)”.",
+    "texto": "(iii) Select a certified New York State small, minority or woman-owned business bidder;"
+  },
+  {
+    "offset_inicio": "- (iv) Select a New York State bidder; ",
+    "offset_fim": "- (iv) Select a New York State bidder; ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(iv) Select a New York State bidder",
+    "motivo": "O trecho começa no primeiro marcador estrutural presente, o inciso romano (iv), e termina imediatamente antes do marcador seguinte, (v).",
+    "texto": "- (iv) Select a New York State bidder; "
+  },
+  {
+    "offset_inicio": "- (v) Conduct a drawing. Tie bidders shall be invited to witness the drawing. A wit",
+    "offset_fim": "present to verify the drawing and shall certify the results on the bid tabulation sheet.",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(v) Conduct a drawing",
+    "motivo": "O bloco inicia no marcador estrutural (v) e contém integralmente sua instrução sobre o sorteio. Termina antes do próximo marcador estrutural, (3) Record.",
+    "texto": "- (v) Conduct a drawing. Tie bidders shall be invited to witness the drawing. A witness shall be present to verify the drawing and shall certify the results on the bid tabulation sheet."
+  },
+  {
+    "offset_inicio": "(3) <u>Record. A record shall be made of tie bids received, and the method used to break</u>",
+    "offset_fim": "he ACCO shall monitor the incidence of low tie bids in a systematic manner. ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(3) Record",
+    "motivo": "Unidade iniciada pelo marcador (3), contendo a regra sobre registro e monitoramento de empates, e encerrada imediatamente antes do próximo marcador estrutural, **(q) Single Bid.**",
+    "texto": "(3) <u>Record. A record shall be made of tie bids received, and the method used to break</u> the tie. The ACCO shall monitor the incidence of low tie bids in a systematic manner. "
+  },
+  {
+    "offset_inicio": "**(q) Single Bid.** When a single bid has been received in response to an IFB, a vendor",
+    "offset_fim": "that the price is fair and reasonable, and that resolicitation is not in the best interest of the City.",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(q) Single Bid",
+    "motivo": "Inicia no marcador estruturado (q) e contém integralmente a regra sobre recebimento de uma única proposta; termina imediatamente antes do próximo marcador estruturado, (r) Alternate Bids.",
+    "texto": "**(q) Single Bid.** When a single bid has been received in response to an IFB, a vendor may be selected only after the ACCO has determined that a sufficient number of other potentially responsive vendors have had a reasonable opportunity to bid; why, as a result of inquiries made by the agency, other vendors chose not to submit bids; that the bid submitted meets minimum requirements of the IFB; that the price is fair and reasonable, and that resolicitation is not in the best interest of the City."
+  },
+  {
+    "offset_inicio": "**(r) Alternate Bids.** Unless alternate bids are requested in the solicitation, such bids may not be accepted.",
+    "offset_fim": "Unless alternate bids are requested in the solicitation, such bids may not be accepted.",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(r) Alternate Bids",
+    "motivo": "Unidade iniciada pelo marcador (r) e encerrada imediatamente antes do próximo marcador estrutural, (s).",
+    "texto": "**(r) Alternate Bids.** Unless alternate bids are requested in the solicitation, such bids may not be accepted."
+  },
+  {
+    "offset_inicio": "**(s) Notification of Non-Responsiveness or Non-Responsibility.** If the ACCO determines",
+    "offset_fim": "appeal the determination, if applicable. A copy of the notification shall be filed with the CCPO and Comptroller. ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(s) Notification of Non-Responsiveness or Non-Responsibility",
+    "motivo": "Unidade iniciada pelo marcador estrutural (s); contém todo o parágrafo sobre a notificação e termina imediatamente antes do marcador seguinte, (t).",
+    "texto": "**(s) Notification of Non-Responsiveness or Non-Responsibility.** If the ACCO determines that a bidder is either not responsible or not responsive, such bidder shall immediately be notified in writing of such determination and the reasons therefor, and the right to appeal the determination, if applicable. A copy of the notification shall be filed with the CCPO and Comptroller. "
+  },
+  {
+    "offset_inicio": "# **(t) Multiple Award Task Order or Purchase Order Contracts.** ",
+    "offset_fim": "# **(t) Multiple Award Task Order or Purchase Order Contracts.** ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(t) Multiple Award Task Order or Purchase Order Contracts",
+    "motivo": "O bloco inicia no marcador da subdivisão (t) e contém apenas seu título/caput, terminando imediatamente antes do marcador estrutural seguinte, “(1) Determination”.",
+    "texto": "# **(t) Multiple Award Task Order or Purchase Order Contracts.** "
+  },
+  {
+    "offset_inicio": "- (1) <u>Determination. Multiple award task order contracts for standard services or</u>",
+    "offset_fim": "and the potential advantage of multiple contracts (e.g., more favorable terms; more competitive pricing, etc.).",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(1) Determination",
+    "motivo": "O bloco inicia no marcador estrutural “(1) Determination” e contém integralmente seu parágrafo. Termina imediatamente antes do próximo marcador estrutural, “(2) Method”.",
+    "texto": "- (1) <u>Determination. Multiple award task order contracts for standard services or</u> multiple award purchase order contracts for goods may be awarded upon a determination by the ACCO that it is in the best interest of the City to award multiple contracts for goods or standard services to multiple contractors and to allocate work among such contractors through a task order or purchase order system. The criteria to be considered by the ACCO in making such determination may include the following: the nature of the goods or standard services to be procured; the expected frequency of task order or purchase order issuance; the capacity of vendors to provide all of the required services within the required timeframes; and the potential advantage of multiple contracts (e.g., more favorable terms; more competitive pricing, etc.)."
+  },
+  {
+    "offset_inicio": "- (2) <u>Method.</u> ",
+    "offset_fim": "- (2) <u>Method.</u> ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(2) Method",
+    "motivo": "O bloco inicia no marcador estruturado “(2)” e contém apenas seu título; termina imediatamente antes do marcador “(i)”, que abre uma subdivisão própria.",
+    "texto": "- (2) <u>Method.</u> "
+  },
+  {
+    "offset_inicio": "- (i) Multiple awards may be made for contracts for goods or standard services, pursuant to competitive sealed bids where award is made based on price only, or based on best value pursuant to the criteria set forth in Section 3-02(o)(1) of these Rules, in conjunction with the procedures prescribed in this subdivision. The IFB shall also state the procedures and criteria to be used in ",
+    "offset_fim": "selecting the vendor to perform on an individual task order or goods to be purchased pursuant to an individual purchase order. The agency may: ",
+    "pagina_inicio": 14,
+    "pagina_fim": 15,
+    "titulo": "(i) Multiple awards — seleção de fornecedor",
+    "motivo": "O bloco inicia no marcador romano “(i)” na página 14 e continua após a quebra de página. Termina imediatamente antes da alínea “(A)”, que abre uma nova subdivisão estrutural.",
+    "texto": "- (i) Multiple awards may be made for contracts for goods or standard services, pursuant to competitive sealed bids where award is made based on price only, or based on best value pursuant to the criteria set forth in Section 3-02(o)(1) of these Rules, in conjunction with the procedures prescribed in this subdivision. The IFB shall also state the procedures and criteria to be used in \n\n66\n\n<!-- PÁGINA 15 -->\nselecting the vendor to perform on an individual task order or goods to be purchased pursuant to an individual purchase order. The agency may: "
+  },
+  {
+    "offset_inicio": "- (A) select the vendor that represents the best value to the City for that particular task",
+    "offset_fim": "determined pursuant to Section 3-02(o) of these Rules, based on each vendor’s bid, or ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(A) Seleção do fornecedor de melhor valor",
+    "motivo": "O trecho inicia no marcador estrutural (A) e termina imediatamente antes do próximo marcador estrutural, (B).",
+    "texto": "- (A) select the vendor that represents the best value to the City for that particular task order or purchase order, as determined pursuant to Section 3-02(o) of these Rules, based on each vendor’s bid, or "
+  },
+  {
+    "offset_inicio": "- (B) the agency may solicit offers for each task order or purchase order from all awarded vendors. If the agency solicits offers for each task order or purchase order,",
+    "offset_fim": "receive each solicitation and have a reasonable opportunity to compete to provide the standard services or goods. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(B) Solicitação de ofertas a todos os fornecedores adjudicados",
+    "motivo": "O bloco inicia no marcador estrutural (B) e termina ao fim de sua disposição. O parágrafo seguinte, sem marcador, retoma texto fora deste item e constitui bloco separado.",
+    "texto": "- (B) the agency may solicit offers for each task order or purchase order from all awarded vendors. If the agency solicits offers for each task order or purchase order, each vendor shall receive each solicitation and have a reasonable opportunity to compete to provide the standard services or goods. "
+  },
+  {
+    "offset_inicio": "(ii) The following list constitutes acceptable alternative methods of assigning task orders: ",
+    "offset_fim": "(ii) The following list constitutes acceptable alternative methods of assigning task orders: ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(ii) Métodos alternativos de atribuição de task orders",
+    "motivo": "É a primeira unidade completa iniciada por marcador no trecho fornecido. Contém apenas seu enunciado introdutório e termina imediatamente antes da alínea (A), que inicia uma subdivisão própria.",
+    "texto": "(ii) The following list constitutes acceptable alternative methods of assigning task orders: "
+  },
+  {
+    "offset_inicio": "- (A) rotation, or other non-discretionary method of assignment, including where ass",
+    "offset_fim": "cluding where assignment pursuant to such method may be varied based on stated criteria (e.g., capacity or past performance); ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(A) Rotation or other non-discretionary assignment method",
+    "motivo": "O primeiro bloco inicia no marcador estrutural “(A)” e contém sua única descrição, terminando imediatamente antes do marcador seguinte “(B)”.",
+    "texto": "- (A) rotation, or other non-discretionary method of assignment, including where assignment pursuant to such method may be varied based on stated criteria (e.g., capacity or past performance); "
+  },
+  {
+    "offset_inicio": "- (B) assignment to or competition among particular vendor(s) with technical expertise particularly suited to the task order;",
+    "offset_fim": "- (B) assignment to or competition among particular vendor(s) with technical expertise particularly suited to the task order;",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(B) Assignment to or competition among vendors",
+    "motivo": "O bloco inicia no marcador estrutural (B) e contém sua única disposição, terminando imediatamente antes do próximo marcador, (C).",
+    "texto": "- (B) assignment to or competition among particular vendor(s) with technical expertise particularly suited to the task order;"
+  },
+  {
+    "offset_inicio": "- (C) assignment to a particular vendor based on a vendor’s particular geographic location, experience or knowledge;",
+    "offset_fim": "- (C) assignment to a particular vendor based on a vendor’s particular geographic location, experience or knowledge;",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(C) Assignment based on geographic location, experience or knowledge",
+    "motivo": "O primeiro marcador estrutural visível é “(C)”. Seu bloco contém somente essa disposição e termina imediatamente antes do próximo marcador, “(D)”.",
+    "texto": "- (C) assignment to a particular vendor based on a vendor’s particular geographic location, experience or knowledge;"
+  },
+  {
+    "offset_inicio": "(D) assignment to a particular vendor based on the agency’s need to distribute task orders",
+    "offset_fim": "(D) assignment to a particular vendor based on the agency’s need to distribute task orders among vendors; and",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(D) Assignment to a particular vendor",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador (D) e termina antes do marcador estrutural seguinte, (E).",
+    "texto": "(D) assignment to a particular vendor based on the agency’s need to distribute task orders among vendors; and"
+  },
+  {
+    "offset_inicio": "(E) any other method approved by the CCPO as set forth in the IFB. ",
+    "offset_fim": "(E) any other method approved by the CCPO as set forth in the IFB. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(E) Other approved method",
+    "motivo": "O bloco inicia no marcador estrutural (E) e contém sua única frase; termina imediatamente antes do próximo marcador estrutural, (iii).",
+    "texto": "(E) any other method approved by the CCPO as set forth in the IFB. "
+  },
+  {
+    "offset_inicio": "(iii) In the event that a vendor selected pursuant to one of the selection methods",
+    "offset_fim": " vendor for purposes of that task order and select another vendor with approval of the CCPO. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(iii) Desqualificação de fornecedor para ordem individual",
+    "motivo": "O bloco inicia no marcador estrutural “(iii)” e contém integralmente sua regra sobre incapacidade do fornecedor e seleção de outro. Termina imediatamente antes do próximo marcador estrutural, “(iv)”.",
+    "texto": "(iii) In the event that a vendor selected pursuant to one of the selection methods in paragraphs (i) or (ii) above is unable to perform the services on an individual task order or provide the goods to be purchased pursuant to an individual purchase order for reasons such as lack of capacity or conflict of interest, the agency may disqualify that vendor for purposes of that task order and select another vendor with approval of the CCPO. "
+  },
+  {
+    "offset_inicio": "(iv) Price shall be the primary factor considered in making individual vendor selection decisions, and no task order shall be issued unless the ACCO determines",
+    "offset_fim": "multiple award contract shall represent maximum prices that may be set forth in individual task orders issued to that vendor.",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(iv) Price as primary factor in vendor selection",
+    "motivo": "O bloco inicia no marcador estrutural (iv) e contém integralmente a regra sobre preço e limites de preços em contratos de múltipla adjudicação. Termina imediatamente antes do próximo marcador estrutural, (3) Duration.",
+    "texto": "(iv) Price shall be the primary factor considered in making individual vendor selection decisions, and no task order shall be issued unless the ACCO determines that the proposed price is fair and reasonable. Prices set forth in a multiple award contract shall represent maximum prices that may be set forth in individual task orders issued to that vendor."
+  },
+  {
+    "offset_inicio": "(3) <u>Duration. Unless otherwise approved by the CCPO, contracts awarded pursuant to</u>",
+    "offset_fim": "the expiration of the task order with the CCPO’s approval, which must be obtained in a manner prescribed by the CCPO.",
+    "pagina_inicio": 15,
+    "pagina_fim": 16,
+    "titulo": "(3) Duration",
+    "motivo": "O bloco inicia no marcador estrutural (3) e contém a regra completa sobre duração contratual e de task orders. Termina imediatamente antes do próximo marcador estrutural, **(u) Rejection of Bids.**",
+    "texto": "(3) <u>Duration. Unless otherwise approved by the CCPO, contracts awarded pursuant to</u> this subdivision shall have a total term including all renewals, of not more than five years, \n\n67\n\n<!-- PÁGINA 16 -->\nprovided that any such contract may be extended for an additional period of one year beyond the date of expiration of such contract in accordance with § 4-02(b)(1)(iii) of these Rules. Task orders, or purchase orders may extend beyond the expiration of the contract term, in which event the terms and conditions of the contract shall continue to apply to the task order or purchase order until its termination or expiration. Task orders, or purchase orders, shall have a maximum term of three years or, if issued for a specific project, until the specific project is completed. Notwithstanding the above, a task order may be extended beyond, or further extended beyond, the expiration of the contract term or beyond the expiration of the task order with the CCPO’s approval, which must be obtained in a manner prescribed by the CCPO."
+  },
+  {
+    "offset_inicio": "**(u) Rejection of Bids.** The ACCO may reject all bids and may elect to resolicit",
+    "offset_fim": "in accordance with this section or by other method authorized by these Rules.",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(u) Rejection of Bids",
+    "motivo": "A unidade inicia no marcador estruturado “(u)” e contém seu parágrafo integral; termina imediatamente antes do próximo marcador estruturado, “(v) Resolicitation...”.",
+    "texto": "**(u) Rejection of Bids.** The ACCO may reject all bids and may elect to resolicit by bid in accordance with this section or by other method authorized by these Rules."
+  },
+  {
+    "offset_inicio": "**(v) Resolicitation in Cases of Failed Bids Due to Defects in the Solicitation Documents.** Under",
+    "offset_fim": "new solicitation for which notice is provided as set forth in this subdivision.",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(v) Resolicitation in Cases of Failed Bids Due to Defects in the Solicitation Documents",
+    "motivo": "O bloco inicia no marcador estrutural (v) e contém seu caput. Termina antes do próximo marcador estrutural, (1), que abre uma subdivisão própria.",
+    "texto": "**(v) Resolicitation in Cases of Failed Bids Due to Defects in the Solicitation Documents.** Under the circumstances set forth in this subdivision, the ACCO may determine that it is appropriate to reject all bids after opening and before vendor selection and to complete the acquisition by a new solicitation for which notice is provided as set forth in this subdivision."
+  },
+  {
+    "offset_inicio": "- (1) This procedure may be used where at least five responses to the solicitation have been received, and despite efforts to address problems in the solicitation",
+    "offset_fim": "all responses are found to be non-responsive as a result of the same defect(s) in the specification or other solicitation documents.",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(1) Procedimento para respostas não responsivas",
+    "motivo": "O bloco inicia no marcador estrutural “(1)” e contém integralmente sua condição de uso. Termina imediatamente antes do próximo marcador estrutural, “(2)”.",
+    "texto": "- (1) This procedure may be used where at least five responses to the solicitation have been received, and despite efforts to address problems in the solicitation by means of prebid conferences and issuance of amended specifications in accordance with these Rules, all responses are found to be non-responsive as a result of the same defect(s) in the specification or other solicitation documents."
+  },
+  {
+    "offset_inicio": "- (2) When using this procedure, the ACCO shall:",
+    "offset_fim": "- (2) When using this procedure, the ACCO shall:",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(2) When using this procedure, the ACCO shall",
+    "motivo": "O bloco inicia no marcador estrutural (2) e contém apenas seu caput. Termina antes do próximo marcador estrutural, (i), que abre uma subdivisão própria.",
+    "texto": "- (2) When using this procedure, the ACCO shall:"
+  },
+  {
+    "offset_inicio": "   - (i) make a determination that:",
+    "offset_fim": "   - (i) make a determination that:",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(i) make a determination that",
+    "motivo": "O item romano (i) inicia uma unidade estrutural e contém apenas seu enunciado introdutório, terminando imediatamente antes da alínea (A), que inicia a próxima unidade.",
+    "texto": "   - (i) make a determination that:"
+  },
+  {
+    "offset_inicio": "(A) five or more bids have been received in response to the original solicitation;",
+    "offset_fim": "(A) five or more bids have been received in response to the original solicitation;",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(A) five or more bids",
+    "motivo": "O trecho inicia na alínea (A), o primeiro marcador estrutural presente, e termina imediatamente antes da próxima alínea, (B).",
+    "texto": "(A) five or more bids have been received in response to the original solicitation;"
+  },
+  {
+    "offset_inicio": "(B) all of the bids have been found to be non-responsive as a result of the same previously unresolved defect(s) in the solicitation documents; and ",
+    "offset_fim": "all of the bids have been found to be non-responsive as a result of the same previously unresolved defect(s) in the solicitation documents; and ",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(B) Bids non-responsive due to unresolved solicitation defects",
+    "motivo": "O bloco inicia no marcador de alínea maiúscula (B) e termina imediatamente antes do próximo marcador estrutural, (C), na mesma linha.",
+    "texto": "(B) all of the bids have been found to be non-responsive as a result of the same previously unresolved defect(s) in the solicitation documents; and "
+  },
+  {
+    "offset_inicio": "(C) prior to opening the bids the agency had made diligent efforts to discover and correct defects in the solicitation documents by inviting questions from prospective bidders, holding pre-bid conferences, and issuing amendments to the solicitation documents as appropriate; ",
+    "offset_fim": "pective bidders, holding pre-bid conferences, and issuing amendments to the solicitation documents as appropriate;",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(C) Esforços para corrigir defeitos na solicitação",
+    "motivo": "O trecho inicia no marcador estrutural (C) e contém integralmente sua condição, encerrando-se imediatamente antes do próximo marcador, (ii).",
+    "texto": "(C) prior to opening the bids the agency had made diligent efforts to discover and correct defects in the solicitation documents by inviting questions from prospective bidders, holding pre-bid conferences, and issuing amendments to the solicitation documents as appropriate;"
+  },
+  {
+    "offset_inicio": "(ii) prepare a corrected solicitation containing the statement that it is a correction of a previously defective solicitation, setting forth the new bid opening date and time, and conspicuously identifying the portions of the original solicitation that have been corrected; and ",
+    "offset_fim": "and conspicuously identifying the portions of the original solicitation that have been corrected; and ",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(ii) Prepare a corrected solicitation",
+    "motivo": "O bloco inicia no marcador hierárquico romano “(ii)” e termina imediatamente antes do próximo marcador do mesmo nível, “(iii)”, na página 16.",
+    "texto": "(ii) prepare a corrected solicitation containing the statement that it is a correction of a previously defective solicitation, setting forth the new bid opening date and time, and conspicuously identifying the portions of the original solicitation that have been corrected; and "
+  },
+  {
+    "offset_inicio": "(iii) deliver the corrected solicitation at least ten days in advance of the new bid",
+    "offset_fim": "ation documents, whether or not they actually submitted bids. ",
+    "pagina_inicio": 16,
+    "pagina_fim": 16,
+    "titulo": "(iii) Delivery of corrected solicitation",
+    "motivo": "O bloco inicia no marcador estrutural “(iii)” e contém integralmente sua determinação. Termina após “submitted bids.”, imediatamente antes do próximo marcador estrutural “(w)” na página 17.",
+    "texto": "(iii) deliver the corrected solicitation at least ten days in advance of the new bid opening date and time to all bidders who responded to the initial notice of the solicitation by obtaining copies of the original solicitation documents, whether or not they actually submitted bids. "
+  },
+  {
+    "offset_inicio": "**(w) Disposition of Bids.** All bids shall be retained. When bids are rejected or a solicitation canceled after bids are received,",
+    "offset_fim": "e retained and the bid security, if any, shall be promptly returned, and the file so documented. ",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(w) Disposition of Bids",
+    "motivo": "É a primeira unidade estrutural completa visível: inicia no marcador (w) e termina imediatamente antes do marcador da seção seguinte, Section 3-03.",
+    "texto": "**(w) Disposition of Bids.** All bids shall be retained. When bids are rejected or a solicitation canceled after bids are received, the bids shall be retained and the bid security, if any, shall be promptly returned, and the file so documented. "
+  },
+  {
+    "offset_inicio": "# **<u>Section 3-03 COMPETITIVE SEALED PROPOSALS.</u>** ",
+    "offset_fim": "# **<u>Section 3-03 COMPETITIVE SEALED PROPOSALS.</u>** ",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "Section 3-03 COMPETITIVE SEALED PROPOSALS",
+    "motivo": "A seção inicia no título destacado e termina imediatamente antes da subdivisão hierárquica seguinte, “(a) The Request for Proposals (RFP) – Contents.”; não há texto adicional no caput.",
+    "texto": "# **<u>Section 3-03 COMPETITIVE SEALED PROPOSALS.</u>** "
+  },
+  {
+    "offset_inicio": "- **(a) The Request for Proposals (RFP) – Contents.** RFPs must include the following",
+    "offset_fim": "**(a) The Request for Proposals (RFP) – Contents.** RFPs must include the following data: ",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(a) The Request for Proposals (RFP) – Contents",
+    "motivo": "O bloco inicia no marcador estrutural (a) e contém apenas seu enunciado introdutório; termina imediatamente antes do marcador (1), que abre a primeira subdivisão.",
+    "texto": "- **(a) The Request for Proposals (RFP) – Contents.** RFPs must include the following data: "
+  },
+  {
+    "offset_inicio": "   - (1) statement that the contract award will be made to the responsible proposer whose proposal represents the best value to the City by optimizing quality, cost and efficiency and therefore is determined to be the most advantageous to the City,",
+    "offset_fim": "the RFP, including the quantitative preference to be provided to proposals submitted by vendors that are M/WBEs or State-certified M/WBEs;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(1) Statement on contract award and M/WBE preference",
+    "motivo": "O bloco inicia no marcador estrutural (1) e contém integralmente sua declaração. Termina no ponto e vírgula imediatamente antes do próximo marcador estrutural, (2).",
+    "texto": "   - (1) statement that the contract award will be made to the responsible proposer whose proposal represents the best value to the City by optimizing quality, cost and efficiency and therefore is determined to be the most advantageous to the City, taking into consideration the price and such other factors or criteria that are set forth in the RFP, including the quantitative preference to be provided to proposals submitted by vendors that are M/WBEs or State-certified M/WBEs;"
+  },
+  {
+    "offset_inicio": "- (2) statement of work or scope of services statement, performance requirements, and any special instructions;",
+    "offset_fim": "- (2) statement of work or scope of services statement, performance requirements, and any special instructions;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(2) Statement of work or scope of services",
+    "motivo": "O item numerado (2) é a primeira unidade completa visível; inicia em seu marcador e termina no ponto e vírgula imediatamente antes do marcador do item (3).",
+    "texto": "- (2) statement of work or scope of services statement, performance requirements, and any special instructions;"
+  },
+  {
+    "offset_inicio": "(3) the specific criteria and the relative weight of each criterion or category of criteria that will be used to evaluate the proposals;",
+    "offset_fim": "(3) the specific criteria and the relative weight of each criterion or category of criteria that will be used to evaluate the proposals;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "Item (3) — critérios e pesos de avaliação",
+    "motivo": "O item (3) inicia uma unidade estrutural e contém apenas sua disposição até o ponto e vírgula, imediatamente antes do marcador do item (4).",
+    "texto": "(3) the specific criteria and the relative weight of each criterion or category of criteria that will be used to evaluate the proposals;"
+  },
+  {
+    "offset_inicio": "(4) statement of how price will be evaluated. In addition, the following statements",
+    "offset_fim": "evaluated. In addition, the following statements regarding price must be included:",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(4) Statement of how price will be evaluated",
+    "motivo": "O bloco inicia no marcador estrutural numerado (4) e contém apenas seu enunciado introdutório, terminando antes do próximo marcador hierárquico, (i).",
+    "texto": "(4) statement of how price will be evaluated. In addition, the following statements regarding price must be included:"
+  },
+  {
+    "offset_inicio": "- (i) a notice that prices shall be irrevocable until contract award, unless the proposal",
+    "offset_fim": "onger period as is specified in the solicitation) after opening of proposals, in writing received by the agency prior to award;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(i) Notice of price irrevocability and proposal withdrawal",
+    "motivo": "O trecho inicia no marcador hierárquico (i) e termina imediatamente antes do próximo marcador, (ii), formando uma unidade normativa autônoma.",
+    "texto": "- (i) a notice that prices shall be irrevocable until contract award, unless the proposal is withdrawn, and that offers may be withdrawn only after the expiration of ninety days (or such longer period as is specified in the solicitation) after opening of proposals, in writing received by the agency prior to award;"
+  },
+  {
+    "offset_inicio": "- (ii) if applicable, request for cost breakdown of the proposed price;",
+    "offset_fim": "- (ii) if applicable, request for cost breakdown of the proposed price;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(ii) Request for cost breakdown",
+    "motivo": "A unidade inicia no marcador estrutural “(ii)” e contém apenas sua exigência de solicitação de detalhamento de custos; termina imediatamente antes do próximo marcador estrutural “(5)”.",
+    "texto": "- (ii) if applicable, request for cost breakdown of the proposed price;"
+  },
+  {
+    "offset_inicio": "(5) proposal submission requirements including requirements, if any, for the electronic",
+    "offset_fim": "and the time and date after which proposals will not be accepted as well as location of proposal submission;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(5) Proposal submission requirements",
+    "motivo": "O bloco inicia no marcador estrutural \"(5)\" e contém integralmente seus requisitos de submissão. Termina imediatamente antes do próximo marcador estrutural, \"(6)\".",
+    "texto": "(5) proposal submission requirements including requirements, if any, for the electronic submission of proposals; if applicable, that technical and price proposals shall be submitted in separate sealed envelopes (electronic or paper); and the time and date after which proposals will not be accepted as well as location of proposal submission;"
+  },
+  {
+    "offset_inicio": "(6) other information such as delivery dates or time frames within which the work must be completed.",
+    "offset_fim": "will extend beyond one year, the following information must be included in any solicitation, in addition to any other requirements of these Rules:",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(6) Other information",
+    "motivo": "O bloco inicia no marcador estrutural (6) e contém o texto introdutório até imediatamente antes do próximo marcador hierárquico, (i).",
+    "texto": "(6) other information such as delivery dates or time frames within which the work must be completed. Where it is anticipated that a contract will extend beyond one year, the following information must be included in any solicitation, in addition to any other requirements of these Rules:"
+  },
+  {
+    "offset_inicio": "- (i) a statement of intent to award a multi-term contract, and an estimate of the quantity of services required for the proposed contract period;",
+    "offset_fim": "an estimate of the quantity of services required for the proposed contract period;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(i) Statement of intent to award a multi-term contract",
+    "motivo": "O item (i) inicia a primeira unidade identificável e termina no ponto e vírgula imediatamente antes do marcador do item seguinte, (ii).",
+    "texto": "- (i) a statement of intent to award a multi-term contract, and an estimate of the quantity of services required for the proposed contract period;"
+  },
+  {
+    "offset_inicio": "(ii) for client services only, a request for a proposal of a total price which shall be binding in the first year and may be negotiable from year to year thereafter;",
+    "offset_fim": "(ii) for client services only, a request for a proposal of a total price which shall be binding in the first year and may be negotiable from year to year thereafter;",
+    "pagina_inicio": 17,
+    "pagina_fim": 17,
+    "titulo": "(ii) Proposta de preço total para serviços ao cliente",
+    "motivo": "O trecho inicia no marcador estrutural “(ii)” e contém integralmente o item até seu ponto e vírgula; não há outro marcador de unidade subsequente no texto fornecido.",
+    "texto": "(ii) for client services only, a request for a proposal of a total price which shall be binding in the first year and may be negotiable from year to year thereafter;"
+  }
+]

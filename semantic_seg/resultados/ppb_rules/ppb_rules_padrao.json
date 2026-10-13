@@ -1,0 +1,45 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Capítulo",
+      "exemplo": "CHAPTER 3 – METHODS OF SOURCE SELECTION"
+    },
+    {
+      "nivel": 2,
+      "nome": "Seção",
+      "exemplo": "Section 3-02 COMPETITIVE SEALED BIDDING."
+    },
+    {
+      "nivel": 3,
+      "nome": "Subdivisão por letra",
+      "exemplo": "(i) Amendments to IFBs."
+    },
+    {
+      "nivel": 4,
+      "nome": "Subdivisão numerada",
+      "exemplo": "(1) Authority."
+    },
+    {
+      "nivel": 5,
+      "nome": "Subdivisão por algarismo romano",
+      "exemplo": "(i) make a determination that:"
+    },
+    {
+      "nivel": 6,
+      "nome": "Subdivisão por letra maiúscula",
+      "exemplo": "(A) five or more bids have been received in response to the original solicitation;"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    8,
+    9,
+    16,
+    17
+  ],
+  "total_paginas": 17
+}

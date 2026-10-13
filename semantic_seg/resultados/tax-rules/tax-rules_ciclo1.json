@@ -1,0 +1,65 @@
+[
+  {
+    "offset_inicio": "# **Tax Record Management System** ",
+    "offset_fim": "# **Tax Record Management System** ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Tax Record Management System",
+    "motivo": "O título de nível 1 inicia a primeira unidade, mas ela não possui texto próprio antes do próximo marcador de seção (## **Overview and Purpose**).",
+    "texto": "# **Tax Record Management System** "
+  },
+  {
+    "offset_inicio": "## **Overview and Purpose** \n\nThe tax record management system serves as the central",
+    "offset_fim": "information, tax rates, and various exemption amounts that directly impact tax calculations.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Overview and Purpose",
+    "motivo": "A seção começa no marcador \"## **Overview and Purpose**\" e contém seus dois parágrafos introdutórios completos, terminando imediatamente antes do próximo marcador de seção, \"## **Data Structure and Key Identifiers**\".",
+    "texto": "## **Overview and Purpose** \n\nThe tax record management system serves as the central repository for individual taxpayer information within our organization's financial processing infrastructure. This comprehensive database maintains detailed records of taxpayer demographics, contact information, geographic data, marital status, dependency information, and critical tax calculation parameters. The system supports daily operations across multiple departments, including payroll processing, tax compliance, audit functions, and financial reporting activities. \n\nStaff members regularly interact with this data through various interfaces and workflows. Administrators typically access the system to verify taxpayer information during processing cycles, while auditors use the records to ensure compliance with regulatory requirements. Managers often review aggregate data patterns to identify trends and optimize processing efficiency across different geographic regions and demographic segments. \n\n## **Data Structure and Key Identifiers** \n\n**Each person is uniquely identified by area code and phone number.** This identification method reflects the practical reality that phone numbers, when combined with their area codes, provide a reliable way to distinguish between individuals in our system. For example, two people named John Smith living in different regions will have distinct phone numbers, allowing staff to differentiate between their records accurately. The system leverages this approach because phone numbers change infrequently compared to addresses, making them stable identifiers for long-term record management. Teams often find this method particularly useful when conducting phone-based verification processes or when cross-referencing records across multiple databases. \n\nThe dataset captures essential demographic information including first and last names, gender classification, and complete contact details. Geographic data encompasses city, state, and ZIP code information, which proves invaluable for regional analysis and compliance reporting. Financial data includes salary information, tax rates, and various exemption amounts that directly impact tax calculations."
+  },
+  {
+    "offset_inicio": "## **Geographic Data Integrity** \n\nGeographic consistency represents a fundamental aspect of data quality within the system.",
+    "offset_fim": "Quality assurance teams regularly review these relationships as part of routine data integrity assessments. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Geographic Data Integrity",
+    "motivo": "A seção inicia no marcador de nível 2 \"## **Geographic Data Integrity**\" e reúne os parágrafos sobre consistência ZIP-estado e cidade-estado, terminando imediatamente antes do próximo marcador de seção, \"## **Financial Data Relationships**\".",
+    "texto": "## **Geographic Data Integrity** \n\nGeographic consistency represents a fundamental aspect of data quality within the system. **Two persons with the same ZIP code must live in the same state.** This relationship reflects the standardized postal system structure where ZIP codes are assigned within specific state boundaries. For instance, all records showing ZIP code 80202 will consistently show Colorado as the state, maintaining data integrity across the entire dataset. Geographic validation processes typically run during data entry to catch potential inconsistencies before they impact downstream operations. Teams frequently use this consistency check when investigating data quality issues or when preparing reports that aggregate information by geographic regions. \n\nLocation-specific validation extends beyond general geographic rules to include city-state relationships. **If a person lives in Denver, their state must be Colorado.** This type of validation ensures that well-known city-state pairs remain consistent throughout the database. Administrative staff often encounter this during data entry when processing records from major metropolitan areas. The validation helps prevent common data entry errors where cities might be confused with similarly named locations in other states. Quality assurance teams regularly review these relationships as part of routine data integrity assessments. "
+  },
+  {
+    "offset_inicio": "## **Financial Data Relationships** \n\nThe system maintains sophisticated relationships between",
+    "offset_fim": "ratios during audit procedures to identify records that may require additional documentation or verification.",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "Financial Data Relationships",
+    "motivo": "O bloco inicia no cabeçalho da seção na página 2 e inclui a continuação do parágrafo na página 3, terminando imediatamente antes do próximo cabeçalho, \"Regional Processing Standards\".",
+    "texto": "## **Financial Data Relationships** \n\nThe system maintains sophisticated relationships between salary and tax rate information to ensure logical consistency in financial calculations. **Within the same state, a person with lower salary cannot have higher tax rate.** This principle reflects progressive tax structures where higher earners typically face higher rates within the same jurisdiction. For example, in examining records from California, a taxpayer earning \n\n30, 000 _annuallywouldnothaveahighertaxratethansomeoneearning_ 80,000 in the same state. Data analysts frequently use this relationship when identifying potential data entry errors or when validating imported records from external systems. Processing teams often reference these patterns when reviewing unusual cases that may require additional verification. \n\nExemption amounts play a crucial role in tax calculations and must maintain logical relationships with income levels. **A person single tax exemption cannot be greater than his salary.** This constraint ensures that exemption amounts remain within reasonable bounds relative to earning capacity. Typically, exemptions represent a percentage or fixed amount that scales appropriately with income levels rather than exceeding total earnings. Tax preparation staff regularly encounter this relationship when processing returns and calculating final tax liabilities. Compliance officers often review these\n\n<!-- PÁGINA 3 -->\nratios during audit procedures to identify records that may require additional documentation or verification."
+  },
+  {
+    "offset_inicio": "## **Regional Processing Standards** \n\nGeographic-based processing rules ensure consistent treatment of taxpayers within specific areas.",
+    "offset_fim": "use these patterns to identify potential data quality issues that could impact local compliance reporting.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "Regional Processing Standards",
+    "motivo": "A seção começa no marcador de nível 2 “## **Regional Processing Standards**” e contém seus parágrafos até imediatamente antes do próximo marcador de seção, “## **Common Operational Scenarios**”.",
+    "texto": "## **Regional Processing Standards** \n\nGeographic-based processing rules ensure consistent treatment of taxpayers within specific areas. **Within the same ZIP code, one person cannot earn less but have a higher tax rate.** This constraint maintains equity within local tax jurisdictions where residents face similar tax structures. For instance, two neighbors in ZIP code 10001 with significantly different salaries would typically see the higher earner facing the higher tax rate. Processing teams often reference this principle when reviewing batch uploads or when investigating rate calculation discrepancies. Regional managers frequently use these patterns to identify potential data quality issues that could impact local compliance reporting."
+  },
+  {
+    "offset_inicio": "## **Common Operational Scenarios** \n\nDaily operations involve multiple touchpoints with",
+    "offset_fim": "processing periods to minimize operational disruption while maintaining data integrity standards. ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "Common Operational Scenarios",
+    "motivo": "A seção inicia no marcador \"## **Common Operational Scenarios**\" e contém seus dois parágrafos operacionais, terminando imediatamente antes do próximo marcador de seção, \"## **Quality Assurance and Monitoring**\".",
+    "texto": "## **Common Operational Scenarios** \n\nDaily operations involve multiple touchpoints with the tax record system across various business functions. Customer service representatives regularly access records to verify taxpayer information during phone inquiries, using the area code and phone number combination to quickly locate specific individuals. Processing staff frequently review salary and exemption relationships when preparing quarterly reports or when responding to audit requests from regulatory agencies. \n\nData maintenance activities occur on regular schedules, with quality assurance teams performing systematic reviews of geographic consistency and financial data relationships. These reviews help identify potential data entry errors before they impact critical business processes. System administrators often coordinate these activities with peak processing periods to minimize operational disruption while maintaining data integrity standards. "
+  },
+  {
+    "offset_inicio": "## **Quality Assurance and Monitoring** \n\nThe organization maintains ongoing monitoring",
+    "offset_fim": " team members remain current with system capabilities and best practices for maintaining data quality standards.",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "Quality Assurance and Monitoring",
+    "motivo": "A seção inicia no marcador de nível 2 na página 3 e inclui os parágrafos contínuos sobre monitoramento, validação e treinamento até o fim do texto na página 4, sem novo marcador estrutural.",
+    "texto": "## **Quality Assurance and Monitoring** \n\nThe organization maintains ongoing monitoring processes to ensure data quality and operational efficiency. Regular reporting cycles provide visibility into data patterns and help identify trends that may require management attention. Automated validation processes run continuously to flag potential inconsistencies before they impact downstream systems or customer interactions. \n\nTraining programs for staff members emphasize the importance of understanding these data relationships and their impact on business operations. New employees typically receive comprehensive instruction on proper data handling procedures and the business rationale behind\n\n<!-- PÁGINA 4 -->\nvarious validation rules. Ongoing education ensures that team members remain current with system capabilities and best practices for maintaining data quality standards."
+  }
+]
