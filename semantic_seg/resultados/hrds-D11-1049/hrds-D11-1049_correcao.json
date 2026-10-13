@@ -1,0 +1,13 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_ciclo1.json"
+  }
+]

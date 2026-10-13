@@ -29,8 +29,8 @@ também três medidas pelo fim:
   texto dentro dos nós, sem o ruído) que caem dentro de algum bloco previsto.
 
 Uso:
-    python avaliar.py resultados/sisu-rules resultados/conference_v2
-    python avaliar.py resultados/conference_v2 --gabarito gabarito/conference.md
+    python avaliar.py resultados/sisu-rules/sisu-rules resultados/conference/conference_v2
+    python avaliar.py resultados/conference/conference_v2 --gabarito gabarito/conference.md
 
 Cada argumento é o prefixo de uma execução (`--saida` sem `.json`); lê todos os
 `{prefixo}_cicloN.json`. O gabarito é `gabarito/<nome>.md`, com o sufixo `_vN`

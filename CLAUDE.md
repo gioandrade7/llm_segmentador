@@ -55,7 +55,7 @@ python rtf_txt.py
 cd semantic_seg/
 python main.py \
     --diretorio ../text_extraction/out/ppb_rules/paginas \
-    --saida resultados/ppb_rules.json \
+    --saida resultados/ppb_rules/ppb_rules.json \
     --janela-paginas 10
 ```
 
@@ -70,7 +70,7 @@ python main.py \
 | `--max-ciclos` | cap on correction cycles; `0` runs until the auditor approves | `0` |
 | `--so-resultado` | suppress prompt output | off |
 
-Writes `{saida}.json` (block list only), plus siblings: `{saida}_padrao.json` (the identified pattern), `{saida}_cicloN.json` (each cycle's full extraction), `{saida}_correcao.json` (the correction trail). Only `{saida}.json` is protected from overwriting (`_v2`, `_v3` appended); the three siblings are derived from the final name and **overwrite silently**. Copy them aside before re-running if you need them.
+Each document's runs live in their own folder, `resultados/<doc>/` (versions, cycles, evaluations and logs side by side); `main.py` creates the folder of `--saida` if needed. Writes `{saida}.json` (block list only), plus siblings: `{saida}_padrao.json` (the identified pattern), `{saida}_cicloN.json` (each cycle's full extraction), `{saida}_correcao.json` (the correction trail). Only `{saida}.json` is protected from overwriting (`_v2`, `_v3` appended); the three siblings are derived from the final name and **overwrite silently**. Copy them aside before re-running if you need them.
 
 ## The two nested loops
 
@@ -98,7 +98,7 @@ Prompt precedence, as stated in the prompts themselves: `padrao` is the structur
 - `anchor.py`: Tolerant anchor matching in **five layers** — exact; exact on the first 80 chars; normalized (HTML tags and page markers removed, markdown stripped, whitespace collapsed, accents decomposed, lowercased, with a position map back to the original); normalized truncated; and, for `offset_fim` only (`preferir_sufixo`), the last 40 chars. That last layer exists because the model cuts an anchor mid-word and reconstructs its *beginning* wrongly, while the end — the position that actually matters — is copied correctly. The full text is normalized once per run via an identity cache.
 - `utils_files.py`: Loads paginated `.md` files sorted by filename; assembles the full text string; re-injects the page marker header when a window starts mid-page.
 - `display.py`: Terminal rendering only — no pipeline logic.
-- `gabarito.py` / `avaliar.py`: read the indented-outline gold in `gabarito/` and score runs against it (`python avaliar.py resultados/sisu-rules resultados/conference_v2`).
+- `gabarito.py` / `avaliar.py`: read the indented-outline gold in `gabarito/` and score runs against it (`python avaliar.py resultados/hrds-D11-1021/hrds-D11-1021`).
 - `hrdoc_gabarito.py`: converts one HRDoc annotation JSON (kept in the git-ignored `data/hrdoc/`) into a gabarito with start and end anchors; its docstring lists the conversion rules. It must resolve anchors exactly as `gabarito.py` does (compact matching that ignores whitespace, loose diacritics and `•`; on the expected page, prefer the occurrence that opens a line), or the end anchors it picks fail validation.
 
 ## HRDoc evaluation set
@@ -106,7 +106,7 @@ Prompt precedence, as stated in the prompts themselves: `padrao` is the structur
 Beyond the five hand-annotated collections, `semantic_seg/gabarito/hrds-*.md` are gabaritos converted from **HRDoc** (Ma et al., AAAI 2023; HRDS subset = ACL/EMNLP/NAACL papers with human line-level annotation). Their PDFs come from `https://aclanthology.org/<id>.pdf` (`text_extraction/data/pdf/hrds-<id>.pdf`); the annotation JSONs are not versioned (no stated license). To add one: download the PDF, run `pdf_extract.py` into `text_extraction/out/hrds-<id>/paginas` (move `documento_final.md` up), run `hrdoc_gabarito.py`, then `gabarito.py` — a gabarito that fails there is not evaluable.
 
 - `gabarito/hrds_amostra_test50.txt`: the 50 docs drawn from `HRDS/test` (stratified by venue, `random.Random(42)`). `gabarito/hrds_excluidos_ordem.txt`: 16 of them excluded because `pymupdf4llm` emits headings or references out of reading order, so no gabarito can be a partition of the extracted text. Of the rest, 32 are evaluable plus `N19-1154` (valid gold, never run); `N10-1074` lost a heading in extraction.
-- `resultados/hrds-*` is versioned (exception in `.gitignore`; logs are not): `<doc>` = baseline prompt, `_v2` = + inline-list rule, `_v3` = + bold-heading carve-out (current prompt). On the 32 evaluable docs, final-cycle block F1 went 0.917 → 0.928 → 0.957 and coverage 99.0% → 99.4%; extra cuts 57 → 5, missed nodes 121 → 71. One run per doc and version, papers only — the prompt changes have not been re-run on the normative collections.
+- `resultados/hrds-*/` is versioned (exception in `.gitignore`; logs are not). It now holds only the 12 re-runs from commit `06ea182` (`2020.acl-main.1`, `2020.acl-main.5`, `2021.acl-long.394`, `2021.acl-long.65`, `2021.naacl-main.2`, `D11-1021`, `D11-1049`, `D12-1082`, `N10-1074`, `N10-1137`, `N12-1094`, `P14-1071`), named without `_vN`, with no `_avaliacao` yet. Everything else was removed from the tree, including the prompt comparison it used to hold — `<doc>` = baseline prompt, `_v2` = + inline-list rule, `_v3` = + bold-heading carve-out (current prompt); on the 32 evaluable docs final-cycle block F1 went 0.917 → 0.928 → 0.957, coverage 99.0% → 99.4%, extra cuts 57 → 5, missed nodes 121 → 71 (one run per doc and version, papers only; never re-run on the normative collections). Those files are still in git: `git checkout 06ea182 -- semantic_seg/resultados` (it restores them in the old flat layout, directly under `resultados/`).
 - The six `hrds-*` docs outside `hrds_amostra_test50.txt` came first, from the HRDoc repo's `examples/`; `naacl-main.2` has the same out-of-order extraction and is not evaluable.
 
 ## Known Limitations

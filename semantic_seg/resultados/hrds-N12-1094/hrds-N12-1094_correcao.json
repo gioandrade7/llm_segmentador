@@ -1,0 +1,26 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6] engloba indevidamente o marcador de subseção \"2.3 Most Pronounced Differences\" no seu final, em vez de terminar imediatamente antes dele. Não há um bloco próprio para a subseção 2.3 entre os blocos [6] e [7], o que também indica lacuna do conteúdo associado a essa subseção."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco da subseção 2.2 imediatamente antes do marcador literal `# **2.3 Most Pronounced Differences**`.\n- Crie um bloco próprio iniciado em `# **2.3 Most Pronounced Differences**`, contendo seu texto até imediatamente antes de `# **2.4 Annotating Visual Text**`.\n- Preserve o bloco de `2.4 Annotating Visual Text` como subseção distinta; não anexe a ele nem ao bloco 2.2 o título ou o conteúdo de 2.3."
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094/hrds-N12-1094_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 57,
+    "insights_aplicados": "- Encerre o bloco da subseção 2.2 imediatamente antes do marcador literal `# **2.3 Most Pronounced Differences**`.\n- Crie um bloco próprio iniciado em `# **2.3 Most Pronounced Differences**`, contendo seu texto até imediatamente antes de `# **2.4 Annotating Visual Text**`.\n- Preserve o bloco de `2.4 Annotating Visual Text` como subseção distinta; não anexe a ele nem ao bloco 2.2 o título ou o conteúdo de 2.3.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-N12-1094/hrds-N12-1094_ciclo2.json"
+  }
+]

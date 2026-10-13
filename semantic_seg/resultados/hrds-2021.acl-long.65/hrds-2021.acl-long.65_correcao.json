@@ -1,0 +1,42 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 81,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna estrutural entre os blocos [4] e [5]: a seção principal 3, que deveria anteceder a subseção 3.1, não foi segmentada como bloco próprio.",
+        "O bloco [19] engloba indevidamente o marcador de uma nova seção principal, \"# **6 Related Work**\", no seu fim. Esse marcador deveria iniciar um bloco próprio antes do bloco [20].",
+        "Há uma lacuna estrutural entre os blocos [21] e [22]: a numeração salta de 6.2 para 8, indicando que a seção principal 7 (e seu conteúdo) não foi segmentada."
+      ],
+      "consistente": false,
+      "insights": "- Crie um bloco próprio para a seção principal 3, localizada imediatamente antes de \"# **3.1 Recruitment and Annotation Setup**\"; não deixe o documento passar diretamente da seção 2 para a subseção 3.1.\n- Encerre o bloco de \"# **5.6 Analysis**\" imediatamente antes de \"# **6 Related Work**\". Inicie um bloco separado em \"# **6 Related Work**\", mesmo que ele contenha somente o título antes de \"## **6.1 Context-Aware Machine Translation**\".\n- Localize e segmente a seção principal 7 situada entre o fim de \"## **6.2 Attention Mechanisms**\" e \"# **8 Acknowledgements**\". Preserve no bloco da seção 7 seu marcador e todo o texto até o marcador seguinte."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.65/hrds-2021.acl-long.65_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "- Crie um bloco próprio para a seção principal 3, localizada imediatamente antes de \"# **3.1 Recruitment and Annotation Setup**\"; não deixe o documento passar diretamente da seção 2 para a subseção 3.1.\n- Encerre o bloco de \"# **5.6 Analysis**\" imediatamente antes de \"# **6 Related Work**\". Inicie um bloco separado em \"# **6 Related Work**\", mesmo que ele contenha somente o título antes de \"## **6.1 Context-Aware Machine Translation**\".\n- Localize e segmente a seção principal 7 situada entre o fim de \"## **6.2 Attention Mechanisms**\" e \"# **8 Acknowledgements**\". Preserve no bloco da seção 7 seu marcador e todo o texto até o marcador seguinte.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6], iniciado em \"3.2 Tasks and Data Quality\", engloba a subseção principal numerada 3.3, pois o bloco seguinte já inicia em \"3.4 Analysis of the Highlighted Words\". Falta um bloco próprio para 3.3.",
+        "Os blocos [3], [7] e [18] contêm títulos em negrito que abrem parágrafos/unidades internas — por exemplo, \"Neural Machine Translation.\", \"Distance.\" e \"How does attention regularization influence alignment with human rationales?\" — sem iniciar blocos próprios nesses títulos."
+      ],
+      "consistente": false,
+      "insights": "- Localize o marcador da subseção \"3.3 Results\" entre \"# **3.2 Tasks and Data Quality**\" e \"# **3.4 Analysis of the Highlighted Words**\". Encerre o bloco 3.2 imediatamente antes dele e crie um bloco próprio para 3.3, do seu marcador até antes de 3.4.\n- Em \"2 Document-Level Translation\", corte no título corrido em negrito \"**Neural Machine Translation.**\" e em cada outro título em negrito que inicie um parágrafo explicativo nessa seção; preserve, se houver, o caput da seção 2 em bloco separado antes do primeiro desses títulos.\n- Em \"3.4 Analysis of the Highlighted Words\", mantenha o texto introdutório da subseção separado e inicie um bloco em \"**Distance.**\" e em cada título corrido em negrito subsequente que abra uma análise distinta.\n- Em \"5.6 Analysis\", mantenha o texto introdutório separado e inicie um bloco em cada pergunta/título em negrito que abre um novo parágrafo analítico, incluindo \"**How does attention regularization influence alignment with human rationales?**\".\n- Faça a mesma separação para todos os demais títulos corridos em negrito que abram parágrafos no corpo do artigo; não os confunda com termos em negrito usados apenas dentro de uma frase, nem com itens precedidos por marcador de lista."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.65/hrds-2021.acl-long.65_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 98,
+    "insights_aplicados": "- Localize o marcador da subseção \"3.3 Results\" entre \"# **3.2 Tasks and Data Quality**\" e \"# **3.4 Analysis of the Highlighted Words**\". Encerre o bloco 3.2 imediatamente antes dele e crie um bloco próprio para 3.3, do seu marcador até antes de 3.4.\n- Em \"2 Document-Level Translation\", corte no título corrido em negrito \"**Neural Machine Translation.**\" e em cada outro título em negrito que inicie um parágrafo explicativo nessa seção; preserve, se houver, o caput da seção 2 em bloco separado antes do primeiro desses títulos.\n- Em \"3.4 Analysis of the Highlighted Words\", mantenha o texto introdutório da subseção separado e inicie um bloco em \"**Distance.**\" e em cada título corrido em negrito subsequente que abra uma análise distinta.\n- Em \"5.6 Analysis\", mantenha o texto introdutório separado e inicie um bloco em cada pergunta/título em negrito que abre um novo parágrafo analítico, incluindo \"**How does attention regularization influence alignment with human rationales?**\".\n- Faça a mesma separação para todos os demais títulos corridos em negrito que abram parágrafos no corpo do artigo; não os confunda com termos em negrito usados apenas dentro de uma frase, nem com itens precedidos por marcador de lista.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.65/hrds-2021.acl-long.65_ciclo3.json"
+  }
+]

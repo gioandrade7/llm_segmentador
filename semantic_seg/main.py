@@ -94,6 +94,8 @@ def main():
         if caminho != args.saida:
             print(f"'{args.saida}' já existe — preservado.")
 
+        # Cada documento tem sua pasta em resultados/ (`resultados/<doc>/<doc>.json`).
+        os.makedirs(os.path.dirname(caminho) or ".", exist_ok=True)
         with open(caminho, "w", encoding="utf-8") as f:
             json.dump(blocos, f, indent=2, ensure_ascii=False)
         print(f"Resultado salvo em: {caminho}")
