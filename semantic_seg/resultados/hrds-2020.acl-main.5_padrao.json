@@ -3,18 +3,13 @@
   "hierarquia": [
     {
       "nivel": 1,
-      "nome": "Título do artigo",
-      "exemplo": "Dialogue State Tracking with Explicit Slot Connection Modeling"
+      "nome": "seção principal numerada",
+      "exemplo": "# **2 Model**"
     },
     {
       "nivel": 2,
-      "nome": "Seção numerada",
-      "exemplo": "1 Introduction"
-    },
-    {
-      "nivel": 3,
-      "nome": "Subseção numerada",
-      "exemplo": "2.1 Encoder"
+      "nome": "subseção numerada",
+      "exemplo": "## **2.1 Encoder**"
     }
   ],
   "confianca": "alta",

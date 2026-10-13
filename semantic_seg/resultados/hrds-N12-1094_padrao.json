@@ -3,11 +3,16 @@
   "hierarquia": [
     {
       "nivel": 1,
+      "nome": "Título do documento",
+      "exemplo": "Detecting Visual Text"
+    },
+    {
+      "nivel": 2,
       "nome": "Seção numerada",
       "exemplo": "2 Data Analysis"
     },
     {
-      "nivel": 2,
+      "nivel": 3,
       "nome": "Subseção numerada",
       "exemplo": "2.1 Data sets"
     }

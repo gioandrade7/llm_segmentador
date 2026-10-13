@@ -3,22 +3,17 @@
   "hierarquia": [
     {
       "nivel": 1,
-      "nome": "Título do artigo",
+      "nome": "título do documento",
       "exemplo": "Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages"
     },
     {
       "nivel": 2,
-      "nome": "Seção principal numerada",
+      "nome": "seção numerada",
       "exemplo": "1 Introduction"
     },
     {
-      "nivel": 3,
-      "nome": "Subseção ou procedimento numerado entre parênteses",
-      "exemplo": "(7) Enriching error case frames"
-    },
-    {
       "nivel": 2,
-      "nome": "Seção final não numerada",
+      "nome": "seção final não numerada",
       "exemplo": "References"
     }
   ],

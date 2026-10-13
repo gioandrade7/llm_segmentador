@@ -3,28 +3,13 @@
   "hierarquia": [
     {
       "nivel": 1,
-      "nome": "Título do documento",
-      "exemplo": "Bayesian Checking for Topic Models"
+      "nome": "seção principal numerada",
+      "exemplo": "# **1 Introduction**"
     },
     {
       "nivel": 2,
-      "nome": "Seção numerada principal",
-      "exemplo": "1 Introduction"
-    },
-    {
-      "nivel": 3,
-      "nome": "Subseção numerada",
-      "exemplo": "3.2 Posterior Predictive Checks for LDA"
-    },
-    {
-      "nivel": 4,
-      "nome": "Item de lista ordenada",
-      "exemplo": "1. Choose topic proportions θd ∼ Dirichlet(α)."
-    },
-    {
-      "nivel": 5,
-      "nome": "Subitem de lista ordenada",
-      "exemplo": "(a) Choose topic assignment zd,n ∼ θd."
+      "nome": "subseção numerada",
+      "exemplo": "# **3.2 Posterior Predictive Checks for LDA**"
     }
   ],
   "confianca": "alta",

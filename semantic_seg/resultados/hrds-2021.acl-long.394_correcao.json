@@ -1,26 +1,13 @@
 [
   {
     "ciclo": 1,
-    "blocos_produzidos": 51,
-    "insights_aplicados": "",
-    "analise": {
-      "inconsistencias": [
-        "O bloco [9], iniciado em \"3.2 Training with Reinforcement Learning\", engloba a subseção numerada 3.2.1 que antecede o bloco [10] (\"3.2.2 Self-Critical Training\"). Como cada marcador de subseção deve iniciar seu próprio bloco, [9] contém mais de uma unidade estrutural."
-      ],
-      "consistente": false,
-      "insights": "- Divida o trecho atualmente reunido no bloco 3.2 antes de \"3.2.2 Self-Critical Training\": localize o marcador literal da subseção \"3.2.1\" e inicie nele um bloco próprio, terminando-o imediatamente antes de \"3.2.2 Self-Critical Training\".\n- Faça o bloco \"3.2 Training with Reinforcement Learning\" conter somente seu texto introdutório anterior ao marcador \"3.2.1\"; não incorpore nele o conteúdo da subseção 3.2.1."
-    },
-    "arquivo_blocos": "resultados/hrds-2021.acl-long.394_ciclo1.json"
-  },
-  {
-    "ciclo": 2,
     "blocos_produzidos": 52,
-    "insights_aplicados": "- Divida o trecho atualmente reunido no bloco 3.2 antes de \"3.2.2 Self-Critical Training\": localize o marcador literal da subseção \"3.2.1\" e inicie nele um bloco próprio, terminando-o imediatamente antes de \"3.2.2 Self-Critical Training\".\n- Faça o bloco \"3.2 Training with Reinforcement Learning\" conter somente seu texto introdutório anterior ao marcador \"3.2.1\"; não incorpore nele o conteúdo da subseção 3.2.1.",
+    "insights_aplicados": "",
     "analise": {
       "inconsistencias": [],
       "consistente": true,
       "insights": ""
     },
-    "arquivo_blocos": "resultados/hrds-2021.acl-long.394_ciclo2.json"
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394_ciclo1.json"
   }
 ]

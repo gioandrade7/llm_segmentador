@@ -3,21 +3,16 @@
   "hierarquia": [
     {
       "nivel": 1,
-      "nome": "Título do documento",
-      "exemplo": "# **Do Context-Aware Translation Models Pay the Right Attention?**"
+      "nome": "Seção principal numerada",
+      "exemplo": "## **1 Introduction**"
     },
     {
       "nivel": 2,
-      "nome": "Seção principal numerada",
-      "exemplo": "## **2 Document-Level Translation**"
-    },
-    {
-      "nivel": 3,
       "nome": "Subseção numerada",
       "exemplo": "## **5.4 Evaluation**"
     },
     {
-      "nivel": 4,
+      "nivel": 3,
       "nome": "Subseção de apêndice numerada",
       "exemplo": "## **C.1 Data preprocessing**"
     }

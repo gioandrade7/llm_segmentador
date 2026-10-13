@@ -1,218 +1,263 @@
 [
   {
-    "offset_inicio": "# **No Noun Phrase Left Behind: Detecting and Typing Unlinkable Entities** \n\n**Thomas Lin, Mausam, Oren Etzioni**",
-    "offset_fim": "Computer Science & Engineering \n\nUniversity of Washington Seattle, WA 98195, USA \n\n_{_ tlin, mausam, etzioni _}_ @cs.washington.edu ",
+    "offset_inicio": "# **No Noun Phrase Left Behind: Detecting and Typing Unlinkable Entities** ",
+    "offset_fim": "University of Washington Seattle, WA 98195, USA \n\n_{_ tlin, mausam, etzioni _}_ @cs.washington.edu ",
     "pagina_inicio": 1,
     "pagina_fim": 1,
     "titulo": "No Noun Phrase Left Behind: Detecting and Typing Unlinkable Entities",
-    "motivo": "O bloco inicia no título principal do documento e contém apenas autoria, afiliação e contato, encerrando-se imediatamente antes do marcador de unidade seguinte, \"## **Abstract**\".",
+    "motivo": "O bloco começa no título principal do documento e contém autores, afiliação e contato. Termina imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
     "texto": "# **No Noun Phrase Left Behind: Detecting and Typing Unlinkable Entities** \n\n**Thomas Lin, Mausam, Oren Etzioni** Computer Science & Engineering \n\nUniversity of Washington Seattle, WA 98195, USA \n\n_{_ tlin, mausam, etzioni _}_ @cs.washington.edu "
   },
   {
-    "offset_inicio": "## **Abstract** \n\nEntity linking systems link noun-phrase mentions in text to their",
+    "offset_inicio": "## **Abstract** \n\nEntity linking systems link noun-phrase mentions in text to their corresponding Wikipedia articles.",
     "offset_fim": "Detection and typing of unlinkable entities can increase yield for NLP applications such as typed question answering. ",
     "pagina_inicio": 1,
     "pagina_fim": 1,
     "titulo": "Abstract",
-    "motivo": "O bloco começa no marcador de seção \"## **Abstract**\" e contém exclusivamente o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "motivo": "O bloco inicia no cabeçalho literal \"## **Abstract**\" e contém todo o resumo, encerrando-se imediatamente antes do cabeçalho \"## **1 Introduction**\".",
     "texto": "## **Abstract** \n\nEntity linking systems link noun-phrase mentions in text to their corresponding Wikipedia articles. However, NLP applications would gain from the ability to detect and type all entities mentioned in text, including the long tail of entities not prominent enough to have their own Wikipedia articles. In this paper we show that once the Wikipedia entities mentioned in a corpus of textual assertions are linked, this can further enable the detection and fine-grained typing of the unlinkable entities. Our proposed method for detecting unlinkable entities achieves 24% greater accuracy than a Named Entity Recognition baseline, and our method for fine-grained typing is able to propagate over 1,000 types from linked Wikipedia entities to unlinkable entities. Detection and typing of unlinkable entities can increase yield for NLP applications such as typed question answering. "
   },
   {
     "offset_inicio": "## **1 Introduction** \n\nA key challenge in machine reading (Etzioni et al., 2006) is",
-    "offset_fim": "- We implement and evaluate our methods, empirically verifying improvement over appropriate baselines. \n\n",
+    "offset_fim": "implement and evaluate our methods, empirically verifying improvement over appropriate baselines. \n\n",
     "pagina_inicio": 1,
     "pagina_fim": 2,
     "titulo": "1 Introduction",
-    "motivo": "O bloco inicia no marcador da seção \"1 Introduction\" e inclui seu texto e lista de contribuições; termina imediatamente antes do próximo marcador estrutural, \"2 Background\".",
+    "motivo": "O bloco inicia no cabeçalho literal \"## **1 Introduction**\" na página 1 e contém sua introdução, incluindo a continuação na página 2 e a lista de contribuições, encerrando imediatamente antes do cabeçalho \"# **2 Background**\".",
     "texto": "## **1 Introduction** \n\nA key challenge in machine reading (Etzioni et al., 2006) is to identify the entities mentioned in text, and associate them with appropriate background information such as their type. Consider the sentence “Some people think that pineapple juice is good for vitamin C.” To analyze this sentence, a machine should know that “pineapple juice” refers to a beverage, while “vitamin C” refers to a nutrient. \n\nEntity linking (Bunescu and Pas¸ca, 2006; Cucerzan, 2007) addresses this problem by linking noun phrases within the sentence to entries in a large, fixed entity catalog (almost always \n\n|example noun phrases|status|\n|---|---|\n|“apple juice” “orange juice”<br>**“prune juice” “wheatgrass juice”**|present<br>**absent**|\n|“radiation exposure” “workplace stress”|present|\n|**“asbestos exposure” “financial stress”**|**absent**|\n|“IJCAI” “OOPSLA”|present|\n|**“EMNLP” “ICAPS”**|**absent**|\n\n\n\nTable 1: Wikipedia has entries for prominent entities, while missing tail and new entities of the same types. \n\nWikipedia). Thus, entity linking has a limited and somewhat arbitrary range. In our example, systems by (Ferragina and Scaiella, 2010) and (Ratinov et al., 2011) both link “vitamin C” correctly, but link “pineapple juice” to “pineapple.” “Pineapple juice” is not entity linked as a beverage because it is not prominent enough to have its own Wikipedia entry. As Table 1 shows, Wikipedia often has prominent entities, while missing tail and new entities of the same types.<sup>1</sup> (Wang et al., 2012) notes that there are more than 900 different active shoe brands, but only 82 exist in Wikipedia. In scenarios such as intelligence analysis and local search, non-Wikipedia entities are often the most important. \n\nHence, we introduce the _unlinkable noun phrase problem_ : Given a noun phrase that does not link into Wikipedia, return whether it is an entity, as well its fine-grained semantic types. Deciding if a nonWikipedia noun phrase is an entity is challenging because many of them are not entities (e.g., “Some people,” “an addition” and “nearly half”). Predict- \n\n> 1The same problem occurs with Freebase, which is also missing the same Table 1 entities. \n\n893 \n\n_Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning_ , pages 893–903, Jeju Island, Korea, 12–14 July 2012. _⃝_ c 2012 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\ning semantic types is a challenge because of the diversity of entity types in general text. In our experiments, we utilized the Freebase type system, which contains over 1,000 semantic types. \n\nThe first part of this paper proposes a novel method for detecting entities by observing that entities often have different usage-over-time characteristics than non-entities. Evaluation shows that our method achieves 24% relative accuracy gain over a NER baseline. The second part of this paper shows how instance-to-instance class propagation (Kozareva et al., 2011) can be adapted and scaled to semantically type general noun-phrase entities using types from linked entities, by leveraging over one million different possible textual relations. \n\nContributions of our research include: \n\n- We motivate and introduce the _unlinkable noun phrase problem_ , which extends previous work in entity linking. \n\n- We propose a novel method for discriminating entities from arbitrary noun phrases, utilizing features derived from Google Books ngrams. \n\n- We adapt and scale instance-to-instance class propagation in order to associate types with non-Wikipedia entities. \n\n- We implement and evaluate our methods, empirically verifying improvement over appropriate baselines. \n\n"
   },
   {
-    "offset_inicio": "## **2 Background** \n\nIn this section we provide an overview of entity linking, how we",
-    "offset_fim": " set, and describe how our problem and approach differ from related areas such as NER and Web extraction. \n\n",
+    "offset_inicio": "# **2 Background** \n\nIn this section we provide an overview of entity linking, how we entity",
+    "offset_fim": "and approach differ from related areas such as NER and Web extraction.",
     "pagina_inicio": 2,
     "pagina_fim": 2,
     "titulo": "2 Background",
-    "motivo": "O bloco inicia no marcador de seção \"2 Background\" e contém apenas seu parágrafo introdutório, encerrando imediatamente antes do marcador da subseção \"2.1 Entity Linking\".",
-    "texto": "## **2 Background** \n\nIn this section we provide an overview of entity linking, how we entity link our data set, and describe how our problem and approach differ from related areas such as NER and Web extraction. \n\n"
+    "motivo": "O bloco inicia no cabeçalho literal \"2 Background\" e contém apenas o parágrafo introdutório da seção, encerrando-se imediatamente antes do cabeçalho \"2.1 Entity Linking\".",
+    "texto": "# **2 Background** \n\nIn this section we provide an overview of entity linking, how we entity link our data set, and describe how our problem and approach differ from related areas such as NER and Web extraction."
   },
   {
-    "offset_inicio": "### **2.1 Entity Linking** \n\nGiven text, the task of entity linking (Bunescu and Pas¸ca, 2006;",
-    "offset_fim": "nks. These are the _unlinkable_ noun phrases we will study here. \n\n### **2.2 Named Entity Recognition**",
+    "offset_inicio": "## **2.1 Entity Linking** \n\nGiven text, the task of entity linking (Bunescu and Pas¸ca,",
+    "offset_fim": "atches. These are the _unlinkable_ noun phrases we will study here. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
     "titulo": "2.1 Entity Linking",
-    "motivo": "O bloco inicia no marcador da subseção 2.1 e contém seu texto corrido até imediatamente antes do próximo marcador estrutural, \"2.2 Named Entity Recognition\", ainda na página 2.",
-    "texto": "### **2.1 Entity Linking** \n\nGiven text, the task of entity linking (Bunescu and Pas¸ca, 2006; Cucerzan, 2007; Milne and Witten, 2008; Kulkarni et al., 2009) is to identify the Wikipedia entities within the text, and mark them with which Wikipedia entity they correspond to. Entity linking elevates us from plain text into meaningful _entities_ that have properties, semantic types, and relationships with each other. Other entity catalogs can be used in place of Wikipedia, especially in domain-specific contexts, but general purpose linking systems all use Wikipedia because of its broad \n\ngeneral coverage, and to leverage its article texts and link structure during the linking process. \n\nA problem we observed when using entity linking systems is that despite containing over 3 million entities, Wikipedia does not cover a significant number of entities. This occurs with entities that are not prominent enough to have their own dedicated article and with entities that are very new. For example, Facebook has over 600 million users, and each of them could be considered an entity. The REVERB extractor (Fader et al., 2011) on the ClueWeb09 Web corpus found over 1.4 billion noun phrases participating in textual relationships, and a sizable portion of these noun phrases are entities. While recent research has used NIL features to determine whether they are being asked to link an entity not in Wikipedia (Dredze et al., 2010; Ploch, 2011), there has been no research on whether given noun phrases that are _unlinkable_ (for not being in Wikipedia) are entities, and how to make them usable if they are. \n\nOur goal is to address this problem of learning whether non-Wikipedia noun phrases are entities, and assigning semantic types to them to make them useful. We begin with a corpus of 15 million “(noun phrase subject, textual relation, noun phrase object)” assertions from the Web that were extracted by REVERB (Fader et al., 2011).<sup>2</sup> REVERB already filters out relative pronouns, WHO-adverbs, and existential “there” noun phrases that do not make meaningful arguments. We then employ standard entity linking techniques including string matching, prominence priors (Fader et al., 2009), and context matching (Bunescu and Pas¸ca, 2006) to link the noun phrase subjects into Wikipedia. \n\nIn this manner, we were able to entity link the noun phrase subject of 9,699,967 extractions, while the remaining 5,028,301 extractions had no matches (mostly due to no close string matches). There were 1,401,713 distinct noun phrase subjects in the 5 million extractions that had no matches. These are the _unlinkable_ noun phrases we will study here. \n\n### **2.2 Named Entity Recognition**"
+    "motivo": "O primeiro bloco completo começa no cabeçalho literal “2.1 Entity Linking” e inclui todo o texto subsequente sobre ligação de entidades e sintagmas não vinculáveis, encerrando-se imediatamente antes do cabeçalho “2.2 Named Entity Recognition”.",
+    "texto": "## **2.1 Entity Linking** \n\nGiven text, the task of entity linking (Bunescu and Pas¸ca, 2006; Cucerzan, 2007; Milne and Witten, 2008; Kulkarni et al., 2009) is to identify the Wikipedia entities within the text, and mark them with which Wikipedia entity they correspond to. Entity linking elevates us from plain text into meaningful _entities_ that have properties, semantic types, and relationships with each other. Other entity catalogs can be used in place of Wikipedia, especially in domain-specific contexts, but general purpose linking systems all use Wikipedia because of its broad \n\ngeneral coverage, and to leverage its article texts and link structure during the linking process. \n\nA problem we observed when using entity linking systems is that despite containing over 3 million entities, Wikipedia does not cover a significant number of entities. This occurs with entities that are not prominent enough to have their own dedicated article and with entities that are very new. For example, Facebook has over 600 million users, and each of them could be considered an entity. The REVERB extractor (Fader et al., 2011) on the ClueWeb09 Web corpus found over 1.4 billion noun phrases participating in textual relationships, and a sizable portion of these noun phrases are entities. While recent research has used NIL features to determine whether they are being asked to link an entity not in Wikipedia (Dredze et al., 2010; Ploch, 2011), there has been no research on whether given noun phrases that are _unlinkable_ (for not being in Wikipedia) are entities, and how to make them usable if they are. \n\nOur goal is to address this problem of learning whether non-Wikipedia noun phrases are entities, and assigning semantic types to them to make them useful. We begin with a corpus of 15 million “(noun phrase subject, textual relation, noun phrase object)” assertions from the Web that were extracted by REVERB (Fader et al., 2011).<sup>2</sup> REVERB already filters out relative pronouns, WHO-adverbs, and existential “there” noun phrases that do not make meaningful arguments. We then employ standard entity linking techniques including string matching, prominence priors (Fader et al., 2009), and context matching (Bunescu and Pas¸ca, 2006) to link the noun phrase subjects into Wikipedia. \n\nIn this manner, we were able to entity link the noun phrase subject of 9,699,967 extractions, while the remaining 5,028,301 extractions had no matches (mostly due to no close string matches). There were 1,401,713 distinct noun phrase subjects in the 5 million extractions that had no matches. These are the _unlinkable_ noun phrases we will study here. \n\n"
+  },
+  {
+    "offset_inicio": "## **2.2 Named Entity Recognition** \n\nNamed Entity Recognition (NER) is the task of",
+    "offset_fim": "linked entities to the unlinked entities, which is substantially more types than fine-grained NER.",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2.2 Named Entity Recognition",
+    "motivo": "É o primeiro marcador estrutural presente no trecho. O bloco começa no cabeçalho literal da subseção 2.2 e inclui o texto que continua na página 3, terminando imediatamente antes do cabeçalho «2.3 Extracting Entity Sets».",
+    "texto": "## **2.2 Named Entity Recognition** \n\nNamed Entity Recognition (NER) is the task of identifying named entities in text. A key difference between our final goals and NER is that in the con- \n\n> 2available at http://reverb.cs.washington.edu \n\n894\n\n<!-- PÁGINA 3 -->\ntext of entity linking and Wikipedia, there are many more entities than just the _named_ entities. For example, “apple juice” and “television” are Wikipedia entities (with Wikipedia articles), but are not traditional named entities. Still, as named entities do comprise a sizable portion of our _unlinkable_ noun phrases, we compare against a NER baseline in our entity detection step. \n\nFine-grained NER (Sekine and Nobata, 2004; Lee et al., 2007) has studied scaling NER to up to 200 semantic types. This differs from our semantic typing of unlinked entities because our approach assumes access to corpora-level relationships between a large set of linked entities (with semantic types) and the unlinked entities. As a result we are able to propagate 1,339 Freebase semantic types from the linked entities to the unlinked entities, which is substantially more types than fine-grained NER."
   },
   {
     "offset_inicio": "## **2.3 Extracting Entity Sets** \n\nThere is a line of research in using Web extraction",
-    "offset_fim": "ity even if it is not in a list of people names harvested from the Web. ",
+    "offset_fim": "even if it is not in a list of people names harvested from the Web. ",
     "pagina_inicio": 3,
     "pagina_fim": 3,
     "titulo": "2.3 Extracting Entity Sets",
-    "motivo": "É a primeira unidade completa cujo marcador aparece no trecho fornecido; inicia em \"2.3 Extracting Entity Sets\" e termina imediatamente antes do marcador \"3 Architecture\".",
+    "motivo": "O bloco inicia no cabeçalho literal \"2.3 Extracting Entity Sets\" e contém seu único parágrafo, encerrando-se imediatamente antes do próximo marcador de seção, \"3 Architecture\".",
     "texto": "## **2.3 Extracting Entity Sets** \n\nThere is a line of research in using Web extraction (Etzioni et al., 2005) and entity set expansion (Pantel et al., 2009) to extract lists of typed entities from the Web (e.g., a list of every city). Our problem instead focuses on determining whether any individual noun phrase is an entity, and what semantic types it holds. Given a noun phrase representing a person name, we return that this is a person entity even if it is not in a list of people names harvested from the Web. "
   },
   {
-    "offset_inicio": "# **3 Architecture** \n\nOur goal is: given (1) a large set of linked assertions _L_",
-    "offset_fim": "is an entity. The best fit line has steeper slope compared to Figure 1. \n\n",
+    "offset_inicio": "# **3 Architecture** \n\nOur goal is: given (1) a large set of linked assertions _L_ and (2)",
+    "offset_fim": "uses _L_ and _U_ to predict the semantic types for each entity _e ∈ E_ . ",
     "pagina_inicio": 3,
     "pagina_fim": 3,
     "titulo": "3 Architecture",
-    "motivo": "O bloco inicia no marcador de seção \"3 Architecture\" e reúne seu texto e legendas de figuras até imediatamente antes do próximo marcador estrutural, \"4 Detecting Unlinkable Entities\".",
-    "texto": "# **3 Architecture** \n\nOur goal is: given (1) a large set of linked assertions _L_ and (2) a large set of unlinked assertions _U_ , for each unlinkable noun phrase subject _n ∈ U_ , predict: (1) whether _n_ is an entity, and if so, then (2) the set of Freebase semantic types for _n_ . For _L_ we use the 9.7 million assertions whose _subject_ argument we were able to link in Section 2.1, and for _U_ we use the 5 million assertions that we could not link. \n\nWe divide the system into two components. The first component (described in Section 4) takes any unlinkable noun phrase and outputs whether it is an entity. All _n ∈ U_ classified as entities are placed in a set _E_ . The second component (described in Section 5) uses _L_ and _U_ to predict the semantic types for each entity _e ∈ E_ . \n\n\n\nFigure 1: Usage over time in Google books for the noun phrase “Prices quoted” (e.g., from “Prices quoted are for 2 adults”) which is not an entity. \n\n\n\nFigure 2: Usage over time for the unlinkable noun phrase “Soluble fibre,” which is an entity. The best fit line has steeper slope compared to Figure 1. \n\n"
+    "motivo": "O bloco inicia no cabeçalho literal \"# **3 Architecture**\" e reúne seus dois parágrafos e figuras até imediatamente antes do próximo marcador de seção, \"# **4 Detecting Unlinkable Entities**\".",
+    "texto": "# **3 Architecture** \n\nOur goal is: given (1) a large set of linked assertions _L_ and (2) a large set of unlinked assertions _U_ , for each unlinkable noun phrase subject _n ∈ U_ , predict: (1) whether _n_ is an entity, and if so, then (2) the set of Freebase semantic types for _n_ . For _L_ we use the 9.7 million assertions whose _subject_ argument we were able to link in Section 2.1, and for _U_ we use the 5 million assertions that we could not link. \n\nWe divide the system into two components. The first component (described in Section 4) takes any unlinkable noun phrase and outputs whether it is an entity. All _n ∈ U_ classified as entities are placed in a set _E_ . The second component (described in Section 5) uses _L_ and _U_ to predict the semantic types for each entity _e ∈ E_ . "
   },
   {
-    "offset_inicio": "# **4 Detecting Unlinkable Entities** \n\nThis first task takes in any _unlinkable_ noun phrase",
-    "offset_fim": "not entities. We plan to use this signal to help separate the entities from the non-entities. \n\n",
+    "offset_inicio": "# **4 Detecting Unlinkable Entities** \n\nThis first task takes in any _unlinkable_ noun",
+    "offset_fim": "We plan to use this signal to help separate the entities from the non-entities. \n\n",
     "pagina_inicio": 3,
     "pagina_fim": 4,
     "titulo": "4 Detecting Unlinkable Entities",
-    "motivo": "O bloco começa no marcador da seção 4, na página 3, e contém seu texto introdutório até imediatamente antes do próximo marcador estrutural, \"4.1 Classifier Features\", na página 4.",
-    "texto": "# **4 Detecting Unlinkable Entities** \n\nThis first task takes in any _unlinkable_ noun phrase and outputs whether it is an entity. There is a long history of discussion in analytic philosophy literature on the question of what exists (e.g., (Quine, 1948)). We adopt a more pragmatic view, defining an “entity” as a noun phrase that could have a Wikipedia-style article if there were no notability or newness considerations, and which would have semantic types. We are interested in entities that could help populate an entity store. “EMNLP 2012” is an example of an entity, while “The method” and “12 cats” are examples of noun phrases that are not entities. This is challenging because at a surface level, many entities and non-entities look similar: “Sex and the City” is an entity, while “John and David” is not. “Eminem” is an entity, while “Youd” (a typo from “You’d”) is not. \n\nWe address this task by training a classifier with features primarily derived from a timestamped corpus. An intuition here is that when considering only unlinkable noun phrases, usage patterns across \n\n895\n\n<!-- PÁGINA 4 -->\nFigure 3: Plot of _R_<sup>2</sup> vs _Slope_ for the usage over time of a collection of noun phrases selected for illustrative purposes. Many of the non-entities occur at lower _Slope_ and higher _R_<sup>2</sup> , while the entities often have higher slope and/or lower _R_<sup>2</sup> . “Bluetooth technology” actually has even higher slope, but was adjusted left to fit in this figure. \n\ntime often differ for entities and non-entities. Noun phrase entities that are observed in text going back hundreds of years (e.g., “Europe”) almost all have their own Wikipedia entries, so in unlinkable noun phrase space, the remaining noun phrases that are observed in text going back hundreds of years tend to be all the textual references and expressions that are not entities. We plan to use this signal to help separate the entities from the non-entities. \n\n"
+    "motivo": "O bloco inicia no cabeçalho literal da seção 4, na página 3, e reúne seu texto introdutório contínuo até imediatamente antes do cabeçalho da subseção seguinte, «4.1 Classifier Features», na página 4.",
+    "texto": "# **4 Detecting Unlinkable Entities** \n\nThis first task takes in any _unlinkable_ noun phrase and outputs whether it is an entity. There is a long history of discussion in analytic philosophy literature on the question of what exists (e.g., (Quine, 1948)). We adopt a more pragmatic view, defining an “entity” as a noun phrase that could have a Wikipedia-style article if there were no notability or newness considerations, and which would have semantic types. We are interested in entities that could help populate an entity store. “EMNLP 2012” is an example of an entity, while “The method” and “12 cats” are examples of noun phrases that are not entities. This is challenging because at a surface level, many entities and non-entities look similar: “Sex and the City” is an entity, while “John and David” is not. “Eminem” is an entity, while “Youd” (a typo from “You’d”) is not. \n\nWe address this task by training a classifier with features primarily derived from a timestamped corpus. An intuition here is that when considering only unlinkable noun phrases, usage patterns across \n\n895\n\n<!-- PÁGINA 4 -->\n<!-- Start of picture text -->\n\"Typical ones\"<br>0.7 \"A syndrome\"<br>\"Ghanaian culture\"<br>\"Phase Two\"<br>\"Soluble fibre\" \"Compost tea\"<br>0.6 \"Thity families\" \"5 employees\"<br>\"Serious change\"<br>\"Generation Q\"<br>0.5 \"Favorite subjects\"<br>\"Affected cats\"<br>\"Bottom panel\" \"The CD21\"\"Life coaching\"<br>0.4 \"Offers discounts\"<br>\"A Blanket\"<br>R2<br>\"12 stocks\"<br>0.3<br>\"Syrphidfly\" \"Hydrogen cars\"<br>\"Helen John\"<br>0.2 \"Callback service\" \"The Accutane\" \"Bluetooth technology\"<br>\"Coche Island\"<br>0.1 \"Isac CummingHunter Orange\"<br>\"7th dimension\"<br>66人山<br>0 0.005 0.01 0.015 0.02 0.025 0.03 0.035<br>slope<br><!-- End of picture text -->\n\nFigure 3: Plot of _R_<sup>2</sup> vs _Slope_ for the usage over time of a collection of noun phrases selected for illustrative purposes. Many of the non-entities occur at lower _Slope_ and higher _R_<sup>2</sup> , while the entities often have higher slope and/or lower _R_<sup>2</sup> . “Bluetooth technology” actually has even higher slope, but was adjusted left to fit in this figure. \n\ntime often differ for entities and non-entities. Noun phrase entities that are observed in text going back hundreds of years (e.g., “Europe”) almost all have their own Wikipedia entries, so in unlinkable noun phrase space, the remaining noun phrases that are observed in text going back hundreds of years tend to be all the textual references and expressions that are not entities. We plan to use this signal to help separate the entities from the non-entities. \n\n"
   },
   {
-    "offset_inicio": "## **4.1 Classifier Features** \n\nWe use the Google Books ngram corpus (Michel et al.,",
-    "offset_fim": "etect the presence of leading numeric words (e.g., “5” in “5 days” or “Three” in “Three choices”). \n\n",
+    "offset_inicio": "# **4.1 Classifier Features** \n\nWe use the Google Books ngram corpus (Michel et al., 2010), which contains",
+    "offset_fim": "e of leading numeric words (e.g., “5” in “5 days” or “Three” in “Three choices”).",
     "pagina_inicio": 4,
     "pagina_fim": 5,
     "titulo": "4.1 Classifier Features",
-    "motivo": "O bloco começa no marcador de subseção “4.1 Classifier Features” na página 4 e reúne sua descrição de atributos até imediatamente antes do próximo marcador estrutural, “4.2 Evaluation”, na página 5.",
-    "texto": "## **4.1 Classifier Features** \n\nWe use the Google Books ngram corpus (Michel et al., 2010), which contains timestamped usage of 1-grams through 5-grams in millions of digitized books for each year from 1500 to 2007.<sup>3</sup> We use ngram match count values from case-insensitive matching. To avoid sparsity anomalies we observed in years before 1740, we use the data from 1740 onward. While it has not been used for our task before, this corpus is a rich resource that enables reasoning about knowledge (Evans and Foster, 2011) and \n\n> 3available at http://books.google.com/ngrams/datasets \n\nunderstanding semantic changes of words over time (Wijaya and Yeniterzi, 2011). Talukdar et al. (2012) recently used it to effectively temporally scope relational facts. \n\nOur first feature is the _slope_ of the least-squares best fit line for usage over time. For example, if a term appears 25 times in books in 1950, 30 times in 1951, ..., 100 times in 2007, then we compute the straight line that best fits _{_ (1950, 25), (1951, 31), ..., (2007, 100) _}_ , and examine the slope. We have observed cases of non-entity noun phrases (e.g., Figure 1) having lower slopes than entity noun phrases (e.g., Figure 2). Note that we do not normalize match counts by yearly total frequency, but we do normalize counts for each term to range from 0 to 1 (setting the max count for each term to 1) to avoid bias from entity prominence. To capture the current usage, in cases where there exists a _≥_ 5 year gap in usage of a term we only use the data after the gap. \n\nAnother feature is the _R_<sup>2</sup> fit of the best fit line. Higher _R_<sup>2</sup> indicates that the data is closer to a straight line. Figure 3 plots _R_<sup>2</sup> vs _Slope_ values \n\n896\n\n<!-- PÁGINA 5 -->\n|system|correctly classified|\n|---|---|\n|Majority class baseline|50.4%|\n|Named Entity Recognition|63.3%|\n|_Slope_feature only|61.1%|\n|<br>_PUF_feature combination|69.1%|\n|_ALL_features|78.4%|\n\n\n\nTable 2: Our classifier using all features ( _ALL_ ) outperforms majority class and NER baselines. \n\nFigure 4: _UsageSinceYear_ of example unlinked terms. \n\nfor some sample noun phrases. We observed that along with their lower _Slope_ , the non-entities often also had higher _R_<sup>2</sup> , indicating that their usage does not vary wildly from year to year. This contrasts with certain entities (e.g., “FY 99” for “Fiscal Year 1999”) whose usage sometimes varied sharply from year to year based on their prominence in those specific years. \n\nA third feature is _UsageSinceYear_ , which finds the year from when a term last started continually being used. For example, a _UsageSinceYear_ value of 1920 would indicate that the term was used in books every year from 1920 through 2007. Figure 4 shows examples of where various terms fall along this dimension. \n\nFrom the books ngram corpus, we also calculate features for: _PercentProperCaps_ - the percentage of case-insensitive matches for the term where all words began with a capital letter, _PercentExactMatch_ - the percentage of case-insensitive matches for the term that matched the capitalization in the assertion exactly, and _Frequency_ - the total number of case-insensitive occurrences of the term in the book ngrams data, summed across all years, which reflects prominence. Last, we also include a simple _numeric_ feature to detect the presence of leading numeric words (e.g., “5” in “5 days” or “Three” in “Three choices”). \n\n"
+    "motivo": "O bloco inicia no cabeçalho literal «4.1 Classifier Features» na página 4 e reúne todo o texto de suas características até imediatamente antes do cabeçalho «4.2 Evaluation» na página 5.",
+    "texto": "# **4.1 Classifier Features** \n\nWe use the Google Books ngram corpus (Michel et al., 2010), which contains timestamped usage of 1-grams through 5-grams in millions of digitized books for each year from 1500 to 2007.<sup>3</sup> We use ngram match count values from case-insensitive matching. To avoid sparsity anomalies we observed in years before 1740, we use the data from 1740 onward. While it has not been used for our task before, this corpus is a rich resource that enables reasoning about knowledge (Evans and Foster, 2011) and \n\n> 3available at http://books.google.com/ngrams/datasets \n\nunderstanding semantic changes of words over time (Wijaya and Yeniterzi, 2011). Talukdar et al. (2012) recently used it to effectively temporally scope relational facts. \n\nOur first feature is the _slope_ of the least-squares best fit line for usage over time. For example, if a term appears 25 times in books in 1950, 30 times in 1951, ..., 100 times in 2007, then we compute the straight line that best fits _{_ (1950, 25), (1951, 31), ..., (2007, 100) _}_ , and examine the slope. We have observed cases of non-entity noun phrases (e.g., Figure 1) having lower slopes than entity noun phrases (e.g., Figure 2). Note that we do not normalize match counts by yearly total frequency, but we do normalize counts for each term to range from 0 to 1 (setting the max count for each term to 1) to avoid bias from entity prominence. To capture the current usage, in cases where there exists a _≥_ 5 year gap in usage of a term we only use the data after the gap. \n\nAnother feature is the _R_<sup>2</sup> fit of the best fit line. Higher _R_<sup>2</sup> indicates that the data is closer to a straight line. Figure 3 plots _R_<sup>2</sup> vs _Slope_ values \n\n896\n\n<!-- PÁGINA 5 -->\n- 2050 \"7th dimension\" (2001) \n\n- 2000 “FY 99\"(1995) \n\n- 1950 \n\n- 个 \"Gold injections\" (1940) 1900 \n\n- ear \"Typical ones\" (1861) 1850 \"Serious change\" (1821) \n\n- 1800 \"Thirty families\" (1791) \n\n- 1750 \n\n|system|correctly classified|\n|---|---|\n|Majority class baseline|50.4%|\n|Named Entity Recognition|63.3%|\n|_Slope_feature only|61.1%|\n|<br>_PUF_feature combination|69.1%|\n|_ALL_features|78.4%|\n\n\n\nTable 2: Our classifier using all features ( _ALL_ ) outperforms majority class and NER baselines. \n\nFigure 4: _UsageSinceYear_ of example unlinked terms. \n\nfor some sample noun phrases. We observed that along with their lower _Slope_ , the non-entities often also had higher _R_<sup>2</sup> , indicating that their usage does not vary wildly from year to year. This contrasts with certain entities (e.g., “FY 99” for “Fiscal Year 1999”) whose usage sometimes varied sharply from year to year based on their prominence in those specific years. \n\nA third feature is _UsageSinceYear_ , which finds the year from when a term last started continually being used. For example, a _UsageSinceYear_ value of 1920 would indicate that the term was used in books every year from 1920 through 2007. Figure 4 shows examples of where various terms fall along this dimension. \n\nFrom the books ngram corpus, we also calculate features for: _PercentProperCaps_ - the percentage of case-insensitive matches for the term where all words began with a capital letter, _PercentExactMatch_ - the percentage of case-insensitive matches for the term that matched the capitalization in the assertion exactly, and _Frequency_ - the total number of case-insensitive occurrences of the term in the book ngrams data, summed across all years, which reflects prominence. Last, we also include a simple _numeric_ feature to detect the presence of leading numeric words (e.g., “5” in “5 days” or “Three” in “Three choices”)."
   },
   {
-    "offset_inicio": "## **4.2 Evaluation** \n\nFrom the corpus of 15 million REVERB assertions, there were 1.4 million unlinked noun phrases including 17% unigrams,",
-    "offset_fim": "Table 2 shows the results. _MAJ_ correctly classifies 50.4% of instances, _NER_ correctly classifies 63.3% and _ALL_ correctly classifies 78.4%.",
+    "offset_inicio": "# **4.2 Evaluation** \n\nFrom the corpus of 15 million REVERB assertions, there were",
+    "offset_fim": "Table 2 shows the results. _MAJ_ correctly classifies 50.4% of instances, _NER_ correctly classifies 63.3% and _ALL_ correctly classifies 78.4%. ",
     "pagina_inicio": 5,
     "pagina_fim": 6,
     "titulo": "4.2 Evaluation",
-    "motivo": "O bloco inicia no marcador da subseção \"4.2 Evaluation\" na página 5 e contém sua avaliação e resultados até imediatamente antes do próximo marcador estrutural, \"4.3 Analysis\", na página 6.",
-    "texto": "## **4.2 Evaluation** \n\nFrom the corpus of 15 million REVERB assertions, there were 1.4 million unlinked noun phrases including 17% unigrams, 51% bigrams, 21% trigrams, and 11% 4-grams or longer. Bigrams comprise over half the noun phrases and the books bigram data is a selfcontained download that is easier to obtain and store \n\nthan the full books ngram corpus, so we focus on bigrams in our evaluation. In a random sample of unlinked bigrams, we found that 73% were present in the books ngram data (65% exact match, 8% caseinsensitive match only), while 27% were not (these were mostly entities or errors with non-alphabetic characters). Coverage is a greater issue with longer ngrams (e.g., there are many more possible 5-grams than bigrams, so any individual 5-gram is less likely to reach the minimum threshold to be included in the books data), but as mentioned earlier, only 11% of unlinkable noun phrases were 4-grams or longer. \n\nWe randomly sampled 250 unlinked bigrams that had books ngram data, and asked 2 annotators to label each as “entity,” “non-entity,” or “unclear.” Our goal is to separate noun phrases that are clearly entities (e.g., “prune juice”) from those that are clearly not entities (e.g., “prices quoted”), rather than to debate phrases that may be in some entity store definitions but not others, so we asked the annotators to choose “unclear” when there was any doubt. There were 151 bigrams that both annotators believed to be very clear labels, including 69 that both annotators labeled as entities, 70 that both annotators labeled as non-entities, and 12 with label disagreement. Cohen’s kappa was 0.84, indicating excellent agreement. Our experiment is now to separate the 69 clear entities from the 70 clear non-entities. \n\nFor experiment baselines we use the majority class baseline _MAJ_ , as well as a Named Entity Recognition baseline _NER_ . For _NER_ we used the Illinois Named Entity Tagger (Ratinov and Roth, 2009) on the highest setting (that achieved 90.5 _F_ 1 score on the CoNLL03 shared task). _NER_ expects a sentence, so we use the longest assertion in the corpus that the noun phrase was observed in. We evaluate several combinations of our features to test dif- \n\n897\n\n<!-- PÁGINA 6 -->\nferent aspects of our system: _Slope_ uses only _Slope_ , _PUF_ uses _PercentProperCaps_ + _UsageSinceYear_ + _Frequency_ , and _ALL_ uses all features. We evaluate using the WEKA J48 Decision Tree on default settings, with leave-one-out cross validation. \n\nTable 2 shows the results. _MAJ_ correctly classifies 50.4% of instances, _NER_ correctly classifies 63.3% and _ALL_ correctly classifies 78.4%."
+    "motivo": "O bloco inicia no cabeçalho literal «4.2 Evaluation» na página 5 e reúne todo o texto de avaliação até imediatamente antes do cabeçalho seguinte «4.3 Analysis», na página 6.",
+    "texto": "# **4.2 Evaluation** \n\nFrom the corpus of 15 million REVERB assertions, there were 1.4 million unlinked noun phrases including 17% unigrams, 51% bigrams, 21% trigrams, and 11% 4-grams or longer. Bigrams comprise over half the noun phrases and the books bigram data is a selfcontained download that is easier to obtain and store \n\nthan the full books ngram corpus, so we focus on bigrams in our evaluation. In a random sample of unlinked bigrams, we found that 73% were present in the books ngram data (65% exact match, 8% caseinsensitive match only), while 27% were not (these were mostly entities or errors with non-alphabetic characters). Coverage is a greater issue with longer ngrams (e.g., there are many more possible 5-grams than bigrams, so any individual 5-gram is less likely to reach the minimum threshold to be included in the books data), but as mentioned earlier, only 11% of unlinkable noun phrases were 4-grams or longer. \n\nWe randomly sampled 250 unlinked bigrams that had books ngram data, and asked 2 annotators to label each as “entity,” “non-entity,” or “unclear.” Our goal is to separate noun phrases that are clearly entities (e.g., “prune juice”) from those that are clearly not entities (e.g., “prices quoted”), rather than to debate phrases that may be in some entity store definitions but not others, so we asked the annotators to choose “unclear” when there was any doubt. There were 151 bigrams that both annotators believed to be very clear labels, including 69 that both annotators labeled as entities, 70 that both annotators labeled as non-entities, and 12 with label disagreement. Cohen’s kappa was 0.84, indicating excellent agreement. Our experiment is now to separate the 69 clear entities from the 70 clear non-entities. \n\nFor experiment baselines we use the majority class baseline _MAJ_ , as well as a Named Entity Recognition baseline _NER_ . For _NER_ we used the Illinois Named Entity Tagger (Ratinov and Roth, 2009) on the highest setting (that achieved 90.5 _F_ 1 score on the CoNLL03 shared task). _NER_ expects a sentence, so we use the longest assertion in the corpus that the noun phrase was observed in. We evaluate several combinations of our features to test dif- \n\n897\n\n<!-- PÁGINA 6 -->\nferent aspects of our system: _Slope_ uses only _Slope_ , _PUF_ uses _PercentProperCaps_ + _UsageSinceYear_ + _Frequency_ , and _ALL_ uses all features. We evaluate using the WEKA J48 Decision Tree on default settings, with leave-one-out cross validation. \n\nTable 2 shows the results. _MAJ_ correctly classifies 50.4% of instances, _NER_ correctly classifies 63.3% and _ALL_ correctly classifies 78.4%. "
   },
   {
-    "offset_inicio": "## **4.3 Analysis** \n\nOverall, 78.4% correctly classified instances is fairly strong performance on this task. By using",
-    "offset_fim": "tional named entities. We observed that while none of our features achieves over 70% accuracy by themselves, they perform well in conjunction with each other. \n\n",
+    "offset_inicio": "## **4.3 Analysis** \n\nOverall, 78.4% correctly classified instances is fairly strong performance on",
+    "offset_fim": "features achieves over 70% accuracy by themselves, they perform well in conjunction with each other. ",
     "pagina_inicio": 6,
     "pagina_fim": 6,
     "titulo": "4.3 Analysis",
-    "motivo": "O bloco inicia no marcador de subseção \"4.3 Analysis\" e contém seus dois parágrafos analíticos. Termina imediatamente antes do próximo marcador estrutural, \"5 Propagating Semantic Types\".",
-    "texto": "## **4.3 Analysis** \n\nOverall, 78.4% correctly classified instances is fairly strong performance on this task. By using the described features, our classifier was able to detect and filter many of the non-entity noun phrases in this scenario. Compared to the 63.3% of _NER_ , it is an absolute gain of 15.1%, a relative gain of 24%, and a reduction in error of 41.1% (from 36.7% to 21.6%). Student’s _t_ -test at 95% confidence verified that the difference was significant. \n\nWe found that while low _Slope_ (especially with higher _R_<sup>2</sup> ) often indicated non-entity, there were numerous cases where higher _Slope_ did not necessarily indicate entity. For example, the noun phrase “several websites” has fairly sharp slope, but still does not denote a clear entity. In these cases, the addition of other features can serve as additional useful signal. One error from _ALL_ is the term “Analyst estimates,” which the annotators labeled as a non-entity, but which occasionally appears in text (especially titles) as “Analyst Estimates,” and is a relatively recent phrase. _NER_ misses entities such as “synthetic cubism” and “hunter orange” that occur in our data but are not traditional named entities. We observed that while none of our features achieves over 70% accuracy by themselves, they perform well in conjunction with each other. \n\n"
+    "motivo": "O bloco inicia no cabeçalho literal «4.3 Analysis» e contém seus dois parágrafos analíticos, terminando imediatamente antes do cabeçalho da nova seção «5 Propagating Semantic Types».",
+    "texto": "## **4.3 Analysis** \n\nOverall, 78.4% correctly classified instances is fairly strong performance on this task. By using the described features, our classifier was able to detect and filter many of the non-entity noun phrases in this scenario. Compared to the 63.3% of _NER_ , it is an absolute gain of 15.1%, a relative gain of 24%, and a reduction in error of 41.1% (from 36.7% to 21.6%). Student’s _t_ -test at 95% confidence verified that the difference was significant. \n\nWe found that while low _Slope_ (especially with higher _R_<sup>2</sup> ) often indicated non-entity, there were numerous cases where higher _Slope_ did not necessarily indicate entity. For example, the noun phrase “several websites” has fairly sharp slope, but still does not denote a clear entity. In these cases, the addition of other features can serve as additional useful signal. One error from _ALL_ is the term “Analyst estimates,” which the annotators labeled as a non-entity, but which occasionally appears in text (especially titles) as “Analyst Estimates,” and is a relatively recent phrase. _NER_ misses entities such as “synthetic cubism” and “hunter orange” that occur in our data but are not traditional named entities. We observed that while none of our features achieves over 70% accuracy by themselves, they perform well in conjunction with each other. "
   },
   {
-    "offset_inicio": "# **5 Propagating Semantic Types** \n\nThis second task uses a set of linked assertions",
-    "offset_fim": "and FIGER (Ling and Weld, 2012) recently used an adapted perceptron for multi-class multi-label classification into 112 types. \n\n",
+    "offset_inicio": "# **5 Propagating Semantic Types** \n\nThis second task uses a set of linked assertions _L_",
+    "offset_fim": "recently used an adapted perceptron for multi-class multi-label classification into 112 types. ",
     "pagina_inicio": 6,
     "pagina_fim": 6,
     "titulo": "5 Propagating Semantic Types",
-    "motivo": "O bloco inicia no marcador da seção 5 e contém apenas seu texto introdutório; termina imediatamente antes do marcador da subseção \"5.1 Algorithm\".",
-    "texto": "# **5 Propagating Semantic Types** \n\nThis second task uses a set of linked assertions _L_ and set of unlinked assertions _U_ to predict the semantic types for each entity _e ∈ E_ . If the previous step output that “Sun Microsystems” is likely to be an entity, then the goal of this step is to further predict that it has the Freebase types such as _organization_ and _software developer_ . \n\nFrom _L_ we use the set of linked entities and the textual relations they occur with. For example, _L_ \n\nmight contain that the entity _Microsoft_ links to a particular Wikipedia article, and also that it occurs with textual relations such as “has already announced” and “has released updates for.” For each Wikipedialinked entity in _L_ , we further look up its exact set of Freebase types.<sup>4</sup> From _U_ we obtain the set of textual relations that each _e ∈ E_ is in the domain of. We now have a large set of class-labeled instances (all entities in _L_ ), a large set of unlabeled instances ( _E_ ), and a method to connect the unlabeled instances with the class-labeled instances (via any shared textual relations), so we cast this task as an instance-to-instance class propagation problem (Kozareva et al., 2011) for propagating class labels from labeled to unlabeled instances. \n\nWe build on the recent work of Kozareva et al. (2011), and adapt their approach to leverage the scale and resources of our scenario. While they use only one type of edge between instances, namely shared presence in the high precision _DAP_ pattern (Hovy et al., 2009), our final system uses 1.3 million textual relations from _|L ∪ U |_ , corresponding to 1.3 million potential edge types. Their evaluation involved only 20 semantic classes, while we use all 1,339 Freebase types covered by our entities in _L_ . \n\nThere is a rich history of other approaches for predicting semantic types. (Talukdar et al., 2008) and (Talukdar and Pereira, 2010) model relationships between instances and classes, but our unlinked entities do not come with any class information. Pattern-based approaches (Pas¸ca, 2004; Pantel and Ravichandran, 2004) are popular, but (Kozareva et al., 2011) notes that they “are constraint to the information matched by the pattern and often suffer from recall,” meaning that they do not cover many instances. Classifiers have also been trained for finegrained semantic typing, but for noticeably fewer types than we work with. (Rahman and Ng, 2010) studied hierarchical and collective classification using 92 types, and FIGER (Ling and Weld, 2012) recently used an adapted perceptron for multi-class multi-label classification into 112 types. \n\n"
+    "motivo": "O bloco inicia no cabeçalho da seção 5 e contém seus parágrafos introdutórios até imediatamente antes do cabeçalho da subseção \"5.1 Algorithm\".",
+    "texto": "# **5 Propagating Semantic Types** \n\nThis second task uses a set of linked assertions _L_ and set of unlinked assertions _U_ to predict the semantic types for each entity _e ∈ E_ . If the previous step output that “Sun Microsystems” is likely to be an entity, then the goal of this step is to further predict that it has the Freebase types such as _organization_ and _software developer_ . \n\nFrom _L_ we use the set of linked entities and the textual relations they occur with. For example, _L_ \n\nmight contain that the entity _Microsoft_ links to a particular Wikipedia article, and also that it occurs with textual relations such as “has already announced” and “has released updates for.” For each Wikipedialinked entity in _L_ , we further look up its exact set of Freebase types.<sup>4</sup> From _U_ we obtain the set of textual relations that each _e ∈ E_ is in the domain of. We now have a large set of class-labeled instances (all entities in _L_ ), a large set of unlabeled instances ( _E_ ), and a method to connect the unlabeled instances with the class-labeled instances (via any shared textual relations), so we cast this task as an instance-to-instance class propagation problem (Kozareva et al., 2011) for propagating class labels from labeled to unlabeled instances. \n\nWe build on the recent work of Kozareva et al. (2011), and adapt their approach to leverage the scale and resources of our scenario. While they use only one type of edge between instances, namely shared presence in the high precision _DAP_ pattern (Hovy et al., 2009), our final system uses 1.3 million textual relations from _|L ∪ U |_ , corresponding to 1.3 million potential edge types. Their evaluation involved only 20 semantic classes, while we use all 1,339 Freebase types covered by our entities in _L_ . \n\nThere is a rich history of other approaches for predicting semantic types. (Talukdar et al., 2008) and (Talukdar and Pereira, 2010) model relationships between instances and classes, but our unlinked entities do not come with any class information. Pattern-based approaches (Pas¸ca, 2004; Pantel and Ravichandran, 2004) are popular, but (Kozareva et al., 2011) notes that they “are constraint to the information matched by the pattern and often suffer from recall,” meaning that they do not cover many instances. Classifiers have also been trained for finegrained semantic typing, but for noticeably fewer types than we work with. (Rahman and Ng, 2010) studied hierarchical and collective classification using 92 types, and FIGER (Ling and Weld, 2012) recently used an adapted perceptron for multi-class multi-label classification into 112 types. "
   },
   {
-    "offset_inicio": "## **5.1 Algorithm** \n\nGiven an entity _e_ , our algorithm involves: (1) finding the textual relations that _e_ is in the domain of, (2) ",
-    "offset_fim": "type because all entities in _S_ were observed to include _business operation_ type. \n\n",
+    "offset_inicio": "## **5.1 Algorithm** \n\nGiven an entity _e_ , our algorithm involves: (1) finding the textual",
+    "offset_fim": "all entities in _S_ were observed to include _business operation_ type.",
     "pagina_inicio": 6,
     "pagina_fim": 7,
     "titulo": "5.1 Algorithm",
-    "motivo": "O bloco inicia no marcador da subseção 5.1 e reúne sua descrição e etapas do algoritmo; termina imediatamente antes do marcador \"# **5.2 Edge Validity**\".",
-    "texto": "## **5.1 Algorithm** \n\nGiven an entity _e_ , our algorithm involves: (1) finding the textual relations that _e_ is in the domain of, (2) \n\n> 4data available at http://download.freebase.com/wex \n\n898\n\n<!-- PÁGINA 7 -->\nFigure 5: This example illustrates the set of Freebase type predictions for the noun phrase “Sun Microsystems.” We predict the semantic type of a noun phrase by: (1) finding the textual relations it is in the domain of, (2) finding linked entities that are also in the domain of those textual relations, and (3) observing their semantic types. \n\nfinding linked entities that are also in the domain of those textual relations, and then (3) predicting types by observing the types of those linked entities. Figure 5 illustrates how we would predict the semantic types of the noun phrase “Sun Microsystems.” \n\n**Find Relations:** Obtain the set _R_ of all textual relations in _U_ that _e_ is in the domain of. For example, if _U_ contains the assertion “(Sun Microsystems, has released a minor update to, Java 1.4.2),” then the textual relation “has released a minor update to” should be added to _R_ when typing “Sun Microsystems.” \n\n**Find Similar Entities:** Find the linked entities in _L_ that are in the domain of the most relations in _R_ . In our example, entities such as “Microsoft” and “Apple Inc.” have the greatest overlap in textual relations because they are most often in the domain of the same textual relations, e.g., (“Microsoft, has released a minor update to, Windows Live Essentials”). Create a set _S_ of the entities that share the most textual relations. We found keeping 10 similar entities ( _|S|_ = 10) is generally enough to predict the original entity’s types in the final step. \n\n**Predict Types:** Return the most frequent Freebase types of the entities in _S_ as the prediction. To avoid penalizing very small types, if there are _n_ instances of semantic class _C_ in _S_ , then we rank _C_ using a type score _T_ ( _n, C, S_ ) = _max_ ( _n/|S|, n/|C|_ ), which we found to perform better than _T_ ( _n, C, S_ ) = _avg_ ( _n/|S|, n/|C|_ ). For “Sun Microsystems,” _business operation_ was the top predicted type because all entities in _S_ were observed to include _business operation_ type. \n\n"
+    "motivo": "O bloco inicia no cabeçalho literal «5.1 Algorithm» na página 6 e inclui a continuação após a quebra de página, terminando imediatamente antes do próximo cabeçalho estrutural, «5.2 Edge Validity».",
+    "texto": "## **5.1 Algorithm** \n\nGiven an entity _e_ , our algorithm involves: (1) finding the textual relations that _e_ is in the domain of, (2) \n\n> 4data available at http://download.freebase.com/wex \n\n898\n\n<!-- PÁGINA 7 -->\n|\"relied a great deal on\"<br>\"has released a minor update to\"<br>\"needs to let go of\"<br>\"has already announced\"<br>\"has a sharp focus on\"<br>\"also marketed\"<br>\"has released updates for\"<br>\"offers certifications for\"|Microsoft (04sv4)<br>Apple Inc. (0k8z)<br>Google (045c7b)<br>IBM (03sc8)<br>Adobe Systems (Ovlf)<br>Cisco Systems (Odmtp)<br>Red Hat (02h5b_x)<br>AOL (Oplw)|business_operation<br>employer<br>organization<br>software_developer<br>venture_funded_company<br>book_subject<br>venture_investor<br>website_owner|\n|---|---|---|\n|textual relations|similar linked entities|predicted Freebase types|\n\n\n\nFigure 5: This example illustrates the set of Freebase type predictions for the noun phrase “Sun Microsystems.” We predict the semantic type of a noun phrase by: (1) finding the textual relations it is in the domain of, (2) finding linked entities that are also in the domain of those textual relations, and (3) observing their semantic types. \n\nfinding linked entities that are also in the domain of those textual relations, and then (3) predicting types by observing the types of those linked entities. Figure 5 illustrates how we would predict the semantic types of the noun phrase “Sun Microsystems.” \n\n**Find Relations:** Obtain the set _R_ of all textual relations in _U_ that _e_ is in the domain of. For example, if _U_ contains the assertion “(Sun Microsystems, has released a minor update to, Java 1.4.2),” then the textual relation “has released a minor update to” should be added to _R_ when typing “Sun Microsystems.” \n\n**Find Similar Entities:** Find the linked entities in _L_ that are in the domain of the most relations in _R_ . In our example, entities such as “Microsoft” and “Apple Inc.” have the greatest overlap in textual relations because they are most often in the domain of the same textual relations, e.g., (“Microsoft, has released a minor update to, Windows Live Essentials”). Create a set _S_ of the entities that share the most textual relations. We found keeping 10 similar entities ( _|S|_ = 10) is generally enough to predict the original entity’s types in the final step. \n\n**Predict Types:** Return the most frequent Freebase types of the entities in _S_ as the prediction. To avoid penalizing very small types, if there are _n_ instances of semantic class _C_ in _S_ , then we rank _C_ using a type score _T_ ( _n, C, S_ ) = _max_ ( _n/|S|, n/|C|_ ), which we found to perform better than _T_ ( _n, C, S_ ) = _avg_ ( _n/|S|, n/|C|_ ). For “Sun Microsystems,” _business operation_ was the top predicted type because all entities in _S_ were observed to include _business operation_ type."
   },
   {
-    "offset_inicio": "# **5.2 Edge Validity** \n\nThis algorithm will only be effective if entities that share",
-    "offset_fim": "This validates our use of textual relations as a signal-bearing edge in instance-to-instance class propagation. ",
+    "offset_inicio": "# **5.2 Edge Validity** \n\nThis algorithm will only be effective if entities that share textual",
+    "offset_fim": "This validates our use of textual relations as a signal-bearing edge in instance-to-instance class propagation.",
     "pagina_inicio": 7,
     "pagina_fim": 7,
     "titulo": "5.2 Edge Validity",
-    "motivo": "O bloco inicia no marcador e título \"5.2 Edge Validity\" e contém seus dois parágrafos; termina imediatamente antes do marcador da subseção seguinte, \"5.3 Weighting Textual Relations\".",
-    "texto": "# **5.2 Edge Validity** \n\nThis algorithm will only be effective if entities that share textual relation strings are more likely to be of the same semantic types. To verify this, we sampled 30,000 linked entities from _L_ that had at least 30 textual relations each, and associated each with their 30 most frequent relations. From the 900 million possible entity pairs, we then randomly sample 500 entity pairs that shared exactly _k_ out of 30 relations, for each _k_ from 0 to 15. At each _k_ we then use our sampled pairs to estimate the probability that any two entities sharing exactly _k_ relations (out of their 30 possible) will share at least one type. \n\nThe results are shown in Figure 6. We found that entities sharing more textual relations were in fact more likely to have semantic types in common. Two entities that shared exactly 0 of 30 textual relations were only 11% likely to share a semantic type, while two entities that shared exactly 10 of 30 relations were 80% likely to share a semantic type. This validates our use of textual relations as a signal-bearing edge in instance-to-instance class propagation. "
+    "motivo": "O bloco inicia no cabeçalho literal “5.2 Edge Validity” e contém seus dois parágrafos, encerrando-se imediatamente antes do próximo cabeçalho, “5.3 Weighting Textual Relations”.",
+    "texto": "# **5.2 Edge Validity** \n\nThis algorithm will only be effective if entities that share textual relation strings are more likely to be of the same semantic types. To verify this, we sampled 30,000 linked entities from _L_ that had at least 30 textual relations each, and associated each with their 30 most frequent relations. From the 900 million possible entity pairs, we then randomly sample 500 entity pairs that shared exactly _k_ out of 30 relations, for each _k_ from 0 to 15. At each _k_ we then use our sampled pairs to estimate the probability that any two entities sharing exactly _k_ relations (out of their 30 possible) will share at least one type. \n\nThe results are shown in Figure 6. We found that entities sharing more textual relations were in fact more likely to have semantic types in common. Two entities that shared exactly 0 of 30 textual relations were only 11% likely to share a semantic type, while two entities that shared exactly 10 of 30 relations were 80% likely to share a semantic type. This validates our use of textual relations as a signal-bearing edge in instance-to-instance class propagation."
   },
   {
-    "offset_inicio": "# **5.3 Weighting Textual Relations** \n\nThe algorithm as currently described treats all textual relations equally,",
-    "offset_fim": "as higher weight signifies much stronger signal. This score then determines which entities to place in _S_ . ",
+    "offset_inicio": "# **5.3 Weighting Textual Relations** \n\nThe algorithm as currently described treats all",
+    "offset_fim": "weight signifies much stronger signal. This score then determines which entities to place in _S_ .",
     "pagina_inicio": 7,
     "pagina_fim": 8,
     "titulo": "5.3 Weighting Textual Relations",
-    "motivo": "O bloco começa no marcador da subseção 5.3 e reúne seu texto contínuo sobre ponderação de relações textuais; termina imediatamente antes do próximo marcador, \"5.4 Evaluation\".",
-    "texto": "# **5.3 Weighting Textual Relations** \n\nThe algorithm as currently described treats all textual relations equally, when in reality some are stronger signal to entity type than others. For example, two entities in the domain of the “came with” relation often will not share semantic types, but two entities in the domain of the “autographed” relation will almost always share a type. To capture this intuition, we define relation weight _w_ ( _r_ ) as the observed probability (among the linked entities) that two en- \n\n899\n\n<!-- PÁGINA 8 -->\nFigure 6: Entities that share more textual relations are more likely to have semantic types in common. \n\ntities will share a Freebase type if they both occur in the domain of _r_ . If _D_ ( _r_ ) = all entities observed in the domain of relation _r_ and _T_ ( _e_ ) = all Freebase types listed for entity _e_ , then weight _w_ ( _r_ ) of a textual relation string _r_ is: \n\n\n\nTable 3 shows examples of high weight relations, and Table 4 shows low weight relations. We now modify the _Find Similar Entities_ step such that if a linked entity shares a set of relations _Q_ with the entity being typed, then it receives a score which considers all shared relations _q ∈ Q_ but uses the high weight relations more. On a development set we found that a score of<sup>�</sup> _q∈Q_<sup>104</sup><sup>_·w_(</sup><sup>_q_)waseffec-</sup> tive, as higher weight signifies much stronger signal. This score then determines which entities to place in _S_ . "
+    "motivo": "O bloco inicia no cabeçalho literal \"5.3 Weighting Textual Relations\" na página 7 e inclui sua continuação na página 8, terminando imediatamente antes do cabeçalho \"5.4 Evaluation\".",
+    "texto": "# **5.3 Weighting Textual Relations** \n\nThe algorithm as currently described treats all textual relations equally, when in reality some are stronger signal to entity type than others. For example, two entities in the domain of the “came with” relation often will not share semantic types, but two entities in the domain of the “autographed” relation will almost always share a type. To capture this intuition, we define relation weight _w_ ( _r_ ) as the observed probability (among the linked entities) that two en- \n\n899\n\n<!-- PÁGINA 8 -->\n<!-- Start of picture text -->\n100%<br>80%<br>60%<br>40%<br>20%<br>Prob(≥ 1 shared type)<br>0%<br>0 5 10 15<br># of shared relations (out of 30)<br><!-- End of picture text -->\n\nFigure 6: Entities that share more textual relations are more likely to have semantic types in common. \n\ntities will share a Freebase type if they both occur in the domain of _r_ . If _D_ ( _r_ ) = all entities observed in the domain of relation _r_ and _T_ ( _e_ ) = all Freebase types listed for entity _e_ , then weight _w_ ( _r_ ) of a textual relation string _r_ is: \n\n\n\n\n\nTable 3 shows examples of high weight relations, and Table 4 shows low weight relations. We now modify the _Find Similar Entities_ step such that if a linked entity shares a set of relations _Q_ with the entity being typed, then it receives a score which considers all shared relations _q ∈ Q_ but uses the high weight relations more. On a development set we found that a score of M _q∈Q_<sup>104</sup><sup>_·w_(</sup><sup>_q_)waseffec-</sup> tive, as higher weight signifies much stronger signal. This score then determines which entities to place in _S_ ."
   },
   {
-    "offset_inicio": "# **5.4 Evaluation** \n\nThe goal of the evaluation is to judge how well our method can predict the Freebase semantic types",
-    "offset_fim": " significant over _SNoWeight_ on both test sets and metrics. \n\n## **5.5 Analysis**",
+    "offset_inicio": "# **5.4 Evaluation** \n\nThe goal of the evaluation is to judge how well our method can",
+    "offset_fim": "is statistically significant over _SNoWeight_ on both test sets and metrics. \n\n",
     "pagina_inicio": 8,
     "pagina_fim": 9,
     "titulo": "5.4 Evaluation",
-    "motivo": "O bloco inicia no marcador da subseção \"5.4 Evaluation\" na página 8 e contém seu texto e tabelas associadas até imediatamente antes do próximo marcador estrutural, \"5.5 Analysis\", na página 9.",
-    "texto": "# **5.4 Evaluation** \n\nThe goal of the evaluation is to judge how well our method can predict the Freebase semantic types of entities in our scenario. Our linked entities covered 1,339 Freebase types, including many interesting types such as _computer operating system_ , _religious text_ , _airline_ and _baseball team_ . Human judges would have trouble manually annotating new entities with all these types because there are too many to keep in mind and understand the characteristics \n\n\n\n<!-- Start of picture text -->\n“is a highway in”<br>“is a university located in”<br>“became the president of”<br>“turned down the role of”<br>“has an embassy in”<br><!-- End of picture text -->\n\nTable 3: Example relations found to have high weight. \n\n\n\n<!-- Start of picture text -->\n“comes with”<br>“is a generic term for”<br>“works best on”<br>“can be made from”<br>“is almost identical to”<br><!-- End of picture text -->\n\nTable 4: Example relations found to have low weight. \n\nof. Instead, we automatically generate testing data by sampling entities from _L_ , and then test on ability to recover the actual Freebase types (which we know). \n\nWe sample a _HEAD_ set of distinct 500 Freebase entities (drawn randomly from our set of linked extractions), and a _TAIL_ set of 500 entities (drawn randomly from our set of linked entities). An entity that occurs in many extractions is more likely to be in _HEAD_ than _TAIL_ . Our sampling also picks only entities that occur with at least 10 relations, which is appropriate for the Web scenario where more instances can always be queried for. \n\nFor baselines we use random baseline _BRandom_ and a frequency baseline _BFrequency_ which always returns types in order of their frequency among all linked entities (e.g., always _person_ , then _location_ , etc). We evaluate our system without relation weighting ( _SNoWeight_ ) and also with relation weighting ( _SWeighted_ ). For _SWeighted_ we leave all the test set entities out when calculating global relation weights. Our metrics are _Precision at 1_ and _F_ 1 _score_ . Precision at 1 measures how often the top returned type is a correct type, and is useful for applications that want one type per entity. _F_ 1 measures how well the method recovers the full set of Freebase types (for each test case we graph precision/recall and take the max _F_ 1), and is useful for applications such as typed question answering. \n\nTable 5 shows the results. _BRandom_ performs poorly because there are so many semantic types, and very few of them are correct for each test case. _BFrequency_ performs slightly better on _TAIL_ than _HEAD_ because _TAIL_ contains more entities of the most frequent types. _SNoWeight_ performance \n\n900\n\n<!-- PÁGINA 9 -->\n||**HEA**<br>**Prec**@**1**|**D**<br>**F1**|**TAI**<br>**Prec**@**1**|**L**<br>**F1**|\n|---|---|---|---|---|\n|**BRandom**|0.008|0.028|0.004|0.023|\n|**BFrequency**|0.244|0.302|0.298|0.322|\n|**SNoWeight**|0.542<sup>_†_</sup><br>|0.465<sup>_†_</sup><br>|0.510<sup>_†_</sup><br>|0.456<sup>_†_</sup><br>|\n|**SWeighted**|0.610<sup>_‡_</sup>|0.521<sup>_‡_</sup>|0.598<sup>_‡_</sup>|0.522<sup>_‡_</sup>|\n\n\n\nTable 5: Evaluation on HEAD and TAIL, 500 elements each.<sup>_†_</sup> indicates statistical significance over **BFrequency** , and _‡_ over both **BFrequency** and **SNoWeight** . Significance is measured using the Student’s _t_ -test at 95% confidence. The top type predicted by our **SWeighted** method is correct about 60% of the time, while the top type predicted by the **BFrequency** baseline is correct under 30% of the time. \n\nis statistically significant above all baselines, and _SWeighted_ is statistically significant over _SNoWeight_ on both test sets and metrics. \n\n## **5.5 Analysis**"
+    "motivo": "O bloco inicia no cabeçalho literal «5.4 Evaluation» e abrange toda a avaliação, incluindo tabelas e a continuação após a quebra de página, terminando imediatamente antes do cabeçalho «5.5 Analysis».",
+    "texto": "# **5.4 Evaluation** \n\nThe goal of the evaluation is to judge how well our method can predict the Freebase semantic types of entities in our scenario. Our linked entities covered 1,339 Freebase types, including many interesting types such as _computer operating system_ , _religious text_ , _airline_ and _baseball team_ . Human judges would have trouble manually annotating new entities with all these types because there are too many to keep in mind and understand the characteristics \n\n\n\n<!-- Start of picture text -->\n“is a highway in”<br>“is a university located in”<br>“became the president of”<br>“turned down the role of”<br>“has an embassy in”<br><!-- End of picture text -->\n\nTable 3: Example relations found to have high weight. \n\n\n\n<!-- Start of picture text -->\n“comes with”<br>“is a generic term for”<br>“works best on”<br>“can be made from”<br>“is almost identical to”<br><!-- End of picture text -->\n\nTable 4: Example relations found to have low weight. \n\nof. Instead, we automatically generate testing data by sampling entities from _L_ , and then test on ability to recover the actual Freebase types (which we know). \n\nWe sample a _HEAD_ set of distinct 500 Freebase entities (drawn randomly from our set of linked extractions), and a _TAIL_ set of 500 entities (drawn randomly from our set of linked entities). An entity that occurs in many extractions is more likely to be in _HEAD_ than _TAIL_ . Our sampling also picks only entities that occur with at least 10 relations, which is appropriate for the Web scenario where more instances can always be queried for. \n\nFor baselines we use random baseline _BRandom_ and a frequency baseline _BFrequency_ which always returns types in order of their frequency among all linked entities (e.g., always _person_ , then _location_ , etc). We evaluate our system without relation weighting ( _SNoWeight_ ) and also with relation weighting ( _SWeighted_ ). For _SWeighted_ we leave all the test set entities out when calculating global relation weights. Our metrics are _Precision at 1_ and _F_ 1 _score_ . Precision at 1 measures how often the top returned type is a correct type, and is useful for applications that want one type per entity. _F_ 1 measures how well the method recovers the full set of Freebase types (for each test case we graph precision/recall and take the max _F_ 1), and is useful for applications such as typed question answering. \n\nTable 5 shows the results. _BRandom_ performs poorly because there are so many semantic types, and very few of them are correct for each test case. _BFrequency_ performs slightly better on _TAIL_ than _HEAD_ because _TAIL_ contains more entities of the most frequent types. _SNoWeight_ performance \n\n900\n\n<!-- PÁGINA 9 -->\n||**HEA**<br>**Prec**@**1**|**D**<br>**F1**|**TAI**<br>**Prec**@**1**|**L**<br>**F1**|\n|---|---|---|---|---|\n|**BRandom**|0.008|0.028|0.004|0.023|\n|**BFrequency**|0.244|0.302|0.298|0.322|\n|**SNoWeight**|0.542<sup>_†_</sup><br>|0.465<sup>_†_</sup><br>|0.510<sup>_†_</sup><br>|0.456<sup>_†_</sup><br>|\n|**SWeighted**|0.610<sup>_‡_</sup>|0.521<sup>_‡_</sup>|0.598<sup>_‡_</sup>|0.522<sup>_‡_</sup>|\n\n\n\nTable 5: Evaluation on HEAD and TAIL, 500 elements each.<sup>_†_</sup> indicates statistical significance over **BFrequency** , and _‡_ over both **BFrequency** and **SNoWeight** . Significance is measured using the Student’s _t_ -test at 95% confidence. The top type predicted by our **SWeighted** method is correct about 60% of the time, while the top type predicted by the **BFrequency** baseline is correct under 30% of the time. \n\nis statistically significant above all baselines, and _SWeighted_ is statistically significant over _SNoWeight_ on both test sets and metrics. \n\n"
   },
   {
-    "offset_inicio": "_SWeighted_ was successful at recovering the correct Freebase types of many entities. For example, it finds that",
-    "offset_fim": "directly comparable to us because they used different data, different (and fewer) types, and different evaluation methodology. ",
+    "offset_inicio": "## **5.5 Analysis** \n\n_SWeighted_ was successful at recovering the correct Freebase types of",
+    "offset_fim": "different data, different (and fewer) types, and different evaluation methodology.",
     "pagina_inicio": 9,
     "pagina_fim": 9,
     "titulo": "5.5 Analysis",
-    "motivo": "É o trecho inicial disponível da subseção 5.5, contendo sua análise em parágrafos corridos, e termina imediatamente antes do marcador de seção \"# **6 Discussion**\".",
-    "texto": "_SWeighted_ was successful at recovering the correct Freebase types of many entities. For example, it finds that “Atherosclerosis” is a _medical risk factor_ by connecting it to “obesity” and “diabetes,” that “Supernatural” is a _TV program_ and a _Netflix title_ by connecting it to “House” and “30 Rock,” and that “America West” is an _aircraft owner_ and an _airline_ by connecting it to “Etihad Airways” and “China Eastern Airlines.” While precision at 1 around 60% may not be high enough yet for certain applications, it is significantly better than competing approaches, which are under 30%, and we hope that our values can serve as a non-trivial baseline on this task for future systems. \n\nOne example where _SWeighted_ made some mistakes is _fictional characters_ . Many _fictional characters_ participate in a textual relations that make them look like _people_ (e.g., “was born on”), but predicting that they belong to _people_ class is incorrect. Some performance hit was also due to entity linking errors. From an assertion like “The Four Seasons is located in Hamamatsu,” our entity linker (and other entity linkers we tried) prefer linking “The Four Seasons” to Vivaldi’s music composition rather than the hotel chain. We are then unable to recover _music composition_ type from relations like “is located in.” Our algorithm relies on accurate entity linking in _L_ , but there is a precision/recall tradeoff to consider here because it also benefits from higher coverage of entities and relations in _L_ . \n\nAs a general reference for performance of state-of-the-art fine-grained entity classification, the \n\nFIGER system (Ling and Weld, 2012) for classifying into 112 types reported _F_ 1 scores ranging from 0.471 to 0.693 in their experiments. It is important to note that these numbers are not directly comparable to us because they used different data, different (and fewer) types, and different evaluation methodology. "
+    "motivo": "O bloco inicia no cabeçalho literal «5.5 Analysis» e contém seus três parágrafos de análise, terminando imediatamente antes do próximo marcador de seção «6 Discussion».",
+    "texto": "## **5.5 Analysis** \n\n_SWeighted_ was successful at recovering the correct Freebase types of many entities. For example, it finds that “Atherosclerosis” is a _medical risk factor_ by connecting it to “obesity” and “diabetes,” that “Supernatural” is a _TV program_ and a _Netflix title_ by connecting it to “House” and “30 Rock,” and that “America West” is an _aircraft owner_ and an _airline_ by connecting it to “Etihad Airways” and “China Eastern Airlines.” While precision at 1 around 60% may not be high enough yet for certain applications, it is significantly better than competing approaches, which are under 30%, and we hope that our values can serve as a non-trivial baseline on this task for future systems. \n\nOne example where _SWeighted_ made some mistakes is _fictional characters_ . Many _fictional characters_ participate in a textual relations that make them look like _people_ (e.g., “was born on”), but predicting that they belong to _people_ class is incorrect. Some performance hit was also due to entity linking errors. From an assertion like “The Four Seasons is located in Hamamatsu,” our entity linker (and other entity linkers we tried) prefer linking “The Four Seasons” to Vivaldi’s music composition rather than the hotel chain. We are then unable to recover _music composition_ type from relations like “is located in.” Our algorithm relies on accurate entity linking in _L_ , but there is a precision/recall tradeoff to consider here because it also benefits from higher coverage of entities and relations in _L_ . \n\nAs a general reference for performance of state-of-the-art fine-grained entity classification, the \n\nFIGER system (Ling and Weld, 2012) for classifying into 112 types reported _F_ 1 scores ranging from 0.471 to 0.693 in their experiments. It is important to note that these numbers are not directly comparable to us because they used different data, different (and fewer) types, and different evaluation methodology."
   },
   {
-    "offset_inicio": "# **6 Discussion** \n\nThis paper presented an approach for working with non-Wikipedia",
-    "offset_fim": " then correctly predicts semantic types including _food ingredient_ and _medical treatment_ . ",
+    "offset_inicio": "# **6 Discussion** \n\nThis paper presented an approach for working with non-Wikipedia entities in text.",
+    "offset_fim": "for a noun phrase in a text corpus: ",
     "pagina_inicio": 9,
     "pagina_fim": 9,
     "titulo": "6 Discussion",
-    "motivo": "O bloco inicia no marcador da seção 6 e contém seu texto introdutório; termina imediatamente antes do próximo marcador estrutural, \"6.1 Typed Question Answering\".",
-    "texto": "# **6 Discussion** \n\nThis paper presented an approach for working with non-Wikipedia entities in text. Consider the following possibilities for a noun phrase in a text corpus: \n\n**Wikipedia Entity:** (e.g., “Computer Science,” “South America,” “apple juice”) - Entity linking techniques can identify and type these. \n\n**Non-Wikipedia, Non-Entity:** (e.g., “strange things,” “Early studies,” “A link”) - Our classifier from Section 4 is able to filter these. \n\n**Non-Wikipedia, Entity:** (e.g., “Safflower oil,” “prune juice,” “Amazon UK”) - We identify these as entities, then propagate semantic types to them. Our technique finds that “Safflower oil” occurs with high weight relations such as “is sometimes used to treat” and “can be substituted for,” making it similar to linked entities such as “Phentermine” and “Dandelion,” and then correctly predicts semantic types including _food ingredient_ and _medical treatment_ . "
+    "motivo": "O bloco começa no cabeçalho literal «6 Discussion» e contém apenas seu caput introdutório, encerrando-se imediatamente antes do rótulo em negrito «Wikipedia Entity:», que inicia uma unidade própria.",
+    "texto": "# **6 Discussion** \n\nThis paper presented an approach for working with non-Wikipedia entities in text. Consider the following possibilities for a noun phrase in a text corpus: "
+  },
+  {
+    "offset_inicio": "**Wikipedia Entity:** (e.g., “Computer Science,” “South America,” “apple juice”) - Entity",
+    "offset_fim": "Entity linking techniques can identify and type these.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Wikipedia Entity",
+    "motivo": "O primeiro marcador estrutural presente é o rótulo em negrito “Wikipedia Entity:”. Seu bloco contém a explicação associada e termina imediatamente antes do próximo rótulo em negrito, “Non-Wikipedia, Non-Entity:”.",
+    "texto": "**Wikipedia Entity:** (e.g., “Computer Science,” “South America,” “apple juice”) - Entity linking techniques can identify and type these."
+  },
+  {
+    "offset_inicio": "**Non-Wikipedia, Non-Entity:** (e.g., “strange things,” “Early studies,” “A link”) - Our classifier",
+    "offset_fim": "“strange things,” “Early studies,” “A link”) - Our classifier from Section 4 is able to filter these. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Non-Wikipedia, Non-Entity",
+    "motivo": "É o primeiro rótulo em negrito do trecho e forma uma unidade própria; termina imediatamente antes do próximo rótulo em negrito, “Non-Wikipedia, Entity:”.",
+    "texto": "**Non-Wikipedia, Non-Entity:** (e.g., “strange things,” “Early studies,” “A link”) - Our classifier from Section 4 is able to filter these. "
+  },
+  {
+    "offset_inicio": "**Non-Wikipedia, Entity:** (e.g., “Safflower oil,” “prune juice,” “Amazon UK”) - We",
+    "offset_fim": "then correctly predicts semantic types including _food ingredient_ and _medical treatment_ . \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Non-Wikipedia, Entity",
+    "motivo": "O rótulo em negrito inicia uma unidade própria; seu parágrafo termina imediatamente antes do cabeçalho \"## **6.1 Typed Question Answering**\".",
+    "texto": "**Non-Wikipedia, Entity:** (e.g., “Safflower oil,” “prune juice,” “Amazon UK”) - We identify these as entities, then propagate semantic types to them. Our technique finds that “Safflower oil” occurs with high weight relations such as “is sometimes used to treat” and “can be substituted for,” making it similar to linked entities such as “Phentermine” and “Dandelion,” and then correctly predicts semantic types including _food ingredient_ and _medical treatment_ . \n\n"
   },
   {
     "offset_inicio": "## **6.1 Typed Question Answering** \n\nFrom our set of 15 million assertions, we found",
-    "offset_fim": "might lead to particular predicted type distributions that indicate an error occurred earlier in the process. \n\n",
+    "offset_fim": "additional non-Wikipedia _computer games_ that match the query, including “Cooking Dash,” “Delicious Deluxe” and “Slingo Supreme.” ",
     "pagina_inicio": 9,
     "pagina_fim": 10,
     "titulo": "6.1 Typed Question Answering",
-    "motivo": "O bloco inicia no marcador da subseção 6.1, na página 9, e inclui seu texto contínuo através da página 10, terminando imediatamente antes do próximo marcador estrutural, \"7 Future Work\".",
-    "texto": "## **6.1 Typed Question Answering** \n\nFrom our set of 15 million assertions, we found and typed many non-Wikipedia entities. In _food_ while Wikipedia has “crab meat,” we find it is missing others such as “rabbit meat” and “goat milk.” In _job titles_ it has “scientist” and “lawyer,” but we find it is missing “PhD student,” “fashion designer,” and others. We find many of the _people_ and _employers_ not \n\n901\n\n<!-- PÁGINA 10 -->\nprominent enough for Wikipedia. \n\nOne application of this research is to increase the yield of applications such as Typed Question Answering (Buscaldi and Rosso, 2006). For example, consider the query “What _computer game_ is a lot of fun?” A search for assertions matching “* is a lot of fun” in the data yields around 1,000 results such as “camping,” “David Sedaris” and “Hawaii.” Entity linking allows us to identify just the _computer games_ in Wikipedia that match the query, such as “Civilization.” However, around 400 query matches could not be entity linked. Our noun-phrase classifier filters out non-entities such as “actual play,” “Just this” and “Two kids.” After predicting types for the matches that did not get filtered, we find additional non-Wikipedia _computer games_ that match the query, including “Cooking Dash,” “Delicious Deluxe” and “Slingo Supreme.” \n\n# **7 Future Work** \n\nAn area we are continuing to improve the system on is _textual ambiguity_ . For example, an unlinkable noun phrase might simultaneously be the name of a _film_ , a _car_ , and a _person_ . Instead of outputting that the noun phrase holds all of those types, a stronger output would be to realize that the noun phrase is ambiguous, determine how many senses it has, and determine which sense is being referred to in each instance. We have ideas for how to detect ambiguous entities using mutual exclusion (Carlson, 2010) and functional relations. For example, if we predict that a noun phrase has _film_ and _car_ types but we also observe in our linked instances that these types are mutually exclusive, then this is good evidence that the noun phrase refers to multiple terms. \n\nWe also plan to continue improving our techniques, as there is still plenty of room for improvement on both subtasks. For detecting new entities, we are interested in seeing if timestamped Twitter data could be analyzed to increase both recall and precision. For predicting semantic types, (Kozareva et al., 2011) proposed additional techniques which we have not fully explored. Also, we can incorporate additional signals such as shared term heads when they are available, in order to help find terms that are likely to share types. Last, we would like to feed back our system output to improve system \n\nperformance. For example, non-entity noun phrases that make it to the typing step might lead to particular predicted type distributions that indicate an error occurred earlier in the process. \n\n"
+    "motivo": "O bloco começa no cabeçalho literal da subseção 6.1, na página 9, e inclui a continuação do texto na página 10. Termina imediatamente antes do próximo cabeçalho estrutural, “7 Future Work”.",
+    "texto": "## **6.1 Typed Question Answering** \n\nFrom our set of 15 million assertions, we found and typed many non-Wikipedia entities. In _food_ while Wikipedia has “crab meat,” we find it is missing others such as “rabbit meat” and “goat milk.” In _job titles_ it has “scientist” and “lawyer,” but we find it is missing “PhD student,” “fashion designer,” and others. We find many of the _people_ and _employers_ not \n\n901\n\n<!-- PÁGINA 10 -->\nprominent enough for Wikipedia. \n\nOne application of this research is to increase the yield of applications such as Typed Question Answering (Buscaldi and Rosso, 2006). For example, consider the query “What _computer game_ is a lot of fun?” A search for assertions matching “* is a lot of fun” in the data yields around 1,000 results such as “camping,” “David Sedaris” and “Hawaii.” Entity linking allows us to identify just the _computer games_ in Wikipedia that match the query, such as “Civilization.” However, around 400 query matches could not be entity linked. Our noun-phrase classifier filters out non-entities such as “actual play,” “Just this” and “Two kids.” After predicting types for the matches that did not get filtered, we find additional non-Wikipedia _computer games_ that match the query, including “Cooking Dash,” “Delicious Deluxe” and “Slingo Supreme.” "
   },
   {
-    "offset_inicio": "# **8 Conclusion** \n\nIn this paper we showed that while entity linking cannot link to",
-    "offset_fim": "prominent enough to include in manually-authored knowledge bases is analyzed automatically instead of being left behind. ",
+    "offset_inicio": "# **7 Future Work** \n\nAn area we are continuing to improve the system on is _textual ambiguity_ . For example, an unlinkable noun phrase might simultaneously be the name of a _film_ ,",
+    "offset_fim": "that indicate an error occurred earlier in the process. \n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "7 Future Work",
+    "motivo": "O bloco inicia no cabeçalho literal «# **7 Future Work**» e contém seus dois parágrafos completos, terminando imediatamente antes do próximo cabeçalho de seção, «# **8 Conclusion**».",
+    "texto": "# **7 Future Work** \n\nAn area we are continuing to improve the system on is _textual ambiguity_ . For example, an unlinkable noun phrase might simultaneously be the name of a _film_ , a _car_ , and a _person_ . Instead of outputting that the noun phrase holds all of those types, a stronger output would be to realize that the noun phrase is ambiguous, determine how many senses it has, and determine which sense is being referred to in each instance. We have ideas for how to detect ambiguous entities using mutual exclusion (Carlson, 2010) and functional relations. For example, if we predict that a noun phrase has _film_ and _car_ types but we also observe in our linked instances that these types are mutually exclusive, then this is good evidence that the noun phrase refers to multiple terms. \n\nWe also plan to continue improving our techniques, as there is still plenty of room for improvement on both subtasks. For detecting new entities, we are interested in seeing if timestamped Twitter data could be analyzed to increase both recall and precision. For predicting semantic types, (Kozareva et al., 2011) proposed additional techniques which we have not fully explored. Also, we can incorporate additional signals such as shared term heads when they are available, in order to help find terms that are likely to share types. Last, we would like to feed back our system output to improve system \n\nperformance. For example, non-entity noun phrases that make it to the typing step might lead to particular predicted type distributions that indicate an error occurred earlier in the process. \n"
+  },
+  {
+    "offset_inicio": "# **8 Conclusion** \n\nIn this paper we showed that while entity linking cannot link to entities outside",
+    "offset_fim": "toward a future where the vast universe of entities that are not prominent enough to include in manually-authored knowledge bases is analyzed automatically instead of being left behind.",
     "pagina_inicio": 10,
     "pagina_fim": 10,
     "titulo": "8 Conclusion",
-    "motivo": "O bloco inicia no marcador de seção \"8 Conclusion\" e contém seus dois parágrafos conclusivos; termina imediatamente antes do próximo marcador estrutural, \"Acknowledgements\".",
-    "texto": "# **8 Conclusion** \n\nIn this paper we showed that while entity linking cannot link to entities outside of Wikipedia, once a large text corpus has been entity linked, the presence and content of the existing links can be leveraged to help detect and semantically type the non-Wikipedia entities as well. We designed techniques for detecting whether unlinkable noun phrases are entities, and if they are, then propagating semantic types to them from the linked entities. In our evaluations, we showed that our techniques achieve statistically significant improvement over baseline methods. \n\nOur research here takes initial steps toward a future where the vast universe of entities that are not prominent enough to include in manually-authored knowledge bases is analyzed automatically instead of being left behind. "
+    "motivo": "O bloco começa no cabeçalho literal \"# **8 Conclusion**\" e inclui seus dois parágrafos, terminando imediatamente antes do cabeçalho seguinte, \"# **Acknowledgements**\".",
+    "texto": "# **8 Conclusion** \n\nIn this paper we showed that while entity linking cannot link to entities outside of Wikipedia, once a large text corpus has been entity linked, the presence and content of the existing links can be leveraged to help detect and semantically type the non-Wikipedia entities as well. We designed techniques for detecting whether unlinkable noun phrases are entities, and if they are, then propagating semantic types to them from the linked entities. In our evaluations, we showed that our techniques achieve statistically significant improvement over baseline methods. \n\nOur research here takes initial steps toward a future where the vast universe of entities that are not prominent enough to include in manually-authored knowledge bases is analyzed automatically instead of being left behind."
   },
   {
-    "offset_inicio": "# **Acknowledgements** \n\nWe thank Stephen Soderland, Xiao Ling, and the three anonymous",
-    "offset_fim": "A875009-C-0179, and carried out at the University of Washington’s Turing Center. ",
+    "offset_inicio": "# **Acknowledgements** \n\nWe thank Stephen Soderland, Xiao Ling, and the three anonymous reviewers",
+    "offset_fim": "1, and DARPA contract FA875009-C-0179, and carried out at the University of Washington’s Turing Center.",
     "pagina_inicio": 10,
     "pagina_fim": 10,
     "titulo": "Acknowledgements",
-    "motivo": "O bloco começa no marcador de título \"Acknowledgements\" e contém o parágrafo de agradecimentos, encerrando-se imediatamente antes do próximo marcador estrutural, \"References\".",
-    "texto": "# **Acknowledgements** \n\nWe thank Stephen Soderland, Xiao Ling, and the three anonymous reviewers for their helpful feedback on earlier drafts. This research was supported in part by NSF grant IIS-0803481, ONR grant N00014-08-1-0431, and DARPA contract FA875009-C-0179, and carried out at the University of Washington’s Turing Center. "
+    "motivo": "O bloco inicia no cabeçalho literal “# **Acknowledgements**” e contém o parágrafo de agradecimentos, terminando imediatamente antes do próximo cabeçalho, “# **References**”.",
+    "texto": "# **Acknowledgements** \n\nWe thank Stephen Soderland, Xiao Ling, and the three anonymous reviewers for their helpful feedback on earlier drafts. This research was supported in part by NSF grant IIS-0803481, ONR grant N00014-08-1-0431, and DARPA contract FA875009-C-0179, and carried out at the University of Washington’s Turing Center."
   },
   {
-    "offset_inicio": "# **References** ",
-    "offset_fim": "# **References** ",
+    "offset_inicio": "# **References** \n\n",
+    "offset_fim": "# **References** \n\n",
     "pagina_inicio": 10,
     "pagina_fim": 10,
     "titulo": "References",
-    "motivo": "O título da lista de referências constitui um bloco próprio e termina imediatamente antes da primeira entrada bibliográfica, iniciada por “- Razvan Bunescu and Marius Pas¸ca. 2006.”.",
-    "texto": "# **References** "
+    "motivo": "O cabeçalho \"References\" forma um bloco próprio e termina imediatamente antes da primeira entrada bibliográfica, \"- Razvan Bunescu and Marius Pas¸ca...\".",
+    "texto": "# **References** \n\n"
   },
   {
-    "offset_inicio": "- Razvan Bunescu and Marius Pas¸ca. 2006. Using encyclopedic knowledge for named entity disambiguation. In _Proceedings",
-    "offset_fim": "In _Proceedings of the 11th Conference of the European Chapter of the Association of Computational Linguistics (EACL)_ . ",
+    "offset_inicio": "- Razvan Bunescu and Marius Pas¸ca. 2006. Using encyclopedic knowledge for named entity disambiguation.",
+    "offset_fim": "of the European Chapter of the Association of Computational Linguistics (EACL)_ .",
     "pagina_inicio": 10,
     "pagina_fim": 10,
-    "titulo": "Referência: Razvan Bunescu and Marius Pas¸ca (2006)",
-    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item da referência e termina imediatamente antes da próxima entrada, de Davide Buscaldi e Paolo Rosso.",
-    "texto": "- Razvan Bunescu and Marius Pas¸ca. 2006. Using encyclopedic knowledge for named entity disambiguation. In _Proceedings of the 11th Conference of the European Chapter of the Association of Computational Linguistics (EACL)_ . "
+    "titulo": "Referência: Razvan Bunescu e Marius Pas¸ca (2006)",
+    "motivo": "É a primeira entrada bibliográfica da lista de referências visível no texto. Inicia no marcador de item \"- Razvan Bunescu...\" e termina antes do marcador da referência seguinte, \"- Davide Buscaldi...\".",
+    "texto": "- Razvan Bunescu and Marius Pas¸ca. 2006. Using encyclopedic knowledge for named entity disambiguation. In _Proceedings of the 11th Conference of the European Chapter of the Association of Computational Linguistics (EACL)_ ."
   },
   {
     "offset_inicio": "- Davide Buscaldi and Paolo Rosso. 2006. Mining knowledge from wikipedia for the question",
-    "offset_fim": "In _Proceedings of the 5th International Conference on Language Resources and Evaluation (LREC)_ .",
+    "offset_fim": "from wikipedia for the question answering task. In _Proceedings of the 5th International Conference on Language Resources and Evaluation (LREC)_ .",
     "pagina_inicio": 10,
     "pagina_fim": 10,
-    "titulo": "Referência: Davide Buscaldi e Paolo Rosso (2006)",
-    "motivo": "A primeira unidade completa do trecho é uma entrada bibliográfica individual, iniciada pelo marcador de lista e encerrada antes da referência seguinte, de Andrew Carlson.",
+    "titulo": "Referência: Davide Buscaldi and Paolo Rosso (2006)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Cada referência constitui uma unidade própria; o bloco inicia no marcador \"-\" da entrada e termina antes da referência seguinte.",
     "texto": "- Davide Buscaldi and Paolo Rosso. 2006. Mining knowledge from wikipedia for the question answering task. In _Proceedings of the 5th International Conference on Language Resources and Evaluation (LREC)_ ."
   },
   {
@@ -220,44 +265,44 @@
     "offset_fim": "- Andrew Carlson. 2010. _Coupled Semi-Supervised Learning_ . Ph.D. thesis, Carnegie Mellon University.",
     "pagina_inicio": 10,
     "pagina_fim": 10,
-    "titulo": "Andrew Carlson (2010) — Coupled Semi-Supervised Learning",
-    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Andrew Carlson\" e termina imediatamente antes da entrada seguinte, \"- Silviu Cucerzan\".",
+    "titulo": "Referência: Andrew Carlson (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no texto; começa no marcador \"- Andrew Carlson\" e termina imediatamente antes da entrada seguinte, \"- Silviu Cucerzan\".",
     "texto": "- Andrew Carlson. 2010. _Coupled Semi-Supervised Learning_ . Ph.D. thesis, Carnegie Mellon University."
   },
   {
-    "offset_inicio": "- Silviu Cucerzan. 2007. Large-scale named entity disambiguation based on wikipedia data. In _Proceedings of EMNLP_ .",
-    "offset_fim": "Silviu Cucerzan. 2007. Large-scale named entity disambiguation based on wikipedia data. In _Proceedings of EMNLP_ . \n\n902",
+    "offset_inicio": "- Silviu Cucerzan. 2007. Large-scale named entity disambiguation based on wikipedia data.",
+    "offset_fim": "arge-scale named entity disambiguation based on wikipedia data. In _Proceedings of EMNLP_ .",
     "pagina_inicio": 10,
     "pagina_fim": 10,
     "titulo": "Referência: Silviu Cucerzan (2007)",
-    "motivo": "É a primeira entrada bibliográfica visível; inicia no marcador de lista com o autor e termina antes da próxima entrada bibliográfica, na página 11.",
-    "texto": "- Silviu Cucerzan. 2007. Large-scale named entity disambiguation based on wikipedia data. In _Proceedings of EMNLP_ . \n\n902"
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador de item \"- Silviu Cucerzan\" e termina após a referência a _Proceedings of EMNLP_ ., antes da paginação 902 e da entrada bibliográfica seguinte.",
+    "texto": "- Silviu Cucerzan. 2007. Large-scale named entity disambiguation based on wikipedia data. In _Proceedings of EMNLP_ ."
   },
   {
     "offset_inicio": "- Mark Dredze, Paul McNamee, Delip Rao, Adam Gerber, and Tim Finin. 2010. Entity",
-    "offset_fim": "d Tim Finin. 2010. Entity disambiguation for knowledge base population. In _Proceedings of COLING_ . ",
+    "offset_fim": "2010. Entity disambiguation for knowledge base population. In _Proceedings of COLING_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Mark Dredze et al. (2010)",
-    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Mark Dredze\" e termina imediatamente antes da próxima referência, iniciada por \"- Oren Etzioni\".",
-    "texto": "- Mark Dredze, Paul McNamee, Delip Rao, Adam Gerber, and Tim Finin. 2010. Entity disambiguation for knowledge base population. In _Proceedings of COLING_ . "
+    "titulo": "Referência — Mark Dredze et al. (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador \"- Mark Dredze\" e termina imediatamente antes da entrada seguinte, \"- Oren Etzioni...\".",
+    "texto": "- Mark Dredze, Paul McNamee, Delip Rao, Adam Gerber, and Tim Finin. 2010. Entity disambiguation for knowledge base population. In _Proceedings of COLING_ ."
   },
   {
-    "offset_inicio": "- Oren Etzioni, Michael Cafarella, Doug Downey, AnaMaria Popescu, Tal Shaked, Stephen Soderland, Daniel S. Weld, and Alexander Yates.",
-    "offset_fim": "2005. Unsupervised named-entity extraction from the Web: An experimental study. In _Artificial Intelligence_ .",
+    "offset_inicio": "- Oren Etzioni, Michael Cafarella, Doug Downey, AnaMaria Popescu, Tal Shaked, Stephen",
+    "offset_fim": "ity extraction from the Web: An experimental study. In _Artificial Intelligence_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Etzioni et al. (2005) — Unsupervised named-entity extraction from the Web",
-    "motivo": "É a primeira entrada bibliográfica da lista de referências; inicia no marcador de item '-' com os autores e termina imediatamente antes da próxima entrada bibliográfica.",
+    "titulo": "Referência bibliográfica — Etzioni et al. (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador \"-\" da referência de Oren Etzioni et al. e termina imediatamente antes da entrada seguinte, de Etzioni, Banko e Cafarella (2006).",
     "texto": "- Oren Etzioni, Michael Cafarella, Doug Downey, AnaMaria Popescu, Tal Shaked, Stephen Soderland, Daniel S. Weld, and Alexander Yates. 2005. Unsupervised named-entity extraction from the Web: An experimental study. In _Artificial Intelligence_ ."
   },
   {
     "offset_inicio": "- Oren Etzioni, Michele Banko, and Michael J. Cafarella. 2006. Machine Reading. In",
-    "offset_fim": "ading. In _Proceedings of the 21st National Conference on Artificial Intelligence (AAAI)_ .",
+    "offset_fim": "In _Proceedings of the 21st National Conference on Artificial Intelligence (AAAI)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Etzioni, Banko e Cafarella (2006) — Machine Reading",
-    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista com os autores e termina imediatamente antes da próxima referência, de James A. Evans e Jacob G. Foster.",
+    "titulo": "Referência: Etzioni, Banko e Cafarella (2006), Machine Reading",
+    "motivo": "Cada entrada da lista de referências é uma unidade própria. O bloco inicia na primeira referência visível, marcada por “- Oren Etzioni...”, e termina antes da referência seguinte, “- James A. Evans...”.",
     "texto": "- Oren Etzioni, Michele Banko, and Michael J. Cafarella. 2006. Machine Reading. In _Proceedings of the 21st National Conference on Artificial Intelligence (AAAI)_ ."
   },
   {
@@ -265,134 +310,134 @@
     "offset_fim": "- James A. Evans and Jacob G. Foster. 2011. Metaknowledge. In _Science_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "James A. Evans and Jacob G. Foster (2011)",
-    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item e termina imediatamente antes da entrada seguinte.",
+    "titulo": "Referência: James A. Evans and Jacob G. Foster (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Cada referência constitui uma unidade própria; o bloco começa no marcador \"-\" desta entrada e termina imediatamente antes da referência seguinte, de Anthony Fader et al.",
     "texto": "- James A. Evans and Jacob G. Foster. 2011. Metaknowledge. In _Science_ ."
   },
   {
-    "offset_inicio": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2009. Scaling Wikipedia-based",
+    "offset_inicio": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2009. Scaling Wikipedia-based named entity disambiguation",
     "offset_fim": "In _IJCAI-09 Workshop on User-contributed Knowledge and Artificial Intelligence (WikiAI09)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Anthony Fader, Stephen Soderland e Oren Etzioni (2009)",
-    "motivo": "É a primeira entrada bibliográfica da página e constitui uma unidade própria; começa no marcador de lista com os autores e termina imediatamente antes da referência seguinte.",
+    "titulo": "Referência — Fader, Soderland e Etzioni (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item e termina imediatamente antes da entrada seguinte, de Fader, Soderland e Etzioni (2011).",
     "texto": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2009. Scaling Wikipedia-based named entity disambiguation to arbitrary Web text. In _IJCAI-09 Workshop on User-contributed Knowledge and Artificial Intelligence (WikiAI09)_ ."
   },
   {
-    "offset_inicio": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2011. Identifying relations for open information extraction. In _Proceedings of EMNLP_ . ",
-    "offset_fim": "Anthony Fader, Stephen Soderland, and Oren Etzioni. 2011. Identifying relations for open information extraction. In _Proceedings of EMNLP_ . ",
+    "offset_inicio": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2011. Identifying relations for",
+    "offset_fim": "n Etzioni. 2011. Identifying relations for open information extraction. In _Proceedings of EMNLP_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência bibliográfica: Anthony Fader, Stephen Soderland e Oren Etzioni (2011)",
-    "motivo": "Trata-se da primeira entrada individual da lista de referências na página 11; inicia no marcador de item \"- Anthony Fader\" e termina imediatamente antes da entrada seguinte, \"- Paolo Ferragina\".",
-    "texto": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2011. Identifying relations for open information extraction. In _Proceedings of EMNLP_ . "
+    "titulo": "Referência — Anthony Fader, Stephen Soderland e Oren Etzioni (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Cada referência é uma unidade própria; o bloco começa no marcador '-' desta entrada e termina antes da referência de Paolo Ferragina e Ugo Scaiella.",
+    "texto": "- Anthony Fader, Stephen Soderland, and Oren Etzioni. 2011. Identifying relations for open information extraction. In _Proceedings of EMNLP_ ."
   },
   {
-    "offset_inicio": "- Paolo Ferragina and Ugo Scaiella. 2010. Tagme: On-the-fly annotation of short text fragments (by wikipedia entities). In _Proceedings of CIKM_ . ",
-    "offset_fim": "- Paolo Ferragina and Ugo Scaiella. 2010. Tagme: On-the-fly annotation of short text fragments (by wikipedia entities). In _Proceedings of CIKM_ . ",
+    "offset_inicio": "- Paolo Ferragina and Ugo Scaiella. 2010. Tagme: On-the-fly annotation of short text",
+    "offset_fim": "2010. Tagme: On-the-fly annotation of short text fragments (by wikipedia entities). In _Proceedings of CIKM_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Paolo Ferragina and Ugo Scaiella (2010)",
-    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de lista e termina imediatamente antes da entrada seguinte, de Eduard Hovy, Zornitsa Kozareva e Ellen Riloff.",
-    "texto": "- Paolo Ferragina and Ugo Scaiella. 2010. Tagme: On-the-fly annotation of short text fragments (by wikipedia entities). In _Proceedings of CIKM_ . "
+    "titulo": "Referência: Paolo Ferragina e Ugo Scaiella (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador de item e termina antes da referência seguinte, de Eduard Hovy et al.",
+    "texto": "- Paolo Ferragina and Ugo Scaiella. 2010. Tagme: On-the-fly annotation of short text fragments (by wikipedia entities). In _Proceedings of CIKM_ ."
   },
   {
-    "offset_inicio": "- Eduard Hovy, Zornitsa Kozareva, and Ellen Riloff. 2009. Toward completeness in concept extraction",
-    "offset_fim": "2009. Toward completeness in concept extraction and classification. In _Proceedings of EMNLP_ . ",
+    "offset_inicio": "- Eduard Hovy, Zornitsa Kozareva, and Ellen Riloff. 2009. Toward completeness in concept extraction and classification. In _Proceedings of EMNLP_ .",
+    "offset_fim": "2009. Toward completeness in concept extraction and classification. In _Proceedings of EMNLP_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
     "titulo": "Referência: Eduard Hovy, Zornitsa Kozareva e Ellen Riloff (2009)",
-    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista e termina imediatamente antes da próxima referência, iniciada por “- Zornitsa Kozareva”.",
-    "texto": "- Eduard Hovy, Zornitsa Kozareva, and Ellen Riloff. 2009. Toward completeness in concept extraction and classification. In _Proceedings of EMNLP_ . "
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de item \"-\" e termina antes da entrada seguinte, de Zornitsa Kozareva et al.",
+    "texto": "- Eduard Hovy, Zornitsa Kozareva, and Ellen Riloff. 2009. Toward completeness in concept extraction and classification. In _Proceedings of EMNLP_ ."
   },
   {
-    "offset_inicio": "- Zornitsa Kozareva, Konstantin Voevodski, and ShangHua Teng. 2011. Class label enhancement via related instances. In _Proceedings of EMNLP_ . ",
-    "offset_fim": "and ShangHua Teng. 2011. Class label enhancement via related instances. In _Proceedings of EMNLP_ . ",
+    "offset_inicio": "- Zornitsa Kozareva, Konstantin Voevodski, and ShangHua Teng. 2011. Class label enhancement via related instances. In _Proceedings of EMNLP_ .",
+    "offset_fim": "- Zornitsa Kozareva, Konstantin Voevodski, and ShangHua Teng. 2011. Class label enhancement via related instances. In _Proceedings of EMNLP_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Zornitsa Kozareva et al. (2011)",
-    "motivo": "É a primeira entrada bibliográfica visível na página 11; inicia no marcador de lista \"- Zornitsa Kozareva\" e termina imediatamente antes da próxima entrada, \"- Sayali Kulkarni\".",
-    "texto": "- Zornitsa Kozareva, Konstantin Voevodski, and ShangHua Teng. 2011. Class label enhancement via related instances. In _Proceedings of EMNLP_ . "
+    "titulo": "Referência: Zornitsa Kozareva, Konstantin Voevodski e ShangHua Teng (2011)",
+    "motivo": "É a primeira entrada da lista de referências na página 11. Cada referência bibliográfica constitui uma unidade própria; o bloco começa no marcador '-' desta entrada e termina imediatamente antes da referência de Sayali Kulkarni et al.",
+    "texto": "- Zornitsa Kozareva, Konstantin Voevodski, and ShangHua Teng. 2011. Class label enhancement via related instances. In _Proceedings of EMNLP_ ."
   },
   {
-    "offset_inicio": "- Sayali Kulkarni, Amit Singh, Ganesh Ramakrishnan, and Soumen Chakrabarti. 2009. Collective annotation of wikipedia entities in text. In _Proceedings of KDD_ . ",
-    "offset_fim": "2009. Collective annotation of wikipedia entities in text. In _Proceedings of KDD_ . ",
+    "offset_inicio": "- Sayali Kulkarni, Amit Singh, Ganesh Ramakrishnan, and Soumen Chakrabarti. 2009.",
+    "offset_fim": "2009. Collective annotation of wikipedia entities in text. In _Proceedings of KDD_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Kulkarni et al. (2009) — Collective annotation of wikipedia entities in text",
-    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista \"- Sayali Kulkarni\" e encerrada imediatamente antes da próxima entrada, \"- Changki Lee\".",
-    "texto": "- Sayali Kulkarni, Amit Singh, Ganesh Ramakrishnan, and Soumen Chakrabarti. 2009. Collective annotation of wikipedia entities in text. In _Proceedings of KDD_ . "
+    "titulo": "Referência: Kulkarni et al. (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; cada referência constitui uma unidade própria e o bloco termina imediatamente antes da entrada de Changki Lee et al.",
+    "texto": "- Sayali Kulkarni, Amit Singh, Ganesh Ramakrishnan, and Soumen Chakrabarti. 2009. Collective annotation of wikipedia entities in text. In _Proceedings of KDD_ ."
   },
   {
-    "offset_inicio": "- Changki Lee, Yi-Gyu Hwang, and Myung-Gil Jang. 2007. Fine-grained named entity",
-    "offset_fim": "tion extraction for question answering. In _Proceedings of SIGIR_ . \n\n",
+    "offset_inicio": "- Changki Lee, Yi-Gyu Hwang, and Myung-Gil Jang. 2007. Fine-grained named entity recognition",
+    "offset_fim": "relation extraction for question answering. In _Proceedings of SIGIR_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência bibliográfica: Changki Lee, Yi-Gyu Hwang e Myung-Gil Jang (2007)",
-    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista “- Changki Lee...” e termina imediatamente antes da entrada seguinte, “- Xiao Ling...”.",
-    "texto": "- Changki Lee, Yi-Gyu Hwang, and Myung-Gil Jang. 2007. Fine-grained named entity recognition and relation extraction for question answering. In _Proceedings of SIGIR_ . \n\n"
+    "titulo": "Referência: Changki Lee, Yi-Gyu Hwang e Myung-Gil Jang (2007)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página; inicia no marcador de item e termina imediatamente antes da entrada seguinte, de Xiao Ling e Daniel S. Weld.",
+    "texto": "- Changki Lee, Yi-Gyu Hwang, and Myung-Gil Jang. 2007. Fine-grained named entity recognition and relation extraction for question answering. In _Proceedings of SIGIR_ ."
   },
   {
-    "offset_inicio": "- Xiao Ling and Daniel S. Weld. 2012. Fine-grained entity recognition. In _Proceedings of the 26th Conference on Artificial Intelligence (AAAI)_ . ",
-    "offset_fim": "Fine-grained entity recognition. In _Proceedings of the 26th Conference on Artificial Intelligence (AAAI)_ . ",
+    "offset_inicio": "- Xiao Ling and Daniel S. Weld. 2012. Fine-grained entity recognition. In _Proceedings of the 26th Conference on Artificial Intelligence (AAAI)_ .",
+    "offset_fim": "- Xiao Ling and Daniel S. Weld. 2012. Fine-grained entity recognition. In _Proceedings of the 26th Conference on Artificial Intelligence (AAAI)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Xiao Ling and Daniel S. Weld (2012) — Fine-grained entity recognition",
-    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de lista com os autores e termina imediatamente antes da próxima entrada, iniciada por “- Jean-Baptiste Michel”.",
-    "texto": "- Xiao Ling and Daniel S. Weld. 2012. Fine-grained entity recognition. In _Proceedings of the 26th Conference on Artificial Intelligence (AAAI)_ . "
+    "titulo": "Referência: Xiao Ling and Daniel S. Weld (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Cada referência é uma unidade própria; o bloco começa no marcador “-” da entrada e termina imediatamente antes da entrada seguinte, de Jean-Baptiste Michel et al.",
+    "texto": "- Xiao Ling and Daniel S. Weld. 2012. Fine-grained entity recognition. In _Proceedings of the 26th Conference on Artificial Intelligence (AAAI)_ ."
   },
   {
-    "offset_inicio": "- Jean-Baptiste Michel, Yuan Kui Shen, Aviva P. Aiden, Adrian Veres, Matthew K. Gray, The Google Books",
-    "offset_fim": "Steven Pinker. 2010. Quantitative analysis of culture using millions of digitized books. In _Science_ . ",
+    "offset_inicio": "- Jean-Baptiste Michel, Yuan Kui Shen, Aviva P. Aiden, Adrian Veres, Matthew K. Gray",
+    "offset_fim": "2010. Quantitative analysis of culture using millions of digitized books. In _Science_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Jean-Baptiste Michel et al. (2010)",
-    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; inicia no marcador de lista \"- Jean-Baptiste Michel\" e termina imediatamente antes da entrada seguinte, \"- David Milne and Ian H. Witten\".",
-    "texto": "- Jean-Baptiste Michel, Yuan Kui Shen, Aviva P. Aiden, Adrian Veres, Matthew K. Gray, The Google Books Team, Joseph P. Pickett, Dale Hoiberg, Dan Clancy, Peter Norvig, Jon Orwant, and Steven Pinker. 2010. Quantitative analysis of culture using millions of digitized books. In _Science_ . "
+    "titulo": "Referência: Jean-Baptiste Michel et al. (2010)",
+    "motivo": "A primeira unidade completa visível é uma entrada individual da lista de referências, iniciada pelo marcador \"-\" e encerrada imediatamente antes da referência seguinte, de David Milne e Ian H. Witten.",
+    "texto": "- Jean-Baptiste Michel, Yuan Kui Shen, Aviva P. Aiden, Adrian Veres, Matthew K. Gray, The Google Books Team, Joseph P. Pickett, Dale Hoiberg, Dan Clancy, Peter Norvig, Jon Orwant, and Steven Pinker. 2010. Quantitative analysis of culture using millions of digitized books. In _Science_ ."
   },
   {
-    "offset_inicio": "- David Milne and Ian H. Witten. 2008. Learning to link with wikipedia. In _Proceedings of the 17h ACM International Conference on Information and Knowledge Management (CIKM)_ . ",
-    "offset_fim": "Proceedings of the 17h ACM International Conference on Information and Knowledge Management (CIKM)_ . ",
+    "offset_inicio": "- David Milne and Ian H. Witten. 2008. Learning to link with wikipedia. In _Proceedings",
+    "offset_fim": "the 17h ACM International Conference on Information and Knowledge Management (CIKM)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "David Milne and Ian H. Witten (2008)",
-    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista com os autores e termina imediatamente antes da entrada seguinte, de Marius Pas¸ca.",
-    "texto": "- David Milne and Ian H. Witten. 2008. Learning to link with wikipedia. In _Proceedings of the 17h ACM International Conference on Information and Knowledge Management (CIKM)_ . "
+    "titulo": "Referência: David Milne and Ian H. Witten (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de item \"- David Milne...\" e termina imediatamente antes da entrada seguinte, \"- Marius Pas¸ca...\".",
+    "texto": "- David Milne and Ian H. Witten. 2008. Learning to link with wikipedia. In _Proceedings of the 17h ACM International Conference on Information and Knowledge Management (CIKM)_ ."
   },
   {
-    "offset_inicio": "- Marius Pas¸ca. 2004. Acquisition of categorized named entities for web search. In _Proceedings of the ACM_ ",
-    "offset_fim": "_International Conference on Information and Knowledge Management (CIKM)_ . ",
+    "offset_inicio": "- Marius Pas¸ca. 2004. Acquisition of categorized named entities for web search. In _Proceedings of the ACM_ \n\n_International Conference on Information and Knowledge Management (CIKM)_ .",
+    "offset_fim": "_International Conference on Information and Knowledge Management (CIKM)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Marius Pas¸ca (2004)",
-    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de lista com o autor e termina imediatamente antes da referência seguinte, de Patrick Pantel e Deepak Ravichandran.",
-    "texto": "- Marius Pas¸ca. 2004. Acquisition of categorized named entities for web search. In _Proceedings of the ACM_ \n\n_International Conference on Information and Knowledge Management (CIKM)_ . "
+    "titulo": "Referência bibliográfica — Marius Pas¸ca (2004)",
+    "motivo": "Cada entrada da lista de referências é uma unidade própria. O bloco começa na entrada de Marius Pas¸ca e termina imediatamente antes da referência seguinte, de Patrick Pantel e Deepak Ravichandran.",
+    "texto": "- Marius Pas¸ca. 2004. Acquisition of categorized named entities for web search. In _Proceedings of the ACM_ \n\n_International Conference on Information and Knowledge Management (CIKM)_ ."
   },
   {
-    "offset_inicio": "- Patrick Pantel and Deepak Ravichandran. 2004. Automatically labeling semantic classes. In _Proceedings of HLT-NAACL_ . ",
-    "offset_fim": "Patrick Pantel and Deepak Ravichandran. 2004. Automatically labeling semantic classes. In _Proceedings of HLT-NAACL_ . ",
+    "offset_inicio": "- Patrick Pantel and Deepak Ravichandran. 2004. Automatically labeling semantic classes. In _Proceedings of HLT-NAACL_ .",
+    "offset_fim": "Patrick Pantel and Deepak Ravichandran. 2004. Automatically labeling semantic classes. In _Proceedings of HLT-NAACL_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Patrick Pantel and Deepak Ravichandran. 2004.",
-    "motivo": "É a primeira entrada bibliográfica visível na página 11; inicia no marcador de lista e termina imediatamente antes da próxima entrada bibliográfica.",
-    "texto": "- Patrick Pantel and Deepak Ravichandran. 2004. Automatically labeling semantic classes. In _Proceedings of HLT-NAACL_ . "
+    "titulo": "Referência bibliográfica — Pantel e Ravichandran (2004)",
+    "motivo": "É a primeira entrada completa da lista de referências na página 11; cada referência bibliográfica constitui uma unidade própria e o bloco termina antes da referência seguinte, iniciada por “- Patrick Pantel, Eric Crestan...”.",
+    "texto": "- Patrick Pantel and Deepak Ravichandran. 2004. Automatically labeling semantic classes. In _Proceedings of HLT-NAACL_ ."
   },
   {
-    "offset_inicio": "- Patrick Pantel, Eric Crestan, Arkady Borkovsky, AnaMaria Popescu, and Vishnu Vyas.",
-    "offset_fim": "Web-scale distributional similarity and entity set expansion. In _Proceedings of EMNLP_ . ",
+    "offset_inicio": "- Patrick Pantel, Eric Crestan, Arkady Borkovsky, AnaMaria Popescu, and Vishnu Vyas. 2009. Web-scale distributional similarity and entity set expansion. In _Proceedings of EMNLP_ .",
+    "offset_fim": "2009. Web-scale distributional similarity and entity set expansion. In _Proceedings of EMNLP_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Patrick Pantel et al. (2009)",
-    "motivo": "Cada entrada bibliográfica é uma unidade estrutural independente. Este bloco começa na referência de Patrick Pantel et al. e termina imediatamente antes da referência seguinte, de Danuta Ploch.",
-    "texto": "- Patrick Pantel, Eric Crestan, Arkady Borkovsky, AnaMaria Popescu, and Vishnu Vyas. 2009. Web-scale distributional similarity and entity set expansion. In _Proceedings of EMNLP_ . "
+    "titulo": "Referência bibliográfica: Pantel et al. (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Cada referência é uma unidade própria; o bloco começa no marcador '-' da entrada de Pantel et al. e termina antes da entrada seguinte, de Danuta Ploch.",
+    "texto": "- Patrick Pantel, Eric Crestan, Arkady Borkovsky, AnaMaria Popescu, and Vishnu Vyas. 2009. Web-scale distributional similarity and entity set expansion. In _Proceedings of EMNLP_ ."
   },
   {
     "offset_inicio": "- Danuta Ploch. 2011. Exploring entity relations for named entity disambiguation. In",
-    "offset_fim": "_Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ .",
+    "offset_fim": "disambiguation. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Danuta Ploch (2011)",
-    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista com a autora Danuta Ploch e termina imediatamente antes da entrada seguinte, de Willard Van Orman Quine.",
+    "titulo": "Referência bibliográfica — Danuta Ploch (2011)",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia na entrada de Danuta Ploch e termina imediatamente antes da referência seguinte, de Willard Van Orman Quine.",
     "texto": "- Danuta Ploch. 2011. Exploring entity relations for named entity disambiguation. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ ."
   },
   {
@@ -400,89 +445,89 @@
     "offset_fim": "- Willard Van Orman Quine. 1948. On what there is. In _Review of Metaphysics_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência bibliográfica — Willard Van Orman Quine (1948)",
-    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de lista \"-\" e termina imediatamente antes da próxima referência bibliográfica.",
+    "titulo": "Referência: Willard Van Orman Quine (1948)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de item e termina imediatamente antes da entrada de Altaf Rahman e Vincent Ng.",
     "texto": "- Willard Van Orman Quine. 1948. On what there is. In _Review of Metaphysics_ ."
   },
   {
-    "offset_inicio": "- Altaf Rahman and Vincent Ng. 2010. Inducing finegrained semantic classes via hierarchical",
-    "offset_fim": "via hierarchical and collective classification. In _Proceedings of COLING_ . \n",
+    "offset_inicio": "- Altaf Rahman and Vincent Ng. 2010. Inducing finegrained semantic classes via hierarchical and collective classification.",
+    "offset_fim": "classification. In _Proceedings of COLING_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
     "titulo": "Referência bibliográfica — Altaf Rahman and Vincent Ng (2010)",
-    "motivo": "É a primeira entrada individual da lista de referências; começa no marcador de item “- Altaf Rahman...” e termina imediatamente antes da referência seguinte, iniciada por “- Lev Ratinov and Dan Roth...”.",
-    "texto": "- Altaf Rahman and Vincent Ng. 2010. Inducing finegrained semantic classes via hierarchical and collective classification. In _Proceedings of COLING_ . \n"
+    "motivo": "Cada entrada da lista de referências é uma unidade própria. O bloco começa na primeira referência da página e termina imediatamente antes da referência de Lev Ratinov and Dan Roth.",
+    "texto": "- Altaf Rahman and Vincent Ng. 2010. Inducing finegrained semantic classes via hierarchical and collective classification. In _Proceedings of COLING_ ."
   },
   {
     "offset_inicio": "- Lev Ratinov and Dan Roth. 2009. Design challenges and misconceptions in named entity recognition. In _Proceedings",
-    "offset_fim": "In _Proceedings of the Thirteenth Conference on Computational Natural Language Learning (CoNLL)_ . ",
+    "offset_fim": "in named entity recognition. In _Proceedings of the Thirteenth Conference on Computational Natural Language Learning (CoNLL)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Lev Ratinov and Dan Roth (2009)",
-    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco inicia na primeira referência listada e termina imediatamente antes da referência seguinte, de Lev Ratinov et al. (2011).",
-    "texto": "- Lev Ratinov and Dan Roth. 2009. Design challenges and misconceptions in named entity recognition. In _Proceedings of the Thirteenth Conference on Computational Natural Language Learning (CoNLL)_ . "
+    "titulo": "Referência bibliográfica — Lev Ratinov and Dan Roth (2009)",
+    "motivo": "É a primeira entrada individual da lista de referências na página 11; começa no marcador '-' da referência de Ratinov e Roth e termina imediatamente antes da entrada bibliográfica seguinte.",
+    "texto": "- Lev Ratinov and Dan Roth. 2009. Design challenges and misconceptions in named entity recognition. In _Proceedings of the Thirteenth Conference on Computational Natural Language Learning (CoNLL)_ ."
   },
   {
-    "offset_inicio": "- Lev Ratinov, Dan Roth, Doug Downey, and Mike Anderson. 2011. Local and global algorithms for disambiguation to wikipedia.",
-    "offset_fim": "In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ . ",
+    "offset_inicio": "- Lev Ratinov, Dan Roth, Doug Downey, and Mike Anderson. 2011. Local and global",
+    "offset_fim": "In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência bibliográfica: Lev Ratinov et al. (2011)",
-    "motivo": "É a primeira entrada bibliográfica individual da página, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da próxima referência, de Satoshi Sekine e Chikashi Nobata.",
-    "texto": "- Lev Ratinov, Dan Roth, Doug Downey, and Mike Anderson. 2011. Local and global algorithms for disambiguation to wikipedia. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ . "
+    "titulo": "Referência: Lev Ratinov et al. (2011)",
+    "motivo": "Cada entrada bibliográfica é uma unidade própria. O bloco começa na primeira referência visível e termina imediatamente antes da entrada de Satoshi Sekine e Chikashi Nobata.",
+    "texto": "- Lev Ratinov, Dan Roth, Doug Downey, and Mike Anderson. 2011. Local and global algorithms for disambiguation to wikipedia. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ ."
   },
   {
-    "offset_inicio": "- Satoshi Sekine and Chikashi Nobata. 2004. Definition, dictionaries and tagger for extended named entity hierarchy.",
-    "offset_fim": "In _Proceedings of the 4th International Conference on Language Resources and Evaluation (LREC)_ . ",
+    "offset_inicio": "- Satoshi Sekine and Chikashi Nobata. 2004. Definition, dictionaries and tagger",
+    "offset_fim": "In _Proceedings of the 4th International Conference on Language Resources and Evaluation (LREC)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência bibliográfica: Sekine e Nobata (2004)",
-    "motivo": "É a primeira entrada bibliográfica completa visível na página 11; começa no marcador de lista da referência e termina imediatamente antes da entrada seguinte, de Partha Pratim Talukdar e Fernando Pereira.",
-    "texto": "- Satoshi Sekine and Chikashi Nobata. 2004. Definition, dictionaries and tagger for extended named entity hierarchy. In _Proceedings of the 4th International Conference on Language Resources and Evaluation (LREC)_ . "
+    "titulo": "Referência — Satoshi Sekine and Chikashi Nobata (2004)",
+    "motivo": "É a primeira entrada bibliográfica da página; começa no marcador de item seguido dos autores e termina antes da entrada seguinte, de Partha Pratim Talukdar e Fernando Pereira.",
+    "texto": "- Satoshi Sekine and Chikashi Nobata. 2004. Definition, dictionaries and tagger for extended named entity hierarchy. In _Proceedings of the 4th International Conference on Language Resources and Evaluation (LREC)_ ."
   },
   {
-    "offset_inicio": "- Partha Pratim Talukdar and Fernando Pereira. 2010. Experiments in graph-based semi-supervised",
-    "offset_fim": "class-instance acquisition. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ . ",
+    "offset_inicio": "- Partha Pratim Talukdar and Fernando Pereira. 2010. Experiments in graph-based semi-supervised learning methods for class-instance acquisition.",
+    "offset_fim": "In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência: Partha Pratim Talukdar and Fernando Pereira (2010)",
-    "motivo": "É a primeira entrada bibliográfica da página, iniciada pelo marcador de lista “-” e encerrada imediatamente antes da próxima entrada bibliográfica.",
-    "texto": "- Partha Pratim Talukdar and Fernando Pereira. 2010. Experiments in graph-based semi-supervised learning methods for class-instance acquisition. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ . "
+    "titulo": "Referência bibliográfica — Talukdar e Pereira (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Inicia no marcador de item \"-\" com os autores e termina ao fim da citação, imediatamente antes da entrada de Talukdar et al. (2008).",
+    "texto": "- Partha Pratim Talukdar and Fernando Pereira. 2010. Experiments in graph-based semi-supervised learning methods for class-instance acquisition. In _Proceedings of the Annual Meeting of the Association of Computational Linguistics (ACL)_ ."
   },
   {
     "offset_inicio": "- Partha Pratim Talukdar, Joseph Reisinger, Marius Pas¸ca, Deepak Ravichandran,",
-    "offset_fim": "Weakly supervised acquisition of labeled class instances using graph random walks. In _Proceedings of EMNLP_ . ",
+    "offset_fim": "Weakly supervised acquisition of labeled class instances using graph random walks. In _Proceedings of EMNLP_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Talukdar et al. 2008 — Weakly supervised acquisition of labeled class instances",
-    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista e termina imediatamente antes da entrada seguinte de Talukdar, Wijaya e Mitchell.",
-    "texto": "- Partha Pratim Talukdar, Joseph Reisinger, Marius Pas¸ca, Deepak Ravichandran, Rahul Bhagat, and Fernando Pereira. 2008. Weakly supervised acquisition of labeled class instances using graph random walks. In _Proceedings of EMNLP_ . "
+    "titulo": "Referência: Talukdar et al. (2008)",
+    "motivo": "É a primeira entrada completa da lista de referências na página 11; inicia no marcador '-' e termina imediatamente antes da entrada bibliográfica seguinte.",
+    "texto": "- Partha Pratim Talukdar, Joseph Reisinger, Marius Pas¸ca, Deepak Ravichandran, Rahul Bhagat, and Fernando Pereira. 2008. Weakly supervised acquisition of labeled class instances using graph random walks. In _Proceedings of EMNLP_ ."
   },
   {
     "offset_inicio": "- Partha Pratim Talukdar, Derry Tanti Wijaya, and Tom Mitchell. 2012. Coupled temporal scoping of relational facts.",
     "offset_fim": "Coupled temporal scoping of relational facts. In _Proceedings of WSDM_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Partha Pratim Talukdar, Derry Tanti Wijaya, and Tom Mitchell. 2012.",
-    "motivo": "É a primeira entrada bibliográfica da página; inicia no marcador de lista e termina imediatamente antes da entrada seguinte, de Chi Wang et al.",
+    "titulo": "Referência: Talukdar, Wijaya e Mitchell (2012)",
+    "motivo": "É a primeira entrada bibliográfica da página; começa no marcador de lista da referência e termina imediatamente antes da entrada seguinte, de Chi Wang et al.",
     "texto": "- Partha Pratim Talukdar, Derry Tanti Wijaya, and Tom Mitchell. 2012. Coupled temporal scoping of relational facts. In _Proceedings of WSDM_ ."
   },
   {
     "offset_inicio": "- Chi Wang, Kaushik Chakrabarti, Tao Cheng, and Surajit Chaudhuri. 2012. Targeted",
-    "offset_fim": "of the 21st International World Wide Web Conference (WWW)_ .",
+    "offset_fim": "homogeneous sets of named entities. In _Proceedings of the 21st International World Wide Web Conference (WWW)_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Chi Wang et al. (2012) — Targeted disambiguation of ad-hoc, homogeneous sets of named entities",
-    "motivo": "É a primeira entrada bibliográfica completa da lista de referências; inicia no marcador de item e termina imediatamente antes da entrada seguinte, de Derry Tanti Wijaya e Reyyan Yeniterzi.",
+    "titulo": "Referência bibliográfica — Chi Wang et al. (2012)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; começa no marcador \"-\" da referência e termina imediatamente antes da entrada seguinte, de Derry Tanti Wijaya e Reyyan Yeniterzi.",
     "texto": "- Chi Wang, Kaushik Chakrabarti, Tao Cheng, and Surajit Chaudhuri. 2012. Targeted disambiguation of ad-hoc, homogeneous sets of named entities. In _Proceedings of the 21st International World Wide Web Conference (WWW)_ ."
   },
   {
-    "offset_inicio": "- Derry Tanti Wijaya and Reyyan Yeniterzi. 2011. Understanding semantic changes of words over centuries.",
-    "offset_fim": "centuries. In _Workshop on Detecting and Exploiting Cultural Diversity on the Social Web_ .",
+    "offset_inicio": "- Derry Tanti Wijaya and Reyyan Yeniterzi. 2011. Understanding semantic changes of words over centuries. In _Workshop on Detecting and Exploiting Cultural Diversity on the Social Web_ .",
+    "offset_fim": "Derry Tanti Wijaya and Reyyan Yeniterzi. 2011. Understanding semantic changes of words over centuries. In _Workshop on Detecting and Exploiting Cultural Diversity on the Social Web_ .",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Referência bibliográfica: Derry Tanti Wijaya and Reyyan Yeniterzi (2011)",
-    "motivo": "Entrada bibliográfica individual iniciada por marcador de lista; o bloco abrange toda a referência e termina antes do número de página 903.",
+    "titulo": "Referência bibliográfica — Wijaya e Yeniterzi (2011)",
+    "motivo": "A entrada bibliográfica é uma unidade estrutural própria da lista de referências. Inicia no marcador “-” e termina no ponto final da citação, antes do número de página 903.",
     "texto": "- Derry Tanti Wijaya and Reyyan Yeniterzi. 2011. Understanding semantic changes of words over centuries. In _Workshop on Detecting and Exploiting Cultural Diversity on the Social Web_ ."
   }
 ]

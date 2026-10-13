@@ -3,21 +3,16 @@
   "hierarquia": [
     {
       "nivel": 1,
-      "nome": "Título do artigo",
+      "nome": "título do artigo",
       "exemplo": "Unsupervised Induction of Semantic Roles"
     },
     {
       "nivel": 2,
-      "nome": "Seção principal numerada",
+      "nome": "seção numerada",
       "exemplo": "1 Introduction"
-    },
-    {
-      "nivel": 3,
-      "nome": "Subseção",
-      "exemplo": "não observada na amostra"
     }
   ],
-  "confianca": "media",
+  "confianca": "alta",
   "paginas_amostradas": [
     1,
     2,

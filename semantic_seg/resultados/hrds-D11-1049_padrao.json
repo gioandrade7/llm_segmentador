@@ -3,28 +3,18 @@
   "hierarquia": [
     {
       "nivel": 1,
-      "nome": "Título do documento",
+      "nome": "título do documento",
       "exemplo": "Random Walk Inference and Learning in A Large Scale Knowledge Base"
     },
     {
       "nivel": 2,
-      "nome": "Seção numerada",
+      "nome": "seção principal numerada",
       "exemplo": "1 Introduction"
     },
     {
       "nivel": 3,
-      "nome": "Subseção numerada",
+      "nome": "subseção numerada",
       "exemplo": "1.1 The NELL Case Study"
-    },
-    {
-      "nivel": 2,
-      "nome": "Seção final não numerada",
-      "exemplo": "Acknowledgments"
-    },
-    {
-      "nivel": 2,
-      "nome": "Seção final não numerada",
-      "exemplo": "References"
     }
   ],
   "confianca": "alta",
