@@ -1,6 +1,6 @@
 {
   "prefixo": "resultados/ppb_rules/ppb_rules",
-  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/ppb_rules.md",
+  "gabarito": "/Users/gioandrade/Documents/mestrado/docAI/semantic_seg/gabarito/ppb_rules.md",
   "tolerancia": 0,
   "ciclos": [
     {

@@ -272,17 +272,23 @@ def plotar(resultado: dict, caminho: str) -> None:
         ax.plot(ciclos, ys, color=cor, linewidth=2, marker="o", markersize=5,
                 markeredgecolor="#fcfcfb", markeredgewidth=1.5, label=rotulo)
 
+    valores = [l[chave] for l in resultado["ciclos"] for chave, _, _ in _SERIES]
+    ymin, ymax = min(valores), max(valores)
+    margem = max((ymax - ymin) * 0.12, 0.01)
+    y_lo, y_hi = ymin - margem, ymax + margem
+
     # Rótulo direto só no último ciclo, empurrado para baixo se colidir com o de cima.
     finais = sorted(((resultado["ciclos"][-1][c], r) for c, r, _ in _SERIES), reverse=True)
     y_ant = None
+    offset_min = (y_hi - y_lo) * 0.05
     for y, rotulo in finais:
-        y_txt = y if y_ant is None else min(y, y_ant - 0.05)
+        y_txt = y if y_ant is None else min(y, y_ant - offset_min)
         ax.annotate(f"{rotulo} {y:.2f}", xy=(ciclos[-1], y_txt), xytext=(8, 0),
                     textcoords="offset points", va="center", fontsize=8,
                     color="#0b0b0b", annotation_clip=False)
         y_ant = y_txt
 
-    ax.set_ylim(0, 1.02)
+    ax.set_ylim(y_lo, y_hi)
     ax.set_xticks(ciclos)
     ax.set_xlabel("Ciclo de correção", color="#52514e")
     ax.set_ylabel("Fronteiras", color="#52514e")
