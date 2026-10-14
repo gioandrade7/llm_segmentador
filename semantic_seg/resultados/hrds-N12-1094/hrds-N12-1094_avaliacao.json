@@ -1,0 +1,61 @@
+{
+  "prefixo": "resultados/hrds-N12-1094/hrds-N12-1094",
+  "gabarito": "/Users/gioandrade/Documents/mestrado/docAI/semantic_seg/gabarito/hrds-N12-1094.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 56,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 56,
+      "fronteiras_gabarito": 57,
+      "acertos": 56,
+      "precisao": 1.0,
+      "revocacao": 0.9824561403508771,
+      "f1": 0.9911504424778761,
+      "fins": {
+        "previstos": 56,
+        "gabarito": 57,
+        "fins_nao_localizados": 0,
+        "acertos": 54,
+        "precisao": 0.9642857142857143,
+        "revocacao": 0.9473684210526315,
+        "f1": 0.9557522123893805
+      },
+      "blocos_exatos": {
+        "acertos": 54,
+        "precisao": 0.9642857142857143,
+        "revocacao": 0.9473684210526315,
+        "f1": 0.9557522123893805
+      },
+      "cobertura": 0.9454577915315262
+    },
+    {
+      "ciclo": 2,
+      "blocos": 57,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 57,
+      "fronteiras_gabarito": 57,
+      "acertos": 57,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 57,
+        "gabarito": 57,
+        "fins_nao_localizados": 0,
+        "acertos": 57,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "blocos_exatos": {
+        "acertos": 57,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

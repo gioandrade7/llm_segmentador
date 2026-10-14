@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/hrds-2021.acl-long.394/hrds-2021.acl-long.394",
+  "gabarito": "/Users/gioandrade/Documents/mestrado/docAI/semantic_seg/gabarito/hrds-2021.acl-long.394.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 52,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 52,
+      "fronteiras_gabarito": 52,
+      "acertos": 52,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 52,
+        "gabarito": 52,
+        "fins_nao_localizados": 0,
+        "acertos": 51,
+        "precisao": 0.9807692307692307,
+        "revocacao": 0.9807692307692307,
+        "f1": 0.9807692307692307
+      },
+      "blocos_exatos": {
+        "acertos": 51,
+        "precisao": 0.9807692307692307,
+        "revocacao": 0.9807692307692307,
+        "f1": 0.9807692307692307
+      },
+      "cobertura": 0.9995198877275917
+    }
+  ]
+}

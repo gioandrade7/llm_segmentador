@@ -1,6 +1,6 @@
 {
   "prefixo": "resultados/conference/conference",
-  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/conference.md",
+  "gabarito": "/Users/gioandrade/Documents/mestrado/docAI/semantic_seg/gabarito/conference.md",
   "tolerancia": 0,
   "ciclos": [
     {
@@ -55,7 +55,7 @@
         "revocacao": 0.8823529411764706,
         "f1": 0.9183673469387754
       },
-      "cobertura": 0.8915396645303731
+      "cobertura": 0.8858986558820031
     },
     {
       "ciclo": 3,
@@ -82,7 +82,7 @@
         "revocacao": 0.9019607843137255,
         "f1": 0.9292929292929293
       },
-      "cobertura": 0.8308239551071724
+      "cobertura": 0.8270191507077436
     },
     {
       "ciclo": 4,
@@ -109,7 +109,7 @@
         "revocacao": 0.7647058823529411,
         "f1": 0.8387096774193549
       },
-      "cobertura": 0.8901904265431909
+      "cobertura": 0.8833710003568455
     },
     {
       "ciclo": 5,
@@ -136,7 +136,7 @@
         "revocacao": 0.8627450980392157,
         "f1": 0.8979591836734694
       },
-      "cobertura": 0.8901904265431909
+      "cobertura": 0.8833710003568455
     },
     {
       "ciclo": 6,
@@ -163,7 +163,7 @@
         "revocacao": 0.8627450980392157,
         "f1": 0.8979591836734694
       },
-      "cobertura": 0.7790622795989084
+      "cobertura": 0.7631438087308196
     },
     {
       "ciclo": 7,
@@ -190,7 +190,7 @@
         "revocacao": 0.8627450980392157,
         "f1": 0.8979591836734694
       },
-      "cobertura": 0.8901904265431909
+      "cobertura": 0.8833710003568455
     },
     {
       "ciclo": 8,
@@ -217,7 +217,7 @@
         "revocacao": 0.9019607843137255,
         "f1": 0.9292929292929293
       },
-      "cobertura": 0.8308239551071724
+      "cobertura": 0.8270191507077436
     },
     {
       "ciclo": 9,
@@ -244,7 +244,7 @@
         "revocacao": 0.8627450980392157,
         "f1": 0.8979591836734694
       },
-      "cobertura": 0.8901904265431909
+      "cobertura": 0.8833710003568455
     },
     {
       "ciclo": 10,
@@ -271,7 +271,7 @@
         "revocacao": 0.9019607843137255,
         "f1": 0.9292929292929293
       },
-      "cobertura": 0.8901904265431909
+      "cobertura": 0.8833710003568455
     }
   ]
 }
