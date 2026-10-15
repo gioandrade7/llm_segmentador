@@ -98,8 +98,8 @@ def construir_prompt_identificacao(
 
         ## Como responder
         - Cite os **marcadores literais** que você observou, não descrições abstratas.
-        - Legendas de figura e de tabela e o conteúdo de tabelas não são níveis da hierarquia, mesmo quando numerados: não os inclua.
-        - Listas numeradas ou de itens no meio do texto corrido (passos de um método, contribuições, definições) não são níveis da hierarquia. Só inclua uma família de marcadores de lista quando ela estrutura o documento em divisões próprias.
+        - Legendas de figura e de tabela e o conteúdo de tabelas não são níveis da hierarquia, mesmo quando numerados, fazem parte do mesmo bloco.
+        - Listas numeradas ou de itens no meio do texto corrido não são níveis da hierarquia, mesmo se estiverem em negrito. Só inclua uma família de marcadores de lista quando ela estrutura o documento em divisões próprias.
         - Se o documento **não** tiver padrão recorrente — texto corrido, seções sem marcação sistemática — responda `"tem_padrao": false`. Isso é uma resposta legítima e útil; não invente uma hierarquia que você não observou.
         - Se a amostra for insuficiente para decidir com segurança, use `"confianca": "baixa"`.
 

@@ -1,0 +1,56 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [4] engloba indevidamente a seção principal \"2 Background\" e a subseção \"2.1 Entity Linking\", que deveriam iniciar blocos distintos.",
+        "O bloco [5] termina contendo o marcador \"2.3 Extracting Entity Sets\"; esse marcador deveria iniciar um bloco próprio, separado de \"2.2 Named Entity Recognition\". Não há bloco subsequente para a subseção 2.3 antes do início da seção 3, indicando também lacuna de conteúdo dessa unidade.",
+        "O bloco [12] engloba a subseção \"5.1 Algorithm\" e o início marcado de \"5.2 Edge Validity\"; a subseção 5.2 não recebeu bloco próprio antes de [13], que já começa em \"5.3 Weighting Textual Relations\".",
+        "Há uma lacuna estrutural entre [17], \"6.1 Typed Question Answering\", e [18], \"8 Conclusion\": a seção principal numerada 7 e seu conteúdo não foram segmentados."
+      ],
+      "consistente": false,
+      "insights": "- Separe \"2 Background\" em um bloco de caput que termine imediatamente antes de \"2.1 Entity Linking\" e crie outro bloco iniciado por \"2.1 Entity Linking\".\n- Termine o bloco de \"2.2 Named Entity Recognition\" antes do marcador \"2.3 Extracting Entity Sets\"; crie um bloco próprio para \"2.3 Extracting Entity Sets\" e recupere todo o texto dessa subseção até \"3 Architecture\".\n- No trecho da seção 5, encerre \"5.1 Algorithm\" antes de \"5.2 Edge Validity\"; inicie um bloco em \"5.2 Edge Validity\" e mantenha nele todo o texto até o marcador \"5.3 Weighting Textual Relations\".\n- Entre \"6.1 Typed Question Answering\" e \"8 Conclusion\", localize o marcador da seção 7 no texto fonte e gere um bloco próprio para essa seção, com seu conteúdo até \"8 Conclusion\"."
+    },
+    "arquivo_blocos": "resultados/hrds-D12-1082/hrds-D12-1082_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Separe \"2 Background\" em um bloco de caput que termine imediatamente antes de \"2.1 Entity Linking\" e crie outro bloco iniciado por \"2.1 Entity Linking\".\n- Termine o bloco de \"2.2 Named Entity Recognition\" antes do marcador \"2.3 Extracting Entity Sets\"; crie um bloco próprio para \"2.3 Extracting Entity Sets\" e recupere todo o texto dessa subseção até \"3 Architecture\".\n- No trecho da seção 5, encerre \"5.1 Algorithm\" antes de \"5.2 Edge Validity\"; inicie um bloco em \"5.2 Edge Validity\" e mantenha nele todo o texto até o marcador \"5.3 Weighting Textual Relations\".\n- Entre \"6.1 Typed Question Answering\" e \"8 Conclusion\", localize o marcador da seção 7 no texto fonte e gere um bloco próprio para essa seção, com seu conteúdo até \"8 Conclusion\".",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [13] é um bloco englobante: reúne a seção 5 e múltiplas subseções numeradas internas — ao menos \"5.1 Algorithm\", \"5.2 Edge Validity\" e \"5.3 Weighting Textual Relations\" — que devem iniciar blocos separados."
+      ],
+      "consistente": false,
+      "insights": "- Divida o bloco iniciado em \"5 Propagating Semantic Types\": mantenha no bloco da seção 5 somente o texto de abertura anterior ao primeiro marcador de subseção 5.x.\n- Inicie um bloco próprio em \"5.1 Algorithm\" e termine-o imediatamente antes de \"5.2 Edge Validity\".\n- Inicie um bloco próprio em \"5.2 Edge Validity\" e termine-o imediatamente antes de \"5.3 Weighting Textual Relations\".\n- Inicie um bloco próprio em \"5.3 Weighting Textual Relations\" e, no restante da seção 5, corte também em toda subseção numerada \"5.x\" que aparecer antes de \"6 Discussion\"; cada uma deve conservar apenas seu próprio texto até o próximo marcador."
+    },
+    "arquivo_blocos": "resultados/hrds-D12-1082/hrds-D12-1082_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "- Divida o bloco iniciado em \"5 Propagating Semantic Types\": mantenha no bloco da seção 5 somente o texto de abertura anterior ao primeiro marcador de subseção 5.x.\n- Inicie um bloco próprio em \"5.1 Algorithm\" e termine-o imediatamente antes de \"5.2 Edge Validity\".\n- Inicie um bloco próprio em \"5.2 Edge Validity\" e termine-o imediatamente antes de \"5.3 Weighting Textual Relations\".\n- Inicie um bloco próprio em \"5.3 Weighting Textual Relations\" e, no restante da seção 5, corte também em toda subseção numerada \"5.x\" que aparecer antes de \"6 Discussion\"; cada uma deve conservar apenas seu próprio texto até o próximo marcador.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6] inclui indevidamente o marcador de subseção \"2.3 Extracting Entity Sets\" no seu fim; esse marcador deve iniciar um bloco próprio, ainda que a subseção contenha apenas o título antes de \"3 Architecture\".",
+        "O bloco [18] agrupa os subtítulos em negrito não listados \"Wikipedia Entity:\", \"Unlinkable Entity:\" e \"Non-Entity:\" dentro de \"6 Discussion\"; cada um desses rótulos abre uma unidade própria e exige corte."
+      ],
+      "consistente": false,
+      "insights": "- Em \"2.2 Named Entity Recognition\", termine o bloco imediatamente antes de \"2.3 Extracting Entity Sets\"; inicie um bloco próprio nesse marcador e termine-o imediatamente antes de \"3 Architecture\", mesmo que ele contenha somente o título.\n- Em \"6 Discussion\", mantenha no bloco da seção 6 apenas o texto introdutório anterior a \"Wikipedia Entity:\".\n- Inicie blocos próprios nos rótulos em negrito \"Wikipedia Entity:\", \"Unlinkable Entity:\" e \"Non-Entity:\", terminando cada bloco imediatamente antes do próximo desses rótulos ou do próximo marcador de seção/subseção.\n- Em \"5 Propagating Semantic Types\", mantenha no bloco da seção 5 somente o texto anterior a \"5.1 Algorithm\".\n- Inicie blocos independentes em \"5.1 Algorithm\", \"5.2 Edge Validity\", \"5.3 Weighting Textual Relations\", \"5.4 Evaluation\" e \"5.5 Analysis\", encerrando cada um imediatamente antes do marcador seguinte ou de \"6 Discussion\"."
+    },
+    "arquivo_blocos": "resultados/hrds-D12-1082/hrds-D12-1082_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 59,
+    "insights_aplicados": "- Em \"2.2 Named Entity Recognition\", termine o bloco imediatamente antes de \"2.3 Extracting Entity Sets\"; inicie um bloco próprio nesse marcador e termine-o imediatamente antes de \"3 Architecture\", mesmo que ele contenha somente o título.\n- Em \"6 Discussion\", mantenha no bloco da seção 6 apenas o texto introdutório anterior a \"Wikipedia Entity:\".\n- Inicie blocos próprios nos rótulos em negrito \"Wikipedia Entity:\", \"Unlinkable Entity:\" e \"Non-Entity:\", terminando cada bloco imediatamente antes do próximo desses rótulos ou do próximo marcador de seção/subseção.\n- Em \"5 Propagating Semantic Types\", mantenha no bloco da seção 5 somente o texto anterior a \"5.1 Algorithm\".\n- Inicie blocos independentes em \"5.1 Algorithm\", \"5.2 Edge Validity\", \"5.3 Weighting Textual Relations\", \"5.4 Evaluation\" e \"5.5 Analysis\", encerrando cada um imediatamente antes do marcador seguinte ou de \"6 Discussion\".",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D12-1082/hrds-D12-1082_v2_ciclo4.json"
+  }
+]

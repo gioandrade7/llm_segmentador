@@ -1,0 +1,317 @@
+[
+  {
+    "offset_inicio": "# **Learning Words and Their Meanings from Unsegmented Child-directed Speech** \n\n**Bevan",
+    "offset_fim": "`ones,Mark` ~~`J`~~ `ohnson` _}_ `@Brown.edu` \n\n```\nmcfrank@mit.edu\n```",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Learning Words and Their Meanings from Unsegmented Child-directed Speech",
+    "motivo": "Bloco de título do artigo, com autoria, afiliações e contatos; inicia no título principal e termina imediatamente antes do marcador da seção Abstract.",
+    "texto": "# **Learning Words and Their Meanings from Unsegmented Child-directed Speech** \n\n**Bevan K. Jones & Mark Johnson** \n\n**Michael C. Frank** \n\nDept of Cognitive and Linguistic Sciences Brown University Providence, RI 02912, USA \n\nDept of Brain and Cognitive Science Massachusetts Institute of Technology Cambridge, MA 02139, USA \n\n_{_ `Bevan` ~~`J`~~ `ones,Mark` ~~`J`~~ `ohnson` _}_ `@Brown.edu` \n\n```\nmcfrank@mit.edu\n```"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nMost work on language acquisition treats word segmentation—the",
+    "offset_fim": "important information for learning word segmentations as well as word meanings. ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no cabeçalho \"## **Abstract**\" e contém integralmente o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nMost work on language acquisition treats word segmentation—the identification of linguistic segments from continuous speech— and word learning—the mapping of those segments to meanings—as separate problems. These two abilities develop in parallel, however, raising the question of whether they might interact. To explore the question, we present a new Bayesian segmentation model that incorporates aspects of word learning and compare it to a model that ignores word meanings. The model that learns word meanings proposes more adult-like segmentations for the meaning-bearing words. This result suggests that the non-linguistic context may supply important information for learning word segmentations as well as word meanings. "
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nAcquiring a language entails mastering many learning tasks simultaneously, including",
+    "offset_fim": "We now describe our model and inference procedure and follow with evaluation and discussion. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco começa no marcador da seção numerada “1 Introduction” e reúne seu texto introdutório até imediatamente antes do próximo marcador de seção, “# **2**”, na página 2.",
+    "texto": "## **1 Introduction** \n\nAcquiring a language entails mastering many learning tasks simultaneously, including identifying where words begin and end in continuous speech and learning meanings for those words. It is common to treat these tasks as separate, sequential processes, where segmentation is a prerequisite to word learning but otherwise there are few if any dependencies. The earliest evidence of segmentation, however, is for words bordering a child’s own name (Bortfeld et al., 2005). In addition, infants begin learning their first words before they achieve adultlevel competence in segmentation. These two pieces of evidence raise the question of whether the tasks of meaning learning and segmentation might mutually inform one another. \n\nTo explore this question we present a joint model that simultaneously identifies word boundaries and attempts to associate meanings with words. In doing so we make two contributions. First, by modeling the two levels of structure in parallel we simulate a more realistic situation. Second, a joint model allows us to explore possible synergies and interactions. We find evidence that our joint model performs better on a segmentation task than an alternative model that does not learn word meanings. \n\nThe picture in Figure 1 depicts a language learning situation from our corpus (originally from Fernald and Morikawa, 1993; recoded in Frank et al., 2009) where a mother talks while playing with various toys. Setting down the dog and picking up the hand puppet of a pig, she asks, “Is that the pig?” Starting out, a young learner not only does not know that the word “pig” refers to the puppet but does not even know that “pig” is a word at all. Our model simulates the learning task, taking as input the unsegmented phonemic representation of the speech along with the set of objects in the non-linguistic context as shown in Figure 1 (a), and infers both a segmentation and a word-object mapping as in Figure 1 (b). \n\nOne can formulate the word learning task as that of finding a reasonably small set of reusable word-meaning pairs consistent with the underlying communicative intent. Infant directed speech often refers to objects in the immediate environment, and early word learning seems to involve associating frequently co-occurring word-object pairs (Akhtar and Montague, 1999; Markman, 1990). Several computational models are based on this idea that a word \n\n501 \n\n_Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the ACL_ , pages 501–509, Los Angeles, California, June 2010. _⃝_ c 2010 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nFigure 1: (a) The input to our system for the utterance “Is that the pig?” consists of an unsegmented sequence of phonemes and the set of objects representing the nonlinguistic context. These objects were manually identified by inspecting the associated video, a frame from which is shown above. (b) The gold-standard segmentation and word-object assignments of the same utterance, against which the output of our system is evaluated (all words except “pIg” are mapped to a special “null” object, as explained in the text). \n\nthat frequently occurs in the presence of an object and not so frequently in its absence is likely to refer to that object (Frank et al., 2009a; Siskind, 1996; Yu and Ballard, 2007). Importantly, all these models assume words are pre-segmented in the input. \n\nWhile the word segmentation task relates less clearly to the communicative content, it can be formulated according to a similar objective, that of attempting to explain the sound sequences in the input in terms of some reasonably small set of reusable units, or words. Computational models have successfully addressed the problem in much this way (Johnson and Goldwater, 2009; Goldwater et al., 2009; Brent, 1999), and the general approach is consistent with experimental observations that humans are sensitive to statistics of sound sequences (Saffran et al., 1996; Frank et al., 2007). \n\nThe two tasks can be integrated in a relatively seamless way, since, as we have just formulated them, they have a common objective, that of finding a minimal, consistent set of reusable units. However, the two deal with different types of information with \n\ndifferent dependencies. The basic idea is that learning a vocabulary that both meets the constraints of the word-learning task and is consistent with the objective of the segmentation task can yield a better segmentation. That is, we hope to find a synergy in the joint inference of meaning and segmentation. \n\nNote that to the best of our knowledge there is very little computational work that combines word form and word meaning learning (Frank et al. 2006 takes a first step but their model is applicable only to small artificial languages). Frank et al. (2009a) and Regier (2003) review pure word learning models and, in addition to the papers we have already cited, Brent (1999) presents a fairly comprehensive review of previous pure segmentation models. However, none of the models reviewed make any attempt to jointly address the two problems. Similarly, in the behavioral literature on development, we are aware of only one segmentation study (Graf-Estes et al., 2007) that involves non-linguistic context, though this study treats the two tasks sequentially rather than jointly. \n\nWe now describe our model and inference procedure and follow with evaluation and discussion. \n\n"
+  },
+  {
+    "offset_inicio": "# **2** \n\nCross-situational meaning learning in our joint word learning and segmenting model is",
+    "offset_fim": "per-\n\nform better if only one topic is assumed per sentence (Gruber et al., 2007).",
+    "pagina_inicio": 2,
+    "pagina_fim": 4,
+    "titulo": "2 — Topical Unigram Model",
+    "motivo": "O bloco inicia no marcador de seção “# **2**” na página 2 e reúne toda a descrição do modelo, incluindo figuras, lista e equações, até imediatamente antes do próximo marcador de seção, “# **3 Inference**”, na página 4.",
+    "texto": "# **2** \n\nCross-situational meaning learning in our joint word learning and segmenting model is inspired by the model of Frank et al. (2009a). Our model can be viewed as a variant of the Latent Dirichlet Allocation (LDA) topic model of Blei et al. (2003), where topics are drawn from the objects in the nonlinguistic context. The model associates each utterance with a single referent object, the topic, and every word in the utterance is either generated from a distribution over words associated with that object or else from a distribution associated with a special “null” object shared by all utterances. Note that in this paper we use “topic” to denote the referent object of an utterance, otherwise we depart from topic modeling convention and use the term “object” instead. \n\nSegmentation is based on the unigram model proposed by Brent (1999) and reformulated by Goldwater et al. (2009) in terms of a Dirichlet process. Since both LDA and the unigram segmenter are based on unigram distributions it is relatively straightforward \n\n502\n\n<!-- PÁGINA 3 -->\nFigure 2: Topical Unigram Model: _Oj_ is the set of objects in the non-linguistic context of the _j_<sup>_th_</sup> utterance, _zj_ is the utterance topic, _wji_ is the _i_<sup>_th_</sup> word of the utterance, _xji_ is the category of the word (referring or non-referring), and the other variables are distribution parameters. \n\nto integrate the two to simultaneously infer word boundaries and word-object associations. \n\nFigure 2 illustrates a slightly simplified form of the model, and the the relevant distributions are as follows: \n\n\n\nNote that _Uniform_ ( _O_ ) denotes a discrete uniform distribution over the elements of the set _O_ . _P_ 0 is described later. \n\nBriefly, each utterance has a single topic _zj_ , drawn from the objects in the non-linguistic context _Oj_ , and then for each word _wji_ we first flip a coin _xji_ to determine if it refers to the topic or not. Then, depending on _xji_ the word is either drawn from a distribution specific to the topic ( _xji_ = 1) or from a distribution associated with the “null” object ( _xji_ = 0). In slightly greater detail but still glossing over the \n\ndetails of how the multinomial parameters are generated, the generative story proceeds as follows: \n\n1. For each utterance, indexed by _j_ \n\n2. (a) Pick a single topic _zj_ uniformly from the set of objects in the environment _Oj_ \n\n   - (b) For each word _wji_ of the utterance \n\n   - (c) i. Determine if it refers to _zj_ or not by setting _xji_ to 1 (referring) with probability _π_ , and to 0 (non-referring) otherwise. \n\n      - ii. if _xji_ is 1, draw _wji_ from the topic specific distribution over words _Gzj_ . \n\n      - iii. otherwise, draw _wji_ from _G_ 0, the distribution over words associated with the “null” object. \n\nThis generative story is a simplification since it does not describe how we model utterance boundaries. It is important for segmentation purposes to explicitly model utterance boundaries since, unlike utterance-internal word boundaries, we assume utterance boundaries are observed. Thus, the story is complicated by the fact that there is a chance each time we generate a word that we also generate an utterance boundary. The choice of whether to terminate the utterance or not is captured by a _Bernoulli_ ( _γ_ ) random variable $ _ji_ indicating whether the _i_<sup>_th_</sup> word was the last word of the _j_<sup>_th_</sup> utterance. \n\n\n\nThe _Gz_ multinomial parameters are generated from a Dirichlet process with base distribution over words, _P_ 0, which describes how new word types are generated from their constituent phonemes. Phonemes are generated sequentially, i.i.d. uniformly from _m_ phonemic types. In addition, there is a probability _p_ # of generating a word boundary. \n\n\n\nThe concentration parameters _α_ 0 and _α_ 1 also play a critical role in the generation of words and word types. Any given word has a certain probability of either being produced from the set of previously seen word types, or from an entirely new one. The \n\n503\n\n<!-- PÁGINA 4 -->\ngreater the concentration parameter, the more likely the model is to appeal to the base distribution _P_ 0 to introduce a new word type. \n\nLike Frank et al. (2009a), we distinguish between two coarse grammatical categories, referring and non-referring. Referring words are generated by the topic, while non-referring words are drawn from _G_ 0, a distribution associated with the “null” object. The distinction ensures sparse word-object maps that obey the principle of mutual exclusion. Otherwise all words in the utterance would be associated with the topic object, resulting in a very large set of words for each object that is very likely to overlap with the words for other objects. As a further bias toward a small lexicon, we employ different concentration parameters ( _α_ 0 and _α_ 1) for the non-referring and referring words, using a much smaller value for the referring words. Intuitively, there should be a relatively small prior probability of introducing a new word-object pair, corresponding to a small _α_ 1 value. On the other hand, most other words don’t refer to the topic object (or any other object for that matter), corresponding to a much larger _α_ 0 value. \n\nNote that this topical unigram model is a straightforward generalization of the unigram segmentation model (Goldwater et al., 2009) to the case of multiple topics. In fact, if all words were assumed to refer to the same object (or to no object at all) the models would be identical. \n\nUnlike LDA, each “document” has only one topic, which is necessitated by the fact that in our model documents correspond single utterances. The utterances in our corpus of child directed speech are often only four or five words long, whereas the general LDA model assumes documents are much larger. Thus, there may not be enough words to infer a useful utterance specific distribution over topics. Consequently, rather than inferring a separate topic distribution for each utterance, we simply assume a uniform distribution over objects in the nonlinguistic context. In effect, we rely entirely on the non-linguistic context and word-object associations to infer topics. Though necessitated by data sparsity issues, we also note that it is very rare in our corpus for utterances to refer to more than one object in the non-linguistic context, so the choice of a single topic may also be a more accurate model. In fact, even with multi-sentence documents, LDA may per- \n\nform better if only one topic is assumed per sentence (Gruber et al., 2007)."
+  },
+  {
+    "offset_inicio": "# **3 Inference** \n\nWe use a collapsed Gibbs sampling procedure, integrating over all possible",
+    "offset_fim": "Here _δx_ ( _y_ ) is 1 if _x_ = _y_ and 0 otherwise. \n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "3 Inference",
+    "motivo": "O bloco inicia na seção numerada \"3 Inference\" na página 4 e inclui seu texto contínuo até imediatamente antes do próximo marcador de seção, \"4 Results & Model Comparisons\", na página 5.",
+    "texto": "# **3 Inference** \n\nWe use a collapsed Gibbs sampling procedure, integrating over all possible _Gz_ , _π_ , and _γ_ values and then iteratively sample values for each variable conditioned on the current state of all other variables. We visit each utterance once per iteration, sample a topic, and then visit each possible word boundary location to sample the boundary and word categories simultaneously according to their joint probability. \n\nA single topic is sampled for each utterance, conditioned on the words and their current determinations as referring or non-referring. Since _zj_ is drawn from a uniform distribution, this probability is simply proportionate to the conditional probability of the words given _zj_ and the _xji_ variables. \n\n\n\nHere, _P_ ( _zj|_ **wj** _,_ **xj** _,_ **h**<sup>_−_</sup><sup>**j**</sup> ) is the probability of topic _zj_ given the current hypothesis **h** for all variables excluding those for the current utterance. Also, _nw,z_<sup>(</sup><sup>**h**</sup><sup>_−_</sup> _j_<sup>_j_)</sup> is the count of occurrences of word type _w_ that refer to topic _zj_ among the current variable assignments, and _Wj_ is the set of word types appearing in utterance _j_ . The vectors of word and category variables in utterance _j_ are represented as **wj** and **xj** , respectively. Note that only referring words have any bearing on the appropriate selection of _zj_ and so all factors involving only non-referring words are absorbed by the constant of proportionality. \n\nThe word categories can be sampled conditioned on the current word boundary states according to the following conditional probability, where _nx_<sup>(</sup><sup>**h**</sup> _ji_<sup>_−ji_)</sup> is the number of words categorized according to label \n\n504\n\n<!-- PÁGINA 5 -->\n_xji_ over the entire corpus excluding word _wji_ . \n\n\n\nIn practice, however, we actually sample the word category variables jointly with the boundary states, using a scheme similar to that outlined in Goldwater et al. (2009). We visit each possible word boundary location (any point between two consecutive phonemes) and compute probabilities for the hypotheses for which the phonemic environment makes up either one word or two. As illustrated below there are two sets of cases: those where we treat the segment as a single word, and those where we treat it as two words. \n\n\n\nThe probabilities of the hypotheses can be derived by application of equation 1. Since the **x** variables can each describe two possible events, there are a total of six different cases to consider for each boundary assignment: two cases without and four with a word boundary. \n\nThe probability of each of the two cases without a word boundary can be computed as follows: \n\n\n\nHere **h**<sup>_−_</sup> signifies the current hypothesis for all variables excluding those for the current segment and _n_<sup>(</sup> $<sup>**h**</sup> 1<sup>_−_)</sup> is the count for **h**<sup>_−_</sup> of either utterance final words if _w_ 1 is utterance final or non-utterance final words if _w_ 1 is also not utterance final. \n\nIn the four cases with a word boundary, we have two words and two categories to sample. \n\n\n\nHere _δx_ ( _y_ ) is 1 if _x_ = _y_ and 0 otherwise. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Results & Model Comparisons** ",
+    "offset_fim": "# **4 Results & Model Comparisons** ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4 Results & Model Comparisons",
+    "motivo": "O bloco inicia no título da seção 4 e termina imediatamente antes do marcador da subseção 4.1; não há texto de corpo entre os dois marcadores.",
+    "texto": "# **4 Results & Model Comparisons** "
+  },
+  {
+    "offset_inicio": "## **4.1 Corpus** \n\nOur training corpus (Fernald and Morikawa, 1993; Frank et al.,",
+    "offset_fim": "he phonemic transcription and the objects in the non-linguistic context. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4.1 Corpus",
+    "motivo": "O bloco inicia no marcador de subseção “4.1 Corpus” e inclui seus dois parágrafos. Termina imediatamente antes do próximo marcador estrutural, “4.2 Evaluation”, na mesma página.",
+    "texto": "## **4.1 Corpus** \n\nOur training corpus (Fernald and Morikawa, 1993; Frank et al., 2009b) consists of about 22,000 words and 5,600 utterances. Video recordings consisting of mother-child play over pairs of toys were orthographically transcribed, and each utterance was annotated with the set of objects present in the nonlinguistic context. The object referred to by the utterance, if any, was noted, as described in Frank et al. (2009b). We used the VoxForge dictionary to map orthographic words to phoneme sequences in a process similar to that described in Brent (1999). \n\nFigure 1 (a) presents an example of the coding of phonemic transcription and non-linguistic context for a single utterance. The input to the system consists solely of the phonemic transcription and the objects in the non-linguistic context. \n\n"
+  },
+  {
+    "offset_inicio": "## **4.2 Evaluation** \n\nWe ran the sampler ten times for 100,000 iterations with",
+    "offset_fim": "segmentation performance was evaluated by comparing the final boundary assignments against the gold standard segmentation. \n\n505\n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "titulo": "4.2 Evaluation",
+    "motivo": "É a primeira unidade iniciada pelo marcador de subseção “4.2 Evaluation”. Contém seu único parágrafo e termina antes do próximo marcador estrutural, “4.2.1 Word Learning”, na página 6.",
+    "texto": "## **4.2 Evaluation** \n\nWe ran the sampler ten times for 100,000 iterations with parameter settings of _α_ 1 = 0 _._ 01, _α_ 0 = 20, and _p_ # = 0 _._ 5, keeping only the final sample for evaluation. We defined the word-object pairs for a sample as the words in the referring category that were paired at least once with a particular topic. These pairs were then compared against a gold standard set of word-object pairs, while segmentation performance was evaluated by comparing the final boundary assignments against the gold standard segmentation. \n\n505\n\n"
+  },
+  {
+    "offset_inicio": "# **4.2.1 Word Learning** \n\nTo explore the contribution of word boundaries to the joint",
+    "offset_fim": "reasonable meanings. The next question is whether these meanings have an impact on the segmentation. ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "titulo": "4.2.1 Word Learning",
+    "motivo": "O bloco inicia no marcador da subseção 4.2.1, na página 6, e reúne todo o texto, tabelas e legendas sobre aprendizagem de palavras até imediatamente antes do próximo marcador estrutural, “4.2.2 Word Segmentation”.",
+    "texto": "# **4.2.1 Word Learning** \n\nTo explore the contribution of word boundaries to the joint word learning and segmenting task, we compare our full joint model against a variant that only infers topics, using the gold standard segmentation as input. In this way we also reproduce the usual assumption of a sequential relationship between segmentation and word learning and test the necessity of the simplifying assumption. The results are shown in Table 2. We compare them with three different metric types: topic accuracy; precision, recall, and F-score of the word-object pairs; and Kullback-Liebler (KL) divergence. \n\nFirst, treating utterances with no referring words as though they have no topic, we compute the accuracy of the inferred topics. Note that we don’t report accuracy for the the variant with no nonlinguistic context, since in this case the objects are interchangeable, and we have a problem identifying which cluster corresponds to which topic. Table 2 shows that the joint segmentation and word learning model gets the topic right for 81% of the utterances. The variant that assumes pre-segmented input does comparably well with an accuracy of 79%. Surprisingly, it seems that knowing the gold segmentation doesn’t add very much, at least for the topic inference task. \n\nTo evaluate how well we discovered the wordobject map, we manually compiled a list of all the nouns in the corpus that named one of the 30 objects. We used this set of nouns, cross-referenced with their topic objects, as a gold standard set of word-object pairs. By counting the co-occurrences, we also compute a gold standard probability distribution for the words given the topic, _P_ ( _w|z, x_ = 1). \n\nPrecision, recall and F-score are computed as per Frank et al. (2009a). In particular, precision is the fraction of gold pairs among the sampled set and recall is the fraction of sampled pairs among the gold standard pairs. \n\n\n\nKL divergence is a way of measuring the difference between distributions. Small numbers generally indicate a close match and is zero only when the two are equal. Using the empirical distribution \n\n|Object||Word|s||\n|---|---|---|---|---|\n|BOX|thebox|box|||\n|BRUSH|brush||||\n|BUNNY|rabbit|Rosie|||\n|BUS|bus||||\n|CAR|car|thecar|||\n|CHEESE|cheese||||\n|DOG|thedoggy|doggy|||\n|DOLL|doll|thedoll|yeah|benice|\n|DOUGH|dough||||\n|ERNIE|Ernie||||\n\n\n\nTable 1: Subset of an inferred word-object mapping. For clarity, the proposed words have been converted to standard English orthography. \n\n||p|r|f|KL|acc|\n|---|---|---|---|---|---|\n|Joint|**0.21**|0.45|0.28|2.78|**0.81**|\n|Gold Seg|**0.21**|**0.60**|**0.31**|**1.82**|0.79|\n\n\n\nTable 2: Word Learning Performance. Comparing precision, recall, and F-score of word-object pairs, _DKL_ ( _P_ ( _w, z_ ) _||Q_ ( _w, z_ )), and accuracy of utterance topics for the full joint model and a variant that only infers meanings given a gold standard segmentation. \n\nover gold topics _P_ ( _z_ ), we use the standard formula for KL divergence to compare the gold standard distribution _P_ against the inferred distribution _Q_ . I.e., we compute _DKL_ ( _P_ ( _w, z_ ) _||Q_ ( _w, z_ )). \n\nThe model learns fairly meaningful word-object associations; results are shown in Table 2. As in the case of topic accuracy, the joint and word learning only variants perform similarly, this time with somewhat better performance for the easier task with an F-score and KL divergence of 0.31 and 1.82 vs. 0.28 and 2.78 for the joint task. \n\nTable 1 illustrates the sort of word-object pairs the model discovers. As can be seen, many of the errors are due to the segmentation, usually undersegmentation errors where it segments two words as one. This is a general problem with the unigram segmenter on which our model is based (Goldwater et al., 2009). Yet, even though these segmentation errors are also counted as word learning errors, they are often still meaningful in the sense that the true referring word is a subsequence. \n\nSo, word segmentation has an impact on word learning. Yet, the joint model still tends to uncover reasonable meanings. The next question is whether these meanings have an impact on the segmentation. "
+  },
+  {
+    "offset_inicio": "# **4.2.2 Word Segmentation** \n\nTo measure the impact of word learning on segmentation",
+    "offset_fim": "the end because one of the two word boundaries is already known (the utterance boundary itself). ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "4.2.2 Word Segmentation",
+    "motivo": "A seção numerada 4.2.2 inicia um bloco estrutural completo na página 7 e reúne seus parágrafos até imediatamente antes do marcador da próxima seção, “# **4.3 Discussion**”.",
+    "texto": "# **4.2.2 Word Segmentation** \n\nTo measure the impact of word learning on segmentation, we again compare the model on the full joint task against two other variants: one where topics are randomly selected, and one that ignores the non-linguistic context. For the random topics variant, we choose each topic during initialization according to the empirical distribution over gold topics and treat these topic assignments as observed variables for subsequent iterations. The variant that ignores non-linguistic context draws topics uniformly from the entire set of objects ever discussed in the corpus, another test of the contribution of the nonlinguistic context to segmentation. We report token F-score, computed as per Goldwater et al. (2009), where any segment proposed by the model is a true positive only if it matches the gold segmentation and is a false positive otherwise. Any segment in the gold data not found by the model is a false negative. \n\nTable 3 shows the segmentation performance for various subsets as well as for the entire corpus. Because we are primarily interested in synergies between word learning and segmentation, we focus on the words most directly impacted by the meanings: gold standard referring nouns and their neighboring words. \n\nThe model behaves the same with randomized topics as without context; it learns none of the gold standard pairs (no matter how we identify clusters with topics for the contextless case). On all subsets, the full joint model outperforms the other two variants. In particular, the greatest gain is for the referring nouns, with a 21% reduction in error. Also, similar to the findings of Bortfeld et al. (2005) regarding 6 month olds’ abilities to segment words adjoining a familiar name, we also find that neighboring words benefit from sharing a word boundary with a learned \n\nword. \n\nThe model performs exceptionally well on utterance final referring nouns, with a 24% reduction in error. This may explain certain psycholinguistic observations. Frank et al. (2006) performed an artificial language experiment with humans subjects demonstrating that adults were able to learn words at the same time as they learned to segment the language. However, subjects did much better on a word learning task when the meaning bearing words were consistently placed at the end of utterances. There are several possible reasons why this might have been the case. For instance, it is common in English for the object noun to occur at the end of the sentence, and since the subjects were all English speakers, they may have found it easier to learn an artificial language with a similar pattern. However, our model predicts another simple possibility: the segmentation task is easier at the end because one of the two word boundaries is already known (the utterance boundary itself). "
+  },
+  {
+    "offset_inicio": "# **4.3 Discussion** \n\nThe word learning model generally prefers a very sparse word-to-object",
+    "offset_fim": "require more knowledge about children’s representations of the world around them \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "4.3 Discussion",
+    "motivo": "O bloco inicia no marcador da subseção 4.3, atravessa a quebra entre as páginas 7 e 8 e termina imediatamente antes do marcador da seção seguinte, “5 Conclusion and Future Work”.",
+    "texto": "# **4.3 Discussion** \n\nThe word learning model generally prefers a very sparse word-to-object map. This is enforced by using a concentration parameter _α_ 1 that is quite small relative to the _α_ 0 parameter, and it biases the model so that the distributions over referring words are very different from that over non-referring words. A small concentration parameter biases the estimator to prefer a small set of word types. In contrast, the relatively large concentration parameter for the nonreferring words tends to result in most of the words receiving highest probability as non-referring words. The model thus categorizes words accordingly. It is in part due to this tendency towards sparse wordobject maps that the model enforces mutual exclusivity, a phenomenon well documented among natural word learners (Markman, 1990). \n\nAside from contributing to mutual exclusivity and specialization among the topical word distributions, the small concentration parameter also has important implications for the segmentation task. A very small value for _α_ 1 discourages the learner from acquiring more word types for each meaning than absolutely necessary, thereby forcing the segmenter to use fewer types to explain the sequence of phonemes. A model without any notion \n\n507\n\n<!-- PÁGINA 8 -->\nof meaning cannot maintain separate distributions for different topics, and must in some sense treat all words as non-referring. A segmenting model without meanings cannot share the word learner’s reluctance to propose new meaning-bearing word types and might propose three separate types for “your book”, “a book”, and “the book”. However, with a small enough prior on new referring word types, the word learner that discovers a common referent for all three sequences and, preferring fewer referring word types, is more likely to discover the common subsequence “book”. With a single wordobject pair (“book”, BOOK), the word learner could explain reference for all three sequences instead of using the three separate pairs (“yourbook”, BOOK), (“abook”, BOOK), and (“thebook”, BOOK). \n\nWhile relying on non-linguistic context helps segment the meaning-bearing words, the overall improvement is small in our current corpus. One reason for this small improvement was that only 9% of the tokens in the corpus were referring words. In corpora containing a larger variety of objects – and in cases where sub- and super-ordinate labels like “eyes” and “ears” are coded – this percentage is likely to be much higher, leading to a greater boost in overall segmentation performance. \n\nWe should acknowledge that the decisions entailed in enriching the annotations are neither trivial nor without theoretic implication, however. It is not immediately obvious how to represent the nonlinguistic correlates of verbs, for instance. Developmentally, verbs are typically acquired much later than nouns, and it has been argued that this may be due to the difficulty of producing a cognitive representation of the associated meaning (Gentner and Boroditsky, 2001). Even among concrete nouns, not all are equal. Children tend to have a bias toward whole objects when mapping novel words to their non-linguistic counterparts (Markman, 1990). Decisions about more sophisticated encoding of nonlinguistic information may thus require more knowledge about children’s representations of the world around them \n\n"
+  },
+  {
+    "offset_inicio": "# **5 Conclusion and Future Work** \n\nWe find (1) that it is possible to jointly infer both meanings and a segmentation in a fully unsupervised ",
+    "offset_fim": "structure, such as morphology, may contribute to word meaning learning beyond its contribution to word segmentation performance.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "5 Conclusion and Future Work",
+    "motivo": "O bloco inicia no título da seção numerada 5 e inclui seus três parágrafos. Termina imediatamente antes do marcador de seção seguinte, “# **Acknowledgments**”.",
+    "texto": "# **5 Conclusion and Future Work** \n\nWe find (1) that it is possible to jointly infer both meanings and a segmentation in a fully unsupervised \n\nway and (2) that doing so improves the segmentation performance of our model. In particular, we found that although the word learning side suffered from segmentation errors, and performed worse than a model that learned from a gold standard segmentation, the loss was only slight. On the other hand, segmentation performance for the meaning bearing words improved a great deal. The first result suggests that is not necessary to assume fully segmented input in order to learn word meanings, and that the segmentation and word learning tasks can be effectively modeled in parallel, allowing us to explore potential developmental interactions. The second result suggests that synergies do actually exist and argue not only that we can model the two as parallel processes, but that doing so could prove fruitful. \n\nOur model is relatively simple both in terms of word learning and in terms of word segmentation. For instance, social cues and shared attention, or discourse effects, might all play a role (Frank et al., 2009b). Shared features or other relationships can also potentially impact how quickly one might generalize a label to multiple instances (Tenenbaum and Xu, 2000). There are many ways to elaborate on the word learning task, with additional potential synergistic implications. \n\nWe might also elaborate the linguistic structures we incorporate into the word learning model. For instance, Johnson (2008) explores synergies in syllable and morphological structures in word segmentation. Aspects of linguistic structure, such as morphology, may contribute to word meaning learning beyond its contribution to word segmentation performance."
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nThis research was funded by NSF awards 0544127 and 0631667 to Mark Johnson",
+    "offset_fim": "We would also like to thank Anne Fernald for providing the corpus and Maeve Cullinane for help in coding it. ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Acknowledgments",
+    "motivo": "O bloco inicia no título de seção “Acknowledgments” e contém o parágrafo de agradecimentos, terminando imediatamente antes do próximo marcador de seção, “References”.",
+    "texto": "# **Acknowledgments** \n\nThis research was funded by NSF awards 0544127 and 0631667 to Mark Johnson and by NSF DDRIG 0746251 to Michael C. Frank. We would also like to thank Anne Fernald for providing the corpus and Maeve Cullinane for help in coding it. "
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "References",
+    "motivo": "O título \"References\" abre a lista bibliográfica e constitui um bloco próprio; o bloco termina imediatamente antes da primeira entrada bibliográfica, \"Nameera Akhtar and Lisa Montague. 1999.\".",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "Nameera Akhtar and Lisa Montague. 1999. Early lexical acquisition: The role of cross-",
+    "offset_fim": "acquisition: The role of cross-situational learning. _First Language_ , 19(57 Pt 3):347–358.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Akhtar e Montague (1999) — Early lexical acquisition",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia-se no nome dos autores na página 8 e termina ao fim da referência, antes do número de página 508 e da entrada bibliográfica seguinte.",
+    "texto": "Nameera Akhtar and Lisa Montague. 1999. Early lexical acquisition: The role of cross-situational learning. _First Language_ , 19(57 Pt 3):347–358."
+  },
+  {
+    "offset_inicio": "- David Blei, Andrew Ng, and Michael Jordan. 2003. Latent dirichlet allocation. _Journal of Machine Learning Research_ , 3:993–1022.",
+    "offset_fim": "- David Blei, Andrew Ng, and Michael Jordan. 2003. Latent dirichlet allocation. _Journal of Machine Learning Research_ , 3:993–1022.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Blei, Ng e Jordan (2003) — Latent dirichlet allocation",
+    "motivo": "É a primeira entrada bibliográfica completa da página 9; inicia no marcador de item \"- David Blei\" e termina antes da entrada seguinte, iniciada por \"- Heather Bortfeld\".",
+    "texto": "- David Blei, Andrew Ng, and Michael Jordan. 2003. Latent dirichlet allocation. _Journal of Machine Learning Research_ , 3:993–1022."
+  },
+  {
+    "offset_inicio": "- Heather Bortfeld, James L. Morgan, Roberta Michnick Golinkoff, and Karen Rathbun. 2005. Mommy and me: Familiar names help launch babies into speechstream segmentation. _Psychological Science_ , 16(4):298–304.",
+    "offset_fim": "Mommy and me: Familiar names help launch babies into speechstream segmentation. _Psychological Science_ , 16(4):298–304.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Heather Bortfeld et al. (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa da página. Inicia no marcador de item “- Heather Bortfeld...” e termina após “298–304.”, imediatamente antes da entrada seguinte, iniciada por “- Michael R. Brent...”.",
+    "texto": "- Heather Bortfeld, James L. Morgan, Roberta Michnick Golinkoff, and Karen Rathbun. 2005. Mommy and me: Familiar names help launch babies into speechstream segmentation. _Psychological Science_ , 16(4):298–304."
+  },
+  {
+    "offset_inicio": "- Michael R. Brent. 1999. An efficient, probabilistically sound algorithm for segmentation and word discovery. _Machine Learning_ , 34:71–105. ",
+    "offset_fim": "Michael R. Brent. 1999. An efficient, probabilistically sound algorithm for segmentation and word discovery. _Machine Learning_ , 34:71–105. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Michael R. Brent (1999) — An efficient, probabilistically sound algorithm for segmentation and word discovery",
+    "motivo": "É a primeira entrada bibliográfica completa da página. Começa no marcador de item \"-\" e termina antes do marcador da entrada bibliográfica seguinte, de Anne Fernald e Hiromi Morikawa.",
+    "texto": "- Michael R. Brent. 1999. An efficient, probabilistically sound algorithm for segmentation and word discovery. _Machine Learning_ , 34:71–105. "
+  },
+  {
+    "offset_inicio": "- Anne Fernald and Hiromi Morikawa. 1993. Common themes and cultural variations in japanese and american mothers’ speech to infants.",
+    "offset_fim": "In _Child Development_ , number 3, pages 637–656, June. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Fernald e Morikawa (1993)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de item \"-\" e encerrada imediatamente antes da entrada seguinte, de Michael C. Frank et al. (2006).",
+    "texto": "- Anne Fernald and Hiromi Morikawa. 1993. Common themes and cultural variations in japanese and american mothers’ speech to infants. In _Child Development_ , number 3, pages 637–656, June. "
+  },
+  {
+    "offset_inicio": "- Michael C. Frank, Vikash Mansinghka, Edward Gibson, and Joshua B. Tenenbaum. 2006.",
+    "offset_fim": "_Proceedings of the 31st Annual Boston University Conference on Language Development_ . ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Frank et al. (2006) — Word segmentation as word learning",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de item com os autores e ano e termina imediatamente antes da próxima entrada bibliográfica, iniciada por “- Michael C. Frank, Sharon Goldwater...”.",
+    "texto": "- Michael C. Frank, Vikash Mansinghka, Edward Gibson, and Joshua B. Tenenbaum. 2006. Word segmentation as word learning: Integrating stress and meaning with distributional cues. In _Proceedings of the 31st Annual Boston University Conference on Language Development_ . "
+  },
+  {
+    "offset_inicio": "- Michael C. Frank, Sharon Goldwater, Vikash Mansinghka, Tom Griffiths, and Joshua Tenenbaum. 2007. Modeling human performance in statistical word segmentation.",
+    "offset_fim": "_Proceedings of the 29th Annual Meeting of the Cognitive Science Society_ , pages 281–286.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Frank et al. (2007)",
+    "motivo": "A primeira entrada bibliográfica é uma unidade própria; inicia no marcador de item “- Michael C. Frank...” e termina antes da entrada bibliográfica seguinte, também iniciada por “- Michael C. Frank...”.",
+    "texto": "- Michael C. Frank, Sharon Goldwater, Vikash Mansinghka, Tom Griffiths, and Joshua Tenenbaum. 2007. Modeling human performance in statistical word segmentation. _Proceedings of the 29th Annual Meeting of the Cognitive Science Society_ , pages 281–286."
+  },
+  {
+    "offset_inicio": "- Michael C. Frank, Noah D. Goodman, and Joshua B. Tenenbaum. 2009a. Using speakers’ referential intentions to model early cross-situational word learning.",
+    "offset_fim": "ng speakers’ referential intentions to model early cross-situational word learning. _Psychological Science_ , 5:578–585. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Frank, Goodman e Tenenbaum (2009a)",
+    "motivo": "É a primeira entrada bibliográfica completa visível na página. Inicia no marcador de item \"-\" com os autores e termina após \"5:578–585.\", antes do fragmento textual seguinte.",
+    "texto": "- Michael C. Frank, Noah D. Goodman, and Joshua B. Tenenbaum. 2009a. Using speakers’ referential intentions to model early cross-situational word learning. _Psychological Science_ , 5:578–585. "
+  },
+  {
+    "offset_inicio": "   - Mark Johnson. 2008. Using adaptor grammars to identifying synergies in the unsuper",
+    "offset_fim": "Annual Meeting of the Association of Computational Linguistics_ , Columbus, Ohio. Association for Computational Linguistics. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Mark Johnson (2008) — Using adaptor grammars",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador da referência de Mark Johnson e termina imediatamente antes da entrada de Ellen M. Markman.",
+    "texto": "   - Mark Johnson. 2008. Using adaptor grammars to identifying synergies in the unsupervised acquisition of linguistic structure. In _Proceedings of the 46th Annual Meeting of the Association of Computational Linguistics_ , Columbus, Ohio. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- Ellen M. Markman. 1990. Constraints children place on word learning. _Cognitive Science_ , 14:57–77.",
+    "offset_fim": "Constraints children place on word learning. _Cognitive Science_ , 14:57–77.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Markman (1990) — Constraints children place on word learning",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item seguido da referência de Ellen M. Markman e termina antes do próximo marcador, que abre a entrada de Terry Regier.",
+    "texto": "- Ellen M. Markman. 1990. Constraints children place on word learning. _Cognitive Science_ , 14:57–77."
+  },
+  {
+    "offset_inicio": "- Terry Regier. 2003. Emergent constraints on wordlearning: A computational review. _Trends",
+    "offset_fim": "on wordlearning: A computational review. _Trends in Cognitive Sciences_ , 7:263–268.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Terry Regier (2003) — Emergent constraints on wordlearning",
+    "motivo": "É a primeira entrada bibliográfica completa visível; começa no marcador \"- Terry Regier\" e termina antes da entrada seguinte, \"- Jenny R. Saffran\".",
+    "texto": "- Terry Regier. 2003. Emergent constraints on wordlearning: A computational review. _Trends in Cognitive Sciences_ , 7:263–268."
+  },
+  {
+    "offset_inicio": "   - Jenny R. Saffran, Elissa L. Newport, and Richard N. Aslin. 1996. Word segmentation: The role",
+    "offset_fim": "ributional cues. _Journal of memory and Language_ , 35:606–621. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Saffran, Newport e Aslin (1996) — Word segmentation",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador de item \"- Jenny R. Saffran\" e termina antes do próximo marcador, \"- Jeffrey M. Siskind\".",
+    "texto": "   - Jenny R. Saffran, Elissa L. Newport, and Richard N. Aslin. 1996. Word segmentation: The role of distributional cues. _Journal of memory and Language_ , 35:606–621. "
+  },
+  {
+    "offset_inicio": "- Jeffrey M. Siskind. 1996. A computational study of cross-situational techniques for learning word-tomeaning mappings.",
+    "offset_fim": "cross-situational techniques for learning word-tomeaning mappings. _Cognition_ , 61(1-2):39–91. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Jeffrey M. Siskind (1996)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Jeffrey M. Siskind\" e termina antes da próxima entrada, iniciada por \"- Joshua B. Tenenbaum\".",
+    "texto": "- Jeffrey M. Siskind. 1996. A computational study of cross-situational techniques for learning word-tomeaning mappings. _Cognition_ , 61(1-2):39–91. "
+  },
+  {
+    "offset_inicio": "- Joshua B. Tenenbaum and Fei Xu. 2000. Word learning as bayesian inference. In _",
+    "offset_fim": "nference. In _Proceedings of the 22nd Annual Conference of the Cognitive Science Society_ , pages 517–522.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Joshua B. Tenenbaum and Fei Xu (2000)",
+    "motivo": "Cada entrada da lista de referências constitui uma unidade própria. O bloco inicia na primeira referência, marcada por hífen, e termina antes da referência seguinte, de Chen Yu e Dana H. Ballard.",
+    "texto": "- Joshua B. Tenenbaum and Fei Xu. 2000. Word learning as bayesian inference. In _Proceedings of the 22nd Annual Conference of the Cognitive Science Society_ , pages 517–522."
+  },
+  {
+    "offset_inicio": "- Chen Yu and Dana H. Ballard. 2007. A unified model of early word learning: Integrating statistical and social cues.",
+    "offset_fim": "early word learning: Integrating statistical and social cues. _Neurocomputing_ , 70(13-15):2149–2165.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Chen Yu and Dana H. Ballard (2007)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Chen Yu...\" e termina antes da entrada seguinte, \"- Michael C. Frank...\".",
+    "texto": "- Chen Yu and Dana H. Ballard. 2007. A unified model of early word learning: Integrating statistical and social cues. _Neurocomputing_ , 70(13-15):2149–2165."
+  },
+  {
+    "offset_inicio": "- Michael C. Frank, Noah D. Goodman, Joshua B. Tenenbaum, and Anne Fernald. 2009b.",
+    "offset_fim": "Fernald. 2009b. Continuity of discourse provides information for word learning.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Frank et al. (2009b)",
+    "motivo": "É a primeira entrada bibliográfica, iniciada pelo marcador de item e encerrada imediatamente antes da entrada seguinte, de Dedre Gentner e Lera Boroditsky.",
+    "texto": "- Michael C. Frank, Noah D. Goodman, Joshua B. Tenenbaum, and Anne Fernald. 2009b. Continuity of discourse provides information for word learning."
+  },
+  {
+    "offset_inicio": "- Dedre Gentner and Lera Boroditsky. 2001. Individuation, relativity, and early",
+    "offset_fim": "early word learning. _Language, culture, & cognition_ , 3:215–56.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Gentner and Boroditsky (2001)",
+    "motivo": "É a primeira entrada individual da lista de referências; inicia no marcador de item e termina antes da entrada seguinte, de Sharon Goldwater et al.",
+    "texto": "- Dedre Gentner and Lera Boroditsky. 2001. Individuation, relativity, and early word learning. _Language, culture, & cognition_ , 3:215–56."
+  },
+  {
+    "offset_inicio": "- Sharon Goldwater, Thomas L. Griffiths, and Mark Johnson. 2009. A bayesian framework",
+    "offset_fim": "mentation: Exploring the effects of context. _Cognition_ , 112(1):21–54.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Sharon Goldwater, Thomas L. Griffiths, and Mark Johnson (2009)",
+    "motivo": "É a primeira entrada bibliográfica completa. Começa no marcador de item da referência e termina após “21–54.”, imediatamente antes da entrada de Katharine Graf-Estes et al.",
+    "texto": "- Sharon Goldwater, Thomas L. Griffiths, and Mark Johnson. 2009. A bayesian framework for word segmentation: Exploring the effects of context. _Cognition_ , 112(1):21–54."
+  },
+  {
+    "offset_inicio": "- Katharine Graf-Estes, Julia L. Evans, Martha W. Alibali, and Jenny R. Saffran. 2007.",
+    "offset_fim": "words? statistical segmentation and word learning. _Psychological Science_ , 18(3):254– 260. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Graf-Estes et al. (2007)",
+    "motivo": "É a primeira entrada bibliográfica completa da página; inicia no marcador \"-\" da referência e termina imediatamente antes da entrada seguinte, de Amit Gruber et al.",
+    "texto": "- Katharine Graf-Estes, Julia L. Evans, Martha W. Alibali, and Jenny R. Saffran. 2007. Can infants map meaning to newly segmented words? statistical segmentation and word learning. _Psychological Science_ , 18(3):254– 260. "
+  },
+  {
+    "offset_inicio": "- Amit Gruber, Michal Rosen-Zvi, and Yair Weiss. 2007. Hidden topic markov models.",
+    "offset_fim": "2007. Hidden topic markov models. In _Artificial Intelligence and Statistics (AISTATS)_ , March.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Gruber, Rosen-Zvi e Weiss (2007) — Hidden topic markov models",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item com os autores e termina em “March.”, imediatamente antes da próxima referência bibliográfica.",
+    "texto": "- Amit Gruber, Michal Rosen-Zvi, and Yair Weiss. 2007. Hidden topic markov models. In _Artificial Intelligence and Statistics (AISTATS)_ , March."
+  },
+  {
+    "offset_inicio": "- Mark Johnson and Sharon Goldwater. 2009. Improving nonparameteric bayesian inference:",
+    "offset_fim": "segmentation with adaptor grammars. In _Proceedings of Human Language Technologies: The 2009 Annual Conference of the North Ameri-_",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Mark Johnson and Sharon Goldwater (2009)",
+    "motivo": "Trata-se de uma entrada individual de referências bibliográficas, iniciada pelo marcador “-”. O trecho disponível termina antes do número de página 509, sem outro marcador de entrada.",
+    "texto": "- Mark Johnson and Sharon Goldwater. 2009. Improving nonparameteric bayesian inference: experiments on unsupervised word segmentation with adaptor grammars. In _Proceedings of Human Language Technologies: The 2009 Annual Conference of the North Ameri-_"
+  }
+]

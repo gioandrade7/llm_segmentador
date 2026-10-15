@@ -1,0 +1,497 @@
+[
+  {
+    "offset_inicio": "# **Detecting Visual Text** \n\n**Jesse Dodge**<sup>1</sup> , **Amit Goyal**<sup>2</sup> ,",
+    "offset_fim": "- me@hal3.name, aberg@cs.stonybrook.edu, tlberg@cs.stonybrook.edu \n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Detecting Visual Text",
+    "motivo": "O bloco inicia no título principal do documento e contém autores, afiliações e contatos, terminando imediatamente antes do marcador da unidade seguinte, \"## **Abstract**\".",
+    "texto": "# **Detecting Visual Text** \n\n**Jesse Dodge**<sup>1</sup> , **Amit Goyal**<sup>2</sup> , **Xufeng Han**<sup>3</sup> , **Alyssa Mensch**<sup>4</sup> , **Margaret Mitchell**<sup>5</sup> , **Karl Stratos**<sup>6</sup> **Kota Yamaguchi**<sup>3</sup> , **Yejin Choi**<sup>3</sup> , **Hal Daum´e III**<sup>2</sup> , **Alexander C. Berg**<sup>3</sup> and **Tamara L. Berg**<sup>3</sup> 1University of Washington, 2University of Maryland, 3Stony Brook University \n\n      - 4MIT, 5Oregon Health & Science University, 6Columbia University \n\n- dodgejesse@gmail.com, amit@umiacs.umd.edu, xufhan@cs.stonybrook.edu acmensch@mit.edu, mitchmar@ohsu.edu, stratos@cs.columbia.edu kyamagu@cs.stonybrook.edu, ychoi@cs.stonybrook.edu \n\n   - me@hal3.name, aberg@cs.stonybrook.edu, tlberg@cs.stonybrook.edu \n"
+  },
+  {
+    "offset_inicio": "## **Abstract** \n\nWhen people describe a scene, they often include information that is not visually apparent; sometimes based on background knowledge,",
+    "offset_fim": "Finally, we show that we can reliably mine visual nouns and adjectives from large corpora and that we can use these effectively in the classification task.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "Abstract",
+    "motivo": "O bloco inicia no marcador de seção \"## **Abstract**\" e contém integralmente o resumo, terminando imediatamente antes do próximo marcador estrutural, \"## **1 Introduction**\".",
+    "texto": "## **Abstract** \n\nWhen people describe a scene, they often include information that is not visually apparent; sometimes based on background knowledge, sometimes to tell a story. We aim to separate _visual text_ —descriptions of what is being seen—from non-visual text in natural images and their descriptions. To do so, we first concretely define what it means to be visual, annotate visual text and then develop algorithms to automatically classify noun phrases as visual or non-visual. We find that using text alone, we are able to achieve high accuracies at this task, and that incorporating features derived from computer vision algorithms improves performance. Finally, we show that we can reliably mine visual nouns and adjectives from large corpora and that we can use these effectively in the classification task."
+  },
+  {
+    "offset_inicio": "## **1 Introduction** \n\nPeople use language to describe the visual world. Our goal is",
+    "offset_fim": "is _not_ visual because there’s nothing you could cut out that would retain car-ness. \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 2,
+    "titulo": "1 Introduction",
+    "motivo": "O bloco inicia no marcador de seção “## **1 Introduction**” na página 1 e reúne todo o texto introdutório, inclusive sua continuação na página 2. Termina imediatamente antes do próximo marcador estrutural, “# **2 Data Analysis**”.",
+    "texto": "## **1 Introduction** \n\nPeople use language to describe the visual world. Our goal is to: _formalize_ what “visual text” is (Section 2.2); _analyze_ naturally occurring written language for occurrences of visual text (Section 2); and _build_ models that can detect visual descriptions from raw text or from image/text pairs (Section 3). This is a challenging problem. One challenge is demonstrated in Figure 1, which contains two images that contain the noun “car” in their human-written captions. In one case (the top image), there actually _is_ a car in the image; in the other case, there is not: the car refers to the state of the speaker. \n\nThe ability to automatically identify visual text is practically useful in a number of scenarios. One can \n\n\n\n<!-- Start of picture text -->\nAnother dream car to<br>add to the list, this one<br>spotted in Hanbury St.<br>Shot out my car win-<br>dow while stuck in traf-<br>fic because people in<br>Cincinnati can’t drive in<br>the rain.<br><!-- End of picture text -->\n\nFigure 1: Two image/caption pairs, both containing the noun “car” but only the top one in a visual context. \n\nimagine automatically mining image/caption data (like that in Figure 1) to train object recognition systems. However, in order to do so reliably, one must know whether the “car” actually appears or not. When building image search engines, it is common to use text near an image as features; this is more useful when this text is actually visual. Or when training systems to automatically generate captions of images (e.g., for visually impaired users), we need good language models for visual text. \n\nOne of our goals is to define what it means for a bit of text to be visual. As inspiration, we consider image/description pairs automatically crawled from Flickr (Ordonez et al., 2011). A first pass attempt might be to say “a phrase in the description of an image is _visual_ if you can see it in the corresponding image.” Unfortunately, this is too vague to be useful; the biggest issues are discussed in Section 2.2. \n\n762 \n\n_2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ , pages 762–772, Montr´eal, Canada, June 3-8, 2012. _⃝_ c 2012 Association for Computational Linguistics\n\n<!-- PÁGINA 2 -->\nBased on our analysis, we settled on the following **definition:** A piece of text is visual (with respect to a corresponding image) _if_ you can cut out a part of that image, paste it into any other image, and a third party could describe that cut-out part in the same way. In the car example, the claim is that I could cut out the car, put it in the middle of any other image, and someone else might still refer to that car as “dream car.” The car in the bottom image in Figure 1 is _not_ visual because there’s nothing you could cut out that would retain car-ness. \n\n"
+  },
+  {
+    "offset_inicio": "# **2 Data Analysis** \n\nBefore embarking on the road to building models of visual text, it",
+    "offset_fim": "bottleneck of global descriptors, and local content (e.g., objects) had relatively small effect on accuracy. \n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "2 Data Analysis",
+    "motivo": "O bloco inicia na seção principal numerada “2 Data Analysis” e contém apenas seu texto introdutório, terminando imediatamente antes do marcador da subseção “2.1 Data sets”.",
+    "texto": "# **2 Data Analysis** \n\nBefore embarking on the road to building models of visual text, it is useful to obtain a better understanding of what visual text is like, and how it compares to the more standard corpora that we are used to working with. We describe the two large data sets that we use (one visual, one non-visual), then describe the quantitative differences between them, and finally discuss our annotation effort for labeling visual text. \n\n## **2.1 Data sets** \n\nWe use the SBU Captioned Photo Dataset (Ordonez et al., 2011) as our primary source of image/caption data. This dataset contains 1 million images with user associated captions, collected _in the wild_ by intelligent filtering of a huge number of Flickr photos. Past work has made use of this dataset to retrieve whole captions for association with a query image (Ordonez et al., 2011). Their method first used global image descriptors to retrieve an initial matched set, and then applied more local estimates of content to re-rank this (relatively small) set (Ordonez et al., 2011). This means that content based matching was relatively constrained by the bottleneck of global descriptors, and local content (e.g., objects) had relatively small effect on accuracy. \n\n"
+  },
+  {
+    "offset_inicio": "## **2.2 Formalizing** **_visual text_** \n\nWe begin our analysis by revisiting",
+    "offset_fim": "r in the background does not mean that “France” is visual (but again, may be inferred); etc. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "2.2 Formalizing visual text",
+    "motivo": "O bloco começa no marcador da subseção 2.2, na página 2, e reúne todo o texto de formalização até o fim do parágrafo na página 3, imediatamente antes do marcador da seção 2.3.",
+    "texto": "## **2.2 Formalizing** **_visual text_** \n\nWe begin our analysis by revisiting the definition of visual text from the introduction, and justifying this particular definition. In order to arrive at a sufficiently specific definition of “visual text,” we focused on the applications of visual text that we care about. As discussed in the introduction, these are: training object detectors, building image search engines and automatically generating captions for images. Our definition is based on access to image/text pairs, but later we discuss how to talk about it purely based on text. To make things concrete, consider an image/text pair like that in the top of Figure 1. And then consider a phrase in the text, like “dream car.” The question is: is “dream car” visual or not? \n\nOne of the challenges in arriving at such a definition is that the description of an image in Flickr is almost always written by the photographer of that image. This means the descriptions often contain information that is _not_ actually pictured in the image, or contain references that are only relevant to the photographer (referring to a person/pet by name). \n\nOne might think that this is an artifact of this particular dataset, but it appears to be generic to all captions, even those written by a viewer (rather than the photographer). Figure 2 shows an image from the Pascal dataset (Everingham et al., 2010), together with captions written by random people collected via crowd-sourcing (Rashtchian et al., 2010). There is much in this caption that is clearly made-up by the author, presumably to make the caption more interesting (e.g., meta-references like “the camera” or “A photo” as well as “guesses” about the image, such as “garage” and “venison”). \n\nSecond, there is a question of how much inference you are allowed to do when you say that you “see” something. For example, in the top image in Figure 1, the street _is_ pictured, but does that mean that “Hanbury St.” is visual? What if there were a street sign that clearly read “Hanbury St.” in the image? This problem comes up all the time, when people say things like “in London” or “in France” in their captions. If it’s just a portrait of people “in France,” \n\n763\n\n<!-- PÁGINA 3 -->\n1. A distorted photo of **a man** cutting up **a large cut of meat** in a garage. 2. **A man** smiling at the camera while carving up **meat** . 3. **A man** smiling while **he** cuts up **a piece of meat** . 4. **A smiling man** is standing next to **a table** dressing a piece of venison. 5. **The man** is smiling into the camera as **he** cuts **meat** . \n\nFigure 2: An image from the Pascal data with five captions collected via crowd-sourcing. Measurements on the SMALL and LARGE dataset show that approximately 70% of noun phrases are visual (bolded), while the rest are non-visual (underlined). See Section 2.4 for details. \n\nit’s hard to say that this is visual. If you see the Eiffel tower in the background, this is perhaps better (though it could be Las Vegas!), but how does this compare to a photo taken out of an airplane window in which you actually do see France-the-country? \n\nThis problem becomes even _more_ challenging when you consider things _other than nouns._ For instance, when is a _verb_ visual? For instance, the most common non-copula verb in our data is “sitting,” which appears in roughly two usages: (1) “Took this shot, sitting in a bar and enjoying a Portugese beer.” and (2) “Lexy sitting in a basket on top of her cat tree.” The first one is clearly not visual; the second probably is. A more nuanced case is for “playing,” as in: “Girls playing in a boat on the river bank” (probably visual) versus “Tuckered out from playing in Nannie’s yard.” The corresponding image for the latter description shows a sleeping cat. \n\nOur final definition, based on cutting out the potentially visual part of the image, allows us to say that: (1) “venison” is not visual (because you cannot actually tell); (2) “Hanbury St.” and “Lexy” are not visual (you can infer them, in the first case because there is only one street and in the second case because there is only one cat); (3) that seeing the _real_ Eiffel tower in the background does not mean that “France” is visual (but again, may be inferred); etc. "
+  },
+  {
+    "offset_inicio": "# **2.3 Most Pronounced Differences** \n\nTo get an intuitive sense of how Flickr captions",
+    "offset_fim": "ext; and 20% of Flickr modifiers reference size, versus 50% in generic text. \n\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "titulo": "2.3 Most Pronounced Differences",
+    "motivo": "O bloco começa no marcador da subseção 2.3 e reúne seus parágrafos comparativos; termina imediatamente antes do marcador da subseção seguinte, # **2.4 Annotating Visual Text**.",
+    "texto": "# **2.3 Most Pronounced Differences** \n\nTo get an intuitive sense of how Flickr captions (expected to be predominantly visual) and generic text (expected not to be so) differ, we computed some simple statistics on sentences from these. In general, the generic text had twice as many main verbs as the Flickr data, four times as many auxiliaries or light verbs, and about 50% more prepositions. \n\nFlickr captions tended to have far more references to _physical_ objects (versus _abstract_ objects) than the generic text, according to the WordNet hierarchy. Approximately 64% of the objects in Flickr were physical (about 22% abstract and 14% unknown). Whereas in the generic text, only 30% of the objects were physical, 53% were abstract (17% unknown). \n\nA third major difference between the corpora is in terms of noun modifiers. In both corpora, nouns tend not to have any modifiers, but modifiers are still more prevalent in Flickr than in generic text. In particular, 60% of nouns in Flickr have zero modifiers, but 70% of nouns in generic text have zero modifiers. In Flickr, 30% of nouns have exactly one modifier, as compared to only 22% for generic text. \n\nThe breakdown of what those modifiers look like is even more pronounced, even when restricted just to physical objects (modifier types are obtained through the bootstrapping process discussed in Section 3.1). Almost 50% of nominal modifiers in the Flickr data are color modifiers, whereas color accounts for less than 5% of nominal modifiers in generic text. In Flickr, 10% of modifiers talk about beauty, in comparison to less than 5% in generic text. On the other hand, less than 3% of modifiers in Flickr reference ethnicity, as compared to almost 20% in generic text; and 20% of Flickr modifiers reference size, versus 50% in generic text. \n\n"
+  },
+  {
+    "offset_inicio": "# **2.4 Annotating Visual Text** \n\nIn order to obtain ground truth data, we rely on crowdsourcing (via Amazon’s Mechanical Turk). Each _instance_ is an image, a paired caption, and a highlighted noun phrase in that caption.",
+    "offset_fim": "the image is very important (recall that always guessing “visual” leads to an accuracy of 70%).",
+    "pagina_inicio": 3,
+    "pagina_fim": 4,
+    "titulo": "2.4 Annotating Visual Text",
+    "motivo": "O bloco inicia no marcador da subseção 2.4, na página 3, e reúne a descrição da anotação e seus resultados até imediatamente antes do próximo marcador estrutural, “# **3 Visual Features from Raw Text**”, na página 4.",
+    "texto": "# **2.4 Annotating Visual Text** \n\nIn order to obtain ground truth data, we rely on crowdsourcing (via Amazon’s Mechanical Turk). Each _instance_ is an image, a paired caption, and a highlighted noun phrase in that caption. The annotation for this instance is a label of “visual,” “nonvisual” or “error,” where the error category is re- \n\n764\n\n<!-- PÁGINA 4 -->\nserved for cases where the noun phrase segmentation was erroneous. Each worker is given five instances to label and paid one cent per annotation.<sup>2</sup> \n\nFor a small amount of data (803 images containing 2339 instances), we obtained annotations from three separate workers per instance to obtain higher quality data. For a large amount of data (48k images), we obtained annotations from only a single worker. Subsequently, we will refer to these two data sets as the SMALL and LARGE data sets. In both data sets, approximately 70% of the noun phrases were visual, 28% were non-visual and 2% were erroneous. For simplicity, we group erroneous and non-visual for all learning and evaluation. In the SMALL data set, the rate of disagreement between annotators was relatively low. In 74% of the annotations, there was _no_ disagreement at all. We reconciled the annotations using the quality management technique of Ipeirotis et al. (2010); only 14% of the annotations need to be changed in order to obtain a gold standard. \n\nOne immediate question raised in this process is whether one needs to actually see the image to perform the annotation. In particular, if we expect an NLP system to be able to classify noun phrases as visual or non-visual, we need to know whether people can do this task _sans_ image. We therefore performed the _same_ annotation on the SMALL data set, but where the workers were _not_ shown the image. Their task was to _imagine_ an image for this caption and then annotate the noun phrase based on whether they thought it would be pictured or not. We obtained three annotations as before and reconciled them (Ipeirotis et al., 2010). The accuracy of this reconciled version against the gold standard (produced by people who _did_ see the image) was 91%. This suggests that while people are able to do this task with some reliability, seeing the image is very important (recall that always guessing “visual” leads to an accuracy of 70%)."
+  },
+  {
+    "offset_inicio": "# **3 Visual Features from Raw Text** \n\nOur first goal is to attempt to obtain relatively large knowledge bases of terms",
+    "offset_fim": "It is also potentially useful for the purpose of building new object detection systems or even attribute detection systems, to get a vocabulary of target detections.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "titulo": "3 Visual Features from Raw Text",
+    "motivo": "O bloco inicia na seção principal 3 e contém seus parágrafos introdutórios; termina imediatamente antes do marcador da subseção \"## **3.1 Bootstrapping for Visual Text**\".",
+    "texto": "# **3 Visual Features from Raw Text** \n\nOur first goal is to attempt to obtain relatively large knowledge bases of terms that are (predominantly) visual. This is potentially useful in its own right \n\n> 2Data available at http://hal3.name/dvt/, with direct links back to the SBU Captioned Photo Dataset. \n\n(for instance, in the context of search, to determine which query terms are likely to be pictured). We have explored two techniques for performing this task, the first based on bootstrapping (Section 3.1) and the second based on label propagation (Section 3.2). We then use these lists to generate features for a classifier that predicts whether a noun phrase— in context—is visual or not (Section 4). \n\nIn addition, we consider the task of separating adjectives into different visual categories (Section 3.3). We have already used the results of this in Section 2.3 to understand the differences between our two corpora. It is also potentially useful for the purpose of building new object detection systems or even attribute detection systems, to get a vocabulary of target detections."
+  },
+  {
+    "offset_inicio": "## **3.1 Bootstrapping for Visual Text** \n\nIn this section, we learn visual and non-visual",
+    "offset_fim": "non-visual nouns and adjectives cover text data, since **Large-Data** is a non-visual data-set.",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "titulo": "3.1 Bootstrapping for Visual Text",
+    "motivo": "O bloco inicia no marcador da subseção 3.1, na página 4, e reúne todo o texto, tabelas e parágrafos continuados até imediatamente antes do marcador da subseção seguinte, “3.2 Label Propagation for Visual Text”, na página 5.",
+    "texto": "## **3.1 Bootstrapping for Visual Text** \n\nIn this section, we learn visual and non-visual nouns and adjectives automatically based on bootstrapping techniques. First, we construct a graph between adjectives by computing distributional similarity (Turney and Pantel, 2010) between them. For computing distributional similarity between adjectives, each target adjective is defined as a vector of nouns which are modified by the target adjective. To be exact, we use only those adjectives as modifiers which appear adjacent to a noun (that is, in a JJ NN construction). For example, in “small red apple,” we consider only _red_ as a modifier for noun. We use Pointwise Mutual Information (PMI) (Church and Hanks, 1989) to weight the contexts, and select the top 1000 PMI contexts for each adjective.<sup>3</sup> \n\nNext, we apply cosine similarity to find the top 10 distributionally similar adjectives with respect to each target adjective based on our large generic corpus ( **Large-Data** from Section 2.1). This creates a graph with adjectives as nodes and cosine similarity as weight on the edges. Analogously, we construct a graph with nouns as nodes (here, adjectives are used as contexts for nouns). \n\nWe then apply bootstrapping (Kozareva et al., 2008) on the noun and adjective graphs by selecting 10 seeds for visual and non-visual nouns and adjectives (see Table 1). We use in-degree (sum of weights of incoming edges) to compute the score for \n\n> 3We are interested in _descriptive_ adjectives, which “typically ascribe to a noun a value of an attribute” (Miller, 1998). \n\n765\n\n<!-- PÁGINA 5 -->\n|**Visual**<br>**nouns**<br>**seeds**|car house tree horse animal<br>man table bottle<br>woman computer|\n|---|---|\n|**Non-visual**<br>**nouns**<br>**seeds**|idea bravery deceit trust<br>dedication anger humour luck<br>inflation honesty|\n|**Visual**<br>**adjectives**<br>**seeds**|brown green wooden striped<br>orange rectangular furry<br>shinyrustyfeathered|\n|**Non-visual**<br>**adjectives**<br>**seeds**|public original whole righteous<br>political personal intrinsic<br>individual initial total|\n\n\n\nTable 1: Example seeds for bootstrapping. \n\neach node that has connections with known (seeds) or automatically labeled nodes, previously exploited to learn hyponymy relations from the web (Kozareva et al., 2008). Intuitively, in-degree captures the popularity of new instances among instances that have already been identified as good instances. We learn visual and non-visual words together (known as the mutual exclusion principle in bootstrapping (Thelen and Riloff, 2002; McIntosh and Curran, 2008)): each word (node) is assigned to only one class. Moreover, after each iteration, we harmonically decrease the weight of the in-degree associated with instances learned in later iterations. We added 25 new instances at each iteration and ran 500 iterations of bootstrapping, yielding 11955 visual and 11978 non-visual nouns, and 7746 visual and 7464 nonvisual adjectives. \n\nBased on manual inspection, the learned visual and non-visual lists look great. In the future, we would like to do a Mechanical Turk evaluation to directly evaluate the visual and non-visual nouns and adjectives. For now, we show the coverage of these classes in the Flickr data-set: Visual nouns: 53 _._ 71%; Non-visual nouns: 14 _._ 25%; Visual adjectives: 51 _._ 79%; Non-visual adjectives: 14 _._ 40%. Overall, we find more visual nouns and adjectives are covered in the Flickr data-set, which makes sense, since the Flickr data-set is largely visual. \n\nSecond, we show the coverage of these classes on the large text corpora ( **Large-Data** from Section 2.1): Visual nouns: 26 _._ 05%; Non-visual nouns: 41 _._ 16%; Visual adjectives: 20 _._ 02%; Non-visual ad- \n\n**Visual:** attend, buy, clean, comb, cook, drink, eat, fry, pack, paint, photograph, smash, spill, steal, taste, tie, touch, watch, wear, wipe **Non-visual:** achieve, admire, admit, advocate, alleviate, appreciate, arrange, criticize, eradicate, induce, investigate, minimize, overcome, promote, protest, relieve, resolve, review, support, tolerate \n\nTable 2: Predicates that are visual and non-visual. \n\n**Visual:** water, cotton, food, pumpkin, chicken, ring, hair, mouth, meeting, kind, filter, game, oil, show, tear, online, face, class, car **Non-visual:** problem, poverty, pain, issue, use, symptom, goal, effect, thought, government, share, stress, work, risk, impact, concern, obstacle, change, disease, dispute \n\nTable 3: Learned visual/non-visual nouns. \n\njectives: 40 _._ 00%. Overall, more non-visual nouns and adjectives cover text data, since **Large-Data** is a non-visual data-set."
+  },
+  {
+    "offset_inicio": "# **3.2 Label Propagation for Visual Text** \n\nTo propagate visual labels, we construct",
+    "offset_fim": "link them only to 25 neighbors to attempt to improve recall. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "titulo": "3.2 Label Propagation for Visual Text",
+    "motivo": "O bloco inicia no marcador da seção 3.2, na página 5, e reúne seu texto contínuo através da página 6, incluindo a tabela; termina imediatamente antes do marcador da subseção 3.3.",
+    "texto": "# **3.2 Label Propagation for Visual Text** \n\nTo propagate visual labels, we construct a bipartite graph between visually descriptive predicates and their arguments. Let _VP_ be the set of nodes that corresponds to predicates, and let _VA_ be the set of nodes that corresponds to arguments. To learn the visually descriptive words, we set _VP_ to 20 visually descriptive predicates shown in the top of Table 2, and _VA_ to all nouns that appear in the object argument position with respect to the seed predicates. We approximate this by taking nouns on the right hand side of the predicates within a window of 4 words using the Web 1T Google N-gram data (Brants and Franz., 2006). For edge weights, we use conditional probabilities between predicates and arguments so that _w_ ( _p → a_ ) := _pr_ ( _a|p_ ) and _w_ ( _a → p_ ) := _pr_ ( _p|a_ ). \n\nIn order to collectively induce the visually descriptive words from this graph, we apply the graph propagation algorithm of Velikovich et al. (2010), a variant of label propagation algorithms (Zhu and Ghahramani, 2002) that has been shown to be effective for inducing a web-scale polarity lexicon based on word co-occurrence statistics. This algo- \n\n766\n\n<!-- PÁGINA 6 -->\n|**Color**|purple|blue|maroon|beige|green|\n|---|---|---|---|---|---|\n|**Material**|plastic|cotton|wooden|metallic|silver|\n|**Shape**|circular|square|round|rectangular|triangular|\n|**Size**|small|big|tiny|tall|huge|\n|**Surface**|coarse|smooth|furry|fluffy|rough|\n|**Direction**|sideways|north|upward|left|down|\n|**Pattern**|striped|dotted|checked|plaid|quilted|\n|**Quality**|shiny|rusty|dirty|burned|glittery|\n|**Beauty**|beautiful|cute|pretty|gorgeous|lovely|\n|**Age**|young|mature|immature|older|senior|\n|**Ethnicity**|french|asian|american|greek|hispanic|\n\n\n\nTable 4: Attribute Classes with their seed values \n\nrithm iteratively updates the semantic distance between each pair of nodes in the graph, then produces a score for each node that represents how visually descriptive each word is. To learn the words that are _not_ visually descriptive, we use the predicates shown in the bottom of Table 2 as _VP_ instead. Table 3 shows the top ranked nouns that are visually descriptive and _not_ visually descriptive. \n\n## **3.3 Bootstrapping Visual Adjectives** \n\nOur goal in this section is to automatically generate comprehensive lists of adjectives for different attributes, such as color, material, shape, etc. To our knowledge, this is the first significant effort of this type for adjectives: most bootstrapping techniques focus exclusively on nouns, although Almuhareb and Poesio (2005) populated lists of attributes using web-based similarity measures. We found that in some ways adjectives are easier than nouns, but require slightly different representations. \n\nOne might conjecture that listing attributes by hand is difficult. Colors names are well known to be quite varied. For instance, our bootstrapping approach is able to discover colors like “grayish,” “chestnut,” “emerald,” and “rufous” that would be hard to list manually (the last is a reddish-brown color, somewhat like rust). Although perhaps not easy to create, the Wikipedia list of colors (http: //en.wikipedia.org/wiki/List of ~~c~~ olors) includes all of these except “grayish”. On the other hand, it includes color terms that might be difficult to make _use of_ as colors, such as “bisque,” “bone” and “bubbles” (the last is a very light cyan), which might over-generate hits. For shape, we find “oblong,” “hemispherical,” “quadrangular” and, our favorite, “convex”. \n\nWe use essentially the same bootstrapping process as described earlier in Section 3.1, but on a slightly \n\ndifferent data representation. The only difference is that instead of linking adjectives to their 10 most similar neighbors, we link them only to 25 neighbors to attempt to improve recall. \n\n"
+  },
+  {
+    "offset_inicio": "# **4 Recognizing Visual Text** \n\nWe train a logistic regression (aka maximum entropy)",
+    "offset_fim": "The confidence range on these data is approximately _±_ 1 _._ 9, meaning that this boost is likely not significant.",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "titulo": "4 Recognizing Visual Text",
+    "motivo": "O bloco começa no marcador da seção principal 4 e reúne seu texto, figuras e legenda até imediatamente antes do marcador da subseção # **4.1 Using Image Features**.",
+    "texto": "# **4 Recognizing Visual Text** \n\nWe train a logistic regression (aka maximum entropy) model (Daum´e III, 2004) to classify text as visual or non-visual. The features we use fall into \n\n767\n\n<!-- PÁGINA 7 -->\nthe following categories: WORDS (the actual lexical items and stems); BIGRAMS (lexical bigrams); SPELL (lexical features such as capitalization pattern, and word prefixes and suffixes); WORDNET (set of hypernyms according to WordNet); and BOOTSTRAP (features derived from bootstrapping or label propagation). \n\nFor each of these feature categories, we compute features _inside_ the phrase being categorized (e.g., “the car”), _before_ the phrase (two words to the left) and _after_ the phrase (two words to the right). We additionally add a feature that computes the number of words in a phrase, and a feature that computes the position of the phrase in the caption (first fifth through last fifth of the description). This leads to seventeen feature templates that are computed for each example. In the SMALL data set, there are 25 _k_ features (10 _k_ non-singletons); in the LARGE data set, there are 191 _k_ features (79 _k_ non-singletons). \n\nTo train models on the SMALL data set, we use 1500 instances as training, 200 as development and the remaining 639 as test data. To train models on the LARGE data set, we use 45000 instances as training and the remaining 4401 as development. We always test on the 639 instances from the SMALL data, since it has been redundantly annotated. The development data is used only to choose the regularization parameter for a Gaussian prior on the logistic regression model; this parameter is chosen in the range _{_ 0 _._ 01 _,_ 0 _._ 05 _,_ 0 _._ 1 _,_ 0 _._ 5 _,_ 1 _,_ 2 _,_ 4 _,_ 8 _,_ 16 _,_ 32 _,_ 64 _}_ . \n\nBecause of the imbalanced data problem, evaluating according to accuracy is not appropriate for this task. Even evaluating by precision/recall is not appropriate, because a baseline system that guesses that everything is visual obtains 100% recall and 70% precision. Due to these issues, we instead evaluate according to the area under the ROC curve (AUC). To check statistical significance, we compute standard deviations using bootstrap resampling, and consider there to be a significant difference if a result falls outside of two standard deviations of the baseline (95% confidence). \n\nFigure 3 shows learning curves for the two data sets. The SMALL data achieves an AUC score of 71 _._ 3 in the full data setting (1700 examples); the LARGE data needs 12 _k_ examples to achieve similar accuracy due to noise. However, with 49 _k_ examples, we are able to achieve a AUC score of 75 _._ 3 using the \n\n\n\n<!-- Start of picture text -->\n0.8<br>0.75<br>0.7<br>0.65<br>0.6<br>0.55<br>1 2 3 4 5<br>10 10 10 10 10<br><!-- End of picture text -->\n\nFigure 3: Learning curves for training on SMALL data (blue solid) and LARGE data (black dashed). X-axis (in log-scale) is number of training examples; Y-axis is AUC. \n\nlarge data set. By pooling the data (and weighting the small data), this boosts results to 76 _._ 1. The confidence range on these data is approximately _±_ 1 _._ 9, meaning that this boost is likely not significant."
+  },
+  {
+    "offset_inicio": "# **4.1 Using Image Features** \n\nAs discussed previously, humans are only able to achieve 90% accuracy",
+    "offset_fim": "a substantial amount of text data, the noisy image features become less useful. \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "titulo": "4.1 Using Image Features",
+    "motivo": "O bloco inicia no marcador da subseção 4.1, na página 7, e reúne todo o texto contínuo da análise de recursos de imagem até imediatamente antes do marcador da subseção seguinte, “# **4.2 Feature Ablations**”, na página 8.",
+    "texto": "# **4.1 Using Image Features** \n\nAs discussed previously, humans are only able to achieve 90% accuracy on the visual/non-visual task when they are not allowed to view the image. This potentially upper-bounds the performance of a learned system that can only look at text. In order to attempt to overcome this, we augment our basic system with a number of features computed from the corresponding images. These features are derived from the output of state of the art vision algorithms to detect 121 different objects, stuff and scenes. \n\nAs our object detectors, we use standard state of the art deformable part-based models (Felzenszwalb et al., 2010) for 89 common object categories, including: the original 20 objects from Pascal, 49 objects from Object Bank (Li-Jia Li and FeiFei, 2010), and 20 from Im2Text (Ordonez et al., 2011). We additionally use coarse image parsing to estimate background elements in each database image. Six possible background (stuff) categories are considered: sky, water, grass, road, tree, and building. For this we use detectors (Ordonez et al., 2011) which compute color, texton, HoG (Dalal and Triggs, 2005) and Geometric Context (Hoiem et al., 2005) as input features to a sliding window based SVM classifier. These detectors are run on all database images, creating a large pool of background elements for retrieval. Finally, we ob- \n\n768\n\n<!-- PÁGINA 8 -->\n<!-- Start of picture text -->\nbottle!<br>person<br>dog<br>ffire<br><!-- End of picture text -->\n\nFigure 4: (Left) Highest confidence flower detected in an image; (Right) All detections in the same image. \n\ntain scene descriptors for each image by computing scene classification scores for 26 common scene categories, using the features, methods and training data from the SUN dataset (Xiao et al., 2010). \n\nFigure 4 shows an example image on which several detectors have been run. From each image, we extract the following features: which object detectors fired; how many times they fired; the confidence of the most-likely firing; the percentage of the image (in pixels) that the bounding box corresponding to this object occupies; and the percentage of the width (and height) of the image that it occupies. \n\nUnfortunately, object detection is a highly noisy process. The right image in Figure 4 shows all detections for that image, which includes, for instance, a chair detection that spans nearly the entire image, and a person detection in the bottom-right corner. For an average image, if a single detector (e.g., the flower detector) fires once, it actually fires 40 times ( _±σ_ = 1 _._ 8). Moreover, of the 120 detectors, on an average image over 22 ( _±σ_ = 5 _._ 6) of them fire at least once (though certainly in an average image only a few objects are actually present). Exacerbating this problem, although the confidence scores for a single detector can be compared, the scores between different detectors are not at all comparable. In order to attenuate this problem, we include duplicate copies of all the above features restricted to the _most confident_ object for each object type. \n\nOn the SMALL data set, this adds 400 new fea- \n\n||CATEGORY|POSITION|AUC|\n|---|---|---|---|\n||Bootstrap|Phrase|65.2|\n|+|Spell|Phrase|68.6|\n|+|Image|-|69.2|\n|+|Words|Phrase|70.0|\n|+|Length|-|69.8|\n|+|Wordnet|Phrase|70.4|\n|+|Wordnet|Before|_70.6_|\n|+|Spell|Before|_71.8_|\n|+|Words|Before|_72.2_|\n|+|Bootstrap|Before|**72.4**|\n|+|Spell|After|_71.5_|\n\n\n\nTable 5: Results of feature ablation on SMALL data set. Best result is in bold; results that are not statistically significantly worse are italicized. \n\ntures (300 of which are non-singletons<sup>4</sup> ); on the LARGE data set, this adds 500 new features (480 non-singletons). Overall, the AUC scores trained on the small data set increase from 71 _._ 3 to 73 _._ 9 (a significant improvement). On the large data set, the increase is only from 76 _._ 1 to 76 _._ 8, which is not likely to be significant. In general, the improvement obtained by adding image features is most pronounced in the setting of small training data, perhaps because these features are more generic than the highly lexicalized features used in the textual model. But once there is a substantial amount of text data, the noisy image features become less useful. \n\n"
+  },
+  {
+    "offset_inicio": "# **4.2 Feature Ablations** \n\nIn order to ascertain the degree to which each feature template is useful,",
+    "offset_fim": "somewhat redundant: if you had to choose one, you should choose label-propagation.",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "titulo": "4.2 Feature Ablations",
+    "motivo": "O bloco inicia na subseção numerada 4.2 e reúne todo o texto da análise de ablação, incluindo a continuação na página 9. Termina imediatamente antes do próximo marcador estrutural, “# **5 Discussion**”.",
+    "texto": "# **4.2 Feature Ablations** \n\nIn order to ascertain the degree to which each feature template is useful, we perform an ablation study. We first perform feature selection at the template level using the information gain criteria, and then train models using the corresponding subset of features. \n\nThe results on the SMALL data set are shown in Table 5. Here, the bootstrapping features computed on words within the phrase to be classified were judged as the most useful, followed by spelling features. Image features were judged third most useful. In general, features in the phrase were most useful (not surprisingly), and then features before the phrase (presumably to give context, for instance as in “ _out of_ the window”). Features from after the phrase were not useful. \n\n> 4Non-singleton features appear more than once in the data. \n\n769\n\n<!-- PÁGINA 9 -->\n||CATEGORY|POSITION|AUC|\n|---|---|---|---|\n||Words|Phrase|74.7|\n|+|Image|-|74.4|\n|+|Bootstrap|Phrase|74.3|\n|+|Spell|Phrase|75.3|\n|+|Length|-|74.7|\n|+|Words|Before|_76.2_|\n|+|Wordnet|Phrase|_76.1_|\n|+|Spell|After|_76.0_|\n|+|Spell|Before|_76.8_|\n|+|Wordnet|Before|**77.0**|\n|+|Wordnet|After|75.6|\n\n\n\nTable 6: Results of feature ablation on LARGE data set. \n\nCorresponding results on the LARGE data set are shown in Table 6. Note that the order of features selected is different because the training data is different. Here, the most useful features are simply the words in the phrase to be classified, which alone already gives an AUC score of 74 _._ 7, only a few points off from the best performance of 77 _._ 0 once image features, bootstrap features and spelling features are added. As before, these features are rated as very useful for classification performance. \n\nFinally, we consider the effect of using Bootstrapbased features or label-propagation-based features. In all the above experiments, the features used are based on the _union_ of word lists created by these two techniques. We perform three experiments. Beginning with the system that contains _all_ features (SMALL=73.9, LARGE=76.8), we first remove the bootstrap-based features (SMALL _→_ 71.8, LARGE _→_ 75.5) or remove the label-propagationbased features (SMALL _→_ 71.2, LARGE _→_ 74.9) or remove both (SMALL _→_ 70.7, LARGE _→_ 74.2). From these results, we can see that these techniques are useful, but somewhat redundant: if you had to choose one, you should choose label-propagation."
+  },
+  {
+    "offset_inicio": "# **5 Discussion** \n\nAs connections between language and vision become stronger, for",
+    "offset_fim": "resources and state-of-the-art computer vision algorithms to address it with high accuracy. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "5 Discussion",
+    "motivo": "Bloco iniciado pela seção principal \"# **5 Discussion**\" e composto pelo parágrafo de discussão; termina imediatamente antes do marcador da unidade seguinte, \"# **Acknowledgments**\".",
+    "texto": "# **5 Discussion** \n\nAs connections between language and vision become stronger, for instance in the contexts of object detection (Hou and Zhang, 2007; Kim and Torralba, 2009; Sivic et al., 2008; Alexe et al., 2010; Gu et al., 2009), attribute detection (Ferrari and Zisserman, 2007; Farhadi et al., 2009; Kumar et al., 2009; Berg et al., 2010), visual phrases (Farhadi and \n\nSadeghi, 2011), and automatic caption generation (Farhadi et al., 2010; Feng and Lapata, 2010; Ordonez et al., 2011; Kulkarni et al., 2011; Yang et al., 2011; Li et al., 2011; Mitchell et al., 2012), it becomes increasingly important to understand, and to be able to detect, text that _actually_ refers to observed phenomena. Our results suggest that while this is a hard problem, it is possible to leverage large text resources and state-of-the-art computer vision algorithms to address it with high accuracy. "
+  },
+  {
+    "offset_inicio": "# **Acknowledgments** \n\nT.L. Berg and K. Yamaguchi were supported in part by NSF Faculty",
+    "offset_fim": "all authors were partially supported by a 2011 JHU Summer Workshop. ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Acknowledgments",
+    "motivo": "Bloco iniciado pelo título de seção '# **Acknowledgments**' e composto pelo único parágrafo de agradecimentos; termina imediatamente antes do marcador '# **References**'.",
+    "texto": "# **Acknowledgments** \n\nT.L. Berg and K. Yamaguchi were supported in part by NSF Faculty Early Career Development (CAREER) Award #1054133; A.C. Berg and Y. Choi were partially supported by the Stony Brook University Office of the Vice President for Research; H. Daum´e III and A. Goyal were partially supported by NSF Award IIS-1139909; all authors were partially supported by a 2011 JHU Summer Workshop. "
+  },
+  {
+    "offset_inicio": "# **References** ",
+    "offset_fim": "# **References** ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "References",
+    "motivo": "O bloco inicia no título de seção “# **References**” e termina imediatamente antes da primeira entrada bibliográfica, que constitui uma unidade própria.",
+    "texto": "# **References** "
+  },
+  {
+    "offset_inicio": "- B. Alexe, T. Deselaers, and V. Ferrari. 2010. What is an object? In _Computer",
+    "offset_fim": "Vision and Pattern Recognition (CVPR), 2010 IEEE Conference on_ , pages 73 –80.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "B. Alexe, T. Deselaers, and V. Ferrari. 2010.",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de referência \"- B. Alexe...\" e termina antes da próxima entrada, iniciada por \"- A. Almuhareb...\".",
+    "texto": "- B. Alexe, T. Deselaers, and V. Ferrari. 2010. What is an object? In _Computer Vision and Pattern Recognition (CVPR), 2010 IEEE Conference on_ , pages 73 –80."
+  },
+  {
+    "offset_inicio": "- A. Almuhareb and M. Poesio. 2005. Finding concept attributes in the web. In _Corpus",
+    "offset_fim": "Finding concept attributes in the web. In _Corpus Linguistics Conference_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "A. Almuhareb and M. Poesio (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de referência \"- A. Almuhareb...\" e termina antes da entrada seguinte, iniciada por \"- Tamara L. Berg...\".",
+    "texto": "- A. Almuhareb and M. Poesio. 2005. Finding concept attributes in the web. In _Corpus Linguistics Conference_ ."
+  },
+  {
+    "offset_inicio": "- Tamara L. Berg, Alexander C. Berg, and Jonathan Shih. 2010. Automatic attribute discovery and characterization from noisy web data.",
+    "offset_fim": "Automatic attribute discovery and characterization from noisy web data. In _European Conference on Computer Vision (ECCV)_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Berg, Berg e Shih (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador de lista da referência e termina imediatamente antes da próxima entrada, iniciada por “- Thorsten Brants and Alex Franz.”",
+    "texto": "- Tamara L. Berg, Alexander C. Berg, and Jonathan Shih. 2010. Automatic attribute discovery and characterization from noisy web data. In _European Conference on Computer Vision (ECCV)_ ."
+  },
+  {
+    "offset_inicio": "- Thorsten Brants and Alex Franz. 2006. Web 1t 5-gram version 1. In _Linguistic",
+    "offset_fim": "Thorsten Brants and Alex Franz. 2006. Web 1t 5-gram version 1. In _Linguistic Data Consortium, ISBN: 1- 58563-397-6, Philadelphia._",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Thorsten Brants and Alex Franz (2006)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da referência seguinte, iniciada por \"- K. Church and P. Hanks.\"",
+    "texto": "- Thorsten Brants and Alex Franz. 2006. Web 1t 5-gram version 1. In _Linguistic Data Consortium, ISBN: 1- 58563-397-6, Philadelphia._"
+  },
+  {
+    "offset_inicio": "- K. Church and P. Hanks. 1989. Word Association Norms, Mutual Information and Lexicography.",
+    "offset_fim": "In _Proceedings of ACL_ , pages 76–83, Vancouver, Canada, June.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "K. Church e P. Hanks (1989)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho; inicia no marcador \"- K. Church\" e termina antes da entrada seguinte, iniciada por \"- N. Dalal\".",
+    "texto": "- K. Church and P. Hanks. 1989. Word Association Norms, Mutual Information and Lexicography. In _Proceedings of ACL_ , pages 76–83, Vancouver, Canada, June."
+  },
+  {
+    "offset_inicio": "- N. Dalal and B. Triggs. 2005. Histograms of oriented gradients for human detection. In _CVPR_ .",
+    "offset_fim": "- N. Dalal and B. Triggs. 2005. Histograms of oriented gradients for human detection. In _CVPR_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Dalal e Triggs (2005)",
+    "motivo": "É a primeira entrada bibliográfica presente no trecho. Inicia no marcador de lista da referência de Dalal e Triggs e termina imediatamente antes da próxima entrada, iniciada por “- Hal Daum´e III and Daniel Marcu.”",
+    "texto": "- N. Dalal and B. Triggs. 2005. Histograms of oriented gradients for human detection. In _CVPR_ ."
+  },
+  {
+    "offset_inicio": "- Hal Daum´e III and Daniel Marcu. 2005. Learning as search optimization: Approximate large margin methods for structured prediction.",
+    "offset_fim": "rge margin methods for structured prediction. In _Proceedings of the International Conference on Machine Learning (ICML)_ .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Daumé III e Marcu (2005)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada pelo marcador \"- Hal Daum´e III and Daniel Marcu...\" e encerrada imediatamente antes da entrada bibliográfica seguinte, também iniciada por \"- Hal Daum´e III. 2004...\".",
+    "texto": "- Hal Daum´e III and Daniel Marcu. 2005. Learning as search optimization: Approximate large margin methods for structured prediction. In _Proceedings of the International Conference on Machine Learning (ICML)_ ."
+  },
+  {
+    "offset_inicio": "- Hal Daum´e III. 2004. Notes on CG and LM-BFGS optimization of logistic regression.",
+    "offset_fim": "on available at http://pub.hal3.name/#daume04cg-bfgs, implementation available at http://hal3.name/megam/, August.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Referência: Hal Daumé III (2004)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item \"- Hal Daum´e III...\" e termina antes da numeração de página e da referência seguinte.",
+    "texto": "- Hal Daum´e III. 2004. Notes on CG and LM-BFGS optimization of logistic regression. Paper available at http://pub.hal3.name/#daume04cg-bfgs, implementation available at http://hal3.name/megam/, August."
+  },
+  {
+    "offset_inicio": "- M. Everingham, L. Van Gool, C. K. I. Williams, J. Winn, and A. Zisserman. 2010.",
+    "offset_fim": "http://www.pascal-network.org/challenges/VOC/ voc2010/workshop/index.html.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência bibliográfica — Everingham et al. (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador '-' da referência de M. Everingham et al. e termina antes da próxima entrada, iniciada por '- Ali Farhadi and Amin Sadeghi.'",
+    "texto": "- M. Everingham, L. Van Gool, C. K. I. Williams, J. Winn, and A. Zisserman. 2010. The PASCAL Visual Object Classes Challenge 2010 (VOC2010) Results. http://www.pascal-network.org/challenges/VOC/ voc2010/workshop/index.html."
+  },
+  {
+    "offset_inicio": "- Ali Farhadi and Amin Sadeghi. 2011. Recognition using visual phrases. In _Computer",
+    "offset_fim": "Recognition using visual phrases. In _Computer Vision and Pattern Recognition (CVPR)_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Ali Farhadi and Amin Sadeghi (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho. Inicia no marcador de item \"- Ali Farhadi...\" e termina imediatamente antes da referência seguinte, iniciada por \"- A. Farhadi...\".",
+    "texto": "- Ali Farhadi and Amin Sadeghi. 2011. Recognition using visual phrases. In _Computer Vision and Pattern Recognition (CVPR)_ ."
+  },
+  {
+    "offset_inicio": "- A. Farhadi, I. Endres, D. Hoiem, and D.A. Forsyth. 2009. Describing objects by",
+    "offset_fim": "Describing objects by their attributes. In _Computer Vision and Pattern Recognition (CVPR)_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Farhadi et al. (2009) — Describing objects by their attributes",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- A. Farhadi...\" e termina antes da entrada bibliográfica seguinte, iniciada por \"- A. Farhadi, M. Hejrati...\".",
+    "texto": "- A. Farhadi, I. Endres, D. Hoiem, and D.A. Forsyth. 2009. Describing objects by their attributes. In _Computer Vision and Pattern Recognition (CVPR)_ ."
+  },
+  {
+    "offset_inicio": "- A. Farhadi, M. Hejrati, M.A. Sadeghi, P. Young, C. Rashtchian1, J. Hockenmaier, and D.A. Forsyth. 2010.",
+    "offset_fim": "Every picture tells a story: Generating sentences from images. In _ECCV_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Farhadi et al. (2010)",
+    "motivo": "A primeira unidade completa visível é uma entrada bibliográfica individual, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da referência seguinte.",
+    "texto": "- A. Farhadi, M. Hejrati, M.A. Sadeghi, P. Young, C. Rashtchian1, J. Hockenmaier, and D.A. Forsyth. 2010. Every picture tells a story: Generating sentences from images. In _ECCV_ ."
+  },
+  {
+    "offset_inicio": "- P. F. Felzenszwalb, R. B. Girshick, and D. McAllester. 2010. Discriminatively",
+    "offset_fim": "trained deformable part models, release 4. http://people.cs.uchicago.edu/<sup>_∼_</sup> pff/ latent-release4/.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "P. F. Felzenszwalb et al. (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Inicia no marcador \"- P. F. Felzenszwalb...\" e termina imediatamente antes da entrada seguinte, iniciada por \"- Y. Feng...\".",
+    "texto": "- P. F. Felzenszwalb, R. B. Girshick, and D. McAllester. 2010. Discriminatively trained deformable part models, release 4. http://people.cs.uchicago.edu/<sup>_∼_</sup> pff/ latent-release4/."
+  },
+  {
+    "offset_inicio": "- Y. Feng and M. Lapata. 2010. How many words is a picture worth? automatic caption",
+    "offset_fim": "a picture worth? automatic caption generation for news images. In _ACL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Y. Feng and M. Lapata (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Y. Feng...\" e termina antes da próxima referência, iniciada por \"- V. Ferrari...\".",
+    "texto": "- Y. Feng and M. Lapata. 2010. How many words is a picture worth? automatic caption generation for news images. In _ACL_ ."
+  },
+  {
+    "offset_inicio": "- V. Ferrari and A. Zisserman. 2007. Learning visual attributes. In _Advances in Neural",
+    "offset_fim": "visual attributes. In _Advances in Neural Information Processing Systems (NIPS)_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "V. Ferrari and A. Zisserman (2007) — Learning visual attributes",
+    "motivo": "É a primeira entrada bibliográfica presente no trecho. Inicia no marcador de lista da referência de Ferrari e Zisserman e termina imediatamente antes da entrada seguinte, iniciada por “- D. Graff.”",
+    "texto": "- V. Ferrari and A. Zisserman. 2007. Learning visual attributes. In _Advances in Neural Information Processing Systems (NIPS)_ ."
+  },
+  {
+    "offset_inicio": "- D. Graff. 2003. English Gigaword. Linguistic Data Consortium, Philadelphia, PA, January.",
+    "offset_fim": "- D. Graff. 2003. English Gigaword. Linguistic Data Consortium, Philadelphia, PA, January.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "D. Graff. 2003. English Gigaword.",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Inicia no marcador \"- D. Graff\" e termina após \"January.\", imediatamente antes da entrada seguinte, iniciada por \"- Chunhui Gu\".",
+    "texto": "- D. Graff. 2003. English Gigaword. Linguistic Data Consortium, Philadelphia, PA, January."
+  },
+  {
+    "offset_inicio": "- Chunhui Gu, J.J. Lim, P. Arbelaez, and J. Malik. 2009. Recognition using regions. In",
+    "offset_fim": "Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on_ , pages 1030 –1037.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Chunhui Gu et al. (2009) — Recognition using regions",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Chunhui Gu...\" e termina imediatamente antes da entrada bibliográfica seguinte, iniciada por \"- Derek Hoiem...\".",
+    "texto": "- Chunhui Gu, J.J. Lim, P. Arbelaez, and J. Malik. 2009. Recognition using regions. In _Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on_ , pages 1030 –1037."
+  },
+  {
+    "offset_inicio": "- Derek Hoiem, Alexei A. Efros, and Martial Hebert. 2005. Geometric context from a single image. In _ICCV_ .",
+    "offset_fim": "Efros, and Martial Hebert. 2005. Geometric context from a single image. In _ICCV_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Hoiem, Efros e Hebert (2005) — Geometric context from a single image",
+    "motivo": "É a primeira entrada bibliográfica completa visível no trecho. Inicia no marcador de item \"- Derek Hoiem...\" e termina imediatamente antes da próxima referência, iniciada por \"- Xiaodi Hou...\".",
+    "texto": "- Derek Hoiem, Alexei A. Efros, and Martial Hebert. 2005. Geometric context from a single image. In _ICCV_ ."
+  },
+  {
+    "offset_inicio": "- Xiaodi Hou and Liqing Zhang. 2007. Saliency detection: A spectral residual approach.",
+    "offset_fim": "Computer Vision and Pattern Recognition, 2007. CVPR ’07. IEEE Conference on_ , pages 1 –8. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Xiaodi Hou and Liqing Zhang (2007)",
+    "motivo": "É a primeira entrada bibliográfica presente no trecho. Inicia em “- Xiaodi Hou...” e termina antes da entrada bibliográfica seguinte, iniciada por “- P. Ipeirotis...”.",
+    "texto": "- Xiaodi Hou and Liqing Zhang. 2007. Saliency detection: A spectral residual approach. In _Computer Vision and Pattern Recognition, 2007. CVPR ’07. IEEE Conference on_ , pages 1 –8. "
+  },
+  {
+    "offset_inicio": "- P. Ipeirotis, F. Provost, and J. Wang. 2010. Quality management on amazon mechanical",
+    "offset_fim": "In _Proceedings of the Second Human Computation Workshop (KDDHCOMP)_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: P. Ipeirotis, F. Provost e J. Wang (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada pelo marcador de lista “- P.” e encerrada imediatamente antes da referência seguinte, iniciada por “- Gunhee Kim”.",
+    "texto": "- P. Ipeirotis, F. Provost, and J. Wang. 2010. Quality management on amazon mechanical turk. In _Proceedings of the Second Human Computation Workshop (KDDHCOMP)_ ."
+  },
+  {
+    "offset_inicio": "- Gunhee Kim and Antonio Torralba. 2009. Unsupervised Detection of Regions of Interest",
+    "offset_fim": "Regions of Interest using Iterative Link Analysis. In _Annual Conference on Neural Information Processing Systems (NIPS 2009)_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Gunhee Kim and Antonio Torralba (2009)",
+    "motivo": "A primeira unidade completa visível é uma entrada bibliográfica individual, iniciada por “- Gunhee Kim...” e encerrada imediatamente antes da entrada seguinte, “- Zornitsa Kozareva...”.",
+    "texto": "- Gunhee Kim and Antonio Torralba. 2009. Unsupervised Detection of Regions of Interest using Iterative Link Analysis. In _Annual Conference on Neural Information Processing Systems (NIPS 2009)_ . "
+  },
+  {
+    "offset_inicio": "- Zornitsa Kozareva, Ellen Riloff, and Eduard Hovy. 2008. Semantic class learning from the web with hyponym pattern linkage graphs. In _Proceedings of ACL-08: HLT_ , pages 1048–1056, Columbus, Ohio, June. Association for Computational Linguistics. ",
+    "offset_fim": "In _Proceedings of ACL-08: HLT_ , pages 1048–1056, Columbus, Ohio, June. Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Zornitsa Kozareva, Ellen Riloff e Eduard Hovy (2008)",
+    "motivo": "A primeira unidade completa visível é uma entrada bibliográfica individual, iniciada por “- Zornitsa Kozareva...” e encerrada imediatamente antes da próxima referência, iniciada por “- G. Kulkarni...”.",
+    "texto": "- Zornitsa Kozareva, Ellen Riloff, and Eduard Hovy. 2008. Semantic class learning from the web with hyponym pattern linkage graphs. In _Proceedings of ACL-08: HLT_ , pages 1048–1056, Columbus, Ohio, June. Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- G. Kulkarni, V. Premraj, S. Dhar, S. Li, Y. Choi, A. C Berg, and T. L Berg. 2011.",
+    "offset_fim": "1. Babytalk: Understanding and generating simple image descriptions. In _CVPR_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Kulkarni et al. 2011 — Babytalk",
+    "motivo": "É a primeira entrada bibliográfica completa visível, iniciada pelo marcador de lista '- G. Kulkarni...' e encerrada imediatamente antes da entrada seguinte, '- N. Kumar...'.",
+    "texto": "- G. Kulkarni, V. Premraj, S. Dhar, S. Li, Y. Choi, A. C Berg, and T. L Berg. 2011. Babytalk: Understanding and generating simple image descriptions. In _CVPR_ ."
+  },
+  {
+    "offset_inicio": "- N. Kumar, A.C. Berg, P. Belhumeur, and S.K. Nayar. 2009. Attribute and simile classifiers",
+    "offset_fim": "2009. Attribute and simile classifiers for face verification. In _ICCV_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "N. Kumar et al. (2009) — Attribute and simile classifiers for face verification",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho. Inicia no marcador '- N. Kumar...' e termina após 'In _ICCV_ .', imediatamente antes da próxima referência iniciada por '- Siming Li...'.",
+    "texto": "- N. Kumar, A.C. Berg, P. Belhumeur, and S.K. Nayar. 2009. Attribute and simile classifiers for face verification. In _ICCV_ ."
+  },
+  {
+    "offset_inicio": "- Siming Li, Girish Kulkarni, Tamara L. Berg, Alexander C. Berg, and Yejin Choi.",
+    "offset_fim": "Choi. 2011. Composing simple image descriptions using web-scale n-grams. In _CONLL_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Siming Li et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada por \"- Siming Li...\" e encerrada imediatamente antes da entrada seguinte, iniciada por \"- Eric P. Xing Li-Jia Li...\".",
+    "texto": "- Siming Li, Girish Kulkarni, Tamara L. Berg, Alexander C. Berg, and Yejin Choi. 2011. Composing simple image descriptions using web-scale n-grams. In _CONLL_ ."
+  },
+  {
+    "offset_inicio": "- Eric P. Xing Li-Jia Li, Hao Su and Li Fei-Fei. 2010. Object bank: A high-level image representation",
+    "offset_fim": "Object bank: A high-level image representation for scene classification and semantic feature sparsification. In _NIPS_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Eric P. Xing Li-Jia Li, Hao Su and Li Fei-Fei (2010)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Começa no marcador de item \"- Eric P. Xing...\" e termina imediatamente antes da próxima referência, iniciada por \"- Tara McIntosh...\".",
+    "texto": "- Eric P. Xing Li-Jia Li, Hao Su and Li Fei-Fei. 2010. Object bank: A high-level image representation for scene classification and semantic feature sparsification. In _NIPS_ . "
+  },
+  {
+    "offset_inicio": "- Tara McIntosh and James R Curran. 2008. Weighted mutual exclusion bootstrapping for domain independent lexicon and template acquisition.",
+    "offset_fim": "In _Proceedings of the Australasian Language Technology Association Workshop 2008_ , pages 97–105, December.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Tara McIntosh and James R Curran (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador \"- Tara McIntosh...\" e termina imediatamente antes da próxima referência, iniciada por \"- K.J. Miller...\".",
+    "texto": "- Tara McIntosh and James R Curran. 2008. Weighted mutual exclusion bootstrapping for domain independent lexicon and template acquisition. In _Proceedings of the Australasian Language Technology Association Workshop 2008_ , pages 97–105, December."
+  },
+  {
+    "offset_inicio": "- K.J. Miller. 1998. Modifiers in WordNet. In C. Fellbaum, editor, _WordNet_ , chapter 2. MIT Press.",
+    "offset_fim": "- K.J. Miller. 1998. Modifiers in WordNet. In C. Fellbaum, editor, _WordNet_ , chapter 2. MIT Press.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: K.J. Miller (1998)",
+    "motivo": "É a primeira entrada bibliográfica completa visível; inicia no marcador de item “- K.J. Miller...” e termina em “MIT Press.”, imediatamente antes da referência seguinte.",
+    "texto": "- K.J. Miller. 1998. Modifiers in WordNet. In C. Fellbaum, editor, _WordNet_ , chapter 2. MIT Press."
+  },
+  {
+    "offset_inicio": "- Margaret Mitchell, Jesse Dodge, Amit Goyal, Kota Yamaguchi, Karl Stratos, Xufeng Han,",
+    "offset_fim": "rom computer vision detections. _Proceedings of EACL 2012_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Margaret Mitchell et al. (2012), Midge",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada por marcador de lista, e termina imediatamente antes da próxima referência, iniciada por “- Vicente Ordonez”.",
+    "texto": "- Margaret Mitchell, Jesse Dodge, Amit Goyal, Kota Yamaguchi, Karl Stratos, Xufeng Han, Alyssa Mensch, Alex Berg, Tamara Berg, and Hal Daum´e III. 2012. Midge: Generating image descriptions from computer vision detections. _Proceedings of EACL 2012_ ."
+  },
+  {
+    "offset_inicio": "- Vicente Ordonez, Girish Kulkarni, and Tamara L. Berg. 2011. Im2Text: Describing Images Using 1 Million Captioned Photographs. In _NIPS_ . ",
+    "offset_fim": "Vicente Ordonez, Girish Kulkarni, and Tamara L. Berg. 2011. Im2Text: Describing Images Using 1 Million Captioned Photographs. In _NIPS_ . ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Ordonez, Kulkarni e Berg (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia no marcador de item \"- Vicente Ordonez...\" e termina após \"In _NIPS_ .\", imediatamente antes da referência seguinte, iniciada por \"- Cyrus Rashtchian...\".",
+    "texto": "- Vicente Ordonez, Girish Kulkarni, and Tamara L. Berg. 2011. Im2Text: Describing Images Using 1 Million Captioned Photographs. In _NIPS_ . "
+  },
+  {
+    "offset_inicio": "- Cyrus Rashtchian, Peter Young, Micah Hodosh, and Julia Hockenmaier. 2010. Collecting image annotations using amazon’s mechanical turk.",
+    "offset_fim": "NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon’s Mechanical Turk_ . Association for Computational Linguistics.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Cyrus Rashtchian et al. 2010",
+    "motivo": "É a primeira entrada bibliográfica completa do trecho, iniciada pelo marcador \"- Cyrus Rashtchian...\" e encerrada imediatamente antes da entrada seguinte, \"- H. Schmid...\".",
+    "texto": "- Cyrus Rashtchian, Peter Young, Micah Hodosh, and Julia Hockenmaier. 2010. Collecting image annotations using amazon’s mechanical turk. In _Proceedings of the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon’s Mechanical Turk_ . Association for Computational Linguistics."
+  },
+  {
+    "offset_inicio": "- H. Schmid. 1995. Improvements in part–of–speech tagging with an application to german. In _Proceedings of the EACL SIGDAT Workshop_ .",
+    "offset_fim": "tagging with an application to german. In _Proceedings of the EACL SIGDAT Workshop_ .",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "H. Schmid (1995)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada por “- H. Schmid...”, e termina imediatamente antes da próxima referência, iniciada por “- J. Sivic...”.",
+    "texto": "- H. Schmid. 1995. Improvements in part–of–speech tagging with an application to german. In _Proceedings of the EACL SIGDAT Workshop_ ."
+  },
+  {
+    "offset_inicio": "- J. Sivic, B.C. Russell, A. Zisserman, W.T. Freeman, and A.A. Efros. 2008. Unsupervised discovery of visual object class hierarchies.",
+    "offset_fim": "In _Computer Vision and Pattern Recognition, 2008. CVPR 2008. IEEE Conference on_ , pages 1 –8.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Sivic et al. (2008)",
+    "motivo": "É a primeira entrada bibliográfica completa presente no trecho. Inicia em \"- J. Sivic...\" e termina antes da entrada seguinte, iniciada por \"- M. Thelen...\".",
+    "texto": "- J. Sivic, B.C. Russell, A. Zisserman, W.T. Freeman, and A.A. Efros. 2008. Unsupervised discovery of visual object class hierarchies. In _Computer Vision and Pattern Recognition, 2008. CVPR 2008. IEEE Conference on_ , pages 1 –8."
+  },
+  {
+    "offset_inicio": "- M. Thelen and E. Riloff. 2002. A Bootstrapping Method for Learning Semantic Lexicons",
+    "offset_fim": "traction Pattern Contexts. In _Proceedings of the Empirical Methods in Natural Language Processing_ , pages 214–221.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: M. Thelen e E. Riloff (2002)",
+    "motivo": "É a primeira entrada bibliográfica completa no trecho, iniciada por “- M. Thelen...” e encerrada antes da próxima entrada, “- Peter D. Turney...”.",
+    "texto": "- M. Thelen and E. Riloff. 2002. A Bootstrapping Method for Learning Semantic Lexicons Using Extraction Pattern Contexts. In _Proceedings of the Empirical Methods in Natural Language Processing_ , pages 214–221."
+  },
+  {
+    "offset_inicio": "- Peter D. Turney and Patrick Pantel. 2010. From frequency to meaning: Vector space models of semantics. _Journal of Artificial Intelligence Research (JAIR)_ , 37:141.",
+    "offset_fim": "frequency to meaning: Vector space models of semantics. _Journal of Artificial Intelligence Research (JAIR)_ , 37:141.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Referência: Peter D. Turney e Patrick Pantel (2010)",
+    "motivo": "É uma entrada bibliográfica individual, iniciada pelo marcador de lista \"- Peter D. Turney...\" e encerrada imediatamente antes da próxima referência, iniciada por \"- Leonid Velikovich...\".",
+    "texto": "- Peter D. Turney and Patrick Pantel. 2010. From frequency to meaning: Vector space models of semantics. _Journal of Artificial Intelligence Research (JAIR)_ , 37:141."
+  },
+  {
+    "offset_inicio": "- Leonid Velikovich, Sasha Blair-Goldensohn, Kerry Hannan, and Ryan McDonald. 2010.",
+    "offset_fim": "_American Chapter of the Association for Computational Linguistics_ . Association for Computational Linguistics. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 11,
+    "titulo": "Referência: Leonid Velikovich et al. 2010",
+    "motivo": "É a primeira entrada bibliográfica completa visível: inicia no marcador de item na página 10, continua na página 11 e termina imediatamente antes da entrada seguinte, iniciada por \"- J. Xiao\".",
+    "texto": "- Leonid Velikovich, Sasha Blair-Goldensohn, Kerry Hannan, and Ryan McDonald. 2010. The viability of webderived polarity lexicons. In _Human Language Technologies: The 2010 Annual Conference of the North_ \n\n771\n\n<!-- PÁGINA 11 -->\n_American Chapter of the Association for Computational Linguistics_ . Association for Computational Linguistics. "
+  },
+  {
+    "offset_inicio": "- J. Xiao, J. Hays, K. Ehinger, A. Oliva, and A. Torralba. 2010. Sun database:",
+    "offset_fim": "Sun database: Large-scale scene recognition from abbey to zoo. In _CVPR_ . ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Referência: J. Xiao et al. (2010)",
+    "motivo": "É a primeira entrada bibliográfica visível, iniciada pelo marcador de lista \"-\" e encerrada imediatamente antes da entrada seguinte, iniciada por \"- Yezhou Yang\".",
+    "texto": "- J. Xiao, J. Hays, K. Ehinger, A. Oliva, and A. Torralba. 2010. Sun database: Large-scale scene recognition from abbey to zoo. In _CVPR_ . "
+  },
+  {
+    "offset_inicio": "- Yezhou Yang, Ching Lik Teo, Hal Daum´e III, and Yiannis Aloimonos. 2011. Corpus-guided",
+    "offset_fim": "Hal Daum´e III, and Yiannis Aloimonos. 2011. Corpus-guided sentence generation of natural images. In _EMNLP_ .",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Yezhou Yang et al. (2011)",
+    "motivo": "É a primeira entrada bibliográfica completa visível. Inicia em “- Yezhou Yang...” e termina antes da próxima referência, iniciada por “- Xiaojin Zhu...”.",
+    "texto": "- Yezhou Yang, Ching Lik Teo, Hal Daum´e III, and Yiannis Aloimonos. 2011. Corpus-guided sentence generation of natural images. In _EMNLP_ ."
+  },
+  {
+    "offset_inicio": "- Xiaojin Zhu and Zoubin Ghahramani. 2002. Learning from labeled and unlabeled data with label propagation.",
+    "offset_fim": "Learning from labeled and unlabeled data with label propagation. In _Technical Report CMU-CALD-02-107_ . CarnegieMellon University.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Zhu and Ghahramani (2002)",
+    "motivo": "Entrada bibliográfica individual iniciada por marcador de lista; constitui a primeira unidade completa presente no trecho e termina após “University.”, antes do número de página.",
+    "texto": "- Xiaojin Zhu and Zoubin Ghahramani. 2002. Learning from labeled and unlabeled data with label propagation. In _Technical Report CMU-CALD-02-107_ . CarnegieMellon University."
+  }
+]

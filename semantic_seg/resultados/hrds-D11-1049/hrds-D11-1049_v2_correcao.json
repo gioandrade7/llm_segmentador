@@ -1,0 +1,94 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [15] («3.2 Evaluation by Mechanical Turk»), com 12.680 caracteres e abrangendo as págs. 7–10, engloba indevidamente a seção principal posterior «4 Conclusion», que deveria iniciar um bloco próprio antes de «Acknowledgments» [16]."
+      ],
+      "consistente": false,
+      "insights": "- Divida o atual trecho de «3.2 Evaluation by Mechanical Turk» no cabeçalho literal «4 Conclusion»: mantenha no bloco 3.2 somente o conteúdo até imediatamente antes desse cabeçalho.\n- Inicie um bloco próprio em «4 Conclusion» e capture seu texto até imediatamente antes de «Acknowledgments»; não incorpore essa conclusão ao bloco [15]."
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "- Divida o atual trecho de «3.2 Evaluation by Mechanical Turk» no cabeçalho literal «4 Conclusion»: mantenha no bloco 3.2 somente o conteúdo até imediatamente antes desse cabeçalho.\n- Inicie um bloco próprio em «4 Conclusion» e capture seu texto até imediatamente antes de «Acknowledgments»; não incorpore essa conclusão ao bloco [15].",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [22] é englobante: reúne três entradas bibliográficas distintas — Blum e Mitchell (1998), Cafarella et al. (2006) e Carlson et al. (2010) — que, como referências individuais, devem iniciar blocos próprios."
+      ],
+      "consistente": false,
+      "insights": "- Divida o bloco bibliográfico que começa em «- Avrim Blum and Tom Mitchell. 1998.» em entradas independentes: mantenha nele apenas a referência de Blum e Mitchell até antes de «- MJ Cafarella».\n- Inicie um bloco próprio em «- MJ Cafarella» para a referência de Cafarella et al. (2006), terminando imediatamente antes da entrada seguinte iniciada por «- Andrew Carlson».\n- Inicie outro bloco próprio em «- Andrew Carlson» para a referência de Carlson et al. (2010), incluindo todo o texto remanescente dessa referência até antes de «- William W. Cohen and David Page. 1995.»."
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "- Divida o bloco bibliográfico que começa em «- Avrim Blum and Tom Mitchell. 1998.» em entradas independentes: mantenha nele apenas a referência de Blum e Mitchell até antes de «- MJ Cafarella».\n- Inicie um bloco próprio em «- MJ Cafarella» para a referência de Cafarella et al. (2006), terminando imediatamente antes da entrada seguinte iniciada por «- Andrew Carlson».\n- Inicie outro bloco próprio em «- Andrew Carlson» para a referência de Carlson et al. (2010), incluindo todo o texto remanescente dessa referência até antes de «- William W. Cohen and David Page. 1995.».",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [5] engloba o marcador da subseção 1.3 («1.3 Knowledge Base Inference: Graph Random Walks») no seu final, mas não há bloco próprio para essa subseção; há uma lacuna entre esse marcador e o início do bloco [6] («1.4 Related Work»).",
+        "O bloco [9] engloba o marcador da subseção 2.3 («2.3 Data-Driven Path Finding») no seu final, mas não há bloco próprio para essa subseção; há uma lacuna entre esse marcador e o início do bloco [10] («2.4 Low-Variance Sampling»).",
+        "O bloco [12] engloba o marcador da subseção 3.2 («3.2 Evaluation by Mechanical Turk») no seu final, mas não há bloco próprio para essa subseção; há uma lacuna entre esse marcador e o início do bloco [13] («4 Conclusions and Future Work»)."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco da seção «1.2 Knowledge Base Inference: Horn Clauses» imediatamente antes do marcador literal «1.3 Knowledge Base Inference: Graph Random Walks»; não deixe esse marcador no fim do bloco 1.2.\n- Inicie um bloco próprio em «1.3 Knowledge Base Inference: Graph Random Walks» e capture todo o texto dessa subseção até imediatamente antes de «1.4 Related Work».\n- Termine o bloco da subseção «2.2 Path Ranking Algorithm Review» imediatamente antes do marcador literal «2.3 Data-Driven Path Finding»; não deixe esse marcador no fim do bloco 2.2.\n- Inicie um bloco próprio em «2.3 Data-Driven Path Finding» e capture todo o texto dessa subseção até imediatamente antes de «2.4 Low-Variance Sampling».\n- Termine o bloco da subseção «3.1 Cross Validation on the Training Queries» imediatamente antes do marcador literal «3.2 Evaluation by Mechanical Turk»; não deixe esse marcador no fim do bloco 3.1.\n- Inicie um bloco próprio em «3.2 Evaluation by Mechanical Turk» e capture todo o texto dessa subseção, inclusive o conteúdo das páginas 8–9, até imediatamente antes de «4 Conclusions and Future Work»."
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 39,
+    "insights_aplicados": "- Termine o bloco da seção «1.2 Knowledge Base Inference: Horn Clauses» imediatamente antes do marcador literal «1.3 Knowledge Base Inference: Graph Random Walks»; não deixe esse marcador no fim do bloco 1.2.\n- Inicie um bloco próprio em «1.3 Knowledge Base Inference: Graph Random Walks» e capture todo o texto dessa subseção até imediatamente antes de «1.4 Related Work».\n- Termine o bloco da subseção «2.2 Path Ranking Algorithm Review» imediatamente antes do marcador literal «2.3 Data-Driven Path Finding»; não deixe esse marcador no fim do bloco 2.2.\n- Inicie um bloco próprio em «2.3 Data-Driven Path Finding» e capture todo o texto dessa subseção até imediatamente antes de «2.4 Low-Variance Sampling».\n- Termine o bloco da subseção «3.1 Cross Validation on the Training Queries» imediatamente antes do marcador literal «3.2 Evaluation by Mechanical Turk»; não deixe esse marcador no fim do bloco 3.1.\n- Inicie um bloco próprio em «3.2 Evaluation by Mechanical Turk» e capture todo o texto dessa subseção, inclusive o conteúdo das páginas 8–9, até imediatamente antes de «4 Conclusions and Future Work».",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6], «1.3 Knowledge Base Inference: Graph Random Walks», é englobante: ele inclui também a subseção «1.4 Related Work», que deveria iniciar um bloco próprio.",
+        "O bloco [10], «2.3 Data-Driven Path Finding», é englobante: ele inclui também a subseção «2.4 Low-Variance Sampling», que deveria iniciar um bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco «1.3 Knowledge Base Inference: Graph Random Walks» imediatamente antes do marcador literal «1.4 Related Work»; não incorpore o título nem o texto de 1.4 ao bloco 1.3.\n- Inicie um bloco próprio em «1.4 Related Work» e capture todo o texto dessa subseção até imediatamente antes do marcador «2 Approach».\n- Termine o bloco «2.3 Data-Driven Path Finding» imediatamente antes do marcador literal «2.4 Low-Variance Sampling»; não incorpore o título nem o texto de 2.4 ao bloco 2.3.\n- Inicie um bloco próprio em «2.4 Low-Variance Sampling» e capture todo o texto dessa subseção até imediatamente antes do marcador «3 Results»."
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "- Termine o bloco «1.3 Knowledge Base Inference: Graph Random Walks» imediatamente antes do marcador literal «1.4 Related Work»; não incorpore o título nem o texto de 1.4 ao bloco 1.3.\n- Inicie um bloco próprio em «1.4 Related Work» e capture todo o texto dessa subseção até imediatamente antes do marcador «2 Approach».\n- Termine o bloco «2.3 Data-Driven Path Finding» imediatamente antes do marcador literal «2.4 Low-Variance Sampling»; não incorpore o título nem o texto de 2.4 ao bloco 2.3.\n- Inicie um bloco próprio em «2.4 Low-Variance Sampling» e capture todo o texto dessa subseção até imediatamente antes do marcador «3 Results».",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [15] é englobante: inicia em «3.2 Evaluation by Mechanical Turk», mas se estende até imediatamente antes de «Acknowledgments» e incorpora a seção principal de conclusão numerada («4 Conclusion»/«4 Conclusions»), que deve constituir um bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Termine o bloco «1.3 Knowledge Base Inference: Graph Random Walks» imediatamente antes do marcador «1.4 Related Work» e inicie um bloco próprio em «1.4 Related Work», até «2 Approach».\n- Termine o bloco «2.3 Data-Driven Path Finding» imediatamente antes do marcador «2.4 Low-Variance Sampling» e inicie um bloco próprio em «2.4 Low-Variance Sampling», até «3 Results».\n- No trecho atualmente abrangido por «3.2 Evaluation by Mechanical Turk», localize o cabeçalho de seção principal numerado «4 Conclusion» ou «4 Conclusions» imediatamente anterior a «Acknowledgments».\n- Termine «3.2 Evaluation by Mechanical Turk» imediatamente antes desse marcador de seção 4; não incorpore a conclusão ao bloco 3.2.\n- Inicie um bloco próprio no marcador «4 Conclusion» ou «4 Conclusions» e capture seu texto até imediatamente antes de «Acknowledgments»."
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "- Termine o bloco «1.3 Knowledge Base Inference: Graph Random Walks» imediatamente antes do marcador «1.4 Related Work» e inicie um bloco próprio em «1.4 Related Work», até «2 Approach».\n- Termine o bloco «2.3 Data-Driven Path Finding» imediatamente antes do marcador «2.4 Low-Variance Sampling» e inicie um bloco próprio em «2.4 Low-Variance Sampling», até «3 Results».\n- No trecho atualmente abrangido por «3.2 Evaluation by Mechanical Turk», localize o cabeçalho de seção principal numerado «4 Conclusion» ou «4 Conclusions» imediatamente anterior a «Acknowledgments».\n- Termine «3.2 Evaluation by Mechanical Turk» imediatamente antes desse marcador de seção 4; não incorpore a conclusão ao bloco 3.2.\n- Inicie um bloco próprio no marcador «4 Conclusion» ou «4 Conclusions» e capture seu texto até imediatamente antes de «Acknowledgments».",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6] («1.3 Knowledge Base Inference: Graph Random Walks») engloba a subseção distinta «1.4 Related Work», que deveria iniciar um bloco próprio antes de «2 Approach». Não há bloco correspondente a 1.4 entre [6] e [7]."
+      ],
+      "consistente": false,
+      "insights": "- Localize o cabeçalho numerado literal «1.4 Related Work» dentro do trecho atualmente capturado pelo bloco «1.3 Knowledge Base Inference: Graph Random Walks».\n- Termine o bloco «1.3 Knowledge Base Inference: Graph Random Walks» imediatamente antes de «1.4 Related Work».\n- Inicie um bloco próprio em «1.4 Related Work», incluindo seu título e todo o texto subsequente, e termine-o imediatamente antes do cabeçalho «2 Approach»."
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- Localize o cabeçalho numerado literal «1.4 Related Work» dentro do trecho atualmente capturado pelo bloco «1.3 Knowledge Base Inference: Graph Random Walks».\n- Termine o bloco «1.3 Knowledge Base Inference: Graph Random Walks» imediatamente antes de «1.4 Related Work».\n- Inicie um bloco próprio em «1.4 Related Work», incluindo seu título e todo o texto subsequente, e termine-o imediatamente antes do cabeçalho «2 Approach».",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-D11-1049/hrds-D11-1049_v2_ciclo7.json"
+  }
+]

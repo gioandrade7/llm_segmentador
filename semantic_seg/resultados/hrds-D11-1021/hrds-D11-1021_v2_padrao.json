@@ -1,0 +1,40 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Título do documento",
+      "exemplo": "Bayesian Checking for Topic Models"
+    },
+    {
+      "nivel": 2,
+      "nome": "Seção numerada",
+      "exemplo": "1 Introduction"
+    },
+    {
+      "nivel": 3,
+      "nome": "Subseção numerada",
+      "exemplo": "3.2 Posterior Predictive Checks for LDA"
+    },
+    {
+      "nivel": 2,
+      "nome": "Seção final não numerada",
+      "exemplo": "Acknowledgments"
+    },
+    {
+      "nivel": 2,
+      "nome": "Referências",
+      "exemplo": "References"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    5,
+    6,
+    10,
+    11
+  ],
+  "total_paginas": 11
+}

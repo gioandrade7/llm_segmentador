@@ -1,0 +1,30 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Seção principal",
+      "exemplo": "## **1 Introduction**"
+    },
+    {
+      "nivel": 2,
+      "nome": "Subseção",
+      "exemplo": "## **5.4 Evaluation**"
+    },
+    {
+      "nivel": 3,
+      "nome": "Subsubseção de apêndice",
+      "exemplo": "## **C.1 Data preprocessing**"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    7,
+    8,
+    13,
+    14
+  ],
+  "total_paginas": 14
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 32,
+    "insights_aplicados": "",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [3] é desproporcionalmente extenso (28.403 caracteres) e engloba múltiplas seções principais e subseções numeradas do corpo do artigo, embora cada marcador de seção ou subseção deva iniciar um bloco próprio.",
+        "Há uma lacuna evidente entre o bloco [3], registrado apenas nas págs. 1–2, e o bloco [4], na pág. 9: as unidades estruturais das págs. 2–8 não aparecem como blocos separados.",
+        "O bloco [25] agrupa três entradas bibliográficas distintas: a entrada de Bolin Wei et al. (2019), a de Sean Welleck et al. (2019) e uma entrada de 2021; cada referência deveria ocupar um bloco próprio."
+      ],
+      "consistente": false,
+      "insights": "- Divida o conteúdo atualmente concentrado no bloco iniciado por `# **1 Introduction**` em um bloco para cada seção principal numerada e para cada subseção numerada encontrada até antes de `# **Acknowledgments**`; não deixe seções das págs. 2–8 sem segmentação.\n- Ao encontrar qualquer cabeçalho numerado do corpo do artigo, como `# **2 ...**` ou `## **4.1 ...**`, encerre o bloco corrente imediatamente antes dele e inicie o novo bloco no próprio cabeçalho.\n- Preserve o texto introdutório de cada seção principal em seu bloco, mas separe dele todas as subseções numeradas que vierem a seguir.\n- Na seção `# **References**`, crie exatamente um bloco por entrada bibliográfica, inclusive quando as referências estiverem marcadas por hífen.\n- Separe o bloco que começa por `- Bolin Wei, Ge Li, Xin Xia...` antes de `- Sean Welleck, Kiante´ Brantley...` e separe novamente antes da referência de 2021 que encerra o atual bloco [25]."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394/hrds-2021.acl-long.394_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Divida o conteúdo atualmente concentrado no bloco iniciado por `# **1 Introduction**` em um bloco para cada seção principal numerada e para cada subseção numerada encontrada até antes de `# **Acknowledgments**`; não deixe seções das págs. 2–8 sem segmentação.\n- Ao encontrar qualquer cabeçalho numerado do corpo do artigo, como `# **2 ...**` ou `## **4.1 ...**`, encerre o bloco corrente imediatamente antes dele e inicie o novo bloco no próprio cabeçalho.\n- Preserve o texto introdutório de cada seção principal em seu bloco, mas separe dele todas as subseções numeradas que vierem a seguir.\n- Na seção `# **References**`, crie exatamente um bloco por entrada bibliográfica, inclusive quando as referências estiverem marcadas por hífen.\n- Separe o bloco que começa por `- Bolin Wei, Ge Li, Xin Xia...` antes de `- Sean Welleck, Kiante´ Brantley...` e separe novamente antes da referência de 2021 que encerra o atual bloco [25].",
+    "analise": {
+      "inconsistencias": [
+        "Há uma lacuna entre os blocos [9] e [10]: o bloco [9] termina no meio da frase, em \"different branch expansion\", enquanto [10] já começa no marcador \"3.2.1 Pre-training\". O texto que continua essa frase e antecede o subtítulo 3.2.1 não foi incluído em nenhum bloco."
+      ],
+      "consistente": false,
+      "insights": "- No bloco da seção `3.2 Training with Reinforcement Learning`, capture também a continuação na página seguinte da frase que termina em `different branch expansion`; mantenha todo o texto corrido entre esse trecho e o cabeçalho `3.2.1 Pre-training` no bloco 3.2. Só então inicie o bloco `3.2.1 Pre-training` no seu marcador."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394/hrds-2021.acl-long.394_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- No bloco da seção `3.2 Training with Reinforcement Learning`, capture também a continuação na página seguinte da frase que termina em `different branch expansion`; mantenha todo o texto corrido entre esse trecho e o cabeçalho `3.2.1 Pre-training` no bloco 3.2. Só então inicie o bloco `3.2.1 Pre-training` no seu marcador.",
+    "analise": {
+      "inconsistencias": [
+        "Lacuna entre os blocos [6] e [7]: falta o bloco da seção principal 3 (o marcador e o texto de abertura imediatamente anteriores a `3.1 Branch Selector`). A sequência salta de `2.2 Seq2Tree Model` diretamente para a subseção 3.1, embora a seção 3 deva constituir uma unidade própria."
+      ],
+      "consistente": false,
+      "insights": "- Crie um bloco próprio para a seção principal `3 Dynamic Branch Expansion` (o cabeçalho `3` imediatamente anterior a `3.1 Branch Selector`), incluindo apenas o título e todo o texto de abertura da seção que antecede o marcador `3.1`; não incorpore esse conteúdo ao bloco `3.1 Branch Selector`.\n- No bloco `3.2 Training with Reinforcement Learning`, preserve a continuação na página seguinte da frase que termina em `different branch expansion` e todo o texto corrido até imediatamente antes do marcador `3.2.1 Pre-training`; só então inicie o bloco `3.2.1 Pre-training`."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394/hrds-2021.acl-long.394_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Crie um bloco próprio para a seção principal `3 Dynamic Branch Expansion` (o cabeçalho `3` imediatamente anterior a `3.1 Branch Selector`), incluindo apenas o título e todo o texto de abertura da seção que antecede o marcador `3.1`; não incorpore esse conteúdo ao bloco `3.1 Branch Selector`.\n- No bloco `3.2 Training with Reinforcement Learning`, preserve a continuação na página seguinte da frase que termina em `different branch expansion` e todo o texto corrido até imediatamente antes do marcador `3.2.1 Pre-training`; só então inicie o bloco `3.2.1 Pre-training`.",
+    "analise": {
+      "inconsistencias": [
+        "O bloco [6] (\"2.2 Seq2Tree Model\") englobou indevidamente a seção principal `3 Dynamic Branch Expansion` e seu texto introdutório, que deveriam formar um bloco próprio antes de [7] (`3.1 Branch Selector`)."
+      ],
+      "consistente": false,
+      "insights": "- Encerre o bloco `2.2 Seq2Tree Model` imediatamente antes do marcador literal `# **3 Dynamic Branch Expansion**`.\n- Crie um bloco próprio para `# **3 Dynamic Branch Expansion**`, contendo o título e exclusivamente o texto de abertura da seção até imediatamente antes de `3.1 Branch Selector`; não incorpore esse caput nem ao bloco `2.2 Seq2Tree Model` nem ao bloco `3.1 Branch Selector`.\n- No bloco `3.2 Training with Reinforcement Learning`, preserve a continuação na página seguinte da frase que termina em `different branch expansion` e todo o texto corrido até imediatamente antes do marcador `3.2.1 Pre-training`; só então inicie o bloco `3.2.1 Pre-training`."
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394/hrds-2021.acl-long.394_v2_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Encerre o bloco `2.2 Seq2Tree Model` imediatamente antes do marcador literal `# **3 Dynamic Branch Expansion**`.\n- Crie um bloco próprio para `# **3 Dynamic Branch Expansion**`, contendo o título e exclusivamente o texto de abertura da seção até imediatamente antes de `3.1 Branch Selector`; não incorpore esse caput nem ao bloco `2.2 Seq2Tree Model` nem ao bloco `3.1 Branch Selector`.\n- No bloco `3.2 Training with Reinforcement Learning`, preserve a continuação na página seguinte da frase que termina em `different branch expansion` e todo o texto corrido até imediatamente antes do marcador `3.2.1 Pre-training`; só então inicie o bloco `3.2.1 Pre-training`.",
+    "analise": {
+      "inconsistencias": [],
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/hrds-2021.acl-long.394/hrds-2021.acl-long.394_v2_ciclo5.json"
+  }
+]

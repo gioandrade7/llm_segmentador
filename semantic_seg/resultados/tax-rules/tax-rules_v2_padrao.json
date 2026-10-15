@@ -1,0 +1,23 @@
+{
+  "tem_padrao": true,
+  "hierarquia": [
+    {
+      "nivel": 1,
+      "nome": "Título principal do documento",
+      "exemplo": "# **Tax Record Management System**"
+    },
+    {
+      "nivel": 2,
+      "nome": "Seção",
+      "exemplo": "## **Overview and Purpose**"
+    }
+  ],
+  "confianca": "alta",
+  "paginas_amostradas": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "total_paginas": 4
+}
