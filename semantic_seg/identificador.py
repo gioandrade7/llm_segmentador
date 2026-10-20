@@ -19,9 +19,7 @@ from utils_llm import completar_json
 from utils_files import montar_texto_completo
 
 SISTEMA_IDENTIFICACAO = (
-    "Você é um especialista em estrutura de documentos oficiais e normativos. "
-    "Analisa uma amostra de páginas e descreve a organização estrutural do "
-    "documento. Responde sempre com um único objeto JSON válido, sem texto adicional."
+    "Você é um especialista em estrutura de documentos normativos. O documento é um texto normativo: prescrições organizadas em dispositivos marcados."
 )
 
 
@@ -80,16 +78,32 @@ def construir_prompt_identificacao(
     """
     lista_pags = ", ".join(str(p) for p in paginas_amostradas)
 
-    return f"""Você é um especialista em estrutura de documentos.
+    return f"""
 
         ## O que você está lendo
         Abaixo estão as **páginas {lista_pags} de um documento de {total_paginas} páginas** — uma amostra de três regiões (começo, meio e fim), não o documento inteiro. Os marcadores `<!-- PÁGINA N -->` indicam o número real de cada página, então os saltos entre as regiões são visíveis. **Não assuma que viu todo o documento**: se a amostra não permitir concluir, diga isso na sua resposta.
 
         ## Sua tarefa
-        Determine como este documento está estruturado, para orientar um processo posterior de segmentação em blocos semânticos.
+        Determine como este documento está estruturado, para orientar um processo posterior de segmentação em blocos semânticos, sendo estes os dispositivos do documento,
 
-        1. O documento segue um **padrão estrutural recorrente** (marcadores, numeração, hierarquia de títulos)?
-        2. Se segue, qual é a **hierarquia** dos níveis, do mais externo ao mais interno?
+        Cada dispositivo, de qualquer categoria, é um bloco com apenas o seu texto
+        próprio: começa no seu marcador e termina imediatamente antes do próximo
+        marcador, de qualquer nível.
+
+        ## O que NÃO inicia bloco
+        
+        - Texto citado de outra norma. Quando um dispositivo altera ou acrescenta
+        texto a outra norma ("passa a vigorar com a seguinte redação", "fica
+        acrescido do seguinte", "is amended to read as follows"), todo o texto
+        citado, até o fecho das aspas ou "(NR)", pertence ao dispositivo que
+        altera, mesmo que contenha "Art.", "§" ou incisos.
+        - Remissões. A menção a um dispositivo no meio de uma frase ("observado o
+        disposto no art. 5º, § 2º", "under section 203(b)") não é marcador,
+        mesmo que uma quebra de linha a coloque no início da linha. Um marcador
+        abre o texto do próprio dispositivo; uma remissão continua uma frase que
+        veio antes.
+        - Ruído de página: cabeçalhos e rodapés correntes, números de página e
+        carimbos de publicação.
 
         ## Amostra do documento
         ```
@@ -97,18 +111,12 @@ def construir_prompt_identificacao(
         ```
 
         ## Como responder
-        - Cite os **marcadores literais** que você observou, não descrições abstratas.
-        - Legendas de figura e de tabela e o conteúdo de tabelas não são níveis da hierarquia, mesmo quando numerados, fazem parte do mesmo bloco.
-        - Listas numeradas ou de itens no meio do texto corrido não são níveis da hierarquia, mesmo se estiverem em negrito. Só inclua uma família de marcadores de lista quando ela estrutura o documento em divisões próprias.
-        - Se o documento **não** tiver padrão recorrente — texto corrido, seções sem marcação sistemática — responda `"tem_padrao": false`. Isso é uma resposta legítima e útil; não invente uma hierarquia que você não observou.
-        - Se a amostra for insuficiente para decidir com segurança, use `"confianca": "baixa"`.
-
-        ## Instruções de resposta
-        Retorne **exclusivamente** um objeto JSON válido com as chaves:
-
-        - `"tem_padrao"`          : booleano — o documento segue um padrão estrutural recorrente
-        - `"hierarquia"`         : array de objetos `{{"nivel": inteiro, "nome": string, "exemplo": string}}` — do nível mais externo (1) ao mais interno. `nome` é como o nível se chama neste documento; `exemplo` é um marcador literal observado. Array vazio se `tem_padrao` for `false`
-        - `"confianca"`          : string — `"alta"`, `"media"` ou `"baixa"`
+        Responda com uma instrução clara e concisa de como segmentar o documento em blocos semânticos e descrevendo a hierarquia de marcadores observada. Devolva a resposta **em JSON**, com as chaves:
+        ```
+        {{
+            "instrução": <string>,  # instrução de segmentação
+        }}
+        ```
         """
 
 
@@ -133,9 +141,6 @@ def identificar_padrao(
     nums    = [p["pagina"] for p in amostra]
     total   = len(paginas)
 
-    if verboso:
-        print("── Identificando o padrão estrutural... ───────────────")
-        print(f"   amostra: págs. {', '.join(map(str, nums))} de {total}\n")
 
     padrao = completar_json(
         construir_prompt_identificacao(montar_texto_completo(amostra), nums, total),
@@ -143,100 +148,7 @@ def identificar_padrao(
         sistema=SISTEMA_IDENTIFICACAO,
     )
 
-    padrao["paginas_amostradas"] = nums
-    padrao["total_paginas"]      = total
+    # padrao["paginas_amostradas"] = nums
+    # padrao["total_paginas"]      = total
     return padrao
 
-
-# ──────────────────────────────────────────────────────────────────────────────
-# Renderização para os prompts
-# ──────────────────────────────────────────────────────────────────────────────
-
-def formatar_padrao(padrao: dict) -> str:
-    """
-    Renderiza o padrão como a seção de prompt injetada no segmentador e no
-    auditor.
-
-    A renderização é feita **em código**, não por uma segunda chamada de LLM:
-    o texto que entra no prompt fica determinístico e inspecionável.
-
-    Devolve string vazia se não houver padrão a injetar (identificação
-    desligada ou falha), caso em que os prompts voltam ao comportamento
-    genérico.
-    """
-    if not padrao:
-        return ""
-
-    pags  = padrao.get("paginas_amostradas") or []
-    total = padrao.get("total_paginas")
-    if pags and total:
-        procedencia = (
-            f"Identificada a partir das págs. {', '.join(map(str, pags))} "
-            f"de {total} do texto fonte (amostra)."
-        )
-    else:
-        procedencia = "Identificada a partir de uma amostra do texto fonte."
-
-    ressalva = ""
-    if (padrao.get("confianca") or "").lower() == "baixa":
-        ressalva = (
-            "\n        ⚠ Inferida de amostra pequena, com confiança baixa: trate como "
-            "indício forte, não como regra absoluta. Se o texto da janela contradisser "
-            "claramente esta estrutura, siga o texto.\n"
-        )
-
-    # ── Sem padrão: segmentação por mudança de assunto ────────────────────────
-    if not padrao.get("tem_padrao"):
-        return (False, f"""
-        ## Estrutura deste documento
-        {procedencia}
-
-        A análise **não encontrou** padrão estrutural recorrente neste documento: não há hierarquia de marcadores nem numeração sistemática em que se ancorar.""")
-
-    hierarquia = padrao.get("hierarquia") or []
-    # modo       = (padrao.get("modo") or "hierarquico").lower()
-
-    # ── Sequência plana: unidades irmãs, sem encaixe ──────────────────────────
-#     if modo == "sequencia_plana":
-#         unidade = hierarquia[0] if hierarquia else {}
-#         exemplo = unidade.get("exemplo") or ""
-#         nome    = unidade.get("nome") or "unidade"
-#         return f"""
-#         ## Estrutura deste documento
-#         {procedencia}
-
-#         Este documento **não é hierárquico**: é uma sequência de unidades independentes de mesmo nível, sem enumeração global que as encadeie. Unidade observada: **{nome}**{f' (ex.: `{exemplo}`)' if exemplo else ''}.
-# {ressalva}
-#         **Cada unidade é um bloco próprio.** Nunca agrupe duas unidades consecutivas num mesmo bloco, ainda que tratem de assunto parecido ou venham do mesmo órgão. Não procure níveis superiores: não existem."""
-
-    # ── Hierárquico ───────────────────────────────────────────────────────────
-    partes = []
-    for h in hierarquia:
-        exemplo = h.get("exemplo")
-        sufixo  = f"  (ex.: `{exemplo}`)" if exemplo else ""
-        partes.append(f"          nível {h.get('nivel')} — {h.get('nome') or '?'}{sufixo}")
-    linhas = "\n".join(partes)
-
-    # `nivel_de_corte` e `justificativa_corte` continuam no JSON do padrão, só
-    # para registro: o gabarito é anotado no nível mais fino, então o prompt
-    # corta em todo marcador e não usa mais um nível de corte.
-    return (True,f"""
-        ## Estrutura deste documento
-        {procedencia}
-
-        Hierarquia de marcadores observada, do nível mais externo ao mais interno:
-
-{linhas}
-{ressalva}
-        **Corte em todo marcador desta hierarquia, em qualquer nível.** Cada unidade, de qualquer nível, gera um bloco com o seu texto próprio: começa no seu marcador e termina imediatamente antes do próximo marcador, de qualquer nível.
-
-        - Uma unidade com subdivisões gera um bloco só com o texto que vem antes da primeira delas (o caput de um artigo, o título de um capítulo ou seção). Cada subdivisão é um bloco à parte, até o nível mais fino marcado.
-        - O título de uma divisão pertence ao bloco dela, mesmo que esteja na linha seguinte ao marcador e mesmo que o bloco fique só com o título.
-        - Parágrafos sem marcador pertencem ao bloco da unidade em que estão. A exceção é um parágrafo sem marcador que fecha uma lista e retoma o texto da unidade que a abriu: ele é um bloco próprio, separado do último item.
-        - Se dois ou mais marcadores aparecem na mesma linha, cada um inicia um bloco.
-        - A ordem acima é a típica, não uma regra: uma lista pode reaparecer dentro de um nível mais interno (ex.: itens `(1)`, `(2)` dentro de um `(iii)`). O que define o corte é a presença do marcador, não a posição dele na hierarquia.
-        - Não agrupe unidades num mesmo bloco, nem irmãs nem uma unidade com as suas subdivisões.
-        - Marcadores que não estão na lista acima, mas têm a mesma função (numeração ou rótulo que abre uma unidade), também iniciam um bloco: a hierarquia foi inferida de uma amostra e pode estar incompleta. As exceções vêm a seguir.
-        - Exceção: legendas de figura e de tabela e o conteúdo de tabelas não são unidades estruturais, mesmo numerados. Não iniciam bloco e ficam dentro do bloco em que aparecem no texto.
-        - Exceção: listas numeradas ou de itens dentro do texto de uma unidade (`(1)`, `1.`, `(i)`, `a)`, `•`, `-`), cujos marcadores **não** estão na hierarquia acima, são um artefato do bloco semântico em que aparecem, não unidades. Não divida a lista nem inicie bloco em nenhum item: a lista inteira, com o texto que a introduz e o que a segue, fica no mesmo bloco. Vale também para itens de lista que começam por um termo em negrito (`- **Semantic features** …`): o que os torna itens é o marcador de lista (`-`, `•`, `(1)`, `1.`), não o negrito. Um título em negrito que abre um parágrafo **sem** marcador de lista (`**Setting**`, `**Definition 1**`, `**Results** The results…`) não é item de lista: é uma unidade e inicia bloco. Quando o marcador da lista **está** na hierarquia acima (incisos, alíneas, itens de uma norma), cada item é uma unidade e inicia bloco.
-        - Cada entrada de uma lista de referências bibliográficas é uma unidade e inicia um bloco próprio, com ou sem marcador (`[1]`, `1.` ou autor-ano, como `Eve V. Clark. 2009.`). O título da lista (`References`, `Referências`) é um bloco à parte, como o de qualquer divisão.""")

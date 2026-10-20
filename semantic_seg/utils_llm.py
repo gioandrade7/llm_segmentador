@@ -123,21 +123,29 @@ def completar_json(prompt: str, model: str, sistema: str = SISTEMA_PADRAO) -> di
             raw = raw[4:]
         raw = raw.strip()
 
-    return json.loads(raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return raw
 
 
 def _chamar_llm(
     janela_texto: str,
     model: str,
-    verboso: bool,
     insights: str = "",
     padrao: str = "",
 ) -> dict:
     """Envia uma janela de texto ao LLM e retorna o dict JSON parseado."""
-    if verboso:
-        print("── Chamando o LLM... ──────────────────────────────────\n")
 
-    return completar_json(construir_prompt(janela_texto, insights, padrao), model)
+    prompt = construir_prompt(janela_texto, insights, padrao)
+    # O modelo às vezes devolve JSON malformado; completar_json() entrega a
+    # string crua, então o segmentador repete a chamada em vez de quebrar.
+    for tentativa in range(1, 4):
+        resultado = completar_json(prompt, model)
+        if isinstance(resultado, dict):
+            return resultado
+        print(f"  ⚠  JSON inválido na resposta (tentativa {tentativa}/3)")
+    raise ValueError(f"LLM não devolveu JSON válido após 3 tentativas:\n{resultado}")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -229,7 +237,6 @@ def _avancar_apos_bloco(
 def processar_documento_completo(
     paginas: list[dict],
     model: str = "gpt-4o",
-    verboso: bool = True,
     janela_paginas: int = 20,
     insights: str = "",
     padrao: str = "",
@@ -292,7 +299,7 @@ def processar_documento_completo(
         )
 
         # ── Chama o LLM ───────────────────────────────────────────────────
-        resultado = _chamar_llm(janela_texto, model, verboso, insights, padrao)
+        resultado = _chamar_llm(janela_texto, model, insights, padrao)
         print(resultado)
 
         # ── Bloco não encontrado — avança 1 página e continua ────────────
@@ -315,7 +322,7 @@ def processar_documento_completo(
             idx_pag_fim_exp  = min(idx_pag_atual + janela_expandida, total_paginas)
             pos_fim_jan_exp  = _pos_de_idx(posicoes, idx_pag_fim_exp, len_texto)
             resultado = _chamar_llm(
-                texto_completo[pos_atual:pos_fim_jan_exp], model, verboso, insights, padrao
+                texto_completo[pos_atual:pos_fim_jan_exp], model, insights, padrao
             )
 
             if not resultado.get("offset_inicio"):

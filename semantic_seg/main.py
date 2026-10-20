@@ -1,12 +1,9 @@
 import os
 import json
 import argparse
-from utils_llm import processar_documento_completo
 from utils_files import carregar_paginas
 from corretor import segmentar_com_correcao
-from identificador import identificar_padrao, formatar_padrao
-from display import (exibir_resultado, exibir_resumo_blocos, exibir_analise,
-                     exibir_padrao)
+from identificador import identificar_padrao
 
 
 
@@ -41,7 +38,6 @@ def main():
     parser.add_argument("--model",         default="gpt-5.6-terra",     help="Modelo OpenAI a utilizar.")
     parser.add_argument("--janela-paginas",default=10, type=int, help="Número de páginas por janela de contexto (padrão: 20).")
     parser.add_argument("--max-ciclos",    default=0, type=int,  help="Teto de ciclos de segmentação + correção. 0 (padrão) roda até o analisador aprovar.")
-    parser.add_argument("--so-resultado",  action="store_true",  help="Exibe apenas os resultados, sem prompts.")
     parser.add_argument("--paginas-amostra", default=2, type=int, help="Páginas por região (começo/meio/fim) enviadas ao identificador (padrão: 2).")
     args = parser.parse_args()
 
@@ -57,14 +53,16 @@ def main():
         paginas,
         model=args.model,
         n_amostra=args.paginas_amostra,
-        verboso=not args.so_resultado,
     )
-    exibir_padrao(padrao_dict)
-    padrao = formatar_padrao(padrao_dict)
+    # exibir_padrao(padrao_dict)
+    print(padrao_dict)
+    padrao = padrao_dict.get("instrução", "")
 
-    if not padrao[0]:
-        print(f"Documento sem estrutura recorrente: {padrao[1]}")
-        return 0
+    # return 0
+
+    # if not padrao[0]:
+    #     print(f"Documento sem estrutura recorrente: {padrao[1]}")
+    #     return 0
 
 
     # ── Pipeline de janela deslizante ─────────────────────────────────────────
@@ -72,18 +70,10 @@ def main():
     blocos, historico = segmentar_com_correcao(
         paginas,
         model=args.model,
-        verboso=not args.so_resultado,
         janela_paginas=args.janela_paginas,
         max_ciclos=args.max_ciclos,
-        exibir_analise=exibir_analise,
-        padrao=padrao[1],
+        padrao=padrao,
     )
-
-    # ── Exibição ──────────────────────────────────────────────────────────────
-    for bloco in blocos:
-        exibir_resultado(bloco)
-
-    exibir_resumo_blocos(blocos)
 
     # ── Persistência ──────────────────────────────────────────────────────────
     # `--saida` guarda apenas a lista de blocos, formato que `avaliar.py` espera.

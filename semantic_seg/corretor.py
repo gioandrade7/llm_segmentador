@@ -107,12 +107,8 @@ def construir_prompt_analise(
         "respeitarem, escrever as diretrizes que corrigirão a próxima tentativa de "
         "segmentação."
     )
-    instrucao_avaliar = (
-        " Confira se a segmentação respeita a estrutura especificada, de forma uniforme. Considere "
-        "a segmentação **inconsistente** se qualquer um destes problemas ocorrer:"
-    )
 
-    return f"""Você é um auditor de segmentação de documentos estruturados.
+    return f"""Você é um auditor de segmentação de documentos normativos.
 
         {abertura}
 {padrao}
@@ -123,29 +119,23 @@ def construir_prompt_analise(
         {resumo}
         ```
 {secao_anterior}
-        ## O que avaliar
-        {instrucao_avaliar}
-
-        2. **Bloco englobante** — um bloco desproporcionalmente extenso que agrupa várias unidades do padrão identificado, quando cada unidade deveria ser um bloco.
-        3. **Sobreposição ou duplicação** — dois blocos cobrindo essencialmente o mesmo trecho do documento.
-        4. **Lacuna** — salto evidente entre o fim de um bloco e o início do seguinte, indicando conteúdo não segmentado.
-        5. **Falha de âncora** — blocos marcados como "TEXTO NÃO EXTRAÍDO", sinal de que os offsets escolhidos não eram literais ou não eram únicos.
 
         ## Como escrever os insights
         Os `insights` serão inseridos literalmente no prompt de segmentação do próximo ciclo, que processa o documento por janelas e identifica **um bloco por vez**. Portanto:
 
         - Escreva em português, no imperativo, endereçados a quem vai segmentar.
         - Sejam **concretos e específicos deste documento**, não descrições abstratas.
-        - Se houve falha de âncora, incluam orientação sobre como escolher offsets localizáveis.
         - **Nunca instruam a agrupar unidades irmãs** num mesmo bloco só para deixar o resultado mais uniforme: o remédio para granularidade desigual é dividir o bloco englobante, nunca fundir os blocos menores.
         - Não repitam as regras genéricas que já existem no prompt (literalidade dos offsets, retornar JSON, etc.) — acrescentem apenas o que é específico deste documento.
         - Máximo de 10 diretrizes, em lista com marcadores.
 
-        ## Instruções de resposta
-        Retorne **exclusivamente** um objeto JSON válido com as chaves:
-        - `"inconsistencias"`     : array de strings — cada problema encontrado, citando os índices dos blocos envolvidos (ex.: "bloco [3] agrupa os subitens (a) a (w)"). Array vazio se não houver nenhum.
-        - `"consistente"`         : booleano — `true` somente se nenhum dos cinco problemas acima ocorrer
-        - `"insights"`            : string — as diretrizes para o próximo ciclo, em lista com marcadores. String vazia se `consistente` for `true`.
+        retorne o seguinte json e nada mais:
+
+        ```
+        {{
+            "consistente": <true|false>,  # se os blocos seguem o padrão
+            "insights": "<diretrizes para o próximo ciclo>",  # texto livre, em português, imperativo, endereçado a quem vai segmentar
+        }}
         """
 
 
@@ -153,7 +143,6 @@ def analisar_blocos(
     blocos: list[dict],
     model: str,
     insights_atuais: str = "",
-    verboso: bool = True,
     padrao: str = "",
 ) -> dict:
     """Submete o resumo dos blocos ao analisador e devolve seu veredito."""
@@ -169,8 +158,6 @@ def analisar_blocos(
             vazio["padrao_identificado"] = ""
         return vazio
 
-    if verboso:
-        print("── Analisando a estrutura dos blocos... ───────────────\n")
 
     prompt = construir_prompt_analise(
         resumir_blocos(blocos), len(blocos), insights_atuais, padrao
@@ -185,10 +172,8 @@ def analisar_blocos(
 def segmentar_com_correcao(
     paginas: list[dict],
     model: str = "gpt-4o",
-    verboso: bool = True,
     janela_paginas: int = 20,
     max_ciclos: int = 0,
-    exibir_analise=None,
     padrao: str = "",
 ) -> tuple[list[dict], list[dict]]:
     """
@@ -224,12 +209,13 @@ def segmentar_com_correcao(
         blocos  = processar_documento_completo(
             paginas,
             model=model,
-            verboso=verboso,
             janela_paginas=janela_paginas,
             insights=insights,
             padrao=padrao,
         )
-        analise = analisar_blocos(blocos, model, insights, verboso, padrao)
+        analise = analisar_blocos(blocos, model, insights, padrao)
+        print(f"\n  Auditor: consistente={analise.get('consistente')}")
+        print(f"  Diretrizes: {analise.get('insights')}")
 
         # `blocos` guarda a extração íntegra do ciclo, não só a contagem: o
         # último ciclo não é necessariamente o melhor, e comparar as versões
@@ -241,9 +227,6 @@ def segmentar_com_correcao(
             "analise": analise,
             "blocos": blocos,
         })
-
-        if exibir_analise:
-            exibir_analise(analise, ciclo)
 
         if analise.get("consistente"):
             print(f"\n  ✓ Ciclo {ciclo}: blocos considerados estruturalmente consistentes.\n")

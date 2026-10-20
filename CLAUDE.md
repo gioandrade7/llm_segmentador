@@ -10,7 +10,7 @@ Research pipeline for semantic segmentation of **structured documents**. Two seq
 text_extraction/ → semantic_seg/
 ```
 
-The segmentation task is **pure segmentation**: find where each semantic block starts and ends. There is no classification into predefined categories, and no per-document-type config file — the prompt is generic and specializes itself at runtime (see *The two nested loops* below).
+The segmentation task is **pure segmentation**: find where each semantic block starts and ends. The prompt is generic and specializes itself at runtime (see *The two nested loops* below).
 
 The task is currently defined **only for documents with an identifiable structural pattern** (recurring markers, numbering, heading hierarchy). If the identifier returns `tem_padrao: false`, `main.py` prints `Documento sem estrutura recorrente` and exits without segmenting. Segmentation by topic shift, for documents without markers, no longer exists.
 
