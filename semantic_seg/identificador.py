@@ -19,7 +19,9 @@ from utils_llm import completar_json
 from utils_files import montar_texto_completo
 
 SISTEMA_IDENTIFICACAO = (
-    "Você é um especialista em estrutura de documentos normativos. O documento é um texto normativo: prescrições organizadas em dispositivos marcados."
+    "Você é um especialista em estrutura de documentos. O documento é estruturado: "
+    "organizado em unidades abertas por marcadores (numeração, rótulos, títulos). "
+    "Responde sempre com um único objeto JSON válido, sem texto adicional."
 )
 
 
@@ -79,31 +81,24 @@ def construir_prompt_identificacao(
     lista_pags = ", ".join(str(p) for p in paginas_amostradas)
 
     return f"""
-
         ## O que você está lendo
-        Abaixo estão as **páginas {lista_pags} de um documento de {total_paginas} páginas** — uma amostra de três regiões (começo, meio e fim), não o documento inteiro. Os marcadores `<!-- PÁGINA N -->` indicam o número real de cada página, então os saltos entre as regiões são visíveis. **Não assuma que viu todo o documento**: se a amostra não permitir concluir, diga isso na sua resposta.
+        Abaixo estão as **páginas {lista_pags} de um documento de {total_paginas} páginas** — uma amostra de três regiões (começo, meio e fim), não o documento inteiro. Os marcadores `<!-- PÁGINA N -->` indicam o número real de cada página, então os saltos entre as regiões são visíveis.
 
         ## Sua tarefa
-        Determine como este documento está estruturado, para orientar um processo posterior de segmentação em blocos semânticos, sendo estes os dispositivos do documento,
+        Identifique a **hierarquia de marcadores** que abrem as unidades deste documento, para orientar um processo posterior de segmentação em blocos semânticos. Cada unidade, de qualquer nível, será um bloco com apenas o seu texto próprio: começa no seu marcador e termina imediatamente antes do próximo marcador, de qualquer nível.
 
-        Cada dispositivo, de qualquer categoria, é um bloco com apenas o seu texto
-        próprio: começa no seu marcador e termina imediatamente antes do próximo
-        marcador, de qualquer nível.
+        - Liste os níveis do mais externo ao mais interno, até o mais fino que o documento marca.
+        - Para cada nível, dê um exemplo do marcador **exatamente como aparece no texto**, com a formatação markdown que o acompanha.
+        - Títulos de seção sem numeração que o texto emite como cabeçalho markdown (`#`, `##`) ou em negrito numa linha própria também são marcadores: cada nível de cabeçalho é um nível da hierarquia.
+        - Inclua um nível que aparece em só uma parte da amostra, se o marcador for claro: o documento inteiro não está visível.
+        - Em textos normativos, incisos, alíneas e itens numerados são níveis da hierarquia. Em textos não normativos (artigos científicos, relatórios), listas dentro de um parágrafo não são níveis.
+        - Uma lista de referências bibliográficas, se houver, é um nível: cada entrada é uma unidade.
 
-        ## O que NÃO inicia bloco
-        
-        - Texto citado de outra norma. Quando um dispositivo altera ou acrescenta
-        texto a outra norma ("passa a vigorar com a seguinte redação", "fica
-        acrescido do seguinte", "is amended to read as follows"), todo o texto
-        citado, até o fecho das aspas ou "(NR)", pertence ao dispositivo que
-        altera, mesmo que contenha "Art.", "§" ou incisos.
-        - Remissões. A menção a um dispositivo no meio de uma frase ("observado o
-        disposto no art. 5º, § 2º", "under section 203(b)") não é marcador,
-        mesmo que uma quebra de linha a coloque no início da linha. Um marcador
-        abre o texto do próprio dispositivo; uma remissão continua uma frase que
-        veio antes.
-        - Ruído de página: cabeçalhos e rodapés correntes, números de página e
-        carimbos de publicação.
+        ## O que NÃO é marcador
+        - Texto citado de outra norma. Quando uma unidade altera ou acrescenta texto a outra norma ("passa a vigorar com a seguinte redação", "is amended to read as follows"), o texto citado pertence à unidade que altera, mesmo que contenha "Art.", "§" ou incisos.
+        - Remissões: a menção a uma unidade no meio de uma frase ("observado o disposto no art. 5º, § 2º", "under section 203(b)"), mesmo que uma quebra de linha a coloque no início da linha.
+        - Legendas de figura e de tabela e o conteúdo de tabelas.
+        - Ruído de página: cabeçalhos e rodapés correntes, números de página e carimbos de publicação.
 
         ## Amostra do documento
         ```
@@ -111,10 +106,10 @@ def construir_prompt_identificacao(
         ```
 
         ## Como responder
-        Responda com uma instrução clara e concisa de como segmentar o documento em blocos semânticos e descrevendo a hierarquia de marcadores observada. Devolva a resposta **em JSON**, com as chaves:
+        Devolva **somente** a hierarquia: sem instruções de como segmentar, regras de corte, justificativas nem comentários sobre a amostra. Responda **em JSON**, com a chave abaixo, cujo valor tem um nível por linha, do mais externo ao mais interno, no formato `nível N: <nome> — <exemplo do marcador>`:
         ```
         {{
-            "instrução": <string>,  # instrução de segmentação
+            "instrução": "nível 1: Seção — SEC. 203.\\nnível 2: Subseção — (a)\\nnível 3: Parágrafo — (1)"
         }}
         ```
         """

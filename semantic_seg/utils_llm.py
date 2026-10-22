@@ -12,16 +12,42 @@ load_dotenv()
 # Prompt
 # ──────────────────────────────────────────────────────────────────────────────
 
-# Regras que valem em qualquer modo (hierárquico, sequência plana, tópico).
-# `identificador.formatar_padrao` as acrescenta ao fim de cada ramo; sem padrão,
-# `construir_prompt` as usa junto de `ESTRUTURA_RESERVA`.
+# Regras de corte genéricas. O identificador devolve só a hierarquia de
+# marcadores; o que fazer com ela (cortar em todo nível, o que não é unidade)
+# vale para qualquer documento e entra igual no segmentador e no auditor — se só
+# o segmentador as conhecesse, o auditor cobraria cortes que as regras proíbem
+# (ex.: itens de uma lista inline).
+REGRAS_DE_CORTE = """
+
+        ## O que NÃO inicia bloco
+        - Legendas de figura e de tabela e o conteúdo de tabelas, mesmo numerados: ficam dentro do bloco em que aparecem.
+        - Listas dentro do texto de uma unidade cujos marcadores **não** estão na hierarquia: a lista inteira, com o texto que a introduz e o que a segue, fica no mesmo bloco. Quando o marcador da lista **está** na hierarquia (incisos, alíneas, itens de uma norma), cada item é uma unidade e inicia bloco.
+        - Texto citado de outra norma. Quando uma unidade altera ou acrescenta texto a outra norma ("passa a vigorar com a seguinte redação", "fica acrescido do seguinte", "is amended to read as follows"), todo o texto citado, até o fecho das aspas ou "(NR)", pertence à unidade que altera, mesmo que contenha "Art.", "§" ou incisos.
+        - Remissões. A menção a uma unidade no meio de uma frase ("observado o disposto no art. 5º, § 2º", "under section 203(b)") não é marcador, mesmo que uma quebra de linha a coloque no início da linha: um marcador abre o texto da própria unidade; uma remissão continua uma frase que veio antes.
+        - Ruído de página: cabeçalhos e rodapés correntes, números de página, carimbos de publicação e os marcadores `<!-- PÁGINA N -->`."""
 
 
-# Usada quando não há padrão a injetar (`--sem-identificador` ou falha do
-# identificador): sem ela o prompt ficaria sem nenhuma definição de bloco.
-ESTRUTURA_RESERVA = f"""
+# Usada quando não há padrão a injetar (o identificador falhou ou devolveu
+# vazio): sem ela o prompt ficaria sem nenhuma definição de bloco.
+ESTRUTURA_RESERVA = (
+    "Não há hierarquia identificada para este documento. Um bloco é a **menor "
+    "unidade de texto que o documento delimita**: começa onde o documento abre "
+    "uma nova unidade por um marcador (numeração, rótulo, título) e termina "
+    "imediatamente antes do início da próxima."
+)
+
+
+def secao_estrutura(padrao: str) -> str:
+    """Seção `## Estrutura deste documento`, comum ao segmentador e ao auditor."""
+    corpo = (
+        "Hierarquia de marcadores identificada numa amostra do texto fonte, do "
+        f"nível mais externo ao mais interno:\n\n{padrao.strip()}"
+        if padrao.strip() else ESTRUTURA_RESERVA
+    )
+    return f"""
         ## Estrutura deste documento
-        Um bloco é a **menor unidade de texto que o documento delimita**: começa onde o documento abre uma nova unidade — por um marcador (numeração, rótulo, título) ou, se não houver marcadores, por uma mudança de assunto — e termina imediatamente antes do início da próxima."""
+        {corpo}
+{REGRAS_DE_CORTE}"""
 
 
 def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") -> str:
@@ -35,54 +61,54 @@ def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") ->
 
     Duas seções opcionais o especializam, com precedências diferentes:
 
-    `padrao` é a especificação estrutural do documento, produzida pelo módulo
+    `padrao` é a hierarquia de marcadores do documento, produzida pelo módulo
     `identificador` a partir de uma amostra de páginas do **texto fonte**,
-    antes de qualquer segmentação. É a **única** definição de bloco do prompt:
-    diz como as unidades são delimitadas neste documento e termina com as
-    `REGRAS_COMUNS`. Sem padrão, entra `ESTRUTURA_RESERVA` no lugar.
+    antes de qualquer segmentação. Vem seguida das `REGRAS_DE_CORTE`.
+    Sem padrão, entra `ESTRUTURA_RESERVA` no lugar da hierarquia.
 
     `insights` são diretrizes corretivas escritas pelo módulo `corretor` a
     partir da análise dos blocos de um ciclo anterior. Vêm de falhas
     efetivamente observadas, então são evidência posterior: em caso de
-    conflito, prevalecem sobre o padrão.
+    conflito, prevalecem sobre o padrão e as regras.
     """
     secao_insights = f"""
         ## Correções de ciclos anteriores
-        A auditoria dos blocos segmentados em um ciclo anterior produziu as diretrizes abaixo. Elas nascem de erros efetivamente cometidos, então têm **precedência máxima**: se contradisserem a estrutura descrita acima, siga as diretrizes.
+        A auditoria dos blocos segmentados em um ciclo anterior produziu as diretrizes abaixo. Elas nascem de erros efetivamente cometidos, então têm **precedência máxima**: se contradisserem a estrutura ou as regras de corte acima, siga as diretrizes.
 
         {insights.strip()}
     """ if insights.strip() else ""
 
     return f"""Você é um especialista em segmentação de documentos estruturados.
 
-{padrao or ESTRUTURA_RESERVA}{secao_insights}
         ## Sua tarefa
-        Analise o texto do documento fornecido abaixo e identifique **apenas o primeiro bloco completo** presente no texto, conforme a seção *Estrutura deste documento*.
+        O texto abaixo é uma janela de um documento maior e começa logo depois do último bloco já segmentado. Identifique **apenas o primeiro bloco**: o que é aberto pelo primeiro marcador que aparece na janela, segundo a seção *Estrutura deste documento*. Ele termina imediatamente antes do próximo marcador, de qualquer nível.
 
-        O texto é composto por múltiplas páginas, cada uma precedida por um marcador `<!-- PÁGINA N -->`. Um bloco pode se estender por mais de uma página.
+        Texto que venha antes desse primeiro marcador (ruído de página, um resto da unidade anterior) não faz parte do bloco.
 
+        O texto é composto por páginas, cada uma precedida por um marcador `<!-- PÁGINA N -->`. Um bloco pode se estender por mais de uma página. Se a janela acabar antes do marcador da unidade seguinte, não descarte o bloco: devolva-o até o fim do texto, com `pagina_fim` igual à última página da janela, e a janela será ampliada.
+{secao_estrutura(padrao)}
+{secao_insights}
         ## Texto do documento
         ```
         {texto_janela}
         ```
 
         ## Instruções de resposta
-        Retorne **exclusivamente** um objeto JSON válido, sem texto adicional, com as seguintes chaves:
+        Retorne **exclusivamente** um objeto JSON válido, sem texto adicional, com as chaves nesta ordem:
 
-        - `"offset_inicio"` : string — trecho inicial (primeiras ~80 chars) do bloco, **COPIADO LITERALMENTE** do texto acima
-        - `"offset_fim"`    : string — trecho final (últimas ~80 chars) do bloco, **COPIADO LITERALMENTE** do texto acima
-        - `"pagina_inicio"` : inteiro — número da página onde o bloco começa (conforme os marcadores <!-- PÁGINA N -->)
-        - `"pagina_fim"`    : inteiro — número da página onde o bloco termina (conforme os marcadores <!-- PÁGINA N -->)
-        - `"titulo"`        : string — título ou identificador resumido do bloco
-        - `"motivo"`        : string — justificativa curta de por que esse trecho forma uma unidade coesa e onde estão seus limites
+        - `"titulo"`        : string — o marcador e o título do bloco (ex.: `§ 2º`, `(b) Definitions`, `3.1 Data`)
+        - `"offset_inicio"` : string — as primeiras ~80 chars do bloco, a partir do marcador que o abre, **COPIADAS LITERALMENTE** do texto acima
+        - `"offset_fim"`    : string — as últimas ~80 chars do bloco, terminando imediatamente antes do marcador da unidade seguinte, **COPIADAS LITERALMENTE** do texto acima
+        - `"pagina_inicio"` : inteiro — número da página onde o bloco começa (conforme os marcadores `<!-- PÁGINA N -->`)
+        - `"pagina_fim"`    : inteiro — número da página onde o bloco termina (conforme os marcadores `<!-- PÁGINA N -->`)
 
-        ## Regras importantes (genéricas)
-        - **Literalidade dos offsets**: `offset_inicio` e `offset_fim` devem ser trechos **literalmente presentes** no texto acima, **copiados sem qualquer modificação** — incluindo formatação markdown (`**`, `_`, `#`, etc.), pontuação, quebras de linha e maiúsculas/minúsculas. **NUNCA parafraseie, descreva, abrevie ou explique** o bloco nos offsets; eles servem apenas para localizar o trecho no texto fonte.
-        - **Unicidade dos offsets**: cada offset deve ser suficientemente longo e distintivo para localização inequívoca no texto. Em caso de itens parecidos, escolha trechos mais longos ou mais únicos.
-        - **Precisão do corte — aspectos físicos e semânticos**: antes de fixar os offsets, confira os dois lados de cada corte.
-          - *Físico*: o `offset_inicio` começa exatamente no marcador ou título que abre a unidade — onde ele abre a linha, com a sua formatação (`#`, `**`, numeração) —, e não numa menção a ele no corpo, numa tabela ou numa legenda. O `offset_fim` termina no último caractere do texto da unidade, imediatamente antes do marcador da unidade seguinte.
-          - *Semântico*: o bloco contém todo o texto que pertence à unidade e nada da seguinte. Uma quebra de página, de coluna, uma figura ou uma tabela no meio da unidade não a encerra: se o parágrafo ou o assunto continua depois dela, o bloco também continua, até o marcador da próxima unidade.
-        - Se o texto não contiver nenhum bloco semântico identificável, retorne `"offset_inicio": null` e todos os valores como `null` ou `0`.
+
+        ## Regras dos trechos copiados
+        - **Literalidade**: `offset_inicio` e `offset_fim` devem ser trechos **literalmente presentes** no texto acima, **copiados sem qualquer modificação** — incluindo formatação markdown (`**`, `_`, `#`, etc.), pontuação, quebras de linha e maiúsculas/minúsculas. **NUNCA parafraseie, descreva, abrevie ou explique** o bloco; os trechos servem apenas para localizá-lo no texto fonte.
+        - `offset_inicio` começa no marcador ou título que abre a unidade, onde ele abre a linha — não numa menção a ele no corpo, numa tabela ou numa legenda. `offset_fim` termina no último caractere do texto da unidade, imediatamente antes do marcador da unidade seguinte.
+        - Não inclua marcadores `<!-- PÁGINA N -->` nos trechos.
+        - **Unicidade**: cada trecho deve ser longo e distintivo o bastante para ser localizado sem ambiguidade. Em caso de itens parecidos, escolha trechos mais longos.
+        - Se a janela não contiver nenhum marcador que abra uma unidade, retorne `"offset_inicio": null` e todos os valores como `null` ou `0`.
         """
 
 
@@ -138,6 +164,7 @@ def _chamar_llm(
     """Envia uma janela de texto ao LLM e retorna o dict JSON parseado."""
 
     prompt = construir_prompt(janela_texto, insights, padrao)
+    print(f"  ── Prompt enviado ao LLM ({len(prompt):,} chars) ──\n{prompt}\n")
     # O modelo às vezes devolve JSON malformado; completar_json() entrega a
     # string crua, então o segmentador repete a chamada em vez de quebrar.
     for tentativa in range(1, 4):

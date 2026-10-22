@@ -16,11 +16,11 @@ extensão e bordas), nunca o texto integral: o que se avalia são limites e
 granularidade, não o conteúdo.
 """
 
-from utils_llm import completar_json, processar_documento_completo
+from utils_llm import completar_json, processar_documento_completo, secao_estrutura
 
 # Quanto de cada bloco vai no resumo enviado ao analisador.
-INICIO_AMOSTRA = 250
-FIM_AMOSTRA    = 120
+INICIO_AMOSTRA = 300
+FIM_AMOSTRA    = 300
 
 SISTEMA_ANALISE = (
     "Você é um auditor de segmentação de documentos. Avalia criticamente a "
@@ -60,7 +60,6 @@ def resumir_blocos(blocos: list[dict]) -> str:
 
         linhas.append(
             f"[{i}] págs. {b.get('pagina_inicio', '?')}–{b.get('pagina_fim', '?')} | {tamanho}\n"
-            f"    título: {b.get('titulo') or 'N/A'}\n"
             f"    início: {_achatar(inicio)}\n"
             f"    fim   : {_achatar(fim)}"
         )
@@ -83,59 +82,69 @@ def construir_prompt_analise(
 
     Com `padrao` (vindo do módulo `identificador`, que leu o texto fonte), o
     auditor **não deduz** a estrutura a partir dos blocos: ele confere a
-    segmentação contra uma especificação de fonte independente. Sem `padrao`,
-    cai no comportamento anterior — deduzir dos próprios blocos —, que é
-    circular mas mantém o pipeline funcional com `--sem-identificador`.
+    segmentação contra uma especificação de fonte independente. A hierarquia e
+    as regras de corte entram pela mesma `secao_estrutura` do segmentador: o
+    auditor julga contra exatamente o que o segmentador recebeu.
     """
     secao_anterior = f"""
         ## Diretrizes usadas no ciclo anterior
-        As diretrizes abaixo já estavam no prompt que produziu os blocos acima. Se não resolveram os problemas, refine-as ou substitua-as. O campo `insights` da sua resposta deve conter o conjunto **completo** de diretrizes para o próximo ciclo — não apenas o que mudou.
+        As diretrizes abaixo já estavam no prompt que produziu os blocos acima. Se um problema que elas tratam não aparece mais, é porque elas funcionaram: mantenha-as. Refine ou substitua só as que não resolveram o problema ou causaram um novo. O campo `insights` da sua resposta deve conter o conjunto **completo** de diretrizes para o próximo ciclo — não apenas o que mudou.
 
         ```
         {insights_atuais.strip()}
         ```
     """ if insights_atuais.strip() else ""
 
+    return f"""Você é um auditor de segmentação de documentos estruturados.
 
+        Um pipeline automático segmentou um documento em {total_blocos} bloco(s). A estrutura do documento foi identificada de forma independente, a partir do texto fonte, e está descrita abaixo junto com as regras de corte que o segmentador recebeu. Sua tarefa é verificar se os blocos respeitam essa estrutura e essas regras e, se não respeitarem, escrever as diretrizes que corrigirão a próxima segmentação. Se respeitarem, apenas confirme a consistência e não escreva diretrizes.
+{secao_estrutura(padrao)}
 
-    # Com padrão externo, a tarefa é conferir conformidade; sem ele, o auditor
-    # precisa deduzir a estrutura dos próprios blocos que está julgando.
-    abertura = (
-        f"Um pipeline automático segmentou um documento em {total_blocos} bloco(s). "
-        "A estrutura do documento já foi identificada de forma independente e está "
-        "descrita abaixo. Sua tarefa é avaliar se os blocos a respeitam e, se não "
-        "respeitarem, escrever as diretrizes que corrigirão a próxima tentativa de "
-        "segmentação."
-    )
-
-    return f"""Você é um auditor de segmentação de documentos normativos.
-
-        {abertura}
-{padrao}
         ## Blocos produzidos
-        Cada bloco aparece com suas páginas, tamanho, título e os trechos iniciais e finais do texto capturado (`⏎` marca quebra de linha):
+        Cada bloco aparece com suas páginas, tamanho e os trechos iniciais e finais do texto capturado (`⏎` marca quebra de linha):
 
         ```
         {resumo}
         ```
 {secao_anterior}
+        ## O que verificar
+        1. **Bloco englobante**: um bloco contém, no início ou no fim, o marcador de outra unidade, que deveria ser um bloco próprio.
+        2. **Granularidade desigual**: unidades do mesmo nível são cortadas num trecho do documento e agrupadas em outro.
+        3. **Lacuna**: texto do documento fora de qualquer bloco — o fim de um bloco não encosta no início do seguinte, ou páginas sem bloco entre dois blocos.
+        4. **Sobreposição**: dois blocos com texto em comum.
+        6. **Sequência quebrada**: salto na numeração de unidades irmãs (`(3)` logo depois de `(1)`) ou uma lista que termina antes do que o texto anuncia.
+        7. **Corte indevido**: bloco aberto num ponto que, pelas regras de corte, não é unidade (legenda, item de lista fora da hierarquia, remissão, texto citado de outra norma).
 
-        ## Como escrever os insights
-        Os `insights` serão inseridos literalmente no prompt de segmentação do próximo ciclo, que processa o documento por janelas e identifica **um bloco por vez**. Portanto:
+        ## Critério de aprovação
+        `consistente: true` somente se você não encontrar nenhum dos problemas acima. Reprove só com evidência concreta nas bordas dos blocos; mas, havendo evidência, não aprove — inclusive para um problema que você mesmo já apontou num ciclo anterior e que continua presente.
+
+        ## Erro de extração
+        Se o problema vier da extração do PDF — texto fora da ordem de leitura, um cabeçalho emitido longe da sua seção, colunas misturadas —, o segmentador não tem como corrigi-lo: ele lê o texto em ordem, com um ponteiro que só avança, e não pode reordená-lo. Nesse caso marque `erro_extracao: true`, descreva-o em `problemas` e não escreva diretriz sobre ele.
+
+        ## Como escrever os insights, caso necessário
+        Os insights serão inseridos literalmente no prompt de segmentação do próximo ciclo, que processa o documento por janelas e identifica **um bloco por vez**. Portanto:
 
         - Escreva em português, no imperativo, endereçados a quem vai segmentar.
         - Sejam **concretos e específicos deste documento**, não descrições abstratas.
+        - Identifique cada unidade pelo marcador e pelo texto que a abre, com a página. **Nunca** pelo número `[n]` do bloco: o segmentador não conhece essa numeração.
         - **Nunca instruam a agrupar unidades irmãs** num mesmo bloco só para deixar o resultado mais uniforme: o remédio para granularidade desigual é dividir o bloco englobante, nunca fundir os blocos menores.
-        - Não repitam as regras genéricas que já existem no prompt (literalidade dos offsets, retornar JSON, etc.) — acrescentem apenas o que é específico deste documento.
-        - Máximo de 10 diretrizes, em lista com marcadores.
+        - Máximo de 5 diretrizes, em lista com marcadores, priorizando as que afetam mais blocos.
 
-        retorne o seguinte json e nada mais:
+        ## Resposta
+        Retorne exclusivamente este JSON, com as chaves nesta ordem. Liste os problemas antes de decidir: cada diretriz deve corrigir um problema listado.
 
         ```
         {{
-            "consistente": <true|false>,  # se os blocos seguem o padrão
-            "insights": "<diretrizes para o próximo ciclo>",  # texto livre, em português, imperativo, endereçado a quem vai segmentar
+            "problemas": [
+                {{"bloco": 12, "tipo": "englobante", "descricao": "o bloco de `(4)` termina com o texto de `(5) Determinations Required`"}}
+            ],
+            "erro_extracao": false,
+            "consistente": false,
+            "insights": "- Termine o bloco de `(4)` imediatamente antes de `(5) Determinations Required` (pág. 7) e inicie um bloco novo ali."
         }}
+        ```
+
+        `tipo` é um de: `englobante`, `granularidade`, `lacuna`, `sobreposicao`, `ancora`, `sequencia`, `corte_indevido`. Sem problemas: `"problemas": []`, `"consistente": true`, `"insights": ""`.
         """
 
 
@@ -148,7 +157,6 @@ def analisar_blocos(
     """Submete o resumo dos blocos ao analisador e devolve seu veredito."""
     if not blocos:
         vazio = {
-            "inconsistencias": ["Nenhum bloco foi produzido pela segmentação."],
             "consistente": False,
             "insights": "",
         }
