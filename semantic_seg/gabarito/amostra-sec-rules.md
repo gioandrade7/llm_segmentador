@@ -1,0 +1,187 @@
+%%
+Gabarito de segmentação — amostra-sec-rules
+Texto-fonte: text_extraction/out/amostra-sec-rules/paginas
+Status: RASCUNHO recortado de gabarito/sec-rules.md (git 8ade3d2, gerado por regex) às 15 páginas da amostra;
+  conferido por script: todo marcador em início de linha ou após ';', ':', '—' é nó, salvo remissões e notas de rodapé.
+  Corrigido: faltavam (ii) em 203(b)(8)(B) e (H) na def. (11) (após '; or'); (A)–(D) da def. (2) e (A)–(C) da def. (24) passaram a ser nós. A amostra termina no meio da 203(j), último nó.
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`
+- Indentação de 2 espaços por nível (filho 2 espaços à direita do pai)
+- Tipos: epígrafe, capítulo (TITLE II), seção (SEC. N), letra (a), número (1), maiúscula (A), romano (i) e (I)
+- O tipo diz a família do marcador, não o nível: (1) direto sob a seção quando não há (a), como na SEC. 201
+- Início do trecho copiado do texto extraído, a partir do marcador; formatação (**, <u>, #, -, >) pode ser omitida
+- Ordem das linhas = ordem do documento; o trecho de um nó vai até o início da próxima linha
+- ` ⟶ ` = final do conteúdo do nó, nos 9 nós que terminam antes de ruído de página ou nota de rodapé;
+  o que vem depois, até o nó seguinte, é ruído (um fim previsto em qualquer ponto dele está certo)
+- Cada nó guarda só o próprio texto; o texto dos filhos pertence aos filhos
+- A seção começa na rubrica (`## FINDINGS`), que vem antes de `SEC. 201. ø80b–1¿`; o caput da seção fica nela.
+  Seções sem rubrica `##` (203A, 210A, 222, 223, 224) começam em `SEC. N.`
+- A epígrafe guarda as notas editoriais do início (ø…¿, [Title II…], [As Amended…]) até TITLE II
+- Itens na mesma linha são nós separados: após fim de frase, ';', ':' ou '—' (as exclusões (A)–(G) da def. (11))
+  e também em enumeração corrida separada por vírgulas ((A)–(D) da def. (2) ‘‘Bank’’, (A)–(C) da def. (24));
+  o texto que fecha a enumeração (‘‘…included in clauses (A), (B), or (C) of this paragraph.’’) fica no último item
+- Ruído (não anotado): cabeçalho e rodapé corrente (G:\COMP…, nº de página, "Sec. N INVESTMENT ADVISERS ACT", "As Amended Through", "August 11, 2025", VerDate, tabelas de cabeçalho),
+  e notas de rodapé (com ou sem '>'), inclusive o texto de emenda citado nelas (‘‘; (G) any family office…’’, nota da def. (11))
+%%
+
+- Documento
+  - [epígrafe] INVESTMENT ADVISERS ACT OF 1940 øReferences in brackets
+  - [capítulo] TITLE II—INVESTMENT ADVISERS
+    - [seção] FINDINGS
+      - [número] (1) their advice, counsel, publications, writ
+      - [número] (2) their advice, counsel, publications, writ
+      - [número] (3) the foregoing transactions occur in such
+    - [seção] DEFINITIONS
+      - [letra] (a) When used in this title, unless the conte ⟶ the following definitions shall apply:
+        - [número] (1) ‘‘Assignment’’ includes any direct or ind
+        - [número] (2) ‘‘Bank’’ means
+          - [maiúscula] (A) a banking institution organized under the laws
+          - [maiúscula] (B) a member bank of the Federal Reserve System
+          - [maiúscula] (C) any other banking institution, savings association
+          - [maiúscula] (D) a receiver, conservator, or other liquidating agent
+        - [número] (3) The term ‘‘broker’’ has the same meaning
+        - [número] (4) ‘‘Commission’’ means the Securities and E
+        - [número] (5) ‘‘Company’’ means a corporation, a partne
+        - [número] (6) ‘‘Convicted’’ includes a verdict, judgmen
+        - [número] (7) The term ‘‘dealer’’ has the same meaning
+        - [número] (8) ‘‘Director’’ means any director of a corp
+        - [número] (9) ‘‘Exchange’’ means any organization, asso
+        - [número] (10) ‘‘Interstate commerce’’ means trade, com
+        - [número] (11) ‘‘Investment adviser’’ means any person
+          - [maiúscula] (A) a bank, or any bank holding company as de
+          - [maiúscula] (B) any lawyer, accountant, engineer, or teac
+          - [maiúscula] (C) any broker or dealer whose performance of
+          - [maiúscula] (D) the publisher of any bona fide newspaper,
+          - [maiúscula] (E) any person whose advice, analyses, or rep
+          - [maiúscula] (F) any nationally recognized statistical rat
+          - [maiúscula] (G) any family office, as defined by rule, re
+          - [maiúscula] (H) such other persons not within the intent of
+        - [número] (12) ‘‘Investment company’’, affiliated perso
+        - [número] (13) ‘‘Investment supervisory services’’ mean
+        - [número] (14) ‘‘Means or instrumentality of interstate
+        - [número] (15) ‘‘National securities exchange’’ means a
+        - [número] (16) ‘‘Person’’ means a natural person or a c
+        - [número] (17) The term ‘‘person associated with an inv
+        - [número] (18) ‘‘Security’’ means any note, stock, trea ⟶ final regulations implementing this Act.’’.
+        - [número] (19) ‘‘State’’ means any State of the United
+        - [número] (20) ‘‘Underwriter’’ means any person who has
+        - [número] (21) ‘‘Securities Act of 1933’’, ‘‘Securities
+        - [número] (22) ‘‘Business development company’’ means a
+          - [maiúscula] (A) the 70 per centum of the value of the tot
+          - [maiúscula] (B) such company need not be a closed-end com
+          - [maiúscula] (C) the securities which may be purchased pur
+        - [número] (23) ‘‘Foreign securities authority’’ means a
+        - [número] (24) ‘‘Foreign financial regulatory authority
+          - [maiúscula] (A) foreign securities authority
+          - [maiúscula] (B) other governmental body or foreign equivalent
+          - [maiúscula] (C) membership organization a function of which
+        - [número] (25) ‘‘Supervised person’’ means any partner,
+        - [número] (26) The term ‘‘separately identifiable depar
+          - [maiúscula] (A) that is under the direct supervision of a
+          - [maiúscula] (B) for which all of the records relating to
+        - [número] (27) The terms ‘‘security future’’ and ‘‘narr
+        - [número] (28) The term ‘‘credit rating agency’’ has th
+        - [número] (29) The term ‘‘private fund’’ means an issue
+        - [número] (30) The term ‘‘foreign private adviser’’ mea
+          - [maiúscula] (A) has no place of business in the United St
+          - [maiúscula] (B) has, in total, fewer than 15 clients and
+          - [maiúscula] (C) has aggregate assets under management att
+          - [maiúscula] (D) neither—
+            - [romano] (i) holds itself out generally to the public
+            - [romano] (ii) acts as—
+              - [romano] (I) an investment adviser to any investment c ⟶ under the Investment Company Act of 1940; or
+              - [romano] (II) a company that has elected to be a busin
+        - [número] (29)<sup>3</sup> The terms ‘‘commodity pool’’
+      - [letra] (b) No provision in this title shall apply to
+      - [letra] (c) CONSIDERATION OF PROMOTION OF EFFICIENCY,
+    - [seção] REGISTRATION OF INVESTMENT ADVISERS
+      - [letra] (a) Except as provided in subsection (b) and
+      - [letra] (b) The provisions of subsection (a) shall no
+        - [número] (1) any investment adviser, other than an inv
+        - [número] (2) any investment adviser whose only clients
+        - [número] (3) any investment adviser that is a foreign ⟶ adviser that is a foreign private adviser;
+        - [número] (4) any investment adviser that is a charitab
+          - [maiúscula] (A) any such charitable organization;
+          - [maiúscula] (B) a fund that is excluded from the definiti
+          - [maiúscula] (C) a trust or other donative instrument desc
+        - [número] (5) any plan described in section 414(e) of t
+        - [número] (6)
+          - [maiúscula] (A) any investment adviser that is registered
+            - [romano] (i) an investment company registered under ti
+            - [romano] (ii) a company which has elected to be a busi
+          - [maiúscula] (B) any investment adviser that is registered
+        - [número] (7) any investment adviser, other than any en
+          - [maiúscula] (A) small business investment companies that
+          - [maiúscula] (B) entities that have received from the Smal ⟶ notice or license has not been revoked; or
+          - [maiúscula] (C) applicants that are affiliated with 1 or
+        - [número] (8) any investment adviser, other than an ent
+          - [maiúscula] (A) rural business investment companies (as d
+          - [maiúscula] (B) companies that have submitted to the Secr
+            - [romano] (i) have received from the Secretary of Agric
+            - [romano] (ii) are affiliated with 1 or more rural business
+      - [letra] (c)
+        - [número] (1) An investment adviser, or any person who
+          - [maiúscula] (A) the name and form of organization under w
+          - [maiúscula] (B) the education, the business affiliations
+          - [maiúscula] (C) the nature of the business of such invest
+          - [maiúscula] (D) a balance sheet certified by an independe
+          - [maiúscula] (E) the nature and scope of the authority of
+          - [maiúscula] (F) the basis or bases upon which such invest
+          - [maiúscula] (G) whether such investment adviser, or any p
+          - [maiúscula] (H) a statement as to whether the principal b
+        - [número] (2) Within forty-five days of the date of the
+          - [maiúscula] (A) by order grant such registration; or
+          - [maiúscula] (B) institute proceedings to determine whethe
+      - [letra] (d) Any provision of this title (other than s
+      - [letra] (e) The Commission, by order, shall censure,
+        - [número] (1) has willfully made or caused to be made i ⟶ fact which is required to be stated therein.
+        - [número] (2) has been convicted within ten years prece
+          - [maiúscula] (A) involves the purchase or sale of any secu
+          - [maiúscula] (B) arises out of the conduct of the business
+          - [maiúscula] (C) involves the larceny, theft, robbery, ext
+          - [maiúscula] (D) involves the violation of section 152, 13
+        - [número] (3) has been convicted during the 10-year per
+          - [maiúscula] (A) any crime that is punishable by imprisonm
+          - [maiúscula] (B) a substantially equivalent crime by a for
+        - [número] (4) is permanently or temporarily enjoined by ⟶ with the purchase or sale of any security.
+        - [número] (5) has willfully violated any provision of t
+        - [número] (6) has willfully aided, abetted, counseled,
+          - [maiúscula] (A) there have been established procedures, a
+          - [maiúscula] (B) such person has reasonably discharged the
+        - [número] (7) is subject to any order of the Commission
+        - [número] (8) has been found by a foreign financial reg
+          - [maiúscula] (A) made or caused to be made in any applicat
+          - [maiúscula] (B) violated any foreign statute or regulatio
+          - [maiúscula] (C) aided, abetted, counseled, commanded, ind
+        - [número] (9) is subject to any final order of a State
+          - [maiúscula] (A) bars such person from association with an
+          - [maiúscula] (B) constitutes a final order based on violat
+      - [letra] (f) The Commission, by order, shall censure o
+      - [letra] (g) Any successor to the business of an inves
+      - [letra] (h) Any person registered under this section
+      - [letra] (i) MONEY PENALTIES IN ADMINISTRATIVE PROCEED
+        - [número] (1) AUTHORITY OF COMMISSION.—
+          - [maiúscula] (A) IN GENERAL.—In any proceeding instituted
+            - [romano] (i) has willfully violated any provision of t
+            - [romano] (ii) has willfully aided, abetted, counseled,
+            - [romano] (iii) has willfully made or caused to be made
+            - [romano] (iv) has failed reasonably to supervise, with
+          - [maiúscula] (B) CEASE-AND-DESIST PROCEEDINGS.—In any proc
+            - [romano] (i) is violating or has violated any provisio
+            - [romano] (ii) is or was a cause of the violation of an
+        - [número] (2) MAXIMUM AMOUNT OF PENALTY.—
+          - [maiúscula] (A) FIRST TIER.—The maximum amount of penalty ⟶ person or $50,000 for any other person.
+          - [maiúscula] (B) SECOND TIER.—Notwithstanding subparagraph
+          - [maiúscula] (C) THIRD TIER.—Notwithstanding subparagraphs
+            - [romano] (i) the act or omission described in paragrap
+            - [romano] (ii) such act or omission directly or indirec
+        - [número] (3) DETERMINATION OF PUBLIC INTEREST.—In cons
+          - [maiúscula] (A) whether the act or omission for which suc
+          - [maiúscula] (B) the harm to other persons resulting eithe
+          - [maiúscula] (C) the extent to which any person was unjust
+          - [maiúscula] (D) whether such person previously has been f
+          - [maiúscula] (E) the need to deter such person and other p
+          - [maiúscula] (F) such other matters as justice may require
+        - [número] (4) EVIDENCE CONCERNING ABILITY TO PAY.—In an
+      - [letra] (j) AUTHORITY TO ENTER AN ORDER REQUIRING AN ⟶ under this section, the Commission may

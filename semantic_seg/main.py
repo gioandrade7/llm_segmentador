@@ -56,7 +56,7 @@ def main():
     )
     # exibir_padrao(padrao_dict)
     print(padrao_dict)
-    padrao = padrao_dict.get("instrução", "")
+    padrao = padrao_dict.get("hierarquia", "")
 
     # return 0
 

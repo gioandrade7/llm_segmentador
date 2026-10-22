@@ -1,0 +1,142 @@
+{
+  "prefixo": "resultados/amostra-sec-rules/amostra-sec-rules",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/amostra-sec-rules.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 139,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 139,
+      "fronteiras_gabarito": 159,
+      "acertos": 135,
+      "precisao": 0.9712230215827338,
+      "revocacao": 0.8490566037735849,
+      "f1": 0.9060402684563759,
+      "fins": {
+        "previstos": 139,
+        "gabarito": 159,
+        "fins_nao_localizados": 0,
+        "acertos": 135,
+        "precisao": 0.9712230215827338,
+        "revocacao": 0.8490566037735849,
+        "f1": 0.9060402684563759
+      },
+      "blocos_exatos": {
+        "acertos": 124,
+        "precisao": 0.8920863309352518,
+        "revocacao": 0.779874213836478,
+        "f1": 0.8322147651006712
+      },
+      "cobertura": 0.9570882075733215
+    },
+    {
+      "ciclo": 2,
+      "blocos": 149,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 149,
+      "fronteiras_gabarito": 159,
+      "acertos": 146,
+      "precisao": 0.9798657718120806,
+      "revocacao": 0.9182389937106918,
+      "f1": 0.9480519480519481,
+      "fins": {
+        "previstos": 149,
+        "gabarito": 159,
+        "fins_nao_localizados": 0,
+        "acertos": 145,
+        "precisao": 0.9731543624161074,
+        "revocacao": 0.9119496855345912,
+        "f1": 0.9415584415584416
+      },
+      "blocos_exatos": {
+        "acertos": 135,
+        "precisao": 0.9060402684563759,
+        "revocacao": 0.8490566037735849,
+        "f1": 0.8766233766233767
+      },
+      "cobertura": 0.9782114542329655
+    },
+    {
+      "ciclo": 3,
+      "blocos": 147,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 147,
+      "fronteiras_gabarito": 159,
+      "acertos": 144,
+      "precisao": 0.9795918367346939,
+      "revocacao": 0.9056603773584906,
+      "f1": 0.9411764705882353,
+      "fins": {
+        "previstos": 147,
+        "gabarito": 159,
+        "fins_nao_localizados": 0,
+        "acertos": 143,
+        "precisao": 0.9727891156462585,
+        "revocacao": 0.89937106918239,
+        "f1": 0.934640522875817
+      },
+      "blocos_exatos": {
+        "acertos": 134,
+        "precisao": 0.9115646258503401,
+        "revocacao": 0.8427672955974843,
+        "f1": 0.8758169934640524
+      },
+      "cobertura": 0.9698674945944448
+    },
+    {
+      "ciclo": 4,
+      "blocos": 155,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 155,
+      "fronteiras_gabarito": 159,
+      "acertos": 152,
+      "precisao": 0.9806451612903225,
+      "revocacao": 0.9559748427672956,
+      "f1": 0.9681528662420381,
+      "fins": {
+        "previstos": 155,
+        "gabarito": 159,
+        "fins_nao_localizados": 0,
+        "acertos": 152,
+        "precisao": 0.9806451612903225,
+        "revocacao": 0.9559748427672956,
+        "f1": 0.9681528662420381
+      },
+      "blocos_exatos": {
+        "acertos": 145,
+        "precisao": 0.9354838709677419,
+        "revocacao": 0.9119496855345912,
+        "f1": 0.9235668789808916
+      },
+      "cobertura": 0.9742751011809059
+    },
+    {
+      "ciclo": 5,
+      "blocos": 155,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 155,
+      "fronteiras_gabarito": 159,
+      "acertos": 151,
+      "precisao": 0.9741935483870968,
+      "revocacao": 0.949685534591195,
+      "f1": 0.961783439490446,
+      "fins": {
+        "previstos": 155,
+        "gabarito": 159,
+        "fins_nao_localizados": 0,
+        "acertos": 151,
+        "precisao": 0.9741935483870968,
+        "revocacao": 0.949685534591195,
+        "f1": 0.961783439490446
+      },
+      "blocos_exatos": {
+        "acertos": 145,
+        "precisao": 0.9354838709677419,
+        "revocacao": 0.9119496855345912,
+        "f1": 0.9235668789808916
+      },
+      "cobertura": 0.9742751011809059
+    }
+  ]
+}

@@ -19,9 +19,10 @@ load_dotenv()
 # (ex.: itens de uma lista inline).
 REGRAS_DE_CORTE = """
 
+        ## O que inicia bloco
+        - Todo marcador de um nível da hierarquia inicia bloco, mesmo quando o texto anterior apresenta os itens como continuação da sua frase (termina em `—` ou `:`, como em "among other things—"), e mesmo quando o nível intermediário é pulado (`(1)` direto sob a seção, sem `(a)`; inciso direto sob o artigo, sem parágrafo).
+
         ## O que NÃO inicia bloco
-        - Legendas de figura e de tabela e o conteúdo de tabelas, mesmo numerados: ficam dentro do bloco em que aparecem.
-        - Listas dentro do texto de uma unidade cujos marcadores **não** estão na hierarquia: a lista inteira, com o texto que a introduz e o que a segue, fica no mesmo bloco. Quando o marcador da lista **está** na hierarquia (incisos, alíneas, itens de uma norma), cada item é uma unidade e inicia bloco.
         - Texto citado de outra norma. Quando uma unidade altera ou acrescenta texto a outra norma ("passa a vigorar com a seguinte redação", "fica acrescido do seguinte", "is amended to read as follows"), todo o texto citado, até o fecho das aspas ou "(NR)", pertence à unidade que altera, mesmo que contenha "Art.", "§" ou incisos.
         - Remissões. A menção a uma unidade no meio de uma frase ("observado o disposto no art. 5º, § 2º", "under section 203(b)") não é marcador, mesmo que uma quebra de linha a coloque no início da linha: um marcador abre o texto da própria unidade; uma remissão continua uma frase que veio antes.
         - Ruído de página: cabeçalhos e rodapés correntes, números de página, carimbos de publicação e os marcadores `<!-- PÁGINA N -->`."""
@@ -81,9 +82,7 @@ def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") ->
     return f"""Você é um especialista em segmentação de documentos estruturados.
 
         ## Sua tarefa
-        O texto abaixo é uma janela de um documento maior e começa logo depois do último bloco já segmentado. Identifique **apenas o primeiro bloco**: o que é aberto pelo primeiro marcador que aparece na janela, segundo a seção *Estrutura deste documento*. Ele termina imediatamente antes do próximo marcador, de qualquer nível.
-
-        Texto que venha antes desse primeiro marcador (ruído de página, um resto da unidade anterior) não faz parte do bloco.
+        O texto abaixo é uma janela de um documento maior. Identifique **apenas o primeiro bloco**: que é aberto por um dos marcadores descritos em *Estrutura deste documento* que aparece na janela. Ele termina imediatamente antes do próximo marcador, que pode ser qualquer um a seguir, independentemente da hierarquia.
 
         O texto é composto por páginas, cada uma precedida por um marcador `<!-- PÁGINA N -->`. Um bloco pode se estender por mais de uma página. Se a janela acabar antes do marcador da unidade seguinte, não descarte o bloco: devolva-o até o fim do texto, com `pagina_fim` igual à última página da janela, e a janela será ampliada.
 {secao_estrutura(padrao)}
@@ -104,8 +103,7 @@ def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") ->
 
 
         ## Regras dos trechos copiados
-        - **Literalidade**: `offset_inicio` e `offset_fim` devem ser trechos **literalmente presentes** no texto acima, **copiados sem qualquer modificação** — incluindo formatação markdown (`**`, `_`, `#`, etc.), pontuação, quebras de linha e maiúsculas/minúsculas. **NUNCA parafraseie, descreva, abrevie ou explique** o bloco; os trechos servem apenas para localizá-lo no texto fonte.
-        - `offset_inicio` começa no marcador ou título que abre a unidade, onde ele abre a linha — não numa menção a ele no corpo, numa tabela ou numa legenda. `offset_fim` termina no último caractere do texto da unidade, imediatamente antes do marcador da unidade seguinte.
+        - **Literalidade**: `offset_inicio` e `offset_fim` devem ser trechos **literalmente presentes** no texto acima, **copiados sem qualquer modificação** — incluindo formatação markdown, pontuação, quebras de linha e maiúsculas/minúsculas. **NUNCA parafraseie, descreva, abrevie ou explique** o bloco; os trechos servem apenas para localizá-lo no texto fonte.
         - Não inclua marcadores `<!-- PÁGINA N -->` nos trechos.
         - **Unicidade**: cada trecho deve ser longo e distintivo o bastante para ser localizado sem ambiguidade. Em caso de itens parecidos, escolha trechos mais longos.
         - Se a janela não contiver nenhum marcador que abra uma unidade, retorne `"offset_inicio": null` e todos os valores como `null` ou `0`.
@@ -164,7 +162,7 @@ def _chamar_llm(
     """Envia uma janela de texto ao LLM e retorna o dict JSON parseado."""
 
     prompt = construir_prompt(janela_texto, insights, padrao)
-    print(f"  ── Prompt enviado ao LLM ({len(prompt):,} chars) ──\n{prompt}\n")
+    # print(f"  ── Prompt enviado ao LLM ({len(prompt):,} chars) ──\n{prompt}\n")
     # O modelo às vezes devolve JSON malformado; completar_json() entrega a
     # string crua, então o segmentador repete a chamada em vez de quebrar.
     for tentativa in range(1, 4):

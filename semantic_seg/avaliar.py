@@ -261,6 +261,9 @@ def plotar(resultado: dict, caminho: str) -> None:
     import matplotlib.pyplot as plt
 
     ciclos = [l["ciclo"] for l in resultado["ciclos"]]
+    # Bloco exato (início e fim no mesmo nó): a métrica mais exigente, que vê
+    # tanto um corte perdido quanto um bloco que começa certo e termina errado.
+    exatos = [l["blocos_exatos"] for l in resultado["ciclos"]]
     nome = os.path.basename(resultado["prefixo"])
 
     fig, ax = plt.subplots(figsize=(8, 4.5), dpi=150)
@@ -268,17 +271,17 @@ def plotar(resultado: dict, caminho: str) -> None:
     ax.set_facecolor("#fcfcfb")
 
     for chave, rotulo, cor in _SERIES:
-        ys = [l[chave] for l in resultado["ciclos"]]
+        ys = [l[chave] for l in exatos]
         ax.plot(ciclos, ys, color=cor, linewidth=2, marker="o", markersize=5,
                 markeredgecolor="#fcfcfb", markeredgewidth=1.5, label=rotulo)
 
-    valores = [l[chave] for l in resultado["ciclos"] for chave, _, _ in _SERIES]
+    valores = [l[chave] for l in exatos for chave, _, _ in _SERIES]
     ymin, ymax = min(valores), max(valores)
     margem = max((ymax - ymin) * 0.12, 0.01)
     y_lo, y_hi = ymin - margem, ymax + margem
 
     # Rótulo direto só no último ciclo, empurrado para baixo se colidir com o de cima.
-    finais = sorted(((resultado["ciclos"][-1][c], r) for c, r, _ in _SERIES), reverse=True)
+    finais = sorted(((exatos[-1][c], r) for c, r, _ in _SERIES), reverse=True)
     y_ant = None
     offset_min = (y_hi - y_lo) * 0.05
     for y, rotulo in finais:
@@ -291,9 +294,9 @@ def plotar(resultado: dict, caminho: str) -> None:
     ax.set_ylim(y_lo, y_hi)
     ax.set_xticks(ciclos)
     ax.set_xlabel("Ciclo de correção", color="#52514e")
-    ax.set_ylabel("Fronteiras", color="#52514e")
+    ax.set_ylabel("Blocos exatos", color="#52514e")
     tol = resultado["tolerancia"]
-    ax.set_title(f"{nome} — fronteiras vs. gabarito"
+    ax.set_title(f"{nome} — blocos exatos vs. gabarito"
                  + (f" (tolerância {tol} chars)" if tol else ""),
                  loc="left", fontsize=11, color="#0b0b0b")
     ax.grid(axis="y", color="#e4e3df", linewidth=0.8)

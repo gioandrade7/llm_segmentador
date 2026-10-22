@@ -1,650 +1,1178 @@
 [
   {
-    "offset_inicio": "SEC. 201. ø80b–1¿ Upon the basis of facts disclosed by the record and report of the Securities and Exchange Commission made pursuant to section 30 of the Public Utility Holding Company Act of 1935,",
-    "offset_fim": "it is hereby found that investment advisers are of national concern, in that, among other things— ",
+    "titulo": "TITLE II—INVESTMENT ADVISERS",
+    "offset_inicio": "# TITLE II—INVESTMENT ADVISERS \n\n",
+    "offset_fim": "# TITLE II—INVESTMENT ADVISERS \n\n",
     "pagina_inicio": 1,
     "pagina_fim": 1,
-    "titulo": "SEC. 201 — Findings",
-    "motivo": "A seção SEC. 201 inicia texto normativo próprio e contém a declaração introdutória de findings; seu bloco termina imediatamente antes do próximo marcador normativo direto, (1).",
-    "texto": "SEC. 201. ø80b–1¿ Upon the basis of facts disclosed by the record and report of the Securities and Exchange Commission made pursuant to section 30 of the Public Utility Holding Company Act of 1935, and facts otherwise disclosed and ascertained, it is hereby found that investment advisers are of national concern, in that, among other things— "
+    "texto": "# TITLE II—INVESTMENT ADVISERS \n\n"
   },
   {
-    "offset_inicio": "(1) their advice, counsel, publications, writings, analyses, and reports are furnished",
-    "offset_fim": "with clients are negotiated and performed, by the use of the mails and means and instrumentalities of interstate commerce; ",
+    "titulo": "## FINDINGS",
+    "offset_inicio": "## FINDINGS \n\n",
+    "offset_fim": "## FINDINGS \n\n",
     "pagina_inicio": 1,
     "pagina_fim": 1,
-    "titulo": "SEC. 201(1)",
-    "motivo": "É o primeiro marcador normativo completo visível no texto; inicia em (1) e termina imediatamente antes do próximo marcador direto, (2).",
+    "texto": "## FINDINGS \n\n"
+  },
+  {
+    "titulo": "SEC. 201.",
+    "offset_inicio": "SEC. 201. ø80b–1¿ Upon the basis of facts disclosed by the record and report of the Securities and",
+    "offset_fim": "hereby found that investment advisers are of national concern, in that, among other things— \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "SEC. 201. ø80b–1¿ Upon the basis of facts disclosed by the record and report of the Securities and Exchange Commission made pursuant to section 30 of the Public Utility Holding Company Act of 1935, and facts otherwise disclosed and ascertained, it is hereby found that investment advisers are of national concern, in that, among other things— \n\n"
+  },
+  {
+    "titulo": "(1)",
+    "offset_inicio": "(1) their advice, counsel, publications, writings, analyses, and reports are furnished and distributed, and their contracts, subscription agreements, and other arrangements with clients are negotiated and performed, by the use of the mails and means and instrumentalities of interstate commerce; ",
+    "offset_fim": "negotiated and performed, by the use of the mails and means and instrumentalities of interstate commerce; ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
     "texto": "(1) their advice, counsel, publications, writings, analyses, and reports are furnished and distributed, and their contracts, subscription agreements, and other arrangements with clients are negotiated and performed, by the use of the mails and means and instrumentalities of interstate commerce; "
   },
   {
-    "offset_inicio": "(2) their advice, counsel, publications, writings, analyses, and reports customarily relate to the purchase and sale of securities",
-    "offset_fim": "securities issued by national banks and member banks of the Federal Reserve System; and",
+    "titulo": "(2) their advice, counsel, publications, writings, analyses, and reports customarily relate to the purchase and sale of securities traded on national securities exchanges and in interstate over-the-counter markets, securities issued by companies engaged in business in interstate commerce, and securities issued by national banks and member banks of the Federal Reserve System; and",
+    "offset_inicio": "(2) their advice, counsel, publications, writings, analyses, and reports customarily relate to the purchase and sale of securities traded on national securities exchanges",
+    "offset_fim": "securities issued by national banks and member banks of the Federal Reserve System; and \n\n",
     "pagina_inicio": 1,
     "pagina_fim": 1,
-    "titulo": "SEC. 201(2)",
-    "motivo": "O parágrafo enumerado (2) inicia texto normativo próprio na página 1 e termina imediatamente antes do próximo marcador direto, (3).",
-    "texto": "(2) their advice, counsel, publications, writings, analyses, and reports customarily relate to the purchase and sale of securities traded on national securities exchanges and in interstate over-the-counter markets, securities issued by companies engaged in business in interstate commerce, and securities issued by national banks and member banks of the Federal Reserve System; and"
+    "texto": "(2) their advice, counsel, publications, writings, analyses, and reports customarily relate to the purchase and sale of securities traded on national securities exchanges and in interstate over-the-counter markets, securities issued by companies engaged in business in interstate commerce, and securities issued by national banks and member banks of the Federal Reserve System; and \n\n"
   },
   {
-    "offset_inicio": "(3) the foregoing transactions occur in such volume as substantially to affect interstate commerce, national securities exchanges, and other securities markets, the national banking system and the national economy.",
-    "offset_fim": "national securities exchanges, and other securities markets, the national banking system and the national economy. ",
+    "titulo": "(3)",
+    "offset_inicio": "(3) the foregoing transactions occur in such volume as substantially to affect interstate",
+    "offset_fim": "interstate commerce, national securities exchanges, and other securities markets, the national banking system and the national economy. ",
     "pagina_inicio": 1,
     "pagina_fim": 1,
-    "titulo": "SEC. 201(3)",
-    "motivo": "É o primeiro marcador normativo completo visível no texto. O bloco começa em (3) e termina antes da rubrica temática não numerada \"DEFINITIONS\" e do início da SEC. 202.",
     "texto": "(3) the foregoing transactions occur in such volume as substantially to affect interstate commerce, national securities exchanges, and other securities markets, the national banking system and the national economy. "
   },
   {
-    "offset_inicio": "SEC. 202. ø80b–2¿ (a) When used in this title, unless the context otherwise requires,",
-    "offset_fim": "(a) When used in this title, unless the context otherwise requires, the following definitions shall apply: ",
+    "titulo": "DEFINITIONS",
+    "offset_inicio": "## DEFINITIONS \n\n",
+    "offset_fim": "## DEFINITIONS \n\n",
     "pagina_inicio": 1,
     "pagina_fim": 1,
-    "titulo": "SEC. 202(a) — Definições aplicáveis",
-    "motivo": "A subseção (a) inicia texto normativo próprio e contém a cláusula introdutória das definições; encerra-se imediatamente antes do próximo marcador, o parágrafo (1), na página 2.",
-    "texto": "SEC. 202. ø80b–2¿ (a) When used in this title, unless the context otherwise requires, the following definitions shall apply: "
+    "texto": "## DEFINITIONS \n\n"
   },
   {
-    "offset_inicio": "(1) ‘‘Assignment’’ includes any direct or indirect transfer or hypothecation of an investment",
-    "offset_fim": "nterest in the business of the investment adviser, or from the admission to the investment adviser of one or more members who, after such admission, shall be only a minority of the members and shall have only a minority interest in the business.",
+    "titulo": "SEC. 202. ø80b–2¿",
+    "offset_inicio": "SEC. 202. ø80b–2¿ ",
+    "offset_fim": "SEC. 202. ø80b–2¿ ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "SEC. 202. ø80b–2¿ "
+  },
+  {
+    "titulo": "(a) When used in this title, unless the context otherwise requires, the following definitions shall apply:",
+    "offset_inicio": "(a) When used in this title, unless the context otherwise requires, the following definitions",
+    "offset_fim": " this title, unless the context otherwise requires, the following definitions shall apply: ",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "(a) When used in this title, unless the context otherwise requires, the following definitions shall apply: "
+  },
+  {
+    "titulo": "(1) ‘‘Assignment’’",
+    "offset_inicio": "(1) ‘‘Assignment’’ includes any direct or indirect transfer or hypothecation of an investment advisory contract",
+    "offset_fim": "members and shall have only a minority interest in the business. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(1) — Assignment",
-    "motivo": "O trecho inicia no marcador normativo direto (1) e termina imediatamente antes do próximo marcador (2), constituindo a definição completa de “Assignment”.",
-    "texto": "(1) ‘‘Assignment’’ includes any direct or indirect transfer or hypothecation of an investment advisory contract by the assignor or of a controlling block of the assignor’s outstanding voting securities by a security holder of the assignor; but if the investment adviser is a partnership, no assignment of an investment advisory contract shall be deemed to result from the death or withdrawal of a minority of the members of the investment adviser having only a minority interest in the business of the investment adviser, or from the admission to the investment adviser of one or more members who, after such admission, shall be only a minority of the members and shall have only a minority interest in the business."
+    "texto": "(1) ‘‘Assignment’’ includes any direct or indirect transfer or hypothecation of an investment advisory contract by the assignor or of a controlling block of the assignor’s outstanding voting securities by a security holder of the assignor; but if the investment adviser is a partnership, no assignment of an investment advisory contract shall be deemed to result from the death or withdrawal of a minority of the members of the investment adviser having only a minority interest in the business of the investment adviser, or from the admission to the investment adviser of one or more members who, after such admission, shall be only a minority of the members and shall have only a minority interest in the business. \n\n"
   },
   {
-    "offset_inicio": "(2) ‘‘Bank’’ means ",
+    "titulo": "(2) ‘‘Bank’’",
+    "offset_inicio": "(2) ‘‘Bank’’ means (A) a banking institution organized under the laws of the United",
     "offset_fim": "(2) ‘‘Bank’’ means ",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(2) — Bank",
-    "motivo": "É o primeiro marcador normativo exibido. O bloco-pai contém apenas a oração introdutória e se encerra imediatamente antes do subparágrafo (A).",
     "texto": "(2) ‘‘Bank’’ means "
   },
   {
-    "offset_inicio": "(A) a banking institution organized under the laws of the United States or a Federal ",
-    "offset_fim": "or a Federal savings association, as defined in section 2(5) of the Home Owners’ Loan Act, ",
+    "titulo": "(A) a banking institution organized under the laws of the United States or a Federal savings association",
+    "offset_inicio": "(A) a banking institution organized under the laws of the United States or a Federal savings association, as defined in section 2(5) of the Home Owners’ Loan Act, ",
+    "offset_fim": "ng institution organized under the laws of the United States or a Federal savings association, as defined in section 2(5) of the Home Owners’ Loan Act, ",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "Sec. 202(a)(2)(A)",
-    "motivo": "É o primeiro subparágrafo normativo iniciado no trecho fornecido; começa em “(A)” e termina imediatamente antes do marcador seguinte, “(B)”.",
     "texto": "(A) a banking institution organized under the laws of the United States or a Federal savings association, as defined in section 2(5) of the Home Owners’ Loan Act, "
   },
   {
-    "offset_inicio": "(B) a member bank of the Federal Reserve System, (C) any other banking institution,",
-    "offset_fim": "quidating agent of any institution or firm included in clauses (A), (B), or (C) of this paragraph. ",
+    "titulo": "(B)",
+    "offset_inicio": "(B) a member bank of the Federal Reserve System, (C) any other banking institution, sav",
+    "offset_fim": "in clauses (A), (B), or (C) of this paragraph. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(2)(B)",
-    "motivo": "O trecho inicia no marcador normativo (B) e constitui uma unidade completa, encerrando-se imediatamente antes do próximo marcador de mesmo nível, (3).",
-    "texto": "(B) a member bank of the Federal Reserve System, (C) any other banking institution, savings association, as defined in section 2(4) of the Home Owners’ Loan Act, or trust company, whether incorporated or not, doing business under the laws of any State or of the United States, a substantial portion of the business of which consists of receiving deposits or exercising fiduciary powers similar to those permitted to national banks under the authority of the Comptroller of the Currency, and which is supervised and examined by State or Federal authority having supervision over banks or savings associations, and which is not operated for the purpose of evading the provisions of this title, and (D) a receiver, conservator, or other liquidating agent of any institution or firm included in clauses (A), (B), or (C) of this paragraph. "
+    "texto": "(B) a member bank of the Federal Reserve System, (C) any other banking institution, savings association, as defined in section 2(4) of the Home Owners’ Loan Act, or trust company, whether incorporated or not, doing business under the laws of any State or of the United States, a substantial portion of the business of which consists of receiving deposits or exercising fiduciary powers similar to those permitted to national banks under the authority of the Comptroller of the Currency, and which is supervised and examined by State or Federal authority having supervision over banks or savings associations, and which is not operated for the purpose of evading the provisions of this title, and (D) a receiver, conservator, or other liquidating agent of any institution or firm included in clauses (A), (B), or (C) of this paragraph. \n\n"
   },
   {
-    "offset_inicio": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934.",
-    "offset_fim": "has the same meaning as given in section 3 of the Securities Exchange Act of 1934.",
+    "titulo": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934.",
+    "offset_inicio": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities",
+    "offset_fim": "term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "Sec. 202(a)(3) — Broker",
-    "motivo": "É o primeiro marcador normativo completo visível no texto. O bloco inicia em “(3)” e termina imediatamente antes do próximo marcador, “(4)”.",
-    "texto": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934."
+    "texto": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934. \n\n"
   },
   {
-    "offset_inicio": "(4) ‘‘Commission’’ means the Securities and Exchange Commission. ",
-    "offset_fim": "(4) ‘‘Commission’’ means the Securities and Exchange Commission. ",
+    "titulo": "(4) ‘‘Commission’’ means the Securities and Exchange Commission.",
+    "offset_inicio": "(4) ‘‘Commission’’ means the Securities and Exchange Commission. \n\n",
+    "offset_fim": "(4) ‘‘Commission’’ means the Securities and Exchange Commission. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(4) — Commission",
-    "motivo": "É o primeiro marcador normativo completo visível no texto. O bloco inicia em (4) e termina imediatamente antes do marcador seguinte, (5).",
-    "texto": "(4) ‘‘Commission’’ means the Securities and Exchange Commission. "
+    "texto": "(4) ‘‘Commission’’ means the Securities and Exchange Commission. \n\n"
   },
   {
-    "offset_inicio": "(5) ‘‘Company’’ means a corporation, a partnership, an association, a joint-stock company, a trust, or any organized group of persons, whether incorporated or not;",
+    "titulo": "(5) ‘‘Company’’",
+    "offset_inicio": "(5) ‘‘Company’’ means a corporation, a partnership, an association, a joint-stock company,",
     "offset_fim": "or any liquidating agent for any of the foregoing, in his capacity as such.",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(5) — Company",
-    "motivo": "O parágrafo normativo (5) inicia definição própria e termina imediatamente antes do próximo marcador, (6).",
     "texto": "(5) ‘‘Company’’ means a corporation, a partnership, an association, a joint-stock company, a trust, or any organized group of persons, whether incorporated or not; or any receiver, trustee in a case under title 11 of the United States Code, or similar official, or any liquidating agent for any of the foregoing, in his capacity as such."
   },
   {
-    "offset_inicio": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of guilt",
-    "offset_fim": "been reversed, set aside, or withdrawn, whether or not sentence has been imposed. ",
+    "titulo": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of guilt on a plea of nolo contendere",
+    "offset_inicio": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of guilt on a plea of nolo contendere,",
+    "offset_fim": "has not been reversed, set aside, or withdrawn, whether or not sentence has been imposed. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(6) — Convicted",
-    "motivo": "O bloco inicia no marcador normativo (6) e contém integralmente a definição de “Convicted”; encerra-se imediatamente antes do próximo marcador, (7), na página 2.",
-    "texto": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of guilt on a plea of nolo contendere, if such verdict, judgment, plea, or finding has not been reversed, set aside, or withdrawn, whether or not sentence has been imposed. "
+    "texto": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of guilt on a plea of nolo contendere, if such verdict, judgment, plea, or finding has not been reversed, set aside, or withdrawn, whether or not sentence has been imposed. \n\n"
   },
   {
-    "offset_inicio": "(7) The term ‘‘dealer’’ has the same meaning as given in section 3 of the Securities Exchange",
-    "offset_fim": "of 1934, but does not include an insurance company or investment company. ",
+    "titulo": "(7) The term ‘‘dealer’’",
+    "offset_inicio": "(7) The term ‘‘dealer’’ has the same meaning as given in section 3 of the Securities",
+    "offset_fim": "section 3 of the Securities Exchange Act of 1934, but does not include an insurance company or investment company. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(7) — Dealer",
-    "motivo": "O trecho inicia no marcador normativo (7) e termina imediatamente antes do próximo marcador, (8), formando a definição completa de “dealer”.",
-    "texto": "(7) The term ‘‘dealer’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934, but does not include an insurance company or investment company. "
+    "texto": "(7) The term ‘‘dealer’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934, but does not include an insurance company or investment company. \n\n"
   },
   {
-    "offset_inicio": "(8) ‘‘Director’’ means any director of a corporation or any person performing similar",
-    "offset_fim": "functions, with respect to any organization, whether incorporated or unincorporated.",
+    "titulo": "(8) ‘‘Director’’",
+    "offset_inicio": "(8) ‘‘Director’’ means any director of a corporation or any person performing similar functions, with respect",
+    "offset_fim": "rforming similar functions, with respect to any organization, whether incorporated or unincorporated. ",
     "pagina_inicio": 2,
     "pagina_fim": 2,
-    "titulo": "SEC. 202(a)(8) — Director",
-    "motivo": "O trecho inicia no marcador normativo (8) e contém integralmente sua definição, encerrando-se imediatamente antes do próximo marcador, (9).",
-    "texto": "(8) ‘‘Director’’ means any director of a corporation or any person performing similar functions, with respect to any organization, whether incorporated or unincorporated."
+    "texto": "(8) ‘‘Director’’ means any director of a corporation or any person performing similar functions, with respect to any organization, whether incorporated or unincorporated. "
   },
   {
-    "offset_inicio": "(9) ‘‘Exchange’’ means any organization, association, or group of persons, whether incorporated or",
-    "offset_fim": "as that term is generally understood, and includes the market place and the market facilities maintained by such exchange. ",
+    "titulo": "(9) ‘‘Exchange’’",
+    "offset_inicio": "(9) ‘‘Exchange’’ means any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains, or provides a market place or facilities for bringing together purchasers and sellers of securi- ",
+    "offset_fim": "as that term is generally understood, and includes the market place and the market facilities maintained by such exchange. \n\n",
     "pagina_inicio": 2,
     "pagina_fim": 3,
-    "titulo": "SEC. 202(a)(9) — Exchange",
-    "motivo": "O parágrafo numerado (9) inicia texto normativo próprio na página 2 e se conclui na página 3, imediatamente antes do próximo marcador normativo, (10).",
-    "texto": "(9) ‘‘Exchange’’ means any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains, or provides a market place or facilities for bringing together purchasers and sellers of securi- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 3 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n**3 INVESTMENT ADVISERS ACT OF 1940** \n\n**Sec. 202** \n\nties or for otherwise performing with respect to securities the functions commonly performed by a stock exchange as that term is generally understood, and includes the market place and the market facilities maintained by such exchange. "
+    "texto": "(9) ‘‘Exchange’’ means any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains, or provides a market place or facilities for bringing together purchasers and sellers of securi- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 3 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **3 INVESTMENT ADVISERS ACT OF 1940 Sec. 202** \n\nties or for otherwise performing with respect to securities the functions commonly performed by a stock exchange as that term is generally understood, and includes the market place and the market facilities maintained by such exchange. \n\n"
   },
   {
+    "titulo": "(10) ‘‘Interstate commerce’’",
     "offset_inicio": "(10) ‘‘Interstate commerce’’ means trade, commerce, transportation, or communication",
-    "offset_fim": "any State, or between any State and any place or ship outside thereof. ",
+    "offset_fim": "between any State and any place or ship outside thereof. \n\n",
     "pagina_inicio": 3,
     "pagina_fim": 3,
-    "titulo": "SEC. 202(a)(10) — Interstate commerce",
-    "motivo": "O primeiro bloco completo inicia no marcador normativo (10) e contém a definição de “Interstate commerce”; termina imediatamente antes do próximo marcador, (11).",
-    "texto": "(10) ‘‘Interstate commerce’’ means trade, commerce, transportation, or communication among the several States, or between any foreign country and any State, or between any State and any place or ship outside thereof. "
+    "texto": "(10) ‘‘Interstate commerce’’ means trade, commerce, transportation, or communication among the several States, or between any foreign country and any State, or between any State and any place or ship outside thereof. \n\n"
   },
   {
-    "offset_inicio": "(11) ‘‘Investment adviser’’ means any person who, for compensation, engages in the business of advising others, either directly or through publications or writings, as to the value of securities",
-    "offset_fim": "compensation and as part of a regular business, issues or promulgates analyses or reports concerning securities; but does not include ",
+    "titulo": "(11) ‘‘Investment adviser’’",
+    "offset_inicio": "(11) ‘‘Investment adviser’’ means any person who, for compensation, engages in the business",
+    "offset_fim": "or who, for compensation and as part of a regular business, issues or promulgates analyses or reports concerning securities; but does not include ",
     "pagina_inicio": 3,
     "pagina_fim": 3,
-    "titulo": "SEC. 202(a)(11) — Investment adviser",
-    "motivo": "É o primeiro marcador normativo completo visível, o parágrafo (11) de SEC. 202(a). O bloco contém sua definição introdutória e termina imediatamente antes do subparágrafo (A), que inicia texto normativo próprio.",
     "texto": "(11) ‘‘Investment adviser’’ means any person who, for compensation, engages in the business of advising others, either directly or through publications or writings, as to the value of securities or as to the advisability of investing in, purchasing, or selling securities, or who, for compensation and as part of a regular business, issues or promulgates analyses or reports concerning securities; but does not include "
   },
   {
-    "offset_inicio": "(A) a bank, or any bank holding company as defined in the Bank Holding Company Act",
-    "offset_fim": "department or division, and not the bank itself, shall be deemed to be the investment adviser; ",
+    "titulo": "(A) a bank, or any bank holding company",
+    "offset_inicio": "(A) a bank, or any bank holding company as defined in the Bank Holding Company Act of",
+    "offset_fim": "epartment or division, and not the bank itself, shall be deemed to be the investment adviser; ",
     "pagina_inicio": 3,
     "pagina_fim": 3,
-    "titulo": "SEC. 202(a)(11)(A) — bank",
-    "motivo": "É o primeiro marcador normativo completo visível no texto, iniciado por (A), e seu conteúdo termina imediatamente antes do marcador seguinte, (B).",
     "texto": "(A) a bank, or any bank holding company as defined in the Bank Holding Company Act of 1956, which is not an investment company, except that the term ‘‘investment adviser’’ includes any bank or bank holding company to the extent that such bank or bank holding company serves or acts as an investment adviser to a registered investment company, but if, in the case of a bank, such services or actions are performed through a separately identifiable department or division, the department or division, and not the bank itself, shall be deemed to be the investment adviser; "
   },
   {
+    "titulo": "(B) any lawyer, accountant, engineer, or teacher whose performance of such services is solely incidental to the practice of his profession",
     "offset_inicio": "(B) any lawyer, accountant, engineer, or teacher whose performance of such services is solely incidental to the practice of his profession; (C) any broker",
-    "offset_fim": "any lawyer, accountant, engineer, or teacher whose performance of such services is solely incidental to the practice of his profession; ",
+    "offset_fim": "teacher whose performance of such services is solely incidental to the practice of his profession; ",
     "pagina_inicio": 3,
     "pagina_fim": 3,
-    "titulo": "SEC. 202(a)(11)(B)",
-    "motivo": "O trecho inicia no marcador normativo (B) e termina imediatamente antes do próximo marcador do mesmo nível, (C).",
     "texto": "(B) any lawyer, accountant, engineer, or teacher whose performance of such services is solely incidental to the practice of his profession; "
   },
   {
-    "offset_inicio": "(12) ‘‘Investment company’’, affiliated person, and ‘‘insurance company’’ have the same meanings as in the Investment Company Act of 1940. ‘‘Control’’ means the power to",
-    "offset_fim": "r policies of a company, unless such power is solely the result of an official position with such company. ",
-    "pagina_inicio": 4,
-    "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(12) — Investment company, affiliated person, insurance company, and control",
-    "motivo": "É o primeiro marcador normativo completo iniciado no trecho fornecido. O bloco começa em “(12)” e termina imediatamente antes do próximo marcador, “(13)”.",
-    "texto": "(12) ‘‘Investment company’’, affiliated person, and ‘‘insurance company’’ have the same meanings as in the Investment Company Act of 1940. ‘‘Control’’ means the power to exercise a controlling influence over the management or policies of a company, unless such power is solely the result of an official position with such company. "
+    "titulo": "(C)",
+    "offset_inicio": "(C) any broker or dealer whose performance of such services is solely incidental to the conduct",
+    "offset_fim": "business as a broker or dealer and who receives no special compensation therefor; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "(C) any broker or dealer whose performance of such services is solely incidental to the conduct of his business as a broker or dealer and who receives no special compensation therefor; "
   },
   {
-    "offset_inicio": "(13) ‘‘Investment supervisory services’’ means the giving of continuous advice as to the investment of funds on the basis of the individual needs of each client.",
-    "offset_fim": "‘‘Investment supervisory services’’ means the giving of continuous advice as to the investment of funds on the basis of the individual needs of each client.",
-    "pagina_inicio": 4,
-    "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(13) — Investment supervisory services",
-    "motivo": "O primeiro marcador normativo completo visível é (13), que contém uma definição autônoma e termina imediatamente antes do próximo marcador, (14).",
-    "texto": "(13) ‘‘Investment supervisory services’’ means the giving of continuous advice as to the investment of funds on the basis of the individual needs of each client."
+    "titulo": "(D) the publisher of any bona fide newspaper, news magazine or business or financial publication of general and regular circulation",
+    "offset_inicio": "(D) the publisher of any bona fide newspaper, news magazine or business or financial pub",
+    "offset_fim": "fide newspaper, news magazine or business or financial publication of general and regular circulation; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "(D) the publisher of any bona fide newspaper, news magazine or business or financial publication of general and regular circulation; "
   },
   {
-    "offset_inicio": "(14) ‘‘Means or instrumentality of interstate commerce’’ includes any facility of a national securities exchange.",
-    "offset_fim": "(14) ‘‘Means or instrumentality of interstate commerce’’ includes any facility of a national securities exchange.",
-    "pagina_inicio": 4,
-    "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(14) — Means or instrumentality of interstate commerce",
-    "motivo": "É o primeiro marcador normativo completo visível no texto. O bloco inicia em (14) e termina imediatamente antes do próximo marcador, (15).",
-    "texto": "(14) ‘‘Means or instrumentality of interstate commerce’’ includes any facility of a national securities exchange."
+    "titulo": "(E)",
+    "offset_inicio": "(E) any person whose advice, analyses, or reports relate to no securities other than securities which are direct obligations of or obligations guaranteed as to principal or interest by the United States,",
+    "offset_fim": "pursuant to section 3(a)(12) of the Securities Exchange Act of 1934, as exempted securities for the purposes of that Act; ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "(E) any person whose advice, analyses, or reports relate to no securities other than securities which are direct obligations of or obligations guaranteed as to principal or interest by the United States, or securities issued or guaranteed by corporations in which the United States has a direct or indirect interest which shall have been designated by the Secretary of the Treasury, pursuant to section 3(a)(12) of the Securities Exchange Act of 1934, as exempted securities for the purposes of that Act; "
   },
   {
-    "offset_inicio": "(15) ‘‘National securities exchange’’ means an exchange registered under section 6 of the Securities Exchange Act of 1934.",
-    "offset_fim": "exchange registered under section 6 of the Securities Exchange Act of 1934.",
-    "pagina_inicio": 4,
-    "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(15) — National securities exchange",
-    "motivo": "O trecho inicia no marcador normativo (15) e contém integralmente sua definição, encerrando-se imediatamente antes do próximo marcador, (16).",
-    "texto": "(15) ‘‘National securities exchange’’ means an exchange registered under section 6 of the Securities Exchange Act of 1934."
+    "titulo": "(F) any nationally recognized statistical rating organization",
+    "offset_inicio": "(F) any nationally recognized statistical rating organization, as that term is defined in section 3(a)(62) of the Securities Exchange Act of 1934, unless such organization engages in issuing recommendations as to purchasing, selling, or holding securities or in managing assets, consisting in whole or in part of securities, on behalf of others;;<sup>1</sup> ",
+    "offset_fim": "in managing assets, consisting in whole or in part of securities, on behalf of others;;<sup>1</sup> ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "(F) any nationally recognized statistical rating organization, as that term is defined in section 3(a)(62) of the Securities Exchange Act of 1934, unless such organization engages in issuing recommendations as to purchasing, selling, or holding securities or in managing assets, consisting in whole or in part of securities, on behalf of others;;<sup>1</sup> "
   },
   {
-    "offset_inicio": "(16) ‘‘Person’’ means a natural person or a company.",
-    "offset_fim": "(16) ‘‘Person’’ means a natural person or a company.",
-    "pagina_inicio": 4,
-    "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(16) — Person",
-    "motivo": "É o primeiro marcador normativo completo exibido, iniciado em (16) e encerrado imediatamente antes do marcador seguinte, (17).",
-    "texto": "(16) ‘‘Person’’ means a natural person or a company."
+    "titulo": "(G) any family office",
+    "offset_inicio": "(G) any family office, as defined by rule, regulation, or order of the Commission, in accordance with the purposes of this title; or ",
+    "offset_fim": "rule, regulation, or order of the Commission, in accordance with the purposes of this title; or ",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "(G) any family office, as defined by rule, regulation, or order of the Commission, in accordance with the purposes of this title; or "
   },
   {
-    "offset_inicio": "(17) The term ‘‘person associated with an investment adviser’’ means any partner, officer, or director of such investment adviser",
-    "offset_fim": "or portions of this title, persons, including employees controlled by an investment adviser.",
-    "pagina_inicio": 4,
+    "titulo": "(H) such other persons not within the intent of this paragraph",
+    "offset_inicio": "(H) such other persons not within the intent of \n\n> 1 Effective on July 21, 2011, section 409(a) of Public Law 111–203 amends section 202(a)(11) by striking ‘‘or (G)’’ and inserting the following: ‘‘; (G) any family office, as defined by rule, regulation, or order of the Commission, in accordance with the purposes of this title; or (H)’’ (shown above). Such amendment probably should not have included a semicolon at the beginning of the inserted language. \n\nAugust 11, 2025 \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025\n\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n**Sec. 202 INVESTMENT ADVISERS ACT OF 1940 4** this paragraph, as the Commission may designate by rules and regulations or order. ",
+    "offset_fim": "**Sec. 202 INVESTMENT ADVISERS ACT OF 1940 4** this paragraph, as the Commission may designate by rules and regulations or order. ",
+    "pagina_inicio": 3,
     "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(17) — Person associated with an investment adviser",
-    "motivo": "O trecho inicia no marcador normativo (17) e contém a definição integral do termo, encerrando-se imediatamente antes do próximo marcador, (18).",
-    "texto": "(17) The term ‘‘person associated with an investment adviser’’ means any partner, officer, or director of such investment adviser (or any person performing similar functions), or any person directly or indirectly controlling or controlled by such investment adviser, including any employee of such investment adviser, except that for the purposes of section 203 of this title (other than subsection (f) thereof), persons associated with an investment adviser whose functions are clerical or ministerial shall not be included in the meaning of such term. The Commission may by rules and regulations classify, for the purposes of any portion or portions of this title, persons, including employees controlled by an investment adviser."
+    "texto": "(H) such other persons not within the intent of \n\n> 1 Effective on July 21, 2011, section 409(a) of Public Law 111–203 amends section 202(a)(11) by striking ‘‘or (G)’’ and inserting the following: ‘‘; (G) any family office, as defined by rule, regulation, or order of the Commission, in accordance with the purposes of this title; or (H)’’ (shown above). Such amendment probably should not have included a semicolon at the beginning of the inserted language. \n\nAugust 11, 2025 \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025\n\n<!-- PÁGINA 4 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n**Sec. 202 INVESTMENT ADVISERS ACT OF 1940 4** this paragraph, as the Commission may designate by rules and regulations or order. "
   },
   {
-    "offset_inicio": "(18) ‘‘Security’’ means any note, stock, treasury stock, security future, bond, debenture,",
-    "offset_fim": "or warrant or right to subscribe to or purchase any of the foregoing.<sup>2</sup>",
+    "titulo": "(12) ‘‘Investment company’’",
+    "offset_inicio": "(12) ‘‘Investment company’’, affiliated person, and ‘‘insurance company’’ have the same meanings as",
+    "offset_fim": "portions of this title, persons, including employees controlled by an investment adviser. \n\n",
     "pagina_inicio": 4,
     "pagina_fim": 4,
-    "titulo": "SEC. 202(a)(18) — Security",
-    "motivo": "O bloco inicia no marcador normativo (18) e contém integralmente a definição de “Security”; encerra-se antes do próximo marcador, (19), na página 5. A nota de rodapé foi desconsiderada.",
-    "texto": "(18) ‘‘Security’’ means any note, stock, treasury stock, security future, bond, debenture, evidence of indebtedness, certificate of interest or participation in any profit-sharing agreement, collateral-trust certificate, preorganization certificate or subscription, transferable share, investment contract, votingtrust certificate, certificate of deposit for a security, fractional undivided interest in oil, gas, or other mineral rights, any put, call, straddle, option, or privilege on any security (including a certificate of deposit) or on any group or index of securities (including any interest therein or based on the value thereof), or any put, call, straddle, option, or privilege entered into on a national securities exchange relating to foreign currency, or, in general, any interest or instrument commonly known as a ‘‘security’’, or any certificate of interest or participation in, temporary or interim certificate for, receipt for, guaranty of, or warrant or right to subscribe to or purchase any of the foregoing.<sup>2</sup>"
+    "texto": "(12) ‘‘Investment company’’, affiliated person, and ‘‘insurance company’’ have the same meanings as in the Investment Company Act of 1940. ‘‘Control’’ means the power to exercise a controlling influence over the management or policies of a company, unless such power is solely the result of an official position with such company. (13) ‘‘Investment supervisory services’’ means the giving of continuous advice as to the investment of funds on the basis of the individual needs of each client. (14) ‘‘Means or instrumentality of interstate commerce’’ includes any facility of a national securities exchange. (15) ‘‘National securities exchange’’ means an exchange registered under section 6 of the Securities Exchange Act of 1934. (16) ‘‘Person’’ means a natural person or a company. (17) The term ‘‘person associated with an investment adviser’’ means any partner, officer, or director of such investment adviser (or any person performing similar functions), or any person directly or indirectly controlling or controlled by such investment adviser, including any employee of such investment adviser, except that for the purposes of section 203 of this title (other than subsection (f) thereof), persons associated with an investment adviser whose functions are clerical or ministerial shall not be included in the meaning of such term. The Commission may by rules and regulations classify, for the purposes of any portion or portions of this title, persons, including employees controlled by an investment adviser. \n\n"
   },
   {
+    "titulo": "(18) ‘‘Security’’",
+    "offset_inicio": "(18) ‘‘Security’’ means any note, stock, treasury stock, security future, bond, debenture, evidence of indebtedness, certificate",
+    "offset_fim": "the primary Federal payment stablecoin regulators issue any final regulations implementing this Act.’’. ",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "texto": "(18) ‘‘Security’’ means any note, stock, treasury stock, security future, bond, debenture, evidence of indebtedness, certificate of interest or participation in any profit-sharing agreement, collateral-trust certificate, preorganization certificate or subscription, transferable share, investment contract, votingtrust certificate, certificate of deposit for a security, fractional undivided interest in oil, gas, or other mineral rights, any put, call, straddle, option, or privilege on any security (including a certificate of deposit) or on any group or index of securities (including any interest therein or based on the value thereof), or any put, call, straddle, option, or privilege entered into on a national securities exchange relating to foreign currency, or, in general, any interest or instrument commonly known as a ‘‘security’’, or any certificate of interest or participation in, temporary or interim certificate for, receipt for, guaranty of, or warrant or right to subscribe to or purchase any of the foregoing.<sup>2</sup> \n\n2 Section 17(a) of P.L. 119-21 provides for an amendment to add at the end of section 202(a)(18) of the Investment Advisers Act of 1940 the following: ‘‘The term ‘security’ does not include a payment stablecoin issued by a permitted payment stablecoin issuer, as such terms are defined in section 2 of the GENIUS Act’’. Pursuant to section 20 of such Public Law, the amendment to paragraph (18) shall take effect on the earlier of ‘‘the date that is 18 months after the date of enactment of this Act [date of enactment is 7/18/2025]; or the date that is 120 days after the date on which the primary Federal payment stablecoin regulators issue any final regulations implementing this Act.’’. "
+  },
+  {
+    "titulo": "(19) ‘‘State’’",
     "offset_inicio": "(19) ‘‘State’’ means any State of the United States, the District of Columbia, Puerto Rico, the Virgin Islands, or any other possession of the United States.",
-    "offset_fim": "State, the District of Columbia, Puerto Rico, the Virgin Islands, or any other possession of the United States.",
+    "offset_fim": "the District of Columbia, Puerto Rico, the Virgin Islands, or any other possession of the United States.",
     "pagina_inicio": 5,
     "pagina_fim": 5,
-    "titulo": "SEC. 202(a)(19) — Definição de “State”",
-    "motivo": "O parágrafo normativo (19) inicia texto próprio na página 5 e termina imediatamente antes do próximo marcador do mesmo nível, (20).",
     "texto": "(19) ‘‘State’’ means any State of the United States, the District of Columbia, Puerto Rico, the Virgin Islands, or any other possession of the United States."
   },
   {
-    "offset_inicio": "(20) ‘‘Underwriter’’ means any person who has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of any security,",
-    "offset_fim": "direct or indirect common control with the issuer. ",
+    "titulo": "(20) ‘‘Underwriter’’",
+    "offset_inicio": "(20) ‘‘Underwriter’’ means any person who has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of any security, or participates",
+    "offset_fim": "directly or indirectly controlling or controlled by the issuer, or any person under direct or indirect common control with the issuer.",
     "pagina_inicio": 5,
     "pagina_fim": 5,
-    "titulo": "SEC. 202(a)(20) — Underwriter",
-    "motivo": "O bloco inicia no marcador normativo (20) e termina imediatamente antes do próximo marcador, (21), contendo integralmente a definição de “Underwriter”.",
-    "texto": "(20) ‘‘Underwriter’’ means any person who has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of any security, or participates or has a direct or indirect participation in any such undertaking, or participates or has a participation in the direct or indirect underwriting of any such undertaking; but such term shall not include a person whose interest is limited to a commission from an underwriter or dealer not in excess of the usual and customary distributor’s or seller’s commission. As used in this paragraph the term ‘‘issuer’’ shall include in addition to an issuer, any person directly or indirectly controlling or controlled by the issuer, or any person under direct or indirect common control with the issuer. "
+    "texto": "(20) ‘‘Underwriter’’ means any person who has purchased from an issuer with a view to, or sells for an issuer in connection with, the distribution of any security, or participates or has a direct or indirect participation in any such undertaking, or participates or has a participation in the direct or indirect underwriting of any such undertaking; but such term shall not include a person whose interest is limited to a commission from an underwriter or dealer not in excess of the usual and customary distributor’s or seller’s commission. As used in this paragraph the term ‘‘issuer’’ shall include in addition to an issuer, any person directly or indirectly controlling or controlled by the issuer, or any person under direct or indirect common control with the issuer."
   },
   {
-    "offset_inicio": "(21) ‘‘Securities Act of 1933’’, ‘‘Securities Exchange Act of 1934’’, and ‘‘Trust",
-    "offset_fim": "mean those Acts, respectively, as heretofore or hereafter amended. ",
+    "titulo": "(21) ‘‘Securities Act of 1933’’, ‘‘Securities Exchange Act of 1934’’, and ‘‘Trust Indenture Act of 1939’’",
+    "offset_inicio": "(21) ‘‘Securities Act of 1933’’, ‘‘Securities Exchange Act of 1934’’, and ‘‘Trust Indenture Act of 1939’’, mean those Acts, respectively, as heretofore or hereafter amended.",
+    "offset_fim": "and ‘‘Trust Indenture Act of 1939’’, mean those Acts, respectively, as heretofore or hereafter amended.",
     "pagina_inicio": 5,
     "pagina_fim": 5,
-    "titulo": "SEC. 202(a)(21)",
-    "motivo": "O trecho inicia no marcador normativo (21) e contém integralmente sua definição, encerrando-se imediatamente antes do próximo marcador, (22).",
-    "texto": "(21) ‘‘Securities Act of 1933’’, ‘‘Securities Exchange Act of 1934’’, and ‘‘Trust Indenture Act of 1939’’, mean those Acts, respectively, as heretofore or hereafter amended. "
+    "texto": "(21) ‘‘Securities Act of 1933’’, ‘‘Securities Exchange Act of 1934’’, and ‘‘Trust Indenture Act of 1939’’, mean those Acts, respectively, as heretofore or hereafter amended."
   },
   {
-    "offset_inicio": "(22) ‘‘Business development company’’ means any company which is a business development",
-    "offset_fim": "this Act and which complies with section 55 of title I of this Act, except that— ",
+    "titulo": "(22) ‘‘Business development company’’",
+    "offset_inicio": "(22) ‘‘Business development company’’ means any company which is a business ",
+    "offset_fim": "and which complies with section 55 of title I of this Act, except that— \n\n",
     "pagina_inicio": 5,
     "pagina_fim": 5,
-    "titulo": "SEC. 202(a)(22) — Business development company",
-    "motivo": "O bloco inicia no marcador numérico (22) e contém sua definição introdutória. Encerra-se imediatamente antes do subparágrafo (A), que inicia um bloco filho distinto.",
-    "texto": "(22) ‘‘Business development company’’ means any company which is a business development company as defined in section 2(a)(48) of title I of this Act and which complies with section 55 of title I of this Act, except that— "
+    "texto": "(22) ‘‘Business development company’’ means any company which is a business development company as defined in section 2(a)(48) of title I of this Act and which complies with section 55 of title I of this Act, except that— \n\n"
   },
   {
+    "titulo": "(A)",
     "offset_inicio": "(A) the 70 per centum of the value of the total assets condition referred to in sections 2(a)(48) and 55 of title I of this Act shall be 60 per centum for purposes of determining compliance therewith; ",
-    "offset_fim": "of title I of this Act shall be 60 per centum for purposes of determining compliance therewith; ",
+    "offset_fim": "shall be 60 per centum for purposes of determining compliance therewith; \n\n",
     "pagina_inicio": 5,
     "pagina_fim": 5,
-    "titulo": "SEC. 202(a)(22)(A)",
-    "motivo": "O trecho inicia no marcador normativo (A) e termina imediatamente antes do próximo marcador de mesmo nível, (B), na página 5.",
-    "texto": "(A) the 70 per centum of the value of the total assets condition referred to in sections 2(a)(48) and 55 of title I of this Act shall be 60 per centum for purposes of determining compliance therewith; "
+    "texto": "(A) the 70 per centum of the value of the total assets condition referred to in sections 2(a)(48) and 55 of title I of this Act shall be 60 per centum for purposes of determining compliance therewith; \n\n"
   },
   {
-    "offset_inicio": "(23) ‘‘Foreign securities authority’’ means any foreign government, or any governmental body or regulatory organization empowered by a foreign government to administer or enforce its laws as they relate to securities matters.",
-    "offset_fim": "government to administer or enforce its laws as they relate to securities matters.",
+    "titulo": "(B)",
+    "offset_inicio": "(B) such company need not be a closed-end company and need not elect to be subject to",
+    "offset_fim": "need not elect to be subject to the provisions of sections 55 through 65 of title I of this Act; and \n\n",
     "pagina_inicio": 5,
     "pagina_fim": 5,
-    "titulo": "SEC. 202(a)(23) — Foreign securities authority",
-    "motivo": "É o primeiro marcador normativo completo visível no trecho. Inicia em (23) e termina imediatamente antes do próximo marcador, (24).",
-    "texto": "(23) ‘‘Foreign securities authority’’ means any foreign government, or any governmental body or regulatory organization empowered by a foreign government to administer or enforce its laws as they relate to securities matters."
+    "texto": "(B) such company need not be a closed-end company and need not elect to be subject to the provisions of sections 55 through 65 of title I of this Act; and \n\n"
   },
   {
-    "offset_inicio": "(25) ‘‘Supervised person’’ means any partner, officer, director (or other person occupying",
-    "offset_fim": "subject to the supervision and control of the investment adviser. \n\n(26) The term",
-    "pagina_inicio": 6,
-    "pagina_fim": 6,
-    "titulo": "SEC. 202(a)(25) — Supervised person",
-    "motivo": "É o primeiro bloco completo exibido: inicia no marcador normativo (25) e termina imediatamente antes do próximo marcador, (26), na mesma página.",
-    "texto": "(25) ‘‘Supervised person’’ means any partner, officer, director (or other person occupying a similar status or performing similar functions), or employee of an investment adviser, or other person who provides investment advice on behalf of the investment adviser and is subject to the supervision and control of the investment adviser. \n\n(26) The term"
+    "titulo": "(C)",
+    "offset_inicio": "(C) the securities which may be purchased pursuant to section 55(a) of title I of this Act may be purchased from any person. ",
+    "offset_fim": "and shall be determined no less frequently than annually. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "(C) the securities which may be purchased pursuant to section 55(a) of title I of this Act may be purchased from any person. \n\nFor purposes of this paragraph, all terms in sections 2(a)(48) and 55 of title I of this Act shall have the same meaning set forth in such title as if such company were a registered closedend investment company, except that the value of the assets of a business development company which is not subject to the provisions of sections 55 through 65 of title I of this Act shall be determined as of the date of the most recent financial statements which it furnished to all holders of its securities, and shall be determined no less frequently than annually. \n\n"
   },
   {
-    "offset_inicio": "(27) The terms ‘‘security future’’ and ‘‘narrow-based security index’’ have the same meanings as provided",
-    "offset_fim": "section 3(a)(55) of the Securities Exchange Act of 1934. \n\n",
+    "titulo": "(23) ‘‘Foreign securities authority’’",
+    "offset_inicio": "(23) ‘‘Foreign securities authority’’ means any foreign government, or any governmental body",
+    "offset_fim": "government to administer or enforce its laws as they relate to securities matters. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "(23) ‘‘Foreign securities authority’’ means any foreign government, or any governmental body or regulatory organization empowered by a foreign government to administer or enforce its laws as they relate to securities matters. \n\n"
+  },
+  {
+    "titulo": "(24) ‘‘Foreign financial regulatory authority’’",
+    "offset_inicio": "(24) ‘‘Foreign financial regulatory authority’’ means any ",
+    "offset_fim": "(24) ‘‘Foreign financial regulatory authority’’ means any ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "(24) ‘‘Foreign financial regulatory authority’’ means any "
+  },
+  {
+    "titulo": "(A)",
+    "offset_inicio": "(A) foreign securities authority, ",
+    "offset_fim": "(A) foreign securities authority, ",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "(A) foreign securities authority, "
+  },
+  {
+    "titulo": "(B)",
+    "offset_inicio": "(B) other governmental body or foreign equivalent of a self-regulatory organization",
+    "offset_fim": "market, board of trade or foreign equivalent, \n\nor other financial activities, or (C) membership organization a function of which is to regulate the participation of its members in activities listed above. \n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 6,
+    "texto": "(B) other governmental body or foreign equivalent of a self-regulatory organization empowered by a foreign government to administer or enforce its laws relating to the regulation of fiduciaries, trusts, commercial lending, insurance, trading in contracts of sale of a commodity for future delivery, or other instruments traded on or subject to the rules of a contract market, board of trade or foreign equivalent, \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 6 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 202 INVESTMENT ADVISERS ACT OF 1940 6** \n\nor other financial activities, or (C) membership organization a function of which is to regulate the participation of its members in activities listed above."
+  },
+  {
+    "titulo": "(25) ‘‘Supervised person’’",
+    "offset_inicio": "(25) ‘‘Supervised person’’ means any partner, officer, director (or other person occupying a similar status or performing similar functions),",
+    "offset_fim": "investment adviser and is subject to the supervision and control of the investment adviser. \n\n",
     "pagina_inicio": 6,
     "pagina_fim": 6,
-    "titulo": "SEC. 202(a)(27) — security future e narrow-based security index",
-    "motivo": "É o primeiro marcador normativo completo que inicia texto próprio no trecho fornecido; começa em (27) e termina imediatamente antes do marcador seguinte, (28).",
+    "texto": "(25) ‘‘Supervised person’’ means any partner, officer, director (or other person occupying a similar status or performing similar functions), or employee of an investment adviser, or other person who provides investment advice on behalf of the investment adviser and is subject to the supervision and control of the investment adviser. \n\n"
+  },
+  {
+    "titulo": "(26) The term ‘‘separately identifiable department or division’’",
+    "offset_inicio": "(26) The term ‘‘separately identifiable department or division’’ of a bank means a unit— \n\n",
+    "offset_fim": "(26) The term ‘‘separately identifiable department or division’’ of a bank means a unit— \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(26) The term ‘‘separately identifiable department or division’’ of a bank means a unit— \n\n"
+  },
+  {
+    "titulo": "(A)",
+    "offset_inicio": "(A) that is under the direct supervision of an officer or officers designated by the board",
+    "offset_fim": "l bank employees engaged in the performance of such activities; and \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(A) that is under the direct supervision of an officer or officers designated by the board of directors of the bank as responsible for the day-to-day conduct of the bank’s investment adviser activities for one or more investment companies, including the supervision of all bank employees engaged in the performance of such activities; and \n\n"
+  },
+  {
+    "titulo": "(B)",
+    "offset_inicio": "(B) for which all of the records relating to its investment adviser activities are separately maintained in or",
+    "offset_fim": "ion and enforcement by the Commission of this Act or the Investment Company Act of 1940 and rules and regulations promulgated under this Act or the Investment Company Act of 1940. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(B) for which all of the records relating to its investment adviser activities are separately maintained in or extractable from such unit’s own facilities or the facilities of the bank, and such records are so maintained or otherwise accessible as to permit independent examination and enforcement by the Commission of this Act or the Investment Company Act of 1940 and rules and regulations promulgated under this Act or the Investment Company Act of 1940. \n\n"
+  },
+  {
+    "titulo": "(27)",
+    "offset_inicio": "(27) The terms ‘‘security future’’ and ‘‘narrow-based security index’’ have the same meanings as",
+    "offset_fim": "meanings as provided in section 3(a)(55) of the Securities Exchange Act of 1934. \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
     "texto": "(27) The terms ‘‘security future’’ and ‘‘narrow-based security index’’ have the same meanings as provided in section 3(a)(55) of the Securities Exchange Act of 1934. \n\n"
   },
   {
-    "offset_inicio": "(28) The term ‘‘credit rating agency’’ has the same meaning as in section 3 of the",
-    "offset_fim": "‘‘credit rating agency’’ has the same meaning as in section 3 of the Securities Exchange Act of 1934. ",
+    "titulo": "(28) The term ‘‘credit rating agency’’",
+    "offset_inicio": "(28) The term ‘‘credit rating agency’’ has the same meaning as in section 3 of the Securities",
+    "offset_fim": "(28) The term ‘‘credit rating agency’’ has the same meaning as in section 3 of the Securities Exchange Act of 1934. \n\n",
     "pagina_inicio": 6,
     "pagina_fim": 6,
-    "titulo": "SEC. 202(a)(28) — credit rating agency",
-    "motivo": "O trecho inicia no marcador normativo (28) e termina imediatamente antes do próximo marcador (29), formando uma definição autônoma.",
-    "texto": "(28) The term ‘‘credit rating agency’’ has the same meaning as in section 3 of the Securities Exchange Act of 1934. "
+    "texto": "(28) The term ‘‘credit rating agency’’ has the same meaning as in section 3 of the Securities Exchange Act of 1934. \n\n"
   },
   {
-    "offset_inicio": "(29) The term ‘‘private fund’’ means an issuer that would be an investment company, as defined in section 3 of the Investment Company Act",
-    "offset_fim": "mpany Act of 1940 (15 U.S.C. 80a–3), but for section 3(c)(1) or 3(c)(7) of that Act. ",
+    "titulo": "(29) The term ‘‘private fund’’",
+    "offset_inicio": "(29) The term ‘‘private fund’’ means an issuer that would be an investment company, as",
+    "offset_fim": "as defined in section 3 of the Investment Company Act of 1940 (15 U.S.C. 80a–3), but for section 3(c)(1) or 3(c)(7) of that Act. \n\n",
     "pagina_inicio": 6,
     "pagina_fim": 6,
-    "titulo": "SEC. 202(a)(29) — private fund",
-    "motivo": "O parágrafo (29) inicia texto normativo próprio e termina imediatamente antes do marcador seguinte, (30), na mesma página.",
-    "texto": "(29) The term ‘‘private fund’’ means an issuer that would be an investment company, as defined in section 3 of the Investment Company Act of 1940 (15 U.S.C. 80a–3), but for section 3(c)(1) or 3(c)(7) of that Act. "
+    "texto": "(29) The term ‘‘private fund’’ means an issuer that would be an investment company, as defined in section 3 of the Investment Company Act of 1940 (15 U.S.C. 80a–3), but for section 3(c)(1) or 3(c)(7) of that Act. \n\n"
   },
   {
-    "offset_inicio": "(30) The term ‘‘foreign private adviser’’ means any investment adviser who— ",
-    "offset_fim": "(30) The term ‘‘foreign private adviser’’ means any investment adviser who— ",
+    "titulo": "(30) The term ‘‘foreign private adviser’’",
+    "offset_inicio": "(30) The term ‘‘foreign private adviser’’ means any investment adviser who— \n\n",
+    "offset_fim": "(30) The term ‘‘foreign private adviser’’ means any investment adviser who— \n\n",
     "pagina_inicio": 6,
     "pagina_fim": 6,
-    "titulo": "SEC. 202(a)(30) — foreign private adviser",
-    "motivo": "O primeiro marcador normativo visível é o parágrafo (30). Seu texto introdutório termina imediatamente antes do próximo marcador de nível inferior, (A), que inicia bloco próprio.",
-    "texto": "(30) The term ‘‘foreign private adviser’’ means any investment adviser who— "
+    "texto": "(30) The term ‘‘foreign private adviser’’ means any investment adviser who— \n\n"
   },
   {
+    "titulo": "(A) has no place of business in the United States",
     "offset_inicio": "(A) has no place of business in the United States; ",
     "offset_fim": "(A) has no place of business in the United States; ",
     "pagina_inicio": 6,
     "pagina_fim": 6,
-    "titulo": "Subparágrafo (A)",
-    "motivo": "É o primeiro marcador normativo visível que inicia texto próprio; seu conteúdo termina imediatamente antes do próximo marcador, (B).",
     "texto": "(A) has no place of business in the United States; "
   },
   {
-    "offset_inicio": "(29)<sup>3</sup> The terms ‘‘commodity pool’’, ‘‘commodity pool operator’’, ‘‘commodity trading advisor’’, ‘‘major swap participant’’,",
-    "offset_fim": "have the same meanings as in section 1a of the Commodity Exchange Act (7 U.S.C. 1a).",
+    "titulo": "(B)",
+    "offset_inicio": "(B) has, in total, fewer than 15 clients and investors in the United States in private funds advised by the investment adviser; \n\n",
+    "offset_fim": "and investors in the United States in private funds advised by the investment adviser; \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(B) has, in total, fewer than 15 clients and investors in the United States in private funds advised by the investment adviser; \n\n"
+  },
+  {
+    "titulo": "(C)",
+    "offset_inicio": "(C) has aggregate assets under management attributable to clients in the United States and",
+    "offset_fim": "Commission may, by rule, deem appropriate in accordance with the purposes of this title; and \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(C) has aggregate assets under management attributable to clients in the United States and investors in the United States in private funds advised by the investment adviser of less than $25,000,000, or such higher amount as the Commission may, by rule, deem appropriate in accordance with the purposes of this title; and \n\n"
+  },
+  {
+    "titulo": "(D) neither—",
+    "offset_inicio": "(D) neither— \n\n(i) holds itself out generally to the public in the United States as an investment adviser; nor ",
+    "offset_fim": "(D) neither— \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(D) neither— \n\n"
+  },
+  {
+    "titulo": "(i) holds itself out generally to the public in the United States as an investment adviser; nor",
+    "offset_inicio": "(i) holds itself out generally to the public in the United States as an investment adviser; nor \n\n",
+    "offset_fim": "(i) holds itself out generally to the public in the United States as an investment adviser; nor \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(i) holds itself out generally to the public in the United States as an investment adviser; nor \n\n"
+  },
+  {
+    "titulo": "(ii) acts as—",
+    "offset_inicio": "(ii) acts as— \n\n",
+    "offset_fim": "(ii) acts as— \n\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(ii) acts as— \n\n"
+  },
+  {
+    "titulo": "(I)",
+    "offset_inicio": "(I) an investment adviser to any investment company registered under the Investment Company Act of 1940; or ",
+    "offset_fim": "(I) an investment adviser to any investment company registered under the Investment Company Act of 1940; or ",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "(I) an investment adviser to any investment company registered under the Investment Company Act of 1940; or "
+  },
+  {
+    "titulo": "(29)",
+    "offset_inicio": "(29)<sup>3</sup> The terms ‘‘commodity pool’’, ‘‘commodity pool operator’’, ‘‘commodity trading",
+    "offset_fim": "wap execution facility’’ have the same meanings as in section 1a of the Commodity Exchange Act (7 U.S.C. 1a). \n\n",
     "pagina_inicio": 7,
     "pagina_fim": 7,
-    "titulo": "SEC. 202(a)(29) — Definições de termos da Commodity Exchange Act",
-    "motivo": "É o primeiro marcador normativo completo visível no trecho. Inicia em (29) e termina imediatamente antes da subseção (b).",
-    "texto": "(29)<sup>3</sup> The terms ‘‘commodity pool’’, ‘‘commodity pool operator’’, ‘‘commodity trading advisor’’, ‘‘major swap participant’’, ‘‘swap’’, ‘‘swap dealer’’, and ‘‘swap execution facility’’ have the same meanings as in section 1a of the Commodity Exchange Act (7 U.S.C. 1a)."
+    "texto": "(29)<sup>3</sup> The terms ‘‘commodity pool’’, ‘‘commodity pool operator’’, ‘‘commodity trading advisor’’, ‘‘major swap participant’’, ‘‘swap’’, ‘‘swap dealer’’, and ‘‘swap execution facility’’ have the same meanings as in section 1a of the Commodity Exchange Act (7 U.S.C. 1a). \n\n"
   },
   {
-    "offset_inicio": "(b) No provision in this title shall apply to, or be deemed to include, the United",
-    "offset_fim": "acting as such in the course of his official duty, unless such provision makes specific reference thereto. ",
+    "titulo": "(b)",
+    "offset_inicio": "(b) No provision in this title shall apply to, or be deemed to include, the United States, a State,",
+    "offset_fim": "acting as such in the course of his official duty, unless such provision makes specific reference thereto.",
     "pagina_inicio": 7,
     "pagina_fim": 7,
-    "titulo": "Subseção (b)",
-    "motivo": "É o primeiro marcador normativo no trecho fornecido; inicia em “(b)” e termina imediatamente antes do próximo marcador, “(c)”.",
-    "texto": "(b) No provision in this title shall apply to, or be deemed to include, the United States, a State, or any political subdivision of a State, or any agency, authority, or instrumentality of any one or more of the foregoing, or any corporation which is wholly owned directly or indirectly by any one or more of the foregoing, or any officer, agent, or employee of any of the foregoing acting as such in the course of his official duty, unless such provision makes specific reference thereto. "
+    "texto": "(b) No provision in this title shall apply to, or be deemed to include, the United States, a State, or any political subdivision of a State, or any agency, authority, or instrumentality of any one or more of the foregoing, or any corporation which is wholly owned directly or indirectly by any one or more of the foregoing, or any officer, agent, or employee of any of the foregoing acting as such in the course of his official duty, unless such provision makes specific reference thereto."
   },
   {
-    "offset_inicio": "(a) Except as provided in subsection (b) and section 203A<sup>4</sup> , it shall",
-    "offset_fim": "interstate commerce in connection with his or its business as an investment adviser.<sup>5</sup> ",
+    "titulo": "(c) CONSIDERATION OF PROMOTION OF EFFICIENCY, COMPETITION, AND CAPITAL FORMATION",
+    "offset_inicio": "(c) CONSIDERATION OF PROMOTION OF EFFICIENCY, COMPETITION, AND CAPITAL FORMATION.—Whenever",
+    "offset_fim": "tection of investors, whether the action will promote efficiency, competition, and capital formation. ",
     "pagina_inicio": 7,
     "pagina_fim": 7,
-    "titulo": "SEC. 203(a) — Registro de consultores de investimento",
-    "motivo": "A subseção (a) inicia texto normativo próprio em SEC. 203 e termina imediatamente antes do próximo marcador, a subseção (b).",
-    "texto": "(a) Except as provided in subsection (b) and section 203A<sup>4</sup> , it shall be unlawful for any investment adviser, unless registered under this section, to make use of the mails or any means or instrumentality of interstate commerce in connection with his or its business as an investment adviser.<sup>5</sup> "
+    "texto": "(c) CONSIDERATION OF PROMOTION OF EFFICIENCY, COMPETITION, AND CAPITAL FORMATION.—Whenever pursuant to this title the Commission is engaged in rulemaking and is required to consider or determine whether an action is necessary or appropriate in the public interest, the Commission shall also consider, in addition to the protection of investors, whether the action will promote efficiency, competition, and capital formation. "
   },
   {
-    "offset_inicio": "(b) The provisions of subsection (a) shall not apply to— \n\n(1) any investment adviser, other than",
-    "offset_fim": "(ii) are affiliated with 1 or more rural business investment companies described in subparagraph (A). ",
+    "titulo": "REGISTRATION OF INVESTMENT ADVISERS",
+    "offset_inicio": "## REGISTRATION OF INVESTMENT ADVISERS \n\n",
+    "offset_fim": "## REGISTRATION OF INVESTMENT ADVISERS \n\n",
     "pagina_inicio": 7,
-    "pagina_fim": 9,
-    "titulo": "SEC. 203(b) — Exceções à aplicação da subseção (a)",
-    "motivo": "O bloco inicia no marcador normativo (b), na página 7, e reúne suas enumerações e subníveis até imediatamente antes do próximo marcador de mesmo nível, (c)(1), na página 9.",
-    "texto": "(b) The provisions of subsection (a) shall not apply to— \n\n(1) any investment adviser, other than an investment adviser who acts as an investment adviser to any private fund, all of whose clients are residents of the State within which such investment adviser maintains his or its principal office and place of business, and who does not furnish advice or issue analyses or reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; \n\n(2) any investment adviser whose only clients are insurance companies; \n\n(3) any investment adviser that is a foreign private adviser; \n\n3 Effective July 21, 2011, sections 402(a) and 770 of Public Law 111–203 provides for amendments to insert new paragraphs (29)–(30) and a second paragraph (29), respectively (shown above). The second paragraph (29) that precedes subsection (b) probably should be redesignated as paragraph (31). \n\n> 4 Section 303(d) of the National Securities Markets Improvment Act of 1996 (P.L. 104–290; 110 Stat. 3438) amended section 203 of the Investment Advisers Act of 1940 by striking ‘‘subsection (b) _of this section_ ’’ and inserting ‘‘subsection (b) and section 203A’’. This compilation reflects this amendment even though the italicized words were not in the underlying law at the time of the amendment. \n\n5 See also 7 U.S.C. 2, 2a, 6m. øPrinted in appendix to this volume.¿ \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 8 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 203 INVESTMENT ADVISERS ACT OF 1940 8** \n\n(4) any investment adviser that is a charitable organization, as defined in section 3(c)(10)(D) of the Investment Company Act of 1940, or is a trustee, director, officer, employee, or volunteer of such a charitable organization acting within the scope of such person’s employment or duties with such organization, whose advice, analyses, or reports are provided only to one or more of the following: \n\n(A) any such charitable organization; \n\n(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or \n\n(C) a trust or other donative instrument described in section 3(c)(10)(B) of the Investment Company Act of 1940, or the trustees, administrators, settlors (or potential settlors), or beneficiaries of any such trust or other instrument; \n\n(5) any plan described in section 414(e) of the Internal Revenue Code of 1986, any person or entity eligible to establish and maintain such a plan under the Internal Revenue Code of 1986, or any trustee, director, officer, or employee of or volunteer for any such plan or person, if such person or entity, acting in such capacity, provides investment advice exclusively to, or with respect to, any plan, person, or entity or any company, account, or fund that is excluded from the definition of an investment company under section 3(c)(14) of the Investment Company Act of 1940; \n\n(6)(A) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor whose business does not consist primarily of acting as an investment adviser, as defined in section 202(a)(11) of this title, and that does not act as an investment adviser to— \n\n(i) an investment company registered under title I of this Act; or \n\n(ii) a company which has elected to be a business development company pursuant to section 54 of title I of this Act and has not withdrawn its election; or \n\n(B) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor and advises a private fund, provided that, if after the date of enactment of the Private Fund Investment Advisers Registration Act of 2010, the business of the advisor should become predominately the provision of securities-related advice, then such adviser shall register with the Commission; \n\n(7) any investment adviser, other than any entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–54), who solely advises— \n\n(A) small business investment companies that are licensees under the Small Business Investment Act of 1958; \n\n(B) entities that have received from the Small Business Administration notice to proceed to qualify for a license as a small business investment company under the Small Business Investment Act of 1958, which notice or license has not been revoked; or \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 9 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **9 INVESTMENT ADVISERS ACT OF 1940** \n\n**Sec. 203** \n\n(C) applicants that are affiliated with 1 or more licensed small business investment companies described in subparagraph (A) and that have applied for another license under the Small Business Investment Act of 1958, which application remains pending; or \n\n(8) any investment adviser, other than an entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–53), who solely advises— \n\n(A) rural business investment companies (as defined in section 384A of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc)); or \n\n(B) companies that have submitted to the Secretary of Agriculture an application in accordance with section 384D(b) of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc–3(b)) that— \n\n(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or \n\n(ii) are affiliated with 1 or more rural business investment companies described in subparagraph (A). "
+    "pagina_fim": 7,
+    "texto": "## REGISTRATION OF INVESTMENT ADVISERS \n\n"
   },
   {
-    "offset_inicio": "(c)(1) An investment adviser, or any person who presently contemplates becoming an investment adviser, may be registered by filing with the Commission",
-    "offset_fim": "Commission, by rule, may prescribe as necessary or appropriate in the public interest or for the protection of investors: ",
+    "titulo": "SEC. 203. ø80b–3¿",
+    "offset_inicio": "SEC. 203. ø80b–3¿ ",
+    "offset_fim": "SEC. 203. ø80b–3¿ ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "SEC. 203. ø80b–3¿ "
+  },
+  {
+    "titulo": "(a)",
+    "offset_inicio": "(a) Except as provided in subsection (b) and section 203A<sup>4</sup> , it shall be unlawful for any investment adviser, unless registered under this section, to make use of the mails",
+    "offset_fim": "instrumentality of interstate commerce in connection with his or its business as an investment adviser.<sup>5</sup> \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "(a) Except as provided in subsection (b) and section 203A<sup>4</sup> , it shall be unlawful for any investment adviser, unless registered under this section, to make use of the mails or any means or instrumentality of interstate commerce in connection with his or its business as an investment adviser.<sup>5</sup> \n\n"
+  },
+  {
+    "titulo": "(b)",
+    "offset_inicio": "(b) The provisions of subsection (a) shall not apply to— ",
+    "offset_fim": "(b) The provisions of subsection (a) shall not apply to— ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "(b) The provisions of subsection (a) shall not apply to— "
+  },
+  {
+    "titulo": "(1)",
+    "offset_inicio": "(1) any investment adviser, other than an investment adviser who acts as an investment adviser to any private fund, all of whose clients are residents of the State within which such investment adviser maintains his or its principal office and place of business, and who does not furnish advice or issue analyses or reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; ",
+    "offset_fim": "does not furnish advice or issue analyses or reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "(1) any investment adviser, other than an investment adviser who acts as an investment adviser to any private fund, all of whose clients are residents of the State within which such investment adviser maintains his or its principal office and place of business, and who does not furnish advice or issue analyses or reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; \n\n"
+  },
+  {
+    "titulo": "(2) any investment adviser whose only clients are insurance companies;",
+    "offset_inicio": "(2) any investment adviser whose only clients are insurance companies; ",
+    "offset_fim": "(2) any investment adviser whose only clients are insurance companies; \n\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "(2) any investment adviser whose only clients are insurance companies; \n\n"
+  },
+  {
+    "titulo": "(3) any investment adviser that is a foreign private adviser;",
+    "offset_inicio": "(3) any investment adviser that is a foreign private adviser; \n\n> 3 Effective July",
+    "offset_fim": "5 See also 7 U.S.C. 2, 2a, 6m. øPrinted in appendix to this volume.¿ ",
+    "pagina_inicio": 7,
+    "pagina_fim": 8,
+    "texto": "(3) any investment adviser that is a foreign private adviser; \n\n> 3 Effective July 21, 2011, sections 402(a) and 770 of Public Law 111–203 provides for amendments to insert new paragraphs (29)–(30) and a second paragraph (29), respectively (shown above). The second paragraph (29) that precedes subsection (b) probably should be redesignated as paragraph (31). \n\n> 4 Section 303(d) of the National Securities Markets Improvment Act of 1996 (P.L. 104–290; 110 Stat. 3438) amended section 203 of the Investment Advisers Act of 1940 by striking ‘‘subsection (b) _of this section_ ’’ and inserting ‘‘subsection (b) and section 203A’’. This compilation reflects this amendment even though the italicized words were not in the underlying law at the time of the amendment. \n\n5 See also 7 U.S.C. 2, 2a, 6m. øPrinted in appendix to this volume.¿ "
+  },
+  {
+    "titulo": "(4) any investment adviser that is a charitable organization",
+    "offset_inicio": "(4) any investment adviser that is a charitable organization, as defined in section 3(c)(10)(D) of the Investment Company Act of 1940, or is a trustee, director, officer, employee, or volunteer of such a charitable organization acting within the scope of such person’s employment or duties with such organization, whose advice, analyses, or reports are provided only to one or more of the following: ",
+    "offset_fim": "advice, analyses, or reports are provided only to one or more of the following: \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(4) any investment adviser that is a charitable organization, as defined in section 3(c)(10)(D) of the Investment Company Act of 1940, or is a trustee, director, officer, employee, or volunteer of such a charitable organization acting within the scope of such person’s employment or duties with such organization, whose advice, analyses, or reports are provided only to one or more of the following: \n\n"
+  },
+  {
+    "titulo": "(A)",
+    "offset_inicio": "(A) any such charitable organization; \n\n",
+    "offset_fim": "(A) any such charitable organization; \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(A) any such charitable organization; \n\n"
+  },
+  {
+    "titulo": "(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or",
+    "offset_inicio": "(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or \n\n",
+    "offset_fim": "definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or \n\n"
+  },
+  {
+    "titulo": "(C) a trust or other donative instrument described in section 3(c)(10)(B) of the Investment Company Act of 1940",
+    "offset_inicio": "(C) a trust or other donative instrument described in section 3(c)(10)(B) of the Investment Company Act of 1940, or the trustees, administrators, settlors (or potential settlors), or beneficiaries of any such trust or other instrument; ",
+    "offset_fim": "settlors (or potential settlors), or beneficiaries of any such trust or other instrument; ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(C) a trust or other donative instrument described in section 3(c)(10)(B) of the Investment Company Act of 1940, or the trustees, administrators, settlors (or potential settlors), or beneficiaries of any such trust or other instrument; "
+  },
+  {
+    "titulo": "(5)",
+    "offset_inicio": "(5) any plan described in section 414(e) of the Internal Revenue Code of 1986, any person or entity eligible to establish and maintain such a plan under the Internal Revenue Code of 1986, or any trustee, director, officer, or employee of or volunteer for any such plan or person, if such person or entity, acting in such capacity, provides investment advice exclusively to, or with respect to, any plan, person, or entity or any company, account, or fund that is excluded from the definition of an investment company under section 3(c)(14) of the Investment Company Act of 1940; ",
+    "offset_fim": "is excluded from the definition of an investment company under section 3(c)(14) of the Investment Company Act of 1940; ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(5) any plan described in section 414(e) of the Internal Revenue Code of 1986, any person or entity eligible to establish and maintain such a plan under the Internal Revenue Code of 1986, or any trustee, director, officer, or employee of or volunteer for any such plan or person, if such person or entity, acting in such capacity, provides investment advice exclusively to, or with respect to, any plan, person, or entity or any company, account, or fund that is excluded from the definition of an investment company under section 3(c)(14) of the Investment Company Act of 1940; "
+  },
+  {
+    "titulo": "(6)",
+    "offset_inicio": "(6)",
+    "offset_fim": "(6)",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(6)"
+  },
+  {
+    "titulo": "(A)",
+    "offset_inicio": "(A) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor whose business does not consist primarily of acting as an investment adviser, as defined in section 202(a)(11) of this title, and that does not act as an investment adviser to— ",
+    "offset_fim": "as defined in section 202(a)(11) of this title, and that does not act as an investment adviser to— \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(A) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor whose business does not consist primarily of acting as an investment adviser, as defined in section 202(a)(11) of this title, and that does not act as an investment adviser to— \n\n"
+  },
+  {
+    "titulo": "(i)",
+    "offset_inicio": "(i) an investment company registered under title I of this Act; or \n\n",
+    "offset_fim": "(i) an investment company registered under title I of this Act; or \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(i) an investment company registered under title I of this Act; or \n\n"
+  },
+  {
+    "titulo": "(ii)",
+    "offset_inicio": "(ii) a company which has elected to be a business development company pursuant to section",
+    "offset_fim": "pursuant to section 54 of title I of this Act and has not withdrawn its election; or \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(ii) a company which has elected to be a business development company pursuant to section 54 of title I of this Act and has not withdrawn its election; or \n\n"
+  },
+  {
+    "titulo": "(B)",
+    "offset_inicio": "(B) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor and advises a private fund, provided that, if after the date of enactment of the Private Fund Investment Advisers Registration Act of 2010, the business of the advisor should become predominately the provision of securities-related advice, then such adviser shall register with the Commission; ",
+    "offset_fim": "the business of the advisor should become predominately the provision of securities-related advice, then such adviser shall register with the Commission; \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(B) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor and advises a private fund, provided that, if after the date of enactment of the Private Fund Investment Advisers Registration Act of 2010, the business of the advisor should become predominately the provision of securities-related advice, then such adviser shall register with the Commission; \n\n"
+  },
+  {
+    "titulo": "(7)",
+    "offset_inicio": "(7) any investment adviser, other than any entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–54), who solely advises— ",
+    "offset_fim": "pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–54), who solely advises— \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(7) any investment adviser, other than any entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–54), who solely advises— \n\n"
+  },
+  {
+    "titulo": "(A) small business investment companies that are licensees under the Small Business Investment Act of 1958",
+    "offset_inicio": "(A) small business investment companies that are licensees under the Small Business Investment Act of 1958; \n\n",
+    "offset_fim": "(A) small business investment companies that are licensees under the Small Business Investment Act of 1958; \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(A) small business investment companies that are licensees under the Small Business Investment Act of 1958; \n\n"
+  },
+  {
+    "titulo": "(B) entities that have received from the Small Business Administration notice to proceed to qualify for a license as a small business investment company under the Small Business Investment Act of 1958, which notice or license has not been revoked; or",
+    "offset_inicio": "(B) entities that have received from the Small Business Administration notice to proceed",
+    "offset_fim": "Business Investment Act of 1958, which notice or license has not been revoked; or \n\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "(B) entities that have received from the Small Business Administration notice to proceed to qualify for a license as a small business investment company under the Small Business Investment Act of 1958, which notice or license has not been revoked; or \n\n"
+  },
+  {
+    "titulo": "(C) applicants that are affiliated with 1 or more licensed small business investment companies described in subparagraph (A) and that have applied for another license under the Small Business Investment Act of 1958, which application remains pending; or",
+    "offset_inicio": "(C) applicants that are affiliated with 1 or more licensed small business investment companies described in subparagraph (A) and that have applied for another license under the Small Business Investment Act of 1958, which application remains pending; or ",
+    "offset_fim": "another license under the Small Business Investment Act of 1958, which application remains pending; or \n\n",
     "pagina_inicio": 9,
     "pagina_fim": 9,
-    "titulo": "SEC. 203(c)(1)",
-    "motivo": "O trecho inicia no marcador normativo (c)(1) e contém sua oração introdutória; encerra-se imediatamente antes do subparágrafo (A), que inicia bloco próprio.",
-    "texto": "(c)(1) An investment adviser, or any person who presently contemplates becoming an investment adviser, may be registered by filing with the Commission an application for registration in such form and containing such of the following information and documents as the Commission, by rule, may prescribe as necessary or appropriate in the public interest or for the protection of investors: "
+    "texto": "(C) applicants that are affiliated with 1 or more licensed small business investment companies described in subparagraph (A) and that have applied for another license under the Small Business Investment Act of 1958, which application remains pending; or \n\n"
   },
   {
-    "offset_inicio": "(A) the name and form of organization under which the investment adviser engages or intends to engage in business;",
-    "offset_fim": "individual, of such individual; and the number of his or its employees; ",
+    "titulo": "(8)",
+    "offset_inicio": "(8) any investment adviser, other than an entity that has elected to be regulated",
+    "offset_fim": "nvestment Company Act of 1940 (15 U.S.C. 80a–53), who solely advises— \n\n",
     "pagina_inicio": 9,
     "pagina_fim": 9,
-    "titulo": "Sec. 203(c)(1)(A)",
-    "motivo": "É o primeiro marcador normativo completo visível no trecho. Inicia em “(A)” e termina imediatamente antes do próximo marcador, “(B)”.",
-    "texto": "(A) the name and form of organization under which the investment adviser engages or intends to engage in business; the name of the State or other sovereign power under which such investment adviser is organized; the location of his or its principal office, principal place of business, and branch offices, if any; the names and addresses of his or its partners, officers, directors, and persons performing similar functions or, if such an investment adviser be an individual, of such individual; and the number of his or its employees; "
+    "texto": "(8) any investment adviser, other than an entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–53), who solely advises— \n\n"
   },
   {
-    "offset_inicio": "(B) the education, the business affiliations for the past ten years, and the present",
-    "offset_fim": "persons performing similar functions and of any controlling person thereof;",
+    "titulo": "(A) rural business investment companies",
+    "offset_inicio": "(A) rural business investment companies (as defined in section 384A of the Consolidated",
+    "offset_fim": "ion 384A of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc)); or \n\n",
     "pagina_inicio": 9,
     "pagina_fim": 9,
-    "titulo": "SEC. 203(c)(1)(B)",
-    "motivo": "O trecho inicia no marcador normativo (B) e termina imediatamente antes do próximo marcador do mesmo nível, (C), na página 9.",
-    "texto": "(B) the education, the business affiliations for the past ten years, and the present business affiliations of such investment adviser and of his or its partners, officers, directors, and persons performing similar functions and of any controlling person thereof;"
+    "texto": "(A) rural business investment companies (as defined in section 384A of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc)); or \n\n"
   },
   {
-    "offset_inicio": "(C) the nature of the business of such investment adviser, including the manner of giving",
-    "offset_fim": "usiness of such investment adviser, including the manner of giving advice and rendering analyses or reports;",
+    "titulo": "(B) companies that have submitted to the Secretary of Agriculture an application in accordance with section 384D(b) of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc–3(b)) that—",
+    "offset_inicio": "(B) companies that have submitted to the Secretary of Agriculture an application in accordance with section 384D(b) of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc–3(b)) that— ",
+    "offset_fim": "n accordance with section 384D(b) of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc–3(b)) that— \n\n",
     "pagina_inicio": 9,
     "pagina_fim": 9,
-    "titulo": "SEC. 203(c)(1)(C)",
-    "motivo": "O trecho inicia no marcador normativo (C) e contém integralmente sua disposição sobre a natureza do negócio do consultor. Encerra-se imediatamente antes do próximo marcador, (D).",
-    "texto": "(C) the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports;"
+    "texto": "(B) companies that have submitted to the Secretary of Agriculture an application in accordance with section 384D(b) of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc–3(b)) that— \n\n"
   },
   {
-    "offset_inicio": "(d) Any provision of this title (other than subsection (a) of this section) which prohibits",
-    "offset_fim": "instrumentality of interstate commerce in connection therewith. \n\n(e) The Commission, by order,",
+    "titulo": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or",
+    "offset_inicio": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or \n\n",
+    "offset_fim": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or \n\n"
+  },
+  {
+    "titulo": "(ii) are affiliated with 1 or more rural business investment companies described in subparagraph (A).",
+    "offset_inicio": "(ii) are affiliated with 1 or more rural business investment companies described in subparagraph (A). ",
+    "offset_fim": "(ii) are affiliated with 1 or more rural business investment companies described in subparagraph (A). \n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(ii) are affiliated with 1 or more rural business investment companies described in subparagraph (A). \n"
+  },
+  {
+    "titulo": "(c)",
+    "offset_inicio": "(c)",
+    "offset_fim": "(c)",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(c)"
+  },
+  {
+    "titulo": "(1) An investment adviser, or any person who presently contemplates becoming an investment adviser",
+    "offset_inicio": "(1) An investment adviser, or any person who presently contemplates becoming an investment",
+    "offset_fim": "information and documents as the Commission, by rule, may prescribe as necessary or appropriate in the public interest or for the protection of investors: \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(1) An investment adviser, or any person who presently contemplates becoming an investment adviser, may be registered by filing with the Commission an application for registration in such form and containing such of the following information and documents as the Commission, by rule, may prescribe as necessary or appropriate in the public interest or for the protection of investors: \n\n"
+  },
+  {
+    "titulo": "(A)",
+    "offset_inicio": "(A) the name and form of organization under which the investment adviser engages or intends to engage in business; the name of the State or other sovereign power under which such investment adviser is organized;",
+    "offset_fim": "if such an investment adviser be an individual, of such individual; and the number of his or its employees; \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(A) the name and form of organization under which the investment adviser engages or intends to engage in business; the name of the State or other sovereign power under which such investment adviser is organized; the location of his or its principal office, principal place of business, and branch offices, if any; the names and addresses of his or its partners, officers, directors, and persons performing similar functions or, if such an investment adviser be an individual, of such individual; and the number of his or its employees; \n\n"
+  },
+  {
+    "titulo": "(B)",
+    "offset_inicio": "(B) the education, the business affiliations for the past ten years, and the present business",
+    "offset_fim": "persons performing similar functions and of any controlling person thereof; \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(B) the education, the business affiliations for the past ten years, and the present business affiliations of such investment adviser and of his or its partners, officers, directors, and persons performing similar functions and of any controlling person thereof; \n\n"
+  },
+  {
+    "titulo": "(C) the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports;",
+    "offset_inicio": "(C) the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports; ",
+    "offset_fim": "the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports; \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(C) the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports; \n\n"
+  },
+  {
+    "titulo": "(D)",
+    "offset_inicio": "(D) a balance sheet certified by an independent public accountant and other financial",
+    "offset_fim": "financial statements (which shall, as the Commission specifies, be certified); \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(D) a balance sheet certified by an independent public accountant and other financial statements (which shall, as the Commission specifies, be certified); \n\n"
+  },
+  {
+    "titulo": "(E) the nature and scope of the authority of such investment adviser with respect to clients’ funds and accounts;",
+    "offset_inicio": "(E) the nature and scope of the authority of such investment adviser with respect to clients’ funds and accounts; ",
+    "offset_fim": "the nature and scope of the authority of such investment adviser with respect to clients’ funds and accounts;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(E) the nature and scope of the authority of such investment adviser with respect to clients’ funds and accounts;"
+  },
+  {
+    "titulo": "(F) the basis or bases upon which such investment adviser is compensated;",
+    "offset_inicio": "(F) the basis or bases upon which such investment adviser is compensated; \n\n",
+    "offset_fim": "(F) the basis or bases upon which such investment adviser is compensated; \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "(F) the basis or bases upon which such investment adviser is compensated; \n\n"
+  },
+  {
+    "titulo": "(G) whether such investment adviser, or any person associated with such investment adviser, is subject to any disqualification which would be a basis for denial, suspension, or rev-",
+    "offset_inicio": "(G) whether such investment adviser, or any person associated with such investment adviser, is subject to any disqualification which would be a basis for denial, suspension, or rev-",
+    "offset_fim": "ocation of registration of such investment adviser under the provisions of subsection (e) of this section; and \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 10,
+    "texto": "(G) whether such investment adviser, or any person associated with such investment adviser, is subject to any disqualification which would be a basis for denial, suspension, or rev- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 10 -->\n**10** \n\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 203 INVESTMENT ADVISERS ACT OF 1940** \n\nocation of registration of such investment adviser under the provisions of subsection (e) of this section; and \n\n"
+  },
+  {
+    "titulo": "(H) a statement as to whether the principal business of such investment adviser consists or is to consist of acting as investment adviser",
+    "offset_inicio": "(H) a statement as to whether the principal business of such investment adviser consists",
+    "offset_fim": "business of such investment adviser, consists or is to consist of rendering investment supervisory services. ",
     "pagina_inicio": 10,
     "pagina_fim": 10,
-    "titulo": "SEC. 203(d)",
-    "motivo": "A subseção (d) inicia texto normativo próprio na página 10 e constitui uma unidade completa; seu limite ocorre imediatamente antes do marcador da subseção (e).",
-    "texto": "(d) Any provision of this title (other than subsection (a) of this section) which prohibits any act, practice, or course of business if the mails or any means or instrumentality of interstate commerce are used in connection therewith shall also prohibit any such act, practice, or course of business by any investment adviser registered pursuant to this section or any person acting on behalf of such an investment adviser, irrespective of any use of the mails or any means or instrumentality of interstate commerce in connection therewith. \n\n(e) The Commission, by order,"
+    "texto": "(H) a statement as to whether the principal business of such investment adviser consists or is to consist of acting as investment adviser and a statement as to whether a substantial part of the business of such investment adviser, consists or is to consist of rendering investment supervisory services. "
   },
   {
-    "offset_inicio": "(1) has willfully made or caused to be made in any application for registration or report",
-    "offset_fim": "or has omitted to state in any such application or report any material fact which is required to be stated therein.",
+    "titulo": "(2) Within forty-five days of the date of the filing of such application",
+    "offset_inicio": "(2) Within forty-five days of the date of the filing of such application (or within such longer period as to which the applicant consents) the Commission shall— ",
+    "offset_fim": "or within such longer period as to which the applicant consents) the Commission shall— \n\n",
     "pagina_inicio": 10,
     "pagina_fim": 10,
-    "titulo": "SEC. 203(e)(1)",
-    "motivo": "O parágrafo (1) inicia texto normativo próprio na página 10 e termina antes do próximo marcador normativo, (2), que começa na página 11.",
-    "texto": "(1) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was at the time and in the light of the circumstances under which it was made false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which is required to be stated therein."
+    "texto": "(2) Within forty-five days of the date of the filing of such application (or within such longer period as to which the applicant consents) the Commission shall— \n\n"
   },
   {
+    "titulo": "(A)",
+    "offset_inicio": "(A) by order grant such registration; or \n\n",
+    "offset_fim": "(A) by order grant such registration; or \n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "(A) by order grant such registration; or \n\n"
+  },
+  {
+    "titulo": "(B) institute proceedings to determine whether registration should be denied.",
+    "offset_inicio": "(B) institute proceedings to determine whether registration should be denied. Such proceedings shall include notice of the grounds for denial under consideration and opportunity for hearing",
+    "offset_fim": "mails or any means or instrumentality of interstate commerce in connection therewith. \n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "(B) institute proceedings to determine whether registration should be denied. Such proceedings shall include notice of the grounds for denial under consideration and opportunity for hearing and shall be concluded within one hundred twenty days of the date of the filing of the application for registration. At the conclusion of such proceedings the Commission, by order, shall grant or deny such registration. The Commission may extend the time for conclusion of such proceedings for up to ninety days if it finds good cause for such extension and publishes its reasons for so finding or for such longer period as to which the applicant consents. \n\nThe Commission shall grant such registration if the Commission finds that the requirements of this section are satisfied and that the applicant is not prohibited from registering as an investment adviser under section 203A. The Commission shall deny such registration if it does not make such a finding or if it finds that if the applicant were so registered, its registration would be subject to suspension or revocation under subsection (e) of this section. \n\n(d) Any provision of this title (other than subsection (a) of this section) which prohibits any act, practice, or course of business if the mails or any means or instrumentality of interstate commerce are used in connection therewith shall also prohibit any such act, practice, or course of business by any investment adviser registered pursuant to this section or any person acting on behalf of such an investment adviser, irrespective of any use of the mails or any means or instrumentality of interstate commerce in connection therewith. \n\n"
+  },
+  {
+    "titulo": "(e)",
+    "offset_inicio": "(e) The Commission, by order, shall censure, place limitations on the activities, fu",
+    "offset_fim": "viser, whether prior to or subsequent to becoming so associated— \n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "(e) The Commission, by order, shall censure, place limitations on the activities, functions, or operations of, suspend for a period not exceeding twelve months, or revoke the registration of any investment adviser if it finds, on the record after notice and opportunity for hearing, that such censure, placing of limitations, suspension, or revocation is in the public interest and that such investment adviser, or any person associated with such investment adviser, whether prior to or subsequent to becoming so associated— \n\n"
+  },
+  {
+    "titulo": "(1)",
+    "offset_inicio": "(1) has willfully made or caused to be made in any application for registration or",
+    "offset_fim": "or report any material fact which is required to be stated therein. ",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "(1) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was at the time and in the light of the circumstances under which it was made false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which is required to be stated therein. "
+  },
+  {
+    "titulo": "(2) has been convicted within ten years preceding the filing of any application for registration or at any time thereafter of any felony or misdemeanor or of a substantially equivalent crime by a foreign court of competent jurisdiction which the Commission finds—",
+    "offset_inicio": "(2) has been convicted within ten years preceding the filing of any application for",
+    "offset_fim": "of a substantially equivalent crime by a foreign court of competent jurisdiction which the Commission finds— \n\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "(2) has been convicted within ten years preceding the filing of any application for registration or at any time thereafter of any felony or misdemeanor or of a substantially equivalent crime by a foreign court of competent jurisdiction which the Commission finds— \n\n"
+  },
+  {
+    "titulo": "(A) involves the purchase or sale of any security, the taking of a false oath, the making of a false report, bribery, perjury, burglary, any substantially equivalent activity however denominated by the laws of the relevant foreign government, or conspiracy to commit any such offense;",
     "offset_inicio": "(A) involves the purchase or sale of any security, the taking of a false oath, the making",
-    "offset_fim": "activity however denominated by the laws of the relevant foreign government, or conspiracy to commit any such offense; ",
+    "offset_fim": "by the laws of the relevant foreign government, or conspiracy to commit any such offense; \n\n",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "SEC. 203(e)(2)(A)",
-    "motivo": "É o primeiro marcador normativo completo visível no trecho. Inicia em (A) e termina imediatamente antes do próximo marcador de mesmo nível, (B).",
-    "texto": "(A) involves the purchase or sale of any security, the taking of a false oath, the making of a false report, bribery, perjury, burglary, any substantially equivalent activity however denominated by the laws of the relevant foreign government, or conspiracy to commit any such offense; "
+    "texto": "(A) involves the purchase or sale of any security, the taking of a false oath, the making of a false report, bribery, perjury, burglary, any substantially equivalent activity however denominated by the laws of the relevant foreign government, or conspiracy to commit any such offense; \n\n"
   },
   {
-    "offset_inicio": "(B) arises out of the conduct of the business of a broker, dealer, municipal securities dealer, investment adviser, bank, insurance company, government securities broker,",
-    "offset_fim": "erson required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation; ",
+    "titulo": "(B)",
+    "offset_inicio": "(B) arises out of the conduct of the business of a broker, dealer, municipal securities dealer, investment adviser, bank, insurance company,",
+    "offset_fim": "person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation; \n\n",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "SEC. 203(e)(2)(B)",
-    "motivo": "O primeiro marcador normativo visível é o subparágrafo (B); seu texto começa nesse marcador e termina imediatamente antes do próximo marcador, (C), ainda na página 11.",
-    "texto": "(B) arises out of the conduct of the business of a broker, dealer, municipal securities dealer, investment adviser, bank, insurance company, government securities broker, government securities dealer, fiduciary, transfer agent, credit rating agency, foreign person performing a function substantially equivalent to any of the above, or entity or person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation; "
+    "texto": "(B) arises out of the conduct of the business of a broker, dealer, municipal securities dealer, investment adviser, bank, insurance company, government securities broker, government securities dealer, fiduciary, transfer agent, credit rating agency, foreign person performing a function substantially equivalent to any of the above, or entity or person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation; \n\n"
   },
   {
-    "offset_inicio": "(C) involves the larceny, theft, robbery, extortion, forgery, counterfeiting, fraudulent",
-    "offset_fim": "or substantially equivalent activity however denominated by the laws of the relevant foreign government; or ",
+    "titulo": "(C)",
+    "offset_inicio": "(C) involves the larceny, theft, robbery, extortion, forgery, counterfeiting, fraudulent concealment,",
+    "offset_fim": "substantially equivalent activity however denominated by the laws of the relevant foreign government; or \n\n",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "SEC. 203(e)(2)(C)",
-    "motivo": "O trecho inicia no marcador normativo (C) e contém sua hipótese completa, encerrando-se imediatamente antes do próximo marcador, (D), na página 11.",
-    "texto": "(C) involves the larceny, theft, robbery, extortion, forgery, counterfeiting, fraudulent concealment, embezzlement, fraudulent conversion, or misappropriation of funds or securities or substantially equivalent activity however denominated by the laws of the relevant foreign government; or "
+    "texto": "(C) involves the larceny, theft, robbery, extortion, forgery, counterfeiting, fraudulent concealment, embezzlement, fraudulent conversion, or misappropriation of funds or securities or substantially equivalent activity however denominated by the laws of the relevant foreign government; or \n\n"
   },
   {
-    "offset_inicio": "(D) involves the violation of section 152, 1341, 1342, or 1343 or chapter 25",
-    "offset_fim": "18, United States Code, or a violation of substantially equivalent foreign statute. ",
+    "titulo": "(D) involves the violation of section 152, 1341, 1342, or 1343 or chapter 25 or 47 of title 18, United States Code, or a violation of substantially equivalent foreign statute.",
+    "offset_inicio": "(D) involves the violation of section 152, 1341, 1342, or 1343 or chapter 25 or 47 of title 18, United States Code, or a violation of substantially equivalent foreign statute. ",
+    "offset_fim": "(D) involves the violation of section 152, 1341, 1342, or 1343 or chapter 25 or 47 of title 18, United States Code, or a violation of substantially equivalent foreign statute. ",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "SEC. 203(e)(2)(D)",
-    "motivo": "O trecho inicia no marcador normativo (D) e termina imediatamente antes do próximo marcador de mesmo nível, (3).",
     "texto": "(D) involves the violation of section 152, 1341, 1342, or 1343 or chapter 25 or 47 of title 18, United States Code, or a violation of substantially equivalent foreign statute. "
   },
   {
-    "offset_inicio": "(3) has been convicted during the 10-year period preceding the date of filing of any application",
-    "offset_fim": "of any application for registration, or at any time thereafter, of— ",
+    "titulo": "(3) has been convicted during the 10-year period preceding the date of filing of any application for registration, or at any time thereafter, of—",
+    "offset_inicio": "(3) has been convicted during the 10-year period preceding the date of filing of any application for registration, or at any time thereafter, of— ",
+    "offset_fim": "during the 10-year period preceding the date of filing of any application for registration, or at any time thereafter, of— \n\n",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "SEC. 203(e)(3)",
-    "motivo": "O trecho inicia no marcador normativo (3) e contém apenas sua oração introdutória; encerra-se imediatamente antes do próximo marcador, o subparágrafo (A).",
-    "texto": "(3) has been convicted during the 10-year period preceding the date of filing of any application for registration, or at any time thereafter, of— "
+    "texto": "(3) has been convicted during the 10-year period preceding the date of filing of any application for registration, or at any time thereafter, of— \n\n"
   },
   {
-    "offset_inicio": "(A) any crime that is punishable by imprisonment for 1 or more years, and that is",
+    "titulo": "(A) any crime that is punishable by imprisonment for 1 or more years",
+    "offset_inicio": "(A) any crime that is punishable by imprisonment for 1 or more years, and that is not described in paragraph ",
+    "offset_fim": "imprisonment for 1 or more years, and that is not described in paragraph \n\n(2); or \n\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "(A) any crime that is punishable by imprisonment for 1 or more years, and that is not described in paragraph \n\n(2); or \n\n"
+  },
+  {
+    "titulo": "(B) a substantially equivalent crime by a foreign court of competent jurisdiction.",
+    "offset_inicio": "(B) a substantially equivalent crime by a foreign court of competent jurisdiction. ",
     "offset_fim": "(B) a substantially equivalent crime by a foreign court of competent jurisdiction. ",
     "pagina_inicio": 11,
     "pagina_fim": 11,
-    "titulo": "Sec. 203(e)(3)(A)",
-    "motivo": "É o primeiro marcador normativo completo visível no trecho. Inicia em (A) e termina imediatamente antes do próximo marcador de mesmo nível, (B).",
-    "texto": "(A) any crime that is punishable by imprisonment for 1 or more years, and that is not described in paragraph (2); or \n\n(B) a substantially equivalent crime by a foreign court of competent jurisdiction. "
+    "texto": "(B) a substantially equivalent crime by a foreign court of competent jurisdiction. "
   },
   {
-    "offset_inicio": "(5) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment",
-    "offset_fim": "or any rule of the Municipal Securities Rulemaking Board, or is unable to comply with any such provision. ",
+    "titulo": "(4)",
+    "offset_inicio": "(4) is permanently or temporarily enjoined by order, judgment, or decree of any court",
+    "offset_fim": "or in connection with any such activity, or in connection with the purchase or sale of any security. ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "(4) is permanently or temporarily enjoined by order, judgment, or decree of any court of competent jurisdiction, including any foreign court of competent jurisdiction, from acting as an investment adviser, underwriter, broker, dealer, municipal securities dealer, government securities broker, government securities dealer, transfer agent, credit rating agency, foreign person performing a function substantially equivalent to any of the above, or entity or person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation, or as an affiliated person or employee of any investment company, bank, insurance company, foreign entity substantially equivalent to any of the above, or entity or person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation, or from engaging in or continuing any conduct or practice in connection with any such activity, or in connection with the purchase or sale of any security."
+  },
+  {
+    "titulo": "(5) has willfully violated any provision of the Securities Act of 1933",
+    "offset_inicio": "(5) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange",
+    "offset_fim": "Municipal Securities Rulemaking Board, or is unable to comply with any such provision.",
     "pagina_inicio": 12,
     "pagina_fim": 12,
-    "titulo": "SEC. 203(e)(5)",
-    "motivo": "É o primeiro marcador normativo cujo texto começa integralmente no trecho fornecido. O bloco inicia em (5) e termina imediatamente antes do próximo marcador, (6).",
-    "texto": "(5) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, this title, the Commodity Exchange Act, or the rules or regulations under any such statutes or any rule of the Municipal Securities Rulemaking Board, or is unable to comply with any such provision. "
+    "texto": "(5) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, this title, the Commodity Exchange Act, or the rules or regulations under any such statutes or any rule of the Municipal Securities Rulemaking Board, or is unable to comply with any such provision."
   },
   {
-    "offset_inicio": "(A) there have been established procedures, and a system for applying such procedures, which would reasonably be expected to prevent and detect, insofar as practicable, any such violation by such other person, and ",
-    "offset_fim": "such procedures and system without reasonable cause to believe that such procedures and system were not being complied with. ",
+    "titulo": "(6) has willfully aided, abetted, counseled, commanded, induced, or procured",
+    "offset_inicio": "(6) has willfully aided, abetted, counseled, commanded, induced, or procured the violation by any other person of any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, this title, the Commodity Exchange Act, the rules or regulations under any of such statutes, or the rules of the Municipal Securities Rulemaking Board, or has failed reasonably to supervise, with a view to preventing violations of the provisions of such statutes, rules, and regulations, another person who commits such a violation, if such other person is subject to his supervision. For the purposes of this paragraph no person shall be deemed to have failed reasonably to supervise any person, if— \n\n",
+    "offset_fim": "supervision. For the purposes of this paragraph no person shall be deemed to have failed reasonably to supervise any person, if— \n\n",
     "pagina_inicio": 12,
     "pagina_fim": 12,
-    "titulo": "SEC. 203(e)(6)(A)",
-    "motivo": "É o primeiro marcador normativo completo iniciado no trecho fornecido. Começa em (A) e termina imediatamente antes do próximo marcador, (B).",
-    "texto": "(A) there have been established procedures, and a system for applying such procedures, which would reasonably be expected to prevent and detect, insofar as practicable, any such violation by such other person, and \n\n(B) such person has reasonably discharged the duties and obligations incumbent upon him by reason of such procedures and system without reasonable cause to believe that such procedures and system were not being complied with. "
+    "texto": "(6) has willfully aided, abetted, counseled, commanded, induced, or procured the violation by any other person of any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, this title, the Commodity Exchange Act, the rules or regulations under any of such statutes, or the rules of the Municipal Securities Rulemaking Board, or has failed reasonably to supervise, with a view to preventing violations of the provisions of such statutes, rules, and regulations, another person who commits such a violation, if such other person is subject to his supervision. For the purposes of this paragraph no person shall be deemed to have failed reasonably to supervise any person, if— \n\n"
   },
   {
-    "offset_inicio": "(7) is subject to any order of the Commission barring or suspending the right of the",
-    "offset_fim": "Commission barring or suspending the right of the person to be associated with an investment adviser;",
+    "titulo": "(A) there have been established procedures",
+    "offset_inicio": "(A) there have been established procedures, and a system for applying such procedures,",
+    "offset_fim": "prevent and detect, insofar as practicable, any such violation by such other person, and \n\n",
     "pagina_inicio": 12,
     "pagina_fim": 12,
-    "titulo": "SEC. 203(e)(7)",
-    "motivo": "O trecho inicia no marcador normativo direto (7) e termina imediatamente antes do próximo marcador do mesmo nível, (8), na página 12.",
-    "texto": "(7) is subject to any order of the Commission barring or suspending the right of the person to be associated with an investment adviser;"
+    "texto": "(A) there have been established procedures, and a system for applying such procedures, which would reasonably be expected to prevent and detect, insofar as practicable, any such violation by such other person, and \n\n"
   },
   {
-    "offset_inicio": "(8) has been found by a foreign financial regulatory authority to have— \n\n(A) made or caused to be made in any application",
-    "offset_fim": "another person who commits such a violation, if such other person is subject to his supervision; or ",
+    "titulo": "(B)",
+    "offset_inicio": "(B) such person has reasonably discharged the duties and obligations incumbent upon him by reason",
+    "offset_fim": "without reasonable cause to believe that such procedures and system were not being complied with. \n\n",
     "pagina_inicio": 12,
-    "pagina_fim": 13,
-    "titulo": "SEC. 203(e)(8)",
-    "motivo": "O primeiro marcador normativo presente é o parágrafo (8), iniciado na página 12. Seu texto introdutório e os subparágrafos (A)–(C) seguem até o marcador imediatamente posterior, (9), na página 13.",
-    "texto": "(8) has been found by a foreign financial regulatory authority to have— \n\n(A) made or caused to be made in any application for registration or report required to be filed with a foreign securities authority, or in any proceeding before a foreign securities authority with respect to registration, any statement that was at the time and in light of the circumstances under which it was made false or misleading with respect to any material fact, or has omitted to state in any application or report to a foreign securities authority any material fact that is required to be stated therein; \n\n(B) violated any foreign statute or regulation regarding transactions in securities or contracts of sale of a commodity for future delivery traded on or subject to the rules of a contract market or any board of trade; or \n\n(C) aided, abetted, counseled, commanded, induced, or procured the violation by any other person of any foreign statute or regulation regarding transactions in securities or contracts of sale of a commodity for future delivery traded on or subject to the rules of a contract market or any board of trade, or has been found, by the foreign finanical regulatory authority, to have failed reasonably to supervise, with a view to preventing violations of statutory provisions, and rules and regulations promulgated there- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 13 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **13 INVESTMENT ADVISERS ACT OF 1940** \n\n**Sec. 203** \n\nunder, another person who commits such a violation, if such other person is subject to his supervision; or "
+    "pagina_fim": 12,
+    "texto": "(B) such person has reasonably discharged the duties and obligations incumbent upon him by reason of such procedures and system without reasonable cause to believe that such procedures and system were not being complied with. \n\n"
   },
   {
-    "offset_inicio": "(9) is subject to any final order of a State securities commission (or any agency or officer performing like functions),",
-    "offset_fim": "violations of any laws or regulations that prohibit fraudulent, manipulative, or deceptive conduct. ",
+    "titulo": "(7) is subject to any order of the Commission barring or suspending the right of the person to be associated with an investment adviser;",
+    "offset_inicio": "(7) is subject to any order of the Commission barring or suspending the right of the person to be associated with an investment adviser; ",
+    "offset_fim": "(7) is subject to any order of the Commission barring or suspending the right of the person to be associated with an investment adviser; ",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "(7) is subject to any order of the Commission barring or suspending the right of the person to be associated with an investment adviser; "
+  },
+  {
+    "titulo": "(8) has been found by a foreign financial regulatory authority to have—",
+    "offset_inicio": "(8) has been found by a foreign financial regulatory authority to have— ",
+    "offset_fim": "(8) has been found by a foreign financial regulatory authority to have— \n\n",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "(8) has been found by a foreign financial regulatory authority to have— \n\n"
+  },
+  {
+    "titulo": "(A)",
+    "offset_inicio": "(A) made or caused to be made in any application for registration or report required",
+    "offset_fim": "authority, to have failed reasonably to supervise, with a view to preventing violations of statutory provisions, and rules and regulations promulgated there- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "(A) made or caused to be made in any application for registration or report required to be filed with a foreign securities authority, or in any proceeding before a foreign securities authority with respect to registration, any statement that was at the time and in light of the circumstances under which it was made false or misleading with respect to any material fact, or has omitted to state in any application or report to a foreign securities authority any material fact that is required to be stated therein; \n\n(B) violated any foreign statute or regulation regarding transactions in securities or contracts of sale of a commodity for future delivery traded on or subject to the rules of a contract market or any board of trade; or \n\n(C) aided, abetted, counseled, commanded, induced, or procured the violation by any other person of any foreign statute or regulation regarding transactions in securities or contracts of sale of a commodity for future delivery traded on or subject to the rules of a contract market or any board of trade, or has been found, by the foreign finanical regulatory authority, to have failed reasonably to supervise, with a view to preventing violations of statutory provisions, and rules and regulations promulgated there- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n"
+  },
+  {
+    "titulo": "(9) is subject to any final order of a State securities commission",
+    "offset_inicio": "(9) is subject to any final order of a State securities commission (or any agency or officer performing like functions), State authority that supervises or examines banks, savings associations, or credit unions, State insurance commission (or any agency or office performing like functions), an appropriate Federal banking agency (as defined in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813(q))), or the National Credit Union Administration, that— \n\n",
+    "offset_fim": "or the National Credit Union Administration, that— \n\n",
     "pagina_inicio": 13,
     "pagina_fim": 13,
-    "titulo": "SEC. 203(e)(9)",
-    "motivo": "É o primeiro marcador normativo completo visível, iniciando em (9) e terminando imediatamente antes do próximo marcador de mesmo nível, (f).",
-    "texto": "(9) is subject to any final order of a State securities commission (or any agency or officer performing like functions), State authority that supervises or examines banks, savings associations, or credit unions, State insurance commission (or any agency or office performing like functions), an appropriate Federal banking agency (as defined in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813(q))), or the National Credit Union Administration, that— \n\n(A) bars such person from association with an entity regulated by such commission, authority, agency, or officer, or from engaging in the business of securities, insurance, banking, savings association activities, or credit union activities; or \n\n(B) constitutes a final order based on violations of any laws or regulations that prohibit fraudulent, manipulative, or deceptive conduct. "
+    "texto": "(9) is subject to any final order of a State securities commission (or any agency or officer performing like functions), State authority that supervises or examines banks, savings associations, or credit unions, State insurance commission (or any agency or office performing like functions), an appropriate Federal banking agency (as defined in section 3 of the Federal Deposit Insurance Act (12 U.S.C. 1813(q))), or the National Credit Union Administration, that— \n\n"
   },
   {
-    "offset_inicio": "(f) The Commission, by order, shall censure or place limitations on the activities of any person associated,",
-    "offset_fim": "in the exercise of reasonable care, should have known, of such order. ",
+    "titulo": "(A) bars such person from association with an entity",
+    "offset_inicio": "- (A) bars such person from association with an entity \n\n- regulated by such commission,",
+    "offset_fim": " engaging in the business of securities, insurance, banking, savings association activities, or credit union activities; or \n\n",
     "pagina_inicio": 13,
     "pagina_fim": 13,
-    "titulo": "SEC. 203(f)",
-    "motivo": "O trecho inicia no marcador normativo autônomo (f) e termina imediatamente antes do próximo marcador de mesmo nível, (g).",
-    "texto": "(f) The Commission, by order, shall censure or place limitations on the activities of any person associated, seeking to become associated, or, at the time of the alleged misconduct, associated or seeking to become associated with an investment adviser, or suspend for a period not exceeding 12 months or bar any such person from being associated with an investment adviser, broker, dealer, municipal securities dealer, municipal advisor, transfer agent, or nationally recognized statistical rating organization, if the Commission finds, on the record after notice and opportunity for hearing, that such censure, placing of limitations, suspension, or bar is in the public interest and that such person has committed or omitted any act or omission enumerated in paragraph (1), (5), (6), (8), or (9) of subsection (e) or has been convicted of any offense specified in paragraph (2) or (3) of subsection (e) within ten years of the commencement of the proceedings under this subsection, or is enjoined from any action, conduct, or practice specified in paragraph (4) of subsection (e). It shall be unlawful for any person as to whom such an order suspending or barring him from being associated with an investment adviser is in effect willfully to become, or to be, associated with an investment adviser without the consent of the Commission, and it shall be unlawful for any investment adviser to permit such a person to become, or remain, a person associated with him without the consent of the Commission, if such investment adviser knew, or in the exercise of reasonable care, should have known, of such order. "
+    "texto": "- (A) bars such person from association with an entity \n\n- regulated by such commission, authority, agency, or officer, or from engaging in the business of securities, insurance, banking, savings association activities, or credit union activities; or \n\n"
   },
   {
-    "offset_inicio": "(g) Any successor to the business of an investment adviser registered under this section",
-    "offset_fim": "deny registration to or revoke or suspend the registration of such successor. ",
+    "titulo": "(B)",
+    "offset_inicio": "(B) constitutes a final order based on violations of any laws or regulations that prohibit",
+    "offset_fim": "that prohibit fraudulent, manipulative, or deceptive conduct. \n\n",
     "pagina_inicio": 13,
     "pagina_fim": 13,
-    "titulo": "SEC. 203(g)",
-    "motivo": "O trecho inicia no marcador normativo (g) e termina imediatamente antes do próximo marcador, (h), na mesma página.",
-    "texto": "(g) Any successor to the business of an investment adviser registered under this section shall be deemed likewise registered hereunder, if within thirty days from its succession to such business it shall file an application for registration under this section, unless and until the Commission, pursuant to subsection (c) or subsection (e) of this section, shall deny registration to or revoke or suspend the registration of such successor. "
+    "texto": "(B) constitutes a final order based on violations of any laws or regulations that prohibit fraudulent, manipulative, or deceptive conduct. \n\n"
   },
   {
+    "titulo": "(f)",
+    "offset_inicio": "(f) The Commission, by order, shall censure or place limitations on the activities of",
+    "offset_fim": "exercise of reasonable care, should have known, of such order. \n\n",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "texto": "(f) The Commission, by order, shall censure or place limitations on the activities of any person associated, seeking to become associated, or, at the time of the alleged misconduct, associated or seeking to become associated with an investment adviser, or suspend for a period not exceeding 12 months or bar any such person from being associated with an investment adviser, broker, dealer, municipal securities dealer, municipal advisor, transfer agent, or nationally recognized statistical rating organization, if the Commission finds, on the record after notice and opportunity for hearing, that such censure, placing of limitations, suspension, or bar is in the public interest and that such person has committed or omitted any act or omission enumerated in paragraph (1), (5), (6), (8), or (9) of subsection (e) or has been convicted of any offense specified in paragraph (2) or (3) of subsection (e) within ten years of the commencement of the proceedings under this subsection, or is enjoined from any action, conduct, or practice specified in paragraph (4) of subsection (e). It shall be unlawful for any person as to whom such an order suspending or barring him from being associated with an investment adviser is in effect willfully to become, or to be, associated with an investment adviser without the consent of the Commission, and it shall be unlawful for any investment adviser to permit such a person to become, or remain, a person associated with him without the consent of the Commission, if such investment adviser knew, or in the exercise of reasonable care, should have known, of such order. \n\n"
+  },
+  {
+    "titulo": "(g)",
+    "offset_inicio": "(g) Any successor to the business of an investment adviser registered under this sec",
+    "offset_fim": "r suspend the registration of such successor. \n\n",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "texto": "(g) Any successor to the business of an investment adviser registered under this section shall be deemed likewise registered hereunder, if within thirty days from its succession to such business it shall file an application for registration under this section, unless and until the Commission, pursuant to subsection (c) or subsection (e) of this section, shall deny registration to or revoke or suspend the registration of such successor. \n\n"
+  },
+  {
+    "titulo": "(h)",
     "offset_inicio": "(h) Any person registered under this section may, upon such terms and conditions as the",
-    "offset_fim": "under section 203A, the Commission shall by order cancel the registration of such person. ",
+    "offset_fim": "prohibited from registering as an investment adviser under section 203A, the Commission shall by order cancel the registration of such person. \n\n",
     "pagina_inicio": 13,
     "pagina_fim": 14,
-    "titulo": "SEC. 203(h) — Withdrawal and cancellation of registration",
-    "motivo": "O trecho inicia no marcador normativo (h) e contém integralmente suas regras sobre retirada e cancelamento de registro; termina imediatamente antes do próximo marcador, (i).",
-    "texto": "(h) Any person registered under this section may, upon such terms and conditions as the Commission finds necessary in the public interest or for the protection of investors, withdraw from registration by filing a written notice of withdrawal with the Com- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 14 -->\n**14** \n\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 203 INVESTMENT ADVISERS ACT OF 1940** \n\nmission. If the Commission finds that any person registered under this section, or who has pending an application for registration filed under this section, is no longer in existence, is not engaged in business as an investment adviser, or is prohibited from registering as an investment adviser under section 203A, the Commission shall by order cancel the registration of such person. "
+    "texto": "(h) Any person registered under this section may, upon such terms and conditions as the Commission finds necessary in the public interest or for the protection of investors, withdraw from registration by filing a written notice of withdrawal with the Com- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 14 -->\n**14** \n\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 203 INVESTMENT ADVISERS ACT OF 1940** \n\nmission. If the Commission finds that any person registered under this section, or who has pending an application for registration filed under this section, is no longer in existence, is not engaged in business as an investment adviser, or is prohibited from registering as an investment adviser under section 203A, the Commission shall by order cancel the registration of such person. \n\n"
   },
   {
-    "offset_inicio": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— ",
-    "offset_fim": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— ",
+    "titulo": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.—",
+    "offset_inicio": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— \n\n",
+    "offset_fim": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— \n\n",
     "pagina_inicio": 14,
     "pagina_fim": 14,
-    "titulo": "SEC. 203(i) — Money Penalties in Administrative Proceedings",
-    "motivo": "É o primeiro marcador normativo completo exibido. O bloco consiste na rubrica do inciso (i) e termina imediatamente antes do marcador filho (1).",
-    "texto": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— "
+    "texto": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— \n\n"
   },
   {
-    "offset_inicio": "(1) AUTHORITY OF COMMISSION.— \n\n",
-    "offset_fim": "(1) AUTHORITY OF COMMISSION.— \n\n",
+    "titulo": "(1) AUTHORITY OF COMMISSION.—",
+    "offset_inicio": "(1) AUTHORITY OF COMMISSION.— \n\n(A) IN GENERAL.—In any proceeding instituted pursuant",
+    "offset_fim": "after notice and opportunity for hearing, that such penalty is in the public interest and that such person— \n\n",
     "pagina_inicio": 14,
     "pagina_fim": 14,
-    "titulo": "(1) AUTHORITY OF COMMISSION",
-    "motivo": "É o primeiro marcador normativo presente no trecho. O bloco contém apenas sua rubrica e termina imediatamente antes do próximo marcador, o subparágrafo (A).",
-    "texto": "(1) AUTHORITY OF COMMISSION.— \n\n"
+    "texto": "(1) AUTHORITY OF COMMISSION.— \n\n(A) IN GENERAL.—In any proceeding instituted pursuant to subsection (e) or (f) against any person, the Commission may impose a civil penalty if it finds, on the record after notice and opportunity for hearing, that such penalty is in the public interest and that such person— \n\n"
   },
   {
-    "offset_inicio": "(A) IN GENERAL.—In any proceeding instituted pursuant to subsection (e) or (f) against any person, the Commission may impose a civil penalty if it finds,",
-    "offset_fim": "rules and regulations thereunder, another person who commits such a violation, if such other person is subject to his supervision;<sup>6</sup> ",
+    "titulo": "(i) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, or this title, or the rules or regulations thereunder;",
+    "offset_inicio": "(i) has willfully violated any provision of the Securities Act of 1933, the Securities",
+    "offset_fim": "Investment Company Act of 1940, or this title, or the rules or regulations thereunder; \n\n",
     "pagina_inicio": 14,
     "pagina_fim": 14,
-    "titulo": "SEC. 203(i)(1)(A) — IN GENERAL",
-    "motivo": "É o primeiro marcador normativo completo exibido. Inicia em “(A) IN GENERAL” e termina imediatamente antes do próximo marcador de nível inferior, “(i)”.",
-    "texto": "(A) IN GENERAL.—In any proceeding instituted pursuant to subsection (e) or (f) against any person, the Commission may impose a civil penalty if it finds, on the record after notice and opportunity for hearing, that such penalty is in the public interest and that such person— \n\n(i) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, or this title, or the rules or regulations thereunder; \n\n(ii) has willfully aided, abetted, counseled, commanded, induced, or procured such a violation by any other person; \n\n(iii) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was, at the time and in the light of the circumstances under which it was made, false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which was required to be stated therein; or \n\n(iv) has failed reasonably to supervise, within the meaning of subsection (e)(6), with a view to preventing violations of the provisions of this title and the rules and regulations thereunder, another person who commits such a violation, if such other person is subject to his supervision;<sup>6</sup> "
+    "texto": "(i) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, or this title, or the rules or regulations thereunder; \n\n"
   },
   {
-    "offset_inicio": "(i) is violating or has violated any provision of this title, or any rule or regulation",
-    "offset_fim": "has violated any provision of this title, or any rule or regulation issued under this title; or",
+    "titulo": "(ii) has willfully aided, abetted, counseled, commanded, induced, or procured such a violation by any other person;",
+    "offset_inicio": "(ii) has willfully aided, abetted, counseled, commanded, induced, or procured such a violation by any other person; ",
+    "offset_fim": "(ii) has willfully aided, abetted, counseled, commanded, induced, or procured such a violation by any other person;",
     "pagina_inicio": 14,
     "pagina_fim": 14,
-    "titulo": "Item (i)",
-    "motivo": "É o primeiro marcador normativo completo visível no trecho. Inicia em “(i)” e termina imediatamente antes do próximo marcador do mesmo nível, “(ii)”.",
-    "texto": "(i) is violating or has violated any provision of this title, or any rule or regulation issued under this title; or"
+    "texto": "(ii) has willfully aided, abetted, counseled, commanded, induced, or procured such a violation by any other person;"
   },
   {
-    "offset_inicio": "(2) MAXIMUM AMOUNT OF PENALTY.—",
-    "offset_fim": "(2) MAXIMUM AMOUNT OF PENALTY.—",
+    "titulo": "(iii) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was, at the time and in the light of the circumstances under which it was made, false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which was required to be stated therein; or",
+    "offset_inicio": "(iii) has willfully made or caused to be made in any application for registration or",
+    "offset_fim": "material fact which was required to be stated therein; or \n\n",
     "pagina_inicio": 14,
     "pagina_fim": 14,
-    "titulo": "SEC. 203(i)(2) — Maximum Amount of Penalty",
-    "motivo": "É o primeiro marcador normativo completo exibido. O bloco consiste apenas em seu cabeçalho e termina imediatamente antes do próximo marcador filho, (A) FIRST TIER.",
-    "texto": "(2) MAXIMUM AMOUNT OF PENALTY.—"
+    "texto": "(iii) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was, at the time and in the light of the circumstances under which it was made, false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which was required to be stated therein; or \n\n"
   },
   {
-    "offset_inicio": "(A) FIRST TIER.—The maximum amount of penalty for each act or omission described in paragraph (1) shall be $5,000 for a natural person or $50,000 for any other person. ",
-    "offset_fim": "shall be $5,000 for a natural person or $50,000 for any other person. ",
+    "titulo": "(iv)",
+    "offset_inicio": "(iv) has failed reasonably to supervise, within the meaning of subsection (e)(6), with",
+    "offset_fim": "commits such a violation, if such other person is subject to his supervision;<sup>6</sup> \n\n",
     "pagina_inicio": 14,
     "pagina_fim": 14,
-    "titulo": "SEC. 203(i)(2)(A) — FIRST TIER",
-    "motivo": "O trecho inicia no marcador normativo (A) FIRST TIER e termina antes do próximo marcador normativo (B) SECOND TIER; a nota editorial posterior é ignorada.",
-    "texto": "(A) FIRST TIER.—The maximum amount of penalty for each act or omission described in paragraph (1) shall be $5,000 for a natural person or $50,000 for any other person. "
+    "texto": "(iv) has failed reasonably to supervise, within the meaning of subsection (e)(6), with a view to preventing violations of the provisions of this title and the rules and regulations thereunder, another person who commits such a violation, if such other person is subject to his supervision;<sup>6</sup> \n\n"
   },
   {
+    "titulo": "(B) CEASE-AND-DESIST PROCEEDINGS",
+    "offset_inicio": "(B) CEASE-AND-DESIST PROCEEDINGS.—In any proceeding instituted pursuant to subsection",
+    "offset_fim": "Commission finds, on the record, after notice and opportunity for hearing, that such person— \n\n",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "texto": "(B) CEASE-AND-DESIST PROCEEDINGS.—In any proceeding instituted pursuant to subsection (k) against any person, the Commission may impose a civil penalty if the Commission finds, on the record, after notice and opportunity for hearing, that such person— \n\n"
+  },
+  {
+    "titulo": "(i) is violating or has violated any provision of this title, or any rule or regulation issued under this title; or",
+    "offset_inicio": "(i) is violating or has violated any provision of this title, or any rule or regulation ",
+    "offset_fim": "provision of this title, or any rule or regulation issued under this title; or \n\n",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "texto": "(i) is violating or has violated any provision of this title, or any rule or regulation issued under this title; or \n\n"
+  },
+  {
+    "titulo": "(ii) is or was a cause of the violation of any provision of this title, or any rule or regulation issued under this title.",
+    "offset_inicio": "(ii) is or was a cause of the violation of any provision of this title, or any rule or",
+    "offset_fim": "of any provision of this title, or any rule or regulation issued under this title. \n\n",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "texto": "(ii) is or was a cause of the violation of any provision of this title, or any rule or regulation issued under this title. \n\n"
+  },
+  {
+    "titulo": "(2) MAXIMUM AMOUNT OF PENALTY.—",
+    "offset_inicio": "(2) MAXIMUM AMOUNT OF PENALTY.— \n\n",
+    "offset_fim": "(2) MAXIMUM AMOUNT OF PENALTY.— \n\n",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "texto": "(2) MAXIMUM AMOUNT OF PENALTY.— \n\n"
+  },
+  {
+    "titulo": "(A) FIRST TIER",
+    "offset_inicio": "(A) FIRST TIER.—The maximum amount of penalty for each act or omission described in",
+    "offset_fim": "son or $50,000 for any other person. \n\n> 6 So in law. The semicolon at the end of subparagraph (A)(iv) probably should be a period. ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "texto": "(A) FIRST TIER.—The maximum amount of penalty for each act or omission described in paragraph (1) shall be $5,000 for a natural person or $50,000 for any other person. \n\n> 6 So in law. The semicolon at the end of subparagraph (A)(iv) probably should be a period. "
+  },
+  {
+    "titulo": "(B) SECOND TIER.",
+    "offset_inicio": "(B) SECOND TIER.—Notwithstanding subparagraph (A), the maximum amount of penalty for each such act or omission shall be $50,000 for a natural person or $250,000 for any other person if the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement. ",
+    "offset_fim": "person if the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(B) SECOND TIER.—Notwithstanding subparagraph (A), the maximum amount of penalty for each such act or omission shall be $50,000 for a natural person or $250,000 for any other person if the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement. "
+  },
+  {
+    "titulo": "(C) THIRD TIER",
     "offset_inicio": "(C) THIRD TIER.—Notwithstanding subparagraphs (A) and (B), the maximum amount of",
-    "offset_fim": "ntial pecuniary gain to the person who committed the act or omission. \n\n",
+    "offset_fim": "manipulation, or deliberate or reckless disregard of a regulatory requirement; and \n\n",
     "pagina_inicio": 15,
     "pagina_fim": 15,
-    "titulo": "SEC. 203(i)(2)(C) — THIRD TIER",
-    "motivo": "É o primeiro bloco completo visível: inicia no marcador normativo (C) THIRD TIER e termina imediatamente antes do próximo marcador do mesmo nível, (3) DETERMINATION OF PUBLIC INTEREST.",
-    "texto": "(C) THIRD TIER.—Notwithstanding subparagraphs (A) and (B), the maximum amount of penalty for each such act or omission shall be $100,000 for a natural person or $500,000 for any other person if— \n\n(i) the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; and \n\n(ii) such act or omission directly or indirectly resulted in substantial losses or created a significant risk of substantial losses to other persons or resulted in substantial pecuniary gain to the person who committed the act or omission. \n\n"
+    "texto": "(C) THIRD TIER.—Notwithstanding subparagraphs (A) and (B), the maximum amount of penalty for each such act or omission shall be $100,000 for a natural person or $500,000 for any other person if— (i) the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; and \n\n"
   },
   {
-    "offset_inicio": "(A) whether the act or omission for which such penalty is assessed involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement;",
-    "offset_fim": "whether the act or omission for which such penalty is assessed involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement;",
+    "titulo": "(ii) such act or omission directly or indirectly resulted in substantial losses or created a significant risk of substantial losses to other persons or resulted in substantial pecuniary gain to the person who committed the act or omission.",
+    "offset_inicio": "(ii) such act or omission directly or indirectly resulted in substantial losses or ",
+    "offset_fim": "substantial pecuniary gain to the person who committed the act or omission. \n\n",
     "pagina_inicio": 15,
     "pagina_fim": 15,
-    "titulo": "(A) Fraude, dolo ou descumprimento regulatório",
-    "motivo": "É o primeiro bloco completo visível: inicia no marcador (A) e termina imediatamente antes do próximo marcador do mesmo nível, (B).",
-    "texto": "(A) whether the act or omission for which such penalty is assessed involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement;"
+    "texto": "(ii) such act or omission directly or indirectly resulted in substantial losses or created a significant risk of substantial losses to other persons or resulted in substantial pecuniary gain to the person who committed the act or omission. \n\n"
   },
   {
-    "offset_inicio": "(4) EVIDENCE CONCERNING ABILITY TO PAY.—In any proceeding in which the Commission may impose a penalty under this section, a respondent may present evidence",
-    "offset_fim": "other claims of the United States or third parties upon such person’s assets and the amount of such person’s assets. ",
+    "titulo": "(3) DETERMINATION OF PUBLIC INTEREST",
+    "offset_inicio": "(3) DETERMINATION OF PUBLIC INTEREST.—In considering under this section whether a",
+    "offset_fim": "penalty is in the public interest, the Commission may consider— \n\n",
     "pagina_inicio": 15,
     "pagina_fim": 15,
+    "texto": "(3) DETERMINATION OF PUBLIC INTEREST.—In considering under this section whether a penalty is in the public interest, the Commission may consider— \n\n"
+  },
+  {
+    "titulo": "(A) whether the act or omission for which such penalty is assessed involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement;",
+    "offset_inicio": "(A) whether the act or omission for which such penalty is assessed involved fraud,",
+    "offset_fim": "nvolved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(A) whether the act or omission for which such penalty is assessed involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; "
+  },
+  {
+    "titulo": "(B) the harm to other persons resulting either directly or indirectly from such act or omission;",
+    "offset_inicio": "(B) the harm to other persons resulting either directly or indirectly from such act or omission; \n\n(C)",
+    "offset_fim": "(B) the harm to other persons resulting either directly or indirectly from such act or omission; \n\n",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(B) the harm to other persons resulting either directly or indirectly from such act or omission; \n\n"
+  },
+  {
+    "titulo": "(C) the extent to which any person was unjustly enriched, taking into account any restitution made to persons injured by such behavior;",
+    "offset_inicio": "(C) the extent to which any person was unjustly enriched, taking into account any restitution made to persons injured by such behavior; \n\n",
+    "offset_fim": "(C) the extent to which any person was unjustly enriched, taking into account any restitution made to persons injured by such behavior; \n\n",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(C) the extent to which any person was unjustly enriched, taking into account any restitution made to persons injured by such behavior; \n\n"
+  },
+  {
+    "titulo": "(D) whether such person previously has been found by the Commission, another appropriate regulatory agency, or a self-regulatory organization",
+    "offset_inicio": "(D) whether such person previously has been found by the Commission, another appropriate regulatory agency, or a self-regulatory organization to have violated the Federal securities laws, State securities laws, or the rules of a selfregulatory organization, has been enjoined by a court of competent jurisdiction from violations of such laws or rules, or has been convicted by a court of competent jurisdiction of violations of such laws or of any felony or misdemeanor described in section 203(e)(2) of this title; ",
+    "offset_fim": "of violations of such laws or of any felony or misdemeanor described in section 203(e)(2) of this title; \n\n",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(D) whether such person previously has been found by the Commission, another appropriate regulatory agency, or a self-regulatory organization to have violated the Federal securities laws, State securities laws, or the rules of a selfregulatory organization, has been enjoined by a court of competent jurisdiction from violations of such laws or rules, or has been convicted by a court of competent jurisdiction of violations of such laws or of any felony or misdemeanor described in section 203(e)(2) of this title; \n\n"
+  },
+  {
+    "titulo": "(E) the need to deter such person and other persons from committing such acts or omissions; and",
+    "offset_inicio": "(E) the need to deter such person and other persons from committing such acts or omissions; and ",
+    "offset_fim": "(E) the need to deter such person and other persons from committing such acts or omissions; and ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(E) the need to deter such person and other persons from committing such acts or omissions; and "
+  },
+  {
+    "titulo": "(F) such other matters as justice may require.",
+    "offset_inicio": "(F) such other matters as justice may require. \n\n",
+    "offset_fim": "(F) such other matters as justice may require. \n\n",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(F) such other matters as justice may require. \n\n"
+  },
+  {
     "titulo": "(4) EVIDENCE CONCERNING ABILITY TO PAY",
-    "motivo": "É o primeiro bloco completo iniciado por marcador normativo no trecho. Começa em (4) e termina imediatamente antes do próximo marcador, (j).",
+    "offset_inicio": "(4) EVIDENCE CONCERNING ABILITY TO PAY.—In any proceeding in which the Commission may impose a penalty under this section, a respondent may present evidence of the respondent’s ability to pay such penalty.",
+    "offset_fim": "third parties upon such person’s assets and the amount of such person’s assets. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
     "texto": "(4) EVIDENCE CONCERNING ABILITY TO PAY.—In any proceeding in which the Commission may impose a penalty under this section, a respondent may present evidence of the respondent’s ability to pay such penalty. The Commission may, in its discretion, consider such evidence in determining whether such penalty is in the public interest. Such evidence may relate to the extent of such person’s ability to continue in business and the collectability of a penalty, taking into account any other claims of the United States or third parties upon such person’s assets and the amount of such person’s assets. "
+  },
+  {
+    "titulo": "(j) AUTHORITY TO ENTER AN ORDER REQUIRING AN ACCOUNTING AND DISGORGEMENT.",
+    "offset_inicio": "(j) AUTHORITY TO ENTER AN ORDER REQUIRING AN ACCOUNTING AND DISGORGEMENT.—In any proceeding in which the Commission may impose a penalty under this section, the Commission may ",
+    "offset_fim": "In any proceeding in which the Commission may impose a penalty under this section, the Commission may ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "texto": "(j) AUTHORITY TO ENTER AN ORDER REQUIRING AN ACCOUNTING AND DISGORGEMENT.—In any proceeding in which the Commission may impose a penalty under this section, the Commission may "
   }
 ]
