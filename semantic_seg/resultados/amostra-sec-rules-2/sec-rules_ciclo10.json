@@ -1,0 +1,587 @@
+[
+  {
+    "offset_inicio": "# TITLE II—INVESTMENT ADVISERS \n\n## FINDINGS \n\n",
+    "offset_fim": "# TITLE II—INVESTMENT ADVISERS \n\n## FINDINGS \n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "titulo": "TITLE II—INVESTMENT ADVISERS",
+    "motivo": "É o primeiro marcador de nível 1 do texto. O bloco contém apenas seu texto próprio e termina imediatamente antes do próximo marcador de seção, “SEC. 201.”.",
+    "texto": "# TITLE II—INVESTMENT ADVISERS \n\n## FINDINGS \n\n"
+  },
+  {
+    "offset_inicio": "(1) ‘‘Assignment’’ includes any direct or indirect transfer or hypothecation of an investment advisory contract by the assignor",
+    "offset_fim": "members and shall have only a minority interest in the business of the investment adviser, or from the admission to the investment adviser of one or more members who, after such admission, shall be only a minority of the members and shall have only a minority interest in the business.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (1) — Assignment",
+    "motivo": "É o primeiro marcador de nível 4 presente no trecho. O bloco começa em “(1)” e termina imediatamente antes do marcador irmão “(2)”, na página 2.",
+    "texto": "(1) ‘‘Assignment’’ includes any direct or indirect transfer or hypothecation of an investment advisory contract by the assignor or of a controlling block of the assignor’s outstanding voting securities by a security holder of the assignor; but if the investment adviser is a partnership, no assignment of an investment advisory contract shall be deemed to result from the death or withdrawal of a minority of the members of the investment adviser having only a minority interest in the business of the investment adviser, or from the admission to the investment adviser of one or more members who, after such admission, shall be only a minority of the members and shall have only a minority interest in the business."
+  },
+  {
+    "offset_inicio": "(2) ‘‘Bank’’ means (A) a banking institution organized under the laws of the United",
+    "offset_fim": "n, or other liquidating agent of any institution or firm included in clauses (A), (B), or (C) of this paragraph. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (2) — Bank",
+    "motivo": "É o primeiro bloco completo iniciado por marcador próprio no trecho fornecido, começando em “(2)” e terminando imediatamente antes do marcador irmão “(3)”.",
+    "texto": "(2) ‘‘Bank’’ means (A) a banking institution organized under the laws of the United States or a Federal savings association, as defined in section 2(5) of the Home Owners’ Loan Act, (B) a member bank of the Federal Reserve System, (C) any other banking institution, savings association, as defined in section 2(4) of the Home Owners’ Loan Act, or trust company, whether incorporated or not, doing business under the laws of any State or of the United States, a substantial portion of the business of which consists of receiving deposits or exercising fiduciary powers similar to those permitted to national banks under the authority of the Comptroller of the Currency, and which is supervised and examined by State or Federal authority having supervision over banks or savings associations, and which is not operated for the purpose of evading the provisions of this title, and (D) a receiver, conservator, or other liquidating agent of any institution or firm included in clauses (A), (B), or (C) of this paragraph."
+  },
+  {
+    "offset_inicio": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities",
+    "offset_fim": "The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (3) — definição de “broker”",
+    "motivo": "É o primeiro bloco completo disponível: inicia no marcador (3) e termina imediatamente antes do próximo marcador irmão, (4).",
+    "texto": "(3) The term ‘‘broker’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934. "
+  },
+  {
+    "offset_inicio": "(4) ‘‘Commission’’ means the Securities and Exchange Commission.",
+    "offset_fim": "(4) ‘‘Commission’’ means the Securities and Exchange Commission.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (4) — Commission",
+    "motivo": "É o primeiro marcador de parágrafo identificável no texto fornecido e seu conteúdo próprio termina imediatamente antes do marcador irmão “(5)”.",
+    "texto": "(4) ‘‘Commission’’ means the Securities and Exchange Commission."
+  },
+  {
+    "offset_inicio": "(5) ‘‘Company’’ means a corporation, a partnership, an association, a joint-stock",
+    "offset_fim": "or any liquidating agent for any of the foregoing, in his capacity as such. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (5) — Company",
+    "motivo": "É o primeiro bloco completo com marcador de parágrafo presente no trecho; inicia em “(5)” e termina imediatamente antes do marcador irmão “(6)”.",
+    "texto": "(5) ‘‘Company’’ means a corporation, a partnership, an association, a joint-stock company, a trust, or any organized group of persons, whether incorporated or not; or any receiver, trustee in a case under title 11 of the United States Code, or similar official, or any liquidating agent for any of the foregoing, in his capacity as such. "
+  },
+  {
+    "offset_inicio": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of",
+    "offset_fim": "not been reversed, set aside, or withdrawn, whether or not sentence has been imposed.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (6) — “Convicted”",
+    "motivo": "É o primeiro marcador estrutural completo presente no trecho. Inicia em “(6)” e termina imediatamente antes do marcador irmão “(7)”.",
+    "texto": "(6) ‘‘Convicted’’ includes a verdict, judgment, or plea of guilty, or a finding of guilt on a plea of nolo contendere, if such verdict, judgment, plea, or finding has not been reversed, set aside, or withdrawn, whether or not sentence has been imposed."
+  },
+  {
+    "offset_inicio": "(7) The term ‘‘dealer’’ has the same meaning as given in section 3 of the Securities",
+    "offset_fim": " of 1934, but does not include an insurance company or investment company. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "Parágrafo (7) — definição de “dealer”",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(7)” e termina imediatamente antes do marcador irmão “(8)”.",
+    "texto": "(7) The term ‘‘dealer’’ has the same meaning as given in section 3 of the Securities Exchange Act of 1934, but does not include an insurance company or investment company. "
+  },
+  {
+    "offset_inicio": "(8) ‘‘Director’’ means any director of a corporation or any person performing similar",
+    "offset_fim": "or any person performing similar functions, with respect to any organization, whether incorporated or unincorporated. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "titulo": "(8) Director",
+    "motivo": "É o primeiro bloco completo com marcador próprio no texto, iniciando em “(8)” e terminando imediatamente antes do marcador irmão “(9)”.",
+    "texto": "(8) ‘‘Director’’ means any director of a corporation or any person performing similar functions, with respect to any organization, whether incorporated or unincorporated. "
+  },
+  {
+    "offset_inicio": "(9) ‘‘Exchange’’ means any organization, association, or group of persons, whether",
+    "offset_fim": "understood, and includes the market place and the market facilities maintained by such exchange. ",
+    "pagina_inicio": 2,
+    "pagina_fim": 3,
+    "titulo": "Parágrafo (9) — Exchange",
+    "motivo": "É o primeiro bloco completo identificado por marcador numérico no texto. Inicia em “(9)” na página 2, continua após a quebra para a página 3 e termina imediatamente antes do marcador irmão “(10)”.",
+    "texto": "(9) ‘‘Exchange’’ means any organization, association, or group of persons, whether incorporated or unincorporated, which constitutes, maintains, or provides a market place or facilities for bringing together purchasers and sellers of securi- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 3 -->\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n**3 INVESTMENT ADVISERS ACT OF 1940** \n\n**Sec. 202** \n\nties or for otherwise performing with respect to securities the functions commonly performed by a stock exchange as that term is generally understood, and includes the market place and the market facilities maintained by such exchange. "
+  },
+  {
+    "offset_inicio": "SEC. 203. ø80b–3¿ ",
+    "offset_fim": "SEC. 203. ø80b–3¿ ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "SEC. 203.",
+    "motivo": "É o primeiro marcador de seção presente no texto para a estrutura indicada. Forma um bloco próprio e literal, limitado imediatamente antes do marcador-filho “(a)”.",
+    "texto": "SEC. 203. ø80b–3¿ "
+  },
+  {
+    "offset_inicio": "(a) Except as provided in subsection (b) and section 203A<sup>4</sup> , it shall be",
+    "offset_fim": "iness as an investment adviser.<sup>5</sup> ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Subseção (a)",
+    "motivo": "É a primeira unidade marcada no trecho. Inicia em “(a)” e termina imediatamente antes do marcador irmão “(b)”; notas editoriais e metadados subsequentes não integram o bloco.",
+    "texto": "(a) Except as provided in subsection (b) and section 203A<sup>4</sup> , it shall be unlawful for any investment adviser, unless registered under this section, to make use of the mails or any means or instrumentality of interstate commerce in connection with his or its business as an investment adviser.<sup>5</sup> "
+  },
+  {
+    "offset_inicio": "(b) The provisions of subsection (a) shall not apply to— ",
+    "offset_fim": "(b) The provisions of subsection (a) shall not apply to— ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Subseção (b)",
+    "motivo": "A subseção (b) inicia no marcador “(b)” e seu texto próprio termina imediatamente antes do primeiro marcador-filho, “(1)”, na mesma página.",
+    "texto": "(b) The provisions of subsection (a) shall not apply to— "
+  },
+  {
+    "offset_inicio": "(1) any investment adviser, other than an investment adviser who acts as an investment adviser to any private fund, all of whose clients are residents of the State within which such investment adviser maintains his or its principal office and place of business, and who does not furnish advice or issue analyses or reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; ",
+    "offset_fim": "reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "SEC. 203(b)(1)",
+    "motivo": "É o primeiro marcador estrutural completo visível no trecho. Inicia em “(1)” e termina imediatamente antes do marcador irmão “(2)”.",
+    "texto": "(1) any investment adviser, other than an investment adviser who acts as an investment adviser to any private fund, all of whose clients are residents of the State within which such investment adviser maintains his or its principal office and place of business, and who does not furnish advice or issue analyses or reports with respect to securities listed or admitted to unlisted trading privileges on any national securities exchange; "
+  },
+  {
+    "offset_inicio": "(2) any investment adviser whose only clients are insurance companies; ",
+    "offset_fim": "(2) any investment adviser whose only clients are insurance companies; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "SEC. 203(b)(2)",
+    "motivo": "É o primeiro marcador completo identificável no trecho fornecido; inicia em “(2)” e termina imediatamente antes do marcador irmão “(3)”.",
+    "texto": "(2) any investment adviser whose only clients are insurance companies; "
+  },
+  {
+    "offset_inicio": "(3) any investment adviser that is a foreign private adviser; ",
+    "offset_fim": "(3) any investment adviser that is a foreign private adviser; ",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "titulo": "Parágrafo (3)",
+    "motivo": "É o primeiro marcador estrutural presente no trecho e seu texto próprio termina imediatamente antes do marcador seguinte, “(4)”; as notas e metadados editoriais intermediários não integram o bloco.",
+    "texto": "(3) any investment adviser that is a foreign private adviser; "
+  },
+  {
+    "offset_inicio": "(4) any investment adviser that is a charitable organization, as defined in section 3(c)(10)(D) of the Investment Company Act of 1940, or is a trustee, director, officer, employee, or volunteer of such a charitable organization acting within the scope of such person’s employment or duties with such organization, whose advice, analyses, or reports are provided only to one or more of the following: ",
+    "offset_fim": "provided only to one or more of the following: ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Parágrafo (4) — organizações beneficentes",
+    "motivo": "É o primeiro marcador de unidade completo no trecho fornecido. O bloco começa em “(4)” e termina imediatamente antes do marcador-filho “(A)”.",
+    "texto": "(4) any investment adviser that is a charitable organization, as defined in section 3(c)(10)(D) of the Investment Company Act of 1940, or is a trustee, director, officer, employee, or volunteer of such a charitable organization acting within the scope of such person’s employment or duties with such organization, whose advice, analyses, or reports are provided only to one or more of the following: "
+  },
+  {
+    "offset_inicio": "(A) any such charitable organization;",
+    "offset_fim": "(A) any such charitable organization;",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Subparágrafo (A)",
+    "motivo": "É o primeiro marcador completo no trecho fornecido; inicia em “(A)” e termina imediatamente antes do marcador irmão “(B)”.",
+    "texto": "(A) any such charitable organization;"
+  },
+  {
+    "offset_inicio": "(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or ",
+    "offset_fim": "(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Subparágrafo (B)",
+    "motivo": "É o primeiro marcador de unidade presente no excerto. O bloco começa em “(B)” e termina imediatamente antes do próximo marcador irmão, “(C)”.",
+    "texto": "(B) a fund that is excluded from the definition of an investment company under section 3(c)(10)(B) of the Investment Company Act of 1940; or "
+  },
+  {
+    "offset_inicio": "(C) a trust or other donative instrument described in section 3(c)(10)(B) of the Investment",
+    "offset_fim": "administrators, settlors (or potential settlors), or beneficiaries of any such trust or other instrument; ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Subparágrafo (C)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(C)” e termina imediatamente antes do próximo marcador de parágrafo, “(5)”.",
+    "texto": "(C) a trust or other donative instrument described in section 3(c)(10)(B) of the Investment Company Act of 1940, or the trustees, administrators, settlors (or potential settlors), or beneficiaries of any such trust or other instrument; "
+  },
+  {
+    "offset_inicio": "(5) any plan described in section 414(e) of the Internal Revenue Code of 1986, any",
+    "offset_fim": "is excluded from the definition of an investment company under section 3(c)(14) of the Investment Company Act of 1940; ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "SEC. 203(b)(5)",
+    "motivo": "É o primeiro bloco completo visível: inicia no marcador de parágrafo (5) e termina imediatamente antes do próximo marcador de mesmo nível, (6).",
+    "texto": "(5) any plan described in section 414(e) of the Internal Revenue Code of 1986, any person or entity eligible to establish and maintain such a plan under the Internal Revenue Code of 1986, or any trustee, director, officer, or employee of or volunteer for any such plan or person, if such person or entity, acting in such capacity, provides investment advice exclusively to, or with respect to, any plan, person, or entity or any company, account, or fund that is excluded from the definition of an investment company under section 3(c)(14) of the Investment Company Act of 1940; "
+  },
+  {
+    "offset_inicio": "(6)(A) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor",
+    "offset_fim": "title I of this Act; or \n\n(ii) a company which has elected to be a business development company pursuant to section 54 of title I of this Act and has not withdrawn its election; or ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "SEC. 203(b)(6)(A)",
+    "motivo": "É a primeira unidade completa identificável no trecho: inicia no marcador (6)(A) e termina imediatamente antes do marcador-filho (i).",
+    "texto": "(6)(A) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor whose business does not consist primarily of acting as an investment adviser, as defined in section 202(a)(11) of this title, and that does not act as an investment adviser to— \n\n(i) an investment company registered under title I of this Act; or \n\n(ii) a company which has elected to be a business development company pursuant to section 54 of title I of this Act and has not withdrawn its election; or "
+  },
+  {
+    "offset_inicio": "(B) any investment adviser that is registered with the Commodity Futures Trading Commission",
+    "offset_fim": "then such adviser shall register with the Commission; ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Subparágrafo (B)",
+    "motivo": "É o primeiro bloco completo iniciado por marcador próprio no trecho fornecido; começa em “(B)” e termina imediatamente antes do marcador seguinte, “(7)”.",
+    "texto": "(B) any investment adviser that is registered with the Commodity Futures Trading Commission as a commodity trading advisor and advises a private fund, provided that, if after the date of enactment of the Private Fund Investment Advisers Registration Act of 2010, the business of the advisor should become predominately the provision of securities-related advice, then such adviser shall register with the Commission; "
+  },
+  {
+    "offset_inicio": "(7) any investment adviser, other than any entity that has elected to be regulated or is regulated as a business development company",
+    "offset_fim": "pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–54), who solely advises— ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Parágrafo (7)",
+    "motivo": "O bloco inicia no marcador próprio \"(7)\" e termina imediatamente antes do próximo marcador de qualquer nível, o subparágrafo \"(A)\".",
+    "texto": "(7) any investment adviser, other than any entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–54), who solely advises— "
+  },
+  {
+    "offset_inicio": "(A) small business investment companies that are licensees under the Small Business Investment Act of 1958; ",
+    "offset_fim": "investment companies that are licensees under the Small Business Investment Act of 1958; ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Subparágrafo (A) — small business investment companies",
+    "motivo": "É o primeiro bloco completo com marcador próprio no trecho fornecido; inicia em “(A)” e termina imediatamente antes do marcador irmão “(B)”.",
+    "texto": "(A) small business investment companies that are licensees under the Small Business Investment Act of 1958; "
+  },
+  {
+    "offset_inicio": "(B) entities that have received from the Small Business Administration notice to proceed",
+    "offset_fim": "all Business Investment Act of 1958, which notice or license has not been revoked; or ",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "titulo": "Subparágrafo (B)",
+    "motivo": "É o primeiro marcador estrutural presente no trecho e seu texto próprio inicia em “(B)” e termina antes do material editorial e da mudança de página; constitui uma unidade completa, embora o contexto do parágrafo-pai não esteja no excerto.",
+    "texto": "(B) entities that have received from the Small Business Administration notice to proceed to qualify for a license as a small business investment company under the Small Business Investment Act of 1958, which notice or license has not been revoked; or "
+  },
+  {
+    "offset_inicio": "(C) applicants that are affiliated with 1 or more licensed small business investment",
+    "offset_fim": "have applied for another license under the Small Business Investment Act of 1958, which application remains pending; or ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (C) — applicants affiliated with licensed small business investment companies",
+    "motivo": "É a primeira unidade marcada completa no trecho fornecido: inicia em “(C)” e termina imediatamente antes do próximo marcador de qualquer nível, “(8)”.",
+    "texto": "(C) applicants that are affiliated with 1 or more licensed small business investment companies described in subparagraph (A) and that have applied for another license under the Small Business Investment Act of 1958, which application remains pending; or "
+  },
+  {
+    "offset_inicio": "(8) any investment adviser, other than an entity that has elected to be regulated or is regulated as a business development",
+    "offset_fim": "ment Company Act of 1940 (15 U.S.C. 80a–53), who solely advises— \n\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Parágrafo (8)",
+    "motivo": "É o primeiro marcador estrutural presente no trecho. Inicia em “(8)” e termina imediatamente antes do marcador-filho “(A)”.",
+    "texto": "(8) any investment adviser, other than an entity that has elected to be regulated or is regulated as a business development company pursuant to section 54 of the Investment Company Act of 1940 (15 U.S.C. 80a–53), who solely advises— \n\n"
+  },
+  {
+    "offset_inicio": "(A) rural business investment companies (as defined in section 384A of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc)); or ",
+    "offset_fim": "(A) rural business investment companies (as defined in section 384A of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc)); or ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (A) — rural business investment companies",
+    "motivo": "É a primeira unidade completa delimitada por marcador no trecho fornecido; inicia em (A) e termina imediatamente antes do marcador irmão (B).",
+    "texto": "(A) rural business investment companies (as defined in section 384A of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc)); or "
+  },
+  {
+    "offset_inicio": "(B) companies that have submitted to the Secretary of Agriculture an application in accordance with section 384D(b) of the Consolidated Farm and Rural Development Act (7 U.S.C. 2009cc–3(b)) that— ",
+    "offset_fim": "e 2009cc–3(b)) that— ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (B)",
+    "motivo": "É o primeiro marcador de unidade presente no trecho. O bloco começa em “(B)” e termina imediatamente antes do marcador-filho “(i)”, conforme a regra de que o texto próprio do pai não incorpora unidades marcadas descendentes.",
+    "texto": null
+  },
+  {
+    "offset_inicio": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or ",
+    "offset_fim": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subcláusula (i)",
+    "motivo": "É o primeiro bloco completo visível: inicia no marcador próprio “(i)” e termina imediatamente antes do marcador irmão “(ii)”.",
+    "texto": "(i) have received from the Secretary of Agriculture a letter of conditions, which has not been revoked; or "
+  },
+  {
+    "offset_inicio": "(c)(1) An investment adviser, or any person who presently contemplates becoming an investment adviser, may be registered by filing with the Commission an application for registration",
+    "offset_fim": "may prescribe as necessary or appropriate in the public interest or for the protection of investors:",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "SEC. 203(c)(1) — Pedido de registro de consultor de investimentos",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(c)(1)” e termina imediatamente antes do primeiro marcador-filho, “(A)”.",
+    "texto": "(c)(1) An investment adviser, or any person who presently contemplates becoming an investment adviser, may be registered by filing with the Commission an application for registration in such form and containing such of the following information and documents as the Commission, by rule, may prescribe as necessary or appropriate in the public interest or for the protection of investors:"
+  },
+  {
+    "offset_inicio": "(A) the name and form of organization under which the investment adviser engages or intends to engage in business; the name of the State or other sovereign power under which such investment adviser is organized;",
+    "offset_fim": "or, if such an investment adviser be an individual, of such individual; and the number of his or its employees; ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (A)",
+    "motivo": "É o primeiro marcador completo presente no trecho fornecido; inicia em “(A)” e termina imediatamente antes do marcador irmão “(B)”.",
+    "texto": "(A) the name and form of organization under which the investment adviser engages or intends to engage in business; the name of the State or other sovereign power under which such investment adviser is organized; the location of his or its principal office, principal place of business, and branch offices, if any; the names and addresses of his or its partners, officers, directors, and persons performing similar functions or, if such an investment adviser be an individual, of such individual; and the number of his or its employees; "
+  },
+  {
+    "offset_inicio": "(B) the education, the business affiliations for the past ten years, and the present business affiliations of such investment adviser",
+    "offset_fim": "officers, directors, and persons performing similar functions and of any controlling person thereof;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (c)(1)(B)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(B)” e termina imediatamente antes do marcador irmão “(C)”.",
+    "texto": "(B) the education, the business affiliations for the past ten years, and the present business affiliations of such investment adviser and of his or its partners, officers, directors, and persons performing similar functions and of any controlling person thereof;"
+  },
+  {
+    "offset_inicio": "(C) the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports; ",
+    "offset_fim": "the manner of giving advice and rendering analyses or reports; ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (C)",
+    "motivo": "É o primeiro marcador de bloco completo visível no trecho. Inicia em “(C)” e termina imediatamente antes do próximo marcador irmão, “(D)”.",
+    "texto": "(C) the nature of the business of such investment adviser, including the manner of giving advice and rendering analyses or reports; "
+  },
+  {
+    "offset_inicio": "(D) a balance sheet certified by an independent public accountant and other financial",
+    "offset_fim": "ependent public accountant and other financial statements (which shall, as the Commission specifies, be certified); ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (D)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(D)” e termina imediatamente antes do marcador irmão “(E)”.",
+    "texto": "(D) a balance sheet certified by an independent public accountant and other financial statements (which shall, as the Commission specifies, be certified); "
+  },
+  {
+    "offset_inicio": "(E) the nature and scope of the authority of such investment adviser with respect to clien",
+    "offset_fim": "thority of such investment adviser with respect to clients’ funds and accounts; ",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (E)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(E)” e termina imediatamente antes do marcador irmão “(F)”.",
+    "texto": "(E) the nature and scope of the authority of such investment adviser with respect to clients’ funds and accounts; "
+  },
+  {
+    "offset_inicio": "(F) the basis or bases upon which such investment adviser is compensated;",
+    "offset_fim": "(F) the basis or bases upon which such investment adviser is compensated;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "titulo": "Subparágrafo (F)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(F)” e termina imediatamente antes do marcador irmão “(G)”.",
+    "texto": "(F) the basis or bases upon which such investment adviser is compensated;"
+  },
+  {
+    "offset_inicio": "(G) whether such investment adviser, or any person associated with such investment adviser, is subject to any disqualification which would be a basis for denial, suspension, or rev- ",
+    "offset_fim": "ocation of registration of such investment adviser under the provisions of subsection (e) of this section; and ",
+    "pagina_inicio": 9,
+    "pagina_fim": 10,
+    "titulo": "Subparágrafo (G)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(G)” na página 9 e termina imediatamente antes do marcador irmão “(H)” na página 10, com continuação textual após a quebra de página.",
+    "texto": "(G) whether such investment adviser, or any person associated with such investment adviser, is subject to any disqualification which would be a basis for denial, suspension, or rev- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 10 -->\n**10** \n\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 203 INVESTMENT ADVISERS ACT OF 1940** \n\nocation of registration of such investment adviser under the provisions of subsection (e) of this section; and "
+  },
+  {
+    "offset_inicio": "(d) Any provision of this title (other than subsection (a) of this section) which prohibits",
+    "offset_fim": "rumentality of interstate commerce in connection therewith. \n\n(e) The Commission, by order,",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "Subseção (d) — Aplicação independentemente do uso do comércio interestadual",
+    "motivo": "É a primeira unidade completa iniciada por um marcador de subseção no trecho fornecido. Começa em “(d)” e termina imediatamente antes do próximo marcador de subseção, “(e)”.",
+    "texto": "(d) Any provision of this title (other than subsection (a) of this section) which prohibits any act, practice, or course of business if the mails or any means or instrumentality of interstate commerce are used in connection therewith shall also prohibit any such act, practice, or course of business by any investment adviser registered pursuant to this section or any person acting on behalf of such an investment adviser, irrespective of any use of the mails or any means or instrumentality of interstate commerce in connection therewith. \n\n(e) The Commission, by order,"
+  },
+  {
+    "offset_inicio": "(1) has willfully made or caused to be made in any application for registration or report",
+    "offset_fim": "any such application or report any material fact which is required to be stated therein.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "titulo": "SEC. 203(e)(1)",
+    "motivo": "É o primeiro bloco completo com marcador próprio no trecho fornecido: inicia em “(1)” e termina antes do marcador irmão “(2)”.",
+    "texto": "(1) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was at the time and in the light of the circumstances under which it was made false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which is required to be stated therein."
+  },
+  {
+    "offset_inicio": "(2) has been convicted within ten years preceding the filing of any application for registration or at any time thereafter of any felony or misdemeanor or of a substantially equivalent crime by a foreign court of competent jurisdiction which the Commission finds— ",
+    "offset_fim": "of a substantially equivalent crime by a foreign court of competent jurisdiction which the Commission finds— ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Parágrafo (2)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; começa em “(2)” e termina imediatamente antes do marcador filho “(A)”.",
+    "texto": "(2) has been convicted within ten years preceding the filing of any application for registration or at any time thereafter of any felony or misdemeanor or of a substantially equivalent crime by a foreign court of competent jurisdiction which the Commission finds— "
+  },
+  {
+    "offset_inicio": "(A) involves the purchase or sale of any security, the taking of a false oath, the making of a false report, bribery, perjury, burglary,",
+    "offset_fim": "by the laws of the relevant foreign government, or conspiracy to commit any such offense; ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Subparágrafo (A)",
+    "motivo": "É a primeira unidade completa com marcador próprio no trecho fornecido; inicia em “(A)” e termina imediatamente antes do marcador irmão “(B)”.",
+    "texto": "(A) involves the purchase or sale of any security, the taking of a false oath, the making of a false report, bribery, perjury, burglary, any substantially equivalent activity however denominated by the laws of the relevant foreign government, or conspiracy to commit any such offense; "
+  },
+  {
+    "offset_inicio": "(B) arises out of the conduct of the business of a broker, dealer, municipal securities dealer, investment adviser,",
+    "offset_fim": "or entity or person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation; ",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "titulo": "Subparágrafo (B)",
+    "motivo": "É o primeiro bloco completo identificável no trecho fornecido: inicia no marcador (B) e termina imediatamente antes do marcador irmão (C).",
+    "texto": "(B) arises out of the conduct of the business of a broker, dealer, municipal securities dealer, investment adviser, bank, insurance company, government securities broker, government securities dealer, fiduciary, transfer agent, credit rating agency, foreign person performing a function substantially equivalent to any of the above, or entity or person required to be registered under the Commodity Exchange Act or any substantially equivalent statute or regulation; "
+  },
+  {
+    "offset_inicio": "(f) The Commission, by order, shall censure or place limitations on the activities of",
+    "offset_fim": "remain, a person associated with him without the consent of the Commission, if such investment adviser knew, or in the exercise of reasonable care, should have known, of such order. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "SEC. 203(f)",
+    "motivo": "É a primeira subseção completa identificada por marcador próprio no trecho fornecido; inicia em “(f)” e termina imediatamente antes do marcador irmão “(g)”.",
+    "texto": "(f) The Commission, by order, shall censure or place limitations on the activities of any person associated, seeking to become associated, or, at the time of the alleged misconduct, associated or seeking to become associated with an investment adviser, or suspend for a period not exceeding 12 months or bar any such person from being associated with an investment adviser, broker, dealer, municipal securities dealer, municipal advisor, transfer agent, or nationally recognized statistical rating organization, if the Commission finds, on the record after notice and opportunity for hearing, that such censure, placing of limitations, suspension, or bar is in the public interest and that such person has committed or omitted any act or omission enumerated in paragraph (1), (5), (6), (8), or (9) of subsection (e) or has been convicted of any offense specified in paragraph (2) or (3) of subsection (e) within ten years of the commencement of the proceedings under this subsection, or is enjoined from any action, conduct, or practice specified in paragraph (4) of subsection (e). It shall be unlawful for any person as to whom such an order suspending or barring him from being associated with an investment adviser is in effect willfully to become, or to be, associated with an investment adviser without the consent of the Commission, and it shall be unlawful for any investment adviser to permit such a person to become, or remain, a person associated with him without the consent of the Commission, if such investment adviser knew, or in the exercise of reasonable care, should have known, of such order. "
+  },
+  {
+    "offset_inicio": "(g) Any successor to the business of an investment adviser registered under this section",
+    "offset_fim": "pursuant to subsection (c) or subsection (e) of this section, shall deny registration to or revoke or suspend the registration of such successor. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 13,
+    "titulo": "Subseção (g) — sucessor de consultor de investimentos registrado",
+    "motivo": "É o primeiro bloco completo visível: inicia no marcador de subseção “(g)” e termina imediatamente antes do próximo marcador do mesmo nível, “(h)”.",
+    "texto": "(g) Any successor to the business of an investment adviser registered under this section shall be deemed likewise registered hereunder, if within thirty days from its succession to such business it shall file an application for registration under this section, unless and until the Commission, pursuant to subsection (c) or subsection (e) of this section, shall deny registration to or revoke or suspend the registration of such successor. "
+  },
+  {
+    "offset_inicio": "(h) Any person registered under this section may, upon such terms and conditions as the Commission finds necessary in the public interest or for the protection of investors, withdraw from registration by filing a written notice of withdrawal with the Com- ",
+    "offset_fim": "under section 203A, the Commission shall by order cancel the registration of such person. ",
+    "pagina_inicio": 13,
+    "pagina_fim": 14,
+    "titulo": "Subseção (h)",
+    "motivo": "A subseção inicia em “(h)” na página 13 e seu texto próprio continua após a quebra de página, terminando imediatamente antes do marcador da subseção irmã “(i) MONEY PENALTIES” na página 14.",
+    "texto": "(h) Any person registered under this section may, upon such terms and conditions as the Commission finds necessary in the public interest or for the protection of investors, withdraw from registration by filing a written notice of withdrawal with the Com- \n\nAs Amended Through P.L. 119-27, Enacted July 18, 2025 \n\nAugust 11, 2025\n\n<!-- PÁGINA 14 -->\n**14** \n\n# G:\\COMP\\SEC\\INVESTMENT ADVISERS ACT OF 1940.XML \n\n# **Sec. 203 INVESTMENT ADVISERS ACT OF 1940** \n\nmission. If the Commission finds that any person registered under this section, or who has pending an application for registration filed under this section, is no longer in existence, is not engaged in business as an investment adviser, or is prohibited from registering as an investment adviser under section 203A, the Commission shall by order cancel the registration of such person. "
+  },
+  {
+    "offset_inicio": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— ",
+    "offset_fim": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "Subseção (i) — MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS",
+    "motivo": "É o primeiro bloco completo iniciado pelo marcador de subseção (i); contém apenas seu título próprio e termina imediatamente antes do marcador-filho (1).",
+    "texto": "(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS.— "
+  },
+  {
+    "offset_inicio": "(1) AUTHORITY OF COMMISSION.— ",
+    "offset_fim": "(1) AUTHORITY OF COMMISSION.— ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "Parágrafo (1) — AUTHORITY OF COMMISSION",
+    "motivo": "É o primeiro marcador estrutural presente no excerto. Seu texto próprio inicia em (1) e termina imediatamente antes do marcador-filho (A).",
+    "texto": "(1) AUTHORITY OF COMMISSION.— "
+  },
+  {
+    "offset_inicio": "(A) IN GENERAL.—In any proceeding instituted pursuant to subsection (e) or (f) ag",
+    "offset_fim": "that such penalty is in the public interest and that such person— ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "Subparágrafo (A) — IN GENERAL",
+    "motivo": "É a primeira unidade delimitada por marcador próprio no trecho fornecido; começa em “(A)” e termina imediatamente antes da cláusula filha “(i)”.",
+    "texto": "(A) IN GENERAL.—In any proceeding instituted pursuant to subsection (e) or (f) against any person, the Commission may impose a civil penalty if it finds, on the record after notice and opportunity for hearing, that such penalty is in the public interest and that such person— "
+  },
+  {
+    "offset_inicio": "(i) has willfully violated any provision of the Securities Act of 1933, the Securities",
+    "offset_fim": "such a violation, if such other person is subject to his supervision;<sup>6</sup>",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "Cláusula (i) — violação dolosa",
+    "motivo": "É a primeira unidade completa identificável: inicia no marcador de cláusula “(i)” e termina imediatamente antes do marcador irmão “(ii)”.",
+    "texto": "(i) has willfully violated any provision of the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Company Act of 1940, or this title, or the rules or regulations thereunder; \n\n(ii) has willfully aided, abetted, counseled, commanded, induced, or procured such a violation by any other person; \n\n(iii) has willfully made or caused to be made in any application for registration or report required to be filed with the Commission under this title, or in any proceeding before the Commission with respect to registration, any statement which was, at the time and in the light of the circumstances under which it was made, false or misleading with respect to any material fact, or has omitted to state in any such application or report any material fact which was required to be stated therein; or \n\n(iv) has failed reasonably to supervise, within the meaning of subsection (e)(6), with a view to preventing violations of the provisions of this title and the rules and regulations thereunder, another person who commits such a violation, if such other person is subject to his supervision;<sup>6</sup>"
+  },
+  {
+    "offset_inicio": "(B) CEASE-AND-DESIST PROCEEDINGS.—In any proceeding instituted pursuant to subsection (k)",
+    "offset_fim": "on of any provision of this title, or any rule or regulation issued under this title; or \n\n",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "Subparágrafo (B) — CEASE-AND-DESIST PROCEEDINGS",
+    "motivo": "É a primeira unidade completa iniciada por marcador próprio no trecho. Começa em (B) e termina imediatamente antes do marcador-filho (i).",
+    "texto": "(B) CEASE-AND-DESIST PROCEEDINGS.—In any proceeding instituted pursuant to subsection (k) against any person, the Commission may impose a civil penalty if the Commission finds, on the record, after notice and opportunity for hearing, that such person— \n\n(i) is violating or has violated any provision of this title, or any rule or regulation issued under this title; or \n\n(ii) is or was a cause of the violation of any provision of this title, or any rule or regulation issued under this t"
+  },
+  {
+    "offset_inicio": "(2) MAXIMUM AMOUNT OF PENALTY.— ",
+    "offset_fim": "(2) MAXIMUM AMOUNT OF PENALTY.— ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(i)(2) MAXIMUM AMOUNT OF PENALTY",
+    "motivo": "É o primeiro bloco completo identificável no trecho: inicia no marcador (2) e termina imediatamente antes do marcador-filho (A).",
+    "texto": "(2) MAXIMUM AMOUNT OF PENALTY.— "
+  },
+  {
+    "offset_inicio": "(A) FIRST TIER.—The maximum amount of penalty for each act or omission described in paragraph (1) shall be $5,000 for a natural person or $50,000 for any other person. ",
+    "offset_fim": "amount of penalty for each act or omission described in paragraph (1) shall be $5,000 for a natural person or $50,000 for any other person. ",
+    "pagina_inicio": 14,
+    "pagina_fim": 14,
+    "titulo": "(A) FIRST TIER",
+    "motivo": "É o primeiro bloco completo iniciado por marcador próprio no trecho; termina imediatamente antes do próximo marcador irmão, “(B) SECOND TIER”, desconsiderando a nota editorial e os metadados de página.",
+    "texto": "(A) FIRST TIER.—The maximum amount of penalty for each act or omission described in paragraph (1) shall be $5,000 for a natural person or $50,000 for any other person. "
+  },
+  {
+    "offset_inicio": "(B) SECOND TIER.—Notwithstanding subparagraph (A), the maximum amount of penalty for",
+    "offset_fim": "deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Subparágrafo (B) — SECOND TIER",
+    "motivo": "É a primeira unidade normativa completa visível: inicia no marcador (B) e termina imediatamente antes do marcador irmão (C).",
+    "texto": "(B) SECOND TIER.—Notwithstanding subparagraph (A), the maximum amount of penalty for each such act or omission shall be $50,000 for a natural person or $250,000 for any other person if the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement. "
+  },
+  {
+    "offset_inicio": "(C) THIRD TIER.—Notwithstanding subparagraphs (A) and (B), the maximum amount of penalty for each such act or omission shall be $100,000 for a natural person or $500,000 for any other person if— ",
+    "offset_fim": "the maximum amount of penalty for each such act or omission shall be $100,000 for a natural person or $500,000 for any other person if— ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Subparágrafo (C) — THIRD TIER",
+    "motivo": "É o primeiro bloco identificado no trecho: inicia em “(C) THIRD TIER” e termina imediatamente antes do marcador filho “(i)”.",
+    "texto": "(C) THIRD TIER.—Notwithstanding subparagraphs (A) and (B), the maximum amount of penalty for each such act or omission shall be $100,000 for a natural person or $500,000 for any other person if— "
+  },
+  {
+    "offset_inicio": "(i) the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; and ",
+    "offset_fim": "(i) the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; and ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Cláusula (i)",
+    "motivo": "É o primeiro marcador de bloco presente no trecho. Inicia em “(i)” e termina imediatamente antes do próximo marcador de qualquer nível, “(ii)”.",
+    "texto": "(i) the act or omission described in paragraph (1) involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; and "
+  },
+  {
+    "offset_inicio": "(ii) such act or omission directly or indirectly resulted in substantial losses or ",
+    "offset_fim": "substantial pecuniary gain to the person who committed the act or omission. ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Cláusula (ii)",
+    "motivo": "É o primeiro bloco completo visível: inicia no marcador (ii) e termina imediatamente antes do próximo marcador, (3).",
+    "texto": "(ii) such act or omission directly or indirectly resulted in substantial losses or created a significant risk of substantial losses to other persons or resulted in substantial pecuniary gain to the person who committed the act or omission. "
+  },
+  {
+    "offset_inicio": "(3) DETERMINATION OF PUBLIC INTEREST.—In considering under this section whether a",
+    "offset_fim": "n this section whether a penalty is in the public interest, the Commission may consider— ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "(i)(3) Determination of Public Interest",
+    "motivo": "É o primeiro bloco completo: inicia no marcador (3) e termina imediatamente antes do primeiro marcador-filho (A).",
+    "texto": "(3) DETERMINATION OF PUBLIC INTEREST.—In considering under this section whether a penalty is in the public interest, the Commission may consider—"
+  },
+  {
+    "offset_inicio": "(A) whether the act or omission for which such penalty is assessed involved fraud, deceit,",
+    "offset_fim": "manipulation, or deliberate or reckless disregard of a regulatory requirement; ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Subparágrafo (A)",
+    "motivo": "É a primeira unidade completa visível: inicia no marcador (A) e termina imediatamente antes do marcador irmão (B).",
+    "texto": "(A) whether the act or omission for which such penalty is assessed involved fraud, deceit, manipulation, or deliberate or reckless disregard of a regulatory requirement; "
+  },
+  {
+    "offset_inicio": "(B) the harm to other persons resulting either directly or indirectly from such act or omission; ",
+    "offset_fim": "(B) the harm to other persons resulting either directly or indirectly from such act or omission; ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Subparágrafo (B) — Harm to other persons",
+    "motivo": "É o primeiro bloco completo identificável: inicia no marcador próprio “(B)” e termina imediatamente antes do próximo marcador irmão “(C)”.",
+    "texto": "(B) the harm to other persons resulting either directly or indirectly from such act or omission; "
+  },
+  {
+    "offset_inicio": "(C) the extent to which any person was unjustly enriched, taking into account any",
+    "offset_fim": "taking into account any restitution made to persons injured by such behavior;",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "SEC. 203(i)(3)(C)",
+    "motivo": "É o primeiro bloco completo visível: inicia no marcador próprio (C) e termina imediatamente antes do próximo marcador irmão (D).",
+    "texto": "(C) the extent to which any person was unjustly enriched, taking into account any restitution made to persons injured by such behavior;"
+  },
+  {
+    "offset_inicio": "(D) whether such person previously has been found by the Commission, another appropriate regulatory agency, or a self-regulatory organization to have violated",
+    "offset_fim": "or has been convicted by a court of competent jurisdiction of violations of such laws or of any felony or misdemeanor described in section 203(e)(2) of this title; ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Subparágrafo (D)",
+    "motivo": "É o primeiro bloco completo visível: inicia no marcador (D) e termina imediatamente antes do próximo marcador, (E).",
+    "texto": "(D) whether such person previously has been found by the Commission, another appropriate regulatory agency, or a self-regulatory organization to have violated the Federal securities laws, State securities laws, or the rules of a selfregulatory organization, has been enjoined by a court of competent jurisdiction from violations of such laws or rules, or has been convicted by a court of competent jurisdiction of violations of such laws or of any felony or misdemeanor described in section 203(e)(2) of this title; "
+  },
+  {
+    "offset_inicio": "(E) the need to deter such person and other persons from committing such acts or omissions; and ",
+    "offset_fim": "(E) the need to deter such person and other persons from committing such acts or omissions; and ",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Subparágrafo (E)",
+    "motivo": "É o primeiro bloco completo identificável: inicia no marcador (E) e termina imediatamente antes do próximo marcador de mesmo nível, (F).",
+    "texto": "(E) the need to deter such person and other persons from committing such acts or omissions; and "
+  },
+  {
+    "offset_inicio": "(4) EVIDENCE CONCERNING ABILITY TO PAY.—In any proceeding in which the Commission may impose a penalty under this section, a respondent may present evidence",
+    "offset_fim": "taking into account any other claims of the United States or third parties upon such person’s assets and the amount of such person’s assets.",
+    "pagina_inicio": 15,
+    "pagina_fim": 15,
+    "titulo": "Parágrafo (4) — Evidence Concerning Ability to Pay",
+    "motivo": "É o primeiro bloco completo com marcador próprio no trecho: inicia em (4) e termina imediatamente antes do próximo marcador de seção, (j).",
+    "texto": "(4) EVIDENCE CONCERNING ABILITY TO PAY.—In any proceeding in which the Commission may impose a penalty under this section, a respondent may present evidence of the respondent’s ability to pay such penalty. The Commission may, in its discretion, consider such evidence in determining whether such penalty is in the public interest. Such evidence may relate to the extent of such person’s ability to continue in business and the collectability of a penalty, taking into account any other claims of the United States or third parties upon such person’s assets and the amount of such person’s assets."
+  }
+]

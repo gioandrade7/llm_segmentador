@@ -1,0 +1,507 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "A seção \"SEC. 201. ø80b–1¿\" contém no mesmo bloco os parágrafos irmãos \"(1)\" e \"(3)\", embora esses marcadores estejam na hierarquia e devam iniciar blocos próprios."
+        },
+        {
+          "bloco": 6,
+          "tipo": "corte_indevido",
+          "descricao": "O texto \"# **Sec. 202 INVESTMENT ADVISERS ACT OF 1940**\" na pág. 2 é cabeçalho corrente de página e foi emitido como bloco próprio, contrariando a regra de ignorar ruído de página."
+        },
+        {
+          "bloco": 17,
+          "tipo": "sequencia",
+          "descricao": "A sequência das definições da seção 202 salta de \"(10) ‘Interstate commerce’\" para \"(12) ‘Investment company’\"; falta a unidade \"(11)\" entre as págs. 3 e 4."
+        },
+        {
+          "bloco": 35,
+          "tipo": "sequencia",
+          "descricao": "A definição \"(30) The term ‘foreign private adviser’ means any investment adviser who—\" termina após \"(A) has no place of business in the United States;\" e é seguida diretamente pelo cabeçalho \"## REGISTRATION OF INVESTMENT ADVISERS\" na pág. 7, deixando a lista anunciada incompleta."
+        },
+        {
+          "bloco": 45,
+          "tipo": "sequencia",
+          "descricao": "O subparágrafo \"(B) a fund ...; or\" da exceção \"(4)\" termina com \"or\" e é seguido por \"(5)\", sem o subparágrafo irmão subsequente que a conjunção anuncia."
+        },
+        {
+          "bloco": 56,
+          "tipo": "sequencia",
+          "descricao": "Em \"(8) ... who solely advises—\", o bloco \"(A) rural business investment companies ...; or\" é seguido diretamente por \"(i) have received ...\"; falta o subparágrafo \"(B)\" que deve introduzir as cláusulas \"(i)\" e \"(ii)\"."
+        },
+        {
+          "bloco": 70,
+          "tipo": "granularidade",
+          "descricao": "Na subseção \"(e)\", o parágrafo \"(1)\" não inicia bloco próprio, mas o irmão \"(2) has been convicted...\" inicia o bloco 71; os parágrafos irmãos foram tratados com granularidade desigual."
+        },
+        {
+          "bloco": 76,
+          "tipo": "englobante",
+          "descricao": "O parágrafo \"(3) has been convicted ... of—\" inclui no mesmo bloco os subparágrafos \"(A) any crime...\" e \"(B) a substantially equivalent crime...\", embora os subparágrafos irmãos de outros parágrafos da mesma subseção tenham sido separados."
+        },
+        {
+          "bloco": 80,
+          "tipo": "englobante",
+          "descricao": "O subparágrafo \"(A) there have been established procedures...\" contém também o subparágrafo irmão \"(B) such person has reasonably discharged...\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O subparágrafo \"(A) IN GENERAL.—\" da subseção \"(i)(1)\" contém as cláusulas \"(i)\" e as demais cláusulas internas até o fim do bloco, enquanto as cláusulas \"(i)\" e \"(ii)\" de \"(B) CEASE-AND-DESIST PROCEEDINGS\" foram segmentadas separadamente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de `(1)` e inicie blocos distintos em cada parágrafo `(1)`, `(2)` e `(3)`.\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo.\n- Não salte unidades da enumeração: após `(10) “Interstate commerce”` inclua `(11)` antes de `(12)`; complete os subparágrafos que seguem `(30)(A)`, `(4)(B) ...; or` e `(8)(A) ...; or`, preservando respectivamente as unidades faltantes antes do cabeçalho da pág. 7, de `(5)` e de `(8)(B)(i)`.\n- Na subseção `(e)` da SEC. 203 (págs. 10–12), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, separe `(3)(A)` e `(3)(B)`, e termine `(6)(A)` imediatamente antes de `(6)(B)`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (pág. 14), dentro de `(1)(A) IN GENERAL.—`, inicie um bloco próprio em cada cláusula `(i)`, `(ii)`, `(iii)` e `(iv)`, como já ocorre em `(1)(B)`."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de `(1)` e inicie blocos distintos em cada parágrafo `(1)`, `(2)` e `(3)`.\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo.\n- Não salte unidades da enumeração: após `(10) “Interstate commerce”` inclua `(11)` antes de `(12)`; complete os subparágrafos que seguem `(30)(A)`, `(4)(B) ...; or` e `(8)(A) ...; or`, preservando respectivamente as unidades faltantes antes do cabeçalho da pág. 7, de `(5)` e de `(8)(B)(i)`.\n- Na subseção `(e)` da SEC. 203 (págs. 10–12), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, separe `(3)(A)` e `(3)(B)`, e termine `(6)(A)` imediatamente antes de `(6)(B)`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (pág. 14), dentro de `(1)(A) IN GENERAL.—`, inicie um bloco próprio em cada cláusula `(i)`, `(ii)`, `(iii)` e `(iv)`, como já ocorre em `(1)(B)`.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 10,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco é apenas o cabeçalho corrente de página `# **Sec. 202 INVESTMENT ADVISERS ACT OF 1940**`, que deveria ser ignorado como ruído. Cabeçalhos e carimbos semelhantes também permanecem incorporados a blocos como os de `(9)`, `(11)`, `(24)`, `(30)(D)(ii)` e `(h)`."
+        },
+        {
+          "bloco": 44,
+          "tipo": "sequencia",
+          "descricao": "Após os trechos que pertencem materialmente à definição de `foreign private adviser`, com `(B) has, in total, fewer than 15 clients...`, `(C) has aggregate assets...` e `(D) neither—`, surge `(29) The terms “commodity pool”...`. A definição `(29)` deveria anteceder a de `foreign private adviser`; a ordem de leitura extraída está invertida."
+        },
+        {
+          "bloco": 93,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por `(A) there have been established procedures...` também contém o marcador irmão `(B) such person has reasonably discharged...`; os dois subparágrafos de `(e)(6)` deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O bloco reúne os parágrafos irmãos `(7) is subject to any order...` e `(8) has been found by a foreign financial regulatory authority...`, além de iniciar subparágrafo de `(8)`. Cada um desses marcadores hierárquicos deve abrir sua própria unidade."
+        },
+        {
+          "bloco": 104,
+          "tipo": "englobante",
+          "descricao": "Em `(i)(1)(A) IN GENERAL`, o bloco iniciado pela cláusula `(i) has willfully violated...` contém também as cláusulas irmãs seguintes, incluindo `(ii) has willfully aided...`; as cláusulas `(i)` a `(iv)` devem ser separadas."
+        },
+        {
+          "bloco": 112,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(i) the act or omission described in paragraph (1) involved...` também contém a cláusula irmã `(ii) such act or omission directly or indirectly resulted...` sob `(i)(2)(C) THIRD TIER`."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de `(1)` e inicie blocos distintos em cada parágrafo `(1)`, `(2)` e `(3)`.\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo.\n- Não salte unidades da enumeração: após `(10) “Interstate commerce”` inclua `(11)` antes de `(12)`; complete os subparágrafos que seguem `(30)(A)`, `(4)(B) ...; or` e `(8)(A) ...; or`, preservando as unidades faltantes na ordem em que forem fornecidas pelo texto de entrada.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, separe `(3)(A)` de `(3)(B)`, termine `(6)(A)` antes de `(6)(B)` e separe os parágrafos `(7)` e `(8)`, bem como os subparágrafos de `(8)`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), inicie blocos próprios em cada cláusula: separe `(i)`, `(ii)`, `(iii)` e `(iv)` de `(1)(A) IN GENERAL.—` e separe `(i)` de `(ii)` em `(2)(C) THIRD TIER.—`."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 124,
+    "insights_aplicados": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de `(1)` e inicie blocos distintos em cada parágrafo `(1)`, `(2)` e `(3)`.\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo.\n- Não salte unidades da enumeração: após `(10) “Interstate commerce”` inclua `(11)` antes de `(12)`; complete os subparágrafos que seguem `(30)(A)`, `(4)(B) ...; or` e `(8)(A) ...; or`, preservando as unidades faltantes na ordem em que forem fornecidas pelo texto de entrada.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, separe `(3)(A)` de `(3)(B)`, termine `(6)(A)` antes de `(6)(B)` e separe os parágrafos `(7)` e `(8)`, bem como os subparágrafos de `(8)`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), inicie blocos próprios em cada cláusula: separe `(i)`, `(ii)`, `(iii)` e `(iv)` de `(1)(A) IN GENERAL.—` e separe `(i)` de `(ii)` em `(2)(C) THIRD TIER.—`.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 17,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de `(9) “Exchange”` (págs. 2–3) incorpora carimbo de atualização, caminho de arquivo, cabeçalho corrente, número de página e texto de cabeçalho `Sec. 202`, que são ruído de página e não texto normativo."
+        },
+        {
+          "bloco": 72,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(C) applicants that are affiliated...` (pág. 9), subparágrafo de `(b)(7)`, também contém o novo parágrafo irmão `(8) any investment adviser...` e as cláusulas `(i)` e `(ii)` de `(8)`."
+        },
+        {
+          "bloco": 83,
+          "tipo": "sequencia",
+          "descricao": "Em `(c)(2)`, o bloco de `(A) by order grant such registration; or` (pág. 10) termina anunciando alternativa `or`, mas o bloco seguinte já inicia a subseção `(d)`; falta a unidade irmã `(B)` entre elas."
+        },
+        {
+          "bloco": 92,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(e)(3) has been convicted...` (pág. 11) incorpora os subparágrafos distintos `(A) any crime...` e `(B) a substantially equivalent crime...`."
+        },
+        {
+          "bloco": 96,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(e)(6)(A) there have been established procedures...` (pág. 12) também incorpora o subparágrafo irmão `(B) such person has reasonably discharged...`."
+        },
+        {
+          "bloco": 121,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(i)(2)(C)(i) the act or omission...` (pág. 15) também contém a cláusula irmã `(ii) such act or omission directly or indirectly...`."
+        },
+        {
+          "bloco": 122,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(i)(3) DETERMINATION OF PUBLIC INTEREST.—` (pág. 15) incorpora os subparágrafos `(A)` a `(F)`, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 123,
+          "tipo": "ancora",
+          "descricao": "A unidade `(i)(4) EVIDENCE CONCERNING ABILITY TO PAY.—` (pág. 15) foi sinalizada como `TEXTO NÃO EXTRAÍDO (âncoras não localizadas no documento)`, indicando falha de extração/localização de âncoras que o segmentador não pode corrigir."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de cada parágrafo enumerado e inicie blocos distintos em `(1)`, `(2)` e, se presente no texto fonte, `(3)`.\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo.\n- Não salte unidades da enumeração: após `(c)(2)(A) by order grant such registration; or` (pág. 10), preserve e inicie bloco em `(B)` antes de `(d)`; em `(b)(7)(C) applicants that are affiliated...` (pág. 9), termine o bloco antes de `(8) any investment adviser...` e inicie blocos próprios em `(8)`, `(8)(i)` e `(8)(ii)`.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, separe `(3)(A)` de `(3)(B)`, termine `(6)(A)` antes de `(6)(B)` e separe os parágrafos `(7)` e `(8)`, bem como os subparágrafos de `(8)`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), inicie blocos próprios em cada cláusula: separe `(i)`, `(ii)`, `(iii)` e `(iv)` de `(1)(A) IN GENERAL.—`; separe `(i)` de `(ii)` em `(2)(C) THIRD TIER.—`; e, em `(3) DETERMINATION OF PUBLIC INTEREST.—`, inicie um bloco em cada subparágrafo `(A)` a `(F)`."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 126,
+    "insights_aplicados": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de cada parágrafo enumerado e inicie blocos distintos em `(1)`, `(2)` e, se presente no texto fonte, `(3)`.\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo.\n- Não salte unidades da enumeração: após `(c)(2)(A) by order grant such registration; or` (pág. 10), preserve e inicie bloco em `(B)` antes de `(d)`; em `(b)(7)(C) applicants that are affiliated...` (pág. 9), termine o bloco antes de `(8) any investment adviser...` e inicie blocos próprios em `(8)`, `(8)(i)` e `(8)(ii)`.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, separe `(3)(A)` de `(3)(B)`, termine `(6)(A)` antes de `(6)(B)` e separe os parágrafos `(7)` e `(8)`, bem como os subparágrafos de `(8)`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), inicie blocos próprios em cada cláusula: separe `(i)`, `(ii)`, `(iii)` e `(iv)` de `(1)(A) IN GENERAL.—`; separe `(i)` de `(ii)` em `(2)(C) THIRD TIER.—`; e, em `(3) DETERMINATION OF PUBLIC INTEREST.—`, inicie um bloco em cada subparágrafo `(A)` a `(F)`.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O texto normativo de `(9) ‘‘Exchange’’` incorpora cabeçalhos, carimbo de atualização, caminho de arquivo e numeração de página entre partes da definição; o mesmo ruído recorrente também aparece, entre outros, nos blocos de `(11)`, `(24)`, `(G)` e `(h)`."
+        },
+        {
+          "bloco": 24,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(17) The term ‘‘person associated with an investment adviser’’` também contém a definição irmã `(18) ‘‘Security’’`, pois termina no fim da enumeração de valores mobiliários e o bloco seguinte já salta para `(19) ‘‘State’’`."
+        },
+        {
+          "bloco": 73,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(B) companies that have submitted ... that—` contém o marcador de cláusula `(i) have received from the Secretary of Agriculture a letter of conditions` em seu interior, em vez de iniciar bloco próprio na cláusula."
+        },
+        {
+          "bloco": 100,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(A) there have been established procedures` contém também o subparágrafo irmão `(B) such person has reasonably discharged`, que aparece no meio do mesmo bloco."
+        },
+        {
+          "bloco": 106,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(9) is subject to any final order` inclui os subparágrafos `(A)` e `(B) constitutes a final order...` sem blocos próprios para essas unidades."
+        },
+        {
+          "bloco": 112,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(A) IN GENERAL.—In any proceeding` incorpora as cláusulas internas `(i)`, `(ii)`, `(iii)` e `(iv)`, embora essas cláusulas sejam marcadores previstos na hierarquia."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), mantenha o término do bloco da seção antes de cada parágrafo enumerado e inicie blocos distintos em `(1)`, `(2)` e, se presente, `(3)`; na SEC. 202, termine o bloco de `(17) The term ‘‘person associated with an investment adviser’’` imediatamente antes de `(18) ‘‘Security’’` e inicie um bloco próprio em `(18)` antes de `(19) ‘‘State’’` (págs. 4–5).\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo, inclusive quando surgirem entre partes de uma definição ou de um parágrafo que continua na página seguinte.\n- Não salte unidades da enumeração: preserve o bloco de `(B) institute proceedings` após `(c)(2)(A) by order grant such registration; or`, separe `(b)(7)(C) applicants that are affiliated...` de `(8) any investment adviser...`, e, em `(b)(8)(B) companies that have submitted ... that—` (pág. 9), termine o bloco antes de `(i) have received from the Secretary of Agriculture a letter of conditions` e inicie bloco próprio nessa cláusula.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, `(3)(A)` de `(3)(B)`, `(6)(A)` de `(6)(B)`, os parágrafos `(7)`, `(8)` e `(9)`, e os subparágrafos `(A)` e `(B)` de `(9) is subject to any final order...`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), termine `(1)(A) IN GENERAL.—` antes de cada cláusula `(i)`, `(ii)`, `(iii)` e `(iv)` e inicie um bloco em cada uma; mantenha também blocos distintos para `(2)(C)(i)` e `(2)(C)(ii)` e para cada subparágrafo de `(3) DETERMINATION OF PUBLIC INTEREST.—`."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 128,
+    "insights_aplicados": "- Na SEC. 201 (pág. 1), mantenha o término do bloco da seção antes de cada parágrafo enumerado e inicie blocos distintos em `(1)`, `(2)` e, se presente, `(3)`; na SEC. 202, termine o bloco de `(17) The term ‘‘person associated with an investment adviser’’` imediatamente antes de `(18) ‘‘Security’’` e inicie um bloco próprio em `(18)` antes de `(19) ‘‘State’’` (págs. 4–5).\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo, inclusive quando surgirem entre partes de uma definição ou de um parágrafo que continua na página seguinte.\n- Não salte unidades da enumeração: preserve o bloco de `(B) institute proceedings` após `(c)(2)(A) by order grant such registration; or`, separe `(b)(7)(C) applicants that are affiliated...` de `(8) any investment adviser...`, e, em `(b)(8)(B) companies that have submitted ... that—` (pág. 9), termine o bloco antes de `(i) have received from the Secretary of Agriculture a letter of conditions` e inicie bloco próprio nessa cláusula.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, `(3)(A)` de `(3)(B)`, `(6)(A)` de `(6)(B)`, os parágrafos `(7)`, `(8)` e `(9)`, e os subparágrafos `(A)` e `(B)` de `(9) is subject to any final order...`.\n- Em `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), termine `(1)(A) IN GENERAL.—` antes de cada cláusula `(i)`, `(ii)`, `(iii)` e `(iv)` e inicie um bloco em cada uma; mantenha também blocos distintos para `(2)(C)(i)` e `(2)(C)(ii)` e para cada subparágrafo de `(3) DETERMINATION OF PUBLIC INTEREST.—`.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 10,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2) ‘‘Bank’’ means` (pág. 2) incorpora os subparágrafos hierárquicos `(A)`, `(B)`, `(C)` e `(D)`, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 30,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(22) ‘‘Business development company’’ means` (pág. 5) contém o subparágrafo `(A) the 70 per centum...` e os demais subparágrafos introduzidos por `except that—`, sem separá-los em blocos próprios."
+        },
+        {
+          "bloco": 17,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de `(9) ‘‘Exchange’’ means` incorpora ruído editorial de página, incluindo `As Amended Through...`, caminho de arquivo, cabeçalho corrente e `**Sec. 202**`, antes da continuação normativa `ties or for otherwise...`."
+        },
+        {
+          "bloco": 110,
+          "tipo": "lacuna",
+          "descricao": "Após o término de `(h) Any person registered under this section may...` (pág. 14), o bloco seguinte começa diretamente em `(i) has willfully violated...`; não há bloco para `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS`, `(1) AUTHORITY OF COMMISSION` e `(A) IN GENERAL.—`, nem para o texto introdutório que antecede essa cláusula."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de cada parágrafo enumerado e inicie blocos distintos em `(1)`, `(2)` e, se presente, `(3)`; na SEC. 202, mantenha `(17) The term ‘‘person associated with an investment adviser’’` separado de `(18) ‘‘Security’’` e de `(19) ‘‘State’’`, e também termine cada definição antes dos seus subparágrafos: em especial, separe `(2) ‘‘Bank’’ means` de `(A)`, `(B)`, `(C)` e `(D)` (pág. 2), e `(22) ‘‘Business development company’’ means` de cada subparágrafo introduzido por `except that—` (pág. 5).\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo, inclusive quando surgirem entre partes de uma definição ou de um parágrafo que continua na página seguinte.\n- Não salte unidades da enumeração: preserve o bloco de `(B) institute proceedings` após `(c)(2)(A) by order grant such registration; or`, separe `(b)(7)(C) applicants that are affiliated...` de `(8) any investment adviser...`, e, em `(b)(8)(B) companies that have submitted ... that—` (pág. 9), termine o bloco antes de `(i) have received from the Secretary of Agriculture a letter of conditions` e inicie bloco próprio nessa cláusula.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, `(3)(A)` de `(3)(B)`, `(6)(A)` de `(6)(B)`, os parágrafos `(7)`, `(8)` e `(9)`, e os subparágrafos `(A)` e `(B)` de `(9) is subject to any final order...`.\n- Na página 14, após `(h) Any person registered under this section may...`, capture e segmente `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS`, `(1) AUTHORITY OF COMMISSION` e `(A) IN GENERAL.—` antes de iniciar as cláusulas `(i) has willfully violated...`, `(ii)`, `(iii)` e `(iv)`; mantenha também blocos distintos para `(2)(C)(i)` e `(2)(C)(ii)` e para cada subparágrafo de `(3) DETERMINATION OF PUBLIC INTEREST.—`."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 140,
+    "insights_aplicados": "- Na SEC. 201 (pág. 1), termine o bloco da seção antes de cada parágrafo enumerado e inicie blocos distintos em `(1)`, `(2)` e, se presente, `(3)`; na SEC. 202, mantenha `(17) The term ‘‘person associated with an investment adviser’’` separado de `(18) ‘‘Security’’` e de `(19) ‘‘State’’`, e também termine cada definição antes dos seus subparágrafos: em especial, separe `(2) ‘‘Bank’’ means` de `(A)`, `(B)`, `(C)` e `(D)` (pág. 2), e `(22) ‘‘Business development company’’ means` de cada subparágrafo introduzido por `except that—` (pág. 5).\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo, inclusive quando surgirem entre partes de uma definição ou de um parágrafo que continua na página seguinte.\n- Não salte unidades da enumeração: preserve o bloco de `(B) institute proceedings` após `(c)(2)(A) by order grant such registration; or`, separe `(b)(7)(C) applicants that are affiliated...` de `(8) any investment adviser...`, e, em `(b)(8)(B) companies that have submitted ... that—` (pág. 9), termine o bloco antes de `(i) have received from the Secretary of Agriculture a letter of conditions` e inicie bloco próprio nessa cláusula.\n- Na subseção `(e)` da SEC. 203 (págs. 10–13), inicie blocos próprios em todos os parágrafos e subparágrafos: separe `(1)` de `(e)`, `(3)(A)` de `(3)(B)`, `(6)(A)` de `(6)(B)`, os parágrafos `(7)`, `(8)` e `(9)`, e os subparágrafos `(A)` e `(B)` de `(9) is subject to any final order...`.\n- Na página 14, após `(h) Any person registered under this section may...`, capture e segmente `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS`, `(1) AUTHORITY OF COMMISSION` e `(A) IN GENERAL.—` antes de iniciar as cláusulas `(i) has willfully violated...`, `(ii)`, `(iii)` e `(iv)`; mantenha também blocos distintos para `(2)(C)(i)` e `(2)(C)(ii)` e para cada subparágrafo de `(3) DETERMINATION OF PUBLIC INTEREST.—`.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(B) a member bank of the Federal Reserve System` também contém os subparágrafos irmãos `(C)` e `(D)`, que devem iniciar blocos próprios. O mesmo padrão reaparece na definição `(11)`, pois o bloco 24 iniciado em `(D) the publisher...` contém o início de `(E) any person...`."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "A definição `(24) ‘‘Foreign financial regulatory authority’’ means any` incorpora os subparágrafos `(A)`, `(B)` e `(C)` no mesmo bloco; adicionalmente, o bloco 42 da definição `(26)` incorpora `(A) that is under the direct supervision...` em vez de encerrar a definição antes desse subparágrafo."
+        },
+        {
+          "bloco": 18,
+          "tipo": "corte_indevido",
+          "descricao": "Texto normativo é contaminado por ruído de paginação e publicação: o bloco inclui `As Amended Through...`, caminho de arquivo, cabeçalho `INVESTMENT ADVISERS ACT OF 1940`, número de página e `Sec. 202`. O mesmo problema aparece, entre outros, nos blocos 24, 40, 89, 114 e 120."
+        },
+        {
+          "bloco": 120,
+          "tipo": "lacuna",
+          "descricao": "Após o encerramento de `(h) Any person registered under this section may...`, o bloco seguinte já começa na cláusula `(i) has willfully violated...`. Faltam blocos para `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS`, `(1) AUTHORITY OF COMMISSION` e `(A) IN GENERAL.—`, bem como o texto introdutório que antecede essa cláusula."
+        },
+        {
+          "bloco": 125,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(B) CEASE-AND-DESIST PROCEEDINGS.—` também contém a cláusula filha `(i) is violating or has violated...`; essa cláusula deve iniciar bloco próprio. O bloco 118 também percorre toda a subseção `(f)` até antes de `(g)` sem segmentar os parágrafos internos dessa subseção."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), mantenha a seção separada de cada parágrafo enumerado, iniciando blocos próprios em `(1)`, `(2)` e nos demais parágrafos que ocorram; na SEC. 202, encerre cada definição antes dos seus subparágrafos. Em especial, separe `(2) ‘‘Bank’’ means` de `(A)`, `(B)`, `(C)` e `(D)` (pág. 2), separe `(11) ‘‘Investment adviser’’ means` de cada exceção `(A)` a `(G)` (págs. 3–4), separe `(22) ‘‘Business development company’’ means` de `(A)`, `(B)` e `(C)` (pág. 5), e separe `(24) ‘‘Foreign financial regulatory authority’’ means any` e `(26) The term ‘‘separately identifiable department or division’’...` de seus subparágrafos `(A)`, `(B)` e `(C)` (pág. 6).\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo, inclusive quando surgirem entre partes de uma definição ou de um parágrafo que continua na página seguinte.\n- Na SEC. 203, preserve blocos próprios em todos os marcadores hierárquicos de `(b)`, `(c)` e `(e)`: não salte unidades como `(b)(7)(C)`, `(b)(8)(B)(i)`, `(c)(2)(B)`, `(e)(3)(A)` e `(e)(3)(B)`, `(e)(6)(A)` e `(e)(6)(B)`, nem os subparágrafos `(A)` e `(B)` de `(e)(9)`.\n- Na subseção `(f) The Commission, by order, shall censure or place limitations...` da SEC. 203 (pág. 13), termine o bloco introdutório antes de cada parágrafo enumerado interno e inicie blocos próprios em cada `(1)`, `(2)`, `(3)` e `(4)` que compõe essa subseção.\n- Na página 14, após `(h) Any person registered under this section may...`, capture e segmente, nesta ordem, `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS`, `(1) AUTHORITY OF COMMISSION`, `(A) IN GENERAL.—` e seu texto introdutório antes das cláusulas `(i)`, `(ii)`, `(iii)` e `(iv)`; faça o mesmo em `(B) CEASE-AND-DESIST PROCEEDINGS.—`, encerrando-o antes de cada cláusula `(i)` e seguinte, e mantenha blocos distintos para `(2)(C)(i)`, `(2)(C)(ii)` e cada subparágrafo de `(3) DETERMINATION OF PUBLIC INTEREST.—`."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 126,
+    "insights_aplicados": "- Na SEC. 201 (pág. 1), mantenha a seção separada de cada parágrafo enumerado, iniciando blocos próprios em `(1)`, `(2)` e nos demais parágrafos que ocorram; na SEC. 202, encerre cada definição antes dos seus subparágrafos. Em especial, separe `(2) ‘‘Bank’’ means` de `(A)`, `(B)`, `(C)` e `(D)` (pág. 2), separe `(11) ‘‘Investment adviser’’ means` de cada exceção `(A)` a `(G)` (págs. 3–4), separe `(22) ‘‘Business development company’’ means` de `(A)`, `(B)` e `(C)` (pág. 5), e separe `(24) ‘‘Foreign financial regulatory authority’’ means any` e `(26) The term ‘‘separately identifiable department or division’’...` de seus subparágrafos `(A)`, `(B)` e `(C)` (pág. 6).\n- Ignore integralmente cabeçalhos, rodapés, carimbos de atualização, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os emita como blocos nem os incorpore ao texto normativo, inclusive quando surgirem entre partes de uma definição ou de um parágrafo que continua na página seguinte.\n- Na SEC. 203, preserve blocos próprios em todos os marcadores hierárquicos de `(b)`, `(c)` e `(e)`: não salte unidades como `(b)(7)(C)`, `(b)(8)(B)(i)`, `(c)(2)(B)`, `(e)(3)(A)` e `(e)(3)(B)`, `(e)(6)(A)` e `(e)(6)(B)`, nem os subparágrafos `(A)` e `(B)` de `(e)(9)`.\n- Na subseção `(f) The Commission, by order, shall censure or place limitations...` da SEC. 203 (pág. 13), termine o bloco introdutório antes de cada parágrafo enumerado interno e inicie blocos próprios em cada `(1)`, `(2)`, `(3)` e `(4)` que compõe essa subseção.\n- Na página 14, após `(h) Any person registered under this section may...`, capture e segmente, nesta ordem, `(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS`, `(1) AUTHORITY OF COMMISSION`, `(A) IN GENERAL.—` e seu texto introdutório antes das cláusulas `(i)`, `(ii)`, `(iii)` e `(iv)`; faça o mesmo em `(B) CEASE-AND-DESIST PROCEEDINGS.—`, encerrando-o antes de cada cláusula `(i)` e seguinte, e mantenha blocos distintos para `(2)(C)(i)`, `(2)(C)(ii)` e cada subparágrafo de `(3) DETERMINATION OF PUBLIC INTEREST.—`.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `SEC. 201. ø80b–1¿` incorpora o cabeçalho `## DEFINITIONS`, o marcador `SEC. 202. ø80b–2¿` e o início da subseção `(a)`, que devem iniciar unidades próprias."
+        },
+        {
+          "bloco": 7,
+          "tipo": "englobante",
+          "descricao": "A definição `(2) ‘‘Bank’’ means` foi corretamente separada em `(A)`, mas o bloco iniciado em `(B)` também contém os subparágrafos irmãos `(C)` e `(D)`."
+        },
+        {
+          "bloco": 85,
+          "tipo": "englobante",
+          "descricao": "No registro da SEC. 203(c)(1), o bloco iniciado em `(C) the nature of the business...` também contém os subparágrafos irmãos `(D)`, `(E)`, `(F)` e `(G)`."
+        },
+        {
+          "bloco": 89,
+          "tipo": "sequencia",
+          "descricao": "Após `(c)(2)(A) by order grant such registration; or` no bloco 88, a sequência salta diretamente para a subseção `(d)`, sem bloco para `(c)(2)(B)`."
+        },
+        {
+          "bloco": 108,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(9) is subject to any final order...` incorpora o subparágrafo `(A) bars such person...`; além disso, a sequência visível termina em `(A)` e salta para `(f)`, sem o subparágrafo `(B)` esperado."
+        },
+        {
+          "bloco": 115,
+          "tipo": "englobante",
+          "descricao": "O bloco da cláusula `(i)` de SEC. 203(i)(1)(A) também contém as cláusulas irmãs `(ii)`, `(iii)` e `(iv)`."
+        },
+        {
+          "bloco": 120,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(C) THIRD TIER.—` incorpora a cláusula interna `(i)`, que é unidade de nível de cláusula e deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 125,
+          "tipo": "sequencia",
+          "descricao": "Depois de SEC. 203(i)(3)(A) e `(B)`, a segmentação salta para `(4) EVIDENCE CONCERNING ABILITY TO PAY`, sem os demais subparágrafos de `(3) DETERMINATION OF PUBLIC INTEREST`."
+        },
+        {
+          "bloco": 14,
+          "tipo": "corte_indevido",
+          "descricao": "O texto normativo de `(9) ‘‘Exchange’’...` incorpora cabeçalho corrente, carimbo de atualização, caminho de arquivo, número de página e identificação de seção da página 3."
+        },
+        {
+          "bloco": 23,
+          "tipo": "corte_indevido",
+          "descricao": "O texto de `(G)`/`(H)` em SEC. 202(a)(11) incorpora nota editorial, data, carimbo de atualização, marcador `<!-- PÁGINA 4 -->`, caminho de arquivo e cabeçalho corrente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na transição da SEC. 201 para a SEC. 202 na pág. 1, encerre `SEC. 201. ø80b–1¿` antes de `## DEFINITIONS`; inicie blocos distintos em `## DEFINITIONS`, em `SEC. 202. ø80b–2¿` e em `(a) When used in this title...`.\n- Na SEC. 202, separe cada marcador irmão que apareça no texto: em particular, na pág. 2 inicie blocos próprios em `(B)`, `(C)` e `(D)` da definição `(2) ‘‘Bank’’ means`; nas págs. 3–4 separe `(G)` de `(H)` na definição `(11) ‘‘Investment adviser’’ means`; e na pág. 6 separe `(B)` de `(C)` na definição `(24) ‘‘Foreign financial regulatory authority’’ means any`.\n- Na SEC. 203, não omita nem agregue unidades hierárquicas: após `(c)(2)(A) by order grant such registration; or` na pág. 10, capture `(c)(2)(B)` antes de `(d)`; separe, em `(c)(1)`, cada subparágrafo `(C)` a `(H)`; e, em `(e)(9)` na pág. 13, separe `(A)` de `(B)` e capture ambos antes de iniciar `(f)`. Na subseção `(f)`, termine o texto introdutório antes de cada parágrafo interno `(1)`, `(2)`, `(3)` e `(4)` e inicie um bloco para cada um.\n- Na pág. 14–15, em SEC. 203(i), separe o texto introdutório de `(1)(A) IN GENERAL.—` de cada cláusula `(i)`, `(ii)`, `(iii)` e `(iv)`; faça o mesmo para as cláusulas de `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—`; em `(2)(C) THIRD TIER.—`, separe as cláusulas `(i)` e `(ii)`; e capture todos os subparágrafos de `(3) DETERMINATION OF PUBLIC INTEREST.—` antes de iniciar `(4) EVIDENCE CONCERNING ABILITY TO PAY.—`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os incorpore ao texto normativo, inclusive quando interromperem definições ou parágrafos que continuam na página seguinte."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 140,
+    "insights_aplicados": "- Na transição da SEC. 201 para a SEC. 202 na pág. 1, encerre `SEC. 201. ø80b–1¿` antes de `## DEFINITIONS`; inicie blocos distintos em `## DEFINITIONS`, em `SEC. 202. ø80b–2¿` e em `(a) When used in this title...`.\n- Na SEC. 202, separe cada marcador irmão que apareça no texto: em particular, na pág. 2 inicie blocos próprios em `(B)`, `(C)` e `(D)` da definição `(2) ‘‘Bank’’ means`; nas págs. 3–4 separe `(G)` de `(H)` na definição `(11) ‘‘Investment adviser’’ means`; e na pág. 6 separe `(B)` de `(C)` na definição `(24) ‘‘Foreign financial regulatory authority’’ means any`.\n- Na SEC. 203, não omita nem agregue unidades hierárquicas: após `(c)(2)(A) by order grant such registration; or` na pág. 10, capture `(c)(2)(B)` antes de `(d)`; separe, em `(c)(1)`, cada subparágrafo `(C)` a `(H)`; e, em `(e)(9)` na pág. 13, separe `(A)` de `(B)` e capture ambos antes de iniciar `(f)`. Na subseção `(f)`, termine o texto introdutório antes de cada parágrafo interno `(1)`, `(2)`, `(3)` e `(4)` e inicie um bloco para cada um.\n- Na pág. 14–15, em SEC. 203(i), separe o texto introdutório de `(1)(A) IN GENERAL.—` de cada cláusula `(i)`, `(ii)`, `(iii)` e `(iv)`; faça o mesmo para as cláusulas de `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—`; em `(2)(C) THIRD TIER.—`, separe as cláusulas `(i)` e `(ii)`; e capture todos os subparágrafos de `(3) DETERMINATION OF PUBLIC INTEREST.—` antes de iniciar `(4) EVIDENCE CONCERNING ABILITY TO PAY.—`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os incorpore ao texto normativo, inclusive quando interromperem definições ou parágrafos que continuam na página seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 32,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(14) ‘‘Means or instrumentality of interstate commerce’’` (pág. 4) também contém os parágrafos irmãos `(15)`, `(16)`, `(17)` e `(18)`, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 41,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(B) other governmental body...` da definição `(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6) incorpora o subparágrafo irmão `(C) membership organization...`."
+        },
+        {
+          "bloco": 110,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(A) there have been established procedures...` em SEC. 203(e)(6) (pág. 12) também contém `(B) such person has reasonably discharged...`."
+        },
+        {
+          "bloco": 127,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado na cláusula `(iii) has willfully made or caused...` de SEC. 203(i)(1)(A) (pág. 14) incorpora a cláusula irmã `(iv) has failed reasonably to supervise...`."
+        },
+        {
+          "bloco": 128,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(B) CEASE-AND-DESIST PROCEEDINGS.—` em SEC. 203(i)(1) (pág. 14) incorpora sua cláusula interna `(i) is violating or has violated...`, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 133,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(C) THIRD TIER.—` em SEC. 203(i)(2) (pág. 15) contém cláusulas internas iniciadas por `(i)` e `(ii)`, sem separá-las em blocos próprios."
+        },
+        {
+          "bloco": 138,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(D) whether such person previously has been found...` em SEC. 203(i)(3) (pág. 15) também contém os subparágrafos irmãos `(E) the need to deter...` e `(F) such other matters...`."
+        },
+        {
+          "bloco": 19,
+          "tipo": "corte_indevido",
+          "descricao": "O texto normativo de `(9) ‘‘Exchange’’ means...` (págs. 2–3) incorpora carimbo de atualização, caminho de arquivo, cabeçalho corrente, número de página e identificação de seção no meio da continuação de página."
+        },
+        {
+          "bloco": 29,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de `(H) such other persons...` (págs. 3–4) incorpora nota editorial, datas, carimbo de atualização, marcador `<!-- PÁGINA 4 -->`, caminho de arquivo e cabeçalhos/rodapés correntes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na SEC. 202(a), na pág. 4, inicie blocos próprios em cada parágrafo irmão `(15) ‘‘National securities exchange’’ means...`, `(16) ‘‘Person’’ means...`, `(17) The term ‘‘security’’ means...` e `(18) ‘‘State securities authority’’ means...`, encerrando o bloco de `(14) ‘‘Means or instrumentality of interstate commerce’’` imediatamente antes de `(15)`.\n- Na definição SEC. 202(a)(24) ``Foreign financial regulatory authority'' (págs. 5–6), encerre `(B) other governmental body or foreign equivalent...` imediatamente antes de `(C) membership organization...` e inicie um bloco próprio em `(C)`.\n- Na SEC. 203(i), separe rigorosamente todos os marcadores internos, inclusive quando apareçam na mesma linha: inicie blocos próprios em `(iv) has failed reasonably to supervise...` após `(iii)` de `(1)(A)`; em `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—`, termine o texto introdutório antes de `(i) is violating or has violated...`; em `(2)(C) THIRD TIER.—`, separe `(i)` de `(ii)`; e em `(3) DETERMINATION OF PUBLIC INTEREST.—`, separe `(D)`, `(E) the need to deter...` e `(F) such other matters...`.\n- Na SEC. 203(e)(6), pág. 12, encerre o bloco de `(A) there have been established procedures...` antes de `(B) such person has reasonably discharged...` e inicie bloco próprio em `(B)`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os incorpore ao texto normativo, inclusive quando interromperem definições ou parágrafos que continuam na página seguinte."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 132,
+    "insights_aplicados": "- Na SEC. 202(a), na pág. 4, inicie blocos próprios em cada parágrafo irmão `(15) ‘‘National securities exchange’’ means...`, `(16) ‘‘Person’’ means...`, `(17) The term ‘‘security’’ means...` e `(18) ‘‘State securities authority’’ means...`, encerrando o bloco de `(14) ‘‘Means or instrumentality of interstate commerce’’` imediatamente antes de `(15)`.\n- Na definição SEC. 202(a)(24) ``Foreign financial regulatory authority'' (págs. 5–6), encerre `(B) other governmental body or foreign equivalent...` imediatamente antes de `(C) membership organization...` e inicie um bloco próprio em `(C)`.\n- Na SEC. 203(i), separe rigorosamente todos os marcadores internos, inclusive quando apareçam na mesma linha: inicie blocos próprios em `(iv) has failed reasonably to supervise...` após `(iii)` de `(1)(A)`; em `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—`, termine o texto introdutório antes de `(i) is violating or has violated...`; em `(2)(C) THIRD TIER.—`, separe `(i)` de `(ii)`; e em `(3) DETERMINATION OF PUBLIC INTEREST.—`, separe `(D)`, `(E) the need to deter...` e `(F) such other matters...`.\n- Na SEC. 203(e)(6), pág. 12, encerre o bloco de `(A) there have been established procedures...` antes de `(B) such person has reasonably discharged...` e inicie bloco próprio em `(B)`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os incorpore ao texto normativo, inclusive quando interromperem definições ou parágrafos que continuam na página seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 15,
+          "tipo": "corte_indevido",
+          "descricao": "A definição `(9) ‘‘Exchange’’ means...` incorpora carimbo de atualização, caminho de arquivo, cabeçalho corrente, número de página e o marcador `<!-- PÁGINA 3 -->`, que são ruído de página e não texto normativo."
+        },
+        {
+          "bloco": 35,
+          "tipo": "corte_indevido",
+          "descricao": "O subparágrafo `(B) other governmental body or foreign equivalent...` incorpora carimbo de atualização, data, marcador `<!-- PÁGINA 6 -->`, caminho de arquivo e cabeçalho/rodapé correntes."
+        },
+        {
+          "bloco": 38,
+          "tipo": "englobante",
+          "descricao": "O parágrafo `(26) The term ‘‘separately identifiable department or division’’...` contém no mesmo bloco o início do subparágrafo `(A) that is under the direct supervision...` e seus subparágrafos irmãos, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 74,
+          "tipo": "englobante",
+          "descricao": "O subparágrafo `(B) companies that have submitted...` inclui, no fim do bloco, a cláusula `(i) have received from the Secretary of Agriculture...`, que deve começar um bloco próprio."
+        },
+        {
+          "bloco": 82,
+          "tipo": "corte_indevido",
+          "descricao": "O subparágrafo `(G) whether such investment adviser...` incorpora carimbo de atualização, data, marcador `<!-- PÁGINA 10 -->`, número de página e caminho de arquivo no meio do texto normativo."
+        },
+        {
+          "bloco": 107,
+          "tipo": "corte_indevido",
+          "descricao": "O subparágrafo `(C) aided, abetted, counseled...` incorpora carimbo de atualização, marcador `<!-- PÁGINA 13 -->`, caminho de arquivo e cabeçalho/rodapé correntes."
+        },
+        {
+          "bloco": 108,
+          "tipo": "englobante",
+          "descricao": "O item `(9) is subject to any final order...` contém os subparágrafos `(A)` e `(B) constitutes a final order...` no mesmo bloco; ambos os marcadores de subparágrafo devem abrir unidades próprias."
+        },
+        {
+          "bloco": 111,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da subseção `(h) Any person registered under this section...` incorpora carimbo de atualização, marcador de página, caminho de arquivo e cabeçalho corrente."
+        },
+        {
+          "bloco": 114,
+          "tipo": "englobante",
+          "descricao": "A cláusula `(iii) has willfully made or caused to be made...` termina contendo o início da cláusula irmã `(iv) has failed reasonably to supervise...`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na SEC. 202(a), mantenha blocos próprios para cada parágrafo irmão: na pág. 4, encerre `(14) ‘‘Means or instrumentality of interstate commerce’’...` antes de `(15) ‘‘National securities exchange’’...` e inicie blocos separados em `(15)`, `(16) ‘‘Person’’...`, `(17) The term ‘‘person associated with an investment adviser’’...` e `(18) ‘‘Security’’...`; nas págs. 5–6, encerre `(B) other governmental body or foreign equivalent...` antes de `(C) membership organization...` e inicie um bloco próprio em `(C)`.\n- Na SEC. 202(a)(26), pág. 6, encerre o texto introdutório `(26) The term ‘‘separately identifiable department or division’’ of a bank means a unit—` imediatamente antes de `(A) that is under the direct supervision...` e abra blocos próprios em cada subparágrafo `(A)`, `(B)` e `(C)` dessa definição.\n- Na SEC. 203(b), pág. 9, encerre `(8)(B) companies that have submitted to the Secretary of Agriculture...` imediatamente antes de `(i) have received from the Secretary of Agriculture...`; na SEC. 203(e)(9), pág. 13, separe em blocos próprios os subparágrafos `(A)` e `(B) constitutes a final order...`.\n- Na SEC. 203(e)(6), pág. 12, mantenha `(A) there have been established procedures...` e `(B) such person has reasonably discharged...` em blocos distintos. Na SEC. 203(i), separe rigorosamente todos os marcadores internos: encerre `(iii) has willfully made or caused to be made...` antes de `(iv) has failed reasonably to supervise...`; mantenha o texto introdutório de `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—` separado de `(i)` e `(ii)`; e mantenha separados `(2)(C)(i)` de `(ii)` e os subparágrafos `(3)(D)`, `(E)` e `(F)`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os incorpore ao texto normativo, inclusive quando interromperem uma definição ou parágrafo que continue na página seguinte."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 126,
+    "insights_aplicados": "- Na SEC. 202(a), mantenha blocos próprios para cada parágrafo irmão: na pág. 4, encerre `(14) ‘‘Means or instrumentality of interstate commerce’’...` antes de `(15) ‘‘National securities exchange’’...` e inicie blocos separados em `(15)`, `(16) ‘‘Person’’...`, `(17) The term ‘‘person associated with an investment adviser’’...` e `(18) ‘‘Security’’...`; nas págs. 5–6, encerre `(B) other governmental body or foreign equivalent...` antes de `(C) membership organization...` e inicie um bloco próprio em `(C)`.\n- Na SEC. 202(a)(26), pág. 6, encerre o texto introdutório `(26) The term ‘‘separately identifiable department or division’’ of a bank means a unit—` imediatamente antes de `(A) that is under the direct supervision...` e abra blocos próprios em cada subparágrafo `(A)`, `(B)` e `(C)` dessa definição.\n- Na SEC. 203(b), pág. 9, encerre `(8)(B) companies that have submitted to the Secretary of Agriculture...` imediatamente antes de `(i) have received from the Secretary of Agriculture...`; na SEC. 203(e)(9), pág. 13, separe em blocos próprios os subparágrafos `(A)` e `(B) constitutes a final order...`.\n- Na SEC. 203(e)(6), pág. 12, mantenha `(A) there have been established procedures...` e `(B) such person has reasonably discharged...` em blocos distintos. Na SEC. 203(i), separe rigorosamente todos os marcadores internos: encerre `(iii) has willfully made or caused to be made...` antes de `(iv) has failed reasonably to supervise...`; mantenha o texto introdutório de `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—` separado de `(i)` e `(ii)`; e mantenha separados `(2)(C)(i)` de `(ii)` e os subparágrafos `(3)(D)`, `(E)` e `(F)`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não os incorpore ao texto normativo, inclusive quando interromperem uma definição ou parágrafo que continue na página seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "A SEC. 201 (pág. 1) foi mantida em um único bloco e contém os marcadores de parágrafos irmãos `(1)`, `(2)` e `(3)`, incluindo o trecho final que abre `(3) the foregoing transactions occur...`; cada um deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 7,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco consiste exclusivamente no cabeçalho corrente de página `# **Sec. 202 INVESTMENT ADVISERS ACT OF 1940**`, que é ruído de página e não inicia unidade normativa."
+        },
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de `(9) ‘‘Exchange’’...` incorpora carimbos, caminho de arquivo, numeração e cabeçalhos correntes entre as partes da definição, como `As Amended Through...`, `G:\\COMP\\SEC...` e `**Sec. 202**`."
+        },
+        {
+          "bloco": 18,
+          "tipo": "englobante",
+          "descricao": "O bloco de `(11) ‘‘Investment adviser’’...` (págs. 3–4) alcança toda a definição até o início de `(12)`, embora a definição contenha subparágrafos de nível hierárquico `(A)` a `(F)`, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 18,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco incorpora ruído de página no meio da definição, incluindo data, carimbo de atualização, `<!-- PÁGINA 4 -->`, caminho de arquivo e cabeçalho corrente."
+        },
+        {
+          "bloco": 50,
+          "tipo": "lacuna",
+          "descricao": "A unidade `(30)(D)` termina em `(i) holds itself out generally to the public...; nor`, mas o bloco seguinte inicia uma nova unidade `(29)<sup>3</sup> The terms ‘‘commodity pool’’...`; falta o conteúdo que completa o conectivo `nor`, incluindo a continuação esperada de `(D)(ii)`."
+        },
+        {
+          "bloco": 75,
+          "tipo": "lacuna",
+          "descricao": "O subparágrafo `(8)(A) rural business investment companies (as defined in section 384A of the Conso` termina no meio da expressão, e o bloco seguinte já abre o irmão `(B) companies that have submitted...`; falta a continuação textual da definição de `(A)`."
+        },
+        {
+          "bloco": 104,
+          "tipo": "lacuna",
+          "descricao": "Em SEC. 203(e)(9), após `(A) bars such person...; or`, o bloco seguinte já inicia a subseção `(f)`. O conectivo `or` evidencia a ausência do subparágrafo irmão `(B)` que deveria completar `(e)(9)."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na SEC. 201 (pág. 1), mantenha o texto introdutório da seção antes de `(1)` no bloco da seção e inicie blocos próprios em cada parágrafo irmão `(1)`, `(2)` e `(3) the foregoing transactions occur...`.\n- Na SEC. 202(a)(11) (págs. 3–4), encerre o texto introdutório de `(11) ‘‘Investment adviser’’ means...` antes de `(A)` e inicie blocos próprios em cada subparágrafo `(A)` a `(F)` da definição, sem englobá-los no bloco de `(11)`.\n- Na SEC. 202(a), mantenha blocos próprios para os parágrafos `(14)`, `(15)`, `(16)`, `(17)` e `(18)` (pág. 4); mantenha separado `(24)(C) membership organization...` do bloco de `(24)(B)` (págs. 5–6); e, em `(26) ... separately identifiable department or division`, encerre o texto introdutório antes de `(A)` e abra blocos próprios em `(A)` e `(B)` (pág. 6).\n- Na SEC. 203, mantenha `(8)(B) companies that have submitted...` separado de `(8)(B)(i)` (pág. 9); mantenha `(e)(6)(A)` e `(e)(6)(B)` em blocos distintos (pág. 12); e, em `(i)`, separe `(1)(A)(iii)` de `(iv)`, o texto introdutório de `(1)(B) CEASE-AND-DESIST PROCEEDINGS.—` de seus itens `(i)` e `(ii)`, e `(2)(C)(i)` de `(ii)`.\n- Ignore integralmente cabeçalhos e rodapés correntes, carimbos de atualização, datas, notas editoriais, números de página, caminhos de arquivo e marcadores `<!-- PÁGINA N -->`; não crie blocos para esse material nem o incorpore a unidades normativas que continuem em outra página."
+    },
+    "arquivo_blocos": "resultados/amostra-sec-rules-2/sec-rules_v2_ciclo10.json"
+  }
+]
