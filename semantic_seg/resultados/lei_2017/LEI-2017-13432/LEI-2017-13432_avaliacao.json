@@ -1,0 +1,88 @@
+{
+  "prefixo": "resultados/lei_2017/LEI-2017-13432/LEI-2017-13432",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/LEI-2017-13432.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 41,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 41,
+      "fronteiras_gabarito": 49,
+      "acertos": 41,
+      "precisao": 1.0,
+      "revocacao": 0.8367346938775511,
+      "f1": 0.9111111111111111,
+      "fins": {
+        "previstos": 41,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 41,
+        "precisao": 1.0,
+        "revocacao": 0.8367346938775511,
+        "f1": 0.9111111111111111
+      },
+      "blocos_exatos": {
+        "acertos": 38,
+        "precisao": 0.926829268292683,
+        "revocacao": 0.7755102040816326,
+        "f1": 0.8444444444444446
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 2,
+      "blocos": 42,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 42,
+      "fronteiras_gabarito": 49,
+      "acertos": 42,
+      "precisao": 1.0,
+      "revocacao": 0.8571428571428571,
+      "f1": 0.923076923076923,
+      "fins": {
+        "previstos": 42,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 42,
+        "precisao": 1.0,
+        "revocacao": 0.8571428571428571,
+        "f1": 0.923076923076923
+      },
+      "blocos_exatos": {
+        "acertos": 40,
+        "precisao": 0.9523809523809523,
+        "revocacao": 0.8163265306122449,
+        "f1": 0.8791208791208791
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 3,
+      "blocos": 48,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 48,
+      "fronteiras_gabarito": 49,
+      "acertos": 48,
+      "precisao": 1.0,
+      "revocacao": 0.9795918367346939,
+      "f1": 0.9896907216494846,
+      "fins": {
+        "previstos": 48,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 48,
+        "precisao": 1.0,
+        "revocacao": 0.9795918367346939,
+        "f1": 0.9896907216494846
+      },
+      "blocos_exatos": {
+        "acertos": 47,
+        "precisao": 0.9791666666666666,
+        "revocacao": 0.9591836734693877,
+        "f1": 0.9690721649484536
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

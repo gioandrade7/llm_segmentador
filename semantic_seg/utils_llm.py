@@ -296,7 +296,9 @@ def processar_documento_completo(
     pos_atual     = 0       # ponteiro de char no texto_completo
     idx_pag_atual = 0       # índice 0-based da página atual (página = idx + 1)
     iteracao      = 0
-    MAX_ITER      = total_paginas * 15  # teto de segurança anti-loop infinito
+    # Teto de segurança anti-loop infinito. Depende também do tamanho do texto:
+    # um documento de página única (lei em RTF) teria no máximo 15 blocos.
+    MAX_ITER      = max(total_paginas * 15, len_texto // 20)
 
     SEP = "═" * 62
     print(f"\n{SEP}")

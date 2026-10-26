@@ -1,0 +1,3 @@
+{
+  "hierarquia": "Lei — identificada por número e data (ex.: \"LEI Nº 13.431, DE 4 DE ABRIL DE 2017\")\nTítulo — algarismo romano e epígrafe (ex.: \"TÍTULO IV — DA INTEGRAÇÃO DAS POLÍTICAS DE ATENDIMENTO\")\nCapítulo — algarismo romano e epígrafe; ocorre dentro de título, mas artigos também podem ocorrer diretamente sob o título (ex.: \"CAPÍTULO I — DISPOSIÇÕES GERAIS\")\nArtigo — numeração arábica com \"Art.\" e ordinal/cardinal (ex.: \"Art. 14.\")\nParágrafo — \"Parágrafo único.\" ou símbolo \"§\" com numeração; ocorre sob artigo\nInciso — algarismo romano seguido de hífen; ocorre sob artigo, parágrafo ou texto normativo citado\nAlínea — letra minúscula seguida de \")\"; ocorre sob inciso"
+}

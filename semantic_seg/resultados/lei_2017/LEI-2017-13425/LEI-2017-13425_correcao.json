@@ -1,0 +1,96 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - a capacidade e a estrutura física do local\" reúne também os incisos irmãos \"II - o tipo de atividade desenvolvida...\" e \"III - os riscos à incolumidade física das pessoas\", embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 34,
+          "tipo": "granularidade",
+          "descricao": "Os incisos do § 4º do Art. 4º foram agrupados em um único bloco, diferentemente dos incisos dos demais artigos, que foram segmentados individualmente."
+        },
+        {
+          "bloco": 29,
+          "tipo": "sequencia",
+          "descricao": "Após \"IV - (VETADO); e\" do Art. 4º, o texto salta diretamente para \"§ 1º\". O próprio § 1º seguinte remete ao \"inciso V do caput deste artigo\", evidenciando que o inciso V foi omitido da segmentação."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13425/LEI-2017-13425_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 45,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" inclui o marcador e o texto de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º, termine o bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" imediatamente antes de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\" (pág. 1) e inicie um bloco próprio no Parágrafo único.\n- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13425/LEI-2017-13425_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "- No Art. 7º, termine o bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" imediatamente antes de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\" (pág. 1) e inicie um bloco próprio no Parágrafo único.\n- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 56,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Parágrafo único. Sem prejuízo de exigências complementares...\" (Art. 11, pág. 1) engloba os incisos \"I - o alvará de funcionamento ou ato administrativo equivalente;\" e \"II - a capacidade máxima de pessoas.\", que são unidades próprias."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º, termine o bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" imediatamente antes de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\" (pág. 1) e inicie um bloco próprio no Parágrafo único.\n- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso.\n- No Parágrafo único do Art. 11, iniciado por \"Parágrafo único. Sem prejuízo de exigências complementares...\" (pág. 1), termine o bloco antes de \"I - o alvará de funcionamento ou ato administrativo equivalente;\" e inicie blocos próprios nos incisos I e \"II - a capacidade máxima de pessoas.\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13425/LEI-2017-13425_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- No Art. 7º, termine o bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" imediatamente antes de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\" (pág. 1) e inicie um bloco próprio no Parágrafo único.\n- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso.\n- No Parágrafo único do Art. 11, iniciado por \"Parágrafo único. Sem prejuízo de exigências complementares...\" (pág. 1), termine o bloco antes de \"I - o alvará de funcionamento ou ato administrativo equivalente;\" e inicie blocos próprios nos incisos I e \"II - a capacidade máxima de pessoas.\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 43,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" contém também o marcador e o texto de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal...\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º, termine o bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" imediatamente antes de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\" (pág. 1) e inicie um bloco próprio no Parágrafo único.\n- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso.\n- No Parágrafo único do Art. 11, iniciado por \"Parágrafo único. Sem prejuízo de exigências complementares...\" (pág. 1), termine o bloco antes de \"I - o alvará de funcionamento ou ato administrativo equivalente;\" e inicie blocos próprios nos incisos I e \"II - a capacidade máxima de pessoas.\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13425/LEI-2017-13425_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 77,
+    "insights_aplicados": "- No Art. 7º, termine o bloco iniciado por \"Art. 7º As diretrizes estabelecidas por esta Lei...\" imediatamente antes de \"Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar...\" (pág. 1) e inicie um bloco próprio no Parágrafo único.\n- No § 4º do Art. 4º, iniciado por \"Além do disposto neste artigo, cabe ao poder público municipal...\", termine o bloco do inciso I após \"a capacidade e a estrutura física do local;\" (pág. 1) e inicie blocos próprios em \"II - o tipo de atividade desenvolvida no local e em sua vizinhança;\" e em \"III - os riscos à incolumidade física das pessoas.\".\n- No Art. 4º, após \"IV - (VETADO); e\" (pág. 1), não avance diretamente para \"§ 1º\": localize e segmente o inciso \"V -\" do caput, pois os parágrafos seguintes referem-se expressamente ao laudo desse inciso.\n- No Parágrafo único do Art. 11, iniciado por \"Parágrafo único. Sem prejuízo de exigências complementares...\" (pág. 1), termine o bloco antes de \"I - o alvará de funcionamento ou ato administrativo equivalente;\" e inicie blocos próprios nos incisos I e \"II - a capacidade máxima de pessoas.\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13425/LEI-2017-13425_ciclo5.json"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 26,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - aceitar contrato de quem já tenha detetive particular constituído, salvo:\" contém as alíneas subordinadas \"a) com autorização prévia...\" e \"b) na hipótese de dissídio...\", que são marcadores de alínea e devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - recusar serviço que considere imoral, discriminatório ou ilícito;\" contém os incisos irmãos subsequentes, incluindo \"III - renunciar ao serviço contratado...\" e \"IV - compensar o montante dos honorários...\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 40,
+          "tipo": "granularidade",
+          "descricao": "No Art. 12, o inciso I foi segmentado separadamente, mas os incisos II e seguintes foram agrupados no mesmo bloco, ao contrário da segmentação individual dos incisos dos Arts. 8º, 9º, 10 e 11."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 10, inicie um bloco próprio para a alínea \"a) com autorização prévia daquele com o qual irá colaborar ou a quem substituirá;\" (pág. 1), imediatamente após o inciso \"II - aceitar contrato de quem já tenha detetive particular constituído, salvo:\", e outro para a alínea \"b) na hipótese de dissídio entre o contratante e o profissional precedente...\" (pág. 1).\n- No Art. 12, termine o bloco do inciso \"II - recusar serviço que considere imoral, discriminatório ou ilícito;\" (pág. 1) antes de \"III - renunciar ao serviço contratado...\" e inicie um bloco para cada inciso subsequente, inclusive \"III - renunciar...\", \"IV - compensar o montante...\" e os demais marcadores romanos do artigo (pág. 1)."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "- No Art. 10, inicie um bloco próprio para a alínea \"a) com autorização prévia daquele com o qual irá colaborar ou a quem substituirá;\" (pág. 1), imediatamente após o inciso \"II - aceitar contrato de quem já tenha detetive particular constituído, salvo:\", e outro para a alínea \"b) na hipótese de dissídio entre o contratante e o profissional precedente...\" (pág. 1).\n- No Art. 12, termine o bloco do inciso \"II - recusar serviço que considere imoral, discriminatório ou ilícito;\" (pág. 1) antes de \"III - renunciar ao serviço contratado...\" e inicie um bloco para cada inciso subsequente, inclusive \"III - renunciar...\", \"IV - compensar o montante...\" e os demais marcadores romanos do artigo (pág. 1).",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 12,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 8º O contrato de prestação de serviços do detetive particular conterá:\" contém os incisos I, II, III, IV, V e VI, embora cada inciso romano deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 12,
+          "tipo": "granularidade",
+          "descricao": "Os incisos do Art. 8º foram agrupados no bloco do artigo, enquanto os incisos dos Arts. 9º, 10, 11 e 12 foram segmentados individualmente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 8º, pág. 1, termine o bloco do artigo imediatamente antes de \"I - qualificação completa das partes contratantes;\" e inicie um bloco próprio para cada inciso romano I, II, III, IV, V e VI desse artigo.\n- No Art. 10, pág. 1, inicie um bloco próprio para a alínea \"a) com autorização prévia daquele com o qual irá colaborar ou a quem substituirá;\", imediatamente após o inciso \"II - aceitar contrato de quem já tenha detetive particular constituído, salvo:\", e outro para a alínea \"b) na hipótese de dissídio entre o contratante e o profissional precedente ou de omissão deste que possa causar dano ao contratante;\".\n- No Art. 12, pág. 1, termine o bloco do inciso \"II - recusar serviço que considere imoral, discriminatório ou ilícito;\" antes de \"III - renunciar ao serviço contratado...\" e inicie um bloco próprio para cada inciso subsequente, inclusive III, IV, V, VI e VII."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- No Art. 8º, pág. 1, termine o bloco do artigo imediatamente antes de \"I - qualificação completa das partes contratantes;\" e inicie um bloco próprio para cada inciso romano I, II, III, IV, V e VI desse artigo.\n- No Art. 10, pág. 1, inicie um bloco próprio para a alínea \"a) com autorização prévia daquele com o qual irá colaborar ou a quem substituirá;\", imediatamente após o inciso \"II - aceitar contrato de quem já tenha detetive particular constituído, salvo:\", e outro para a alínea \"b) na hipótese de dissídio entre o contratante e o profissional precedente ou de omissão deste que possa causar dano ao contratante;\".\n- No Art. 12, pág. 1, termine o bloco do inciso \"II - recusar serviço que considere imoral, discriminatório ou ilícito;\" antes de \"III - renunciar ao serviço contratado...\" e inicie um bloco próprio para cada inciso subsequente, inclusive III, IV, V, VI e VII.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo3.json"
+  }
+]

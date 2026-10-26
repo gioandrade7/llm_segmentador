@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 8,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 6,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por \"I - o atraso acumulado de 15%\" também contém o inciso irmão \"II - outras hipóteses de descumprimento de cláusula contratual\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 6,
+          "tipo": "granularidade",
+          "descricao": "os incisos I e II do § 1º do Art. 2º foram agrupados, embora os demais marcadores hierárquicos do documento tenham sido segmentados em blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"I - o atraso acumulado de 15% (quinze por cento)\" imediatamente antes de \"II - outras hipóteses de descumprimento de cláusula contratual\" e inicie um bloco próprio para o inciso II."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13416/LEI-2017-13416_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 9,
+    "insights_aplicados": "- Na pág. 1, termine o bloco do inciso \"I - o atraso acumulado de 15% (quinze por cento)\" imediatamente antes de \"II - outras hipóteses de descumprimento de cláusula contratual\" e inicie um bloco próprio para o inciso II.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13416/LEI-2017-13416_ciclo2.json"
+  }
+]

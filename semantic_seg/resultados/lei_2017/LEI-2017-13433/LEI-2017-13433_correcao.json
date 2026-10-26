@@ -1,0 +1,14 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 4,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13433/LEI-2017-13433_ciclo1.json"
+  }
+]

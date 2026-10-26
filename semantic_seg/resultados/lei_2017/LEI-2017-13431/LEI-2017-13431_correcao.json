@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 115,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 10,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - violência psicológica:\" também contém a alínea \"a) qualquer conduta de discriminação...\", que é marcador de alínea e deveria iniciar bloco próprio, como ocorre com as alíneas seguintes."
+        },
+        {
+          "bloco": 103,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - solicitar o afastamento cautelar do investigado...\" contém também os incisos III, IV, V e VI do art. 21, embora cada inciso deva iniciar bloco próprio; o trecho exibido mostra o início do inciso III e o fim no inciso VI."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 4º (pág. 1), termine o bloco do inciso \"II - violência psicológica:\" imediatamente antes de \"a) qualquer conduta de discriminação...\" e inicie um bloco próprio para essa alínea.\n- No art. 21 (pág. 1), termine o bloco do inciso \"II - solicitar o afastamento cautelar do investigado...\" antes de \"III - requerer a prisão preventiva do investigado...\"; inicie blocos próprios também em cada marcador subsequente \"IV -\", \"V -\" e \"VI - representar ao Ministério Público...\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13431/LEI-2017-13431_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 120,
+    "insights_aplicados": "- No art. 4º (pág. 1), termine o bloco do inciso \"II - violência psicológica:\" imediatamente antes de \"a) qualquer conduta de discriminação...\" e inicie um bloco próprio para essa alínea.\n- No art. 21 (pág. 1), termine o bloco do inciso \"II - solicitar o afastamento cautelar do investigado...\" antes de \"III - requerer a prisão preventiva do investigado...\"; inicie blocos próprios também em cada marcador subsequente \"IV -\", \"V -\" e \"VI - representar ao Ministério Público...\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13431/LEI-2017-13431_ciclo2.json"
+  }
+]

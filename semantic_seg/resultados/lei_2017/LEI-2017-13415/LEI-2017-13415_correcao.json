@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 36,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 18,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por \"III - cronograma de execução físico-financeira\" também contém o inciso irmão \"IV - previsão de início e fim de execução das ações\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 18,
+          "tipo": "granularidade",
+          "descricao": "os incisos I e II do parágrafo único do art. 13 foram segmentados individualmente, mas os incisos III e IV foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso \"III - cronograma de execução físico-financeira\" imediatamente antes de \"IV - previsão de início e fim de execução das ações\" (pág. 1) e inicie um bloco próprio para o inciso IV."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13415/LEI-2017-13415_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 37,
+    "insights_aplicados": "- Termine o bloco do inciso \"III - cronograma de execução físico-financeira\" imediatamente antes de \"IV - previsão de início e fim de execução das ações\" (pág. 1) e inicie um bloco próprio para o inciso IV.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Termine o bloco do inciso \"III - cronograma de execução físico-financeira\" imediatamente antes de \"IV - previsão de início e fim de execução das ações\" (pág. 1) e inicie um bloco próprio para o inciso IV."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13415/LEI-2017-13415_ciclo2.json"
+  }
+]

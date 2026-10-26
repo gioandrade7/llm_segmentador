@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 1,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 1,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado pela epígrafe «LEI Nº 13.429, DE 31 DE MARÇO DE 2017» engloba o marcador autônomo «Art. 3º Esta Lei entra em vigor na data de sua publicação.», que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Encerre o bloco anterior imediatamente antes de «Art. 3º Esta Lei entra em vigor na data de sua publicação.» (pág. 1) e inicie ali um bloco próprio para o Art. 3º, incluindo o fecho da lei que o sucede."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13429/LEI-2017-13429_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 4,
+    "insights_aplicados": "- Encerre o bloco anterior imediatamente antes de «Art. 3º Esta Lei entra em vigor na data de sua publicação.» (pág. 1) e inicie ali um bloco próprio para o Art. 3º, incluindo o fecho da lei que o sucede.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13429/LEI-2017-13429_ciclo2.json"
+  }
+]

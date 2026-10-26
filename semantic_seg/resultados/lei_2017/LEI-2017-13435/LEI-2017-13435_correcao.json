@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 5,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 4,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por \"I - realização de palestras e eventos\" (pág. 1) também contém os marcadores irmãos \"II - divulgação nas diversas mídias\", \"III - reuniões com a comunidade\", \"IV - ações de divulgação em espaços públicos\" e \"V - iluminação ou decoração de espaços com a cor dourada\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de \"I - realização de palestras e eventos\" imediatamente antes de \"II - divulgação nas diversas mídias\" e inicie um bloco para cada inciso seguinte: \"II -\", \"III -\", \"IV -\" e \"V - iluminação ou decoração de espaços com a cor dourada\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13435/LEI-2017-13435_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 9,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de \"I - realização de palestras e eventos\" imediatamente antes de \"II - divulgação nas diversas mídias\" e inicie um bloco para cada inciso seguinte: \"II -\", \"III -\", \"IV -\" e \"V - iluminação ou decoração de espaços com a cor dourada\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13435/LEI-2017-13435_ciclo2.json"
+  }
+]

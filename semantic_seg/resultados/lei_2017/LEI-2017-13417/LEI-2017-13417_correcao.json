@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 1,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 1,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"LEI Nº 13.417, DE 1º DE MARÇO DE 2017\" contém, em seu final na pág. 1, os marcadores de unidades autônomas \"Art. 2º Esta Lei entra em vigor na data de sua publicação.\" e \"Art. 3º Fica revogado o inciso VIII...\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, encerre o bloco da unidade anterior imediatamente antes de \"Art. 2º Esta Lei entra em vigor na data de sua publicação.\" e inicie um bloco próprio nesse artigo.\n- Na pág. 1, encerre o bloco de \"Art. 2º Esta Lei entra em vigor na data de sua publicação.\" imediatamente antes de \"Art. 3º Fica revogado o inciso VIII do caput do art. 8º...\" e inicie um bloco próprio nesse artigo."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13417/LEI-2017-13417_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 4,
+    "insights_aplicados": "- Na pág. 1, encerre o bloco da unidade anterior imediatamente antes de \"Art. 2º Esta Lei entra em vigor na data de sua publicação.\" e inicie um bloco próprio nesse artigo.\n- Na pág. 1, encerre o bloco de \"Art. 2º Esta Lei entra em vigor na data de sua publicação.\" imediatamente antes de \"Art. 3º Fica revogado o inciso VIII do caput do art. 8º...\" e inicie um bloco próprio nesse artigo.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13417/LEI-2017-13417_ciclo2.json"
+  }
+]
