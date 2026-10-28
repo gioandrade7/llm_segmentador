@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 23,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por \"VII - Ministério do Meio Ambiente...\" também contém os marcadores e textos completos dos incisos \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" e \"IX - Ministério das Relações Exteriores - MRE.\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 21,
+          "tipo": "granularidade",
+          "descricao": "os incisos VII, VIII e IX do Art. 9º estão agrupados no mesmo bloco, enquanto os incisos I a VI do mesmo artigo foram segmentados individualmente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco do inciso \"VII - Ministério do Meio Ambiente, dos Recursos Hídricos e da Amazônia Legal - MMA;\" antes de \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" e inicie um bloco próprio para o inciso VIII.\n- Na pág. 2, termine o bloco do inciso \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" antes de \"IX - Ministério das Relações Exteriores - MRE.\" e inicie um bloco próprio para o inciso IX."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20542/NORMA-20542_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 25,
+    "insights_aplicados": "- Na pág. 2, termine o bloco do inciso \"VII - Ministério do Meio Ambiente, dos Recursos Hídricos e da Amazônia Legal - MMA;\" antes de \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" e inicie um bloco próprio para o inciso VIII.\n- Na pág. 2, termine o bloco do inciso \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" antes de \"IX - Ministério das Relações Exteriores - MRE.\" e inicie um bloco próprio para o inciso IX.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Na pág. 2, termine o bloco do inciso \"VII - Ministério do Meio Ambiente, dos Recursos Hídricos e da Amazônia Legal - MMA;\" antes de \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" e inicie um bloco próprio para o inciso VIII.\n- Na pág. 2, termine o bloco do inciso \"VIII - Ministério da Previdência e Assistência Social - MPAS;\" antes de \"IX - Ministério das Relações Exteriores - MRE.\" e inicie um bloco próprio para o inciso IX."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20542/NORMA-20542_ciclo2.json"
+  }
+]

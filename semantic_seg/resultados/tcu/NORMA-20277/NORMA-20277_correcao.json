@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 20,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 7,
+          "tipo": "englobante",
+          "descricao": "A unidade \"VI - os serviços sociais autônomos;\" (pág. 1) engloba os marcadores e textos das unidades irmãs \"VII - os conselhos de fiscalização das profissões liberais;\" até \"XVI - a aplicação de subvenções, auxílios e contribuições.\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 7,
+          "tipo": "granularidade",
+          "descricao": "Na enumeração do Art. 1º (pág. 1), os incisos I a V foram segmentados individualmente, mas os incisos VI a XVI foram agrupados em uma única unidade, embora todos sejam marcadores do mesmo nível."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 1º (pág. 1), termine o bloco do inciso \"VI - os serviços sociais autônomos;\" imediatamente antes de \"VII - os conselhos de fiscalização das profissões liberais;\" e inicie um bloco novo em cada inciso sucessivo, de VII até \"XVI - a aplicação de subvenções, auxílios e contribuições.\""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20277/NORMA-20277_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 30,
+    "insights_aplicados": "- No Art. 1º (pág. 1), termine o bloco do inciso \"VI - os serviços sociais autônomos;\" imediatamente antes de \"VII - os conselhos de fiscalização das profissões liberais;\" e inicie um bloco novo em cada inciso sucessivo, de VII até \"XVI - a aplicação de subvenções, auxílios e contribuições.\"",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20277/NORMA-20277_ciclo2.json"
+  }
+]

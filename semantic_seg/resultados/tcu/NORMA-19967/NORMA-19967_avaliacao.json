@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/tcu/NORMA-19967/NORMA-19967",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/NORMA-19967.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 4,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 4,
+      "fronteiras_gabarito": 29,
+      "acertos": 4,
+      "precisao": 1.0,
+      "revocacao": 0.13793103448275862,
+      "f1": 0.2424242424242424,
+      "fins": {
+        "previstos": 4,
+        "gabarito": 29,
+        "fins_nao_localizados": 0,
+        "acertos": 4,
+        "precisao": 1.0,
+        "revocacao": 0.13793103448275862,
+        "f1": 0.2424242424242424
+      },
+      "blocos_exatos": {
+        "acertos": 2,
+        "precisao": 0.5,
+        "revocacao": 0.06896551724137931,
+        "f1": 0.1212121212121212
+      },
+      "cobertura": 0.9753863766456783
+    }
+  ]
+}

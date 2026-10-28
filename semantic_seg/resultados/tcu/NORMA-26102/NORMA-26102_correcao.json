@@ -1,0 +1,14 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 111,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-26102/NORMA-26102_ciclo1.json"
+  }
+]

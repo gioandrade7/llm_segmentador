@@ -1,0 +1,130 @@
+%%
+Gabarito de segmentação — NORMA-1516 (Portaria SEMEC n° 2/2019)
+Texto-fonte: text_extraction/out/tcu/NORMA-1516
+Status: gerado por semantic_seg/dataset_tcu.py a partir do HTML de docs.csv (um <p> por linha); não conferido à mão.
+Estrato: profunda × média (14518 chars) · partição: teste
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`; indentação de 2 espaços por nível
+- Tipos: epígrafe (do início até o primeiro dispositivo: título, ementa, preâmbulo e considerandos), título,
+  capítulo e seção (com a rubrica), artigo, parágrafo (§ N / Parágrafo único), inciso (I -), alínea (a)),
+  item (1.), fecho (local/data e assinaturas)
+- Cada <p> que abre com marcador é nó; um <p> sem marcador pertence ao nó anterior
+- Texto citado de outra norma (do <p> que abre aspas ao que as fecha, ou "(NR)") pertence à unidade que o
+  cita: seus Art./§/incisos não são nós
+%%
+
+- Documento
+  - [epígrafe] PORTARIA-SEMEC Nº 2, DE 31 de março de 2019 Dispõe
+  - [artigo] Art. 1º A estrutura e as competências da
+  - [capítulo] CAPÍTULO I DAS COMPETÊNCIAS DA SEMEC
+    - [artigo] Art. 2º À Semec, unidade subordinada à
+      - [inciso] I - desenvolver, propor, sistematizar, e
+      - [inciso] II - apoiar as unidades técnicas subordinadas à
+      - [inciso] III - adotar, em conjunto com a Secretaria de
+      - [inciso] IV - propor e realizar fiscalizações e demais
+      - [inciso] V - apoiar a supervisão de trabalhos de
+      - [inciso] VI - propor padrões de qualidade e avaliar os
+      - [inciso] VII - realizar intercâmbio com instituições e com
+      - [inciso] VIII - disseminar boas práticas de controle
+      - [inciso] IX - contribuir para a definição de competências
+      - [inciso] X - elaborar conteúdos e promover, em parceria com
+      - [inciso] XI - manifestar-se sobre normas, métodos e
+  - [capítulo] CAPÍTULO II DA ESTRUTURA DA SECRETARIA
+    - [artigo] Art. 3º A Semec tem a seguinte estrutura:
+      - [inciso] I - Diretoria de Auditoria e Contas Anuais
+      - [inciso] II - Diretoria de Normas Processuais e Avaliação
+        - [alínea] a) Serviço de Avaliação da Qualidade (Serav).
+      - [inciso] III - Diretoria de Gestão de Soluções de TI para o
+        - [alínea] a) Serviço de Produção de Sistemas Departamentais
+      - [inciso] IV - Assessoria.
+      - [parágrafo] Parágrafo único. A Secretaria conta, ainda, com as
+  - [capítulo] CAPÍTULO III DAS COMPETÊNCIAS COMUNS DAS
+    - [artigo] Art. 4º Compete às subunidades da Semec:
+      - [inciso] I - responder consultas formuladas pelas unidades
+      - [inciso] II - exercer as atividades de supervisão sob sua
+      - [inciso] III - manter atualizados documentos e normativos
+      - [inciso] IV - manter atualizadas as informações sob sua
+      - [inciso] V - instruir os processos sob sua
+      - [inciso] VI - participar de comitês, grupos de trabalho e
+      - [inciso] VII - propor, executar, acompanhar e controlar os
+      - [inciso] VIII - manter registro sobre a pactuação de metas
+      - [inciso] IX - disseminar métodos, técnicas e normas
+      - [inciso] X - articular com o Instituto Serzedello Corrêa
+      - [inciso] XI - realizar intercâmbio com especialistas e
+      - [inciso] XII - contribuir para a definição de competências
+      - [inciso] XIII - desenvolver atividades necessárias à gestão
+      - [inciso] XIV - guardar, controlar, zelar pela integridade e
+      - [inciso] XV - desempenhar outras atividades que lhes forem
+  - [capítulo] CAPÍTULO IV DAS COMPETÊNCIAS DA DIRAUD
+    - [artigo] Art. 5º Compete à Diraud:
+      - [inciso] I - desenvolver, aperfeiçoar, propor, manter
+      - [inciso] II - desenvolver, aperfeiçoar, propor, manter
+      - [inciso] III - desenvolver, aperfeiçoar, propor, manter
+      - [inciso] IV - prestar suporte técnico referente à aplicação
+      - [inciso] V - propor e realizar fiscalizações de iniciativa
+      - [inciso] VI - contribuir para que as auditorias sejam
+      - [inciso] VII - coordenar o Núcleo de Supervisão de
+      - [inciso] VIII - a partir de cooperação com o Serav, atuar
+      - [inciso] IX - atuar, em articulação com a Diac, com vistas
+      - [inciso] X - participar da elaboração de normas
+      - [inciso] XI - trabalhar, em colaboração com o Serav, para
+      - [inciso] XII - participar da elaboração das normas
+      - [inciso] XIII - promover a integração entre os atores
+      - [inciso] XIV - promover a integração do processo de
+      - [inciso] XV - acompanhar o processo de entrega, instrução e
+  - [capítulo] CAPÍTULO V DAS COMPETÊNCIAS DA DIPRON
+    - [artigo] Art. 6º Compete à Dipron:
+      - [inciso] I - propor, aperfeiçoar, atualizar e disseminar
+      - [inciso] II - disseminar orientação sobre a classificação
+      - [inciso] IV - participar do levantamento de requisitos e do
+      - [inciso] V - obter, sistematizar e gerir informações
+      - [inciso] VI - contribuir para a melhoria da qualidade das
+      - [inciso] VII - promover a integração das denúncias e
+      - [inciso] VIII - acompanhar, propor normas, disseminar
+      - [inciso] IX - atuar, em articulação com a Diac e com o
+      - [inciso] XI – articular com a Secretaria de Gestão de
+      - [inciso] XII - acompanhar a aderência do e-TCU às normas
+      - [inciso] XIII – supervisionar o planejamento de ações de
+      - [inciso] XV - orientar e prestar suporte técnico às
+  - [capítulo] CAPÍTULO VI DAS COMPETÊNCIAS DO SERAV
+    - [artigo] Art. 7º Compete ao Serav:
+      - [inciso] I - propor, aperfeiçoar, manter atualizados e
+      - [inciso] II - avaliar a qualidade de relatórios de
+      - [inciso] III - participar do levantamento de requisitos e
+  - [capítulo] CAPÍTULO VII DAS COMPETÊNCIAS DA DIAC
+    - [artigo] Art. 8º Compete à Diac:
+      - [inciso] I - realizar a gestão integrada das soluções de
+      - [inciso] II - construir, em parceria com as unidades de
+      - [inciso] III - definir, em conjunto com as unidades de
+      - [inciso] IV - gerir mudanças, evoluções e correções nas
+      - [inciso] V - conceber novas soluções de TI para apoio ao
+      - [inciso] VI - manifestar-se previamente sobre as demandas
+      - [inciso] VII - atuar em articulação com demais unidades
+      - [inciso] VIII - coordenar os trabalhos de desenvolvimento e
+      - [inciso] IX - manifestar-se sobre a colocação em ambiente
+  - [capítulo] CAPÍTULO VIII DAS COMPETÊNCIAS DO SEPROD
+    - [artigo] Art. 9º Compete ao Seprod:
+      - [inciso] I - identificar oportunidades de aprimoramento do
+      - [inciso] II - desenvolver, dentro dos padrões estabelecidos
+      - [inciso] III - apoiar o desenvolvimento de soluções de
+      - [inciso] IV - manifestar-se, ouvida a unidade
+  - [capítulo] CAPÍTULO IX DAS COMPETÊNCIAS DA ASSESSORIA
+    - [artigo] Art. 10. Compete à Assessoria:
+      - [inciso] I - preparar pareceres, pronunciamentos,
+      - [inciso] II - instruir processos de solicitação e outros
+      - [inciso] III - responder a demandas da ouvidoria;
+      - [inciso] IV - atuar na gestão do conhecimento em controle
+      - [inciso] V - acompanhar o planejamento e o alcance das
+      - [inciso] VI - gerenciar a caixa postal eletrônica da Semec;
+      - [inciso] VII - gerenciar processos e documentos
+      - [inciso] VIII - supervisionar a elaboração de produtos de
+      - [inciso] IX - comunicar à Secretaria de Comunicação (Secom)
+      - [inciso] X - apoiar a realização de eventos de disseminação
+      - [inciso] XI - manter arquivo sistemático e atualizado de
+      - [inciso] XII - manter atualizadas as informações de
+      - [inciso] XIII - desempenhar outras atividades que lhe forem
+  - [capítulo] CAPÍTULO X DAS DISPOSIÇÕES FINAIS
+    - [artigo] Art. 11. Revoga-se a Portaria-Semec nº 1, de 22 de
+    - [artigo] Art. 12. Esta Portaria entra em vigor na data de
+  - [fecho] CARLOS ROBERTO CAIXETA

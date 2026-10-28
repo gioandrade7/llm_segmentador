@@ -1,0 +1,172 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 127,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 27,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” contém também o marcador e o texto do inciso “I - documentos não classificados pela origem...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 28,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 6º Cabe aos servidores do TCU...” contém também o marcador “Parágrafo único. Quando o documento recebido...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 3, termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” imediatamente antes de “I - documentos não classificados pela origem...” e inicie um bloco próprio para esse inciso.\n- Na pág. 3, termine o bloco de “Art. 6º Cabe aos servidores do TCU...” imediatamente antes de “Parágrafo único. Quando o documento recebido de pessoa física ou jurídica externa ao Tribunal...” e inicie um bloco próprio para o parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "- Na pág. 3, termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” imediatamente antes de “I - documentos não classificados pela origem...” e inicie um bloco próprio para esse inciso.\n- Na pág. 3, termine o bloco de “Art. 6º Cabe aos servidores do TCU...” imediatamente antes de “Parágrafo único. Quando o documento recebido de pessoa física ou jurídica externa ao Tribunal...” e inicie um bloco próprio para o parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 111,
+          "tipo": "englobante",
+          "descricao": "o bloco inicia com “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” e contém também o marcador e o texto de “Art. 19. Em caso de necessidade do serviço...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 3, termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” imediatamente antes de “I - documentos não classificados pela origem...” e inicie um bloco próprio para esse inciso.\n- Na pág. 3, termine o bloco de “Art. 6º Cabe aos servidores do TCU...” imediatamente antes de “Parágrafo único. Quando o documento recebido de pessoa física ou jurídica externa ao Tribunal...” e inicie um bloco próprio para o parágrafo único.\n- Na pág. 7, termine o bloco de “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” imediatamente antes de “Art. 19. Em caso de necessidade do serviço...” e inicie um bloco próprio para o artigo 19."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 126,
+    "insights_aplicados": "- Na pág. 3, termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” imediatamente antes de “I - documentos não classificados pela origem...” e inicie um bloco próprio para esse inciso.\n- Na pág. 3, termine o bloco de “Art. 6º Cabe aos servidores do TCU...” imediatamente antes de “Parágrafo único. Quando o documento recebido de pessoa física ou jurídica externa ao Tribunal...” e inicie um bloco próprio para o parágrafo único.\n- Na pág. 7, termine o bloco de “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” imediatamente antes de “Art. 19. Em caso de necessidade do serviço...” e inicie um bloco próprio para o artigo 19.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 24,
+          "tipo": "sequencia",
+          "descricao": "Após o inciso I do art. 5º, o próximo texto capturado inicia diretamente em “III - quando a informação tiver sido requisitada...”; o inciso II não aparece em nenhum bloco, indicando omissão na extração entre as páginas 2 e 3."
+        },
+        {
+          "bloco": 24,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “III - quando a informação tiver sido requisitada...” também contém o marcador e o texto do inciso irmão “IV- quando da publicação das informações na transparência ativa...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 90,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 14. A classificação da informação sigilosa...” contém também os marcadores dos incisos “I - hipótese de sigilo...” e “II - grau de sigilo...”, que devem ser blocos próprios."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na pág. 3, termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” imediatamente antes de “I - documentos não classificados pela origem...” e inicie um bloco próprio para esse inciso.\n- Na pág. 3, termine o bloco de “Art. 6º Cabe aos servidores do TCU...” imediatamente antes de “Parágrafo único. Quando o documento recebido de pessoa física ou jurídica externa ao Tribunal...” e inicie um bloco próprio para o parágrafo único.\n- Na pág. 7, termine o bloco de “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” imediatamente antes de “Art. 19. Em caso de necessidade do serviço...” e inicie um bloco próprio para o artigo 19.\n- Na pág. 3, termine o bloco de “III - quando a informação tiver sido requisitada...” imediatamente antes de “IV- quando da publicação das informações na transparência ativa...” e inicie um bloco próprio para o inciso IV.\n- Na pág. 5, termine o bloco de “Art. 14. A classificação da informação sigilosa...” imediatamente antes de “I - hipótese de sigilo...” e inicie blocos próprios para cada inciso subsequente do art. 14, inclusive I, II, III e IV."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- Na pág. 3, termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” imediatamente antes de “I - documentos não classificados pela origem...” e inicie um bloco próprio para esse inciso.\n- Na pág. 3, termine o bloco de “Art. 6º Cabe aos servidores do TCU...” imediatamente antes de “Parágrafo único. Quando o documento recebido de pessoa física ou jurídica externa ao Tribunal...” e inicie um bloco próprio para o parágrafo único.\n- Na pág. 7, termine o bloco de “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” imediatamente antes de “Art. 19. Em caso de necessidade do serviço...” e inicie um bloco próprio para o artigo 19.\n- Na pág. 3, termine o bloco de “III - quando a informação tiver sido requisitada...” imediatamente antes de “IV- quando da publicação das informações na transparência ativa...” e inicie um bloco próprio para o inciso IV.\n- Na pág. 5, termine o bloco de “Art. 14. A classificação da informação sigilosa...” imediatamente antes de “I - hipótese de sigilo...” e inicie blocos próprios para cada inciso subsequente do art. 14, inclusive I, II, III e IV.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 7,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 3º Para os efeitos desta Resolução...” contém os marcadores de incisos, de “I - informação” até “XI - documento eletrônico”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 39,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “VII - pôr em risco a segurança...” também contém o marcador “VIII - comprometer atividades de inteligência do Tribunal...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 45,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 3º Alternativamente aos prazos...” contém também o marcador “§ 4º O prazo de restrição de acesso...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 56,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 2º O consentimento referido...” contém o marcador “I - à prevenção e diagnóstico médico...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 76,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO” contém o marcador “Art. 13. Compete às autoridades...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 96,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 4º A eventual reclassificação...” contém os marcadores “CAPÍTULO VI — DA PROTEÇÃO E DO CONTROLE DA INFORMAÇÃO” e “Art. 17. Cabe ao TCU...”, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Na pág. 5, termine “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI; na pág. 7, termine “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” antes de “Art. 19. Em caso de necessidade do serviço...” e inicie bloco próprio para o artigo 19.\n- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Nas págs. 4 e 5, separe “VII - pôr em risco a segurança...” de “VIII - comprometer atividades de inteligência do Tribunal...”; separe “§ 3º Alternativamente aos prazos...” de “§ 4º O prazo de restrição de acesso...”; e termine “§ 2º O consentimento referido...” antes de “I - à prevenção e diagnóstico médico...”, iniciando bloco próprio para esse inciso.\n- Na pág. 5, termine “CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO” antes de “Art. 13. Compete às autoridades...”; na pág. 6, termine “§ 4º A eventual reclassificação...” antes de “CAPÍTULO VI — DA PROTEÇÃO E DO CONTROLE DA INFORMAÇÃO” e termine este capítulo antes de “Art. 17. Cabe ao TCU...”, iniciando blocos próprios em cada marcador."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Na pág. 5, termine “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI; na pág. 7, termine “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” antes de “Art. 19. Em caso de necessidade do serviço...” e inicie bloco próprio para o artigo 19.\n- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Nas págs. 4 e 5, separe “VII - pôr em risco a segurança...” de “VIII - comprometer atividades de inteligência do Tribunal...”; separe “§ 3º Alternativamente aos prazos...” de “§ 4º O prazo de restrição de acesso...”; e termine “§ 2º O consentimento referido...” antes de “I - à prevenção e diagnóstico médico...”, iniciando bloco próprio para esse inciso.\n- Na pág. 5, termine “CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO” antes de “Art. 13. Compete às autoridades...”; na pág. 6, termine “§ 4º A eventual reclassificação...” antes de “CAPÍTULO VI — DA PROTEÇÃO E DO CONTROLE DA INFORMAÇÃO” e termine este capítulo antes de “Art. 17. Cabe ao TCU...”, iniciando blocos próprios em cada marcador.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 43,
+          "tipo": "englobante",
+          "descricao": "O bloco de “Art. 9º São consideradas imprescindíveis à segurança da sociedade ou do Estado...” (pág. 3) também contém os incisos I a V, embora os incisos VI a VIII estejam em blocos próprios nas págs. 4; cada inciso deve iniciar seu próprio bloco."
+        },
+        {
+          "bloco": 72,
+          "tipo": "englobante",
+          "descricao": "O bloco de “Art. 11. São consideras protegidas por sigilo estabelecido em legislação específica...” (pág. 5) contém também os incisos I, II, III e os incisos subsequentes da enumeração, que devem ser blocos próprios, como ocorre nas demais listas normativas do documento."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Nas págs. 3 e 4, termine “Art. 9º São consideradas imprescindíveis à segurança da sociedade ou do Estado...” antes de cada um de seus incisos I a V, iniciando um bloco próprio em cada inciso; mantenha também separados os incisos VII e VIII, “§ 3º Alternativamente aos prazos...” e “§ 4º O prazo de restrição...”, e “§ 2º O consentimento referido...” de seu inciso I na pág. 4.\n- Na pág. 5, termine “Art. 11. São consideras protegidas por sigilo estabelecido em legislação específica...” antes de “I - de natureza fiscal ou bancária...” e inicie bloco próprio para cada inciso dessa enumeração; termine também “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI.\n- Na pág. 5, termine “CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO” antes de “Art. 13. Compete às autoridades...”; na pág. 6, termine “§ 4º A eventual reclassificação...” antes de “CAPÍTULO VI — DA PROTEÇÃO E DO CONTROLE DA INFORMAÇÃO” e termine este capítulo antes de “Art. 17. Cabe ao TCU...”; na pág. 7, termine “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” antes de “Art. 19. Em caso de necessidade do serviço...”, iniciando blocos próprios em cada marcador."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 131,
+    "insights_aplicados": "- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Nas págs. 3 e 4, termine “Art. 9º São consideradas imprescindíveis à segurança da sociedade ou do Estado...” antes de cada um de seus incisos I a V, iniciando um bloco próprio em cada inciso; mantenha também separados os incisos VII e VIII, “§ 3º Alternativamente aos prazos...” e “§ 4º O prazo de restrição...”, e “§ 2º O consentimento referido...” de seu inciso I na pág. 4.\n- Na pág. 5, termine “Art. 11. São consideras protegidas por sigilo estabelecido em legislação específica...” antes de “I - de natureza fiscal ou bancária...” e inicie bloco próprio para cada inciso dessa enumeração; termine também “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI.\n- Na pág. 5, termine “CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO” antes de “Art. 13. Compete às autoridades...”; na pág. 6, termine “§ 4º A eventual reclassificação...” antes de “CAPÍTULO VI — DA PROTEÇÃO E DO CONTROLE DA INFORMAÇÃO” e termine este capítulo antes de “Art. 17. Cabe ao TCU...”; na pág. 7, termine “CAPÍTULO VII — DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” antes de “Art. 19. Em caso de necessidade do serviço...”, iniciando blocos próprios em cada marcador.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 2° Esta Resolução integra...” (pág. 1) também contém o marcador “§ 1º As autoridades do Tribunal...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 55,
+          "tipo": "ancora",
+          "descricao": "O inciso “III - ultrassecreta: vinte e cinco anos; e” (pág. 4) está sinalizado como “TEXTO NÃO EXTRAÍDO”, com divergência entre a âncora inicial (“ultrassecrecreta”) e o texto final (“ultrassecreta”), caracterizando falha de extração/ancoragem."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de “Art. 2° Esta Resolução integra a Política Corporativa...” imediatamente antes de “§ 1º As autoridades do Tribunal...” e inicie um bloco próprio para esse parágrafo; mantenha “§ 2º” e “§ 3º” em blocos próprios.\n- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Nas págs. 3 e 4, termine “Art. 9º São consideradas imprescindíveis à segurança da sociedade ou do Estado...” antes de cada um de seus incisos I a V, iniciando um bloco próprio em cada inciso; mantenha também separados os incisos VII e VIII, “§ 3º Alternativamente aos prazos...” e “§ 4º O prazo de restrição...”, e “§ 2º O consentimento referido...” de seu inciso I na pág. 4.\n- Na pág. 5, termine “Art. 11. São consideras protegidas por sigilo estabelecido em legislação específica...” antes de “I - de natureza fiscal ou bancária...” e inicie bloco próprio para cada inciso dessa enumeração; termine também “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 132,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de “Art. 2° Esta Resolução integra a Política Corporativa...” imediatamente antes de “§ 1º As autoridades do Tribunal...” e inicie um bloco próprio para esse parágrafo; mantenha “§ 2º” e “§ 3º” em blocos próprios.\n- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Nas págs. 3 e 4, termine “Art. 9º São consideradas imprescindíveis à segurança da sociedade ou do Estado...” antes de cada um de seus incisos I a V, iniciando um bloco próprio em cada inciso; mantenha também separados os incisos VII e VIII, “§ 3º Alternativamente aos prazos...” e “§ 4º O prazo de restrição...”, e “§ 2º O consentimento referido...” de seu inciso I na pág. 4.\n- Na pág. 5, termine “Art. 11. São consideras protegidas por sigilo estabelecido em legislação específica...” antes de “I - de natureza fiscal ou bancária...” e inicie bloco próprio para cada inciso dessa enumeração; termine também “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Na pág. 1, termine o bloco de “Art. 2° Esta Resolução integra a Política Corporativa...” imediatamente antes de “§ 1º As autoridades do Tribunal...” e inicie um bloco próprio para esse parágrafo; mantenha “§ 2º” e “§ 3º” em blocos próprios.\n- Na pág. 2, termine o bloco de “Art. 3º Para os efeitos desta Resolução...” antes de “I - informação...” e inicie um bloco próprio para cada inciso I a XI do artigo 3º.\n- Na pág. 3, mantenha blocos separados para “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:”, seus incisos I e II; para “Art. 6º Cabe aos servidores do TCU...”, seguido de seu “Parágrafo único. Quando o documento recebido...”; e para os incisos III e “IV- quando da publicação...” do art. 5º.\n- Nas págs. 3 e 4, termine “Art. 9º São consideradas imprescindíveis à segurança da sociedade ou do Estado...” antes de cada um de seus incisos I a V, iniciando um bloco próprio em cada inciso; mantenha também separados os incisos VII e VIII, “§ 3º Alternativamente aos prazos...” e “§ 4º O prazo de restrição...”, e “§ 2º O consentimento referido...” de seu inciso I na pág. 4.\n- Na pág. 5, termine “Art. 11. São consideras protegidas por sigilo estabelecido em legislação específica...” antes de “I - de natureza fiscal ou bancária...” e inicie bloco próprio para cada inciso dessa enumeração; termine também “Art. 14. A classificação da informação sigilosa...” antes de “I - hipótese de sigilo...” e inicie blocos próprios para todos os incisos I a VI."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18201/NORMA-18201_ciclo7.json"
+  }
+]

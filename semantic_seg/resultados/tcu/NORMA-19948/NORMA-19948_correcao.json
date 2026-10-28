@@ -1,0 +1,14 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 17,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19948/NORMA-19948_ciclo1.json"
+  }
+]

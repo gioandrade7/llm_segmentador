@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - assinar expedientes em nome do Comitê;\" (pág. 3) também contém os incisos IV, V, VI, VII, VIII, IX e X do Art. 7º, embora cada inciso seja uma unidade que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 40,
+          "tipo": "granularidade",
+          "descricao": "No Art. 7º (pág. 3), os incisos I e II foram segmentados separadamente, mas os incisos III a X foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 3), termine o bloco de \"III - assinar expedientes em nome do Comitê;\" imediatamente antes de \"IV - zelar pelo cumprimento das diretrizes\" e inicie um bloco próprio em cada inciso IV, V, VI, VII, VIII, IX e X, como já foi feito para os incisos I e II."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19297/NORMA-19297_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 58,
+    "insights_aplicados": "- No Art. 7º (pág. 3), termine o bloco de \"III - assinar expedientes em nome do Comitê;\" imediatamente antes de \"IV - zelar pelo cumprimento das diretrizes\" e inicie um bloco próprio em cada inciso IV, V, VI, VII, VIII, IX e X, como já foi feito para os incisos I e II.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19297/NORMA-19297_ciclo2.json"
+  }
+]

@@ -1,0 +1,188 @@
+%%
+Gabarito de segmentação — NORMA-6257 (Portaria STI n° 1/2015)
+Texto-fonte: text_extraction/out/tcu/NORMA-6257
+Status: gerado por semantic_seg/dataset_tcu.py a partir do HTML de docs.csv (um <p> por linha); não conferido à mão.
+Estrato: plana × grande (30349 chars) · partição: teste
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`; indentação de 2 espaços por nível
+- Tipos: epígrafe (do início até o primeiro dispositivo: título, ementa, preâmbulo e considerandos), título,
+  capítulo e seção (com a rubrica), artigo, parágrafo (§ N / Parágrafo único), inciso (I -), alínea (a)),
+  item (1.), fecho (local/data e assinaturas)
+- Cada <p> que abre com marcador é nó; um <p> sem marcador pertence ao nó anterior
+- Texto citado de outra norma (do <p> que abre aspas ao que as fecha, ou "(NR)") pertence à unidade que o
+  cita: seus Art./§/incisos não são nós
+%%
+
+- Documento
+  - [epígrafe] O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA
+  - [artigo] Art. 1º A estrutura e as competências das
+  - [artigo] Art. 2º Considera-se solução de TI estruturante,
+  - [artigo] Art. 3º São competências comuns à STI e à Setic,
+    - [inciso] I-propor a formulação de políticas, diretrizes,
+    - [inciso] II-propor a formulação de estratégias de
+    - [inciso] III-propor o planejamento das iniciativas de
+    - [inciso] IV-auxiliar a Adgeti na formulação da proposta de
+    - [inciso] V-disseminar e incentivar o uso da tecnologia da
+    - [inciso] VI-prover soluções de tecnologia da informação
+    - [inciso] VII-apoiar o ISC e as unidades gestoras das
+    - [inciso] VIII-apoiar o requisitante de contratação, a
+    - [inciso] IX-auxiliar na celebração, execução e
+    - [inciso] X-gerenciar identidade e acesso de usuários
+    - [inciso] XI-viabilizar o intercâmbio de dados, informações
+    - [inciso] XII-participar de ações de controle externo e de
+    - [inciso] XIII-desenvolver outras atividades inerentes à sua
+    - [parágrafo] Parágrafo único. A STI e a Setic devem atuar de
+  - [artigo] Art. 4º São competências privativas da STI,
+    - [inciso] I - apoiar, em coordenação com a Secretaria de
+    - [inciso] II - levantar, documentar e gerenciar regras de
+    - [inciso] III - avaliar as regras de negócio e os requisitos
+    - [inciso] IV - negociar níveis de serviço para cada solução
+    - [inciso] V - prover soluções de tecnologia da informação de
+    - [inciso] VI - realizar os testes necessários para assegurar
+    - [inciso] VII - efetuar a manutenção de soluções de
+    - [inciso] VIII - elaborar e manter atualizados rotinas de
+    - [inciso] IX - participar do planejamento e da execução de
+    - [inciso] X - manifestar-se quanto aos aspectos técnicos e
+    - [inciso] XI-desenvolver outras atividades inerentes à sua
+  - [artigo] Art. 5º A Secretaria de Soluções de Tecnologia da
+    - [inciso] I - Diretoria de Soluções de Controle Externo
+      - [alínea] a) 1º Serviço de Soluções de Tecnologia da
+      - [alínea] b) 3º Serviço de Soluções de Tecnologia da
+      - [alínea] b) 4º Serviço de Soluções de Tecnologia da
+    - [inciso] II - Diretoria de Soluções Estratégicas,
+      - [alínea] a) 2º Serviço de Soluções de Tecnologia da
+      - [alínea] b) 5º Serviço de Soluções de Tecnologia da
+      - [alínea] c) Serviço de Apoio ao Desenvolvimento
+    - [inciso] III - Diretoria de Arquitetura da Informação e de
+      - [alínea] a) Serviço de Soluções de Suporte a Decisão e
+      - [alínea] b) Serviço de Soluções de Gestão de Conteúdo
+      - [alínea] c) Serviço de Padronização e Arquitetura de
+      - [alínea] d) Serviço de Integração e Métricas de Sistemas
+    - [inciso] IV - Assessoria (STI-ASS) .
+  - [artigo] Art. 6º São competências comuns a todas as
+    - [inciso] I - participar da formulação de políticas,
+    - [inciso] II - participar da formulação de estratégias, do
+    - [inciso] III - promover o acompanhamento e avaliação
+    - [inciso] IV - definir, implementar e gerir processos de
+    - [inciso] V - atuar proativamente de forma a assegurar que
+    - [inciso] VI - gerenciar as demandas apresentadas à
+    - [inciso] VII - assegurar a observância aos requisitos
+    - [inciso] VIII - disseminar e incentivar o uso dos serviços
+    - [inciso] IX - apoiar a Diretoria de Relacionamento com
+    - [inciso] X - realizar diagnósticos e formular soluções para
+    - [inciso] XI - comunicar, tempestivamente, às subunidades da
+    - [inciso] XII - zelar pela satisfação dos clientes com os
+    - [inciso] XIII - alimentar e manter atualizadas as bases de
+    - [inciso] XIV - definir parâmetros de monitoramento e
+    - [inciso] XV - apoiar o Serviço de Monitoramento e Operação
+    - [inciso] XVI - especificar bens, serviços e soluções de
+    - [inciso] XVII - promover, em coordenação com as subunidades
+    - [inciso] XVIII - assinar ordens de serviço e outros
+    - [inciso] XIX - manter contatos com áreas de tecnologia da
+    - [inciso] XX - participar do estabelecimento, administração
+    - [inciso] XXI - promover a integração, a colaboração e o
+    - [inciso] XXII - articular e coordenar iniciativas conjuntas
+    - [inciso] XXIII - prospectar e propor adoção de novas
+    - [inciso] XXIV - desenvolver outras atividades inerentes à
+  - [artigo] Art. 7º São competências comuns a todas as
+    - [inciso] I - assegurar a definição e a implementação de
+    - [inciso] II - consolidar as demandas apresentadas às
+    - [inciso] III - organizar, supervisionar e coordenar a
+    - [inciso] IV - propor modalidade de provimento de cada
+    - [inciso] V - acompanhar o andamento dos processos de
+    - [inciso] VI - assegurar a necessária articulação e
+  - [artigo] Art. 8º São competências comuns aos serviços
+    - [inciso] I - apoiar, em coordenação com a Seplan, as
+    - [inciso] II - levantar, documentar e gerenciar regras de
+    - [inciso] III - avaliar as regras de negócio e os requisitos
+    - [inciso] IV - negociar com a unidade gestora e partes
+    - [inciso] V - prover soluções de tecnologia da informação,
+    - [inciso] VI - demandar de empresas contratadas, mediante
+    - [inciso] VII - fiscalizar, com o apoio ou em conjunto com
+    - [inciso] VIII - manter as unidades gestoras e demais partes
+    - [inciso] IX - realizar testes funcionais e não funcionais
+    - [inciso] X - efetuar a manutenção de soluções de tecnologia
+    - [inciso] XI - elaborar e manter atualizados rotinas de
+    - [inciso] XII - apoiar o Serviço de Infraestrutura de
+    - [inciso] XIII - apoiar as unidades gestoras na elaboração
+    - [inciso] XIV - apoiar as unidades gestoras na formulação de
+    - [inciso] XV - manifestar-se quanto aos aspectos técnicos e
+    - [parágrafo] Parágrafo único. No desempenho das competências
+  - [artigo] Art. 9º A distribuição da responsabilidade pelos
+  - [artigo] Art. 10. A área de atuação do Serviço de Soluções
+    - [inciso] I - soluções de informações gerenciais;
+    - [inciso] II - soluções de suporte a inteligência de
+    - [inciso] III - soluções de análise e mineração de dados.
+    - [parágrafo] Parágrafo único. Em complemento ao disposto nos
+  - [artigo] Art. 11. A área de atuação do Serviço de Apoio ao
+    - [parágrafo] §1º As competências descritas nos incisos II, IV,
+    - [parágrafo] §2º Em complemento ao disposto nos arts. 6º e 8º
+      - [inciso] I - definir processos de trabalho, ferramentas,
+      - [inciso] II - orientar as unidades do Tribunal quanto à
+      - [inciso] III - promover e apoiar iniciativas de
+      - [inciso] IV - auxiliar as unidades do Tribunal na seleção e
+      - [inciso] V - definir, implementar e manter visões dos
+      - [inciso] VI - consolidar e divulgar informações sobre os
+  - [artigo] Art. 12. A área de atuação do Serviço de Soluções
+    - [inciso] I - portais corporativos;
+    - [inciso] II - suporte à gestão do conhecimento
+    - [inciso] III - suporte a comunidades de prática e
+    - [inciso] IV - indexação, pesquisa textual e mineração de
+    - [inciso] V - gerenciamento de identidade e acesso a
+    - [inciso] VI - soluções de TI estruturantes.
+    - [parágrafo] §1º O gerenciamento de acesso a soluções de
+    - [parágrafo] §2º Em complemento ao disposto nos arts. 6º e 8º
+      - [inciso] I - conceber, implementar e manter estruturas para
+      - [inciso] II - apoiar o Centro de Documentação do ISC no
+      - [inciso] III - orientar e apoiar as unidades do Tribunal na
+      - [inciso] IV - definir guias de estilo, modelos e outros
+  - [artigo] Art. 13. Em complemento ao disposto no art. 6º
+    - [inciso] I - definir guias de estilo, modelos e outros
+    - [inciso] II - definir procedimentos, ferramentas e outros
+    - [inciso] III - definir padrões técnicos e de arquitetura
+    - [inciso] IV - analisar, periodicamente, os sistemas de
+    - [inciso] V - zelar pela organização do repositório de
+    - [inciso] VI - apoiar a equipe de desenvolvimento quanto à
+  - [artigo] Art. 14. Em complemento ao disposto no art. 6º
+    - [inciso] I - elaborar e administrar, com o apoio das
+    - [inciso] II - orientar as subunidades da STI e da Setic
+    - [inciso] III - promover, com o apoio das subunidades da STI
+    - [inciso] IV - definir, com o apoio das subunidades da STI e
+    - [inciso] V - elaborar e manter registro centralizado sobre
+    - [inciso] VI - apoiar a integração dos serviços e soluções
+    - [inciso] VII - efetuar, com o apoio das subunidades da STI
+    - [inciso] VIII - orientar as subunidades da STI e da Setic
+  - [artigo] Art. 15. Em complemento ao disposto no art. 6º
+    - [inciso] I - apoiar as subunidades da STI e da Setic na
+    - [inciso] II - coordenar a divulgação interna e externa de
+    - [inciso] III - elaborar, manter e divulgar o portfólio de
+    - [inciso] IV - coordenar a elaboração e a execução de
+    - [inciso] V - apoiar as subunidades da STI e da Setic no
+    - [inciso] VI - apoiar as subunidades da STI e da Setic em
+    - [inciso] VII - apoiar os servidores da STI e da Setic, em
+    - [inciso] VIII - desenvolver estudos e pesquisas, preparar
+    - [inciso] IX - apoiar os servidores da STI e da Setic, em
+    - [inciso] X - promover a adoção de práticas de gestão do
+  - [artigo] Art. 16. Fica constituído o Comitê Permanente de
+    - [parágrafo] Parágrafo único. São competências do CPIC:
+      - [inciso] I - zelar pelo ambiente e infraestrutura de
+      - [inciso] II - coordenar as interações com as subunidades da
+      - [inciso] III - assegurar a necessária articulação e
+      - [inciso] IV - definir, orientar e executar atividades
+  - [artigo] Art. 17. Fica constituído o Núcleo de Mobilidade
+    - [parágrafo] Parágrafo único. São competências do Núcleo de
+      - [inciso] I-coordenar o desenvolvimento, manutenção,
+      - [inciso] II-gerenciar as contas institucionais do Tribunal
+      - [inciso] III-definir padrões, requisitos e restrições a
+      - [inciso] IV-apoiar o processo de prospecção e de tomada de
+      - [inciso] V-avaliar a conformidade aos padrões e requisitos
+  - [artigo] Art. 18. Em complemento às competências atribuídas
+    - [inciso] I - apoiar os clientes da Secretaria na
+    - [inciso] II - apoiar os clientes da Secretaria na
+    - [inciso] III - promover a necessária articulação com os
+    - [inciso] IV - assegurar o encaminhamento tempestivo às
+    - [inciso] V - promover a articulação e o bom relacionamento
+  - [artigo] Art. 19. Fica revogada a Portaria-STI nº 01, de 1º
+  - [artigo] Art. 20. Esta Portaria entra em vigor na data de
+  - [fecho] RODRIGO CÉSAR SANTOS FELISDÓRIO

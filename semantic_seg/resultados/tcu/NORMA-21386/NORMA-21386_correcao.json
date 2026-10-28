@@ -1,0 +1,196 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 72,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 58,
+          "tipo": "englobante",
+          "descricao": "O bloco que inicia em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\" (pág. 4) também contém o marcador de inciso \"I - pareceres dos dirigentes das unidades institucionais...\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 4, termine o bloco de \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\" imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie um bloco próprio para esse inciso; inicie igualmente blocos próprios para quaisquer incisos seguintes do art. 17."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 70,
+    "insights_aplicados": "- Na pág. 4, termine o bloco de \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\" imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie um bloco próprio para esse inciso; inicie igualmente blocos próprios para quaisquer incisos seguintes do art. 17.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco de \"Art. 2º Para os fins desta Portaria, entende-se por:\" (pág. 1) contém os marcadores dos incisos \"I - autoridades do TCU\" e \"II - colegiados da Secretaria do Tribunal\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 9,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - substitui qualquer outro meio\" (pág. 1) também contém o inciso \"IV - deve ser disponibilizado\", embora cada inciso do Art. 4º deva constituir bloco próprio."
+        },
+        {
+          "bloco": 50,
+          "tipo": "englobante",
+          "descricao": "O bloco de \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\" (pág. 4) engloba o inciso \"I - leis, medidas provisórias, decretos...\" e marcadores posteriores de incisos e alíneas, incluindo \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas\" e \"c) portarias de provimento\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de \"Art. 2º Para os fins desta Portaria, entende-se por:\" imediatamente antes de \"I - autoridades do TCU\"; inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, termine o bloco de \"III - substitui qualquer outro meio e publicação oficial\" imediatamente antes de \"IV - deve ser disponibilizado\" e inicie um bloco próprio para o inciso IV.\n- Na pág. 4, termine o bloco de \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\" imediatamente antes de \"I - leis, medidas provisórias, decretos...\"; inicie blocos próprios para cada inciso e para cada alínea subsequente, inclusive \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, termine o bloco de \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\" imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie um bloco próprio para esse inciso; inicie igualmente blocos próprios para quaisquer incisos seguintes do art. 17."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de \"Art. 2º Para os fins desta Portaria, entende-se por:\" imediatamente antes de \"I - autoridades do TCU\"; inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, termine o bloco de \"III - substitui qualquer outro meio e publicação oficial\" imediatamente antes de \"IV - deve ser disponibilizado\" e inicie um bloco próprio para o inciso IV.\n- Na pág. 4, termine o bloco de \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\" imediatamente antes de \"I - leis, medidas provisórias, decretos...\"; inicie blocos próprios para cada inciso e para cada alínea subsequente, inclusive \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, termine o bloco de \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\" imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie um bloco próprio para esse inciso; inicie igualmente blocos próprios para quaisquer incisos seguintes do art. 17.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"II - contempla o diário eletrônico do Tribunal\" contém também o início de unidades irmãs subsequentes, incluindo \"III - substitui qualquer outro meio e publicação oficial\" e o inciso IV mencionado no texto final do bloco."
+        },
+        {
+          "bloco": 52,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\" inclui o marcador e o texto do inciso \"I - leis, medidas provisórias, decretos e normas afins...\", que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, no art. 4º, termine o bloco de \"II - contempla o diário eletrônico do Tribunal\" imediatamente antes de \"III - substitui qualquer outro meio e publicação oficial\"; termine também o bloco do inciso III imediatamente antes do inciso \"IV - deve ser disponibilizado\", iniciando um bloco próprio para cada um desses incisos.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, no art. 4º, termine o bloco de \"II - contempla o diário eletrônico do Tribunal\" imediatamente antes de \"III - substitui qualquer outro meio e publicação oficial\"; termine também o bloco do inciso III imediatamente antes do inciso \"IV - deve ser disponibilizado\", iniciando um bloco próprio para cada um desses incisos.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 12,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"III - substitui qualquer outro meio e publicação oficial\" também contém o início do inciso irmão \"IV - deve ser disponibilizado\", que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, no art. 4º, termine o bloco de \"II - contempla o diário eletrônico do Tribunal\" imediatamente antes de \"III - substitui qualquer outro meio e publicação oficial\"; termine também o bloco do inciso \"III - substitui qualquer outro meio e publicação oficial\" imediatamente antes de \"IV - deve ser disponibilizado\", iniciando um bloco próprio para cada um desses incisos.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, no art. 4º, termine o bloco de \"II - contempla o diário eletrônico do Tribunal\" imediatamente antes de \"III - substitui qualquer outro meio e publicação oficial\"; termine também o bloco do inciso \"III - substitui qualquer outro meio e publicação oficial\" imediatamente antes de \"IV - deve ser disponibilizado\", iniciando um bloco próprio para cada um desses incisos.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 52,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"IV - designação para viagens a serviço\" (pág. 4) contém, após \"e\", o marcador e o texto da unidade irmã \"V - movimentação interna de pessoal\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, no art. 4º, termine o bloco de \"II - contempla o diário eletrônico do Tribunal\" imediatamente antes de \"III - substitui qualquer outro meio e publicação oficial\"; termine também o bloco do inciso \"III - substitui qualquer outro meio e publicação oficial\" imediatamente antes de \"IV - deve ser disponibilizado\", iniciando um bloco próprio para cada um desses incisos.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio nesse inciso V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 77,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\".\n- Na pág. 1, no art. 4º, termine o bloco de \"II - contempla o diário eletrônico do Tribunal\" imediatamente antes de \"III - substitui qualquer outro meio e publicação oficial\"; termine também o bloco do inciso \"III - substitui qualquer outro meio e publicação oficial\" imediatamente antes de \"IV - deve ser disponibilizado\", iniciando um bloco próprio para cada um desses incisos.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio nesse inciso V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 7,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"CAPÍTULO II — DO BTCU\" também contém o marcador e o texto inicial de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\", embora capítulo e artigo devam iniciar blocos distintos."
+        },
+        {
+          "bloco": 73,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" também contém o marcador e o texto inicial de \"Art. 20. A cada edição do BTCU...\", embora capítulo e artigo devam iniciar blocos distintos."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\"; no art. 4º, termine cada inciso antes do inciso seguinte, mantendo blocos próprios para \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\" e em \"II - colegiados da Secretaria do Tribunal\"; no art. 4º, termine cada inciso antes do inciso seguinte, mantendo blocos próprios para \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 10,
+          "tipo": "englobante",
+          "descricao": "No art. 4º (pág. 1), o bloco iniciado em \"I - é implementado mediante solução de tecnologia da informação\" também contém os incisos II, III e IV, embora cada inciso deva iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\", \"II - colegiados da Secretaria do Tribunal\" e \"III - unidades institucionais\"; no art. 4º, termine cada inciso imediatamente antes do seguinte e inicie blocos próprios em \"I - é implementado mediante solução de tecnologia da informação\", \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\", \"II - colegiados da Secretaria do Tribunal\" e \"III - unidades institucionais\"; no art. 4º, termine cada inciso imediatamente antes do seguinte e inicie blocos próprios em \"I - é implementado mediante solução de tecnologia da informação\", \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 12,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"III - substitui qualquer outro meio e publicação oficial\" (pág. 1) também contém o marcador e o início do inciso irmão \"IV - deve ser disponibilizado com ferramenta de pesquisa de conteúdo\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\", \"II - colegiados da Secretaria do Tribunal\" e \"III - unidades institucionais\"; no art. 4º, termine cada inciso imediatamente antes do seguinte e inicie blocos próprios em \"I - é implementado mediante solução de tecnologia da informação\", \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\", \"II - colegiados da Secretaria do Tribunal\" e \"III - unidades institucionais\"; no art. 4º, termine cada inciso imediatamente antes do seguinte e inicie blocos próprios em \"I - é implementado mediante solução de tecnologia da informação\", \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco imediatamente antes de \"I - leis, medidas provisórias, decretos...\" e inicie bloco próprio para esse inciso; mantenha blocos próprios para \"II - atos e matérias\" e para as alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\".\n- Na pág. 4, em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", termine o bloco imediatamente antes de \"I - pareceres dos dirigentes das unidades institucionais...\" e inicie blocos próprios para esse inciso e para os incisos seguintes do art. 17.\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 37,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 14. O BTCU ficará disponível no Portal TCU, observando-se:\" contém os marcadores dos incisos \"I - para os cadernos Administrativos...\" e \"II - para o caderno de Controle Externo - Ações em Curso...\", além de alcançar o marcador \"§ 2º Cabe à Adgedam...\"; cada inciso e parágrafo deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\", \"II - colegiados da Secretaria do Tribunal\" e \"III - unidades institucionais\"; no art. 4º, termine cada inciso imediatamente antes do seguinte e inicie blocos próprios em \"I - é implementado mediante solução de tecnologia da informação\", \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 3, em \"Art. 14. O BTCU ficará disponível no Portal TCU, observando-se:\", termine o bloco do artigo antes de \"I - para os cadernos Administrativos\"; inicie blocos próprios nos incisos I e II, em \"§ 1º\" e em \"§ 2º Cabe à Adgedam\", encerrando cada unidade imediatamente antes do próximo marcador.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco antes de \"I - leis, medidas provisórias, decretos...\" e inicie blocos próprios nesse inciso, em \"II - atos e matérias\" e nas alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\"; em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", inicie bloco próprio em cada inciso, de \"I - pareceres dos dirigentes das unidades institucionais...\" a \"IV - outros expedientes considerados de interesse geral\".\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 79,
+    "insights_aplicados": "- Na pág. 1, em \"Art. 2º Para os fins desta Portaria, entende-se por:\", termine o bloco imediatamente antes de \"I - autoridades do TCU\" e inicie blocos próprios em \"I - autoridades do TCU\", \"II - colegiados da Secretaria do Tribunal\" e \"III - unidades institucionais\"; no art. 4º, termine cada inciso imediatamente antes do seguinte e inicie blocos próprios em \"I - é implementado mediante solução de tecnologia da informação\", \"II - contempla o diário eletrônico do Tribunal\", \"III - substitui qualquer outro meio e publicação oficial\" e \"IV - deve ser disponibilizado\".\n- Na pág. 3, em \"Art. 14. O BTCU ficará disponível no Portal TCU, observando-se:\", termine o bloco do artigo antes de \"I - para os cadernos Administrativos\"; inicie blocos próprios nos incisos I e II, em \"§ 1º\" e em \"§ 2º Cabe à Adgedam\", encerrando cada unidade imediatamente antes do próximo marcador.\n- Na pág. 4, em \"Art. 16. Serão publicados, também, no caderno Administrativo do BTCU\", termine o bloco antes de \"I - leis, medidas provisórias, decretos...\" e inicie blocos próprios nesse inciso, em \"II - atos e matérias\" e nas alíneas \"a) atos normativos expedidos pelo TCU\", \"b) enunciados das súmulas da jurisprudência\" e \"c) portarias de provimento e vacância\"; em \"Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...\", inicie bloco próprio em cada inciso, de \"I - pareceres dos dirigentes das unidades institucionais...\" a \"IV - outros expedientes considerados de interesse geral\".\n- Na pág. 4, no parágrafo único do art. 15, termine o bloco de \"IV - designação para viagens a serviço\" imediatamente antes de \"V - movimentação interna de pessoal\" e inicie um bloco próprio no inciso V.\n- Na pág. 1, termine o bloco de \"CAPÍTULO II — DO BTCU\" imediatamente antes de \"Art. 3º O BTCU, instituído pela Portaria nº 173...\"; na pág. 5, termine o bloco de \"CAPÍTULO VI — DAS DISPOSIÇÕES FINAIS\" imediatamente antes de \"Art. 20. A cada edição do BTCU...\", iniciando um bloco próprio em cada artigo.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21386/NORMA-21386_ciclo10.json"
+  }
+]

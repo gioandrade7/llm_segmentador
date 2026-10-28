@@ -1,0 +1,20 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 37,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 14,
+          "tipo": "sequencia",
+          "descricao": "Após o inciso \"III - propor ao Plenário...\" do Art. 5º (pág. 1), o texto passa diretamente ao Art. 6º (pág. 2), embora os §§ 1º e 3º do Art. 8º e o Art. 12 remetam expressamente ao inciso VII do Art. 5º. Os incisos IV a VII não estão presentes nos blocos."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20082/NORMA-20082_ciclo1.json"
+  }
+]

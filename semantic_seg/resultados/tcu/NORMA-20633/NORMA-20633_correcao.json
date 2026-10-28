@@ -1,0 +1,50 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 27,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 9,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Parágrafo Único. Devem ser verificados em relação aos projetos e atividades da UG:\" (pág. 1) contém os marcadores de incisos \"I -\", \"II -\" e \"III -\", que, pela hierarquia identificada, devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de \"Parágrafo Único. Devem ser verificados em relação aos projetos e atividades da UG:\" imediatamente antes de \"I - se os atos de que resultam receita e despesa\". Inicie blocos próprios em cada inciso subsequente, incluindo \"I -\", \"II - a exatidão dos registros contábeis e administrativos da UG\" e \"III - o preenchimento correto\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20633/NORMA-20633_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 29,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de \"Parágrafo Único. Devem ser verificados em relação aos projetos e atividades da UG:\" imediatamente antes de \"I - se os atos de que resultam receita e despesa\". Inicie blocos próprios em cada inciso subsequente, incluindo \"I -\", \"II - a exatidão dos registros contábeis e administrativos da UG\" e \"III - o preenchimento correto\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - a exatidão dos registros contábeis e administrativos da UG\" também contém os marcadores e textos dos incisos \"III - o preenchimento correto dos documentos do Sistema\" e \"IV - se a aplicação dos recursos está compatível\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, mantenha \"Parágrafo Único. Devem ser verificados em relação aos projetos e atividades da UG:\" separado dos incisos e inicie um bloco próprio em \"I - se os atos de que resultam receita e despesa\".\n- Na pág. 1, termine o bloco de \"II - a exatidão dos registros contábeis e administrativos da UG\" imediatamente antes de \"III - o preenchimento correto dos documentos do Sistema\" e inicie um bloco próprio no inciso III.\n- Na pág. 1, termine o bloco de \"III - o preenchimento correto dos documentos do Sistema\" imediatamente antes de \"IV - se a aplicação dos recursos está compatível\" e inicie um bloco próprio no inciso IV."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20633/NORMA-20633_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 31,
+    "insights_aplicados": "- Na pág. 1, mantenha \"Parágrafo Único. Devem ser verificados em relação aos projetos e atividades da UG:\" separado dos incisos e inicie um bloco próprio em \"I - se os atos de que resultam receita e despesa\".\n- Na pág. 1, termine o bloco de \"II - a exatidão dos registros contábeis e administrativos da UG\" imediatamente antes de \"III - o preenchimento correto dos documentos do Sistema\" e inicie um bloco próprio no inciso III.\n- Na pág. 1, termine o bloco de \"III - o preenchimento correto dos documentos do Sistema\" imediatamente antes de \"IV - se a aplicação dos recursos está compatível\" e inicie um bloco próprio no inciso IV.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20633/NORMA-20633_ciclo3.json"
+  }
+]

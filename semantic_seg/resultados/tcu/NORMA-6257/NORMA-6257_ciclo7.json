@@ -1,0 +1,1162 @@
+[
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º A estrutura e as competências das subunidades integrantes da Secretaria de Soluções de Tecnologia da Informação, observado o disposto nos arts. 16, 17 e 97",
+    "offset_fim": "observado o disposto nos arts. 16, 17 e 97 da Resolução-TCU nº 266, de 2014, são as constantes desta Portaria.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 1º A estrutura e as competências das subunidades integrantes da Secretaria de Soluções de Tecnologia da Informação, observado o disposto nos arts. 16, 17 e 97 da Resolução-TCU nº 266, de 2014, são as constantes desta Portaria."
+  },
+  {
+    "titulo": "Art. 2º",
+    "offset_inicio": "Art. 2º Considera-se solução de TI estruturante, para os efeitos desta Portaria, sistema, módulo ou componente de software que implemente funcionalidade complementar",
+    "offset_fim": "como acesso ao repositório de documentos eletrônicos, assinatura digital, entre outros.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 2º Considera-se solução de TI estruturante, para os efeitos desta Portaria, sistema, módulo ou componente de software que implemente funcionalidade complementar e essencial ao funcionamento de sistema corporativo do Tribunal, como acesso ao repositório de documentos eletrônicos, assinatura digital, entre outros."
+  },
+  {
+    "titulo": "Art. 3º",
+    "offset_inicio": "Art. 3º São competências comuns à STI e à Setic, observadas as respectivas áreas de atuação, no cumprimento da finalidade de propor políticas e diretrizes de tecnologia da informação",
+    "offset_fim": "de modo a dotar o Tribunal e as unidades de sua Secretaria de soluções que sustentem e alavanquem as estratégias e os resultados da organização:\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 3º São competências comuns à STI e à Setic, observadas as respectivas áreas de atuação, no cumprimento da finalidade de propor políticas e diretrizes de tecnologia da informação e coordenar as ações delas decorrentes, de modo a dotar o Tribunal e as unidades de sua Secretaria de soluções que sustentem e alavanquem as estratégias e os resultados da organização:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I-propor a formulação de políticas, diretrizes, normas e procedimentos que orientem e disciplinem a utilização da tecnologia da informação no Tribunal;",
+    "offset_fim": "I-propor a formulação de políticas, diretrizes, normas e procedimentos que orientem e disciplinem a utilização da tecnologia da informação no Tribunal;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "I-propor a formulação de políticas, diretrizes, normas e procedimentos que orientem e disciplinem a utilização da tecnologia da informação no Tribunal;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II-propor a formulação de estratégias de tecnologia da informação alinhadas às estratégias institucionais do Tribunal;",
+    "offset_fim": "II-propor a formulação de estratégias de tecnologia da informação alinhadas às estratégias institucionais do Tribunal;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "II-propor a formulação de estratégias de tecnologia da informação alinhadas às estratégias institucionais do Tribunal;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III-propor o planejamento das iniciativas de tecnologia da informação, em consonância com as estratégias institucionais e de tecnologia da informação;",
+    "offset_fim": "III-propor o planejamento das iniciativas de tecnologia da informação, em consonância com as estratégias institucionais e de tecnologia da informação;\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "III-propor o planejamento das iniciativas de tecnologia da informação, em consonância com as estratégias institucionais e de tecnologia da informação;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV-auxiliar a Adgeti na formulação da proposta de destinação de recursos orçamentários",
+    "offset_fim": "estratégias de tecnologia da informação e na alocação desses recursos às iniciativas planejadas;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "IV-auxiliar a Adgeti na formulação da proposta de destinação de recursos orçamentários adequados para realização das estratégias de tecnologia da informação e na alocação desses recursos às iniciativas planejadas;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V-disseminar e incentivar o uso da tecnologia da informação como instrumento de melhoria do desempenho institucional;",
+    "offset_fim": "V-disseminar e incentivar o uso da tecnologia da informação como instrumento de melhoria do desempenho institucional;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "V-disseminar e incentivar o uso da tecnologia da informação como instrumento de melhoria do desempenho institucional;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI-prover soluções de tecnologia da informação compatíveis com as necessidades atuais e futuras do Tribunal e assegurar o correto funcionamento dessas soluções, de acordo com os níveis de serviço estabelecidos;",
+    "offset_fim": "atuais e futuras do Tribunal e assegurar o correto funcionamento dessas soluções, de acordo com os níveis de serviço estabelecidos;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "VI-prover soluções de tecnologia da informação compatíveis com as necessidades atuais e futuras do Tribunal e assegurar o correto funcionamento dessas soluções, de acordo com os níveis de serviço estabelecidos;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII-apoiar o ISC e as unidades gestoras das soluções de tecnologia da informação no planejamento e na execução de ações de desenvolvimento de competências para utilização das soluções;",
+    "offset_fim": "execução de ações de desenvolvimento de competências para utilização das soluções;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VII-apoiar o ISC e as unidades gestoras das soluções de tecnologia da informação no planejamento e na execução de ações de desenvolvimento de competências para utilização das soluções;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII-apoiar o requisitante de contratação, a Secretaria de Licitações, Contratos e Patrimônio (Selip) e o gestor de contrato no planejamento, na elaboração do termo de referência e gestão contratual de bens e serviços de tecnologia da informação de que o Tribunal necessite;",
+    "offset_fim": "elaboração do termo de referência e gestão contratual de bens e serviços de tecnologia da informação de que o Tribunal necessite;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VIII-apoiar o requisitante de contratação, a Secretaria de Licitações, Contratos e Patrimônio (Selip) e o gestor de contrato no planejamento, na elaboração do termo de referência e gestão contratual de bens e serviços de tecnologia da informação de que o Tribunal necessite;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX-auxiliar na celebração, execução e acompanhamento de contratos, convênios, acordos de cooperação ou instrumentos congêneres que envolvam tecnologia da informação;",
+    "offset_fim": "acordos de cooperação ou instrumentos congêneres que envolvam tecnologia da informação;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IX-auxiliar na celebração, execução e acompanhamento de contratos, convênios, acordos de cooperação ou instrumentos congêneres que envolvam tecnologia da informação;"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X-gerenciar identidade e acesso de usuários internos e externos às soluções de tecnologia",
+    "offset_fim": "internos e externos às soluções de tecnologia da informação oferecidas pelo TCU;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "X-gerenciar identidade e acesso de usuários internos e externos às soluções de tecnologia da informação oferecidas pelo TCU;"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI-viabilizar o intercâmbio de dados, informações e serviços de tecnologia da informação com outras instituições para subsidiar ações administrativas e de controle externo;",
+    "offset_fim": "tecnologia da informação com outras instituições para subsidiar ações administrativas e de controle externo;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "XI-viabilizar o intercâmbio de dados, informações e serviços de tecnologia da informação com outras instituições para subsidiar ações administrativas e de controle externo;"
+  },
+  {
+    "titulo": "XII",
+    "offset_inicio": "XII-participar de ações de controle externo e de inteligência que demandem conhecimento especializado em tecnologia da informação; e",
+    "offset_fim": "XII-participar de ações de controle externo e de inteligência que demandem conhecimento especializado em tecnologia da informação; e\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "XII-participar de ações de controle externo e de inteligência que demandem conhecimento especializado em tecnologia da informação; e\n"
+  },
+  {
+    "titulo": "XIII",
+    "offset_inicio": "XIII-desenvolver outras atividades inerentes à sua finalidade.",
+    "offset_fim": "XIII-desenvolver outras atividades inerentes à sua finalidade.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "XIII-desenvolver outras atividades inerentes à sua finalidade."
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. A STI e a Setic devem atuar de forma integrada e se apoiarem mutuamente,",
+    "offset_fim": "no que couber, para o desenvolvimento dos trabalhos de tecnologia da informação.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Parágrafo único. A STI e a Setic devem atuar de forma integrada e se apoiarem mutuamente, no que couber, para o desenvolvimento dos trabalhos de tecnologia da informação.\n"
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º São competências privativas da STI, observado o disposto no parágrafo único",
+    "offset_fim": "rágrafo único do artigo 3º desta Portaria:",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 4º São competências privativas da STI, observado o disposto no parágrafo único do artigo 3º desta Portaria:"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - apoiar, em coordenação com a Secretaria de Planejamento e Gestão (Seplan) , as",
+    "offset_fim": "rabalho do Tribunal que sejam impactados pela implantação de soluções de tecnologia da informação;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - apoiar, em coordenação com a Secretaria de Planejamento e Gestão (Seplan) , as unidades gestoras na modelagem de processos de trabalho do Tribunal que sejam impactados pela implantação de soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - levantar, documentar e gerenciar regras de negócio e requisitos de soluções de tecnologia da informação, inclusive no que se refere aos aspectos de segurança, infraestrutura e interoperabilidade;",
+    "offset_fim": "de tecnologia da informação, inclusive no que se refere aos aspectos de segurança, infraestrutura e interoperabilidade;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "II - levantar, documentar e gerenciar regras de negócio e requisitos de soluções de tecnologia da informação, inclusive no que se refere aos aspectos de segurança, infraestrutura e interoperabilidade;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - avaliar as regras de negócio e os requisitos definidos pela unidade gestora de cada solução de tecnologia da informação, de modo a apontar possíveis inconsistências ou incompatibilidades e promover a integração com as demais soluções de tecnologia da informação e com a arquitetura tecnológica do Tribunal;",
+    "offset_fim": "ologia da informação e com a arquitetura tecnológica do Tribunal;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "III - avaliar as regras de negócio e os requisitos definidos pela unidade gestora de cada solução de tecnologia da informação, de modo a apontar possíveis inconsistências ou incompatibilidades e promover a integração com as demais soluções de tecnologia da informação e com a arquitetura tecnológica do Tribunal;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - negociar níveis de serviço para cada solução de tecnologia da informação, junto à",
+    "offset_fim": "tecnologia da informação, junto à unidade gestora e demais partes interessadas;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IV - negociar níveis de serviço para cada solução de tecnologia da informação, junto à unidade gestora e demais partes interessadas;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - prover soluções de tecnologia da informação de que o Tribunal necessite, bem como",
+    "offset_fim": "de acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "V - prover soluções de tecnologia da informação de que o Tribunal necessite, bem como recursos de interoperabilidade associados a essas soluções, de acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras;\n"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - realizar os testes necessários para assegurar o correto funcionamento e a aderência de soluções de tecnologia da informação às regras de negócio e aos requisitos especificados;",
+    "offset_fim": "tecnologia da informação às regras de negócio e aos requisitos especificados;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VI - realizar os testes necessários para assegurar o correto funcionamento e a aderência de soluções de tecnologia da informação às regras de negócio e aos requisitos especificados;\n"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - efetuar a manutenção de soluções de tecnologia da informação, de acordo com as regras de negócio",
+    "offset_fim": "os requisitos especificados pelas unidades gestoras, mantendo atualizada a documentação pertinente;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VII - efetuar a manutenção de soluções de tecnologia da informação, de acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras, mantendo atualizada a documentação pertinente;"
+  },
+  {
+    "titulo": "VIII - elaborar e manter atualizados rotinas de produção, parâmetros de monitoramento, indicadores e roteiros inerentes a soluções e serviços de tecnologia da informação;",
+    "offset_inicio": "VIII - elaborar e manter atualizados rotinas de produção, parâmetros de monitoramento,",
+    "offset_fim": "elaboração de roteiros inerentes a soluções e serviços de tecnologia da informação;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VIII - elaborar e manter atualizados rotinas de produção, parâmetros de monitoramento, indicadores e roteiros inerentes a soluções e serviços de tecnologia da informação;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - participar do planejamento e da execução de ações de desenvolvimento de competências para utilização de soluções de tecnologia da informação, bem como apoiar as unidades gestoras na elaboração de material e documentação pertinentes;\n",
+    "offset_fim": "IX - participar do planejamento e da execução de ações de desenvolvimento de competências para utilização de soluções de tecnologia da informação, bem como apoiar as unidades gestoras na elaboração de material e documentação pertinentes;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IX - participar do planejamento e da execução de ações de desenvolvimento de competências para utilização de soluções de tecnologia da informação, bem como apoiar as unidades gestoras na elaboração de material e documentação pertinentes;\n"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - manifestar-se quanto aos aspectos técnicos e custos envolvidos no atendimento a solicitações de órgãos e entidades para cessão de sistemas desenvolvidos pelo Tribunal,",
+    "offset_fim": "as modificações necessárias para viabilizar a cessão; e\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "X - manifestar-se quanto aos aspectos técnicos e custos envolvidos no atendimento a solicitações de órgãos e entidades para cessão de sistemas desenvolvidos pelo Tribunal, bem como realizar, mediante autorização da Comissão de Coordenação Geral (CCG) , as modificações necessárias para viabilizar a cessão; e\n"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI-desenvolver outras atividades inerentes à sua finalidade.\n",
+    "offset_fim": "XI-desenvolver outras atividades inerentes à sua finalidade.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "XI-desenvolver outras atividades inerentes à sua finalidade.\n"
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura:",
+    "offset_fim": "Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura:",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura:"
+  },
+  {
+    "titulo": "I - Diretoria de Soluções de Controle Externo (Ditex)",
+    "offset_inicio": "I - Diretoria de Soluções de Controle Externo (Ditex) :\na) 1º Serviço de Soluções",
+    "offset_fim": " de Tecnologia da Informação (Sesol-3) ;\nb) 4º Serviço de Soluções de Tecnologia da Informação (Sesol-4) .",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - Diretoria de Soluções de Controle Externo (Ditex) :\na) 1º Serviço de Soluções de Tecnologia da Informação (Sesol-1) ;\nb) 3º Serviço de Soluções de Tecnologia da Informação (Sesol-3) ;\nb) 4º Serviço de Soluções de Tecnologia da Informação (Sesol-4) ."
+  },
+  {
+    "titulo": "II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital (Diest)",
+    "offset_inicio": "II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital (Diest) :\na) 2º Serviço",
+    "offset_fim": "a) 2º Serviço de Soluções de Tecnologia da Informação (Sesol-2) ;\nb) 5º Serviço de Soluções de Tecnologia da Informação (Sesol-5) ;\nc) Serviço de Apoio ao Desenvolvimento Descentralizado (Seade) .\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital (Diest) :\na) 2º Serviço de Soluções de Tecnologia da Informação (Sesol-2) ;\nb) 5º Serviço de Soluções de Tecnologia da Informação (Sesol-5) ;\nc) Serviço de Apoio ao Desenvolvimento Descentralizado (Seade) .\n"
+  },
+  {
+    "titulo": "III - Diretoria de Arquitetura da Informação e de Soluções Especializadas (Disesp)",
+    "offset_inicio": "III - Diretoria de Arquitetura da Informação e de Soluções Especializadas (Disesp) :\na) Serviço de Soluções de Suporte a Decisão e Inteligência (Sedin) ;",
+    "offset_fim": "c) Serviço de Padronização e Arquitetura de Sistemas (Sepas) ;\nd) Serviço de Integração e Métricas de Sistemas (Seint) .\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - Diretoria de Arquitetura da Informação e de Soluções Especializadas (Disesp) :\na) Serviço de Soluções de Suporte a Decisão e Inteligência (Sedin) ;\nb) Serviço de Soluções de Gestão de Conteúdo (Segec) ;\nc) Serviço de Padronização e Arquitetura de Sistemas (Sepas) ;\nd) Serviço de Integração e Métricas de Sistemas (Seint) .\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - Assessoria (STI-ASS) .",
+    "offset_fim": "IV - Assessoria (STI-ASS) .",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - Assessoria (STI-ASS) ."
+  },
+  {
+    "titulo": "Art. 6º",
+    "offset_inicio": "Art. 6º São competências comuns a todas as subunidades da Secretaria de Soluções de Tecnologia da Informação, observadas as respectivas áreas de atuação:",
+    "offset_fim": "V - atuar proativamente de forma a assegurar que as ações de tecnologia da informação correspondam às necessidades e expectativas do Tribunal;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 6º São competências comuns a todas as subunidades da Secretaria de Soluções de Tecnologia da Informação, observadas as respectivas áreas de atuação:\nI - participar da formulação de políticas, diretrizes, normas e procedimentos que orientem e disciplinem a utilização da tecnologia da informação no Tribunal;\nII - participar da formulação de estratégias, do planejamento de ações e da elaboração de propostas orçamentárias de tecnologia da informação alinhadas às estratégias institucionais do Tribunal;\nIII - promover o acompanhamento e avaliação periódicos da implementação de estratégias e planos de tecnologia da informação e do alcance das metas estabelecidas;\nIV - definir, implementar e gerir processos de trabalho, observadas as boas práticas de gestão e governança de tecnologia da informação, em coordenação com as unidades pertinentes vinculadas à Setic;\nV - atuar proativamente de forma a assegurar que as ações de tecnologia da informação correspondam às necessidades e expectativas do Tribunal;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - gerenciar as demandas apresentadas à subunidade, promover a adequada alocação de",
+    "offset_fim": "assegurar a adequada divulgação e comunicação do andamento desses projetos às partes interessadas;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "VI - gerenciar as demandas apresentadas à subunidade, promover a adequada alocação de pessoas para atendimento às demandas priorizadas, gerenciar os projetos decorrentes e assegurar a adequada divulgação e comunicação do andamento desses projetos às partes interessadas;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - assegurar a observância aos requisitos obrigatórios para implantação e alteração dos serviços e soluções de tecnologia da informação, em especial quanto à elaboração de roteiros de atendimento,",
+    "offset_fim": "relativos ao desempenho, à segurança da informação e à possibilidade de reversão de mudanças efetuadas;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "VII - assegurar a observância aos requisitos obrigatórios para implantação e alteração dos serviços e soluções de tecnologia da informação, em especial quanto à elaboração de roteiros de atendimento, à definição e adequação de parâmetros e procedimentos relativos ao desempenho, à segurança da informação e à possibilidade de reversão de mudanças efetuadas;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - disseminar e incentivar o uso dos serviços e soluções de tecnologia da informação, por meio da divulgação de informes e do apoio ao ISC no planejamento e execução de ações de desenvolvimento de competências;",
+    "offset_fim": "divulgação de informes e do apoio ao ISC no planejamento e execução de ações de desenvolvimento de competências;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "VIII - disseminar e incentivar o uso dos serviços e soluções de tecnologia da informação, por meio da divulgação de informes e do apoio ao ISC no planejamento e execução de ações de desenvolvimento de competências;\n"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - apoiar a Diretoria de Relacionamento com Clientes no esclarecimento de dúvidas e na resolução de incidentes relatados pelos usuários;",
+    "offset_fim": "Diretoria de Relacionamento com Clientes no esclarecimento de dúvidas e na resolução de incidentes relatados pelos usuários;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "IX - apoiar a Diretoria de Relacionamento com Clientes no esclarecimento de dúvidas e na resolução de incidentes relatados pelos usuários;"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - realizar diagnósticos e formular soluções para problemas relacionados a serviços e soluções de tecnologia da informação;",
+    "offset_fim": "X - realizar diagnósticos e formular soluções para problemas relacionados a serviços e soluções de tecnologia da informação;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "X - realizar diagnósticos e formular soluções para problemas relacionados a serviços e soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - comunicar, tempestivamente, às subunidades da STI e da Setic, bem como às",
+    "offset_fim": "icação do TCU;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XI - comunicar, tempestivamente, às subunidades da STI e da Setic, bem como às demais unidades do Tribunal, eventos de interrupção e restabelecimento de serviços e soluções de tecnologia da informação, observada a Política Corporativa de Comunicação do TCU;"
+  },
+  {
+    "titulo": "XII - zelar pela satisfação dos clientes com os serviços e soluções de tecnologia da informação e pela preservação da imagem da área de tecnologia da informação do Tribunal;",
+    "offset_inicio": "XII - zelar pela satisfação dos clientes com os serviços e soluções de tecnologia da informação e pela preservação da imagem da área de tecnologia da informação do Tribunal;",
+    "offset_fim": "XII - zelar pela satisfação dos clientes com os serviços e soluções de tecnologia da informação e pela preservação da imagem da área de tecnologia da informação do Tribunal;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XII - zelar pela satisfação dos clientes com os serviços e soluções de tecnologia da informação e pela preservação da imagem da área de tecnologia da informação do Tribunal;"
+  },
+  {
+    "titulo": "XIII",
+    "offset_inicio": "XIII - alimentar e manter atualizadas as bases de conhecimento e de gerenciamento",
+    "offset_fim": "com informações referentes aos serviços e soluções de tecnologia da informação;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XIII - alimentar e manter atualizadas as bases de conhecimento e de gerenciamento de configuração com informações referentes aos serviços e soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "XIV",
+    "offset_inicio": "XIV - definir parâmetros de monitoramento e indicadores de anormalidade dos serviços e soluções de tecnologia da informação",
+    "offset_fim": "para que os alarmes sejam direcionados para as estações de gerenciamento do Serviço de Monitoramento e Operação;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XIV - definir parâmetros de monitoramento e indicadores de anormalidade dos serviços e soluções de tecnologia da informação e providenciar para que os alarmes sejam direcionados para as estações de gerenciamento do Serviço de Monitoramento e Operação;"
+  },
+  {
+    "titulo": "XV",
+    "offset_inicio": "XV - apoiar o Serviço de Monitoramento e Operação na execução de rotinas de produção dos serviços e soluções de tecnologia da informação, bem como executar procedimentos relativos a serviços e soluções para os quais não haja rotinas de produção;",
+    "offset_fim": "bem como executar procedimentos relativos a serviços e soluções para os quais não haja rotinas de produção;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XV - apoiar o Serviço de Monitoramento e Operação na execução de rotinas de produção dos serviços e soluções de tecnologia da informação, bem como executar procedimentos relativos a serviços e soluções para os quais não haja rotinas de produção;\n"
+  },
+  {
+    "titulo": "XVI",
+    "offset_inicio": "XVI - especificar bens, serviços e soluções de tecnologia da informação a serem contratados, realizar cotações",
+    "offset_fim": "processos licitatórios decorrentes, bem como encaminhar, quando necessário, solicitações para prorrogação de vigência ou celebração de aditivos contratuais;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XVI - especificar bens, serviços e soluções de tecnologia da informação a serem contratados, realizar cotações de preços, elaborar a documentação necessária à contratação e acompanhar os processos licitatórios decorrentes, bem como encaminhar, quando necessário, solicitações para prorrogação de vigência ou celebração de aditivos contratuais;"
+  },
+  {
+    "titulo": "XVII - promover, em coordenação com as subunidades da STI e da Setic, a integração dos bens, serviços e soluções contratados ao ambiente de TI do Tribunal;",
+    "offset_inicio": "XVII - promover, em coordenação com as subunidades da STI e da Setic, a integração",
+    "offset_fim": "a integração dos bens, serviços e soluções contratados ao ambiente de TI do Tribunal;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "XVII - promover, em coordenação com as subunidades da STI e da Setic, a integração dos bens, serviços e soluções contratados ao ambiente de TI do Tribunal;"
+  },
+  {
+    "titulo": "XVIII - assinar ordens de serviço e outros documentos necessários à gestão contratual e supervisionar atividades e projetos executados por terceiros, de modo a garantir a observância aos termos contratuais, a qualidade dos produtos e dos serviços gerados e a absorção de conhecimento pelo Tribunal;",
+    "offset_inicio": "XVIII - assinar ordens de serviço e outros documentos necessários à gestão contratual e ",
+    "offset_fim": "termos contratuais, a qualidade dos produtos e dos serviços gerados e a absorção de conhecimento pelo Tribunal;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XVIII - assinar ordens de serviço e outros documentos necessários à gestão contratual e supervisionar atividades e projetos executados por terceiros, de modo a garantir a observância aos termos contratuais, a qualidade dos produtos e dos serviços gerados e a absorção de conhecimento pelo Tribunal;\n"
+  },
+  {
+    "titulo": "XIX",
+    "offset_inicio": "XIX - manter contatos com áreas de tecnologia da informação de outros órgãos e entidades",
+    "offset_fim": "tecnologia da informação que sejam aplicáveis ao Tribunal;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XIX - manter contatos com áreas de tecnologia da informação de outros órgãos e entidades da administração direta ou indireta, grupos de interesse e fóruns especializados, para identificação de processos de trabalho, tecnologias e soluções de tecnologia da informação que sejam aplicáveis ao Tribunal;"
+  },
+  {
+    "titulo": "XX",
+    "offset_inicio": "XX - participar do estabelecimento, administração e acompanhamento de contratos, convênios,",
+    "offset_fim": "acordos de cooperação técnica ou instrumentos congêneres relativos à área de tecnologia da informação;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XX - participar do estabelecimento, administração e acompanhamento de contratos, convênios, acordos de cooperação técnica ou instrumentos congêneres relativos à área de tecnologia da informação;\n"
+  },
+  {
+    "titulo": "XXI",
+    "offset_inicio": "XXI - promover a integração, a colaboração e o compartilhamento de informações e conhecimentos",
+    "offset_fim": "com as subunidades da STI e da Setic;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XXI - promover a integração, a colaboração e o compartilhamento de informações e conhecimentos com as subunidades da STI e da Setic;"
+  },
+  {
+    "titulo": "XXII",
+    "offset_inicio": "XXII - articular e coordenar iniciativas conjuntas com outras subunidades de tecnologia da informação para garantir",
+    "offset_fim": "tecnologia da informação para garantir o correto funcionamento de soluções e serviços de TI sob sua responsabilidade;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XXII - articular e coordenar iniciativas conjuntas com outras subunidades de tecnologia da informação para garantir o correto funcionamento de soluções e serviços de TI sob sua responsabilidade;"
+  },
+  {
+    "titulo": "XXIII",
+    "offset_inicio": "XXIII - prospectar e propor adoção de novas tecnologias para benefício do controle externo; e",
+    "offset_fim": "XXIII - prospectar e propor adoção de novas tecnologias para benefício do controle externo; e\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XXIII - prospectar e propor adoção de novas tecnologias para benefício do controle externo; e\n"
+  },
+  {
+    "titulo": "XXIV",
+    "offset_inicio": "XXIV - desenvolver outras atividades inerentes à sua finalidade.\n",
+    "offset_fim": "XXIV - desenvolver outras atividades inerentes à sua finalidade.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "XXIV - desenvolver outras atividades inerentes à sua finalidade.\n"
+  },
+  {
+    "titulo": "Art. 7º",
+    "offset_inicio": "Art. 7º São competências comuns a todas as diretorias da Secretaria de Soluções de Tecnologia",
+    "offset_fim": "observadas as respectivas áreas de atuação:",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 7º São competências comuns a todas as diretorias da Secretaria de Soluções de Tecnologia da Informação, observadas as respectivas áreas de atuação:"
+  },
+  {
+    "titulo": "I - assegurar a definição e a implementação de processos de trabalho aderentes às boas práticas de gestão e governança de tecnologia da informação, em coordenação com as unidades pertinentes vinculadas à Setic;",
+    "offset_inicio": "I - assegurar a definição e a implementação de processos de trabalho aderentes às boas práticas de gestão e governança de tecnologia da informação,",
+    "offset_fim": "em coordenação com as unidades pertinentes vinculadas à Setic;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "I - assegurar a definição e a implementação de processos de trabalho aderentes às boas práticas de gestão e governança de tecnologia da informação, em coordenação com as unidades pertinentes vinculadas à Setic;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - consolidar as demandas apresentadas às subunidades e propor prioridades de atendimento, observados os planos de tecnologia da informação",
+    "offset_fim": "os planos de tecnologia da informação e as estratégias institucionais do Tribunal;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "II - consolidar as demandas apresentadas às subunidades e propor prioridades de atendimento, observados os planos de tecnologia da informação e as estratégias institucionais do Tribunal;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - organizar, supervisionar e coordenar a execução das competências a cargo das\nsubunidades",
+    "offset_fim": "observância dos requisitos de qualidade, segurança da informação e desempenho;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "III - organizar, supervisionar e coordenar a execução das competências a cargo das subunidades que a integram, em especial os projetos e as atividades inerentes ao provimento de serviços e soluções de tecnologia da informação, de modo a assegurar a observância dos requisitos de qualidade, segurança da informação e desempenho;"
+  },
+  {
+    "titulo": "IV - propor modalidade de provimento de cada solução de TI",
+    "offset_inicio": "IV - propor modalidade de provimento de cada solução de TI, nos termos do art. 6º da",
+    "offset_fim": "da Portaria TCU nº 156, de 2012, considerando as regras de negócio e os requisitos especificados pela unidade gestora;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "IV - propor modalidade de provimento de cada solução de TI, nos termos do art. 6º da Resolução TCU nº 247, de 2011, e artigos 8º e 9º da Portaria TCU nº 156, de 2012, considerando as regras de negócio e os requisitos especificados pela unidade gestora;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - acompanhar o andamento dos processos de contratação sob sua responsabilidade e assegurar o cumprimento dos prazos de execução e de renovação contratuais; e",
+    "offset_fim": "lidade e assegurar o cumprimento dos prazos de execução e de renovação contratuais; e\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "V - acompanhar o andamento dos processos de contratação sob sua responsabilidade e assegurar o cumprimento dos prazos de execução e de renovação contratuais; e\n"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - assegurar a necessária articulação e alinhamento com as diretorias da STI e da Set",
+    "offset_fim": "que exijam atuação conjunta ou complementar.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "VI - assegurar a necessária articulação e alinhamento com as diretorias da STI e da Setic no provimento de serviços e soluções de tecnologia da informação que exijam atuação conjunta ou complementar.\n"
+  },
+  {
+    "titulo": "Art. 8º",
+    "offset_inicio": "Art. 8º São competências comuns aos serviços integrantes da estrutura da Secretaria de Soluções de Tecnologia da Informação, observadas as respectivas áreas de atuação:",
+    "offset_fim": "Art. 8º São competências comuns aos serviços integrantes da estrutura da Secretaria de Soluções de Tecnologia da Informação, observadas as respectivas áreas de atuação:",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 8º São competências comuns aos serviços integrantes da estrutura da Secretaria de Soluções de Tecnologia da Informação, observadas as respectivas áreas de atuação:"
+  },
+  {
+    "titulo": "I - apoiar, em coordenação com a Seplan, as unidades gestoras na modelagem de processos de trabalho do Tribunal que sejam impactados pela implantação de soluções de tecnologia da informação;",
+    "offset_inicio": "I - apoiar, em coordenação com a Seplan, as unidades gestoras na modelagem de processos de trabalho do Tribunal que sejam impactados pela implantação de soluções de tecnologia da informação;",
+    "offset_fim": "I - apoiar, em coordenação com a Seplan, as unidades gestoras na modelagem de processos de trabalho do Tribunal que sejam impactados pela implantação de soluções de tecnologia da informação;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "I - apoiar, em coordenação com a Seplan, as unidades gestoras na modelagem de processos de trabalho do Tribunal que sejam impactados pela implantação de soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - levantar, documentar e gerenciar regras de negócio e requisitos de soluções de tecnologia da informação, inclusive no que se refere aos aspectos de segurança, infraestrutura e interoperabilidade;",
+    "offset_fim": "inclusive no que se refere aos aspectos de segurança, infraestrutura e interoperabilidade;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "II - levantar, documentar e gerenciar regras de negócio e requisitos de soluções de tecnologia da informação, inclusive no que se refere aos aspectos de segurança, infraestrutura e interoperabilidade;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - avaliar as regras de negócio e os requisitos definidos pela unidade gestora de cada solução de tecnologia da informação, de modo a apontar possíveis inconsistências",
+    "offset_fim": "demais soluções de tecnologia da informação e com a arquitetura tecnológica do Tribunal;\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "III - avaliar as regras de negócio e os requisitos definidos pela unidade gestora de cada solução de tecnologia da informação, de modo a apontar possíveis inconsistências ou incompatibilidades e promover a integração com as demais soluções de tecnologia da informação e com a arquitetura tecnológica do Tribunal;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - negociar com a unidade gestora e partes interessadas o estabelecimento de níveis de serviço para cada solução e serviço de tecnologia da informação;",
+    "offset_fim": "para cada solução e serviço de tecnologia da informação;\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "IV - negociar com a unidade gestora e partes interessadas o estabelecimento de níveis de serviço para cada solução e serviço de tecnologia da informação;\n"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - prover soluções de tecnologia da informação, bem como recursos de interoperabilidade ",
+    "offset_fim": "acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "V - prover soluções de tecnologia da informação, bem como recursos de interoperabilidade associados a essas soluções, de acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras;"
+  },
+  {
+    "titulo": "VI - demandar de empresas contratadas, mediante ordem de serviço, atividades necessárias ao provimento de soluções de TI, efetuar o recebimento dos produtos dessas atividades e homologar as respectivas ordens de serviço;",
+    "offset_inicio": "VI - demandar de empresas contratadas, mediante ordem de serviço, atividades necessárias",
+    "offset_fim": "efetuar o recebimento dos produtos dessas atividades e homologar as respectivas ordens de serviço;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "VI - demandar de empresas contratadas, mediante ordem de serviço, atividades necessárias ao provimento de soluções de TI, efetuar o recebimento dos produtos dessas atividades e homologar as respectivas ordens de serviço;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - fiscalizar, com o apoio ou em conjunto com as respectivas unidades gestoras, contratos, acordos de cooperação ou instrumentos congêneres relativos a soluções de tecnologia da informação;",
+    "offset_fim": "contratos, acordos de cooperação ou instrumentos congêneres relativos a soluções de tecnologia da informação;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "VII - fiscalizar, com o apoio ou em conjunto com as respectivas unidades gestoras, contratos, acordos de cooperação ou instrumentos congêneres relativos a soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - manter as unidades gestoras e demais partes interessadas informadas sobre o andamento",
+    "offset_fim": "andamento de demandas e projetos relativos a soluções de tecnologia da informação;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "VIII - manter as unidades gestoras e demais partes interessadas informadas sobre o andamento de demandas e projetos relativos a soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - realizar testes funcionais e não funcionais necessários para assegurar o correto funcionamento e aderência de soluções de tecnologia da informação às regras de negócio e aos requisitos especificados;",
+    "offset_fim": "soluções de tecnologia da informação, de acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras, mantendo atualizada a documentação pertinente;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "IX - realizar testes funcionais e não funcionais necessários para assegurar o correto funcionamento e aderência de soluções de tecnologia da informação às regras de negócio e aos requisitos especificados;\nX - efetuar a manutenção de soluções de tecnologia da informação, de acordo com as regras de negócio e os requisitos especificados pelas unidades gestoras, mantendo atualizada a documentação pertinente;"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - elaborar e manter atualizados rotinas de produção, parâmetros de monitoramento e roteiros de atendimento relativos a soluções de tecnologia da informação;",
+    "offset_fim": "elaborar e manter atualizados rotinas de produção, parâmetros de monitoramento e roteiros de atendimento relativos a soluções de tecnologia da informação;\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "XI - elaborar e manter atualizados rotinas de produção, parâmetros de monitoramento e roteiros de atendimento relativos a soluções de tecnologia da informação;\n"
+  },
+  {
+    "titulo": "XII",
+    "offset_inicio": "XII - apoiar o Serviço de Infraestrutura de Aplicações na implantação e na atualização de serviços e soluções de tecnologia da informação no ambiente de produção;",
+    "offset_fim": "na atualização de serviços e soluções de tecnologia da informação no ambiente de produção;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "XII - apoiar o Serviço de Infraestrutura de Aplicações na implantação e na atualização de serviços e soluções de tecnologia da informação no ambiente de produção;"
+  },
+  {
+    "titulo": "XIII",
+    "offset_inicio": "XIII - apoiar as unidades gestoras na elaboração de material para treinamento e documentação inerentes a soluções e serviços de tecnologia da informação;",
+    "offset_fim": "XIII - apoiar as unidades gestoras na elaboração de material para treinamento e documentação inerentes a soluções e serviços de tecnologia da informação;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "XIII - apoiar as unidades gestoras na elaboração de material para treinamento e documentação inerentes a soluções e serviços de tecnologia da informação;"
+  },
+  {
+    "titulo": "XIV",
+    "offset_inicio": "XIV - apoiar as unidades gestoras na formulação de propostas de prioridades de atendimento",
+    "offset_fim": "instâncias competentes para subsidiar o planejamento das ações de tecnologia da informação; e",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "XIV - apoiar as unidades gestoras na formulação de propostas de prioridades de atendimento de demandas, consolidar as propostas apresentadas pelas unidades e encaminhá-las às instâncias competentes para subsidiar o planejamento das ações de tecnologia da informação; e"
+  },
+  {
+    "titulo": "XV",
+    "offset_inicio": "XV - manifestar-se quanto aos aspectos técnicos e custos envolvidos no atendimento a solicitações de órgãos e entidades",
+    "offset_fim": "pelo Tribunal, bem como realizar, mediante autorização da CCG, as modificações necessárias para viabilizar a cessão.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "XV - manifestar-se quanto aos aspectos técnicos e custos envolvidos no atendimento a solicitações de órgãos e entidades para cessão de sistemas desenvolvidos pelo Tribunal, bem como realizar, mediante autorização da CCG, as modificações necessárias para viabilizar a cessão.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. No desempenho das competências descritas nos incisos I a XI deste artigo, os serviços deverão assegurar a observância",
+    "offset_fim": "aplicáveis à integração de soluções contratadas e ao desenvolvimento e manutenção de soluções de tecnologia da informação.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Parágrafo único. No desempenho das competências descritas nos incisos I a XI deste artigo, os serviços deverão assegurar a observância aos processos de trabalho, arquiteturas, padrões técnicos e de usabilidade aplicáveis à integração de soluções contratadas e ao desenvolvimento e manutenção de soluções de tecnologia da informação.\n"
+  },
+  {
+    "titulo": "Art. 9º",
+    "offset_inicio": "Art. 9º A distribuição da responsabilidade pelos projetos e sistemas de informação entre os serviços que compõem a estrutura da STI será definida pelo Secretário,",
+    "offset_fim": "modo a privilegiar a concentração de sistemas afins e equilibrar o volume e a complexidade de demandas a cargo de cada subunidade.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 9º A distribuição da responsabilidade pelos projetos e sistemas de informação entre os serviços que compõem a estrutura da STI será definida pelo Secretário, de modo a privilegiar a concentração de sistemas afins e equilibrar o volume e a complexidade de demandas a cargo de cada subunidade.\n"
+  },
+  {
+    "titulo": "Art. 10.",
+    "offset_inicio": "Art. 10. A área de atuação do Serviço de Soluções de Suporte a Decisão e Intelig",
+    "offset_fim": "do Serviço de Soluções de Suporte a Decisão e Inteligência abrange os seguintes serviços e soluções de tecnologia da informação:\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 10. A área de atuação do Serviço de Soluções de Suporte a Decisão e Inteligência abrange os seguintes serviços e soluções de tecnologia da informação:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - soluções de informações gerenciais;",
+    "offset_fim": "I - soluções de informações gerenciais;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "I - soluções de informações gerenciais;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - soluções de suporte a inteligência de negócio; e\n",
+    "offset_fim": "II - soluções de suporte a inteligência de negócio; e\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "II - soluções de suporte a inteligência de negócio; e\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - soluções de análise e mineração de dados.\n",
+    "offset_fim": "III - soluções de análise e mineração de dados.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "III - soluções de análise e mineração de dados.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Em complemento ao disposto nos arts. 6º e 8º desta Portaria, compete",
+    "offset_fim": "s de dados específicas dos sistemas de informações gerenciais e de suporte a inteligência de negócio.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Parágrafo único. Em complemento ao disposto nos arts. 6º e 8º desta Portaria, compete ao serviço a que se refere este artigo elaborar projetos físicos e realizar análises e ajustes de desempenho de bases de dados específicas dos sistemas de informações gerenciais e de suporte a inteligência de negócio.\n"
+  },
+  {
+    "titulo": "Art. 11.",
+    "offset_inicio": "Art. 11. A área de atuação do Serviço de Apoio ao Desenvolvimento Descentralizado",
+    "offset_fim": "de dados para desenvolvimento descentralizado de soluções de tecnologia da informação.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 11. A área de atuação do Serviço de Apoio ao Desenvolvimento Descentralizado abrange as ferramentas, o suporte metodológico e as bases de dados para desenvolvimento descentralizado de soluções de tecnologia da informação.\n"
+  },
+  {
+    "titulo": "§1º",
+    "offset_inicio": "§1º As competências descritas nos incisos II, IV, V, IX, X e XI do art. 8º desta",
+    "offset_fim": "unidades responsáveis pelo desenvolvimento das soluções, com o apoio deste serviço.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§1º As competências descritas nos incisos II, IV, V, IX, X e XI do art. 8º desta Portaria serão exercidas pelas unidades responsáveis pelo desenvolvimento das soluções, com o apoio deste serviço.\n"
+  },
+  {
+    "titulo": "§2º",
+    "offset_inicio": "§2º Em complemento ao disposto nos arts. 6º e 8º desta Portaria, compete ao serviço a que se refere este artigo, relativamente ao desenvolvimento descentralizado de soluções de TI:",
+    "offset_fim": "ao serviço a que se refere este artigo, relativamente ao desenvolvimento descentralizado de soluções de TI:\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§2º Em complemento ao disposto nos arts. 6º e 8º desta Portaria, compete ao serviço a que se refere este artigo, relativamente ao desenvolvimento descentralizado de soluções de TI:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - definir processos de trabalho, ferramentas, padrões técnicos e de arquitetura aplicáveis ao desenvolvimento descentralizado;",
+    "offset_fim": "ferramentas, padrões técnicos e de arquitetura aplicáveis ao desenvolvimento descentralizado;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "I - definir processos de trabalho, ferramentas, padrões técnicos e de arquitetura aplicáveis ao desenvolvimento descentralizado;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - orientar as unidades do Tribunal quanto à correta aplicação dos processos e padrões ",
+    "offset_fim": "estabelecidos e verificar, periodicamente, a aderência a esses padrões;\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "II - orientar as unidades do Tribunal quanto à correta aplicação dos processos e padrões estabelecidos e verificar, periodicamente, a aderência a esses padrões;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - promover e apoiar iniciativas de comunicação, de disseminação e de adoção de boas práticas e lições aprendidas pelas equipes de projetos de desenvolvimento descentralizado;",
+    "offset_fim": "III - promover e apoiar iniciativas de comunicação, de disseminação e de adoção de boas práticas e lições aprendidas pelas equipes de projetos de desenvolvimento descentralizado;\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "III - promover e apoiar iniciativas de comunicação, de disseminação e de adoção de boas práticas e lições aprendidas pelas equipes de projetos de desenvolvimento descentralizado;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências",
+    "offset_fim": "servidores e colaboradores responsáveis pelo desenvolvimento descentralizado;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências de servidores e colaboradores responsáveis pelo desenvolvimento descentralizado;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - definir, implementar e manter visões dos bancos de dados corporativos necessárias ao",
+    "offset_fim": "ao desenvolvimento e funcionamento de soluções descentralizadas; e\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "V - definir, implementar e manter visões dos bancos de dados corporativos necessárias ao desenvolvimento e funcionamento de soluções descentralizadas; e\n"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado.",
+    "offset_fim": "VI - consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "VI - consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado."
+  },
+  {
+    "titulo": "Art. 12.",
+    "offset_inicio": "Art. 12. A área de atuação do Serviço de Soluções de Gestão de Conteúdo abrange",
+    "offset_fim": "Conteúdo abrange os seguintes serviços e soluções de tecnologia da informação:",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "Art. 12. A área de atuação do Serviço de Soluções de Gestão de Conteúdo abrange os seguintes serviços e soluções de tecnologia da informação:"
+  },
+  {
+    "titulo": "I - portais corporativos;",
+    "offset_inicio": "I - portais corporativos;\n",
+    "offset_fim": "I - portais corporativos;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "I - portais corporativos;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - apoiar o Centro de Documentação do ISC no levantamento, documentação e gerenciamento da arquitetura de informação utilizada para estruturação de sistemas de gestão de conteúdo;\n",
+    "offset_fim": "arquitetura de informação utilizada para estruturação de sistemas de gestão de conteúdo;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "II - apoiar o Centro de Documentação do ISC no levantamento, documentação e gerenciamento da arquitetura de informação utilizada para estruturação de sistemas de gestão de conteúdo;\n"
+  },
+  {
+    "titulo": "III - orientar e apoiar as unidades do Tribunal na classificação, inserção e atualização de conteúdos nos sítios de interesse do Tribunal na Internet; e",
+    "offset_inicio": "III - orientar e apoiar as unidades do Tribunal na classificação, inserção e atualização de conteúdos nos sítios de interesse do Tribunal na Internet; e",
+    "offset_fim": "atualização de conteúdos nos sítios de interesse do Tribunal na Internet; e\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "III - orientar e apoiar as unidades do Tribunal na classificação, inserção e atualização de conteúdos nos sítios de interesse do Tribunal na Internet; e\n"
+  },
+  {
+    "titulo": "IV - definir guias de estilo, modelos e outros padrões de usabilidade para construção de sítios e páginas na Internet",
+    "offset_inicio": "IV - definir guias de estilo, modelos e outros padrões de usabilidade para construção de sítios e páginas na Internet, orientar as subunidades da STI, Setic e demais unidades do Tribunal quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos.",
+    "offset_fim": "Internet, orientar as subunidades da STI, Setic e demais unidades do Tribunal quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "IV - definir guias de estilo, modelos e outros padrões de usabilidade para construção de sítios e páginas na Internet, orientar as subunidades da STI, Setic e demais unidades do Tribunal quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos.\n"
+  },
+  {
+    "titulo": "Art. 13.",
+    "offset_inicio": "Art. 13. Em complemento ao disposto no art. 6º desta Portaria, compete ao Serviço de",
+    "offset_fim": "desta Portaria, compete ao Serviço de Padronização e Arquitetura de Sistemas:",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "Art. 13. Em complemento ao disposto no art. 6º desta Portaria, compete ao Serviço de Padronização e Arquitetura de Sistemas:"
+  },
+  {
+    "titulo": "I - definir guias de estilo, modelos e outros padrões de usabilidade aplicáveis a sistemas de informação, orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;",
+    "offset_inicio": "I - definir guias de estilo, modelos e outros padrões de usabilidade aplicáveis a sistemas de informação",
+    "offset_fim": "quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "I - definir guias de estilo, modelos e outros padrões de usabilidade aplicáveis a sistemas de informação, orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;\n"
+  },
+  {
+    "titulo": "II - definir procedimentos, ferramentas e outros padrões técnicos aplicáveis aos testes de sistemas de informação corporativos, orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;",
+    "offset_inicio": "II - definir procedimentos, ferramentas e outros padrões técnicos aplicáveis aos testes de sistemas de informação corporativos, orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;",
+    "offset_fim": "orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "II - definir procedimentos, ferramentas e outros padrões técnicos aplicáveis aos testes de sistemas de informação corporativos, orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação corporativos, orientar as subunidades da STI quanto ao tema",
+    "offset_fim": "quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "III - definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação corporativos, orientar as subunidades da STI quanto ao tema e verificar, periodicamente, a aderência aos padrões estabelecidos;"
+  },
+  {
+    "titulo": "IV - analisar, periodicamente, os sistemas de informação corporativos",
+    "offset_inicio": "IV - analisar, periodicamente, os sistemas de informação corporativos, de modo a identificar problemas de arquitetura ou funcionamento e solicitar às subunidades da STI as providências necessárias para correção dos problemas identificados;",
+    "offset_fim": "solicitar às subunidades da STI as providências necessárias para correção dos problemas identificados;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "IV - analisar, periodicamente, os sistemas de informação corporativos, de modo a identificar problemas de arquitetura ou funcionamento e solicitar às subunidades da STI as providências necessárias para correção dos problemas identificados;\n"
+  },
+  {
+    "titulo": "V - zelar pela organização do repositório de bibliotecas de software, códigos-fontes, roteiros de implantação e outros artefatos referentes ao desenvolvimento e manutenção dos sistemas de informação corporativos; e",
+    "offset_inicio": "V - zelar pela organização do repositório de bibliotecas de software, códigos-fontes, roteiros de implantação",
+    "offset_fim": "ao desenvolvimento e manutenção dos sistemas de informação corporativos; e\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "V - zelar pela organização do repositório de bibliotecas de software, códigos-fontes, roteiros de implantação e outros artefatos referentes ao desenvolvimento e manutenção dos sistemas de informação corporativos; e\n"
+  },
+  {
+    "titulo": "VI - apoiar a equipe de desenvolvimento quanto à investigação de problemas técnicos nos sistemas corporativos.",
+    "offset_inicio": "VI - apoiar a equipe de desenvolvimento quanto à investigação de problemas técnicos nos sistemas corporativos.",
+    "offset_fim": "VI - apoiar a equipe de desenvolvimento quanto à investigação de problemas técnicos nos sistemas corporativos.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "VI - apoiar a equipe de desenvolvimento quanto à investigação de problemas técnicos nos sistemas corporativos."
+  },
+  {
+    "titulo": "Art. 14.",
+    "offset_inicio": "Art. 14. Em complemento ao disposto no art. 6º desta Portaria, compete ao Serviço de",
+    "offset_fim": "disposto no art. 6º desta Portaria, compete ao Serviço de Integração e Métricas de Sistemas:\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "Art. 14. Em complemento ao disposto no art. 6º desta Portaria, compete ao Serviço de Integração e Métricas de Sistemas:\n"
+  },
+  {
+    "titulo": "I - elaborar e administrar",
+    "offset_inicio": "I - elaborar e administrar, com o apoio das subunidades da STI e da Setic, modelos",
+    "offset_fim": "de natureza corporativa armazenados em servidores de bancos de dados e outros repositórios;\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "I - elaborar e administrar, com o apoio das subunidades da STI e da Setic, modelos de dados, metadados e informações de natureza corporativa armazenados em servidores de bancos de dados e outros repositórios;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - orientar as subunidades da STI e da Setic quanto às alternativas mais eficazes e eficientes para utilização de dados e informações de natureza corporativa, quando da construção e da manutenção de serviços e soluções de tecnologia da informação;",
+    "offset_fim": "II - orientar as subunidades da STI e da Setic quanto às alternativas mais eficazes e eficientes para utilização de dados e informações de natureza corporativa, quando da construção e da manutenção de serviços e soluções de tecnologia da informação;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "II - orientar as subunidades da STI e da Setic quanto às alternativas mais eficazes e eficientes para utilização de dados e informações de natureza corporativa, quando da construção e da manutenção de serviços e soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "III - promover, com o apoio das subunidades da STI e da Setic, a avaliação, melhoria e manutenção da qualidade das informações de natureza corporativa armazenadas, os modelos e outros meta-dados produzidos;",
+    "offset_inicio": "III - promover, com o apoio das subunidades da STI e da Setic, a avaliação, melhoria",
+    "offset_fim": "informações de natureza corporativa armazenadas, os modelos e outros meta-dados produzidos;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "III - promover, com o apoio das subunidades da STI e da Setic, a avaliação, melhoria e manutenção da qualidade das informações de natureza corporativa armazenadas, os modelos e outros meta-dados produzidos;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - definir, com o apoio das subunidades da STI e da Setic, procedimentos, ferramentas e padrões técnicos aplicáveis ao projeto",
+    "offset_fim": "inclusive no que se refere ao intercâmbio de informações com soluções de terceiros;\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "IV - definir, com o apoio das subunidades da STI e da Setic, procedimentos, ferramentas e padrões técnicos aplicáveis ao projeto e implementação de recursos voltados para interoperabilidade dos serviços e soluções de tecnologia da informação do Tribunal, inclusive no que se refere ao intercâmbio de informações com soluções de terceiros;\n"
+  },
+  {
+    "titulo": "V - elaborar e manter registro centralizado sobre as informações e funcionalidades contempladas pelos recursos de interoperabilidade implementados e orientar as subunidades da STI e da Setic quanto às alternativas mais eficazes e eficientes para utilização desses recursos;",
+    "offset_inicio": "V - elaborar e manter registro centralizado sobre as informações e funcionalidades contempladas pelos recursos de interoperabilidade",
+    "offset_fim": "as subunidades da STI e da Setic quanto às alternativas mais eficazes e eficientes para utilização desses recursos;\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "V - elaborar e manter registro centralizado sobre as informações e funcionalidades contempladas pelos recursos de interoperabilidade implementados e orientar as subunidades da STI e da Setic quanto às alternativas mais eficazes e eficientes para utilização desses recursos;\n"
+  },
+  {
+    "titulo": "VI - apoiar a integração dos serviços e soluções de tecnologia da informação",
+    "offset_inicio": "VI - apoiar a integração dos serviços e soluções de tecnologia da informação, por meio",
+    "offset_fim": "compartilhamento de informações de natureza corporativa e do uso de recursos de interoperabilidade;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "VI - apoiar a integração dos serviços e soluções de tecnologia da informação, por meio do compartilhamento de informações de natureza corporativa e do uso de recursos de interoperabilidade;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - efetuar, com o apoio das subunidades da STI e da Setic, a medição das soluções de tecnologia da informação, de acordo com as métricas adotadas pelo Tribunal; e",
+    "offset_fim": "tecnologia da informação, de acordo com as métricas adotadas pelo Tribunal; e\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "VII - efetuar, com o apoio das subunidades da STI e da Setic, a medição das soluções de tecnologia da informação, de acordo com as métricas adotadas pelo Tribunal; e\n"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - orientar as subunidades da STI e da Setic quanto à aplicação das métricas de software adotadas pelo Tribunal.",
+    "offset_fim": "VIII - orientar as subunidades da STI e da Setic quanto à aplicação das métricas de software adotadas pelo Tribunal.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "VIII - orientar as subunidades da STI e da Setic quanto à aplicação das métricas de software adotadas pelo Tribunal."
+  },
+  {
+    "titulo": "Art. 15.",
+    "offset_inicio": "Art. 15. Em complemento ao disposto no art. 6º desta Portaria, compete à Assessoria:\nI - apoiar as subunidades",
+    "offset_fim": "Art. 15. Em complemento ao disposto no art. 6º desta Portaria, compete à Assessoria:\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "Art. 15. Em complemento ao disposto no art. 6º desta Portaria, compete à Assessoria:\n"
+  },
+  {
+    "titulo": "I - apoiar as subunidades da STI e da Setic na consolidação e na formulação de propostas de priorização de demandas relacionadas a tecnologia da informação",
+    "offset_inicio": "I - apoiar as subunidades da STI e da Setic na consolidação e na formulação de",
+    "offset_fim": "consolidação e na formulação de propostas de priorização de demandas relacionadas a tecnologia da informação;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "I - apoiar as subunidades da STI e da Setic na consolidação e na formulação de propostas de priorização de demandas relacionadas a tecnologia da informação;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - coordenar a divulgação interna e externa de informações sobre atividades e projetos da STI e da Setic, em especial no que se refere à implantação e ao uso adequado de serviços",
+    "offset_fim": "e da Setic, em especial no que se refere à implantação e ao uso adequado de serviços e soluções de tecnologia da informação, observada a Política Corporativa de Comunicação do TCU;\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "II - coordenar a divulgação interna e externa de informações sobre atividades e projetos da STI e da Setic, em especial no que se refere à implantação e ao uso adequado de serviços e soluções de tecnologia da informação, observada a Política Corporativa de Comunicação do TCU;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - elaborar, manter e divulgar o portfólio de serviços e soluções de tecnologia da informação à disposição do Tribunal;",
+    "offset_fim": "manter e divulgar o portfólio de serviços e soluções de tecnologia da informação à disposição do Tribunal;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "III - elaborar, manter e divulgar o portfólio de serviços e soluções de tecnologia da informação à disposição do Tribunal;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - coordenar a elaboração e a execução de pesquisas de opinião e outros instrumentos que permitam aferir o nível de satisfação de clientes e usuários de serviços e soluções de tecnologia da informação providos pela STI e pela Setic;",
+    "offset_fim": "satisfação de clientes e usuários de serviços e soluções de tecnologia da informação providos pela STI e pela Setic;\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "IV - coordenar a elaboração e a execução de pesquisas de opinião e outros instrumentos que permitam aferir o nível de satisfação de clientes e usuários de serviços e soluções de tecnologia da informação providos pela STI e pela Setic;\n"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - apoiar as subunidades da STI e da Setic no planejamento e na solicitação de ações",
+    "offset_fim": "de ações para desenvolvimento de competências técnicas e gerenciais da equipe da Secretaria;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "V - apoiar as subunidades da STI e da Setic no planejamento e na solicitação de ações para desenvolvimento de competências técnicas e gerenciais da equipe da Secretaria;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - apoiar as subunidades da STI e da Setic em contatos com áreas de tecnologia da informação de outros órgãos e entidades da administração direta ou indireta,",
+    "offset_fim": "administração direta ou indireta, grupos de interesse e outros fóruns especializados;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "VI - apoiar as subunidades da STI e da Setic em contatos com áreas de tecnologia da informação de outros órgãos e entidades da administração direta ou indireta, grupos de interesse e outros fóruns especializados;\n"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - apoiar os servidores da STI e da Setic, em especial os titulares das unidades, na preparação e na apresentação de palestras institucionais, bem como nas ações de interação com autoridades ou público externo;",
+    "offset_fim": "institucionais, bem como nas ações de interação com autoridades ou público externo;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "VII - apoiar os servidores da STI e da Setic, em especial os titulares das unidades, na preparação e na apresentação de palestras institucionais, bem como nas ações de interação com autoridades ou público externo;\n"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - desenvolver estudos e pesquisas, preparar minutas de pareceres, pronunciamentos,",
+    "offset_fim": " de tecnologia da informação, bem como instruir processos que lhe sejam distribuídos;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "VIII - desenvolver estudos e pesquisas, preparar minutas de pareceres, pronunciamentos, expedientes e comunicações, bem como instruir processos que lhe sejam distribuídos;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - apoiar os servidores da STI e da Setic, em especial os titulares das unidades,",
+    "offset_fim": "principalmente no que se refere à arquitetura e à infraestrutura tecnológica do Tribunal; e\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "IX - apoiar os servidores da STI e da Setic, em especial os titulares das unidades, na definição de políticas, objetivos, diretrizes e metas de evolução e gestão da área de tecnologia da informação, principalmente no que se refere à arquitetura e à infraestrutura tecnológica do Tribunal; e\n"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação.",
+    "offset_fim": "X - promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação.\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "X - promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação.\n"
+  },
+  {
+    "titulo": "Art. 16.",
+    "offset_inicio": "Art. 16. Fica constituído o Comitê Permanente de Integração Contínua (CPIC) , que tem por finalidade assegurar o bom funcionamento do ambiente e infraestrutura de desenvolvimento de sistemas, no que diz respeito a ferramentas para práticas de integração contínua.",
+    "offset_fim": "Fica constituído o Comitê Permanente de Integração Contínua (CPIC) , que tem por finalidade assegurar o bom funcionamento do ambiente e infraestrutura de desenvolvimento de sistemas, no que diz respeito a ferramentas para práticas de integração contínua.\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 16. Fica constituído o Comitê Permanente de Integração Contínua (CPIC) , que tem por finalidade assegurar o bom funcionamento do ambiente e infraestrutura de desenvolvimento de sistemas, no que diz respeito a ferramentas para práticas de integração contínua.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. São competências do CPIC:\n",
+    "offset_fim": "Parágrafo único. São competências do CPIC:\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Parágrafo único. São competências do CPIC:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - zelar pelo ambiente e infraestrutura de desenvolvimento de sistemas, no que diz respeito a ferramentas para práticas de integração contínua, manutenção de repositórios de bibliotecas de códigos ou provimento de soluções para análise de indicadores de qualidade de produtos de código;\n",
+    "offset_fim": "manutenção de repositórios de bibliotecas de códigos ou provimento de soluções para análise de indicadores de qualidade de produtos de código;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "I - zelar pelo ambiente e infraestrutura de desenvolvimento de sistemas, no que diz respeito a ferramentas para práticas de integração contínua, manutenção de repositórios de bibliotecas de códigos ou provimento de soluções para análise de indicadores de qualidade de produtos de código;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - coordenar as interações com as subunidades da STI para identificação de oportunidades",
+    "offset_fim": "oportunidades e necessidades, bem como a priorização e proposição de alternativas de atendimento;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "II - coordenar as interações com as subunidades da STI para identificação de oportunidades e necessidades, bem como a priorização e proposição de alternativas de atendimento;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - assegurar a necessária articulação e alinhamento com as demais diretorias da STI e da Setic no provimento de serviços",
+    "offset_fim": "que exijam atuação conjunta ou complementar nos temas sob responsabilidade deste comitê; e\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "III - assegurar a necessária articulação e alinhamento com as demais diretorias da STI e da Setic no provimento de serviços e soluções de tecnologia da informação que exijam atuação conjunta ou complementar nos temas sob responsabilidade deste comitê; e\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - definir, orientar e executar atividades inerentes à integração contínua de aplicações, melhoria contínua do repositório de bibliotecas corporativas e atualização de indicadores e métricas de qualidade de software.",
+    "offset_fim": "bibliotecas corporativas e atualização de indicadores e métricas de qualidade de software.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "IV - definir, orientar e executar atividades inerentes à integração contínua de aplicações, melhoria contínua do repositório de bibliotecas corporativas e atualização de indicadores e métricas de qualidade de software."
+  },
+  {
+    "titulo": "Art. 17.",
+    "offset_inicio": "Art. 17. Fica constituído o Núcleo de Mobilidade Digital (NMob) , vinculado à Diest, que",
+    "offset_fim": "viabilizar o provimento de soluções para aplicativos móveis no âmbito do Tribunal.\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 17. Fica constituído o Núcleo de Mobilidade Digital (NMob) , vinculado à Diest, que tem por finalidade viabilizar o provimento de soluções para aplicativos móveis no âmbito do Tribunal.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. São competências do Núcleo de Mobilidade Digital:",
+    "offset_fim": "Parágrafo único. São competências do Núcleo de Mobilidade Digital:",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Parágrafo único. São competências do Núcleo de Mobilidade Digital:"
+  },
+  {
+    "titulo": "I-coordenar o desenvolvimento, manutenção, distribuição e monitoramento de aplicativos para dispositivos móveis",
+    "offset_inicio": "I-coordenar o desenvolvimento, manutenção, distribuição e monitoramento de aplicativos",
+    "offset_fim": "esenvolvimento, manutenção, distribuição e monitoramento de aplicativos para dispositivos móveis;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "I-coordenar o desenvolvimento, manutenção, distribuição e monitoramento de aplicativos para dispositivos móveis;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II-gerenciar as contas institucionais do Tribunal em lojas virtuais de aplicativos móveis;",
+    "offset_fim": "II-gerenciar as contas institucionais do Tribunal em lojas virtuais de aplicativos móveis;",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "II-gerenciar as contas institucionais do Tribunal em lojas virtuais de aplicativos móveis;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III-definir padrões, requisitos e restrições a serem observados quando do desenvolvimento e distribuição de aplicativos para dispositivos móveis;",
+    "offset_fim": "quando do desenvolvimento e distribuição de aplicativos para dispositivos móveis;\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "III-definir padrões, requisitos e restrições a serem observados quando do desenvolvimento e distribuição de aplicativos para dispositivos móveis;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV-apoiar o processo de prospecção e de tomada de decisão sobre os serviços que possam",
+    "offset_fim": "serviços que possam ser providos por meio de aplicativos para dispositivos móveis; e",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "IV-apoiar o processo de prospecção e de tomada de decisão sobre os serviços que possam ser providos por meio de aplicativos para dispositivos móveis; e"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V-avaliar a conformidade aos padrões e requisitos estabelecidos e autorizar a publicação",
+    "offset_fim": "autorizar a publicação de aplicativos móveis institucionais em lojas virtuais.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "V-avaliar a conformidade aos padrões e requisitos estabelecidos e autorizar a publicação de aplicativos móveis institucionais em lojas virtuais.\n"
+  },
+  {
+    "titulo": "Art. 18.",
+    "offset_inicio": "Art. 18. Em complemento às competências atribuídas às respectivas unidades, são atribuições dos diretores e chefes de serviço da STI:",
+    "offset_fim": "ibuídas às respectivas unidades, são atribuições dos diretores e chefes de serviço da STI:\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 18. Em complemento às competências atribuídas às respectivas unidades, são atribuições dos diretores e chefes de serviço da STI:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - apoiar os clientes da Secretaria na identificação de necessidades e oportunidades para aplicação de soluções",
+    "offset_fim": "em suporte a processos de trabalho do Tribunal;\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "I - apoiar os clientes da Secretaria na identificação de necessidades e oportunidades para aplicação de soluções de tecnologia da informação em suporte a processos de trabalho do Tribunal;\n"
+  },
+  {
+    "titulo": "II - apoiar os clientes da Secretaria na formulação de alternativas adequadas para atendimento às necessidades e oportunidades identificadas, em consonância com as políticas, diretrizes e planos de tecnologia da informação do Tribunal;",
+    "offset_inicio": "II - apoiar os clientes da Secretaria na formulação de alternativas adequadas para atendimento",
+    "offset_fim": "políticas, diretrizes e planos de tecnologia da informação do Tribunal;\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "II - apoiar os clientes da Secretaria na formulação de alternativas adequadas para atendimento às necessidades e oportunidades identificadas, em consonância com as políticas, diretrizes e planos de tecnologia da informação do Tribunal;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - promover a necessária articulação com os titulares das subunidades da STI e da",
+    "offset_fim": "projetos de construção ou manutenção de serviços e soluções de tecnologia da informação;",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "III - promover a necessária articulação com os titulares das subunidades da STI e da Setic para identificar iniciativas convergentes e otimizar a alocação de recursos em projetos de construção ou manutenção de serviços e soluções de tecnologia da informação;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - assegurar o encaminhamento tempestivo às subunidades da STI e da Setic, bem",
+    "offset_fim": "âncias competentes, de demandas formuladas por clientes da Secretaria; e\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "IV - assegurar o encaminhamento tempestivo às subunidades da STI e da Setic, bem como a outras instâncias competentes, de demandas formuladas por clientes da Secretaria; e\n"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - promover a articulação e o bom relacionamento com clientes e usuários de modo a",
+    "offset_fim": "de modo a assegurar o adequado funcionamento de serviços e soluções de tecnologia da informação.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "V - promover a articulação e o bom relacionamento com clientes e usuários de modo a assegurar o adequado funcionamento de serviços e soluções de tecnologia da informação."
+  },
+  {
+    "titulo": "Art. 19.",
+    "offset_inicio": "Art. 19. Fica revogada a Portaria-STI nº 01, de 1º de março de 2013.\n",
+    "offset_fim": "Art. 19. Fica revogada a Portaria-STI nº 01, de 1º de março de 2013.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 19. Fica revogada a Portaria-STI nº 01, de 1º de março de 2013.\n"
+  },
+  {
+    "titulo": "Art. 20.",
+    "offset_inicio": "Art. 20. Esta Portaria entra em vigor na data de sua publicação.\nRODRIGO CÉSAR S",
+    "offset_fim": "taria entra em vigor na data de sua publicação.\nRODRIGO CÉSAR SANTOS FELISDÓRIO",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 20. Esta Portaria entra em vigor na data de sua publicação.\nRODRIGO CÉSAR SANTOS FELISDÓRIO"
+  }
+]

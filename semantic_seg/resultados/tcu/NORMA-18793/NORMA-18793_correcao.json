@@ -1,0 +1,60 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 5,
+          "tipo": "sequencia",
+          "descricao": "No Art. 2º (pág. 1), o inciso I é seguido diretamente pelo inciso III, sem bloco correspondente ao inciso II."
+        },
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 13. O edital do concurso poderá prever\" (pág. 3) também contém o marcador e o texto de \"Parágrafo único. A realização do treinamento\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 50,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II) maior tempo de efetivo exercício no TCU\" (pág. 4) também contém \"III) maior idade\", que é outro inciso e deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), não salte do inciso \"I - editar e fazer publicar\" para \"III - homologar o resultado do concurso\": localize e inicie um bloco próprio no inciso \"II -\".\n- Termine o bloco do \"Art. 13. O edital do concurso poderá prever\" imediatamente antes de \"Parágrafo único. A realização do treinamento\" (pág. 3) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco do inciso \"II) maior tempo de efetivo exercício no TCU\" imediatamente antes de \"III) maior idade\" (pág. 4) e inicie um bloco próprio no inciso III."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18793/NORMA-18793_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 54,
+    "insights_aplicados": "- No Art. 2º (pág. 1), não salte do inciso \"I - editar e fazer publicar\" para \"III - homologar o resultado do concurso\": localize e inicie um bloco próprio no inciso \"II -\".\n- Termine o bloco do \"Art. 13. O edital do concurso poderá prever\" imediatamente antes de \"Parágrafo único. A realização do treinamento\" (pág. 3) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco do inciso \"II) maior tempo de efetivo exercício no TCU\" imediatamente antes de \"III) maior idade\" (pág. 4) e inicie um bloco próprio no inciso III.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 2º Cabe ao Secretário de Recursos Humanos:\" (pág. 1) contém também o marcador e o texto do inciso \"I - editar e fazer publicar\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de \"Art. 2º Cabe ao Secretário de Recursos Humanos:\" imediatamente antes de \"I - editar e fazer publicar\" (pág. 1) e inicie um bloco próprio no inciso I.\n- No Art. 2º (pág. 1), não salte do inciso \"I - editar e fazer publicar\" para \"III - homologar o resultado do concurso\": localize e inicie um bloco próprio no inciso \"II -\".\n- Termine o bloco do \"Art. 13. O edital do concurso poderá prever\" imediatamente antes de \"Parágrafo único. A realização do treinamento\" (pág. 3) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco do inciso \"II) maior tempo de efetivo exercício no TCU\" imediatamente antes de \"III) maior idade\" (pág. 4) e inicie um bloco próprio no inciso III."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18793/NORMA-18793_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "- Termine o bloco de \"Art. 2º Cabe ao Secretário de Recursos Humanos:\" imediatamente antes de \"I - editar e fazer publicar\" (pág. 1) e inicie um bloco próprio no inciso I.\n- No Art. 2º (pág. 1), não salte do inciso \"I - editar e fazer publicar\" para \"III - homologar o resultado do concurso\": localize e inicie um bloco próprio no inciso \"II -\".\n- Termine o bloco do \"Art. 13. O edital do concurso poderá prever\" imediatamente antes de \"Parágrafo único. A realização do treinamento\" (pág. 3) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco do inciso \"II) maior tempo de efetivo exercício no TCU\" imediatamente antes de \"III) maior idade\" (pág. 4) e inicie um bloco próprio no inciso III.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-18793/NORMA-18793_ciclo3.json"
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 109,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 87,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"XI - falência ou extinção da empresa concessionária\" (pág. 6) também contém os marcadores dos incisos XII e XIII e, conforme a remissão do § 1º aos incisos I a XIV, prossegue com unidades irmãs que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 87,
+          "tipo": "granularidade",
+          "descricao": "No Art. 7º, os incisos I a X foram segmentados individualmente, mas os incisos XI e seguintes foram agrupados no mesmo bloco, produzindo granularidade desigual entre incisos irmãos."
+        },
+        {
+          "bloco": 92,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 8º A fiscalização das rodovias federais delegadas\" (pág. 6) contém também os incisos I, II e III, enquanto o inciso IV inicia bloco próprio na página 7."
+        },
+        {
+          "bloco": 92,
+          "tipo": "granularidade",
+          "descricao": "No Art. 8º, o caput e os incisos I a III foram agrupados, mas o inciso IV foi cortado separadamente, embora todos sejam unidades do mesmo nível."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 6), termine o bloco do inciso \"XI - falência ou extinção da empresa concessionária\" imediatamente antes de \"XII - subconcessão do objeto contratual\"; inicie blocos próprios também em \"XIII - transferência da concessão\" e no inciso XIV subsequente.\n- No Art. 8º (pág. 6), termine o bloco do caput, que abre com \"Art. 8º A fiscalização das rodovias federais delegadas\", imediatamente antes de \"I - solicitação do Congresso Nacional\". Inicie um bloco próprio em cada inciso I, II e III, tal como já ocorre com \"IV - representação legitimamente formulada\" na pág. 7."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 119,
+    "insights_aplicados": "- No Art. 7º (pág. 6), termine o bloco do inciso \"XI - falência ou extinção da empresa concessionária\" imediatamente antes de \"XII - subconcessão do objeto contratual\"; inicie blocos próprios também em \"XIII - transferência da concessão\" e no inciso XIV subsequente.\n- No Art. 8º (pág. 6), termine o bloco do caput, que abre com \"Art. 8º A fiscalização das rodovias federais delegadas\", imediatamente antes de \"I - solicitação do Congresso Nacional\". Inicie um bloco próprio em cada inciso I, II e III, tal como já ocorre com \"IV - representação legitimamente formulada\" na pág. 7.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 46,
+          "tipo": "englobante",
+          "descricao": "O bloco da alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" (pág. 3) contém também os itens numerados \"1.\", \"2.\" e \"3.\" subsequentes, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 54,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"b) contrato de concessão assinado;\" (pág. 4) contém o marcador da alínea irmã \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\", sem corte entre elas."
+        },
+        {
+          "bloco": 81,
+          "tipo": "englobante",
+          "descricao": "O bloco do caput do \"Art. 7º O órgão, a entidade federal concedente ou a agência reguladora\" (pág. 5) contém, após os dois-pontos, o inciso \"I - aprovação de solicitação de revisão, adequação ou reajuste\", que deveria ser bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 6), termine o bloco do inciso \"XI - falência ou extinção da empresa concessionária\" imediatamente antes de \"XII - subconcessão do objeto contratual\"; inicie blocos próprios também em \"XIII - transferência da concessão\" e no inciso XIV subsequente.\n- No Art. 8º (pág. 6), termine o bloco do caput, que abre com \"Art. 8º A fiscalização das rodovias federais delegadas\", imediatamente antes de \"I - solicitação do Congresso Nacional\". Inicie um bloco próprio em cada inciso I, II e III, tal como já ocorre com \"IV - representação legitimamente formulada\" na pág. 7.\n- Na alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" do Art. 3º (pág. 3), termine o bloco antes de cada item numerado que se segue — \"1. questionamentos\", \"2. atas\" e \"3. relatório\" — e inicie um bloco próprio em cada item.\n- No inciso V do Art. 3º (pág. 4), termine o bloco da alínea \"b) contrato de concessão assinado;\" imediatamente antes de \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\" e inicie bloco próprio nessa alínea.\n- No Art. 7º (pág. 5), termine o bloco do caput \"Art. 7º O órgão, a entidade federal concedente ou a agência reguladora\" imediatamente antes de \"I - aprovação de solicitação de revisão, adequação ou reajuste\" e inicie bloco próprio no inciso I."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 125,
+    "insights_aplicados": "- No Art. 7º (pág. 6), termine o bloco do inciso \"XI - falência ou extinção da empresa concessionária\" imediatamente antes de \"XII - subconcessão do objeto contratual\"; inicie blocos próprios também em \"XIII - transferência da concessão\" e no inciso XIV subsequente.\n- No Art. 8º (pág. 6), termine o bloco do caput, que abre com \"Art. 8º A fiscalização das rodovias federais delegadas\", imediatamente antes de \"I - solicitação do Congresso Nacional\". Inicie um bloco próprio em cada inciso I, II e III, tal como já ocorre com \"IV - representação legitimamente formulada\" na pág. 7.\n- Na alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" do Art. 3º (pág. 3), termine o bloco antes de cada item numerado que se segue — \"1. questionamentos\", \"2. atas\" e \"3. relatório\" — e inicie um bloco próprio em cada item.\n- No inciso V do Art. 3º (pág. 4), termine o bloco da alínea \"b) contrato de concessão assinado;\" imediatamente antes de \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\" e inicie bloco próprio nessa alínea.\n- No Art. 7º (pág. 5), termine o bloco do caput \"Art. 7º O órgão, a entidade federal concedente ou a agência reguladora\" imediatamente antes de \"I - aprovação de solicitação de revisão, adequação ou reajuste\" e inicie bloco próprio no inciso I.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - terceiro estágio:\" (pág. 3) também contém os marcadores das alíneas \"a) questionamentos\", \"b) atas de abertura\" e \"c) relatório de julgamento\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (pág. 6), encerre o bloco do caput iniciado por \"Art. 8º A fiscalização das rodovias federais delegadas\" imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II e III.\n- No Art. 3º, na alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" (pág. 3), encerre o bloco antes de cada item subsequente — \"1. questionamentos\", \"2. atas\" e \"3. relatório\" — e inicie um bloco próprio em cada item.\n- No Art. 3º, no inciso \"III - terceiro estágio:\" (pág. 3), encerre o bloco do inciso antes de \"a) questionamentos\"; em seguida, encerre cada bloco de alínea antes de \"b) atas de abertura\" e de \"c) relatório de julgamento\", iniciando blocos próprios para essas três alíneas.\n- No Art. 3º, no inciso \"V - quinto estágio:\" (pág. 4), encerre o bloco da alínea \"b) contrato de concessão assinado;\" imediatamente antes de \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\" e inicie bloco próprio nessa alínea."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (pág. 6), encerre o bloco do caput iniciado por \"Art. 8º A fiscalização das rodovias federais delegadas\" imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II e III.\n- No Art. 3º, na alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" (pág. 3), encerre o bloco antes de cada item subsequente — \"1. questionamentos\", \"2. atas\" e \"3. relatório\" — e inicie um bloco próprio em cada item.\n- No Art. 3º, no inciso \"III - terceiro estágio:\" (pág. 3), encerre o bloco do inciso antes de \"a) questionamentos\"; em seguida, encerre cada bloco de alínea antes de \"b) atas de abertura\" e de \"c) relatório de julgamento\", iniciando blocos próprios para essas três alíneas.\n- No Art. 3º, no inciso \"V - quinto estágio:\" (pág. 4), encerre o bloco da alínea \"b) contrato de concessão assinado;\" imediatamente antes de \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\" e inicie bloco próprio nessa alínea.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 72,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco iniciado pela alínea \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\" também contém as alíneas subsequentes \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos...\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 81,
+          "tipo": "englobante",
+          "descricao": "O bloco do caput do Art. 6º inclui, ao final, o marcador \"Parágrafo único.\", que é uma unidade hierárquica própria e deve iniciar outro bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 3º, no inciso \"IV - quarto estágio:\" (pág. 3), encerre a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" antes de cada item \"1. questionamentos\", \"2. atas\", \"3. relatório\" e \"4. decisões\", iniciando bloco próprio em cada item.\n- No Art. 3º (págs. 3–4), mantenha blocos próprios para as alíneas do inciso \"III - terceiro estágio:\" e para cada alínea do inciso \"V - quinto estágio:\", em especial separando \"b) contrato de concessão assinado;\" de \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\".\n- No Art. 4º (pág. 4), encerre o bloco da alínea \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\" imediatamente antes de \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e inicie blocos próprios em \"c)\" e em \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o bloco do caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 116,
+    "insights_aplicados": "- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 3º, no inciso \"IV - quarto estágio:\" (pág. 3), encerre a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" antes de cada item \"1. questionamentos\", \"2. atas\", \"3. relatório\" e \"4. decisões\", iniciando bloco próprio em cada item.\n- No Art. 3º (págs. 3–4), mantenha blocos próprios para as alíneas do inciso \"III - terceiro estágio:\" e para cada alínea do inciso \"V - quinto estágio:\", em especial separando \"b) contrato de concessão assinado;\" de \"c) Programa de Exploração da Rodovia (PER) apresentado pela concessionária\".\n- No Art. 4º (pág. 4), encerre o bloco da alínea \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\" imediatamente antes de \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e inicie blocos próprios em \"c)\" e em \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o bloco do caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 32,
+          "tipo": "englobante",
+          "descricao": "No inciso \"III - terceiro estágio:\" do Art. 3º (pág. 3), o bloco reúne indevidamente as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\", os itens numerados sob a alínea c) e a alínea \"d) decisões proferidas\", embora cada marcador deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 51,
+          "tipo": "englobante",
+          "descricao": "Na alínea \"d) cópia da proposta econômico-financeira\" do inciso \"V - quinto estágio:\" do Art. 3º (pág. 4), o bloco iniciado em \"3. discriminação e cronograma\" contém também o marcador e o texto do item \"4. fluxo de caixa da concessão\", que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (pág. 3), no inciso \"III - terceiro estágio:\", encerre o bloco do inciso antes de cada alínea \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\"; dentro da alínea c), encerre cada bloco imediatamente antes de cada item numerado 1 a 6, iniciando bloco próprio em cada marcador.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada de cada item \"1. questionamentos\", \"2. atas\", \"3. relatório\" e \"4. decisões\"; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", separando especialmente \"3. discriminação e cronograma\" de \"4. fluxo de caixa da concessão\".\n- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 124,
+    "insights_aplicados": "- No Art. 3º (pág. 3), no inciso \"III - terceiro estágio:\", encerre o bloco do inciso antes de cada alínea \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\"; dentro da alínea c), encerre cada bloco imediatamente antes de cada item numerado 1 a 6, iniciando bloco próprio em cada marcador.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada de cada item \"1. questionamentos\", \"2. atas\", \"3. relatório\" e \"4. decisões\"; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", separando especialmente \"3. discriminação e cronograma\" de \"4. fluxo de caixa da concessão\".\n- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 38,
+          "tipo": "sequencia",
+          "descricao": "A alínea \"c) relatório de julgamento da fase de habilitação, em que sejam abordados os aspectos relativos a:\" termina anunciando uma lista, mas o bloco seguinte já inicia a alínea \"d) decisões proferidas\"; faltam os itens numerados 1 a 6 que deveriam suceder a alínea c)."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (pág. 3), no inciso \"III - terceiro estágio:\", mantenha blocos próprios para as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\"; na alínea \"c) relatório de julgamento da fase de habilitação, em que sejam abordados os aspectos relativos a:\", não salte para a alínea d): capture e inicie bloco próprio em cada item numerado 1 a 6.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada de cada item \"1. questionamentos\", \"2. atas\", \"3. relatório\" e \"4. decisões\"; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", separando especialmente \"3. discriminação e cronograma\" de \"4. fluxo de caixa da concessão\".\n- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 126,
+    "insights_aplicados": "- No Art. 3º (pág. 3), no inciso \"III - terceiro estágio:\", mantenha blocos próprios para as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\"; na alínea \"c) relatório de julgamento da fase de habilitação, em que sejam abordados os aspectos relativos a:\", não salte para a alínea d): capture e inicie bloco próprio em cada item numerado 1 a 6.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada de cada item \"1. questionamentos\", \"2. atas\", \"3. relatório\" e \"4. decisões\"; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", separando especialmente \"3. discriminação e cronograma\" de \"4. fluxo de caixa da concessão\".\n- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 61,
+          "tipo": "englobante",
+          "descricao": "No Art. 3º, inciso \"V - quinto estágio:\", o bloco iniciado em \"3. discriminação e cronograma econômico-financeiro dos investimentos e dos custos operacionais\" também contém o marcador e o texto do item irmão \"4. fluxo de caixa da concessão...\", que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (pág. 3), no inciso \"III - terceiro estágio:\", mantenha blocos próprios para as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\"; na alínea \"c) relatório de julgamento da fase de habilitação, em que sejam abordados os aspectos relativos a:\", inicie bloco próprio em cada item numerado 1 a 6.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada dos itens \"1. questionamentos\" e \"2. atas\", e mantenha a alínea \"b) fase de julgamento das propostas econômico-financeiras:\" separada de seus itens 1 a 4; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", encerrando o item \"3. discriminação e cronograma econômico-financeiro dos investimentos e dos custos operacionais\" imediatamente antes de \"4. fluxo de caixa da concessão\" e iniciando bloco próprio neste último.\n- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 113,
+    "insights_aplicados": "- No Art. 3º (pág. 3), no inciso \"III - terceiro estágio:\", mantenha blocos próprios para as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\"; na alínea \"c) relatório de julgamento da fase de habilitação, em que sejam abordados os aspectos relativos a:\", inicie bloco próprio em cada item numerado 1 a 6.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada dos itens \"1. questionamentos\" e \"2. atas\", e mantenha a alínea \"b) fase de julgamento das propostas econômico-financeiras:\" separada de seus itens 1 a 4; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", encerrando o item \"3. discriminação e cronograma econômico-financeiro dos investimentos e dos custos operacionais\" imediatamente antes de \"4. fluxo de caixa da concessão\" e iniciando bloco próprio neste último.\n- No Art. 7º (págs. 5–6), encerre o bloco do caput imediatamente antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV, inclusive em \"XII - subconcessão do objeto contratual\", \"XIII - transferência da concessão\" e \"XIV - prorrogação do prazo contratual\".\n- No Art. 8º (págs. 6–7), encerre o bloco do caput imediatamente antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 10,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"I - primeiro estágio:\" do Art. 3º também contém o marcador e o conteúdo da alínea \"a) ato justificativo quanto à conveniência da outorga da concessão\"; ambos devem iniciar blocos distintos."
+        },
+        {
+          "bloco": 30,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado na alínea \"c) justificativa para a escolha do parâmetro\" do inciso II do Art. 3º engloba marcadores de unidades subsequentes, incluindo a alínea \"d) comunicações e esclarecimentos\", o inciso \"III - terceiro estágio:\" e alíneas deste inciso; cada uma dessas unidades deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (pág. 2), separe o inciso \"I - primeiro estágio:\" de cada uma de suas alíneas: termine o bloco do inciso imediatamente antes de \"a) ato justificativo quanto à conveniência da outorga da concessão\" e inicie blocos próprios em cada alínea de \"a)\" a \"g)\".\n- No Art. 3º (pág. 3), no inciso \"II - segundo estágio:\", inicie blocos próprios nas alíneas \"c) justificativa para a escolha do parâmetro\" e \"d) comunicações e esclarecimentos\"; termine a alínea \"d)\" antes de \"III - terceiro estágio:\". No inciso III, mantenha blocos próprios para as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\", e, na alínea \"c)\", inicie bloco próprio em cada item numerado 1 a 6.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada de seus itens 1 a 4 e a alínea \"b) fase de julgamento das propostas econômico-financeiras:\" separada de seus itens 1 a 4; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", separando especialmente o item \"3. discriminação e cronograma econômico-financeiro\" do item \"4. fluxo de caixa da concessão\".\n- No Art. 7º (págs. 5–6), encerre o caput antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV; no Art. 8º (págs. 6–7), encerre o caput antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 119,
+    "insights_aplicados": "- No Art. 3º (pág. 2), separe o inciso \"I - primeiro estágio:\" de cada uma de suas alíneas: termine o bloco do inciso imediatamente antes de \"a) ato justificativo quanto à conveniência da outorga da concessão\" e inicie blocos próprios em cada alínea de \"a)\" a \"g)\".\n- No Art. 3º (pág. 3), no inciso \"II - segundo estágio:\", inicie blocos próprios nas alíneas \"c) justificativa para a escolha do parâmetro\" e \"d) comunicações e esclarecimentos\"; termine a alínea \"d)\" antes de \"III - terceiro estágio:\". No inciso III, mantenha blocos próprios para as alíneas \"a) questionamentos\", \"b) atas\", \"c) relatório de julgamento\" e \"d) decisões proferidas\", e, na alínea \"c)\", inicie bloco próprio em cada item numerado 1 a 6.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", mantenha a alínea \"a) fase de julgamento das propostas técnicas, quando houver:\" separada de seus itens 1 a 4 e a alínea \"b) fase de julgamento das propostas econômico-financeiras:\" separada de seus itens 1 a 4; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\", separando especialmente o item \"3. discriminação e cronograma econômico-financeiro\" do item \"4. fluxo de caixa da concessão\".\n- No Art. 7º (págs. 5–6), encerre o caput antes de \"I - aprovação de solicitação de revisão\" e inicie bloco próprio em cada inciso I a XIV; no Art. 8º (págs. 6–7), encerre o caput antes de \"I - solicitação do Congresso Nacional\" e inicie bloco próprio em cada inciso I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), encerre o caput antes de \"Parágrafo único. A atuação da unidade técnica\" e inicie bloco próprio no parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VIII - declaração da caducidade da concessão\" (pág. 6) também contém os marcadores e textos dos incisos IX, X, XI, XII, XIII e XIV do Art. 7º, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 94,
+          "tipo": "granularidade",
+          "descricao": "No Art. 7º, os incisos I a VII foram segmentados individualmente, mas os incisos VIII a XIV foram agrupados no mesmo bloco, embora sejam unidades irmãs do mesmo nível."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (pág. 2), mantenha o inciso \"I - primeiro estágio:\" separado de cada uma de suas alíneas; termine o bloco do inciso imediatamente antes de \"a) ato justificativo quanto à conveniência da outorga da concessão\" e inicie blocos próprios em cada alínea de \"a)\" a \"g)\".\n- No Art. 3º (pág. 3), no inciso \"II - segundo estágio:\", mantenha blocos próprios nas alíneas \"a)\" a \"e)\"; no inciso \"III - terceiro estágio:\", mantenha blocos próprios nas alíneas \"a)\" a \"d)\" e, na alínea \"c) relatório de julgamento\", inicie bloco próprio em cada item numerado.\n- No Art. 3º (págs. 3–4), mantenha, no inciso \"IV - quarto estágio:\", as alíneas \"a) fase de julgamento das propostas técnicas\" e \"b) fase de julgamento das propostas econômico-financeiras\" separadas de seus itens 1 a 4; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\".\n- No Art. 7º (págs. 5–6), encerre o caput antes de \"I - aprovação de solicitação de revisão\" e inicie um bloco próprio em cada inciso I a XIV; em especial, termine o bloco do inciso \"VIII - declaração da caducidade da concessão\" imediatamente antes de \"IX - ação judicial movida pela concessionária\" e separe também os incisos X, XI, XII, XIII e XIV. No Art. 8º (págs. 6–7), mantenha o caput separado dos incisos I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), mantenha o caput separado de \"Parágrafo único. A atuação da unidade técnica\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- No Art. 3º (pág. 2), mantenha o inciso \"I - primeiro estágio:\" separado de cada uma de suas alíneas; termine o bloco do inciso imediatamente antes de \"a) ato justificativo quanto à conveniência da outorga da concessão\" e inicie blocos próprios em cada alínea de \"a)\" a \"g)\".\n- No Art. 3º (pág. 3), no inciso \"II - segundo estágio:\", mantenha blocos próprios nas alíneas \"a)\" a \"e)\"; no inciso \"III - terceiro estágio:\", mantenha blocos próprios nas alíneas \"a)\" a \"d)\" e, na alínea \"c) relatório de julgamento\", inicie bloco próprio em cada item numerado.\n- No Art. 3º (págs. 3–4), mantenha, no inciso \"IV - quarto estágio:\", as alíneas \"a) fase de julgamento das propostas técnicas\" e \"b) fase de julgamento das propostas econômico-financeiras\" separadas de seus itens 1 a 4; no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\".\n- No Art. 7º (págs. 5–6), encerre o caput antes de \"I - aprovação de solicitação de revisão\" e inicie um bloco próprio em cada inciso I a XIV; em especial, termine o bloco do inciso \"VIII - declaração da caducidade da concessão\" imediatamente antes de \"IX - ação judicial movida pela concessionária\" e separe também os incisos X, XI, XII, XIII e XIV. No Art. 8º (págs. 6–7), mantenha o caput separado dos incisos I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), mantenha o caput separado de \"Parágrafo único. A atuação da unidade técnica\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "A alínea \"b) fase de julgamento das propostas econômico-financeiras:\" contém os itens numerados \"1.\" a \"4.\", que são unidades de nível Item e deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (pág. 2), mantenha o inciso \"I - primeiro estágio:\" separado de cada uma de suas alíneas; termine o bloco do inciso imediatamente antes de \"a) ato justificativo quanto à conveniência da outorga da concessão\" e inicie blocos próprios em cada alínea de \"a)\" a \"g)\".\n- No Art. 3º (pág. 3), no inciso \"II - segundo estágio:\", mantenha blocos próprios nas alíneas \"a)\" a \"e)\"; no inciso \"III - terceiro estágio:\", mantenha blocos próprios nas alíneas \"a)\" a \"d)\" e, na alínea \"c) relatório de julgamento\", inicie bloco próprio em cada item numerado.\n- No Art. 3º (págs. 3–4), no inciso \"IV - quarto estágio:\", termine o bloco da alínea \"b) fase de julgamento das propostas econômico-financeiras:\" imediatamente antes de \"1. questionamentos, comunicações e esclarecimentos\" e inicie blocos próprios em cada item \"1.\" a \"4.\"; mantenha também a alínea \"a) fase de julgamento das propostas técnicas\" separada de seus eventuais itens e, no inciso \"V - quinto estágio:\", mantenha blocos próprios para todas as alíneas e para os itens da alínea \"d) cópia da proposta econômico-financeira\".\n- No Art. 7º (págs. 5–6), encerre o caput antes de \"I - aprovação de solicitação de revisão\" e inicie um bloco próprio em cada inciso I a XIV; em especial, termine o bloco do inciso \"VIII - declaração da caducidade da concessão\" imediatamente antes de \"IX - ação judicial movida pela concessionária\" e separe também os incisos X, XI, XII, XIII e XIV. No Art. 8º (págs. 6–7), mantenha o caput separado dos incisos I, II, III e IV.\n- No Art. 4º (pág. 4), mantenha blocos próprios nas alíneas \"b) a análise conclusiva dos recursos interpostos contra o resultado final da fase de julgamento das propostas técnicas\", \"c) a divulgação do resultado final da fase de julgamento das propostas econômico-financeiras\" e \"d) a análise conclusiva dos recursos\"; no Art. 6º (pág. 5), mantenha o caput separado de \"Parágrafo único. A atuação da unidade técnica\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20182/NORMA-20182_ciclo10.json"
+  }
+]

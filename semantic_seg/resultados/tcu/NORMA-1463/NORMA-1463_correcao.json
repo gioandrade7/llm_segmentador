@@ -1,0 +1,52 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 3º A Semec tem a seguinte estrutura:” (pág. 1) inclui também os incisos irmãos “I - Diretoria de Auditoria...”, “II - Diretoria de Denúncia...” e “III - Serviço de Avaliação da Qualidade...”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 16,
+          "tipo": "granularidade",
+          "descricao": "Os incisos I, II e III do Art. 3º estão agrupados no mesmo bloco, enquanto os incisos IV, V e VI do mesmo artigo, na pág. 2, foram segmentados individualmente."
+        },
+        {
+          "bloco": 58,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “II - desenvolver, dentro dos padrões estabelecidos...” do Art. 9º (pág. 5) contém também os marcadores e textos dos incisos “III - apoiar o desenvolvimento...” e “IV - manifestar-se...”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 58,
+          "tipo": "granularidade",
+          "descricao": "Os incisos II, III e IV do Art. 9º foram agrupados, embora o inciso I do mesmo artigo e os incisos dos demais artigos tenham sido segmentados individualmente."
+        },
+        {
+          "bloco": 27,
+          "tipo": "lacuna",
+          "descricao": "Após o inciso IV do Art. 4º, na pág. 2, o próximo bloco inicia diretamente em “CAPÍTULO V — DAS COMPETÊNCIAS DA DEPRON”, na pág. 3; faltam os blocos correspondentes ao CAPÍTULO IV e ao Art. 5º, que deveriam ocorrer antes do CAPÍTULO V."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de “Art. 3º A Semec tem a seguinte estrutura:” antes de “I - Diretoria de Auditoria e Prestação de Contas Anual (Diraud);” e inicie blocos próprios em cada inciso I, II e III.\n- Na pág. 5, termine o bloco de “II - desenvolver, dentro dos padrões estabelecidos...” do Art. 9º antes de “III - apoiar o desenvolvimento...” e inicie outro bloco em “IV - manifestar-se, ouvida a unidade desenvolvedora e o Siac...”.\n- Entre o inciso “IV - propor e realizar fiscalizações de iniciativa da Semec...” do Art. 4º, na pág. 2, e “CAPÍTULO V — DAS COMPETÊNCIAS DA DEPRON”, na pág. 3, capture e segmente o CAPÍTULO IV e o Art. 5º, iniciando um bloco em cada marcador e em cada inciso que o Art. 5º contenha."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1463/NORMA-1463_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 97,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de “Art. 3º A Semec tem a seguinte estrutura:” antes de “I - Diretoria de Auditoria e Prestação de Contas Anual (Diraud);” e inicie blocos próprios em cada inciso I, II e III.\n- Na pág. 5, termine o bloco de “II - desenvolver, dentro dos padrões estabelecidos...” do Art. 9º antes de “III - apoiar o desenvolvimento...” e inicie outro bloco em “IV - manifestar-se, ouvida a unidade desenvolvedora e o Siac...”.\n- Entre o inciso “IV - propor e realizar fiscalizações de iniciativa da Semec...” do Art. 4º, na pág. 2, e “CAPÍTULO V — DAS COMPETÊNCIAS DA DEPRON”, na pág. 3, capture e segmente o CAPÍTULO IV e o Art. 5º, iniciando um bloco em cada marcador e em cada inciso que o Art. 5º contenha.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1463/NORMA-1463_ciclo2.json"
+  }
+]

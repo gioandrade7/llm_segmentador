@@ -1,0 +1,282 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 98,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “VII - realizar intercâmbio...” contém também os incisos irmãos “VIII - disseminar boas práticas...”, “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”, todos do Art. 2º."
+        },
+        {
+          "bloco": 74,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “VIII - coordenar os trabalhos de desenvolvimento...” contém também o inciso irmão “IX - manifestar-se sobre a colocação em ambiente de produção...”, ambos do Art. 8º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...”; inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...”; inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” contém o marcador de ruído de página “<!-- PÁGINA 2 -->”, que deve ser descartado e não integrado ao texto segmentado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...” e inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.\n- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha apenas o texto do título do capítulo no bloco."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 110,
+    "insights_aplicados": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...” e inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.\n- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha apenas o texto do título do capítulo no bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” inclui o marcador de ruído de página “<!-- PÁGINA 2 -->”, que deve ser descartado e não integrar o texto de nenhuma unidade."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...” e inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.\n- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 103,
+    "insights_aplicados": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...” e inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.\n- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” retém o marcador de ruído de página “<!-- PÁGINA 2 -->”, que deve ser descartado."
+        },
+        {
+          "bloco": 55,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “XIV - promover a integração do processo de prestação de contas anuais...” contém também o marcador e o texto do inciso irmão “XV - acompanhar o processo de entrega, instrução e julgamento das contas...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 59,
+          "tipo": "sequencia",
+          "descricao": "No Art. 6º, o texto do inciso II termina truncado em “confiden” e o bloco seguinte inicia diretamente no inciso IV, sem que o inciso III apareça nos blocos. Isso indica perda de texto na extração."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...” e inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.\n- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 3, no Art. 5º, termine o bloco do inciso “XIV - promover a integração do processo de prestação de contas anuais...” imediatamente antes de “XV - acompanhar o processo de entrega, instrução e julgamento das contas...” e inicie um bloco próprio no inciso XV."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 111,
+    "insights_aplicados": "- Na pág. 1, no Art. 2º, termine o bloco do inciso “VII - realizar intercâmbio...” imediatamente antes de “VIII - disseminar boas práticas...” e inicie blocos próprios também em “IX - contribuir...”, “X - desenvolver...” e “XI - manifestar-se...”.\n- Na pág. 5, no Art. 8º, termine o bloco do inciso “VIII - coordenar os trabalhos de desenvolvimento...” imediatamente antes de “IX - manifestar-se sobre a colocação em ambiente de produção...” e inicie um bloco próprio nesse inciso.\n- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 3, no Art. 5º, termine o bloco do inciso “XIV - promover a integração do processo de prestação de contas anuais...” imediatamente antes de “XV - acompanhar o processo de entrega, instrução e julgamento das contas...” e inicie um bloco próprio no inciso XV.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” incorpora o marcador de paginação “<!-- PÁGINA 2 -->”, que é ruído de página e deve ser descartado."
+        },
+        {
+          "bloco": 108,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “XII - manter atualizadas as informações...” contém também o marcador e o texto do inciso irmão “XIII - desempenhar outras atividades...”, que devem formar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 4,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 2º À Semec...” (pág. 1) contém os incisos I a XI, embora cada inciso romano deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 5,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” contém o marcador “<!-- PÁGINA 2 -->”, que é ruído de página e deve ser descartado."
+        },
+        {
+          "bloco": 6,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 3º A Semec tem a seguinte estrutura:” (pág. 2) engloba os incisos I a IV, a alínea “a)” e o “Parágrafo único.”, todos marcadores que devem abrir blocos próprios."
+        },
+        {
+          "bloco": 45,
+          "tipo": "sequencia",
+          "descricao": "Após o bloco do inciso II do Art. 6º, o bloco seguinte inicia no inciso IV (“IV - participar do levantamento...”), sem que haja bloco para o inciso III."
+        },
+        {
+          "bloco": 59,
+          "tipo": "englobante",
+          "descricao": "No Art. 8º (págs. 4–5), o bloco iniciado no inciso II contém também os incisos III, IV, V e VI, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 61,
+          "tipo": "englobante",
+          "descricao": "No Art. 8º (pág. 5), o bloco iniciado no inciso VIII contém também o inciso IX, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 64,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “I - identificar oportunidades...” do Art. 9º (pág. 5) contém também os incisos II, III e IV, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII.\n- Nas págs. 1 e 2, divida os blocos dos Arts. 2º e 3º: inicie bloco próprio em cada inciso romano de “I - desenvolver...” até “XI - manifestar-se...” do Art. 2º e em cada marcador do Art. 3º, inclusive na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 6º, entre as págs. 3 e 4, inicie um bloco em cada inciso romano e não salte o inciso III entre “II - disseminar orientação...” e “IV - participar do levantamento...”; no Art. 8º, entre as págs. 4 e 5, separe os incisos II a IX, iniciando bloco próprio em cada um.\n- Na pág. 5, no Art. 9º, termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em “I - identificar oportunidades...”, “II - desenvolver...”, “III - prestar suporte...” e “IV - manifestar-se...” ."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII.\n- Nas págs. 1 e 2, divida os blocos dos Arts. 2º e 3º: inicie bloco próprio em cada inciso romano de “I - desenvolver...” até “XI - manifestar-se...” do Art. 2º e em cada marcador do Art. 3º, inclusive na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 6º, entre as págs. 3 e 4, inicie um bloco em cada inciso romano e não salte o inciso III entre “II - disseminar orientação...” e “IV - participar do levantamento...”; no Art. 8º, entre as págs. 4 e 5, separe os incisos II a IX, iniciando bloco próprio em cada um.\n- Na pág. 5, no Art. 9º, termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em “I - identificar oportunidades...”, “II - desenvolver...”, “III - prestar suporte...” e “IV - manifestar-se...” .",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” contém o marcador de ruído de página “<!-- PÁGINA 2 -->”, que deve ser descartado integralmente."
+        },
+        {
+          "bloco": 63,
+          "tipo": "sequencia",
+          "descricao": "No Art. 6º, o inciso “IV - participar do levantamento...” sucede diretamente o inciso II, sem bloco correspondente ao inciso III."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII.\n- Nas págs. 1 e 2, divida os blocos dos Arts. 2º e 3º: inicie bloco próprio em cada inciso romano de “I - desenvolver...” até “XI - manifestar-se...” do Art. 2º e em cada marcador do Art. 3º, inclusive na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 6º, entre as págs. 3 e 4, inicie um bloco em cada inciso romano, incluindo o inciso III entre “II - disseminar orientação...” e “IV - participar do levantamento...”; no Art. 8º, entre as págs. 4 e 5, separe os incisos II a IX, iniciando bloco próprio em cada um.\n- Na pág. 5, no Art. 9º, termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em “I - identificar oportunidades...”, “II - desenvolver...”, “III - apoiar o desenvolvimento...” e “IV - manifestar-se...”."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 94,
+    "insights_aplicados": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII.\n- Nas págs. 1 e 2, divida os blocos dos Arts. 2º e 3º: inicie bloco próprio em cada inciso romano de “I - desenvolver...” até “XI - manifestar-se...” do Art. 2º e em cada marcador do Art. 3º, inclusive na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 6º, entre as págs. 3 e 4, inicie um bloco em cada inciso romano, incluindo o inciso III entre “II - disseminar orientação...” e “IV - participar do levantamento...”; no Art. 8º, entre as págs. 4 e 5, separe os incisos II a IX, iniciando bloco próprio em cada um.\n- Na pág. 5, no Art. 9º, termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em “I - identificar oportunidades...”, “II - desenvolver...”, “III - apoiar o desenvolvimento...” e “IV - manifestar-se...”.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 5,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” retém o marcador de ruído de página “<!-- PÁGINA 2 -->” entre o título do capítulo e sua denominação."
+        },
+        {
+          "bloco": 4,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 2º À Semec...” contém os marcadores e o texto dos incisos I a XI, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 6,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 3º A Semec tem a seguinte estrutura:” contém os incisos da estrutura, a alínea “a) Serviço de Avaliação da Qualidade (Serav).” e “Parágrafo único.”, todos marcadores que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Nas págs. 1 e 2, no Art. 2º, termine o bloco introdutório imediatamente antes de “I - desenvolver...” e inicie bloco próprio em cada inciso romano, de “I - desenvolver...” até “XI - manifestar-se...”. No Art. 3º, inicie bloco próprio em cada inciso romano, na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 8º, entre as págs. 4 e 5, mantenha um bloco próprio para cada inciso, iniciando-os em “II - construir...”, “III - definir...”, “IV - gerir...”, “V - conceber...”, “VI - manifestar-se...”, “VII - atuar...”, “VIII - coordenar...” e “IX - manifestar-se...”.\n- Na pág. 5, no Art. 9º, termine cada inciso imediatamente antes do inciso seguinte e mantenha blocos próprios em “I - identificar oportunidades...”, “II - desenvolver...”, “III - apoiar o desenvolvimento...” e “IV - manifestar-se...”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 91,
+    "insights_aplicados": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”.\n- Nas págs. 1 e 2, no Art. 2º, termine o bloco introdutório imediatamente antes de “I - desenvolver...” e inicie bloco próprio em cada inciso romano, de “I - desenvolver...” até “XI - manifestar-se...”. No Art. 3º, inicie bloco próprio em cada inciso romano, na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 8º, entre as págs. 4 e 5, mantenha um bloco próprio para cada inciso, iniciando-os em “II - construir...”, “III - definir...”, “IV - gerir...”, “V - conceber...”, “VI - manifestar-se...”, “VII - atuar...”, “VIII - coordenar...” e “IX - manifestar-se...”.\n- Na pág. 5, no Art. 9º, termine cada inciso imediatamente antes do inciso seguinte e mantenha blocos próprios em “I - identificar oportunidades...”, “II - desenvolver...”, “III - apoiar o desenvolvimento...” e “IV - manifestar-se...”.\n- Na pág. 5, no Art. 10, termine o bloco do inciso “XII - manter atualizadas as informações de processos sob responsabilidade da Semec...” imediatamente antes de “XIII - desempenhar outras atividades que lhe forem atribuídas pelo titular da Semec.” e inicie um bloco próprio no inciso XIII.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 5,
+          "tipo": "englobante",
+          "descricao": "No Art. 2º, o bloco iniciado em “I - desenvolver...” reúne os incisos I a XI, embora cada inciso romano deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 6,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” contém o marcador “<!-- PÁGINA 2 -->”, que é ruído de página e deve ser descartado."
+        },
+        {
+          "bloco": 25,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco iniciado em “IX - disseminar métodos...” também contém os incisos X a XV; cada inciso romano deve formar bloco próprio."
+        },
+        {
+          "bloco": 58,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 7º contém, após “Art. 7º Compete ao Serav:”, os incisos romanos subsequentes; o artigo introdutório e cada inciso devem ser blocos distintos."
+        },
+        {
+          "bloco": 87,
+          "tipo": "englobante",
+          "descricao": "No Art. 10, o bloco iniciado em “X - apoiar a realização...” reúne os incisos X, XI e XII, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”. No Art. 2º, termine o bloco introdutório imediatamente antes de “I - desenvolver...” e inicie bloco próprio em cada inciso romano, de “I - desenvolver...” até “XI - manifestar-se...”.\n- Nas págs. 1 e 2, no Art. 3º, mantenha bloco próprio em cada inciso romano, na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 4º, na pág. 2, termine o bloco de cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios nos incisos “IX - disseminar métodos...”, “X - articular...”, “XI - realizar intercâmbio...”, “XII - promover...”, “XIII - desenvolver...”, “XIV - guardar...” e “XV - desempenhar...”.\n- No Art. 7º, na pág. 4, termine o bloco introdutório “Art. 7º Compete ao Serav:” imediatamente antes de “I - propor...” e inicie bloco próprio em cada inciso romano do artigo, até o início de “CAPÍTULO VII”.\n- Nos Arts. 8º, 9º e 10, mantenha um bloco próprio para cada inciso romano. No Art. 10, separe especialmente os incisos “X - apoiar a realização...”, “XI - manter arquivo sistemático...”, “XII - manter atualizadas as informações de processos...” e “XIII - desempenhar outras atividades...”, terminando cada bloco imediatamente antes do marcador seguinte."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”. No Art. 2º, termine o bloco introdutório imediatamente antes de “I - desenvolver...” e inicie bloco próprio em cada inciso romano, de “I - desenvolver...” até “XI - manifestar-se...”.\n- Nas págs. 1 e 2, no Art. 3º, mantenha bloco próprio em cada inciso romano, na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 4º, na pág. 2, termine o bloco de cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios nos incisos “IX - disseminar métodos...”, “X - articular...”, “XI - realizar intercâmbio...”, “XII - promover...”, “XIII - desenvolver...”, “XIV - guardar...” e “XV - desempenhar...”.\n- No Art. 7º, na pág. 4, termine o bloco introdutório “Art. 7º Compete ao Serav:” imediatamente antes de “I - propor...” e inicie bloco próprio em cada inciso romano do artigo, até o início de “CAPÍTULO VII”.\n- Nos Arts. 8º, 9º e 10, mantenha um bloco próprio para cada inciso romano. No Art. 10, separe especialmente os incisos “X - apoiar a realização...”, “XI - manter arquivo sistemático...”, “XII - manter atualizadas as informações de processos...” e “XIII - desempenhar outras atividades...”, terminando cada bloco imediatamente antes do marcador seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco de “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA” contém o marcador de ruído de página “<!-- PÁGINA 2 -->”, que deve ser descartado integralmente."
+        },
+        {
+          "bloco": 63,
+          "tipo": "sequencia",
+          "descricao": "No Art. 6º, a sequência dos incisos salta de “II - disseminar...” para “IV - participar...”, sem bloco ou texto correspondente ao inciso III."
+        },
+        {
+          "bloco": 69,
+          "tipo": "sequencia",
+          "descricao": "No Art. 6º, a sequência dos incisos salta de “IX - atuar...” para “XI – articular...”, sem bloco ou texto correspondente ao inciso X."
+        },
+        {
+          "bloco": 72,
+          "tipo": "sequencia",
+          "descricao": "No Art. 6º, a sequência dos incisos salta de “XIII – supervisionar...” para “XV - orientar...”, sem bloco ou texto correspondente ao inciso XIV."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco do “CAPÍTULO II — DA ESTRUTURA DA SECRETARIA”, entre as págs. 1 e 2, descarte integralmente o marcador “<!-- PÁGINA 2 -->” como ruído de página; mantenha no bloco apenas “CAPÍTULO II” e “DA ESTRUTURA DA SECRETARIA”. No Art. 2º, termine o bloco introdutório imediatamente antes de “I - desenvolver...” e inicie bloco próprio em cada inciso romano, de “I - desenvolver...” até “XI - manifestar-se...”.\n- Nas págs. 1 e 2, no Art. 3º, mantenha bloco próprio em cada inciso romano, na alínea “a) Serviço de Avaliação da Qualidade (Serav).” e em “Parágrafo único.”.\n- No Art. 4º, na pág. 2, termine o bloco de cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios nos incisos “IX - disseminar métodos...”, “X - articular...”, “XI - realizar intercâmbio...”, “XII - promover...”, “XIII - desenvolver...”, “XIV - guardar...” e “XV - desempenhar...”. No Art. 7º, na pág. 4, termine o bloco introdutório “Art. 7º Compete ao Serav:” imediatamente antes de “I - propor...” e inicie bloco próprio em cada inciso romano até o início de “CAPÍTULO VII”.\n- Nos Arts. 8º, 9º e 10, mantenha um bloco próprio para cada inciso romano. No Art. 10, separe especialmente os incisos “X - apoiar a realização...”, “XI - manter arquivo sistemático...”, “XII - manter atualizadas as informações de processos...” e “XIII - desempenhar outras atividades...”, terminando cada bloco imediatamente antes do marcador seguinte.\n- No Art. 6º, entre as págs. 3 e 4, verifique o texto entre os incisos “II - disseminar...” e “IV - participar...”, entre “IX - atuar...” e “XI – articular...”, e entre “XIII – supervisionar...” e “XV - orientar...”; capture em blocos próprios quaisquer trechos correspondentes, respectivamente, aos incisos III, X e XIV, sem saltá-los."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-1516/NORMA-1516_ciclo10.json"
+  }
+]

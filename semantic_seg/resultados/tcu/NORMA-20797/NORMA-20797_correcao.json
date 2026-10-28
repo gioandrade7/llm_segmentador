@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 35,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 5º A concessão de acesso a bases de dados...” (pág. 4) engloba marcadores que devem iniciar blocos próprios: ao menos o inciso “I - solicitação da unidade interessada...” e o “§ 8º Dar-se-á preferência...”, além dos demais incisos e parágrafos intermediários do art. 5º."
+        },
+        {
+          "bloco": 35,
+          "tipo": "granularidade",
+          "descricao": "Os incisos e parágrafos dos arts. 2º, 3º, 4º, 6º, 7º e 8º foram segmentados individualmente, mas as unidades equivalentes internas ao art. 5º foram agrupadas no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 5º, iniciado por “Art. 5º A concessão de acesso a bases de dados...” (pág. 4), termine o bloco do artigo imediatamente antes de “I - solicitação da unidade interessada...” e inicie um bloco para esse inciso.\n- No texto do Art. 5º (pág. 4), inicie um bloco separado em cada inciso e em cada parágrafo identificado por “§”, inclusive em “§ 8º Dar-se-á preferência à concessão de acesso...”; não mantenha esses marcadores dentro do bloco do caput do art. 5º."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20797/NORMA-20797_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 64,
+    "insights_aplicados": "- No Art. 5º, iniciado por “Art. 5º A concessão de acesso a bases de dados...” (pág. 4), termine o bloco do artigo imediatamente antes de “I - solicitação da unidade interessada...” e inicie um bloco para esse inciso.\n- No texto do Art. 5º (pág. 4), inicie um bloco separado em cada inciso e em cada parágrafo identificado por “§”, inclusive em “§ 8º Dar-se-á preferência à concessão de acesso...”; não mantenha esses marcadores dentro do bloco do caput do art. 5º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20797/NORMA-20797_ciclo2.json"
+  }
+]

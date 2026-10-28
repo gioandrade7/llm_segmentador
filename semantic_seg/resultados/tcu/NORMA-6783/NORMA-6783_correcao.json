@@ -1,0 +1,110 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 169,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 26,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 5º São atividades comuns\" (pág. 2) contém também os incisos I a IX, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 44,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VIII-providenciar a emissão\" (pág. 3) engloba os incisos IX a XVIII do art. 8º, enquanto os incisos I a VII do mesmo artigo foram segmentados individualmente."
+        },
+        {
+          "bloco": 58,
+          "tipo": "englobante",
+          "descricao": "O inciso I do art. 10 (pág. 4), \"I-elaborar os atos\", contém as alíneas a) a f), que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 62,
+          "tipo": "englobante",
+          "descricao": "O inciso V do art. 10 (pág. 4), \"V-elaborar os atos\", contém as alíneas a) a e), em vez de terminar antes de cada alínea."
+        },
+        {
+          "bloco": 90,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II-orientar os servidores\" (pág. 6) engloba os incisos III a VII do art. 12, apesar de serem unidades irmãs do inciso II."
+        },
+        {
+          "bloco": 92,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I-examinar a legalidade\" (pág. 6) engloba alíneas e outros incisos do art. 13, que devem ser segmentados em blocos próprios."
+        },
+        {
+          "bloco": 109,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 16. Compete ao Serviço de Pagamento de Ativos\" (págs. 7–8) contém os incisos I a XV; tanto o artigo introdutório quanto cada inciso devem ser blocos distintos."
+        },
+        {
+          "bloco": 111,
+          "tipo": "lacuna",
+          "descricao": "O texto do inciso I do art. 17 (pág. 8) termina truncado em \"pensioni\" antes do início do inciso II; falta o restante da oração, caracterizando falha de extração não corrigível por corte."
+        },
+        {
+          "bloco": 165,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"V-homologar atestados\" (pág. 10) engloba os incisos VI e VII e o texto subsequente do art. 22, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 167,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I-estimular e orientar\" (pág. 11) engloba os incisos II a VIII do art. 23, embora todos sejam unidades próprias."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No art. 5º, na pág. 2, termine o bloco introdutório \"Art. 5º São atividades comuns\" antes de \"I-constituir\" e inicie um bloco separado em cada inciso de I a IX.\n- No art. 8º, na pág. 3, separe \"VIII-providenciar a emissão\" dos incisos IX a XVIII; no art. 12, na pág. 6, separe \"II-orientar os servidores\" dos incisos III a VII; e no art. 13, na pág. 6, inicie blocos próprios em cada alínea e em cada inciso que sucede \"I-examinar a legalidade\".\n- No art. 10, na pág. 4, termine o inciso I antes de \"a) nomeação\" e o inciso V antes de \"a) exoneração\", iniciando um bloco em cada alínea a) a f) e a) a e), respectivamente.\n- No art. 16, nas págs. 7–8, termine o bloco de \"Art. 16. Compete ao Serviço de Pagamento de Ativos\" antes de \"I-elaborar\" e inicie um bloco em cada inciso I a XV.\n- No art. 22, na pág. 10, separe \"V-homologar atestados\" dos incisos VI e VII; no art. 23, na pág. 11, inicie um bloco próprio em cada inciso de I a VIII."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6783/NORMA-6783_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 250,
+    "insights_aplicados": "- No art. 5º, na pág. 2, termine o bloco introdutório \"Art. 5º São atividades comuns\" antes de \"I-constituir\" e inicie um bloco separado em cada inciso de I a IX.\n- No art. 8º, na pág. 3, separe \"VIII-providenciar a emissão\" dos incisos IX a XVIII; no art. 12, na pág. 6, separe \"II-orientar os servidores\" dos incisos III a VII; e no art. 13, na pág. 6, inicie blocos próprios em cada alínea e em cada inciso que sucede \"I-examinar a legalidade\".\n- No art. 10, na pág. 4, termine o inciso I antes de \"a) nomeação\" e o inciso V antes de \"a) exoneração\", iniciando um bloco em cada alínea a) a f) e a) a e), respectivamente.\n- No art. 16, nas págs. 7–8, termine o bloco de \"Art. 16. Compete ao Serviço de Pagamento de Ativos\" antes de \"I-elaborar\" e inicie um bloco em cada inciso I a XV.\n- No art. 22, na pág. 10, separe \"V-homologar atestados\" dos incisos VI e VII; no art. 23, na pág. 11, inicie um bloco próprio em cada inciso de I a VIII.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 64,
+          "tipo": "englobante",
+          "descricao": "No art. 8º (pág. 3), o bloco iniciado em \"IX-receber e conferir\" engloba os incisos X a XVIII, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 105,
+          "tipo": "englobante",
+          "descricao": "No art. 10 (pág. 5), o bloco iniciado em \"XVII-atualizar os registros de funções\" engloba os incisos XVIII a XXI, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 179,
+          "tipo": "englobante",
+          "descricao": "No art. 16 (pág. 8), o bloco iniciado em \"XIII-orientar os servidores\" engloba os incisos XIV e XV, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 185,
+          "tipo": "englobante",
+          "descricao": "No art. 17 (pág. 8), o bloco iniciado em \"V-encaminhar resumo da folha\" engloba o inciso VI, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 5º, na pág. 2, termine o bloco introdutório \"Art. 5º São atividades comuns\" antes de \"I-constituir\" e inicie um bloco separado em cada inciso de I a IX.\n- No art. 8º, na pág. 3, inicie blocos próprios em cada inciso de IX a XVIII, terminando cada inciso imediatamente antes do marcador seguinte; no art. 12, na pág. 6, separe \"II-orientar os servidores\" dos incisos III a VII; e no art. 13, na pág. 6, inicie blocos próprios em cada alínea e em cada inciso que sucede \"I-examinar a legalidade\".\n- No art. 10, nas págs. 4–5, termine o inciso I antes de \"a) nomeação\" e o inciso V antes de \"a) exoneração\", iniciando um bloco em cada alínea correspondente; além disso, inicie blocos próprios em cada inciso de XVIII a XXI após \"XVII-atualizar os registros de funções\".\n- No art. 16, nas págs. 7–8, termine o bloco de \"Art. 16. Compete ao Serviço de Pagamento de Ativos\" antes de \"I-elaborar\" e inicie um bloco em cada inciso de I a XV, inclusive separando XIII, XIV e XV.\n- No art. 17, na pág. 8, termine o inciso V \"V-encaminhar resumo da folha\" antes de \"VI-encaminhar relatórios\" e inicie um bloco próprio no inciso VI; no art. 22, na pág. 10, separe \"V-homologar atestados\" dos incisos VI e VII; e no art. 23, na pág. 11, inicie um bloco próprio em cada inciso de I a VIII."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6783/NORMA-6783_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 278,
+    "insights_aplicados": "- No art. 5º, na pág. 2, termine o bloco introdutório \"Art. 5º São atividades comuns\" antes de \"I-constituir\" e inicie um bloco separado em cada inciso de I a IX.\n- No art. 8º, na pág. 3, inicie blocos próprios em cada inciso de IX a XVIII, terminando cada inciso imediatamente antes do marcador seguinte; no art. 12, na pág. 6, separe \"II-orientar os servidores\" dos incisos III a VII; e no art. 13, na pág. 6, inicie blocos próprios em cada alínea e em cada inciso que sucede \"I-examinar a legalidade\".\n- No art. 10, nas págs. 4–5, termine o inciso I antes de \"a) nomeação\" e o inciso V antes de \"a) exoneração\", iniciando um bloco em cada alínea correspondente; além disso, inicie blocos próprios em cada inciso de XVIII a XXI após \"XVII-atualizar os registros de funções\".\n- No art. 16, nas págs. 7–8, termine o bloco de \"Art. 16. Compete ao Serviço de Pagamento de Ativos\" antes de \"I-elaborar\" e inicie um bloco em cada inciso de I a XV, inclusive separando XIII, XIV e XV.\n- No art. 17, na pág. 8, termine o inciso V \"V-encaminhar resumo da folha\" antes de \"VI-encaminhar relatórios\" e inicie um bloco próprio no inciso VI; no art. 22, na pág. 10, separe \"V-homologar atestados\" dos incisos VI e VII; e no art. 23, na pág. 11, inicie um bloco próprio em cada inciso de I a VIII.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6783/NORMA-6783_ciclo3.json"
+  }
+]

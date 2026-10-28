@@ -1,0 +1,60 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 5,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - floresta nacional\" (pág. 1) contém também o marcador e o texto da unidade irmã \"IV - gestão direta de florestas nacionais\"."
+        },
+        {
+          "bloco": 5,
+          "tipo": "granularidade",
+          "descricao": "Os incisos do Art. 2º são majoritariamente segmentados em blocos próprios, mas os incisos III e IV foram agrupados no mesmo bloco."
+        },
+        {
+          "bloco": 28,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"V - para as concessões das unidades de manejo enquadradas\" (pág. 4) contém as alíneas \"a)\", \"b)\" e \"c)\", que são unidades subordinadas e devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º, encerre o bloco de \"III - floresta nacional\" imediatamente antes de \"IV - gestão direta de florestas nacionais\" (pág. 1) e inicie um bloco próprio no inciso IV.\n- No Art. 7º, separe o inciso \"V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70\" (pág. 4) das alíneas que ele introduz: inicie blocos próprios em \"a) lista dos requerimentos\", \"b) relação das Autorizações de Exploração Florestal (AUTEX)\" e \"c) relatório sintético\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20186/NORMA-20186_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "- No Art. 2º, encerre o bloco de \"III - floresta nacional\" imediatamente antes de \"IV - gestão direta de florestas nacionais\" (pág. 1) e inicie um bloco próprio no inciso IV.\n- No Art. 7º, separe o inciso \"V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70\" (pág. 4) das alíneas que ele introduz: inicie blocos próprios em \"a) lista dos requerimentos\", \"b) relação das Autorizações de Exploração Florestal (AUTEX)\" e \"c) relatório sintético\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 5º O controle das concessões florestais\" inclui, após os dois-pontos, o marcador do inciso \"I - o primeiro estágio terá por objetivo\"; o inciso I deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º, encerre o bloco de \"III - floresta nacional\" imediatamente antes de \"IV - gestão direta\" (pág. 1) e inicie um bloco próprio no inciso IV.\n- No Art. 7º, mantenha o inciso \"V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70\" (pág. 4) separado das alíneas que introduz, iniciando blocos próprios em \"a) lista dos requerimentos\", \"b) comunicação quando da assinatura\" e \"c) relatório sintético\".\n- No Art. 5º, encerre o bloco de \"Art. 5º O controle das concessões florestais\" imediatamente antes de \"I - o primeiro estágio terá por objetivo\" (pág. 2) e inicie um bloco próprio no inciso I."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20186/NORMA-20186_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 54,
+    "insights_aplicados": "- No Art. 2º, encerre o bloco de \"III - floresta nacional\" imediatamente antes de \"IV - gestão direta\" (pág. 1) e inicie um bloco próprio no inciso IV.\n- No Art. 7º, mantenha o inciso \"V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70\" (pág. 4) separado das alíneas que introduz, iniciando blocos próprios em \"a) lista dos requerimentos\", \"b) comunicação quando da assinatura\" e \"c) relatório sintético\".\n- No Art. 5º, encerre o bloco de \"Art. 5º O controle das concessões florestais\" imediatamente antes de \"I - o primeiro estágio terá por objetivo\" (pág. 2) e inicie um bloco próprio no inciso I.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20186/NORMA-20186_ciclo3.json"
+  }
+]

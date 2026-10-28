@@ -1,0 +1,177 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 177,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 35,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - constituir, instruir...\" em Art. 5º (pág. 2) também contém o marcador irmão \"II - opinar, quanto ao mérito...\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 54,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - instruir e submeter à Comissão...\" em Art. 8º (pág. 3) engloba os incisos irmãos III a VII, inclusive o trecho final \"VII - instruir processos relativos à progressão funcional...\"."
+        },
+        {
+          "bloco": 56,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - propor políticas e práticas...\" em Art. 9º (pág. 4) engloba os incisos irmãos II a XIV, terminando em \"XIV - realizar outras atividades...\"."
+        },
+        {
+          "bloco": 67,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 12. Compete ao SAP:\" (págs. 5–6) contém também os incisos I a VIII e suas alíneas, embora cada marcador de inciso e de alínea deva abrir bloco próprio."
+        },
+        {
+          "bloco": 161,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 22. Compete ao SCS:\" (pág. 11) engloba os incisos I a X, inclusive \"X - encaminhar à Dsaud estatística das atividades realizadas.\"."
+        },
+        {
+          "bloco": 175,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - apoiar o desenvolvimento...\" em Art. 24 (pág. 12) também contém os incisos irmãos IV e seguintes, como \"IV - reconhecer e celebrar com regularidade...\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 5º (pág. 2), termine o bloco de \"I - constituir, instruir...\" antes de \"II - opinar, quanto ao mérito...\" e inicie um bloco próprio no inciso II.\n- Em Art. 8º (pág. 3), separe o bloco iniciado em \"II - instruir e submeter à Comissão...\": inicie blocos próprios em III, IV, V, VI e VII, até \"VII - instruir processos relativos à progressão funcional...\".\n- Em Art. 9º (pág. 4), não agrupe os incisos: mantenha \"I - propor políticas e práticas...\" em seu bloco e inicie um bloco em cada inciso II a XIV, inclusive \"XIV - realizar outras atividades...\".\n- Em Art. 12 (págs. 5–6) e em Art. 22 (pág. 11), deixe o texto introdutório de cada artigo em seu próprio bloco e inicie blocos independentes em todos os respectivos incisos e alíneas: Art. 12, de I a VIII e suas alíneas; Art. 22, de I a X.\n- Em Art. 24 (pág. 12), termine o bloco de \"III - apoiar o desenvolvimento...\" antes de \"IV - reconhecer e celebrar com regularidade...\" e abra blocos próprios para IV e cada inciso subsequente."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 275,
+    "insights_aplicados": "- Em Art. 5º (pág. 2), termine o bloco de \"I - constituir, instruir...\" antes de \"II - opinar, quanto ao mérito...\" e inicie um bloco próprio no inciso II.\n- Em Art. 8º (pág. 3), separe o bloco iniciado em \"II - instruir e submeter à Comissão...\": inicie blocos próprios em III, IV, V, VI e VII, até \"VII - instruir processos relativos à progressão funcional...\".\n- Em Art. 9º (pág. 4), não agrupe os incisos: mantenha \"I - propor políticas e práticas...\" em seu bloco e inicie um bloco em cada inciso II a XIV, inclusive \"XIV - realizar outras atividades...\".\n- Em Art. 12 (págs. 5–6) e em Art. 22 (pág. 11), deixe o texto introdutório de cada artigo em seu próprio bloco e inicie blocos independentes em todos os respectivos incisos e alíneas: Art. 12, de I a VIII e suas alíneas; Art. 22, de I a X.\n- Em Art. 24 (pág. 12), termine o bloco de \"III - apoiar o desenvolvimento...\" antes de \"IV - reconhecer e celebrar com regularidade...\" e abra blocos próprios para IV e cada inciso subsequente.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "No Art. 3º (pág. 2), o bloco iniciado em \"XVIII - elaborar relatórios periódicos...\" também contém o inciso \"XIX - desenvolver outras atividades inerentes à sua finalidade.\""
+        },
+        {
+          "bloco": 68,
+          "tipo": "englobante",
+          "descricao": "No Art. 8º (pág. 3), o bloco iniciado em \"III - instruir processos de insuficiência de desempenho...\" engloba os incisos IV, V, VI e VII, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 112,
+          "tipo": "englobante",
+          "descricao": "No Art. 11 (pág. 5), o bloco iniciado em \"VIII - efetuar, anualmente, levantamento...\" também contém os incisos IX, X, XI e XII."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, especialmente iniciando bloco em \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6), Art. 22 (pág. 11) e Art. 24 (pág. 12), mantenha o texto introdutório de cada artigo em seu próprio bloco e inicie blocos independentes em todos os respectivos incisos e alíneas, inclusive em \"IV - reconhecer e celebrar com regularidade...\" do Art. 24.\n- Em Art. 3º (pág. 2), termine o bloco de \"XVIII - elaborar relatórios periódicos inerentes à gestão de pessoas;\" antes de \"XIX - desenvolver outras atividades inerentes à sua finalidade.\" e inicie bloco próprio no inciso XIX.\n- Em Art. 8º (pág. 3), após o bloco próprio de \"II - instruir e submeter à Comissão...\", inicie blocos próprios em \"III - instruir processos de insuficiência de desempenho...\", \"IV - operacionalizar e acompanhar...\", \"V - adotar as providências...\", \"VI - ...\" e \"VII - instruir processos relativos à progressão funcional...\".\n- Em Art. 11 (pág. 5), termine o bloco de \"VIII - efetuar, anualmente, levantamento...\" antes de \"IX - prestar as informações relativas a férias...\" e inicie blocos próprios nos incisos IX, X, XI e XII."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 271,
+    "insights_aplicados": "- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, especialmente iniciando bloco em \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6), Art. 22 (pág. 11) e Art. 24 (pág. 12), mantenha o texto introdutório de cada artigo em seu próprio bloco e inicie blocos independentes em todos os respectivos incisos e alíneas, inclusive em \"IV - reconhecer e celebrar com regularidade...\" do Art. 24.\n- Em Art. 3º (pág. 2), termine o bloco de \"XVIII - elaborar relatórios periódicos inerentes à gestão de pessoas;\" antes de \"XIX - desenvolver outras atividades inerentes à sua finalidade.\" e inicie bloco próprio no inciso XIX.\n- Em Art. 8º (pág. 3), após o bloco próprio de \"II - instruir e submeter à Comissão...\", inicie blocos próprios em \"III - instruir processos de insuficiência de desempenho...\", \"IV - operacionalizar e acompanhar...\", \"V - adotar as providências...\", \"VI - ...\" e \"VII - instruir processos relativos à progressão funcional...\".\n- Em Art. 11 (pág. 5), termine o bloco de \"VIII - efetuar, anualmente, levantamento...\" antes de \"IX - prestar as informações relativas a férias...\" e inicie blocos próprios nos incisos IX, X, XI e XII.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 13,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"X - planejar, coordenar...\" (Art. 3º, pág. 1) também contém os marcadores e textos dos incisos XI, XII e XIII, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 139,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"VI - receber os formulários de autorização...\" (Art. 13, pág. 6) engloba os incisos VII a XVI; cada um desses incisos deveria iniciar um bloco independente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 3º (págs. 1–2), mantenha blocos próprios para os incisos XVIII e XIX; em Art. 8º (pág. 3), mantenha blocos independentes para os incisos II a VII; e em Art. 11 (pág. 5), mantenha blocos independentes para os incisos VIII a XII.\n- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, inclusive \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6), Art. 22 (pág. 11) e Art. 24 (pág. 12), mantenha o texto introdutório de cada artigo em bloco próprio e inicie blocos independentes em todos os respectivos incisos e alíneas, inclusive em \"IV - reconhecer e celebrar com regularidade...\" do Art. 24.\n- Em Art. 3º (pág. 1), termine o bloco de \"X - planejar, coordenar, acompanhar...\" antes de \"XI - opinar acerca de questões pertinentes...\" e inicie blocos próprios em XI, XII e XIII.\n- Em Art. 13 (págs. 6–7), termine o bloco de \"VI - receber os formulários de autorização...\" antes de \"VII - expedir declarações e demais documentos...\" e inicie blocos próprios em cada inciso VII a XVI."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 268,
+    "insights_aplicados": "- Em Art. 3º (págs. 1–2), mantenha blocos próprios para os incisos XVIII e XIX; em Art. 8º (pág. 3), mantenha blocos independentes para os incisos II a VII; e em Art. 11 (pág. 5), mantenha blocos independentes para os incisos VIII a XII.\n- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, inclusive \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6), Art. 22 (pág. 11) e Art. 24 (pág. 12), mantenha o texto introdutório de cada artigo em bloco próprio e inicie blocos independentes em todos os respectivos incisos e alíneas, inclusive em \"IV - reconhecer e celebrar com regularidade...\" do Art. 24.\n- Em Art. 3º (pág. 1), termine o bloco de \"X - planejar, coordenar, acompanhar...\" antes de \"XI - opinar acerca de questões pertinentes...\" e inicie blocos próprios em XI, XII e XIII.\n- Em Art. 13 (págs. 6–7), termine o bloco de \"VI - receber os formulários de autorização...\" antes de \"VII - expedir declarações e demais documentos...\" e inicie blocos próprios em cada inciso VII a XVI.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 216,
+          "tipo": "englobante",
+          "descricao": "O bloco de Art. 19, na pág. 10, engloba os incisos I a X, apesar de cada inciso ser marcador de unidade própria; isso contrasta com a segmentação individual dos incisos dos artigos subsequentes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 3º (págs. 1–2), mantenha blocos próprios para os incisos XVIII e XIX; em Art. 8º (pág. 3), mantenha blocos independentes para os incisos II a VII; em Art. 11 (pág. 5), mantenha blocos independentes para os incisos VIII a XII. Em Art. 3º (pág. 1), termine o bloco de \"X - planejar, coordenar, acompanhar...\" antes de \"XI - opinar acerca de questões pertinentes...\" e inicie blocos próprios em XI, XII e XIII.\n- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, inclusive \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6), Art. 22 (pág. 11) e Art. 24 (pág. 12), mantenha o texto introdutório de cada artigo em bloco próprio e inicie blocos independentes em todos os respectivos incisos e alíneas, inclusive em \"IV - reconhecer e celebrar com regularidade...\" do Art. 24.\n- Em Art. 13 (págs. 6–7), termine o bloco de \"VI - receber os formulários de autorização...\" antes de \"VII - expedir declarações e demais documentos...\" e inicie blocos próprios em cada inciso VII a XVI.\n- Em Art. 19 (pág. 10), mantenha \"Art. 19. Compete ao SAS:\" em bloco próprio e termine-o antes de \"I - prestar assistência direta à saúde...\"; inicie blocos independentes em cada inciso I a X do artigo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 274,
+    "insights_aplicados": "- Em Art. 3º (págs. 1–2), mantenha blocos próprios para os incisos XVIII e XIX; em Art. 8º (pág. 3), mantenha blocos independentes para os incisos II a VII; em Art. 11 (pág. 5), mantenha blocos independentes para os incisos VIII a XII. Em Art. 3º (pág. 1), termine o bloco de \"X - planejar, coordenar, acompanhar...\" antes de \"XI - opinar acerca de questões pertinentes...\" e inicie blocos próprios em XI, XII e XIII.\n- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, inclusive \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6), Art. 22 (pág. 11) e Art. 24 (pág. 12), mantenha o texto introdutório de cada artigo em bloco próprio e inicie blocos independentes em todos os respectivos incisos e alíneas, inclusive em \"IV - reconhecer e celebrar com regularidade...\" do Art. 24.\n- Em Art. 13 (págs. 6–7), termine o bloco de \"VI - receber os formulários de autorização...\" antes de \"VII - expedir declarações e demais documentos...\" e inicie blocos próprios em cada inciso VII a XVI.\n- Em Art. 19 (pág. 10), mantenha \"Art. 19. Compete ao SAS:\" em bloco próprio e termine-o antes de \"I - prestar assistência direta à saúde...\"; inicie blocos independentes em cada inciso I a X do artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 68,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por \"I - gerenciar e operacionalizar o processo de gestão do desempenho profissional...\" do Art. 8º (pág. 3) contém também os incisos II a VII, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 272,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por \"VI - identificar e desenvolver habilidades de liderança na equipe\" do Art. 24 (pág. 12) contém também os incisos VII e VIII, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 3º (págs. 1–2), mantenha blocos próprios para os incisos XVIII e XIX; em Art. 11 (pág. 5), mantenha blocos independentes para os incisos VIII a XII. Em Art. 3º (pág. 1), termine o bloco de \"X - planejar, coordenar, acompanhar...\" antes de \"XI - opinar acerca de questões pertinentes...\" e inicie blocos próprios em XI, XII e XIII.\n- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, inclusive \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6) e Art. 22 (pág. 11), mantenha o texto introdutório de cada artigo em bloco próprio e inicie blocos independentes em todos os respectivos incisos e alíneas.\n- Em Art. 13 (págs. 6–7), termine o bloco de \"VI - receber os formulários de autorização...\" antes de \"VII - expedir declarações e demais documentos...\" e inicie blocos próprios em cada inciso VII a XVI.\n- Em Art. 8º (pág. 3), mantenha \"Art. 8º. Compete ao SGD:\" em bloco próprio e separe todos os incisos I a VII: termine cada inciso imediatamente antes do marcador romano seguinte. Em Art. 24 (pág. 12), mantenha o texto introdutório em bloco próprio e separe todos os incisos I a VIII, em especial terminando \"VI - identificar e desenvolver habilidades de liderança na equipe\" antes de \"VII - empenhar-se...\" e este antes de \"VIII - realizar lançamentos manuais...\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 261,
+    "insights_aplicados": "- Em Art. 3º (págs. 1–2), mantenha blocos próprios para os incisos XVIII e XIX; em Art. 11 (pág. 5), mantenha blocos independentes para os incisos VIII a XII. Em Art. 3º (pág. 1), termine o bloco de \"X - planejar, coordenar, acompanhar...\" antes de \"XI - opinar acerca de questões pertinentes...\" e inicie blocos próprios em XI, XII e XIII.\n- Em Art. 5º (pág. 2), mantenha cada inciso I a X em bloco próprio, inclusive \"II - opinar, quanto ao mérito...\"; em Art. 9º (pág. 4), mantenha igualmente um bloco independente para cada inciso I a XIV.\n- Em Art. 12 (págs. 5–6) e Art. 22 (pág. 11), mantenha o texto introdutório de cada artigo em bloco próprio e inicie blocos independentes em todos os respectivos incisos e alíneas.\n- Em Art. 13 (págs. 6–7), termine o bloco de \"VI - receber os formulários de autorização...\" antes de \"VII - expedir declarações e demais documentos...\" e inicie blocos próprios em cada inciso VII a XVI.\n- Em Art. 8º (pág. 3), mantenha \"Art. 8º. Compete ao SGD:\" em bloco próprio e separe todos os incisos I a VII: termine cada inciso imediatamente antes do marcador romano seguinte. Em Art. 24 (pág. 12), mantenha o texto introdutório em bloco próprio e separe todos os incisos I a VIII, em especial terminando \"VI - identificar e desenvolver habilidades de liderança na equipe\" antes de \"VII - empenhar-se...\" e este antes de \"VIII - realizar lançamentos manuais...\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 3º Compete à Segep:\" contém também os incisos I a XIII, embora cada inciso romano deva iniciar bloco próprio; os incisos XIV a XIX já foram segmentados separadamente."
+        },
+        {
+          "bloco": 15,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"III - Diretoria de Legislação de Pessoal (Dilpe):\" contém as alíneas \"a)\", \"b)\" e \"c)\", que devem iniciar blocos próprios, como ocorre nas demais diretorias do Art. 4º."
+        },
+        {
+          "bloco": 93,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"VI - elaborar os atos e adotar as providências necessárias à vacância de cargos decorrente de:\" contém as alíneas a) a e), que devem ser blocos independentes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 3º (págs. 1–2), mantenha \"Art. 3º Compete à Segep:\" em bloco próprio e inicie blocos independentes em todos os incisos I a XIX; termine cada inciso imediatamente antes do marcador romano seguinte, inclusive antes de \"XI - opinar acerca de questões pertinentes...\", \"XII - executar os procedimentos...\" e \"XIII - gerenciar...\".\n- Em Art. 4º (pág. 2), termine o bloco de \"III - Diretoria de Legislação de Pessoal (Dilpe):\" antes de \"a) Serviço de Concessão de Vantagens e Direitos (SCV)\" e inicie blocos próprios nas alíneas a), b) e c).\n- Em Art. 11 (pág. 5), termine o inciso \"VI - elaborar os atos e adotar as providências necessárias à vacância de cargos decorrente de:\" antes de \"a) exoneração\" e inicie blocos independentes em cada uma das alíneas a) a e)."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 283,
+    "insights_aplicados": "- Em Art. 3º (págs. 1–2), mantenha \"Art. 3º Compete à Segep:\" em bloco próprio e inicie blocos independentes em todos os incisos I a XIX; termine cada inciso imediatamente antes do marcador romano seguinte, inclusive antes de \"XI - opinar acerca de questões pertinentes...\", \"XII - executar os procedimentos...\" e \"XIII - gerenciar...\".\n- Em Art. 4º (pág. 2), termine o bloco de \"III - Diretoria de Legislação de Pessoal (Dilpe):\" antes de \"a) Serviço de Concessão de Vantagens e Direitos (SCV)\" e inicie blocos próprios nas alíneas a), b) e c).\n- Em Art. 11 (pág. 5), termine o inciso \"VI - elaborar os atos e adotar as providências necessárias à vacância de cargos decorrente de:\" antes de \"a) exoneração\" e inicie blocos independentes em cada uma das alíneas a) a e).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6140/NORMA-6140_ciclo7.json"
+  }
+]

@@ -1,0 +1,1066 @@
+[
+  {
+    "titulo": "Seção I\nDas Disposições Preliminares",
+    "offset_inicio": "Seção I\nDas Disposições Preliminares\n",
+    "offset_fim": "Seção I\nDas Disposições Preliminares\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Seção I\nDas Disposições Preliminares\n"
+  },
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º A classificação da informação quanto à confidencialidade no âmbito do Tribunal de Contas da União observa os critérios e os procedimentos de segurança estabelecidos nesta Resolução, bem como as disposições constitucionais, legais e regimentais vigentes.",
+    "offset_fim": "bem como as disposições constitucionais, legais e regimentais vigentes.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 1º A classificação da informação quanto à confidencialidade no âmbito do Tribunal de Contas da União observa os critérios e os procedimentos de segurança estabelecidos nesta Resolução, bem como as disposições constitucionais, legais e regimentais vigentes."
+  },
+  {
+    "titulo": "Parágrafo único.",
+    "offset_inicio": "Parágrafo único. A classificação prevista neste artigo respeita, no que couber, as disposições da Lei nº 12.527, de 18 de novembro de 2011.",
+    "offset_fim": "classificação prevista neste artigo respeita, no que couber, as disposições da Lei nº 12.527, de 18 de novembro de 2011.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Parágrafo único. A classificação prevista neste artigo respeita, no que couber, as disposições da Lei nº 12.527, de 18 de novembro de 2011.\n"
+  },
+  {
+    "titulo": "Art. 2°",
+    "offset_inicio": "Art. 2° Esta Resolução integra a Política Corporativa de Segurança da Informação do Tribunal de Contas da União - PCSI/TCU.",
+    "offset_fim": "Art. 2° Esta Resolução integra a Política Corporativa de Segurança da Informação do Tribunal de Contas da União - PCSI/TCU.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 2° Esta Resolução integra a Política Corporativa de Segurança da Informação do Tribunal de Contas da União - PCSI/TCU."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º As autoridades do Tribunal, os servidores, terceirizados, estagiários e colaboradores",
+    "offset_fim": "estagiários e colaboradores estão sujeitos às diretrizes dispostas nesta norma.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 1º As autoridades do Tribunal, os servidores, terceirizados, estagiários e colaboradores estão sujeitos às diretrizes dispostas nesta norma.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O intercâmbio de informações e documentos entre o TCU e entidades e órgãos pú",
+    "offset_fim": "disciplinado nos termos da Resolução-TCU nº 223, de 18 de março de 2009, obedece, no que couber, à classificação disposta nesta Resolução.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 2º O intercâmbio de informações e documentos entre o TCU e entidades e órgãos públicos com os quais o Tribunal mantenha acordo de cooperação ou instrumento congênere, disciplinado nos termos da Resolução-TCU nº 223, de 18 de março de 2009, obedece, no que couber, à classificação disposta nesta Resolução.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º O tratamento de informação não pública resultante de tratados, acordos ou atos internacionais atende às normas e recomendações constantes desses instrumentos.",
+    "offset_fim": "§ 3º O tratamento de informação não pública resultante de tratados, acordos ou atos internacionais atende às normas e recomendações constantes desses instrumentos.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 3º O tratamento de informação não pública resultante de tratados, acordos ou atos internacionais atende às normas e recomendações constantes desses instrumentos."
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º Os controles administrativos e tecnológicos necessários à garantia de confidencialidade, a serem observados por pessoa física ou jurídica externa ao Tribunal, são expressos em termo de sigilo e responsabilidade.",
+    "offset_fim": "física ou jurídica externa ao Tribunal, são expressos em termo de sigilo e responsabilidade.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 4º Os controles administrativos e tecnológicos necessários à garantia de confidencialidade, a serem observados por pessoa física ou jurídica externa ao Tribunal, são expressos em termo de sigilo e responsabilidade."
+  },
+  {
+    "titulo": "Art. 3º",
+    "offset_inicio": "Art. 3º Para os efeitos desta Resolução, e em consonância com a PCSI/TCU, entende-se por:",
+    "offset_fim": "Art. 3º Para os efeitos desta Resolução, e em consonância com a PCSI/TCU, entende-se por:",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 3º Para os efeitos desta Resolução, e em consonância com a PCSI/TCU, entende-se por:"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - informação: conjunto de dados, textos, imagens, métodos, sistemas ou quaisquer",
+    "offset_fim": "em determinado contexto, independentemente do suporte em que resida ou da forma pela qual seja veiculado;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - informação: conjunto de dados, textos, imagens, métodos, sistemas ou quaisquer formas de representação dotadas de significado em determinado contexto, independentemente do suporte em que resida ou da forma pela qual seja veiculado;\n"
+  },
+  {
+    "titulo": "II - segurança da informação",
+    "offset_inicio": "II - segurança da informação: proteção da informação contra ameaças para garantir a continuidade",
+    "offset_fim": "maximizar a eficiência e a efetividade das ações do negócio e preservar a imagem do TCU;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "II - segurança da informação: proteção da informação contra ameaças para garantir a continuidade do negócio, minimizar os riscos, maximizar a eficiência e a efetividade das ações do negócio e preservar a imagem do TCU;"
+  },
+  {
+    "titulo": "III - confidencialidade",
+    "offset_inicio": "III - confidencialidade: princípio de segurança da informação que visa a garantir que a informação seja acessada somente por pessoas ou processos que tenham autorização para tal;",
+    "offset_fim": "III - confidencialidade: princípio de segurança da informação que visa a garantir que a informação seja acessada somente por pessoas ou processos que tenham autorização para tal;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "III - confidencialidade: princípio de segurança da informação que visa a garantir que a informação seja acessada somente por pessoas ou processos que tenham autorização para tal;"
+  },
+  {
+    "titulo": "IV - custodiante",
+    "offset_inicio": "IV - custodiante: qualquer pessoa física ou jurídica, interna ou externa, que detém a",
+    "offset_fim": "detém a posse, mesmo que transitória, de informação produzida ou recebida pelo Tribunal;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IV - custodiante: qualquer pessoa física ou jurídica, interna ou externa, que detém a posse, mesmo que transitória, de informação produzida ou recebida pelo Tribunal;"
+  },
+  {
+    "titulo": "V - gestor da informação",
+    "offset_inicio": "V - gestor da informação: colegiado do TCU ou de sua Secretaria, autoridade do",
+    "offset_fim": "dirigente de unidade responsável por informação em matéria de sua competência ou inerente a sua área de atuação;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "V - gestor da informação: colegiado do TCU ou de sua Secretaria, autoridade do Tribunal ou dirigente de unidade responsável por informação em matéria de sua competência ou inerente a sua área de atuação;\n"
+  },
+  {
+    "titulo": "VI - classificação da informação",
+    "offset_inicio": "VI - classificação da informação: ação que define o grau de confidencialidade e os grupos de acesso atribuídos à informação;",
+    "offset_fim": "VI - classificação da informação: ação que define o grau de confidencialidade e os grupos de acesso atribuídos à informação;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VI - classificação da informação: ação que define o grau de confidencialidade e os grupos de acesso atribuídos à informação;"
+  },
+  {
+    "titulo": "VII - rótulo: registro que visa a identificar claramente a classificação da informação.",
+    "offset_inicio": "VII - rótulo: registro que visa a identificar claramente a classificação da informação.",
+    "offset_fim": "VII - rótulo: registro que visa a identificar claramente a classificação da informação.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VII - rótulo: registro que visa a identificar claramente a classificação da informação.\n"
+  },
+  {
+    "titulo": "Seção II\nDa Classificação da Informação",
+    "offset_inicio": "Seção II\nDa Classificação da Informação\nArt. 4º A classificação das informações produzidas pelo TCU observa a publicidade como preceito geral e o sigilo como exceção.",
+    "offset_fim": "Seção II\nDa Classificação da Informação\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Seção II\nDa Classificação da Informação\n"
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º A classificação das informações produzidas pelo TCU observa a publicidade como preceito geral e o sigilo como exceção.",
+    "offset_fim": "Art. 4º A classificação das informações produzidas pelo TCU observa a publicidade como preceito geral e o sigilo como exceção.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 4º A classificação das informações produzidas pelo TCU observa a publicidade como preceito geral e o sigilo como exceção."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Compete exclusivamente ao TCU classificar as informações por ele produzidas.\n",
+    "offset_fim": "§ 1º Compete exclusivamente ao TCU classificar as informações por ele produzidas.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 1º Compete exclusivamente ao TCU classificar as informações por ele produzidas.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Cabe ao TCU respeitar a classificação atribuída na origem às informações recebidas",
+    "offset_fim": "às informações recebidas de pessoa física ou jurídica externa ao Tribunal.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 2º Cabe ao TCU respeitar a classificação atribuída na origem às informações recebidas de pessoa física ou jurídica externa ao Tribunal."
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º As informações produzidas pelo TCU classificam-se nos graus de confidencialidade",
+    "offset_fim": "dade público, reservado, secreto, ultrassecreto, pessoal e sigiloso.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 5º As informações produzidas pelo TCU classificam-se nos graus de confidencialidade público, reservado, secreto, ultrassecreto, pessoal e sigiloso.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Classifica-se como pública a informação cujo acesso pode ser franqueado a qualquer pessoa.",
+    "offset_fim": "§ 1º Classifica-se como pública a informação cujo acesso pode ser franqueado a qualquer pessoa.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 1º Classifica-se como pública a informação cujo acesso pode ser franqueado a qualquer pessoa."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Classifica-se como reservada, secreta ou ultrassecreta a informação imprescindí",
+    "offset_fim": "à segurança da sociedade ou do Estado, nos termos do art. 7º desta Resolução.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 2º Classifica-se como reservada, secreta ou ultrassecreta a informação imprescindível à segurança da sociedade ou do Estado, nos termos do art. 7º desta Resolução."
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º Classifica-se como pessoal a informação que diz respeito à intimidade, vida privada,",
+    "offset_fim": "imagem da pessoa, bem como às liberdades e garantias individuais.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 3º Classifica-se como pessoal a informação que diz respeito à intimidade, vida privada, honra e imagem da pessoa, bem como às liberdades e garantias individuais."
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º Classifica-se como sigilosa a informação enquadrada nas hipóteses de sigilo previstas em legislação específica, tal como a de natureza fiscal, bancária,",
+    "offset_fim": "comercial, profissional, industrial ou por segredo de justiça e aquela relativa a denúncias.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 4º Classifica-se como sigilosa a informação enquadrada nas hipóteses de sigilo previstas em legislação específica, tal como a de natureza fiscal, bancária, a relacionada a operações e serviços no mercado de capitais, a protegida por sigilo comercial, profissional, industrial ou por segredo de justiça e aquela relativa a denúncias.\n"
+  },
+  {
+    "titulo": "Art. 6º",
+    "offset_inicio": "Art. 6º Os prazos máximos de restrição de acesso à informação, conforme a classificação prevista",
+    "offset_fim": "prevista no artigo anterior, vigoram a partir da data de sua produção e são os seguintes:",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 6º Os prazos máximos de restrição de acesso à informação, conforme a classificação prevista no artigo anterior, vigoram a partir da data de sua produção e são os seguintes:"
+  },
+  {
+    "titulo": "I - reservada: 5 (cinco) anos;",
+    "offset_inicio": "I - reservada: 5 (cinco) anos;\n",
+    "offset_fim": "I - reservada: 5 (cinco) anos;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - reservada: 5 (cinco) anos;\n"
+  },
+  {
+    "titulo": "II - secreta: 15 (quinze) anos;",
+    "offset_inicio": "II - secreta: 15 (quinze) anos;",
+    "offset_fim": "II - secreta: 15 (quinze) anos;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "II - secreta: 15 (quinze) anos;"
+  },
+  {
+    "titulo": "III - ultrassecreta",
+    "offset_inicio": "III - ultrassecreta: 25 (vinte e cinco) anos; e\n",
+    "offset_fim": "III - ultrassecreta: 25 (vinte e cinco) anos; e\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "III - ultrassecreta: 25 (vinte e cinco) anos; e\n"
+  },
+  {
+    "titulo": "IV - pessoal: 100 (cem) anos.",
+    "offset_inicio": "IV - pessoal: 100 (cem) anos.",
+    "offset_fim": "IV - pessoal: 100 (cem) anos.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IV - pessoal: 100 (cem) anos."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A restrição de acesso à informação classificada como sigilosa obedece ao prazo",
+    "offset_fim": "obedece ao prazo estabelecido na legislação específica instituidora do sigilo.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 1º A restrição de acesso à informação classificada como sigilosa obedece ao prazo estabelecido na legislação específica instituidora do sigilo.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Alternativamente aos prazos previstos nos incisos I a III do caput, pode ser estabelecido termo final associado à ocorrência de determinado evento, desde que este ocorra antes do transcurso do prazo máximo de restrição de acesso.",
+    "offset_fim": "termo final associado à ocorrência de determinado evento, desde que este ocorra antes do transcurso do prazo máximo de restrição de acesso.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 2º Alternativamente aos prazos previstos nos incisos I a III do caput, pode ser estabelecido termo final associado à ocorrência de determinado evento, desde que este ocorra antes do transcurso do prazo máximo de restrição de acesso.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º O prazo de restrição de acesso à informação ultrassecreta pode ser prorrogado por uma única vez, sempre por prazo determinado",
+    "offset_fim": "ou à integridade do território nacional ou grave risco às relações internacionais do País.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 3º O prazo de restrição de acesso à informação ultrassecreta pode ser prorrogado por uma única vez, sempre por prazo determinado e igual ou inferior ao constante no inciso III do caput, enquanto o seu acesso ou divulgação puder ocasionar ameaça externa à soberania nacional ou à integridade do território nacional ou grave risco às relações internacionais do País.\n"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º Transcorrido o prazo de restrição de acesso ou consumado o evento que defina o seu",
+    "offset_fim": "final, a informação passa, automaticamente, ao grau de confidencialidade público.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 4º Transcorrido o prazo de restrição de acesso ou consumado o evento que defina o seu termo final, a informação passa, automaticamente, ao grau de confidencialidade público.\n"
+  },
+  {
+    "titulo": "Art. 7º",
+    "offset_inicio": "Art. 7º São consideradas imprescindíveis à segurança da sociedade ou do Estado e, portanto, passíveis de classificação pelo TCU",
+    "offset_fim": "graus de confidencialidade reservado, secreto e ultrassecreto as informações cuja divulgação ou acesso irrestrito possam:",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 7º São consideradas imprescindíveis à segurança da sociedade ou do Estado e, portanto, passíveis de classificação pelo TCU nos graus de confidencialidade reservado, secreto e ultrassecreto as informações cuja divulgação ou acesso irrestrito possam:"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - pôr em risco a defesa e a soberania nacionais ou a integridade do território nacional;",
+    "offset_fim": "I - pôr em risco a defesa e a soberania nacionais ou a integridade do território nacional;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - pôr em risco a defesa e a soberania nacionais ou a integridade do território nacional;"
+  },
+  {
+    "titulo": "II - prejudicar ou pôr em risco a condução de negociações ou as relações internacionais do País, ou as que tenham sido fornecidas em caráter sigiloso por outros Estados e organismos internacionais;",
+    "offset_inicio": "II - prejudicar ou pôr em risco a condução de negociações ou as relações internacionais",
+    "offset_fim": "s relações internacionais do País, ou as que tenham sido fornecidas em caráter sigiloso por outros Estados e organismos internacionais;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - prejudicar ou pôr em risco a condução de negociações ou as relações internacionais do País, ou as que tenham sido fornecidas em caráter sigiloso por outros Estados e organismos internacionais;\n"
+  },
+  {
+    "titulo": "III -",
+    "offset_inicio": "III - pôr em risco a vida, a segurança ou a saúde da população;\n",
+    "offset_fim": "III - pôr em risco a vida, a segurança ou a saúde da população;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - pôr em risco a vida, a segurança ou a saúde da população;\n"
+  },
+  {
+    "titulo": "IV -",
+    "offset_inicio": "IV - oferecer elevado risco à estabilidade financeira, econômica ou monetária do País;",
+    "offset_fim": "IV - oferecer elevado risco à estabilidade financeira, econômica ou monetária do País;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - oferecer elevado risco à estabilidade financeira, econômica ou monetária do País;"
+  },
+  {
+    "titulo": "V - prejudicar ou causar risco a planos ou operações estratégicos das Forças Armadas;",
+    "offset_inicio": "V - prejudicar ou causar risco a planos ou operações estratégicos das Forças Armadas;",
+    "offset_fim": "V - prejudicar ou causar risco a planos ou operações estratégicos das Forças Armadas;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "V - prejudicar ou causar risco a planos ou operações estratégicos das Forças Armadas;"
+  },
+  {
+    "titulo": "VI -",
+    "offset_inicio": "VI - prejudicar ou causar risco a projetos de pesquisa e desenvolvimento científico ou tecnológico, assim como a sistemas, bens, instalações ou áreas de interesse estratégico nacional;",
+    "offset_fim": "a sistemas, bens, instalações ou áreas de interesse estratégico nacional;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VI - prejudicar ou causar risco a projetos de pesquisa e desenvolvimento científico ou tecnológico, assim como a sistemas, bens, instalações ou áreas de interesse estratégico nacional;"
+  },
+  {
+    "titulo": "VII - pôr em risco a segurança de instituições ou de altas autoridades nacionais ou estrangeiras e seus familiares; ou",
+    "offset_inicio": "VII - pôr em risco a segurança de instituições ou de altas autoridades nacionais ou estrangeiras e seus familiares; ou",
+    "offset_fim": "VII - pôr em risco a segurança de instituições ou de altas autoridades nacionais ou estrangeiras e seus familiares; ou\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VII - pôr em risco a segurança de instituições ou de altas autoridades nacionais ou estrangeiras e seus familiares; ou\n"
+  },
+  {
+    "titulo": "VIII -",
+    "offset_inicio": "VIII - comprometer atividades de inteligência do Tribunal, bem como de investigação ou fis",
+    "offset_fim": "atividades de inteligência do Tribunal, bem como de investigação ou fiscalização em andamento.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VIII - comprometer atividades de inteligência do Tribunal, bem como de investigação ou fiscalização em andamento.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Para a classificação da informação nos graus de confidencialidade ",
+    "offset_fim": "r utilizado o critério menos restritivo possível, considerados:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Parágrafo único. Para a classificação da informação nos graus de confidencialidade previstos no caput, deve ser observado o interesse público da informação e utilizado o critério menos restritivo possível, considerados:"
+  },
+  {
+    "titulo": "I - a gravidade do risco ou dano à segurança da sociedade e do Estado; e",
+    "offset_inicio": "I - a gravidade do risco ou dano à segurança da sociedade e do Estado; e\nII - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.",
+    "offset_fim": "I - a gravidade do risco ou dano à segurança da sociedade e do Estado; e\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - a gravidade do risco ou dano à segurança da sociedade e do Estado; e\n"
+  },
+  {
+    "titulo": "II -",
+    "offset_inicio": "II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.",
+    "offset_fim": "II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final."
+  },
+  {
+    "titulo": "Seção III — Da Competência para a Classificação da Informação",
+    "offset_inicio": "Seção III\nDa Competência para a Classificação da Informação\n",
+    "offset_fim": "Seção III\nDa Competência para a Classificação da Informação\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Seção III\nDa Competência para a Classificação da Informação\n"
+  },
+  {
+    "titulo": "Art. 8º",
+    "offset_inicio": "Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.",
+    "offset_fim": "Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade."
+  },
+  {
+    "titulo": "Art. 9º",
+    "offset_inicio": "Art. 9º Em função do grau de confidencialidade, a classificação da informação é de competência:",
+    "offset_fim": "Art. 9º Em função do grau de confidencialidade, a classificação da informação é de competência:",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 9º Em função do grau de confidencialidade, a classificação da informação é de competência:"
+  },
+  {
+    "titulo": "I - no grau ultrassecreto, de colegiado do TCU, do Presidente, dos Relatores ou Membros do Ministério Público junto ao TCU;",
+    "offset_inicio": "I - no grau ultrassecreto, de colegiado do TCU, do Presidente, dos Relatores ou Membros do Ministério Público junto ao TCU;",
+    "offset_fim": "I - no grau ultrassecreto, de colegiado do TCU, do Presidente, dos Relatores ou Membros do Ministério Público junto ao TCU;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - no grau ultrassecreto, de colegiado do TCU, do Presidente, dos Relatores ou Membros do Ministério Público junto ao TCU;"
+  },
+  {
+    "titulo": "II -",
+    "offset_inicio": "II - no grau secreto, dos gestores da informação previstos no inciso I, de colegiado da Secretaria do TCU e dos Secretários-Gerais;",
+    "offset_fim": "II - no grau secreto, dos gestores da informação previstos no inciso I, de colegiado da Secretaria do TCU e dos Secretários-Gerais;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "II - no grau secreto, dos gestores da informação previstos no inciso I, de colegiado da Secretaria do TCU e dos Secretários-Gerais;"
+  },
+  {
+    "titulo": "III - nos graus reservado, sigiloso, pessoal e público, dos gestores da informação previstos no inciso II e dos dirigentes das unidades da Secretaria do TCU.",
+    "offset_inicio": "III - nos graus reservado, sigiloso, pessoal e público, dos gestores da informação previstos no inciso II e dos dirigentes das unidades da Secretaria do TCU.",
+    "offset_fim": "III - nos graus reservado, sigiloso, pessoal e público, dos gestores da informação previstos no inciso II e dos dirigentes das unidades da Secretaria do TCU.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "III - nos graus reservado, sigiloso, pessoal e público, dos gestores da informação previstos no inciso II e dos dirigentes das unidades da Secretaria do TCU.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Após manifestação sobre classificação da informação proferida pelo Presidente",
+    "offset_fim": "não cabe classificação diversa, salvo pela própria autoridade ou por colegiado do Tribunal.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Parágrafo único. Após manifestação sobre classificação da informação proferida pelo Presidente ou Relator nos processos e documentos de suas competências, não cabe classificação diversa, salvo pela própria autoridade ou por colegiado do Tribunal."
+  },
+  {
+    "titulo": "Seção IV — Dos Procedimentos de Classificação da Informação",
+    "offset_inicio": "Seção IV\nDos Procedimentos de Classificação da Informação\nArt. 10. Os gestores da ",
+    "offset_fim": "Seção IV\nDos Procedimentos de Classificação da Informação\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Seção IV\nDos Procedimentos de Classificação da Informação\n"
+  },
+  {
+    "titulo": "Art. 10.",
+    "offset_inicio": "Art. 10. Os gestores da informação devem editar, sempre que possível, atos normativos",
+    "offset_fim": "normativos que classifiquem a informação previamente à sua produção ou que orientem a sua classificação.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 10. Os gestores da informação devem editar, sempre que possível, atos normativos que classifiquem a informação previamente à sua produção ou que orientem a sua classificação.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A informação não classificada previamente por ato normativo deve ser classificada no momento em que for produzida.",
+    "offset_fim": "previamente por ato normativo deve ser classificada no momento em que for produzida.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 1º A informação não classificada previamente por ato normativo deve ser classificada no momento em que for produzida.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Os atos normativos a serem editados pelos dirigentes das unidades da Secretaria do TCU devem observar as normas gerais a serem fixadas pela CCG.",
+    "offset_fim": "§ 2º Os atos normativos a serem editados pelos dirigentes das unidades da Secretaria do TCU devem observar as normas gerais a serem fixadas pela CCG.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 2º Os atos normativos a serem editados pelos dirigentes das unidades da Secretaria do TCU devem observar as normas gerais a serem fixadas pela CCG.\n"
+  },
+  {
+    "titulo": "Art. 11.",
+    "offset_inicio": "Art. 11. A classificação da informação em grau de confidencialidade que não o público deve ser formalizada em instrumento que contenha, no mínimo, os seguintes elementos:",
+    "offset_fim": "de confidencialidade que não o público deve ser formalizada em instrumento que contenha, no mínimo, os seguintes elementos:\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 11. A classificação da informação em grau de confidencialidade que não o público deve ser formalizada em instrumento que contenha, no mínimo, os seguintes elementos:\n"
+  },
+  {
+    "titulo": "I - grau de confidencialidade;",
+    "offset_inicio": "I - grau de confidencialidade;",
+    "offset_fim": "I - grau de confidencialidade;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "I - grau de confidencialidade;"
+  },
+  {
+    "titulo": "II - grupo de pessoas que pode acessar a informação",
+    "offset_inicio": "II - grupo de pessoas que pode acessar a informação;",
+    "offset_fim": "II - grupo de pessoas que pode acessar a informação;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "II - grupo de pessoas que pode acessar a informação;"
+  },
+  {
+    "titulo": "III - assunto sobre o qual versa a informação;",
+    "offset_inicio": "III - assunto sobre o qual versa a informação;",
+    "offset_fim": "III - assunto sobre o qual versa a informação;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "III - assunto sobre o qual versa a informação;"
+  },
+  {
+    "titulo": "IV - fundamento da classificação;",
+    "offset_inicio": "IV - fundamento da classificação;",
+    "offset_fim": "IV - fundamento da classificação;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "IV - fundamento da classificação;\n"
+  },
+  {
+    "titulo": "V -",
+    "offset_inicio": "V - indicação do prazo e do termo final de restrição de acesso e, quando for o caso,",
+    "offset_fim": "do evento que defina o termo final alternativo, conforme limites previstos no art. 6º; e\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "V - indicação do prazo e do termo final de restrição de acesso e, quando for o caso, do evento que defina o termo final alternativo, conforme limites previstos no art. 6º; e\n"
+  },
+  {
+    "titulo": "VI - identificação do responsável pela classificação.",
+    "offset_inicio": "VI - identificação do responsável pela classificação.",
+    "offset_fim": "VI - identificação do responsável pela classificação.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "VI - identificação do responsável pela classificação.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O instrumento referido no caput deve ser mantido no mesmo grau de confidencialidade da informação classificada.",
+    "offset_fim": "§ 1º O instrumento referido no caput deve ser mantido no mesmo grau de confidencialidade da informação classificada.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 1º O instrumento referido no caput deve ser mantido no mesmo grau de confidencialidade da informação classificada."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A informação e o instrumento que a classifica devem estar associados de modo que a partir de um",
+    "offset_fim": "que a classifica devem estar associados de modo que a partir de um seja possível acessar o outro.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 2º A informação e o instrumento que a classifica devem estar associados de modo que a partir de um seja possível acessar o outro."
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º Deve ser mantido histórico nos casos em que houver redução ou prorrogação de prazo de restrição de acesso ou reclassificação da informação.",
+    "offset_fim": "casos em que houver redução ou prorrogação de prazo de restrição de acesso ou reclassificação da informação.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 3º Deve ser mantido histórico nos casos em que houver redução ou prorrogação de prazo de restrição de acesso ou reclassificação da informação.\n"
+  },
+  {
+    "titulo": "Seção V — Da Rotulação da Informação Classificada",
+    "offset_inicio": "Seção V\nDa Rotulação da Informação Classificada",
+    "offset_fim": "Seção V\nDa Rotulação da Informação Classificada\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Seção V\nDa Rotulação da Informação Classificada\n"
+  },
+  {
+    "titulo": "Art. 12.",
+    "offset_inicio": "Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos, à",
+    "offset_fim": "classificada é obrigatória a aposição de rótulo que contenha os seguintes elementos:",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos, à informação classificada é obrigatória a aposição de rótulo que contenha os seguintes elementos:"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - grau de confidencialidade;\n",
+    "offset_fim": "I - grau de confidencialidade;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "I - grau de confidencialidade;\n"
+  },
+  {
+    "titulo": "II - grupo de pessoas que pode acessar a informação;",
+    "offset_inicio": "II - grupo de pessoas que pode acessar a informação;\n",
+    "offset_fim": "II - grupo de pessoas que pode acessar a informação;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "II - grupo de pessoas que pode acessar a informação;\n"
+  },
+  {
+    "titulo": "III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.",
+    "offset_inicio": "III - termo final de restrição de acesso e, quando for o caso, evento que defina o",
+    "offset_fim": "e, quando for o caso, evento que defina o termo final alternativo.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A rotulação da informação pública é facultativa.\n",
+    "offset_fim": "§ 1º A rotulação da informação pública é facultativa.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 1º A rotulação da informação pública é facultativa.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Nos casos em que a aposição de rótulo for inviável, podem ser usadas outras",
+    "offset_fim": "proteger a informação de forma compatível com sua classificação.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 2º Nos casos em que a aposição de rótulo for inviável, podem ser usadas outras formas de identificar a classificação da informação, desde que os controles existentes sejam suficientes para proteger a informação de forma compatível com sua classificação."
+  },
+  {
+    "titulo": "Art. 13.",
+    "offset_inicio": "Art. 13. A informação deve ser rotulada no momento em que for produzida.",
+    "offset_fim": "Art. 13. A informação deve ser rotulada no momento em que for produzida.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 13. A informação deve ser rotulada no momento em que for produzida."
+  },
+  {
+    "titulo": "Art. 14.",
+    "offset_inicio": "Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada no momento de seu recebimento, em conformidade com a classificação atribuída na origem.",
+    "offset_fim": "de seu recebimento, em conformidade com a classificação atribuída na origem.\n\n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada no momento de seu recebimento, em conformidade com a classificação atribuída na origem.\n\n\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º No momento em que for recebida a informação, devem ser fornecidos os seguintes elementos:",
+    "offset_fim": "§ 1º No momento em que for recebida a informação, devem ser fornecidos os seguintes elementos:",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º No momento em que for recebida a informação, devem ser fornecidos os seguintes elementos:"
+  },
+  {
+    "titulo": "I - grau de confidencialidade;",
+    "offset_inicio": "I - grau de confidencialidade;\n",
+    "offset_fim": "I - grau de confidencialidade;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "I - grau de confidencialidade;\n"
+  },
+  {
+    "titulo": "II - grupo de pessoas que pode acessar a informação",
+    "offset_inicio": "II - grupo de pessoas que pode acessar a informação;\n",
+    "offset_fim": "II - grupo de pessoas que pode acessar a informação;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "II - grupo de pessoas que pode acessar a informação;\n"
+  },
+  {
+    "titulo": "III -",
+    "offset_inicio": "III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo;\n",
+    "offset_fim": "III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo;\n"
+  },
+  {
+    "titulo": "IV - assunto sobre o qual versa a informação",
+    "offset_inicio": "IV - assunto sobre o qual versa a informação;",
+    "offset_fim": "IV - assunto sobre o qual versa a informação;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "IV - assunto sobre o qual versa a informação;"
+  },
+  {
+    "titulo": "V - fundamento da classificação; e",
+    "offset_inicio": "V - fundamento da classificação; e",
+    "offset_fim": "V - fundamento da classificação; e\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "V - fundamento da classificação; e\n"
+  },
+  {
+    "titulo": "VI - responsável pela classificação.",
+    "offset_inicio": "VI - responsável pela classificação.\n",
+    "offset_fim": "VI - responsável pela classificação.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "VI - responsável pela classificação.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem não for equivalente ao do TCU, nos termos desta Resolução, o gestor da informação deve enquadrá-la em grau de confidencialidade compatível com aquele atribuído na origem.",
+    "offset_fim": "previstos no § 1º deste artigo, a informação deve ser tratada como pública.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem não for equivalente ao do TCU, nos termos desta Resolução, o gestor da informação deve enquadrá-la em grau de confidencialidade compatível com aquele atribuído na origem.\n§ 3º Quando não fornecidos pelo órgão ou entidade de origem os elementos previstos no § 1º deste artigo, a informação deve ser tratada como pública."
+  },
+  {
+    "titulo": "Art. 15.",
+    "offset_inicio": "Art. 15. Na hipótese de documento que contenha informações classificadas em diferentes graus de confidencialidade, deve ser atribuído ao documento tratamento do grau mais elevado, ficando assegurado o acesso às partes permitidas por meio de certidão, extrato ou cópia, com ocultação das partes não permitidas.\n",
+    "offset_fim": "documento tratamento do grau mais elevado, ficando assegurado o acesso às partes permitidas por meio de certidão, extrato ou cópia, com ocultação das partes não permitidas.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 15. Na hipótese de documento que contenha informações classificadas em diferentes graus de confidencialidade, deve ser atribuído ao documento tratamento do grau mais elevado, ficando assegurado o acesso às partes permitidas por meio de certidão, extrato ou cópia, com ocultação das partes não permitidas.\n"
+  },
+  {
+    "titulo": "Seção VI — Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade",
+    "offset_inicio": "Seção VI\nDa Reclassificação e da Reavaliação\nda Classificação da Informação quanto à Conf",
+    "offset_fim": "alteração aos custodiantes da informação para correta rotulação.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Seção VI\nDa Reclassificação e da Reavaliação\nda Classificação da Informação quanto à Confidencialidade\nArt. 16. As informações produzidas pelo Tribunal podem ser reclassificadas, por iniciativa própria do gestor da informação ou mediante provocação, cabendo comunicação imediata da alteração aos custodiantes da informação para correta rotulação.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Qualquer interessado pode provocar o gestor da informação com vistas à reclassific",
+    "offset_fim": "quer interessado pode provocar o gestor da informação com vistas à reclassificação.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º Qualquer interessado pode provocar o gestor da informação com vistas à reclassificação.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º No caso de indeferimento do pedido de reclassificação da informação, pode o interessado interpor recurso, observado o rito previsto no artigo 28 da Resolução-TCU nº 249, de 2 de maio de 2012.\n",
+    "offset_fim": "o rito previsto no artigo 28 da Resolução-TCU nº 249, de 2 de maio de 2012.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º No caso de indeferimento do pedido de reclassificação da informação, pode o interessado interpor recurso, observado o rito previsto no artigo 28 da Resolução-TCU nº 249, de 2 de maio de 2012.\n"
+  },
+  {
+    "titulo": "Art. 17.",
+    "offset_inicio": "Art. 17. A classificação das informações nos graus de confidencialidade ultrassecreto e secreto deve ser periodicamente reavaliada pelo gestor da informação ou por colegiado do Tribunal, mediante provocação ou de ofício, para reclassificação ou redução do prazo de restrição de acesso.\n",
+    "offset_fim": "deve ser periodicamente reavaliada pelo gestor da informação ou por colegiado do Tribunal, mediante provocação ou de ofício, para reclassificação ou redução do prazo de restrição de acesso.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 17. A classificação das informações nos graus de confidencialidade ultrassecreto e secreto deve ser periodicamente reavaliada pelo gestor da informação ou por colegiado do Tribunal, mediante provocação ou de ofício, para reclassificação ou redução do prazo de restrição de acesso.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Para o cumprimento do disposto no caput, além do disposto no parágrafo único do art. 7º, deve ser observado:",
+    "offset_fim": "do disposto no caput, além do disposto no parágrafo único do art. 7º, deve ser observado:\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º Para o cumprimento do disposto no caput, além do disposto no parágrafo único do art. 7º, deve ser observado:\n"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - o prazo máximo de restrição de acesso à informação, previsto no art. 6º desta Resolução;",
+    "offset_fim": "I - o prazo máximo de restrição de acesso à informação, previsto no art. 6º desta Resolução;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "I - o prazo máximo de restrição de acesso à informação, previsto no art. 6º desta Resolução;"
+  },
+  {
+    "titulo": "II -",
+    "offset_inicio": "II - o prazo máximo de quatro anos para realização de cada revisão de ofício;\n",
+    "offset_fim": "II - o prazo máximo de quatro anos para realização de cada revisão de ofício;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "II - o prazo máximo de quatro anos para realização de cada revisão de ofício;\n"
+  },
+  {
+    "titulo": "III -",
+    "offset_inicio": "III - a permanência das razões da classificação; e\n",
+    "offset_fim": "III - a permanência das razões da classificação; e\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "III - a permanência das razões da classificação; e\n"
+  },
+  {
+    "titulo": "IV -",
+    "offset_inicio": "IV - a possibilidade de danos ou riscos decorrentes da divulgação ou acesso irrestrito da informação.",
+    "offset_fim": "IV - a possibilidade de danos ou riscos decorrentes da divulgação ou acesso irrestrito da informação.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "IV - a possibilidade de danos ou riscos decorrentes da divulgação ou acesso irrestrito da informação.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Na hipótese de redução do prazo de restrição de acesso, o novo prazo deve manter como",
+    "offset_fim": "de restrição de acesso, o novo prazo deve manter como termo inicial a data da produção da informação.\n\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º Na hipótese de redução do prazo de restrição de acesso, o novo prazo deve manter como termo inicial a data da pr"
+  },
+  {
+    "titulo": "Seção VII — Da Proteção e do Controle da Informação",
+    "offset_inicio": "Seção VII\nDa Proteção e do Controle da Informação\nArt. 18. Cabe ao TCU controlar o",
+    "offset_fim": "Seção VII\nDa Proteção e do Controle da Informação\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Seção VII\nDa Proteção e do Controle da Informação\n"
+  },
+  {
+    "titulo": "Art. 18.",
+    "offset_inicio": "Art. 18. Cabe ao TCU controlar o acesso e a divulgação de informações não públicas",
+    "offset_fim": "informações não públicas por ele produzidas ou custodiadas, assegurando a sua proteção.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 18. Cabe ao TCU controlar o acesso e a divulgação de informações não públicas por ele produzidas ou custodiadas, assegurando a sua proteção."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O acesso, a divulgação e o tratamento de informação não pública devem permanecer restritos a pessoas",
+    "offset_fim": "sem prejuízo das atribuições dos agentes públicos autorizados por lei.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 1º O acesso, a divulgação e o tratamento de informação não pública devem permanecer restritos a pessoas que tenham necessidade de conhecê-la, sem prejuízo das atribuições dos agentes públicos autorizados por lei.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O acesso à informação não pública cria a obrigação para aquele que a obteve de resguardar a confidencialidade.",
+    "offset_fim": "§ 2º O acesso à informação não pública cria a obrigação para aquele que a obteve de resguardar a confidencialidade.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 2º O acesso à informação não pública cria a obrigação para aquele que a obteve de resguardar a confidencialidade.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º A pessoa física ou entidade privada que, em razão de qualquer vínculo com o TCU, executar atividades de tratamento de informações não públicas deve adotar as providências necessárias para que seus empregados, prepostos ou representantes observem as medidas e procedimentos de segurança da informação resultantes da aplicação desta Resolução.\n",
+    "offset_fim": "que seus empregados, prepostos ou representantes observem as medidas e procedimentos de segurança da informação resultantes da aplicação desta Resolução.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 3º A pessoa física ou entidade privada que, em razão de qualquer vínculo com o TCU, executar atividades de tratamento de informações não públicas deve adotar as providências necessárias para que seus empregados, prepostos ou representantes observem as medidas e procedimentos de segurança da informação resultantes da aplicação desta Resolução.\n"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º Os contratos, convênios, acordos de cooperação e instrumentos congêneres celebrados pelo TCU devem conter cláusulas",
+    "offset_fim": "devem conter cláusulas que estipulem a observância das medidas previstas no parágrafo anterior.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 4º Os contratos, convênios, acordos de cooperação e instrumentos congêneres celebrados pelo TCU devem conter cláusulas que estipulem a observância das medidas previstas no parágrafo anterior.\n"
+  },
+  {
+    "titulo": "Art. 19.",
+    "offset_inicio": "Art. 19. O tratamento das informações classificadas no grau de confidencialidade pessoal deve ser feito de forma transparente e com respeito à intimidade, vida privada, honra e imagem das pessoas, bem como às liberdades e garantias individuais.",
+    "offset_fim": "de forma transparente e com respeito à intimidade, vida privada, honra e imagem das pessoas, bem como às liberdades e garantias individuais.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 19. O tratamento das informações classificadas no grau de confidencialidade pessoal deve ser feito de forma transparente e com respeito à intimidade, vida privada, honra e imagem das pessoas, bem como às liberdades e garantias individuais.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º As informações a que se refere este artigo, relativas à intimidade, vida privada,",
+    "offset_fim": "se refere este artigo, relativas à intimidade, vida privada, honra e imagem:\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 1º As informações a que se refere este artigo, relativas à intimidade, vida privada, honra e imagem:\n"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - têm o seu acesso restrito a agentes públicos legalmente autorizados e à pessoa a",
+    "offset_fim": "acesso restrito a agentes públicos legalmente autorizados e à pessoa a que elas se refiram; e\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "I - têm o seu acesso restrito a agentes públicos legalmente autorizados e à pessoa a que elas se refiram; e\n"
+  },
+  {
+    "titulo": "II -",
+    "offset_inicio": "II - podem ter autorizada sua divulgação ou acesso por terceiros diante de previsão legal ou",
+    "offset_fim": "terceiros diante de previsão legal ou consentimento expresso da pessoa a que elas se refiram.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "II - podem ter autorizada sua divulgação ou acesso por terceiros diante de previsão legal ou consentimento expresso da pessoa a que elas se refiram.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O consentimento referido no inciso II do § 1º não é exigido quando as informações forem necessárias:",
+    "offset_fim": "§ 2º O consentimento referido no inciso II do § 1º não é exigido quando as informações forem necessárias:\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 2º O consentimento referido no inciso II do § 1º não é exigido quando as informações forem necessárias:\n"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - à prevenção e diagnóstico médico, quando a pessoa estiver física ou legalmente incapaz,",
+    "offset_fim": "física ou legalmente incapaz, e para utilização única e exclusivamente para o tratamento médico;\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "I - à prevenção e diagnóstico médico, quando a pessoa estiver física ou legalmente incapaz, e para utilização única e exclusivamente para o tratamento médico;\n"
+  },
+  {
+    "titulo": "II -",
+    "offset_inicio": "II - à realização de estatísticas e pesquisas científicas de evidente interesse público ou geral,",
+    "offset_fim": "de evidente interesse público ou geral, previstos em lei, sendo vedada a identificação da pessoa a que as informações se refiram;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "II - à realização de estatísticas e pesquisas científicas de evidente interesse público ou geral, previstos em lei, sendo vedada a identificação da pessoa a que as informações se refiram;"
+  },
+  {
+    "titulo": "III -",
+    "offset_inicio": "III - ao cumprimento de ordem judicial;\n",
+    "offset_fim": "III - ao cumprimento de ordem judicial;\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "III - ao cumprimento de ordem judicial;\n"
+  },
+  {
+    "titulo": "IV - à defesa de direitos humanos; ou",
+    "offset_inicio": "IV - à defesa de direitos humanos; ou\n",
+    "offset_fim": "IV - à defesa de direitos humanos; ou\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "IV - à defesa de direitos humanos; ou\n"
+  },
+  {
+    "titulo": "V - à proteção do interesse público e geral preponderante.",
+    "offset_inicio": "V - à proteção do interesse público e geral preponderante.",
+    "offset_fim": "V - à proteção do interesse público e geral preponderante.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "V - à proteção do interesse público e geral preponderante.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º A restrição de acesso à informação relativa à vida privada, honra e imagem de",
+    "offset_fim": "bem como em ações voltadas para a recuperação de fatos históricos de maior relevância.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 3º A restrição de acesso à informação relativa à vida privada, honra e imagem de pessoa não pode ser invocada com o intuito de prejudicar processo de apuração de irregularidades em que o titular das informações estiver envolvido, bem como em ações voltadas para a recuperação de fatos históricos de maior relevância."
+  },
+  {
+    "titulo": "Art. 20.",
+    "offset_inicio": "Art. 20. A cada grau de confidencialidade, definido nos termos desta Resolução, corresponde um conjunto específico de controles administrativos e tecnológicos",
+    "offset_fim": "danos potenciais à imagem ou às operações vitais ao negócio do Tribunal, decorrentes do uso ou do acesso não autorizado à informação.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 20. A cada grau de confidencialidade, definido nos termos desta Resolução, corresponde um conjunto específico de controles administrativos e tecnológicos compatíveis com os danos potenciais à imagem ou às operações vitais ao negócio do Tribunal, decorrentes do uso ou do acesso não autorizado à informação.\n"
+  },
+  {
+    "titulo": "Parágrafo único.",
+    "offset_inicio": "Parágrafo único. O conjunto de controles administrativos e tecnológicos de que trata o caput será objeto de ato do Presidente.",
+    "offset_fim": "Parágrafo único. O conjunto de controles administrativos e tecnológicos de que trata o caput será objeto de ato do Presidente.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Parágrafo único. O conjunto de controles administrativos e tecnológicos de que trata o caput será objeto de ato do Presidente.\n"
+  },
+  {
+    "titulo": "Seção VIII — Das Disposições Finais e Transitórias",
+    "offset_inicio": "Seção VIII\nDas Disposições Finais e Transitórias\n",
+    "offset_fim": "Seção VIII\nDas Disposições Finais e Transitórias\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Seção VIII\nDas Disposições Finais e Transitórias\n"
+  },
+  {
+    "titulo": "Art. 21.",
+    "offset_inicio": "Art. 21. Em caso de dúvida na identificação do gestor da informação, compete à CCG defini-lo.",
+    "offset_fim": "Art. 21. Em caso de dúvida na identificação do gestor da informação, compete à CCG defini-lo.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 21. Em caso de dúvida na identificação do gestor da informação, compete à CCG defini-lo."
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Ato do Presidente poderá designar gestores da informação.\n",
+    "offset_fim": "Parágrafo único. Ato do Presidente poderá designar gestores da informação.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Parágrafo único. Ato do Presidente poderá designar gestores da informação.\n"
+  },
+  {
+    "titulo": "Art. 22",
+    "offset_inicio": "Art. 22. O TCU deve proceder à reavaliação das informações por ele produzidas anteriormente à data de vigência desta Resolução, com vistas a sua classificação ou reclassificação, no prazo máximo de dois anos, contados da vigência da Lei nº 12.527, de 2011.",
+    "offset_fim": "ou reclassificação, no prazo máximo de dois anos, contados da vigência da Lei nº 12.527, de 2011.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 22. O TCU deve proceder à reavaliação das informações por ele produzidas anteriormente à data de vigência desta Resolução, com vistas a sua classificação ou reclassificação, no prazo máximo de dois anos, contados da vigência da Lei nº 12.527, de 2011.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Enquanto não transcorrido o prazo de reavaliação previsto no caput, deve ser mantida",
+    "offset_fim": "caput, deve ser mantida a classificação da informação nos termos da legislação precedente.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 1º Enquanto não transcorrido o prazo de reavaliação previsto no caput, deve ser mantida a classificação da informação nos termos da legislação precedente.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O procedimento descrito no caput é opcional para as informações públicas, a critério",
+    "offset_fim": "é opcional para as informações públicas, a critério do gestor da informação.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 2º O procedimento descrito no caput é opcional para as informações públicas, a critério do gestor da informação.\n"
+  },
+  {
+    "titulo": "Art. 23.",
+    "offset_inicio": "Art. 23. Instrução Normativa disporá sobre a responsabilidade dos órgãos e entidades",
+    "offset_fim": "prazo máximo de dois anos contados da vigência da Lei 12.527, de 2011.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 23. Instrução Normativa disporá sobre a responsabilidade dos órgãos e entidades de origem pelo fornecimento, em prazo determinado, do grau de confidencialidade das informações recebidas pelo TCU anteriormente à data de vigência desta Resolução, para fins de rotulação no prazo máximo de dois anos contados da vigência da Lei 12.527, de 2011."
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. O procedimento descrito no caput é opcional para as informações",
+    "offset_fim": "descrito no caput é opcional para as informações públicas, a critério do gestor da informação.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Parágrafo único. O procedimento descrito no caput é opcional para as informações públicas, a critério do gestor da informação."
+  },
+  {
+    "titulo": "Art. 24.",
+    "offset_inicio": "Art. 24. As infrações aos dispositivos desta Resolução sujeitam os responsáveis às sanções cabíveis nas esferas administrativa, civil e penal, nos termos da legislação em vigor.\n",
+    "offset_fim": "aos responsáveis às sanções cabíveis nas esferas administrativa, civil e penal, nos termos da legislação em vigor.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 24. As infrações aos dispositivos desta Resolução sujeitam os responsáveis às sanções cabíveis nas esferas administrativa, civil e penal, nos termos da legislação em vigor."
+  },
+  {
+    "titulo": "Art. 25.",
+    "offset_inicio": "Art. 25. A Secretaria de Soluções de Tecnologia da Informação (STI) procederá aos ajustes necessários nas soluções de TI decorrentes do disposto nesta Resolução.",
+    "offset_fim": "A Secretaria de Soluções de Tecnologia da Informação (STI) procederá aos ajustes necessários nas soluções de TI decorrentes do disposto nesta Resolução.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 25. A Secretaria de Soluções de Tecnologia da Informação (STI) procederá aos ajustes necessários nas soluções de TI decorrentes do disposto nesta Resolução.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º As demandas atinentes aos ajustes previstos no caput serão aprovadas pela Comissão de Coordenação Geral, nos termos do inciso III do art. 9º",
+    "offset_fim": "Coordenação Geral, nos termos do inciso III do art. 9º da Resolução-TCU nº 247, de 7 de dezembro de 2011.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 1º As demandas atinentes aos ajustes previstos no caput serão aprovadas pela Comissão de Coordenação Geral, nos termos do inciso III do art. 9º da Resolução-TCU nº 247, de 7 de dezembro de 2011.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Enquanto não concluídos os ajustes previstos no caput, ficam mantidas as regras de",
+    "offset_fim": "regras de negócio implementadas nas soluções de TI à época da edição desta Resolução.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 2º Enquanto não concluídos os ajustes previstos no caput, ficam mantidas as regras de negócio implementadas nas soluções de TI à época da edição desta Resolução.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º Até a implementação dos ajustes previstos no caput, as informações classificadas nos",
+    "offset_fim": "informações classificadas nos termos desta Resolução devem ser cadastradas como:\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 3º Até a implementação dos ajustes previstos no caput, as informações classificadas nos termos desta Resolução devem ser cadastradas como:\n"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso;\n",
+    "offset_fim": "I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso;\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso;\n"
+  },
+  {
+    "titulo": "II -",
+    "offset_inicio": "II - restritas: quando classificadas no grau reservado; e\n",
+    "offset_fim": "II - restritas: quando classificadas no grau reservado; e\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "II - restritas: quando classificadas no grau reservado; e\n"
+  },
+  {
+    "titulo": "III - públicas: quando classificadas no grau público.",
+    "offset_inicio": "III - públicas: quando classificadas no grau público.\n",
+    "offset_fim": "III - públicas: quando classificadas no grau público.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "III - públicas: quando classificadas no grau público.\n"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º Nos casos previstos nos incisos I e II do parágrafo anterior, devem-se preservar os elementos relativos à classificação, nos termos do art. 11 desta Resolução.\n",
+    "offset_fim": "anterior, devem-se preservar os elementos relativos à classificação, nos termos do art. 11 desta Resolução.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 4º Nos casos previstos nos incisos I e II do parágrafo anterior, devem-se preservar os elementos relativos à classificação, nos termos do art. 11 desta Resolução.\n"
+  },
+  {
+    "titulo": "Art. 26",
+    "offset_inicio": "Art. 26. Fica revogada a Resolução-TCU nº 229, de 11 de novembro de 2009.\n",
+    "offset_fim": "Art. 26. Fica revogada a Resolução-TCU nº 229, de 11 de novembro de 2009.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 26. Fica revogada a Resolução-TCU nº 229, de 11 de novembro de 2009.\n"
+  },
+  {
+    "titulo": "Art. 27",
+    "offset_inicio": "Art. 27. Esta Resolução entra em vigor na data de sua publicação.\nTCU, Sala das Sessões",
+    "offset_fim": "Brandão Alves de Souza, em 10 de abril de 2013.\nAROLDO CEDRAZ\nna Presidência",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 27. Esta Resolução entra em vigor na data de sua publicação.\nTCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 10 de abril de 2013.\nAROLDO CEDRAZ\nna Presidência"
+  }
+]

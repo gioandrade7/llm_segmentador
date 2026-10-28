@@ -1,0 +1,297 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 139,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 119,
+          "tipo": "corte_indevido",
+          "descricao": "A seção \"Seção III — Procedimento sumário\" (págs. 7–8) contém o marcador de ruído \"<!-- PÁGINA 8 -->\", que deve ser descartado e não integrado ao texto do bloco."
+        },
+        {
+          "bloco": 137,
+          "tipo": "englobante",
+          "descricao": "O bloco de \"Art. 33. É admitida a reabilitação...\" (pág. 9) engloba os incisos autônomos \"I - reparação integral do dano causado à Administração Pública\" até \"V - análise jurídica prévia...\", embora cada inciso deva iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Ao segmentar a \"Seção III — Procedimento sumário\" (págs. 7–8), descarte o marcador de ruído \"<!-- PÁGINA 8 -->\"; mantenha no bloco somente o título da seção e seu texto documental.\n- No \"Art. 33. É admitida a reabilitação do licitante ou contratado...\" (pág. 9), termine o bloco do artigo antes de \"I - reparação integral do dano causado à Administração Pública\" e inicie blocos próprios em cada inciso I, II, III, IV e V, até \"V - análise jurídica prévia...\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 149,
+    "insights_aplicados": "- Ao segmentar a \"Seção III — Procedimento sumário\" (págs. 7–8), descarte o marcador de ruído \"<!-- PÁGINA 8 -->\"; mantenha no bloco somente o título da seção e seu texto documental.\n- No \"Art. 33. É admitida a reabilitação do licitante ou contratado...\" (pág. 9), termine o bloco do artigo antes de \"I - reparação integral do dano causado à Administração Pública\" e inicie blocos próprios em cada inciso I, II, III, IV e V, até \"V - análise jurídica prévia...\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 17,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"XII - ensejar o retardamento da execução ou da entrega do objeto da licitação\" (pág. 2) também abrange os incisos XIII e XIV do Art. 2º, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 124,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da \"Seção III — Procedimento sumário\" (págs. 7–8) ainda contém o marcador de ruído de página \"<!-- PÁGINA 8 -->\" entre o marcador da seção e seu título."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 2), termine o bloco de \"XII - ensejar o retardamento da execução ou da entrega do objeto da licitação\" imediatamente antes de \"XIII - apresentar declaração ou documentação falsas exigidas no certame\"; inicie blocos próprios para os incisos XIII e XIV.\n- Ao segmentar a \"Seção III — Procedimento sumário\" (págs. 7–8), descarte o marcador de ruído \"<!-- PÁGINA 8 -->\"; mantenha no bloco somente o marcador e o título documental da seção.\n- No \"Art. 33. É admitida a reabilitação do licitante ou contratado...\" (pág. 9), termine o bloco do artigo antes de \"I - reparação integral do dano causado à Administração Pública\" e inicie blocos próprios em cada inciso I, II, III, IV e V, até \"V - análise jurídica prévia...\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 140,
+    "insights_aplicados": "- No Art. 2º (pág. 2), termine o bloco de \"XII - ensejar o retardamento da execução ou da entrega do objeto da licitação\" imediatamente antes de \"XIII - apresentar declaração ou documentação falsas exigidas no certame\"; inicie blocos próprios para os incisos XIII e XIV.\n- Ao segmentar a \"Seção III — Procedimento sumário\" (págs. 7–8), descarte o marcador de ruído \"<!-- PÁGINA 8 -->\"; mantenha no bloco somente o marcador e o título documental da seção.\n- No \"Art. 33. É admitida a reabilitação do licitante ou contratado...\" (pág. 9), termine o bloco do artigo antes de \"I - reparação integral do dano causado à Administração Pública\" e inicie blocos próprios em cada inciso I, II, III, IV e V, até \"V - análise jurídica prévia...\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 86,
+          "tipo": "englobante",
+          "descricao": "O bloco do “Parágrafo único. Caso as infrações administrativas...” do Art. 11 contém também os incisos I a VI da gradação da declaração de inidoneidade, inclusive terminando com “VI - de três a cinco anos...”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Seção I — Disposições gerais e comuns” contém o marcador da seção, o “Art. 13.” e os “§ 1º” e “§ 2º”, que são unidades hierárquicas distintas e devem ser segmentadas separadamente."
+        },
+        {
+          "bloco": 116,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da “Seção III — Procedimento sumário” retém o ruído de página “<!-- PÁGINA 8 -->”, que deve ser descartado."
+        },
+        {
+          "bloco": 138,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “IV - cumprimento das condições de reabilitação...” contém também o marcador e o texto do inciso “V - análise jurídica prévia...”, que deve constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Parágrafo único do Art. 11, iniciado por “Parágrafo único. Caso as infrações administrativas...” (pág. 5), termine o bloco imediatamente antes de “I - de três a quatro anos...” e inicie blocos próprios para cada inciso I, II, III, IV, V e VI da gradação de declaração de inidoneidade.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 13. O processo de responsabilização...” e em cada um dos parágrafos “§ 1º” e “§ 2º” desse artigo.\n- Ao segmentar a Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->”; mantenha no bloco somente o marcador e o título documental da seção.\n- No Art. 33, após o inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” (pág. 9), termine esse bloco imediatamente antes de “V - análise jurídica prévia...” e inicie um bloco próprio para o inciso V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 146,
+    "insights_aplicados": "- No Parágrafo único do Art. 11, iniciado por “Parágrafo único. Caso as infrações administrativas...” (pág. 5), termine o bloco imediatamente antes de “I - de três a quatro anos...” e inicie blocos próprios para cada inciso I, II, III, IV, V e VI da gradação de declaração de inidoneidade.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 13. O processo de responsabilização...” e em cada um dos parágrafos “§ 1º” e “§ 2º” desse artigo.\n- Ao segmentar a Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->”; mantenha no bloco somente o marcador e o título documental da seção.\n- No Art. 33, após o inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” (pág. 9), termine esse bloco imediatamente antes de “V - análise jurídica prévia...” e inicie um bloco próprio para o inciso V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 60,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “I - reincidência...” (§ 1º do Art. 7º, pág. 4) também contém o início do inciso “II - não atendimento às diligências...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 61,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...” (Art. 7º, pág. 4) incorpora o marcador e o texto do inciso “I - o licitante ou o contratado...”, que deveria constituir bloco próprio."
+        },
+        {
+          "bloco": 107,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 16. O atraso injustificado...” (pág. 6) contém também o marcador “Parágrafo único. A aplicação de multa de mora...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 121,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da “Seção III — Procedimento sumário” (págs. 7–8) preserva o marcador de ruído de página “<!-- PÁGINA 8 -->”, que deve ser descartado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Parágrafo único do Art. 11, iniciado por “Parágrafo único. Caso as infrações administrativas...” (pág. 5), termine o bloco imediatamente antes de “I - de três a quatro anos...” e inicie blocos próprios para cada inciso I, II, III, IV, V e VI da gradação de declaração de inidoneidade.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 13. O processo de responsabilização...” e em cada um dos parágrafos “§ 1º” e “§ 2º” desse artigo.\n- Ao segmentar a Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->”; mantenha no bloco somente o marcador e o título documental da seção.\n- No Art. 33, após o inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” (pág. 9), termine esse bloco imediatamente antes de “V - análise jurídica prévia...” e inicie um bloco próprio para o inciso V.\n- No Art. 7º (pág. 4), termine o bloco do inciso “I - reincidência...” imediatamente antes de “II - não atendimento às diligências...” e, no “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...”, termine o bloco imediatamente antes de “I - o licitante ou o contratado...”; inicie blocos próprios nesses incisos. No Art. 16 (pág. 6), termine o bloco de “Art. 16. O atraso injustificado...” imediatamente antes de “Parágrafo único. A aplicação de multa de mora...” e inicie bloco próprio para o parágrafo único."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 132,
+    "insights_aplicados": "- No Parágrafo único do Art. 11, iniciado por “Parágrafo único. Caso as infrações administrativas...” (pág. 5), termine o bloco imediatamente antes de “I - de três a quatro anos...” e inicie blocos próprios para cada inciso I, II, III, IV, V e VI da gradação de declaração de inidoneidade.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 13. O processo de responsabilização...” e em cada um dos parágrafos “§ 1º” e “§ 2º” desse artigo.\n- Ao segmentar a Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->”; mantenha no bloco somente o marcador e o título documental da seção.\n- No Art. 33, após o inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” (pág. 9), termine esse bloco imediatamente antes de “V - análise jurídica prévia...” e inicie um bloco próprio para o inciso V.\n- No Art. 7º (pág. 4), termine o bloco do inciso “I - reincidência...” imediatamente antes de “II - não atendimento às diligências...” e, no “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...”, termine o bloco imediatamente antes de “I - o licitante ou o contratado...”; inicie blocos próprios nesses incisos. No Art. 16 (pág. 6), termine o bloco de “Art. 16. O atraso injustificado...” imediatamente antes de “Parágrafo único. A aplicação de multa de mora...” e inicie bloco próprio para o parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 22,
+          "tipo": "englobante",
+          "descricao": "O bloco reúne o marcador e título da Seção III, o Art. 3º e os incisos I e II, embora cada uma dessas unidades deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 76,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “I - de três a cinco anos...” contém também o início do inciso II da gradação prevista no parágrafo único do Art. 11."
+        },
+        {
+          "bloco": 82,
+          "tipo": "sequencia",
+          "descricao": "O Art. 12 anuncia uma gradação para as infrações dos incisos VIII a XII do Art. 5º, mas a segmentação termina após o inciso I e salta diretamente para o CAPÍTULO III, sem os incisos seguintes da lista."
+        },
+        {
+          "bloco": 88,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 14 inclui o inciso I (“I - ordinário...”), que deveria constituir bloco próprio."
+        },
+        {
+          "bloco": 107,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da Seção III — “Procedimento sumário” contém o ruído de paginação “<!-- PÁGINA 8 -->”, que deve ser descartado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na Seção III — “Objetivos e Diretrizes” (pág. 2), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 3º São objetivos do processo de responsabilização:”, em “I - garantir a adequada condução...” e em “II - assegurar ao licitante...”.\n- No Art. 14 — “Serão adotados os seguintes procedimentos...” (pág. 6), termine o bloco do artigo imediatamente antes de “I - ordinário...” e inicie bloco próprio para esse inciso. No parágrafo único do Art. 11 (pág. 5), mantenha cada inciso da gradação de declaração de inidoneidade em bloco próprio, especialmente terminando o inciso I imediatamente antes de “II - de quatro a seis anos...”.\n- No Art. 12 (pág. 5), após o inciso “I - de três a quatro anos, na hipótese de apresentar declaração...”, continue capturando os incisos II a V da gradação em blocos próprios antes de iniciar o “CAPÍTULO III”.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente o marcador e o título documental da seção.\n- Mantenha as separações já corretas: na Seção I — “Disposições gerais e comuns” (pág. 6), separe a seção, o Art. 13 e cada um dos seus §§ 1º e 2º; no Art. 7º (pág. 4), separe os incisos e os incisos do § 2º; no Art. 16 (pág. 6), separe o parágrafo único; no Art. 33 (pág. 9), mantenha o inciso V em bloco próprio; e, no parágrafo único do Art. 11 (pág. 5), mantenha os incisos I a VI em blocos próprios."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 147,
+    "insights_aplicados": "- Na Seção III — “Objetivos e Diretrizes” (pág. 2), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 3º São objetivos do processo de responsabilização:”, em “I - garantir a adequada condução...” e em “II - assegurar ao licitante...”.\n- No Art. 14 — “Serão adotados os seguintes procedimentos...” (pág. 6), termine o bloco do artigo imediatamente antes de “I - ordinário...” e inicie bloco próprio para esse inciso. No parágrafo único do Art. 11 (pág. 5), mantenha cada inciso da gradação de declaração de inidoneidade em bloco próprio, especialmente terminando o inciso I imediatamente antes de “II - de quatro a seis anos...”.\n- No Art. 12 (pág. 5), após o inciso “I - de três a quatro anos, na hipótese de apresentar declaração...”, continue capturando os incisos II a V da gradação em blocos próprios antes de iniciar o “CAPÍTULO III”.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente o marcador e o título documental da seção.\n- Mantenha as separações já corretas: na Seção I — “Disposições gerais e comuns” (pág. 6), separe a seção, o Art. 13 e cada um dos seus §§ 1º e 2º; no Art. 7º (pág. 4), separe os incisos e os incisos do § 2º; no Art. 16 (pág. 6), separe o parágrafo único; no Art. 33 (pág. 9), mantenha o inciso V em bloco próprio; e, no parágrafo único do Art. 11 (pág. 5), mantenha os incisos I a VI em blocos próprios.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 89,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III do parágrafo único do Art. 11 contém também os marcadores e textos dos incisos IV, V e VI, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 123,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da Seção III — “Procedimento sumário” contém o marcador de ruído de página “<!-- PÁGINA 8 -->”, que deve ser descartado."
+        },
+        {
+          "bloco": 138,
+          "tipo": "englobante",
+          "descricao": "O bloco do CAPÍTULO IV — “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” contém também o início do Art. 31, que deve constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na Seção III — “Objetivos e Diretrizes” (pág. 2), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 3º São objetivos do processo de responsabilização:”, em “I - garantir a adequada condução...” e em “II - assegurar ao licitante...”.\n- No Art. 14 — “Serão adotados os seguintes procedimentos...” (pág. 6), termine o bloco do artigo imediatamente antes de “I - ordinário...” e inicie bloco próprio para esse inciso. No parágrafo único do Art. 11 (pág. 5), mantenha cada inciso da gradação de declaração de inidoneidade em bloco próprio; em especial, termine os blocos dos incisos III, IV e V imediatamente antes dos marcadores dos incisos IV, V e VI subsequentes.\n- No Art. 12 (págs. 5–6), mantenha os incisos I a V da gradação em blocos próprios antes de iniciar o “CAPÍTULO III”.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente o marcador e o título documental da seção.\n- No CAPÍTULO IV — “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo imediatamente antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio para esse artigo. Mantenha também as separações corretas da Seção I — “Disposições gerais e comuns”, do Art. 13 e de seus §§ 1º e 2º; dos incisos do Art. 7º e do § 2º; do parágrafo único do Art. 16; e do inciso V do Art. 33."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 139,
+    "insights_aplicados": "- Na Seção III — “Objetivos e Diretrizes” (pág. 2), mantenha em bloco próprio somente o marcador e o título da seção; inicie blocos próprios em “Art. 3º São objetivos do processo de responsabilização:”, em “I - garantir a adequada condução...” e em “II - assegurar ao licitante...”.\n- No Art. 14 — “Serão adotados os seguintes procedimentos...” (pág. 6), termine o bloco do artigo imediatamente antes de “I - ordinário...” e inicie bloco próprio para esse inciso. No parágrafo único do Art. 11 (pág. 5), mantenha cada inciso da gradação de declaração de inidoneidade em bloco próprio; em especial, termine os blocos dos incisos III, IV e V imediatamente antes dos marcadores dos incisos IV, V e VI subsequentes.\n- No Art. 12 (págs. 5–6), mantenha os incisos I a V da gradação em blocos próprios antes de iniciar o “CAPÍTULO III”.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente o marcador e o título documental da seção.\n- No CAPÍTULO IV — “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo imediatamente antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio para esse artigo. Mantenha também as separações corretas da Seção I — “Disposições gerais e comuns”, do Art. 13 e de seus §§ 1º e 2º; dos incisos do Art. 7º e do § 2º; do parágrafo único do Art. 16; e do inciso V do Art. 33.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 56,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “I - o licitante ou o contratado...” (pág. 4), sob o § 2º do Art. 7º, também contém o marcador e o texto do inciso “II - a conduta praticada...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 92,
+          "tipo": "englobante",
+          "descricao": "O bloco do “Art. 13. O processo de responsabilização...” (pág. 6) incorpora os marcadores e textos dos §§ 1º e 2º, que são unidades hierárquicas próprias."
+        },
+        {
+          "bloco": 115,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da “Seção III — Procedimento sumário” (págs. 7–8) retém o marcador de ruído de página “<!-- PÁGINA 8 -->”, que deve ser descartado."
+        },
+        {
+          "bloco": 137,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “IV - cumprimento das condições de reabilitação...” (pág. 9), sob o Art. 33, também contém o inciso “V - análise jurídica prévia...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No § 2º do Art. 7º (pág. 4), termine o bloco do inciso “I - o licitante ou o contratado...” imediatamente antes de “II - a conduta praticada...” e inicie bloco próprio para o inciso II. Preserve a separação já correta dos incisos do Art. 14 e dos incisos da gradação do parágrafo único do Art. 11.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para o “Art. 13. O processo de responsabilização...”, o “§ 1º A instauração do processo...” e o “§ 2º O processo de responsabilização será conduzido...”; termine o bloco do Art. 13 antes do § 1º e termine o bloco do § 1º antes do § 2º. Preserve também os blocos próprios da seção e dos §§ 1º e 2º.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente o marcador e o título da seção. Preserve também a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como do CAPÍTULO IV e do Art. 31.\n- No Art. 33 (pág. 9), termine o bloco do inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” imediatamente antes de “V - análise jurídica prévia...” e inicie bloco próprio para o inciso V. Preserve os blocos próprios dos incisos I a V do Art. 12."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 150,
+    "insights_aplicados": "- No § 2º do Art. 7º (pág. 4), termine o bloco do inciso “I - o licitante ou o contratado...” imediatamente antes de “II - a conduta praticada...” e inicie bloco próprio para o inciso II. Preserve a separação já correta dos incisos do Art. 14 e dos incisos da gradação do parágrafo único do Art. 11.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para o “Art. 13. O processo de responsabilização...”, o “§ 1º A instauração do processo...” e o “§ 2º O processo de responsabilização será conduzido...”; termine o bloco do Art. 13 antes do § 1º e termine o bloco do § 1º antes do § 2º. Preserve também os blocos próprios da seção e dos §§ 1º e 2º.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente o marcador e o título da seção. Preserve também a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como do CAPÍTULO IV e do Art. 31.\n- No Art. 33 (pág. 9), termine o bloco do inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” imediatamente antes de “V - análise jurídica prévia...” e inicie bloco próprio para o inciso V. Preserve os blocos próprios dos incisos I a V do Art. 12.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 126,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da Seção III — “Procedimento sumário” contém o ruído de página “<!-- PÁGINA 8 -->” entre o marcador da seção e seu título."
+        },
+        {
+          "bloco": 134,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia simultaneamente a Seção IV — “Julgamento” e o Art. 25, que são unidades hierárquicas distintas e devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No § 2º do Art. 7º (pág. 4), termine o bloco do inciso “I - o licitante ou o contratado...” imediatamente antes de “II - a conduta praticada...” e inicie bloco próprio para o inciso II. Preserve a separação dos incisos do Art. 14 e dos incisos da gradação do parágrafo único do Art. 11.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para o “Art. 13. O processo de responsabilização...”, o “§ 1º A autuação do processo...” e o “§ 2º O processo de responsabilização será conduzido...”; termine o bloco do Art. 13 antes do § 1º e o bloco do § 1º antes do § 2º.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente “Seção III” e o título “Procedimento sumário”. Preserve a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como do CAPÍTULO IV e do Art. 31.\n- Na Seção IV — “Julgamento” (pág. 8), termine o bloco da seção antes de “Art. 25. Após adotada a providência...” e inicie um bloco próprio para o Art. 25.\n- No Art. 33 (pág. 9), termine o bloco do inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” imediatamente antes de “V - análise jurídica prévia...” e inicie bloco próprio para o inciso V. Preserve os blocos próprios dos incisos I a V do Art. 12."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 140,
+    "insights_aplicados": "- No § 2º do Art. 7º (pág. 4), termine o bloco do inciso “I - o licitante ou o contratado...” imediatamente antes de “II - a conduta praticada...” e inicie bloco próprio para o inciso II. Preserve a separação dos incisos do Art. 14 e dos incisos da gradação do parágrafo único do Art. 11.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para o “Art. 13. O processo de responsabilização...”, o “§ 1º A autuação do processo...” e o “§ 2º O processo de responsabilização será conduzido...”; termine o bloco do Art. 13 antes do § 1º e o bloco do § 1º antes do § 2º.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente “Seção III” e o título “Procedimento sumário”. Preserve a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como do CAPÍTULO IV e do Art. 31.\n- Na Seção IV — “Julgamento” (pág. 8), termine o bloco da seção antes de “Art. 25. Após adotada a providência...” e inicie um bloco próprio para o Art. 25.\n- No Art. 33 (pág. 9), termine o bloco do inciso “IV - cumprimento das condições de reabilitação definidas no ato punitivo;” imediatamente antes de “V - análise jurídica prévia...” e inicie bloco próprio para o inciso V. Preserve os blocos próprios dos incisos I a V do Art. 12.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 66,
+          "tipo": "englobante",
+          "descricao": "O bloco de “Art. 8º A dosimetria das sanções...” (pág. 4) engloba os incisos I a VII, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 84,
+          "tipo": "englobante",
+          "descricao": "O bloco de “Art. 12. As infrações administrativas...” (pág. 5) engloba o inciso “I - de três a quatro anos...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 86,
+          "tipo": "sequencia",
+          "descricao": "Na gradação do Art. 12, o inciso II do bloco anterior é seguido diretamente por “IV - de três a cinco anos...” (pág. 6), sem bloco ou texto correspondente ao inciso III. Além disso, no Art. 5º, o inciso X é seguido por “Parágrafo único”, sem os incisos XI e XII, embora o Art. 12 remeta expressamente aos incisos VIII a XII."
+        },
+        {
+          "bloco": 115,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco da “Seção III — Procedimento sumário” (págs. 7–8) contém o marcador de ruído “<!-- PÁGINA 8 -->”, que deve ser descartado."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No § 2º do Art. 7º (pág. 4), termine o bloco do inciso “I - o licitante ou o contratado...” imediatamente antes de “II - a conduta praticada...” e inicie bloco próprio para o inciso II. Preserve também os blocos próprios dos incisos do Art. 14 e dos incisos da gradação do parágrafo único do Art. 11.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para “Art. 13. O processo de responsabilização...”, “§ 1º A autuação do processo...” e “§ 2º O processo de responsabilização será conduzido...”, terminando cada bloco antes do marcador seguinte.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente “Seção III” e o título “Procedimento sumário”. Preserve a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como do CAPÍTULO IV e do Art. 31.\n- Na Seção IV — “Julgamento” (pág. 8), termine o bloco da seção antes de “Art. 25. Após adotada a providência...” e inicie bloco próprio para o Art. 25.\n- No Art. 8º (pág. 4), termine o bloco do artigo antes de “I - a importância da preservação da empresa...” e inicie blocos próprios para cada um dos incisos I a VII. No Art. 12 (pág. 5), termine o bloco do artigo antes de “I - de três a quatro anos...” e mantenha blocos próprios para seus incisos; no Art. 33 (pág. 9), mantenha separados os incisos I a V, especialmente iniciando bloco próprio em “V - análise jurídica prévia...”."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 134,
+    "insights_aplicados": "- No § 2º do Art. 7º (pág. 4), termine o bloco do inciso “I - o licitante ou o contratado...” imediatamente antes de “II - a conduta praticada...” e inicie bloco próprio para o inciso II. Preserve também os blocos próprios dos incisos do Art. 14 e dos incisos da gradação do parágrafo único do Art. 11.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para “Art. 13. O processo de responsabilização...”, “§ 1º A autuação do processo...” e “§ 2º O processo de responsabilização será conduzido...”, terminando cada bloco antes do marcador seguinte.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o marcador de ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente “Seção III” e o título “Procedimento sumário”. Preserve a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como do CAPÍTULO IV e do Art. 31.\n- Na Seção IV — “Julgamento” (pág. 8), termine o bloco da seção antes de “Art. 25. Após adotada a providência...” e inicie bloco próprio para o Art. 25.\n- No Art. 8º (pág. 4), termine o bloco do artigo antes de “I - a importância da preservação da empresa...” e inicie blocos próprios para cada um dos incisos I a VII. No Art. 12 (pág. 5), termine o bloco do artigo antes de “I - de três a quatro anos...” e mantenha blocos próprios para seus incisos; no Art. 33 (pág. 9), mantenha separados os incisos I a V, especialmente iniciando bloco próprio em “V - análise jurídica prévia...”.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em “VI - dar causa à inexecução parcial do contrato...” (pág. 1) também captura os marcadores e conteúdos dos incisos VII e VIII; o inciso IX só volta a iniciar bloco próprio na página 2."
+        },
+        {
+          "bloco": 110,
+          "tipo": "corte_indevido",
+          "descricao": "o bloco da “Seção III — Procedimento sumário” (págs. 7–8) contém o marcador de ruído de página “<!-- PÁGINA 8 -->” entre o marcador da seção e seu título."
+        },
+        {
+          "bloco": 132,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em “IV - cumprimento das condições de reabilitação...” (pág. 9) termina contendo também “V - análise jurídica prévia...”, que é inciso irmão e deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (págs. 1–2), termine o bloco de “VI - dar causa à inexecução parcial do contrato...” imediatamente antes de “VII -” e inicie blocos próprios para os incisos VII e VIII, terminando cada um antes do inciso seguinte. Preserve também, no § 2º do Art. 7º (pág. 4), a separação entre os incisos I e II; no Art. 14 (pág. 6), os blocos próprios dos incisos I e II; e, no parágrafo único do Art. 11 (pág. 5), os blocos próprios de sua gradação em incisos.\n- No Art. 33 (pág. 9), termine o bloco de “IV - cumprimento das condições de reabilitação definidas no ato punitivo...” imediatamente antes de “V - análise jurídica prévia...” e inicie bloco próprio para o inciso V. Preserve também, no Art. 8º (pág. 4) e no Art. 12 (págs. 5–6), um bloco próprio para cada inciso romano.\n- Na Seção III — “Procedimento sumário” (págs. 7–8), descarte o ruído “<!-- PÁGINA 8 -->” e mantenha no bloco somente “Seção III” e o título “Procedimento sumário”. Preserve a separação da Seção III — “Objetivos e Diretrizes” (pág. 2), de seu Art. 3º e de seus incisos, bem como a separação do CAPÍTULO IV e do Art. 31.\n- Na Seção I — “Disposições gerais e comuns” (pág. 6), mantenha blocos próprios para “Art. 13. O processo de responsabilização...”, “§ 1º A autuação do processo...” e “§ 2º O processo de responsabilização será conduzido...”, terminando cada bloco antes do marcador seguinte.\n- Na Seção IV — “Julgamento” (pág. 8), mantenha o bloco da seção terminado antes de “Art. 25. Após adotada a providência...” e inicie bloco próprio para o Art. 25."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21767/NORMA-21767_ciclo10.json"
+  }
+]

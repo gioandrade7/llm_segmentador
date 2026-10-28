@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados/tcu/NORMA-26102/NORMA-26102",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/NORMA-26102.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 111,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 111,
+      "fronteiras_gabarito": 122,
+      "acertos": 111,
+      "precisao": 1.0,
+      "revocacao": 0.9098360655737705,
+      "f1": 0.9527896995708155,
+      "fins": {
+        "previstos": 111,
+        "gabarito": 122,
+        "fins_nao_localizados": 0,
+        "acertos": 110,
+        "precisao": 0.990990990990991,
+        "revocacao": 0.9016393442622951,
+        "f1": 0.944206008583691
+      },
+      "blocos_exatos": {
+        "acertos": 105,
+        "precisao": 0.9459459459459459,
+        "revocacao": 0.860655737704918,
+        "f1": 0.9012875536480687
+      },
+      "cobertura": 0.8843553008595989
+    }
+  ]
+}

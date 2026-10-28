@@ -1,0 +1,426 @@
+[
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º Ao Tribunal de Contas da União compete acompanhar, fiscalizar e avaliar a gestão de florestas públicas para a produção sustentável, sob domínio da União ou de suas entidades da administração indireta, de que trata a Lei n.º 11.284/2006.",
+    "offset_fim": "Art. 1º Ao Tribunal de Contas da União compete acompanhar, fiscalizar e avaliar a gestão de florestas públicas para a produção sustentável, sob domínio da União ou de suas entidades da administração indireta, de que trata a Lei n.º 11.284/2006.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 1º Ao Tribunal de Contas da União compete acompanhar, fiscalizar e avaliar a gestão de florestas públicas para a produção sustentável, sob domínio da União ou de suas entidades da administração indireta, de que trata a Lei n.º 11.284/2006.\n"
+  },
+  {
+    "titulo": "Art. 2º",
+    "offset_inicio": "Art. 2º Para fins do disposto nesta Instrução Normativa, considera-se:\nI - floresta",
+    "offset_fim": "Art. 2º Para fins do disposto nesta Instrução Normativa, considera-se:\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 2º Para fins do disposto nesta Instrução Normativa, considera-se:\n"
+  },
+  {
+    "titulo": "I - floresta pública",
+    "offset_inicio": "I - floresta pública: floresta, natural ou plantada, localizada nos diversos biomas brasileiros, em bens sob o domínio da União",
+    "offset_fim": "em bens sob o domínio da União ou de suas entidades da administração indireta;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "I - floresta pública: floresta, natural ou plantada, localizada nos diversos biomas brasileiros, em bens sob o domínio da União ou de suas entidades da administração indireta;"
+  },
+  {
+    "titulo": "II - manejo florestal sustentável",
+    "offset_inicio": "II - manejo florestal sustentável: administração da floresta para a obtenção de benefícios",
+    "offset_fim": " de múltiplos produtos e subprodutos não madeireiros, bem como a utilização de outros bens eserviços de natureza florestal;\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "II - manejo florestal sustentável: administração da floresta para a obtenção de benefícios econômicos, sociais e ambientais, respeitando-se os mecanismos de sustentação do ecossistema objeto do manejo e considerando-se, cumulativa ou alternativamente, a utilização de múltiplas espécies madeireiras, de múltiplos produtos e subprodutos não madeireiros, bem como a utilização de outros bens eserviços de natureza florestal;\n"
+  },
+  {
+    "titulo": "III - floresta nacional",
+    "offset_inicio": "III - floresta nacional: Unidade de Conservação com cobertura florestal de espécies predominantemente nativas e tem como objetivo básico o uso múltiplo sustentável",
+    "offset_fim": "pesquisa científica, com ênfase em métodos para exploração sustentável de florestas nativas;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "III - floresta nacional: Unidade de Conservação com cobertura florestal de espécies predominantemente nativas e tem como objetivo básico o uso múltiplo sustentável dos recursos florestais e a pesquisa científica, com ênfase em métodos para exploração sustentável de florestas nativas;"
+  },
+  {
+    "titulo": "IV - gestão direta",
+    "offset_inicio": "IV - gestão direta: compreende a gestão de florestas nacionais diretamente pelo poder",
+    "offset_fim": "s licitatórios e demais exigências legais pertinentes;\n\n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "IV - gestão direta: compreende a gestão de florestas nacionais diretamente pelo poder público, sendo-lhe facultado, para execução de atividades subsidiárias, firmar convênios, termos de parceria, contratos ou instrumentos similares com terceiros, observados os procedimentos licitatórios e demais exigências legais pertinentes;\n\n\n"
+  },
+  {
+    "titulo": "V - comunidade local",
+    "offset_inicio": "V - comunidade local: população tradicional ou outro grupo humano, organizado por gerações sucessivas, com estilo de vida relevante à conservação e à utilização sustentável da diversidade biológica;",
+    "offset_fim": "por gerações sucessivas, com estilo de vida relevante à conservação e à utilização sustentável da diversidade biológica;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "V - comunidade local: população tradicional ou outro grupo humano, organizado por gerações sucessivas, com estilo de vida relevante à conservação e à utilização sustentável da diversidade biológica;\n"
+  },
+  {
+    "titulo": "VI - concessão florestal",
+    "offset_inicio": "VI - concessão florestal: delegação onerosa, feita pelo poder concedente, do direito de praticar manejo florestal sustentável",
+    "offset_fim": "do respectivo edital de licitação e demonstre capacidade para seu desempenho, por sua conta e risco e por prazo determinado;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VI - concessão florestal: delegação onerosa, feita pelo poder concedente, do direito de praticar manejo florestal sustentável para exploração de produtos e serviços numa unidade de manejo, mediante licitação, à pessoa jurídica, em consórcio ou não, que atenda às exigências do respectivo edital de licitação e demonstre capacidade para seu desempenho, por sua conta e risco e por prazo determinado;"
+  },
+  {
+    "titulo": "VII - lote de concessão florestal",
+    "offset_inicio": "VII - lote de concessão florestal: conjunto de unidades de manejo a serem licitadas em um",
+    "offset_fim": "lote de concessão florestal: conjunto de unidades de manejo a serem licitadas em um mesmo procedimento;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VII - lote de concessão florestal: conjunto de unidades de manejo a serem licitadas em um mesmo procedimento;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - unidade de manejo: perímetro definido a partir de critérios técnicos, socioculturais, econômicos e ambientais, localizado em florestas públicas, objeto de um Plano de Manejo Florestal Sustentável - PMFS, podendo conter áreas degradadas para fins de recuperação por meio de plantios florestais;\n",
+    "offset_fim": "PMFS, podendo conter áreas degradadas para fins de recuperação por meio de plantios florestais;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VIII - unidade de manejo: perímetro definido a partir de critérios técnicos, socioculturais, econômicos e ambientais, localizado em florestas públicas, objeto de um Plano de Manejo Florestal Sustentável - PMFS, podendo conter áreas degradadas para fins de recuperação por meio de plantios florestais;\n"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - Plano Anual de Outorga Florestal (PAOF): documento proposto pelo órgão gestor e definido pelo poder concedente, contendo a descrição de todas as florestas públicas a serem submetidas a processos de concessão no ano em que vigorar;",
+    "offset_fim": "IX - Plano Anual de Outorga Florestal (PAOF): documento proposto pelo órgão gestor e definido pelo poder concedente, contendo a descrição de todas as florestas públicas a serem submetidas a processos de concessão no ano em que vigorar;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IX - Plano Anual de Outorga Florestal (PAOF): documento proposto pelo órgão gestor e definido pelo poder concedente, contendo a descrição de todas as florestas públicas a serem submetidas a processos de concessão no ano em que vigorar;"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - Unidade Responsável: é a unidade técnico-executiva do Tribunal de Contas da União encarregada da coordenação do controle da gestão ambiental;",
+    "offset_fim": "Responsável: é a unidade técnico-executiva do Tribunal de Contas da União encarregada da coordenação do controle da gestão ambiental;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "X - Unidade Responsável: é a unidade técnico-executiva do Tribunal de Contas da União encarregada da coordenação do controle da gestão ambiental;"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - Órgão Gestor: órgão ou entidade do poder concedente com a competência de disciplinar",
+    "offset_fim": "o poder concedente com a competência de disciplinar e conduzir o processo de outorga de concessão florestal.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "XI - Órgão Gestor: órgão ou entidade do poder concedente com a competência de disciplinar e conduzir o processo de outorga de concessão florestal.\n"
+  },
+  {
+    "titulo": "Art. 3º",
+    "offset_inicio": "Art. 3º O controle da gestão de florestas públicas a que se refere o art. 1º será realizado ordinariamente por meio da sistemática prevista nesta Instrução Normativa",
+    "offset_fim": "Interno do Tribunal de Contas da União, sempre com base nos princípios da seletividade, materialidade, relevância e risco.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 3º O controle da gestão de florestas públicas a que se refere o art. 1º será realizado ordinariamente por meio da sistemática prevista nesta Instrução Normativa e dos instrumentos de fiscalização especificados no Regimento Interno do Tribunal de Contas da União, sempre com base nos princípios da seletividade, materialidade, relevância e risco.\n"
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º Decisão normativa disciplinará o controle da gestão direta de florestas nacionais pelo poder público federal e da destinação de florestas públicas sob domínio da União",
+    "offset_fim": "relativos aos processos licitatórios de outorga de concessão de unidades de manejo selecionadas para exame pelo Tribunal.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 4º Decisão normativa disciplinará o controle da gestão direta de florestas nacionais pelo poder público federal e da destinação de florestas públicas sob domínio da União ou das entidades de sua Administração Indireta às comunidades locais, bem assim regulamentará o envio ao Tribunal de documentos e informações relativos aos processos licitatórios de outorga de concessão de unidades de manejo selecionadas para exame pelo Tribunal.\n"
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º O controle das concessões florestais será prévio e concomitante, e observará os",
+    "offset_fim": "com o Plano Anual de Outorga Florestal - PAOF e com o Cadastro Geral de Florestas Públicas da União;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 5º O controle das concessões florestais será prévio e concomitante, e observará os seguintes estágios:\nI - o primeiro estágio terá por objetivo verificar as informações relativas à viabilidade técnica, econômica, sociocultural e ambiental do processo de gestão florestal, bem como a conformidade dessas informações com os dispositivos legais, com o Plano Anual de Outorga Florestal - PAOF e com o Cadastro Geral de Florestas Públicas da União;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - o segundo estágio terá por objetivo verificar se as licenças prévias, o edital de licitação e as minutas de contrato estão em conformidade com os dispositivos legais, regulamentares",
+    "offset_fim": "e, no que couber, com os resultados das audiências públicas previstas no art. 8º da Lei n.º 11.284/2006;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - o segundo estágio terá por objetivo verificar se as licenças prévias, o edital de licitação e as minutas de contrato estão em conformidade com os dispositivos legais, regulamentares e, no que couber, com os resultados das audiências públicas previstas no art. 8º da Lei n.º 11.284/2006;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - o terceiro estágio terá por objetivo verificar se a habilitação dos licitantes e o",
+    "offset_fim": "as prescrições legais e editalícias e observaram os princípios que norteiam a administração pública;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - o terceiro estágio terá por objetivo verificar se a habilitação dos licitantes e o julgamento das propostas foram compatíveis com as prescrições legais e editalícias e observaram os princípios que norteiam a administração pública;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - o quarto estágio terá por objetivo verificar se os contratos assinados estão em consonância com a minuta de contrato anexa ao edital de licitação;",
+    "offset_fim": "estão em consonância com a minuta de contrato anexa ao edital de licitação;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - o quarto estágio terá por objetivo verificar se os contratos assinados estão em consonância com a minuta de contrato anexa ao edital de licitação;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - o quinto estágio terá por objetivo verificar se foi emitida a Licença de Operação para as unidades de manejo.",
+    "offset_fim": "V - o quinto estágio terá por objetivo verificar se foi emitida a Licença de Operação para as unidades de manejo.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "V - o quinto estágio terá por objetivo verificar se foi emitida a Licença de Operação para as unidades de manejo.\n"
+  },
+  {
+    "titulo": "Art. 6º",
+    "offset_inicio": "Art. 6º Ao final do terceiro e do quinto estágios o Tribunal se manifestará sobre a regularidade dos procedimentos executados, em relação às unidades de manejo examinadas.",
+    "offset_fim": "o Tribunal se manifestará sobre a regularidade dos procedimentos executados, em relação às unidades de manejo examinadas.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 6º Ao final do terceiro e do quinto estágios o Tribunal se manifestará sobre a regularidade dos procedimentos executados, em relação às unidades de manejo examinadas.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único: A qualquer momento, se verificados indícios de irregularidades graves, os autos",
+    "offset_fim": "autos serão encaminhados ao Relator com proposta de adoção das medidas cabíveis.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Parágrafo único: A qualquer momento, se verificados indícios de irregularidades graves, os autos serão encaminhados ao Relator com proposta de adoção das medidas cabíveis."
+  },
+  {
+    "titulo": "Art. 7º",
+    "offset_inicio": "Art. 7º O órgão gestor encaminhará ao TCU:\n",
+    "offset_fim": "Art. 7º O órgão gestor encaminhará ao TCU:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 7º O órgão gestor encaminhará ao TCU:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - até 5 (cinco) dias após a aprovação, o Plano Anual de Outorga Florestal (PAOF) e suas alterações;",
+    "offset_fim": "I - até 5 (cinco) dias após a aprovação, o Plano Anual de Outorga Florestal (PAOF) e suas alterações;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - até 5 (cinco) dias após a aprovação, o Plano Anual de Outorga Florestal (PAOF) e suas alterações;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - concomitantemente à remessa ao Congresso Nacional, o relatório mencionado no § 2º do art. 53 da Lei n.º 11.284/2006;\n",
+    "offset_fim": "II - concomitantemente à remessa ao Congresso Nacional, o relatório mencionado no § 2º do art. 53 da Lei n.º 11.284/2006;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - concomitantemente à remessa ao Congresso Nacional, o relatório mencionado no § 2º do art. 53 da Lei n.º 11.284/2006;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - até 5 (cinco) dias após sua publicação, cópia dos atos administrativos de que trata o art. 12 da Lei n.º 11.284/2006 e de suas alterações;",
+    "offset_fim": "dos atos administrativos de que trata o art. 12 da Lei n.º 11.284/2006 e de suas alterações;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - até 5 (cinco) dias após sua publicação, cópia dos atos administrativos de que trata o art. 12 da Lei n.º 11.284/2006 e de suas alterações;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - para as concessões de que tratam os incisos I e II do art. 78 da Lei n.º 11.284/06, além dos demais elementos mencionados nesta Instrução Normativa:",
+    "offset_fim": "IV - para as concessões de que tratam os incisos I e II do art. 78 da Lei n.º 11.284/06, além dos demais elementos mencionados nesta Instrução Normativa:",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - para as concessões de que tratam os incisos I e II do art. 78 da Lei n.º 11.284/06, além dos demais elementos mencionados nesta Instrução Normativa:"
+  },
+  {
+    "titulo": "a)",
+    "offset_inicio": "a) em até 30 (trinta) dias antes da publicação dos editais: relação dos lotes e uni",
+    "offset_fim": "requisitos previstos nas alíneas a, b, c e d, inciso II, art. 78, da Lei n.º 11.284/2006;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "a) em até 30 (trinta) dias antes da publicação dos editais: relação dos lotes e unidades de manejo que serão licitados e descrição dos critérios técnicos de divisão em tamanhos diversos, conforme o art. 33 da Lei n.º 11.284/2006; estudo que demonstre a viabilidade econômica, incluindo o inventário amostral, rol dos produtos e serviços florestais cuja exploração será autorizada e seus respectivos preços; licença prévia prevista no § 4º do art. 18 da Lei n.º 11.284/2006, bem como o parecer do órgão ambiental sobre os estudos ambientais; no caso das Florestas Nacionais (FLONAS), comprovação do cumprimento dos requisitos previstos nas alíneas a, b, c e d, inciso II, art. 78, da Lei n.º 11.284/2006;"
+  },
+  {
+    "titulo": "b)",
+    "offset_inicio": "b) em até 5 (cinco) dias após a publicação dos editais: resultado das contribuições",
+    "offset_fim": "mencionados no art. 26 da Lei n.º 11.284/2006, bem como suas respectivas justificativas;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "b) em até 5 (cinco) dias após a publicação dos editais: resultado das contribuições das audiências públicas; editais de licitação e seus anexos; critérios de julgamento adotados na licitação, mencionados no art. 26 da Lei n.º 11.284/2006, bem como suas respectivas justificativas;"
+  },
+  {
+    "titulo": "c)",
+    "offset_inicio": "c) quando solicitado, em relação a unidades de manejo indicadas previamente pelo Tribunal, até 5 (cinco) dias após a adjudicação da concessão florestal ao vencedor da licitação,",
+    "offset_fim": "respostas e decisões relativos às fases de habilitação e de julgamento das propostas;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "c) quando solicitado, em relação a unidades de manejo indicadas previamente pelo Tribunal, até 5 (cinco) dias após a adjudicação da concessão florestal ao vencedor da licitação, atas de abertura, relatório de julgamento, questionamentos, recursos, impugnações, respostas e decisões relativos às fases de habilitação e de julgamento das propostas;\n"
+  },
+  {
+    "titulo": "d)",
+    "offset_inicio": "d) em até 5 (cinco) dias após assinatura dos contratos de concessão: cópia em papel dos contratos de concessão, para as unidades de manejo previamente indicadas pelo Tribunal;",
+    "offset_fim": "empresas vencedoras, com informações sobre o CNPJ, razão social, lote, unidade de manejo, prazo, preço e índices de reajustes;\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "d) em até 5 (cinco) dias após assinatura dos contratos de concessão: cópia em papel dos contratos de concessão, para as unidades de manejo previamente indicadas pelo Tribunal; relação de empresas vencedoras, com informações sobre o CNPJ, razão social, lote, unidade de manejo, prazo, preço e índices de reajustes;\n"
+  },
+  {
+    "titulo": "e)",
+    "offset_inicio": "e) em até 5 (cinco) dias após sua expedição, a Licença de Operação (LO) para as",
+    "offset_fim": "de Operação (LO) para as unidades de manejo previamente indicadas pelo Tribunal.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "e) em até 5 (cinco) dias após sua expedição, a Licença de Operação (LO) para as unidades de manejo previamente indicadas pelo Tribunal.\n"
+  },
+  {
+    "titulo": "V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70 da Lei n.º 11.284/06",
+    "offset_inicio": "V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70 da Lei n.º 11.284/06, em até 5 (cinco) dias após a assinatura dos contratos de concessão assinados entre o poder concedente e os detentores de PMFS de que trata o § 6º do art. 70 da Lei n.º 11.284/2006:",
+    "offset_fim": "contratos de concessão assinados entre o poder concedente e os detentores de PMFS de que trata o § 6º do art. 70 da Lei n.º 11.284/2006:\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70 da Lei n.º 11.284/06, em até 5 (cinco) dias após a assinatura dos contratos de concessão assinados entre o poder concedente e os detentores de PMFS de que trata o § 6º do art. 70 da Lei n.º 11.284/2006:\n"
+  },
+  {
+    "titulo": "a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS) para os contratos assinados",
+    "offset_inicio": "a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS) para os contratos assinados;",
+    "offset_fim": "a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS) para os contratos assinados;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS) para os contratos assinados;"
+  },
+  {
+    "titulo": "b)",
+    "offset_inicio": "b) comunicação quando da assinatura dos referidos contratos de concessão, bem assim das respectivas Autorizações de Exploração Florestal (AUTEX);",
+    "offset_fim": "concessão, bem assim das respectivas Autorizações de Exploração Florestal (AUTEX);",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "b) comunicação quando da assinatura dos referidos contratos de concessão, bem assim das respectivas Autorizações de Exploração Florestal (AUTEX);"
+  },
+  {
+    "titulo": "c)",
+    "offset_inicio": "c) relatório sintético contendo a relação das vistorias realizadas pelos órgãos ambiental e fundiário das unidades de manejo que tiveram contratos assinados previstos no § 6º do art. 70 da Lei n.º 11.284/2006, identificando as principais ocorrências assinaladas.",
+    "offset_fim": "tiveram contratos assinados previstos no § 6º do art. 70 da Lei n.º 11.284/2006, identificando as principais ocorrências assinaladas.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "c) relatório sintético contendo a relação das vistorias realizadas pelos órgãos ambiental e fundiário das unidades de manejo que tiveram contratos assinados previstos no § 6º do art. 70 da Lei n.º 11.284/2006, identificando as principais ocorrências assinaladas.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A unidade responsável autuará processo por ocasião do recebimento dos documentos referidos",
+    "offset_fim": "e o arquivará quando sua análise não revelar indícios ou evidências de irregularidade.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 1º A unidade responsável autuará processo por ocasião do recebimento dos documentos referidos nos incisos I e II deste artigo, e o arquivará quando sua análise não revelar indícios ou evidências de irregularidade.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A unidade responsável autuará um processo para cada lote de concessão florestal.",
+    "offset_fim": "§ 2º A unidade responsável autuará um processo para cada lote de concessão florestal.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 2º A unidade responsável autuará um processo para cada lote de concessão florestal."
+  },
+  {
+    "titulo": "Art. 8º",
+    "offset_inicio": "Art. 8º Para cada um dos processos referidos no § 2º do art. 7º, a unidade responsável",
+    "offset_fim": "encaminhamento da documentação de que trata o art. 4º desta Instrução Normativa.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 8º Para cada um dos processos referidos no § 2º do art. 7º, a unidade responsável selecionará, com base nos princípios mencionados no art. 2.º, no prazo de vinte dias da publicação do ato de que trata o art. 12 da Lei n.º 11.284/2006, unidades de manejo a serem examinadas, em relação às quais requisitará do órgão gestor o encaminhamento da documentação de que trata o art. 4º desta Instrução Normativa.\n"
+  },
+  {
+    "titulo": "Art. 9º",
+    "offset_inicio": "Art. 9º O órgão gestor manterá arquivo atualizado dos documentos relacionados",
+    "offset_fim": "administração indireta, que ficará à disposição dos órgãos de controle externo e interno.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 9º O órgão gestor manterá arquivo atualizado dos documentos relacionados ao processo de gestão de florestas públicas sob domínio da União ou de suas entidades da administração indireta, que ficará à disposição dos órgãos de controle externo e interno."
+  },
+  {
+    "titulo": "Art. 10",
+    "offset_inicio": "Art. 10 Eventual contencioso administrativo ou judicial que impeça a conclusão de certame licitatório referente a unidade de manejo selecionada para exame não obstará o prosseguimento da análise do conjunto de atos tratados no processo.",
+    "offset_fim": "não obstará o prosseguimento da análise do conjunto de atos tratados no processo.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 10 Eventual contencioso administrativo ou judicial que impeça a conclusão de certame licitatório referente a unidade de manejo selecionada para exame não obstará o prosseguimento da análise do conjunto de atos tratados no processo."
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Na hipótese prevista no caput, o Relator ou a unidade responsável,",
+    "offset_fim": "dando-se continuidade, em qualquer dos casos, à análise dos demais elementos do processo.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Parágrafo único. Na hipótese prevista no caput, o Relator ou a unidade responsável, considerando os princípios mencionados no art. 3º, decidirão pela constituição ou não de processo apartado para a questão, dando-se continuidade, em qualquer dos casos, à análise dos demais elementos do processo.\n"
+  },
+  {
+    "titulo": "Art. 11",
+    "offset_inicio": "Art. 11 A critério do Relator ou da unidade responsável, os documentos ou informações",
+    "offset_fim": "controle de que trata esta Instrução Normativa poderão ser apresentados em meio eletrônico.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 11 A critério do Relator ou da unidade responsável, os documentos ou informações necessários ao controle de que trata esta Instrução Normativa poderão ser apresentados em meio eletrônico."
+  },
+  {
+    "titulo": "§1º",
+    "offset_inicio": "§1º Poderão ser aceitos documentos e informações disponibilizados em caráter público em sítio oficial na rede",
+    "offset_fim": "meio de sistema eletrônico de informação oficial, sempre com a indicação da fonte.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§1º Poderão ser aceitos documentos e informações disponibilizados em caráter público em sítio oficial na rede mundial de computadores (Internet) ou por meio de sistema eletrônico de informação oficial, sempre com a indicação da fonte."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Fica a unidade responsável autorizada a obter mediante diligência ou inspeção as informações consideradas necessárias ao controle de trata esta Instrução Normativa",
+    "offset_fim": "considerado irrelevante ou desnecessário a esse controle, em determinado caso concreto.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º Fica a unidade responsável autorizada a obter mediante diligência ou inspeção as informações consideradas necessárias ao controle de trata esta Instrução Normativa e a dispensar o órgão gestor de apresentar documento considerado irrelevante ou desnecessário a esse controle, em determinado caso concreto.\n"
+  },
+  {
+    "titulo": "Art. 12",
+    "offset_inicio": "Art. 12 No exercício do controle da gestão de florestas públicas, a unidade responsável poderá propor ao Relator:",
+    "offset_fim": "Art. 12 No exercício do controle da gestão de florestas públicas, a unidade responsável poderá propor ao Relator:",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 12 No exercício do controle da gestão de florestas públicas, a unidade responsável poderá propor ao Relator:"
+  },
+  {
+    "titulo": "I - a realização de ações conjuntas de fiscalização com outras unidades técnico-executivas, ouvida previamente a Segecex;",
+    "offset_inicio": "I - a realização de ações conjuntas de fiscalização com outras unidades técnico-executivas, ouvida previamente a Segecex;",
+    "offset_fim": "I - a realização de ações conjuntas de fiscalização com outras unidades técnico-executivas, ouvida previamente a Segecex;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "I - a realização de ações conjuntas de fiscalização com outras unidades técnico-executivas, ouvida previamente a Segecex;"
+  },
+  {
+    "titulo": "II - a requisição de serviços técnicos especializados, nos termos do art. 101 da Lei n.º 8.443/1992;",
+    "offset_inicio": "II - a requisição de serviços técnicos especializados, nos termos do art. 101 da Lei n.º 8.443/1992;",
+    "offset_fim": "II - a requisição de serviços técnicos especializados, nos termos do art. 101 da Lei n.º 8.443/1992;",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "II - a requisição de serviços técnicos especializados, nos termos do art. 101 da Lei n.º 8.443/1992;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - a contratação de especialistas.\n",
+    "offset_fim": "III - a contratação de especialistas.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "III - a contratação de especialistas.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º As ações conjuntas de fiscalização previstas no inciso I serão coordenadas pela unidade responsável.",
+    "offset_fim": "As ações conjuntas de fiscalização previstas no inciso I serão coordenadas pela unidade responsável.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º As ações conjuntas de fiscalização previstas no inciso I serão coordenadas pela unidade responsável."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O responsável por órgão ou entidade da Administração Pública Federal que deixar de",
+    "offset_fim": "nos valores fixados no Regimento Interno do Tribunal de Contas da União.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º O responsável por órgão ou entidade da Administração Pública Federal que deixar de atender à requisição de que trata o inciso II, salvo por motivo justificado, ficará sujeito à multa de que trata o art. 58 da Lei n° 8.443/1992, nos valores fixados no Regimento Interno do Tribunal de Contas da União."
+  },
+  {
+    "titulo": "Art. 13",
+    "offset_inicio": "Art. 13 Fica autorizada a participação de equipe técnica designada pela unidade responsável em",
+    "offset_fim": "edital de licitação referente a cada lote de concessão florestal, previstas no art. 8º da Lei n.º 11.284/06.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 13 Fica autorizada a participação de equipe técnica designada pela unidade responsável em audiências públicas prévias à publicação de edital de licitação referente a cada lote de concessão florestal, previstas no art. 8º da Lei n.º 11.284/06."
+  },
+  {
+    "titulo": "Art. 14",
+    "offset_inicio": "Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.\nGUILHERME",
+    "offset_fim": "14 Esta Instrução Normativa entra em vigor na data de sua publicação.\nGUILHERME PALMEIRA\nPresidente\n(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.\nGUILHERME PALMEIRA\nPresidente\n(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)"
+  }
+]

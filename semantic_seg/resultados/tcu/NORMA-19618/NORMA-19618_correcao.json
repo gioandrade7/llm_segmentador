@@ -1,0 +1,42 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 17,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - representar o Conselho junto ao TCU;\" contém também os marcadores de incisos irmãos \"II - convocar reuniões do Conselho Curador;\" e \"III - conduzir as reuniões do Conselho.\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 9º Compete ao Gestor do Espaço Cultural:\" engloba os incisos I a X, embora cada inciso seja marcador de unidade e deva iniciar bloco próprio, como ocorre nas listas dos arts. 6º e 11."
+        },
+        {
+          "bloco": 21,
+          "tipo": "granularidade",
+          "descricao": "Os incisos do art. 9º foram agrupados no bloco do artigo, enquanto os incisos equivalentes dos arts. 6º e 11 foram segmentados individualmente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"I - representar o Conselho junto ao TCU;\" imediatamente antes de \"II - convocar reuniões do Conselho Curador;\" e inicie blocos próprios para os incisos II e III do art. 7º.\n- Na pág. 2, termine o bloco \"Art. 9º Compete ao Gestor do Espaço Cultural:\" imediatamente antes de \"I - convocar reuniões\" e crie um bloco para cada inciso I a X do art. 9º, iniciando cada um em seu respectivo algarismo romano."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19618/NORMA-19618_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 73,
+    "insights_aplicados": "- Na pág. 1, termine o bloco do inciso \"I - representar o Conselho junto ao TCU;\" imediatamente antes de \"II - convocar reuniões do Conselho Curador;\" e inicie blocos próprios para os incisos II e III do art. 7º.\n- Na pág. 2, termine o bloco \"Art. 9º Compete ao Gestor do Espaço Cultural:\" imediatamente antes de \"I - convocar reuniões\" e crie um bloco para cada inciso I a X do art. 9º, iniciando cada um em seu respectivo algarismo romano.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19618/NORMA-19618_ciclo2.json"
+  }
+]

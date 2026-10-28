@@ -1,0 +1,426 @@
+[
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º O armazenamento, a concessão de acesso e o compartilhamento de base de dados",
+    "offset_fim": "ato normativo específico do TCU sobre classificação das informações, deve observar a sistemática estabelecida nesta Resolução.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 1º O armazenamento, a concessão de acesso e o compartilhamento de base de dados de pessoa física ou jurídica, órgão ou entidade, obtida pelo Tribunal de Contas da União (TCU) em decorrência de ação de controle externo, que contenha informações classificadas com restrição de acesso nos graus de confidencialidade previstos na legislação de regência e em ato normativo específico do TCU sobre classificação das informações, deve observar a sistemática estabelecida nesta Resolução.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º As bases de dados de que trata o caput somente poderão ser acessadas no interesse do serviço do TCU,",
+    "offset_fim": "em consonância com o disposto no inciso III, do art. 3º da Resolução-TCU nº 223, de 18 de março de 2009.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 1º As bases de dados de que trata o caput somente poderão ser acessadas no interesse do serviço do TCU, com o fim de subsidiar o planejamento, a execução e as decisões afetas às ações de controle, em consonância com o disposto no inciso III, do art. 3º da Resolução-TCU nº 223, de 18 de março de 2009.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O acesso a base de dados compartilhada com o TCU em decorrência de acordo de cooperação técnica ou instrumentos congêneres",
+    "offset_fim": "previstos nos respectivos acordos e instrumentos, nos termos do parágrafo único do art. 1º da Resolução-TCU nº 223/2009.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 2º O acesso a base de dados compartilhada com o TCU em decorrência de acordo de cooperação técnica ou instrumentos congêneres observará os limites, as restrições e os formatos previstos nos respectivos acordos e instrumentos, nos termos do parágrafo único do art. 1º da Resolução-TCU nº 223/2009.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º Esta Resolução integra a Política de Segurança Institucional disposta pela Resolução-TCU nº 261, de 11 de junho de 2014,",
+    "offset_fim": "a qual compreende, entre outras, a Política Corporativa de Segurança da Informação.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "§ 3º Esta Resolução integra a Política de Segurança Institucional disposta pela Resolução-TCU nº 261, de 11 de junho de 2014, a qual compreende, entre outras, a Política Corporativa de Segurança da Informação.\n"
+  },
+  {
+    "titulo": "Art. 2º",
+    "offset_inicio": "Art. 2º Para os efeitos desta Resolução, entende-se por:\n\n",
+    "offset_fim": "Art. 2º Para os efeitos desta Resolução, entende-se por:\n\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 2º Para os efeitos desta Resolução, entende-se por:\n\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - base de dados: arquivo ou conjunto de arquivos relacionados entre si com registros sobre entes, compondo uma coleção organizada",
+    "offset_fim": "e que requer sistema de gerenciamento de banco de dados (SGBD) para ser acessado;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - base de dados: arquivo ou conjunto de arquivos relacionados entre si com registros sobre entes, compondo uma coleção organizada de dados que se relacionam de forma a criar informação e que requer sistema de gerenciamento de banco de dados (SGBD) para ser acessado;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - base de dados custodiada: base de dados que tenha sido entregue ao TCU;\n",
+    "offset_fim": "II - base de dados custodiada: base de dados que tenha sido entregue ao TCU;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "II - base de dados custodiada: base de dados que tenha sido entregue ao TCU;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - base de dados acessada: base de dados à qual o acesso remoto tenha sido franqueado ao TCU;",
+    "offset_fim": "III - base de dados acessada: base de dados à qual o acesso remoto tenha sido franqueado ao TCU;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "III - base de dados acessada: base de dados à qual o acesso remoto tenha sido franqueado ao TCU;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - concessão de acesso: qualquer procedimento por meio do qual uma pessoa passa a poder ler o conteúdo de uma base de dados, como por exemplo o compartilhamento dos arquivos",
+    "offset_fim": "arquivos que a compõem ou da chave de acesso remoto a ela e a concessão de permissões em sistema de gerenciamento de banco de dados;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IV - concessão de acesso: qualquer procedimento por meio do qual uma pessoa passa a poder ler o conteúdo de uma base de dados, como por exemplo o compartilhamento dos arquivos que a compõem ou da chave de acesso remoto a ela e a concessão de permissões em sistema de gerenciamento de banco de dados;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - controles administrativos: medidas de proteção física e/ou lógica, conforme cada grau de confidencialidade, que garantam acesso exclusivamente a pessoas autorizadas.",
+    "offset_fim": "Controles administrativos poderão eventualmente ser convertidos em controles tecnológicos, à medida que seja tecnicamente viável;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "V - controles administrativos: medidas de proteção física e/ou lógica, conforme cada grau de confidencialidade, que garantam acesso exclusivamente a pessoas autorizadas. Controles administrativos poderão eventualmente ser convertidos em controles tecnológicos, à medida que seja tecnicamente viável;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - informação: conjunto de dados, textos, imagens, métodos, sistemas ou quaisquer",
+    "offset_fim": "independentemente do suporte em que resida ou da forma pela qual seja veiculado;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VI - informação: conjunto de dados, textos, imagens, métodos, sistemas ou quaisquer formas de representação dotadas de significado em determinado contexto, independentemente do suporte em que resida ou da forma pela qual seja veiculado;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - informação sigilosa: aquela submetida à restrição de acesso público, nos termos da lei;",
+    "offset_fim": "VII - informação sigilosa: aquela submetida à restrição de acesso público, nos termos da lei;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VII - informação sigilosa: aquela submetida à restrição de acesso público, nos termos da lei;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - interessado externo: pessoa física ou jurídica que encaminhou ao TCU solicitação de acesso à informação nos termos da legislação de regência;",
+    "offset_fim": "nos termos do disposto no inciso X, do art. 2º da Resolução-TCU nº 249, de 2 de maio de 2012;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VIII - interessado externo: pessoa física ou jurídica que encaminhou ao TCU solicitação de acesso à informação nos termos da legislação de regência; não se confunde com o conceito de interessado a que se refere o art. 144, § 2º, do Regimento Interno do Tribunal, nos termos do disposto no inciso X, do art. 2º da Resolução-TCU nº 249, de 2 de maio de 2012;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - item não digitalizável: objeto recebido em suporte não eletrônico ou em suporte",
+    "offset_fim": "em suporte eletrônico incompatível com os padrões de armazenamento definidos pela tecnologia do Tribunal;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IX - item não digitalizável: objeto recebido em suporte não eletrônico ou em suporte eletrônico incompatível com os padrões de armazenamento definidos pela tecnologia do Tribunal;\n"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - unidade gestora do acesso a base de dados: unidade da Secretaria do TCU responsável pela obtenção de base de dados ou da chave de acesso remoto a ela;",
+    "offset_fim": "X - unidade gestora do acesso a base de dados: unidade da Secretaria do TCU responsável pela obtenção de base de dados ou da chave de acesso remoto a ela;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "X - unidade gestora do acesso a base de dados: unidade da Secretaria do TCU responsável pela obtenção de base de dados ou da chave de acesso remoto a ela;"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - unidade interessada: unidade da Secretaria do TCU que, no exercício de suas competências institucionais, encaminha solicitação de acesso à informação para subsidiar ação de controle; e",
+    "offset_fim": "institucionais, encaminha solicitação de acesso à informação para subsidiar ação de controle; e\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "XI - unidade interessada: unidade da Secretaria do TCU que, no exercício de suas competências institucionais, encaminha solicitação de acesso à informação para subsidiar ação de controle; e\n"
+  },
+  {
+    "titulo": "XII",
+    "offset_inicio": "XII - unidade responsável por base de dados: unidade da Secretaria do TCU que detém, mesmo que transitoriamente, a base de dados ou a chave de acesso remoto a ela.",
+    "offset_fim": "XII - unidade responsável por base de dados: unidade da Secretaria do TCU que detém, mesmo que transitoriamente, a base de dados ou a chave de acesso remoto a ela.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "XII - unidade responsável por base de dados: unidade da Secretaria do TCU que detém, mesmo que transitoriamente, a base de dados ou a chave de acesso remoto a ela."
+  },
+  {
+    "titulo": "Art. 3°",
+    "offset_inicio": "Art. 3° A unidade gestora do acesso a base de dados obtida de pessoa física ou jurídica,",
+    "offset_fim": "esse fim, ou como item não digitalizável ou como base de dados incorporada em SGBD corporativo.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 3° A unidade gestora do acesso a base de dados obtida de pessoa física ou jurídica, órgão ou entidade, no exercício do controle externo, classificada com restrição de acesso, deverá juntar um termo ao processo de controle externo no qual a base foi obtida, informando a existência de base de dados vinculada a processo administrativo conexo, especialmente autuado para esse fim, ou como item não digitalizável ou como base de dados incorporada em SGBD corporativo."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O termo a que se refere o caput deverá ser classificado como \"sigiloso\" no sistema corporativo específico, e os elementos requeridos pela Lei nº 12.527/2011",
+    "offset_fim": "solução de TI corporativa, disponibilizada em aba própria do mencionado sistema.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 1º O termo a que se refere o caput deverá ser classificado como \"sigiloso\" no sistema corporativo específico, e os elementos requeridos pela Lei nº 12.527/2011 para classificação de peças com restrição de acesso devem ser preenchidos e gerenciados por meio da solução de TI corporativa, disponibilizada em aba própria do mencionado sistema."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A base de dados obtida de pessoa física ou jurídica externa deve ter a classificação atribuída na origem mantida, exceto quando houver necessidade de reclassificação, hipótese em que devem ser adotados os procedimentos descritos em ato normativo específico e em conformidade com a lei.\n",
+    "offset_fim": "em ato normativo específico e em conformidade com a lei.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 2º A base de dados obtida de pessoa física ou jurídica externa deve ter a classificação atribuída na origem mantida, exceto quando houver necessidade de reclassificação, hipótese em que devem ser adotados os procedimentos descritos em ato normativo específico e em conformidade com a lei.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º Fica vedado o armazenamento de base de dados obtida de pessoa física ou jurídica, órgão ou entidade, classificada com restrição de acesso, após sua transferência para o TCU, em dispositivo no qual não exista garantia de controle de acesso e de rastreabilidade.",
+    "offset_fim": "após sua transferência para o TCU, em dispositivo no qual não exista garantia de controle de acesso e de rastreabilidade.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 3º Fica vedado o armazenamento de base de dados obtida de pessoa física ou jurídica, órgão ou entidade, classificada com restrição de acesso, após sua transferência para o TCU, em dispositivo no qual não exista garantia de controle de acesso e de rastreabilidade.\n"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º A base de dados deverá ser incorporada em SGBD corporativo e o arquivo ou conjunto de arquivos que não requer um SGBD para ser acessado deve ser mantido como item não digitalizável,",
+    "offset_fim": "criptografado, em processo administrativo correspondente no sistema corporativo específico.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 4º A base de dados deverá ser incorporada em SGBD corporativo e o arquivo ou conjunto de arquivos que não requer um SGBD para ser acessado deve ser mantido como item não digitalizável, criptografado, em processo administrativo correspondente no sistema corporativo específico.\n"
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º A concessão de acesso a bases de dados de que trata esta Resolução, quando",
+    "offset_fim": "quando se tratar de solicitação de interessado externo, deverá ser precedida de:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 4º A concessão de acesso a bases de dados de que trata esta Resolução, quando se tratar de solicitação de interessado externo, deverá ser precedida de:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - manifestação da unidade gestora do acesso a base de dados custodiada ou acessada, contendo parecer fundamentado quanto ao atendimento ou não da demanda, inclusive quanto ao disposto no §8º do art. 5º; e",
+    "offset_fim": "ao atendimento ou não da demanda, inclusive quanto ao disposto no §8º do art. 5º; e\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - manifestação da unidade gestora do acesso a base de dados custodiada ou acessada, contendo parecer fundamentado quanto ao atendimento ou não da demanda, inclusive quanto ao disposto no §8º do art. 5º; e\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - autorização de acesso do relator do processo no âmbito da qual a base de dados foi obtida ou, no caso",
+    "offset_fim": "âmbito da qual a base de dados foi obtida ou, no caso de processo encerrado, do Presidente.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - autorização de acesso do relator do processo no âmbito da qual a base de dados foi obtida ou, no caso de processo encerrado, do Presidente.\n"
+  },
+  {
+    "titulo": "§1º",
+    "offset_inicio": "§1º Quando não for autorizado o acesso, o interessado externo deverá ser informado sobre a possibilidade de recurso,",
+    "offset_fim": "condições para interposição, devendo ainda ser-lhe indicada a autoridade competente para apreciação.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§1º Quando não for autorizado o acesso, o interessado externo deverá ser informado sobre a possibilidade de recurso, prazos e condições para interposição, devendo ainda ser-lhe indicada a autoridade competente para apreciação.\n"
+  },
+  {
+    "titulo": "§2º",
+    "offset_inicio": "§2º Deverá ser requerida manifestação fundamentada do órgão ou entidade de origem da base de dados quanto à concessão de acesso solicitada,",
+    "offset_fim": "exceto nas hipóteses em que a concessão já houver sido previamente autorizada mediante:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§2º Deverá ser requerida manifestação fundamentada do órgão ou entidade de origem da base de dados quanto à concessão de acesso solicitada, exceto nas hipóteses em que a concessão já houver sido previamente autorizada mediante:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - manifestação anterior, no mesmo processo, do órgão ou entidade de origem da base de dados;",
+    "offset_fim": "I - manifestação anterior, no mesmo processo, do órgão ou entidade de origem da base de dados;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - manifestação anterior, no mesmo processo, do órgão ou entidade de origem da base de dados;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - acordo de cooperação ou instrumento congênere para compartilhamento da base de dados,",
+    "offset_fim": "instrumento congênere para compartilhamento da base de dados, nos termos do §2º do art. 1º;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - acordo de cooperação ou instrumento congênere para compartilhamento da base de dados, nos termos do §2º do art. 1º;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - norma legal ou regulamentar;\n",
+    "offset_fim": "III - norma legal ou regulamentar;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - norma legal ou regulamentar;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - decisão judicial;\n",
+    "offset_fim": "IV - decisão judicial;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - decisão judicial;\n"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - decisão fundamentada do relator, do Presidente ou do Tribunal\n",
+    "offset_fim": "V - decisão fundamentada do relator, do Presidente ou do Tribunal\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "V - decisão fundamentada do relator, do Presidente ou do Tribunal\n"
+  },
+  {
+    "titulo": "§3º",
+    "offset_inicio": "§3º A concessão de acesso a base de dados contendo informações protegidas por sigilo constitucional",
+    "offset_fim": "autorização judicial que autorizar seu uso, em consonância com o disposto no §1º do art. 3º da Resolução-TCU nº 223/2009;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§3º A concessão de acesso a base de dados contendo informações protegidas por sigilo constitucional ou legal somente poderá ser deferida a terceiros se houver previsão expressa nos termos de autorização judicial que autorizar seu uso, em consonância com o disposto no §1º do art. 3º da Resolução-TCU nº 223/2009;"
+  },
+  {
+    "titulo": "§4º",
+    "offset_inicio": "§4º Quando o interessado externo for pessoa jurídica, a concessão de acesso será franqueada às pessoas físicas",
+    "offset_fim": "divulgação não autorizada dos dados, na forma a ser regulamentada mediante portaria do Presidente, conforme art. 11.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§4º Quando o interessado externo for pessoa jurídica, a concessão de acesso será franqueada às pessoas físicas indicadas como prepostos, devidamente identificadas para fins de responsabilização administrativa, civil e criminal, em caso de divulgação não autorizada dos dados, na forma a ser regulamentada mediante portaria do Presidente, conforme art. 11.\n"
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º A concessão de acesso a bases de dados de que trata esta Resolução, quando se",
+    "offset_fim": "por meio de funcionalidades previstas em SGBD corporativos ou outras ferramentas automatizadas, quando se aplicar.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 5º A concessão de acesso a bases de dados de que trata esta Resolução, quando se tratar de solicitação de unidade interessada, deverá ser precedida de:\nI - solicitação da unidade interessada à unidade gestora do acesso a base de dados custodiada ou acessada, contendo a justificativa para o pedido e a identificação do processo à qual se vincula a ação de controle;\nII - manifestação da unidade gestora do acesso a base de dados custodiada, contendo seu parecer fundamentado quanto ao atendimento da demanda; e\nIII - autorização do relator do processo à qual se vincula a solicitação da unidade interessada ou, no caso de não haver relator definido, do Presidente.\n§ 1º Quando do encaminhamento da solicitação a que se refere o inciso I do caput, a unidade interessada dará ciência do seu teor à Secretaria de Gestão de Informações para o Controle Externo (SGI).\n§ 2º Os documentos referidos nos incisos do caput, bem como cópia do termo previsto no art.3º desta Resolução, deverão ser juntados aos autos do processo administrativo no âmbito do qual a base de dados foi vinculada.\n§ 3º O acesso a base de dados classificada pelo órgão de origem com restrição de acesso cria a obrigação para aquele que a obteve de resguardar o sigilo, consoante o art. 25, §2º, da Lei nº 12.527/2011.\n§ 4º Em trabalhos realizados por mais de uma unidade técnica, a solicitação deverá ser formulada pela unidade coordenadora com a especificação das unidades que terão acesso à base de dados solicitada.\n§ 5º A unidade gestora do acesso à base de dados solicitada deve submeter à consideração do relator, na manifestação de que trata o inciso II deste artigo, proposta de procedimentos e critérios de acesso, além de regras específicas de segurança para armazenamento da base e para transferência de seus dados pelas demais unidades.\n§ 6º Uma vez autorizado, a unidade responsável pela base de dados lhe concederá o acesso ou a compartilhará, obedecidas as condições estabelecidas no despacho de autorização.\n§ 7º Não havendo disposição em contrário no despacho de autorização, o acesso será concedido aos dirigentes das unidades indicadas na solicitação, a quem caberá conceder acesso aos integrantes de sua unidade com necessidade de conhecimento das informações para a ação que motivou o pleito, ou indicar à unidade responsável pela base de dados os nomes dos referidos integrantes para que ela proceda à concessão.\n§ 8º Dar-se-á preferência à concessão de acesso por meio de funcionalidades previstas em SGBD corporativos ou outras ferramentas automatizadas, quando se aplicar."
+  },
+  {
+    "titulo": "Art. 6°",
+    "offset_inicio": "Art. 6° Atendido o princípio do contraditório, da ampla defesa e do devido processo legal, todo agente público",
+    "offset_fim": "sigilosa ou pessoal, nos termos do inciso II, do § 1º e do § 2º do art. 32 da Lei nº 12.527/2011, sujeita-se:\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 6° Atendido o princípio do contraditório, da ampla defesa e do devido processo legal, todo agente público que detiver acesso às informações disciplinadas nessa Resolução e divulgar ou permitir a divulgação ou permitir acesso indevido à informação sigilosa ou pessoal, nos termos do inciso II, do § 1º e do § 2º do art. 32 da Lei nº 12.527/2011, sujeita-se:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - à responsabilização por infração administrativa nos termos da legislação aplicável;\n",
+    "offset_fim": "I - à responsabilização por infração administrativa nos termos da legislação aplicável;\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "I - à responsabilização por infração administrativa nos termos da legislação aplicável;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - a responder por improbidade administrativa, conforme o disposto na Lei nº 8.429, de 2 de junho de 1992; e",
+    "offset_fim": "conforme o disposto na Lei nº 8.429, de 2 de junho de 1992; e",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "II - a responder por improbidade administrativa, conforme o disposto na Lei nº 8.429, de 2 de junho de 1992; e"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - à apuração das demais responsabilidades penais e civis, na forma da legislação em vigor.",
+    "offset_fim": "III - à apuração das demais responsabilidades penais e civis, na forma da legislação em vigor.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "III - à apuração das demais responsabilidades penais e civis, na forma da legislação em vigor.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Aplica-se, no que couber, o disposto no inciso III para todo agente",
+    "offset_fim": "nos termos do inciso II, do § 1º e do § 2º do art. 32 da Lei nº 12.527/2011.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Parágrafo único. Aplica-se, no que couber, o disposto no inciso III para todo agente privado que detiver acesso às informações disciplinadas nessa Resolução e divulgar ou permitir a divulgação ou permitir acesso indevido à informação sigilosa ou pessoal, nos termos do inciso II, do § 1º e do § 2º do art. 32 da Lei nº 12.527/2011."
+  },
+  {
+    "titulo": "Art. 7°",
+    "offset_inicio": "Art. 7° Deverão ser adotadas medidas de segurança e salvaguarda para manutenção, acesso,",
+    "offset_fim": "alteração e transmissão de bases de dados que contenham informações com restrição de acesso.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 7° Deverão ser adotadas medidas de segurança e salvaguarda para manutenção, acesso, alteração e transmissão de bases de dados que contenham informações com restrição de acesso."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Ficarão responsáveis por resguardar a confidencialidade das informações sigilosas todas as pessoas que tiverem acesso a bases de dados não públicas,",
+    "offset_fim": "as quais deverão ter sua identificação registrada e a data e o horário do acesso.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º Ficarão responsáveis por resguardar a confidencialidade das informações sigilosas todas as pessoas que tiverem acesso a bases de dados não públicas, as quais deverão ter sua identificação registrada e a data e o horário do acesso.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O relator ou, conforme o caso, o Presidente, podem determinar, a qualquer tempo, procedimentos que",
+    "offset_fim": "a serem seguidos pelas unidades responsáveis pelas bases de dados.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º O relator ou, conforme o caso, o Presidente, podem determinar, a qualquer tempo, procedimentos que visem garantir a segurança da informação nas bases de dados de sua competência, a serem seguidos pelas unidades responsáveis pelas bases de dados.\n"
+  },
+  {
+    "titulo": "Art. 8°",
+    "offset_inicio": "Art. 8° Serão aplicados controles de acesso administrativos e tecnológicos a base de dados contendo informação",
+    "offset_fim": "informação de forma compatível com sua classificação, em consonância com as normas de regência aplicáveis.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 8° Serão aplicados controles de acesso administrativos e tecnológicos a base de dados contendo informação classificada com restrição de acesso ou, na sua inviabilidade, utilizadas outras formas de identificação suficientes para proteger a informação de forma compatível com sua classificação, em consonância com as normas de regência aplicáveis.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O inventário das bases de dados contendo informação classificada com restrição de acesso",
+    "offset_fim": "acesso deve ser mantido nos sistemas informatizados do Tribunal.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º O inventário das bases de dados contendo informação classificada com restrição de acesso deve ser mantido nos sistemas informatizados do Tribunal."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI) e de Infraestrutura de Tecnologia da Informação (Setic), no âmbito de suas competências, o fornecimento de soluções de TI e de infraestrutura de tecnológica que possibilitem a implementação dos controles de acesso informatizados previstos no caput.\n",
+    "offset_fim": "o fornecimento de soluções de TI e de infraestrutura de tecnológica que possibilitem a implementação dos controles de acesso informatizados previstos no caput.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI) e de Infraestrutura de Tecnologia da Informação (Setic), no âmbito de suas competências, o fornecimento de soluções de TI e de infraestrutura de tecnológica que possibilitem a implementação dos controles de acesso informatizados previstos no caput.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º A ausência, a insuficiência, a burla e a tentativa de burla de controles administrativos e tecnológicos compatíveis com o grau de confidencialidade da informação",
+    "offset_fim": "informação configura incidente de segurança da informação, a ser reportado à Secretaria de Planejamento, Governança e Gestão (Seplan) por quem dele tiver conhecimento.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 3º A ausência, a insuficiência, a burla e a tentativa de burla de controles administrativos e tecnológicos compatíveis com o grau de confidencialidade da informação configura incidente de segurança da informação, a ser reportado à Secretaria de Planejamento, Governança e Gestão (Seplan) por quem dele tiver conhecimento."
+  },
+  {
+    "titulo": "Art. 9º",
+    "offset_inicio": "Art. 9º Compete às Secretarias de Infraestrutura e de Soluções de Tecnologia da Informação prover,",
+    "offset_fim": "a contínua atualização tecnológica requerida para a informatização plena dos requisitos previstos nesta Resolução.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 9º Compete às Secretarias de Infraestrutura e de Soluções de Tecnologia da Informação prover, na medida da disponibilização dos correspondentes recursos necessários, a contínua atualização tecnológica requerida para a informatização plena dos requisitos previstos nesta Resolução.\n"
+  },
+  {
+    "titulo": "Art. 10.",
+    "offset_inicio": "Art. 10. Aplica-se o disposto nesta Resolução, no que couber, aos dados obtidos de pessoa física ou jurídica, órgão ou entidade, no exercício das demais atividades institucionais do TCU,",
+    "offset_fim": "inclusive as de caráter administrativo, classificadas com restrição de acesso, observada a prévia autorização das respectivas instâncias cabíveis.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 10. Aplica-se o disposto nesta Resolução, no que couber, aos dados obtidos de pessoa física ou jurídica, órgão ou entidade, no exercício das demais atividades institucionais do TCU, inclusive as de caráter administrativo, classificadas com restrição de acesso, observada a prévia autorização das respectivas instâncias cabíveis.\n"
+  },
+  {
+    "titulo": "Art. 11.",
+    "offset_inicio": "Art. 11. Fica o Presidente autorizado a expedir os atos necessários à regulamentação desta Resolução.",
+    "offset_fim": "Art. 11. Fica o Presidente autorizado a expedir os atos necessários à regulamentação desta Resolução.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 11. Fica o Presidente autorizado a expedir os atos necessários à regulamentação desta Resolução."
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. Conforme o caso, incumbe ao Presidente ou ao relator, no âmbito das respectivas competências, dirimir os casos omissos.\n",
+    "offset_fim": "Conforme o caso, incumbe ao Presidente ou ao relator, no âmbito das respectivas competências, dirimir os casos omissos.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Parágrafo único. Conforme o caso, incumbe ao Presidente ou ao relator, no âmbito das respectivas competências, dirimir os casos omissos.\n"
+  },
+  {
+    "titulo": "Art. 12.",
+    "offset_inicio": "Art. 12. O artigo 1º da Resolução n° 223, de 18 de março de 2009 passa a vigorar com a seguinte redação:",
+    "offset_fim": "sempre que possível, disposições sobre as hipóteses de compartilhamento com terceiros das informações permutadas\".\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 12. O artigo 1º da Resolução n° 223, de 18 de março de 2009 passa a vigorar com a seguinte redação:\n\"Art. 1º O intercâmbio de informações e documentos, para fins de fiscalização e controle, entre o TCU e as entidades e órgãos públicos com os quais o Tribunal mantenha acordo de cooperação ou instrumento congênere obedecerá ao disposto nesta Resolução.\n§1º O intercâmbio de informações e documentos observará, no que couber, os limites, as restrições e os formatos dispostos nos respectivos acordos de cooperação e instrumentos congêneres.\n§2º Os acordos de cooperação e instrumentos congêneres para intercâmbio de informações e documentos de que trata a presente resolução conterá, sempre que possível, disposições sobre as hipóteses de compartilhamento com terceiros das informações permutadas\".\n"
+  },
+  {
+    "titulo": "Art. 13",
+    "offset_inicio": "Art. 13. Esta Resolução entra em vigor na data de sua publicação.\nTCU, Sala das Sessões ",
+    "offset_fim": "TCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 26 de junho de 2018.\nRAIMUNDO CARREIRO\nPresidente",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 13. Esta Resolução entra em vigor na data de sua publicação.\nTCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 26 de junho de 2018.\nRAIMUNDO CARREIRO\nPresidente"
+  }
+]

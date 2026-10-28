@@ -1,0 +1,890 @@
+[
+  {
+    "titulo": "TÍTULO I\nDAS DISPOSIÇÕES GERAIS",
+    "offset_inicio": "TÍTULO I\nDAS DISPOSIÇÕES GERAIS\nArt. 1º A presente instrução normativa tem como objetivo",
+    "offset_fim": "TÍTULO I\nDAS DISPOSIÇÕES GERAIS\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "TÍTULO I\nDAS DISPOSIÇÕES GERAIS\n"
+  },
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º A presente instrução normativa tem como objetivo regulamentar a atuação do",
+    "offset_fim": "acordos de leniência previstos na Lei nº 12.846/2013 e aos seguintes procedimentos:\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 1º A presente instrução normativa tem como objetivo regulamentar a atuação do Tribunal de Contas da União (TCU) em harmonia com o Acordo de Cooperação Técnica (ACT) celebrado, em 6 de agosto de 2020, do qual esta Corte foi signatária junto com a Controladoria-Geral da União (CGU), a Advocacia-Geral da União (AGU) e o Ministério da Justiça e Segurança Pública (MJSP), sob a coordenação do Presidente do Supremo Tribunal Federal (STF), especialmente em relação aos acordos de leniência previstos na Lei nº 12.846/2013 e aos seguintes procedimentos:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - o procedimento de recebimento de informações compartilhadas pela CGU/AGU para",
+    "offset_fim": "nos termos do ACT, conforme previsto na primeira ação operacional, item 3, do ACT;\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - o procedimento de recebimento de informações compartilhadas pela CGU/AGU para eventual atuação nos termos do ACT, conforme previsto na primeira ação operacional, item 3, do ACT;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - o procedimento de estimação dos danos decorrentes de fatos revelados na negociação de",
+    "offset_fim": "jurisdição do TCU, conforme previsto na segunda ação operacional do ACT;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "II - o procedimento de estimação dos danos decorrentes de fatos revelados na negociação de acordos de leniência que sejam sujeitos à jurisdição do TCU, conforme previsto na segunda ação operacional do ACT;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - a parametrização de metodologia específica para apuração de eventual dano a ser endereçado em negociação para acordo de leniência, conforme previsto na segunda ação operacional, item 1, do ACT;",
+    "offset_fim": "para acordo de leniência, conforme previsto na segunda ação operacional, item 1, do ACT;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "III - a parametrização de metodologia específica para apuração de eventual dano a ser endereçado em negociação para acordo de leniência, conforme previsto na segunda ação operacional, item 1, do ACT;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - o procedimento destinado à manifestação do TCU no sentido de considerar que os valores",
+    "offset_fim": "conforme previsto na segunda ação operacional, item 3, do ACT;\n\n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "IV - o procedimento destinado à manifestação do TCU no sentido de considerar que os valores negociados no acordo satisfazem ou não aos critérios estabelecidos para a quitação do dano por ele estimado, com vistas à eventual quitação condicionada ao pleno cumprimento do acordo, conforme previsto na segunda ação operacional, item 3, do ACT;\n\n\n"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - o procedimento de recebimento de informações e evidências para eventual responsabil",
+    "offset_fim": "dano não incluído no escopo do acordo de leniência, conforme previsto na quarta ação operacional, item 2, do ACT;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "V - o procedimento de recebimento de informações e evidências para eventual responsabilização, em sede de tomadas de contas especial ou de fiscalização de atos e contratos, das demais pessoas, físicas ou jurídicas, envolvidas nos ilícitos revelados pela empresa colaboradora, bem como para apuração de eventual dano não incluído no escopo do acordo de leniência, conforme previsto na quarta ação operacional, item 2, do ACT;\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único: Para os fins desta instrução normativa, consideram-se:\n",
+    "offset_fim": "Parágrafo único: Para os fins desta instrução normativa, consideram-se:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Parágrafo único: Para os fins desta instrução normativa, consideram-se:\n"
+  },
+  {
+    "titulo": "I - acordo de leniência",
+    "offset_inicio": "I - acordo de leniência: instrumento firmado pela CGU/AGU, com as pessoas jurídicas responsáveis",
+    "offset_fim": "colaborem efetivamente com as investigações e o processo administrativo instaurado naquele órgão;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - acordo de leniência: instrumento firmado pela CGU/AGU, com as pessoas jurídicas responsáveis pela prática dos atos previstos na Lei nº 12.846, de 1º de agosto de 2013 que colaborem efetivamente com as investigações e o processo administrativo instaurado naquele órgão;"
+  },
+  {
+    "titulo": "II - proponente",
+    "offset_inicio": "II - proponente: pessoa jurídica que elabora proposta de celebração de acordo de leniência perante a CGU/AGU;",
+    "offset_fim": "II - proponente: pessoa jurídica que elabora proposta de celebração de acordo de leniência perante a CGU/AGU;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - proponente: pessoa jurídica que elabora proposta de celebração de acordo de leniência perante a CGU/AGU;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - colaboradora: pessoa jurídica signatária de acordo de leniência;",
+    "offset_fim": "III - colaboradora: pessoa jurídica signatária de acordo de leniência;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - colaboradora: pessoa jurídica signatária de acordo de leniência;"
+  },
+  {
+    "titulo": "IV - escopo do acordo de leniência",
+    "offset_inicio": "IV - escopo do acordo de leniência: conjunto de atos lesivos admitidos pelo colaborador, discriminados por atos e contratos, se for o caso, devidamente descritos e catalogados em anexo do instrumento;",
+    "offset_fim": "discriminados por atos e contratos, se for o caso, devidamente descritos e catalogados em anexo do instrumento;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - escopo do acordo de leniência: conjunto de atos lesivos admitidos pelo colaborador, discriminados por atos e contratos, se for o caso, devidamente descritos e catalogados em anexo do instrumento;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - valores de ressarcimento: quantia a ser ressarcida aos entes públicos lesados, no",
+    "offset_fim": "discriminados e calculados conforme as regras vigentes no âmbito da CGU/AGU;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "V - valores de ressarcimento: quantia a ser ressarcida aos entes públicos lesados, no âmbito dos acordos de leniência, discriminados e calculados conforme as regras vigentes no âmbito da CGU/AGU;"
+  },
+  {
+    "titulo": "VI - dano ao Erário",
+    "offset_inicio": "VI - dano ao Erário: prejuízo causado aos cofres públicos, estimado de acordo com a",
+    "offset_fim": " tais como a estimativa por técnicas econométricas.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VI - dano ao Erário: prejuízo causado aos cofres públicos, estimado de acordo com a metodologia vigente no roteiro de auditoria do TCU para a quantificação de superfaturamento, conforme o tipo de irregularidade revelada, podendo ser usados outros critérios acolhidos pela jurisprudência do TCU, tais como a estimativa por técnicas econométricas.\n"
+  },
+  {
+    "titulo": "TÍTULO II\nPROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES NA FASE DE NEGOCIAÇÃO DO ACORDO",
+    "offset_inicio": "TÍTULO II\nPROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES NA FASE DE NEGOCIAÇÃO DO ACORDO",
+    "offset_fim": "TÍTULO II\nPROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES NA FASE DE NEGOCIAÇÃO DO ACORDO\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "TÍTULO II\nPROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES NA FASE DE NEGOCIAÇÃO DO ACORDO\n"
+  },
+  {
+    "titulo": "CAPÍTULO I\nDA PRIMEIRA AÇÃO OPERACIONAL",
+    "offset_inicio": "CAPÍTULO I\nDA PRIMEIRA AÇÃO OPERACIONAL\n",
+    "offset_fim": "CAPÍTULO I\nDA PRIMEIRA AÇÃO OPERACIONAL\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "CAPÍTULO I\nDA PRIMEIRA AÇÃO OPERACIONAL\n"
+  },
+  {
+    "titulo": "Art. 2º",
+    "offset_inicio": "Art. 2º A fim de dar cumprimento à primeira ação operacional, item 3, c/c a segunda ação operacional, caput, do ACT, o TCU receberá",
+    "offset_fim": "as seguintes informações sobre o escopo do acordo de leniência proposto por pessoa jurídica interessada:",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 2º A fim de dar cumprimento à primeira ação operacional, item 3, c/c a segunda ação operacional, caput, do ACT, o TCU receberá da CGU e AGU as seguintes informações sobre o escopo do acordo de leniência proposto por pessoa jurídica interessada:"
+  },
+  {
+    "titulo": "I - informe contendo relato de todas as infrações admitidas pela pessoa jurídica proponente à CGU/AGU, referente à negociação em curso, que estejam sujeitos à jurisdição do TCU; e",
+    "offset_inicio": "I - informe contendo relato de todas as infrações admitidas pela pessoa jurídica proponente à CGU/AGU, referente à negociação em curso, que estejam sujeitos à jurisdição do TCU; e",
+    "offset_fim": "I - informe contendo relato de todas as infrações admitidas pela pessoa jurídica proponente à CGU/AGU, referente à negociação em curso, que estejam sujeitos à jurisdição do TCU; e\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - informe contendo relato de todas as infrações admitidas pela pessoa jurídica proponente à CGU/AGU, referente à negociação em curso, que estejam sujeitos à jurisdição do TCU; e\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - relação de processos existentes no TCU, fornecida pela proponente do acordo.",
+    "offset_fim": "II - relação de processos existentes no TCU, fornecida pela proponente do acordo.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - relação de processos existentes no TCU, fornecida pela proponente do acordo.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O informe a que se refere o inciso I do caput será enviado em duas etapas das negociações do acordo de leniência:",
+    "offset_fim": "contendo o relato dos atos lesivos declarados pelas pessoas jurídicas proponentes;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 1º O informe a que se refere o inciso I do caput será enviado em duas etapas das negociações do acordo de leniência:\na) quando do início das negociações, após a designação de comissão pela CGU/AGU, contendo pelo menos o nome das pessoas jurídicas proponentes, eventuais números de processos de controle externo declarados pelas pessoas jurídicas e um resumo dos fatos relatados; e\nb) durante as negociações, quando já houver uma delimitação do escopo fático do acordo de leniência, contendo o relato dos atos lesivos declarados pelas pessoas jurídicas proponentes;"
+  },
+  {
+    "titulo": "§2º",
+    "offset_inicio": "§2º O TCU receberá, no curso da negociação para o acordo de leniência, informações",
+    "offset_fim": "ões já encaminhadas, conforme disposto no item 3 da primeira ação operacional.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§2º O TCU receberá, no curso da negociação para o acordo de leniência, informações complementares sempre que houver alterações relevantes das informações já encaminhadas, conforme disposto no item 3 da primeira ação operacional.\n"
+  },
+  {
+    "titulo": "Art. 3º",
+    "offset_inicio": "Art. 3º As informações e elementos enviados ao TCU no âmbito do item 3 da primeira ação",
+    "offset_fim": "o ACT, que deverá adotar as seguintes providências:",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 3º As informações e elementos enviados ao TCU no âmbito do item 3 da primeira ação operacional serão remetidos à unidade técnica designada para operacionalizar o ACT, que deverá adotar as seguintes providências:"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - instaurar processo de controle externo do tipo \"acordo de leniência\", de caráter sigiloso, a partir do recebimento do ofício da CGU/AGU",
+    "offset_fim": "cuja relatoria será definida automaticamente mediante sorteio, conforme previsto na Resolução TCU nº 346, de 30 de novembro de 2022;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "I - instaurar processo de controle externo do tipo \"acordo de leniência\", de caráter sigiloso, a partir do recebimento do ofício da CGU/AGU informando o início das negociações, cuja relatoria será definida automaticamente mediante sorteio, conforme previsto na Resolução TCU nº 346, de 30 de novembro de 2022;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - preservar a cadeia de custódia dos documentos e informações apresentadas e resguardar o sigilo de todos os fatos e elementos relacionados à negociação, nos termos do § 6º do Art. 16 da Lei nº 12.846/2013, c/c a terceira ação sistêmica, item 2, do ACT;",
+    "offset_fim": "§ 6º do Art. 16 da Lei nº 12.846/2013, c/c a terceira ação sistêmica, item 2, do ACT;\n\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "II - preservar a cadeia de custódia dos documentos e informações apresentadas e resguardar o sigilo de todos os fatos e elementos relacionados à negociação, nos termos do § 6º do Art. 16 da Lei nº 12.846/2013, c/c a terceira ação sistêmica, item 2, do"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - adotar as medidas necessárias à identificação de todos os processos de controle externo, em andamento,",
+    "offset_fim": "processos de controle externo, em andamento, sobrestados ou concluídos, envolvendo a proponente do acordo de leniência;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "III - adotar as medidas necessárias à identificação de todos os processos de controle externo, em andamento, sobrestados ou concluídos, envolvendo a proponente do acordo de leniência;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - identificar a existência de débitos já calculados relacionados à proponente do acordo de leniência, discriminando-os por irregularidade e por estágio processual;",
+    "offset_fim": "existência de débitos já calculados relacionados à proponente do acordo de leniência, discriminando-os por irregularidade e por estágio processual;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "IV - identificar a existência de débitos já calculados relacionados à proponente do acordo de leniência, discriminando-os por irregularidade e por estágio processual;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - encaminhar os autos à apreciação do Relator, com as informações consignadas no inciso anterior, para a deliberação de que trata o Art. 5º; e",
+    "offset_fim": "V - encaminhar os autos à apreciação do Relator, com as informações consignadas no inciso anterior, para a deliberação de que trata o Art. 5º; e",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "V - encaminhar os autos à apreciação do Relator, com as informações consignadas no inciso anterior, para a deliberação de que trata o Art. 5º; e"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - propor ao Relator, se for o caso, a adoção de eventual medida considerada urgente e que deva ser levada a efeito de forma imediata,",
+    "offset_fim": "de forma imediata, sem observar os prazos estabelecidos no § 2º deste dispositivo.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "VI - propor ao Relator, se for o caso, a adoção de eventual medida considerada urgente e que deva ser levada a efeito de forma imediata, sem observar os prazos estabelecidos no § 2º deste dispositivo."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Os auditores de controle externo responsáveis pela instrução dos processos de acordo de leniência terão acesso",
+    "offset_fim": "solicitar o referido acesso ao respectivo Ministro-Relator, nos termos do Art. 4º da Resolução-TCU nº 276/2016;",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 1º Os auditores de controle externo responsáveis pela instrução dos processos de acordo de leniência terão acesso irrestrito aos processos sigilosos, eventualmente identificados, com vistas a confirmar a pertinência do objeto com as informações relativas à proponente do acordo, devendo para isso solicitar o referido acesso ao respectivo Ministro-Relator, nos termos do Art. 4º da Resolução-TCU nº 276/2016;"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Ficam estabelecidos os seguintes prazos máximos para adoção dos procedimentos previstos neste artigo:\na) cinco dias para as providências previstas nos incisos I e II;",
+    "offset_fim": "b) trinta dias para as providências previstas nos incisos III e IV; e\nc) sessenta dias para as providências previstas no inciso V.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 2º Ficam estabelecidos os seguintes prazos máximos para adoção dos procedimentos previstos neste artigo:\na) cinco dias para as providências previstas nos incisos I e II;\nb) trinta dias para as providências previstas nos incisos III e IV; e\nc) sessenta dias para as providências previstas no inciso V.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º A pesquisa mencionada no inciso III deverá ser repetida mensalmente, até a conclusão do procedimento previsto no inciso V, com o objetivo de identificar eventual ingresso",
+    "offset_fim": "envolvendo a proponente do acordo de leniência, conforme procedimentos previstos nos incisos IV e V.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 3º A pesquisa mencionada no inciso III deverá ser repetida mensalmente, até a conclusão do procedimento previsto no inciso V, com o objetivo de identificar eventual ingresso de novos processos de controle externo, envolvendo a proponente do acordo de leniência, conforme procedimentos previstos nos incisos IV e V.\n"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º Os estágios processuais a que se refere o inciso IV são os seguintes:\na) no caso",
+    "offset_fim": "em citação, em grau de recurso com efeito suspensivo, em grau de recurso de revisão e com julgamento definitivo;",
+    "pagina_inicio": 4,
+    "pagina_fim": 5,
+    "texto": "§ 4º Os estágios processuais a que se refere o inciso IV são os seguintes:\na) no caso de processos de fiscalização: em grau de oitiva, em grau de recurso com efeito suspensivo e com julgamento definitivo;\n\n\n<!-- PÁGINA 5 -->\nb) no caso de processos de tomada de contas especial ou ordinária: em citação, em grau de recurso com efeito suspensivo, em grau de recurso de revisão e com julgamento definitivo;"
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º Recebidas da CGU/AGU eventuais informações e documentos que impliquem alteração do escopo da proposta de acordo de leniência",
+    "offset_fim": "para fins da adoção das providências indicadas no Art. 3º desta instrução normativa.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 4º Recebidas da CGU/AGU eventuais informações e documentos que impliquem alteração do escopo da proposta de acordo de leniência, a unidade técnica responsável deverá usar os novos elementos aportados para fins da adoção das providências indicadas no Art. 3º desta instrução normativa.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Caso a remessa das informações e documentos ocorra após o encerramento da etapa de instrução, ou seja, quando o processo já estiver sob a responsabilidade do relator,",
+    "offset_fim": "a unidade técnica responsável deverá informar o fato ao Ministro competente para avaliação da devolução dos autos à unidade técnica para saneamento; e\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º Caso a remessa das informações e documentos ocorra após o encerramento da etapa de instrução, ou seja, quando o processo já estiver sob a responsabilidade do relator, a unidade técnica responsável deverá informar o fato ao Ministro competente para avaliação da devolução dos autos à unidade técnica para saneamento; e\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Alterações significativas de escopo importarão na reabertura da contagem do prazo estabelecido na alínea",
+    "offset_fim": "do prazo estabelecido na alínea \"c\" do § 2º do Art. 3º desta instrução normativa.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º Alterações significativas de escopo importarão na reabertura da contagem do prazo estabelecido na alínea \"c\" do § 2º do Art. 3º desta instrução normativa."
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º Após receber os autos saneados, o Ministro-Relator do processo deliberará acerca da proposta de remessa à CGU/AGU das informações pertinentes e dos valores dos débitos discriminados por processos de controle externo, estágio processual e irregularidade, envolvendo a proponente do acordo de leniência, nos termos e para os fins propostos.\n",
+    "offset_fim": "irregularidade, envolvendo a proponente do acordo de leniência, nos termos e para os fins propostos.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 5º Após receber os autos saneados, o Ministro-Relator do processo deliberará acerca da proposta de remessa à CGU/AGU das informações pertinentes e dos valores dos débitos discriminados por processos de controle externo, estágio processual e irregularidade, envolvendo a proponente do acordo de leniência, nos termos e para os fins propostos.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A unidade técnica responsável por operacionalizar o ACT encaminhará à CGU/AGU",
+    "offset_fim": "encaminhará à CGU/AGU as informações relacionadas no caput; e",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 1º A unidade técnica responsável por operacionalizar o ACT encaminhará à CGU/AGU as informações relacionadas no caput; e"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O acesso a peças processuais de processos sigilosos por parte de servidores da CGU/AGU",
+    "offset_fim": "será solicitado pela unidade técnica responsável por atuar nos acordos de leniência, via memorando, aos respectivos relatores.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "§ 2º O acesso a peças processuais de processos sigilosos por parte de servidores da CGU/AGU integrantes da comissão de negociação será solicitado pela unidade técnica responsável por atuar nos acordos de leniência, via memorando, aos respectivos relatores.\n"
+  },
+  {
+    "titulo": "CAPÍTULO II\nDA SEGUNDA AÇÃO OPERACIONAL\nFASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO",
+    "offset_inicio": "CAPÍTULO II\nDA SEGUNDA AÇÃO OPERACIONAL\nFASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO",
+    "offset_fim": "CAPÍTULO II\nDA SEGUNDA AÇÃO OPERACIONAL\nFASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "CAPÍTULO II\nDA SEGUNDA AÇÃO OPERACIONAL\nFASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO\n"
+  },
+  {
+    "titulo": "Art. 6º",
+    "offset_inicio": "Art. 6º Após a comunicação da CGU/AGU de que o acordo está pronto para ser assinado,",
+    "offset_fim": "do acordo no procedimento dos processos de controle externo envolvendo a proponente.\n",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Art. 6º Após a comunicação da CGU/AGU de que o acordo está pronto para ser assinado, acompanhada de documentação suficiente para a avaliação do TCU a respeito dos fatos e valores constantes do acordo, caberá à unidade técnica designada para atuar nos acordos de leniência, no prazo de quarenta e cinco dias dentre os noventa dias consignados para manifestação do TCU no item 2 da segunda ação operacional do ACT, manifestar-se sobre se os valores informados atendem aos critérios de apuração do dano e se são suficientes para seu ressarcimento, bem como sobre os impactos do acordo no procedimento dos processos de controle externo envolvendo a proponente.\n"
+  },
+  {
+    "titulo": "Parágrafo Único",
+    "offset_inicio": "Parágrafo Único: A comunicação de que trata o caput deverá vir acompanhada de documentação contendo:",
+    "offset_fim": "discriminados por ato ilícito e por ato/contrato, com a respectiva fundamentação, memória de cálculo e eventuais documentos de suporte das quantias apuradas.",
+    "pagina_inicio": 5,
+    "pagina_fim": 5,
+    "texto": "Parágrafo Único: A comunicação de que trata o caput deverá vir acompanhada de documentação contendo:\na) a relação dos atos ilícitos integrantes do escopo do acordo, com a indicação dos processos de controle externo que eventualmente tratem da matéria, se houver; e\nb) os valores de ressarcimento negociados e de sanções imputadas, discriminados por ato ilícito e por ato/contrato, com a respectiva fundamentação, memória de cálculo e eventuais documentos de suporte das quantias apuradas."
+  },
+  {
+    "titulo": "Art. 7º",
+    "offset_inicio": "Art. 7º A manifestação de que trata o artigo anterior ocorrerá mediante a adoção dos seguintes procedimentos:",
+    "offset_fim": "anterior ocorrerá mediante a adoção dos seguintes procedimentos:",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 7º A manifestação de que trata o artigo anterior ocorrerá mediante a adoção dos seguintes procedimentos:"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - exame preliminar a respeito da suficiência das informações e elementos encaminhados",
+    "offset_fim": "para a manifestação do Tribunal de que trata a segunda ação operacional do ACT;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "I - exame preliminar a respeito da suficiência das informações e elementos encaminhados para a manifestação do Tribunal de que trata a segunda ação operacional do ACT;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - avaliação sobre a necessidade de complementação de informações e documentos para a manifestação a que se refere o inciso anterior, a qual deverá ser solicitada pela unidade técnica diretamente à CGU/AGU;",
+    "offset_fim": "ser solicitada pela unidade técnica diretamente à CGU/AGU;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "II - avaliação sobre a necessidade de complementação de informações e documentos para a manifestação a que se refere o inciso anterior, a qual deverá ser solicitada pela unidade técnica diretamente à CGU/AGU;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - verificação da inclusão, no acordo em análise, dos valores informados pelo",
+    "offset_fim": "no acordo em análise, dos valores informados pelo TCU à CGU/AGU, nos termos do art. 5º;\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "III - verificação da inclusão, no acordo em análise, dos valores informados pelo TCU à CGU/AGU, nos termos do art. 5º;\n"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - estimativa do valor dos danos cujo pagamento será considerado suficiente para ressarcimento dos valores em apuração em processo de controle externo envolvendo as irregularidades contempladas no escopo do acordo ou conexas a estas;",
+    "offset_fim": "em processo de controle externo envolvendo as irregularidades contempladas no escopo do acordo ou conexas a estas;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "IV - estimativa do valor dos danos cujo pagamento será considerado suficiente para ressarcimento dos valores em apuração em processo de controle externo envolvendo as irregularidades contempladas no escopo do acordo ou conexas a estas;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - nos casos em que não houver processo de controle externo autuado no TCU, análise dos valores do dano eventualmente incluídos na minuta do acordo pela CGU/AGU,",
+    "offset_fim": "sobre as irregularidades objeto do acordo a ser firmado pelo CGU/AGU;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "V - nos casos em que não houver processo de controle externo autuado no TCU, análise dos valores do dano eventualmente incluídos na minuta do acordo pela CGU/AGU, especificamente se atendem aos critérios de apuração de dano adotados pelo Tribunal e se é possível a dispensa de autuação de processo de controle externo sobre as irregularidades objeto do acordo a ser firmado pelo CGU/AGU;"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A metodologia de estimação do dano, para fins de manifestação do TCU, será a",
+    "offset_fim": "critérios acolhidos pela jurisprudência do TCU, tais como a estimativa por técnicas econométricas.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 1º A metodologia de estimação do dano, para fins de manifestação do TCU, será a preconizada no roteiro de auditoria do Tribunal para a quantificação de superfaturamento, conforme o tipo de irregularidade revelada, podendo ser usados outros critérios acolhidos pela jurisprudência do TCU, tais como a estimativa por técnicas econométricas."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Caso a unidade técnica designada para atuar nos acordos de leniência necessite de conhecimentos técnicos especializados relacionados ao cálculo dos danos, poderá solicitar o apoio da Segecex.",
+    "offset_fim": "técnicos especializados relacionados ao cálculo dos danos, poderá solicitar o apoio da Segecex.",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 2º Caso a unidade técnica designada para atuar nos acordos de leniência necessite de conhecimentos técnicos especializados relacionados ao cálculo dos danos, poderá solicitar o apoio da Segecex."
+  },
+  {
+    "titulo": "Art. 8º",
+    "offset_inicio": "Art. 8º Após a conclusão da etapa de instrução de que trata o artigo anterior, o processo será encaminhado",
+    "offset_fim": "ao Ministério Público junto ao TCU e, na sequência, ao relator para apreciação de mérito.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "Art. 8º Após a conclusão da etapa de instrução de que trata o artigo anterior, o processo será encaminhado ao Ministério Público junto ao TCU e, na sequência, ao relator para apreciação de mérito.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O Ministério Público junto ao TCU dispõe do prazo de 10 dias para a sua manifestação;",
+    "offset_fim": "§ 1º O Ministério Público junto ao TCU dispõe do prazo de 10 dias para a sua manifestação;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 1º O Ministério Público junto ao TCU dispõe do prazo de 10 dias para a sua manifestação;"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Quando as irregularidades e os danos apurados forem referentes a processo(s) de controle externo em andamento,",
+    "offset_fim": "andamento desse(s) processo(s), com o devido alerta sobre a natureza sigilosa da matéria.\n",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 2º Quando as irregularidades e os danos apurados forem referentes a processo(s) de controle externo em andamento, o(s) respectivo(s) relator(es) será(ão) cientificado(s) pelo relator do processo de acordo de leniência que trata do acordo sobre suas conclusões e seus impactos no andamento desse(s) processo(s), com o devido alerta sobre a natureza sigilosa da matéria.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º A proposta consolidada, contemplando o conjunto de danos relativos às irregularidades consignadas no escopo do acordo ou conexas a estas,",
+    "offset_fim": "mantendo-se o sigilo dos dados sensíveis e respeitada a cadeia de custódia das informações tratadas;",
+    "pagina_inicio": 6,
+    "pagina_fim": 6,
+    "texto": "§ 3º A proposta consolidada, contemplando o conjunto de danos relativos às irregularidades consignadas no escopo do acordo ou conexas a estas, com ou sem processos de controle externo associados, será submetida à apreciação do Plenário, mantendo-se o sigilo dos dados sensíveis e respeitada a cadeia de custódia das informações tratadas;"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º A proposta de que trata o inciso anterior será submetida ao Plenário no prazo de até 15 dias antes do escoamento do interregno de 90 dias previsto no item 2 da segunda ação operacional do ACT;",
+    "offset_fim": "antes do escoamento do interregno de 90 dias previsto no item 2 da segunda ação operacional do ACT;",
+    "pagina_inicio": 6,
+    "pagina_fim": 7,
+    "texto": "§ 4º A proposta de que trata o inciso anterior será submetida ao Plenário no prazo de até 15 dias antes do escoamento do interregno de 90 dias previsto no item 2 da segunda ação operacional do ACT;"
+  },
+  {
+    "titulo": "§ 5º",
+    "offset_inicio": "§ 5º O Plenário decidirá sobre os danos cujo pagamento, nas condições indicadas, será suficiente",
+    "offset_fim": "indicadas, será suficiente para o arquivamento ou não instauração de processos de controle externo;\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 5º O Plenário decidirá sobre os danos cujo pagamento, nas condições indicadas, será suficiente para o arquivamento ou não instauração de processos de controle externo;\n"
+  },
+  {
+    "titulo": "§ 6º",
+    "offset_inicio": "§ 6º A manifestação do Plenário de que trata o parágrafo anterior conterá a discriminação",
+    "offset_fim": "conterá a discriminação dos danos por irregularidade e processo de controle externo, se houver.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "§ 6º A manifestação do Plenário de que trata o parágrafo anterior conterá a discriminação dos danos por irregularidade e processo de controle externo, se houver.\n"
+  },
+  {
+    "titulo": "Art. 9º",
+    "offset_inicio": "Art. 9º Caso a manifestação do Plenário seja no sentido de considerar que os valores negociados no acordo satisfazem aos critérios estabelecidos",
+    "offset_fim": "processos de controle externo correspondentes no TCU, com relação à proponente do acordo.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 9º Caso a manifestação do Plenário seja no sentido de considerar que os valores negociados no acordo satisfazem aos critérios estabelecidos para o ressarcimento dos danos estimados pelo TCU, o Colegiado deverá, no mesmo ato, declarar que o pleno cumprimento das obrigações assumidas relacionadas ao ressarcimento dos danos ensejará a quitação dos valores apurados nos processos de controle externo correspondentes no TCU, com relação à proponente do acordo.\n"
+  },
+  {
+    "titulo": "Parágrafo único.",
+    "offset_inicio": "Parágrafo único. A declaração de que o pleno cumprimento das obrigações assumidas relacionadas ao ressarcimento dos danos ensejará",
+    "offset_fim": "caso venham a ser conhecidas irregularidades ou documentos novos capazes de alterar as bases fáticas que nortearam a celebração do acordo de leniência, devendo tal ressalva ser declarada expressamente no respectivo acórdão.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Parágrafo único. A declaração de que o pleno cumprimento das obrigações assumidas relacionadas ao ressarcimento dos danos ensejará a quitação dos valores apurados nos processos de controle externo correspondentes no TCU, nos termos deste artigo, é condicionada à veracidade e à completude das informações prestadas pela pessoa jurídica proponente à CGU/AGU, podendo ser revista, a qualquer tempo, caso venham a ser conhecidas irregularidades ou documentos novos capazes de alterar as bases fáticas que nortearam a celebração do acordo de leniência, devendo tal ressalva ser declarada expressamente no respectivo acórdão.\n"
+  },
+  {
+    "titulo": "Art. 10.",
+    "offset_inicio": "Art. 10. Caso haja manifestação do Plenário no sentido de considerar que os valores negociados no acordo não satisfazem aos critérios estabelecidos",
+    "offset_fim": "negociação complementar visando eventual ajuste dos valores a título de ressarcimento de danos.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 10. Caso haja manifestação do Plenário no sentido de considerar que os valores negociados no acordo não satisfazem aos critérios estabelecidos para a quitação dos danos apurados nos processos de controle externo correspondentes no TCU, o Colegiado dará ciência da decisão à CGU/AGU, para fins de negociação complementar visando eventual ajuste dos valores a título de ressarcimento de danos.\n"
+  },
+  {
+    "titulo": "Parágrafo único.",
+    "offset_inicio": "Parágrafo único. Ao deliberar nos termos previstos neste artigo, o Tribunal deverá indicar",
+    "offset_fim": "cujo compromisso de pagamento seria suficiente para a sua quitação no âmbito do TCU.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Parágrafo único. Ao deliberar nos termos previstos neste artigo, o Tribunal deverá indicar no acórdão os valores dos débitos discriminados por processos de controle externo, por ato/contrato e por irregularidades, relacionando-os com os atos ilícitos integrantes do escopo do acordo, cujo compromisso de pagamento seria suficiente para a sua quitação no âmbito do TCU."
+  },
+  {
+    "titulo": "Art. 11.",
+    "offset_inicio": "Art. 11. Caso a CGU/AGU informe que o acordo de leniência não será mais celebrado,",
+    "offset_fim": "proposta de encerramento do processo de acordo de leniência, mediante despacho do relator.",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 11. Caso a CGU/AGU informe que o acordo de leniência não será mais celebrado, será providenciada a exclusão definitiva das bases do TCU de todos os documentos que contenham informações fornecidas pela proponente, com proposta de encerramento do processo de acordo de leniência, mediante despacho do relator."
+  },
+  {
+    "titulo": "CAPÍTULO III — DA TERCEIRA AÇÃO OPERACIONAL",
+    "offset_inicio": "CAPÍTULO III\nDA TERCEIRA AÇÃO OPERACIONAL\nLIMITES À UTILIZAÇÃO DE INFORMAÇÕES PRE",
+    "offset_fim": "ACIONAL\nLIMITES À UTILIZAÇÃO DE INFORMAÇÕES PREVIAMENTE À ASSINATURA DO ACORDO.\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "CAPÍTULO III\nDA TERCEIRA AÇÃO OPERACIONAL\nLIMITES À UTILIZAÇÃO DE INFORMAÇÕES PREVIAMENTE À ASSINATURA DO ACORDO.\n"
+  },
+  {
+    "titulo": "Art. 12.",
+    "offset_inicio": "Art. 12. A utilização pelo TCU de informações que tenham sido compartilhadas pela CGU/AGU previamente à assinatura do acordo de leniência observará necessariamente os seguintes limites:",
+    "offset_fim": "previamente à assinatura do acordo de leniência observará necessariamente os seguintes limites:\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "Art. 12. A utilização pelo TCU de informações que tenham sido compartilhadas pela CGU/AGU previamente à assinatura do acordo de leniência observará necessariamente os seguintes limites:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - não utilização das informações recebidas contra a proponente;",
+    "offset_fim": "I - não utilização das informações recebidas contra a proponente;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "texto": "I - não utilização das informações recebidas contra a proponente;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - não utilização das informações recebidas para a responsabilização de outras pessoas físicas e jurídicas envolvidas nos ilícitos revelados pela proponente, até que se efetive a assinatura do acordo de leniência, exceto para apuração de ilícito em processo de controle externo no TCU em andamento e com prévia anuência da proponente nos termos do item 2 da terceira ação operacional do ACT;",
+    "offset_fim": "prévia anuência da proponente nos termos do item 2 da terceira ação operacional do ACT;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "II - não utilização das informações recebidas para a responsabilização de outras pessoas físicas e jurídicas envolvidas nos ilícitos revelados pela proponente, até que se efetive a assinatura do acordo de leniência, exceto para apuração de ilícito em processo de controle externo no TCU em andamento e com prévia anuência da proponente nos termos do item 2 da terceira ação operacional do ACT;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - até que se efetive a assinatura do acordo de leniência, não utilização das informações recebidas para qualquer procedimento alheio ao previsto no ACT;",
+    "offset_fim": "informações recebidas para qualquer procedimento alheio ao previsto no ACT;",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "III - até que se efetive a assinatura do acordo de leniência, não utilização das informações recebidas para qualquer procedimento alheio ao previsto no ACT;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - em caso de não celebração do acordo de leniência, os documentos apresentados durante a fase de negociação serão excluídos",
+    "offset_fim": "11.129, de 11 de julho de 2022, sendo vedado seu uso para qualquer finalidade; e",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "IV - em caso de não celebração do acordo de leniência, os documentos apresentados durante a fase de negociação serão excluídos definitivamente das bases do TCU, para os fins previstos nos §§ 2º e 3º do art. 43 do Decreto nº 11.129, de 11 de julho de 2022, sendo vedado seu uso para qualquer finalidade; e"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - O disposto no inciso anterior não impedirá que o TCU utilize indícios ou provas autônomas que tenham sido obtidas ou levadas ao seu conhecimento por qualquer outro meio.",
+    "offset_fim": "V - O disposto no inciso anterior não impedirá que o TCU utilize indícios ou provas autônomas que tenham sido obtidas ou levadas ao seu conhecimento por qualquer outro meio.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "V - O disposto no inciso anterior não impedirá que o TCU utilize indícios ou provas autônomas que tenham sido obtidas ou levadas ao seu conhecimento por qualquer outro meio.\n"
+  },
+  {
+    "titulo": "CAPÍTULO IV — DA QUARTA AÇÃO OPERACIONAL — ALAVANCAGEM DE AÇÕES DE CONTROLE EM RELAÇÃO A TERCEIROS",
+    "offset_inicio": "CAPÍTULO IV\nDA QUARTA AÇÃO OPERACIONAL\nALAVANCAGEM DE AÇÕES DE CONTROLE EM RELAÇÃO A TERCEIROS\n",
+    "offset_fim": "CAPÍTULO IV\nDA QUARTA AÇÃO OPERACIONAL\nALAVANCAGEM DE AÇÕES DE CONTROLE EM RELAÇÃO A TERCEIROS\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "CAPÍTULO IV\nDA QUARTA AÇÃO OPERACIONAL\nALAVANCAGEM DE AÇÕES DE CONTROLE EM RELAÇÃO A TERCEIROS\n"
+  },
+  {
+    "titulo": "Art. 13.",
+    "offset_inicio": "Art. 13. A documentação compartilhada com o TCU pela CGU/AGU, após a celebração do acordo de leniência, será constituída pela integralidade das informações, documentos e demais elementos de prova",
+    "offset_fim": "demais elementos de prova fornecidos pela empresa colaboradora, nos termos do item 2 da quarta ação operacional do ACT.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "Art. 13. A documentação compartilhada com o TCU pela CGU/AGU, após a celebração do acordo de leniência, será constituída pela integralidade das informações, documentos e demais elementos de prova fornecidos pela empresa colaboradora, nos termos do item 2 da quarta ação operacional do ACT.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A unidade técnica responsável para atuar nos acordos de leniência, na condição de coordenadora da matéria prevista nesta instrução normativa, deverá estabelecer conjuntamente com as equipes técnicas da CGU e da AGU o prazo para recebimento das informações mencionadas no caput, o que deverá ser formalizado em ata, em até cinco dias do conhecimento da assinatura do acordo.",
+    "offset_fim": "o que deverá ser formalizado em ata, em até cinco dias do conhecimento da assinatura do acordo.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "§ 1º A unidade técnica responsável para atuar nos acordos de leniência, na condição de coordenadora da matéria prevista nesta instrução normativa, deverá estabelecer conjuntamente com as equipes técnicas da CGU e da AGU o prazo para recebimento das informações mencionadas no caput, o que deverá ser formalizado em ata, em até cinco dias do conhecimento da assinatura do acordo.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A documentação enviada pela CGU/AGU deverá conter a identificação dos valores de ressarcimento acordados e das sanções aplicadas,",
+    "offset_fim": "cálculo, associando-os aos processos de controle externo eventualmente existentes no TCU.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "§ 2º A documentação enviada pela CGU/AGU deverá conter a identificação dos valores de ressarcimento acordados e das sanções aplicadas, discriminadas por irregularidade e acompanhadas das respectivas memórias de cálculo, associando-os aos processos de controle externo eventualmente existentes no TCU.\n"
+  },
+  {
+    "titulo": "Art. 14.",
+    "offset_inicio": "Art. 14. Os elementos de que tratam o artigo anterior serão enviados à unidade técnica responsável para atuar nos acordos de leniência, na condição de coordenadora da matéria prevista nesta instrução normativa, que verificará se os valores de ressarcimento previstos no acordo incluem os valores dos danos estimados pelo TCU, conforme o capítulo anterior.",
+    "offset_fim": "que verificará se os valores de ressarcimento previstos no acordo incluem os valores dos danos estimados pelo TCU, conforme o capítulo anterior.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "texto": "Art. 14. Os elementos de que tratam o artigo anterior serão enviados à unidade técnica responsável para atuar nos acordos de leniência, na condição de coordenadora da matéria prevista nesta instrução normativa, que verificará se os valores de ressarcimento previstos no acordo incluem os valores dos danos estimados pelo TCU, conforme o capítulo anterior.\n"
+  },
+  {
+    "titulo": "Art. 15.",
+    "offset_inicio": "Art. 15. Caso os valores apurados de dano pelo TCU, nos termos dos Arts. 9º e 10 desta instrução normativa, estejam contemplados no acordo de leniência,",
+    "offset_fim": "caso, submeterá ao(s) relator(es) do(s) processo(s) de controle externo pertinente(s):",
+    "pagina_inicio": 8,
+    "pagina_fim": 9,
+    "texto": "Art. 15. Caso os valores apurados de dano pelo TCU, nos termos dos Arts. 9º e 10 desta instrução normativa, estejam contemplados no acordo de leniência, a unidade técnica responsável para atuar nos acordos de leniência, conforme o caso, submeterá ao(s) relator(es) do(s) processo(s) de controle externo pertinente(s):"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - proposta de sobrestamento dos processos em relação ao colaborador, quanto às irregularidades contempladas no escopo do acordo, nos casos em que for acordado o pagamento parcelado dos débitos, com a futura quitação condicionada ao pleno cumprimento do acordo;",
+    "offset_fim": "com a futura quitação condicionada ao pleno cumprimento do acordo;",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "I - proposta de sobrestamento dos processos em relação ao colaborador, quanto às irregularidades contempladas no escopo do acordo, nos casos em que for acordado o pagamento parcelado dos débitos, com a futura quitação condicionada ao pleno cumprimento do acordo;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - proposta de arquivamento dos processos em relação ao colaborador, quanto às irregularidades",
+    "offset_fim": "que comprovado o efetivo pagamento dos respectivos danos em parcela única; e",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "II - proposta de arquivamento dos processos em relação ao colaborador, quanto às irregularidades contempladas no escopo do acordo, desde que comprovado o efetivo pagamento dos respectivos danos em parcela única; e"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - proposta de instauração de processo de acompanhamento do cumprimento do acordo de leniência,",
+    "offset_fim": "controle externo; e",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "III - proposta de instauração de processo de acompanhamento do cumprimento do acordo de leniência, nos casos em que for acordado o pagamento parcelado dos débitos relativos a irregularidades não constantes de processo de controle externo; e"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - proposta de não instauração de ação de controle externo quanto às irregularidades que constituam o escopo do acordo e sobre as quais não haja processo de controle externo aberto, desde que comprovado o efetivo pagamento dos respectivos danos em parcela única.",
+    "offset_fim": "desde que comprovado o efetivo pagamento dos respectivos danos em parcela única.\n",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "IV - proposta de não instauração de ação de controle externo quanto às irregularidades que constituam o escopo do acordo e sobre as quais não haja processo de controle externo aberto, desde que comprovado o efetivo pagamento dos respectivos danos em parcela única.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O Tribunal não aplicará medida sancionadora de sua competência à colaboradora relacionada aos ilícitos constantes do escopo do acordo de leniência, desde que a colaboradora se mantenha adimplente em relação às obrigações assumidas no acordo; e",
+    "offset_fim": "às obrigações assumidas no acordo; e",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "§ 1º O Tribunal não aplicará medida sancionadora de sua competência à colaboradora relacionada aos ilícitos constantes do escopo do acordo de leniência, desde que a colaboradora se mantenha adimplente em relação às obrigações assumidas no acordo; e"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º No caso do inciso I, o Tribunal efetuará o acompanhamento do pagamento das parcelas do dano, em autos apartados aos respectivos processos.",
+    "offset_fim": "efetuará o acompanhamento do pagamento das parcelas do dano, em autos apartados aos respectivos processos.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "§ 2º No caso do inciso I, o Tribunal efetuará o acompanhamento do pagamento das parcelas do dano, em autos apartados aos respectivos processos."
+  },
+  {
+    "titulo": "Art. 16.",
+    "offset_inicio": "Art. 16. Caso os valores de ressarcimento previstos no acordo de leniência não contemplem",
+    "offset_fim": "tomada de contas especial, nesta hipótese, se presentes os pressupostos regimentais para tanto .",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "Art. 16. Caso os valores de ressarcimento previstos no acordo de leniência não contemplem os valores dos danos estimados pelo TCU e informados à CGU/AGU, nos termos do capítulo anterior, não haverá a quitação integral dos valores apurados nos processos de controle externo correspondentes no TCU, com o consequente prosseguimento destes ou instauração de tomada de contas especial, nesta hipótese, se presentes os pressupostos regimentais para tanto ."
+  },
+  {
+    "titulo": "Parágrafo único.",
+    "offset_inicio": "Parágrafo único. Também neste caso, o Tribunal não aplicará medida sancionadora de sua competência à colaboradora",
+    "offset_fim": "desde que a colaboradora se mantenha adimplente em relação às obrigações assumidas no acordo.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "Parágrafo único. Também neste caso, o Tribunal não aplicará medida sancionadora de sua competência à colaboradora relacionada aos ilícitos constantes do escopo do acordo de leniência, desde que a colaboradora se mantenha adimplente em relação às obrigações assumidas no acordo."
+  },
+  {
+    "titulo": "Art. 17.",
+    "offset_inicio": "Art. 17. A unidade técnica responsável pelo processo na fase anterior à celebração do acordo de leniência adotará as medidas necessárias à distribuição dos documentos e informações recebidos da CGU/AGU, após a celebração do acordo,",
+    "offset_fim": "especializadas responsáveis pela análise dos elementos de prova e fatos fornecidos pela empresa colaboradora, que possam fomentar outros processos ou ações de fiscalização contra atores que não a colaboradora.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "Art. 17. A unidade técnica responsável pelo processo na fase anterior à celebração do acordo de leniência adotará as medidas necessárias à distribuição dos documentos e informações recebidos da CGU/AGU, após a celebração do acordo, aos servidores designados pelas unidades técnicas especializadas responsáveis pela análise dos elementos de prova e fatos fornecidos pela empresa colaboradora, que possam fomentar outros processos ou ações de fiscalização contra atores que não a colaboradora."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A unidade técnica especializada deverá autuar processo administrativo com o fim específico",
+    "offset_fim": "fim específico de verificar outros atos lesivos, fraudes e processos conexos.",
+    "pagina_inicio": 9,
+    "pagina_fim": 9,
+    "texto": "§ 1º A unidade técnica especializada deverá autuar processo administrativo com o fim específico de verificar outros atos lesivos, fraudes e processos conexos."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º As unidades técnicas especializadas responsáveis pela análise dos documentos encaminhados pela CGU/AGU terão acesso ao Acórdão, Voto e Relatório",
+    "offset_fim": "com vistas ao cumprimento do estabelecido na terceira ação sistêmica do ACT.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "§ 2º As unidades técnicas especializadas responsáveis pela análise dos documentos encaminhados pela CGU/AGU terão acesso ao Acórdão, Voto e Relatório do processo autuado anteriormente à celebração do acordo de leniência, com vistas ao cumprimento do estabelecido na terceira ação sistêmica do ACT."
+  },
+  {
+    "titulo": "Art. 18.",
+    "offset_inicio": "Art. 18. As unidades técnicas especializadas verificarão, no prazo de cento e oitenta dias, a contar da data de autuação do processo administrativo específico, se as informações e documentos encaminhados pela CGU/AGU:\n",
+    "offset_fim": "data de autuação do processo administrativo específico, se as informações e documentos encaminhados pela CGU/AGU:\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 18. As unidades técnicas especializadas verificarão, no prazo de cento e oitenta dias, a contar da data de autuação do processo administrativo específico, se as informações e documentos encaminhados pela CGU/AGU:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - podem ser aproveitados em processos de controle externo em andamento, considerando a sua alavancagem investigativa, inclusive no que se refere a eventuais irregularidades cometidas por terceiros; e",
+    "offset_fim": "inclusive no que se refere a eventuais irregularidades cometidas por terceiros; e\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "I - podem ser aproveitados em processos de controle externo em andamento, considerando a sua alavancagem investigativa, inclusive no que se refere a eventuais irregularidades cometidas por terceiros; e\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - atendem a critérios de risco, materialidade e relevância, podendo desencadear novas ações de controle, em face de pessoas citadas ou envolvidas nos ilícitos discriminados nos acordos de leniência, a exemplo de fiscalização e/ou autuação de processos de representação.",
+    "offset_fim": "em face de pessoas citadas ou envolvidas nos ilícitos discriminados nos acordos de leniência, a exemplo de fiscalização e/ou autuação de processos de representação.\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "II - atendem a critérios de risco, materialidade e relevância, podendo desencadear novas ações de controle, em face de pessoas citadas ou envolvidas nos ilícitos discriminados nos acordos de leniência, a exemplo de fiscalização e/ou autuação de processos de representação.\n"
+  },
+  {
+    "titulo": "Art. 19.",
+    "offset_inicio": "Art. 19. Se a unidade técnica especializada identificar que os elementos de prova e informações advindos do acordo de leniência celebrado",
+    "offset_fim": "ela submeterá ao relator proposta de arquivamento do processo de que trata o artigo anterior.\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 19. Se a unidade técnica especializada identificar que os elementos de prova e informações advindos do acordo de leniência celebrado não são úteis a seus processos de controle externo ou a eventuais ações de controle externo, ela submeterá ao relator proposta de arquivamento do processo de que trata o artigo anterior.\n"
+  },
+  {
+    "titulo": "Art. 20.",
+    "offset_inicio": "Art. 20. Se a unidade técnica especializada identificar que os elementos são úteis a seus processos de controle externo ou a outras ações de controle externo ainda sem processo instaurado,",
+    "offset_fim": "ela submeterá ao relator competente, no prazo de cento e oitenta dias, prorrogável por prazo devidamente justificado:\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 20. Se a unidade técnica especializada identificar que os elementos são úteis a seus processos de controle externo ou a outras ações de controle externo ainda sem processo instaurado, ela submeterá ao relator competente, no prazo de cento e oitenta dias, prorrogável por prazo devidamente justificado:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - proposta de fiscalização e/ou autuação de processo de representação quanto aos ilí",
+    "offset_fim": "demais pessoas físicas ou jurídicas, quando não houver processo instaurado; e\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "I - proposta de fiscalização e/ou autuação de processo de representação quanto aos ilícitos revelados pela colaboradora acerca das demais pessoas físicas ou jurídicas, quando não houver processo instaurado; e\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - proposta de juntada da documentação pertinente ao processo de controle externo que",
+    "offset_fim": "irregularidades ou fatos conexos aos contemplados no escopo do acordo de leniência.",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "II - proposta de juntada da documentação pertinente ao processo de controle externo que apure as irregularidades ou fatos conexos aos contemplados no escopo do acordo de leniência."
+  },
+  {
+    "titulo": "Art. 21.",
+    "offset_inicio": "Art. 21. A unidade técnica designada para atuar nos acordos de leniência na primeira fase do ACT será cientificada da decisão de que trata o caput dos artigos 19 e 20 para acompanhamento da efetividade desses acordos no que se refere às ações de controle externo, sendo responsável pela gestão do uso das informações e provas advindas dos referidos instrumentos pelas diversas unidades do Tribunal.\n",
+    "offset_fim": "sendo responsável pela gestão do uso das informações e provas advindas dos referidos instrumentos pelas diversas unidades do Tribunal.\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 21. A unidade técnica designada para atuar nos acordos de leniência na primeira fase do ACT será cientificada da decisão de que trata o caput dos artigos 19 e 20 para acompanhamento da efetividade desses acordos no que se refere às ações de controle externo, sendo responsável pela gestão do uso das informações e provas advindas dos referidos instrumentos pelas diversas unidades do Tribunal.\n"
+  },
+  {
+    "titulo": "Art. 22.",
+    "offset_inicio": "Art. 22. De modo a sobrestar a aplicação de sanção pelo TCU por irregularidade contemplada no escopo do acordo de leniência, caberá à pessoa jurídica signatária do acordo de leniência informar sobre a celebração do instrumento em autos em tramitação nesta Corte que apurem as mesmas irregularidades.",
+    "offset_fim": "informar sobre a celebração do instrumento em autos em tramitação nesta Corte que apurem as mesmas irregularidades.\n\n\n",
+    "pagina_inicio": 10,
+    "pagina_fim": 10,
+    "texto": "Art. 22. De modo a sobrestar a aplicação de sanção pelo TCU por irregularidade contemplada no escopo do acordo de leniência, caberá à pessoa jurídica signatária do acordo de leniência informar sobre a celebração do instrumento em autos em tramitação nesta Corte que apurem as mesmas irregularidades.\n\n\n"
+  },
+  {
+    "titulo": "Art. 23",
+    "offset_inicio": "Art. 23. Após a assinatura do acordo de leniência pela CGU/AGU com a empresa colaboradora e a conclusão dos procedimentos e deliberações previstos neste Capítulo,",
+    "offset_fim": "exceto se a CGU/AGU se manifestar expressamente quanto à manutenção do sigilo do referido instrumento.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 23. Após a assinatura do acordo de leniência pela CGU/AGU com a empresa colaboradora e a conclusão dos procedimentos e deliberações previstos neste Capítulo, o Tribunal poderá tornar públicos os acórdãos proferidos no âmbito do processo de acordo de leniência pertinente, exceto se a CGU/AGU se manifestar expressamente quanto à manutenção do sigilo do referido instrumento.\n"
+  },
+  {
+    "titulo": "CAPÍTULO V — DA QUINTA AÇÃO OPERACIONAL — RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA",
+    "offset_inicio": "CAPÍTULO V\nDA QUINTA AÇÃO OPERACIONAL\nRESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA\n",
+    "offset_fim": "RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "CAPÍTULO V\nDA QUINTA AÇÃO OPERACIONAL\nRESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA\n"
+  },
+  {
+    "titulo": "Art. 24.",
+    "offset_inicio": "Art. 24. Após a celebração do acordo de leniência entre a CGU/AGU e a empresa colaboradora, o TCU poderá utilizar os elementos que com ele forem compartilhados para promover, no âmbito de suas competências, as ações necessárias à responsabilização de terceiros, sejam eles pessoas físicas ou jurídicas.\n",
+    "offset_fim": "necessárias à responsabilização de terceiros, sejam eles pessoas físicas ou jurídicas.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 24. Após a celebração do acordo de leniência entre a CGU/AGU e a empresa colaboradora, o TCU poderá utilizar os elementos que com ele forem compartilhados para promover, no âmbito de suas competências, as ações necessárias à responsabilização de terceiros, sejam eles pessoas físicas ou jurídicas.\n"
+  },
+  {
+    "titulo": "CAPÍTULO VI\nDA SEXTA AÇÃO OPERACIONAL\nMECANISMOS DE COMPENSAÇÃO DE VALORES PARA EVITAR BIS IN IDEM",
+    "offset_inicio": "CAPÍTULO VI\nDA SEXTA AÇÃO OPERACIONAL\nMECANISMOS DE COMPENSAÇÃO DE VALORES PARA",
+    "offset_fim": "AÇÃO OPERACIONAL\nMECANISMOS DE COMPENSAÇÃO DE VALORES PARA EVITAR BIS IN IDEM\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "CAPÍTULO VI\nDA SEXTA AÇÃO OPERACIONAL\nMECANISMOS DE COMPENSAÇÃO DE VALORES PARA EVITAR BIS IN IDEM\n"
+  },
+  {
+    "titulo": "Art. 25.",
+    "offset_inicio": "Art. 25. Nas ações de controle abrangendo atos e irregularidades incluídas no escopo do acordo de leniência,",
+    "offset_fim": "desde que envolvam exatamente as mesmas irregularidades tratadas no processo do TCU.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 25. Nas ações de controle abrangendo atos e irregularidades incluídas no escopo do acordo de leniência, o Tribunal poderá compensar ou abater multas pagas em função de condutas tipificadas em mais de uma legislação, desde que envolvam exatamente as mesmas irregularidades tratadas no processo do TCU.\n"
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. A compensação ou abatimento de que trata o caput depende da comprovação,",
+    "offset_fim": "em outra instância e o processo em curso no TCU, bem como do pagamento da sanção.",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Parágrafo único. A compensação ou abatimento de que trata o caput depende da comprovação, por parte da pessoa jurídica arrolada, de que há identidade de fatos entre o motivo da condenação em outra instância e o processo em curso no TCU, bem como do pagamento da sanção."
+  },
+  {
+    "titulo": "Art. 26.",
+    "offset_inicio": "Art. 26. Nas ações de controle abrangendo atos e irregularidades incluídas no escopo do acordo de leniência, o Tribunal poderá compensar",
+    "offset_fim": "relativa aos itens do contrato no qual o TCU identificou dano, desde que demonstrado o efetivo ressarcimento pela empresa colaboradora.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 26. Nas ações de controle abrangendo atos e irregularidades incluídas no escopo do acordo de leniência, o Tribunal poderá compensar ou abater a parcela de lucro efetivamente devolvida, relativa aos itens do contrato no qual o TCU identificou dano, desde que demonstrado o efetivo ressarcimento pela empresa colaboradora.\n"
+  },
+  {
+    "titulo": "CAPÍTULO VII — DA APURAÇÃO DE FATOS QUE IMPORTEM DESCUMPRIMENTO DO ACORDO",
+    "offset_inicio": "CAPÍTULO VII\nDA APURAÇÃO DE FATOS QUE IMPORTEM DESCUMPRIMENTO DO ACORDO\n",
+    "offset_fim": "CAPÍTULO VII\nDA APURAÇÃO DE FATOS QUE IMPORTEM DESCUMPRIMENTO DO ACORDO\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "CAPÍTULO VII\nDA APURAÇÃO DE FATOS QUE IMPORTEM DESCUMPRIMENTO DO ACORDO\n"
+  },
+  {
+    "titulo": "Art. 27.",
+    "offset_inicio": "Art. 27. O Tribunal, ao evidenciar a inadimplência da empresa colaboradora em relação ao pagamento dos valores acordados, poderá, a qualquer momento,",
+    "offset_fim": "à aplicação de sanções à empresa inadimplente e à cobrança de eventual débito remanescente, dando ciência da deliberação à interessada, à CGU e à AGU.\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "Art. 27. O Tribunal, ao evidenciar a inadimplência da empresa colaboradora em relação ao pagamento dos valores acordados, poderá, a qualquer momento, ouvidas a CGU, a AGU e a empresa colaborada, declarar, mediante acórdão, a suspensão dos benefícios previstos no § 1º do Art. 15, devendo ser avaliada a pertinência da continuidade ou abertura de processo de controle externo com vistas à aplicação de sanções à empresa inadimplente e à cobrança de eventual débito remanescente, dando ciência da deliberação à interessada, à CGU e à AGU.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A verificação da eventual inadimplência da colaboradora ocorrerá nos autos do processo de acompanhamento de que tratam o inciso III do caput e o § 2º do Art. 15; e",
+    "offset_fim": "ocorrerá nos autos do processo de acompanhamento de que tratam o inciso III do caput e o § 2º do Art. 15; e\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "§ 1º A verificação da eventual inadimplência da colaboradora ocorrerá nos autos do processo de acompanhamento de que tratam o inciso III do caput e o § 2º do Art. 15; e\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A decisão do TCU de que trata o parágrafo anterior deve levar em conta as consequên",
+    "offset_fim": "consensuais entre as partes celebrantes do acordo de leniência que resolvam a questão de modo proporcional e equânime, sem prejuízo do interesse público.\n\n\n",
+    "pagina_inicio": 11,
+    "pagina_fim": 11,
+    "texto": "§ 2º A decisão do TCU de que trata o parágrafo anterior deve levar em conta as consequências jurídicas e administrativas de eventual decretação de inadimplência e do prosseguimento do processo de sancionamento, mediante provas autônomas, assim como eventuais soluções consensuais entre as partes celebrantes do acordo de leniência que resolvam a questão de modo proporcional e equânime, sem prejuízo do interesse público.\n\n\n"
+  },
+  {
+    "titulo": "TÍTULO III\nDAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS",
+    "offset_inicio": "TÍTULO III\nDAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS\n",
+    "offset_fim": "TÍTULO III\nDAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS\n",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "TÍTULO III\nDAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS\n"
+  },
+  {
+    "titulo": "Art. 28.",
+    "offset_inicio": "Art. 28. O disposto na presente instrução normativa aplica-se aos processos de acordo de leniência",
+    "offset_fim": "O disposto na presente instrução normativa aplica-se aos processos de acordo de leniência autuados após a celebração do ACT.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "Art. 28. O disposto na presente instrução normativa aplica-se aos processos de acordo de leniência autuados após a celebração do ACT."
+  },
+  {
+    "titulo": "Art. 29.",
+    "offset_inicio": "Art. 29. Para os acordos de leniência já firmados e com apreciação definitiva pelo TCU,",
+    "offset_fim": " IV - DA QUARTA AÇÃO OPERACIONAL que tratem da alavancagem das ações de controle externo em relação a terceiros.\n",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "Art. 29. Para os acordos de leniência já firmados e com apreciação definitiva pelo TCU, aplicam-se as disposições do Capítulo IV - DA QUARTA AÇÃO OPERACIONAL que tratem da alavancagem das ações de controle externo em relação a terceiros.\n"
+  },
+  {
+    "titulo": "Art. 30.",
+    "offset_inicio": "Art. 30. Fica o Presidente autorizado a expedir os atos necessários à operacionalização",
+    "offset_fim": "Presidente autorizado a expedir os atos necessários à operacionalização desta instrução normativa.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "Art. 30. Fica o Presidente autorizado a expedir os atos necessários à operacionalização desta instrução normativa."
+  },
+  {
+    "titulo": "Art. 31.",
+    "offset_inicio": "Art. 31. Os casos omissos serão dirimidos pelo Plenário, mediante provocação do Relator.",
+    "offset_fim": "Art. 31. Os casos omissos serão dirimidos pelo Plenário, mediante provocação do Relator.",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "Art. 31. Os casos omissos serão dirimidos pelo Plenário, mediante provocação do Relator."
+  },
+  {
+    "titulo": "Art. 32.",
+    "offset_inicio": "Art. 32. Esta instrução normativa entra em vigor na data de sua publicação.\nTCU, Sala das Sessões, em 21 de fevereiro de 2024.\nMinistro BRUNO DANTAS\nPresidente",
+    "offset_fim": "Art. 32. Esta instrução normativa entra em vigor na data de sua publicação.\nTCU, Sala das Sessões, em 21 de fevereiro de 2024.\nMinistro BRUNO DANTAS\nPresidente",
+    "pagina_inicio": 12,
+    "pagina_fim": 12,
+    "texto": "Art. 32. Esta instrução normativa entra em vigor na data de sua publicação.\nTCU, Sala das Sessões, em 21 de fevereiro de 2024.\nMinistro BRUNO DANTAS\nPresidente"
+  }
+]

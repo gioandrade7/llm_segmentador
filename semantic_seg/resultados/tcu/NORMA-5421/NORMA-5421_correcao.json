@@ -1,0 +1,52 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 135,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 32,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"IX - guardar, controlar e zelar pela integridade dos bens em uso na subunidade\" (pág. 2) também contém o marcador do inciso \"X - acompanhar o inventário dos bens existentes na subunidade\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 105,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VI - estruturar, controlar a numeração, editar e publicar o BTCU\" (pág. 6) engloba os marcadores subsequentes \"VII - orientar às unidades do Tribunal\" e \"VIII - acompanhar, para fins de divulgação no BTCU\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 125,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VII - receber, registrar, distribuir e expedir documentos e correspondências\" (pág. 7) também contém os marcadores \"VIII - constituir, receber, autuar, tramitar, consultar, encerrar e arquivar processos\" e \"IX - inserir peças nos autos\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 130,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"XIV - instruir e gerir os processos de concessão de suprimento de fundos\" (pág. 8) também contém os marcadores \"XV - emitir relatórios afetos aos profissionais de empresas contratadas\" e \"XVI - autorizar a saída de veículos automotores\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 105,
+          "tipo": "sequencia",
+          "descricao": "Há indício de erro de extração na pág. 7: dentro do mesmo fluxo aparecem incisos como \"V - instruir, nos processos de remoção de servidor\" e \"XVI - desenvolver outras atividades\" antes do marcador \"Art. 15.\", após o bloco já ter apresentado incisos VI, VII e VIII na pág. 6. A ordem de leitura extraída não preserva a ordem normativa."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso \"IX - guardar, controlar e zelar pela integridade dos bens em uso na subunidade\" imediatamente antes de \"X - acompanhar o inventário dos bens existentes na subunidade\" (pág. 2) e inicie um bloco para o inciso X.\n- Na pág. 6, separe em blocos próprios cada inciso encontrado após \"VI - estruturar, controlar a numeração, editar e publicar o BTCU\", incluindo \"VII - orientar às unidades do Tribunal\" e \"VIII - acompanhar, para fins de divulgação no BTCU\".\n- Na pág. 7, termine o bloco de \"VII - receber, registrar, distribuir e expedir documentos e correspondências\" antes de \"VIII - constituir, receber, autuar, tramitar, consultar, encerrar e arquivar processos\"; termine também o bloco do inciso VIII antes de \"IX - inserir peças nos autos\".\n- Na pág. 8, termine o bloco de \"XIV - instruir e gerir os processos de concessão de suprimento de fundos\" antes de \"XV - emitir relatórios afetos aos profissionais de empresas contratadas\" e inicie outro bloco em \"XVI - autorizar a saída de veículos automotores\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-5421/NORMA-5421_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 162,
+    "insights_aplicados": "- Termine o bloco do inciso \"IX - guardar, controlar e zelar pela integridade dos bens em uso na subunidade\" imediatamente antes de \"X - acompanhar o inventário dos bens existentes na subunidade\" (pág. 2) e inicie um bloco para o inciso X.\n- Na pág. 6, separe em blocos próprios cada inciso encontrado após \"VI - estruturar, controlar a numeração, editar e publicar o BTCU\", incluindo \"VII - orientar às unidades do Tribunal\" e \"VIII - acompanhar, para fins de divulgação no BTCU\".\n- Na pág. 7, termine o bloco de \"VII - receber, registrar, distribuir e expedir documentos e correspondências\" antes de \"VIII - constituir, receber, autuar, tramitar, consultar, encerrar e arquivar processos\"; termine também o bloco do inciso VIII antes de \"IX - inserir peças nos autos\".\n- Na pág. 8, termine o bloco de \"XIV - instruir e gerir os processos de concessão de suprimento de fundos\" antes de \"XV - emitir relatórios afetos aos profissionais de empresas contratadas\" e inicie outro bloco em \"XVI - autorizar a saída de veículos automotores\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-5421/NORMA-5421_ciclo2.json"
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º A gestão de conteúdos e o funcionamento do Comitê Gestor do Portal TCU observam ao disposto nesta Portaria e a legislação inerente à matéria.",
+    "offset_fim": "Art. 1º A gestão de conteúdos e o funcionamento do Comitê Gestor do Portal TCU observam ao disposto nesta Portaria e a legislação inerente à matéria.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 1º A gestão de conteúdos e o funcionamento do Comitê Gestor do Portal TCU observam ao disposto nesta Portaria e a legislação inerente à matéria."
+  },
+  {
+    "titulo": "Art. 2º",
+    "offset_inicio": "Art. 2º Para fins do disposto neste normativo, entende-se por:",
+    "offset_fim": "Art. 2º Para fins do disposto neste normativo, entende-se por:",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "Art. 2º Para fins do disposto neste normativo, entende-se por:"
+  },
+  {
+    "titulo": "I -",
+    "offset_inicio": "I - conteúdo: dados ou informações publicados no Portal TCU, constantes de arquivos,",
+    "offset_fim": "constantes de arquivos, imagens, vídeos, textos, hiperlinks e outros tipos e formatos;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "I - conteúdo: dados ou informações publicados no Portal TCU, constantes de arquivos, imagens, vídeos, textos, hiperlinks e outros tipos e formatos;"
+  },
+  {
+    "titulo": "II - área de conteúdo",
+    "offset_inicio": "II - área de conteúdo: espaço do Portal TCU destinado à publicação de conteúdo;",
+    "offset_fim": "II - área de conteúdo: espaço do Portal TCU destinado à publicação de conteúdo;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "II - área de conteúdo: espaço do Portal TCU destinado à publicação de conteúdo;"
+  },
+  {
+    "titulo": "III -",
+    "offset_inicio": "III - taxonomia: lista de assuntos hierarquizada em forma de árvore de temas tratados pelo TCU;",
+    "offset_fim": "III - taxonomia: lista de assuntos hierarquizada em forma de árvore de temas tratados pelo TCU;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "III - taxonomia: lista de assuntos hierarquizada em forma de árvore de temas tratados pelo TCU;"
+  },
+  {
+    "titulo": "IV -",
+    "offset_inicio": "IV - unidade gestora de conteúdo: unidade da Secretaria do Tribunal responsável por zelar",
+    "offset_fim": "responsável por zelar pela publicação e atualização de conteúdos em áreas do Portal TCU;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "IV - unidade gestora de conteúdo: unidade da Secretaria do Tribunal responsável por zelar pela publicação e atualização de conteúdos em áreas do Portal TCU;"
+  },
+  {
+    "titulo": "V -",
+    "offset_inicio": "V - gestor de conteúdo: servidor responsável pela aprovação e publicação de conteúdos em áreas do Portal TCU;",
+    "offset_fim": "servidor responsável pela aprovação e publicação de conteúdos em áreas do Portal TCU;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "V - gestor de conteúdo: servidor responsável pela aprovação e publicação de conteúdos em áreas do Portal TCU;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - provedor de conteúdo: servidor responsável pela inclusão de conteúdos em áreas preestabelecidas do Portal TCU,",
+    "offset_fim": "pela classificação temática de acordo com a taxonomia estabelecida e pelo preenchimento de formulários de publicação;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "VI - provedor de conteúdo: servidor responsável pela inclusão de conteúdos em áreas preestabelecidas do Portal TCU, pela classificação temática de acordo com a taxonomia estabelecida e pelo preenchimento de formulários de publicação;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - autosserviço: serviço disponibilizado em meio digital que pode ser utilizado pelo",
+    "offset_fim": "que pode ser utilizado pelo próprio cidadão, sem auxílio do TCU; e",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "texto": "VII - autosserviço: serviço disponibilizado em meio digital que pode ser utilizado pelo próprio cidadão, sem auxílio do TCU; e"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - público de relacionamento: pessoas ou instituições que são impactadas, positiva ou",
+    "offset_fim": "pessoas ou instituições que são impactadas, positiva ou negativamente, pela atuação, produtos ou serviços do TCU.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "VIII - público de relacionamento: pessoas ou instituições que são impactadas, positiva ou negativamente, pela atuação, produtos ou serviços do TCU.\n"
+  },
+  {
+    "titulo": "Art. 3º",
+    "offset_inicio": "Art. 3º A arquitetura de informação e a organização das áreas de conteúdo e de serviços no Portal TCU devem ser orientadas pelos princípios de foco nas necessidades do usuário de serviços e informações,",
+    "offset_fim": "da transparência e da oferta de dados abertos e de autosserviços.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 3º A arquitetura de informação e a organização das áreas de conteúdo e de serviços no Portal TCU devem ser orientadas pelos princípios de foco nas necessidades do usuário de serviços e informações, da padronização visual, da acessibilidade, da usabilidade, da utilidade, da simplicidade, da transparência e da oferta de dados abertos e de autosserviços."
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º A gestão de conteúdos no Portal TCU é realizada de forma descentralizada pelas",
+    "offset_fim": "em alinhamento às diretrizes e orientações estabelecidas pelo Comitê Gestor do Portal.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 4º A gestão de conteúdos no Portal TCU é realizada de forma descentralizada pelas unidades da Secretaria do Tribunal, denominadas unidades gestoras de conteúdo, em alinhamento às diretrizes e orientações estabelecidas pelo Comitê Gestor do Portal."
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º Cabe à unidade gestora de conteúdo indicar um ou mais servidores para atuar como gestor e provedor de conteúdo.",
+    "offset_fim": "gestora de conteúdo indicar um ou mais servidores para atuar como gestor e provedor de conteúdo.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 1º Cabe à unidade gestora de conteúdo indicar um ou mais servidores para atuar como gestor e provedor de conteúdo."
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A definição da gestão das áreas de conteúdo do Portal TCU observará, sempre que",
+    "offset_fim": "Portal TCU observará, sempre que possível, as competências das unidades.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 2º A definição da gestão das áreas de conteúdo do Portal TCU observará, sempre que possível, as competências das unidades."
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º A administração do cadastro de gestores e provedores de conteúdo é de responsabilidade da Secretaria de Soluções de Tecnologia da Informação.",
+    "offset_fim": "§ 3º A administração do cadastro de gestores e provedores de conteúdo é de responsabilidade da Secretaria de Soluções de Tecnologia da Informação.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 3º A administração do cadastro de gestores e provedores de conteúdo é de responsabilidade da Secretaria de Soluções de Tecnologia da Informação."
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º O treinamento de gestores e de provedores de conteúdo será realizado pelo Instituto Serzedello Corrêa, em conjunto com a Secretaria de Soluções de Tecnologia da Informação.",
+    "offset_fim": "§ 4º O treinamento de gestores e de provedores de conteúdo será realizado pelo Instituto Serzedello Corrêa, em conjunto com a Secretaria de Soluções de Tecnologia da Informação.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 4º O treinamento de gestores e de provedores de conteúdo será realizado pelo Instituto Serzedello Corrêa, em conjunto com a Secretaria de Soluções de Tecnologia da Informação.\n"
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º O Comitê Gestor do Portal TCU é órgão colegiado de natureza consultiva e",
+    "offset_fim": "de arquitetura da informação e de gestão de conteúdos do portal TCU.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 5º O Comitê Gestor do Portal TCU é órgão colegiado de natureza consultiva e deliberativa e tem por finalidade coordenar a formulação e a execução das diretrizes de organização, de arquitetura da informação e de gestão de conteúdos do portal TCU.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º O Comitê Gestor do Portal TCU é composto pelos dirigentes das seguintes unidades da Secretaria do Tribunal:",
+    "offset_fim": "Gestor do Portal TCU é composto pelos dirigentes das seguintes unidades da Secretaria do Tribunal:\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 1º O Comitê Gestor do Portal TCU é composto pelos dirigentes das seguintes unidades da Secretaria do Tribunal:\n"
+  },
+  {
+    "titulo": "I - Secretaria de Comunicação (Secom)",
+    "offset_inicio": "I - Secretaria de Comunicação (Secom);",
+    "offset_fim": "I - Secretaria de Comunicação (Secom);",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - Secretaria de Comunicação (Secom);"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º O Comitê a que se refere este artigo é coordenado pelo dirigente da Secretaria de Comunicação.",
+    "offset_fim": "§ 2º O Comitê a que se refere este artigo é coordenado pelo dirigente da Secretaria de Comunicação.",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 2º O Comitê a que se refere este artigo é coordenado pelo dirigente da Secretaria de Comunicação."
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º Para fins do disposto neste artigo, o dirigente de unidade poderá designar suplente",
+    "offset_fim": "neste artigo, o dirigente de unidade poderá designar suplente para representá-lo no Comitê.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 3º Para fins do disposto neste artigo, o dirigente de unidade poderá designar suplente para representá-lo no Comitê.\n"
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º As deliberações do Comitê serão tomadas por maioria simples dos membros.\n",
+    "offset_fim": "§ 4º As deliberações do Comitê serão tomadas por maioria simples dos membros.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 4º As deliberações do Comitê serão tomadas por maioria simples dos membros.\n"
+  },
+  {
+    "titulo": "§ 5º",
+    "offset_inicio": "§ 5º Ato do Comitê disporá sobre o seu funcionamento.",
+    "offset_fim": "§ 5º Ato do Comitê disporá sobre o seu funcionamento.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "§ 5º Ato do Comitê disporá sobre o seu funcionamento.\n"
+  },
+  {
+    "titulo": "Art. 6º",
+    "offset_inicio": "Art. 6º Compete ao Comitê Gestor do Portal TCU:\n",
+    "offset_fim": "Art. 6º Compete ao Comitê Gestor do Portal TCU:\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "Art. 6º Compete ao Comitê Gestor do Portal TCU:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - definir padrões, diretrizes e elaborar orientações inerentes à arquitetura de",
+    "offset_fim": "à atualidade e à acessibilidade dos conteúdos a serem publicados no Portal TCU;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "I - definir padrões, diretrizes e elaborar orientações inerentes à arquitetura de informação, à gestão de conteúdo, à usabilidade, à disponibilidade, à atualidade e à acessibilidade dos conteúdos a serem publicados no Portal TCU;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - definir as áreas de conteúdo do Portal TCU e indicar unidades responsáveis pela gestão e atualização de conteúdo;",
+    "offset_fim": "Portal TCU e indicar unidades responsáveis pela gestão e atualização de conteúdo;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "II - definir as áreas de conteúdo do Portal TCU e indicar unidades responsáveis pela gestão e atualização de conteúdo;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - autorizar alterações na estrutura, leiaute, identidade visual, taxonomia, áreas de conteúdo e público de relacionamento do portal;",
+    "offset_fim": "III - autorizar alterações na estrutura, leiaute, identidade visual, taxonomia, áreas de conteúdo e público de relacionamento do portal;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "texto": "III - autorizar alterações na estrutura, leiaute, identidade visual, taxonomia, áreas de conteúdo e público de relacionamento do portal;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - deliberar sobre tipos e formatos de conteúdo a serem publicados no portal;",
+    "offset_fim": "IV - deliberar sobre tipos e formatos de conteúdo a serem publicados no portal;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "IV - deliberar sobre tipos e formatos de conteúdo a serem publicados no portal;"
+  },
+  {
+    "titulo": "V -",
+    "offset_inicio": "V - deliberar sobre a desativação, por decurso de prazo, de páginas ou áreas de conteúdo criados com fim específico;",
+    "offset_fim": "V - deliberar sobre a desativação, por decurso de prazo, de páginas ou áreas de conteúdo criados com fim específico;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "V - deliberar sobre a desativação, por decurso de prazo, de páginas ou áreas de conteúdo criados com fim específico;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - deliberar sobre a retirada de conteúdos publicados que infrinjam diretrizes de gestão do Portal TCU ou de comunicação institucional estabelecidas pelo Tribunal; e",
+    "offset_fim": "VI - deliberar sobre a retirada de conteúdos publicados que infrinjam diretrizes de gestão do Portal TCU ou de comunicação institucional estabelecidas pelo Tribunal; e\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VI - deliberar sobre a retirada de conteúdos publicados que infrinjam diretrizes de gestão do Portal TCU ou de comunicação institucional estabelecidas pelo Tribunal; e\n"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - deliberar sobre casos omissos inerentes ao Portal TCU, inclusive sobre a publicação de conteúdos para os quais não haja diretriz ou orientação estabelecidas e sobre a criação, incorporação e desativação de portais e páginas na internet sob a responsabilidade do TCU.",
+    "offset_fim": "e sobre a criação, incorporação e desativação de portais e páginas na internet sob a responsabilidade do TCU.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "VII - deliberar sobre casos omissos inerentes ao Portal TCU, inclusive sobre a publicação de conteúdos para os quais não haja diretriz ou orientação estabelecidas e sobre a criação, incorporação e desativação de portais e páginas na internet sob a responsabilidade do TCU.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º As questões relativas às alterações da taxonomia do Portal TCU deverão observar os",
+    "offset_fim": "termos do Vocabulário de Controle Externo (VCE), gerido pelo Instituto Serzedello Corrêa.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 1º As questões relativas às alterações da taxonomia do Portal TCU deverão observar os termos do Vocabulário de Controle Externo (VCE), gerido pelo Instituto Serzedello Corrêa.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º Para a deliberação a que se refere o inciso V deste artigo deverá ser ouvida a",
+    "offset_fim": "se refere o inciso V deste artigo deverá ser ouvida a unidade gestora do conteúdo.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 2º Para a deliberação a que se refere o inciso V deste artigo deverá ser ouvida a unidade gestora do conteúdo.\n"
+  },
+  {
+    "titulo": "§ 3º",
+    "offset_inicio": "§ 3º As questões relativas ao uso e às aplicações da logomarca no Portal TCU devem ser dirimidas",
+    "offset_fim": "de Identidade Visual, em consonância com a Portaria-TCU nº 96, de 23 de abril de 2008.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 3º As questões relativas ao uso e às aplicações da logomarca no Portal TCU devem ser dirimidas pelo Comitê de Identidade Visual, em consonância com a Portaria-TCU nº 96, de 23 de abril de 2008."
+  },
+  {
+    "titulo": "§ 4º",
+    "offset_inicio": "§ 4º As deliberações do Comitê Gestor do Portal que impactam o Plano Diretor de Tecnologia da Informação devem ser encaminhadas para exame e priorização pelo Comitê Gestor de Tecnologia da Informação.",
+    "offset_fim": "§ 4º As deliberações do Comitê Gestor do Portal que impactam o Plano Diretor de Tecnologia da Informação devem ser encaminhadas para exame e priorização pelo Comitê Gestor de Tecnologia da Informação.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 4º As deliberações do Comitê Gestor do Portal que impactam o Plano Diretor de Tecnologia da Informação devem ser encaminhadas para exame e priorização pelo Comitê Gestor de Tecnologia da Informação."
+  },
+  {
+    "titulo": "§ 5º",
+    "offset_inicio": "§ 5º As deliberações do Comitê Gestor do Portal que impactam políticas e orientações",
+    "offset_fim": "respectivos comitês temáticos ou à Comissão de Coordenação Geral, conforme o caso.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "§ 5º As deliberações do Comitê Gestor do Portal que impactam políticas e orientações institucionais devem ser submetidas aos respectivos comitês temáticos ou à Comissão de Coordenação Geral, conforme o caso."
+  },
+  {
+    "titulo": "Art. 7º",
+    "offset_inicio": "Art. 7º Cabe ao coordenador do Comitê Gestor do Portal TCU:\n",
+    "offset_fim": "Art. 7º Cabe ao coordenador do Comitê Gestor do Portal TCU:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 7º Cabe ao coordenador do Comitê Gestor do Portal TCU:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - representar e coordenar o Comitê;",
+    "offset_fim": "I - representar e coordenar o Comitê;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "I - representar e coordenar o Comitê;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - organizar pauta, convocar e coordenar as reuniões;",
+    "offset_fim": "II - organizar pauta, convocar e coordenar as reuniões;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "II - organizar pauta, convocar e coordenar as reuniões;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - assinar expedientes em nome do Comitê;\nIV - zelar pelo cumprimento das diretrizes",
+    "offset_fim": "dos conteúdos do portal, e propor ao Comitê Gestor as alterações necessárias.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "III - assinar expedientes em nome do Comitê;\nIV - zelar pelo cumprimento das diretrizes e orientações do Comitê Gestor do Portal, assim como das diretrizes de comunicação do Tribunal afetas ao Portal TCU;\nV - decidir sobre publicações urgentes de conteúdo ou sobre a retirada de publicação não aderente às diretrizes de comunicação do Tribunal, e submeter à homologação do Comitê Gestor;\nVI - articular a definição de unidades gestoras de conteúdo do Portal, e submeter ao Comitê Gestor as hipóteses de conteúdo de abrangência intersetorial;\nVII - aprovar atualizações no portal que não impliquem alteração significativa de leiaute, de identidade visual ou de arquitetura da informação do Portal TCU;\nVIII - autorizar alterações nas áreas de conteúdo em conjunto com as unidades gestoras envolvidas e a Secretaria de Soluções de TI;\nIX - analisar e decidir sobre o encaminhamento de sugestões de melhoria recebidas relativas ao Portal TCU; e\nX - promover avaliação periódica dos conteúdos do portal, e propor ao Comitê Gestor as alterações necessárias.\n"
+  },
+  {
+    "titulo": "Art. 8º",
+    "offset_inicio": "Art. 8º Os procedimentos estabelecidos nesta portaria aplicam-se, no que couber, aos",
+    "offset_fim": "decorrência de relacionamento institucional com outros órgãos e entidades, nacionais e internacionais.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "texto": "Art. 8º Os procedimentos estabelecidos nesta portaria aplicam-se, no que couber, aos portais ou páginas na internet mantidos pelo TCU em decorrência de relacionamento institucional com outros órgãos e entidades, nacionais e internacionais."
+  },
+  {
+    "titulo": "Art. 9º",
+    "offset_inicio": "Art. 9º Páginas criadas na internet para subsidiar a organização e a divulgação de eventos específicos",
+    "offset_fim": "evento serão desativadas em até cento e vinte dias do término do respectivo evento.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 9º Páginas criadas na internet para subsidiar a organização e a divulgação de eventos específicos (hotsites) ou áreas de conteúdo relacionados a ocorrência de determinado evento serão desativadas em até cento e vinte dias do término do respectivo evento.\n"
+  },
+  {
+    "titulo": "§ 1º",
+    "offset_inicio": "§ 1º A permanência das páginas ou áreas de conteúdo de eventos específicos por prazo superior ao mencionado no caput depende de autorização prévia do Comitê Gestor do Portal e será precedida de proposta com as justificativas pertinentes.\n",
+    "offset_fim": "mencionado no caput depende de autorização prévia do Comitê Gestor do Portal e será precedida de proposta com as justificativas pertinentes.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 1º A permanência das páginas ou áreas de conteúdo de eventos específicos por prazo superior ao mencionado no caput depende de autorização prévia do Comitê Gestor do Portal e será precedida de proposta com as justificativas pertinentes.\n"
+  },
+  {
+    "titulo": "§ 2º",
+    "offset_inicio": "§ 2º A elaboração da proposta a que se refere o parágrafo anterior é de responsabilidade",
+    "offset_fim": "Instituto Serzedello Corrêa em conjunto com a Secretaria de Comunicação e da unidade demandante da página.",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "§ 2º A elaboração da proposta a que se refere o parágrafo anterior é de responsabilidade do Instituto Serzedello Corrêa em conjunto com a Secretaria de Comunicação e da unidade demandante da página."
+  },
+  {
+    "titulo": "Art. 10",
+    "offset_inicio": "Art. 10. Fica revogada a Portaria-TCU nº 149, de 16 de junho de 2008.\n",
+    "offset_fim": "Art. 10. Fica revogada a Portaria-TCU nº 149, de 16 de junho de 2008.\n",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 10. Fica revogada a Portaria-TCU nº 149, de 16 de junho de 2008.\n"
+  },
+  {
+    "titulo": "Art. 11",
+    "offset_inicio": "Art. 11. Esta Portaria entra em vigor na data de sua publicação.\nAROLDO CEDRAZ DE OLIVEIRA",
+    "offset_fim": "Art. 11. Esta Portaria entra em vigor na data de sua publicação.\nAROLDO CEDRAZ DE OLIVEIRA",
+    "pagina_inicio": 4,
+    "pagina_fim": 4,
+    "texto": "Art. 11. Esta Portaria entra em vigor na data de sua publicação.\nAROLDO CEDRAZ DE OLIVEIRA"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 71,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 41,
+          "tipo": "englobante",
+          "descricao": "O bloco de Art. 12 (pág. 4), após “serão consideradas as opiniões sobre:”, contém os marcadores de inciso “I - os balanços gerais da União” e “II - a execução orçamentária e a gestão dos recursos públicos federais”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 41,
+          "tipo": "granularidade",
+          "descricao": "Os incisos de Art. 7, Art. 13 e Art. 14 foram segmentados individualmente, mas os incisos I e II de Art. 12 (pág. 4) ficaram agrupados no bloco do artigo."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 4, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “I - os balanços gerais da União;” imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie outro bloco próprio nesse inciso."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21260/NORMA-21260_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Na pág. 4, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “I - os balanços gerais da União;” imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie outro bloco próprio nesse inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 1º A Unidade Técnica especializada...” (pág. 2) também contém o marcador e o texto de “§ 2º O Ministério Público junto ao Tribunal de Contas da União...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 45,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” (pág. 4) também contém o marcador e o texto do inciso “I - tendo sido obtida evidência de auditoria adequada e suficiente...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco de “§ 1º A Unidade Técnica especializada manifestar-se-á...” imediatamente antes de “§ 2º O Ministério Público junto ao Tribunal de Contas da União...” e inicie um bloco próprio nesse parágrafo.\n- Na pág. 4, termine o bloco de “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente...” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “I - os balanços gerais da União;” imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie outro bloco próprio nesse inciso."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21260/NORMA-21260_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Na pág. 2, termine o bloco de “§ 1º A Unidade Técnica especializada manifestar-se-á...” imediatamente antes de “§ 2º O Ministério Público junto ao Tribunal de Contas da União...” e inicie um bloco próprio nesse parágrafo.\n- Na pág. 4, termine o bloco de “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente...” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “I - os balanços gerais da União;” imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie outro bloco próprio nesse inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 13,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"a) os que não estão restritos...\" contém também o marcador e o texto da alínea irmã \"b) se estiverem restritos...\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 48,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 2º A opinião sobre os balanços gerais da União será adversa...\" contém também o marcador e o texto de \"§ 3º O Tribunal ficará impossibilitado de emitir opinião...\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco de “§ 1º A Unidade Técnica especializada manifestar-se-á...” imediatamente antes de “§ 2º O Ministério Público junto ao Tribunal de Contas da União...” e inicie um bloco próprio nesse parágrafo.\n- Na pág. 4, termine o bloco de “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente...” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;”; em seguida, termine o bloco desse inciso imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie blocos próprios em ambos os incisos.\n- Na pág. 2, termine o bloco de “a) os que não estão restritos a elementos...” imediatamente antes de “b) se estiverem restritos...” e inicie um bloco próprio nessa alínea.\n- Na pág. 4, termine o bloco de “§ 2º A opinião sobre os balanços gerais da União será adversa...” imediatamente antes de “§ 3º O Tribunal ficará impossibilitado de emitir opinião...” e inicie um bloco próprio nesse parágrafo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21260/NORMA-21260_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "- Na pág. 2, termine o bloco de “§ 1º A Unidade Técnica especializada manifestar-se-á...” imediatamente antes de “§ 2º O Ministério Público junto ao Tribunal de Contas da União...” e inicie um bloco próprio nesse parágrafo.\n- Na pág. 4, termine o bloco de “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente...” e inicie um bloco próprio nesse inciso.\n- Na pág. 4, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;”; em seguida, termine o bloco desse inciso imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie blocos próprios em ambos os incisos.\n- Na pág. 2, termine o bloco de “a) os que não estão restritos a elementos...” imediatamente antes de “b) se estiverem restritos...” e inicie um bloco próprio nessa alínea.\n- Na pág. 4, termine o bloco de “§ 2º A opinião sobre os balanços gerais da União será adversa...” imediatamente antes de “§ 3º O Tribunal ficará impossibilitado de emitir opinião...” e inicie um bloco próprio nesse parágrafo.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21260/NORMA-21260_ciclo4.json"
+  }
+]

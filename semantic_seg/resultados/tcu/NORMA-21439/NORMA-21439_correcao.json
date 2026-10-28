@@ -1,0 +1,14 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 22,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21439/NORMA-21439_ciclo1.json"
+  }
+]

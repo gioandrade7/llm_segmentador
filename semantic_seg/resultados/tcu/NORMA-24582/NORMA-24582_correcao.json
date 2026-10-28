@@ -1,0 +1,106 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 44,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 23,
+          "tipo": "sequencia",
+          "descricao": "Após o inciso \"I - prevenção\" do Art. 6º (pág. 2), o próximo bloco inicia diretamente em \"III - correção\", sem que haja bloco ou texto correspondente ao inciso II."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"V - realizar campanhas periódicas\" do Art. 9º (pág. 3) também contém os marcadores e textos dos incisos irmãos VI, VII, VIII e IX, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 40,
+          "tipo": "granularidade",
+          "descricao": "No Art. 9º, os incisos I a IV e X foram segmentados individualmente, mas os incisos V a IX foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 6º (pág. 2), verifique a continuidade da lista de fases entre \"I - prevenção\" e \"III - correção\"; identifique e abra um bloco próprio para o inciso II, caso ele esteja presente no texto fonte, sem saltar sua numeração.\n- No Art. 9º (pág. 3), termine o bloco de \"V - realizar campanhas periódicas\" imediatamente antes de \"VI - comunicar valores e padrões de integridade\" e inicie um bloco novo no inciso VI.\n- No Art. 9º (pág. 3), inicie blocos próprios em \"VII - estimular a divulgação de informações de interesse público\", \"VIII - avaliar periodicamente a suficiência dos canais específicos\" e \"IX - estimular ações preventivas relativas a conflitos de interesses\", encerrando cada inciso antes do marcador do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-24582/NORMA-24582_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 58,
+    "insights_aplicados": "- No Art. 6º (pág. 2), verifique a continuidade da lista de fases entre \"I - prevenção\" e \"III - correção\"; identifique e abra um bloco próprio para o inciso II, caso ele esteja presente no texto fonte, sem saltar sua numeração.\n- No Art. 9º (pág. 3), termine o bloco de \"V - realizar campanhas periódicas\" imediatamente antes de \"VI - comunicar valores e padrões de integridade\" e inicie um bloco novo no inciso VI.\n- No Art. 9º (pág. 3), inicie blocos próprios em \"VII - estimular a divulgação de informações de interesse público\", \"VIII - avaliar periodicamente a suficiência dos canais específicos\" e \"IX - estimular ações preventivas relativas a conflitos de interesses\", encerrando cada inciso antes do marcador do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 17,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 4º São princípios da integridade no TCU:\" (pág. 2) contém também os incisos I a VI, embora os incisos dos demais artigos estejam segmentados em blocos próprios."
+        },
+        {
+          "bloco": 17,
+          "tipo": "granularidade",
+          "descricao": "Os incisos do Art. 4º foram agrupados no bloco do artigo, enquanto os incisos dos Arts. 2º, 3º, 5º a 9º foram separados individualmente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º (pág. 2), termine o bloco de \"Art. 4º São princípios da integridade no TCU:\" imediatamente antes de \"I - supremacia do interesse público sobre o interesse privado\" e abra um bloco próprio para cada inciso I a VI, encerrando cada um antes do marcador do inciso seguinte.\n- No Art. 6º (pág. 2), verifique a continuidade da lista de fases entre \"I - prevenção\" e \"III - correção\"; identifique e abra um bloco próprio para o inciso II, caso ele esteja presente no texto fonte, sem saltar sua numeração.\n- No Art. 9º (pág. 3), termine o bloco de \"V - realizar campanhas periódicas\" imediatamente antes de \"VI - comunicar valores e padrões de integridade\" e inicie um bloco novo no inciso VI.\n- No Art. 9º (pág. 3), inicie blocos próprios em \"VII - estimular a divulgação de informações de interesse público\", \"VIII - avaliar periodicamente a suficiência dos canais específicos\" e \"IX - estimular ações preventivas relativas a conflitos de interesses\", encerrando cada inciso antes do marcador do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-24582/NORMA-24582_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 63,
+    "insights_aplicados": "- No Art. 4º (pág. 2), termine o bloco de \"Art. 4º São princípios da integridade no TCU:\" imediatamente antes de \"I - supremacia do interesse público sobre o interesse privado\" e abra um bloco próprio para cada inciso I a VI, encerrando cada um antes do marcador do inciso seguinte.\n- No Art. 6º (pág. 2), verifique a continuidade da lista de fases entre \"I - prevenção\" e \"III - correção\"; identifique e abra um bloco próprio para o inciso II, caso ele esteja presente no texto fonte, sem saltar sua numeração.\n- No Art. 9º (pág. 3), termine o bloco de \"V - realizar campanhas periódicas\" imediatamente antes de \"VI - comunicar valores e padrões de integridade\" e inicie um bloco novo no inciso VI.\n- No Art. 9º (pág. 3), inicie blocos próprios em \"VII - estimular a divulgação de informações de interesse público\", \"VIII - avaliar periodicamente a suficiência dos canais específicos\" e \"IX - estimular ações preventivas relativas a conflitos de interesses\", encerrando cada inciso antes do marcador do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 8,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em \"V - risco de integridade\" (pág. 1) também contém o marcador e o texto inicial do inciso \"VI - partes interessadas\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 31,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em \"VI - apropriar as informações geradas pelo sistema de integridade\" (pág. 2) também contém o marcador e o texto inicial do inciso \"VII - estabelecer mecanismos de monitoramento e controle\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), termine o bloco do inciso \"V - risco de integridade\" imediatamente antes de \"VI - partes interessadas\" e inicie um bloco próprio para o inciso VI.\n- No Art. 4º (pág. 2), mantenha o bloco de \"Art. 4º São princípios da integridade no TCU:\" encerrado imediatamente antes de \"I - supremacia do interesse público sobre o interesse privado\" e mantenha um bloco próprio para cada inciso I a VI.\n- No Art. 5º (pág. 2), termine o bloco do inciso \"VI - apropriar as informações geradas pelo sistema de integridade\" imediatamente antes de \"VII - estabelecer mecanismos de monitoramento e controle\" e inicie um bloco próprio para o inciso VII.\n- No Art. 6º (pág. 2), mantenha a separação da lista de fases em blocos próprios para os incisos I - prevenção, II - detecção, III - correção e IV - responsabilização, sem saltar a numeração.\n- No Art. 9º (pág. 3), mantenha blocos próprios e consecutivos para cada inciso I a X, em especial do \"V - realizar campanhas periódicas\" até o \"X - verificar o funcionamento de controles internos\", encerrando cada bloco antes do marcador do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-24582/NORMA-24582_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 65,
+    "insights_aplicados": "- No Art. 2º (pág. 1), termine o bloco do inciso \"V - risco de integridade\" imediatamente antes de \"VI - partes interessadas\" e inicie um bloco próprio para o inciso VI.\n- No Art. 4º (pág. 2), mantenha o bloco de \"Art. 4º São princípios da integridade no TCU:\" encerrado imediatamente antes de \"I - supremacia do interesse público sobre o interesse privado\" e mantenha um bloco próprio para cada inciso I a VI.\n- No Art. 5º (pág. 2), termine o bloco do inciso \"VI - apropriar as informações geradas pelo sistema de integridade\" imediatamente antes de \"VII - estabelecer mecanismos de monitoramento e controle\" e inicie um bloco próprio para o inciso VII.\n- No Art. 6º (pág. 2), mantenha a separação da lista de fases em blocos próprios para os incisos I - prevenção, II - detecção, III - correção e IV - responsabilização, sem saltar a numeração.\n- No Art. 9º (pág. 3), mantenha blocos próprios e consecutivos para cada inciso I a X, em especial do \"V - realizar campanhas periódicas\" até o \"X - verificar o funcionamento de controles internos\", encerrando cada bloco antes do marcador do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 50,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"IV - Secretaria-Geral Adjunta de Administração (Adgedam).\" também contém o marcador e o texto do \"§ 1º Ato do Presidente instituirá o regulamento da CIC...\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), termine o bloco do inciso \"V - risco de integridade\" imediatamente antes de \"VI - partes interessadas\" e inicie um bloco próprio para o inciso VI; no Art. 4º (pág. 2), mantenha o bloco de \"Art. 4º São princípios da integridade no TCU:\" encerrado antes do inciso I e mantenha blocos próprios para os incisos I a VI.\n- No Art. 5º (pág. 2), termine o bloco do inciso \"VI - apropriar as informações geradas pelo sistema de integridade\" imediatamente antes de \"VII - estabelecer mecanismos de monitoramento e controle\" e inicie um bloco próprio para o inciso VII.\n- No Art. 6º (pág. 2), mantenha a separação da lista de fases em blocos próprios para os incisos I - prevenção, II - detecção, III - correção e IV - responsabilização, sem saltar a numeração.\n- No Art. 8º (pág. 3), termine o bloco do inciso \"IV - Secretaria-Geral Adjunta de Administração (Adgedam).\" antes de \"§ 1º Ato do Presidente instituirá o regulamento da CIC\" e inicie um bloco próprio para o § 1º; mantenha também o § 2º em bloco próprio.\n- No Art. 9º (págs. 3–4), mantenha blocos próprios e consecutivos para cada inciso I a X, em especial do \"V - realizar campanhas periódicas\" até o \"X - verificar o funcionamento de controles internos\", encerrando cada bloco antes do marcador do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-24582/NORMA-24582_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 66,
+    "insights_aplicados": "- No Art. 2º (pág. 1), termine o bloco do inciso \"V - risco de integridade\" imediatamente antes de \"VI - partes interessadas\" e inicie um bloco próprio para o inciso VI; no Art. 4º (pág. 2), mantenha o bloco de \"Art. 4º São princípios da integridade no TCU:\" encerrado antes do inciso I e mantenha blocos próprios para os incisos I a VI.\n- No Art. 5º (pág. 2), termine o bloco do inciso \"VI - apropriar as informações geradas pelo sistema de integridade\" imediatamente antes de \"VII - estabelecer mecanismos de monitoramento e controle\" e inicie um bloco próprio para o inciso VII.\n- No Art. 6º (pág. 2), mantenha a separação da lista de fases em blocos próprios para os incisos I - prevenção, II - detecção, III - correção e IV - responsabilização, sem saltar a numeração.\n- No Art. 8º (pág. 3), termine o bloco do inciso \"IV - Secretaria-Geral Adjunta de Administração (Adgedam).\" antes de \"§ 1º Ato do Presidente instituirá o regulamento da CIC\" e inicie um bloco próprio para o § 1º; mantenha também o § 2º em bloco próprio.\n- No Art. 9º (págs. 3–4), mantenha blocos próprios e consecutivos para cada inciso I a X, em especial do \"V - realizar campanhas periódicas\" até o \"X - verificar o funcionamento de controles internos\", encerrando cada bloco antes do marcador do inciso seguinte.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-24582/NORMA-24582_ciclo5.json"
+  }
+]

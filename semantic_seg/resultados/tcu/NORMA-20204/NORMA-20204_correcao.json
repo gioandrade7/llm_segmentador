@@ -1,0 +1,42 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 14,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I- Primeira Etapa:\" (pág. 1) também contém o marcador de alínea \"a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:\", que deve iniciar bloco próprio antes do item \"1.\"."
+        },
+        {
+          "bloco": 16,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II- Segunda Etapa:\" (pág. 1) engloba as alíneas \"a) contrato assinado...\" e \"b) justificativas técnicas...\", embora cada alínea deva iniciar seu próprio bloco."
+        },
+        {
+          "bloco": 16,
+          "tipo": "granularidade",
+          "descricao": "No art. 4º, as alíneas da Primeira Etapa e da Segunda Etapa foram agrupadas com seus incisos, enquanto as alíneas do art. 5º foram segmentadas individualmente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"I- Primeira Etapa:\" imediatamente antes de \"a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:\" e inicie um bloco próprio para essa alínea; mantenha o item \"1. planilha de preços do contrato...\" como bloco próprio.\n- Na pág. 1, termine o bloco do inciso \"II- Segunda Etapa:\" imediatamente antes de \"a) contrato assinado e a comprovação de publicação...\"; inicie blocos separados para as alíneas \"a) contrato assinado...\" e \"b) justificativas técnicas de alterações...\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20204/NORMA-20204_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- Na pág. 1, termine o bloco do inciso \"I- Primeira Etapa:\" imediatamente antes de \"a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:\" e inicie um bloco próprio para essa alínea; mantenha o item \"1. planilha de preços do contrato...\" como bloco próprio.\n- Na pág. 1, termine o bloco do inciso \"II- Segunda Etapa:\" imediatamente antes de \"a) contrato assinado e a comprovação de publicação...\"; inicie blocos separados para as alíneas \"a) contrato assinado...\" e \"b) justificativas técnicas de alterações...\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20204/NORMA-20204_ciclo2.json"
+  }
+]

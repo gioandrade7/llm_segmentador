@@ -1,0 +1,305 @@
+%%
+Gabarito de segmentação — NORMA-6783 (Portaria SEGEP n° 32/2010)
+Texto-fonte: text_extraction/out/tcu/NORMA-6783
+Status: gerado por semantic_seg/dataset_tcu.py a partir do HTML de docs.csv (um <p> por linha); não conferido à mão.
+Estrato: plana × grande (30185 chars) · partição: teste
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`; indentação de 2 espaços por nível
+- Tipos: epígrafe (do início até o primeiro dispositivo: título, ementa, preâmbulo e considerandos), título,
+  capítulo e seção (com a rubrica), artigo, parágrafo (§ N / Parágrafo único), inciso (I -), alínea (a)),
+  item (1.), fecho (local/data e assinaturas)
+- Cada <p> que abre com marcador é nó; um <p> sem marcador pertence ao nó anterior
+- Texto citado de outra norma (do <p> que abre aspas ao que as fecha, ou "(NR)") pertence à unidade que o
+  cita: seus Art./§/incisos não são nós
+%%
+
+- Documento
+  - [epígrafe] O SECRETÁRIO DE GESTÃO DE PESSOAS, no uso de suas
+  - [artigo] Art. 1º A organização interna, as competências e
+  - [artigo] Art. 2º A Segep tem por finalidade propor e
+  - [artigo] Art. 3º Compete à Secretaria de Gestão de Pessoas:
+    - [inciso] I-propor e coordenar a definição de políticas de
+    - [inciso] II-planejar, organizar, dirigir, executar e
+    - [inciso] III-planejar, organizar e tornar operacional as
+    - [inciso] IV-tornar operacional a assistência à saúde;
+    - [inciso] V-planejar, promover, coordenar e acompanhar
+    - [inciso] VI-coordenar as ações relativas à valorização do
+    - [inciso] VII-promover e estimular o reconhecimento de
+    - [inciso] VIII-planejar, coordenar, acompanhar e desenvolver
+    - [inciso] IX-opinar acerca de questões pertinentes à
+    - [inciso] X-tornar operacional os procedimentos relativos a
+    - [inciso] XI-acompanhar, atualizar e divulgar atos
+    - [inciso] XII-coordenar e executar a elaboração da folha de
+    - [inciso] XIII-gerenciar e assegurar a atualização das bases
+    - [inciso] XIV-elaborar relatórios periódicos inerentes à
+    - [inciso] XV-coordenar o Programa de Assistência à Mãe
+  - [artigo] Art. 4º A Segep tem a seguinte estrutura:
+    - [inciso] I-Assessoria (ASS) ;
+    - [inciso] II-Divisão de Informações, Gestão do Desempenho e
+      - [alínea] a) Central de Atendimento ao Servidor (CAS) ;
+      - [alínea] b) Serviço de Gestão do Desempenho (SGD) ;
+      - [alínea] c) Serviço de Gestão da Movimentação, das Funções
+    - [inciso] III-Divisão de Legislação de Pessoal (Dilpe) :
+      - [alínea] a) Serviço de Análise e Concessão de Direitos
+      - [alínea] b) Serviço de Aposentadorias e Pensões (SAP) ;
+    - [inciso] IV-Divisão de Pagamento de Pessoal (Dipag) :
+      - [alínea] a) Serviço de Conformidade de Pagamento (SCO) ;
+      - [alínea] b) Serviço de Pagamento de Ativos (SPA) ;
+      - [alínea] c) Serviço de Pagamento de Inativos e Pensionistas
+    - [inciso] V-Divisão de Saúde (Dsaud) :
+      - [alínea] a) Serviço Ambulatorial de Saúde (SAS) ;
+      - [alínea] b) Serviço de Promoção de Saúde e Bem-Estar (SBE)
+      - [alínea] c) Serviço de Perícia em Saúde (SPS) ;
+      - [alínea] d) Serviço de Saúde Ocupacional (SAO) .
+    - [parágrafo] § 1º A Segep contará com responsáveis técnicos
+    - [parágrafo] § 2º Ato do Secretário de Gestão de Pessoas
+  - [artigo] Art. 5º São atividades comuns a todas as divisões
+    - [inciso] I-constituir, instruir, autuar, receber,
+    - [inciso] II-prestar informações no âmbito de sua área de
+    - [inciso] III-guardar, controlar e zelar pela integridade
+    - [inciso] IV-acompanhar o inventário dos bens existentes na
+    - [inciso] V-elaborar e atualizar manual de rotinas e
+    - [inciso] VI-elaborar relatórios de suas atividades;
+    - [inciso] VII-elaborar extratos referentes à publicação de
+    - [inciso] VIII-consolidar e solicitar materiais e serviços
+    - [inciso] IX-propor normas e rotinas para as atividades
+  - [artigo] Art. 6º Compete à Assessoria:
+    - [inciso] I-elaborar pareceres, pronunciamentos, expedientes
+    - [inciso] II-desenvolver estudos técnicos e pesquisas;
+    - [inciso] III-instruir processos que lhe sejam distribuídos
+    - [inciso] IV-elaborar, em parceria com a respectiva divisão,
+    - [inciso] V-desenvolver outras atividades que lhe sejam
+    - [inciso] VI-encaminhar matérias de interesse da Segep para
+    - [inciso] VII-elaborar, em parceria com as divisões,
+  - [artigo] Art. 7º Compete à Divisão de Informações, Gestão
+  - [artigo] Art. 8º Compete à Central de Atendimento ao
+    - [inciso] I-orientar os servidores quanto à concessão de
+    - [inciso] II-recepcionar e atender pessoal interno e
+    - [inciso] III-constituir, autuar, receber, registrar,
+    - [inciso] IV-coordenar a atualização dos manuais de Ingresso
+    - [inciso] V-fornecer indicadores gerenciais acerca dos
+    - [inciso] VI-realizar o recadastramento de inativos e
+    - [inciso] VII-gerenciar as informações relativas ao
+    - [inciso] VIII-providenciar a emissão de carteiras de
+    - [inciso] IX-receber e conferir as declarações de bens e
+    - [inciso] X-expedir declarações e demais documentos
+    - [inciso] XI-registrar falecimento de servidores aposentados
+    - [inciso] XII-realizar pesquisa de satisfação quantos aos
+    - [inciso] XIII-orientar e normatizar os procedimentos de
+    - [inciso] XIV-acompanhar o contrato com a empresa
+    - [inciso] XV-receber e conferir a documentação referente à
+    - [inciso] XVI-efetuar o cadastro e a atualização dos dados
+    - [inciso] XVII-requisitar à Dsaud exame de sanidade e
+    - [inciso] XVIII-cadastrar as informações referentes à data
+  - [artigo] Art. 9º Compete ao Serviço de Gestão do
+    - [inciso] I-instruir processos relativos à progressão
+    - [inciso] II-tornar operacional a avaliação individual de
+    - [inciso] III-instruir e submeter à Comissão de
+    - [inciso] IV-autuar e acompanhar os processos avaliativos de
+    - [inciso] V-adotar as providências necessárias à homologação
+    - [inciso] VI-gerir a solução de TI "indicador eletrônico",
+    - [inciso] VII-fornecer relatórios gerenciais relativos a
+    - [inciso] VIII-controlar os percentuais de utilização de
+    - [inciso] IX-preparar, para encaminhamento à Comissão de
+    - [inciso] X-gerenciar e operacionalizar a gestão de
+    - [inciso] XI-gerenciar e operacionalizar o programa
+  - [artigo] Art. 10. Compete ao Serviço de Gestão da
+    - [inciso] I-elaborar os atos e adotar as providências
+      - [alínea] a) nomeação;
+      - [alínea] b) readaptação;
+      - [alínea] c) reversão;
+      - [alínea] d) aproveitamento;
+      - [alínea] e) reintegração;
+      - [alínea] f) recondução.
+    - [inciso] II-elaborar expediente necessário à posse em cargo
+    - [inciso] III-apoiar as atividades referentes à alocação e
+    - [inciso] IV-atualizar o quadro de pessoal do TCU,
+    - [inciso] V-elaborar os atos e adotar as providências
+      - [alínea] a) exoneração;
+      - [alínea] b) demissão;
+      - [alínea] c) readaptação;
+      - [alínea] d) posse em outro cargo inacumulável;
+      - [alínea] e) falecimento.
+    - [inciso] VI-registrar no Sistema de Apreciação e Registro
+    - [inciso] VII-gerenciar e operacionalizar a gestão de clima
+    - [inciso] VIII-atualizar os registros funcionais dos
+    - [inciso] IX-atualizar as pastas de assentamentos
+    - [inciso] X-controlar a fruição dos períodos de recesso
+    - [inciso] XI-registrar e controlar a cessão de servidores e
+    - [inciso] XII-planejar, organizar e tornar operacional as
+    - [inciso] XIII-controlar as remoções a pedido,
+    - [inciso] XIV-efetuar, anualmente, em parceria com a Divisão
+    - [inciso] XV-elaborar ato de designação e dispensa de
+    - [inciso] XVI-elaborar ato de designação, mediante
+    - [inciso] XVII-atualizar os registros de funções, providas e
+    - [inciso] XVIII-registrar em sistema informatizado e
+    - [inciso] XIX-zelar pela guarda das declarações de bens e
+    - [inciso] XX-prestar as informações relativas a férias e
+    - [inciso] XXI-expedir certidões e demais documentos
+  - [artigo] Art. 11. Compete à Divisão de Legislação de
+  - [artigo] Art. 12. Compete ao Serviço de Análise e Concessão
+    - [inciso] I-examinar a legalidade e opinar a respeito do
+      - [alínea] a) averbação de tempo de serviço e concessão do
+      - [alínea] b) averbação de tempo de exercício em funções
+      - [alínea] c) reconhecimento de direito a férias adquiridas
+      - [alínea] d) adicional por serviço extraordinário;
+      - [alínea] e) dispensa de ponto eletrônico de freqüência;
+      - [alínea] f) concessão de abono permanência;
+      - [alínea] g) afastamentos:
+        - [item] 1. para servir em outro órgão ou entidade,
+        - [item] 2. para exercício de mandato eletivo;
+        - [item] 3. para estudo ou missão no exterior;
+        - [item] 4. para participar de competição esportiva,
+        - [item] 5. por motivo de convocação para júri e para
+        - [item] 6. para participar de programa de formação;
+      - [alínea] h) concessão de horário especial;
+      - [alínea] i) estágio supervisionado;
+      - [alínea] j) auxílio-natalidade;
+      - [alínea] k) auxílio-reclusão;
+      - [alínea] l) licenças:
+        - [item] 1. por motivo de afastamento do cônjuge ou do
+        - [item] 2. para o serviço militar;
+        - [item] 3. para atividade política;
+        - [item] 4. prêmio por assiduidade: concessão, gozo e
+        - [item] 5. para capacitação;
+        - [item] 6. para tratar de interesses particulares;
+        - [item] 7. para o desempenho de mandato classista;
+        - [item] 8. adotante;
+      - [alínea] m) assistência pré-escolar;
+      - [alínea] n) concessão de ajuda de custo;
+      - [alínea] o) concessão de diárias;
+      - [alínea] p) indenização de transporte;
+      - [alínea] q) auxílio-moradia;
+      - [alínea] r) adicionais de insalubridade, periculosidade e
+      - [alínea] s) adicional noturno;
+      - [alínea] t) designação de beneficiários de servidores
+      - [alínea] u) auxílio-transporte.
+    - [inciso] II-orientar os servidores quanto à concessão de
+    - [inciso] III-efetuar o registro de dependentes no sistema
+    - [inciso] IV-atualizar registros funcionais de servidores
+    - [inciso] V-auxiliar a Digem no levantamento de informações
+    - [inciso] VI-analisar o direito e inscrever beneficiários no
+    - [inciso] VII-opinar acerca de questões pertinentes à
+  - [artigo] Art. 13. Compete ao Serviço de Aposentadorias e
+    - [inciso] I-examinar a legalidade e opinar acerca do mérito
+      - [alínea] a) concessão e revisão de aposentadoria;
+      - [alínea] b) concessão e revisão de pensões civis e montepio
+      - [alínea] c) concessão de medalha-prêmio;
+      - [alínea] d) reversão de cotas de pensão civil;
+      - [alínea] e) concessão de auxílio-funeral;
+      - [alínea] f) designação de beneficiários de servidores
+    - [inciso] II-efetivar levantamentos e manter os registros
+    - [inciso] III-prestar informações à clientela interna a
+    - [inciso] IV-manter arquivo dos processos relativos a
+    - [inciso] V-registrar em sistema informatizado os dados
+    - [inciso] VI-expedir formulário referente ao posicionamento
+    - [inciso] VII-cadastrar, no Sisac, os dados relativos à
+  - [artigo] Art. 14. Compete à Divisão de Pagamento de Pessoal
+    - [parágrafo] Parágrafo único. Compete ao Gerente de Divisão de
+      - [inciso] I-auxiliar a Secretaria de Tecnologia da
+      - [inciso] II-elaborar a Relação Anual de Informações Sociais
+      - [inciso] III-arquivar os pedidos de fruição de férias de
+      - [inciso] IV-fornecer informações anuais de rendimentos
+  - [artigo] Art. 15. Compete ao Serviço de Conformidade de
+    - [inciso] I-acompanhar e supervisionar os registros
+    - [inciso] II-proceder, mensalmente, à análise e à
+    - [inciso] III-elaborar relatórios de informações gerenciais
+    - [inciso] IV-fornecer informações necessárias ao pagamento
+    - [inciso] V-calcular direitos retroativos;
+    - [inciso] VI-efetuar os cálculos das Vantagens Pessoais Não
+    - [inciso] VII-efetuar os cálculos dos Adicionais de Tempo de
+    - [inciso] VIII-efetuar os cálculos do adicional noturno e
+    - [inciso] IX-administrar o Sistema "Repag" de atualização
+    - [inciso] X-efetuar os cálculos e o ressarcimento de
+    - [inciso] XI-efetuar os cálculos dos valores de
+    - [inciso] XII-efetuar o pagamento de auxílio-funeral de
+  - [artigo] Art. 16. Compete ao Serviço de Pagamento de
+    - [inciso] I-elaborar a folha de pagamento de autoridades e
+    - [inciso] II-atualizar os registros financeiros relativos a
+    - [inciso] III-encaminhar resumo da folha de pagamento de
+    - [inciso] IV-encaminhar relatórios dos valores líquidos
+    - [inciso] V-atualizar o registro financeiro funcional de
+    - [inciso] VI-efetuar registro de dependentes de autoridades
+    - [inciso] VII-emitir declarações de rendimentos e de
+    - [inciso] VIII-elaborar folha de pagamento suplementar para
+    - [inciso] IX-informar às autoridades e aos servidores ativos
+    - [inciso] X-adotar as medidas necessárias à realização dos
+    - [inciso] XI-tornar operacional as atividades necessárias ao
+    - [inciso] XII-atualizar registros funcionais de servidores
+    - [inciso] XIII-orientar os servidores quanto aos
+    - [inciso] XIV-orientar as unidades do TCU quanto ao
+    - [inciso] XV-controlar os pedidos de fruição e interrupção
+  - [artigo] Art. 17. Compete ao Serviço de Pagamento de
+    - [inciso] I-elaborar folha de pagamento de autoridades e
+    - [inciso] II-organizar e manter atualizados os registros
+    - [inciso] III-averbar os empréstimos em consignação de
+    - [inciso] IV-confeccionar e enviar os contracheques das
+    - [inciso] V-encaminhar resumo da folha de pagamento de
+    - [inciso] VI-encaminhar relatórios dos valores líquidos
+    - [inciso] VII-tornar disponível às entidades consignatárias
+    - [inciso] VIII-fiscalizar o cumprimento dos convênios
+    - [inciso] IX-efetuar cálculos, preparar os respectivos
+    - [inciso] X-alterar o registro financeiro funcional de
+    - [inciso] XI-manter arquivo dos processos relativos,
+    - [inciso] XII-preencher formulário referente a
+    - [inciso] XIII-elaborar folha de pagamento suplementar de
+    - [inciso] XIV-emitir declarações de rendimentos e de
+    - [inciso] XV-informar a autoridades e servidores inativos e
+    - [inciso] XVI-recadastrar autoridades e servidores inativos
+    - [inciso] XVII-suspender pagamentos de proventos de
+    - [inciso] XVIII-suspender pagamentos de proventos de
+  - [artigo] Art. 18. Compete à Divisão de Saúde planejar,
+  - [artigo] Art. 19. Compete ao Serviço Ambulatorial de Saúde:
+    - [inciso] I-prestar assistência direta à saúde de
+    - [inciso] II-realizar consultas e prestar pronto-atendimento
+    - [inciso] III-administrar a execução das atividades
+    - [inciso] IV-cumprir a regulamentação do Tribunal relativa
+    - [inciso] V-analisar processos referentes à área de atuação
+    - [inciso] VI-estabelecer escala de pronto-atendimento dos
+    - [inciso] VII-propor normas e rotinas para as atividades
+    - [inciso] VIII-encaminhar à Dsaud estatística mensal das
+  - [artigo] Art. 20. Compete ao Serviço de Promoção de Saúde e
+    - [inciso] I-desenvolver programas destinados à prevenção de
+    - [inciso] II-propor e coordenar ações que objetivem a
+    - [inciso] III-acolher e orientar servidores e dependentes
+    - [inciso] IV-orientar os gestores em relação às situações no
+    - [inciso] V-prestar informações acerca dos encaminhamentos a
+    - [inciso] VI-coordenar e executar as atividades do Programa
+    - [inciso] VII-operacionalizar as atividades do Programa de
+    - [inciso] VIII-acompanhar e avaliar todas as etapas que
+    - [inciso] IX-acompanhar os servidores assistidos pela
+      - [alínea] a) no retorno ao trabalho;
+      - [alínea] b) no processo de reabilitação profissional;
+    - [inciso] X-encaminhar à Dsaud estatística mensal das
+  - [artigo] Art. 21. Compete ao Serviço de Saúde Ocupacional:
+    - [inciso] I-coordenar a realização de exames médicos
+    - [inciso] II-realizar o mapeamento institucional das
+    - [inciso] III-organizar e manter a guarda e a preservação
+    - [inciso] IV-coordenar o Exame Periódico de Saúde;
+    - [inciso] V-gerenciar o sistema informatizado de saúde
+    - [inciso] VI-constituir e coordenar núcleo que avaliará as
+    - [inciso] VII-realizar avaliações para subsidiar decisões
+    - [inciso] VIII-encaminhar à Dsaud estatística mensal das
+  - [artigo] Art. 22. Compete ao Serviço de Perícia em Saúde:
+    - [inciso] I-orientar autoridades e servidores quanto aos
+    - [inciso] II-realizar os procedimentos necessários à
+    - [inciso] III-coordenar e realizar perícias, por perito
+    - [inciso] IV-adotar as providências necessárias à realização
+    - [inciso] V-homologar atestados de saúde não oficiais;
+    - [inciso] VI-organizar e manter a guarda e a preservação do
+    - [inciso] VII-realizar avaliação social para fins de licença
+    - [inciso] VIII-fazer acompanhamento psicossocial de
+    - [inciso] IX-encaminhar à Dsaud estatística mensal das
+  - [artigo] Art. 23. Compete, ainda, aos chefes de serviço e
+    - [inciso] I-estimular e orientar o desenvolvimento de sua
+    - [inciso] II-promover ambiente de cordialidade, confiança e
+    - [inciso] III-apoiar o desenvolvimento e a manutenção do
+    - [inciso] IV-reconhecer e celebrar com regularidade as
+    - [inciso] V-estabelecer gestão transparente e participativa;
+    - [inciso] VI-identificar e desenvolver habilidades de
+    - [inciso] VII-empenhar-se na obtenção de recursos e
+    - [inciso] VIII-realizar lançamentos manuais e corrigir
+  - [artigo] Art. 24. Esta Portaria entra em vigor na data de
+  - [artigo] Art. 25. Fica revogada a Portaria-Segep nº 107, de
+  - [fecho] FERNANDO SILVEIRA CAMARGO Secretário

@@ -1,0 +1,181 @@
+%%
+Gabarito de segmentação — NORMA-5421 (Portaria ADADMIN n° 1/2012)
+Texto-fonte: text_extraction/out/tcu/NORMA-5421
+Status: gerado por semantic_seg/dataset_tcu.py a partir do HTML de docs.csv (um <p> por linha); não conferido à mão.
+Estrato: plana × grande (22156 chars) · partição: dev
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`; indentação de 2 espaços por nível
+- Tipos: epígrafe (do início até o primeiro dispositivo: título, ementa, preâmbulo e considerandos), título,
+  capítulo e seção (com a rubrica), artigo, parágrafo (§ N / Parágrafo único), inciso (I -), alínea (a)),
+  item (1.), fecho (local/data e assinaturas)
+- Cada <p> que abre com marcador é nó; um <p> sem marcador pertence ao nó anterior
+- Texto citado de outra norma (do <p> que abre aspas ao que as fecha, ou "(NR)") pertence à unidade que o
+  cita: seus Art./§/incisos não são nós
+%%
+
+- Documento
+  - [epígrafe] O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO, no uso de
+  - [artigo] Art. 1º As competências, a organização, o
+  - [artigo] Art. 2º A Secretaria-Adjunta de Administração tem
+  - [artigo] Art. 3º Para os efeitos desta norma, entende-se
+  - [artigo] Art. 4º Compete à Secretaria-Adjunta de
+    - [inciso] I - consolidar as propostas das unidades
+    - [inciso] II - elaborar o Plano Diretor de Administração, em
+    - [inciso] III - realizar o desdobramento, no âmbito das
+    - [inciso] IV - orientar as demais unidades integrantes da
+    - [inciso] V - coordenar a atualização de normas e manuais no
+    - [inciso] VI - coordenar o desenvolvimento, a
+    - [inciso] VII - promover a articulação entre as unidades
+    - [inciso] VIII - coordenar a gestão e o aprimoramento das
+    - [inciso] IX - organizar o encontro de chefes de SA e de
+    - [inciso] X - disseminar boas práticas administrativas nas
+    - [inciso] XI - coordenar o atendimento das demandas
+    - [inciso] XII - tomar providências técnicas para apurar
+    - [inciso] XIII - publicar atos administrativos do TCU no
+    - [inciso] XIV - prestar apoio técnico e operacional às
+    - [inciso] XV - desenvolver outras atividades inerentes à sua
+  - [artigo] Art. 5º A Secretaria-Adjunta de Administração tem
+    - [inciso] I - Assessoria (ASS) ;
+    - [inciso] II - Diretoria de Apoio Estratégico (Dapes) ;
+    - [inciso] III - Comissão Disciplinar Permanente (CDP) ;
+    - [inciso] IV - Gerências de Processos:
+      - [alínea] a) Gerência de Publicação de Atos Administrativos
+      - [alínea] b) Gerência de Diárias e Passagens (Gdip) ; e
+      - [alínea] c) Gerência de Patrimônio, Pessoal, Processos e
+    - [parágrafo] Parágrafo único. A gestão das soluções de
+  - [artigo] Art. 6º São atividades comuns às subunidades da
+    - [inciso] I - receber, registrar, autuar, constituir,
+    - [inciso] II - prestar informações no âmbito de sua área de
+    - [inciso] III - alimentar e manter atualizadas as bases de
+    - [inciso] IV - promover a colaboração e o compartilhamento
+    - [inciso] V - alimentar e manter atualizado no Portal TCU,
+    - [inciso] VI - alimentar e manter atualizado, se for o caso
+    - [inciso] VII - zelar pela segurança da informação e pelo
+    - [inciso] VIII - elaborar expedientes atinentes à sua área
+    - [inciso] IX - guardar, controlar e zelar pela integridade
+    - [inciso] X - acompanhar o inventário dos bens existentes na
+    - [inciso] XI - realizar estudos e pesquisas relativas às
+    - [inciso] XII - propor normas e rotinas para as atividades
+    - [inciso] XIII - elaborar e atualizar manual de rotinas e
+    - [inciso] XIV - elaborar relatórios de suas atividades;
+    - [inciso] XV - elaborar extratos, no âmbito de sua área de
+    - [inciso] XVI - consolidar e solicitar materiais e serviços
+    - [inciso] XVII - preparar certidões e declarações
+    - [inciso] XVIII - efetuar ações necessárias aos trabalhos
+    - [inciso] XIX - participar do processo de formulação e de
+    - [inciso] XX - observar as boas práticas de gestão
+    - [inciso] XXI - zelar, no âmbito de sua área de atuação,
+    - [inciso] XXII - consoante diretriz emanada pela
+    - [inciso] XXIII - prestar apoio administrativo-operacional
+  - [artigo] Art. 7º A Assessoria tem por finalidade auxiliar o
+  - [artigo] Art. 8º Compete à Assessoria:
+    - [inciso] I - elaborar pareceres, pronunciamentos,
+    - [inciso] II - desenvolver estudos técnicos e pesquisas;
+    - [inciso] III - instruir processos relativos à prestação de
+    - [inciso] IV - instruir processos de solicitação de
+    - [inciso] V - instruir os demais processos que lhe sejam
+    - [inciso] VI - elaborar, em parceria com a subunidade
+    - [inciso] VII - coordenar o acompanhamento das metas
+    - [inciso] VIII - acompanhar o cumprimento das metas
+    - [inciso] IX - elaborar, em parceria com as demais
+    - [inciso] X - consolidar, no âmbito da Secretaria-Geral de
+    - [inciso] XI - acompanhar a atualização de normas no âmbito
+    - [inciso] XII - apoiar a participação do Secretário-Adjunto
+    - [inciso] XIII - participar de grupos de trabalho e projetos
+    - [inciso] XIV - acompanhar a atualização, no Portal TCU, da
+    - [inciso] XV - acompanhar a atualização, no Portal TCU, do
+    - [inciso] XVI - auxiliar na celebração de instrumentos de
+    - [inciso] XVII - promover a adoção de práticas de gestão do
+    - [inciso] XVIII - organizar as reuniões periódicas da
+    - [inciso] XIX - desenvolver outras atividades que lhe sejam
+  - [artigo] Art. 9º A Diretoria de Apoio Estratégico tem por
+  - [artigo] Art. 10. Compete à Diretoria de Apoio Estratégico:
+    - [inciso] I - criar e manter cadastro das autoridades ativas
+    - [inciso] II - prestar às autoridades, e a seus
+    - [inciso] III - receber demandas das autoridades e seus
+      - [alínea] a) admissão;
+      - [alínea] b) assistência à saúde;
+      - [alínea] c) concessão de aposentadoria, pensão e montepio
+      - [alínea] d) emissão de passagens;
+      - [alínea] e) pagamento de diárias;
+      - [alínea] f) manutenção e reforma das unidades de
+      - [alínea] g) ocupação de imóveis funcionais;
+      - [alínea] h) serviços de comunicação e segurança;
+      - [alínea] i) reconhecimento de direitos; e
+      - [alínea] j) concessão de vantagens e benefícios.
+    - [inciso] IV - operacionalizar o ressarcimento de:
+      - [alínea] a) despesas realizadas pelas autoridades, seus
+      - [alínea] b) despesas médicas de pequeno vulto realizadas
+    - [inciso] V - instruir os processos que lhe sejam
+    - [inciso] VI - promover a colaboração e o compartilhamento
+    - [inciso] VII - manter-se informada quanto às inovações
+    - [inciso] VIII - manifestar-se, sob demanda do dirigente da
+    - [inciso] IX - interagir com as unidades de assessoramento a
+    - [inciso] X - desenvolver outras atividades inerentes à sua
+  - [artigo] Art. 11. A Comissão Disciplinar Permanente é órgão
+    - [parágrafo] Parágrafo único. A Comissão Disciplinar Permanente
+  - [artigo] Art. 12. Compete à Comissão Disciplinar
+    - [inciso] I - formalizar processo disciplinar objetivando
+    - [inciso] II - exercer suas atividades com independência e
+    - [inciso] III - verificar eventuais impedimentos ou
+    - [inciso] IV- convocar servidores, com ciência do dirigente
+    - [inciso] V - indiciar servidor, quando for o caso, com a
+    - [inciso] VI - autorizar vista dos autos e cópias do
+    - [inciso] VII - elaborar relatório conclusivo de processo
+    - [inciso] VIII - desenvolver outras atividades típicas da
+  - [artigo] Art. 13. A Gerência de Publicação de Atos
+  - [artigo] Art. 14. Compete à Gerência de Publicação de Atos
+    - [inciso] I - elaborar minutas de normativo relativas à
+    - [inciso] II - receber, realizar triagem, formatar e
+    - [inciso] III - receber, realizar triagem, formatar e
+    - [inciso] IV - elaborar, para publicação no BTCU, extratos
+    - [inciso] V - elaborar e formatar extratos referentes à
+    - [inciso] VI - estruturar, controlar a numeração, editar e
+    - [inciso] VII - orientar às unidades do Tribunal no que
+    - [inciso] VIII - acompanhar, para fins de divulgação no
+    - [inciso] IX - manter registros e arquivos, bem como o
+    - [inciso] X - atender às solicitações de pesquisa
+    - [inciso] XI - acompanhar e fiscalizar a execução do
+    - [inciso] XII - alimentar e manter atualizada, no Portal
+    - [inciso] XIII - solicitar ao setor pertinente da Secretaria
+    - [inciso] XIV - disponibilizar, no Portal TCU, os
+    - [inciso] XV - instruir, nos processos de remoção de
+    - [inciso] XVI - desenvolver outras atividades inerentes à
+  - [artigo] Art. 15. A Gerência de Diárias e Passagens tem por
+  - [artigo] Art. 16. Compete à Gerência de Diárias e
+    - [inciso] I - instruir processos de concessão de diárias;
+    - [inciso] II - instruir processos de solicitação de
+    - [inciso] III - analisar e elaborar as minutas de
+    - [inciso] IV - atestar viagem a serviço dos dirigentes da
+    - [inciso] V - requisitar e autorizar a emissão de passagens
+    - [inciso] VI - acompanhar e fiscalizar a execução do
+    - [inciso] VII - realizar levantamentos estatísticos
+    - [inciso] VIII - cadastrar e conceder acesso, às unidades do
+    - [inciso] IX - instruir pedidos de ressarcimento de seguro
+    - [inciso] X - desenvolver outras atividades inerentes à sua
+  - [artigo] Art. 17. A Gerência de Patrimônio, Pessoal,
+  - [artigo] Art. 18. Compete à Gerência de Patrimônio,
+    - [inciso] I - solicitar, guardar, controlar, zelar e
+    - [inciso] II - lançar e alterar, na solução de TI
+    - [inciso] III - cadastrar, na solução de TI corporativa, a
+    - [inciso] IV - solicitar, administrar e gerenciar as
+    - [inciso] V - controlar os limites máximos para concessão de
+    - [inciso] VI - manter arquivo sistemático e atualizado de
+    - [inciso] VII - receber, registrar, distribuir e expedir
+    - [inciso] VIII - constituir, receber, autuar, tramitar,
+    - [inciso] IX - inserir peças nos autos e realizar demais
+    - [inciso] X - operacionalizar critérios para distribuição de
+    - [inciso] XI - manter atualizado o rol de responsáveis do
+    - [inciso] XII - controlar os serviços reprográficos;
+    - [inciso] XIII - adotar os procedimentos necessários ao
+    - [inciso] XIV - instruir e gerir os processos de concessão
+    - [inciso] XV - emitir relatórios afetos aos profissionais de
+    - [inciso] XVI - autorizar a saída de veículos automotores
+    - [inciso] XVII - desenvolver outras atividades inerentes à
+  - [artigo] Art. 19. As funções de confiança alocadas à
+  - [artigo] Art. 20. A lotação de servidores na
+  - [artigo] Art. 21. A estrutura organizacional da
+  - [artigo] Art. 22. Ficam revogadas as Portarias-Adadmin nº
+  - [artigo] Art. 23. Esta Portaria entra em vigor na data de
+  - [fecho] CARLOS ROBERTO CAIXETA Secretário-Adjunto (*

@@ -1,0 +1,14 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 38,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20901/NORMA-20901_ciclo1.json"
+  }
+]

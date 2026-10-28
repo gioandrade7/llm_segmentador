@@ -1,0 +1,73 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 37,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" também contém o início da unidade irmã \"III - Programa de Competência Técnica - PCT\", que deve constituir bloco próprio."
+        },
+        {
+          "bloco": 37,
+          "tipo": "granularidade",
+          "descricao": "No art. 7º, os incisos I e II foram segmentados individualmente, mas os incisos II e III foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco do inciso \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" imediatamente antes de \"III - Programa de Competência Técnica - PCT\" e inicie um novo bloco nesse inciso III."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20055/NORMA-20055_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Na pág. 2, termine o bloco do inciso \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" imediatamente antes de \"III - Programa de Competência Técnica - PCT\" e inicie um novo bloco nesse inciso III.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 45,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"CAPÍTULO V — DISPOSIÇÕES GERAIS\" também contém o marcador e o texto inicial de \"Art. 12. O Serviço de Documentação\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco de \"CAPÍTULO V — DISPOSIÇÕES GERAIS\" imediatamente antes de \"Art. 12. O Serviço de Documentação\" e inicie um novo bloco nesse artigo.\n- Na pág. 2, termine o bloco do inciso \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" imediatamente antes de \"III - Programa de Competência Técnica - PCT\" e inicie um novo bloco nesse inciso III."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20055/NORMA-20055_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- Na pág. 2, termine o bloco de \"CAPÍTULO V — DISPOSIÇÕES GERAIS\" imediatamente antes de \"Art. 12. O Serviço de Documentação\" e inicie um novo bloco nesse artigo.\n- Na pág. 2, termine o bloco do inciso \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" imediatamente antes de \"III - Programa de Competência Técnica - PCT\" e inicie um novo bloco nesse inciso III.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 39,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"CAPÍTULO V — DISPOSIÇÕES GERAIS\" também contém o início de \"Art. 12. O Serviço de Documentação\", que é unidade própria e deveria iniciar bloco separado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco de \"CAPÍTULO V — DISPOSIÇÕES GERAIS\" imediatamente antes de \"Art. 12. O Serviço de Documentação\" e inicie um novo bloco nesse artigo.\n- Na pág. 2, termine o bloco do inciso \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" imediatamente antes de \"III - Programa de Competência Técnica - PCT\" e inicie um novo bloco nesse inciso III."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20055/NORMA-20055_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Na pág. 2, termine o bloco de \"CAPÍTULO V — DISPOSIÇÕES GERAIS\" imediatamente antes de \"Art. 12. O Serviço de Documentação\" e inicie um novo bloco nesse artigo.\n- Na pág. 2, termine o bloco do inciso \"II - Programa de Aperfeiçoamento e Desenvolvimento - PAD\" imediatamente antes de \"III - Programa de Competência Técnica - PCT\" e inicie um novo bloco nesse inciso III.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-20055/NORMA-20055_ciclo4.json"
+  }
+]

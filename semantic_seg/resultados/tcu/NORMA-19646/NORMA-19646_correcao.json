@@ -1,0 +1,116 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 30,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 4º Em consonância com a Resolução TCU nº 217” (pág. 3) também contém o marcador “§ 1º A classificação disposta por esta Resolução contempla”, que deve iniciar bloco próprio, além de outros parágrafos do mesmo artigo."
+        },
+        {
+          "bloco": 46,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 7º Salvo manifestação contrária” (pág. 4) engloba os incisos, a começar por “I - informações relacionadas”, e o “Parágrafo único. É permitida a elaboração”, embora cada um desses marcadores deva abrir bloco próprio."
+        },
+        {
+          "bloco": 53,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 10. As informações produzidas ou custodiadas” (pág. 5) contém integralmente os marcadores “Art. 11. O impacto da indisponibilidade” e “Art. 12. As informações produzidas ou custodiadas”, que são artigos autônomos e devem iniciar blocos separados."
+        },
+        {
+          "bloco": 30,
+          "tipo": "granularidade",
+          "descricao": "Os parágrafos são segmentados individualmente em outros artigos, como os §§ 1º a 4º do Art. 8º e do Art. 15, mas foram agrupados com o Art. 4º na pág. 3."
+        },
+        {
+          "bloco": 46,
+          "tipo": "granularidade",
+          "descricao": "Os incisos são segmentados individualmente nos Arts. 3º, 5º, 6º e 13, mas os incisos do Art. 7º foram agrupados com o artigo na pág. 4."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- No “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4), termine o bloco antes de “I - informações relacionadas a assuntos de interesse exclusivo”; inicie blocos separados em cada inciso romano subsequente e em “Parágrafo único. É permitida a elaboração de extratos”.\n- Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), iniciando um bloco próprio no Art. 11.\n- Termine o bloco de “Art. 11. O impacto da indisponibilidade das informações produzidas” imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal” (pág. 5), iniciando um bloco próprio no Art. 12."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19646/NORMA-19646_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- No “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4), termine o bloco antes de “I - informações relacionadas a assuntos de interesse exclusivo”; inicie blocos separados em cada inciso romano subsequente e em “Parágrafo único. É permitida a elaboração de extratos”.\n- Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), iniciando um bloco próprio no Art. 11.\n- Termine o bloco de “Art. 11. O impacto da indisponibilidade das informações produzidas” imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal” (pág. 5), iniciando um bloco próprio no Art. 12.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 14,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 3º Para os efeitos desta Resolução” contém os incisos romanos I a XII, embora cada inciso deva iniciar bloco próprio; os incisos XIII, XIV e XV foram, em contraste, segmentados separadamente nos blocos seguintes."
+        },
+        {
+          "bloco": 66,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “§ 2º Compete à Secretaria de Tecnologia da Informação” também contém o marcador e o texto do “§ 3º As informações...”, que deve constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- No “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4), termine o bloco antes de “I - informações relacionadas a assuntos de interesse exclusivo”; inicie blocos separados em cada inciso romano subsequente e em “Parágrafo único. É permitida a elaboração de extratos”.\n- Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), inicie bloco próprio no Art. 11 e termine-o imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal”, iniciando bloco próprio no Art. 12.\n- No “Art. 3º Para os efeitos desta Resolução” (págs. 2–3), termine o bloco do artigo antes de “I - informação:” e inicie um bloco próprio em cada inciso romano, de “I - informação:” até “XII - rótulo:”; não agrupe esses incisos com o artigo nem entre si.\n- No “§ 2º Compete à Secretaria de Tecnologia da Informação” do Art. 16 (pág. 6), termine o bloco imediatamente antes de “§ 3º As informações” e inicie um bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19646/NORMA-19646_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 80,
+    "insights_aplicados": "- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- No “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4), termine o bloco antes de “I - informações relacionadas a assuntos de interesse exclusivo”; inicie blocos separados em cada inciso romano subsequente e em “Parágrafo único. É permitida a elaboração de extratos”.\n- Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), inicie bloco próprio no Art. 11 e termine-o imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal”, iniciando bloco próprio no Art. 12.\n- No “Art. 3º Para os efeitos desta Resolução” (págs. 2–3), termine o bloco do artigo antes de “I - informação:” e inicie um bloco próprio em cada inciso romano, de “I - informação:” até “XII - rótulo:”; não agrupe esses incisos com o artigo nem entre si.\n- No “§ 2º Compete à Secretaria de Tecnologia da Informação” do Art. 16 (pág. 6), termine o bloco imediatamente antes de “§ 3º As informações” e inicie um bloco próprio no § 3º.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 46,
+          "tipo": "lacuna",
+          "descricao": "Após o “Parágrafo único. É permitida a elaboração de extratos...” do Art. 6º (pág. 4), o bloco seguinte já se inicia em “Art. 8º Cabe ao gestor da informação...”. Falta a unidade Art. 7º, cuja abertura esperada é “Art. 7º Salvo manifestação contrária de autoridade competente”, entre essas duas unidades."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- Não omita o “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4): inicie um bloco próprio nesse artigo, entre o “Parágrafo único. É permitida a elaboração de extratos...” do Art. 6º e o “Art. 8º Cabe ao gestor da informação...”.\n- Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), inicie bloco próprio no Art. 11 e termine-o imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal”, iniciando bloco próprio no Art. 12.\n- No “Art. 3º Para os efeitos desta Resolução” (págs. 2–3), termine o bloco do artigo antes de “I - informação:” e inicie um bloco próprio em cada inciso romano, de “I - informação:” até “XII - rótulo:”; não agrupe esses incisos com o artigo nem entre si.\n- No “§ 2º Compete à Secretaria de Tecnologia da Informação” do Art. 16 (pág. 6), termine o bloco imediatamente antes de “§ 3º As informações” e inicie um bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19646/NORMA-19646_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- Não omita o “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4): inicie um bloco próprio nesse artigo, entre o “Parágrafo único. É permitida a elaboração de extratos...” do Art. 6º e o “Art. 8º Cabe ao gestor da informação...”.\n- Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), inicie bloco próprio no Art. 11 e termine-o imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal”, iniciando bloco próprio no Art. 12.\n- No “Art. 3º Para os efeitos desta Resolução” (págs. 2–3), termine o bloco do artigo antes de “I - informação:” e inicie um bloco próprio em cada inciso romano, de “I - informação:” até “XII - rótulo:”; não agrupe esses incisos com o artigo nem entre si.\n- No “§ 2º Compete à Secretaria de Tecnologia da Informação” do Art. 16 (pág. 6), termine o bloco imediatamente antes de “§ 3º As informações” e inicie um bloco próprio no § 3º.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 65,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 13. O impacto da perda de integridade...” (pág. 5) engloba os incisos “I - baixo”, “II - médio” e “III - alto”, que são marcadores de unidades próprias e devem iniciar blocos separados."
+        },
+        {
+          "bloco": 72,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 16. A classificação das informações...” (pág. 6) contém também o marcador e o texto de “§ 1º A identificação de informações como sigilosas...”, que deve constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No “Art. 3º Para os efeitos desta Resolução” (págs. 2–3), termine o bloco do artigo antes de “I - informação:” e inicie um bloco próprio em cada inciso romano, de “I - informação:” até “XII - rótulo:”; não agrupe esses incisos com o artigo nem entre si.\n- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- Não omita o “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4): inicie um bloco próprio nesse artigo, entre o “Parágrafo único. É permitida a elaboração de extratos...” do Art. 6º e o “Art. 8º Cabe ao gestor da informação...”. Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), inicie bloco próprio no Art. 11 e termine-o imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal”, iniciando bloco próprio no Art. 12.\n- No “Art. 13. O impacto da perda de integridade das informações...” (pág. 5), termine o bloco do artigo antes de “I - baixo:” e inicie blocos próprios em “I - baixo:”, “II - médio:” e “III - alto:”, sem agrupar os incisos entre si nem com o artigo.\n- No “Art. 16. A classificação das informações...” (pág. 6), termine o bloco do artigo imediatamente antes de “§ 1º A identificação de informações como sigilosas...” e inicie bloco próprio nesse parágrafo; também termine o bloco de “§ 2º Compete à Secretaria de Tecnologia da Informação” imediatamente antes de “§ 3º As informações” e inicie bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19646/NORMA-19646_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 84,
+    "insights_aplicados": "- No “Art. 3º Para os efeitos desta Resolução” (págs. 2–3), termine o bloco do artigo antes de “I - informação:” e inicie um bloco próprio em cada inciso romano, de “I - informação:” até “XII - rótulo:”; não agrupe esses incisos com o artigo nem entre si.\n- Termine o bloco de “Art. 4º Em consonância com a Resolução TCU nº 217” imediatamente antes de “§ 1º A classificação disposta por esta Resolução contempla” (pág. 3); inicie um bloco em cada § subsequente do Art. 4º.\n- Não omita o “Art. 7º Salvo manifestação contrária de autoridade competente” (pág. 4): inicie um bloco próprio nesse artigo, entre o “Parágrafo único. É permitida a elaboração de extratos...” do Art. 6º e o “Art. 8º Cabe ao gestor da informação...”. Termine o bloco de “Art. 10. As informações produzidas ou custodiadas pelo Tribunal” imediatamente antes de “Art. 11. O impacto da indisponibilidade” (pág. 5), inicie bloco próprio no Art. 11 e termine-o imediatamente antes de “Art. 12. As informações produzidas ou custodiadas pelo Tribunal”, iniciando bloco próprio no Art. 12.\n- No “Art. 13. O impacto da perda de integridade das informações...” (pág. 5), termine o bloco do artigo antes de “I - baixo:” e inicie blocos próprios em “I - baixo:”, “II - médio:” e “III - alto:”, sem agrupar os incisos entre si nem com o artigo.\n- No “Art. 16. A classificação das informações...” (pág. 6), termine o bloco do artigo imediatamente antes de “§ 1º A identificação de informações como sigilosas...” e inicie bloco próprio nesse parágrafo; também termine o bloco de “§ 2º Compete à Secretaria de Tecnologia da Informação” imediatamente antes de “§ 3º As informações” e inicie bloco próprio no § 3º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-19646/NORMA-19646_ciclo5.json"
+  }
+]

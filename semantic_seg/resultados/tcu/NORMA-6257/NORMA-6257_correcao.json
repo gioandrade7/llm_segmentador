@@ -1,0 +1,322 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 103,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 13,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco iniciado por \"IV - negociar níveis de serviço\" (pág. 2) também contém os incisos V, VI e VII, que são unidades próprias."
+        },
+        {
+          "bloco": 31,
+          "tipo": "englobante",
+          "descricao": "No Art. 6º, o bloco iniciado por \"IX - apoiar a Diretoria de Relacionamento com Clientes\" (pág. 4) também contém os incisos X e XI."
+        },
+        {
+          "bloco": 28,
+          "tipo": "sequencia",
+          "descricao": "No Art. 6º, o inciso IV (pág. 3) é seguido diretamente do inciso VI, \"VI - gerenciar as demandas apresentadas à subunidade\" (pág. 4), sem bloco correspondente ao inciso V."
+        },
+        {
+          "bloco": 32,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 7º (pág. 5) contém também os incisos I a VI, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "No Art. 8º, o bloco iniciado por \"VII - fiscalizar\" (pág. 6) também contém os incisos VIII a XIV."
+        },
+        {
+          "bloco": 56,
+          "tipo": "englobante",
+          "descricao": "No § 2º do Art. 11, o bloco iniciado por \"V - definir, implementar e manter visões\" (pág. 7) também contém o inciso VI."
+        },
+        {
+          "bloco": 69,
+          "tipo": "englobante",
+          "descricao": "No Art. 13, o bloco iniciado por \"II - definir procedimentos\" (pág. 8) também contém os incisos III, IV, V e VI."
+        },
+        {
+          "bloco": 101,
+          "tipo": "englobante",
+          "descricao": "No Art. 18, o bloco iniciado por \"II - apoiar os clientes da Secretaria\" (pág. 11) também contém os incisos III, IV e V."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º, na pág. 2, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e inicie blocos próprios em V, VI e VII.\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4; na mesma lista, na pág. 4, separe os incisos IX, X e XI, iniciando um bloco em cada marcador. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI.\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\"; no Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 154,
+    "insights_aplicados": "- No Art. 4º, na pág. 2, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e inicie blocos próprios em V, VI e VII.\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4; na mesma lista, na pág. 4, separe os incisos IX, X e XI, iniciando um bloco em cada marcador. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI.\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\"; no Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 24,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco do inciso VI, \"VI - realizar os testes necessários\", também contém o marcador e o texto inicial do inciso VII, \"VII - efetuar a manutenção\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 117,
+          "tipo": "englobante",
+          "descricao": "No Art. 14, o bloco do inciso II, \"II - orientar as subunidades da STI e da Setic\", também contém o marcador e o texto inicial do inciso III, \"III - promover\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º, pág. 2–3, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e mantenha blocos próprios para V, VI e VII; em especial, termine o inciso VI, \"VI - realizar os testes necessários\", imediatamente antes de \"VII - efetuar a manutenção de soluções de tecnologia da informação\".\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4; na mesma lista, na pág. 4, separe os incisos IX, X e XI, iniciando um bloco em cada marcador. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI.\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\"; no Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI. No Art. 14, pág. 9, termine o inciso II, \"II - orientar as subunidades da STI e da Setic\", antes de \"III - promover\" e inicie um bloco próprio no inciso III.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 153,
+    "insights_aplicados": "- No Art. 4º, pág. 2–3, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e mantenha blocos próprios para V, VI e VII; em especial, termine o inciso VI, \"VI - realizar os testes necessários\", imediatamente antes de \"VII - efetuar a manutenção de soluções de tecnologia da informação\".\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4; na mesma lista, na pág. 4, separe os incisos IX, X e XI, iniciando um bloco em cada marcador. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI.\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\"; no Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI. No Art. 14, pág. 9, termine o inciso II, \"II - orientar as subunidades da STI e da Setic\", antes de \"III - promover\" e inicie um bloco próprio no inciso III.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 60,
+          "tipo": "englobante",
+          "descricao": "No Art. 7º, o bloco iniciado em \"IV - propor modalidade de provimento\" também contém os marcadores e os textos integrais dos incisos V - \"acompanhar o andamento dos processos\" e VI - \"assegurar a necessária articulação\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º, págs. 2–3, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e mantenha blocos próprios para V, VI e VII; em especial, termine o inciso VI, \"VI - realizar os testes necessários\", imediatamente antes de \"VII - efetuar a manutenção de soluções de tecnologia da informação\".\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4; na mesma lista, na pág. 4, separe os incisos IX, X e XI, iniciando um bloco em cada marcador. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI; em particular, termine o inciso IV, \"IV - propor modalidade de provimento\", antes de \"V - acompanhar o andamento dos processos\" e termine o inciso V antes de \"VI - assegurar a necessária articulação\".\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\"; no Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI. No Art. 14, pág. 9, termine o inciso II, \"II - orientar as subunidades da STI e da Setic\", antes de \"III - promover\" e inicie um bloco próprio no inciso III.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 147,
+    "insights_aplicados": "- No Art. 4º, págs. 2–3, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e mantenha blocos próprios para V, VI e VII; em especial, termine o inciso VI, \"VI - realizar os testes necessários\", imediatamente antes de \"VII - efetuar a manutenção de soluções de tecnologia da informação\".\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4; na mesma lista, na pág. 4, separe os incisos IX, X e XI, iniciando um bloco em cada marcador. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI; em particular, termine o inciso IV, \"IV - propor modalidade de provimento\", antes de \"V - acompanhar o andamento dos processos\" e termine o inciso V antes de \"VI - assegurar a necessária articulação\".\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\"; no Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI. No Art. 14, pág. 9, termine o inciso II, \"II - orientar as subunidades da STI e da Setic\", antes de \"III - promover\" e inicie um bloco próprio no inciso III.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "No Art. 6º, pág. 4, o bloco iniciado por \"IX - apoiar a Diretoria de Relacionamento com Clientes\" também contém os marcadores e textos dos incisos X e XI, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 49,
+          "tipo": "englobante",
+          "descricao": "No Art. 6º, pág. 5, o bloco iniciado por \"XX - participar do estabelecimento\" também contém os incisos XXI, XXII, XXIII e XXIV, cujos marcadores devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º, págs. 2–3, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e mantenha blocos próprios para V, VI e VII; em especial, termine o inciso VI, \"VI - realizar os testes necessários\", imediatamente antes de \"VII - efetuar a manutenção de soluções de tecnologia da informação\".\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4. Na mesma lista, separe os incisos IX, X e XI da pág. 4 e os incisos XX, XXI, XXII, XXIII e XXIV da pág. 5: termine cada bloco imediatamente antes do próximo marcador romano e inicie um bloco próprio em cada um. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI; em particular, termine o inciso IV, \"IV - propor modalidade de provimento\", antes de \"V - acompanhar o andamento dos processos\" e termine o inciso V antes de \"VI - assegurar a necessária articulação\".\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\". No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI. No Art. 14, pág. 9, termine o inciso II, \"II - orientar as subunidades da STI e da Setic\", antes de \"III - promover\" e inicie um bloco próprio no inciso III.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 149,
+    "insights_aplicados": "- No Art. 4º, págs. 2–3, termine o bloco do inciso IV, \"IV - negociar níveis de serviço\", antes de \"V - prover soluções\" e mantenha blocos próprios para V, VI e VII; em especial, termine o inciso VI, \"VI - realizar os testes necessários\", imediatamente antes de \"VII - efetuar a manutenção de soluções de tecnologia da informação\".\n- No Art. 6º, capture um bloco para o inciso V entre o inciso IV da pág. 3 e \"VI - gerenciar as demandas apresentadas à subunidade\" da pág. 4. Na mesma lista, separe os incisos IX, X e XI da pág. 4 e os incisos XX, XXI, XXII, XXIII e XXIV da pág. 5: termine cada bloco imediatamente antes do próximo marcador romano e inicie um bloco próprio em cada um. No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e inicie blocos separados para os incisos I a VI; em particular, termine o inciso IV, \"IV - propor modalidade de provimento\", antes de \"V - acompanhar o andamento dos processos\" e termine o inciso V antes de \"VI - assegurar a necessária articulação\".\n- No Art. 8º, separe na pág. 6–7 cada inciso de VII a XIV: termine cada bloco imediatamente antes do próximo marcador romano, sem manter VIII a XIV no bloco de \"VII - fiscalizar\". No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, termine o inciso II antes de \"III - definir padrões técnicos\" e abra blocos próprios para III, IV, V e VI. No Art. 14, pág. 9, termine o inciso II, \"II - orientar as subunidades da STI e da Setic\", antes de \"III - promover\" e inicie um bloco próprio no inciso III.\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e inicie blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 8,
+          "tipo": "englobante",
+          "descricao": "No Art. 3º, o bloco iniciado por \"V-disseminar e incentivar\" também contém o marcador e o texto do inciso \"VI-prover soluções de tecnologia da informação\"."
+        },
+        {
+          "bloco": 31,
+          "tipo": "englobante",
+          "descricao": "No Art. 5º, o bloco iniciado por \"II - Diretoria de Soluções Estratégicas\" também contém o marcador e o texto do inciso \"III - Diretoria de Soluções de Informação e de Soluções Especializadas\"."
+        },
+        {
+          "bloco": 33,
+          "tipo": "englobante",
+          "descricao": "No Art. 6º, o bloco iniciado por \"Art. 6º São competências comuns\" contém também os marcadores e textos dos incisos I a V, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 113,
+          "tipo": "englobante",
+          "descricao": "No Art. 14, o bloco iniciado por \"III - promover\" também contém o marcador e o texto do inciso \"IV - definir\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º, pág. 1, termine o bloco do inciso \"V-disseminar e incentivar o uso da tecnologia da informação\" imediatamente antes de \"VI-prover soluções de tecnologia da informação\" e inicie um bloco próprio para o inciso VI.\n- No Art. 4º, págs. 2–3, mantenha blocos próprios para todos os incisos I a XI, terminando cada um antes do próximo marcador romano; em especial, termine IV antes de \"V - prover soluções\", VI antes de \"VII - efetuar a manutenção\" e VII antes de VIII. No Art. 6º, págs. 3–5, termine o bloco do artigo antes de \"I - participar\" e crie blocos próprios para cada inciso I a XXIV, inclusive V, VI, IX a XI e XX a XXIV.\n- No Art. 5º, pág. 3, termine o inciso \"II - Diretoria de Soluções Estratégicas\" imediatamente antes de \"III - Diretoria de Soluções de Informação e de Soluções Especializadas\". No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e mantenha blocos separados para os incisos I a VI. No Art. 8º, págs. 6–7, mantenha um bloco por inciso, especialmente de VII a XIV.\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, mantenha blocos próprios para os incisos II a VI. No Art. 14, pág. 9, termine cada inciso antes do seguinte, em especial II antes de \"III - promover\" e III antes de \"IV - definir\".\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e mantenha blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 145,
+    "insights_aplicados": "- No Art. 3º, pág. 1, termine o bloco do inciso \"V-disseminar e incentivar o uso da tecnologia da informação\" imediatamente antes de \"VI-prover soluções de tecnologia da informação\" e inicie um bloco próprio para o inciso VI.\n- No Art. 4º, págs. 2–3, mantenha blocos próprios para todos os incisos I a XI, terminando cada um antes do próximo marcador romano; em especial, termine IV antes de \"V - prover soluções\", VI antes de \"VII - efetuar a manutenção\" e VII antes de VIII. No Art. 6º, págs. 3–5, termine o bloco do artigo antes de \"I - participar\" e crie blocos próprios para cada inciso I a XXIV, inclusive V, VI, IX a XI e XX a XXIV.\n- No Art. 5º, pág. 3, termine o inciso \"II - Diretoria de Soluções Estratégicas\" imediatamente antes de \"III - Diretoria de Soluções de Informação e de Soluções Especializadas\". No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e mantenha blocos separados para os incisos I a VI. No Art. 8º, págs. 6–7, mantenha um bloco por inciso, especialmente de VII a XIV.\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, mantenha blocos próprios para os incisos II a VI. No Art. 14, pág. 9, termine cada inciso antes do seguinte, em especial II antes de \"III - promover\" e III antes de \"IV - definir\".\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e mantenha blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 18,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 4º (pág. 2) contém também os marcadores e os textos dos incisos I, II, III e IV; cada inciso deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "No Art. 6º (pág. 3), o bloco iniciado pelo inciso III contém também os incisos IV e V, que deveriam constituir blocos independentes."
+        },
+        {
+          "bloco": 38,
+          "tipo": "englobante",
+          "descricao": "No Art. 6º (pág. 4), o bloco do inciso IX termina contendo o marcador e o texto do inciso X."
+        },
+        {
+          "bloco": 54,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 7º (pág. 5) engloba os incisos I a VI, embora cada inciso romano deva iniciar seu próprio bloco."
+        },
+        {
+          "bloco": 93,
+          "tipo": "sequencia",
+          "descricao": "No Art. 12 (pág. 8), a lista de incisos I a VI é seguida diretamente por novo inciso I no bloco seguinte, sem o marcador intermediário esperado de unidade superior, indicando provável omissão na extração do texto."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No Art. 3º, pág. 1, termine o bloco do inciso \"V-disseminar e incentivar o uso da tecnologia da informação\" imediatamente antes de \"VI-prover soluções de tecnologia da informação\" e inicie um bloco próprio para o inciso VI.\n- No Art. 4º, págs. 2–3, termine o bloco do artigo antes de \"I - apoiar\" e mantenha blocos próprios para todos os incisos I a XI, encerrando cada um antes do próximo marcador romano. No Art. 6º, págs. 3–5, mantenha um bloco próprio para cada inciso I a XXIV; em especial, separe III de IV, IV de V e IX de X.\n- No Art. 5º, pág. 3, termine o inciso \"II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital\" imediatamente antes de \"III - Diretoria de Arquitetura da Informação e de Soluções Especializadas\". No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e crie blocos próprios para os incisos I a VI. No Art. 8º, págs. 6–7, mantenha um bloco por inciso, especialmente de VII a XIV.\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, mantenha blocos próprios para os incisos II a VI. No Art. 14, pág. 9, termine cada inciso antes do seguinte, em especial II antes de \"III - promover\" e III antes de \"IV - definir\".\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e mantenha blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 145,
+    "insights_aplicados": "- No Art. 3º, pág. 1, termine o bloco do inciso \"V-disseminar e incentivar o uso da tecnologia da informação\" imediatamente antes de \"VI-prover soluções de tecnologia da informação\" e inicie um bloco próprio para o inciso VI.\n- No Art. 4º, págs. 2–3, termine o bloco do artigo antes de \"I - apoiar\" e mantenha blocos próprios para todos os incisos I a XI, encerrando cada um antes do próximo marcador romano. No Art. 6º, págs. 3–5, mantenha um bloco próprio para cada inciso I a XXIV; em especial, separe III de IV, IV de V e IX de X.\n- No Art. 5º, pág. 3, termine o inciso \"II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital\" imediatamente antes de \"III - Diretoria de Arquitetura da Informação e de Soluções Especializadas\". No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e crie blocos próprios para os incisos I a VI. No Art. 8º, págs. 6–7, mantenha um bloco por inciso, especialmente de VII a XIV.\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, mantenha blocos próprios para os incisos II a VI. No Art. 14, pág. 9, termine cada inciso antes do seguinte, em especial II antes de \"III - promover\" e III antes de \"IV - definir\".\n- No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e mantenha blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 35,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 6º\" incorpora indevidamente os incisos I a V; cada inciso romano deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 71,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"IX - realizar testes funcionais\" contém também o marcador e o texto do inciso \"X - efetuar a manutenção\", que deveria iniciar bloco independente."
+        },
+        {
+          "bloco": 85,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco é aberto por \"§1º\", marcador que não pertence à hierarquia identificada para este documento; seu texto deve permanecer no bloco do Art. 11 até o próximo inciso."
+        },
+        {
+          "bloco": 86,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco é aberto por \"§2º\", marcador que não pertence à hierarquia identificada; o texto introdutório deve continuar no bloco do Art. 11, e o inciso I subsequente deve abrir seu próprio bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º, pág. 1, termine o bloco do inciso \"V-disseminar e incentivar o uso da tecnologia da informação\" imediatamente antes de \"VI-prover soluções de tecnologia da informação\" e inicie um bloco próprio para o inciso VI. No Art. 4º, págs. 2–3, termine o bloco do artigo antes de \"I - apoiar\" e mantenha blocos próprios para todos os incisos I a XI, encerrando cada um antes do próximo marcador romano.\n- No Art. 6º, págs. 3–5, termine o bloco iniciado em \"Art. 6º\" imediatamente antes de \"I - participar\". Crie e mantenha um bloco próprio para cada inciso I a XXIV, encerrando cada inciso antes do próximo; em especial, separe I, II, III, IV e V, que foram reunidos após o caput.\n- No Art. 5º, pág. 3, termine o inciso \"II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital\" imediatamente antes de \"III - Diretoria de Arquitetura da Informação e de Soluções Especializadas\". No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e crie blocos próprios para os incisos I a VI. No Art. 8º, págs. 6–7, mantenha um bloco por inciso e termine o inciso IX, \"IX - realizar testes funcionais e não funcionais\", imediatamente antes de \"X - efetuar a manutenção\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, mantenha blocos próprios para os incisos II a VI. No Art. 14, pág. 9, termine cada inciso antes do seguinte, em especial II antes de \"III - promover\" e III antes de \"IV - definir\".\n- No Art. 11, pág. 7, não inicie blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco iniciado em \"Art. 11.\" até o marcador \"I - definir processos de trabalho\", que deve iniciar bloco próprio. No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e mantenha blocos independentes para os incisos III, IV e V."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 145,
+    "insights_aplicados": "- No Art. 3º, pág. 1, termine o bloco do inciso \"V-disseminar e incentivar o uso da tecnologia da informação\" imediatamente antes de \"VI-prover soluções de tecnologia da informação\" e inicie um bloco próprio para o inciso VI. No Art. 4º, págs. 2–3, termine o bloco do artigo antes de \"I - apoiar\" e mantenha blocos próprios para todos os incisos I a XI, encerrando cada um antes do próximo marcador romano.\n- No Art. 6º, págs. 3–5, termine o bloco iniciado em \"Art. 6º\" imediatamente antes de \"I - participar\". Crie e mantenha um bloco próprio para cada inciso I a XXIV, encerrando cada inciso antes do próximo; em especial, separe I, II, III, IV e V, que foram reunidos após o caput.\n- No Art. 5º, pág. 3, termine o inciso \"II - Diretoria de Soluções Estratégicas, Administrativas e Mobilidade Digital\" imediatamente antes de \"III - Diretoria de Arquitetura da Informação e de Soluções Especializadas\". No Art. 7º, pág. 5, termine o bloco do artigo antes de \"I - assegurar\" e crie blocos próprios para os incisos I a VI. No Art. 8º, págs. 6–7, mantenha um bloco por inciso e termine o inciso IX, \"IX - realizar testes funcionais e não funcionais\", imediatamente antes de \"X - efetuar a manutenção\".\n- No § 2º do Art. 11, pág. 7, termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13, pág. 8, mantenha blocos próprios para os incisos II a VI. No Art. 14, pág. 9, termine cada inciso antes do seguinte, em especial II antes de \"III - promover\" e III antes de \"IV - definir\".\n- No Art. 11, pág. 7, não inicie blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco iniciado em \"Art. 11.\" até o marcador \"I - definir processos de trabalho\", que deve iniciar bloco próprio. No Art. 18, pág. 11, termine o inciso II antes de \"III - promover a necessária articulação\" e mantenha blocos independentes para os incisos III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 30,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura\" (pág. 3) engloba os incisos romanos I a IV, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"IX - apoiar a Diretoria de Relacionamento com Clientes\" (pág. 4) contém também o início do inciso \"X - realizar diagnósticos e formular soluções\", sem corte entre os incisos."
+        },
+        {
+          "bloco": 59,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"IV - propor modalidade de provimento de cada solução de TI\" do Art. 7º (pág. 5) engloba os incisos V e VI."
+        },
+        {
+          "bloco": 121,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"IV - coordenar a elaboração e a execução de pesquisas de opinião\" do Art. 15 (pág. 9) engloba o inciso \"V - apoiar as subunidades da STI e da Setic\"."
+        },
+        {
+          "bloco": 143,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"IV - assegurar o encaminhamento tempestivo\" do Art. 18 (pág. 11) contém também o inciso \"V - promover a articulação e o bom relacionamento com clientes e usuários\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (págs. 1–2), mantenha um bloco próprio para cada inciso I a XIII, terminando \"V-disseminar e incentivar o uso da tecnologia da informação\" antes de \"VI-prover soluções de tecnologia da informação\". No Art. 4º (págs. 2–3), termine o caput antes de \"I - apoiar\" e mantenha blocos independentes para os incisos I a XI, cada qual encerrado antes do próximo marcador romano.\n- No Art. 5º (pág. 3), termine o bloco de \"Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura\" antes de \"I - Diretoria de Soluções de Controle Externo\" e crie um bloco para cada inciso romano I a IV, encerrando cada um antes do seguinte; mantenha as alíneas a), b), c) e d) dentro do inciso romano correspondente. No Art. 6º (págs. 3–5), termine o caput antes de \"I - participar\" e mantenha um bloco próprio para cada inciso I a XXIV, inclusive separando \"IX - apoiar a Diretoria de Relacionamento com Clientes\" de \"X - realizar diagnósticos e formular soluções\".\n- No Art. 7º (pág. 5), termine o caput antes de \"I - assegurar\" e mantenha blocos próprios para os incisos I a VI, em especial terminando \"IV - propor modalidade de provimento de cada solução de TI\" antes de \"V - acompanhar o andamento\" e este antes de \"VI - assegurar a necessária articulação\". No Art. 8º (págs. 6–7), mantenha um bloco por inciso e termine o inciso IX antes de \"X - efetuar a manutenção\".\n- No Art. 11 (pág. 7), não abra blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco de \"Art. 11.\" até \"I - definir processos de trabalho\", que deve iniciar bloco próprio, e termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13 (pág. 8), mantenha blocos próprios para os incisos II a VI; no Art. 14 (pág. 9), termine cada inciso antes do seguinte, especialmente II antes de III e III antes de IV.\n- No Art. 15 (pág. 9), termine o inciso \"IV - coordenar a elaboração e a execução de pesquisas de opinião\" antes de \"V - apoiar as subunidades da STI e da Setic\". No Art. 18 (pág. 11), mantenha blocos independentes para os incisos III, IV e V e termine \"IV - assegurar o encaminhamento tempestivo\" imediatamente antes de \"V - promover a articulação e o bom relacionamento com clientes e usuários\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 149,
+    "insights_aplicados": "- No Art. 3º (págs. 1–2), mantenha um bloco próprio para cada inciso I a XIII, terminando \"V-disseminar e incentivar o uso da tecnologia da informação\" antes de \"VI-prover soluções de tecnologia da informação\". No Art. 4º (págs. 2–3), termine o caput antes de \"I - apoiar\" e mantenha blocos independentes para os incisos I a XI, cada qual encerrado antes do próximo marcador romano.\n- No Art. 5º (pág. 3), termine o bloco de \"Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura\" antes de \"I - Diretoria de Soluções de Controle Externo\" e crie um bloco para cada inciso romano I a IV, encerrando cada um antes do seguinte; mantenha as alíneas a), b), c) e d) dentro do inciso romano correspondente. No Art. 6º (págs. 3–5), termine o caput antes de \"I - participar\" e mantenha um bloco próprio para cada inciso I a XXIV, inclusive separando \"IX - apoiar a Diretoria de Relacionamento com Clientes\" de \"X - realizar diagnósticos e formular soluções\".\n- No Art. 7º (pág. 5), termine o caput antes de \"I - assegurar\" e mantenha blocos próprios para os incisos I a VI, em especial terminando \"IV - propor modalidade de provimento de cada solução de TI\" antes de \"V - acompanhar o andamento\" e este antes de \"VI - assegurar a necessária articulação\". No Art. 8º (págs. 6–7), mantenha um bloco por inciso e termine o inciso IX antes de \"X - efetuar a manutenção\".\n- No Art. 11 (pág. 7), não abra blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco de \"Art. 11.\" até \"I - definir processos de trabalho\", que deve iniciar bloco próprio, e termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13 (pág. 8), mantenha blocos próprios para os incisos II a VI; no Art. 14 (pág. 9), termine cada inciso antes do seguinte, especialmente II antes de III e III antes de IV.\n- No Art. 15 (pág. 9), termine o inciso \"IV - coordenar a elaboração e a execução de pesquisas de opinião\" antes de \"V - apoiar as subunidades da STI e da Setic\". No Art. 18 (pág. 11), mantenha blocos independentes para os incisos III, IV e V e termine \"IV - assegurar o encaminhamento tempestivo\" imediatamente antes de \"V - promover a articulação e o bom relacionamento com clientes e usuários\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 77,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"X - efetuar a manutenção de soluções de tecnologia da informação\" (pág. 6) também contém os marcadores dos incisos XI, XII, XIII e XIV do Art. 8º, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 117,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"VI - apoiar a integração dos serviços e soluções de tecnologia da informação\" (pág. 9) também contém o início do inciso VII do Art. 14, \"VII - efetuar, com o apoio das subunidades da STI e da Setic, a medição\", que deve ser bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (págs. 1–2), mantenha um bloco próprio para cada inciso I a XIII, terminando \"V-disseminar e incentivar o uso da tecnologia da informação\" antes de \"VI-prover soluções de tecnologia da informação\". No Art. 4º (págs. 2–3), termine o caput antes de \"I - apoiar\" e mantenha blocos independentes para os incisos I a XI, cada qual encerrado antes do próximo marcador romano.\n- No Art. 5º (pág. 3), termine o bloco de \"Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura\" antes de \"I - Diretoria de Soluções de Controle Externo\" e crie um bloco para cada inciso romano I a IV, encerrando cada um antes do seguinte; mantenha as alíneas a), b), c) e d) dentro do inciso romano correspondente. No Art. 6º (págs. 3–5), termine o caput antes de \"I - participar\" e mantenha um bloco próprio para cada inciso I a XXIV, inclusive separando \"IX - apoiar a Diretoria de Relacionamento com Clientes\" de \"X - realizar diagnósticos e formular soluções\".\n- No Art. 7º (pág. 5), termine o caput antes de \"I - assegurar\" e mantenha blocos próprios para os incisos I a VI, em especial terminando \"IV - propor modalidade de provimento de cada solução de TI\" antes de \"V - acompanhar o andamento\" e este antes de \"VI - assegurar a necessária articulação\". No Art. 8º (págs. 6–7), mantenha um bloco próprio para cada inciso I a XV: termine o inciso IX antes de \"X - efetuar a manutenção\", o inciso X antes de \"XI - elaborar e manter atualizados\", e cada inciso XI, XII, XIII e XIV imediatamente antes do marcador romano seguinte.\n- No Art. 11 (pág. 7), não abra blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco de \"Art. 11.\" até \"I - definir processos de trabalho\", que deve iniciar bloco próprio, e termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13 (pág. 8), mantenha blocos próprios para os incisos II a VI; no Art. 14 (pág. 9), termine cada inciso antes do seguinte, especialmente II antes de III, III antes de IV e VI antes de \"VII - efetuar, com o apoio das subunidades da STI e da Setic, a medição\".\n- No Art. 15 (pág. 9), termine o inciso \"IV - coordenar a elaboração e a execução de pesquisas de opinião\" antes de \"V - apoiar as subunidades da STI e da Setic\". No Art. 18 (pág. 11), mantenha blocos independentes para os incisos III, IV e V e termine \"IV - assegurar o encaminhamento tempestivo\" imediatamente antes de \"V - promover a articulação e o bom relacionamento com clientes e usuários\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 147,
+    "insights_aplicados": "- No Art. 3º (págs. 1–2), mantenha um bloco próprio para cada inciso I a XIII, terminando \"V-disseminar e incentivar o uso da tecnologia da informação\" antes de \"VI-prover soluções de tecnologia da informação\". No Art. 4º (págs. 2–3), termine o caput antes de \"I - apoiar\" e mantenha blocos independentes para os incisos I a XI, cada qual encerrado antes do próximo marcador romano.\n- No Art. 5º (pág. 3), termine o bloco de \"Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura\" antes de \"I - Diretoria de Soluções de Controle Externo\" e crie um bloco para cada inciso romano I a IV, encerrando cada um antes do seguinte; mantenha as alíneas a), b), c) e d) dentro do inciso romano correspondente. No Art. 6º (págs. 3–5), termine o caput antes de \"I - participar\" e mantenha um bloco próprio para cada inciso I a XXIV, inclusive separando \"IX - apoiar a Diretoria de Relacionamento com Clientes\" de \"X - realizar diagnósticos e formular soluções\".\n- No Art. 7º (pág. 5), termine o caput antes de \"I - assegurar\" e mantenha blocos próprios para os incisos I a VI, em especial terminando \"IV - propor modalidade de provimento de cada solução de TI\" antes de \"V - acompanhar o andamento\" e este antes de \"VI - assegurar a necessária articulação\". No Art. 8º (págs. 6–7), mantenha um bloco próprio para cada inciso I a XV: termine o inciso IX antes de \"X - efetuar a manutenção\", o inciso X antes de \"XI - elaborar e manter atualizados\", e cada inciso XI, XII, XIII e XIV imediatamente antes do marcador romano seguinte.\n- No Art. 11 (pág. 7), não abra blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco de \"Art. 11.\" até \"I - definir processos de trabalho\", que deve iniciar bloco próprio, e termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 13 (pág. 8), mantenha blocos próprios para os incisos II a VI; no Art. 14 (pág. 9), termine cada inciso antes do seguinte, especialmente II antes de III, III antes de IV e VI antes de \"VII - efetuar, com o apoio das subunidades da STI e da Setic, a medição\".\n- No Art. 15 (pág. 9), termine o inciso \"IV - coordenar a elaboração e a execução de pesquisas de opinião\" antes de \"V - apoiar as subunidades da STI e da Setic\". No Art. 18 (pág. 11), mantenha blocos independentes para os incisos III, IV e V e termine \"IV - assegurar o encaminhamento tempestivo\" imediatamente antes de \"V - promover a articulação e o bom relacionamento com clientes e usuários\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 37,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"II - participar da formulação de estratégias\" (Art. 6º, pág. 3) também contém os marcadores dos incisos III, IV e V, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 101,
+          "tipo": "sequencia",
+          "descricao": "Após o inciso \"VI - soluções de TI estruturantes\" do Art. 12 (pág. 8), inicia-se outro \"I - conceber, implementar e manter estruturas\" sem o bloco obrigatório de \"Parágrafo único\" que introduz a nova enumeração."
+        },
+        {
+          "bloco": 129,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"VIII - desenvolver estudos e pesquisas\" (Art. 15, pág. 10) contém também o marcador e o texto do inciso IX, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 139,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"I-coordenar o desenvolvimento\" (parágrafo único do Art. 17, págs. 10–11) reúne os incisos II, III, IV e V, que devem ser segmentados separadamente."
+        },
+        {
+          "bloco": 139,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco do parágrafo único do Art. 17 incorpora o ruído de paginação \"<!-- PÁGINA 11 -->\", que não deve integrar nenhum bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (págs. 1–2), mantenha um bloco próprio para cada inciso I a XIII, terminando \"V-disseminar e incentivar o uso da tecnologia da informação\" antes de \"VI-prover soluções de tecnologia da informação\". No Art. 4º (págs. 2–3), termine o caput antes de \"I - apoiar\" e mantenha blocos independentes para os incisos I a XI, cada qual encerrado antes do próximo marcador romano.\n- No Art. 5º (pág. 3), termine o bloco de \"Art. 5º A Secretaria de Soluções de Tecnologia da Informação tem a seguinte estrutura\" antes de \"I - Diretoria de Soluções de Controle Externo\" e crie um bloco para cada inciso romano I a IV, mantendo as alíneas a), b), c) e d) dentro do inciso romano correspondente. No Art. 6º (págs. 3–5), termine o caput antes de \"I - participar\" e mantenha um bloco próprio para cada inciso I a XXIV; em especial, separe \"II - participar da formulação de estratégias\" de \"III - promover\", \"IV - atuar proativamente\" e \"V - atuar proativamente\", encerrando cada inciso antes do marcador romano seguinte.\n- No Art. 7º (pág. 5), termine o caput antes de \"I - assegurar\" e mantenha blocos próprios para os incisos I a VI, em especial terminando \"IV - propor modalidade de provimento de cada solução de TI\" antes de \"V - acompanhar o andamento\" e este antes de \"VI - assegurar a necessária articulação\". No Art. 8º (págs. 6–7), mantenha um bloco próprio para cada inciso I a XV: termine o inciso IX antes de \"X - efetuar a manutenção\", o inciso X antes de \"XI - elaborar e manter atualizados\", e cada inciso XI, XII, XIII e XIV imediatamente antes do marcador romano seguinte.\n- No Art. 11 (pág. 7), não abra blocos em \"§1º As competências descritas\" nem em \"§2º Em complemento ao disposto\"; incorpore esses textos ao bloco de \"Art. 11.\" até \"I - definir processos de trabalho\", que deve iniciar bloco próprio, e termine o inciso V antes de \"VI - consolidar e divulgar\". No Art. 12 (pág. 8), após \"VI - soluções de TI estruturantes\", crie o bloco de \"Parágrafo único\" que introduz a nova lista e só então inicie blocos próprios para os incisos I a IV dessa lista. No Art. 13 (pág. 8), mantenha blocos próprios para os incisos II a VI; no Art. 14 (pág. 9), termine cada inciso antes do seguinte, especialmente II antes de III, III antes de IV e VI antes de \"VII - efetuar, com o apoio das subunidades da STI e da Setic, a medição\".\n- No Art. 15 (págs. 9–10), mantenha blocos independentes para todos os incisos I a X, terminando o inciso IV antes de \"V - apoiar as subunidades da STI e da Setic\" e o inciso VIII antes de \"IX - apoiar os servidores da STI e da Setic\". No Art. 17 (págs. 10–11), após \"Parágrafo único. São competências do Núcleo de Mobilidade Digital\", mantenha um bloco próprio para cada inciso I a V, terminando cada um antes do marcador seguinte, e exclua o marcador \"<!-- PÁGINA 11 -->\". No Art. 18 (pág. 11), mantenha blocos independentes para os incisos III, IV e V e termine \"IV - assegurar o encaminhamento tempestivo\" imediatamente antes de \"V - promover a articulação e o bom relacionamento com clientes e usuários\"."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-6257/NORMA-6257_ciclo10.json"
+  }
+]

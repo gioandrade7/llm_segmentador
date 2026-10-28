@@ -18,6 +18,7 @@ A block is a unit's **own** text, cut at **every** marker of any level down to t
 
 - `sec-rules` — Investment Advisers Act of 1940 (US federal statute, 38 pages; `TITLE II` / `SEC. 203.` / `(a)` / `(1)` / `(A)` / `(i)` / `(I)`). PDF in `text_extraction/data/pdf/sec-rules.pdf`, pages in `text_extraction/out/sec-rules/paginas/`.
 - `amostra-sec-rules` — a 15-page excerpt of the same statute (`amostra-sec-rules.pdf`, `out/amostra-sec-rules/paginas/`).
+- `tcu` — 29 TCU norms (portarias, resoluções, INs; 1991–2024) sampled from `docs.csv` by `semantic_seg/dataset_tcu.py`; pages in `text_extraction/out/tcu/<KEY>/` (regenerable, git-ignored), golds in `gabarito/<KEY>.md`, sample manifest in `gabarito/tcu_amostra.json`.
 
 ## Setup
 
@@ -40,6 +41,8 @@ Other flags: `--workers N` (default: half the CPUs), `--chunk-size N` (pages per
 Output: `page_NNNN.md` per page (0-indexed, 4 digits) and `documento_final.md`. Resumes automatically.
 
 **Module 1b — RTF → Text:** `python rtf_txt.py` from `text_extraction/`. It walks `data/rtf/<year>/` (1946–1970) with no CLI arguments; RTFs are read as `cp1252`.
+
+**TCU sample (gold generation):** `python dataset_tcu.py` from `semantic_seg/`. It reads `../docs.csv` (14,469 TCU norms as HTML, 444 MB, git-ignored), filters, draws `--por-estrato` norms (default 5) from each of 6 strata (plana/profunda × pequena 3–8k / média 8–20k / grande 20–50k chars), at least one per stratum with quoted text of another norm when available, and writes pages + gold for each. The first `--dev` (default 2) of each stratum go to the `dev` split, the rest to `teste`; `--semente` (42) fixes the draw. A norm is kept only if `gabarito.py` resolves every anchor exactly at its `<p>`. Rerunning deletes the previous sample's files first and draws again; `--refazer` instead regenerates pages + golds of the norms already in the manifest under the current rules (dropping any the rules now reject), so runs over those pages stay valid. The current manifest came from a 30-norm draw; `NORMA-19967` was dropped by `--refazer` after the quote-closing fix (a bare `(NR)` no longer closes a quotation).
 
 **Module 2 — Semantic Segmentation:**
 ```bash
@@ -97,7 +100,7 @@ Prompt precedence, as stated in the prompts: hierarchy + cutting rules are the s
 - `corretor.py`: the auditor. `resumir_blocos()` sends only each block's page range, size and **borders** (300 leading / 300 trailing chars, or the raw anchors flagged `⚠ TEXTO NÃO EXTRAÍDO` when they weren't found) — never the full text, which would cost as much as resending the document each cycle. The prompt lists the pathologies to check (engulfing block, uneven granularity, gap, overlap, broken sequence, improper cut), an explicit approval criterion, an extraction-error clause (never ask the segmenter to reorder text), and how to write directives (imperative Portuguese, identify units by marker + page, never by block index `[n]`, never merge siblings, keep directives that worked, at most 5). Response: `problemas`, `erro_extracao`, `consistente`, `insights`. Only `consistente` and `insights` drive the loop; the rest is recorded in `_correcao.json`.
 - `anchor.py`: tolerant anchor matching in **five layers** — exact; exact on the first 80 chars; normalized (HTML tags and page markers removed, Markdown stripped, whitespace collapsed, accents decomposed, lowercased, with a position map back to the original); normalized truncated; and, for `offset_fim` only (`preferir_sufixo`), the last 40 chars — because the model cuts an anchor mid-word and reconstructs its *beginning* wrongly while copying the end correctly. The full text is normalized once per run via an identity cache.
 - `utils_files.py`: loads paginated `.md` files sorted by filename (numbered 1..N); assembles the full text; re-injects the page marker when a window starts mid-page.
-- `gabarito.py` / `avaliar.py`: read an indented-outline gold (`gabarito/<doc>.md`, format in `gabarito.py`'s docstring) and score each `{prefixo}_cicloN.json` against it (`python avaliar.py resultados/<doc>/<doc>`). Per cycle: P/R/F1 of block **starts**, of block **ends** (an end is right anywhere between the node's end and the next node's start), of **exact blocks**, and **coverage**; `--tolerancia k` in normalized chars. Writes `{prefixo}_avaliacao.json` and `.png`; the plot shows P/R/F1 of **exact blocks** per cycle. The only gold in `gabarito/` is `amostra-sec-rules.md`.
+- `gabarito.py` / `avaliar.py`: read an indented-outline gold (`gabarito/<doc>.md`, format in `gabarito.py`'s docstring) and score each `{prefixo}_cicloN.json` against it (`python avaliar.py resultados/<doc>/<doc>`). Per cycle: P/R/F1 of block **starts**, of block **ends** (an end is right anywhere between the node's end and the next node's start), of **exact blocks**, and **coverage**; `--tolerancia k` in normalized chars. Writes `{prefixo}_avaliacao.json` and `.png`; the plot shows P/R/F1 of **exact blocks** per cycle. Golds in `gabarito/`: `amostra-sec-rules.md`, ten `LEI-2017-*.md`, and the 29 TCU norms (`NORMA-*.md`).
 
 ## Results in the tree
 
@@ -108,7 +111,7 @@ All three predate the current segmenter and auditor prompts, so they say nothing
 
 ## Known Limitations
 
-- **No evaluation is possible right now**: `gabarito/` is empty.
+- **The TCU golds are generated, not hand-checked.** `dataset_tcu.py` relies on each dispositivo being its own `<p>` in the HTML and drops every norm where that fails (tables, `<li>` lists, struck or compiled text, annexes, glued or malformed markers, signatures followed by more dispositivos, quotes that never close). What it keeps is only as right as its regexes; the 30 norms are clean prose without tables, so they don't exercise the extraction-noise cases.
 - **Approval by the auditor is not correctness.** It compares block borders against the structural spec, never against the document, so a uniformly wrong segmentation is a fixed point. Nothing tells it where the document ends (it gets neither the text length nor coverage), so content after the last block is invisible to it. The prompt asks it not to approve a defect it flagged in an earlier cycle; nothing enforces it.
 - **The identifier is a single point of failure.** Its hierarchy is the criterion for both segmenter and auditor, so a wrong hierarchy is enforced faithfully. There is no flag to bypass it and no record of the sampled pages.
 - **Blocks larger than the window.** The window doubles only once. A block still longer than twice the window comes out truncated, and the pointer resumes mid-unit. If the model returns `offset_inicio: null` instead, the pipeline advances one page and the block is lost. In `sec-rules`, `SEC. 203` alone spans ~12.5 pages: set `--janela-paginas` above the largest expected block.

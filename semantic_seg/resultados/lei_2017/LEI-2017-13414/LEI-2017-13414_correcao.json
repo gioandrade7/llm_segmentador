@@ -1,0 +1,362 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 2,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"CAPÍTULO I\" (pág. 1) contém também o marcador de \"Art. 1º\" e os incisos \"I -\", \"II -\" e \"III -\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 17,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - para suplementação de despesas classificadas com \\\"RP 0\\\"\" (Art. 4º, pág. 1) engloba a alínea \"a)\" e seus itens \"1.\" a \"4.\", embora cada marcador deva abrir bloco próprio."
+        },
+        {
+          "bloco": 25,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\" (Art. 4º, pág. 1) contém o início da alínea irmã \"d) no caso de transferên...\"."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\" (Art. 4º, pág. 1) engloba o item \"1. do mesmo subtítulo objeto da suplementação\"."
+        },
+        {
+          "bloco": 41,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"2. das ações destinadas à execução da Política de Garantia de Preços Mínimos\" (Art. 4º, pág. 1) contém a alínea \"d) que decorram de varia...\" e os itens \"1.\" e \"2.\" dessa alínea."
+        },
+        {
+          "bloco": 42,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - para suplementação de despesas classificadas com \\\"RP 2\\\"\" (Art. 4º, pág. 1) engloba diversas alíneas e itens internos, evidenciados já pela alínea \"a)\" no início do bloco, sem abrir blocos para esses marcadores."
+        },
+        {
+          "bloco": 77,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 10. Integram esta Lei os seguintes Anexos\" (pág. 1) engloba os incisos \"I -\" a \"XI -\", que são unidades marcadas e devem ser segmentadas individualmente."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; inicie blocos próprios em \"Art. 1º\" e em cada inciso \"I -\", \"II -\" e \"III -\" desse artigo.\n- No Art. 4º (pág. 1), abra um bloco novo em cada marcador interno, começando por \"I - para suplementação de despesas classificadas com \\\"RP 0\\\"\", pela alínea \"a) destinadas à Contribuição da União\" e por cada item \"1.\" a \"4.\" dessa alínea.\n- No Art. 4º (pág. 1), separe rigorosamente as alíneas e itens que foram unidos: inicie blocos próprios em \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\", \"d) no caso de transferên...\", \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\", em seus itens \"1.\" e \"2.\", e em \"d) que decorram de varia...\" e seus itens \"1.\" e \"2.\".\n- No Art. 4º (pág. 1), após iniciar \"III - para suplementação de despesas classificadas com \\\"RP 2\\\"\", abra também um bloco para cada alínea e cada item subordinado, a partir de \"a) nos subtítulos das ações relativas às contribuições\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 107,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; inicie blocos próprios em \"Art. 1º\" e em cada inciso \"I -\", \"II -\" e \"III -\" desse artigo.\n- No Art. 4º (pág. 1), abra um bloco novo em cada marcador interno, começando por \"I - para suplementação de despesas classificadas com \\\"RP 0\\\"\", pela alínea \"a) destinadas à Contribuição da União\" e por cada item \"1.\" a \"4.\" dessa alínea.\n- No Art. 4º (pág. 1), separe rigorosamente as alíneas e itens que foram unidos: inicie blocos próprios em \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\", \"d) no caso de transferên...\", \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\", em seus itens \"1.\" e \"2.\", e em \"d) que decorram de varia...\" e seus itens \"1.\" e \"2.\".\n- No Art. 4º (pág. 1), após iniciar \"III - para suplementação de despesas classificadas com \\\"RP 2\\\"\", abra também um bloco para cada alínea e cada item subordinado, a partir de \"a) nos subtítulos das ações relativas às contribuições\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 5,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"II - o Orçamento da Seguridade Social\" também contém o início da unidade irmã \"III - o Orçamento de Investimento\", que deveria abrir bloco próprio."
+        },
+        {
+          "bloco": 9,
+          "tipo": "englobante",
+          "descricao": "O bloco reúne os três incisos do Art. 2º: começa em \"I - Orçamento Fiscal\" e contém também \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 36,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no item \"2. anulação de dotações classificadas com \\\"RP 2\\\"\" contém também o item irmão \"3. reserva de contingência\", sem separação de bloco."
+        },
+        {
+          "bloco": 41,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado na alínea \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\" contém também o item subordinado \"1. do mesmo subtítulo objeto da suplementação\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 26,
+          "tipo": "sobreposicao",
+          "descricao": "O registro marcado como \"TEXTO NÃO EXTRAÍDO\" reproduz o início \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\", também usado pelo bloco seguinte, indicando falha de ancoragem/extração e potencial duplicação."
+        },
+        {
+          "bloco": 32,
+          "tipo": "lacuna",
+          "descricao": "O item \"1. de anulação de dotações\" termina uma lista anunciada por \"mediante a utilização de recursos provenientes:\", mas o bloco seguinte já inicia o inciso II; os demais itens esperados da alínea \"e)\" do inciso I não foram extraídos."
+        },
+        {
+          "bloco": 44,
+          "tipo": "lacuna",
+          "descricao": "O item \"1. anulação parcial de dotações...; e\" termina com conjunção de continuidade, mas o bloco seguinte já inicia o inciso III, indicando texto faltante após a alínea \"d) que decorram de variação cambial\" do inciso II."
+        },
+        {
+          "bloco": 53,
+          "tipo": "lacuna",
+          "descricao": "A alínea \"d) nos grupos de natureza de despesa ... no âmbito:\" anuncia itens subordinados, mas o bloco seguinte já inicia a alínea \"e)\", sem os itens da alínea d."
+        },
+        {
+          "bloco": 63,
+          "tipo": "lacuna",
+          "descricao": "A alínea \"c) que decorram de variação cambial ... mediante a utilização de recursos provenientes de:\" anuncia itens subordinados, mas o bloco seguinte já inicia a alínea \"d)\", sem esses itens."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando o bloco do inciso II imediatamente antes do inciso III.\n- No Art. 2º (pág. 1), termine o bloco do artigo antes de \"I - Orçamento Fiscal\" e inicie blocos próprios, separadamente, em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), inicie um bloco em todo inciso, alínea e item efetivamente presente; em especial, separe \"3. reserva de contingência\" do item \"2. anulação de dotações classificadas com \\\"RP 2\\\"\" e separe \"1. do mesmo subtítulo objeto da suplementação\" da alínea \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\". Preserve também blocos próprios para as alíneas e itens dos incisos I, II e III, inclusive a partir de \"a) destinadas à Contribuição da União\" e \"a) nos subtítulos das ações relativas às contribuições\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 117,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando o bloco do inciso II imediatamente antes do inciso III.\n- No Art. 2º (pág. 1), termine o bloco do artigo antes de \"I - Orçamento Fiscal\" e inicie blocos próprios, separadamente, em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), inicie um bloco em todo inciso, alínea e item efetivamente presente; em especial, separe \"3. reserva de contingência\" do item \"2. anulação de dotações classificadas com \\\"RP 2\\\"\" e separe \"1. do mesmo subtítulo objeto da suplementação\" da alínea \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\". Preserve também blocos próprios para as alíneas e itens dos incisos I, II e III, inclusive a partir de \"a) destinadas à Contribuição da União\" e \"a) nos subtítulos das ações relativas às contribuições\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 116,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"III - discriminação das fontes de financiamento do Orçamento de Investimento\" contém também os marcadores autônomos dos incisos IV a XI do Art. 10, enquanto os incisos I e II foram segmentados separadamente."
+        },
+        {
+          "bloco": 116,
+          "tipo": "granularidade",
+          "descricao": "No Art. 10, os incisos I e II possuem blocos próprios, mas os incisos III, IV, V, VI, VII, VIII, IX, X e XI foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada bloco imediatamente antes do inciso seguinte.\n- No Art. 2º (pág. 1), termine o bloco do artigo antes de \"I - Orçamento Fiscal\" e inicie blocos próprios, separadamente, em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), inicie um bloco em todo inciso, alínea e item efetivamente presente; em especial, separe \"3. reserva de contingência\" do item \"2. anulação de dotações classificadas com \\\"RP 2\\\"\" e separe \"1. do mesmo subtítulo objeto da suplementação\" da alínea \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\". Preserve blocos próprios para todas as alíneas e itens dos incisos I, II e III, inclusive a partir de \"a) destinadas à Contribuição da União\" e \"a) nos subtítulos das ações relativas às contribuições\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\"; em especial, termine o bloco de \"III - discriminação das fontes de financiamento do Orçamento de Investimento\" imediatamente antes de \"IV - distribuição da despesa fixada no Orçamento de Investimento\" e faça o mesmo em cada fronteira entre os incisos IV, V, VI, VII, VIII, IX, X e XI."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 116,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada bloco imediatamente antes do inciso seguinte.\n- No Art. 2º (pág. 1), termine o bloco do artigo antes de \"I - Orçamento Fiscal\" e inicie blocos próprios, separadamente, em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), inicie um bloco em todo inciso, alínea e item efetivamente presente; em especial, separe \"3. reserva de contingência\" do item \"2. anulação de dotações classificadas com \\\"RP 2\\\"\" e separe \"1. do mesmo subtítulo objeto da suplementação\" da alínea \"c) nos grupos de natureza de despesa \\\"3 - Outras Despesas Correntes\\\"\". Preserve blocos próprios para todas as alíneas e itens dos incisos I, II e III, inclusive a partir de \"a) destinadas à Contribuição da União\" e \"a) nos subtítulos das ações relativas às contribuições\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\"; em especial, termine o bloco de \"III - discriminação das fontes de financiamento do Orçamento de Investimento\" imediatamente antes de \"IV - distribuição da despesa fixada no Orçamento de Investimento\" e faça o mesmo em cada fronteira entre os incisos IV, V, VI, VII, VIII, IX, X e XI.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 43,
+          "tipo": "sequencia",
+          "descricao": "No Art. 4º, a alínea \"b) no caso de transferências aos Estados...\" sucede diretamente o item \"4. superávit financeiro...\" da alínea \"e)\" do inciso I, sem que apareçam o inciso II e sua alínea \"a)\"; a mudança de pai e a sequência esperada foram perdidas."
+        },
+        {
+          "bloco": 51,
+          "tipo": "sequencia",
+          "descricao": "No Art. 4º, o inciso \"III - para suplementação de despesas classificadas com \\\"RP 2\\\"\" sucede o item \"1. anulação parcial de dotações...; e\" da alínea \"d)\", cujo enunciado introduz uma lista de recursos, indicando ausência do item subsequente."
+        },
+        {
+          "bloco": 67,
+          "tipo": "sequencia",
+          "descricao": "No Art. 4º, o inciso \"IV - para atendimento de despesas classificadas com \\\"RP 3\\\"\" sucede diretamente a alínea \"f) em cada subtítulo... mediante a utilização de recursos provenientes:\", sem os itens que essa alínea anuncia."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada bloco imediatamente antes do inciso seguinte.\n- No Art. 2º (pág. 1), termine o bloco do artigo antes de \"I - Orçamento Fiscal\" e inicie blocos próprios, separadamente, em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\", terminando cada bloco imediatamente antes do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 108,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada bloco imediatamente antes do inciso seguinte.\n- No Art. 2º (pág. 1), termine o bloco do artigo antes de \"I - Orçamento Fiscal\" e inicie blocos próprios, separadamente, em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada nos Orçamentos Fiscal e da Seguridade Social\" e inicie um bloco próprio em cada inciso de \"I -\" até \"XI -\", terminando cada bloco imediatamente antes do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 8,
+          "tipo": "englobante",
+          "descricao": "o bloco de \"Seção I — Da Estimativa da Receita\" contém também o marcador e o texto inicial de \"Art. 2º A receita total estimada nos Orçamentos Fiscal e da Seguridade Social\"."
+        },
+        {
+          "bloco": 36,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no item \"2. da reserva de contingência\" da alínea \"e\" do inciso I do Art. 4º também contém o início do item irmão \"3. de superávit financeiro\"."
+        },
+        {
+          "bloco": 43,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado na alínea \"b) no caso de transferências aos Estados\" do inciso II do Art. 4º contém também o marcador do item \"1. anulação de dotações\"."
+        },
+        {
+          "bloco": 55,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado na alínea \"d) nos grupos de natureza de despesa\" do inciso III do Art. 4º contém também o marcador do item \"1. do mesmo subtítulo objeto da suplementação\"."
+        },
+        {
+          "bloco": 107,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no inciso \"VII - quadros orçamentários consolidados\" do Art. 10 contém os marcadores dos incisos irmãos \"VIII -\", \"IX -\" e \"X -\"; a diretriz anterior de separar todos os incisos até XI não foi integralmente aplicada."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, mantenha blocos próprios para \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), separe toda alínea e todo item arábico em bloco próprio: termine o item \"2. da reserva de contingência\" da alínea \"e\" do inciso I antes de \"3. de superávit financeiro\"; termine a alínea \"b) no caso de transferências aos Estados\" do inciso II antes de \"1. anulação de dotações\"; e termine a alínea \"d) nos grupos de natureza de despesa\" do inciso III antes de \"1. do mesmo subtítulo objeto da suplementação\".\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo5.json"
+  },
+  {
+    "ciclo": 6,
+    "blocos_produzidos": 106,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, mantenha blocos próprios para \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), separe toda alínea e todo item arábico em bloco próprio: termine o item \"2. da reserva de contingência\" da alínea \"e\" do inciso I antes de \"3. de superávit financeiro\"; termine a alínea \"b) no caso de transferências aos Estados\" do inciso II antes de \"1. anulação de dotações\"; e termine a alínea \"d) nos grupos de natureza de despesa\" do inciso III antes de \"1. do mesmo subtítulo objeto da suplementação\".\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"I - para suplementação de despesas classificadas com \\\"RP 0\\\":\" contém também a alínea \"a) destinadas à Contribuição da União...\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "O bloco da alínea \"d) no caso de transferências aos fundos constitucionais...\" contém os itens \"1. anulação de dotações...\" e \"2. excesso de arrecadação ou superávit financeiro...\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 48,
+          "tipo": "englobante",
+          "descricao": "O bloco da alínea \"c) nos grupos de natureza de despesa...\" contém o item \"1. do mesmo subtítulo objeto da suplementação...\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 68,
+          "tipo": "englobante",
+          "descricao": "O bloco da alínea \"f) em cada subtítulo...\" contém os itens \"1. de anulação parcial de dotações...\" e \"2. da reserva de contingência...\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 90,
+          "tipo": "sequencia",
+          "descricao": "Após o texto associado ao Art. 4º e antes de \"CAPÍTULO IV\", a sequência salta para \"Art. 8º\"; estão ausentes o CAPÍTULO III e os Arts. 5º a 7º, o que indica omissão no texto extraído."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, mantenha blocos próprios para \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), separe toda alínea e todo item arábico em bloco próprio: termine o inciso \"I - para suplementação de despesas classificadas com \\\"RP 0\\\":\" antes de \"a) destinadas à Contribuição da União\"; termine a alínea \"d) no caso de transferências aos fundos constitucionais\" antes de \"1. anulação de dotações\" e de \"2. excesso de arrecadação ou superávit financeiro\"; termine a alínea \"c) nos grupos de natureza de despesa\" do inciso II antes de \"1. do mesmo subtítulo objeto da suplementação\"; e termine a alínea \"f) em cada subtítulo\" do inciso III antes de \"1. de anulação parcial de dotações\" e de \"2. da reserva de contingência\".\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo6.json"
+  },
+  {
+    "ciclo": 7,
+    "blocos_produzidos": 123,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, mantenha blocos próprios para \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), separe toda alínea e todo item arábico em bloco próprio: termine o inciso \"I - para suplementação de despesas classificadas com \\\"RP 0\\\":\" antes de \"a) destinadas à Contribuição da União\"; termine a alínea \"d) no caso de transferências aos fundos constitucionais\" antes de \"1. anulação de dotações\" e de \"2. excesso de arrecadação ou superávit financeiro\"; termine a alínea \"c) nos grupos de natureza de despesa\" do inciso II antes de \"1. do mesmo subtítulo objeto da suplementação\"; e termine a alínea \"f) em cada subtítulo\" do inciso III antes de \"1. de anulação parcial de dotações\" e de \"2. da reserva de contingência\".\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pela alínea \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\" também contém o início da alínea irmã \"d) no caso de transferências\", que deveria abrir bloco próprio."
+        },
+        {
+          "bloco": 56,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso \"III - para suplementação de despesas classificadas com \\\"RP 2\\\":\" também contém a alínea \"a) nos subtítulos das ações relativas às contribuições\", que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, mantenha blocos próprios para \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, mantenha blocos próprios para \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), inicie um bloco próprio em toda alínea e em todo item arábico. Em especial, termine a alínea \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\" imediatamente antes de \"d) no caso de transferências\"; termine o inciso \"III - para suplementação de despesas classificadas com \\\"RP 2\\\":\" imediatamente antes de \"a) nos subtítulos das ações relativas às contribuições\"; e termine cada alínea imediatamente antes de seus itens \"1.\", \"2.\" e seguintes.\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo7.json"
+  },
+  {
+    "ciclo": 8,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, mantenha blocos próprios para \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, mantenha blocos próprios para \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\".\n- No Art. 4º (pág. 1), inicie um bloco próprio em toda alínea e em todo item arábico. Em especial, termine a alínea \"c) nas ações destinadas à execução da Política de Garantia de Preços Mínimo\" imediatamente antes de \"d) no caso de transferências\"; termine o inciso \"III - para suplementação de despesas classificadas com \\\"RP 2\\\":\" imediatamente antes de \"a) nos subtítulos das ações relativas às contribuições\"; e termine cada alínea imediatamente antes de seus itens \"1.\", \"2.\" e seguintes.\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia no inciso \"II - Orçamento da Seguridade Social\" do Art. 2º e também contém o início do inciso irmão \"III - Refinanciamento da dívida pública federal\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 47,
+          "tipo": "englobante",
+          "descricao": "A alínea \"c) nos grupos de natureza de despesa\" do inciso II do Art. 4º contém também o item \"1. do mesmo subtítulo objeto da suplementação\", que é unidade hierárquica própria."
+        },
+        {
+          "bloco": 58,
+          "tipo": "englobante",
+          "descricao": "A alínea \"d) nos grupos de natureza de despesa\" do inciso III do Art. 4º contém também o item \"1. do mesmo subtítulo objeto da suplementação\", que deveria começar um bloco separado."
+        },
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso \"I - suplementação de subtítulo\" do Art. 7º abrange os incisos irmãos seguintes, chegando ao conteúdo do inciso IV, referido no fim como programações contempladas no PAC. Cada inciso do Art. 7º deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, mantenha blocos próprios para \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, inicie e termine blocos distintos em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\"; em especial, termine o inciso II imediatamente antes do inciso III.\n- No Art. 4º (pág. 1), inicie bloco próprio em toda alínea e em todo item arábico, terminando cada unidade antes do próximo marcador. Em especial, separe a alínea \"c) nos grupos de natureza de despesa\" do item \"1. do mesmo subtítulo objeto da suplementação\" no inciso II e separe a alínea \"d) nos grupos de natureza de despesa\" do item \"1. do mesmo subtítulo objeto da suplementação\" no inciso III.\n- No Art. 7º (pág. 1), inicie um bloco próprio em cada inciso romano, de \"I - suplementação de subtítulo\" até o inciso IV relativo às programações contempladas no PAC, terminando cada inciso imediatamente antes do marcador do inciso seguinte.\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo8.json"
+  },
+  {
+    "ciclo": 9,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\"; no Art. 1º, mantenha blocos próprios para \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada um antes do inciso seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, inicie e termine blocos distintos em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\"; em especial, termine o inciso II imediatamente antes do inciso III.\n- No Art. 4º (pág. 1), inicie bloco próprio em toda alínea e em todo item arábico, terminando cada unidade antes do próximo marcador. Em especial, separe a alínea \"c) nos grupos de natureza de despesa\" do item \"1. do mesmo subtítulo objeto da suplementação\" no inciso II e separe a alínea \"d) nos grupos de natureza de despesa\" do item \"1. do mesmo subtítulo objeto da suplementação\" no inciso III.\n- No Art. 7º (pág. 1), inicie um bloco próprio em cada inciso romano, de \"I - suplementação de subtítulo\" até o inciso IV relativo às programações contempladas no PAC, terminando cada inciso imediatamente antes do marcador do inciso seguinte.\n- No Art. 10 (pág. 1), mantenha um bloco próprio para cada inciso de \"I - receita estimada\" até \"XI -\". Em especial, termine o bloco de \"VII - quadros orçamentários consolidados\" antes de \"VIII - discriminação das receitas\" e inicie blocos separados em \"VIII -\", \"IX -\", \"X -\" e \"XI -\", cada qual terminando antes do inciso seguinte.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 13,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia com \"Seção II — Da Fixação da Despesa\", contém o marcador autônomo \"Art. 3º\" e termina com \"Seção III — Da Autorização para a Abertura de Créditos Suplementares\", reunindo seções e artigo que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "O bloco aberto em \"II - para suplementação de despesas classificadas com \\\"RP 1\\\"\" incorpora marcadores internos de alíneas e itens, inclusive os itens \"1. anulação parcial de dotações\" e \"2. da reserva de contingência\", que devem constituir blocos próprios."
+        },
+        {
+          "bloco": 40,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado na alínea \"d) nos grupos de natureza de despesa\" contém seus itens arábicos e prossegue até o encerramento da Lei, incluindo unidades normativas posteriores, a cláusula de vigência, assinaturas e a indicação dos Anexos."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\". No Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada inciso antes do seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, inicie blocos distintos em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\", terminando cada inciso antes do seguinte.\n- Na Seção II \"Da Fixação da Despesa\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 3º\" e inicie bloco próprio nesse artigo; termine o Art. 3º antes de \"Seção III — Da Autorização para a Abertura de Créditos Suplementares\" e inicie bloco próprio nessa seção, que deve terminar antes de \"Art. 4º\".\n- No Art. 4º (pág. 1), inicie bloco próprio em cada inciso, alínea e item arábico e termine cada unidade antes do próximo marcador. Em especial, no inciso II, separe cada alínea e os itens \"1. anulação parcial de dotações\" e \"2. da reserva de contingência\"; no inciso III, termine a alínea \"d) nos grupos de natureza de despesa\" antes de \"1. do mesmo subtítulo objeto da suplementação\" e abra bloco próprio em cada item subsequente.\n- Após o Art. 4º (pág. 1), não prolongue o bloco de qualquer alínea ou item para unidades posteriores: inicie blocos próprios em cada artigo, capítulo, seção e inciso seguinte. No Art. 7º, separe os incisos \"I - suplementação de subtítulo\" até o inciso IV; no Art. 10, separe os incisos \"I - receita estimada\" até \"XI -\", incluindo blocos distintos em \"VIII -\", \"IX -\", \"X -\" e \"XI -\"."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo9.json"
+  },
+  {
+    "ciclo": 10,
+    "blocos_produzidos": 113,
+    "insights_aplicados": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo imediatamente antes de \"Art. 1º\". No Art. 1º, inicie blocos próprios em \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", terminando cada inciso antes do seguinte.\n- Na Seção I \"Da Estimativa da Receita\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 2º A receita total estimada\". No Art. 2º, inicie blocos distintos em \"I - Orçamento Fiscal\", \"II - Orçamento da Seguridade Social\" e \"III - Refinanciamento da dívida pública federal\", terminando cada inciso antes do seguinte.\n- Na Seção II \"Da Fixação da Despesa\" (pág. 1), termine o bloco da seção imediatamente antes de \"Art. 3º\" e inicie bloco próprio nesse artigo; termine o Art. 3º antes de \"Seção III — Da Autorização para a Abertura de Créditos Suplementares\" e inicie bloco próprio nessa seção, que deve terminar antes de \"Art. 4º\".\n- No Art. 4º (pág. 1), inicie bloco próprio em cada inciso, alínea e item arábico e termine cada unidade antes do próximo marcador. Em especial, no inciso II, separe cada alínea e os itens \"1. anulação parcial de dotações\" e \"2. da reserva de contingência\"; no inciso III, termine a alínea \"d) nos grupos de natureza de despesa\" antes de \"1. do mesmo subtítulo objeto da suplementação\" e abra bloco próprio em cada item subsequente.\n- Após o Art. 4º (pág. 1), não prolongue o bloco de qualquer alínea ou item para unidades posteriores: inicie blocos próprios em cada artigo, capítulo, seção e inciso seguinte. No Art. 7º, separe os incisos \"I - suplementação de subtítulo\" até o inciso IV; no Art. 10, separe os incisos \"I - receita estimada\" até \"XI -\", incluindo blocos distintos em \"VIII -\", \"IX -\", \"X -\" e \"XI -\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"II - Orçamento da Seguridade Social\" também contém o marcador irmão \"III - Refinanciamento da dívida pública federal\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 23,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no item \"2. anulação de dotações classificadas\" também contém os itens irmãos \"3. reserva de contingência\" e \"4. superávit financeiro\", sem cortes próprios."
+        },
+        {
+          "bloco": 48,
+          "tipo": "englobante",
+          "descricao": "O bloco da alínea \"c) nos grupos de natureza de despesa\" inclui o item subordinado \"1. do mesmo subtítulo objeto da suplementação\", que deve constituir bloco distinto."
+        },
+        {
+          "bloco": 50,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado na alínea \"d) que decorram de variação cambial\" contém os itens \"1. anulação parcial de dotações\" e \"2. da reserva de contingência\", que deveriam ser blocos próprios."
+        },
+        {
+          "bloco": 95,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso \"II - atendimento de despesas relativas a ações em execução\" do Art. 7º não foi encerrado antes dos incisos III e IV previstos para o artigo."
+        },
+        {
+          "bloco": 113,
+          "tipo": "englobante",
+          "descricao": "O bloco do \"Art. 11.\" prossegue até o marcador \"<<ANEXOS\", que inicia o componente Anexo e deve abrir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO I (pág. 1), termine o bloco do capítulo antes de \"Art. 1º\"; no Art. 1º, mantenha blocos próprios para \"I - o Orçamento Fiscal\", \"II - o Orçamento da Seguridade Social\" e \"III - o Orçamento de Investimento\", encerrando cada inciso antes do seguinte.\n- Nas Seções I e II do CAPÍTULO II (pág. 1), termine cada seção antes do respectivo artigo e mantenha blocos próprios para o Art. 2º, seus incisos I, II e III, o Art. 3º, seus incisos I, II e III e o Parágrafo único; encerre a Seção II antes da Seção III e esta antes do Art. 4º.\n- No Art. 4º (pág. 1), abra e encerre um bloco em todo inciso, alínea e item arábico. Em especial, separe os itens \"2. anulação de dotações classificadas\", \"3. reserva de contingência\" e \"4. superávit financeiro\" da alínea \"a)\" do inciso I; separe o item \"1. do mesmo subtítulo objeto da suplementação\" da alínea \"c)\" do inciso II; e separe os itens \"1. anulação parcial de dotações\" e \"2. da reserva de contingência\" da alínea \"d) que decorram de variação cambial\".\n- Após o Art. 4º (pág. 1), não prolongue blocos de alíneas ou itens para unidades posteriores; no Art. 7º, inicie blocos distintos em todos os incisos de \"I - suplementação de subtítulo\" até \"IV -\", inclusive os incisos III e IV, e no Art. 10 mantenha blocos distintos para cada inciso de \"I - receita estimada\" até \"XI - programa de trabalho\".\n- No fim do texto principal (pág. 1), termine o bloco do \"Art. 11.\" antes de \"<<ANEXOS\" e inicie ali um bloco próprio para o componente Anexo."
+    },
+    "arquivo_blocos": "resultados/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo10.json"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 35,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - pôr em risco a defesa e a soberania nacionais\" (Art. 7º, pág. 3) também contém os marcadores e os textos dos incisos II a VIII, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 94,
+          "tipo": "sequencia",
+          "descricao": "No § 1º do Art. 19 (pág. 6), o inciso I termina em \"e\", mas o bloco seguinte já inicia o § 2º; falta o inciso II referido expressamente por \"O consentimento referido no inciso II do § 1º\". O texto desse inciso não está presente nos blocos, o que indica falha de extração."
+        },
+        {
+          "bloco": 118,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - restritas: quando classificadas no grau reservado\" (Art. 25, § 3º, pág. 7) contém também o marcador e o texto do inciso III, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 3), separe os incisos I a VIII: inicie um bloco em cada marcador \"I -\", \"II -\", \"III -\", \"IV -\", \"V -\", \"VI -\", \"VII -\" e \"VIII -\", sem manter incisos subsequentes no bloco aberto por \"I - pôr em risco a defesa e a soberania nacionais\".\n- No Art. 25, § 3º (pág. 7), termine o bloco do inciso \"II - restritas: quando classificadas no grau reservado; e\" imediatamente antes de \"III - públicas: quando classificadas no grau público\" e inicie outro bloco nesse marcador."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21225/NORMA-21225_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 133,
+    "insights_aplicados": "- No Art. 7º (pág. 3), separe os incisos I a VIII: inicie um bloco em cada marcador \"I -\", \"II -\", \"III -\", \"IV -\", \"V -\", \"VI -\", \"VII -\" e \"VIII -\", sem manter incisos subsequentes no bloco aberto por \"I - pôr em risco a defesa e a soberania nacionais\".\n- No Art. 25, § 3º (pág. 7), termine o bloco do inciso \"II - restritas: quando classificadas no grau reservado; e\" imediatamente antes de \"III - públicas: quando classificadas no grau público\" e inicie outro bloco nesse marcador.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 84,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem\" (pág. 5) contém também o marcador e o texto do \"§ 3º Quando não fornecidos pelo órgão ou entidade\", que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 86,
+          "tipo": "englobante",
+          "descricao": "O bloco da \"Seção VI — Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade\" (pág. 5) contém o marcador e o texto de \"Art. 16. As informações produzidas pelo Tribunal\", que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 3), separe os incisos I a VIII: inicie um bloco em cada marcador \"I -\", \"II -\", \"III -\", \"IV -\", \"V -\", \"VI -\", \"VII -\" e \"VIII -\", sem manter incisos subsequentes no bloco aberto por \"I - pôr em risco a defesa e a soberania nacionais\".\n- No Art. 25, § 3º (pág. 7), termine o bloco do inciso \"II - restritas: quando classificadas no grau reservado; e\" imediatamente antes de \"III - públicas: quando classificadas no grau público\" e inicie outro bloco nesse marcador.\n- No Art. 14, termine o bloco de \"§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem não for equivalente ao do TCU\" (pág. 5) imediatamente antes de \"§ 3º Quando não fornecidos pelo órgão ou entidade\" e inicie um bloco novo nesse marcador.\n- Na Seção VI (pág. 5), termine o bloco do título \"Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade\" imediatamente antes de \"Art. 16. As informações produzidas pelo Tribunal\" e inicie um bloco novo no marcador do artigo."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21225/NORMA-21225_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 134,
+    "insights_aplicados": "- No Art. 7º (pág. 3), separe os incisos I a VIII: inicie um bloco em cada marcador \"I -\", \"II -\", \"III -\", \"IV -\", \"V -\", \"VI -\", \"VII -\" e \"VIII -\", sem manter incisos subsequentes no bloco aberto por \"I - pôr em risco a defesa e a soberania nacionais\".\n- No Art. 25, § 3º (pág. 7), termine o bloco do inciso \"II - restritas: quando classificadas no grau reservado; e\" imediatamente antes de \"III - públicas: quando classificadas no grau público\" e inicie outro bloco nesse marcador.\n- No Art. 14, termine o bloco de \"§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem não for equivalente ao do TCU\" (pág. 5) imediatamente antes de \"§ 3º Quando não fornecidos pelo órgão ou entidade\" e inicie um bloco novo nesse marcador.\n- Na Seção VI (pág. 5), termine o bloco do título \"Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade\" imediatamente antes de \"Art. 16. As informações produzidas pelo Tribunal\" e inicie um bloco novo no marcador do artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 55,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 10. Os gestores da informação devem editar...” (pág. 4) contém também o marcador e o texto de “§ 1º A informação não classificada previamente por ato normativo...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 3), separe os incisos I a VIII: inicie um bloco em cada marcador “I -”, “II -”, “III -”, “IV -”, “V -”, “VI -”, “VII -” e “VIII -”, sem manter incisos subsequentes no bloco aberto por “I - pôr em risco a defesa e a soberania nacionais”.\n- No Art. 25, § 3º (pág. 7), termine o bloco do inciso “II - restritas: quando classificadas no grau reservado; e” imediatamente antes de “III - públicas: quando classificadas no grau público” e inicie outro bloco nesse marcador.\n- No Art. 14, termine o bloco de “§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem não for equivalente ao do TCU” (pág. 5) imediatamente antes de “§ 3º Quando não fornecidos pelo órgão ou entidade” e inicie um bloco novo nesse marcador.\n- Na Seção VI (pág. 5), termine o bloco do título “Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade” imediatamente antes de “Art. 16. As informações produzidas pelo Tribunal” e inicie um bloco novo no marcador do artigo.\n- No Art. 10 (pág. 4), termine o bloco de “Art. 10. Os gestores da informação devem editar...” imediatamente antes de “§ 1º A informação não classificada previamente por ato normativo...” e inicie um bloco novo nesse marcador."
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21225/NORMA-21225_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 132,
+    "insights_aplicados": "- No Art. 7º (pág. 3), separe os incisos I a VIII: inicie um bloco em cada marcador “I -”, “II -”, “III -”, “IV -”, “V -”, “VI -”, “VII -” e “VIII -”, sem manter incisos subsequentes no bloco aberto por “I - pôr em risco a defesa e a soberania nacionais”.\n- No Art. 25, § 3º (pág. 7), termine o bloco do inciso “II - restritas: quando classificadas no grau reservado; e” imediatamente antes de “III - públicas: quando classificadas no grau público” e inicie outro bloco nesse marcador.\n- No Art. 14, termine o bloco de “§ 2º Quando o sistema de classificação da informação do órgão ou entidade de origem não for equivalente ao do TCU” (pág. 5) imediatamente antes de “§ 3º Quando não fornecidos pelo órgão ou entidade” e inicie um bloco novo nesse marcador.\n- Na Seção VI (pág. 5), termine o bloco do título “Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade” imediatamente antes de “Art. 16. As informações produzidas pelo Tribunal” e inicie um bloco novo no marcador do artigo.\n- No Art. 10 (pág. 4), termine o bloco de “Art. 10. Os gestores da informação devem editar...” imediatamente antes de “§ 1º A informação não classificada previamente por ato normativo...” e inicie um bloco novo nesse marcador.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados/tcu/NORMA-21225/NORMA-21225_ciclo4.json"
+  }
+]
