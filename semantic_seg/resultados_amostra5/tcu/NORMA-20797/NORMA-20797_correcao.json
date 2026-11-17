@@ -1,0 +1,52 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto introdutório, incluindo os considerandos e “resolve:”, ficou fora de qualquer bloco antes do Art. 1º."
+        },
+        {
+          "onde": "VIII - interessado externo, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso VIII contém também os incisos IX - item não digitalizável, X - unidade gestora do acesso a base de dados, XI - unidade interessada e XII - unidade responsável por base de dados."
+        },
+        {
+          "onde": "II - manifestação da unidade gestora do acesso a base de dados custodiada, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso II do art. 5º ficou fora de bloco."
+        },
+        {
+          "onde": "III - autorização do relator do processo à qual se vincula a solicitação da unidade interessada, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso III do art. 5º ficou fora de bloco."
+        },
+        {
+          "onde": "§ 5º A unidade gestora do acesso à base de dados solicitada, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 5º contém também os §§ 6º, 7º e 8º do art. 5º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” e que termina em “resolve:” (pág. 1), antes de iniciar o bloco do Art. 1º.\n- No art. 2º, encerre o bloco de “VIII - interessado externo” antes de “IX - item não digitalizável” (pág. 2) e inicie blocos próprios em “IX - item não digitalizável”, “X - unidade gestora do acesso a base de dados”, “XI - unidade interessada” e “XII - unidade responsável por base de dados”.\n- No art. 5º, inicie blocos próprios em “II - manifestação da unidade gestora do acesso a base de dados custodiada” e em “III - autorização do relator do processo à qual se vincula a solicitação da unidade interessada” (pág. 4).\n- No art. 5º, encerre o bloco de “§ 5º A unidade gestora do acesso à base de dados solicitada” antes de “§ 6º Uma vez autorizado” (pág. 4) e inicie blocos próprios nos §§ 6º, 7º e 8º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20797/NORMA-20797_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 65,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” e que termina em “resolve:” (pág. 1), antes de iniciar o bloco do Art. 1º.\n- No art. 2º, encerre o bloco de “VIII - interessado externo” antes de “IX - item não digitalizável” (pág. 2) e inicie blocos próprios em “IX - item não digitalizável”, “X - unidade gestora do acesso a base de dados”, “XI - unidade interessada” e “XII - unidade responsável por base de dados”.\n- No art. 5º, inicie blocos próprios em “II - manifestação da unidade gestora do acesso a base de dados custodiada” e em “III - autorização do relator do processo à qual se vincula a solicitação da unidade interessada” (pág. 4).\n- No art. 5º, encerre o bloco de “§ 5º A unidade gestora do acesso à base de dados solicitada” antes de “§ 6º Uma vez autorizado” (pág. 4) e inicie blocos próprios nos §§ 6º, 7º e 8º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20797/NORMA-20797_ciclo2.json"
+  }
+]

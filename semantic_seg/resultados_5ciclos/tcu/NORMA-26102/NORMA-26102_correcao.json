@@ -1,0 +1,93 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 88,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 4,
+          "tipo": "englobante",
+          "descricao": "O bloco do “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3) também contém o inciso “I - acordo de leniência”, que é unidade hierárquica própria."
+        },
+        {
+          "bloco": 13,
+          "tipo": "sequencia",
+          "descricao": "Após o inciso “I - instaurar processo de controle externo...” do Art. 3º (pág. 4), inicia-se diretamente o “§ 1º”, embora os §§ 2º, 3º e 4º do mesmo artigo remetam expressamente aos incisos II, III, IV e V. Os incisos II a V estão ausentes da sequência segmentada."
+        },
+        {
+          "bloco": 48,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso “III - até que se efetive a assinatura do acordo de leniência...” (pág. 8) também captura os incisos IV e V, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 61,
+          "tipo": "englobante",
+          "descricao": "O bloco do “Art. 16. Caso os valores de ressarcimento...” (pág. 9) termina contendo o marcador “Parágrafo único. Também neste caso...”, que deveria abrir um bloco separado."
+        },
+        {
+          "bloco": 65,
+          "tipo": "englobante",
+          "descricao": "O bloco do “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10) incorpora os incisos I e II, apesar de ambos serem unidades hierárquicas que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3), termine o bloco imediatamente antes de “I - acordo de leniência” e inicie um bloco próprio em cada inciso romano subsequente do parágrafo.\n- No Art. 3º (pág. 4), não avance do inciso “I - instaurar processo de controle externo...” diretamente para o “§ 1º”; identifique e inicie blocos próprios nos incisos II, III, IV e V antes do primeiro parágrafo.\n- No inciso “III - até que se efetive a assinatura do acordo de leniência...” do Art. 12 (pág. 8), termine o bloco antes de “IV - em caso de não celebração...” e inicie também um bloco próprio em “V - O disposto no inciso anterior...”.\n- No “Art. 16. Caso os valores de ressarcimento...” (pág. 9), termine o bloco antes de “Parágrafo único. Também neste caso...” e abra um bloco próprio para o parágrafo único.\n- No “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10), termine o bloco antes de “I - podem ser aproveitados...” e abra blocos próprios para os incisos I e II."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-26102/NORMA-26102_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 103,
+    "insights_aplicados": "- No “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3), termine o bloco imediatamente antes de “I - acordo de leniência” e inicie um bloco próprio em cada inciso romano subsequente do parágrafo.\n- No Art. 3º (pág. 4), não avance do inciso “I - instaurar processo de controle externo...” diretamente para o “§ 1º”; identifique e inicie blocos próprios nos incisos II, III, IV e V antes do primeiro parágrafo.\n- No inciso “III - até que se efetive a assinatura do acordo de leniência...” do Art. 12 (pág. 8), termine o bloco antes de “IV - em caso de não celebração...” e inicie também um bloco próprio em “V - O disposto no inciso anterior...”.\n- No “Art. 16. Caso os valores de ressarcimento...” (pág. 9), termine o bloco antes de “Parágrafo único. Também neste caso...” e abra um bloco próprio para o parágrafo único.\n- No “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10), termine o bloco antes de “I - podem ser aproveitados...” e abra blocos próprios para os incisos I e II.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 12,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “IV - escopo do acordo de leniência...” (pág. 3) também contém o marcador e o texto de “V - valores de ressarcimento...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 20,
+          "tipo": "englobante",
+          "descricao": "O bloco do “Art. 3º ... deverá adotar as seguintes providências:” (pág. 4) engloba os incisos I a VI, incluindo o trecho final “VI - propor ao Relator...”; cada inciso romano deveria ser um bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3), termine o bloco imediatamente antes de “I - acordo de leniência” e inicie um bloco próprio em cada inciso romano subsequente; em particular, termine o inciso “IV - escopo do acordo de leniência...” antes de “V - valores de ressarcimento...”.\n- No Art. 3º (pág. 4), termine o bloco do artigo imediatamente antes de “I - instaurar processo de controle externo...” e inicie um bloco próprio para cada inciso I, II, III, IV, V e VI, sem avançar de um inciso para o seguinte nem para “§ 1º”.\n- No inciso “III - até que se efetive a assinatura do acordo de leniência...” do Art. 12 (pág. 8), termine o bloco antes de “IV - em caso de não celebração...” e inicie também um bloco próprio em “V - O disposto no inciso anterior...”.\n- No “Art. 16. Caso os valores de ressarcimento...” (pág. 9), termine o bloco antes de “Parágrafo único. Também neste caso...” e abra um bloco próprio para o parágrafo único.\n- No “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10), termine o bloco antes de “I - podem ser aproveitados...” e abra blocos próprios para os incisos I e II."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-26102/NORMA-26102_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 108,
+    "insights_aplicados": "- No “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3), termine o bloco imediatamente antes de “I - acordo de leniência” e inicie um bloco próprio em cada inciso romano subsequente; em particular, termine o inciso “IV - escopo do acordo de leniência...” antes de “V - valores de ressarcimento...”.\n- No Art. 3º (pág. 4), termine o bloco do artigo imediatamente antes de “I - instaurar processo de controle externo...” e inicie um bloco próprio para cada inciso I, II, III, IV, V e VI, sem avançar de um inciso para o seguinte nem para “§ 1º”.\n- No inciso “III - até que se efetive a assinatura do acordo de leniência...” do Art. 12 (pág. 8), termine o bloco antes de “IV - em caso de não celebração...” e inicie também um bloco próprio em “V - O disposto no inciso anterior...”.\n- No “Art. 16. Caso os valores de ressarcimento...” (pág. 9), termine o bloco antes de “Parágrafo único. Também neste caso...” e abra um bloco próprio para o parágrafo único.\n- No “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10), termine o bloco antes de “I - podem ser aproveitados...” e abra blocos próprios para os incisos I e II.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 26,
+          "tipo": "englobante",
+          "descricao": "No Art. 3º (pág. 4), o bloco iniciado em “IV - identificar a existência de débitos...” também contém os marcadores e textos dos incisos “V - encaminhar os autos...” e “VI - propor ao Relator...”, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3), termine o bloco imediatamente antes de “I - acordo de leniência” e inicie um bloco próprio em cada inciso romano subsequente; em particular, termine o inciso “IV - escopo do acordo de leniência...” antes de “V - valores de ressarcimento...”.\n- No Art. 3º (pág. 4), termine o bloco do artigo imediatamente antes de “I - instaurar processo de controle externo...” e inicie um bloco próprio para cada inciso I, II, III, IV, V e VI; em especial, termine “IV - identificar a existência de débitos...” antes de “V - encaminhar os autos...” e termine este antes de “VI - propor ao Relator...”.\n- No inciso “III - até que se efetive a assinatura do acordo de leniência...” do Art. 12 (pág. 8), termine o bloco antes de “IV - em caso de não celebração...” e inicie também um bloco próprio em “V - O disposto no inciso anterior...”.\n- No “Art. 16. Caso os valores de ressarcimento...” (pág. 9), termine o bloco antes de “Parágrafo único. Também neste caso...” e abra um bloco próprio para o parágrafo único.\n- No “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10), termine o bloco antes de “I - podem ser aproveitados...” e abra blocos próprios para os incisos I e II."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-26102/NORMA-26102_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 111,
+    "insights_aplicados": "- No “Parágrafo único: Para os fins desta instrução normativa, consideram-se:” (pág. 3), termine o bloco imediatamente antes de “I - acordo de leniência” e inicie um bloco próprio em cada inciso romano subsequente; em particular, termine o inciso “IV - escopo do acordo de leniência...” antes de “V - valores de ressarcimento...”.\n- No Art. 3º (pág. 4), termine o bloco do artigo imediatamente antes de “I - instaurar processo de controle externo...” e inicie um bloco próprio para cada inciso I, II, III, IV, V e VI; em especial, termine “IV - identificar a existência de débitos...” antes de “V - encaminhar os autos...” e termine este antes de “VI - propor ao Relator...”.\n- No inciso “III - até que se efetive a assinatura do acordo de leniência...” do Art. 12 (pág. 8), termine o bloco antes de “IV - em caso de não celebração...” e inicie também um bloco próprio em “V - O disposto no inciso anterior...”.\n- No “Art. 16. Caso os valores de ressarcimento...” (pág. 9), termine o bloco antes de “Parágrafo único. Também neste caso...” e abra um bloco próprio para o parágrafo único.\n- No “Art. 18. As unidades técnicas especializadas verificarão...” (pág. 10), termine o bloco antes de “I - podem ser aproveitados...” e abra blocos próprios para os incisos I e II.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-26102/NORMA-26102_ciclo4.json"
+  }
+]

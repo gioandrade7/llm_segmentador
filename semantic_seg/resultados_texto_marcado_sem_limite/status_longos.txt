@@ -1,0 +1,2 @@
+17:12 sec-rules exit=0
+17:46 edital-inep-064 exit=0

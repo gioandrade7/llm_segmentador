@@ -1,0 +1,137 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 125,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2) contém também os parágrafos § 1º e seguintes do art. 5º, embora cada parágrafo deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 114,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7) inclui o marcador e o texto de “Parágrafo único. O procedimento descrito no caput...”, que deve constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º Classifica-se como pública...” e inicie um bloco para cada parágrafo subsequente do art. 5º.\n- No art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), termine o bloco antes de “Parágrafo único. O procedimento descrito no caput...” e inicie um bloco próprio nesse parágrafo único."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-21225/NORMA-21225_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "- No art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º Classifica-se como pública...” e inicie um bloco para cada parágrafo subsequente do art. 5º.\n- No art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), termine o bloco antes de “Parágrafo único. O procedimento descrito no caput...” e inicie um bloco próprio nesse parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 1,
+          "tipo": "ancora",
+          "descricao": "o bloco está marcado como “TEXTO NÃO EXTRAÍDO (âncoras não localizadas no documento)” e apresenta “Seção I — Das Disposições Preliminares” tanto no início quanto após o preâmbulo no fim, sem uma âncora confiável para a seção."
+        },
+        {
+          "bloco": 29,
+          "tipo": "sequencia",
+          "descricao": "o inciso III do art. 6º termina em “e”, mas o bloco seguinte já inicia “§ 1º”, indicando que falta o inciso IV da enumeração de prazos."
+        },
+        {
+          "bloco": 38,
+          "tipo": "sequencia",
+          "descricao": "o inciso IV do art. 7º termina em ponto e vírgula, mas o bloco seguinte já inicia “Parágrafo único”, indicando que foram omitidos incisos subsequentes da lista anunciada pelo caput."
+        },
+        {
+          "bloco": 72,
+          "tipo": "englobante",
+          "descricao": "o bloco do “§ 1º” do art. 14 contém também os incisos I a VI, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 118,
+          "tipo": "englobante",
+          "descricao": "o bloco do “§ 3º” do art. 25 contém também os incisos I a III, embora cada inciso deva iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º Classifica-se como pública...” e inicie um bloco para cada parágrafo subsequente do art. 5º.\n- No art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), termine o bloco antes de “Parágrafo único. O procedimento descrito no caput...” e inicie um bloco próprio nesse parágrafo único.\n- No art. 6º (págs. 2–3), após “III - ultrassecreta: 25 (vinte e cinco) anos; e”, não salte para “§ 1º”; capture o inciso IV, iniciado por “IV - pessoal: 100 (cem) anos”, e inicie um bloco próprio nele.\n- No art. 7º (pág. 3), após “IV - oferecer elevado risco à estabilidade financeira, econômica ou monetária do País;”, não salte para “Parágrafo único”; capture os incisos V a VIII que antecedem esse parágrafo e inicie um bloco próprio em cada inciso.\n- No “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), termine o bloco de cada parágrafo imediatamente antes do respectivo inciso I e inicie blocos próprios em cada um dos incisos subsequentes."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-21225/NORMA-21225_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 127,
+    "insights_aplicados": "- No art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º Classifica-se como pública...” e inicie um bloco para cada parágrafo subsequente do art. 5º.\n- No art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), termine o bloco antes de “Parágrafo único. O procedimento descrito no caput...” e inicie um bloco próprio nesse parágrafo único.\n- No art. 6º (págs. 2–3), após “III - ultrassecreta: 25 (vinte e cinco) anos; e”, não salte para “§ 1º”; capture o inciso IV, iniciado por “IV - pessoal: 100 (cem) anos”, e inicie um bloco próprio nele.\n- No art. 7º (pág. 3), após “IV - oferecer elevado risco à estabilidade financeira, econômica ou monetária do País;”, não salte para “Parágrafo único”; capture os incisos V a VIII que antecedem esse parágrafo e inicie um bloco próprio em cada inciso.\n- No “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), termine o bloco de cada parágrafo imediatamente antes do respectivo inciso I e inicie blocos próprios em cada um dos incisos subsequentes.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 105,
+          "tipo": "englobante",
+          "descricao": "O bloco do “§ 1º As informações a que se refere este artigo...” do art. 19 (pág. 6) contém também os incisos “I - têm o seu acesso restrito...” e “II - podem ter autorizada sua divulgação...”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 106,
+          "tipo": "englobante",
+          "descricao": "O bloco do “§ 2º O consentimento referido no inciso II...” do art. 19 (pág. 6) contém os incisos I a V iniciados por “I - à prevenção e diagnóstico médico...” e terminados por “V - à proteção do interesse público...”, os quais devem ser blocos próprios."
+        },
+        {
+          "bloco": 110,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Seção VIII — Das Disposições Finais e Transitórias” (pág. 6) incorpora o marcador e o texto de “Art. 21. Em caso de dúvida na identificação do gestor da informação...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Mantenha, no art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), o encerramento do bloco do artigo antes de “§ 1º Classifica-se como pública...” e abra um bloco para cada parágrafo subsequente; no art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), encerre-o antes de “Parágrafo único. O procedimento descrito no caput...” e abra bloco próprio para esse parágrafo único.\n- Mantenha, no art. 6º (págs. 2–3), a captura do inciso “IV - pessoal: 100 (cem) anos” como bloco próprio após o inciso III; no art. 7º (pág. 3), capture também os incisos V a VIII, cada qual em bloco próprio, antes de “Parágrafo único. Para a classificação da informação...”.\n- Mantenha, no “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), o encerramento de cada parágrafo antes do respectivo inciso I e a abertura de blocos próprios para cada inciso subsequente.\n- No art. 19 (pág. 6), termine o bloco do “§ 1º As informações a que se refere este artigo...” antes de “I - têm o seu acesso restrito...” e crie blocos próprios para os incisos I e II; termine também o bloco do “§ 2º O consentimento referido no inciso II...” antes de “I - à prevenção e diagnóstico médico...” e crie blocos próprios para os incisos I a V.\n- Na Seção VIII, iniciada por “Seção VIII — Das Disposições Finais e Transitórias” (pág. 6), termine o bloco da seção imediatamente antes de “Art. 21. Em caso de dúvida na identificação do gestor da informação...” e inicie um bloco próprio para o art. 21."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-21225/NORMA-21225_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 133,
+    "insights_aplicados": "- Mantenha, no art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), o encerramento do bloco do artigo antes de “§ 1º Classifica-se como pública...” e abra um bloco para cada parágrafo subsequente; no art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), encerre-o antes de “Parágrafo único. O procedimento descrito no caput...” e abra bloco próprio para esse parágrafo único.\n- Mantenha, no art. 6º (págs. 2–3), a captura do inciso “IV - pessoal: 100 (cem) anos” como bloco próprio após o inciso III; no art. 7º (pág. 3), capture também os incisos V a VIII, cada qual em bloco próprio, antes de “Parágrafo único. Para a classificação da informação...”.\n- Mantenha, no “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), o encerramento de cada parágrafo antes do respectivo inciso I e a abertura de blocos próprios para cada inciso subsequente.\n- No art. 19 (pág. 6), termine o bloco do “§ 1º As informações a que se refere este artigo...” antes de “I - têm o seu acesso restrito...” e crie blocos próprios para os incisos I e II; termine também o bloco do “§ 2º O consentimento referido no inciso II...” antes de “I - à prevenção e diagnóstico médico...” e crie blocos próprios para os incisos I a V.\n- Na Seção VIII, iniciada por “Seção VIII — Das Disposições Finais e Transitórias” (pág. 6), termine o bloco da seção imediatamente antes de “Art. 21. Em caso de dúvida na identificação do gestor da informação...” e inicie um bloco próprio para o art. 21.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 105,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 1º As informações a que se refere este artigo...” (pág. 6) incorpora os marcadores e os textos dos incisos “I - têm o seu acesso restrito...” e “II - podem ter autorizada sua divulgação...”, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Mantenha, no art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), o encerramento do bloco do artigo antes de “§ 1º Classifica-se como pública...” e abra um bloco para cada parágrafo subsequente; no art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), encerre-o antes de “Parágrafo único. O procedimento descrito no caput...” e abra bloco próprio para esse parágrafo único.\n- Mantenha, no art. 6º (págs. 2–3), a captura do inciso “IV - pessoal: 100 (cem) anos” como bloco próprio após o inciso III; no art. 7º (pág. 3), capture também os incisos V a VIII, cada qual em bloco próprio, antes de “Parágrafo único. Para a classificação da informação...”.\n- Mantenha, no “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), o encerramento de cada parágrafo antes do respectivo inciso I e a abertura de blocos próprios para cada inciso subsequente.\n- No art. 19 (pág. 6), termine o bloco do “§ 1º As informações a que se refere este artigo...” antes de “I - têm o seu acesso restrito...” e crie blocos próprios para os incisos I e II; mantenha também o término do bloco do “§ 2º O consentimento referido no inciso II...” antes de “I - à prevenção e diagnóstico médico...” e os blocos próprios para os incisos I a V.\n- Na Seção VIII, iniciada por “Seção VIII — Das Disposições Finais e Transitórias” (pág. 6), termine o bloco da seção imediatamente antes de “Art. 21. Em caso de dúvida na identificação do gestor da informação...” e inicie um bloco próprio para o art. 21."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-21225/NORMA-21225_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 122,
+    "insights_aplicados": "- Mantenha, no art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), o encerramento do bloco do artigo antes de “§ 1º Classifica-se como pública...” e abra um bloco para cada parágrafo subsequente; no art. 23, iniciado por “Art. 23. Instrução Normativa disporá...” (pág. 7), encerre-o antes de “Parágrafo único. O procedimento descrito no caput...” e abra bloco próprio para esse parágrafo único.\n- Mantenha, no art. 6º (págs. 2–3), a captura do inciso “IV - pessoal: 100 (cem) anos” como bloco próprio após o inciso III; no art. 7º (pág. 3), capture também os incisos V a VIII, cada qual em bloco próprio, antes de “Parágrafo único. Para a classificação da informação...”.\n- Mantenha, no “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), o encerramento de cada parágrafo antes do respectivo inciso I e a abertura de blocos próprios para cada inciso subsequente.\n- No art. 19 (pág. 6), termine o bloco do “§ 1º As informações a que se refere este artigo...” antes de “I - têm o seu acesso restrito...” e crie blocos próprios para os incisos I e II; mantenha também o término do bloco do “§ 2º O consentimento referido no inciso II...” antes de “I - à prevenção e diagnóstico médico...” e os blocos próprios para os incisos I a V.\n- Na Seção VIII, iniciada por “Seção VIII — Das Disposições Finais e Transitórias” (pág. 6), termine o bloco da seção imediatamente antes de “Art. 21. Em caso de dúvida na identificação do gestor da informação...” e inicie um bloco próprio para o art. 21.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 21,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2) incorpora os marcadores “§ 1º Classifica-se como pública...” e “§ 2º Classifica-se como reservada...”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 1º As informações a que se refere este artigo...” (pág. 6) contém também os incisos “I - têm o seu acesso restrito...” e “II - podem ter autorizada sua divulgação...”, que devem ser blocos próprios."
+        },
+        {
+          "bloco": 103,
+          "tipo": "lacuna",
+          "descricao": "O bloco iniciado por “Parágrafo único. O conjunto de controles administrativos e tecnológicos...” (pág. 6) termina truncado em “ato do Presid”, antes da Seção VIII. Há perda de texto na extração, provavelmente do restante da palavra e da conclusão do parágrafo."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No art. 5º, iniciado por “Art. 5º As informações produzidas pelo TCU classificam-se...” (pág. 2), encerre o bloco do artigo antes de “§ 1º Classifica-se como pública...” e abra um bloco próprio para cada parágrafo subsequente, inclusive os que se seguirem ao § 2º.\n- Mantenha, no art. 6º (págs. 2–3), a captura do inciso “IV - pessoal: 100 (cem) anos” como bloco próprio após o inciso III; no art. 7º (pág. 3), capture também os incisos V a VIII, cada qual em bloco próprio, antes de “Parágrafo único. Para a classificação da informação...”.\n- Mantenha, no “§ 1º” do art. 14 (pág. 5) e no “§ 3º” do art. 25 (pág. 7), o encerramento de cada parágrafo antes do respectivo inciso I e a abertura de blocos próprios para cada inciso subsequente.\n- No art. 19 (pág. 6), termine o bloco do “§ 1º As informações a que se refere este artigo...” antes de “I - têm o seu acesso restrito...” e crie blocos próprios para os incisos I e II; mantenha também o término do bloco do “§ 2º O consentimento referido no inciso II...” antes de “I - à prevenção e diagnóstico médico...” e os blocos próprios para os incisos I a V.\n- Na Seção VIII, iniciada por “Seção VIII — Das Disposições Finais e Transitórias” (pág. 6), termine o bloco da seção imediatamente antes de “Art. 21. Em caso de dúvida na identificação do gestor da informação...” e inicie um bloco próprio para o art. 21."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-21225/NORMA-21225_ciclo5.json"
+  }
+]

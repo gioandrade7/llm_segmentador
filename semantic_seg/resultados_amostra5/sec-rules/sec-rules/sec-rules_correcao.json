@@ -1,0 +1,437 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 351,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "texto introdutório antes de `TITLE II—INVESTMENT ADVISERS`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A identificação do arquivo, o título da compilação, as notas de referência, de vigência e de autenticidade ficaram fora de qualquer bloco antes do primeiro título legislativo."
+        },
+        {
+          "onde": "`(22) ‘‘Business development company’’`, em `SEC. 202.`, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(22)` contém os subparágrafos distintos `(A)`, `(B)` e `(C)`, sem iniciar blocos próprios nesses marcadores."
+        },
+        {
+          "onde": "`(7) any investment adviser ... who solely advises—`, em `SEC. 203(b)`, pág. 9",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(7)` contém os subparágrafos irmãos `(A)`, `(B)` e `(C)` sem cortes próprios."
+        },
+        {
+          "onde": "`(8) any investment adviser ... who solely advises—`, em `SEC. 203(b)`, pág. 9",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(8)` contém `(A)`, `(B)`, bem como os incisos `(i)` e `(ii)` subordinados a `(B)`, sem iniciar blocos nesses marcadores."
+        },
+        {
+          "onde": "`(G) whether such investment adviser ...`, em `SEC. 203(c)(1)`, págs. 9–10",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(G)` também contém o subparágrafo `(H) a statement as to whether the principal business ...`, que começa na pág. 10."
+        },
+        {
+          "onde": "`(2) has been convicted ...`, em `SEC. 203(e)`, pág. 11",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2)` contém os subparágrafos `(A)`, `(B)`, `(C)` e `(D)` sem blocos próprios."
+        },
+        {
+          "onde": "`(9) is subject to any final order ...`, em `SEC. 203(e)`, pág. 13",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(9)` contém os subparágrafos `(A)` e `(B)` sem cortes nos respectivos marcadores."
+        },
+        {
+          "onde": "`(A) IN GENERAL.—In any proceeding instituted ...`, em `SEC. 203(i)(1)`, pág. 14",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(A)` contém os incisos `(i)`, `(ii)`, `(iii)` e `(iv)` sem iniciar blocos próprios."
+        },
+        {
+          "onde": "continuação de `SEC. 203(e)(8)(C)`, pág. 13",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho substantivo que continua a palavra hifenizada, `sions, and rules and regulations promulgated there-under, another person ...`, ficou fora de bloco entre partes da mesma unidade."
+        },
+        {
+          "onde": "`SEC. 203A(d) STATE ASSISTANCE`, nota 8, págs. 20–21",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação da nota 8, incluindo o texto citado de `SEC. 307. ... CONTINUED STATE AUTHORITY.` e seus itens, ficou fora de bloco. Trata-se de texto citado associado à unidade anterior, não de novos marcadores estruturais autônomos."
+        },
+        {
+          "onde": "`SEC. 203A(d) STATE ASSISTANCE` até `SEC. 204`, pág. 21",
+          "tipo": "englobante",
+          "descricao": "Após `SEC. 203A(d)`, o mesmo bloco contém a rubrica `ANNUAL AND OTHER REPORTS`, `SEC. 204.` e as subseções `(a)` e `(b)`, que deveriam iniciar unidades próprias."
+        },
+        {
+          "onde": "`SEC. 204(b) RECORDS AND REPORTS OF PRIVATE FUNDS`, págs. 21–25",
+          "tipo": "englobante",
+          "descricao": "Além de `(b)` não iniciar bloco próprio, os marcadores internos `(1)`, `(2)`, `(3)`, seus subparágrafos `(A)`–`(H)`, e as subseções posteriores `(c)`, `(d)`, `(e)` e `(f)` aparecem em blocos englobantes quando não receberam cortes nos seus próprios marcadores."
+        },
+        {
+          "onde": "`SEC. 205(a)`, pág. 25",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(a)` contém os parágrafos `(1)`, `(2)` e `(3)` sem cortes próprios."
+        },
+        {
+          "onde": "linha isolada `-` entre `SEC. 205(b)(2)` e `(A)`, pág. 26",
+          "tipo": "corte_indevido",
+          "descricao": "Foi iniciado um bloco na marca tipográfica de lista `-`, que não é marcador da hierarquia. O subparágrafo válido seguinte é `(A)`."
+        },
+        {
+          "onde": "`SEC. 208.`, pág. 28",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a) It shall be unlawful ...` abre na mesma linha de `SEC. 208.` e não recebeu bloco próprio."
+        },
+        {
+          "onde": "`SEC. 209.`, págs. 28–29",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a) Whenever it shall appear ...` e a subseção seguinte `(b) For the purposes ...` ficaram no mesmo bloco da seção, sem cortes nos respectivos marcadores."
+        },
+        {
+          "onde": "`SEC. 210.`, pág. 31",
+          "tipo": "englobante",
+          "descricao": "A seção contém sem cortes próprios as subseções `(a)`, `(b)` e `(c)`; dentro de `(b)`, também não foram separados os parágrafos `(1)` e `(2)`."
+        },
+        {
+          "onde": "`SEC. 211.`, pág. 32",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a) The Commission shall have authority ...` abre na linha da seção e a subseção `(b) Subject to ...` segue no mesmo bloco, sem blocos próprios."
+        },
+        {
+          "onde": "`SEC. 213(a)`, pág. 34",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a) Any person or party aggrieved ...` abre na linha de `SEC. 213.` e não recebeu bloco próprio."
+        },
+        {
+          "onde": "`SEC. 214(a)`, pág. 35",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a) IN GENERAL.—The district courts ...` abre na linha de `SEC. 214.` e não recebeu bloco próprio."
+        },
+        {
+          "onde": "`SEC. 215(a)`, pág. 36",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a) Any condition, stipulation ...` abre na linha de `SEC. 215.` e não recebeu bloco próprio."
+        },
+        {
+          "onde": "`SEC. 222(a) JURISDICTION OF STATE REGULATORS`, pág. 37",
+          "tipo": "englobante",
+          "descricao": "A subseção `(a)` abre na linha de `SEC. 222.` e não recebeu bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o texto editorial da pág. 1 que antecede `TITLE II—INVESTMENT ADVISERS`, incluindo a identificação da compilação e as notas de referência, vigência e autenticidade.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(9)` (pág. 13), inicie blocos próprios em `(A)` e `(B)`.\n- Em `SEC. 203(i)(1)(A) IN GENERAL` (pág. 14), inicie blocos próprios nos incisos `(i)`, `(ii)`, `(iii)` e `(iv)`.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13, iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Mantenha no bloco de `SEC. 203A(d) STATE ASSISTANCE` a continuação da nota 8 nas págs. 20–21, inclusive o texto citado de `SEC. 307. ... CONTINUED STATE AUTHORITY.`; não trate os marcadores internos desse texto citado como novas unidades do documento.\n- Após concluir `SEC. 203A(d)` e sua nota 8, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`. Dentro de `SEC. 204(b)`, inicie também blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos `(A)`–`(H)` que ocorram.\n- Em `SEC. 205(a)` (pág. 25), inicie blocos próprios em `(1)`, `(2)` e `(3)`. Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2)` e `(A)` (pág. 26): ela é apenas formatação de lista.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)` (pág. 28), `SEC. 209(a)` e `SEC. 209(b)` (págs. 28–29), `SEC. 210(a)`, `SEC. 210(b)`, `SEC. 210(c)` e `SEC. 210(b)(1)`–`(2)` (pág. 31), `SEC. 211(a)` e `SEC. 211(b)` (pág. 32), `SEC. 213(a)` (pág. 34), `SEC. 214(a)` (pág. 35), `SEC. 215(a)` (pág. 36) e `SEC. 222(a)` (pág. 37)."
+    },
+    "arquivo_blocos": "resultados_amostra5/sec-rules/sec-rules/sec-rules_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 363,
+    "insights_aplicados": "- Crie um bloco inicial para o texto editorial da pág. 1 que antecede `TITLE II—INVESTMENT ADVISERS`, incluindo a identificação da compilação e as notas de referência, vigência e autenticidade.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(9)` (pág. 13), inicie blocos próprios em `(A)` e `(B)`.\n- Em `SEC. 203(i)(1)(A) IN GENERAL` (pág. 14), inicie blocos próprios nos incisos `(i)`, `(ii)`, `(iii)` e `(iv)`.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13, iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Mantenha no bloco de `SEC. 203A(d) STATE ASSISTANCE` a continuação da nota 8 nas págs. 20–21, inclusive o texto citado de `SEC. 307. ... CONTINUED STATE AUTHORITY.`; não trate os marcadores internos desse texto citado como novas unidades do documento.\n- Após concluir `SEC. 203A(d)` e sua nota 8, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`. Dentro de `SEC. 204(b)`, inicie também blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos `(A)`–`(H)` que ocorram.\n- Em `SEC. 205(a)` (pág. 25), inicie blocos próprios em `(1)`, `(2)` e `(3)`. Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2)` e `(A)` (pág. 26): ela é apenas formatação de lista.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)` (pág. 28), `SEC. 209(a)` e `SEC. 209(b)` (págs. 28–29), `SEC. 210(a)`, `SEC. 210(b)`, `SEC. 210(c)` e `SEC. 210(b)(1)`–`(2)` (pág. 31), `SEC. 211(a)` e `SEC. 211(b)` (pág. 32), `SEC. 213(a)` (pág. 34), `SEC. 214(a)` (pág. 35), `SEC. 215(a)` (pág. 36) e `SEC. 222(a)` (pág. 37).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`(12) ‘‘Investment company’’`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco de `(11) ‘‘Investment adviser’’` prossegue até conter o marcador irmão `(12)`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`(24) ‘‘Foreign financial regulatory authority’’`, págs. 5–6",
+          "tipo": "englobante",
+          "descricao": "o bloco de `(24)` não é dividido em todos os seus subparágrafos: `(C) membership organization ...` aparece sem corte, e o mesmo bloco continua contendo `(25) ‘‘Supervised person’’`, `(26) The term ‘‘separately identifiable department or division’’` e os subparágrafos `(A)` e `(B)` de `(26)`."
+        },
+        {
+          "onde": "`SEC. 203(i)(1)(A) IN GENERAL`, pág. 14",
+          "tipo": "englobante",
+          "descricao": "o bloco de `(A) IN GENERAL` contém os incisos romanos `(i)`, `(ii)`, `(iii)` e `(iv)`, sem blocos próprios para esses marcadores."
+        },
+        {
+          "onde": "`SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS`, pág. 18",
+          "tipo": "englobante",
+          "descricao": "o marcador `(1) IN GENERAL` ocorre dentro do bloco de `(m)`, sem corte antes dele."
+        },
+        {
+          "onde": "`SEC. 203A(b)(1) IN GENERAL`, pág. 20",
+          "tipo": "englobante",
+          "descricao": "o subparágrafo `(A) that is registered under section 203 ...` está no mesmo bloco de `(1) IN GENERAL`, embora devesse iniciar bloco próprio."
+        },
+        {
+          "onde": "`SEC. 204`, págs. 21–22",
+          "tipo": "englobante",
+          "descricao": "o bloco da seção contém, sem cortes próprios, as subseções `(a) IN GENERAL` e `(b) RECORDS AND REPORTS OF PRIVATE FUNDS`, bem como o parágrafo `(1) IN GENERAL` de `SEC. 204(b)`."
+        },
+        {
+          "onde": "`SEC. 204(b)(7) INFORMATION SHARING` e `SEC. 204(b)(8) COMMISSION CONFIDENTIALITY OF REPORTS`, págs. 22–23",
+          "tipo": "englobante",
+          "descricao": "em `(7)`, o subparágrafo `(A) IN GENERAL` não inicia bloco; em `(8)`, o inciso `(i) a request for information ...` permanece no bloco de `(B) prevent the Commission from complying with—`."
+        },
+        {
+          "onde": "`SEC. 204(c) FILING DEPOSITORIES` e `SEC. 204(d) ACCESS TO DISCIPLINARY AND OTHER INFORMATION`, pág. 24",
+          "tipo": "englobante",
+          "descricao": "os parágrafos `(1)` e `(2)` de `SEC. 204(c)` não têm blocos próprios; o parágrafo `(1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUIRIES` de `SEC. 204(d)` também permanece no bloco da subseção `(d)`."
+        },
+        {
+          "onde": "`SEC. 205(b)(2) apply to an investment advisory contract with—`, pág. 26",
+          "tipo": "corte_indevido",
+          "descricao": "há um corte na linha isolada `-`, que é apenas formatação de lista e não marcador de unidade."
+        },
+        {
+          "onde": "`SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION`, pág. 32",
+          "tipo": "englobante",
+          "descricao": "os parágrafos irmãos `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...` aparecem no bloco iniciado por `(B) in the case of a bank holding company ...`, sem cortes antes de seus marcadores."
+        },
+        {
+          "onde": "`SEC. 211(h) OTHER MATTERS`, pág. 34",
+          "tipo": "englobante",
+          "descricao": "os parágrafos `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...` estão no bloco de `(h)`, sem blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o texto editorial da pág. 1 que antecede `TITLE II—INVESTMENT ADVISERS`, incluindo a identificação da compilação e as notas de referência, vigência e autenticidade.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’`, termine o bloco imediatamente antes de `(12) ‘‘Investment company’’` (pág. 4) e inicie um bloco para `(12)`.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie bloco próprio em `(C) membership organization ...`; em seguida, inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(9)` (pág. 13), inicie blocos próprios em `(A)` e `(B)`.\n- Em `SEC. 203(i)(1)(A) IN GENERAL` (pág. 14), inicie blocos próprios nos incisos `(i)`, `(ii)`, `(iii)` e `(iv)`.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13, iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Mantenha no bloco de `SEC. 203A(d) STATE ASSISTANCE` a continuação da nota 8 nas págs. 20–21, inclusive o texto citado de `SEC. 307. ... CONTINUED STATE AUTHORITY.`; não trate os marcadores internos desse texto citado como novas unidades do documento.\n- Em `SEC. 203A(b)(1) IN GENERAL` (pág. 20), termine o bloco antes de `(A) that is registered under section 203 ...` e inicie um bloco próprio em `(A)`.\n- Após concluir `SEC. 203A(d)` e sua nota 8, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`. Em particular, separe `SEC. 204(a) IN GENERAL`, `SEC. 204(b) RECORDS AND REPORTS OF PRIVATE FUNDS` e `SEC. 204(b)(1) IN GENERAL`, mesmo que estejam em sequência sem quebra de página.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos e incisos hierárquicos correspondentes. Em particular, inicie blocos próprios em `SEC. 204(b)(7)(A) IN GENERAL` (pág. 22) e em `SEC. 204(b)(8)(B) prevent the Commission from complying with—` e seu inciso `(i) a request for information ...` (pág. 23).\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), inicie blocos próprios em `(1)` e `(2)`; em `SEC. 204(d) ACCESS TO DISCIPLINARY AND OTHER INFORMATION`, inicie bloco próprio em `(1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUIRIES`.\n- Em `SEC. 205(a)` (pág. 25), inicie blocos próprios em `(1)`, `(2)` e `(3)`. Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2)` e `(A)` (pág. 26): ela é apenas formatação de lista.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)` (pág. 28), `SEC. 209(a)` e `SEC. 209(b)` (págs. 28–29), `SEC. 210(a)`, `SEC. 210(b)`, `SEC. 210(c)` e `SEC. 210(b)(1)`–`(2)` (pág. 31), `SEC. 211(a)` e `SEC. 211(b)` (pág. 32), `SEC. 213(a)` (pág. 34), `SEC. 214(a)` (pág. 35), `SEC. 215(a)` (pág. 36) e `SEC. 222(a)` (pág. 37).\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/sec-rules/sec-rules/sec-rules_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 378,
+    "insights_aplicados": "- Crie um bloco inicial para o texto editorial da pág. 1 que antecede `TITLE II—INVESTMENT ADVISERS`, incluindo a identificação da compilação e as notas de referência, vigência e autenticidade.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’`, termine o bloco imediatamente antes de `(12) ‘‘Investment company’’` (pág. 4) e inicie um bloco para `(12)`.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie bloco próprio em `(C) membership organization ...`; em seguida, inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(9)` (pág. 13), inicie blocos próprios em `(A)` e `(B)`.\n- Em `SEC. 203(i)(1)(A) IN GENERAL` (pág. 14), inicie blocos próprios nos incisos `(i)`, `(ii)`, `(iii)` e `(iv)`.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13, iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Mantenha no bloco de `SEC. 203A(d) STATE ASSISTANCE` a continuação da nota 8 nas págs. 20–21, inclusive o texto citado de `SEC. 307. ... CONTINUED STATE AUTHORITY.`; não trate os marcadores internos desse texto citado como novas unidades do documento.\n- Em `SEC. 203A(b)(1) IN GENERAL` (pág. 20), termine o bloco antes de `(A) that is registered under section 203 ...` e inicie um bloco próprio em `(A)`.\n- Após concluir `SEC. 203A(d)` e sua nota 8, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`. Em particular, separe `SEC. 204(a) IN GENERAL`, `SEC. 204(b) RECORDS AND REPORTS OF PRIVATE FUNDS` e `SEC. 204(b)(1) IN GENERAL`, mesmo que estejam em sequência sem quebra de página.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos e incisos hierárquicos correspondentes. Em particular, inicie blocos próprios em `SEC. 204(b)(7)(A) IN GENERAL` (pág. 22) e em `SEC. 204(b)(8)(B) prevent the Commission from complying with—` e seu inciso `(i) a request for information ...` (pág. 23).\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), inicie blocos próprios em `(1)` e `(2)`; em `SEC. 204(d) ACCESS TO DISCIPLINARY AND OTHER INFORMATION`, inicie bloco próprio em `(1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUIRIES`.\n- Em `SEC. 205(a)` (pág. 25), inicie blocos próprios em `(1)`, `(2)` e `(3)`. Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2)` e `(A)` (pág. 26): ela é apenas formatação de lista.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)` (pág. 28), `SEC. 209(a)` e `SEC. 209(b)` (págs. 28–29), `SEC. 210(a)`, `SEC. 210(b)`, `SEC. 210(c)` e `SEC. 210(b)(1)`–`(2)` (pág. 31), `SEC. 211(a)` e `SEC. 211(b)` (pág. 32), `SEC. 213(a)` (pág. 34), `SEC. 214(a)` (pág. 35), `SEC. 215(a)` (pág. 36) e `SEC. 222(a)` (pág. 37).\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`SEC. 202(a)(2) ‘‘Bank’’`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2)` contém, sem cortes próprios, os subparágrafos `(A)`, `(B)`, `(C)` e `(D)`."
+        },
+        {
+          "onde": "`SEC. 202(a)(11) ‘‘Investment adviser’’`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(11)` contém os subparágrafos `(A)` a `(H)` sem que cada marcador inicie bloco próprio."
+        },
+        {
+          "onde": "`SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’`, págs. 5–6",
+          "tipo": "englobante",
+          "descricao": "Os subparágrafos `(A)` e `(B)` permanecem dentro do bloco de `(24)`; somente `(C)` recebeu corte."
+        },
+        {
+          "onde": "`SEC. 203(e)(6)`, pág. 12",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `(A) there have been established procedures ...` contém também `(B) such person has reasonably discharged ...`."
+        },
+        {
+          "onde": "`SEC. 203(k)(1) AUTHORITY OF THE COMMISSION`, pág. 16",
+          "tipo": "sem_bloco",
+          "descricao": "A palavra final da unidade foi dividida, e o trecho `h such provision, rule, or regulation ...` está em `SEM BLOCO` entre `wit` e a continuação do parágrafo."
+        },
+        {
+          "onde": "`SEC. 203(k)(3) TEMPORARY ORDER`, pág. 17",
+          "tipo": "englobante",
+          "descricao": "O texto de `(B) APPLICABILITY.—This paragraph shall apply ...` está dentro do bloco de `(A) IN GENERAL` sem corte antes de `(B)`."
+        },
+        {
+          "onde": "`SEC. 204(a) IN GENERAL`, pág. 21",
+          "tipo": "sem_bloco",
+          "descricao": "A segunda frase da subseção, iniciada por `All records (as so defined) ...`, ficou integralmente em `SEM BLOCO`."
+        },
+        {
+          "onde": "`SEC. 204(b)(6)(A) PERIODIC AND SPECIAL EXAMINATIONS`, pág. 22",
+          "tipo": "englobante",
+          "descricao": "O inciso `(ii) may conduct at any time ...` está no bloco do inciso `(i) shall conduct periodic inspections ...`."
+        },
+        {
+          "onde": "`SEC. 204(b)(10)(B) PROPRIETARY INFORMATION`, pág. 23",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso `(ii) analytical or research methodologies;` está em `SEM BLOCO`, entre os blocos dos incisos `(i)` e `(iii)`."
+        },
+        {
+          "onde": "`SEC. 204(d)(1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUIRIES`, pág. 24",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(1)` contém os subparágrafos `(A) IN GENERAL` e `(B) APPLICABILITY` sem cortes antes desses marcadores."
+        },
+        {
+          "onde": "`SEC. 209(e)(2)(C) THIRD TIER`, pág. 30",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(C)` contém os subincisos `(I)` e `(II)` sem blocos próprios."
+        },
+        {
+          "onde": "`SEC. 210. PUBLICITY`, pág. 31",
+          "tipo": "englobante",
+          "descricao": "A seção `SEC. 210.` contém sem cortes próprios as subseções `(a)`, `(b)` e `(c)`, bem como os parágrafos `(1)` e `(2)` de `(b)`."
+        },
+        {
+          "onde": "`SEC. 210A(a)(3)`, pág. 32",
+          "tipo": "sem_bloco",
+          "descricao": "A palavra `any` foi quebrada, e o trecho iniciado por `ny other Federal department ...` ficou em `SEM BLOCO`."
+        },
+        {
+          "onde": "`SEC. 203A(d)` e nota 8 / `SEC. 204(b)(3)(A)`, págs. 20–22",
+          "tipo": "corte_indevido",
+          "descricao": "O texto citado da nota 8, que começa em `SEC. 307. ... CONTINUED STATE AUTHORITY.`, recebeu cortes nos marcadores internos `(b)`, `(c)` e `(1)`, embora pertença à nota; além disso, sua continuação é intercalada no fluxo de `SEC. 204(b)(3)`."
+        },
+        {
+          "onde": "Rodapés de páginas, por exemplo após `SEC. 202(a)` na pág. 1 e após `SEC. 224.` na pág. 38",
+          "tipo": "corte_indevido",
+          "descricao": "Foram criados cortes antes de linhas de rodapé como `August 11, 2025` e `As Amended Through P.L. 119-27...`, que são ruído de página e não unidades."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o texto editorial da pág. 1 que antecede `TITLE II—INVESTMENT ADVISERS`, incluindo a identificação da compilação e as notas de referência, vigência e autenticidade.\n- Em `SEC. 202(a)(2) ‘‘Bank’’` (pág. 2), encerre o bloco de `(2)` antes de cada subparágrafo `(A)`, `(B)`, `(C)` e `(D)` e inicie um bloco próprio em cada um deles.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’` (págs. 3–4), encerre o bloco de `(11)` antes de cada subparágrafo `(A)` a `(H)` e inicie bloco próprio em cada marcador.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie blocos próprios em `(A) foreign securities authority`, `(B) other governmental body ...` e `(C) membership organization ...`; em seguida, inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’`, termine o bloco imediatamente antes de `(12) ‘‘Investment company’’` (pág. 4) e inicie um bloco para `(12)`.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(6)` (pág. 12), termine o bloco de `(A) there have been established procedures ...` antes de `(B) such person has reasonably discharged ...` e inicie bloco próprio em `(B)`; em `SEC. 203(e)(9)` (pág. 13), inicie blocos próprios em `(A)` e `(B)`.\n- Em `SEC. 203(i)(1)(A) IN GENERAL` (pág. 14), inicie blocos próprios nos incisos `(i)`, `(ii)`, `(iii)` e `(iv)`.\n- Mantenha integralmente no bloco de `SEC. 203(k)(1) AUTHORITY OF THE COMMISSION` (págs. 16–17) a palavra partida entre páginas `wit` e `h such provision, rule, or regulation ...`; não deixe a continuação em texto sem bloco.\n- Em `SEC. 203(k)(3) TEMPORARY ORDER` (pág. 17), termine o bloco de `(A) IN GENERAL` antes de `(B) APPLICABILITY` e inicie um bloco próprio em `(B)`.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13, iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Em `SEC. 203A(b)(1) IN GENERAL` (pág. 20), termine o bloco antes de `(A) that is registered under section 203 ...` e inicie um bloco próprio em `(A)`.\n- Após concluir `SEC. 203A(d) STATE ASSISTANCE`, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`. Em particular, separe `SEC. 204(a) IN GENERAL`, `SEC. 204(b) RECORDS AND REPORTS OF PRIVATE FUNDS` e `SEC. 204(b)(1) IN GENERAL`, mesmo que estejam em sequência sem quebra de página.\n- Mantenha no bloco de `SEC. 204(a) IN GENERAL` (pág. 21) a frase seguinte iniciada por `All records (as so defined) of such investment advisers ...`; ela é continuação da mesma subseção e não pode ficar sem bloco.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos e incisos hierárquicos correspondentes. Em particular, inicie blocos próprios em `SEC. 204(b)(6)(A)(ii) may conduct at any time ...`, em `SEC. 204(b)(7)(A) IN GENERAL` (pág. 22), em `SEC. 204(b)(8)(B) prevent the Commission from complying with—` e em seu inciso `(i) a request for information ...` (pág. 23), e preserve o inciso `SEC. 204(b)(10)(B)(ii) analytical or research methodologies;` como bloco próprio, entre `(i)` e `(iii)`.\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), inicie blocos próprios em `(1)` e `(2)`; em `SEC. 204(d) ACCESS TO DISCIPLINARY AND OTHER INFORMATION`, inicie bloco próprio em `(1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUIRIES` e, dentro dele, também em `(A) IN GENERAL` e `(B) APPLICABILITY`.\n- Em `SEC. 205(a)` (pág. 25), inicie blocos próprios em `(1)`, `(2)` e `(3)`. Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2)` e `(A)` (pág. 26): ela é apenas formatação de lista.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)` (pág. 28), `SEC. 209(a)` e `SEC. 209(b)` (págs. 28–29), `SEC. 213(a)` (pág. 34), `SEC. 214(a)` (pág. 35), `SEC. 215(a)` (pág. 36) e `SEC. 222(a)` (pág. 37).\n- Em `SEC. 209(e)(2)(C) THIRD TIER` (pág. 30), termine o bloco de `(C)` antes de cada subinciso `(I)` e `(II)` e inicie um bloco próprio em cada um.\n- Em `SEC. 210. PUBLICITY` (pág. 31), inicie blocos distintos em `SEC. 210.`, em `SEC. 210(a)`, `SEC. 210(b)` e `SEC. 210(c)`, e também nos parágrafos `SEC. 210(b)(1)` e `SEC. 210(b)(2)`.\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`; mantenha neste último bloco a palavra partida entre páginas `a` e `ny other Federal department ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`.\n- Ignore cabeçalhos, rodapés, números de página e datas de publicação, incluindo `August 11, 2025`, `As Amended Through P.L. 119-27...`, `VerDate ...` e `<!-- PÁGINA N -->`; não crie blocos nem cortes para essas linhas."
+    },
+    "arquivo_blocos": "resultados_amostra5/sec-rules/sec-rules/sec-rules_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 380,
+    "insights_aplicados": "- Crie um bloco inicial para o texto editorial da pág. 1 que antecede `TITLE II—INVESTMENT ADVISERS`, incluindo a identificação da compilação e as notas de referência, vigência e autenticidade.\n- Em `SEC. 202(a)(2) ‘‘Bank’’` (pág. 2), encerre o bloco de `(2)` antes de cada subparágrafo `(A)`, `(B)`, `(C)` e `(D)` e inicie um bloco próprio em cada um deles.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’` (págs. 3–4), encerre o bloco de `(11)` antes de cada subparágrafo `(A)` a `(H)` e inicie bloco próprio em cada marcador.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie blocos próprios em `(A) foreign securities authority`, `(B) other governmental body ...` e `(C) membership organization ...`; em seguida, inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’`, termine o bloco imediatamente antes de `(12) ‘‘Investment company’’` (pág. 4) e inicie um bloco para `(12)`.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(6)` (pág. 12), termine o bloco de `(A) there have been established procedures ...` antes de `(B) such person has reasonably discharged ...` e inicie bloco próprio em `(B)`; em `SEC. 203(e)(9)` (pág. 13), inicie blocos próprios em `(A)` e `(B)`.\n- Em `SEC. 203(i)(1)(A) IN GENERAL` (pág. 14), inicie blocos próprios nos incisos `(i)`, `(ii)`, `(iii)` e `(iv)`.\n- Mantenha integralmente no bloco de `SEC. 203(k)(1) AUTHORITY OF THE COMMISSION` (págs. 16–17) a palavra partida entre páginas `wit` e `h such provision, rule, or regulation ...`; não deixe a continuação em texto sem bloco.\n- Em `SEC. 203(k)(3) TEMPORARY ORDER` (pág. 17), termine o bloco de `(A) IN GENERAL` antes de `(B) APPLICABILITY` e inicie um bloco próprio em `(B)`.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13, iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Em `SEC. 203A(b)(1) IN GENERAL` (pág. 20), termine o bloco antes de `(A) that is registered under section 203 ...` e inicie um bloco próprio em `(A)`.\n- Após concluir `SEC. 203A(d) STATE ASSISTANCE`, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`. Em particular, separe `SEC. 204(a) IN GENERAL`, `SEC. 204(b) RECORDS AND REPORTS OF PRIVATE FUNDS` e `SEC. 204(b)(1) IN GENERAL`, mesmo que estejam em sequência sem quebra de página.\n- Mantenha no bloco de `SEC. 204(a) IN GENERAL` (pág. 21) a frase seguinte iniciada por `All records (as so defined) of such investment advisers ...`; ela é continuação da mesma subseção e não pode ficar sem bloco.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos e incisos hierárquicos correspondentes. Em particular, inicie blocos próprios em `SEC. 204(b)(6)(A)(ii) may conduct at any time ...`, em `SEC. 204(b)(7)(A) IN GENERAL` (pág. 22), em `SEC. 204(b)(8)(B) prevent the Commission from complying with—` e em seu inciso `(i) a request for information ...` (pág. 23), e preserve o inciso `SEC. 204(b)(10)(B)(ii) analytical or research methodologies;` como bloco próprio, entre `(i)` e `(iii)`.\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), inicie blocos próprios em `(1)` e `(2)`; em `SEC. 204(d) ACCESS TO DISCIPLINARY AND OTHER INFORMATION`, inicie bloco próprio em `(1) MAINTENANCE OF SYSTEM TO RESPOND TO INQUIRIES` e, dentro dele, também em `(A) IN GENERAL` e `(B) APPLICABILITY`.\n- Em `SEC. 205(a)` (pág. 25), inicie blocos próprios em `(1)`, `(2)` e `(3)`. Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2)` e `(A)` (pág. 26): ela é apenas formatação de lista.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)` (pág. 28), `SEC. 209(a)` e `SEC. 209(b)` (págs. 28–29), `SEC. 213(a)` (pág. 34), `SEC. 214(a)` (pág. 35), `SEC. 215(a)` (pág. 36) e `SEC. 222(a)` (pág. 37).\n- Em `SEC. 209(e)(2)(C) THIRD TIER` (pág. 30), termine o bloco de `(C)` antes de cada subinciso `(I)` e `(II)` e inicie um bloco próprio em cada um.\n- Em `SEC. 210. PUBLICITY` (pág. 31), inicie blocos distintos em `SEC. 210.`, em `SEC. 210(a)`, `SEC. 210(b)` e `SEC. 210(c)`, e também nos parágrafos `SEC. 210(b)(1)` e `SEC. 210(b)(2)`.\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`; mantenha neste último bloco a palavra partida entre páginas `a` e `ny other Federal department ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`.\n- Ignore cabeçalhos, rodapés, números de página e datas de publicação, incluindo `August 11, 2025`, `As Amended Through P.L. 119-27...`, `VerDate ...` e `<!-- PÁGINA N -->`; não crie blocos nem cortes para essas linhas.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`SEC. 203(e)(9)`, pág. 13",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(9) is subject to any final order ...` contém os subparágrafos `(A) bars such person ...` e `(B) constitutes a final order ...`, sem cortes próprios."
+        },
+        {
+          "onde": "`SEC. 203(i)(1)`, págs. 14–15",
+          "tipo": "englobante",
+          "descricao": "Os subparágrafos `(A) IN GENERAL` e `(B) CEASE-AND-DESIST PROCEEDINGS`, bem como os incisos de `(B)`, estão incorporados aos blocos anteriores; também `(2) MAXIMUM AMOUNT OF PENALTY` e seu subparágrafo `(A) FIRST TIER` não iniciam blocos próprios."
+        },
+        {
+          "onde": "`SEC. 203A(b)(1)`, pág. 20",
+          "tipo": "englobante",
+          "descricao": "O texto de `(1) IN GENERAL` contém, sem cortes, os subparágrafos `(A)` a `(D)` e o parágrafo `(2) LIMITATION`; o próprio marcador `(1)` está na continuação do bloco de `(b)`."
+        },
+        {
+          "onde": "`SEC. 204(b)(7)`, pág. 22; `SEC. 204(b)(10)`, pág. 23",
+          "tipo": "englobante",
+          "descricao": "Em `(7) INFORMATION SHARING`, o subparágrafo `(B) CONFIDENTIALITY` está no bloco de `(A) IN GENERAL`; em `(10) PUBLIC INFORMATION EXCEPTION`, `(B) PROPRIETARY INFORMATION` está no bloco de `(A) IN GENERAL`."
+        },
+        {
+          "onde": "`SEC. 204(c)` e `SEC. 204(f)`, págs. 24–25",
+          "tipo": "englobante",
+          "descricao": "Os parágrafos `(1)` e `(2)` de `SEC. 204(c) FILING DEPOSITORIES` estão no mesmo bloco da subseção; o mesmo ocorre com `(1)` e `(2)` de `SEC. 204(f) DATA STANDARDS FOR REPORTS FILED UNDER THIS SECTION`."
+        },
+        {
+          "onde": "`SEC. 205(b)(2)`, pág. 26",
+          "tipo": "corte_indevido",
+          "descricao": "Há um corte na linha isolada `-` entre `(2) apply to an investment advisory contract with—` e `(A) an investment company ...`; essa linha é apenas formatação, não um marcador hierárquico."
+        },
+        {
+          "onde": "`SEC. 209(e)(4)`, págs. 30–31",
+          "tipo": "ancora",
+          "descricao": "O bloco devolvido para `(4) SPECIAL PROVISIONS RELATING TO A VIOLATION OF A CEASE-AND-DESIST ORDER` não foi localizado, enquanto o texto correspondente aparece como `SEM BLOCO`."
+        },
+        {
+          "onde": "`SEC. 204A`, `SEC. 206`, `SEC. 206A`, `SEC. 207`, `SEC. 216` a `SEC. 221`, págs. 25–37",
+          "tipo": "englobante",
+          "descricao": "Diversas rubricas temáticas e as seções estatutárias que as seguem não foram separadas: `PREVENTION OF MISUSE OF NONPUBLIC INFORMATION`/`SEC. 204A`; `PROHIBITED TRANSACTIONS BY REGISTERED INVESTMENT ADVISERS`/`SEC. 206`; `EXEMPTIONS`/`SEC. 206A`; `MATERIAL MISSTATEMENTS`/`SEC. 207`; e as rubricas `ANNUAL REPORTS OF COMMISSION`, `PENALTIES`, `HIRING AND LEASING AUTHORITY OF THE COMMISSION`, `SEPARABILITY OF PROVISIONS`, `SHORT TITLE` e `EFFECTIVE DATE` estão no mesmo bloco das respectivas seções."
+        },
+        {
+          "onde": "continuação da nota 8, págs. 21–22",
+          "tipo": "corte_indevido",
+          "descricao": "O texto citado de `SEC. 307. ... CONTINUED STATE AUTHORITY`, introduzido pela nota 8, recebeu cortes internos em `(b) PRESERVATION OF FEES`, `(c) AVAILABILITY OF PREEMPTION ...`, `(1) IN GENERAL` e `(2) DELAYS`, embora seja citação de outra norma."
+        },
+        {
+          "onde": "págs. 21–22",
+          "tipo": "sequencia",
+          "descricao": "A continuação da nota 8 e do texto citado de `SEC. 307` foi extraída no meio de `SEC. 204(b)(3)`, entre `(A) the amount of assets ...` e `(B) counterparty credit risk exposure`, quebrando a ordem lógica de leitura."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Em `SEC. 202(a)(2) ‘‘Bank’’` (pág. 2), encerre o bloco de `(2)` antes de cada subparágrafo `(A)`, `(B)`, `(C)` e `(D)` e inicie um bloco próprio em cada um deles.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’` (págs. 3–4), encerre o bloco de `(11)` antes de cada subparágrafo `(A)` a `(H)` e inicie bloco próprio em cada marcador; termine-o também imediatamente antes de `(12) ‘‘Investment company’’` e inicie um bloco para `(12)`.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie blocos próprios em `(A) foreign securities authority`, `(B) other governmental body ...` e `(C) membership organization ...`; inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(6)` (pág. 12), encerre o bloco de `(A) there have been established procedures ...` antes de `(B) such person has reasonably discharged ...` e inicie bloco próprio em `(B)`; em `SEC. 203(e)(9)` (pág. 13), encerre o bloco de `(9)` antes de `(A) bars such person ...` e antes de `(B) constitutes a final order ...`, iniciando um bloco próprio em cada subparágrafo.\n- Em `SEC. 203(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), separe todos os marcadores que aparecem na mesma continuidade: inicie blocos próprios em `(1) AUTHORITY OF COMMISSION`, `(A) IN GENERAL`, seus incisos `(i)` a `(iv)`, `(B) CEASE-AND-DESIST PROCEEDINGS`, seus incisos `(i)` e `(ii)`, `(2) MAXIMUM AMOUNT OF PENALTY` e `(A) FIRST TIER`.\n- Mantenha integralmente no bloco de `SEC. 203(k)(1) AUTHORITY OF THE COMMISSION` (págs. 16–17) a palavra partida entre páginas `wit` e `h such provision, rule, or regulation ...`.\n- Em `SEC. 203(k)(3) TEMPORARY ORDER` (pág. 17), termine o bloco de `(A) IN GENERAL` antes de `(B) APPLICABILITY` e inicie um bloco próprio em `(B)`.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13 iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Em `SEC. 203A(b) ADVISERS SUBJECT TO COMMISSION AUTHORITY` (pág. 20), termine o bloco de `(b)` antes de `(1) IN GENERAL`; em seguida, termine o bloco de `(1)` antes de cada subparágrafo `(A)` a `(D)`, e inicie um bloco próprio em `(2) LIMITATION`.\n- Após concluir `SEC. 203A(d) STATE ASSISTANCE`, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`.\n- Mantenha no bloco de `SEC. 204(a) IN GENERAL` (pág. 21) a frase seguinte iniciada por `All records (as so defined) of such investment advisers ...`.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos e incisos correspondentes; em particular, separe `SEC. 204(b)(7)(B) CONFIDENTIALITY` de `(A) IN GENERAL`, separe `SEC. 204(b)(10)(B) PROPRIETARY INFORMATION` de `(A) IN GENERAL`, e mantenha `SEC. 204(b)(10)(B)(ii) analytical or research methodologies;` como bloco próprio entre `(i)` e `(iii)`.\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), termine o bloco da subseção antes de `(1) to file ...` e antes de `(2) to pay ...`, iniciando bloco próprio em cada parágrafo; aplique o mesmo em `SEC. 204(f) DATA STANDARDS FOR REPORTS FILED UNDER THIS SECTION` (pág. 25), separando `(1) REQUIREMENT` e `(2) CONSISTENCY`.\n- Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2) apply to an investment advisory contract with—` e `(A) an investment company ...` (pág. 26); ela é apenas formatação de lista. Em `SEC. 205(a)` (pág. 25), mantenha blocos próprios em `(1)`, `(2)` e `(3)`.\n- Crie e localize um bloco para `SEC. 209(e)(4) SPECIAL PROVISIONS RELATING TO A VIOLATION OF A CEASE-AND-DESIST ORDER` (págs. 30–31), incluindo sua continuação iniciada por `rate offense ...` na pág. 31.\n- Separe cada rubrica temática da seção que a segue: crie blocos distintos para `PREVENTION OF MISUSE OF NONPUBLIC INFORMATION` e `SEC. 204A` (pág. 25); `PROHIBITED TRANSACTIONS BY REGISTERED INVESTMENT ADVISERS` e `SEC. 206` (pág. 27); `EXEMPTIONS` e `SEC. 206A` (pág. 28); `MATERIAL MISSTATEMENTS` e `SEC. 207` (pág. 28); e, nas págs. 36–37, para cada rubrica `ANNUAL REPORTS OF COMMISSION`, `PENALTIES`, `HIRING AND LEASING AUTHORITY OF THE COMMISSION`, `SEPARABILITY OF PROVISIONS`, `SHORT TITLE` e `EFFECTIVE DATE` e sua respectiva seção `SEC. 216` a `SEC. 221`.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)`, `SEC. 209(a)`, `SEC. 209(b)`, `SEC. 213(a)`, `SEC. 214(a)`, `SEC. 215(a)` e `SEC. 222(a)`.\n- Em `SEC. 209(e)(2)(C) THIRD TIER` (pág. 30), termine o bloco de `(C)` antes de cada subinciso `(I)` e `(II)` e inicie um bloco próprio em cada um.\n- Em `SEC. 210. PUBLICITY` (pág. 31), inicie blocos distintos em `SEC. 210.`, em `SEC. 210(a)`, `SEC. 210(b)` e `SEC. 210(c)`, e também nos parágrafos `SEC. 210(b)(1)` e `SEC. 210(b)(2)`.\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`; mantenha neste último bloco a palavra partida entre páginas `a` e `ny other Federal department ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`.\n- Ignore cabeçalhos, rodapés, números de página e datas de publicação, incluindo `August 11, 2025`, `As Amended Through P.L. 119-27...`, `VerDate ...` e `<!-- PÁGINA N -->`; não crie blocos nem cortes para essas linhas."
+    },
+    "arquivo_blocos": "resultados_amostra5/sec-rules/sec-rules/sec-rules_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 355,
+    "insights_aplicados": "- Em `SEC. 202(a)(2) ‘‘Bank’’` (pág. 2), encerre o bloco de `(2)` antes de cada subparágrafo `(A)`, `(B)`, `(C)` e `(D)` e inicie um bloco próprio em cada um deles.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’` (págs. 3–4), encerre o bloco de `(11)` antes de cada subparágrafo `(A)` a `(H)` e inicie bloco próprio em cada marcador; termine-o também imediatamente antes de `(12) ‘‘Investment company’’` e inicie um bloco para `(12)`.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie blocos próprios em `(A) foreign securities authority`, `(B) other governmental body ...` e `(C) membership organization ...`; inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(6)` (pág. 12), encerre o bloco de `(A) there have been established procedures ...` antes de `(B) such person has reasonably discharged ...` e inicie bloco próprio em `(B)`; em `SEC. 203(e)(9)` (pág. 13), encerre o bloco de `(9)` antes de `(A) bars such person ...` e antes de `(B) constitutes a final order ...`, iniciando um bloco próprio em cada subparágrafo.\n- Em `SEC. 203(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), separe todos os marcadores que aparecem na mesma continuidade: inicie blocos próprios em `(1) AUTHORITY OF COMMISSION`, `(A) IN GENERAL`, seus incisos `(i)` a `(iv)`, `(B) CEASE-AND-DESIST PROCEEDINGS`, seus incisos `(i)` e `(ii)`, `(2) MAXIMUM AMOUNT OF PENALTY` e `(A) FIRST TIER`.\n- Mantenha integralmente no bloco de `SEC. 203(k)(1) AUTHORITY OF THE COMMISSION` (págs. 16–17) a palavra partida entre páginas `wit` e `h such provision, rule, or regulation ...`.\n- Em `SEC. 203(k)(3) TEMPORARY ORDER` (pág. 17), termine o bloco de `(A) IN GENERAL` antes de `(B) APPLICABILITY` e inicie um bloco próprio em `(B)`.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13 iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Em `SEC. 203A(b) ADVISERS SUBJECT TO COMMISSION AUTHORITY` (pág. 20), termine o bloco de `(b)` antes de `(1) IN GENERAL`; em seguida, termine o bloco de `(1)` antes de cada subparágrafo `(A)` a `(D)`, e inicie um bloco próprio em `(2) LIMITATION`.\n- Após concluir `SEC. 203A(d) STATE ASSISTANCE`, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`.\n- Mantenha no bloco de `SEC. 204(a) IN GENERAL` (pág. 21) a frase seguinte iniciada por `All records (as so defined) of such investment advisers ...`.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e nos subparágrafos e incisos correspondentes; em particular, separe `SEC. 204(b)(7)(B) CONFIDENTIALITY` de `(A) IN GENERAL`, separe `SEC. 204(b)(10)(B) PROPRIETARY INFORMATION` de `(A) IN GENERAL`, e mantenha `SEC. 204(b)(10)(B)(ii) analytical or research methodologies;` como bloco próprio entre `(i)` e `(iii)`.\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), termine o bloco da subseção antes de `(1) to file ...` e antes de `(2) to pay ...`, iniciando bloco próprio em cada parágrafo; aplique o mesmo em `SEC. 204(f) DATA STANDARDS FOR REPORTS FILED UNDER THIS SECTION` (pág. 25), separando `(1) REQUIREMENT` e `(2) CONSISTENCY`.\n- Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2) apply to an investment advisory contract with—` e `(A) an investment company ...` (pág. 26); ela é apenas formatação de lista. Em `SEC. 205(a)` (pág. 25), mantenha blocos próprios em `(1)`, `(2)` e `(3)`.\n- Crie e localize um bloco para `SEC. 209(e)(4) SPECIAL PROVISIONS RELATING TO A VIOLATION OF A CEASE-AND-DESIST ORDER` (págs. 30–31), incluindo sua continuação iniciada por `rate offense ...` na pág. 31.\n- Separe cada rubrica temática da seção que a segue: crie blocos distintos para `PREVENTION OF MISUSE OF NONPUBLIC INFORMATION` e `SEC. 204A` (pág. 25); `PROHIBITED TRANSACTIONS BY REGISTERED INVESTMENT ADVISERS` e `SEC. 206` (pág. 27); `EXEMPTIONS` e `SEC. 206A` (pág. 28); `MATERIAL MISSTATEMENTS` e `SEC. 207` (pág. 28); e, nas págs. 36–37, para cada rubrica `ANNUAL REPORTS OF COMMISSION`, `PENALTIES`, `HIRING AND LEASING AUTHORITY OF THE COMMISSION`, `SEPARABILITY OF PROVISIONS`, `SHORT TITLE` e `EFFECTIVE DATE` e sua respectiva seção `SEC. 216` a `SEC. 221`.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)`, `SEC. 209(a)`, `SEC. 209(b)`, `SEC. 213(a)`, `SEC. 214(a)`, `SEC. 215(a)` e `SEC. 222(a)`.\n- Em `SEC. 209(e)(2)(C) THIRD TIER` (pág. 30), termine o bloco de `(C)` antes de cada subinciso `(I)` e `(II)` e inicie um bloco próprio em cada um.\n- Em `SEC. 210. PUBLICITY` (pág. 31), inicie blocos distintos em `SEC. 210.`, em `SEC. 210(a)`, `SEC. 210(b)` e `SEC. 210(c)`, e também nos parágrafos `SEC. 210(b)(1)` e `SEC. 210(b)(2)`.\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`; mantenha neste último bloco a palavra partida entre páginas `a` e `ny other Federal department ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`.\n- Ignore cabeçalhos, rodapés, números de página e datas de publicação, incluindo `August 11, 2025`, `As Amended Through P.L. 119-27...`, `VerDate ...` e `<!-- PÁGINA N -->`; não crie blocos nem cortes para essas linhas.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`SEC. 201.`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2)` contém também o marcador irmão `(3) the foregoing transactions occur...`, sem corte próprio antes de `(3)`."
+        },
+        {
+          "onde": "`SEC. 202(a)(2) ‘‘Bank’’`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2)` engloba os subparágrafos `(A)`, `(B)`, `(C)` e `(D)`, que não receberam blocos próprios."
+        },
+        {
+          "onde": "`SEC. 203(b)(6)(A)`, pág. 8",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(6)(A)` contém os incisos `(i) an investment company...` e `(ii) a company which has elected...`, sem cortes antes desses marcadores."
+        },
+        {
+          "onde": "`SEC. 203(c)(1)(G)`, págs. 9–10",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação textual de `(G)`, iniciada por `ocation of registration...`, está fora de bloco entre a quebra de página e `(H)`."
+        },
+        {
+          "onde": "`SEC. 203(c)(2)(B)`, pág. 10",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(B) institute proceedings...` contém também a subseção irmã `(d) Any provision in this title...`, sem corte antes de `(d)`."
+        },
+        {
+          "onde": "`SEC. 203(e)(9)`, pág. 13",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(9)` contém os subparágrafos `(A) bars such person...` e `(B) constitutes a final order...`, sem blocos próprios."
+        },
+        {
+          "onde": "`SEC. 203(i)(1)(A) IN GENERAL`, pág. 14",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(A) IN GENERAL` contém os incisos `(i)` a `(iv)`, que aparecem sem cortes próprios."
+        },
+        {
+          "onde": "`SEC. 203(k)(4)(B) JUDICIAL REVIEW`, pág. 17",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(B) JUDICIAL REVIEW` contém os incisos `(i)` e `(ii)` e o texto subsequente de continuação sem iniciar blocos nos incisos."
+        },
+        {
+          "onde": "`SEC. 203A(a)(2) TREATMENT OF MID-SIZED INVESTMENT ADVISERS`, pág. 19",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2)` contém `(A) IN GENERAL`, `(B) COVERED PERSONS`, os incisos `(i)` e `(ii)` e o subinciso `(I)`, sem os cortes exigidos."
+        },
+        {
+          "onde": "`SEC. 203A(a)(3) DEFINITION`, pág. 20",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(3) DEFINITION` contém também a subseção irmã `(b) ADVISERS SUBJECT TO COMMISSION AUTHORITY`, sem corte antes de `(b)`."
+        },
+        {
+          "onde": "`SEC. 204`, págs. 21–25",
+          "tipo": "englobante",
+          "descricao": "A rubrica `ANNUAL AND OTHER REPORTS`, `SEC. 204.`, as subseções `(a)` a `(f)` e diversos níveis internos não foram separados de forma consistente; em especial, `(a)` começa na mesma unidade que a seção e `(b)(6)(A)` contém `(i)` e `(ii)`."
+        },
+        {
+          "onde": "`SEC. 204(b)(6)`, pág. 22",
+          "tipo": "sem_bloco",
+          "descricao": "O subparágrafo `(B) AVAILABILITY OF RECORDS` e o início de `(7) INFORMATION SHARING` com `(A) IN GENERAL` aparecem fora de bloco."
+        },
+        {
+          "onde": "`SEC. 205(a)(2)`, pág. 25",
+          "tipo": "englobante",
+          "descricao": "O bloco de `(2) fails to provide...` contém também o parágrafo irmão `(3) fails to provide...`, sem corte antes de `(3)`."
+        },
+        {
+          "onde": "`SEC. 205(b)(2)`, pág. 26",
+          "tipo": "corte_indevido",
+          "descricao": "Há um corte na linha isolada `-` entre `(2) apply to an investment advisory contract with—` e `(A) an investment company...`; o hífen é apenas formatação de lista e não é marcador hierárquico."
+        },
+        {
+          "onde": "`SEC. 209(e)(2)(A) FIRST TIER`, pág. 30",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação da unidade, iniciada por `For each violation, the amount of the penalty...`, está fora de bloco no meio do texto de `(A)`."
+        },
+        {
+          "onde": "`SEC. 210A(a)(1)`, pág. 32",
+          "tipo": "englobante",
+          "descricao": "O parágrafo `(1)` contém o subparágrafo `(A)`, os incisos `(i)` a `(iii)` e o subparágrafo `(B)` sem cortes próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em `SEC. 201. FINDINGS` (pág. 1), termine o bloco de `(2) their advice, counsel...` imediatamente antes de `(3) the foregoing transactions occur...` e inicie bloco próprio em `(3)`.\n- Em `SEC. 202(a)(2) ‘‘Bank’’` (pág. 2), encerre o bloco de `(2)` antes de cada subparágrafo `(A)`, `(B)`, `(C)` e `(D)` e inicie um bloco próprio em cada um deles.\n- Em `SEC. 202(a)(11) ‘‘Investment adviser’’` (págs. 3–4), encerre o bloco de `(11)` antes de cada subparágrafo `(A)` a `(H)` e inicie bloco próprio em cada marcador; termine-o também imediatamente antes de `(12) ‘‘Investment company’’` e inicie um bloco para `(12)`.\n- Em `SEC. 202(a)(22) ‘‘Business development company’’` (pág. 5), termine o bloco antes de cada um dos subparágrafos `(A)`, `(B)` e `(C)` e inicie um bloco próprio em cada marcador.\n- Em `SEC. 202(a)(24) ‘‘Foreign financial regulatory authority’’` (págs. 5–6), inicie blocos próprios em `(A) foreign securities authority`, `(B) other governmental body ...` e `(C) membership organization ...`; inicie também blocos próprios em `(25) ‘‘Supervised person’’`, em `(26) The term ‘‘separately identifiable department or division’’` e nos subparágrafos `(A)` e `(B)` de `(26)`.\n- Em `SEC. 203(b)(6)(A) any investment adviser that is registered...` (pág. 8), termine o bloco de `(A)` antes de `(i) an investment company...` e antes de `(ii) a company which has elected...`, iniciando um bloco próprio em cada inciso.\n- Em `SEC. 203(b)(7) any investment adviser ... who solely advises—` (pág. 9), inicie blocos próprios em `(A)`, `(B)` e `(C)`; em `SEC. 203(b)(8)` (pág. 9), faça o mesmo em `(A)`, `(B)`, `(i)` e `(ii)`.\n- Em `SEC. 203(c)(1)`, encerre o bloco de `(G) whether such investment adviser ...` imediatamente antes de `(H) a statement as to whether the principal business ...` (pág. 10) e inicie um bloco para `(H)`; mantenha no bloco de `(G)` sua continuação iniciada por `ocation of registration...`, ignorando somente os elementos de paginação intercalados.\n- Em `SEC. 203(c)(2)(B) institute proceedings...` (pág. 10), mantenha os parágrafos sem marcador que explicam o procedimento dentro de `(B)`, mas encerre esse bloco imediatamente antes de `(d) Any provision in this title...` e inicie bloco próprio para `(d)`.\n- Em `SEC. 203(e)(2)` (pág. 11), inicie blocos próprios em `(A)`, `(B)`, `(C)` e `(D)`; em `SEC. 203(e)(6)` (pág. 12), encerre o bloco de `(A) there have been established procedures ...` antes de `(B) such person has reasonably discharged ...` e inicie bloco próprio em `(B)`; em `SEC. 203(e)(9)` (pág. 13), encerre o bloco de `(9)` antes de `(A) bars such person ...` e antes de `(B) constitutes a final order ...`, iniciando um bloco próprio em cada subparágrafo.\n- Em `SEC. 203(i) MONEY PENALTIES IN ADMINISTRATIVE PROCEEDINGS` (págs. 14–15), separe todos os marcadores aninhados: inicie blocos próprios em `(1) AUTHORITY OF COMMISSION`, `(A) IN GENERAL`, seus incisos `(i)` a `(iv)`, `(B) CEASE-AND-DESIST PROCEEDINGS`, seus incisos `(i)` e `(ii)`, `(2) MAXIMUM AMOUNT OF PENALTY` e `(A) FIRST TIER`.\n- Mantenha integralmente no bloco de `SEC. 203(k)(1) AUTHORITY OF THE COMMISSION` (págs. 16–17) a palavra partida entre páginas `wit` e `h such provision, rule, or regulation ...`.\n- Em `SEC. 203(k)(3) TEMPORARY ORDER` (pág. 17), termine o bloco de `(A) IN GENERAL` antes de `(B) APPLICABILITY` e inicie um bloco próprio em `(B)`.\n- Em `SEC. 203(k)(4) REVIEW OF TEMPORARY ORDERS` (pág. 17), separe `(A) COMMISSION REVIEW`, `(B) JUDICIAL REVIEW`, os incisos `(i)` e `(ii)` de `(B)`, `(C) NO AUTOMATIC STAY OF TEMPORARY ORDER` e `(D) EXCLUSIVE REVIEW` em blocos próprios.\n- Em `SEC. 203(m) EXEMPTION OF AND REPORTING BY CERTAIN PRIVATE FUND ADVISERS` (pág. 18), termine o bloco de `(m)` antes de `(1) IN GENERAL` e inicie um bloco nesse parágrafo.\n- Mantenha no bloco de `SEC. 203(e)(8)(C)` a continuação da pág. 13 iniciada por `sions, and rules and regulations promulgated there-under`; ignore apenas os cabeçalhos, rodapés e números de página intercalados.\n- Em `SEC. 203A(a)(2) TREATMENT OF MID-SIZED INVESTMENT ADVISERS` (págs. 19–20), inicie blocos próprios em `(A) IN GENERAL`, `(B) COVERED PERSONS`, `(i) is required to be registered...`, `(ii) has assets under management between—`, `(I) the amount specified...` e `(II) $100,000,000...`.\n- Em `SEC. 203A(b) ADVISERS SUBJECT TO COMMISSION AUTHORITY` (pág. 20), termine o bloco de `(b)` antes de `(1) IN GENERAL`; em seguida, termine o bloco de `(1)` antes de cada subparágrafo `(A)` a `(D)`, e inicie um bloco próprio em `(2) LIMITATION`.\n- Após concluir `SEC. 203A(d) STATE ASSISTANCE`, inicie blocos distintos em `ANNUAL AND OTHER REPORTS`, em `SEC. 204.`, e em cada subseção de `SEC. 204` que abra com `(a)`, `(b)`, `(c)`, `(d)`, `(e)` ou `(f)`.\n- Mantenha no bloco de `SEC. 204(a) IN GENERAL` (pág. 21) a frase seguinte iniciada por `All records (as so defined) of such investment advisers ...`.\n- Dentro de `SEC. 204(b)`, inicie blocos em todos os marcadores `(1)` a `(11)` e em todos os subparágrafos e incisos correspondentes; em particular, separe `SEC. 204(b)(6)(A) PERIODIC AND SPECIAL EXAMINATIONS` de seus incisos `(i)` e `(ii)`, separe `(B) AVAILABILITY OF RECORDS`, separe `SEC. 204(b)(7)(A) IN GENERAL` de `(B) CONFIDENTIALITY`, separe `SEC. 204(b)(10)(B) PROPRIETARY INFORMATION` de `(A) IN GENERAL`, e mantenha `SEC. 204(b)(10)(B)(ii) analytical or research methodologies;` como bloco próprio entre `(i)` e `(iii)`.\n- Em `SEC. 204(c) FILING DEPOSITORIES` (pág. 24), termine o bloco da subseção antes de `(1) to file ...` e antes de `(2) to pay ...`, iniciando bloco próprio em cada parágrafo; aplique o mesmo em `SEC. 204(f) DATA STANDARDS FOR REPORTS FILED UNDER THIS SECTION` (pág. 25), separando `(1) REQUIREMENT` e `(2) CONSISTENCY`.\n- Em `SEC. 205(a)` (pág. 25), mantenha blocos próprios em `(1)`, `(2)` e `(3)`, encerrando cada bloco antes do marcador irmão seguinte.\n- Não inicie bloco na linha isolada `-` entre `SEC. 205(b)(2) apply to an investment advisory contract with—` e `(A) an investment company ...` (pág. 26); ela é apenas formatação de lista.\n- Crie e localize um bloco para `SEC. 209(e)(4) SPECIAL PROVISIONS RELATING TO A VIOLATION OF A CEASE-AND-DESIST ORDER` (págs. 30–31), incluindo sua continuação iniciada por `rate offense ...` na pág. 31.\n- Mantenha integralmente no bloco de `SEC. 209(e)(2)(A) FIRST TIER` (pág. 30) a continuação iniciada por `For each violation, the amount of the penalty...`; não a deixe fora de bloco no meio da unidade.\n- Separe cada rubrica temática da seção que a segue: crie blocos distintos para `PREVENTION OF MISUSE OF NONPUBLIC INFORMATION` e `SEC. 204A` (pág. 25); `PROHIBITED TRANSACTIONS BY REGISTERED INVESTMENT ADVISERS` e `SEC. 206` (pág. 27); `EXEMPTIONS` e `SEC. 206A` (pág. 28); `MATERIAL MISSTATEMENTS` e `SEC. 207` (pág. 28); e, nas págs. 36–37, para cada rubrica `ANNUAL REPORTS OF COMMISSION`, `PENALTIES`, `HIRING AND LEASING AUTHORITY OF THE COMMISSION`, `SEPARABILITY OF PROVISIONS`, `SHORT TITLE` e `EFFECTIVE DATE` e sua respectiva seção `SEC. 216` a `SEC. 221`.\n- Quando uma subseção abrir na mesma linha da seção, separe-a mesmo assim: inicie blocos próprios em `SEC. 208(a)`, `SEC. 209(a)`, `SEC. 209(b)`, `SEC. 213(a)`, `SEC. 214(a)`, `SEC. 215(a)` e `SEC. 222(a)`.\n- Em `SEC. 209(e)(2)(C) THIRD TIER` (pág. 30), termine o bloco de `(C)` antes de cada subinciso `(I)` e `(II)` e inicie um bloco próprio em cada um.\n- Em `SEC. 210. PUBLICITY` (pág. 31), inicie blocos distintos em `SEC. 210.`, em `SEC. 210(a)`, `SEC. 210(b)` e `SEC. 210(c)`, e também nos parágrafos `SEC. 210(b)(1)` e `SEC. 210(b)(2)`.\n- Em `SEC. 210A(a)(1) The appropriate Federal banking agency...` (pág. 32), inicie blocos próprios em `(A) with respect to the investment advisory activities`, nos incisos `(i)`, `(ii)` e `(iii)`, e em `(B) in the case of a bank holding company...`.\n- Em `SEC. 210A(a) EXAMINATION RESULTS AND OTHER INFORMATION` (pág. 32), inicie blocos próprios em `(2) The Commission shall provide ...` e `(3) Notwithstanding any other provision of law ...`; mantenha neste último bloco a palavra partida entre páginas `a` e `ny other Federal department ...`.\n- Em `SEC. 211(h) OTHER MATTERS` (pág. 34), inicie blocos próprios em `(1) facilitate the provision ...` e `(2) examine and, where appropriate ...`.\n- Ignore cabeçalhos, rodapés, números de página e datas de publicação, incluindo `August 11, 2025`, `As Amended Through P.L. 119-27...`, `VerDate ...` e `<!-- PÁGINA N -->`; não crie blocos nem cortes para essas linhas."
+    },
+    "arquivo_blocos": "resultados_amostra5/sec-rules/sec-rules/sec-rules_ciclo5.json"
+  }
+]

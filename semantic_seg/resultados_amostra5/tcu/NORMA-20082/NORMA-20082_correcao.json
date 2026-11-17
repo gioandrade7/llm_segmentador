@@ -1,0 +1,55 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências... resolve:”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo normativo anterior à Seção I contém texto do documento e não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "inciso II do Art. 5º, “II - superintender os serviços de sistematização...”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso II contém também os incisos III, IV, V e VI do Art. 5º, que são unidades irmãs e deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais, legais e regimentais... resolve:” (pág. 1), encerrando-o antes de “Seção I”.\n- Termine o bloco do inciso II do Art. 5º imediatamente antes de “III - propor ao Plenário...” (pág. 1) e inicie blocos próprios em “III - propor ao Plenário...”, “IV - selecionar, a título de cooperação...”, “V - requisitar ao Presidente...” e “VI - manter contato com outras autoridades...” (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20082/NORMA-20082_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais, legais e regimentais... resolve:” (pág. 1), encerrando-o antes de “Seção I”.\n- Termine o bloco do inciso II do Art. 5º imediatamente antes de “III - propor ao Plenário...” (pág. 1) e inicie blocos próprios em “III - propor ao Plenário...”, “IV - selecionar, a título de cooperação...”, “V - requisitar ao Presidente...” e “VI - manter contato com outras autoridades...” (pág. 1).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Parágrafo único. Se admitida a preliminar de conveniência e oportunidade...`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `Art. 13. O Relator sorteado...` contém, sem corte próprio, o marcador e todo o texto do parágrafo único do art. 13."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `Art. 13. O Relator sorteado submeterá à deliberação do Plenário...` imediatamente antes de `Parágrafo único. Se admitida a preliminar de conveniência e oportunidade...` (pág. 3) e inicie um bloco próprio nesse parágrafo único.\n- Crie um bloco inicial para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais, legais e regimentais... resolve:` (pág. 1), encerrando-o antes de `Seção I`.\n- Termine o bloco do inciso `II - superintender os serviços de sistematização...` do Art. 5º imediatamente antes de `III - propor ao Plenário...` (pág. 1) e inicie blocos próprios em `III - propor ao Plenário...`, `IV - selecionar, a título de cooperação...`, `V - requisitar ao Presidente...` e `VI - manter contato com outras autoridades...` (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20082/NORMA-20082_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Termine o bloco de `Art. 13. O Relator sorteado submeterá à deliberação do Plenário...` imediatamente antes de `Parágrafo único. Se admitida a preliminar de conveniência e oportunidade...` (pág. 3) e inicie um bloco próprio nesse parágrafo único.\n- Crie um bloco inicial para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais, legais e regimentais... resolve:` (pág. 1), encerrando-o antes de `Seção I`.\n- Termine o bloco do inciso `II - superintender os serviços de sistematização...` do Art. 5º imediatamente antes de `III - propor ao Plenário...` (pág. 1) e inicie blocos próprios em `III - propor ao Plenário...`, `IV - selecionar, a título de cooperação...`, `V - requisitar ao Presidente...` e `VI - manter contato com outras autoridades...` (pág. 1).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20082/NORMA-20082_ciclo3.json"
+  }
+]

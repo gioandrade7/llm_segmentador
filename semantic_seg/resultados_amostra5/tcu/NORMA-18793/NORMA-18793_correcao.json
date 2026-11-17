@@ -1,0 +1,60 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto preambular do documento ficou fora de qualquer bloco antes de \"Art. 1º\"."
+        },
+        {
+          "onde": "§ 4º do Art. 3º, \"É vedada a inscrição de servidor que:\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 4º contém também os incisos \"I - estiver em gozo...\" e \"II - encontrar-se impedido...\", que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "II) do § 6º do Art. 15, \"maior tempo de efetivo exercício no TCU;\", pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II) contém também o inciso \"III) maior idade.\", que deveria iniciar um bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo que se inicia em \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\" e termina em \"resolve:\" (pág. 1), antes de iniciar o bloco de \"Art. 1º\".\n- No \"§ 4º É vedada a inscrição de servidor que:\" do Art. 3º (pág. 1), termine o bloco do parágrafo antes de \"I - estiver em gozo de qualquer licença sem remuneração;\"; inicie blocos próprios em \"I -\" e em \"II - encontrar-se impedido de participar\".\n- No \"§ 6º Em caso de empate no quantitativo de pontos\" do Art. 15 (pág. 4), inicie um bloco próprio em \"III) maior idade.\", imediatamente após o término do inciso \"II) maior tempo de efetivo exercício no TCU;\"."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-18793/NORMA-18793_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo que se inicia em \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\" e termina em \"resolve:\" (pág. 1), antes de iniciar o bloco de \"Art. 1º\".\n- No \"§ 4º É vedada a inscrição de servidor que:\" do Art. 3º (pág. 1), termine o bloco do parágrafo antes de \"I - estiver em gozo de qualquer licença sem remuneração;\"; inicie blocos próprios em \"I -\" e em \"II - encontrar-se impedido de participar\".\n- No \"§ 6º Em caso de empate no quantitativo de pontos\" do Art. 15 (pág. 4), inicie um bloco próprio em \"III) maior idade.\", imediatamente após o término do inciso \"II) maior tempo de efetivo exercício no TCU;\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II) maior tempo de efetivo exercício no TCU;`, no § 6º do Art. 15, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso II) está fora de qualquer bloco, entre os blocos de I) e III), embora seja uma unidade normativa própria."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo que se inicia em \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\" e termina em \"resolve:\" (pág. 1), antes de iniciar o bloco de \"Art. 1º\".\n- No \"§ 4º É vedada a inscrição de servidor que:\" do Art. 3º (pág. 1), termine o bloco do parágrafo antes de \"I - estiver em gozo de qualquer licença sem remuneração;\"; inicie blocos próprios em \"I -\" e em \"II - encontrar-se impedido de participar\".\n- No \"§ 6º Em caso de empate no quantitativo de pontos\" do Art. 15 (pág. 4), inicie um bloco próprio em \"II) maior tempo de efetivo exercício no TCU;\", imediatamente após o término do inciso \"I) maior tempo de efetivo exercício no cargo;\".\n- No \"§ 6º Em caso de empate no quantitativo de pontos\" do Art. 15 (pág. 4), inicie um bloco próprio em \"III) maior idade.\", imediatamente após o término do inciso \"II) maior tempo de efetivo exercício no TCU;\"."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-18793/NORMA-18793_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo que se inicia em \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\" e termina em \"resolve:\" (pág. 1), antes de iniciar o bloco de \"Art. 1º\".\n- No \"§ 4º É vedada a inscrição de servidor que:\" do Art. 3º (pág. 1), termine o bloco do parágrafo antes de \"I - estiver em gozo de qualquer licença sem remuneração;\"; inicie blocos próprios em \"I -\" e em \"II - encontrar-se impedido de participar\".\n- No \"§ 6º Em caso de empate no quantitativo de pontos\" do Art. 15 (pág. 4), inicie um bloco próprio em \"II) maior tempo de efetivo exercício no TCU;\", imediatamente após o término do inciso \"I) maior tempo de efetivo exercício no cargo;\".\n- No \"§ 6º Em caso de empate no quantitativo de pontos\" do Art. 15 (pág. 4), inicie um bloco próprio em \"III) maior idade.\", imediatamente após o término do inciso \"II) maior tempo de efetivo exercício no TCU;\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-18793/NORMA-18793_ciclo3.json"
+  }
+]

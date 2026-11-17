@@ -1,0 +1,167 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 102,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 1º contém também os incisos I e II, embora o inciso III tenha sido aberto separadamente no bloco seguinte; todos os incisos devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 19,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco iniciado pelo inciso I - \"para suplementação de despesas classificadas com \\\"RP 0\\\"\" engloba a alínea a) e os itens numerados 1 a 4, que são marcadores autônomos."
+        },
+        {
+          "bloco": 27,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco iniciado pela alínea c) - \"nas ações destinadas à execução da Política de Garantia de Preços Mínimo\" termina já contendo o início da alínea d), que deveria abrir bloco próprio."
+        },
+        {
+          "bloco": 37,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, sob o inciso II e a alínea a), o bloco iniciado pelo item 2. - \"anulação de dotações classificadas com \\\"RP 2\\\"\" engloba os itens 3. e 4., que deveriam ser blocos próprios."
+        },
+        {
+          "bloco": 66,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º, o bloco iniciado pelo inciso IV - \"para atendimento de despesas classificadas com \\\"RP 3\\\"\" contém também a alínea a), embora as demais alíneas e itens dessa enumeração sejam segmentados separadamente."
+        },
+        {
+          "bloco": 70,
+          "tipo": "sequencia",
+          "descricao": "No inciso IV do Art. 4º, a alínea c) anuncia recursos \"provenientes de:\" e o item 1. termina em \"; e\", mas o texto passa diretamente para a alínea d), sem o item 2. esperado."
+        },
+        {
+          "bloco": 101,
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 10 contém os incisos I a XI da relação de Anexos; cada inciso é marcador de nível próprio e deve iniciar bloco separado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 1º (pág. 1), termine o bloco do artigo antes de \"I - o Orçamento Fiscal\" e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 4º (pág. 1), corte em todo marcador interno: termine cada inciso antes de sua primeira alínea, cada alínea antes de seu primeiro item e cada item antes do item seguinte; em especial, separe a alínea a) e os itens 1 a 4 do inciso I, a alínea d) que sucede a alínea c), os itens 3 e 4 que sucedem o item 2 da alínea a) do inciso II e a alínea a) que sucede o inciso IV.\n- No inciso IV do Art. 4º (pág. 1), preserve e segmente o item 2. da lista anunciada pela alínea c), entre o item 1. - \"anulação parcial de dotações\" e a alínea d); não salte diretamente do item 1 para a alínea d).\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada\" e inicie um bloco próprio em cada inciso I a XI da lista de Anexos."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 117,
+    "insights_aplicados": "- No Art. 1º (pág. 1), termine o bloco do artigo antes de \"I - o Orçamento Fiscal\" e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 4º (pág. 1), corte em todo marcador interno: termine cada inciso antes de sua primeira alínea, cada alínea antes de seu primeiro item e cada item antes do item seguinte; em especial, separe a alínea a) e os itens 1 a 4 do inciso I, a alínea d) que sucede a alínea c), os itens 3 e 4 que sucedem o item 2 da alínea a) do inciso II e a alínea a) que sucede o inciso IV.\n- No inciso IV do Art. 4º (pág. 1), preserve e segmente o item 2. da lista anunciada pela alínea c), entre o item 1. - \"anulação parcial de dotações\" e a alínea d); não salte diretamente do item 1 para a alínea d).\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de \"I - receita estimada\" e inicie um bloco próprio em cada inciso I a XI da lista de Anexos.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 34,
+          "tipo": "englobante",
+          "descricao": "A alínea c) do inciso I do Art. 4º contém também o marcador e o texto inicial da alínea d) (“d) no caso de transferências aos fundos constitucionais...”), que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 44,
+          "tipo": "englobante",
+          "descricao": "O item 2. da alínea a) do inciso II do Art. 4º contém também os marcadores e textos dos itens 3. (“reserva de contingência...”) e 4. (“superávit financeiro...”), que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 48,
+          "tipo": "englobante",
+          "descricao": "A alínea c) do inciso II do Art. 4º contém também o marcador e o texto do item 1. (“do mesmo subtítulo objeto da suplementação...”), que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 57,
+          "tipo": "englobante",
+          "descricao": "A alínea b) do inciso III do Art. 4º contém também o marcador e o texto inicial da alínea c) (“c) relativas à subfunção defesa civil...”), que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 60,
+          "tipo": "englobante",
+          "descricao": "A alínea d) do inciso III do Art. 4º contém também o marcador e o texto do item 1. (“do mesmo subtítulo objeto da suplementação...”), que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 1º (pág. 1), termine o bloco do artigo antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 4º (pág. 1), inicie um bloco em todo marcador interno de inciso, alínea e item. Em particular, separe a alínea d) imediatamente antes de “d) no caso de transferências aos fundos constitucionais...”, os itens 3. e 4. que seguem o item 2. da alínea a) do inciso II, o item 1. que segue a alínea c) do inciso II, a alínea c) imediatamente antes de “c) relativas à subfunção defesa civil...” no inciso III e o item 1. que segue a alínea d) do inciso III.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 115,
+    "insights_aplicados": "- No Art. 1º (pág. 1), termine o bloco do artigo antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 4º (pág. 1), inicie um bloco em todo marcador interno de inciso, alínea e item. Em particular, separe a alínea d) imediatamente antes de “d) no caso de transferências aos fundos constitucionais...”, os itens 3. e 4. que seguem o item 2. da alínea a) do inciso II, o item 1. que segue a alínea c) do inciso II, a alínea c) imediatamente antes de “c) relativas à subfunção defesa civil...” no inciso III e o item 1. que segue a alínea d) do inciso III.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 35,
+          "tipo": "sequencia",
+          "descricao": "A alínea d) do inciso I do Art. 4º termina em “com recursos provenientes de:”, anunciando itens, mas o bloco seguinte já inicia a alínea e), sem que qualquer item da lista anunciada tenha sido extraído."
+        },
+        {
+          "bloco": 52,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia a alínea d) do inciso II do Art. 4º e contém também o marcador e o texto do item “1. anulação parcial de dotações...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 64,
+          "tipo": "sequencia",
+          "descricao": "No inciso III, alínea d), o item 1. aparece no bloco anterior e o bloco seguinte inicia diretamente em “3. do Conselho Nacional de Desenvolvimento Científico e Tecnológico...”, sem o item 2. entre eles."
+        },
+        {
+          "bloco": 114,
+          "tipo": "englobante",
+          "descricao": "O bloco que inicia em “V - autorizações específicas...” do Art. 10 contém também os incisos VI, VII, VIII, IX, X e XI, que são unidades irmãs e deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No Art. 1º (pág. 1), termine o bloco do artigo imediatamente antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 4º (pág. 1), inicie um bloco em cada marcador interno de inciso, alínea e item. Em particular, termine o bloco da alínea “d) que decorram de variação cambial...” do inciso II imediatamente antes de “1. anulação parcial de dotações...” e inicie um bloco próprio nesse item.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos; em especial, separe os incisos V, VI, VII, VIII, IX, X e XI, atualmente reunidos após “V - autorizações específicas...” ."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 122,
+    "insights_aplicados": "- No Art. 1º (pág. 1), termine o bloco do artigo imediatamente antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 4º (pág. 1), inicie um bloco em cada marcador interno de inciso, alínea e item. Em particular, termine o bloco da alínea “d) que decorram de variação cambial...” do inciso II imediatamente antes de “1. anulação parcial de dotações...” e inicie um bloco próprio nesse item.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos; em especial, separe os incisos V, VI, VII, VIII, IX, X e XI, atualmente reunidos após “V - autorizações específicas...” .",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "No Art. 2º (pág. 1), o bloco iniciado em “II - Orçamento da Seguridade Social” também contém o marcador e o texto do inciso “III - Refinanciamento da dívida pública federal”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 33,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º (pág. 1), o bloco iniciado na alínea “c) nas ações destinadas à execução da Política de Garantia...” também contém o marcador e o texto da alínea “d) no caso de transferências aos fundos constitucionais...”, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 44,
+          "tipo": "englobante",
+          "descricao": "No Art. 4º (pág. 1), sob o inciso II, alínea “a) constante de item do Quadro 9...”, o bloco iniciado em “3. reserva de contingência...” também contém o marcador e o texto do item “4. superávit financeiro...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 1º (pág. 1), termine o bloco do artigo imediatamente antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 2º (pág. 1), termine o bloco do inciso “II - Orçamento da Seguridade Social” imediatamente antes de “III - Refinanciamento da dívida pública federal” e inicie um bloco próprio nesse inciso III.\n- No Art. 4º (pág. 1), inicie um bloco em cada marcador interno de inciso, alínea e item. Em particular, termine a alínea “c) nas ações destinadas à execução da Política de Garantia...” imediatamente antes de “d) no caso de transferências aos fundos constitucionais...” e inicie bloco próprio na alínea d); termine também o item “3. reserva de contingência...” da alínea “a) constante de item do Quadro 9...” do inciso II imediatamente antes de “4. superávit financeiro...” e inicie bloco próprio nesse item 4.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos, sem reunir incisos consecutivos no mesmo bloco."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 124,
+    "insights_aplicados": "- No Art. 1º (pág. 1), termine o bloco do artigo imediatamente antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 2º (pág. 1), termine o bloco do inciso “II - Orçamento da Seguridade Social” imediatamente antes de “III - Refinanciamento da dívida pública federal” e inicie um bloco próprio nesse inciso III.\n- No Art. 4º (pág. 1), inicie um bloco em cada marcador interno de inciso, alínea e item. Em particular, termine a alínea “c) nas ações destinadas à execução da Política de Garantia...” imediatamente antes de “d) no caso de transferências aos fundos constitucionais...” e inicie bloco próprio na alínea d); termine também o item “3. reserva de contingência...” da alínea “a) constante de item do Quadro 9...” do inciso II imediatamente antes de “4. superávit financeiro...” e inicie bloco próprio nesse item 4.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos, sem reunir incisos consecutivos no mesmo bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 102,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia com o marcador de Seção III — “Da Autorização para a Abertura de Créditos Suplementares” — e inclui também o marcador e o texto inicial do “Art. 7º”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 1º (pág. 1), termine o bloco do artigo imediatamente antes de “I - o Orçamento Fiscal” e inicie blocos próprios em cada inciso I, II e III.\n- No Art. 2º (pág. 1), termine o bloco do inciso “II - Orçamento da Seguridade Social” imediatamente antes de “III - Refinanciamento da dívida pública federal” e inicie um bloco próprio nesse inciso III.\n- No Art. 4º (pág. 1), inicie um bloco em cada marcador interno de inciso, alínea e item; em particular, termine a alínea “c) nas ações destinadas à execução da Política de Garantia...” antes de “d) no caso de transferências aos fundos constitucionais...” e termine o item “3. reserva de contingência...” da alínea “a) constante de item do Quadro 9...” antes de “4. superávit financeiro...”, iniciando blocos próprios nos marcadores seguintes.\n- No Art. 10 (pág. 1), termine o bloco do artigo antes de “I - receita estimada” e inicie um bloco próprio em cada inciso I a XI da lista de Anexos, sem reunir incisos consecutivos no mesmo bloco.\n- Na Seção III do CAPÍTULO III, “Da Autorização para a Abertura de Créditos Suplementares” (pág. 1), termine o bloco da seção imediatamente antes de “Art. 7º Fica o Poder Executivo autorizado...” e inicie um bloco próprio no Art. 7º."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13414/LEI-2017-13414_ciclo5.json"
+  }
+]

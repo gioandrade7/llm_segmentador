@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 6,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II - divulgação nas diversas mídias;`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por `II - divulgação nas diversas mídias;` contém também os incisos autônomos `III - reuniões com a comunidade;`, `IV - ações de divulgação em espaços públicos;` e `V - iluminação ou decoração de espaços com a cor dourada.`, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `II - divulgação nas diversas mídias;` (pág. 1) antes de `III - reuniões com a comunidade;` e inicie um bloco próprio em cada um dos incisos `III`, `IV - ações de divulgação em espaços públicos;` e `V - iluminação ou decoração de espaços com a cor dourada.` (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13435/LEI-2017-13435_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 9,
+    "insights_aplicados": "- Termine o bloco de `II - divulgação nas diversas mídias;` (pág. 1) antes de `III - reuniões com a comunidade;` e inicie um bloco próprio em cada um dos incisos `III`, `IV - ações de divulgação em espaços públicos;` e `V - iluminação ou decoração de espaços com a cor dourada.` (pág. 1).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13435/LEI-2017-13435_ciclo2.json"
+  }
+]

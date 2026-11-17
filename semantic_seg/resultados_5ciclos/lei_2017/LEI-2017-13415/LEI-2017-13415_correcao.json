@@ -1,0 +1,52 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 34,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 2º O art. 26 da Lei nº 9.394\" avança até o texto final do art. 35-A, identificado pelos incisos \"I - domínio dos princípios científicos\" e \"II - conhecimento das formas contemporâneas de linguagem\", que pertence ao Art. 3º e deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 7,
+          "tipo": "corte_indevido",
+          "descricao": "Os blocos iniciados por \"IV - profissionais com notório saber\" e \"V - profissionais graduados\" foram abertos dentro do texto entre aspas alterado pelo Art. 6º. Esses incisos citados pertencem integralmente ao bloco do Art. 6º, até o fecho \"(NR)\", e não são unidades autônomas."
+        },
+        {
+          "bloco": 9,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"Art. 7º O art. 62 da Lei nº 9.394\" inclui a alteração cuja parte final é \"XVIII - formação técnica e profissional\", própria do Art. 8º, que deveria começar em bloco próprio."
+        },
+        {
+          "bloco": 13,
+          "tipo": "englobante",
+          "descricao": "O bloco do \"Art. 13. Fica instituída\" contém também o marcador \"Parágrafo único. A Política de Fomento\", que é unidade hierárquica própria e deveria iniciar outro bloco."
+        },
+        {
+          "bloco": 18,
+          "tipo": "englobante",
+          "descricao": "O bloco do \"Art. 14. São obrigatórias as transferências\" inclui o inciso \"I -\" no seu trecho final; esse inciso deve iniciar bloco próprio, como ocorre com o inciso II no bloco seguinte."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No bloco que começa em \"Art. 2º O art. 26 da Lei nº 9.394\" (pág. 1), encerre o Art. 2º antes de \"Art. 3º A Lei nº 9.394, de 20 de dezembro de 1996, passa a vigorar acrescida do seguinte art. 35-A\" e inicie um bloco próprio no Art. 3º.\n- Mantenha, no bloco de \"Art. 6º O art. 61 da Lei nº 9.394\" (pág. 1), todo o texto citado entre aspas até \"(NR)\"; não abra blocos nos incisos citados \"IV - profissionais com notório saber\" nem \"V - profissionais graduados\".\n- No bloco de \"Art. 7º O art. 62 da Lei nº 9.394\" (pág. 1), encerre o Art. 7º antes de \"Art. 8º O art. 10 da Lei nº 11.494\" e inicie um bloco próprio no Art. 8º, incluindo nele a alteração que contém o inciso XVIII.\n- No \"Art. 13. Fica instituída\" (pág. 1), termine o bloco do artigo imediatamente antes de \"Parágrafo único. A Política de Fomento\" e inicie o bloco do parágrafo único nesse marcador.\n- No \"Art. 14. São obrigatórias as transferências\" (pág. 1), termine o bloco do caput imediatamente antes de \"I -\" e inicie ali o bloco do inciso I."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13415/LEI-2017-13415_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 37,
+    "insights_aplicados": "- No bloco que começa em \"Art. 2º O art. 26 da Lei nº 9.394\" (pág. 1), encerre o Art. 2º antes de \"Art. 3º A Lei nº 9.394, de 20 de dezembro de 1996, passa a vigorar acrescida do seguinte art. 35-A\" e inicie um bloco próprio no Art. 3º.\n- Mantenha, no bloco de \"Art. 6º O art. 61 da Lei nº 9.394\" (pág. 1), todo o texto citado entre aspas até \"(NR)\"; não abra blocos nos incisos citados \"IV - profissionais com notório saber\" nem \"V - profissionais graduados\".\n- No bloco de \"Art. 7º O art. 62 da Lei nº 9.394\" (pág. 1), encerre o Art. 7º antes de \"Art. 8º O art. 10 da Lei nº 11.494\" e inicie um bloco próprio no Art. 8º, incluindo nele a alteração que contém o inciso XVIII.\n- No \"Art. 13. Fica instituída\" (pág. 1), termine o bloco do artigo imediatamente antes de \"Parágrafo único. A Política de Fomento\" e inicie o bloco do parágrafo único nesse marcador.\n- No \"Art. 14. São obrigatórias as transferências\" (pág. 1), termine o bloco do caput imediatamente antes de \"I -\" e inicie ali o bloco do inciso I.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13415/LEI-2017-13415_ciclo2.json"
+  }
+]

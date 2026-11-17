@@ -1,0 +1,202 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 117,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o preâmbulo, incluindo os considerandos e a expressão “resolve:”, ficou fora de qualquer bloco antes do Art. 1º."
+        },
+        {
+          "onde": "Art. 3º, incisos I a XIII, págs. 1-2",
+          "tipo": "sem_bloco",
+          "descricao": "todos os incisos I a XIII, iniciados por “I-propor a formulação...” e terminados por “XIII-desenvolver outras atividades...”, ficaram fora de bloco."
+        },
+        {
+          "onde": "inciso I do Art. 4º, iniciado por “I - apoiar, em coordenação...”, págs. 2-3",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso I contém também os incisos II a VII do Art. 4º, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 6º, incisos XX a XXIV, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos XX a XXIV, iniciados por “XX - participar do estabelecimento...” e terminados por “XXIV - desenvolver outras atividades...”, ficaram fora de bloco."
+        },
+        {
+          "onde": "inciso IV do Art. 7º, iniciado por “IV - propor modalidade de provimento...”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IV contém os incisos V e VI do Art. 7º, que não receberam blocos próprios."
+        },
+        {
+          "onde": "Art. 10, incisos II e III, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II, “II - soluções de suporte a inteligência de negócio”, e III, “III - soluções de análise e mineração de dados”, ficaram fora de bloco."
+        },
+        {
+          "onde": "§ 1º e § 2º do Art. 11, iniciados por “§1º As competências descritas...” e “§2º Em complemento...”, pág. 7",
+          "tipo": "corte_indevido",
+          "descricao": "foram abertos blocos nos parágrafos numerados § 1º e § 2º, que não integram a hierarquia de marcadores identificada; somente “Parágrafo único” inicia bloco nesse nível."
+        },
+        {
+          "onde": "inciso IV sob o § 2º do Art. 11, iniciado por “IV - auxiliar as unidades...”, págs. 7-8",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IV contém os incisos V e VI, “V - definir, implementar...” e “VI - consolidar e divulgar...”, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 1º e § 2º do Art. 12, iniciados por “§1º O gerenciamento de acesso...” e “§2º Em complemento...”, pág. 8",
+          "tipo": "corte_indevido",
+          "descricao": "foram abertos blocos nos parágrafos numerados § 1º e § 2º, que não integram a hierarquia de marcadores identificada; somente “Parágrafo único” inicia bloco nesse nível."
+        },
+        {
+          "onde": "inciso III do Art. 12, iniciado por “III - suporte a comunidades de prática...”, pág. 8",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso III contém também os incisos IV a VI, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "inciso VIII do Art. 15, iniciado por “VIII - desenvolver estudos e pesquisas...”, pág. 10",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso VIII contém os incisos IX e X do Art. 15, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 18, iniciado por “Art. 18. Em complemento às competências...”, pág. 11",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 18 contém os incisos I a V, sem cortes para iniciar os blocos próprios desses incisos."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”.\n- No Art. 3º (págs. 1-2), inicie um bloco próprio em cada inciso de I, “I-propor a formulação de políticas...”, até XIII, “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2-3), termine o bloco de “I - apoiar, em coordenação...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um deles.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Em seguida, termine o bloco de “IV - auxiliar as unidades...” antes de “V - definir, implementar...” e inicie outro em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-6257/NORMA-6257_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 149,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”.\n- No Art. 3º (págs. 1-2), inicie um bloco próprio em cada inciso de I, “I-propor a formulação de políticas...”, até XIII, “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2-3), termine o bloco de “I - apoiar, em coordenação...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um deles.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Em seguida, termine o bloco de “IV - auxiliar as unidades...” antes de “V - definir, implementar...” e inicie outro em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 15, inciso II, pág. 9",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho \"a de Comunicação do TCU;\" ficou fora de qualquer bloco, embora complete a frase iniciada em \"II - coordenar a divulgação interna e externa... observada a Política Corporativ\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (págs. 1-2), inicie um bloco próprio em cada inciso de I, “I-propor a formulação de políticas...”, até XIII, “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2-3), termine o bloco de “I - apoiar, em coordenação...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um deles.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Em seguida, termine o bloco de “IV - auxiliar as unidades...” antes de “V - definir, implementar...” e inicie outro em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-6257/NORMA-6257_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 148,
+    "insights_aplicados": "- No Art. 3º (págs. 1-2), inicie um bloco próprio em cada inciso de I, “I-propor a formulação de políticas...”, até XIII, “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2-3), termine o bloco de “I - apoiar, em coordenação...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um deles.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Em seguida, termine o bloco de “IV - auxiliar as unidades...” antes de “V - definir, implementar...” e inicie outro em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, incisos V a VII, págs. 2-3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso V, “V - prover soluções de tecnologia da informação...”, contém também os incisos VI, “VI - realizar os testes necessários...”, e VII, “VII - efetuar a manutenção...”, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 6º, incisos I e II, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I, “I - participar da formulação de políticas...”, contém também o inciso II, “II - participar da formulação de estratégias...”, sem corte entre as unidades."
+        },
+        {
+          "onde": "Art. 12, § 2º, incisos I a IV, pág. 8",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VI, “VI - soluções de TI estruturantes.”, prossegue pelos §§ 1º e 2º e contém também os incisos I, II, III e IV do § 2º, que devem iniciar blocos próprios. Os §§ numerados devem permanecer como continuação, mas os incisos subsequentes são marcadores elegíveis."
+        },
+        {
+          "onde": "Art. 13, inciso V, pág. 8",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “enção dos sistemas de informação corporativos; e”, que completa “manutenção” no inciso V, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 17, parágrafo único, inciso V, pág. 11",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso V, “V-avaliar a conformidade aos padrões e requisitos estabelecidos...”, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (págs. 1-2), inicie um bloco próprio em cada inciso de I, “I-propor a formulação de políticas...”, até XIII, “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2-3), termine o bloco de “I - apoiar, em coordenação...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um deles.\n- No Art. 6º (pág. 3), termine o bloco do inciso I, “I - participar da formulação de políticas...”, imediatamente antes de “II - participar da formulação de estratégias...”, e inicie um bloco próprio no inciso II.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Em seguida, termine o bloco de “IV - auxiliar as unidades...” antes de “V - definir, implementar...” e inicie outro bloco em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- Ainda no Art. 12, após manter “§2º Em complemento ao disposto...” como continuação do inciso VI, inicie blocos próprios em cada inciso subsequente do § 2º: “I - conceber, implementar e manter estruturas...”, “II - apoiar o Centro de Documentação...”, “III - orientar e apoiar as unidades...” e “IV - definir guias de estilo...”, todos na pág. 8.\n- No Art. 13 (pág. 8), mantenha no bloco do inciso V, “V - zelar pela organização do repositório...”, o trecho “enção dos sistemas de informação corporativos; e”, que completa a palavra “manutenção”; só inicie o bloco seguinte em “VI - apoiar a equipe de desenvolvimento...”.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 17 (págs. 10-11), após o inciso IV, “IV-apoiar o processo de prospecção...”, inicie um bloco próprio em “V-avaliar a conformidade aos padrões e requisitos estabelecidos...”, mesmo que o inciso comece após a marcação de página.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-6257/NORMA-6257_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 151,
+    "insights_aplicados": "- No Art. 3º (págs. 1-2), inicie um bloco próprio em cada inciso de I, “I-propor a formulação de políticas...”, até XIII, “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2-3), termine o bloco de “I - apoiar, em coordenação...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um deles.\n- No Art. 6º (pág. 3), termine o bloco do inciso I, “I - participar da formulação de políticas...”, imediatamente antes de “II - participar da formulação de estratégias...”, e inicie um bloco próprio no inciso II.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Em seguida, termine o bloco de “IV - auxiliar as unidades...” antes de “V - definir, implementar...” e inicie outro bloco em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- Ainda no Art. 12, após manter “§2º Em complemento ao disposto...” como continuação do inciso VI, inicie blocos próprios em cada inciso subsequente do § 2º: “I - conceber, implementar e manter estruturas...”, “II - apoiar o Centro de Documentação...”, “III - orientar e apoiar as unidades...” e “IV - definir guias de estilo...”, todos na pág. 8.\n- No Art. 13 (pág. 8), mantenha no bloco do inciso V, “V - zelar pela organização do repositório...”, o trecho “enção dos sistemas de informação corporativos; e”, que completa a palavra “manutenção”; só inicie o bloco seguinte em “VI - apoiar a equipe de desenvolvimento...”.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 17 (págs. 10-11), após o inciso IV, “IV-apoiar o processo de prospecção...”, inicie um bloco próprio em “V-avaliar a conformidade aos padrões e requisitos estabelecidos...”, mesmo que o inciso comece após a marcação de página.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, incisos I a V, págs. 2–3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “I - apoiar, em coordenação com a Secretaria de Planejamento...” contém, sem cortes próprios, os incisos II, III, IV e V do art. 4º."
+        },
+        {
+          "onde": "Art. 6º, incisos XVII e XVIII, págs. 4–5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “XVII - promover, em coordenação...” continua na pág. 5 e contém também o inciso XVIII, “XVIII - assinar ordens de serviço...”, sem bloco próprio para este inciso."
+        },
+        {
+          "onde": "Art. 11, inciso IV, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso “IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências de servidores e colaboradores responsáveis pelo desenvolvimento descentralizado;” está integralmente fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 11, inciso IV, pág. 7",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para o inciso IV, mas sua âncora não foi localizada no texto marcado; o inciso permanece sem bloco e deve ser ancorado no marcador “IV - auxiliar as unidades do Tribunal...”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 3º (págs. 1–2), inicie um bloco próprio em cada inciso, de “I-propor a formulação de políticas...” até “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2–3), termine o bloco de “I - apoiar, em coordenação com a Secretaria de Planejamento...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um desses incisos.\n- No Art. 6º (pág. 3), termine o bloco do inciso I, “I - participar da formulação de políticas...”, imediatamente antes de “II - participar da formulação de estratégias...”, e inicie um bloco próprio no inciso II.\n- No Art. 6º (págs. 4–5), termine o bloco de “XVII - promover, em coordenação...” imediatamente antes de “XVIII - assinar ordens de serviço...” e inicie um bloco próprio no inciso XVIII, mesmo que ele comece após a marcação de página.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Após o inciso III, “III - promover e apoiar iniciativas...”, inicie um bloco próprio e corretamente ancorado em “IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências de servidores e colaboradores responsáveis pelo desenvolvimento descentralizado;”. Termine esse bloco imediatamente antes de “V - definir, implementar...” e inicie também um bloco próprio em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- Ainda no Art. 12, após manter “§2º Em complemento ao disposto...” como continuação do inciso VI, inicie blocos próprios em cada inciso subsequente do § 2º: “I - conceber, implementar e manter estruturas...”, “II - apoiar o Centro de Documentação...”, “III - orientar e apoiar as unidades...” e “IV - definir guias de estilo...”, todos na pág. 8.\n- No Art. 13 (pág. 8), mantenha no bloco do inciso V, “V - zelar pela organização do repositório...”, o trecho “enção dos sistemas de informação corporativos; e”, que completa a palavra “manutenção”; só inicie o bloco seguinte em “VI - apoiar a equipe de desenvolvimento...”.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 17 (págs. 10–11), após o inciso IV, “IV-apoiar o processo de prospecção...”, inicie um bloco próprio em “V-avaliar a conformidade aos padrões e requisitos estabelecidos...”, mesmo que o inciso comece após a marcação de página.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-6257/NORMA-6257_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 141,
+    "insights_aplicados": "- No Art. 3º (págs. 1–2), inicie um bloco próprio em cada inciso, de “I-propor a formulação de políticas...” até “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2–3), termine o bloco de “I - apoiar, em coordenação com a Secretaria de Planejamento...” imediatamente antes de cada inciso II, III, IV, V, VI e VII, iniciando um bloco próprio em cada um desses incisos.\n- No Art. 6º (pág. 3), termine o bloco do inciso I, “I - participar da formulação de políticas...”, imediatamente antes de “II - participar da formulação de estratégias...”, e inicie um bloco próprio no inciso II.\n- No Art. 6º (págs. 4–5), termine o bloco de “XVII - promover, em coordenação...” imediatamente antes de “XVIII - assinar ordens de serviço...” e inicie um bloco próprio no inciso XVIII, mesmo que ele comece após a marcação de página.\n- No Art. 6º (pág. 5), inicie blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Após o inciso III, “III - promover e apoiar iniciativas...”, inicie um bloco próprio e corretamente ancorado em “IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências de servidores e colaboradores responsáveis pelo desenvolvimento descentralizado;”. Termine esse bloco imediatamente antes de “V - definir, implementar...” e inicie também um bloco próprio em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- Ainda no Art. 12, após manter “§2º Em complemento ao disposto...” como continuação do inciso VI, inicie blocos próprios em cada inciso subsequente do § 2º: “I - conceber, implementar e manter estruturas...”, “II - apoiar o Centro de Documentação...”, “III - orientar e apoiar as unidades...” e “IV - definir guias de estilo...”, todos na pág. 8.\n- No Art. 13 (pág. 8), mantenha no bloco do inciso V, “V - zelar pela organização do repositório...”, o trecho “enção dos sistemas de informação corporativos; e”, que completa a palavra “manutenção”; só inicie o bloco seguinte em “VI - apoiar a equipe de desenvolvimento...”.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 17 (págs. 10–11), após o inciso IV, “IV-apoiar o processo de prospecção...”, inicie um bloco próprio em “V-avaliar a conformidade aos padrões e requisitos estabelecidos...”, mesmo que o inciso comece após a marcação de página.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, incisos XI a XIII, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos “XI-viabilizar o intercâmbio...”, “XII-participar de ações...” e “XIII-desenvolver outras atividades...” ficaram fora de qualquer bloco após o inciso X."
+        },
+        {
+          "onde": "Art. 4º, inciso II, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “II - levantar, documentar e gerenciar regras de negócio...” contém também os incisos III, IV e V, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 4º, inciso XI, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso “XI-desenvolver outras atividades inerentes à sua finalidade.” ficou fora de qualquer bloco após o inciso X."
+        },
+        {
+          "onde": "Art. 5º, inciso IV, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso “IV - Assessoria (STI-ASS) .” ficou fora de qualquer bloco após o inciso III."
+        },
+        {
+          "onde": "Art. 6º, inciso VI, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “VI - gerenciar as demandas apresentadas à subunidade...” contém também os incisos VII a XIV, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO”, incluindo os considerandos até “resolve:”, e termine-o antes de “Art. 1º”.\n- No Art. 3º (págs. 1–2), inicie um bloco próprio em cada inciso, de “I-propor a formulação de políticas...” até “XIII-desenvolver outras atividades...”; em especial, após “X-gerenciar identidade e acesso...”, inicie blocos próprios em “XI-viabilizar o intercâmbio...”, “XII-participar de ações...” e “XIII-desenvolver outras atividades...”.\n- No Art. 4º (págs. 2–3), inicie um bloco próprio em cada inciso de “I - apoiar, em coordenação com a Secretaria de Planejamento...” até “XI-desenvolver outras atividades...”. Termine especificamente o bloco de “II - levantar, documentar e gerenciar regras de negócio...” antes de “III - avaliar as regras de negócio...”, inicie também blocos próprios em “IV - negociar níveis de serviço...” e “V - prover soluções...”, e inicie um bloco próprio em “XI-desenvolver outras atividades inerentes à sua finalidade.”.\n- No Art. 5º (pág. 3), após o bloco iniciado em “III - Diretoria de Arquitetura da Informação e de Soluções Especializadas...”, inicie um bloco próprio em “IV - Assessoria (STI-ASS) .”; mantenha as alíneas internas de cada inciso no bloco do respectivo inciso.\n- No Art. 6º (págs. 3–5), inicie um bloco próprio em cada inciso de “I - participar da formulação de políticas...” até “XXIV - desenvolver outras atividades...”. Em particular, termine o bloco de “VI - gerenciar as demandas apresentadas à subunidade...” antes de “VII - assegurar a observância...”, e inicie blocos próprios também em “VIII - disseminar e incentivar...”, “IX - apoiar a Diretoria de Relacionamento...”, “X - realizar diagnósticos...”, “XI - comunicar, tempestivamente...”, “XII - zelar pela satisfação...”, “XIII - alimentar e manter atualizadas...” e “XIV - definir parâmetros de monitoramento...”.\n- No Art. 6º (págs. 4–5), termine o bloco de “XVII - promover, em coordenação...” imediatamente antes de “XVIII - assinar ordens de serviço...” e inicie um bloco próprio no inciso XVIII, mesmo que ele comece após a marcação de página. Inicie também blocos próprios nos incisos XX, “XX - participar do estabelecimento...”, XXI, XXII, XXIII e XXIV.\n- No Art. 7º (pág. 5), termine o bloco de “IV - propor modalidade de provimento...” antes de “V - acompanhar o andamento...” e inicie também um bloco próprio em “VI - assegurar a necessária articulação...”.\n- No Art. 10 (pág. 7), inicie blocos próprios em “II - soluções de suporte a inteligência de negócio” e “III - soluções de análise e mineração de dados”.\n- No Art. 11 (pág. 7), não inicie bloco em “§1º As competências descritas...” nem em “§2º Em complemento...”; trate esses parágrafos numerados como continuação até o próximo marcador elegível. Após o inciso III, “III - promover e apoiar iniciativas...”, inicie um bloco próprio e corretamente ancorado em “IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências de servidores e colaboradores responsáveis pelo desenvolvimento descentralizado;”. Termine esse bloco imediatamente antes de “V - definir, implementar...” e inicie também um bloco próprio em “VI - consolidar e divulgar...”.\n- No Art. 12 (pág. 8), termine o bloco de “III - suporte a comunidades de prática...” antes de “IV - indexação...”, iniciando também blocos próprios em V e VI. Não inicie bloco em “§1º O gerenciamento de acesso...” nem em “§2º Em complemento...”, pois parágrafos numerados não são marcadores da hierarquia identificada.\n- Ainda no Art. 12, após manter “§2º Em complemento ao disposto...” como continuação do inciso VI, inicie blocos próprios em cada inciso subsequente do § 2º: “I - conceber, implementar e manter estruturas...”, “II - apoiar o Centro de Documentação...”, “III - orientar e apoiar as unidades...” e “IV - definir guias de estilo...”, todos na pág. 8.\n- No Art. 13 (pág. 8), mantenha no bloco do inciso V, “V - zelar pela organização do repositório...”, o trecho “enção dos sistemas de informação corporativos; e”, que completa a palavra “manutenção”; só inicie o bloco seguinte em “VI - apoiar a equipe de desenvolvimento...”.\n- No Art. 15 (pág. 9), mantenha integralmente no bloco do inciso II, “II - coordenar a divulgação interna e externa...”, o trecho final “a de Comunicação do TCU;”, que completa “Política Corporativa”; só inicie o bloco seguinte em “III - elaborar, manter e divulgar...”.\n- No Art. 15 (pág. 10), termine o bloco de “VIII - desenvolver estudos e pesquisas...” antes de “IX - apoiar os servidores...” e inicie outro bloco em “X - promover a adoção...”.\n- No Art. 17 (págs. 10–11), após o inciso IV, “IV-apoiar o processo de prospecção...”, inicie um bloco próprio em “V-avaliar a conformidade aos padrões e requisitos estabelecidos...”, mesmo que o inciso comece após a marcação de página.\n- No Art. 18 (pág. 11), termine o bloco do artigo antes de “I - apoiar os clientes...” e inicie blocos próprios em cada inciso I, II, III, IV e V."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-6257/NORMA-6257_ciclo5.json"
+  }
+]

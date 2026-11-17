@@ -1,0 +1,55 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório substantivo anterior a “CAPÍTULO I” não foi incluído em nenhum bloco. Não é ruído de página nem remissão; constitui o preâmbulo do ato."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência prevista no art. 71...” até “resolve:” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I — DISPOSIÇÕES PRELIMINARES”."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20204/NORMA-20204_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência prevista no art. 71...” até “resolve:” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I — DISPOSIÇÕES PRELIMINARES”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`§ 1º Caso haja necessidade de aprofundamento da fiscalização...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º do art. 4º contém também o marcador e o texto de `Art. 5º A empresa estatal deverá manter arquivados documentos técnicos...`."
+        },
+        {
+          "onde": "`Art. 7º A execução contratual será acompanhada...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 7º contém também `CAPÍTULO III — DISPOSIÇÕES FINAIS` e o marcador e texto de `Art. 8º Os documentos encaminhados em obediência...`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência prevista no art. 71...” até “resolve:” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I — DISPOSIÇÕES PRELIMINARES”.\n- Termine o bloco de “§ 1º Caso haja necessidade de aprofundamento da fiscalização...” imediatamente antes de “Art. 5º A empresa estatal deverá manter arquivados documentos técnicos...” (pág. 2) e inicie um bloco próprio para o art. 5º.\n- Termine o bloco de “Art. 7º A execução contratual será acompanhada...” imediatamente antes de “CAPÍTULO III — DISPOSIÇÕES FINAIS” (pág. 2) e inicie um bloco próprio para esse capítulo.\n- Termine o bloco de “CAPÍTULO III — DISPOSIÇÕES FINAIS” imediatamente antes de “Art. 8º Os documentos encaminhados em obediência...” (pág. 2) e inicie um bloco próprio para o art. 8º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20204/NORMA-20204_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência prevista no art. 71...” até “resolve:” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I — DISPOSIÇÕES PRELIMINARES”.\n- Termine o bloco de “§ 1º Caso haja necessidade de aprofundamento da fiscalização...” imediatamente antes de “Art. 5º A empresa estatal deverá manter arquivados documentos técnicos...” (pág. 2) e inicie um bloco próprio para o art. 5º.\n- Termine o bloco de “Art. 7º A execução contratual será acompanhada...” imediatamente antes de “CAPÍTULO III — DISPOSIÇÕES FINAIS” (pág. 2) e inicie um bloco próprio para esse capítulo.\n- Termine o bloco de “CAPÍTULO III — DISPOSIÇÕES FINAIS” imediatamente antes de “Art. 8º Os documentos encaminhados em obediência...” (pág. 2) e inicie um bloco próprio para o art. 8º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Inicie um bloco para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência prevista no art. 71...” até “resolve:” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I — DISPOSIÇÕES PRELIMINARES”.\n- Termine o bloco de “§ 1º Caso haja necessidade de aprofundamento da fiscalização...” imediatamente antes de “Art. 5º A empresa estatal deverá manter arquivados documentos técnicos...” (pág. 2) e inicie um bloco próprio para o art. 5º.\n- Termine o bloco de “Art. 7º A execução contratual será acompanhada...” imediatamente antes de “CAPÍTULO III — DISPOSIÇÕES FINAIS” (pág. 2) e inicie um bloco próprio para esse capítulo.\n- Termine o bloco de “CAPÍTULO III — DISPOSIÇÕES FINAIS” imediatamente antes de “Art. 8º Os documentos encaminhados em obediência...” (pág. 2) e inicie um bloco próprio para o art. 8º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20204/NORMA-20204_ciclo3.json"
+  }
+]

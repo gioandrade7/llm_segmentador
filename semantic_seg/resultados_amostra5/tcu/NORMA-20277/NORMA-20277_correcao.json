@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 14,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo antes de `Art. 1º Constituem clientela...`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto do preâmbulo, iniciado por `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO`, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 1º Constituem clientela...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 1º contém, sem blocos próprios, todos os incisos hierárquicos de `I - os órgãos e entidades...` até `XVI - a aplicação de subvenções, auxílios e contribuições.`"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo iniciado por `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO` (pág. 1), antes de iniciar o bloco de `Art. 1º Constituem clientela...`.\n- No `Art. 1º Constituem clientela...` (pág. 1), termine o bloco do artigo imediatamente antes de `I - os órgãos e entidades...` e inicie um bloco próprio em cada inciso, de `I` até `XVI - a aplicação de subvenções, auxílios e contribuições.`"
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20277/NORMA-20277_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 31,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo iniciado por `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO` (pág. 1), antes de iniciar o bloco de `Art. 1º Constituem clientela...`.\n- No `Art. 1º Constituem clientela...` (pág. 1), termine o bloco do artigo imediatamente antes de `I - os órgãos e entidades...` e inicie um bloco próprio em cada inciso, de `I` até `XVI - a aplicação de subvenções, auxílios e contribuições.`",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20277/NORMA-20277_ciclo2.json"
+  }
+]

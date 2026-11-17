@@ -1,0 +1,127 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 80,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e encerrado em \"RESOLVE:\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório da Resolução ficou fora de qualquer bloco; não é ruído de página."
+        },
+        {
+          "onde": "Inciso \"V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.\", pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso V do art. 7º ficou fora de bloco, interrompendo a lista de incisos I a V."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo que se inicia em \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e inclui os considerandos até \"RESOLVE:\" (pág. 1).\n- Inicie um bloco próprio no inciso \"V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.\" do art. 7º (pág. 3), após o término do inciso IV."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21260/NORMA-21260_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo que se inicia em \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e inclui os considerandos até \"RESOLVE:\" (pág. 1).\n- Inicie um bloco próprio no inciso \"V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.\" do art. 7º (pág. 3), após o término do inciso IV.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO VI`, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por `CAPÍTULO VI` contém também o título de capítulo em maiúsculas `DAS DISPOSIÇÕES FINAIS`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo que se inicia em \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e inclui os considerandos até \"RESOLVE:\" (pág. 1).\n- Inicie um bloco próprio no inciso \"V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.\" do art. 7º (pág. 3), após o término do inciso IV.\n- Termine o bloco de `CAPÍTULO VI` imediatamente antes de `DAS DISPOSIÇÕES FINAIS` e inicie um bloco próprio nesse título de capítulo (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21260/NORMA-21260_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 79,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo que se inicia em \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e inclui os considerandos até \"RESOLVE:\" (pág. 1).\n- Inicie um bloco próprio no inciso \"V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.\" do art. 7º (pág. 3), após o término do inciso IV.\n- Termine o bloco de `CAPÍTULO VI` imediatamente antes de `DAS DISPOSIÇÕES FINAIS` e inicie um bloco próprio nesse título de capítulo (pág. 6).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso III do Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém as alíneas “a) qualitativa” e “b) quantitativa”, que são unidades hierárquicas próprias e deveriam iniciar blocos distintos."
+        },
+        {
+          "onde": "CAPÍTULO V, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “CAPÍTULO V” contém também o título de capítulo “DA FORMA DE DELIBERAÇÃO” e o Art. 15, sem cortes antes dessas unidades."
+        },
+        {
+          "onde": "§ 1º do Art. 13, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º contém o inciso I (“I - tendo sido obtida evidência...”), que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Após o Art. 19, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “de 2017. RAIMUNDO CARREIRO Presidente” ficou fora de qualquer bloco, embora complete o fecho documental posterior ao Art. 19."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo que se inicia em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições” e inclui os considerandos até “RESOLVE:” (pág. 1).\n- No Art. 2º, termine o bloco do inciso “III - materialidade” imediatamente antes de “a) qualitativa” e inicie um bloco próprio nessa alínea; termine também o bloco da alínea “a) qualitativa” antes de “b) quantitativa” e inicie outro bloco nessa alínea (pág. 1).\n- No CAPÍTULO V, termine o bloco de “CAPÍTULO V” imediatamente antes de “DA FORMA DE DELIBERAÇÃO”; termine o bloco desse título imediatamente antes de “Art. 15. A deliberação do Tribunal” e inicie um bloco próprio no artigo (pág. 5).\n- No Art. 13, termine o bloco do “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada” e inicie um bloco próprio nesse inciso (pág. 4).\n- Inicie um bloco próprio no inciso “V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.” do art. 7º (pág. 3), após o término do inciso IV.\n- Termine o bloco de “CAPÍTULO VI” imediatamente antes de “DAS DISPOSIÇÕES FINAIS” e inicie um bloco próprio nesse título de capítulo (pág. 6).\n- Mantenha no bloco iniciado em “Art. 19. Esta Resolução entra em vigor na data de sua publicação.” o texto final “TCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 29 de novembro de 2017. RAIMUNDO CARREIRO Presidente” (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21260/NORMA-21260_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo que se inicia em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições” e inclui os considerandos até “RESOLVE:” (pág. 1).\n- No Art. 2º, termine o bloco do inciso “III - materialidade” imediatamente antes de “a) qualitativa” e inicie um bloco próprio nessa alínea; termine também o bloco da alínea “a) qualitativa” antes de “b) quantitativa” e inicie outro bloco nessa alínea (pág. 1).\n- No CAPÍTULO V, termine o bloco de “CAPÍTULO V” imediatamente antes de “DA FORMA DE DELIBERAÇÃO”; termine o bloco desse título imediatamente antes de “Art. 15. A deliberação do Tribunal” e inicie um bloco próprio no artigo (pág. 5).\n- No Art. 13, termine o bloco do “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada” e inicie um bloco próprio nesse inciso (pág. 4).\n- Inicie um bloco próprio no inciso “V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.” do art. 7º (pág. 3), após o término do inciso IV.\n- Termine o bloco de “CAPÍTULO VI” imediatamente antes de “DAS DISPOSIÇÕES FINAIS” e inicie um bloco próprio nesse título de capítulo (pág. 6).\n- Mantenha no bloco iniciado em “Art. 19. Esta Resolução entra em vigor na data de sua publicação.” o texto final “TCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 29 de novembro de 2017. RAIMUNDO CARREIRO Presidente” (pág. 6).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso III do Art. 2º, “III - materialidade”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém também as alíneas “a) qualitativa” e “b) quantitativa”, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 1º do Art. 13, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º, iniciado em “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:”, contém os incisos I e II, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Alínea c) e inciso VII do § 2º do Art. 14, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Os textos “c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016...” e “VII - outras ocorrências...” não foram incluídos em nenhum bloco, embora sejam unidades hierárquicas distintas."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo que se inicia em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições” e inclui os considerandos até “RESOLVE:” (pág. 1).\n- No Art. 2º, termine o bloco do inciso “III - materialidade” imediatamente antes de “a) qualitativa” e inicie um bloco próprio nessa alínea; termine também o bloco da alínea “a) qualitativa” antes de “b) quantitativa” e inicie outro bloco nessa alínea (pág. 1).\n- No Art. 13, termine o bloco do “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada” e inicie um bloco próprio nesse inciso; termine o bloco do inciso I imediatamente antes de “II - não tendo sido obtida evidência adequada” e inicie outro bloco nesse inciso (pág. 4).\n- No § 2º do Art. 14, inicie um bloco próprio em “c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016” após o término da alínea “b) ao atingimento das metas fiscais”; termine o bloco dessa alínea antes de “VII - outras ocorrências” e inicie um bloco próprio nesse inciso (pág. 5).\n- No CAPÍTULO V, termine o bloco de “CAPÍTULO V” imediatamente antes de “DA FORMA DE DELIBERAÇÃO”; termine o bloco desse título imediatamente antes de “Art. 15. A deliberação do Tribunal” e inicie um bloco próprio no artigo (pág. 5).\n- Inicie um bloco próprio no inciso “V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.” do Art. 7º, após o término do inciso IV (pág. 3).\n- Termine o bloco de “CAPÍTULO VI” imediatamente antes de “DAS DISPOSIÇÕES FINAIS” e inicie um bloco próprio nesse título de capítulo (pág. 6).\n- Mantenha no bloco iniciado em “Art. 19. Esta Resolução entra em vigor na data de sua publicação.” o texto final “TCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 29 de novembro de 2017. RAIMUNDO CARREIRO Presidente” (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21260/NORMA-21260_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo que se inicia em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições” e inclui os considerandos até “RESOLVE:” (pág. 1).\n- No Art. 2º, termine o bloco do inciso “III - materialidade” imediatamente antes de “a) qualitativa” e inicie um bloco próprio nessa alínea; termine também o bloco da alínea “a) qualitativa” antes de “b) quantitativa” e inicie outro bloco nessa alínea (pág. 1).\n- No Art. 13, termine o bloco do “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada” e inicie um bloco próprio nesse inciso; termine o bloco do inciso I imediatamente antes de “II - não tendo sido obtida evidência adequada” e inicie outro bloco nesse inciso (pág. 4).\n- No § 2º do Art. 14, inicie um bloco próprio em “c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016” após o término da alínea “b) ao atingimento das metas fiscais”; termine o bloco dessa alínea antes de “VII - outras ocorrências” e inicie um bloco próprio nesse inciso (pág. 5).\n- No CAPÍTULO V, termine o bloco de “CAPÍTULO V” imediatamente antes de “DA FORMA DE DELIBERAÇÃO”; termine o bloco desse título imediatamente antes de “Art. 15. A deliberação do Tribunal” e inicie um bloco próprio no artigo (pág. 5).\n- Inicie um bloco próprio no inciso “V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.” do Art. 7º, após o término do inciso IV (pág. 3).\n- Termine o bloco de “CAPÍTULO VI” imediatamente antes de “DAS DISPOSIÇÕES FINAIS” e inicie um bloco próprio nesse título de capítulo (pág. 6).\n- Mantenha no bloco iniciado em “Art. 19. Esta Resolução entra em vigor na data de sua publicação.” o texto final “TCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 29 de novembro de 2017. RAIMUNDO CARREIRO Presidente” (pág. 6).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 12, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 12. Para a emissão da conclusão do parecer prévio...” contém também os incisos “I - os balanços gerais da União;” e “II - a execução orçamentária e a gestão dos recursos públicos federais.”, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 13, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 13. A opinião do Tribunal sobre os balanços gerais da União...” contém, sem cortes próprios, os §§ 1º a 5º; o § 1º contém ainda os incisos I e II. Todos esses marcadores são unidades hierárquicas e devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 13, termine o bloco de “Art. 13. A opinião do Tribunal sobre os balanços gerais da União...” imediatamente antes de “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” e inicie bloco próprio no parágrafo; termine o bloco do § 1º antes de “I - tendo sido obtida evidência de auditoria adequada” e inicie bloco próprio nesse inciso; termine o bloco do inciso I antes de “II - não tendo sido obtida evidência adequada” e inicie outro bloco nesse inciso; termine o bloco do inciso II antes de “§ 2º A opinião sobre os balanços gerais da União será adversa” e inicie bloco próprio no § 2º; crie também blocos próprios em “§ 3º O Tribunal ficará impossibilitado de emitir opinião”, “§ 4° A opinião de auditoria dos balanços gerais da União levará em consideração” e “§ 5° Para os fins do disposto no parágrafo anterior” (pág. 4).\n- No Art. 12, termine o bloco de “Art. 12. Para a emissão da conclusão do parecer prévio...” imediatamente antes de “I - os balanços gerais da União;” e inicie bloco próprio nesse inciso; termine o bloco do inciso I antes de “II - a execução orçamentária e a gestão dos recursos públicos federais.” e inicie outro bloco nesse inciso (pág. 4).\n- Crie um bloco para o preâmbulo que se inicia em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições” e inclui os considerandos até “RESOLVE:” (pág. 1).\n- No Art. 2º, termine o bloco do inciso “III - materialidade” imediatamente antes de “a) qualitativa” e inicie um bloco próprio nessa alínea; termine também o bloco da alínea “a) qualitativa” antes de “b) quantitativa” e inicie outro bloco nessa alínea (pág. 1).\n- No § 2º do Art. 14, inicie um bloco próprio em “c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016” após o término da alínea “b) ao atingimento das metas fiscais”; termine o bloco dessa alínea antes de “VII - outras ocorrências” e inicie um bloco próprio nesse inciso (pág. 5).\n- No CAPÍTULO V, termine o bloco de “CAPÍTULO V” imediatamente antes de “DA FORMA DE DELIBERAÇÃO”; termine o bloco desse título imediatamente antes de “Art. 15. A deliberação do Tribunal” e inicie um bloco próprio no artigo (pág. 5).\n- Inicie um bloco próprio no inciso “V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores.” do Art. 7º, após o término do inciso IV (pág. 3).\n- Termine o bloco de “CAPÍTULO VI” imediatamente antes de “DAS DISPOSIÇÕES FINAIS” e inicie um bloco próprio nesse título de capítulo (pág. 6).\n- Mantenha no bloco iniciado em “Art. 19. Esta Resolução entra em vigor na data de sua publicação.” o texto final “TCU, Sala das Sessões Ministro Luciano Brandão Alves de Souza, em 29 de novembro de 2017. RAIMUNDO CARREIRO Presidente” (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21260/NORMA-21260_ciclo5.json"
+  }
+]

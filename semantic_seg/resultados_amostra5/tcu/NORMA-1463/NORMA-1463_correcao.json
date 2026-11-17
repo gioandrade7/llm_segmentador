@@ -1,0 +1,182 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 60,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`VI - propor e realizar fiscalizações...`, Art. 2º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos VI a X do Art. 2º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`V - Serviço de Produção de Informações Gerenciais...`, Art. 3º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos V e VI da estrutura prevista no Art. 3º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`VII - articular com o Instituto Serzedello Corrêa...`, Art. 4º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos VII a XIII do Art. 4º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`VIII - trabalhar em colaboração com o Serav...`, Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos VIII a XII do Art. 5º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`IV - participar do desenvolvimento, aperfeiçoamento e manutenção...`, Art. 6º, págs. 3-4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV a XV do Art. 6º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`II - avaliar a qualidade de relatórios...`, Art. 7º, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III do Art. 7º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`II - gerir mudanças, evoluções e correções...`, Art. 8º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso II do Art. 8º contém também o inciso III, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`IV - realizar a gestão das soluções de tecnologia da informação...`, Art. 8º, págs. 4-5",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV a IX do Art. 8º ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`IV - atuar na gestão do conhecimento em controle externo...`, Art. 10, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso IV do Art. 10 contém também os incisos V a XIII, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), inicie um bloco próprio em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`.\n- No Art. 6º (págs. 3-4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`.\n- No Art. 7º (pág. 4), inicie blocos próprios em `II - avaliar a qualidade de relatórios...` e em `III - participar do desenvolvimento de soluções...`.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4-5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1463/NORMA-1463_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 97,
+    "insights_aplicados": "- No Art. 2º (pág. 1), inicie um bloco próprio em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`.\n- No Art. 6º (págs. 3-4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`.\n- No Art. 7º (pág. 4), inicie blocos próprios em `II - avaliar a qualidade de relatórios...` e em `III - participar do desenvolvimento de soluções...`.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4-5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O caput do Art. 2º não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "`Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...`, pág. 1",
+          "tipo": "ancora",
+          "descricao": "Foi devolvido um bloco com início no Art. 2º e fim no trecho `de tecnologia da informação cuja gestão lhe tenha sido atribuída, compete:`, mas suas âncoras não foram localizadas no texto."
+        },
+        {
+          "onde": "`XI - promover a integração do processo de prestação de contas anuais...` e `XII - acompanhar o processo de entrega, instrução e julgamento das contas...`, Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos XI e XII do Art. 5º não foram incluídos em nenhum bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), inicie um bloco próprio em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`.\n- No Art. 6º (págs. 3-4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`.\n- No Art. 7º (pág. 4), inicie blocos próprios em `II - avaliar a qualidade de relatórios...` e em `III - participar do desenvolvimento de soluções...`.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4-5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1463/NORMA-1463_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 95,
+    "insights_aplicados": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), inicie um bloco próprio em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`.\n- No Art. 6º (págs. 3-4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`.\n- No Art. 7º (pág. 4), inicie blocos próprios em `II - avaliar a qualidade de relatórios...` e em `III - participar do desenvolvimento de soluções...`.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4-5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`VI - propor e realizar fiscalizações...`, Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VI contém também, sem blocos próprios, os incisos VII a X."
+        },
+        {
+          "onde": "`IX - participar da elaboração das normas brasileiras de auditoria.`, Art. 5º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IX contém também os incisos X, XI e XII."
+        },
+        {
+          "onde": "`VI - contribuir para a melhoria da qualidade... deste art` / `igo;`, Art. 6º, págs. 3–4",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final `igo;`, que completa a palavra `artigo;` e o inciso VI, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`XIII - colaborar com o Serav...`, Art. 6º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XIII contém também os incisos XIV e XV, sem cortes antes desses marcadores."
+        },
+        {
+          "onde": "`Art. 7º Compete ao Serav:` / `I - propor, aperfeiçoar...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no Art. 7º contém o inciso I, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...`, Art. 9º, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Todo o inciso III está fora de bloco."
+        },
+        {
+          "onde": "`III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...`, págs. 5–5",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para esse inciso, mas sua âncora não foi localizada no texto segmentado."
+        },
+        {
+          "onde": "`VI - gerenciar a caixa postal eletrônica da Semec;`, Art. 10, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VI contém também os incisos VII a XIII, sem blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`, em especial termine o inciso IX antes de `X - promover a integração entre os atores internos e externos...`.\n- No Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`; mantenha todo o texto do inciso VI no seu bloco, inclusive o final de `deste artigo;`, sem deixar `igo;` fora de bloco, e termine o inciso XIII antes de `XIV - esclarecer dúvidas...`.\n- No Art. 7º (pág. 4), termine o bloco de `Art. 7º Compete ao Serav:` imediatamente antes de `I - propor, aperfeiçoar...` e inicie blocos próprios nos incisos I, II e III.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4–5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 9º (pág. 5), termine o bloco de `II - desenvolver, dentro dos padrões estabelecidos...` antes de `III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...` e inicie um bloco próprio nesse inciso III, garantindo que sua âncora seja localizada; mantenha-o até imediatamente antes de `IV - manifestar-se, ouvida a unidade desenvolvedora...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII; em especial, termine o inciso VI antes de `VII - gerenciar processos e documentos...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1463/NORMA-1463_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 103,
+    "insights_aplicados": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`, em especial termine o inciso IX antes de `X - promover a integração entre os atores internos e externos...`.\n- No Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`; mantenha todo o texto do inciso VI no seu bloco, inclusive o final de `deste artigo;`, sem deixar `igo;` fora de bloco, e termine o inciso XIII antes de `XIV - esclarecer dúvidas...`.\n- No Art. 7º (pág. 4), termine o bloco de `Art. 7º Compete ao Serav:` imediatamente antes de `I - propor, aperfeiçoar...` e inicie blocos próprios nos incisos I, II e III.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4–5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 9º (pág. 5), termine o bloco de `II - desenvolver, dentro dos padrões estabelecidos...` antes de `III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...` e inicie um bloco próprio nesse inciso III, garantindo que sua âncora seja localizada; mantenha-o até imediatamente antes de `IV - manifestar-se, ouvida a unidade desenvolvedora...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII; em especial, termine o inciso VI antes de `VII - gerenciar processos e documentos...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`X- manter disponibilizada no Portal do TCU...` até `XV - orientar e prestar suporte técnico...`, Art. 6º, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos X a XV do Art. 6º ficaram sem bloco. O inciso X aparece com a grafia `X-` sem espaço antes do hífen, mas ainda é marcador de inciso e deve iniciar unidade própria."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`, em especial termine o inciso IX antes de `X - promover a integração entre os atores internos e externos...`.\n- No Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`; mantenha todo o texto do inciso VI no seu bloco, inclusive o final de `deste artigo;`, sem deixar `igo;` fora de bloco, e termine o inciso XIII antes de `XIV - esclarecer dúvidas...`.\n- No Art. 6º (pág. 4), após terminar o bloco de `IX - atuar, em articulação com o Siac e com o Seprod...`, inicie blocos próprios nos incisos `X- manter disponibilizada no Portal do TCU...`, `XI - propor a criação...`, `XII - acompanhar a aderência...`, `XIII - colaborar com o Serav...`, `XIV - esclarecer dúvidas...` e `XV - orientar e prestar suporte técnico...`; reconheça `X-` como o inciso X, embora esteja sem espaço antes do hífen, e termine cada bloco imediatamente antes do inciso seguinte.\n- No Art. 7º (pág. 4), termine o bloco de `Art. 7º Compete ao Serav:` imediatamente antes de `I - propor, aperfeiçoar...` e inicie blocos próprios nos incisos I, II e III.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4–5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 9º (pág. 5), termine o bloco de `II - desenvolver, dentro dos padrões estabelecidos...` antes de `III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...` e inicie um bloco próprio nesse inciso III, garantindo que sua âncora seja localizada; mantenha-o até imediatamente antes de `IV - manifestar-se, ouvida a unidade desenvolvedora...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII; em especial, termine o inciso VI antes de `VII - gerenciar processos e documentos...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1463/NORMA-1463_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 108,
+    "insights_aplicados": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`, em especial termine o inciso IX antes de `X - promover a integração entre os atores internos e externos...`.\n- No Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`; mantenha todo o texto do inciso VI no seu bloco, inclusive o final de `deste artigo;`, sem deixar `igo;` fora de bloco, e termine o inciso XIII antes de `XIV - esclarecer dúvidas...`.\n- No Art. 6º (pág. 4), após terminar o bloco de `IX - atuar, em articulação com o Siac e com o Seprod...`, inicie blocos próprios nos incisos `X- manter disponibilizada no Portal do TCU...`, `XI - propor a criação...`, `XII - acompanhar a aderência...`, `XIII - colaborar com o Serav...`, `XIV - esclarecer dúvidas...` e `XV - orientar e prestar suporte técnico...`; reconheça `X-` como o inciso X, embora esteja sem espaço antes do hífen, e termine cada bloco imediatamente antes do inciso seguinte.\n- No Art. 7º (pág. 4), termine o bloco de `Art. 7º Compete ao Serav:` imediatamente antes de `I - propor, aperfeiçoar...` e inicie blocos próprios nos incisos I, II e III.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4–5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 9º (pág. 5), termine o bloco de `II - desenvolver, dentro dos padrões estabelecidos...` antes de `III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...` e inicie um bloco próprio nesse inciso III, garantindo que sua âncora seja localizada; mantenha-o até imediatamente antes de `IV - manifestar-se, ouvida a unidade desenvolvedora...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII; em especial, termine o inciso VI antes de `VII - gerenciar processos e documentos...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IX - disseminar boas práticas de controle externo entre as unidades técnicas subordinadas à Sege...`, Art. 2º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o final do inciso IX, `cex; e`, ficou fora de qualquer bloco, separando indevidamente a palavra `Segecex` e a conclusão do inciso."
+        },
+        {
+          "onde": "`I - identificar oportunidades de aprimoramento do uso da tecnologia da informação...`, Art. 9º, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso I contém também o marcador e todo o texto do inciso `II - desenvolver, dentro dos padrões estabelecidos e sob a coordenação técnica da STI...`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º (pág. 1), inicie um bloco próprio em `Art. 2º À Semec, unidade subordinada à Coordenação-Geral de Controle Externo de Gestão de Processos e Informações (Copin)...` e termine-o imediatamente antes de `I - desenvolver, propor, sistematizar...`.\n- No Art. 2º (pág. 1), termine cada inciso imediatamente antes do inciso seguinte e inicie blocos próprios em cada inciso de `VI - propor e realizar fiscalizações...` até `X - manifestar-se sobre normas, métodos e técnicas...`; mantenha integralmente o inciso `IX - disseminar boas práticas de controle externo entre as unidades técnicas subordinadas à Segecex; e` no seu próprio bloco, inclusive a continuação `cex; e`, sem separar a palavra `Segecex` nem deixar texto fora de bloco.\n- No Art. 3º (pág. 2), inicie blocos próprios em `V - Serviço de Produção de Informações Gerenciais e Sistemas Departamentais (Seprod); e` e em `VI - Assessoria.`.\n- No Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de `VII - articular com o Instituto Serzedello Corrêa (ISC)...` até `XIII - desempenhar outras atividades...`.\n- No Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de `VIII - trabalhar em colaboração com o Serav...` até `XII - acompanhar o processo de entrega...`, em especial termine o inciso IX antes de `X - promover a integração entre os atores internos e externos...`.\n- No Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de `IV - participar do desenvolvimento, aperfeiçoamento e manutenção...` até `XV - orientar e prestar suporte técnico...`; mantenha todo o texto do inciso VI no seu bloco, inclusive o final de `deste artigo;`, sem deixar `igo;` fora de bloco, e termine o inciso XIII antes de `XIV - esclarecer dúvidas...`.\n- No Art. 6º (pág. 4), após terminar o bloco de `IX - atuar, em articulação com o Siac e com o Seprod...`, inicie blocos próprios nos incisos `X- manter disponibilizada no Portal do TCU...`, `XI - propor a criação...`, `XII - acompanhar a aderência...`, `XIII - colaborar com o Serav...`, `XIV - esclarecer dúvidas...` e `XV - orientar e prestar suporte técnico...`; reconheça `X-` como o inciso X, embora esteja sem espaço antes do hífen, e termine cada bloco imediatamente antes do inciso seguinte.\n- No Art. 7º (pág. 4), termine o bloco de `Art. 7º Compete ao Serav:` imediatamente antes de `I - propor, aperfeiçoar...` e inicie blocos próprios nos incisos I, II e III.\n- No Art. 8º (pág. 4), termine o bloco de `II - gerir mudanças, evoluções e correções...` antes de `III - prestar apoio ao serviço de atendimento...` e inicie um bloco próprio no inciso III.\n- No Art. 8º (págs. 4–5), inicie um bloco próprio em cada inciso de `IV - realizar a gestão das soluções de tecnologia da informação...` até `IX - manifestar-se sobre a colocação em ambiente de produção...`.\n- No Art. 9º (pág. 5), termine o bloco de `I - identificar oportunidades de aprimoramento do uso da tecnologia da informação como instrumento de racionalização, modernização e inovação para o Tribunal;` imediatamente antes de `II - desenvolver, dentro dos padrões estabelecidos e sob a coordenação técnica da STI...` e inicie um bloco próprio neste inciso II. Termine o inciso II imediatamente antes de `III - apoiar o desenvolvimento de soluções de tecnologia da informação departamentais...`, inicie um bloco próprio no inciso III e mantenha-o até imediatamente antes de `IV - manifestar-se, ouvida a unidade desenvolvedora...`.\n- No Art. 10 (pág. 5), termine o bloco de `IV - atuar na gestão do conhecimento em controle externo...` antes de `V - acompanhar o planejamento...` e inicie um bloco próprio em cada inciso de V a XIII; em especial, termine o inciso VI antes de `VII - gerenciar processos e documentos...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1463/NORMA-1463_ciclo5.json"
+  }
+]

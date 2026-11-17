@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 30,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições... resolve:”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório anterior ao Art. 1º não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "Inciso III “III - o preenchimento correto dos documentos do Sistema...”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém também o inciso IV “IV - se a aplicação dos recursos está compatível...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições legais e regimentais... resolve:” (pág. 1), antes de iniciar o bloco do Art. 1º.\n- Termine o bloco do inciso III “III - o preenchimento correto dos documentos do Sistema...” imediatamente antes de “IV - se a aplicação dos recursos está compatível...” (pág. 1) e inicie um bloco próprio para o inciso IV."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20633/NORMA-20633_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 32,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições legais e regimentais... resolve:” (pág. 1), antes de iniciar o bloco do Art. 1º.\n- Termine o bloco do inciso III “III - o preenchimento correto dos documentos do Sistema...” imediatamente antes de “IV - se a aplicação dos recursos está compatível...” (pág. 1) e inicie um bloco próprio para o inciso IV.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20633/NORMA-20633_ciclo2.json"
+  }
+]

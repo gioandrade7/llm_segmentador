@@ -1,0 +1,62 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo, incluindo os considerandos e a fórmula \"resolve:\", ficou fora de qualquer bloco antes de \"CAPÍTULO I\"."
+        },
+        {
+          "onde": "II - \"analisar e selecionar, até o mês de setembro\", do Art. 6º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso II contém também os incisos III e IV, que são unidades próprias."
+        },
+        {
+          "onde": "Art. 7º \"Compete ao Presidente do Conselho Curador:\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 7º contém os incisos I, II e III, sem blocos próprios para esses marcadores."
+        },
+        {
+          "onde": "XII - \"acompanhar o treinamento dos monitores do programa educativo\", do Art. 8º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos XII, XIII, XIV e XV do Art. 8º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 9º \"Compete ao Gestor do Espaço Cultural:\", pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 9º contém os incisos I a X, sem iniciar blocos próprios em cada inciso."
+        },
+        {
+          "onde": "I - \"definir a atuação do Museu em consonância com o planejamento estratégico\", do Art. 11, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso I contém também o inciso II - \"organizar e administrar o Museu\"."
+        },
+        {
+          "onde": "IX - \"fiscalizar o uso do Museu\", do Art. 11, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IX, X, XI, XII e XIII do Art. 11 ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco próprio o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais\" (pág. 1), incluindo os considerandos e \"resolve:\", antes de iniciar o bloco de \"CAPÍTULO I\".\n- No Art. 9º \"Compete ao Gestor do Espaço Cultural:\" (pág. 2), termine o bloco do artigo antes de \"I - convocar reuniões\" e inicie um bloco próprio em cada inciso I a X.\n- No Art. 7º \"Compete ao Presidente do Conselho Curador:\" (pág. 1), termine o bloco do artigo antes de \"I - representar o Conselho junto ao TCU\" e inicie um bloco próprio em cada inciso I, II e III.\n- No Art. 6º, termine o bloco de \"II - analisar e selecionar, até o mês de setembro\" (pág. 1) imediatamente antes de \"III - aprovar\"; termine também o bloco do inciso III antes de \"IV - selecionar\", iniciando blocos próprios para III e IV.\n- No Art. 11, termine o bloco de \"I - definir a atuação do Museu em consonância com o planejamento estratégico\" (pág. 2) antes de \"II - organizar e administrar o Museu\" e inicie um bloco próprio para o inciso II.\n- No Art. 8º, inicie blocos próprios para \"XII - acompanhar o treinamento dos monitores do programa educativo\", \"XIII - supervisionar as publicações\", \"XIV - indicar obras\" e \"XV - comparecer às reuniões do Conselho Curador\" (pág. 2).\n- No Art. 11, inicie blocos próprios para \"IX - fiscalizar o uso do Museu\", \"X - representar o Museu\", \"XI - promover intercâmbio\", \"XII - gerenciar servidores\" e \"XIII - apresentar à Presidência\" (pág. 3)."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-19618/NORMA-19618_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Inclua em um bloco próprio o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais\" (pág. 1), incluindo os considerandos e \"resolve:\", antes de iniciar o bloco de \"CAPÍTULO I\".\n- No Art. 9º \"Compete ao Gestor do Espaço Cultural:\" (pág. 2), termine o bloco do artigo antes de \"I - convocar reuniões\" e inicie um bloco próprio em cada inciso I a X.\n- No Art. 7º \"Compete ao Presidente do Conselho Curador:\" (pág. 1), termine o bloco do artigo antes de \"I - representar o Conselho junto ao TCU\" e inicie um bloco próprio em cada inciso I, II e III.\n- No Art. 6º, termine o bloco de \"II - analisar e selecionar, até o mês de setembro\" (pág. 1) imediatamente antes de \"III - aprovar\"; termine também o bloco do inciso III antes de \"IV - selecionar\", iniciando blocos próprios para III e IV.\n- No Art. 11, termine o bloco de \"I - definir a atuação do Museu em consonância com o planejamento estratégico\" (pág. 2) antes de \"II - organizar e administrar o Museu\" e inicie um bloco próprio para o inciso II.\n- No Art. 8º, inicie blocos próprios para \"XII - acompanhar o treinamento dos monitores do programa educativo\", \"XIII - supervisionar as publicações\", \"XIV - indicar obras\" e \"XV - comparecer às reuniões do Conselho Curador\" (pág. 2).\n- No Art. 11, inicie blocos próprios para \"IX - fiscalizar o uso do Museu\", \"X - representar o Museu\", \"XI - promover intercâmbio\", \"XII - gerenciar servidores\" e \"XIII - apresentar à Presidência\" (pág. 3).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-19618/NORMA-19618_ciclo2.json"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 77,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo da Portaria, anterior a `CAPÍTULO I`, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`IV - deve ser disponibilizado com ferramenta de pesquisa...`, págs. 1-2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por `III - substitui qualquer outro meio e publicação oficial...` contém também o inciso `IV - deve ser disponibilizado com ferramenta de pesquisa...`, sem início de bloco próprio para o inciso IV."
+        },
+        {
+          "onde": "`IV - designação para viagens a serviço;`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "A conjunção `e`, que completa o inciso IV antes de `V - movimentação interna de pessoal`, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 16 contém o inciso `I - leis, medidas provisórias, decretos e normas afins...`, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21386/NORMA-21386_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 64,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 2º Para os fins desta Portaria, entende-se por:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 2º contém também os incisos `I - autoridades do TCU`, `II - colegiados da Secretaria do Tribunal` e `III - unidades institucionais`, sem blocos próprios."
+        },
+        {
+          "onde": "`Art. 7º O BTCU é editado em quatro cadernos:`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 7º contém também os incisos I a IV que enumeram os cadernos, sem cortes antes desses marcadores."
+        },
+        {
+          "onde": "`Art. 16. Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 16 contém o inciso `I - leis, medidas provisórias, decretos e normas afins...`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO`, págs. 4-5",
+          "tipo": "englobante",
+          "descricao": "o bloco do Capítulo V contém o art. 18, seus §§ 1º a 5º, o art. 19 e o parágrafo único do art. 19, todos sem os cortes exigidos."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21386/NORMA-21386_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 80,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O texto integral de abertura do Art. 17 está fora de qualquer bloco, embora seja uma unidade que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo...`, págs. 4–4",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco com início no Art. 17 e fim dentro do inciso I, mas suas âncoras não foram localizadas no texto marcado; o bloco não foi materializado na segmentação."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.\n- Crie um bloco próprio para `Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:` (pág. 4), termine-o imediatamente antes de `I - pareceres dos dirigentes das unidades institucionais...` e inicie bloco próprio para esse inciso I."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21386/NORMA-21386_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 79,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.\n- Crie um bloco próprio para `Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:` (pág. 4), termine-o imediatamente antes de `I - pareceres dos dirigentes das unidades institucionais...` e inicie bloco próprio para esse inciso I.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO II — DO BTCU`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Capítulo II contém também o marcador e o texto de `Art. 3º O BTCU, instituído pela Portaria nº 173...`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `CAPÍTULO II DO BTCU` imediatamente antes de `Art. 3º O BTCU, instituído pela Portaria nº 173...` (pág. 1) e inicie um bloco próprio para esse artigo.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.\n- Crie um bloco próprio para `Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:` (pág. 4), termine-o imediatamente antes de `I - pareceres dos dirigentes das unidades institucionais...` e inicie bloco próprio para esse inciso I."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21386/NORMA-21386_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `CAPÍTULO II DO BTCU` imediatamente antes de `Art. 3º O BTCU, instituído pela Portaria nº 173...` (pág. 1) e inicie um bloco próprio para esse artigo.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.\n- Crie um bloco próprio para `Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:` (pág. 4), termine-o imediatamente antes de `I - pareceres dos dirigentes das unidades institucionais...` e inicie bloco próprio para esse inciso I.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO I DAS DISPOSIÇÕES PRELIMINARES`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o marcador e o texto de `Art. 1º O funcionamento do Boletim do Tribunal de Contas da União (BTCU)...`, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 16. Serão publicados, também, no caderno Administrativo do BTCU...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 16 contém também o inciso `I - leis, medidas provisórias, decretos e normas afins...`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que se inicia em `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das competências...` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `CAPÍTULO I DAS DISPOSIÇÕES PRELIMINARES` imediatamente antes de `Art. 1º O funcionamento do Boletim do Tribunal de Contas da União (BTCU)...` (pág. 1) e inicie um bloco próprio para esse artigo.\n- Termine o bloco de `Art. 2º Para os fins desta Portaria, entende-se por:` imediatamente antes de `I - autoridades do TCU:` (pág. 1), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do inciso seguinte: `I` antes de `II - colegiados da Secretaria do Tribunal:` e `II` antes de `III - unidades institucionais:`.\n- Termine o bloco de `CAPÍTULO II DO BTCU` imediatamente antes de `Art. 3º O BTCU, instituído pela Portaria nº 173...` (pág. 1) e inicie um bloco próprio para esse artigo.\n- Termine o bloco de `Art. 7º O BTCU é editado em quatro cadernos:` imediatamente antes de `I - Administrativo;` (pág. 2), inicie bloco próprio para esse inciso e termine cada inciso imediatamente antes do seguinte, até `IV - Especial.`.\n- Termine o bloco de `CAPÍTULO V DO ENVIO DE MATÉRIAS PARA PUBLICAÇÃO` imediatamente antes de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` (pág. 4) e inicie um bloco próprio para o art. 18.\n- Termine o bloco de `Art. 18. As unidades institucionais são responsáveis pelo envio das matérias...` imediatamente antes de `§ 1º Os atos exarados pelo Presidente...` (pág. 4), inicie bloco próprio para cada parágrafo e termine cada um imediatamente antes do seguinte, de `§ 1º` a `§ 5º` (págs. 4-5). Termine o bloco de `§ 5º O disposto no parágrafo anterior...` imediatamente antes de `Art. 19. Somente serão publicadas no BTCU...` (pág. 5), e termine o bloco do art. 19 imediatamente antes de `Parágrafo único. A Adgedam poderá restituir...`.\n- Termine o bloco de `III - substitui qualquer outro meio e publicação oficial...` imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa...` (págs. 1-2) e inicie um bloco próprio para o inciso IV.\n- Mantenha a conjunção `e` (pág. 4) no final do bloco de `IV - designação para viagens a serviço;`, imediatamente antes do bloco de `V - movimentação interna de pessoal.`\n- Termine o bloco de `Art. 16. Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:` imediatamente antes de `I - leis, medidas provisórias, decretos e normas afins...` (pág. 4) e inicie um bloco próprio para esse inciso I.\n- Crie um bloco próprio para `Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:` (pág. 4), termine-o imediatamente antes de `I - pareceres dos dirigentes das unidades institucionais...` e inicie bloco próprio para esse inciso I."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21386/NORMA-21386_ciclo5.json"
+  }
+]

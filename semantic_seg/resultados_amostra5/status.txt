@@ -1,0 +1,83 @@
+12:21:48 início sec-rules/sec-rules
+12:21:48 início tcu/NORMA-6140
+12:21:48 início edital-inep-064/edital-inep-064
+12:21:48 início tcu/NORMA-6783
+12:21:48 início tcu/NORMA-26102
+12:21:48 início tcu/NORMA-21767
+12:21:48 início tcu/NORMA-6257
+12:21:48 início tcu/NORMA-5421
+13:42:32 fim    tcu/NORMA-26102 exit=0
+13:42:32 início tcu/NORMA-20182
+13:59:11 fim    tcu/NORMA-21767 exit=0
+13:59:11 início tcu/NORMA-19646
+14:03:40 fim    tcu/NORMA-5421 exit=0
+14:03:40 início tcu/NORMA-18201
+14:03:56 fim    tcu/NORMA-6257 exit=0
+14:03:56 início tcu/NORMA-21225
+14:34:38 fim    tcu/NORMA-19646 exit=0
+14:34:38 início tcu/NORMA-20797
+14:37:21 fim    tcu/NORMA-20182 exit=0
+14:37:21 início tcu/NORMA-21260
+14:44:16 fim    tcu/NORMA-6783 exit=0
+14:44:16 início tcu/NORMA-20186
+14:45:20 fim    tcu/NORMA-20797 exit=0
+14:45:20 início tcu/NORMA-21386
+14:48:23 fim    tcu/NORMA-6140 exit=0
+14:48:23 início tcu/NORMA-1516
+14:54:23 fim    tcu/NORMA-21225 exit=0
+14:54:23 início tcu/NORMA-1463
+15:00:47 fim    tcu/NORMA-21386 exit=0
+15:00:47 início tcu/NORMA-18793
+15:00:54 fim    tcu/NORMA-18201 exit=0
+15:00:54 início tcu/NORMA-19297
+15:09:40 fim    tcu/NORMA-20186 exit=0
+15:09:40 início tcu/NORMA-24582
+15:13:13 fim    tcu/NORMA-21260 exit=0
+15:13:13 início tcu/NORMA-20633
+15:13:43 fim    tcu/NORMA-19297 exit=0
+15:13:43 início tcu/NORMA-19948
+15:17:06 fim    tcu/NORMA-19948 exit=0
+15:17:06 início tcu/NORMA-20901
+15:17:27 fim    tcu/NORMA-1516 exit=0
+15:17:27 início tcu/NORMA-20055
+15:18:17 fim    tcu/NORMA-18793 exit=0
+15:18:17 início tcu/NORMA-20204
+16:46:51 fim    tcu/NORMA-24582 exit=0
+16:46:51 início tcu/NORMA-20082
+16:47:55 fim    tcu/NORMA-20633 exit=0
+16:47:55 início tcu/NORMA-19618
+16:52:17 fim    tcu/NORMA-20901 exit=0
+16:52:17 início tcu/NORMA-20542
+16:57:20 fim    tcu/NORMA-20542 exit=0
+16:57:20 início tcu/NORMA-20277
+16:57:59 fim    tcu/NORMA-20082 exit=0
+16:57:59 início tcu/NORMA-21439
+16:58:17 fim    sec-rules/sec-rules exit=0
+16:58:17 início lei_2017/LEI-2017-13423
+16:58:44 fim    lei_2017/LEI-2017-13423 exit=0
+16:58:44 início lei_2017/LEI-2017-13416
+16:59:34 fim    lei_2017/LEI-2017-13416 exit=0
+16:59:34 início lei_2017/LEI-2017-13422
+16:59:59 fim    lei_2017/LEI-2017-13422 exit=0
+16:59:59 início lei_2017/LEI-2017-13432
+17:00:52 fim    tcu/NORMA-20277 exit=0
+17:00:52 início lei_2017/LEI-2017-13426
+17:00:57 fim    tcu/NORMA-1463 exit=0
+17:00:57 início lei_2017/LEI-2017-13429
+17:01:14 fim    tcu/NORMA-20055 exit=0
+17:01:14 início lei_2017/LEI-2017-13418
+17:01:29 fim    lei_2017/LEI-2017-13429 exit=0
+17:01:29 início lei_2017/LEI-2017-13421
+17:01:47 fim    lei_2017/LEI-2017-13418 exit=0
+17:01:47 início lei_2017/LEI-2017-13435
+17:01:53 fim    lei_2017/LEI-2017-13421 exit=0
+17:01:53 início lei_2017/LEI-2017-13430
+17:01:59 fim    lei_2017/LEI-2017-13426 exit=0
+17:02:04 fim    tcu/NORMA-21439 exit=0
+17:02:19 fim    lei_2017/LEI-2017-13430 exit=0
+17:02:58 fim    lei_2017/LEI-2017-13435 exit=0
+17:03:10 fim    tcu/NORMA-19618 exit=0
+17:03:31 fim    tcu/NORMA-20204 exit=0
+17:16:22 fim    lei_2017/LEI-2017-13432 exit=0
+17:26:01 fim    edital-inep-064/edital-inep-064 exit=0
+17:26:01 TODOS TERMINARAM (41 ok, 0 com erro)

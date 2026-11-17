@@ -1,0 +1,197 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 98,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024” e preâmbulo, págs. 1-2",
+          "tipo": "sem_bloco",
+          "descricao": "O cabeçalho, a ementa, os considerandos e o texto até “RESOLVE:” ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 1º, incisos II a V, págs. 2-3",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco iniciado pelo inciso I, os incisos II, III, IV e V ficaram sem bloco próprio."
+        },
+        {
+          "onde": "Parágrafo único do Art. 1º, incisos II a VI, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco iniciado pelo inciso I, os incisos II, III, IV, V e VI ficaram sem bloco próprio."
+        },
+        {
+          "onde": "entre o inciso VI do parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO...”, pág. 3",
+          "tipo": "corte_indevido",
+          "descricao": "Há um corte que inicia um bloco vazio, sem marcador ou texto de unidade normativa."
+        },
+        {
+          "onde": "TÍTULO II “PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” até o Art. 7º, págs. 3-6",
+          "tipo": "sobreposicao",
+          "descricao": "Diversos trechos do Título II, incluindo unidades do Capítulo I, o Capítulo II, os Arts. 2º a 7º, parágrafos, incisos e alíneas, foram incluídos simultaneamente em mais de um bloco."
+        },
+        {
+          "onde": "Art. 3º, inciso III “adotar as medidas necessárias à identificação...”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso III contém também os incisos IV, V e VI, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 4º “Recebidas da CGU/AGU eventuais informações...”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 4º contém os §§ 1º e 2º, sem início de bloco para cada parágrafo."
+        },
+        {
+          "onde": "Art. 10 “Caso haja manifestação do Plenário...”, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 10 contém também o seu parágrafo único, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 12, incisos II a V, pág. 8",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco iniciado pelo inciso I, os incisos II, III, IV e V ficaram sem bloco próprio."
+        },
+        {
+          "onde": "Art. 18 “As unidades técnicas especializadas verificarão...”, pág. 10",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 18 contém os incisos I e II, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 20 “Se a unidade técnica especializada identificar...”, pág. 10",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 20 contém os incisos I e II, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, os considerandos e “RESOLVE:” (págs. 1-2), antes de iniciar o bloco de “TÍTULO I”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 3º, inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...” (pág. 4).\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...” ."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-26102/NORMA-26102_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 120,
+    "insights_aplicados": "- Inclua em um bloco inicial o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, os considerandos e “RESOLVE:” (págs. 1-2), antes de iniciar o bloco de “TÍTULO I”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 3º, inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...” (pág. 4).\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...” .",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso II do Art. 1º, “II - o procedimento de estimação dos danos...”, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "O final da palavra “operacional”, após “operac”, ficou fora de qualquer bloco como “ional do ACT;”, embora seja continuação direta do texto do inciso II."
+        },
+        {
+          "onde": "CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA”, pág. 11",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no marcador do CAPÍTULO V contém também o marcador e o texto do “Art. 24. Após a celebração do acordo de leniência...”, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 3º, inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...” (pág. 4).\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-26102/NORMA-26102_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 3º, inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...” (pág. 4).\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo e cabeçalho iniciais, págs. 1-2",
+          "tipo": "sem_bloco",
+          "descricao": "O cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, os considerandos e “RESOLVE:” ficaram fora de qualquer bloco antes de “TÍTULO I”."
+        },
+        {
+          "onde": "§ 1º do Art. 2º, págs. 3-4",
+          "tipo": "sem_bloco",
+          "descricao": "As alíneas “a) quando do início das negociações...” e “b) durante as negociações...” ficaram fora de bloco após o texto introdutório do § 1º."
+        },
+        {
+          "onde": "inciso IV do Art. 3º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “IV - identificar a existência de débitos...” contém também os incisos V “encaminhar os autos à apreciação...” e VI “propor ao Relator...”, sem blocos próprios nesses marcadores."
+        },
+        {
+          "onde": "§ 2º do Art. 5º, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco de “§ 2º O acesso a peças processuais...” contém o marcador “CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL, págs. 5-6",
+          "tipo": "englobante",
+          "descricao": "O texto do capítulo contém, sem cortes próprios, o “Art. 6º”, o “Parágrafo Único” desse artigo e as alíneas “a)” e “b)”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No início do documento (págs. 1-2), inclua em um bloco o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, todos os considerandos e “RESOLVE:”, antes de iniciar o bloco de “TÍTULO I — DAS DISPOSIÇÕES GERAIS”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- No § 1º do Art. 2º (págs. 3-4), após “será enviado em duas etapas das negociações do acordo de leniência:”, inicie blocos próprios nas alíneas “a) quando do início das negociações...” e “b) durante as negociações...”; não deixe as alíneas fora de bloco.\n- No Art. 3º (pág. 4), inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...”.\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No § 2º do Art. 5º (pág. 5), termine o bloco imediatamente antes de “CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL” e inicie um bloco próprio no capítulo.\n- No CAPÍTULO II — “DA SEGUNDA AÇÃO OPERACIONAL / FASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO” (pág. 5), termine o bloco do capítulo imediatamente antes de “Art. 6º Após a comunicação da CGU/AGU...” e inicie um bloco próprio no artigo.\n- No Art. 6º (pág. 5), termine o bloco do artigo antes de “Parágrafo Único: A comunicação de que trata o caput...” e inicie um bloco próprio no parágrafo; dentro desse parágrafo, inicie blocos próprios nas alíneas “a) a relação dos atos ilícitos...” e “b) os valores de ressarcimento negociados...”.\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”.\n- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-26102/NORMA-26102_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 115,
+    "insights_aplicados": "- No início do documento (págs. 1-2), inclua em um bloco o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, todos os considerandos e “RESOLVE:”, antes de iniciar o bloco de “TÍTULO I — DAS DISPOSIÇÕES GERAIS”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- No § 1º do Art. 2º (págs. 3-4), após “será enviado em duas etapas das negociações do acordo de leniência:”, inicie blocos próprios nas alíneas “a) quando do início das negociações...” e “b) durante as negociações...”; não deixe as alíneas fora de bloco.\n- No Art. 3º (pág. 4), inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...”.\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No § 2º do Art. 5º (pág. 5), termine o bloco imediatamente antes de “CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL” e inicie um bloco próprio no capítulo.\n- No CAPÍTULO II — “DA SEGUNDA AÇÃO OPERACIONAL / FASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO” (pág. 5), termine o bloco do capítulo imediatamente antes de “Art. 6º Após a comunicação da CGU/AGU...” e inicie um bloco próprio no artigo.\n- No Art. 6º (pág. 5), termine o bloco do artigo antes de “Parágrafo Único: A comunicação de que trata o caput...” e inicie um bloco próprio no parágrafo; dentro desse parágrafo, inicie blocos próprios nas alíneas “a) a relação dos atos ilícitos...” e “b) os valores de ressarcimento negociados...”.\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”.\n- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso V do Art. 1º, “V - o procedimento de recebimento de informações e evidências...”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Todo o inciso V está fora de bloco."
+        },
+        {
+          "onde": "Inciso IV do parágrafo único do Art. 1º, “IV - escopo do acordo de leniência...”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos V “valores de ressarcimento...” e VI “dano ao Erário...”, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Alínea a) do § 1º do Art. 2º, “a) quando do início das negociações...”, págs. 3-4",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final da alínea a), “fatos relatados; e”, ficou fora de bloco na transição de página."
+        },
+        {
+          "onde": "§ 4º do Art. 3º, alínea a) “a) no caso de processos de fiscalização...”, págs. 4-5",
+          "tipo": "sem_bloco",
+          "descricao": "A alínea b) “b) no caso de processos de tomada de contas especial ou ordinária...” ficou fora de bloco; além disso, ela não foi iniciada em bloco próprio."
+        },
+        {
+          "onde": "Inciso III do Art. 15, “III - proposta de instauração de processo de acompanhamento...”, pág. 9",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém também o inciso IV “IV - proposta de não instauração de ação de controle externo...”, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 17, “Art. 17. A unidade técnica responsável pelo processo...”, págs. 9-10",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 17 contém o § 1º “§ 1º A unidade técnica especializada deverá autuar...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No início do documento (págs. 1-2), inclua em um bloco o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, todos os considerandos e “RESOLVE:”, antes de iniciar o bloco de “TÍTULO I — DAS DISPOSIÇÕES GERAIS”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”, e não deixe o inciso V “V - o procedimento de recebimento de informações e evidências...” fora de bloco.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano; termine o bloco do inciso IV antes de “V - valores de ressarcimento...” e o do inciso V antes de “VI - dano ao Erário...”.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- No § 1º do Art. 2º (págs. 3-4), após “será enviado em duas etapas das negociações do acordo de leniência:”, inicie blocos próprios nas alíneas “a) quando do início das negociações...” e “b) durante as negociações...”; mantenha integralmente na alínea a) o trecho que continua na página 4, “fatos relatados; e”, sem deixá-lo fora de bloco.\n- No Art. 3º (pág. 4), inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...”.\n- No § 4º do Art. 3º (págs. 4-5), termine o bloco da alínea “a) no caso de processos de fiscalização...” antes de “b) no caso de processos de tomada de contas especial ou ordinária...” e inicie um bloco próprio nesta alínea b), incluindo todo o seu texto até “com julgamento definitivo;”.\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No § 2º do Art. 5º (pág. 5), termine o bloco imediatamente antes de “CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL” e inicie um bloco próprio no capítulo.\n- No CAPÍTULO II — “DA SEGUNDA AÇÃO OPERACIONAL / FASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO” (pág. 5), termine o bloco do capítulo imediatamente antes de “Art. 6º Após a comunicação da CGU/AGU...” e inicie um bloco próprio no artigo.\n- No Art. 6º (pág. 5), termine o bloco do artigo antes de “Parágrafo Único: A comunicação de que trata o caput...” e inicie um bloco próprio no parágrafo; dentro desse parágrafo, inicie blocos próprios nas alíneas “a) a relação dos atos ilícitos...” e “b) os valores de ressarcimento negociados...”.\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 15 (pág. 9), termine o bloco do inciso III “III - proposta de instauração de processo de acompanhamento...” imediatamente antes de “IV - proposta de não instauração de ação de controle externo...” e inicie um bloco próprio no inciso IV.\n- No Art. 17 (págs. 9-10), termine o bloco do artigo imediatamente antes de “§ 1º A unidade técnica especializada deverá autuar processo administrativo...” e inicie um bloco próprio no § 1º.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”.\n- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-26102/NORMA-26102_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 118,
+    "insights_aplicados": "- No início do documento (págs. 1-2), inclua em um bloco o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, todos os considerandos e “RESOLVE:”, antes de iniciar o bloco de “TÍTULO I — DAS DISPOSIÇÕES GERAIS”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”, e não deixe o inciso V “V - o procedimento de recebimento de informações e evidências...” fora de bloco.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano; termine o bloco do inciso IV antes de “V - valores de ressarcimento...” e o do inciso V antes de “VI - dano ao Erário...”.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- No § 1º do Art. 2º (págs. 3-4), após “será enviado em duas etapas das negociações do acordo de leniência:”, inicie blocos próprios nas alíneas “a) quando do início das negociações...” e “b) durante as negociações...”; mantenha integralmente na alínea a) o trecho que continua na página 4, “fatos relatados; e”, sem deixá-lo fora de bloco.\n- No Art. 3º (pág. 4), inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...”.\n- No § 4º do Art. 3º (págs. 4-5), termine o bloco da alínea “a) no caso de processos de fiscalização...” antes de “b) no caso de processos de tomada de contas especial ou ordinária...” e inicie um bloco próprio nesta alínea b), incluindo todo o seu texto até “com julgamento definitivo;”.\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No § 2º do Art. 5º (pág. 5), termine o bloco imediatamente antes de “CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL” e inicie um bloco próprio no capítulo.\n- No CAPÍTULO II — “DA SEGUNDA AÇÃO OPERACIONAL / FASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO” (pág. 5), termine o bloco do capítulo imediatamente antes de “Art. 6º Após a comunicação da CGU/AGU...” e inicie um bloco próprio no artigo.\n- No Art. 6º (pág. 5), termine o bloco do artigo antes de “Parágrafo Único: A comunicação de que trata o caput...” e inicie um bloco próprio no parágrafo; dentro desse parágrafo, inicie blocos próprios nas alíneas “a) a relação dos atos ilícitos...” e “b) os valores de ressarcimento negociados...”.\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (pág. 8), inicie um bloco próprio em cada inciso II, III, IV e V.\n- No Art. 15 (pág. 9), termine o bloco do inciso III “III - proposta de instauração de processo de acompanhamento...” imediatamente antes de “IV - proposta de não instauração de ação de controle externo...” e inicie um bloco próprio no inciso IV.\n- No Art. 17 (págs. 9-10), termine o bloco do artigo imediatamente antes de “§ 1º A unidade técnica especializada deverá autuar processo administrativo...” e inicie um bloco próprio no § 1º.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”.\n- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 9º`, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém também o marcador e todo o texto do `Parágrafo único. A declaração de que o pleno cumprimento...`, sem corte antes do parágrafo."
+        },
+        {
+          "onde": "`Art. 12`, págs. 7-8",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `Art. 12. A utilização pelo TCU...` contém também os incisos I e II, sem blocos próprios nesses marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No início do documento (págs. 1-2), inclua em um bloco o cabeçalho “INSTRUÇÃO NORMATIVA - TCU Nº 95, de 21 de fevereiro de 2024”, a ementa, todos os considerandos e “RESOLVE:”, antes de iniciar o bloco de “TÍTULO I — DAS DISPOSIÇÕES GERAIS”.\n- No Art. 1º (págs. 2-3), inicie um bloco próprio em cada inciso II, III, IV e V, imediatamente no respectivo marcador romano; inclua integralmente no bloco do inciso II o final “operacional do ACT;”, ainda que a palavra esteja partida na transição de página após “operac”, e não deixe o inciso V “V - o procedimento de recebimento de informações e evidências...” fora de bloco.\n- No Parágrafo único do Art. 1º (pág. 3), inicie um bloco próprio em cada inciso II, III, IV, V e VI, imediatamente no respectivo marcador romano; termine o bloco do inciso IV antes de “V - valores de ressarcimento...” e o do inciso V antes de “VI - dano ao Erário...”.\n- Não gere bloco vazio entre o inciso VI do Parágrafo único do Art. 1º e “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3).\n- No § 1º do Art. 2º (págs. 3-4), após “será enviado em duas etapas das negociações do acordo de leniência:”, inicie blocos próprios nas alíneas “a) quando do início das negociações...” e “b) durante as negociações...”; mantenha integralmente na alínea a) o trecho que continua na página 4, “fatos relatados; e”, sem deixá-lo fora de bloco.\n- No Art. 3º (pág. 4), inicie blocos próprios nos incisos IV “identificar a existência de débitos...”, V “encaminhar os autos à apreciação...” e VI “propor ao Relator...”.\n- No § 4º do Art. 3º (págs. 4-5), termine o bloco da alínea “a) no caso de processos de fiscalização...” antes de “b) no caso de processos de tomada de contas especial ou ordinária...” e inicie um bloco próprio nesta alínea b), incluindo todo o seu texto até “com julgamento definitivo;”.\n- No Art. 4º (pág. 5), termine o bloco do artigo antes de “§ 1º Caso a remessa...” e inicie também um bloco próprio em “§ 2º Alterações significativas de escopo...”.\n- No § 2º do Art. 5º (pág. 5), termine o bloco imediatamente antes de “CAPÍTULO II — DA SEGUNDA AÇÃO OPERACIONAL” e inicie um bloco próprio no capítulo.\n- No CAPÍTULO II — “DA SEGUNDA AÇÃO OPERACIONAL / FASE DE CONCLUSÃO DA NEGOCIAÇÃO E ASSINATURA DO ACORDO” (pág. 5), termine o bloco do capítulo imediatamente antes de “Art. 6º Após a comunicação da CGU/AGU...” e inicie um bloco próprio no artigo.\n- No Art. 6º (pág. 5), termine o bloco do artigo antes de “Parágrafo Único: A comunicação de que trata o caput...” e inicie um bloco próprio no parágrafo; dentro desse parágrafo, inicie blocos próprios nas alíneas “a) a relação dos atos ilícitos...” e “b) os valores de ressarcimento negociados...”.\n- Do “TÍTULO II — PROCEDIMENTOS DE RECEBIMENTO E ENVIO DE INFORMAÇÕES...” (pág. 3) ao Art. 7º (pág. 6), atribua cada título, capítulo, artigo, parágrafo, inciso e alínea a um único bloco; não replique o texto dessas unidades em blocos adjacentes ou englobantes.\n- No Art. 9º (pág. 7), termine o bloco do artigo imediatamente antes de “Parágrafo único. A declaração de que o pleno cumprimento...” e inicie um bloco próprio no parágrafo único.\n- No Art. 10 (pág. 7), termine o bloco do artigo antes de “Parágrafo único. Ao deliberar...” e inicie um bloco próprio nesse parágrafo.\n- No Art. 12 (págs. 7-8), termine o bloco do artigo antes de “I - não utilização das informações recebidas contra a proponente;” e inicie blocos próprios em cada um dos incisos I, II, III, IV e V; em especial, inicie o bloco do inciso II em “II - não utilização das informações recebidas para a responsabilização...” mesmo que ele venha no início da página 8.\n- No Art. 15 (pág. 9), termine o bloco do inciso III “III - proposta de instauração de processo de acompanhamento...” imediatamente antes de “IV - proposta de não instauração de ação de controle externo...” e inicie um bloco próprio no inciso IV.\n- No Art. 17 (págs. 9-10), termine o bloco do artigo imediatamente antes de “§ 1º A unidade técnica especializada deverá autuar processo administrativo...” e inicie um bloco próprio no § 1º.\n- No Art. 18 (pág. 10), termine o bloco do artigo antes do inciso I “podem ser aproveitados...” e inicie também um bloco próprio no inciso II “atendem a critérios de risco...”.\n- No Art. 20 (pág. 10), termine o bloco do artigo antes do inciso I “proposta de fiscalização...” e inicie também um bloco próprio no inciso II “proposta de juntada...”.\n- No CAPÍTULO V — “DA QUINTA AÇÃO OPERACIONAL / RESPONSABILIZAÇÃO DE TERCEIROS APÓS A CELEBRAÇÃO DO ACORDO DE LENIÊNCIA” (pág. 11), termine o bloco do capítulo imediatamente antes de “Art. 24. Após a celebração do acordo de leniência...” e inicie um bloco próprio no artigo."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-26102/NORMA-26102_ciclo5.json"
+  }
+]

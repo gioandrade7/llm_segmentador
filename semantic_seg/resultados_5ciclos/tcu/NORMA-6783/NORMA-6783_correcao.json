@@ -1,0 +1,62 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 232,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 60,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VIII-providenciar a emissão de carteiras de identidade\" (pág. 3) contém também os incisos IX a XIII do art. 8º, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 102,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"XVI-elaborar ato de designação\" (pág. 5) contém também os incisos XVII a XXI do art. 10, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 170,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III-elaborar relatórios de informações gerenciais da Dipag\" (pág. 7) contém também os incisos IV a XII do art. 15, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 172,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I-elaborar a folha de pagamento de autoridades e servidores ativos do TCU\" (págs. 7–8) contém também os incisos II a XV do art. 16, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 181,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VIII-fiscalizar o cumprimento dos convênios firmados\" (pág. 8) contém também os incisos IX a XIV do art. 17, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 212,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"IV-coordenar o Exame Periódico de Saúde\" (pág. 10) contém também os incisos V a VIII do art. 21, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 230,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VII-empenhar-se na obtenção de recursos\" (pág. 11) contém também o inciso VIII do art. 23, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 8º, na pág. 3, termine o bloco de \"VIII-providenciar a emissão de carteiras de identidade\" antes de \"IX-receber e conferir as declarações\" e inicie blocos próprios em cada um dos incisos IX, X, XI, XII e XIII.\n- No art. 10, na pág. 5, termine o bloco de \"XVI-elaborar ato de designação\" antes de \"XVII-atualizar os registros de funções\" e inicie blocos próprios em cada um dos incisos XVII a XXI.\n- Na pág. 7, separe os incisos IV a XII do art. 15 a partir de \"IV-fornecer informações necessárias ao pagamento\"; no art. 16, iniciado por \"I-elaborar a folha de pagamento de autoridades e servidores ativos do TCU\" (págs. 7–8), inicie um bloco próprio em cada inciso II a XV.\n- No art. 17, na pág. 8, termine o bloco de \"VIII-fiscalizar o cumprimento dos convênios firmados\" antes de \"IX-efetuar cálculos\" e inicie blocos próprios nos incisos IX a XIV; no art. 21, na pág. 10, separe os incisos V a VIII do bloco de \"IV-coordenar o Exame Periódico de Saúde\".\n- No art. 23, na pág. 11, termine o bloco de \"VII-empenhar-se na obtenção de recursos\" antes de \"VIII-realizar lançamentos manuais\" e inicie um bloco próprio no inciso VIII."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-6783/NORMA-6783_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 277,
+    "insights_aplicados": "- No art. 8º, na pág. 3, termine o bloco de \"VIII-providenciar a emissão de carteiras de identidade\" antes de \"IX-receber e conferir as declarações\" e inicie blocos próprios em cada um dos incisos IX, X, XI, XII e XIII.\n- No art. 10, na pág. 5, termine o bloco de \"XVI-elaborar ato de designação\" antes de \"XVII-atualizar os registros de funções\" e inicie blocos próprios em cada um dos incisos XVII a XXI.\n- Na pág. 7, separe os incisos IV a XII do art. 15 a partir de \"IV-fornecer informações necessárias ao pagamento\"; no art. 16, iniciado por \"I-elaborar a folha de pagamento de autoridades e servidores ativos do TCU\" (págs. 7–8), inicie um bloco próprio em cada inciso II a XV.\n- No art. 17, na pág. 8, termine o bloco de \"VIII-fiscalizar o cumprimento dos convênios firmados\" antes de \"IX-efetuar cálculos\" e inicie blocos próprios nos incisos IX a XIV; no art. 21, na pág. 10, separe os incisos V a VIII do bloco de \"IV-coordenar o Exame Periódico de Saúde\".\n- No art. 23, na pág. 11, termine o bloco de \"VII-empenhar-se na obtenção de recursos\" antes de \"VIII-realizar lançamentos manuais\" e inicie um bloco próprio no inciso VIII.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-6783/NORMA-6783_ciclo2.json"
+  }
+]

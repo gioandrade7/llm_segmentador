@@ -1,0 +1,61 @@
+{
+  "prefixo": "resultados_amostra5/lei_2017/LEI-2017-13435/LEI-2017-13435",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/LEI-2017-13435.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 6,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 6,
+      "fronteiras_gabarito": 10,
+      "acertos": 6,
+      "precisao": 1.0,
+      "revocacao": 0.6,
+      "f1": 0.7499999999999999,
+      "fins": {
+        "previstos": 6,
+        "gabarito": 10,
+        "fins_nao_localizados": 0,
+        "acertos": 6,
+        "precisao": 1.0,
+        "revocacao": 0.6,
+        "f1": 0.7499999999999999
+      },
+      "blocos_exatos": {
+        "acertos": 4,
+        "precisao": 0.6666666666666666,
+        "revocacao": 0.4,
+        "f1": 0.5
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 2,
+      "blocos": 9,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 9,
+      "fronteiras_gabarito": 10,
+      "acertos": 9,
+      "precisao": 1.0,
+      "revocacao": 0.9,
+      "f1": 0.9473684210526316,
+      "fins": {
+        "previstos": 9,
+        "gabarito": 10,
+        "fins_nao_localizados": 0,
+        "acertos": 9,
+        "precisao": 1.0,
+        "revocacao": 0.9,
+        "f1": 0.9473684210526316
+      },
+      "blocos_exatos": {
+        "acertos": 8,
+        "precisao": 0.8888888888888888,
+        "revocacao": 0.8,
+        "f1": 0.8421052631578948
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

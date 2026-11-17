@@ -1,0 +1,102 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 64,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`XI - unidade interessada`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XI contém também o inciso XII, iniciado por `XII - unidade responsável por base de dados`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20797/NORMA-20797_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 64,
+    "insights_aplicados": "- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "§ 2º do Art. 8°, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação` contém também o marcador e o texto do `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8° imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20797/NORMA-20797_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 54,
+    "insights_aplicados": "- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8° imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 5º A concessão de acesso a bases de dados...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no Art. 5º contém, sem blocos próprios, os incisos I, II e III e os §§ 1º a 8º do mesmo artigo, embora cada um desses marcadores deva iniciar uma unidade autônoma."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 5º, termine o bloco do caput `Art. 5º A concessão de acesso a bases de dados... deverá ser precedida de:` imediatamente antes de `I - solicitação da unidade interessada` (pág. 4) e inicie bloco próprio no inciso I.\n- No Art. 5º, inicie blocos próprios em `II - manifestação da unidade gestora do acesso` e `III - autorização do relator do processo` (pág. 4), encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 5º, inicie blocos próprios em cada parágrafo, de `§ 1º Quando do encaminhamento da solicitação` até `§ 8º Dar-se-á preferência à concessão de acesso` (pág. 4), encerrando cada um imediatamente antes do próximo marcador de parágrafo.\n- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8º imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20797/NORMA-20797_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "- No Art. 5º, termine o bloco do caput `Art. 5º A concessão de acesso a bases de dados... deverá ser precedida de:` imediatamente antes de `I - solicitação da unidade interessada` (pág. 4) e inicie bloco próprio no inciso I.\n- No Art. 5º, inicie blocos próprios em `II - manifestação da unidade gestora do acesso` e `III - autorização do relator do processo` (pág. 4), encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 5º, inicie blocos próprios em cada parágrafo, de `§ 1º Quando do encaminhamento da solicitação` até `§ 8º Dar-se-á preferência à concessão de acesso` (pág. 4), encerrando cada um imediatamente antes do próximo marcador de parágrafo.\n- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8º imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`§ 1º As bases de dados de que trata o caput`, Art. 1º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º contém também o marcador e o texto do `§ 2º O acesso a base de dados compartilhada com o TCU`."
+        },
+        {
+          "onde": "`VIII - interessado externo`, Art. 2º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos `IX - item não digitalizável`, `X - unidade gestora do acesso a base de dados` e `XI - unidade interessada`."
+        },
+        {
+          "onde": "`§2º Deverá ser requerida manifestação fundamentada`, Art. 4º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 2º contém os marcadores e textos dos incisos I, II, III, IV e V, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º, inicie blocos próprios em cada inciso do `§2º Deverá ser requerida manifestação fundamentada do órgão ou entidade de origem da base de dados` — de `I - manifestação anterior` até `V - decisão fundamentada do relator, do Presidente ou do Tribunal` (pág. 3) —, encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 2º, termine o bloco de `VIII - interessado externo` imediatamente antes de `IX - item não digitalizável` (pág. 2) e inicie blocos próprios nos incisos IX, X, XI e XII, encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 1º, termine o bloco de `§ 1º As bases de dados de que trata o caput` imediatamente antes de `§ 2º O acesso a base de dados compartilhada com o TCU` (pág. 1) e inicie um bloco próprio no § 2º.\n- No Art. 5º, termine o bloco do caput `Art. 5º A concessão de acesso a bases de dados... deverá ser precedida de:` imediatamente antes de `I - solicitação da unidade interessada` (pág. 4) e inicie bloco próprio no inciso I.\n- No Art. 5º, inicie blocos próprios em `II - manifestação da unidade gestora do acesso` e `III - autorização do relator do processo` (pág. 4), encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 5º, inicie blocos próprios em cada parágrafo, de `§ 1º Quando do encaminhamento da solicitação` até `§ 8º Dar-se-á preferência à concessão de acesso` (pág. 4), encerrando cada um imediatamente antes do próximo marcador de parágrafo.\n- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8º imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20797/NORMA-20797_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 63,
+    "insights_aplicados": "- No Art. 4º, inicie blocos próprios em cada inciso do `§2º Deverá ser requerida manifestação fundamentada do órgão ou entidade de origem da base de dados` — de `I - manifestação anterior` até `V - decisão fundamentada do relator, do Presidente ou do Tribunal` (pág. 3) —, encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 2º, termine o bloco de `VIII - interessado externo` imediatamente antes de `IX - item não digitalizável` (pág. 2) e inicie blocos próprios nos incisos IX, X, XI e XII, encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 1º, termine o bloco de `§ 1º As bases de dados de que trata o caput` imediatamente antes de `§ 2º O acesso a base de dados compartilhada com o TCU` (pág. 1) e inicie um bloco próprio no § 2º.\n- No Art. 5º, termine o bloco do caput `Art. 5º A concessão de acesso a bases de dados... deverá ser precedida de:` imediatamente antes de `I - solicitação da unidade interessada` (pág. 4) e inicie bloco próprio no inciso I.\n- No Art. 5º, inicie blocos próprios em `II - manifestação da unidade gestora do acesso` e `III - autorização do relator do processo` (pág. 4), encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 5º, inicie blocos próprios em cada parágrafo, de `§ 1º Quando do encaminhamento da solicitação` até `§ 8º Dar-se-á preferência à concessão de acesso` (pág. 4), encerrando cada um imediatamente antes do próximo marcador de parágrafo.\n- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8º imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, caput, págs. 3–4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `Art. 4º A concessão de acesso a bases de dados... deverá ser precedida de:` contém, sem cortes próprios, os incisos `I - manifestação da unidade gestora...` e `II - autorização de acesso do relator...`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º, termine o bloco do caput `Art. 4º A concessão de acesso a bases de dados... deverá ser precedida de:` imediatamente antes de `I - manifestação da unidade gestora do acesso a base de dados custodiada ou acessada` (pág. 3) e inicie blocos próprios nos incisos I e II, encerrando o inciso I imediatamente antes de `II - autorização de acesso do relator` e o inciso II antes de `§1º Quando não for autorizado o acesso` (pág. 3).\n- No Art. 4º, inicie blocos próprios em cada inciso do `§2º Deverá ser requerida manifestação fundamentada do órgão ou entidade de origem da base de dados` — de `I - manifestação anterior` até `V - decisão fundamentada do relator, do Presidente ou do Tribunal` (pág. 3) —, encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 2º, termine o bloco de `VIII - interessado externo` imediatamente antes de `IX - item não digitalizável` (pág. 2) e inicie blocos próprios nos incisos IX, X, XI e XII, encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 1º, termine o bloco de `§ 1º As bases de dados de que trata o caput` imediatamente antes de `§ 2º O acesso a base de dados compartilhada com o TCU` (pág. 1) e inicie um bloco próprio no § 2º.\n- No Art. 5º, termine o bloco do caput `Art. 5º A concessão de acesso a bases de dados... deverá ser precedida de:` imediatamente antes de `I - solicitação da unidade interessada` (pág. 4) e inicie bloco próprio no inciso I.\n- No Art. 5º, inicie blocos próprios em `II - manifestação da unidade gestora do acesso` e `III - autorização do relator do processo` (pág. 4), encerrando cada inciso imediatamente antes do marcador seguinte.\n- No Art. 5º, inicie blocos próprios em cada parágrafo, de `§ 1º Quando do encaminhamento da solicitação` até `§ 8º Dar-se-á preferência à concessão de acesso` (pág. 4), encerrando cada um imediatamente antes do próximo marcador de parágrafo.\n- Termine o bloco do inciso `XI - unidade interessada` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio no inciso XII.\n- Termine o bloco do `§ 2º Incumbem às Secretarias de Soluções de Tecnologia da Informação (STI)` do Art. 8º imediatamente antes de `§ 3º A ausência, a insuficiência, a burla e a tentativa de burla` (pág. 5) e inicie um bloco próprio no § 3º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20797/NORMA-20797_ciclo5.json"
+  }
+]

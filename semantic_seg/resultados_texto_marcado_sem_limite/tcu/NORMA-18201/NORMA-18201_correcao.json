@@ -1,0 +1,62 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 118,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "todo o preâmbulo, incluindo os considerandos e a conclusão “resolve:”, ficou fora de qualquer bloco antes de “CAPÍTULO I”."
+        },
+        {
+          "onde": "inciso IV de “Art. 5º”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso “IV- quando da publicação das informações na transparência ativa...” ficou fora de bloco."
+        },
+        {
+          "onde": "Parágrafo único de “Art. 5º”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do parágrafo único contém também os incisos I e II, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 3º de “Art. 8º”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 3º contém também os incisos I, II e III da enumeração de informações sigilosas."
+        },
+        {
+          "onde": "incisos IV e V de “Art. 11”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos “IV - que envolvam segredo de justiça; ou” e “V - aquelas relativas a denúncias...” ficaram fora de bloco."
+        },
+        {
+          "onde": "incisos II e III de “Art. 12”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II e III da enumeração de competências ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 14, incisos I a IV, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco de “Art. 14. A classificação da informação sigilosa...” contém os incisos I, II, III e IV, que devem ser blocos independentes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco próprio o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...” e terminado em “resolve:”, na pág. 1, antes de iniciar o bloco de “CAPÍTULO I”.\n- Inicie um bloco próprio no inciso “IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.” de Art. 5º (pág. 3).\n- Termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” de Art. 5º (pág. 3) antes de “I - documentos não classificados pela origem...”; inicie blocos próprios nos incisos I e II desse parágrafo.\n- Termine o bloco de “§ 3º São consideradas sigilosas as informações:” de Art. 8º (pág. 3) antes de “I - imprescindíveis à segurança da sociedade ou do Estado;”; inicie blocos próprios nos incisos I, II e III.\n- Inicie blocos próprios em “IV - que envolvam segredo de justiça; ou” e em “V - aquelas relativas a denúncias apresentadas ao TCU...” de Art. 11 (pág. 5).\n- Inicie blocos próprios em “II - no grau secreto, das autoridades e colegiados...” e em “III - no grau reservado e nas de natureza pessoal...” de Art. 12 (pág. 5).\n- Termine o bloco de “Art. 14. A classificação da informação sigilosa deve ser formalizada...” (pág. 5) antes de “I - hipótese de sigilo...”; inicie blocos próprios nos incisos I, II, III e IV."
+    },
+    "arquivo_blocos": "resultados_texto_marcado_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 133,
+    "insights_aplicados": "- Inclua em um bloco próprio o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...” e terminado em “resolve:”, na pág. 1, antes de iniciar o bloco de “CAPÍTULO I”.\n- Inicie um bloco próprio no inciso “IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.” de Art. 5º (pág. 3).\n- Termine o bloco de “Parágrafo único. É facultado aplicar provisoriamente a chancela ‘Pendente de classificação’ para:” de Art. 5º (pág. 3) antes de “I - documentos não classificados pela origem...”; inicie blocos próprios nos incisos I e II desse parágrafo.\n- Termine o bloco de “§ 3º São consideradas sigilosas as informações:” de Art. 8º (pág. 3) antes de “I - imprescindíveis à segurança da sociedade ou do Estado;”; inicie blocos próprios nos incisos I, II e III.\n- Inicie blocos próprios em “IV - que envolvam segredo de justiça; ou” e em “V - aquelas relativas a denúncias apresentadas ao TCU...” de Art. 11 (pág. 5).\n- Inicie blocos próprios em “II - no grau secreto, das autoridades e colegiados...” e em “III - no grau reservado e nas de natureza pessoal...” de Art. 12 (pág. 5).\n- Termine o bloco de “Art. 14. A classificação da informação sigilosa deve ser formalizada...” (pág. 5) antes de “I - hipótese de sigilo...”; inicie blocos próprios nos incisos I, II, III e IV.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_texto_marcado_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo2.json"
+  }
+]

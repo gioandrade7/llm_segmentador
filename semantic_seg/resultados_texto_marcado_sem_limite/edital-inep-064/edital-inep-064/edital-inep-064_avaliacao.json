@@ -1,0 +1,142 @@
+{
+  "prefixo": "resultados_texto_marcado_sem_limite/edital-inep-064/edital-inep-064/edital-inep-064",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/edital-inep-064.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 363,
+      "ancoras_nao_localizadas": 1,
+      "fronteiras_previstas": 362,
+      "fronteiras_gabarito": 377,
+      "acertos": 361,
+      "precisao": 0.9972375690607734,
+      "revocacao": 0.9575596816976127,
+      "f1": 0.9769959404600811,
+      "fins": {
+        "previstos": 362,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 360,
+        "precisao": 0.994475138121547,
+        "revocacao": 0.9549071618037135,
+        "f1": 0.9742895805142083
+      },
+      "blocos_exatos": {
+        "acertos": 355,
+        "precisao": 0.9806629834254144,
+        "revocacao": 0.9416445623342176,
+        "f1": 0.9607577807848444
+      },
+      "cobertura": 0.9988564894225271
+    },
+    {
+      "ciclo": 2,
+      "blocos": 343,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 343,
+      "fronteiras_gabarito": 377,
+      "acertos": 342,
+      "precisao": 0.9970845481049563,
+      "revocacao": 0.9071618037135278,
+      "f1": 0.95,
+      "fins": {
+        "previstos": 342,
+        "gabarito": 377,
+        "fins_nao_localizados": 1,
+        "acertos": 338,
+        "precisao": 0.9883040935672515,
+        "revocacao": 0.896551724137931,
+        "f1": 0.9401947148817802
+      },
+      "blocos_exatos": {
+        "acertos": 331,
+        "precisao": 0.9650145772594753,
+        "revocacao": 0.8779840848806366,
+        "f1": 0.9194444444444446
+      },
+      "cobertura": 0.9987748100955648
+    },
+    {
+      "ciclo": 3,
+      "blocos": 300,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 300,
+      "fronteiras_gabarito": 377,
+      "acertos": 299,
+      "precisao": 0.9966666666666667,
+      "revocacao": 0.7931034482758621,
+      "f1": 0.8833087149187594,
+      "fins": {
+        "previstos": 300,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 298,
+        "precisao": 0.9933333333333333,
+        "revocacao": 0.7904509283819628,
+        "f1": 0.880354505169867
+      },
+      "blocos_exatos": {
+        "acertos": 296,
+        "precisao": 0.9866666666666667,
+        "revocacao": 0.7851458885941645,
+        "f1": 0.8744460856720827
+      },
+      "cobertura": 0.9978600016335866
+    },
+    {
+      "ciclo": 4,
+      "blocos": 374,
+      "ancoras_nao_localizadas": 1,
+      "fronteiras_previstas": 373,
+      "fronteiras_gabarito": 377,
+      "acertos": 372,
+      "precisao": 0.9973190348525469,
+      "revocacao": 0.986737400530504,
+      "f1": 0.992,
+      "fins": {
+        "previstos": 372,
+        "gabarito": 377,
+        "fins_nao_localizados": 1,
+        "acertos": 370,
+        "precisao": 0.9946236559139785,
+        "revocacao": 0.9814323607427056,
+        "f1": 0.9879839786381842
+      },
+      "blocos_exatos": {
+        "acertos": 367,
+        "precisao": 0.9839142091152815,
+        "revocacao": 0.9734748010610079,
+        "f1": 0.9786666666666666
+      },
+      "cobertura": 0.9909172588417872
+    },
+    {
+      "ciclo": 5,
+      "blocos": 371,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 371,
+      "fronteiras_gabarito": 377,
+      "acertos": 370,
+      "precisao": 0.9973045822102425,
+      "revocacao": 0.9814323607427056,
+      "f1": 0.9893048128342246,
+      "fins": {
+        "previstos": 371,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 370,
+        "precisao": 0.9973045822102425,
+        "revocacao": 0.9814323607427056,
+        "f1": 0.9893048128342246
+      },
+      "blocos_exatos": {
+        "acertos": 367,
+        "precisao": 0.9892183288409704,
+        "revocacao": 0.9734748010610079,
+        "f1": 0.9812834224598931
+      },
+      "cobertura": 0.9954096218247162
+    }
+  ]
+}

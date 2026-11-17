@@ -1,0 +1,191 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 89,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo antes de `CAPÍTULO I`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório da Resolução, de `O TRIBUNAL DE CONTAS DA UNIÃO` até `resolve:`, ficou sem bloco."
+        },
+        {
+          "onde": "incisos II a XI do `Art. 3º`, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II a XI da lista de definições ficaram sem bloco."
+        },
+        {
+          "onde": "incisos III a VIII do `Art. 9º`, págs. 3-4",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso II, os incisos III a VIII ficaram sem bloco."
+        },
+        {
+          "onde": "incisos II a VI do `Art. 14`, págs. 5-6",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II a VI ficaram sem bloco."
+        },
+        {
+          "onde": "incisos II a V do `§ 2º do Art. 10`, págs. 4-5",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II a V ficaram sem bloco."
+        },
+        {
+          "onde": "incisos I e II do `Art. 5º`, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos I e II, introduzidos após `Art. 5º ... nas seguintes situações:`, ficaram sem bloco."
+        },
+        {
+          "onde": "incisos I e II do `Parágrafo único do Art. 5º`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do parágrafo único contém os incisos I e II, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "incisos II e III do `§ 3º do Art. 8º`, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II e III ficaram sem bloco."
+        },
+        {
+          "onde": "incisos II e III do `§ 2º do Art. 9º`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II e III ficaram sem bloco."
+        },
+        {
+          "onde": "inciso II do `§ 6º do Art. 9º`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, o inciso II ficou sem bloco."
+        },
+        {
+          "onde": "incisos I a V do `Art. 11`, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 11 contém todos os seus incisos I a V, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "incisos II e III do `Art. 12`, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II e III ficaram sem bloco."
+        },
+        {
+          "onde": "incisos I e II do `Art. 21`, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 21 contém os incisos I e II, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "assinatura após `Art. 26`, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "O final do nome do Presidente, `REIRO`, e o cargo `Presidente` ficaram sem bloco, separando indevidamente a assinatura `RAIMUNDO CARREIRO`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`\n- No Art. 5º, pág. 2, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico` e em `II - quando houver indícios ou fundado receio`; ambos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie blocos próprios em `II - pessoais relativas à intimidade, vida privada, honra e imagem da pessoa; ou` e em `III - protegidas por sigilo estabelecido em legislação específica.`\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 132,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`\n- No Art. 5º, pág. 2, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico` e em `II - quando houver indícios ou fundado receio`; ambos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie blocos próprios em `II - pessoais relativas à intimidade, vida privada, honra e imagem da pessoa; ou` e em `III - protegidas por sigilo estabelecido em legislação específica.`\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`III - ultrassecreta: vinte e cinco anos; e`, § 2º do Art. 9º, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso III está marcado como texto sem bloco, embora seja uma unidade autônoma que deve iniciar bloco."
+        },
+        {
+          "onde": "`III - ultrassecrecreta: vinte e cinco anos; e`, págs. 4–4",
+          "tipo": "ancora",
+          "descricao": "Foi devolvido um bloco não localizado com âncora incorreta (`ultrassecrecreta`), que não corresponde ao texto fonte (`ultrassecreta`)."
+        },
+        {
+          "onde": "`XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XI contém também o marcador `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`§ 1º As informações a que se refere este artigo, relativas à intimidade, vida privada, honra e imagem:`, Art. 10, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º contém, sem corte anterior, o inciso `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- Termine o bloco de `XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, no Art. 3º, antes de `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO` (pág. 2) e inicie um bloco próprio no capítulo.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`\n- No § 1º do Art. 10, pág. 4, termine o bloco do parágrafo antes de `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados` e inicie um bloco próprio nesse inciso, embora ele venha na mesma linha após os dois-pontos.\n- No Art. 5º, pág. 2, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico` e em `II - quando houver indícios ou fundado receio`; ambos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie blocos próprios em `II - pessoais relativas à intimidade, vida privada, honra e imagem da pessoa; ou` e em `III - protegidas por sigilo estabelecido em legislação específica.`\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`; use exatamente a grafia `ultrassecreta`, sem acrescentar `cre`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 130,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- Termine o bloco de `XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, no Art. 3º, antes de `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO` (pág. 2) e inicie um bloco próprio no capítulo.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`\n- No § 1º do Art. 10, pág. 4, termine o bloco do parágrafo antes de `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados` e inicie um bloco próprio nesse inciso, embora ele venha na mesma linha após os dois-pontos.\n- No Art. 5º, pág. 2, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico` e em `II - quando houver indícios ou fundado receio`; ambos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie blocos próprios em `II - pessoais relativas à intimidade, vida privada, honra e imagem da pessoa; ou` e em `III - protegidas por sigilo estabelecido em legislação específica.`\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`; use exatamente a grafia `ultrassecreta`, sem acrescentar `cre`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.`, Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso IV do Art. 5º ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`II - podem ter autorizada sua divulgação ou acesso por terceiros`, § 1º do Art. 10, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso II do § 1º do Art. 10 ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`III - devem ter restrição de acesso pelo prazo máximo de cem anos`, § 1º do Art. 10, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso III do § 1º do Art. 10 ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- Termine o bloco de `XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, no Art. 3º, antes de `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO` (pág. 2) e inicie um bloco próprio no capítulo.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`\n- No § 1º do Art. 10, pág. 4, termine o bloco do parágrafo antes de `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados` e inicie um bloco próprio nesse inciso, embora ele venha na mesma linha após os dois-pontos.\n- No § 1º do Art. 10, pág. 4, inicie também blocos próprios em `II - podem ter autorizada sua divulgação ou acesso por terceiros` e em `III - devem ter restrição de acesso pelo prazo máximo de cem anos a contar da data de produção.`\n- No Art. 5º, págs. 2-3, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico`, em `II - quando houver indícios ou fundado receio`, em `III - quando a informação tiver sido requisitada` e em `IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.`; todos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie blocos próprios em `II - pessoais relativas à intimidade, vida privada, honra e imagem da pessoa; ou` e em `III - protegidas por sigilo estabelecido em legislação específica.`\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`; use exatamente a grafia `ultrassecreta`, sem acrescentar `cre`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 130,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- Termine o bloco de `XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, no Art. 3º, antes de `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO` (pág. 2) e inicie um bloco próprio no capítulo.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`\n- No § 1º do Art. 10, pág. 4, termine o bloco do parágrafo antes de `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados` e inicie um bloco próprio nesse inciso, embora ele venha na mesma linha após os dois-pontos.\n- No § 1º do Art. 10, pág. 4, inicie também blocos próprios em `II - podem ter autorizada sua divulgação ou acesso por terceiros` e em `III - devem ter restrição de acesso pelo prazo máximo de cem anos a contar da data de produção.`\n- No Art. 5º, págs. 2-3, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico`, em `II - quando houver indícios ou fundado receio`, em `III - quando a informação tiver sido requisitada` e em `IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.`; todos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie blocos próprios em `II - pessoais relativas à intimidade, vida privada, honra e imagem da pessoa; ou` e em `III - protegidas por sigilo estabelecido em legislação específica.`\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`; use exatamente a grafia `ultrassecreta`, sem acrescentar `cre`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "§ 3º do Art. 8º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O § 3º \"São consideradas sigilosas as informações:\" e seu inciso I \"imprescindíveis à segurança da sociedade ou do Estado;\" ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "inciso V do § 2º do Art. 10, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso V \"à proteção do interesse público e geral preponderante.\" ficou fora de bloco."
+        },
+        {
+          "onde": "CAPÍTULO IV e Art. 13, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" contém, sem corte próprio, o marcador e o texto de \"Art. 13. Compete às autoridades...\"."
+        },
+        {
+          "onde": "§ 3º do Art. 8º, pág. 3",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco não localizado com início em \"§ 3º São consideradas sigilosas as informações: I - imprescindíveis...\"; o conteúdo correspondente também aparece sem bloco no texto marcado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- Termine o bloco de `XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, no Art. 3º, antes de `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO` (pág. 2) e inicie um bloco próprio no capítulo.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`; inicie obrigatoriamente o bloco de `V - à proteção do interesse público e geral preponderante.` mesmo que ele suceda `ou` na mesma linha da pág. 5.\n- No § 1º do Art. 10, pág. 4, termine o bloco do parágrafo antes de `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados` e inicie um bloco próprio nesse inciso, embora ele venha na mesma linha após os dois-pontos.\n- No § 1º do Art. 10, pág. 4, inicie também blocos próprios em `II - podem ter autorizada sua divulgação ou acesso por terceiros` e em `III - devem ter restrição de acesso pelo prazo máximo de cem anos a contar da data de produção.`\n- No Art. 5º, págs. 2-3, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico`, em `II - quando houver indícios ou fundado receio`, em `III - quando a informação tiver sido requisitada` e em `IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.`; todos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie um bloco próprio no próprio parágrafo, `§ 3º São consideradas sigilosas as informações:`, e depois inicie blocos próprios em cada inciso de `I - imprescindíveis à segurança da sociedade ou do Estado;` até `III - protegidas por sigilo estabelecido em legislação específica.`. Localize esses blocos pelo texto efetivamente lido, sem devolvê-los como âncoras não encontradas.\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`; use exatamente a grafia `ultrassecreta`, sem acrescentar `cre`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- Na pág. 5, termine o bloco de `CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO` antes de `Art. 13. Compete às autoridades e aos dirigentes da Secretaria do Tribunal` e inicie um bloco próprio no Art. 13.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 133,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` até `considerando os estudos e as deliberações constantes no processo 020.596/2017-0, resolve:`.\n- No Art. 3º, pág. 2, inicie um bloco próprio em cada inciso de `II - segurança da informação:` até `XI - documento eletrônico:`; não deixe esses incisos fora de bloco.\n- Termine o bloco de `XI - documento eletrônico: documento armazenado sob a forma de arquivo eletrônico`, no Art. 3º, antes de `CAPÍTULO II — DA CLASSIFICAÇÃO DA INFORMAÇÃO` (pág. 2) e inicie um bloco próprio no capítulo.\n- No Art. 9º, págs. 3-4, inicie um bloco próprio em cada inciso de `III - pôr em risco a vida, a segurança ou a saúde da população;` até `VIII - comprometer atividades de inteligência do Tribunal`.\n- No Art. 14, págs. 5-6, inicie um bloco próprio em cada inciso de `II - grau de sigilo, de acordo com o art. 9º` até `VI - identificação do responsável pela classificação.`\n- No § 2º do Art. 10, págs. 4-5, inicie um bloco próprio em cada inciso de `II - à realização de estatísticas e pesquisas científicas` até `V - à proteção do interesse público e geral preponderante.`; inicie obrigatoriamente o bloco de `V - à proteção do interesse público e geral preponderante.` mesmo que ele suceda `ou` na mesma linha da pág. 5.\n- No § 1º do Art. 10, pág. 4, termine o bloco do parágrafo antes de `I - devem ter o seu acesso restrito a agentes públicos legalmente autorizados` e inicie um bloco próprio nesse inciso, embora ele venha na mesma linha após os dois-pontos.\n- No § 1º do Art. 10, pág. 4, inicie também blocos próprios em `II - podem ter autorizada sua divulgação ou acesso por terceiros` e em `III - devem ter restrição de acesso pelo prazo máximo de cem anos a contar da data de produção.`\n- No Art. 5º, págs. 2-3, inicie blocos próprios em `I - quando a informação for armazenada sob a forma de documento eletrônico`, em `II - quando houver indícios ou fundado receio`, em `III - quando a informação tiver sido requisitada` e em `IV- quando da publicação das informações na transparência ativa ou outras iniciativas para promover dados abertos.`; todos sucedem os dois-pontos do artigo e continuam sendo incisos autônomos.\n- No Parágrafo único do Art. 5º, pág. 3, termine o bloco do parágrafo antes de `I - documentos não classificados pela origem` e inicie também um bloco novo em `II - outras hipóteses previstas em regulamentação específica`.\n- No § 3º do Art. 8º, pág. 3, inicie um bloco próprio no próprio parágrafo, `§ 3º São consideradas sigilosas as informações:`, e depois inicie blocos próprios em cada inciso de `I - imprescindíveis à segurança da sociedade ou do Estado;` até `III - protegidas por sigilo estabelecido em legislação específica.`. Localize esses blocos pelo texto efetivamente lido, sem devolvê-los como âncoras não encontradas.\n- No § 2º do Art. 9º, pág. 4, inicie blocos próprios em `II - secreta: quinze anos;` e em `III - ultrassecreta: vinte e cinco anos; e`; use exatamente a grafia `ultrassecreta`, sem acrescentar `cre`.\n- No § 6º do Art. 9º, pág. 4, inicie um bloco novo em `II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.`\n- No Art. 11, pág. 5, termine o bloco do artigo antes de `I - de natureza fiscal ou bancária;` e inicie um bloco próprio em cada inciso até `V - aquelas relativas a denúncias apresentadas ao TCU`.\n- No Art. 12, pág. 5, inicie blocos próprios em `II - no grau secreto, das autoridades e colegiados` e em `III - no grau reservado e nas de natureza pessoal`.\n- Na pág. 5, termine o bloco de `CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO` antes de `Art. 13. Compete às autoridades e aos dirigentes da Secretaria do Tribunal` e inicie um bloco próprio no Art. 13.\n- No Art. 21, pág. 7, termine o bloco do artigo antes de `I - sigilosas:` e inicie outro bloco em `II - públicas:`.\n- Mantenha integralmente no bloco de `Art. 26. Esta Resolução entra em vigor na data de sua publicação.`, pág. 7, a assinatura final `RAIMUNDO CARREIRO` e o cargo `Presidente`; não separe `REIRO` do restante do nome.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-18201/NORMA-18201_ciclo5.json"
+  }
+]

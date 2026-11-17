@@ -1,0 +1,126 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 71,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e encerrado em \"RESOLVE:\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Texto normativo introdutório do documento ficou fora de qualquer bloco antes de \"CAPÍTULO I\"."
+        },
+        {
+          "onde": "Incisos III, IV e V do art. 7º, págs. 3 e 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"III - embasamento para a opinião sobre a execução orçamentária\" contém também os marcadores irmãos \"IV - embasamento para a opinião sobre os balanços gerais da União\" e \"V - monitoramento das deliberações constantes dos pareceres prévios de exercícios anteriores\"."
+        },
+        {
+          "onde": "§ 1º do art. 13, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:\" contém os incisos I e II, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "§§ 4º e 5º do art. 13, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 4° A opinião de auditoria dos balanços gerais da União\" contém também o marcador \"§ 5° Para os fins do disposto no parágrafo anterior\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que abre com \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e termina em \"RESOLVE:\" (pág. 1), antes de iniciar o bloco de \"CAPÍTULO I\".\n- No art. 7º, termine o bloco de \"III - embasamento para a opinião sobre a execução orçamentária\" antes de \"IV - embasamento para a opinião sobre os balanços gerais da União\" (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No § 1º do art. 13, inicie blocos próprios em \"I - tendo sido obtida evidência de auditoria adequada e suficiente\" e em \"II - não tendo sido obtida evidência adequada e suficiente de auditoria\" (pág. 4).\n- No art. 13, termine o bloco de \"§ 4° A opinião de auditoria dos balanços gerais da União\" imediatamente antes de \"§ 5° Para os fins do disposto no parágrafo anterior\" (pág. 4) e inicie um bloco próprio no § 5º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21260/NORMA-21260_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 73,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que abre com \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e termina em \"RESOLVE:\" (pág. 1), antes de iniciar o bloco de \"CAPÍTULO I\".\n- No art. 7º, termine o bloco de \"III - embasamento para a opinião sobre a execução orçamentária\" antes de \"IV - embasamento para a opinião sobre os balanços gerais da União\" (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No § 1º do art. 13, inicie blocos próprios em \"I - tendo sido obtida evidência de auditoria adequada e suficiente\" e em \"II - não tendo sido obtida evidência adequada e suficiente de auditoria\" (pág. 4).\n- No art. 13, termine o bloco de \"§ 4° A opinião de auditoria dos balanços gerais da União\" imediatamente antes de \"§ 5° Para os fins do disposto no parágrafo anterior\" (pág. 4) e inicie um bloco próprio no § 5º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco de \"Art. 3º São etapas do processo das contas do Presidente da República\" contém, sem blocos próprios, \"§ 1º A Unidade Técnica especializada\", \"§ 2º O Ministério Público junto ao Tribunal de Contas da União\", \"Art. 4º Identificados no relatório preliminar\" e \"§ 1º Na hipótese prevista no caput\" do art. 4º."
+        },
+        {
+          "onde": "Inciso VII do art. 2º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco de \"VII - efeitos generalizados\" contém também as alíneas \"a) os que não estão restritos\", \"b) se estiverem restritos\" e \"c) são fundamentais\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que abre com \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e termina em \"RESOLVE:\" (pág. 1), antes de iniciar o bloco de \"CAPÍTULO I\".\n- No art. 3º, termine o bloco de \"Art. 3º São etapas do processo das contas do Presidente da República\" antes de \"§ 1º A Unidade Técnica especializada\" (pág. 2) e inicie bloco próprio no § 1º; termine-o antes de \"§ 2º O Ministério Público junto ao Tribunal de Contas da União\" e inicie bloco próprio no § 2º; termine-o antes de \"Art. 4º Identificados no relatório preliminar\" e inicie bloco próprio no art. 4º; termine o bloco do art. 4º antes de \"§ 1º Na hipótese prevista no caput\" e inicie bloco próprio nesse parágrafo (pág. 2).\n- No inciso \"VII - efeitos generalizados\" do art. 2º, termine o bloco antes de \"a) os que não estão restritos\" e inicie bloco próprio nessa alínea; termine-o antes de \"b) se estiverem restritos\" e inicie bloco próprio nessa alínea; termine-o antes de \"c) são fundamentais\" e inicie bloco próprio nessa alínea (pág. 2).\n- No art. 7º, termine o bloco de \"III - embasamento para a opinião sobre a execução orçamentária\" antes de \"IV - embasamento para a opinião sobre os balanços gerais da União\" (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No § 1º do art. 13, inicie blocos próprios em \"I - tendo sido obtida evidência de auditoria adequada e suficiente\" e em \"II - não tendo sido obtida evidência adequada e suficiente de auditoria\" (pág. 4).\n- No art. 13, termine o bloco de \"§ 4° A opinião de auditoria dos balanços gerais da União\" imediatamente antes de \"§ 5° Para os fins do disposto no parágrafo anterior\" (pág. 4) e inicie um bloco próprio no § 5º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21260/NORMA-21260_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que abre com \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições\" e termina em \"RESOLVE:\" (pág. 1), antes de iniciar o bloco de \"CAPÍTULO I\".\n- No art. 3º, termine o bloco de \"Art. 3º São etapas do processo das contas do Presidente da República\" antes de \"§ 1º A Unidade Técnica especializada\" (pág. 2) e inicie bloco próprio no § 1º; termine-o antes de \"§ 2º O Ministério Público junto ao Tribunal de Contas da União\" e inicie bloco próprio no § 2º; termine-o antes de \"Art. 4º Identificados no relatório preliminar\" e inicie bloco próprio no art. 4º; termine o bloco do art. 4º antes de \"§ 1º Na hipótese prevista no caput\" e inicie bloco próprio nesse parágrafo (pág. 2).\n- No inciso \"VII - efeitos generalizados\" do art. 2º, termine o bloco antes de \"a) os que não estão restritos\" e inicie bloco próprio nessa alínea; termine-o antes de \"b) se estiverem restritos\" e inicie bloco próprio nessa alínea; termine-o antes de \"c) são fundamentais\" e inicie bloco próprio nessa alínea (pág. 2).\n- No art. 7º, termine o bloco de \"III - embasamento para a opinião sobre a execução orçamentária\" antes de \"IV - embasamento para a opinião sobre os balanços gerais da União\" (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No § 1º do art. 13, inicie blocos próprios em \"I - tendo sido obtida evidência de auditoria adequada e suficiente\" e em \"II - não tendo sido obtida evidência adequada e suficiente de auditoria\" (pág. 4).\n- No art. 13, termine o bloco de \"§ 4° A opinião de auditoria dos balanços gerais da União\" imediatamente antes de \"§ 5° Para os fins do disposto no parágrafo anterior\" (pág. 4) e inicie um bloco próprio no § 5º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`III - materialidade`, Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso III contém também as alíneas `a) qualitativa` e `b) quantitativa`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`CAPÍTULO IV — DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo IV contém também o início do `Art. 10. O parecer prévio sobre as contas prestadas pelo Presidente da República`, que deve ser um bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No inciso `III - materialidade` do art. 2º, termine o bloco antes de `a) qualitativa, baseado na sua natureza` e inicie bloco próprio nessa alínea; termine-o antes de `b) quantitativa, considerando sua magnitude` e inicie bloco próprio nessa alínea (pág. 1).\n- No `CAPÍTULO IV — DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA`, termine o bloco imediatamente antes de `Art. 10. O parecer prévio sobre as contas prestadas pelo Presidente da República` e inicie bloco próprio no art. 10 (pág. 3).\n- Crie um bloco inicial para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` e termina em `RESOLVE:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No art. 3º, termine o bloco de `Art. 3º São etapas do processo das contas do Presidente da República` antes de `§ 1º A Unidade Técnica especializada` (pág. 2) e inicie bloco próprio no § 1º; termine-o antes de `§ 2º O Ministério Público junto ao Tribunal de Contas da União` e inicie bloco próprio no § 2º; termine-o antes de `Art. 4º Identificados no relatório preliminar` e inicie bloco próprio no art. 4º; termine o bloco do art. 4º antes de `§ 1º Na hipótese prevista no caput` e inicie bloco próprio nesse parágrafo (pág. 2).\n- No inciso `VII - efeitos generalizados` do art. 2º, termine o bloco antes de `a) os que não estão restritos` e inicie bloco próprio nessa alínea; termine-o antes de `b) se estiverem restritos` e inicie bloco próprio nessa alínea; termine-o antes de `c) são fundamentais` e inicie bloco próprio nessa alínea (pág. 2).\n- No art. 7º, termine o bloco de `III - embasamento para a opinião sobre a execução orçamentária` antes de `IV - embasamento para a opinião sobre os balanços gerais da União` (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No § 1º do art. 13, inicie blocos próprios em `I - tendo sido obtida evidência de auditoria adequada e suficiente` e em `II - não tendo sido obtida evidência adequada e suficiente de auditoria` (pág. 4).\n- No art. 13, termine o bloco de `§ 4° A opinião de auditoria dos balanços gerais da União` imediatamente antes de `§ 5° Para os fins do disposto no parágrafo anterior` (pág. 4) e inicie um bloco próprio no § 5º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21260/NORMA-21260_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 70,
+    "insights_aplicados": "- No inciso `III - materialidade` do art. 2º, termine o bloco antes de `a) qualitativa, baseado na sua natureza` e inicie bloco próprio nessa alínea; termine-o antes de `b) quantitativa, considerando sua magnitude` e inicie bloco próprio nessa alínea (pág. 1).\n- No `CAPÍTULO IV — DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA`, termine o bloco imediatamente antes de `Art. 10. O parecer prévio sobre as contas prestadas pelo Presidente da República` e inicie bloco próprio no art. 10 (pág. 3).\n- Crie um bloco inicial para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` e termina em `RESOLVE:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No art. 3º, termine o bloco de `Art. 3º São etapas do processo das contas do Presidente da República` antes de `§ 1º A Unidade Técnica especializada` (pág. 2) e inicie bloco próprio no § 1º; termine-o antes de `§ 2º O Ministério Público junto ao Tribunal de Contas da União` e inicie bloco próprio no § 2º; termine-o antes de `Art. 4º Identificados no relatório preliminar` e inicie bloco próprio no art. 4º; termine o bloco do art. 4º antes de `§ 1º Na hipótese prevista no caput` e inicie bloco próprio nesse parágrafo (pág. 2).\n- No inciso `VII - efeitos generalizados` do art. 2º, termine o bloco antes de `a) os que não estão restritos` e inicie bloco próprio nessa alínea; termine-o antes de `b) se estiverem restritos` e inicie bloco próprio nessa alínea; termine-o antes de `c) são fundamentais` e inicie bloco próprio nessa alínea (pág. 2).\n- No art. 7º, termine o bloco de `III - embasamento para a opinião sobre a execução orçamentária` antes de `IV - embasamento para a opinião sobre os balanços gerais da União` (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No § 1º do art. 13, inicie blocos próprios em `I - tendo sido obtida evidência de auditoria adequada e suficiente` e em `II - não tendo sido obtida evidência adequada e suficiente de auditoria` (pág. 4).\n- No art. 13, termine o bloco de `§ 4° A opinião de auditoria dos balanços gerais da União` imediatamente antes de `§ 5° Para os fins do disposto no parágrafo anterior` (pág. 4) e inicie um bloco próprio no § 5º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:`, art. 14, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém, sem blocos próprios, os incisos `I - impropriedades;`, `II - irregularidades que, pela materialidade e gravidade...` e `III - distorção materialmente relevante...`."
+        },
+        {
+          "onde": "`b) ao atingimento das metas fiscais estabelecidas...` e `c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016...`, art. 14, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "as alíneas b e c do inciso VI não foram incluídas em nenhum bloco."
+        },
+        {
+          "onde": "`CAPÍTULO III — DA INSTRUÇÃO DO PROCESSO DE APRECIAÇÃO DAS CONTAS DO PRESIDENTE DA REPÚBLICA`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o início do `Art. 8º Além dos elementos contidos na prestação de contas...`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:`, art. 13, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém também o inciso `I - tendo sido obtida evidência de auditoria adequada e suficiente...`, sem corte antes dele."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No `§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:`, do art. 14, termine o bloco antes de `I - impropriedades;` e inicie bloco próprio nesse inciso; termine-o antes de `II - irregularidades que, pela materialidade e gravidade` e inicie bloco próprio nesse inciso; termine-o antes de `III - distorção materialmente relevante` e inicie bloco próprio nesse inciso (pág. 5).\n- No inciso `VI - inobservância dos princípios e regras constitucionais e infraconstitucionais relativos à gestão fiscal responsável`, do § 2º do art. 14, inicie bloco próprio em `b) ao atingimento das metas fiscais estabelecidas na lei de diretrizes orçamentárias` e em `c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016` (pág. 5).\n- No `CAPÍTULO III — DA INSTRUÇÃO DO PROCESSO DE APRECIAÇÃO DAS CONTAS DO PRESIDENTE DA REPÚBLICA`, termine o bloco imediatamente antes de `Art. 8º Além dos elementos contidos na prestação de contas do Presidente da República` e inicie bloco próprio no art. 8º (pág. 3).\n- No § 1º do art. 13, termine o bloco de `§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:` antes de `I - tendo sido obtida evidência de auditoria adequada e suficiente` e inicie bloco próprio nesse inciso; mantenha também bloco próprio em `II - não tendo sido obtida evidência adequada e suficiente de auditoria` (pág. 4).\n- No inciso `III - materialidade` do art. 2º, termine o bloco antes de `a) qualitativa, baseado na sua natureza` e inicie bloco próprio nessa alínea; termine-o antes de `b) quantitativa, considerando sua magnitude` e inicie bloco próprio nessa alínea (pág. 1).\n- No `CAPÍTULO IV — DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA`, termine o bloco imediatamente antes de `Art. 10. O parecer prévio sobre as contas prestadas pelo Presidente da República` e inicie bloco próprio no art. 10 (pág. 3).\n- Crie um bloco inicial para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` e termina em `RESOLVE:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No art. 3º, termine o bloco de `Art. 3º São etapas do processo das contas do Presidente da República` antes de `§ 1º A Unidade Técnica especializada` (pág. 2) e inicie bloco próprio no § 1º; termine-o antes de `§ 2º O Ministério Público junto ao Tribunal de Contas da União` e inicie bloco próprio no § 2º; termine-o antes de `Art. 4º Identificados no relatório preliminar` e inicie bloco próprio no art. 4º; termine o bloco do art. 4º antes de `§ 1º Na hipótese prevista no caput` e inicie bloco próprio nesse parágrafo (pág. 2).\n- No inciso `VII - efeitos generalizados` do art. 2º, termine o bloco antes de `a) os que não estão restritos` e inicie bloco próprio nessa alínea; termine-o antes de `b) se estiverem restritos` e inicie bloco próprio nessa alínea; termine-o antes de `c) são fundamentais` e inicie bloco próprio nessa alínea (pág. 2).\n- No art. 7º, termine o bloco de `III - embasamento para a opinião sobre a execução orçamentária` antes de `IV - embasamento para a opinião sobre os balanços gerais da União` (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No art. 13, termine o bloco de `§ 4° A opinião de auditoria dos balanços gerais da União` imediatamente antes de `§ 5° Para os fins do disposto no parágrafo anterior` (pág. 4) e inicie um bloco próprio no § 5º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21260/NORMA-21260_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 77,
+    "insights_aplicados": "- No `§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:`, do art. 14, termine o bloco antes de `I - impropriedades;` e inicie bloco próprio nesse inciso; termine-o antes de `II - irregularidades que, pela materialidade e gravidade` e inicie bloco próprio nesse inciso; termine-o antes de `III - distorção materialmente relevante` e inicie bloco próprio nesse inciso (pág. 5).\n- No inciso `VI - inobservância dos princípios e regras constitucionais e infraconstitucionais relativos à gestão fiscal responsável`, do § 2º do art. 14, inicie bloco próprio em `b) ao atingimento das metas fiscais estabelecidas na lei de diretrizes orçamentárias` e em `c) ao limite de gastos estabelecido pela Emenda Constitucional 95/2016` (pág. 5).\n- No `CAPÍTULO III — DA INSTRUÇÃO DO PROCESSO DE APRECIAÇÃO DAS CONTAS DO PRESIDENTE DA REPÚBLICA`, termine o bloco imediatamente antes de `Art. 8º Além dos elementos contidos na prestação de contas do Presidente da República` e inicie bloco próprio no art. 8º (pág. 3).\n- No § 1º do art. 13, termine o bloco de `§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:` antes de `I - tendo sido obtida evidência de auditoria adequada e suficiente` e inicie bloco próprio nesse inciso; mantenha também bloco próprio em `II - não tendo sido obtida evidência adequada e suficiente de auditoria` (pág. 4).\n- No inciso `III - materialidade` do art. 2º, termine o bloco antes de `a) qualitativa, baseado na sua natureza` e inicie bloco próprio nessa alínea; termine-o antes de `b) quantitativa, considerando sua magnitude` e inicie bloco próprio nessa alínea (pág. 1).\n- No `CAPÍTULO IV — DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA`, termine o bloco imediatamente antes de `Art. 10. O parecer prévio sobre as contas prestadas pelo Presidente da República` e inicie bloco próprio no art. 10 (pág. 3).\n- Crie um bloco inicial para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições` e termina em `RESOLVE:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No art. 3º, termine o bloco de `Art. 3º São etapas do processo das contas do Presidente da República` antes de `§ 1º A Unidade Técnica especializada` (pág. 2) e inicie bloco próprio no § 1º; termine-o antes de `§ 2º O Ministério Público junto ao Tribunal de Contas da União` e inicie bloco próprio no § 2º; termine-o antes de `Art. 4º Identificados no relatório preliminar` e inicie bloco próprio no art. 4º; termine o bloco do art. 4º antes de `§ 1º Na hipótese prevista no caput` e inicie bloco próprio nesse parágrafo (pág. 2).\n- No inciso `VII - efeitos generalizados` do art. 2º, termine o bloco antes de `a) os que não estão restritos` e inicie bloco próprio nessa alínea; termine-o antes de `b) se estiverem restritos` e inicie bloco próprio nessa alínea; termine-o antes de `c) são fundamentais` e inicie bloco próprio nessa alínea (pág. 2).\n- No art. 7º, termine o bloco de `III - embasamento para a opinião sobre a execução orçamentária` antes de `IV - embasamento para a opinião sobre os balanços gerais da União` (pág. 3) e inicie um bloco próprio em cada um dos incisos IV e V.\n- No art. 13, termine o bloco de `§ 4° A opinião de auditoria dos balanços gerais da União` imediatamente antes de `§ 5° Para os fins do disposto no parágrafo anterior` (pág. 4) e inicie um bloco próprio no § 5º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21260/NORMA-21260_ciclo5.json"
+  }
+]

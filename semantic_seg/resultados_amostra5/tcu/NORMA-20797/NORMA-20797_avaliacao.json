@@ -1,0 +1,61 @@
+{
+  "prefixo": "resultados_amostra5/tcu/NORMA-20797/NORMA-20797",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/NORMA-20797.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 55,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 55,
+      "fronteiras_gabarito": 66,
+      "acertos": 55,
+      "precisao": 1.0,
+      "revocacao": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "fins": {
+        "previstos": 55,
+        "gabarito": 66,
+        "fins_nao_localizados": 0,
+        "acertos": 55,
+        "precisao": 1.0,
+        "revocacao": 0.8333333333333334,
+        "f1": 0.9090909090909091
+      },
+      "blocos_exatos": {
+        "acertos": 52,
+        "precisao": 0.9454545454545454,
+        "revocacao": 0.7878787878787878,
+        "f1": 0.8595041322314049
+      },
+      "cobertura": 0.8793129425945457
+    },
+    {
+      "ciclo": 2,
+      "blocos": 65,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 65,
+      "fronteiras_gabarito": 66,
+      "acertos": 65,
+      "precisao": 1.0,
+      "revocacao": 0.9848484848484849,
+      "f1": 0.9923664122137404,
+      "fins": {
+        "previstos": 65,
+        "gabarito": 66,
+        "fins_nao_localizados": 0,
+        "acertos": 65,
+        "precisao": 1.0,
+        "revocacao": 0.9848484848484849,
+        "f1": 0.9923664122137404
+      },
+      "blocos_exatos": {
+        "acertos": 64,
+        "precisao": 0.9846153846153847,
+        "revocacao": 0.9696969696969697,
+        "f1": 0.9770992366412214
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

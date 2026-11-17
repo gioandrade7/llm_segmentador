@@ -1,0 +1,107 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo antes de “Art. 1º Ao Tribunal de Contas da União compete...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório do documento, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e encerrado em “resolve:”, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "“IX - Plano Anual de Outorga Florestal (PAOF)...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IX contém também os incisos “X - Unidade Responsável” e “XI - Órgão Gestor”, os Arts. 3º, 4º e 5º e o inciso “I - o primeiro estágio terá por objetivo...”, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20186/NORMA-20186_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`I - floresta pública: floresta, natural ou plantada...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso I do Art. 2º contém também os incisos irmãos `II - manejo florestal sustentável`, `III - floresta nacional` e `IV - gestão direta`, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20186/NORMA-20186_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco de inciso V contém, sem blocos próprios, as alíneas `a) lista dos requerimentos...`, `b) comunicação quando da assinatura...` e `c) relatório sintético...`."
+        },
+        {
+          "onde": "após `Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.`, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "a assinatura `GUILHERME PALMEIRA`, o cargo `Presidente` e a nota de publicação permanecem fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”.\n- No inciso “V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70...” (pág. 4), termine o bloco antes de “a) lista dos requerimentos de qualificação...” e inicie blocos próprios em “a) lista dos requerimentos de qualificação...”, “b) comunicação quando da assinatura...” e “c) relatório sintético contendo a relação das vistorias...”, mesmo que as alíneas estejam na continuação da mesma linha.\n- Inclua a assinatura “GUILHERME PALMEIRA”, o cargo “Presidente” e a nota “(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)” (pág. 5) no bloco iniciado em “Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.”"
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20186/NORMA-20186_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”.\n- No inciso “V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70...” (pág. 4), termine o bloco antes de “a) lista dos requerimentos de qualificação...” e inicie blocos próprios em “a) lista dos requerimentos de qualificação...”, “b) comunicação quando da assinatura...” e “c) relatório sintético contendo a relação das vistorias...”, mesmo que as alíneas estejam na continuação da mesma linha.\n- Inclua a assinatura “GUILHERME PALMEIRA”, o cargo “Presidente” e a nota “(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)” (pág. 5) no bloco iniciado em “Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.”",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso IV do Art. 7º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “IV - para as concessões de que tratam os incisos I e II do art. 78...” contém, sem blocos próprios, as alíneas “a) em até 30 (trinta) dias antes da publicação dos editais...” e “b) em até 5 (cinco) dias após a publicação dos editais...”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”.\n- No inciso IV do Art. 7º (pág. 3), termine o bloco de “IV - para as concessões de que tratam os incisos I e II do art. 78...” antes de “a) em até 30 (trinta) dias antes da publicação dos editais...” e inicie blocos próprios em “a) em até 30 (trinta) dias antes da publicação dos editais...” e “b) em até 5 (cinco) dias após a publicação dos editais...”.\n- No inciso “V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70...” (pág. 4), termine o bloco antes de “a) lista dos requerimentos de qualificação...” e inicie blocos próprios em “a) lista dos requerimentos de qualificação...”, “b) comunicação quando da assinatura...” e “c) relatório sintético contendo a relação das vistorias...”, mesmo que as alíneas estejam na continuação da mesma linha.\n- Inclua a assinatura “GUILHERME PALMEIRA”, o cargo “Presidente” e a nota “(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)” (pág. 5) no bloco iniciado em “Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.”"
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20186/NORMA-20186_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...”, “Art. 5º O controle das concessões florestais...” e “I - o primeiro estágio terá por objetivo...”.\n- No inciso IV do Art. 7º (pág. 3), termine o bloco de “IV - para as concessões de que tratam os incisos I e II do art. 78...” antes de “a) em até 30 (trinta) dias antes da publicação dos editais...” e inicie blocos próprios em “a) em até 30 (trinta) dias antes da publicação dos editais...” e “b) em até 5 (cinco) dias após a publicação dos editais...”.\n- No inciso “V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70...” (pág. 4), termine o bloco antes de “a) lista dos requerimentos de qualificação...” e inicie blocos próprios em “a) lista dos requerimentos de qualificação...”, “b) comunicação quando da assinatura...” e “c) relatório sintético contendo a relação das vistorias...”, mesmo que as alíneas estejam na continuação da mesma linha.\n- Inclua a assinatura “GUILHERME PALMEIRA”, o cargo “Presidente” e a nota “(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)” (pág. 5) no bloco iniciado em “Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.”",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 5º O controle das concessões florestais será prévio e concomitante...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no Art. 5º contém também o inciso `I - o primeiro estágio terá por objetivo verificar...`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`e) em até 5 (cinco) dias após sua expedição...`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "A alínea e) do inciso IV do Art. 7º ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:”, antes de iniciar o bloco de “Art. 1º Ao Tribunal de Contas da União compete...”.\n- No Art. 2º (pág. 1), termine o bloco de “I - floresta pública: floresta, natural ou plantada...” antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II - manejo florestal sustentável”, “III - floresta nacional” e “IV - gestão direta”.\n- Termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF)...” (pág. 2) antes de “X - Unidade Responsável” e inicie blocos próprios em “X - Unidade Responsável”, “XI - Órgão Gestor”, “Art. 3º O controle da gestão de florestas públicas...”, “Art. 4º Decisão normativa disciplinará...” e “Art. 5º O controle das concessões florestais...”.\n- No Art. 5º (págs. 2-3), termine o bloco de “Art. 5º O controle das concessões florestais será prévio e concomitante...” imediatamente antes de “I - o primeiro estágio terá por objetivo verificar...” e inicie um bloco próprio nesse inciso; mantenha também blocos próprios para os incisos II, III, IV e V.\n- No inciso IV do Art. 7º (pág. 3), termine o bloco de “IV - para as concessões de que tratam os incisos I e II do art. 78...” antes de “a) em até 30 (trinta) dias antes da publicação dos editais...” e inicie blocos próprios em “a) em até 30 (trinta) dias antes da publicação dos editais...”, “b) em até 5 (cinco) dias após a publicação dos editais...”, “c) quando solicitado, em relação a unidades de manejo...” e “d) em até 5 (cinco) dias após assinatura dos contratos de concessão...”.\n- No inciso IV do Art. 7º (pág. 4), inicie um bloco próprio em “e) em até 5 (cinco) dias após sua expedição, a Licença de Operação (LO)...”, imediatamente após o término da alínea “d)”.\n- No inciso “V - para as concessões das unidades de manejo enquadradas no § 4º do art. 70...” (pág. 4), termine o bloco antes de “a) lista dos requerimentos de qualificação...” e inicie blocos próprios em “a) lista dos requerimentos de qualificação...”, “b) comunicação quando da assinatura...” e “c) relatório sintético contendo a relação das vistorias...”, mesmo que as alíneas estejam na continuação da mesma linha.\n- Inclua a assinatura “GUILHERME PALMEIRA”, o cargo “Presidente” e a nota “(Publicada no DOU de 6/11/2006, Seção 1, pág. 82)” (pág. 5) no bloco iniciado em “Art. 14 Esta Instrução Normativa entra em vigor na data de sua publicação.”"
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20186/NORMA-20186_ciclo5.json"
+  }
+]

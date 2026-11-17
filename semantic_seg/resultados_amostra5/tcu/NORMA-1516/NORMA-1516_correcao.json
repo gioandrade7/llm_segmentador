@@ -1,0 +1,95 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`PORTARIA-SEMEC Nº 2, DE 31 de março de 2019`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco da Portaria contém também o marcador e o texto de `Art. 1º A estrutura e as competências da Secretaria de Métodos e Suporte ao Controle Externo (Semec)...`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`VIII - disseminar boas práticas de controle externo...`, do Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso VIII contém também os incisos `IX - contribuir para a definição...`, `X - elaborar conteúdos...` e `XI - manifestar-se...`, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "`X - articular com o Instituto Serzedello Corrêa (ISC)...`, do Art. 4º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos X a XV do Art. 4º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`XIII - promover a integração entre os atores internos e externos...`, do Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos XIII a XV do Art. 5º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`I - propor, aperfeiçoar, atualizar e disseminar normas...`, do Art. 6º, págs. 3-4",
+          "tipo": "sem_bloco",
+          "descricao": "Todos os incisos apresentados do Art. 6º — I, II, IV a IX, XI a XIII e XV — ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 6º Compete à Dipron:`, págs. 3-4",
+          "tipo": "sequencia",
+          "descricao": "A sequência de incisos salta de II para IV, de IX para XI e de XIII para XV."
+        },
+        {
+          "onde": "`IV - gerir mudanças, evoluções e correções nas soluções de TI...`, do Art. 8º, págs. 4-5",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV a IX do Art. 8º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`IX - comunicar à Secretaria de Comunicação (Secom)...`, do Art. 10, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IX a XIII do Art. 10 ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `PORTARIA-SEMEC Nº 2, DE 31 de março de 2019` antes de `Art. 1º A estrutura e as competências da Secretaria de Métodos e Suporte ao Controle Externo (Semec)...` (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º, inicie um bloco próprio em cada inciso efetivamente presente: `I - propor, aperfeiçoar...`, `II - disseminar orientação...`, `IV - participar do levantamento...`, `V - obter, sistematizar...`, `VI - contribuir para a melhoria...`, `VII - promover a integração...`, `VIII - acompanhar, propor normas...`, `IX - atuar, em articulação...`, `XI – articular com a Secretaria...`, `XII - acompanhar a aderência...`, `XIII – supervisionar o planejamento...` e `XV - orientar e prestar suporte técnico...` (págs. 3-4).\n- No Art. 8º, inicie um bloco próprio em cada inciso `IV - gerir mudanças...`, `V - conceber novas soluções...`, `VI - manifestar-se previamente...`, `VII - atuar em articulação...`, `VIII - coordenar os trabalhos...` e `IX - manifestar-se sobre a colocação...` (págs. 4-5).\n- No Art. 10, inicie um bloco próprio em cada inciso `IX - comunicar à Secretaria de Comunicação...`, `X - apoiar a realização...`, `XI - manter arquivo...`, `XII - manter atualizadas...` e `XIII - desempenhar outras atividades...` (pág. 5).\n- No Art. 4º, inicie um bloco próprio em cada inciso `X - articular com o Instituto Serzedello Corrêa...` até `XV - desempenhar outras atividades...` (pág. 2).\n- No Art. 5º, inicie um bloco próprio em cada inciso `XIII - promover a integração entre os atores internos e externos...`, `XIV - promover a integração do processo...` e `XV - acompanhar o processo de entrega...` (pág. 3).\n- No Art. 2º, termine o bloco de `VIII - disseminar boas práticas de controle externo...` antes de `IX - contribuir para a definição...` e inicie blocos próprios também em `X - elaborar conteúdos...` e `XI - manifestar-se...` (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1516/NORMA-1516_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 107,
+    "insights_aplicados": "- Termine o bloco de `PORTARIA-SEMEC Nº 2, DE 31 de março de 2019` antes de `Art. 1º A estrutura e as competências da Secretaria de Métodos e Suporte ao Controle Externo (Semec)...` (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º, inicie um bloco próprio em cada inciso efetivamente presente: `I - propor, aperfeiçoar...`, `II - disseminar orientação...`, `IV - participar do levantamento...`, `V - obter, sistematizar...`, `VI - contribuir para a melhoria...`, `VII - promover a integração...`, `VIII - acompanhar, propor normas...`, `IX - atuar, em articulação...`, `XI – articular com a Secretaria...`, `XII - acompanhar a aderência...`, `XIII – supervisionar o planejamento...` e `XV - orientar e prestar suporte técnico...` (págs. 3-4).\n- No Art. 8º, inicie um bloco próprio em cada inciso `IV - gerir mudanças...`, `V - conceber novas soluções...`, `VI - manifestar-se previamente...`, `VII - atuar em articulação...`, `VIII - coordenar os trabalhos...` e `IX - manifestar-se sobre a colocação...` (págs. 4-5).\n- No Art. 10, inicie um bloco próprio em cada inciso `IX - comunicar à Secretaria de Comunicação...`, `X - apoiar a realização...`, `XI - manter arquivo...`, `XII - manter atualizadas...` e `XIII - desempenhar outras atividades...` (pág. 5).\n- No Art. 4º, inicie um bloco próprio em cada inciso `X - articular com o Instituto Serzedello Corrêa...` até `XV - desempenhar outras atividades...` (pág. 2).\n- No Art. 5º, inicie um bloco próprio em cada inciso `XIII - promover a integração entre os atores internos e externos...`, `XIV - promover a integração do processo...` e `XV - acompanhar o processo de entrega...` (pág. 3).\n- No Art. 2º, termine o bloco de `VIII - disseminar boas práticas de controle externo...` antes de `IX - contribuir para a definição...` e inicie blocos próprios também em `X - elaborar conteúdos...` e `XI - manifestar-se...` (pág. 1).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II - Diretoria de Normas Processuais e Avaliação da Qualidade (Dipron)...`, Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso II contém também a alínea `a) Serviço de Avaliação da Qualidade (Serav).`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`III - Diretoria de Gestão de Soluções de TI para o Controle Externo (Diac)...`, Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém, sem blocos próprios, a alínea `a) Serviço de Produção de Sistemas Departamentais (Seprod).`, o inciso `IV - Assessoria.` e o `Parágrafo único.`."
+        },
+        {
+          "onde": "`II - avaliar a qualidade de relatórios...` e `III - participar do levantamento...`, Art. 7º, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III do Art. 7º ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `PORTARIA-SEMEC Nº 2, DE 31 de março de 2019` antes de `Art. 1º A estrutura e as competências da Secretaria de Métodos e Suporte ao Controle Externo (Semec)...` (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º, inicie um bloco próprio em cada inciso efetivamente presente: `I - propor, aperfeiçoar...`, `II - disseminar orientação...`, `IV - participar do levantamento...`, `V - obter, sistematizar...`, `VI - contribuir para a melhoria...`, `VII - promover a integração...`, `VIII - acompanhar, propor normas...`, `IX - atuar, em articulação...`, `XI – articular com a Secretaria...`, `XII - acompanhar a aderência...`, `XIII – supervisionar o planejamento...` e `XV - orientar e prestar suporte técnico...` (págs. 3-4).\n- No Art. 8º, inicie um bloco próprio em cada inciso `IV - gerir mudanças...`, `V - conceber novas soluções...`, `VI - manifestar-se previamente...`, `VII - atuar em articulação...`, `VIII - coordenar os trabalhos...` e `IX - manifestar-se sobre a colocação...` (págs. 4-5).\n- No Art. 10, inicie um bloco próprio em cada inciso `IX - comunicar à Secretaria de Comunicação...`, `X - apoiar a realização...`, `XI - manter arquivo...`, `XII - manter atualizadas...` e `XIII - desempenhar outras atividades...` (pág. 5).\n- No Art. 4º, inicie um bloco próprio em cada inciso `X - articular com o Instituto Serzedello Corrêa...` até `XV - desempenhar outras atividades...` (pág. 2).\n- No Art. 5º, inicie um bloco próprio em cada inciso `XIII - promover a integração entre os atores internos e externos...`, `XIV - promover a integração do processo...` e `XV - acompanhar o processo de entrega...` (pág. 3).\n- No Art. 2º, termine o bloco de `VIII - disseminar boas práticas de controle externo...` antes de `IX - contribuir para a definição...` e inicie blocos próprios também em `X - elaborar conteúdos...` e `XI - manifestar-se...` (pág. 1).\n- No Art. 3º, termine o bloco de `II - Diretoria de Normas Processuais e Avaliação da Qualidade (Dipron), à qual se vincula o:` antes de `a) Serviço de Avaliação da Qualidade (Serav).` (pág. 2) e inicie um bloco próprio na alínea.\n- No Art. 3º, inicie blocos próprios em `a) Serviço de Produção de Sistemas Departamentais (Seprod).`, `IV - Assessoria.` e `Parágrafo único. A Secretaria conta, ainda...`, sem mantê-los no bloco de `III - Diretoria de Gestão de Soluções de TI para o Controle Externo (Diac)...` (pág. 2).\n- No Art. 7º, inicie blocos próprios em `II - avaliar a qualidade de relatórios de fiscalização...` e `III - participar do levantamento de requisitos...` (pág. 4)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1516/NORMA-1516_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 112,
+    "insights_aplicados": "- Termine o bloco de `PORTARIA-SEMEC Nº 2, DE 31 de março de 2019` antes de `Art. 1º A estrutura e as competências da Secretaria de Métodos e Suporte ao Controle Externo (Semec)...` (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º, inicie um bloco próprio em cada inciso efetivamente presente: `I - propor, aperfeiçoar...`, `II - disseminar orientação...`, `IV - participar do levantamento...`, `V - obter, sistematizar...`, `VI - contribuir para a melhoria...`, `VII - promover a integração...`, `VIII - acompanhar, propor normas...`, `IX - atuar, em articulação...`, `XI – articular com a Secretaria...`, `XII - acompanhar a aderência...`, `XIII – supervisionar o planejamento...` e `XV - orientar e prestar suporte técnico...` (págs. 3-4).\n- No Art. 8º, inicie um bloco próprio em cada inciso `IV - gerir mudanças...`, `V - conceber novas soluções...`, `VI - manifestar-se previamente...`, `VII - atuar em articulação...`, `VIII - coordenar os trabalhos...` e `IX - manifestar-se sobre a colocação...` (págs. 4-5).\n- No Art. 10, inicie um bloco próprio em cada inciso `IX - comunicar à Secretaria de Comunicação...`, `X - apoiar a realização...`, `XI - manter arquivo...`, `XII - manter atualizadas...` e `XIII - desempenhar outras atividades...` (pág. 5).\n- No Art. 4º, inicie um bloco próprio em cada inciso `X - articular com o Instituto Serzedello Corrêa...` até `XV - desempenhar outras atividades...` (pág. 2).\n- No Art. 5º, inicie um bloco próprio em cada inciso `XIII - promover a integração entre os atores internos e externos...`, `XIV - promover a integração do processo...` e `XV - acompanhar o processo de entrega...` (pág. 3).\n- No Art. 2º, termine o bloco de `VIII - disseminar boas práticas de controle externo...` antes de `IX - contribuir para a definição...` e inicie blocos próprios também em `X - elaborar conteúdos...` e `XI - manifestar-se...` (pág. 1).\n- No Art. 3º, termine o bloco de `II - Diretoria de Normas Processuais e Avaliação da Qualidade (Dipron), à qual se vincula o:` antes de `a) Serviço de Avaliação da Qualidade (Serav).` (pág. 2) e inicie um bloco próprio na alínea.\n- No Art. 3º, inicie blocos próprios em `a) Serviço de Produção de Sistemas Departamentais (Seprod).`, `IV - Assessoria.` e `Parágrafo único. A Secretaria conta, ainda...`, sem mantê-los no bloco de `III - Diretoria de Gestão de Soluções de TI para o Controle Externo (Diac)...` (pág. 2).\n- No Art. 7º, inicie blocos próprios em `II - avaliar a qualidade de relatórios de fiscalização...` e `III - participar do levantamento de requisitos...` (pág. 4).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-1516/NORMA-1516_ciclo3.json"
+  }
+]

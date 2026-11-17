@@ -1,0 +1,42 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 15,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - natureza do serviço\" contém também os marcadores de incisos irmãos \"IV - relação de documentos e dados fornecidos pelo contratante\", \"V - local em que será prestado o serviço\" e \"VI - estipulação dos honorários e sua forma de pagamento\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 41,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"IV - compensar o montante dos honorários recebidos\" contém também os marcadores de incisos irmãos \"V - (VETADO)\", \"VI - reclamar, verbalmente ou por escrito\" e \"VII - ser publicamente desagravado\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 15,
+          "tipo": "granularidade",
+          "descricao": "Os incisos dos arts. 8º, 9º, 10, 11 e 12 são em geral segmentados individualmente, mas os incisos III a VI do art. 8º e IV a VII do art. 12 foram agrupados em dois blocos, produzindo granularidade desigual entre unidades do mesmo nível."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"III - natureza do serviço\" do art. 8º imediatamente antes de \"IV - relação de documentos e dados fornecidos pelo contratante\"; inicie blocos próprios em cada um dos incisos IV, V e VI subsequentes.\n- Na pág. 1, termine o bloco do inciso \"IV - compensar o montante dos honorários recebidos\" do art. 12 imediatamente antes de \"V - (VETADO)\"; inicie blocos próprios em cada um dos incisos V, VI e VII subsequentes."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- Na pág. 1, termine o bloco do inciso \"III - natureza do serviço\" do art. 8º imediatamente antes de \"IV - relação de documentos e dados fornecidos pelo contratante\"; inicie blocos próprios em cada um dos incisos IV, V e VI subsequentes.\n- Na pág. 1, termine o bloco do inciso \"IV - compensar o montante dos honorários recebidos\" do art. 12 imediatamente antes de \"V - (VETADO)\"; inicie blocos próprios em cada um dos incisos V, VI e VII subsequentes.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo2.json"
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 25,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo anterior a `Art. 1º Fica instituído...`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto normativo de abertura, iniciado por `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO...` e concluído por `resolve \"ad referendum\" do Plenário:`, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO...` até `resolve \"ad referendum\" do Plenário:`, antes de iniciar o bloco de `Art. 1º Fica instituído...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20542/NORMA-20542_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 19,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO...` até `resolve \"ad referendum\" do Plenário:`, antes de iniciar o bloco de `Art. 1º Fica instituído...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IV - Ministério da Cultura - MinC;`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso IV contém também os incisos irmãos `V - Ministério Extraordinário dos Esportes - MESP;` até `IX - Ministério das Relações Exteriores - MRE.`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`I - averiguar as demonstrações financeiras no Sainco...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso I contém também os incisos irmãos `II - verificar, no Sainco...` e `III - solicitar, quando verificar incorreções...`, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO...` até `resolve \"ad referendum\" do Plenário:`, antes de iniciar o bloco de `Art. 1º Fica instituído...`.\n- Na pág. 2, termine o bloco de `IV - Ministério da Cultura - MinC;` imediatamente antes de `V - Ministério Extraordinário dos Esportes - MESP;` e inicie blocos próprios em cada um dos incisos `V`, `VI`, `VII`, `VIII` e `IX`.\n- Na pág. 1, termine o bloco de `I - averiguar as demonstrações financeiras no Sainco...` imediatamente antes de `II - verificar, no Sainco...` e inicie blocos próprios nos incisos `II` e `III`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20542/NORMA-20542_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 25,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, de `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO...` até `resolve \"ad referendum\" do Plenário:`, antes de iniciar o bloco de `Art. 1º Fica instituído...`.\n- Na pág. 2, termine o bloco de `IV - Ministério da Cultura - MinC;` imediatamente antes de `V - Ministério Extraordinário dos Esportes - MESP;` e inicie blocos próprios em cada um dos incisos `V`, `VI`, `VII`, `VIII` e `IX`.\n- Na pág. 1, termine o bloco de `I - averiguar as demonstrações financeiras no Sainco...` imediatamente antes de `II - verificar, no Sainco...` e inicie blocos próprios nos incisos `II` e `III`.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20542/NORMA-20542_ciclo3.json"
+  }
+]

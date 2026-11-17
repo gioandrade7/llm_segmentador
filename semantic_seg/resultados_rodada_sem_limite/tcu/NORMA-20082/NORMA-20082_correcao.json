@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 43,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IV - manter sistema automatizado de informações...`, `V - providenciar a indexação...` e `VI - assessorar a Comissão...`, após o inciso III do art. 6º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV, V e VI do art. 6º estão fora de qualquer bloco, embora cada inciso seja uma unidade que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências... resolve:`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório do documento, anterior à Seção I, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, após terminar o bloco do inciso `III - proceder à pesquisa, levantamento e estudo...` do art. 6º, inicie blocos próprios para `IV - manter sistema automatizado de informações...`, `V - providenciar a indexação...` e `VI - assessorar a Comissão...`, um bloco para cada inciso.\n- Na pág. 1, crie um bloco introdutório para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais... resolve:`, antes de iniciar o bloco da `Seção I`."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20082/NORMA-20082_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Na pág. 2, após terminar o bloco do inciso `III - proceder à pesquisa, levantamento e estudo...` do art. 6º, inicie blocos próprios para `IV - manter sistema automatizado de informações...`, `V - providenciar a indexação...` e `VI - assessorar a Comissão...`, um bloco para cada inciso.\n- Na pág. 1, crie um bloco introdutório para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais... resolve:`, antes de iniciar o bloco da `Seção I`.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20082/NORMA-20082_ciclo2.json"
+  }
+]

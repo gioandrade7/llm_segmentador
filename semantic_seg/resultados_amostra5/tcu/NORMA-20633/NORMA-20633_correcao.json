@@ -1,0 +1,65 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 26,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo «O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:», pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto introdutório do documento, anterior ao Art. 1º, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 5º A Auditoria far-se-á...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 5º contém, sem blocos próprios, o `Parágrafo Único. Devem ser verificados...` e os incisos `I` a `IV`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo «O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições legais e regimentais... resolve:» antes do `Art. 1º` (pág. 1).\n- Termine o bloco de `Art. 5º A Auditoria far-se-á com base nas informações constantes do Sistema...` imediatamente antes de `Parágrafo Único. Devem ser verificados...` (pág. 1); inicie blocos próprios no Parágrafo Único e em cada inciso `I - se os atos...`, `II - a exatidão...`, `III - o preenchimento...` e `IV - se a aplicação...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20633/NORMA-20633_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 31,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo «O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições legais e regimentais... resolve:» antes do `Art. 1º` (pág. 1).\n- Termine o bloco de `Art. 5º A Auditoria far-se-á com base nas informações constantes do Sistema...` imediatamente antes de `Parágrafo Único. Devem ser verificados...` (pág. 1); inicie blocos próprios no Parágrafo Único e em cada inciso `I - se os atos...`, `II - a exatidão...`, `III - o preenchimento...` e `IV - se a aplicação...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 8º Quanto às falhas ou irregularidades constatadas...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco de Art. 8º contém, sem corte próprio, o inciso `I - na hipótese de serem de natureza formal...`, que deve iniciar um bloco independente."
+        },
+        {
+          "onde": "`Art. 14. Esta Portaria entra em vigor na data de sua publicação.`, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O Art. 14 e a assinatura subsequente `ADHEMAR PALADINI GHISI / Presidente` ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 14. Esta Portaria entra em vigor na data de sua publicação.`, pág. 3",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para o Art. 14, mas suas âncoras não foram localizadas no texto segmentado; o artigo aparece como texto sem bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo «O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições legais e regimentais... resolve:» antes do `Art. 1º` (pág. 1).\n- Termine o bloco de `Art. 5º A Auditoria far-se-á com base nas informações constantes do Sistema...` imediatamente antes de `Parágrafo Único. Devem ser verificados...` (pág. 1); inicie blocos próprios no Parágrafo Único e em cada inciso `I - se os atos...`, `II - a exatidão...`, `III - o preenchimento...` e `IV - se a aplicação...`.\n- Termine o bloco de `Art. 8º Quanto às falhas ou irregularidades constatadas...` imediatamente antes de `I - na hipótese de serem de natureza formal...` (pág. 2) e inicie um bloco próprio nesse inciso.\n- Crie um bloco para `Art. 14. Esta Portaria entra em vigor na data de sua publicação.` (pág. 3), incluindo a assinatura subsequente `ADHEMAR PALADINI GHISI` e `Presidente`; use como âncora inicial o texto completo do artigo, com o prefixo `Art. 14.`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20633/NORMA-20633_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 32,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo «O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições legais e regimentais... resolve:» antes do `Art. 1º` (pág. 1).\n- Termine o bloco de `Art. 5º A Auditoria far-se-á com base nas informações constantes do Sistema...` imediatamente antes de `Parágrafo Único. Devem ser verificados...` (pág. 1); inicie blocos próprios no Parágrafo Único e em cada inciso `I - se os atos...`, `II - a exatidão...`, `III - o preenchimento...` e `IV - se a aplicação...`.\n- Termine o bloco de `Art. 8º Quanto às falhas ou irregularidades constatadas...` imediatamente antes de `I - na hipótese de serem de natureza formal...` (pág. 2) e inicie um bloco próprio nesse inciso.\n- Crie um bloco para `Art. 14. Esta Portaria entra em vigor na data de sua publicação.` (pág. 3), incluindo a assinatura subsequente `ADHEMAR PALADINI GHISI` e `Presidente`; use como âncora inicial o texto completo do artigo, com o prefixo `Art. 14.`.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20633/NORMA-20633_ciclo3.json"
+  }
+]

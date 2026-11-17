@@ -1,0 +1,80 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório da Resolução, anterior a “CAPÍTULO I”, ficou sem bloco; não é ruído de página."
+        },
+        {
+          "onde": "incisos II a IV de “Art. 6º Compete ao Conselho Curador:”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos “II - analisar e selecionar...”, “III - aprovar...” e “IV - selecionar...” ficaram sem bloco, embora cada inciso seja uma unidade hierárquica."
+        },
+        {
+          "onde": "“Art. 7º Compete ao Presidente do Conselho Curador:”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém, sem blocos próprios, os incisos I, II e III."
+        },
+        {
+          "onde": "“VIII - selecionar as obras para as exposições;”, em “Art. 8º Compete ao Curador do Espaço Cultural...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos IX a XV, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "“VIII - promover intercâmbio com centros culturais e instituições congêneres;”, em “Art. 9º Compete ao Gestor do Espaço Cultural:”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos IX e X, sem cortes entre essas unidades."
+        },
+        {
+          "onde": "“VIII - indicar obras para integrar, por meio de doação, o acervo do Museu;”, em “Art. 11. Compete ao Gestor do Museu do TCU:”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos IX a XIII, que são unidades hierárquicas independentes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I”.\n- Em “Art. 11. Compete ao Gestor do Museu do TCU:” (pág. 3), termine o bloco de “VIII - indicar obras para integrar, por meio de doação, o acervo do Museu;” antes de “IX - fiscalizar o uso do Museu;” e inicie blocos próprios em cada um dos incisos IX, X, XI, XII e XIII.\n- Em “Art. 8º Compete ao Curador do Espaço Cultural...” (pág. 2), termine o bloco de “VIII - selecionar as obras para as exposições;” antes de “IX - definir a linguagem visual e estética...” e inicie blocos próprios em cada um dos incisos IX, X, XI, XII, XIII, XIV e XV.\n- Em “Art. 7º Compete ao Presidente do Conselho Curador:” (pág. 1), inicie blocos próprios nos incisos “I - representar o Conselho junto ao TCU;”, “II - convocar reuniões do Conselho Curador;” e “III - conduzir as reuniões do Conselho.”.\n- Em “Art. 9º Compete ao Gestor do Espaço Cultural:” (pág. 2), termine o bloco de “VIII - promover intercâmbio com centros culturais e instituições congêneres;” antes de “IX - gerenciar servidores...” e inicie blocos próprios nos incisos IX e X.\n- Em “Art. 6º Compete ao Conselho Curador:” (pág. 1), inicie blocos próprios nos incisos “II - analisar e selecionar...”, “III - aprovar...” e “IV - selecionar...”; não deixe esses incisos fora de bloco."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19618/NORMA-19618_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 71,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais” (pág. 1), antes de iniciar o bloco de “CAPÍTULO I”.\n- Em “Art. 11. Compete ao Gestor do Museu do TCU:” (pág. 3), termine o bloco de “VIII - indicar obras para integrar, por meio de doação, o acervo do Museu;” antes de “IX - fiscalizar o uso do Museu;” e inicie blocos próprios em cada um dos incisos IX, X, XI, XII e XIII.\n- Em “Art. 8º Compete ao Curador do Espaço Cultural...” (pág. 2), termine o bloco de “VIII - selecionar as obras para as exposições;” antes de “IX - definir a linguagem visual e estética...” e inicie blocos próprios em cada um dos incisos IX, X, XI, XII, XIII, XIV e XV.\n- Em “Art. 7º Compete ao Presidente do Conselho Curador:” (pág. 1), inicie blocos próprios nos incisos “I - representar o Conselho junto ao TCU;”, “II - convocar reuniões do Conselho Curador;” e “III - conduzir as reuniões do Conselho.”.\n- Em “Art. 9º Compete ao Gestor do Espaço Cultural:” (pág. 2), termine o bloco de “VIII - promover intercâmbio com centros culturais e instituições congêneres;” antes de “IX - gerenciar servidores...” e inicie blocos próprios nos incisos IX e X.\n- Em “Art. 6º Compete ao Conselho Curador:” (pág. 1), inicie blocos próprios nos incisos “II - analisar e selecionar...”, “III - aprovar...” e “IV - selecionar...”; não deixe esses incisos fora de bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO I — DAS DISPOSIÇÕES PRELIMINARES`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo capítulo contém também os marcadores e textos integrais de `Art. 1º` e `Art. 2º`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`CAPÍTULO IV — DISPOSIÇÕES GERAIS`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo capítulo contém também o marcador e o texto de `Art. 12. O Tribunal de Contas da União...`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em `CAPÍTULO I — DAS DISPOSIÇÕES PRELIMINARES` (pág. 1), termine o bloco do capítulo imediatamente antes de `Art. 1º O Espaço Cultural Marcantonio Vilaça...`; inicie um bloco próprio em `Art. 1º` e termine-o antes de `Art. 2º A administração do Espaço Cultural...`, que também deve iniciar bloco próprio.\n- Em `CAPÍTULO IV — DISPOSIÇÕES GERAIS` (pág. 3), termine o bloco do capítulo imediatamente antes de `Art. 12. O Tribunal de Contas da União...` e inicie um bloco próprio em `Art. 12º`.\n- Crie um bloco para o preâmbulo iniciado por `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Em `Art. 11. Compete ao Gestor do Museu do TCU:` (pág. 3), termine o bloco de `VIII - indicar obras para integrar, por meio de doação, o acervo do Museu;` antes de `IX - fiscalizar o uso do Museu;` e inicie blocos próprios em cada um dos incisos IX, X, XI, XII e XIII.\n- Em `Art. 8º Compete ao Curador do Espaço Cultural...` (pág. 2), termine o bloco de `VIII - selecionar as obras para as exposições;` antes de `IX - definir a linguagem visual e estética...` e inicie blocos próprios em cada um dos incisos IX, X, XI, XII, XIII, XIV e XV.\n- Em `Art. 7º Compete ao Presidente do Conselho Curador:` (pág. 1), inicie blocos próprios nos incisos `I - representar o Conselho junto ao TCU;`, `II - convocar reuniões do Conselho Curador;` e `III - conduzir as reuniões do Conselho.`.\n- Em `Art. 9º Compete ao Gestor do Espaço Cultural:` (pág. 2), termine o bloco de `VIII - promover intercâmbio com centros culturais e instituições congêneres;` antes de `IX - gerenciar servidores...` e inicie blocos próprios nos incisos IX e X.\n- Em `Art. 6º Compete ao Conselho Curador:` (pág. 1), inicie blocos próprios nos incisos `II - analisar e selecionar...`, `III - aprovar...` e `IV - selecionar...`; não deixe esses incisos fora de bloco."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19618/NORMA-19618_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 74,
+    "insights_aplicados": "- Em `CAPÍTULO I — DAS DISPOSIÇÕES PRELIMINARES` (pág. 1), termine o bloco do capítulo imediatamente antes de `Art. 1º O Espaço Cultural Marcantonio Vilaça...`; inicie um bloco próprio em `Art. 1º` e termine-o antes de `Art. 2º A administração do Espaço Cultural...`, que também deve iniciar bloco próprio.\n- Em `CAPÍTULO IV — DISPOSIÇÕES GERAIS` (pág. 3), termine o bloco do capítulo imediatamente antes de `Art. 12. O Tribunal de Contas da União...` e inicie um bloco próprio em `Art. 12º`.\n- Crie um bloco para o preâmbulo iniciado por `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Em `Art. 11. Compete ao Gestor do Museu do TCU:` (pág. 3), termine o bloco de `VIII - indicar obras para integrar, por meio de doação, o acervo do Museu;` antes de `IX - fiscalizar o uso do Museu;` e inicie blocos próprios em cada um dos incisos IX, X, XI, XII e XIII.\n- Em `Art. 8º Compete ao Curador do Espaço Cultural...` (pág. 2), termine o bloco de `VIII - selecionar as obras para as exposições;` antes de `IX - definir a linguagem visual e estética...` e inicie blocos próprios em cada um dos incisos IX, X, XI, XII, XIII, XIV e XV.\n- Em `Art. 7º Compete ao Presidente do Conselho Curador:` (pág. 1), inicie blocos próprios nos incisos `I - representar o Conselho junto ao TCU;`, `II - convocar reuniões do Conselho Curador;` e `III - conduzir as reuniões do Conselho.`.\n- Em `Art. 9º Compete ao Gestor do Espaço Cultural:` (pág. 2), termine o bloco de `VIII - promover intercâmbio com centros culturais e instituições congêneres;` antes de `IX - gerenciar servidores...` e inicie blocos próprios nos incisos IX e X.\n- Em `Art. 6º Compete ao Conselho Curador:` (pág. 1), inicie blocos próprios nos incisos `II - analisar e selecionar...`, `III - aprovar...` e `IV - selecionar...`; não deixe esses incisos fora de bloco.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19618/NORMA-19618_ciclo3.json"
+  }
+]

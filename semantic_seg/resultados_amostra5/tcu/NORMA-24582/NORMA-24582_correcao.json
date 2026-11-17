@@ -1,0 +1,47 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`III - fraude`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV - corrupção, V - risco de integridade, VI - partes interessadas e VII - alta administração, todos do art. 2º, ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`II - estabelecer modelo de integridade organizacional`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso II do art. 3º contém também os incisos III - definir a estrutura de governança da integridade no Tribunal, IV - estabelecer o direcionamento necessário e V - alinhar as unidades envolvidas, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "`Art. 4º São princípios da integridade no TCU`, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos I - supremacia do interesse público sobre o interesse privado até VI - observância de requisitos de conduta íntegra, de competência e de desempenho ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes`, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade até VIII - detectar e tratar os riscos de integridade ficaram sem bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 2º, inicie blocos próprios para os incisos IV - corrupção, V - risco de integridade, VI - partes interessadas e VII - alta administração (pág. 1).\n- No art. 3º, termine o bloco do inciso II - estabelecer modelo de integridade organizacional antes de III - definir a estrutura de governança da integridade no Tribunal (pág. 2) e inicie blocos próprios nos incisos III, IV - estabelecer o direcionamento necessário para a elaboração e a implementação do programa de integridade organizacional, e V - alinhar as unidades envolvidas no sentido de fortalecer a integridade institucional.\n- No art. 4º, inicie um bloco próprio em cada inciso, de I - supremacia do interesse público sobre o interesse privado até VI - observância de requisitos de conduta íntegra, de competência e de desempenho na seleção e desenvolvimento de lideranças (pág. 2).\n- No art. 5º, inicie um bloco próprio em cada inciso, de I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade até VIII - detectar e tratar os riscos de integridade (pág. 2)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-24582/NORMA-24582_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 67,
+    "insights_aplicados": "- No art. 2º, inicie blocos próprios para os incisos IV - corrupção, V - risco de integridade, VI - partes interessadas e VII - alta administração (pág. 1).\n- No art. 3º, termine o bloco do inciso II - estabelecer modelo de integridade organizacional antes de III - definir a estrutura de governança da integridade no Tribunal (pág. 2) e inicie blocos próprios nos incisos III, IV - estabelecer o direcionamento necessário para a elaboração e a implementação do programa de integridade organizacional, e V - alinhar as unidades envolvidas no sentido de fortalecer a integridade institucional.\n- No art. 4º, inicie um bloco próprio em cada inciso, de I - supremacia do interesse público sobre o interesse privado até VI - observância de requisitos de conduta íntegra, de competência e de desempenho na seleção e desenvolvimento de lideranças (pág. 2).\n- No art. 5º, inicie um bloco próprio em cada inciso, de I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade até VIII - detectar e tratar os riscos de integridade (pág. 2).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-24582/NORMA-24582_ciclo2.json"
+  }
+]

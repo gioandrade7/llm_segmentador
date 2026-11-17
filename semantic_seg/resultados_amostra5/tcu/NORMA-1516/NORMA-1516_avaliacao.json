@@ -1,0 +1,88 @@
+{
+  "prefixo": "resultados_amostra5/tcu/NORMA-1516/NORMA-1516",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/NORMA-1516.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 76,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 76,
+      "fronteiras_gabarito": 113,
+      "acertos": 76,
+      "precisao": 1.0,
+      "revocacao": 0.672566371681416,
+      "f1": 0.8042328042328042,
+      "fins": {
+        "previstos": 76,
+        "gabarito": 113,
+        "fins_nao_localizados": 0,
+        "acertos": 76,
+        "precisao": 1.0,
+        "revocacao": 0.672566371681416,
+        "f1": 0.8042328042328042
+      },
+      "blocos_exatos": {
+        "acertos": 73,
+        "precisao": 0.9605263157894737,
+        "revocacao": 0.6460176991150443,
+        "f1": 0.7724867724867724
+      },
+      "cobertura": 0.6903980476310696
+    },
+    {
+      "ciclo": 2,
+      "blocos": 107,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 107,
+      "fronteiras_gabarito": 113,
+      "acertos": 107,
+      "precisao": 1.0,
+      "revocacao": 0.9469026548672567,
+      "f1": 0.9727272727272728,
+      "fins": {
+        "previstos": 107,
+        "gabarito": 113,
+        "fins_nao_localizados": 0,
+        "acertos": 107,
+        "precisao": 1.0,
+        "revocacao": 0.9469026548672567,
+        "f1": 0.9727272727272728
+      },
+      "blocos_exatos": {
+        "acertos": 104,
+        "precisao": 0.9719626168224299,
+        "revocacao": 0.9203539823008849,
+        "f1": 0.9454545454545454
+      },
+      "cobertura": 0.97618446520239
+    },
+    {
+      "ciclo": 3,
+      "blocos": 112,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 112,
+      "fronteiras_gabarito": 113,
+      "acertos": 112,
+      "precisao": 1.0,
+      "revocacao": 0.9911504424778761,
+      "f1": 0.9955555555555555,
+      "fins": {
+        "previstos": 112,
+        "gabarito": 113,
+        "fins_nao_localizados": 0,
+        "acertos": 112,
+        "precisao": 1.0,
+        "revocacao": 0.9911504424778761,
+        "f1": 0.9955555555555555
+      },
+      "blocos_exatos": {
+        "acertos": 111,
+        "precisao": 0.9910714285714286,
+        "revocacao": 0.9823008849557522,
+        "f1": 0.9866666666666667
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

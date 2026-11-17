@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 17,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência...\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório e os considerandos, até \"resolve:\", ficaram fora de qualquer bloco antes do Art. 1º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência...\" e encerrado em \"resolve:\", imediatamente antes de iniciar o bloco do Art. 1º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19948/NORMA-19948_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 18,
+    "insights_aplicados": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência...\" e encerrado em \"resolve:\", imediatamente antes de iniciar o bloco do Art. 1º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência...\" e encerrado em \"resolve:\", imediatamente antes de iniciar o bloco do Art. 1º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19948/NORMA-19948_ciclo2.json"
+  }
+]

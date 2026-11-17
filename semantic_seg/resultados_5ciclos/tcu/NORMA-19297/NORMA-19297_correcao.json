@@ -1,0 +1,65 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 7,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"V - gestor de conteúdo\" (pág. 1) também contém os marcadores de incisos irmãos \"VI - provedor de conteúdo\" e \"VII - autosserviço\", que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 43,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"V - decidir sobre publicações urgentes\" (pág. 3) engloba os incisos irmãos VI, VII, VIII, IX e X; cada inciso romano deve iniciar um bloco próprio."
+        },
+        {
+          "bloco": 7,
+          "tipo": "granularidade",
+          "descricao": "Os incisos I a IV e VIII do art. 2º foram segmentados individualmente, mas os incisos V, VI e VII foram agrupados no mesmo bloco."
+        },
+        {
+          "bloco": 43,
+          "tipo": "granularidade",
+          "descricao": "Os incisos I a IV do art. 7º foram segmentados individualmente, mas os incisos V a X foram agrupados no bloco iniciado pelo inciso V."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"V - gestor de conteúdo\" imediatamente antes de \"VI - provedor de conteúdo\"; inicie blocos próprios em \"VI - provedor de conteúdo\" e em \"VII - autosserviço\".\n- Na pág. 3, termine o bloco do inciso \"V - decidir sobre publicações urgentes\" imediatamente antes de \"VI - articular a definição de unidades gestoras de conteúdo\" e inicie um bloco próprio em cada inciso VI, VII, VIII, IX e X do art. 7º."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-19297/NORMA-19297_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 57,
+    "insights_aplicados": "- Na pág. 1, termine o bloco do inciso \"V - gestor de conteúdo\" imediatamente antes de \"VI - provedor de conteúdo\"; inicie blocos próprios em \"VI - provedor de conteúdo\" e em \"VII - autosserviço\".\n- Na pág. 3, termine o bloco do inciso \"V - decidir sobre publicações urgentes\" imediatamente antes de \"VI - articular a definição de unidades gestoras de conteúdo\" e inicie um bloco próprio em cada inciso VI, VII, VIII, IX e X do art. 7º.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 14,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 2º A definição da gestão das áreas de conteúdo do Portal TCU\" contém também o marcador e o texto de \"§ 3º A administração do cadastro de gestores e provedores de conteúdo\", que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"V - gestor de conteúdo\" imediatamente antes de \"VI - provedor de conteúdo\"; inicie blocos próprios em \"VI - provedor de conteúdo\" e em \"VII - autosserviço\".\n- Na pág. 2, termine o bloco de \"§ 2º A definição da gestão das áreas de conteúdo do Portal TCU\" imediatamente antes de \"§ 3º A administração do cadastro de gestores e provedores de conteúdo\" e inicie um bloco próprio no § 3º.\n- Na pág. 3, termine o bloco do inciso \"V - decidir sobre publicações urgentes\" imediatamente antes de \"VI - articular a definição de unidades gestoras de conteúdo\" e inicie um bloco próprio em cada inciso VI, VII, VIII, IX e X do art. 7º."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-19297/NORMA-19297_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 58,
+    "insights_aplicados": "- Na pág. 1, termine o bloco do inciso \"V - gestor de conteúdo\" imediatamente antes de \"VI - provedor de conteúdo\"; inicie blocos próprios em \"VI - provedor de conteúdo\" e em \"VII - autosserviço\".\n- Na pág. 2, termine o bloco de \"§ 2º A definição da gestão das áreas de conteúdo do Portal TCU\" imediatamente antes de \"§ 3º A administração do cadastro de gestores e provedores de conteúdo\" e inicie um bloco próprio no § 3º.\n- Na pág. 3, termine o bloco do inciso \"V - decidir sobre publicações urgentes\" imediatamente antes de \"VI - articular a definição de unidades gestoras de conteúdo\" e inicie um bloco próprio em cada inciso VI, VII, VIII, IX e X do art. 7º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Na pág. 1, termine o bloco do inciso \"V - gestor de conteúdo\" imediatamente antes de \"VI - provedor de conteúdo\"; inicie blocos próprios em \"VI - provedor de conteúdo\" e em \"VII - autosserviço\".\n- Na pág. 2, termine o bloco de \"§ 2º A definição da gestão das áreas de conteúdo do Portal TCU\" imediatamente antes de \"§ 3º A administração do cadastro de gestores e provedores de conteúdo\" e inicie um bloco próprio no § 3º.\n- Na pág. 3, termine o bloco do inciso \"V - decidir sobre publicações urgentes\" imediatamente antes de \"VI - articular a definição de unidades gestoras de conteúdo\" e inicie um bloco próprio em cada inciso VI, VII, VIII, IX e X do art. 7º."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-19297/NORMA-19297_ciclo3.json"
+  }
+]

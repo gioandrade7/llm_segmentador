@@ -1,0 +1,57 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 70,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 7º O BTCU é editado em quatro cadernos:`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 7º contém os incisos I, II, III e IV, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 4º O BTCU possui, entre outras, as seguintes particularidades:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém também o inciso IV, sem início de bloco para este último."
+        },
+        {
+          "onde": "`Art. 14. O BTCU ficará disponível no Portal TCU, observando-se:`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 14 contém os incisos I e II, que devem constituir blocos separados."
+        },
+        {
+          "onde": "`Parágrafo único. Os atos mencionados no inciso I deste artigo contemplam`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do parágrafo único do art. 15 contém o inciso I (`convocações dos Ministros-Substitutos`), que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 10. O caderno Deliberações dos Colegiados do TCU e dos Relatores`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 10 contém também o seu `Parágrafo único. Considera-se que a divulgação das pautas`, sem início de bloco para o parágrafo."
+        },
+        {
+          "onde": "`O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A ementa introdutória da Portaria, desde a identificação da autoridade até `resolve:`, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 7º, `O BTCU é editado em quatro cadernos:` (pág. 2), termine o bloco do artigo antes de `I - Administrativo;` e inicie blocos próprios para os incisos I, II, III e IV.\n- No inciso `III - substitui qualquer outro meio e publicação oficial` do art. 4º (pág. 1), termine o bloco imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa` e inicie um bloco novo para o inciso IV.\n- No art. 14, `O BTCU ficará disponível no Portal TCU, observando-se:` (pág. 3), termine o bloco do artigo antes de `I - para os cadernos Administrativos` e inicie blocos próprios para os incisos I e II.\n- No parágrafo único do art. 15, `Os atos mencionados no inciso I deste artigo contemplam` (pág. 4), termine o bloco do parágrafo antes de `I - convocações dos Ministros-Substitutos` e inicie um bloco próprio para esse inciso.\n- No art. 10, `O caderno Deliberações dos Colegiados do TCU e dos Relatores` (pág. 2), termine o bloco do artigo antes de `Parágrafo único. Considera-se que a divulgação das pautas` e inicie um bloco novo para o parágrafo único.\n- Crie um bloco inicial para o preâmbulo da Portaria na pág. 1, de `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO` até `resolve:`."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21386/NORMA-21386_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 80,
+    "insights_aplicados": "- No art. 7º, `O BTCU é editado em quatro cadernos:` (pág. 2), termine o bloco do artigo antes de `I - Administrativo;` e inicie blocos próprios para os incisos I, II, III e IV.\n- No inciso `III - substitui qualquer outro meio e publicação oficial` do art. 4º (pág. 1), termine o bloco imediatamente antes de `IV - deve ser disponibilizado com ferramenta de pesquisa` e inicie um bloco novo para o inciso IV.\n- No art. 14, `O BTCU ficará disponível no Portal TCU, observando-se:` (pág. 3), termine o bloco do artigo antes de `I - para os cadernos Administrativos` e inicie blocos próprios para os incisos I e II.\n- No parágrafo único do art. 15, `Os atos mencionados no inciso I deste artigo contemplam` (pág. 4), termine o bloco do parágrafo antes de `I - convocações dos Ministros-Substitutos` e inicie um bloco próprio para esse inciso.\n- No art. 10, `O caderno Deliberações dos Colegiados do TCU e dos Relatores` (pág. 2), termine o bloco do artigo antes de `Parágrafo único. Considera-se que a divulgação das pautas` e inicie um bloco novo para o parágrafo único.\n- Crie um bloco inicial para o preâmbulo da Portaria na pág. 1, de `O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO` até `resolve:`.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21386/NORMA-21386_ciclo2.json"
+  }
+]

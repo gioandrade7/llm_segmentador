@@ -1,0 +1,121 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 128,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 24,
+          "tipo": "englobante",
+          "descricao": "O inciso IV do art. 5º contém também a alínea \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\"; a alínea deveria iniciar bloco próprio, como ocorre com as alíneas b e c."
+        },
+        {
+          "bloco": 50,
+          "tipo": "sequencia",
+          "descricao": "O inciso XXII do art. 6º termina em \"; e\", mas é seguido diretamente pelo art. 7º. A conjunção evidencia que falta o inciso final da lista antes do artigo seguinte."
+        },
+        {
+          "bloco": 94,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I do art. 12 engloba os incisos II, III, IV e V, embora os incisos VI, VII e VIII do mesmo artigo estejam em blocos separados."
+        },
+        {
+          "bloco": 98,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia no art. 13, contém o art. 14 e engloba todos os seus incisos I a XVI; tanto o art. 14 quanto cada inciso deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 115,
+          "tipo": "lacuna",
+          "descricao": "O inciso III do art. 18 termina truncado em \"unidades integrantes da Secreta\" e o bloco seguinte já inicia o inciso IV, deixando faltar o restante da redação do inciso III."
+        },
+        {
+          "bloco": 123,
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XI do art. 18 engloba os incisos XII, XIII, XIV, XV, XVI e XVII, enquanto os incisos anteriores do mesmo artigo foram separados."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie um bloco próprio nessa alínea.\n- No art. 6º, pág. 3, não passe do inciso \"XXII - consoante diretriz emanada...\" diretamente para \"Art. 7º\" quando o inciso XXII terminar em \"; e\"; capture e inicie um bloco para o inciso final que sucede o XXII.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"V - indiciar servidor...\"; não os mantenha no bloco iniciado pelo inciso I.\n- Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\"; depois, inicie um bloco para cada inciso I a XVI do art. 14.\n- No art. 18, págs. 7–8, preserve a continuação completa do inciso \"III - cadastrar... unidades integrantes da Secreta...\" antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\"."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-5421/NORMA-5421_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 153,
+    "insights_aplicados": "- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie um bloco próprio nessa alínea.\n- No art. 6º, pág. 3, não passe do inciso \"XXII - consoante diretriz emanada...\" diretamente para \"Art. 7º\" quando o inciso XXII terminar em \"; e\"; capture e inicie um bloco para o inciso final que sucede o XXII.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"V - indiciar servidor...\"; não os mantenha no bloco iniciado pelo inciso I.\n- Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\"; depois, inicie um bloco para cada inciso I a XVI do art. 14.\n- No art. 18, págs. 7–8, preserve a continuação completa do inciso \"III - cadastrar... unidades integrantes da Secreta...\" antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 30,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - receber, registrar, autuar...\" no art. 6º (pág. 2) também contém os marcadores e textos dos incisos II, III e IV, que deveriam iniciar blocos independentes."
+        },
+        {
+          "bloco": 52,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"I - elaborar pareceres, pronunciamentos...\" no art. 8º (pág. 3) também contém os marcadores e textos dos incisos II a VII, que deveriam iniciar blocos independentes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie um bloco próprio nessa alínea; mantenha blocos próprios também para as alíneas b) e c).\n- No art. 6º, págs. 2–3, inicie um bloco independente em cada inciso de \"I - receber, registrar, autuar...\" até \"XXIII - prestar apoio administrativo-operacional...\"; em especial, encerre o inciso I antes de \"II - prestar informações...\", sem englobar os incisos II, III e IV, e não omita o inciso XXIII após o inciso XXII terminado em \"; e\".\n- No art. 8º, págs. 3–4, inicie blocos independentes em cada inciso de \"I - elaborar pareceres, pronunciamentos...\" até \"XIX - desenvolver outras atividades...\"; encerre o inciso I antes de \"II - desenvolver estudos técnicos e pesquisas\" e não mantenha os incisos II a VII no bloco do inciso I.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"VIII - desenvolver outras atividades típicas...\"; não mantenha unidades irmãs no bloco iniciado pelo inciso I.\n- Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\" e inicie um bloco para cada inciso I a XVI do art. 14; no art. 18, págs. 7–8, preserve a continuação completa do inciso III antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\"."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-5421/NORMA-5421_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 149,
+    "insights_aplicados": "- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie um bloco próprio nessa alínea; mantenha blocos próprios também para as alíneas b) e c).\n- No art. 6º, págs. 2–3, inicie um bloco independente em cada inciso de \"I - receber, registrar, autuar...\" até \"XXIII - prestar apoio administrativo-operacional...\"; em especial, encerre o inciso I antes de \"II - prestar informações...\", sem englobar os incisos II, III e IV, e não omita o inciso XXIII após o inciso XXII terminado em \"; e\".\n- No art. 8º, págs. 3–4, inicie blocos independentes em cada inciso de \"I - elaborar pareceres, pronunciamentos...\" até \"XIX - desenvolver outras atividades...\"; encerre o inciso I antes de \"II - desenvolver estudos técnicos e pesquisas\" e não mantenha os incisos II a VII no bloco do inciso I.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"VIII - desenvolver outras atividades típicas...\"; não mantenha unidades irmãs no bloco iniciado pelo inciso I.\n- Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\" e inicie um bloco para cada inciso I a XVI do art. 14; no art. 18, págs. 7–8, preserve a continuação completa do inciso III antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 76,
+          "tipo": "englobante",
+          "descricao": "No art. 10, pág. 4, o bloco iniciado por \"I - criar e manter cadastro...\" também contém o início do inciso irmão \"II - prestar às autoridades...\", que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 145,
+          "tipo": "sequencia",
+          "descricao": "Após os incisos do art. 16, nas págs. 7–8, o texto salta diretamente para \"Art. 19.\", sem que os arts. 17 e 18 apareçam em qualquer bloco. A ausência desses artigos indica falha de extração do texto fonte, não corrigível apenas por corte."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie um bloco próprio nessa alínea; mantenha blocos próprios também para as alíneas b) e c).\n- No art. 6º, págs. 2–3, inicie um bloco independente em cada inciso de \"I - receber, registrar, autuar...\" até \"XXIII - prestar apoio administrativo-operacional...\"; em especial, encerre o inciso I antes de \"II - prestar informações...\" e não omita o inciso XXIII após o inciso XXII terminado em \"; e\".\n- Nos arts. 8º e 10, págs. 3–4, inicie blocos independentes em todos os incisos: no art. 8º, de \"I - elaborar pareceres, pronunciamentos...\" até \"XIX - desenvolver outras atividades...\"; no art. 10, encerre \"I - criar e manter cadastro das autoridades...\" antes de \"II - prestar às autoridades...\" e inicie um bloco próprio no inciso II.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"VIII - desenvolver outras atividades típicas...\"; não mantenha unidades irmãs no bloco iniciado pelo inciso I.\n- Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\" e inicie um bloco para cada inciso I a XVI do art. 14; no art. 18, págs. 7–8, preserve a continuação completa do inciso III antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\"."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-5421/NORMA-5421_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 151,
+    "insights_aplicados": "- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie um bloco próprio nessa alínea; mantenha blocos próprios também para as alíneas b) e c).\n- No art. 6º, págs. 2–3, inicie um bloco independente em cada inciso de \"I - receber, registrar, autuar...\" até \"XXIII - prestar apoio administrativo-operacional...\"; em especial, encerre o inciso I antes de \"II - prestar informações...\" e não omita o inciso XXIII após o inciso XXII terminado em \"; e\".\n- Nos arts. 8º e 10, págs. 3–4, inicie blocos independentes em todos os incisos: no art. 8º, de \"I - elaborar pareceres, pronunciamentos...\" até \"XIX - desenvolver outras atividades...\"; no art. 10, encerre \"I - criar e manter cadastro das autoridades...\" antes de \"II - prestar às autoridades...\" e inicie um bloco próprio no inciso II.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"VIII - desenvolver outras atividades típicas...\"; não mantenha unidades irmãs no bloco iniciado pelo inciso I.\n- Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\" e inicie um bloco para cada inciso I a XVI do art. 14; no art. 18, págs. 7–8, preserve a continuação completa do inciso III antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\".",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 13,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"IX - organizar o encontro de chefes de SA...\" (pág. 2) também contém os incisos irmãos X a XV do art. 4º, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No art. 4º, pág. 2, encerre o bloco do inciso \"IX - organizar o encontro de chefes de SA...\" imediatamente antes de \"X - disseminar boas práticas administrativas...\" e inicie blocos independentes para cada inciso de X a XV, até \"XV - desenvolver outras atividades inerentes à sua finalidade.\"\n- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie bloco próprio nessa alínea; mantenha blocos próprios também para as alíneas b) e c). No art. 6º, págs. 2–3, inicie bloco independente em cada inciso de \"I - receber, registrar, autuar...\" até \"XXIII - prestar apoio administrativo-operacional...\", sem omitir o inciso XXIII após o inciso XXII terminado em \"; e\".\n- Nos arts. 8º e 10, págs. 3–4, inicie blocos independentes em todos os incisos: no art. 8º, de \"I - elaborar pareceres, pronunciamentos...\" até \"XIX - desenvolver outras atividades...\"; no art. 10, encerre \"I - criar e manter cadastro das autoridades...\" antes de \"II - prestar às autoridades...\" e inicie bloco próprio no inciso II.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"VIII - desenvolver outras atividades típicas...\". Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\" e inicie bloco próprio para cada inciso I a XVI do art. 14.\n- No art. 18, págs. 7–8, preserve a continuação completa do inciso III antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\"."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-5421/NORMA-5421_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 162,
+    "insights_aplicados": "- No art. 4º, pág. 2, encerre o bloco do inciso \"IX - organizar o encontro de chefes de SA...\" imediatamente antes de \"X - disseminar boas práticas administrativas...\" e inicie blocos independentes para cada inciso de X a XV, até \"XV - desenvolver outras atividades inerentes à sua finalidade.\"\n- No art. 5º, pág. 2, encerre o bloco do inciso \"IV - Gerências de Processos:\" imediatamente antes de \"a) Gerência de Publicação de Atos Administrativos (Gpublic)\" e inicie bloco próprio nessa alínea; mantenha blocos próprios também para as alíneas b) e c). No art. 6º, págs. 2–3, inicie bloco independente em cada inciso de \"I - receber, registrar, autuar...\" até \"XXIII - prestar apoio administrativo-operacional...\", sem omitir o inciso XXIII após o inciso XXII terminado em \"; e\".\n- Nos arts. 8º e 10, págs. 3–4, inicie blocos independentes em todos os incisos: no art. 8º, de \"I - elaborar pareceres, pronunciamentos...\" até \"XIX - desenvolver outras atividades...\"; no art. 10, encerre \"I - criar e manter cadastro das autoridades...\" antes de \"II - prestar às autoridades...\" e inicie bloco próprio no inciso II.\n- No art. 12, págs. 5–6, inicie blocos independentes em cada inciso de \"I - formalizar processo disciplinar...\" até \"VIII - desenvolver outras atividades típicas...\". Na pág. 6, encerre o bloco de \"Art. 13. A Gerência de Publicação de Atos Administrativos...\" antes de \"Art. 14. Compete à Gerência de Publicação de Atos Administrativos:\" e inicie bloco próprio para cada inciso I a XVI do art. 14.\n- No art. 18, págs. 7–8, preserve a continuação completa do inciso III antes de iniciar o inciso IV e inicie blocos próprios em cada inciso de \"XI - manter atualizado o rol de responsáveis...\" até \"XVII - desenvolver outras atividades...\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-5421/NORMA-5421_ciclo5.json"
+  }
+]

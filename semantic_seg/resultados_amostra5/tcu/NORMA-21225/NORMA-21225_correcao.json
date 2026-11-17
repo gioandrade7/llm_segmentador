@@ -1,0 +1,182 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 118,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "todo o preâmbulo, incluindo os considerandos e a fórmula “resolve:”, ficou fora de qualquer bloco antes da Seção I."
+        },
+        {
+          "onde": "§ 2º do Art. 2º, iniciado por “O intercâmbio de informações e documentos...”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 2º contém também os marcadores e textos dos §§ 3º e 4º do Art. 2º, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 5º, iniciado por “As informações produzidas pelo TCU classificam-se...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém também os §§ 1º, 2º, 3º e 4º, sem cortes próprios para esses parágrafos."
+        },
+        {
+          "onde": "incisos V a VIII do Art. 7º, iniciados por “V - prejudicar ou causar risco a planos...” e “VIII - comprometer atividades de inteligência...”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos V, VI, VII e VIII ficaram fora de qualquer bloco após o inciso IV."
+        },
+        {
+          "onde": "inciso II do parágrafo único do Art. 7º, iniciado por “II - o prazo máximo de restrição de acesso...”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso II ficou fora de qualquer bloco após o inciso I."
+        },
+        {
+          "onde": "incisos II a IV do § 1º do Art. 17, iniciados por “II - o prazo máximo de quatro anos...” e “IV - a possibilidade de danos...”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II, III e IV ficaram fora de qualquer bloco após o inciso I."
+        },
+        {
+          "onde": "incisos II a V do § 2º do Art. 19, iniciados por “II - à realização de estatísticas...” e “V - à proteção do interesse público...”, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II, III, IV e V ficaram fora de qualquer bloco após o inciso I."
+        },
+        {
+          "onde": "bloco não localizado com início em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e fim em “IV - a possibilidade de danos ou riscos decorrentes...”, indicado na pág. 5",
+          "tipo": "ancora",
+          "descricao": "a âncora devolvida é inválida: o texto de início (§ 2º do Art. 17) ocorre depois do texto de fim (inciso IV do § 1º do Art. 17), e o bloco não pôde ser localizado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Inicie blocos próprios nos incisos II, III e IV do § 1º do Art. 17, a partir de “II - o prazo máximo de quatro anos para realização de cada revisão de ofício” (pág. 5).\n- Inicie blocos próprios nos incisos II, III, IV e V do § 2º do Art. 19, a partir de “II - à realização de estatísticas e pesquisas científicas...” (pág. 6).\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21225/NORMA-21225_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 128,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Inicie blocos próprios nos incisos II, III e IV do § 1º do Art. 17, a partir de “II - o prazo máximo de quatro anos para realização de cada revisão de ofício” (pág. 5).\n- Inicie blocos próprios nos incisos II, III, IV e V do § 2º do Art. 19, a partir de “II - à realização de estatísticas e pesquisas científicas...” (pág. 6).\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 4º A classificação das informações produzidas pelo TCU...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 4º contém, sem cortes próprios, os marcadores `§ 1º Compete exclusivamente ao TCU...` e `§ 2º Cabe ao TCU respeitar...`."
+        },
+        {
+          "onde": "`Art. 12. Para fins de aplicação de controles de acesso...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 12 contém, sem cortes próprios, os incisos `I - grau de confidencialidade`, `II - grupo de pessoas...` e `III - termo final de restrição...`."
+        },
+        {
+          "onde": "`§ 1º As informações a que se refere este artigo...`, Art. 19, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º do Art. 19 contém, sem cortes próprios, os incisos `I - têm o seu acesso restrito...` e `II - podem ter autorizada sua divulgação...`."
+        },
+        {
+          "onde": "`I - sigilosas: quando classificadas nos graus secreto...`, § 3º do Art. 25, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso I do § 3º do Art. 25 contém também, sem cortes próprios, os incisos `II - restritas: quando classificadas no grau reservado` e `III - públicas: quando classificadas no grau público`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 4º A classificação das informações produzidas pelo TCU...” imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Inicie blocos próprios nos incisos II, III e IV do § 1º do Art. 17, a partir de “II - o prazo máximo de quatro anos para realização de cada revisão de ofício” (pág. 5).\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Inicie blocos próprios nos incisos II, III, IV e V do § 2º do Art. 19, a partir de “II - à realização de estatísticas e pesquisas científicas...” (pág. 6).\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21225/NORMA-21225_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 119,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 4º A classificação das informações produzidas pelo TCU...” imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Inicie blocos próprios nos incisos II, III e IV do § 1º do Art. 17, a partir de “II - o prazo máximo de quatro anos para realização de cada revisão de ofício” (pág. 5).\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Inicie blocos próprios nos incisos II, III, IV e V do § 2º do Art. 19, a partir de “II - à realização de estatísticas e pesquisas científicas...” (pág. 6).\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 9º, inciso I, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 9º Em função do grau de confidencialidade...” contém, sem corte próprio, o inciso “I - no grau ultrassecreto...”"
+        },
+        {
+          "onde": "Art. 11, incisos I a VI, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 11. A classificação da informação...” contém os incisos I, II, III, IV, V e VI sem blocos próprios."
+        },
+        {
+          "onde": "§ 1º do Art. 14, incisos I a VI, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “§ 1º No momento em que for recebida a informação...” contém os incisos I, II, III, IV, V e VI sem blocos próprios."
+        },
+        {
+          "onde": "§ 1º do Art. 17, incisos I a IV, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “§ 1º Para o cumprimento do disposto no caput...” contém os incisos I, II, III e IV sem cortes antes de cada inciso."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 4º A classificação das informações produzidas pelo TCU...” imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 9º Em função do grau de confidencialidade...” imediatamente antes de “I - no grau ultrassecreto...” (pág. 3) e inicie um bloco próprio no inciso I.\n- Termine o bloco do “Art. 11. A classificação da informação em grau de confidencialidade...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Termine o bloco do “§ 1º No momento em que for recebida a informação...” do Art. 14 imediatamente antes de “I - grau de confidencialidade” (pág. 5) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “§ 1º Para o cumprimento do disposto no caput...” do Art. 17 imediatamente antes de “I - o prazo máximo de restrição de acesso...” (pág. 5) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Inicie blocos próprios nos incisos II, III, IV e V do § 2º do Art. 19, a partir de “II - à realização de estatísticas e pesquisas científicas...” (pág. 6).\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21225/NORMA-21225_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 120,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 4º A classificação das informações produzidas pelo TCU...” imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 9º Em função do grau de confidencialidade...” imediatamente antes de “I - no grau ultrassecreto...” (pág. 3) e inicie um bloco próprio no inciso I.\n- Termine o bloco do “Art. 11. A classificação da informação em grau de confidencialidade...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Termine o bloco do “§ 1º No momento em que for recebida a informação...” do Art. 14 imediatamente antes de “I - grau de confidencialidade” (pág. 5) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “§ 1º Para o cumprimento do disposto no caput...” do Art. 17 imediatamente antes de “I - o prazo máximo de restrição de acesso...” (pág. 5) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Inicie blocos próprios nos incisos II, III, IV e V do § 2º do Art. 19, a partir de “II - à realização de estatísticas e pesquisas científicas...” (pág. 6).\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "“resolve:”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho conclusivo do preâmbulo “, resolve:” ficou fora de qualquer bloco, embora deva integrar o bloco iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...”."
+        },
+        {
+          "onde": "Art. 6º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 6º Os prazos máximos de restrição...” contém sem cortes próprios os incisos I, II, III e IV."
+        },
+        {
+          "onde": "§ 1º do Art. 14, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 1º No momento em que for recebida a informação...” contém sem cortes próprios os incisos I a VI."
+        },
+        {
+          "onde": "§ 1º do Art. 17, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 1º Para o cumprimento do disposto no caput...” contém sem cortes próprios os incisos I a IV."
+        },
+        {
+          "onde": "§ 2º do Art. 19, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “§ 2º O consentimento referido no inciso II do § 1º não é exigido...” contém o inciso I, “I - à prevenção e diagnóstico médico...”, sem bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “Art. 6º Os prazos máximos de restrição de acesso à informação...” imediatamente antes de “I - reservada: 5 (cinco) anos” (pág. 2) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 1º No momento em que for recebida a informação...” do Art. 14 imediatamente antes de “I - grau de confidencialidade” (pág. 5) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “§ 1º Para o cumprimento do disposto no caput...” do Art. 17 imediatamente antes de “I - o prazo máximo de restrição de acesso...” (pág. 5) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 2º O consentimento referido no inciso II do § 1º não é exigido...” do Art. 19 imediatamente antes de “I - à prevenção e diagnóstico médico...” (pág. 6) e inicie blocos próprios em cada um dos incisos I a V.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 4º A classificação das informações produzidas pelo TCU...” imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 9º Em função do grau de confidencialidade...” imediatamente antes de “I - no grau ultrassecreto...” (pág. 3) e inicie um bloco próprio no inciso I.\n- Termine o bloco do “Art. 11. A classificação da informação em grau de confidencialidade...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21225/NORMA-21225_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 129,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “Art. 6º Os prazos máximos de restrição de acesso à informação...” imediatamente antes de “I - reservada: 5 (cinco) anos” (pág. 2) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 1º No momento em que for recebida a informação...” do Art. 14 imediatamente antes de “I - grau de confidencialidade” (pág. 5) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “§ 1º Para o cumprimento do disposto no caput...” do Art. 17 imediatamente antes de “I - o prazo máximo de restrição de acesso...” (pág. 5) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 2º O consentimento referido no inciso II do § 1º não é exigido...” do Art. 19 imediatamente antes de “I - à prevenção e diagnóstico médico...” (pág. 6) e inicie blocos próprios em cada um dos incisos I a V.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Termine o bloco do “Art. 4º A classificação das informações produzidas pelo TCU...” imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 9º Em função do grau de confidencialidade...” imediatamente antes de “I - no grau ultrassecreto...” (pág. 3) e inicie um bloco próprio no inciso I.\n- Termine o bloco do “Art. 11. A classificação da informação em grau de confidencialidade...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "O texto integral de “Art. 4º A classificação das informações produzidas pelo TCU observa a publicidade como preceito geral e o sigilo como exceção.” ficou fora de qualquer bloco após a Seção II."
+        },
+        {
+          "onde": "Art. 4º, págs. 2–2",
+          "tipo": "ancora",
+          "descricao": "O bloco devolvido para o Art. 4º não foi localizado porque sua âncora de início contém a grafia divergente “produzzidas”, enquanto o texto fonte contém “produzidas”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” até “resolve:” (pág. 1) em um bloco próprio antes de “Seção I — Das Disposições Preliminares”.\n- Termine o bloco do “Art. 6º Os prazos máximos de restrição de acesso à informação...” imediatamente antes de “I - reservada: 5 (cinco) anos” (pág. 2) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 1º No momento em que for recebida a informação...” do Art. 14 imediatamente antes de “I - grau de confidencialidade” (pág. 5) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “§ 1º Para o cumprimento do disposto no caput...” do Art. 17 imediatamente antes de “I - o prazo máximo de restrição de acesso...” (pág. 5) e inicie blocos próprios em cada um dos incisos I a IV.\n- Termine o bloco do “§ 2º O consentimento referido no inciso II do § 1º não é exigido...” do Art. 19 imediatamente antes de “I - à prevenção e diagnóstico médico...” (pág. 6) e inicie blocos próprios em cada um dos incisos I a V.\n- Termine o bloco do “§ 2º O intercâmbio de informações e documentos...” do Art. 2º imediatamente antes de “§ 3º O tratamento de informação não pública...” (pág. 1) e inicie blocos próprios em “§ 3º” e em “§ 4º Os controles administrativos e tecnológicos...”.\n- Inicie um bloco próprio em “Art. 4º A classificação das informações produzidas pelo TCU observa a publicidade como preceito geral e o sigilo como exceção.” (pág. 2), preservando a grafia “produzidas” da fonte; termine-o imediatamente antes de “§ 1º Compete exclusivamente ao TCU classificar...” e inicie blocos próprios em cada um dos §§ 1º e 2º.\n- Termine o bloco do “Art. 5º As informações produzidas pelo TCU classificam-se...” imediatamente antes de “§ 1º Classifica-se como pública...” (pág. 2) e inicie blocos próprios em cada um dos §§ 1º a 4º.\n- Inicie blocos próprios nos incisos V, VI, VII e VIII do Art. 7º, a partir de “V - prejudicar ou causar risco a planos ou operações estratégicos...” (pág. 3).\n- Inicie um bloco próprio no “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final” do parágrafo único do Art. 7º (pág. 3).\n- Termine o bloco do “Art. 9º Em função do grau de confidencialidade...” imediatamente antes de “I - no grau ultrassecreto...” (pág. 3) e inicie um bloco próprio no inciso I.\n- Termine o bloco do “Art. 11. A classificação da informação em grau de confidencialidade...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios em cada um dos incisos I a VI.\n- Termine o bloco do “Art. 12. Para fins de aplicação de controles de acesso administrativos e tecnológicos...” imediatamente antes de “I - grau de confidencialidade” (pág. 4) e inicie blocos próprios nos incisos I, II e III.\n- Termine o bloco do “§ 1º As informações a que se refere este artigo, relativas à intimidade...” do Art. 19 imediatamente antes de “I - têm o seu acesso restrito...” (pág. 6) e inicie blocos próprios nos incisos I e II.\n- Não gere um bloco que comece em “§ 2º Na hipótese de redução do prazo de restrição de acesso...” e termine no inciso IV do § 1º do Art. 17: mantenha a ordem textual das âncoras e encerre o § 1º antes de iniciar o § 2º (pág. 5).\n- Termine o bloco de “I - sigilosas: quando classificadas nos graus secreto, ultrassecreto, pessoal e sigiloso” do § 3º do Art. 25 imediatamente antes de “II - restritas: quando classificadas no grau reservado” (pág. 7) e inicie blocos próprios nos incisos II e III."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21225/NORMA-21225_ciclo5.json"
+  }
+]

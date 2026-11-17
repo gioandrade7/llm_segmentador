@@ -1,0 +1,142 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 117,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto preambular, incluindo os considerandos e a conclusão “resolve:”, ficou fora de qualquer bloco antes de “CAPÍTULO I”."
+        },
+        {
+          "onde": "Art. 3º, inciso I — “primeiro estágio:”, págs. 2–3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I contém também as alíneas “a) ato justificativo...”, “b) comprovante...” e “c) estudos de viabilidade...”, que são unidades próprias."
+        },
+        {
+          "onde": "Art. 3º, inciso IV, alínea b), item “4. decisões proferidas em recursos...”, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O item 4 da lista de documentos da fase de julgamento das propostas econômico-financeiras ficou sem bloco próprio."
+        },
+        {
+          "onde": "Art. 3º, inciso V — “quinto estágio:”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso V contém as alíneas “a) ato de outorga”, “b) contrato de concessão assinado”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”, bem como os itens 1 a 4 subordinados à alínea d), todos os quais devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que abre com “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais...” e termina em “resolve:” (pág. 1), antes de “CAPÍTULO I”.\n- No Art. 3º, inicie blocos próprios nas alíneas “a) ato justificativo quanto à conveniência da outorga...”, “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...” (pág. 2), encerrando o bloco do inciso “I - primeiro estágio:” antes da alínea a).\n- Inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso “V - quinto estágio:” (pág. 4), inicie blocos próprios em cada alínea “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”, e também em cada item 1 a 4 que abre com “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20182/NORMA-20182_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 105,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que abre com “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais...” e termina em “resolve:” (pág. 1), antes de “CAPÍTULO I”.\n- No Art. 3º, inicie blocos próprios nas alíneas “a) ato justificativo quanto à conveniência da outorga...”, “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...” (pág. 2), encerrando o bloco do inciso “I - primeiro estágio:” antes da alínea a).\n- Inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso “V - quinto estágio:” (pág. 4), inicie blocos próprios em cada alínea “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”, e também em cada item 1 a 4 que abre com “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, inciso III — “III - terceiro estágio:”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso III contém, sem blocos próprios, as alíneas a) a d) e os itens 1 a 6 da alínea c)."
+        },
+        {
+          "onde": "Art. 3º, inciso V — “V - quinto estágio:”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso V contém as alíneas a) a d) e os itens 1 a 4 subordinados à alínea d), sem cortes próprios para essas unidades."
+        },
+        {
+          "onde": "Art. 4º, inciso IV, alínea b), transição entre as págs. 4 e 5",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “e de julgamento das propostas técnicas;” ficou sem bloco, embora seja a continuação da alínea b) iniciada na página anterior."
+        },
+        {
+          "onde": "Art. 6º — “Art. 6º Na fase de execução contratual...”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 6º contém também o marcador e o texto de “Parágrafo único. A atuação da unidade técnica...”, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 7º, inciso VIII — “VIII - declaração da caducidade da concessão...”, págs. 6 e 7",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos IX, X, XI, XII, XIII e XIV, que não receberam blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que abre com “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais...” e termina em “resolve:” (pág. 1), antes de “CAPÍTULO I”.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), encerre o bloco do inciso antes de cada alínea e inicie blocos próprios em “a) ato justificativo quanto à conveniência da outorga...”, “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20182/NORMA-20182_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 127,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que abre com “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais...” e termina em “resolve:” (pág. 1), antes de “CAPÍTULO I”.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), encerre o bloco do inciso antes de cada alínea e inicie blocos próprios em “a) ato justificativo quanto à conveniência da outorga...”, “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 2º, inciso I — “I - concessão de serviço público: ...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação “por sua conta e risco e por prazo determinado;” ficou sem bloco, embora integre o texto do inciso I."
+        },
+        {
+          "onde": "Art. 3º, inciso I — “I - primeiro estágio:”, alínea “a) ato justificativo quanto à conveniência da outorga...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I contém também a alínea a), que é marcador hierárquico e deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 3º, inciso III, alínea c) — itens “5. declaração dos licitantes...” e “6. compromisso do licitante...”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os itens 5 e 6 ficaram sem bloco, embora sejam itens numerados que devem iniciar unidades próprias."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º, mantenha no bloco do inciso “I - concessão de serviço público: ...” toda a sua continuação, inclusive “por sua conta e risco e por prazo determinado;” (pág. 1); não deixe esse trecho sem bloco.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), termine o bloco do inciso imediatamente antes de “a) ato justificativo quanto à conveniência da outorga...” e inicie um bloco próprio nessa alínea; mantenha também blocos próprios em “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”, sem deixar os itens 5 e 6 sem bloco.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20182/NORMA-20182_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 129,
+    "insights_aplicados": "- No Art. 2º, mantenha no bloco do inciso “I - concessão de serviço público: ...” toda a sua continuação, inclusive “por sua conta e risco e por prazo determinado;” (pág. 1); não deixe esse trecho sem bloco.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), termine o bloco do inciso imediatamente antes de “a) ato justificativo quanto à conveniência da outorga...” e inicie um bloco próprio nessa alínea; mantenha também blocos próprios em “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”, sem deixar os itens 5 e 6 sem bloco.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo anterior a “CAPÍTULO I”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Todo o texto introdutório, de “O TRIBUNAL DE CONTAS DA UNIÃO...” até “resolve:”, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 9º, inciso II — “II - instrumento de denúncia de convênio de delegação...”, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação do inciso, “de rodovia federal delegada.”, ficou sem bloco após “versando sobre a exploração de trecho”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Antes de “CAPÍTULO I” (pág. 1), crie um bloco para todo o preâmbulo, de “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício...” até “resolve:”; não deixe esse texto introdutório sem bloco.\n- No Art. 2º, mantenha no bloco do inciso “I - concessão de serviço público: ...” toda a sua continuação, inclusive “por sua conta e risco e por prazo determinado;” (pág. 1); não deixe esse trecho sem bloco.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), termine o bloco do inciso imediatamente antes de “a) ato justificativo quanto à conveniência da outorga...” e inicie um bloco próprio nessa alínea; mantenha também blocos próprios em “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”, sem deixar os itens 5 e 6 sem bloco.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6).\n- No Art. 9º, inciso II — “II - instrumento de denúncia de convênio de delegação...” (pág. 7), mantenha no mesmo bloco toda a continuação após “versando sobre a exploração de trecho”, inclusive “de rodovia federal delegada.”; não deixe essa continuação sem bloco."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20182/NORMA-20182_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 128,
+    "insights_aplicados": "- Antes de “CAPÍTULO I” (pág. 1), crie um bloco para todo o preâmbulo, de “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício...” até “resolve:”; não deixe esse texto introdutório sem bloco.\n- No Art. 2º, mantenha no bloco do inciso “I - concessão de serviço público: ...” toda a sua continuação, inclusive “por sua conta e risco e por prazo determinado;” (pág. 1); não deixe esse trecho sem bloco.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), termine o bloco do inciso imediatamente antes de “a) ato justificativo quanto à conveniência da outorga...” e inicie um bloco próprio nessa alínea; mantenha também blocos próprios em “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”, sem deixar os itens 5 e 6 sem bloco.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6).\n- No Art. 9º, inciso II — “II - instrumento de denúncia de convênio de delegação...” (pág. 7), mantenha no mesmo bloco toda a continuação após “versando sobre a exploração de trecho”, inclusive “de rodovia federal delegada.”; não deixe essa continuação sem bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, inciso III — “III - terceiro estágio - dez dias, no máximo, após:”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém as alíneas “a) a divulgação do resultado final da fase de habilitação;” e “b) a análise conclusiva dos recursos interpostos contra o resultado da fase de habilitação;”, sem blocos próprios para essas alíneas."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Antes de “CAPÍTULO I” (pág. 1), crie um bloco para todo o preâmbulo, de “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício...” até “resolve:”; não deixe esse texto introdutório sem bloco.\n- No Art. 2º, mantenha no bloco do inciso “I - concessão de serviço público: ...” toda a sua continuação, inclusive “por sua conta e risco e por prazo determinado;” (pág. 1); não deixe esse trecho sem bloco.\n- No Art. 3º, inciso I — “I - primeiro estágio:” (pág. 2), termine o bloco do inciso imediatamente antes de “a) ato justificativo quanto à conveniência da outorga...” e inicie um bloco próprio nessa alínea; mantenha também blocos próprios em “b) comprovante de que o objeto licitado...” e “c) estudos de viabilidade técnica e econômica...”.\n- No Art. 3º, inciso III — “III - terceiro estágio:” (pág. 3), inicie blocos próprios nas alíneas “a) questionamentos, comunicações e esclarecimentos...”, “b) atas de abertura e de encerramento...”, “c) relatório de julgamento da fase de habilitação...” e “d) decisões proferidas em recursos...”; dentro da alínea c), inicie também blocos próprios em cada item de “1. habilitação jurídica;” até “6. compromisso do licitante de informar...”, sem deixar os itens 5 e 6 sem bloco.\n- No Art. 3º, inciso IV, alínea a), inicie um bloco próprio no item “4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas técnicas;” (pág. 4).\n- No Art. 3º, inciso V — “V - quinto estágio:” (pág. 4), mesmo quando os marcadores aparecem em sequência no mesmo trecho, inicie blocos próprios em “a) ato de outorga;”, “b) contrato de concessão assinado;”, “c) Programa de Exploração da Rodovia (PER)...” e “d) cópia da proposta econômico-financeira...”; dentro da alínea d), inicie também blocos próprios nos itens “1. matriz de tráfego...”, “2. discriminação de todas as receitas...”, “3. discriminação e cronograma...” e “4. fluxo de caixa da concessão...”.\n- No Art. 4º, inciso III — “III - terceiro estágio - dez dias, no máximo, após:” (pág. 4), termine o bloco do inciso antes de “a) a divulgação do resultado final da fase de habilitação;” e inicie blocos próprios nessa alínea e em “b) a análise conclusiva dos recursos interpostos contra o resultado da fase de habilitação;”, ainda que ambas apareçam imediatamente após os dois-pontos.\n- No Art. 4º, inciso IV, mantenha no bloco da alínea “b) a análise conclusiva dos recursos interpostos contra o resultado final da fas...” a continuação da página seguinte, “e de julgamento das propostas técnicas;” (págs. 4 e 5); não deixe essa continuação sem bloco.\n- No Art. 6º, termine o bloco de “Art. 6º Na fase de execução contratual...” antes de “Parágrafo único. A atuação da unidade técnica...” (pág. 5) e inicie um bloco próprio no parágrafo único.\n- No Art. 7º, termine o bloco de “VIII - declaração da caducidade da concessão...” antes de “IX - ação judicial movida pela concessionária...” (pág. 6) e inicie blocos próprios em cada inciso de IX a XIV, inclusive “XIV - prorrogação do prazo contratual.” (pág. 6).\n- No Art. 9º, inciso II — “II - instrumento de denúncia de convênio de delegação...” (pág. 7), mantenha no mesmo bloco toda a continuação após “versando sobre a exploração de trecho”, inclusive “de rodovia federal delegada.”; não deixe essa continuação sem bloco."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20182/NORMA-20182_ciclo5.json"
+  }
+]

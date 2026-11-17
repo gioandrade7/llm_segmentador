@@ -1,0 +1,142 @@
+{
+  "prefixo": "resultados_rodada_sem_limite/tcu/NORMA-21767/NORMA-21767",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/NORMA-21767.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 129,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 129,
+      "fronteiras_gabarito": 158,
+      "acertos": 129,
+      "precisao": 1.0,
+      "revocacao": 0.8164556962025317,
+      "f1": 0.8989547038327527,
+      "fins": {
+        "previstos": 129,
+        "gabarito": 158,
+        "fins_nao_localizados": 0,
+        "acertos": 128,
+        "precisao": 0.9922480620155039,
+        "revocacao": 0.810126582278481,
+        "f1": 0.89198606271777
+      },
+      "blocos_exatos": {
+        "acertos": 121,
+        "precisao": 0.937984496124031,
+        "revocacao": 0.7658227848101266,
+        "f1": 0.8432055749128919
+      },
+      "cobertura": 0.9626800311405216
+    },
+    {
+      "ciclo": 2,
+      "blocos": 150,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 150,
+      "fronteiras_gabarito": 158,
+      "acertos": 150,
+      "precisao": 1.0,
+      "revocacao": 0.9493670886075949,
+      "f1": 0.974025974025974,
+      "fins": {
+        "previstos": 150,
+        "gabarito": 158,
+        "fins_nao_localizados": 0,
+        "acertos": 150,
+        "precisao": 1.0,
+        "revocacao": 0.9493670886075949,
+        "f1": 0.974025974025974
+      },
+      "blocos_exatos": {
+        "acertos": 145,
+        "precisao": 0.9666666666666667,
+        "revocacao": 0.9177215189873418,
+        "f1": 0.9415584415584415
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 3,
+      "blocos": 144,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 144,
+      "fronteiras_gabarito": 158,
+      "acertos": 144,
+      "precisao": 1.0,
+      "revocacao": 0.9113924050632911,
+      "f1": 0.9536423841059603,
+      "fins": {
+        "previstos": 144,
+        "gabarito": 158,
+        "fins_nao_localizados": 0,
+        "acertos": 142,
+        "precisao": 0.9861111111111112,
+        "revocacao": 0.8987341772151899,
+        "f1": 0.9403973509933775
+      },
+      "blocos_exatos": {
+        "acertos": 135,
+        "precisao": 0.9375,
+        "revocacao": 0.8544303797468354,
+        "f1": 0.8940397350993377
+      },
+      "cobertura": 0.9970319190346438
+    },
+    {
+      "ciclo": 4,
+      "blocos": 151,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 151,
+      "fronteiras_gabarito": 158,
+      "acertos": 151,
+      "precisao": 1.0,
+      "revocacao": 0.9556962025316456,
+      "f1": 0.9773462783171522,
+      "fins": {
+        "previstos": 151,
+        "gabarito": 158,
+        "fins_nao_localizados": 0,
+        "acertos": 150,
+        "precisao": 0.9933774834437086,
+        "revocacao": 0.9493670886075949,
+        "f1": 0.9708737864077669
+      },
+      "blocos_exatos": {
+        "acertos": 146,
+        "precisao": 0.9668874172185431,
+        "revocacao": 0.9240506329113924,
+        "f1": 0.9449838187702266
+      },
+      "cobertura": 0.9999513429349942
+    },
+    {
+      "ciclo": 5,
+      "blocos": 150,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 150,
+      "fronteiras_gabarito": 158,
+      "acertos": 150,
+      "precisao": 1.0,
+      "revocacao": 0.9493670886075949,
+      "f1": 0.974025974025974,
+      "fins": {
+        "previstos": 149,
+        "gabarito": 158,
+        "fins_nao_localizados": 1,
+        "acertos": 148,
+        "precisao": 0.9932885906040269,
+        "revocacao": 0.9367088607594937,
+        "f1": 0.9641693811074918
+      },
+      "blocos_exatos": {
+        "acertos": 144,
+        "precisao": 0.96,
+        "revocacao": 0.9113924050632911,
+        "f1": 0.935064935064935
+      },
+      "cobertura": 0.9823374854028805
+    }
+  ]
+}

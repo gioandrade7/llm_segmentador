@@ -1,0 +1,142 @@
+{
+  "prefixo": "resultados_amostra5/lei_2017/LEI-2017-13432/LEI-2017-13432",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/LEI-2017-13432.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 36,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 36,
+      "fronteiras_gabarito": 49,
+      "acertos": 36,
+      "precisao": 1.0,
+      "revocacao": 0.7346938775510204,
+      "f1": 0.8470588235294119,
+      "fins": {
+        "previstos": 36,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 36,
+        "precisao": 1.0,
+        "revocacao": 0.7346938775510204,
+        "f1": 0.8470588235294119
+      },
+      "blocos_exatos": {
+        "acertos": 33,
+        "precisao": 0.9166666666666666,
+        "revocacao": 0.673469387755102,
+        "f1": 0.7764705882352941
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 2,
+      "blocos": 45,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 45,
+      "fronteiras_gabarito": 49,
+      "acertos": 45,
+      "precisao": 1.0,
+      "revocacao": 0.9183673469387755,
+      "f1": 0.9574468085106383,
+      "fins": {
+        "previstos": 45,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 45,
+        "precisao": 1.0,
+        "revocacao": 0.9183673469387755,
+        "f1": 0.9574468085106383
+      },
+      "blocos_exatos": {
+        "acertos": 43,
+        "precisao": 0.9555555555555556,
+        "revocacao": 0.8775510204081632,
+        "f1": 0.9148936170212767
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 3,
+      "blocos": 45,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 45,
+      "fronteiras_gabarito": 49,
+      "acertos": 45,
+      "precisao": 1.0,
+      "revocacao": 0.9183673469387755,
+      "f1": 0.9574468085106383,
+      "fins": {
+        "previstos": 45,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 45,
+        "precisao": 1.0,
+        "revocacao": 0.9183673469387755,
+        "f1": 0.9574468085106383
+      },
+      "blocos_exatos": {
+        "acertos": 43,
+        "precisao": 0.9555555555555556,
+        "revocacao": 0.8775510204081632,
+        "f1": 0.9148936170212767
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 4,
+      "blocos": 41,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 41,
+      "fronteiras_gabarito": 49,
+      "acertos": 41,
+      "precisao": 1.0,
+      "revocacao": 0.8367346938775511,
+      "f1": 0.9111111111111111,
+      "fins": {
+        "previstos": 41,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 41,
+        "precisao": 1.0,
+        "revocacao": 0.8367346938775511,
+        "f1": 0.9111111111111111
+      },
+      "blocos_exatos": {
+        "acertos": 39,
+        "precisao": 0.9512195121951219,
+        "revocacao": 0.7959183673469388,
+        "f1": 0.8666666666666666
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 5,
+      "blocos": 45,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 45,
+      "fronteiras_gabarito": 49,
+      "acertos": 45,
+      "precisao": 1.0,
+      "revocacao": 0.9183673469387755,
+      "f1": 0.9574468085106383,
+      "fins": {
+        "previstos": 45,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 45,
+        "precisao": 1.0,
+        "revocacao": 0.9183673469387755,
+        "f1": 0.9574468085106383
+      },
+      "blocos_exatos": {
+        "acertos": 43,
+        "precisao": 0.9555555555555556,
+        "revocacao": 0.8775510204081632,
+        "f1": 0.9148936170212767
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o preâmbulo e os considerandos, até “resolve:”, ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "Inciso I — “I - floresta pública: floresta, natural ou plantada...”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso I contém também os incisos II, III e IV do art. 2º, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Inciso VIII — “VIII - unidade de manejo: perímetro definido...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso VIII contém também os incisos IX, X e XI do art. 2º, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...”, incluindo os considerandos até “resolve:”, imediatamente antes de “Art. 1º”.\n- Termine o bloco de “I - floresta pública: floresta, natural ou plantada...” (pág. 1) antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II -”, “III -” e “IV -” do art. 2º.\n- Termine o bloco de “VIII - unidade de manejo: perímetro definido...” (pág. 2) antes de “IX - Plano Anual de Outorga Florestal (PAOF)” e inicie blocos próprios em “IX -”, “X -” e “XI -” do art. 2º."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20186/NORMA-20186_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...”, incluindo os considerandos até “resolve:”, imediatamente antes de “Art. 1º”.\n- Termine o bloco de “I - floresta pública: floresta, natural ou plantada...” (pág. 1) antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II -”, “III -” e “IV -” do art. 2º.\n- Termine o bloco de “VIII - unidade de manejo: perímetro definido...” (pág. 2) antes de “IX - Plano Anual de Outorga Florestal (PAOF)” e inicie blocos próprios em “IX -”, “X -” e “XI -” do art. 2º.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS)...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado na alínea `a)` do inciso V do art. 7º contém também as alíneas irmãs `b) comunicação quando da assinatura...` e `c) relatório sintético contendo...`, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...”, incluindo os considerandos até “resolve:”, imediatamente antes de “Art. 1º”.\n- Termine o bloco de “I - floresta pública: floresta, natural ou plantada...” (pág. 1) antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II -”, “III -” e “IV -” do art. 2º.\n- Termine o bloco de “VIII - unidade de manejo: perímetro definido...” (pág. 2) antes de “IX - Plano Anual de Outorga Florestal (PAOF)” e inicie blocos próprios em “IX -”, “X -” e “XI -” do art. 2º.\n- Termine o bloco de “a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS)...” (pág. 4), do inciso V do art. 7º, antes de “b) comunicação quando da assinatura dos referidos contratos...”; inicie blocos próprios em “b)” e em “c) relatório sintético contendo...”."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20186/NORMA-20186_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 54,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...”, incluindo os considerandos até “resolve:”, imediatamente antes de “Art. 1º”.\n- Termine o bloco de “I - floresta pública: floresta, natural ou plantada...” (pág. 1) antes de “II - manejo florestal sustentável” e inicie blocos próprios em “II -”, “III -” e “IV -” do art. 2º.\n- Termine o bloco de “VIII - unidade de manejo: perímetro definido...” (pág. 2) antes de “IX - Plano Anual de Outorga Florestal (PAOF)” e inicie blocos próprios em “IX -”, “X -” e “XI -” do art. 2º.\n- Termine o bloco de “a) lista dos requerimentos de qualificação de Planos de Manejo Florestal Sustentável (PMFS)...” (pág. 4), do inciso V do art. 7º, antes de “b) comunicação quando da assinatura dos referidos contratos...”; inicie blocos próprios em “b)” e em “c) relatório sintético contendo...”.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20186/NORMA-20186_ciclo3.json"
+  }
+]

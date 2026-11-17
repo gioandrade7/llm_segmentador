@@ -1,0 +1,68 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 22,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório, incluindo os considerandos e a fórmula decisória \"resolve:\", ficou fora de qualquer bloco antes de \"CAPÍTULO I\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco próprio para o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais\" (pág. 1), incluindo todos os considerandos e terminando após \"resolve:\", antes de \"CAPÍTULO I\"."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21439/NORMA-21439_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 23,
+    "insights_aplicados": "- Crie um bloco próprio para o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais\" (pág. 1), incluindo todos os considerandos e terminando após \"resolve:\", antes de \"CAPÍTULO I\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 6º É vedada a contratação...`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final da unidade, \"no TCU.\", ficou sem bloco, separando indevidamente o texto do Art. 6º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco próprio para o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais\" (pág. 1), incluindo todos os considerandos e terminando após \"resolve:\", antes de \"CAPÍTULO I\".\n- Mantenha no mesmo bloco todo o `Art. 6º É vedada a contratação de cônjuge...` (pág. 1), incluindo sua continuação final \"no TCU.\", antes de iniciar \"CAPÍTULO II\"."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21439/NORMA-21439_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 22,
+    "insights_aplicados": "- Crie um bloco próprio para o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais\" (pág. 1), incluindo todos os considerandos e terminando após \"resolve:\", antes de \"CAPÍTULO I\".\n- Mantenha no mesmo bloco todo o `Art. 6º É vedada a contratação de cônjuge...` (pág. 1), incluindo sua continuação final \"no TCU.\", antes de iniciar \"CAPÍTULO II\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`§ 1º O estudante deve, comprovadamente, estar frequentando o ensino regular...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado pelo § 1º do Art. 1º contém também o marcador e todo o texto do `§ 2º É vedada a realização de estágio em atividades de controle externo.`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `§ 1º O estudante deve, comprovadamente, estar frequentando o ensino regular...` do Art. 1º (pág. 1) imediatamente antes de `§ 2º É vedada a realização de estágio em atividades de controle externo.` e inicie um bloco próprio para esse § 2º.\n- Crie um bloco próprio para o preâmbulo iniciado por `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais` (pág. 1), incluindo todos os considerandos e terminando após `resolve:`, antes de `CAPÍTULO I`.\n- Mantenha no mesmo bloco todo o `Art. 6º É vedada a contratação de cônjuge...` (pág. 1), incluindo sua continuação final `no TCU.`, antes de iniciar `CAPÍTULO II`."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21439/NORMA-21439_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 23,
+    "insights_aplicados": "- Termine o bloco de `§ 1º O estudante deve, comprovadamente, estar frequentando o ensino regular...` do Art. 1º (pág. 1) imediatamente antes de `§ 2º É vedada a realização de estágio em atividades de controle externo.` e inicie um bloco próprio para esse § 2º.\n- Crie um bloco próprio para o preâmbulo iniciado por `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais` (pág. 1), incluindo todos os considerandos e terminando após `resolve:`, antes de `CAPÍTULO I`.\n- Mantenha no mesmo bloco todo o `Art. 6º É vedada a contratação de cônjuge...` (pág. 1), incluindo sua continuação final `no TCU.`, antes de iniciar `CAPÍTULO II`.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21439/NORMA-21439_ciclo4.json"
+  }
+]

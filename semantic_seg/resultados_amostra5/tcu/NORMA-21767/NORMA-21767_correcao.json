@@ -1,0 +1,202 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 131,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto introdutório anterior a “CAPÍTULO I” ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "inciso III do Art. 2º, iniciado por “III - autoridade instrutora”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho final da frase, “sta de encaminhamento à autoridade julgadora;”, ficou fora do bloco, separando a palavra “proposta” entre o bloco e o texto sem bloco."
+        },
+        {
+          "onde": "Art. 6º, incisos II a IV, iniciados por “II - multa”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II, III e IV ficaram fora de qualquer bloco após o inciso I."
+        },
+        {
+          "onde": "§ 1º do Art. 7º, incisos II e III, iniciados por “II - não atendimento às diligências”, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II e III ficaram fora de qualquer bloco após o inciso I."
+        },
+        {
+          "onde": "Art. 11, incisos IV a VI, iniciados por “IV - de dois meses a um ano”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos IV, V e VI ficaram fora de qualquer bloco após o inciso III."
+        },
+        {
+          "onde": "parágrafo único do Art. 11, incisos IV a VI, iniciados por “IV - de três a quatro anos”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos IV, V e VI ficaram fora de qualquer bloco após o inciso III."
+        },
+        {
+          "onde": "Art. 12, iniciado por “Art. 12. As infrações administrativas”, págs. 5-6",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém os incisos I a V, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 14, inciso I, iniciado por “I - ordinário”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso I contém também o inciso II, iniciado por “II - sumário”."
+        },
+        {
+          "onde": "CAPÍTULO IV, iniciado por “CAPÍTULO IV”, pág. 8",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o Art. 31, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 33, iniciado por “Art. 33. É admitida a reabilitação”, pág. 9",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém os incisos I a V, embora cada inciso deva iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No Art. 11 (pág. 5), inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”.\n- No parágrafo único do Art. 11 (pág. 5), inicie blocos próprios em “IV - de três a quatro anos”, “V - de três a quatro anos” e “VI - de três a cinco anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21767/NORMA-21767_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 147,
+    "insights_aplicados": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No Art. 11 (pág. 5), inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”.\n- No parágrafo único do Art. 11 (pág. 5), inicie blocos próprios em “IV - de três a quatro anos”, “V - de três a quatro anos” e “VI - de três a cinco anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "inciso VII do Art. 2º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho final \"do Tribunal;\" ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 4º, inciso II, págs. 2–3",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso \"II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;\" ficou sem bloco."
+        },
+        {
+          "onde": "Art. 4º, alíneas b) e c) do inciso III, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "as alíneas \"b) dos princípios do contraditório...\" e \"c) das vedações ao agente público...\" ficaram sem blocos próprios."
+        },
+        {
+          "onde": "Art. 4º, inciso V, e CAPÍTULO II, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso \"V - a notificação válida ao licitante ou ao contratado.\" e o marcador \"CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES\" ficaram sem bloco."
+        },
+        {
+          "onde": "bloco não localizado, págs. 3–3",
+          "tipo": "ancora",
+          "descricao": "foi devolvido um bloco cuja âncora começa em \"CAPÍTULO II ... Art. 5º\" mas termina no texto anterior \"V - a notificação válida... CAPÍTULO II\", não correspondendo a um intervalo localizável na ordem do documento."
+        },
+        {
+          "onde": "Art. 11, incisos III a VI, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em \"III - de dois meses a seis meses\" contém também os incisos IV, V e VI, sem cortes antes desses marcadores."
+        },
+        {
+          "onde": "Art. 11, parágrafo único, incisos IV a VI, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em \"IV - de três a quatro anos\" contém também os incisos V e VI, sem cortes antes desses marcadores."
+        },
+        {
+          "onde": "Art. 17, parágrafo único, pág. 7",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 17 contém também o marcador e o texto do \"Parágrafo único.\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21767/NORMA-21767_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 150,
+    "insights_aplicados": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, incisos I e II, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 3º São objetivos do processo de responsabilização:” contém, sem blocos próprios, os incisos “I - garantir a adequada condução...” e “II - assegurar ao licitante...”."
+        },
+        {
+          "onde": "Art. 11, inciso VI, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “otivo justificado.” ficou sem bloco, separando-se indevidamente do texto do inciso VI, que termina em “sem m”."
+        },
+        {
+          "onde": "Art. 13, §§ 1º e 2º, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 13. O processo de responsabilização...” contém também os marcadores “§ 1º A autuação...” e “§ 2º O processo de responsabilização será conduzido...”, sem cortes próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 3º, termine o bloco introdutório imediatamente antes de “I - garantir a adequada condução das licitações e contratos administrativos” (pág. 2) e inicie blocos próprios nos incisos I e II, incluindo “II - assegurar ao licitante e ao contratado o devido processo legal...”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”. Mantenha integralmente no bloco do inciso VI o trecho “sem motivo justificado.”, sem deixar “otivo justificado.” fora de bloco.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- No Art. 13 (pág. 6), termine o bloco iniciado por “Art. 13. O processo de responsabilização...” imediatamente antes de “§ 1º A autuação do processo de responsabilização...” e inicie blocos próprios em “§ 1º A autuação...” e “§ 2º O processo de responsabilização será conduzido...”.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21767/NORMA-21767_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 154,
+    "insights_aplicados": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 3º, termine o bloco introdutório imediatamente antes de “I - garantir a adequada condução das licitações e contratos administrativos” (pág. 2) e inicie blocos próprios nos incisos I e II, incluindo “II - assegurar ao licitante e ao contratado o devido processo legal...”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”. Mantenha integralmente no bloco do inciso VI o trecho “sem motivo justificado.”, sem deixar “otivo justificado.” fora de bloco.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- No Art. 13 (pág. 6), termine o bloco iniciado por “Art. 13. O processo de responsabilização...” imediatamente antes de “§ 1º A autuação do processo de responsabilização...” e inicie blocos próprios em “§ 1º A autuação...” e “§ 2º O processo de responsabilização será conduzido...”.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Incisos XI e XII do Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação; e” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...” ficaram sem bloco."
+        },
+        {
+          "onde": "§ 2º do Art. 7º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “I - o licitante ou o contratado...” contém também o inciso irmão “II - a conduta praticada ser decorrente...”, sem corte próprio antes deste último."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 3º, termine o bloco introdutório imediatamente antes de “I - garantir a adequada condução das licitações e contratos administrativos” (pág. 2) e inicie blocos próprios nos incisos I e II, incluindo “II - assegurar ao licitante e ao contratado o devido processo legal...”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 5º, inicie blocos próprios em “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação; e” e em “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846, de 1º de agosto de 2013.” (pág. 3).\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No § 2º do Art. 7º, termine o bloco do inciso I imediatamente antes de “II - a conduta praticada ser decorrente da apresentação de documentação” (pág. 4) e inicie um bloco próprio nesse inciso II.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”. Mantenha integralmente no bloco do inciso VI o trecho “sem motivo justificado.”, sem deixar “otivo justificado.” fora de bloco.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- No Art. 13 (pág. 6), termine o bloco iniciado por “Art. 13. O processo de responsabilização...” imediatamente antes de “§ 1º A autuação do processo de responsabilização...” e inicie blocos próprios em “§ 1º A autuação...” e “§ 2º O processo de responsabilização será conduzido...”.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21767/NORMA-21767_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 153,
+    "insights_aplicados": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 3º, termine o bloco introdutório imediatamente antes de “I - garantir a adequada condução das licitações e contratos administrativos” (pág. 2) e inicie blocos próprios nos incisos I e II, incluindo “II - assegurar ao licitante e ao contratado o devido processo legal...”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 5º, inicie blocos próprios em “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação; e” e em “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846, de 1º de agosto de 2013.” (pág. 3).\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No § 2º do Art. 7º, termine o bloco do inciso I imediatamente antes de “II - a conduta praticada ser decorrente da apresentação de documentação” (pág. 4) e inicie um bloco próprio nesse inciso II.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”. Mantenha integralmente no bloco do inciso VI o trecho “sem motivo justificado.”, sem deixar “otivo justificado.” fora de bloco.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- No Art. 13 (pág. 6), termine o bloco iniciado por “Art. 13. O processo de responsabilização...” imediatamente antes de “§ 1º A autuação do processo de responsabilização...” e inicie blocos próprios em “§ 1º A autuação...” e “§ 2º O processo de responsabilização será conduzido...”.\n- Termine o bloco do inciso I do Art. 14 imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "§ 1º do Art. 14, iniciado por “§ 1º A opção pelo procedimento ordinário ou sumário...”, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "o parágrafo inteiro ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "§ 1º do Art. 14, iniciado por “§ 1º A opção pelo procedimento ordinário ou sumário...”, pág. 6",
+          "tipo": "ancora",
+          "descricao": "há um bloco devolvido para essa unidade cuja âncora não foi localizada, embora o texto da unidade exista no documento e esteja sem bloco."
+        },
+        {
+          "onde": "Art. 8º, inciso IV, iniciado por “IV - a constatação de que a prática de atos ilícitos...”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IV contém também os incisos V, VI e VII, que são marcadores de unidades próprias."
+        },
+        {
+          "onde": "Art. 18, inciso II, alínea a), iniciada por “a) pela celebração de acordo de leniência...”, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "a alínea b), iniciada por “b) por decisão judicial que inviabilize a conclusão da apuração administrativa.”, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco introdutório para o preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1), antes de “CAPÍTULO I”.\n- Mantenha no bloco do inciso III do Art. 2º, iniciado por “III - autoridade instrutora” (pág. 1), toda a continuação “sta de encaminhamento à autoridade julgadora;”; não deixe esse trecho fora do bloco.\n- Mantenha no bloco do inciso VII do Art. 2º, iniciado por “VII - dar causa à inexecução parcial do contrato que cause grave dano” (pág. 1), o trecho final “do Tribunal;”.\n- No Art. 3º, termine o bloco introdutório imediatamente antes de “I - garantir a adequada condução das licitações e contratos administrativos” (pág. 2) e inicie blocos próprios nos incisos I e II, incluindo “II - assegurar ao licitante e ao contratado o devido processo legal...”.\n- No Art. 4º, inicie um bloco próprio em “II - a prática tempestiva do impulso necessário ao andamento célere e correto do processo;” (pág. 3).\n- No inciso III do Art. 4º, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa;” e em “c) das vedações ao agente público designado para atuar na área de licitações e contratos” (pág. 3).\n- No Art. 4º, inicie um bloco próprio em “V - a notificação válida ao licitante ou ao contratado.” (pág. 3) e, imediatamente depois, inicie outro bloco em “CAPÍTULO II — DAS INFRAÇÕES E SANÇÕES”. Não produza um único bloco que una esse inciso, o capítulo e o início do Art. 5º.\n- No Art. 5º, inicie blocos próprios em “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação; e” e em “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846, de 1º de agosto de 2013.” (pág. 3).\n- No Art. 6º (pág. 3), inicie blocos próprios em “II - multa”, “III - impedimento de licitar e contratar” e “IV - declaração de inidoneidade para licitar ou contratar”.\n- No § 1º do Art. 7º (pág. 4), inicie blocos próprios em “II - não atendimento às diligências” e “III - ausência de resposta às notificações”.\n- No § 2º do Art. 7º, termine o bloco do inciso I imediatamente antes de “II - a conduta praticada ser decorrente da apresentação de documentação” (pág. 4) e inicie um bloco próprio nesse inciso II.\n- No Art. 8º, termine o bloco do inciso IV, iniciado por “IV - a constatação de que a prática de atos ilícitos...” (pág. 4), imediatamente antes de “V - o caráter pedagógico da sanção” e inicie blocos próprios nos incisos V, VI e VII.\n- No Art. 11 (pág. 5), termine o bloco do inciso III imediatamente antes de “IV - de dois meses a um ano” e inicie blocos próprios em “IV - de dois meses a um ano”, “V - de seis meses a um ano” e “VI - de três meses a um ano”. Mantenha integralmente no bloco do inciso VI o trecho “sem motivo justificado.”, sem deixar “otivo justificado.” fora de bloco.\n- No parágrafo único do Art. 11 (pág. 5), termine o bloco do inciso IV imediatamente antes de “V - de três a quatro anos” e inicie blocos próprios em “V - de três a quatro anos” e “VI - de três a cinco anos”; mantenha também um bloco próprio iniciado em “IV - de três a quatro anos”.\n- Termine o bloco do Art. 12 imediatamente antes de “I - de três a quatro anos” (pág. 5) e inicie blocos próprios em cada inciso I a V do artigo, inclusive os incisos II a V na pág. 6.\n- No Art. 13 (pág. 6), termine o bloco iniciado por “Art. 13. O processo de responsabilização...” imediatamente antes de “§ 1º A autuação do processo de responsabilização...” e inicie blocos próprios em “§ 1º A autuação...” e “§ 2º O processo de responsabilização será conduzido...”.\n- No Art. 14, termine o bloco do inciso I imediatamente antes de “II - sumário” (pág. 6) e inicie um bloco novo nesse inciso. Em seguida, inicie também um bloco próprio em “§ 1º A opção pelo procedimento ordinário ou sumário a que referem, respectivamente, os incisos I e II deste artigo...” (pág. 6), antes de “§ 2º Se durante o processo...”.\n- No Art. 17, termine o bloco iniciado por “Art. 17. A extinção unilateral do contrato” imediatamente antes de “Parágrafo único. O disposto no caput deste artigo” (pág. 7) e inicie um bloco próprio no parágrafo único.\n- No Art. 18, inicie um bloco próprio na alínea “b) por decisão judicial que inviabilize a conclusão da apuração administrativa.” (pág. 7), imediatamente após o término da alínea “a) pela celebração de acordo de leniência...”.\n- Termine o bloco de “CAPÍTULO IV” imediatamente antes de “Art. 31. Aplicam-se subsidiariamente” (pág. 8) e inicie um bloco novo no artigo.\n- Termine o bloco do Art. 33 imediatamente antes de “I - reparação integral do dano causado à Administração Pública” (pág. 9) e inicie blocos próprios em cada inciso I a V."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-21767/NORMA-21767_ciclo5.json"
+  }
+]

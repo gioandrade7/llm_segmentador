@@ -1,0 +1,61 @@
+{
+  "prefixo": "resultados_rodada_sem_limite/lei_2017/LEI-2017-13432/LEI-2017-13432",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/LEI-2017-13432.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 34,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 34,
+      "fronteiras_gabarito": 49,
+      "acertos": 34,
+      "precisao": 1.0,
+      "revocacao": 0.6938775510204082,
+      "f1": 0.819277108433735,
+      "fins": {
+        "previstos": 34,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 34,
+        "precisao": 1.0,
+        "revocacao": 0.6938775510204082,
+        "f1": 0.819277108433735
+      },
+      "blocos_exatos": {
+        "acertos": 30,
+        "precisao": 0.8823529411764706,
+        "revocacao": 0.6122448979591837,
+        "f1": 0.7228915662650602
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 2,
+      "blocos": 48,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 48,
+      "fronteiras_gabarito": 49,
+      "acertos": 48,
+      "precisao": 1.0,
+      "revocacao": 0.9795918367346939,
+      "f1": 0.9896907216494846,
+      "fins": {
+        "previstos": 48,
+        "gabarito": 49,
+        "fins_nao_localizados": 0,
+        "acertos": 48,
+        "precisao": 1.0,
+        "revocacao": 0.9795918367346939,
+        "f1": 0.9896907216494846
+      },
+      "blocos_exatos": {
+        "acertos": 47,
+        "precisao": 0.9791666666666666,
+        "revocacao": 0.9591836734693877,
+        "f1": 0.9690721649484536
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

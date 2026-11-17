@@ -1,0 +1,257 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 333,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 1,
+          "tipo": "sobreposicao",
+          "descricao": "o bloco de fallback marcado como “TEXTO NÃO EXTRAÍDO” repete o cabeçalho “TITLE II—INVESTMENT ADVISERS”, que também inicia o bloco seguinte, produzindo sobreposição do título."
+        },
+        {
+          "bloco": 6,
+          "tipo": "englobante",
+          "descricao": "o item “(3)” termina contendo a rubrica “DEFINITIONS”, que é o título temático da unidade seguinte “SEC. 202.” e não pertence ao item (3)."
+        },
+        {
+          "bloco": 10,
+          "tipo": "granularidade",
+          "descricao": "o parágrafo “(2) ‘Bank’ means” contém internamente os subparágrafos “(A)”, “(B)”, “(C)” e “(D)”, enquanto esses mesmos subparágrafos são segmentados separadamente em outras partes do documento. O mesmo padrão de agrupamento indevido ocorre, por exemplo, em “SEC. 206.”, que conserva os itens “(1)” a “(4)” no mesmo bloco."
+        },
+        {
+          "bloco": 177,
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em “(d) STATE ASSISTANCE.—” da SEC. 203A estende-se por quase duas páginas e alcança unidades posteriores da SEC. 204, pois o bloco seguinte já começa em “(B) counterparty credit risk exposure;” na página 22, sem que os marcadores intermediários tenham aberto seus próprios blocos."
+        },
+        {
+          "bloco": 17,
+          "tipo": "corte_indevido",
+          "descricao": "o texto do item “(9) ‘Exchange’ means” incorpora cabeçalhos, rodapés, data de atualização, caminho de arquivo, numeração de página e o marcador “<!-- PÁGINA 3 -->”, que são ruído de página e devem ser descartados. O mesmo ruído recorrente aparece em diversos blocos que atravessam páginas."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Não emita um bloco de fallback para “TITLE II—INVESTMENT ADVISERS” quando o título já tiver sido capturado; mantenha apenas o bloco que se inicia nesse título na página 1.\n- Termine o item “(3) the foregoing transactions occur...” imediatamente antes da rubrica “DEFINITIONS” e inicie a unidade “SEC. 202. ø80b–2¿” com essa rubrica/título temático na página 1.\n- Separe todo marcador interno em bloco próprio, inclusive quando estiver na mesma linha do marcador-pai: em “(2) ‘Bank’ means” (pág. 2), abra blocos distintos em “(A) a banking institution...”, “(B) a member bank...”, “(C) any other banking institution...” e “(D) a receiver...”; aplique o mesmo critério aos itens “(1)” a “(4)” de “SEC. 206.” (pág. 27).\n- Ao processar “(d) STATE ASSISTANCE.—” da SEC. 203A (págs. 20–21), encerre cada unidade nos seus marcadores descendentes e inicie um bloco novo em “SEC. 204.” e em cada marcador subsequente da seção, sem deixar o conteúdo que antecede “(B) counterparty credit risk exposure;” (pág. 22) dentro do bloco de 203A(d).\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores como “<!-- PÁGINA 3 -->”; não os incorpore ao texto de unidades que atravessam páginas."
+    },
+    "arquivo_blocos": "resultados_5ciclos/sec-rules/sec-rules/sec-rules_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 351,
+    "insights_aplicados": "- Não emita um bloco de fallback para “TITLE II—INVESTMENT ADVISERS” quando o título já tiver sido capturado; mantenha apenas o bloco que se inicia nesse título na página 1.\n- Termine o item “(3) the foregoing transactions occur...” imediatamente antes da rubrica “DEFINITIONS” e inicie a unidade “SEC. 202. ø80b–2¿” com essa rubrica/título temático na página 1.\n- Separe todo marcador interno em bloco próprio, inclusive quando estiver na mesma linha do marcador-pai: em “(2) ‘Bank’ means” (pág. 2), abra blocos distintos em “(A) a banking institution...”, “(B) a member bank...”, “(C) any other banking institution...” e “(D) a receiver...”; aplique o mesmo critério aos itens “(1)” a “(4)” de “SEC. 206.” (pág. 27).\n- Ao processar “(d) STATE ASSISTANCE.—” da SEC. 203A (págs. 20–21), encerre cada unidade nos seus marcadores descendentes e inicie um bloco novo em “SEC. 204.” e em cada marcador subsequente da seção, sem deixar o conteúdo que antecede “(B) counterparty credit risk exposure;” (pág. 22) dentro do bloco de 203A(d).\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores como “<!-- PÁGINA 3 -->”; não os incorpore ao texto de unidades que atravessam páginas.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 4,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(2) their advice, counsel...” também contém o marcador irmão “(3) the foregoing transactions occur...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 11,
+          "tipo": "englobante",
+          "descricao": "O bloco de “(C) any other banking institution...” contém, no fim, “(D) a receiver, conservator, or other liquidating agent...”, outro subparágrafo que deveria ser separado."
+        },
+        {
+          "bloco": 191,
+          "tipo": "englobante",
+          "descricao": "A unidade “(d) STATE ASSISTANCE.—” da SEC. 203A foi mantida em um bloco de 4.885 caracteres e avança por diversos marcadores descendentes e pela transição para a SEC. 204; o bloco seguinte já começa em “(B) counterparty credit risk exposure;”, evidenciando que a estrutura intermediária foi englobada."
+        },
+        {
+          "bloco": 262,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(a) It shall be unlawful...” da SEC. 208 também contém os marcadores irmãos “(d) It shall be unlawful...”, sem abrir blocos próprios para as subseções intermediárias."
+        },
+        {
+          "bloco": 335,
+          "tipo": "englobante",
+          "descricao": "O item “(2) to lease and allocate...” inclui ao final a rubrica “SEPARABILITY OF PROVISIONS”, que pertence à unidade seguinte iniciada em “SEC. 219.”."
+        },
+        {
+          "bloco": 18,
+          "tipo": "corte_indevido",
+          "descricao": "O texto da definição “(9) ‘Exchange’...” incorpora cabeçalhos, data de atualização, caminho de arquivo e numeração corrente de página (“As Amended Through...”, “G:\\COMP...”, “3 INVESTMENT ADVISERS ACT OF 1940”), que são ruído de página."
+        },
+        {
+          "bloco": 243,
+          "tipo": "lacuna",
+          "descricao": "O bloco termina truncado em “compensation based upon the total value of a fund averaged ov”, e o bloco seguinte já inicia “(2) apply to an investment advisory contract...”; falta o restante do item (1) da SEC. 205(b), caracterizando perda de texto na extração."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Não emita um bloco de fallback para “TITLE II—INVESTMENT ADVISERS” quando o título já tiver sido capturado; mantenha apenas o bloco que se inicia nesse título na página 1.\n- Termine o bloco “(2) their advice, counsel...” imediatamente antes de “(3) the foregoing transactions occur...” na página 1, abra um bloco para “(3)” e termine-o antes da rubrica “DEFINITIONS”; inicie a SEC. 202 com a rubrica “DEFINITIONS” e “SEC. 202. ø80b–2¿”.\n- Separe invariavelmente cada marcador estrutural encontrado dentro de uma unidade, inclusive quando vier na mesma linha ou após texto corrido do marcador-pai: abra, por exemplo, “(D) a receiver...” após “(C) any other banking institution...” na SEC. 202 (pág. 2), cada subseção de “SEC. 208.” (pág. 28), e a rubrica “SEPARABILITY OF PROVISIONS” com “SEC. 219.” (pág. 37), sem mantê-los no bloco precedente.\n- Ao processar “(d) STATE ASSISTANCE.—” da SEC. 203A (págs. 20–21), encerre o bloco em cada marcador descendente e inicie separadamente a SEC. 204 e todos os seus marcadores; em particular, não deixe o texto anterior dentro de 203A(d) quando chegar a “(B) counterparty credit risk exposure;” na pág. 22.\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores como “<!-- PÁGINA 3 -->”; não os incorpore ao texto de unidades que atravessam páginas."
+    },
+    "arquivo_blocos": "resultados_5ciclos/sec-rules/sec-rules/sec-rules_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 356,
+    "insights_aplicados": "- Não emita um bloco de fallback para “TITLE II—INVESTMENT ADVISERS” quando o título já tiver sido capturado; mantenha apenas o bloco que se inicia nesse título na página 1.\n- Termine o bloco “(2) their advice, counsel...” imediatamente antes de “(3) the foregoing transactions occur...” na página 1, abra um bloco para “(3)” e termine-o antes da rubrica “DEFINITIONS”; inicie a SEC. 202 com a rubrica “DEFINITIONS” e “SEC. 202. ø80b–2¿”.\n- Separe invariavelmente cada marcador estrutural encontrado dentro de uma unidade, inclusive quando vier na mesma linha ou após texto corrido do marcador-pai: abra, por exemplo, “(D) a receiver...” após “(C) any other banking institution...” na SEC. 202 (pág. 2), cada subseção de “SEC. 208.” (pág. 28), e a rubrica “SEPARABILITY OF PROVISIONS” com “SEC. 219.” (pág. 37), sem mantê-los no bloco precedente.\n- Ao processar “(d) STATE ASSISTANCE.—” da SEC. 203A (págs. 20–21), encerre o bloco em cada marcador descendente e inicie separadamente a SEC. 204 e todos os seus marcadores; em particular, não deixe o texto anterior dentro de 203A(d) quando chegar a “(B) counterparty credit risk exposure;” na pág. 22.\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores como “<!-- PÁGINA 3 -->”; não os incorpore ao texto de unidades que atravessam páginas.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 19,
+          "tipo": "corte_indevido",
+          "descricao": "O texto de “(9) ‘Exchange’...” incorpora ruído de página, incluindo “As Amended Through...”, “<!-- PÁGINA 3 -->”, caminho de arquivo e cabeçalho corrente, antes de retomar a frase."
+        },
+        {
+          "bloco": 120,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(B) such person has reasonably discharged...” da SEC. 203(e)(6) também contém os marcadores irmãos “(7) is subject...” e “(8)”, enquanto o bloco seguinte já começa em “(9) is subject...”."
+        },
+        {
+          "bloco": 134,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(B) CEASE-AND-DESIST PROCEEDINGS.—” da SEC. 203(i)(1) contém indevidamente os incisos “(i) is violating...” e “(ii) is or was a cause...”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 139,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(i) the act or omission...” da SEC. 203(i)(2)(C) também contém o inciso irmão “(ii) such act or omission directly or indirectly resulted...”."
+        },
+        {
+          "bloco": 194,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(d) STATE ASSISTANCE.—” da SEC. 203A engloba a continuação da estrutura da SEC. 204, incluindo os itens antecedentes de “(B) counterparty credit risk exposure;”, que só aparece como novo bloco na página 22."
+        },
+        {
+          "bloco": 214,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(B) prevent the Commission from complying with—” da SEC. 204(b)(8) contém os incisos “(i) a request...” e “(ii) an order...”, sem abri-los como unidades próprias."
+        },
+        {
+          "bloco": 243,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(a) No investment adviser...” da SEC. 205 também contém o parágrafo “(1) provides for compensation...”, embora esse marcador deva iniciar bloco próprio."
+        },
+        {
+          "bloco": 251,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(3) apply with respect to any investment advisory contract...” da SEC. 205(b) retém os subparágrafos internos “(A)” e “(B)” no mesmo bloco."
+        },
+        {
+          "bloco": 339,
+          "tipo": "englobante",
+          "descricao": "O bloco da rubrica “HIRING AND LEASING AUTHORITY OF THE COMMISSION” e “SEC. 218.” também contém “(1) to appoint and fix the compensation...”, que deveria iniciar outro bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Não emita um bloco de fallback para “TITLE II—INVESTMENT ADVISERS” quando o título já tiver sido capturado; mantenha apenas o bloco que se inicia nesse título na página 1.\n- Separe invariavelmente todo marcador estrutural, inclusive quando apareça na mesma linha, depois de texto corrido ou após travessão/dois-pontos: encerre a unidade-pai antes de cada marcador descendente ou irmão. Aplique isso, em especial, a “(D) a receiver...” na SEC. 202 (pág. 2), às subseções da SEC. 208 (pág. 28), à rubrica “SEPARABILITY OF PROVISIONS” com “SEC. 219.” (pág. 37), a “(1) provides for compensation...” da SEC. 205(a) (pág. 25), aos subparágrafos “(A)” e “(B)” da SEC. 205(b)(3) (pág. 26), e a “(1) to appoint and fix...” da SEC. 218 (pág. 37).\n- Na SEC. 203, encerre cada unidade antes de seus marcadores internos: após “(B) such person has reasonably discharged...” abra blocos separados para “(7) is subject...”, “(8)” e “(9) is subject...” (págs. 12–13); em “(B) CEASE-AND-DESIST PROCEEDINGS.—” abra blocos próprios para “(i) is violating...” e “(ii) is or was a cause...” (pág. 14); e separe “(i) the act or omission...” de “(ii) such act or omission directly or indirectly resulted...” em “(C) THIRD TIER.—” (pág. 15).\n- Ao processar “(d) STATE ASSISTANCE.—” da SEC. 203A (págs. 20–21), encerre o bloco em cada marcador descendente e inicie separadamente a SEC. 204 e todos os seus marcadores; não deixe texto da SEC. 204 dentro de 203A(d), e abra blocos próprios para “(B) counterparty credit risk exposure;” (pág. 22), bem como para “(i) a request for information...” e “(ii) an order of a court...” após “(B) prevent the Commission from complying with—” (pág. 23).\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores como “<!-- PÁGINA 3 -->”; não os incorpore às unidades que atravessam páginas."
+    },
+    "arquivo_blocos": "resultados_5ciclos/sec-rules/sec-rules/sec-rules_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 295,
+    "insights_aplicados": "- Não emita um bloco de fallback para “TITLE II—INVESTMENT ADVISERS” quando o título já tiver sido capturado; mantenha apenas o bloco que se inicia nesse título na página 1.\n- Separe invariavelmente todo marcador estrutural, inclusive quando apareça na mesma linha, depois de texto corrido ou após travessão/dois-pontos: encerre a unidade-pai antes de cada marcador descendente ou irmão. Aplique isso, em especial, a “(D) a receiver...” na SEC. 202 (pág. 2), às subseções da SEC. 208 (pág. 28), à rubrica “SEPARABILITY OF PROVISIONS” com “SEC. 219.” (pág. 37), a “(1) provides for compensation...” da SEC. 205(a) (pág. 25), aos subparágrafos “(A)” e “(B)” da SEC. 205(b)(3) (pág. 26), e a “(1) to appoint and fix...” da SEC. 218 (pág. 37).\n- Na SEC. 203, encerre cada unidade antes de seus marcadores internos: após “(B) such person has reasonably discharged...” abra blocos separados para “(7) is subject...”, “(8)” e “(9) is subject...” (págs. 12–13); em “(B) CEASE-AND-DESIST PROCEEDINGS.—” abra blocos próprios para “(i) is violating...” e “(ii) is or was a cause...” (pág. 14); e separe “(i) the act or omission...” de “(ii) such act or omission directly or indirectly resulted...” em “(C) THIRD TIER.—” (pág. 15).\n- Ao processar “(d) STATE ASSISTANCE.—” da SEC. 203A (págs. 20–21), encerre o bloco em cada marcador descendente e inicie separadamente a SEC. 204 e todos os seus marcadores; não deixe texto da SEC. 204 dentro de 203A(d), e abra blocos próprios para “(B) counterparty credit risk exposure;” (pág. 22), bem como para “(i) a request for information...” e “(ii) an order of a court...” após “(B) prevent the Commission from complying with—” (pág. 23).\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores como “<!-- PÁGINA 3 -->”; não os incorpore às unidades que atravessam páginas.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 35,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(B) such company need not...” na definição (22) da SEC. 202 também contém o marcador irmão “(C) the securities which may be purchased...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "bloco": 75,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(B) companies that have submitted...” da SEC. 203(b)(8) incorpora os incisos “(i) have received...” e “(ii) are affiliated...”, sem iniciar blocos próprios."
+        },
+        {
+          "bloco": 85,
+          "tipo": "englobante",
+          "descricao": "O bloco de “(2) Within forty-five days...” da SEC. 203(c) contém os subparágrafos “(A) by order grant...” e “(B) institute proceedings...”, que são marcadores estruturais independentes."
+        },
+        {
+          "bloco": 130,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(A) whether the act or omission...” na SEC. 203(i)(3) também reúne os subparágrafos irmãos “(B) the harm...”, “(C) the extent...” e “(D) whether...”."
+        },
+        {
+          "bloco": 149,
+          "tipo": "englobante",
+          "descricao": "O bloco da subseção “(l) EXEMPTION OF VENTURE CAPITAL FUND ADVISERS.—” contém o parágrafo descendente “(1) IN GENERAL.—”, embora cada marcador deva abrir bloco."
+        },
+        {
+          "bloco": 165,
+          "tipo": "englobante",
+          "descricao": "O bloco de “(B) COVERED PERSONS.—” da SEC. 203A(a)(2) inclui o inciso “(i) is required to be registered...”, que deveria ser segmentado separadamente."
+        },
+        {
+          "bloco": 178,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(d) STATE ASSISTANCE.—” da SEC. 203A se estende das páginas 20 a 22, absorvendo marcadores internos e a SEC. 204, inclusive conteúdo que só volta a ser separado em “(B) counterparty credit risk exposure;”."
+        },
+        {
+          "bloco": 276,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(a) The information contained...” da SEC. 210 atravessa as páginas 31–37 e absorve diversas seções posteriores, chegando ao cabeçalho “HIRING AND...” e ao contexto imediatamente anterior à SEC. 218; as SEC. 211 a 217 e seus marcadores internos não foram abertas como blocos."
+        },
+        {
+          "bloco": 20,
+          "tipo": "corte_indevido",
+          "descricao": "O texto da unidade contém ruído de paginação e cabeçalho corrente, como “As Amended Through...”, caminho de arquivo e “INVESTMENT ADVISERS ACT OF 1940”, problema que também se repete em blocos que cruzam páginas."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Não emita bloco de fallback para “TITLE II—INVESTMENT ADVISERS” depois de já capturar esse título. Separe invariavelmente todo marcador estrutural, mesmo na mesma linha ou após travessão/dois-pontos: em particular, separe “(C) the securities which may be purchased...” de “(B) such company need not...” na SEC. 202 (pág. 5), os marcadores internos da SEC. 205(b)(3) (pág. 26), “(1) to appoint and fix...” da SEC. 218 (pág. 37) e “(A) FIRST TIER.—” após “(2) AMOUNT OF PENALTY.—” da SEC. 209(e) (pág. 30).\n- Na SEC. 203, encerre cada unidade antes de todo marcador interno, inclusive os que surgem no mesmo parágrafo: em “(B) companies that have submitted...” abra blocos para “(i) have received...” e “(ii) are affiliated...” (pág. 9); em “(2) Within forty-five days...” abra “(A) by order grant...” e “(B) institute proceedings...” (pág. 10); em “(A) whether the act or omission...” abra os irmãos “(B) the harm...”, “(C) the extent...” e “(D) whether...” (pág. 15); e, em “(l) EXEMPTION OF VENTURE CAPITAL FUND ADVISERS.—”, abra “(1) IN GENERAL.—” separadamente (pág. 18). Mantenha também a separação previamente exigida para os marcadores de SEC. 203(e), 203(i) e 203(k).\n- Ao processar a SEC. 203A, não deixe “(d) STATE ASSISTANCE.—” absorver unidades posteriores: encerre-a em cada marcador descendente, inicie a SEC. 204 em seu próprio bloco e segmente todos os marcadores da SEC. 204. Em especial, separe “(i) is required to be registered...” de “(B) COVERED PERSONS.—” na SEC. 203A(a)(2) (pág. 19), “(B) counterparty credit risk exposure;” (pág. 22) e os incisos após “(B) prevent the Commission from complying with—” (pág. 23).\n- Na sequência iniciada por “SEC. 210.” (pág. 31), encerre a unidade em cada subseção, parágrafo e seção nova; reconheça e abra separadamente todas as SEC. 211 a SEC. 217 e seus marcadores, sem permitir que o texto de SEC. 210(a) atravesse até as páginas 37–38 ou absorva o cabeçalho de seção posterior.\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores “<!-- PÁGINA N -->”; não os incorpore a blocos que atravessam páginas."
+    },
+    "arquivo_blocos": "resultados_5ciclos/sec-rules/sec-rules/sec-rules_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 336,
+    "insights_aplicados": "- Não emita bloco de fallback para “TITLE II—INVESTMENT ADVISERS” depois de já capturar esse título. Separe invariavelmente todo marcador estrutural, mesmo na mesma linha ou após travessão/dois-pontos: em particular, separe “(C) the securities which may be purchased...” de “(B) such company need not...” na SEC. 202 (pág. 5), os marcadores internos da SEC. 205(b)(3) (pág. 26), “(1) to appoint and fix...” da SEC. 218 (pág. 37) e “(A) FIRST TIER.—” após “(2) AMOUNT OF PENALTY.—” da SEC. 209(e) (pág. 30).\n- Na SEC. 203, encerre cada unidade antes de todo marcador interno, inclusive os que surgem no mesmo parágrafo: em “(B) companies that have submitted...” abra blocos para “(i) have received...” e “(ii) are affiliated...” (pág. 9); em “(2) Within forty-five days...” abra “(A) by order grant...” e “(B) institute proceedings...” (pág. 10); em “(A) whether the act or omission...” abra os irmãos “(B) the harm...”, “(C) the extent...” e “(D) whether...” (pág. 15); e, em “(l) EXEMPTION OF VENTURE CAPITAL FUND ADVISERS.—”, abra “(1) IN GENERAL.—” separadamente (pág. 18). Mantenha também a separação previamente exigida para os marcadores de SEC. 203(e), 203(i) e 203(k).\n- Ao processar a SEC. 203A, não deixe “(d) STATE ASSISTANCE.—” absorver unidades posteriores: encerre-a em cada marcador descendente, inicie a SEC. 204 em seu próprio bloco e segmente todos os marcadores da SEC. 204. Em especial, separe “(i) is required to be registered...” de “(B) COVERED PERSONS.—” na SEC. 203A(a)(2) (pág. 19), “(B) counterparty credit risk exposure;” (pág. 22) e os incisos após “(B) prevent the Commission from complying with—” (pág. 23).\n- Na sequência iniciada por “SEC. 210.” (pág. 31), encerre a unidade em cada subseção, parágrafo e seção nova; reconheça e abra separadamente todas as SEC. 211 a SEC. 217 e seus marcadores, sem permitir que o texto de SEC. 210(a) atravesse até as páginas 37–38 ou absorva o cabeçalho de seção posterior.\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas de atualização, números de página e marcadores “<!-- PÁGINA N -->”; não os incorpore a blocos que atravessam páginas.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 3,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(1) their advice...” também contém os marcadores irmãos “(2)” e “(3)”, que devem iniciar blocos próprios."
+        },
+        {
+          "bloco": 31,
+          "tipo": "englobante",
+          "descricao": "O bloco “(22) ‘Business development company’...” absorve os subparágrafos “(A) the 70 per centum...” e “(B) such company need not...”; o bloco seguinte começa tardiamente em “(B)” e ainda absorve “(C)”."
+        },
+        {
+          "bloco": 82,
+          "tipo": "englobante",
+          "descricao": "O bloco inicia simultaneamente em “(c)(1) An investment adviser...” e não separa a subseção “(c)” do parágrafo “(1)”, embora ambos sejam marcadores estruturais."
+        },
+        {
+          "bloco": 107,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “(A) there have been established procedures...” também contém o subparágrafo irmão “(B) such person has reasonably discharged...”. Ocorrências equivalentes de marcadores irmãos continuam agrupadas em SEC. 203, incluindo os blocos 113 e 119."
+        },
+        {
+          "bloco": 179,
+          "tipo": "englobante",
+          "descricao": "O bloco “(d) STATE ASSISTANCE.—” estende-se das páginas 20 a 22 e absorve numerosas unidades posteriores, inclusive a transição para SEC. 204 e seus itens internos; o bloco seguinte já começa indevidamente no meio da lista, em “(B) counterparty credit risk exposure;”."
+        },
+        {
+          "bloco": 304,
+          "tipo": "englobante",
+          "descricao": "O bloco “(2) the enforcement authority...” termina contendo a rubrica “HEARINGS”, que é o título temático da SEC. 212 e deve pertencer ao bloco da nova seção."
+        },
+        {
+          "bloco": 18,
+          "tipo": "corte_indevido",
+          "descricao": "O bloco incorpora ruído de paginação e cabeçalho corrente, incluindo “As Amended Through...”, caminho de arquivo, número de página e “INVESTMENT ADVISERS ACT OF 1940”. O mesmo problema se repete em diversos blocos que atravessam páginas."
+        },
+        {
+          "bloco": 147,
+          "tipo": "sobreposicao",
+          "descricao": "Após o texto de SEC. 203(k)(4)(B), o bloco repete texto de SEC. 203(j) (“order requiring accounting and disgorgement...”), já capturado no bloco 137; a repetição está fora da ordem estrutural."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Na SEC. 201, encerre “(1) their advice...” imediatamente antes de “(2)”, e encerre “(2)” antes de “(3)”; cada marcador deve abrir seu próprio bloco, mesmo quando os itens são continuação da frase introdutória.\n- Separe invariavelmente todo marcador estrutural que apareça na mesma linha ou após travessão/dois-pontos. Em particular, na SEC. 202(a)(22), abra blocos próprios para “(A) the 70 per centum...”, “(B) such company need not...” e “(C) the securities which may be purchased...”; na SEC. 203, separe todos os irmãos internos, inclusive “(A)” e “(B)” de SEC. 203(e)(6), os itens internos de SEC. 203(i) e SEC. 203(k), e os incisos que seguem marcadores textuais.\n- Quando houver marcadores encadeados, inicie blocos distintos para todos os níveis: em “(c)(1) An investment adviser...” da SEC. 203, abra primeiro “(c)” e depois “(1)”; aplique o mesmo critério aos marcadores de SEC. 203A, SEC. 204, SEC. 205, SEC. 209(e), SEC. 210A e SEC. 218, ainda que um marcador venha imediatamente depois do outro.\n- Na SEC. 203A, não deixe “(d) STATE ASSISTANCE.—” absorver a SEC. 204: encerre cada unidade descendente de 203A(d), inicie a SEC. 204 em bloco próprio e segmente separadamente todos os seus parágrafos, subparágrafos e incisos, inclusive “(B) counterparty credit risk exposure;” na pág. 22. Também transfira a rubrica “HEARINGS” para o bloco que se inicia em “SEC. 212.”, sem deixá-la no fim de SEC. 211(i)(2).\n- Descarte cabeçalhos e rodapés correntes, caminhos de arquivo, datas, números de página, marcadores “<!-- PÁGINA N -->” e demais ruídos de paginação; não os incorpore aos blocos que atravessam páginas."
+    },
+    "arquivo_blocos": "resultados_5ciclos/sec-rules/sec-rules/sec-rules_ciclo5.json"
+  }
+]

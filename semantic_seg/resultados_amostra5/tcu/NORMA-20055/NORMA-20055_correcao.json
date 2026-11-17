@@ -1,0 +1,106 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência... resolve:”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo substantivo que antecede o CAPÍTULO I não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "CAPÍTULO I “NATUREZA E FUNÇÕES”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo CAPÍTULO I contém também o marcador e todo o texto do Art. 1º, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "CAPÍTULO V “DISPOSIÇÕES GERAIS”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo CAPÍTULO V contém também o marcador e todo o texto do Art. 12, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20055/NORMA-20055_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 6º Compete ao Instituto Serzedello Corrêa:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 6º contém, sem blocos próprios, os incisos `I - planejar...`, `II - promover...`, `III - administrar...` e `IV - coordenar trabalhos de editoração;`, que são marcadores de unidades e devem iniciar blocos separados."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º “Compete ao Instituto Serzedello Corrêa:” (pág. 1), termine o bloco do artigo imediatamente antes de “I - planejar...” e inicie blocos próprios em cada inciso I, II, III e IV; termine cada um desses blocos imediatamente antes do inciso seguinte.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20055/NORMA-20055_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º “Compete ao Instituto Serzedello Corrêa:” (pág. 1), termine o bloco do artigo imediatamente antes de “I - planejar...” e inicie blocos próprios em cada inciso I, II, III e IV; termine cada um desses blocos imediatamente antes do inciso seguinte.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`V - administrar e gerir os recursos...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso V contém também os incisos `VI - administrar e zelar...` e `VII - elaborar e revisar...`, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "`LLO CASTELLO BRANCO\\nPresidente`, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "o restante da assinatura final ficou fora de qualquer bloco, após `ÉLVIA LORDE` no bloco do Art. 16."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º “Compete ao Instituto Serzedello Corrêa:” (pág. 1), termine o bloco do artigo imediatamente antes de “I - planejar...” e inicie blocos próprios em cada inciso I, II, III e IV; termine cada um desses blocos imediatamente antes do inciso seguinte.\n- No inciso V do Art. 6º, “V - administrar e gerir os recursos que lhes forem descentralizados...” (pág. 2), termine o bloco imediatamente antes de “VI - administrar e zelar...” e inicie um bloco próprio no inciso VI; termine o bloco do inciso VI imediatamente antes de “VII - elaborar e revisar...” e inicie outro bloco próprio no inciso VII.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12.\n- Mantenha no bloco do “Art. 16. Esta Resolução entra em vigor...” (pág. 3) todo o fecho documental subsequente, inclusive “TCU, Sala das Sessões, em 09 de novembro de 1994.” e a assinatura “ÉLVIA LORDELLO CASTELLO BRANCO\\nPresidente”, sem deixar parte da assinatura fora de bloco."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20055/NORMA-20055_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 50,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 6º “Compete ao Instituto Serzedello Corrêa:” (pág. 1), termine o bloco do artigo imediatamente antes de “I - planejar...” e inicie blocos próprios em cada inciso I, II, III e IV; termine cada um desses blocos imediatamente antes do inciso seguinte.\n- No inciso V do Art. 6º, “V - administrar e gerir os recursos que lhes forem descentralizados...” (pág. 2), termine o bloco imediatamente antes de “VI - administrar e zelar...” e inicie um bloco próprio no inciso VI; termine o bloco do inciso VI imediatamente antes de “VII - elaborar e revisar...” e inicie outro bloco próprio no inciso VII.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12.\n- Mantenha no bloco do “Art. 16. Esta Resolução entra em vigor...” (pág. 3) todo o fecho documental subsequente, inclusive “TCU, Sala das Sessões, em 09 de novembro de 1994.” e a assinatura “ÉLVIA LORDELLO CASTELLO BRANCO\\nPresidente”, sem deixar parte da assinatura fora de bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "alíneas \"a) Serviço de Pós-Graduação;\" e \"b) Serviço de Treinamento;\", sob o inciso II do Art. 3º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "as duas alíneas constituem unidades próprias, mas ficaram sem bloco."
+        },
+        {
+          "onde": "inciso \"III) - Divisão de Seleção e Treinamento\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso III contém também as alíneas \"a) Serviço de Seleção\" e \"b) Serviço de Treinamento e Pós-Graduação;\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 3º, inicie um bloco próprio na alínea “a) Serviço de Pós-Graduação;” (pág. 1), imediatamente após o inciso “II - Escola Nacional e Internacional de Controle e Fiscalização - ENICEF;”; termine-o imediatamente antes de “b) Serviço de Treinamento;” e inicie outro bloco próprio nesta alínea.\n- No inciso “III) - Divisão de Seleção e Treinamento” (pág. 1), termine o bloco imediatamente antes de “a) Serviço de Seleção” e inicie um bloco próprio nessa alínea; termine-o imediatamente antes de “b) Serviço de Treinamento e Pós-Graduação;” e inicie outro bloco próprio nesta alínea.\n- No Art. 6º “Compete ao Instituto Serzedello Corrêa:” (pág. 1), termine o bloco do artigo imediatamente antes de “I - planejar...” e inicie blocos próprios em cada inciso I, II, III e IV; termine cada um desses blocos imediatamente antes do inciso seguinte.\n- No inciso V do Art. 6º, “V - administrar e gerir os recursos que lhes forem descentralizados...” (pág. 2), termine o bloco imediatamente antes de “VI - administrar e zelar...” e inicie um bloco próprio no inciso VI; termine o bloco do inciso VI imediatamente antes de “VII - elaborar e revisar...” e inicie outro bloco próprio no inciso VII.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12.\n- Mantenha no bloco do “Art. 16. Esta Resolução entra em vigor...” (pág. 3) todo o fecho documental subsequente, inclusive “TCU, Sala das Sessões, em 09 de novembro de 1994.” e a assinatura “ÉLVIA LORDELLO CASTELLO BRANCO\\nPresidente”, sem deixar parte da assinatura fora de bloco."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20055/NORMA-20055_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 53,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:” (pág. 1), antes de iniciar o bloco de CAPÍTULO I.\n- Termine o bloco de CAPÍTULO I “NATUREZA E FUNÇÕES” imediatamente antes de “Art. 1º O Instituto Serzedello Corrêa...” (pág. 1) e inicie um bloco próprio no Art. 1º.\n- No Art. 3º, inicie um bloco próprio na alínea “a) Serviço de Pós-Graduação;” (pág. 1), imediatamente após o inciso “II - Escola Nacional e Internacional de Controle e Fiscalização - ENICEF;”; termine-o imediatamente antes de “b) Serviço de Treinamento;” e inicie outro bloco próprio nesta alínea.\n- No inciso “III) - Divisão de Seleção e Treinamento” (pág. 1), termine o bloco imediatamente antes de “a) Serviço de Seleção” e inicie um bloco próprio nessa alínea; termine-o imediatamente antes de “b) Serviço de Treinamento e Pós-Graduação;” e inicie outro bloco próprio nesta alínea.\n- No Art. 6º “Compete ao Instituto Serzedello Corrêa:” (pág. 1), termine o bloco do artigo imediatamente antes de “I - planejar...” e inicie blocos próprios em cada inciso I, II, III e IV; termine cada um desses blocos imediatamente antes do inciso seguinte.\n- No inciso V do Art. 6º, “V - administrar e gerir os recursos que lhes forem descentralizados...” (pág. 2), termine o bloco imediatamente antes de “VI - administrar e zelar...” e inicie um bloco próprio no inciso VI; termine o bloco do inciso VI imediatamente antes de “VII - elaborar e revisar...” e inicie outro bloco próprio no inciso VII.\n- Termine o bloco de CAPÍTULO V “DISPOSIÇÕES GERAIS” imediatamente antes de “Art. 12. O Serviço de Documentação...” (pág. 2) e inicie um bloco próprio no Art. 12.\n- Mantenha no bloco do “Art. 16. Esta Resolução entra em vigor...” (pág. 3) todo o fecho documental subsequente, inclusive “TCU, Sala das Sessões, em 09 de novembro de 1994.” e a assinatura “ÉLVIA LORDELLO CASTELLO BRANCO\\nPresidente”, sem deixar parte da assinatura fora de bloco.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-20055/NORMA-20055_ciclo5.json"
+  }
+]

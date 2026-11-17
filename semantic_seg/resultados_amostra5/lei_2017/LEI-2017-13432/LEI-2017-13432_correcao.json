@@ -1,0 +1,97 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 36,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 11. São deveres do detetive particular:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 11 contém, sem blocos próprios, os incisos I a VII, embora cada inciso seja marcador de unidade e deva iniciar bloco."
+        },
+        {
+          "onde": "`Art. 12. São direitos do detetive particular:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 12 contém, sem blocos próprios, os incisos I a VII, embora cada inciso seja marcador de unidade e deva iniciar bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco para cada inciso I a VII, incluindo `II - respeitar o direito à intimidade...` até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII, incluindo `II - recusar serviço...` até `VII - ser publicamente desagravado...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco para cada inciso I a VII, incluindo `II - respeitar o direito à intimidade...` até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII, incluindo `II - recusar serviço...` até `VII - ser publicamente desagravado...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IV - compensar o montante dos honorários recebidos ou recebê-lo proporcionalmente...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso IV do Art. 12 contém também os incisos `V - (VETADO);`, `VI - reclamar...` e `VII - ser publicamente desagravado...`, sem cortes próprios antes desses marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco para cada inciso I a VII, incluindo `II - respeitar o direito à intimidade...` até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco para cada inciso I a VII, incluindo `II - respeitar o direito à intimidade...` até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IV - defender, com isenção, os direitos e as prerrogativas profissionais...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no inciso IV também contém, sem blocos próprios, os incisos `V - zelar pela conservação...`, `VI - restituir, íntegro, ao cliente...` e `VII - prestar contas ao cliente.` do Art. 11."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco de `IV - defender, com isenção, os direitos e as prerrogativas profissionais...` antes de `V - zelar pela conservação e proteção de documentos...` e inicie blocos próprios para cada um dos incisos V, VI e VII, até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 41,
+    "insights_aplicados": "- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco de `IV - defender, com isenção, os direitos e as prerrogativas profissionais...` antes de `V - zelar pela conservação e proteção de documentos...` e inicie blocos próprios para cada um dos incisos V, VI e VII, até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 8º O contrato de prestação de serviços do detetive particular conterá:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 8º contém, sem cortes próprios, os incisos I a VI e o `Parágrafo único. É facultada às partes...`, que são unidades independentes."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 8º, iniciado por `Art. 8º O contrato de prestação de serviços do detetive particular conterá:` (pág. 1), termine o bloco antes de `I - qualificação completa das partes contratantes;` e inicie blocos próprios para cada inciso I a VI. Termine o bloco de `VI - estipulação dos honorários e sua forma de pagamento.` antes de `Parágrafo único. É facultada às partes...` e inicie um bloco próprio para o parágrafo único.\n- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco de `IV - defender, com isenção, os direitos e as prerrogativas profissionais...` antes de `V - zelar pela conservação e proteção de documentos...` e inicie blocos próprios para cada um dos incisos V, VI e VII, até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- No Art. 8º, iniciado por `Art. 8º O contrato de prestação de serviços do detetive particular conterá:` (pág. 1), termine o bloco antes de `I - qualificação completa das partes contratantes;` e inicie blocos próprios para cada inciso I a VI. Termine o bloco de `VI - estipulação dos honorários e sua forma de pagamento.` antes de `Parágrafo único. É facultada às partes...` e inicie um bloco próprio para o parágrafo único.\n- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco de `IV - defender, com isenção, os direitos e as prerrogativas profissionais...` antes de `V - zelar pela conservação e proteção de documentos...` e inicie blocos próprios para cada um dos incisos V, VI e VII, até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 9º Ao final do prazo pactuado para a execução dos serviços profissionais...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 9º contém, sem cortes próprios, os incisos `I - os procedimentos técnicos adotados;`, `II - a conclusão em face do resultado dos trabalhos executados...` e `III - data, identificação completa do detetive particular e sua assinatura.`"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 9º, iniciado por `Art. 9º Ao final do prazo pactuado para a execução dos serviços profissionais...` (pág. 1), termine o bloco antes de `I - os procedimentos técnicos adotados;` e inicie blocos próprios para os incisos I, II e III. Mesmo estando na mesma linha do texto introdutório, cada inciso deve iniciar seu próprio bloco.\n- No Art. 8º, iniciado por `Art. 8º O contrato de prestação de serviços do detetive particular conterá:` (pág. 1), termine o bloco antes de `I - qualificação completa das partes contratantes;` e inicie blocos próprios para cada inciso I a VI. Termine o bloco de `VI - estipulação dos honorários e sua forma de pagamento.` antes de `Parágrafo único. É facultada às partes...` e inicie um bloco próprio para o parágrafo único.\n- No Art. 11, iniciado por `Art. 11. São deveres do detetive particular:` (pág. 1), termine o bloco de `IV - defender, com isenção, os direitos e as prerrogativas profissionais...` antes de `V - zelar pela conservação e proteção de documentos...` e inicie blocos próprios para cada um dos incisos V, VI e VII, até `VII - prestar contas ao cliente.`\n- No Art. 12, iniciado por `Art. 12. São direitos do detetive particular:` (pág. 1), termine o bloco antes de `I - exercer a profissão em todo o território nacional...` e inicie um bloco para cada inciso I a VII. Em particular, termine o bloco de `IV - compensar o montante dos honorários...` antes de `V - (VETADO);`, e inicie blocos próprios em `V - (VETADO);`, `VI - reclamar, verbalmente ou por escrito...` e `VII - ser publicamente desagravado...`."
+    },
+    "arquivo_blocos": "resultados_amostra5/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo5.json"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo antes de `CAPÍTULO I`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto inicial `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência... resolve:` ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 15. Em razão do inciso I do art. 88...`, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final da redação citada, `zedello Corrêa.\"`, ficou sem bloco, embora integre a citação iniciada por `\"Art. 6º Os concursos...` e deva permanecer no bloco do Art. 15."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe o final da citação fora do bloco."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20055/NORMA-20055_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe o final da citação fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`c) Serviço de Apoio a Eventos Internos;` até `c) Serviço de Editoração e Publicações`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "As alíneas c) e d) subordinadas ao inciso IV, o inciso V e as alíneas a), b) e c) subordinadas a ele ficaram sem bloco."
+        },
+        {
+          "onde": "`Art. 6º Compete ao Instituto Serzedello Corrêa:`, págs. 1-2",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 6º contém, sem blocos próprios, os incisos I a VII; cada inciso romano é um marcador de unidade e deve iniciar seu próprio bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`, para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII, inclusive para `V - administrar e gerir os recursos...`, que continua na pág. 2.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe o final da citação fora do bloco."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20055/NORMA-20055_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`, para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII, inclusive para `V - administrar e gerir os recursos...`, que continua na pág. 2.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe o final da citação fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO I NATUREZA E FUNÇÕES`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o marcador e o texto de `Art. 1º O Instituto Serzedello Corrêa...`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`V - administrar e gerir os recursos...`, págs. 1-2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso V contém também os incisos irmãos `VI - administrar e zelar...` e `VII - elaborar e revisar...`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`CAPÍTULO V DISPOSIÇÕES GERAIS`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o marcador e o texto de `Art. 12. O Serviço de Documentação...`, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 15. Em razão do inciso I do art. 88...`, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho final da redação citada, `orrêa.\"`, ficou fora de qualquer bloco; ele pertence à citação que deve permanecer integralmente no bloco do Art. 15."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `CAPÍTULO I NATUREZA E FUNÇÕES` (pág. 1) imediatamente antes de `Art. 1º O Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse artigo.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`, para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII. Em particular, termine o bloco de `V - administrar e gerir os recursos...` antes de `VI - administrar e zelar...` e termine o bloco de VI antes de `VII - elaborar e revisar...`.\n- Termine o bloco de `CAPÍTULO V DISPOSIÇÕES GERAIS` (pág. 2) imediatamente antes de `Art. 12. O Serviço de Documentação...` e inicie um bloco próprio para esse artigo.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`, inclusive o trecho final `orrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe parte da citação fora do bloco."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20055/NORMA-20055_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `CAPÍTULO I NATUREZA E FUNÇÕES` (pág. 1) imediatamente antes de `Art. 1º O Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse artigo.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`, para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII. Em particular, termine o bloco de `V - administrar e gerir os recursos...` antes de `VI - administrar e zelar...` e termine o bloco de VI antes de `VII - elaborar e revisar...`.\n- Termine o bloco de `CAPÍTULO V DISPOSIÇÕES GERAIS` (pág. 2) imediatamente antes de `Art. 12. O Serviço de Documentação...` e inicie um bloco próprio para esse artigo.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`, inclusive o trecho final `orrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe parte da citação fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`b) Serviço de Execução Orçamentária e Financeira;`, sob `IV) - Divisão de Apoio Operacional;`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A alínea b) está fora de qualquer bloco, entre a alínea a) e a alínea c), embora todo marcador de alínea deva iniciar bloco próprio."
+        },
+        {
+          "onde": "`b) Serviço de Administração de Pesquisa;`, sob `V) - Divisão de Pesquisa e Publicações;`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A alínea b) está fora de qualquer bloco, entre as alíneas a) e c), embora todo marcador de alínea deva iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `CAPÍTULO I NATUREZA E FUNÇÕES` (pág. 1) imediatamente antes de `Art. 1º O Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse artigo.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para todas as alíneas sob `IV) - Divisão de Apoio Operacional;`, inclusive `a) Serviço de Apoio Administrativo;`, `b) Serviço de Execução Orçamentária e Financeira;`, `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII. Em particular, termine o bloco de `V - administrar e gerir os recursos...` antes de `VI - administrar e zelar...` e termine o bloco de VI antes de `VII - elaborar e revisar...`.\n- Termine o bloco de `CAPÍTULO V DISPOSIÇÕES GERAIS` (pág. 2) imediatamente antes de `Art. 12. O Serviço de Documentação...` e inicie um bloco próprio para esse artigo.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`, inclusive o trecho final `Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe parte da citação fora do bloco."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20055/NORMA-20055_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 52,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `CAPÍTULO I NATUREZA E FUNÇÕES` (pág. 1) imediatamente antes de `Art. 1º O Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse artigo.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para todas as alíneas sob `IV) - Divisão de Apoio Operacional;`, inclusive `a) Serviço de Apoio Administrativo;`, `b) Serviço de Execução Orçamentária e Financeira;`, `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII. Em particular, termine o bloco de `V - administrar e gerir os recursos...` antes de `VI - administrar e zelar...` e termine o bloco de VI antes de `VII - elaborar e revisar...`.\n- Termine o bloco de `CAPÍTULO V DISPOSIÇÕES GERAIS` (pág. 2) imediatamente antes de `Art. 12. O Serviço de Documentação...` e inicie um bloco próprio para esse artigo.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`, inclusive o trecho final `Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe parte da citação fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 10. O Instituto Serzedello Corrêa...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 10 contém, sem corte próprio, o marcador `Parágrafo único. A lotação de pessoal...`, que deve iniciar uma unidade autônoma."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício da competência que lhe conferem... resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- Termine o bloco de `CAPÍTULO I NATUREZA E FUNÇÕES` (pág. 1) imediatamente antes de `Art. 1º O Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse artigo.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para todas as alíneas sob `IV) - Divisão de Apoio Operacional;`, inclusive `a) Serviço de Apoio Administrativo;`, `b) Serviço de Execução Orçamentária e Financeira;`, `c) Serviço de Apoio a Eventos Internos;` e `d) Serviço de Contratação e Acompanhamento de Eventos Externos;`.\n- No `Art. 3º O ISC conta com a seguinte estrutura:` (pág. 1), inicie blocos próprios para `V) - Divisão de Pesquisa e Publicações;` e para cada uma de suas alíneas: `a) Serviço de Desenvolvimento de Pesquisa;`, `b) Serviço de Administração de Pesquisa;` e `c) Serviço de Editoração e Publicações`.\n- No `Art. 6º Compete ao Instituto Serzedello Corrêa:` (págs. 1-2), termine o bloco do artigo antes de `I - planejar, coordenar...` e inicie um bloco próprio para cada inciso I, II, III, IV, V, VI e VII. Em particular, termine o bloco de `V - administrar e gerir os recursos...` antes de `VI - administrar e zelar...` e termine o bloco de VI antes de `VII - elaborar e revisar...`.\n- Termine o bloco de `CAPÍTULO V DISPOSIÇÕES GERAIS` (pág. 2) imediatamente antes de `Art. 12. O Serviço de Documentação...` e inicie um bloco próprio para esse artigo.\n- Termine o bloco de `Art. 10. O Instituto Serzedello Corrêa...` (pág. 2) imediatamente antes de `Parágrafo único. A lotação de pessoal...` e inicie um bloco próprio para esse parágrafo único.\n- Mantenha integralmente no bloco de `Art. 15. Em razão do inciso I do art. 88...` (pág. 3) toda a redação citada entre aspas, de `\"Art. 6º Os concursos serão abertos...` até `Instituto Serzedello Corrêa.\"`, inclusive o trecho final `Corrêa.\"`; não inicie bloco para o `Art. 6º` citado nem deixe parte da citação fora do bloco."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20055/NORMA-20055_ciclo5.json"
+  }
+]

@@ -1,0 +1,109 @@
+10:53:51 início sec-rules/sec-rules
+10:53:51 início amostra-sec-rules/amostra-sec-rules
+10:53:51 início edital-inep-064/edital-inep-064
+10:53:51 início lei_2017/LEI-2017-13416
+10:53:51 início lei_2017/LEI-2017-13415
+10:53:51 início lei_2017/LEI-2017-13422
+10:53:51 início lei_2017/LEI-2017-13421
+10:53:51 início lei_2017/LEI-2017-13420
+10:53:51 início lei_2017/LEI-2017-13414
+10:53:51 início lei_2017/LEI-2017-13429
+10:53:51 início lei_2017/LEI-2017-13417
+10:53:51 início lei_2017/LEI-2017-13419
+10:53:51 início lei_2017/LEI-2017-13423
+10:53:51 início lei_2017/LEI-2017-13418
+10:53:51 início lei_2017/LEI-2017-13433
+10:53:51 início lei_2017/LEI-2017-13426
+10:53:51 início lei_2017/LEI-2017-13424
+10:53:51 início lei_2017/LEI-2017-13431
+10:53:51 início lei_2017/LEI-2017-13435
+10:53:51 início lei_2017/LEI-2017-13425
+10:53:51 início lei_2017/LEI-2017-13432
+10:53:51 início lei_2017/LEI-2017-13436
+10:53:51 início lei_2017/LEI-2017-13434
+10:53:51 início lei_2017/LEI-2017-13427
+10:53:51 início lei_2017/LEI-2017-13430
+10:53:51 início tcu/NORMA-18793
+10:53:51 início tcu/NORMA-20633
+10:53:51 início tcu/NORMA-20186
+10:53:51 início tcu/NORMA-19297
+10:53:51 início tcu/NORMA-20277
+10:53:51 início tcu/NORMA-19948
+10:53:51 início tcu/NORMA-20797
+10:53:51 início tcu/NORMA-6140
+10:53:51 início tcu/NORMA-20542
+10:53:51 início tcu/NORMA-20901
+10:53:51 início tcu/NORMA-5421
+10:53:51 início tcu/NORMA-19646
+10:53:51 início tcu/NORMA-6783
+10:53:51 início tcu/NORMA-20204
+10:53:51 início tcu/NORMA-6257
+10:53:51 início tcu/NORMA-21439
+10:53:51 início tcu/NORMA-20082
+10:53:51 início tcu/NORMA-20055
+10:53:51 início tcu/NORMA-24582
+10:53:51 início tcu/NORMA-21386
+10:53:51 início tcu/NORMA-21225
+10:53:51 início tcu/NORMA-19618
+10:53:51 início tcu/NORMA-18201
+10:53:51 início tcu/NORMA-20182
+10:53:51 início tcu/NORMA-26102
+10:53:51 início tcu/NORMA-1516
+10:53:51 início tcu/NORMA-21767
+10:53:51 início tcu/NORMA-1463
+10:53:51 início tcu/NORMA-21260
+10:54:12 fim    lei_2017/LEI-2017-13422 exit=0
+10:54:13 fim    lei_2017/LEI-2017-13436 exit=0
+10:54:14 fim    lei_2017/LEI-2017-13429 exit=0
+10:54:15 fim    lei_2017/LEI-2017-13418 exit=0
+10:54:16 fim    lei_2017/LEI-2017-13427 exit=0
+10:54:16 fim    lei_2017/LEI-2017-13421 exit=0
+10:54:22 fim    lei_2017/LEI-2017-13417 exit=0
+10:54:22 fim    lei_2017/LEI-2017-13423 exit=0
+10:54:23 fim    lei_2017/LEI-2017-13434 exit=0
+10:54:24 fim    lei_2017/LEI-2017-13419 exit=0
+10:54:27 fim    lei_2017/LEI-2017-13433 exit=0
+10:54:28 fim    lei_2017/LEI-2017-13430 exit=0
+10:54:35 fim    lei_2017/LEI-2017-13416 exit=0
+10:54:43 fim    lei_2017/LEI-2017-13420 exit=0
+10:55:07 fim    lei_2017/LEI-2017-13435 exit=0
+10:55:08 fim    lei_2017/LEI-2017-13424 exit=0
+10:55:32 fim    tcu/NORMA-21439 exit=0
+10:55:38 fim    tcu/NORMA-20542 exit=0
+10:55:48 fim    lei_2017/LEI-2017-13426 exit=0
+10:56:27 fim    tcu/NORMA-20901 exit=0
+10:57:25 fim    tcu/NORMA-19948 exit=0
+10:57:33 fim    tcu/NORMA-20055 exit=0
+10:58:24 fim    tcu/NORMA-20277 exit=0
+10:59:53 fim    tcu/NORMA-19646 exit=0
+10:59:59 fim    lei_2017/LEI-2017-13432 exit=0
+11:00:12 fim    lei_2017/LEI-2017-13415 exit=0
+11:00:24 fim    tcu/NORMA-20204 exit=0
+11:01:27 fim    tcu/NORMA-18793 exit=0
+11:01:32 fim    lei_2017/LEI-2017-13431 exit=0
+11:03:01 fim    tcu/NORMA-20633 exit=0
+11:03:39 fim    tcu/NORMA-20082 exit=0
+11:05:14 fim    tcu/NORMA-19297 exit=0
+11:06:56 fim    tcu/NORMA-24582 exit=0
+11:07:41 fim    tcu/NORMA-19618 exit=0
+11:12:25 fim    tcu/NORMA-20186 exit=0
+11:14:40 fim    lei_2017/LEI-2017-13425 exit=0
+11:15:14 fim    tcu/NORMA-20797 exit=0
+11:20:14 fim    tcu/NORMA-21260 exit=0
+11:20:22 fim    tcu/NORMA-21386 exit=0
+11:23:54 fim    tcu/NORMA-26102 exit=0
+11:26:05 fim    tcu/NORMA-20182 exit=0
+11:28:46 fim    tcu/NORMA-1463 exit=0
+11:29:16 fim    tcu/NORMA-6783 exit=0
+11:32:08 fim    tcu/NORMA-1516 exit=0
+11:33:21 fim    lei_2017/LEI-2017-13414 exit=0
+11:34:54 fim    tcu/NORMA-18201 exit=0
+11:36:27 fim    tcu/NORMA-21225 exit=0
+11:45:13 fim    tcu/NORMA-6257 exit=0
+11:45:59 fim    amostra-sec-rules/amostra-sec-rules exit=0
+11:47:04 fim    tcu/NORMA-21767 exit=0
+11:48:27 fim    tcu/NORMA-5421 exit=0
+12:29:32 fim    tcu/NORMA-6140 exit=0
+12:52:10 fim    sec-rules/sec-rules exit=0
+13:27:38 fim    edital-inep-064/edital-inep-064 exit=0
+13:27:38 TODOS TERMINARAM

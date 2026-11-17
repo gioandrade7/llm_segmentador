@@ -1,0 +1,121 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo inicial, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" ficou fora de qualquer bloco; não é ruído de página."
+        },
+        {
+          "onde": "Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco desse Considerando contém também os quatro Considerandos subsequentes, iniciados por \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\"."
+        },
+        {
+          "onde": "Art. 3º \"Para os efeitos desta Resolução\", pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 3º contém o inciso \"I - informação\", que é marcador de unidade própria."
+        },
+        {
+          "onde": "§ 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\", pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 2º contém também o § 3º, iniciado por \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\"."
+        },
+        {
+          "onde": "Inciso IV do art. 6º \"IV - denúncias formuladas\", pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos V, VI e VII do art. 6º."
+        },
+        {
+          "onde": "Inciso I do art. 7º \"I - informações relacionadas a assuntos de interesse exclusivo\", pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I contém também os incisos II, III, IV e V do art. 7º."
+        },
+        {
+          "onde": "Inciso II do art. 13º \"II - médio: quando a perda de integridade\", pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Todo o texto do inciso II está fora de bloco; é uma unidade marcada e deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- Termine o bloco do art. 3º \"Para os efeitos desta Resolução\" imediatamente antes de \"I - informação\" (pág. 2) e inicie um bloco próprio no inciso I.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\"."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19646/NORMA-19646_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 86,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- Termine o bloco do art. 3º \"Para os efeitos desta Resolução\" imediatamente antes de \"I - informação\" (pág. 2) e inicie um bloco próprio no inciso I.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II - restritas: informações que, por sua natureza` do art. 5º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso II contém indevidamente o inciso III, os §§ 1º e 2º e o início do art. 6º, todos marcadores de unidades próprias."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- Termine o bloco do art. 3º \"Para os efeitos desta Resolução\" imediatamente antes de \"I - informação\" (pág. 2) e inicie um bloco próprio no inciso I.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 5º (pág. 3), termine o bloco de \"II - restritas: informações que, por sua natureza\" antes de \"III - sigilosas\" e inicie um bloco próprio no inciso III; depois, termine o inciso III antes de \"§ 1º Ao conjunto de informações\" e inicie um bloco próprio no § 1º; termine o § 1º antes de \"§ 2º Todas as partes\" e inicie um bloco próprio no § 2º; termine o § 2º antes de \"Art. 6º Observados os dispositivos legais\" e inicie um bloco próprio no art. 6º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\"."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19646/NORMA-19646_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 88,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- Termine o bloco do art. 3º \"Para os efeitos desta Resolução\" imediatamente antes de \"I - informação\" (pág. 2) e inicie um bloco próprio no inciso I.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 5º (pág. 3), termine o bloco de \"II - restritas: informações que, por sua natureza\" antes de \"III - sigilosas\" e inicie um bloco próprio no inciso III; depois, termine o inciso III antes de \"§ 1º Ao conjunto de informações\" e inicie um bloco próprio no § 1º; termine o § 1º antes de \"§ 2º Todas as partes\" e inicie um bloco próprio no § 2º; termine o § 2º antes de \"Art. 6º Observados os dispositivos legais\" e inicie um bloco próprio no art. 6º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 11, antes de \"I - baixo: quando a indisponibilidade\", pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 11 contém o inciso I, que é marcador de unidade própria e deveria iniciar um novo bloco."
+        },
+        {
+          "onde": "Art. 13, antes de \"I - baixo: quando a perda de integridade\", pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 13 contém o inciso I, que é marcador de unidade própria e deveria iniciar um novo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- Termine o bloco do art. 3º \"Para os efeitos desta Resolução\" imediatamente antes de \"I - informação\" (pág. 2) e inicie um bloco próprio no inciso I.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 5º (pág. 3), termine o bloco de \"II - restritas: informações que, por sua natureza\" antes de \"III - sigilosas\" e inicie um bloco próprio no inciso III; depois, termine o inciso III antes de \"§ 1º Ao conjunto de informações\" e inicie um bloco próprio no § 1º; termine o § 1º antes de \"§ 2º Todas as partes\" e inicie um bloco próprio no § 2º; termine o § 2º antes de \"Art. 6º Observados os dispositivos legais\" e inicie um bloco próprio no art. 6º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\".\n- No art. 11, termine o bloco de \"Art. 11. O impacto da indisponibilidade\" imediatamente antes de \"I - baixo: quando a indisponibilidade\" (pág. 5) e inicie um bloco próprio no inciso I.\n- No art. 13, termine o bloco de \"Art. 13. O impacto da perda de integridade\" imediatamente antes de \"I - baixo: quando a perda de integridade\" (pág. 5) e inicie um bloco próprio no inciso I."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19646/NORMA-19646_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- Termine o bloco do art. 3º \"Para os efeitos desta Resolução\" imediatamente antes de \"I - informação\" (pág. 2) e inicie um bloco próprio no inciso I.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 5º (pág. 3), termine o bloco de \"II - restritas: informações que, por sua natureza\" antes de \"III - sigilosas\" e inicie um bloco próprio no inciso III; depois, termine o inciso III antes de \"§ 1º Ao conjunto de informações\" e inicie um bloco próprio no § 1º; termine o § 1º antes de \"§ 2º Todas as partes\" e inicie um bloco próprio no § 2º; termine o § 2º antes de \"Art. 6º Observados os dispositivos legais\" e inicie um bloco próprio no art. 6º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\".\n- No art. 11, termine o bloco de \"Art. 11. O impacto da indisponibilidade\" imediatamente antes de \"I - baixo: quando a indisponibilidade\" (pág. 5) e inicie um bloco próprio no inciso I.\n- No art. 13, termine o bloco de \"Art. 13. O impacto da perda de integridade\" imediatamente antes de \"I - baixo: quando a perda de integridade\" (pág. 5) e inicie um bloco próprio no inciso I.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 3º Para os efeitos desta Resolução\" contém, sem blocos próprios, os incisos I a XII, de \"I - informação\" até \"XII - rótulo\". Cada inciso é uma unidade da hierarquia e deve iniciar seu próprio bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- No art. 3º \"Para os efeitos desta Resolução\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - informação\" e inicie um bloco próprio em cada inciso de \"I - informação\" até \"XII - rótulo\", encerrando cada inciso antes do marcador romano seguinte.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 5º (pág. 3), termine o bloco de \"II - restritas: informações que, por sua natureza\" antes de \"III - sigilosas\" e inicie um bloco próprio no inciso III; depois, termine o inciso III antes de \"§ 1º Ao conjunto de informações\" e inicie um bloco próprio no § 1º; termine o § 1º antes de \"§ 2º Todas as partes\" e inicie um bloco próprio no § 2º; termine o § 2º antes de \"Art. 6º Observados os dispositivos legais\" e inicie um bloco próprio no art. 6º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\".\n- No art. 11, termine o bloco de \"Art. 11. O impacto da indisponibilidade\" imediatamente antes de \"I - baixo: quando a indisponibilidade\" (pág. 5) e inicie um bloco próprio no inciso I.\n- No art. 13, termine o bloco de \"Art. 13. O impacto da perda de integridade\" imediatamente antes de \"I - baixo: quando a perda de integridade\" (pág. 5) e inicie um bloco próprio no inciso I."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19646/NORMA-19646_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 90,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,\" (pág. 1), encerrando-o antes de \"Considerando que o Tribunal gera\".\n- No Considerando \"Considerando o disposto nos itens 9.1.3 e 9.6 do Acórdão TCU nº 1.603\" (pág. 1), termine cada Considerando no início do próximo e inicie blocos próprios em \"Considerando o disposto no art. 10 da Resolução TCU nº 217\", \"Considerando que a Portaria TCU nº 108\", \"Considerando a importância de o Tribunal instituir\" e \"Considerando os estudos e os pareceres\".\n- No art. 3º \"Para os efeitos desta Resolução\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - informação\" e inicie um bloco próprio em cada inciso de \"I - informação\" até \"XII - rótulo\", encerrando cada inciso antes do marcador romano seguinte.\n- Termine o bloco do § 2º do art. 4º \"A regulamentação da classificação quanto ao prazo de retenção\" imediatamente antes de \"§ 3º As informações produzidas ou custodiadas pelo Tribunal terão sua criticidade\" (pág. 3) e inicie um bloco próprio no § 3º.\n- No art. 5º (pág. 3), termine o bloco de \"II - restritas: informações que, por sua natureza\" antes de \"III - sigilosas\" e inicie um bloco próprio no inciso III; depois, termine o inciso III antes de \"§ 1º Ao conjunto de informações\" e inicie um bloco próprio no § 1º; termine o § 1º antes de \"§ 2º Todas as partes\" e inicie um bloco próprio no § 2º; termine o § 2º antes de \"Art. 6º Observados os dispositivos legais\" e inicie um bloco próprio no art. 6º.\n- No art. 6º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"V - processos administrativos disciplinares e sindicâncias\", \"VI - dados funcionais e pessoais\" e \"VII - outros assuntos considerados pelo gestor da informação\".\n- No art. 7º (pág. 4), encerre cada inciso antes do próximo e inicie blocos próprios em \"II - documentação e outros dados não públicos\", \"III - peças da etapa de instrução\", \"IV - informações contidas em processo de controle externo\" e \"V - outros assuntos que, a juízo do gestor da informação\".\n- Inicie um bloco próprio em \"II - médio: quando a perda de integridade da informação\" do art. 13 (pág. 5), terminando-o antes de \"III - alto\".\n- No art. 11, termine o bloco de \"Art. 11. O impacto da indisponibilidade\" imediatamente antes de \"I - baixo: quando a indisponibilidade\" (pág. 5) e inicie um bloco próprio no inciso I.\n- No art. 13, termine o bloco de \"Art. 13. O impacto da perda de integridade\" imediatamente antes de \"I - baixo: quando a perda de integridade\" (pág. 5) e inicie um bloco próprio no inciso I.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19646/NORMA-19646_ciclo5.json"
+  }
+]

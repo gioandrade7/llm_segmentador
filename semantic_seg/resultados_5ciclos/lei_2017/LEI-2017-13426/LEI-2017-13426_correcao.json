@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 9,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 5,
+          "tipo": "englobante",
+          "descricao": "A unidade do inciso II, iniciada por “II - o quantitativo de animais a serem esterilizados” (pág. 1), contém também o marcador e o texto integral do inciso irmão III - “III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda.”"
+        },
+        {
+          "bloco": 5,
+          "tipo": "granularidade",
+          "descricao": "Os incisos I, II e III do Art. 2º são unidades do mesmo nível, mas o inciso I foi segmentado separadamente enquanto os incisos II e III foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso II - “o quantitativo de animais a serem esterilizados” imediatamente antes de “III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda.” (pág. 1) e inicie um bloco próprio para o inciso III."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13426/LEI-2017-13426_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 10,
+    "insights_aplicados": "- Termine o bloco do inciso II - “o quantitativo de animais a serem esterilizados” imediatamente antes de “III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda.” (pág. 1) e inicie um bloco próprio para o inciso III.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- Termine o bloco do inciso II - “o quantitativo de animais a serem esterilizados” imediatamente antes de “III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda.” (pág. 1) e inicie um bloco próprio para o inciso III."
+    },
+    "arquivo_blocos": "resultados_5ciclos/lei_2017/LEI-2017-13426/LEI-2017-13426_ciclo2.json"
+  }
+]

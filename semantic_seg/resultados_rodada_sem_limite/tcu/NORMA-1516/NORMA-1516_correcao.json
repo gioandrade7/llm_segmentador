@@ -1,0 +1,132 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 90,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Portaria-SEMEC nº 2, de 31 de março de 2019, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pela portaria também contém o marcador e o texto do Art. 1º, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "CAPÍTULO II, págs. 1-2",
+          "tipo": "corte_indevido",
+          "descricao": "Há uma separação entre o marcador \"CAPÍTULO II\" e sua epígrafe \"DA ESTRUTURA DA SECRETARIA\". A epígrafe não é marcador de unidade autônoma e pertence ao bloco do capítulo."
+        },
+        {
+          "onde": "III - adotar, em conjunto com a Secretaria de Tecnologia da Informação..., Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III também contém os incisos IV a XI do Art. 2º, sem blocos próprios para esses marcadores."
+        },
+        {
+          "onde": "XI - trabalhar, em colaboração com o Serav..., Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos XI, XII, XIII, XIV e XV do Art. 5º ficaram sem bloco, embora cada inciso seja uma unidade que deve iniciar bloco."
+        },
+        {
+          "onde": "II - construir, em parceria com as unidades de negócio..., Art. 8º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso II contém também o inciso III do Art. 8º."
+        },
+        {
+          "onde": "VII - atuar em articulação com demais unidades desta Secretaria..., Art. 8º, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VII contém também os incisos VIII e IX do Art. 8º."
+        },
+        {
+          "onde": "CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do Capítulo VIII contém o Art. 9º e os incisos I a IV, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 6º, págs. 3-4",
+          "tipo": "sequencia",
+          "descricao": "A sequência de incisos apresenta saltos: II para IV, IX para XI e XIII para XV, sem os incisos III, X e XIV no texto segmentado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, encerre cada inciso em seu limite e inicie blocos próprios em \"IV - propor e realizar fiscalizações...\", \"V - apoiar a supervisão...\", \"VI - propor padrões de qualidade...\", \"VII - realizar intercâmbio...\", \"VIII - disseminar boas práticas...\", \"IX - contribuir para a definição...\", \"X - elaborar conteúdos...\" e \"XI - manifestar-se...\" (pág. 1).\n- No Art. 5º, inicie blocos próprios nos incisos \"XI - trabalhar, em colaboração com o Serav...\" até \"XV - acompanhar o processo de entrega...\" (pág. 3).\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-1516/NORMA-1516_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 110,
+    "insights_aplicados": "- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, encerre cada inciso em seu limite e inicie blocos próprios em \"IV - propor e realizar fiscalizações...\", \"V - apoiar a supervisão...\", \"VI - propor padrões de qualidade...\", \"VII - realizar intercâmbio...\", \"VIII - disseminar boas práticas...\", \"IX - contribuir para a definição...\", \"X - elaborar conteúdos...\" e \"XI - manifestar-se...\" (pág. 1).\n- No Art. 5º, inicie blocos próprios nos incisos \"XI - trabalhar, em colaboração com o Serav...\" até \"XV - acompanhar o processo de entrega...\" (pág. 3).\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 5º Compete à Diraud:`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no Art. 5º contém, sem blocos próprios, os incisos `I - desenvolver, aperfeiçoar... tomadas e prestações de contas...` e `II - desenvolver, aperfeiçoar... auditorias de contas;`, que são unidades autônomas."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, encerre cada inciso em seu limite e inicie blocos próprios em \"IV - propor e realizar fiscalizações...\", \"V - apoiar a supervisão...\", \"VI - propor padrões de qualidade...\", \"VII - realizar intercâmbio...\", \"VIII - disseminar boas práticas...\", \"IX - contribuir para a definição...\", \"X - elaborar conteúdos...\" e \"XI - manifestar-se...\" (pág. 1).\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-1516/NORMA-1516_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 104,
+    "insights_aplicados": "- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, encerre cada inciso em seu limite e inicie blocos próprios em \"IV - propor e realizar fiscalizações...\", \"V - apoiar a supervisão...\", \"VI - propor padrões de qualidade...\", \"VII - realizar intercâmbio...\", \"VIII - disseminar boas práticas...\", \"IX - contribuir para a definição...\", \"X - elaborar conteúdos...\" e \"XI - manifestar-se...\" (pág. 1).\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso III do Art. 2º, \"III - adotar, em conjunto com a Secretaria de Tecnologia da Informação...\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso III contém, sem blocos próprios, os incisos IV a XI do Art. 2º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, termine o bloco do inciso \"III - adotar, em conjunto com a Secretaria de Tecnologia da Informação...\" imediatamente antes de \"IV - propor e realizar fiscalizações...\" (pág. 1) e inicie blocos próprios em cada um dos incisos IV, V, VI, VII, VIII, IX, X e XI.\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-1516/NORMA-1516_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 109,
+    "insights_aplicados": "- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, termine o bloco do inciso \"III - adotar, em conjunto com a Secretaria de Tecnologia da Informação...\" imediatamente antes de \"IV - propor e realizar fiscalizações...\" (pág. 1) e inicie blocos próprios em cada um dos incisos IV, V, VI, VII, VIII, IX, X e XI.\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 7º \"Compete ao Serav:\" e incisos I, II e III, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 7º Compete ao Serav:\" contém, sem blocos próprios, os incisos I - \"propor, aperfeiçoar...\", II - \"avaliar a qualidade...\" e III - \"participar do levantamento...\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º \"Compete ao Serav:\" (pág. 4), termine o bloco do artigo imediatamente antes de \"I - propor, aperfeiçoar, manter atualizados...\" e inicie blocos próprios nos incisos I, II - \"avaliar a qualidade...\" e III - \"participar do levantamento...\".\n- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, termine o bloco do inciso \"III - adotar, em conjunto com a Secretaria de Tecnologia da Informação...\" imediatamente antes de \"IV - propor e realizar fiscalizações...\" (pág. 1) e inicie blocos próprios em cada um dos incisos IV, V, VI, VII, VIII, IX, X e XI.\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-1516/NORMA-1516_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 105,
+    "insights_aplicados": "- No Art. 7º \"Compete ao Serav:\" (pág. 4), termine o bloco do artigo imediatamente antes de \"I - propor, aperfeiçoar, manter atualizados...\" e inicie blocos próprios nos incisos I, II - \"avaliar a qualidade...\" e III - \"participar do levantamento...\".\n- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, termine o bloco do inciso \"III - adotar, em conjunto com a Secretaria de Tecnologia da Informação...\" imediatamente antes de \"IV - propor e realizar fiscalizações...\" (pág. 1) e inicie blocos próprios em cada um dos incisos IV, V, VI, VII, VIII, IX, X e XI.\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo.\n- Verifique a continuidade dos incisos do Art. 6º: a numeração presente salta de II para IV, de IX para XI e de XIII para XV; não presuma que esses saltos formam sequência contínua.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 2º, após o inciso VIII - \"disseminar boas práticas de controle externo...\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IX - \"contribuir para a definição de competências პროფესionais...\", X - \"elaborar conteúdos e promover...\" e XI - \"manifestar-se sobre normas...\" ficaram sem bloco próprio."
+        },
+        {
+          "onde": "Art. 6º, inciso IX - \"atuar, em articulação com a Diac e com o Seprod...\", pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IX contém também os incisos XI - \"articular com a Secretaria de Gestão de Processos...\", XII - \"acompanhar a aderência do e-TCU...\", XIII - \"supervisionar o planejamento...\" e XV - \"orientar e prestar suporte técnico...\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 2º, termine o bloco do inciso \"VIII - disseminar boas práticas de controle externo...\" imediatamente antes de \"IX - contribuir para a definição de competências profissionais...\" (pág. 1) e inicie blocos próprios nos incisos IX, X - \"elaborar conteúdos e promover...\" e XI - \"manifestar-se sobre normas...\".\n- No Art. 6º, termine o bloco do inciso \"IX - atuar, em articulação com a Diac e com o Seprod...\" imediatamente antes de \"XI – articular com a Secretaria de Gestão de Processos...\" (pág. 4) e inicie blocos próprios nos incisos XI, XII - \"acompanhar a aderência do e-TCU...\", XIII - \"supervisionar o planejamento...\" e XV - \"orientar e prestar suporte técnico...\"; reconheça cada marcador apesar dos saltos de numeração de II para IV, de IX para XI e de XIII para XV.\n- No Art. 7º \"Compete ao Serav:\" (pág. 4), termine o bloco do artigo imediatamente antes de \"I - propor, aperfeiçoar, manter atualizados...\" e inicie blocos próprios nos incisos I, II - \"avaliar a qualidade...\" e III - \"participar do levantamento...\".\n- Termine o bloco da \"PORTARIA-SEMEC Nº 2, DE 31 de março de 2019\" imediatamente antes de \"Art. 1º A estrutura e as competências...\" (pág. 1) e inicie um bloco próprio no Art. 1º.\n- Mantenha \"CAPÍTULO II\" e a epígrafe \"DA ESTRUTURA DA SECRETARIA\" no mesmo bloco, inclusive quando a epígrafe continuar na pág. 2; não inicie bloco em \"DA ESTRUTURA DA SECRETARIA\".\n- No Art. 2º, termine o bloco do inciso \"III - adotar, em conjunto com a Secretaria de Tecnologia da Informação...\" imediatamente antes de \"IV - propor e realizar fiscalizações...\" (pág. 1) e inicie blocos próprios em cada um dos incisos IV a XI.\n- No Art. 5º \"Compete à Diraud:\" (pág. 2), termine o bloco do artigo imediatamente antes de \"I - desenvolver, aperfeiçoar... tomadas e prestações de contas...\" e inicie um bloco próprio em cada inciso I a XV, incluindo os incisos I e II na pág. 2 e os incisos III a XV na pág. 3.\n- No Art. 8º, inicie um bloco no inciso \"III - definir, em conjunto com as unidades de negócios...\" (pág. 4) e blocos próprios em \"VIII - coordenar os trabalhos...\" e \"IX - manifestar-se sobre a colocação...\" (pág. 5).\n- No \"CAPÍTULO VIII — DAS COMPETÊNCIAS DO SEPROD\" (pág. 5), inicie blocos próprios em \"Art. 9º Compete ao Seprod:\" e em cada inciso I a IV desse artigo."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-1516/NORMA-1516_ciclo5.json"
+  }
+]

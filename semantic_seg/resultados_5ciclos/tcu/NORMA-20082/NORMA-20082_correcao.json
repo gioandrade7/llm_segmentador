@@ -1,0 +1,65 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 40,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 10,
+          "tipo": "englobante",
+          "descricao": "O bloco reúne marcadores que devem iniciar unidades próprias: “Seção II — Das Competências”, “Art. 5º Compete à Comissão de Jurisprudência:” e os incisos I, II, III, IV e V."
+        },
+        {
+          "bloco": 10,
+          "tipo": "granularidade",
+          "descricao": "Os incisos I a V do art. 5º foram agrupados, enquanto os incisos irmãos VI, VII e VIII foram segmentados individualmente nos blocos seguintes."
+        },
+        {
+          "bloco": 10,
+          "tipo": "lacuna",
+          "descricao": "O texto do inciso V termina de forma truncada em “recursos materiais e humanos necessá”, e o bloco seguinte já se inicia no inciso VI, sem conter a continuação e o encerramento do inciso V."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de “Seção II — Das Competências” antes de “Art. 5º Compete à Comissão de Jurisprudência:” e inicie um bloco próprio no art. 5º.\n- Na pág. 1, após a abertura de “Art. 5º Compete à Comissão de Jurisprudência:”, inicie um bloco separado em cada inciso I, II, III, IV e V, tal como já ocorre com os incisos VI, VII e VIII.\n- Preserve integralmente o inciso “V - requisitar ao Presidente do Tribunal os recursos materiais e humanos...”, incluindo a continuação após “necessá” e seu encerramento, antes de iniciar o bloco do inciso “VI - manter contato...”."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-20082/NORMA-20082_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 45,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de “Seção II — Das Competências” antes de “Art. 5º Compete à Comissão de Jurisprudência:” e inicie um bloco próprio no art. 5º.\n- Na pág. 1, após a abertura de “Art. 5º Compete à Comissão de Jurisprudência:”, inicie um bloco separado em cada inciso I, II, III, IV e V, tal como já ocorre com os incisos VI, VII e VIII.\n- Preserve integralmente o inciso “V - requisitar ao Presidente do Tribunal os recursos materiais e humanos...”, incluindo a continuação após “necessá” e seu encerramento, antes de iniciar o bloco do inciso “VI - manter contato...”.",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 18,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso VII do art. 5º contém também o marcador e todo o texto do inciso VIII, que deve iniciar bloco próprio."
+        },
+        {
+          "bloco": 18,
+          "tipo": "granularidade",
+          "descricao": "No art. 5º, os incisos I a VI foram segmentados individualmente, mas os incisos VII e VIII foram agrupados no mesmo bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 1, termine o bloco de “Seção II — Das Competências” antes de “Art. 5º Compete à Comissão de Jurisprudência:” e inicie um bloco próprio no art. 5º.\n- Na pág. 1, após a abertura de “Art. 5º Compete à Comissão de Jurisprudência:”, inicie um bloco separado em cada inciso I, II, III, IV e V.\n- Preserve integralmente o inciso “V - requisitar ao Presidente do Tribunal os recursos materiais e humanos necessários ao desempenho de suas atribuições;”, incluindo seu encerramento, antes de iniciar o bloco do inciso “VI - manter contato...”.\n- Na pág. 2, termine o bloco do inciso “VII - exarar parecer em processos referentes a projeto de súmula...” imediatamente antes de “VIII - expedir normas específicas de funcionamento da Comissão...” e inicie um bloco próprio no inciso VIII."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-20082/NORMA-20082_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 46,
+    "insights_aplicados": "- Na pág. 1, termine o bloco de “Seção II — Das Competências” antes de “Art. 5º Compete à Comissão de Jurisprudência:” e inicie um bloco próprio no art. 5º.\n- Na pág. 1, após a abertura de “Art. 5º Compete à Comissão de Jurisprudência:”, inicie um bloco separado em cada inciso I, II, III, IV e V.\n- Preserve integralmente o inciso “V - requisitar ao Presidente do Tribunal os recursos materiais e humanos necessários ao desempenho de suas atribuições;”, incluindo seu encerramento, antes de iniciar o bloco do inciso “VI - manter contato...”.\n- Na pág. 2, termine o bloco do inciso “VII - exarar parecer em processos referentes a projeto de súmula...” imediatamente antes de “VIII - expedir normas específicas de funcionamento da Comissão...” e inicie um bloco próprio no inciso VIII.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-20082/NORMA-20082_ciclo3.json"
+  }
+]

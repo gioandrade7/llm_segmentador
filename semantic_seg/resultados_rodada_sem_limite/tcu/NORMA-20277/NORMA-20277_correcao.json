@@ -1,0 +1,42 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 14,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo da Portaria, até \"resolve:\", ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Inciso \"II - os órgãos do Poder Legislativo;\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso II contém também os incisos irmãos III a XVI, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 3º \"A clientela das Secretarias de Controle Externo situadas nos Estados\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 3º contém o Art. 4º e o \"Parágrafo único\" subsequente, ambos marcadores de unidades próprias."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\" e encerrado após \"resolve:\".\n- Termine o bloco do inciso \"II - os órgãos do Poder Legislativo;\" (pág. 1) imediatamente antes do inciso III e inicie um bloco próprio em cada inciso de III a XVI.\n- Termine o bloco do Art. 3º \"A clientela das Secretarias de Controle Externo situadas nos Estados\" (pág. 1) antes de \"Art. 4º As Secretarias de Controle Externo nos Estados\"; termine também o bloco do Art. 4º antes de \"Parágrafo único. Os processos referentes às inspeções\" e inicie um bloco próprio nesse parágrafo único."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20277/NORMA-20277_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 31,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO\" e encerrado após \"resolve:\".\n- Termine o bloco do inciso \"II - os órgãos do Poder Legislativo;\" (pág. 1) imediatamente antes do inciso III e inicie um bloco próprio em cada inciso de III a XVI.\n- Termine o bloco do Art. 3º \"A clientela das Secretarias de Controle Externo situadas nos Estados\" (pág. 1) antes de \"Art. 4º As Secretarias de Controle Externo nos Estados\"; termine também o bloco do Art. 4º antes de \"Parágrafo único. Os processos referentes às inspeções\" e inicie um bloco próprio nesse parágrafo único.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-20277/NORMA-20277_ciclo2.json"
+  }
+]

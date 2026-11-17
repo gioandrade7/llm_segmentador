@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 21,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "bloco": 16,
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 6º A cessão de servidor para prestar serviços à Justiça eleitoral” (pág. 2) tem 1.177 caracteres e é seguido diretamente por “Art. 9º”, evidenciando que englobou as unidades intermediárias Art. 7º e Art. 8º, que deveriam iniciar blocos próprios."
+        },
+        {
+          "bloco": 16,
+          "tipo": "sequencia",
+          "descricao": "Após “Art. 6º” (pág. 2), o próximo artigo iniciado em bloco é “Art. 9º No caso de convocação” (pág. 2), com salto dos Arts. 7º e 8º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, ao processar o bloco iniciado por “Art. 6º A cessão de servidor para prestar serviços à Justiça eleitoral”, encerre-o imediatamente antes do marcador “Art. 7º” e inicie ali um bloco próprio; não absorva o artigo seguinte.\n- Na pág. 2, inicie também um bloco próprio em “Art. 8º” e encerre-o antes de “Art. 9º No caso de convocação”; preserve os Arts. 7º, 8º e 9º como artigos consecutivos distintos."
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-19948/NORMA-19948_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 23,
+    "insights_aplicados": "- Na pág. 2, ao processar o bloco iniciado por “Art. 6º A cessão de servidor para prestar serviços à Justiça eleitoral”, encerre-o imediatamente antes do marcador “Art. 7º” e inicie ali um bloco próprio; não absorva o artigo seguinte.\n- Na pág. 2, inicie também um bloco próprio em “Art. 8º” e encerre-o antes de “Art. 9º No caso de convocação”; preserve os Arts. 7º, 8º e 9º como artigos consecutivos distintos.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_5ciclos/tcu/NORMA-19948/NORMA-19948_ciclo2.json"
+  }
+]

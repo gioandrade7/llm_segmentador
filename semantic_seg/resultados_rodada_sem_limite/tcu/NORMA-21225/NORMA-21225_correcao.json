@@ -1,0 +1,62 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 121,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "todo o preâmbulo, incluindo os considerandos e a fórmula “resolve:”, ficou fora de qualquer bloco antes de “Seção I”."
+        },
+        {
+          "onde": "§ 3º “O tratamento de informação não pública resultante de tratados”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o final da unidade, “tos.”, ficou fora do bloco, separando no meio da palavra “instrumentos.”"
+        },
+        {
+          "onde": "incisos VII “pôr em risco a segurança de instituições” e VIII “comprometer atividades de inteligência do Tribunal”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos VII e VIII do art. 7º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "Parágrafo único do art. 7º “Para a classificação da informação nos graus de confidencialidade”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do parágrafo único contém também os incisos I e II, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "incisos II “grupo de pessoas que pode acessar a informação” a VI “identificação do responsável pela classificação” do art. 11, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II, III, IV, V e VI ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "incisos II “o prazo máximo de quatro anos” a IV “a possibilidade de danos ou riscos” do § 1º do art. 17, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos II, III e IV ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "inciso I do § 3º do art. 25 “sigilosas: quando classificadas”, pág. 7",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso I contém também os incisos II e III, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO” e encerrado em “resolve:”, antes de iniciar o bloco de “Seção I”.\n- Mantenha integralmente no bloco de “§ 3º O tratamento de informação não pública resultante de tratados” (pág. 1) o seu término “instrumentos.”; não deixe “tos.” fora do bloco.\n- Inicie blocos próprios para os incisos VII “pôr em risco a segurança de instituições ou de altas autoridades” e VIII “comprometer atividades de inteligência do Tribunal” do art. 7º (pág. 3).\n- Termine o bloco do “Parágrafo único. Para a classificação da informação nos graus de confidencialidade” do art. 7º (pág. 3) antes do inciso I e inicie blocos separados nos incisos I “a gravidade do risco ou dano” e II “o prazo máximo de restrição de acesso”.\n- Inicie blocos próprios para cada inciso II “grupo de pessoas que pode acessar a informação”, III “assunto sobre o qual versa a informação”, IV “fundamento da classificação”, V “indicação do prazo” e VI “identificação do responsável pela classificação” do art. 11 (pág. 4).\n- Inicie blocos próprios para os incisos II “o prazo máximo de quatro anos”, III “a permanência das razões da classificação” e IV “a possibilidade de danos ou riscos” do § 1º do art. 17 (pág. 5).\n- Termine o bloco do inciso I “sigilosas: quando classificadas” do § 3º do art. 25 (pág. 7) antes do inciso II e inicie blocos separados nos incisos II “restritas: quando classificadas” e III “públicas: quando classificadas”."
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21225/NORMA-21225_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 136,
+    "insights_aplicados": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO” e encerrado em “resolve:”, antes de iniciar o bloco de “Seção I”.\n- Mantenha integralmente no bloco de “§ 3º O tratamento de informação não pública resultante de tratados” (pág. 1) o seu término “instrumentos.”; não deixe “tos.” fora do bloco.\n- Inicie blocos próprios para os incisos VII “pôr em risco a segurança de instituições ou de altas autoridades” e VIII “comprometer atividades de inteligência do Tribunal” do art. 7º (pág. 3).\n- Termine o bloco do “Parágrafo único. Para a classificação da informação nos graus de confidencialidade” do art. 7º (pág. 3) antes do inciso I e inicie blocos separados nos incisos I “a gravidade do risco ou dano” e II “o prazo máximo de restrição de acesso”.\n- Inicie blocos próprios para cada inciso II “grupo de pessoas que pode acessar a informação”, III “assunto sobre o qual versa a informação”, IV “fundamento da classificação”, V “indicação do prazo” e VI “identificação do responsável pela classificação” do art. 11 (pág. 4).\n- Inicie blocos próprios para os incisos II “o prazo máximo de quatro anos”, III “a permanência das razões da classificação” e IV “a possibilidade de danos ou riscos” do § 1º do art. 17 (pág. 5).\n- Termine o bloco do inciso I “sigilosas: quando classificadas” do § 3º do art. 25 (pág. 7) antes do inciso II e inicie blocos separados nos incisos II “restritas: quando classificadas” e III “públicas: quando classificadas”.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_rodada_sem_limite/tcu/NORMA-21225/NORMA-21225_ciclo2.json"
+  }
+]

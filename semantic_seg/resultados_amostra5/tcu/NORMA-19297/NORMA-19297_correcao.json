@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 57,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das suas atribuições legais...\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo da Portaria, que antecede o primeiro Considerando, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Inciso \"I - representar e coordenar o Comitê;\", do Art. 7º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso I contém também os incisos II a X do Art. 7º, embora cada inciso seja um marcador que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo que abre com \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das suas atribuições legais...\" (pág. 1), antes de \"Considerando a importância estratégica...\".\n- Termine o bloco do inciso \"I - representar e coordenar o Comitê;\" do Art. 7º imediatamente antes de \"II - organizar pauta, convocar e coordenar as reuniões;\" (pág. 3). Inicie blocos próprios em cada um dos incisos II, III, IV, V, VI, VII, VIII, IX e X do Art. 7º."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19297/NORMA-19297_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 66,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo que abre com \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das suas atribuições legais...\" (pág. 1), antes de \"Considerando a importância estratégica...\".\n- Termine o bloco do inciso \"I - representar e coordenar o Comitê;\" do Art. 7º imediatamente antes de \"II - organizar pauta, convocar e coordenar as reuniões;\" (pág. 3). Inicie blocos próprios em cada um dos incisos II, III, IV, V, VI, VII, VIII, IX e X do Art. 7º.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-19297/NORMA-19297_ciclo2.json"
+  }
+]

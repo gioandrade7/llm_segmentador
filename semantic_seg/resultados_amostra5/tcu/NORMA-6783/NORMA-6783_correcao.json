@@ -1,0 +1,257 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 199,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório, incluindo os três considerandos e o trecho final “resolve:”, ficou fora de qualquer bloco antes do Art. 1º."
+        },
+        {
+          "onde": "Art. 3º, incisos V a XV, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso IV, os incisos V a XV ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 4º, inciso V “Divisão de Saúde (Dsaud)”, págs. 1-2",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso V ficou fora de bloco, embora suas alíneas subsequentes iniciem blocos próprios."
+        },
+        {
+          "onde": "Art. 4º, alínea d) “Serviço de Saúde Ocupacional (SAO)”, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "A alínea d) ficou fora de bloco."
+        },
+        {
+          "onde": "Art. 5º “São atividades comuns a todas as divisões e serviços da Segep”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 5º contém, sem cortes próprios, os incisos I a IX."
+        },
+        {
+          "onde": "Art. 6º, incisos III a VII, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso II, os incisos III a VII ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 8º, inciso IV “coordenar a atualização dos manuais”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos V e VI, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 8º, inciso IX “receber e conferir as declarações de bens”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IX contém também os incisos X a XVIII, sem cortes nos respectivos marcadores."
+        },
+        {
+          "onde": "Art. 10, incisos IX a XXI, págs. 4-5",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso VIII, os incisos IX a XXI ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 12, alínea g), itens 4 a 6, págs. 5-6",
+          "tipo": "sem_bloco",
+          "descricao": "Os itens 4, 5 e 6 da alínea g) ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 12, alíneas t) e u), pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "As alíneas t) e u) ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 12, inciso VI “analisar o direito e inscrever beneficiários”, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso VI ficou fora de bloco."
+        },
+        {
+          "onde": "Art. 13, inciso I “examinar a legalidade e opinar”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I contém as alíneas a) a f), que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Parágrafo único do Art. 14, incisos III e IV, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso II, os incisos III e IV ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 15, inciso II “proceder, mensalmente, à análise”, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso II contém também os incisos III a XII, sem cortes nos marcadores desses incisos."
+        },
+        {
+          "onde": "Art. 16, incisos XIII a XV, pág. 8",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso XII, os incisos XIII a XV ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 17, incisos I e III, pág. 8; Art. 18, pág. 9",
+          "tipo": "sem_bloco",
+          "descricao": "Trechos de palavras pertencentes a unidades já iniciadas ficaram fora de bloco: “stas civis e judiciais do TCU” no inciso I do Art. 17, “ormas aplicáveis” no inciso III do Art. 17 e “vidores” no Art. 18."
+        },
+        {
+          "onde": "Art. 17, incisos XVI a XVIII, pág. 9",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso XV, os incisos XVI a XVIII ficaram fora de bloco."
+        },
+        {
+          "onde": "Art. 19, inciso VIII “encaminhar à Dsaud estatística mensal”, pág. 9",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso VIII ficou fora de bloco."
+        },
+        {
+          "onde": "Art. 20, inciso X “encaminhar à Dsaud estatística mensal”, pág. 10",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso X ficou fora de bloco."
+        },
+        {
+          "onde": "Art. 22, inciso VII “realizar avaliação social”, pág. 10",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VII contém também os incisos VIII e IX, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 23, inciso V “estabelecer gestão transparente e participativa”, pág. 11",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso V contém também os incisos VI a VIII, sem cortes nos respectivos marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), inicie blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9).\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (pág. 10), inicie um bloco no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-6783/NORMA-6783_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 276,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), inicie blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9).\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (pág. 10), inicie um bloco no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 6º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 6º Compete à Assessoria:” contém também os incisos I “elaborar pareceres” e II “desenvolver estudos técnicos”, sem blocos próprios para essas unidades."
+        },
+        {
+          "onde": "Inciso XVI do Art. 8º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “XVI-efetuar o cadastro” contém também os incisos XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”, sem corte entre os incisos."
+        },
+        {
+          "onde": "Inciso XV do Art. 10, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “XV-elaborar ato de designação” contém também os incisos XVI a XXI, que aparecem em sequência sem blocos próprios."
+        },
+        {
+          "onde": "Inciso VI do Art. 17, págs. 8-9",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final “civis e judiciais;”, continuação do inciso VI “encaminhar relatórios dos valores líquidos devidos”, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Inciso IX do Art. 22, pág. 10",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso “IX-encaminhar à Dsaud estatística mensal das atividades realizadas.” ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII, inclusive separando os incisos XVI “efetuar o cadastro”, XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”, inclusive separando os incisos XV “elaborar ato de designação”, XVI “elaborar ato de designação, mediante indicação” até XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (pág. 10), inicie um bloco no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-6783/NORMA-6783_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 264,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII, inclusive separando os incisos XVI “efetuar o cadastro”, XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”, inclusive separando os incisos XV “elaborar ato de designação”, XVI “elaborar ato de designação, mediante indicação” até XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (pág. 10), inicie um bloco no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, inciso IX “opinar acerca de questões pertinentes...”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso IX contém também os incisos X a XV, sem blocos próprios para esses marcadores."
+        },
+        {
+          "onde": "Art. 16, “Compete ao Serviço de Pagamento de Ativos”, págs. 7-8",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém os incisos I a XII sem cortes entre eles; cada inciso é uma unidade da hierarquia e deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 20, “Compete ao Serviço de Promoção de Saúde e Bem-Estar”, págs. 9-10",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém conjuntamente os incisos I a V, sem blocos próprios para esses marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”. Em especial, termine o bloco do inciso VIII antes do inciso IX “opinar acerca de questões pertinentes” e inicie blocos separados nos incisos IX a XV.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII, inclusive separando os incisos XVI “efetuar o cadastro”, XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”, inclusive separando os incisos XV “elaborar ato de designação”, XVI “elaborar ato de designação, mediante indicação” até XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII.\n- No Art. 16 (págs. 7-8), termine o bloco do artigo antes do inciso I “elaborar a folha de pagamento de autoridades e servidores ativos do TCU” e inicie blocos próprios em todos os incisos I a XII, inclusive nos incisos XI “tornar operacional as atividades necessárias ao pagamento do auxílio-moradia” e XII “atualizar registros funcionais de servidores ativos”.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (págs. 9-10), termine o bloco do artigo antes do inciso I “desenvolver programas destinados à prevenção de doenças” e inicie blocos próprios nos incisos I a V; mantenha também bloco próprio no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas” (pág. 10).\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-6783/NORMA-6783_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 270,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”. Em especial, termine o bloco do inciso VIII antes do inciso IX “opinar acerca de questões pertinentes” e inicie blocos separados nos incisos IX a XV.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII, inclusive separando os incisos XVI “efetuar o cadastro”, XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”, inclusive separando os incisos XV “elaborar ato de designação”, XVI “elaborar ato de designação, mediante indicação” até XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII.\n- No Art. 16 (págs. 7-8), termine o bloco do artigo antes do inciso I “elaborar a folha de pagamento de autoridades e servidores ativos do TCU” e inicie blocos próprios em todos os incisos I a XII, inclusive nos incisos XI “tornar operacional as atividades necessárias ao pagamento do auxílio-moradia” e XII “atualizar registros funcionais de servidores ativos”.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (págs. 9-10), termine o bloco do artigo antes do inciso I “desenvolver programas destinados à prevenção de doenças” e inicie blocos próprios nos incisos I a V; mantenha também bloco próprio no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas” (pág. 10).\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "inciso IV do Art. 10, “atualizar o quadro de pessoal do TCU”, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "a continuação final da unidade, “as secretarias do Tribunal;”, ficou sem bloco, após “lotação existente e autorizada n”."
+        },
+        {
+          "onde": "inciso V do Art. 10, “elaborar os atos e adotar as providências necessárias à vacância”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso V contém as alíneas a) “exoneração” até e) “falecimento”, sem blocos próprios para essas unidades."
+        },
+        {
+          "onde": "inciso XVIII do Art. 10, “registrar em sistema informatizado”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso XVIII contém também os incisos XIX “zelar pela guarda”, XX “prestar as informações” e XXI “expedir certidões”."
+        },
+        {
+          "onde": "inciso IX do Art. 15, “administrar o Sistema \"Repag\"”, pág. 7",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IX contém também os incisos X “efetuar os cálculos e o ressarcimento”, XI “efetuar os cálculos dos valores de aposentadoria” e XII “efetuar o pagamento de auxílio-funeral”."
+        },
+        {
+          "onde": "Art. 20, “Compete ao Serviço de Promoção de Saúde e Bem-Estar”, pág. 9",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém os incisos I “desenvolver programas” até V “prestar informações”, sem cortes entre as unidades."
+        },
+        {
+          "onde": "inciso IV do Art. 23, “reconhecer e celebrar com regularidade”, pág. 11",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso IV inteiro ficou sem bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”. Em especial, termine o bloco do inciso VIII antes do inciso IX “opinar acerca de questões pertinentes” e inicie blocos separados nos incisos IX a XV.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII, inclusive separando os incisos XVI “efetuar o cadastro”, XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”.\n- No Art. 10, mantenha integralmente no bloco do inciso IV “atualizar o quadro de pessoal do TCU” a continuação “nas secretarias do Tribunal;” (pág. 4), sem interromper a unidade antes dessa expressão.\n- No Art. 10 (pág. 4), termine o bloco do inciso V “elaborar os atos e adotar as providências necessárias à vacância de cargos” antes da alínea a) “exoneração” e inicie blocos próprios nas alíneas a) a e), até “falecimento”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”. Em especial, termine o bloco do inciso XVIII “registrar em sistema informatizado” antes do inciso XIX “zelar pela guarda” e inicie blocos separados nos incisos XIX, XX “prestar as informações relativas a férias” e XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII. Em especial, termine o bloco do inciso IX “administrar o Sistema \"Repag\"” antes do inciso X “efetuar os cálculos e o ressarcimento” e abra blocos separados nos incisos X, XI e XII.\n- No Art. 16 (págs. 7-8), termine o bloco do artigo antes do inciso I “elaborar a folha de pagamento de autoridades e servidores ativos do TCU” e inicie blocos próprios em todos os incisos I a XII, inclusive nos incisos XI “tornar operacional as atividades necessárias ao pagamento do auxílio-moradia” e XII “atualizar registros funcionais de servidores ativos”.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (págs. 9-10), termine o bloco do artigo antes do inciso I “desenvolver programas destinados à prevenção de doenças” e inicie blocos próprios em cada inciso I, II, III, IV e V. Mantenha também bloco próprio no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas” (pág. 10).\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), inicie um bloco próprio no inciso IV “reconhecer e celebrar com regularidade as realizações da equipe”, entre o inciso III “apoiar o desenvolvimento” e o inciso V “estabelecer gestão transparente e participativa”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-6783/NORMA-6783_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 283,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”. Em especial, termine o bloco do inciso VIII antes do inciso IX “opinar acerca de questões pertinentes” e inicie blocos separados nos incisos IX a XV.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII, inclusive separando os incisos XVI “efetuar o cadastro”, XVII “requisitar à Dsaud exame” e XVIII “cadastrar as informações”.\n- No Art. 10, mantenha integralmente no bloco do inciso IV “atualizar o quadro de pessoal do TCU” a continuação “nas secretarias do Tribunal;” (pág. 4), sem interromper a unidade antes dessa expressão.\n- No Art. 10 (pág. 4), termine o bloco do inciso V “elaborar os atos e adotar as providências necessárias à vacância de cargos” antes da alínea a) “exoneração” e inicie blocos próprios nas alíneas a) a e), até “falecimento”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”. Em especial, termine o bloco do inciso XVIII “registrar em sistema informatizado” antes do inciso XIX “zelar pela guarda” e inicie blocos separados nos incisos XIX, XX “prestar as informações relativas a férias” e XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII. Em especial, termine o bloco do inciso IX “administrar o Sistema \"Repag\"” antes do inciso X “efetuar os cálculos e o ressarcimento” e abra blocos separados nos incisos X, XI e XII.\n- No Art. 16 (págs. 7-8), termine o bloco do artigo antes do inciso I “elaborar a folha de pagamento de autoridades e servidores ativos do TCU” e inicie blocos próprios em todos os incisos I a XII, inclusive nos incisos XI “tornar operacional as atividades necessárias ao pagamento do auxílio-moradia” e XII “atualizar registros funcionais de servidores ativos”.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (págs. 9-10), termine o bloco do artigo antes do inciso I “desenvolver programas destinados à prevenção de doenças” e inicie blocos próprios em cada inciso I, II, III, IV e V. Mantenha também bloco próprio no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas” (pág. 10).\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), inicie um bloco próprio no inciso IV “reconhecer e celebrar com regularidade as realizações da equipe”, entre o inciso III “apoiar o desenvolvimento” e o inciso V “estabelecer gestão transparente e participativa”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 8º, incisos XVI a XVIII, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso XVI “efetuar o cadastro e a atualização dos dados de servidores” contém também os incisos XVII “requisitar à Dsaud exame de sanidade” e XVIII “cadastrar as informações referentes à data de posse”, sem blocos próprios para essas unidades."
+        },
+        {
+          "onde": "Art. 10, incisos XVIII a XXI, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso XVIII “registrar em sistema informatizado e informar à Dipag” contém também os incisos XIX “zelar pela guarda”, XX “prestar as informações relativas a férias” e XXI “expedir certidões”, sem cortes antes desses marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS” e terminado em “resolve:” (pág. 1) em um bloco introdutório próprio, antes do bloco do Art. 1º.\n- No Art. 3º (pág. 1), inicie blocos próprios nos incisos V “planejar, promover, coordenar” até XV “coordenar o Programa de Assistência à Mãe Nutriz”. Em especial, termine o bloco do inciso VIII antes do inciso IX “opinar acerca de questões pertinentes” e inicie blocos separados nos incisos IX a XV.\n- No Art. 4º, inicie um bloco no inciso V “Divisão de Saúde (Dsaud)” (págs. 1-2) e outro na alínea d) “Serviço de Saúde Ocupacional (SAO)” (pág. 2).\n- No Art. 5º (pág. 2), termine o bloco do artigo antes do inciso I “constituir, instruir, autuar” e inicie blocos próprios em cada inciso I a IX.\n- No Art. 6º (pág. 2), termine o bloco do artigo antes do inciso I “elaborar pareceres, pronunciamentos” e inicie blocos próprios nos incisos I e II; inicie também blocos próprios nos incisos III “instruir processos” até VII “elaborar, em parceria com as divisões”.\n- No Art. 8º (pág. 3), termine o bloco do inciso IV antes do inciso V “fornecer indicadores gerenciais” e inicie blocos próprios nos incisos V e VI; termine também o bloco do inciso IX antes do inciso X “expedir declarações” e inicie blocos próprios nos incisos X a XVIII. Em especial, encerre o bloco do inciso XVI “efetuar o cadastro e a atualização dos dados de servidores” imediatamente antes do inciso XVII “requisitar à Dsaud exame de sanidade” e abra blocos distintos nos incisos XVII e XVIII “cadastrar as informações referentes à data de posse”.\n- No Art. 10, mantenha integralmente no bloco do inciso IV “atualizar o quadro de pessoal do TCU” a continuação “nas secretarias do Tribunal;” (pág. 4), sem interromper a unidade antes dessa expressão.\n- No Art. 10 (pág. 4), termine o bloco do inciso V “elaborar os atos e adotar as providências necessárias à vacância de cargos” antes da alínea a) “exoneração” e inicie blocos próprios nas alíneas a) a e), até “falecimento”.\n- No Art. 10 (págs. 4-5), inicie blocos próprios nos incisos IX “atualizar as pastas de assentamentos” até XXI “expedir certidões”. Em especial, encerre o bloco do inciso XVIII “registrar em sistema informatizado e informar à Dipag” antes do inciso XIX “zelar pela guarda” e abra blocos separados nos incisos XIX, XX “prestar as informações relativas a férias” e XXI.\n- No Art. 12, inicie blocos próprios nos itens 4 “para participar de competição esportiva” a 6 “para participar de programa de formação” da alínea g) (págs. 5-6), nas alíneas t) “designação de beneficiários” e u) “auxílio-transporte” (pág. 6) e no inciso VI “analisar o direito e inscrever beneficiários” (pág. 6).\n- No Art. 13 (pág. 6), termine o bloco do inciso I antes da alínea a) “concessão e revisão de aposentadoria” e inicie blocos próprios em cada alínea a) a f).\n- No parágrafo único do Art. 14 (pág. 7), inicie blocos próprios nos incisos III “arquivar os pedidos de fruição de férias” e IV “fornecer informações anuais de rendimentos”.\n- No Art. 15 (pág. 7), termine o bloco do inciso II antes do inciso III “elaborar relatórios de informações gerenciais” e inicie blocos próprios nos incisos III a XII. Em especial, termine o bloco do inciso IX “administrar o Sistema “Repag”” antes do inciso X “efetuar os cálculos e o ressarcimento” e abra blocos separados nos incisos X, XI e XII.\n- No Art. 16 (págs. 7-8), termine o bloco do artigo antes do inciso I “elaborar a folha de pagamento de autoridades e servidores ativos do TCU” e inicie blocos próprios em todos os incisos I a XII, inclusive nos incisos XI “tornar operacional as atividades necessárias ao pagamento do auxílio-moradia” e XII “atualizar registros funcionais de servidores ativos”.\n- No Art. 16 (pág. 8), inicie blocos próprios nos incisos XIII “orientar os servidores quanto aos procedimentos” até XV “controlar os pedidos de fruição e interrupção de férias”.\n- Preserve no bloco já aberto as continuações de palavra separadas por mudança de página: acrescente “stas civis e judiciais do TCU” ao inciso I do Art. 17, “ormas aplicáveis” ao inciso III do Art. 17 (pág. 8) e “vidores” ao Art. 18 (pág. 9). Inclua também “civis e judiciais;” no bloco do inciso VI do Art. 17 “encaminhar relatórios dos valores líquidos devidos” (págs. 8-9), sem criar bloco novo para essa continuação.\n- No Art. 17 (pág. 9), inicie blocos próprios nos incisos XVI “recadastrar autoridades e servidores inativos” até XVIII “suspender pagamentos de proventos”.\n- No Art. 19 (pág. 9), inicie um bloco no inciso VIII “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 20 (págs. 9-10), termine o bloco do artigo antes do inciso I “desenvolver programas destinados à prevenção de doenças” e inicie blocos próprios em cada inciso I, II, III, IV e V. Mantenha também bloco próprio no inciso X “encaminhar à Dsaud estatística mensal das atividades realizadas” (pág. 10).\n- No Art. 22 (pág. 10), termine o bloco do inciso VII antes do inciso VIII “fazer acompanhamento psicossocial” e inicie blocos próprios nos incisos VIII e IX “encaminhar à Dsaud estatística mensal das atividades realizadas”.\n- No Art. 23 (pág. 11), inicie um bloco próprio no inciso IV “reconhecer e celebrar com regularidade as realizações da equipe”, entre o inciso III “apoiar o desenvolvimento” e o inciso V “estabelecer gestão transparente e participativa”.\n- No Art. 23 (pág. 11), termine o bloco do inciso V antes do inciso VI “identificar e desenvolver habilidades de liderança” e inicie blocos próprios nos incisos VI a VIII."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-6783/NORMA-6783_ciclo5.json"
+  }
+]

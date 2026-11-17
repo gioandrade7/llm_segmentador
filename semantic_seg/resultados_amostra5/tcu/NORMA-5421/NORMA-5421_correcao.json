@@ -1,0 +1,147 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 140,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "incisos XIII a XXIII do Art. 6º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos XIII - \"elaborar e atualizar manual de rotinas\" até XXIII - \"prestar apoio administrativo-operacional\" ficaram sem bloco."
+        },
+        {
+          "onde": "incisos X a XVI do Art. 14, págs. 6 e 7",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos X - \"atender às solicitações de pesquisa\" até XVI - \"desenvolver outras atividades inerentes à sua finalidade\" ficaram sem bloco."
+        },
+        {
+          "onde": "inciso XIII do Art. 18, pág. 8",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso XIII - \"adotar os procedimentos necessários ao atendimento dos pedidos de vista\" contém também os incisos XIV a XVII."
+        },
+        {
+          "onde": "preâmbulo iniciado por \"O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o preâmbulo da Portaria, incluindo os considerandos e o trecho final \"resolve:\", ficou sem bloco."
+        },
+        {
+          "onde": "incisos I e II do Art. 18, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "partes integrantes dos textos dos incisos ficaram sem bloco: \"iplinar Permanente;\" completa \"Comissão Disc...\" no inciso I, e \"ervidores;\" completa \"s...\" no inciso II."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde \"XIII - elaborar e atualizar manual de rotinas\" até \"XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto\".\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde \"X - atender às solicitações de pesquisa\" até \"XVI - desenvolver outras atividades inerentes à sua finalidade\".\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de \"XIV - instruir e gerir os processos de concessão de suprimento de fundos\" e inicie blocos separados também para os incisos XV, XVI e XVII.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por \"O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO\" e encerrado em \"resolve:\" (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha \"iplinar Permanente;\" no bloco do inciso I, completando \"Comissão Disciplinar Permanente\", e \"ervidores;\" no bloco do inciso II, completando \"servidores;\"."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-5421/NORMA-5421_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 154,
+    "insights_aplicados": "- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde \"XIII - elaborar e atualizar manual de rotinas\" até \"XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto\".\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde \"X - atender às solicitações de pesquisa\" até \"XVI - desenvolver outras atividades inerentes à sua finalidade\".\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de \"XIV - instruir e gerir os processos de concessão de suprimento de fundos\" e inicie blocos separados também para os incisos XV, XVI e XVII.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por \"O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO\" e encerrado em \"resolve:\" (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha \"iplinar Permanente;\" no bloco do inciso I, completando \"Comissão Disciplinar Permanente\", e \"ervidores;\" no bloco do inciso II, completando \"servidores;\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 8º, págs. 3 e 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 8º Compete à Assessoria:” contém, sem blocos próprios, os incisos I a VIII, de “I - elaborar pareceres...” a “VIII - acompanhar o cumprimento das metas...”."
+        },
+        {
+          "onde": "Inciso V do Art. 12, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “ampla defesa;”, que completa o inciso V iniciado por “V - indiciar servidor...”, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Incisos XVI e XVII do Art. 18, pág. 8",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XVI, iniciado por “XVI - autorizar a saída de veículos automotores...”, contém também o inciso XVII, “XVII - desenvolver outras atividades inerentes à sua finalidade.”"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-5421/NORMA-5421_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 157,
+    "insights_aplicados": "- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, inciso III, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “III - realizar o desdobramento...” contém também os incisos IV, V, VI e VII, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 5º, inciso IV, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “IV - Gerências de Processos:” contém a alínea “a) Gerência de Publicação de Atos Administrativos (Gpublic) ;”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 6º, inciso VI, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “strativa” da expressão “Transparência Administrativa” ficou fora de bloco, embora seja continuação do inciso VI."
+        },
+        {
+          "onde": "Art. 10, inciso IV, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “IV - operacionalizar o ressarcimento de:” contém a alínea “a) despesas realizadas pelas autoridades...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 14, inciso III, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho “ublicação no BTCU;” ficou fora de bloco, embora seja continuação do inciso III e complete “publicação no BTCU;”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º (págs. 1 e 2), termine o bloco do inciso III, “III - realizar o desdobramento...”, imediatamente antes de “IV - orientar as demais unidades...” e inicie blocos próprios para cada inciso IV a VII, até “VII - promover a articulação...”.\n- No Art. 5º (pág. 2), termine o bloco do inciso IV, “IV - Gerências de Processos:”, imediatamente antes de “a) Gerência de Publicação de Atos Administrativos (Gpublic) ;” e inicie bloco próprio para essa alínea.\n- No Art. 10 (pág. 4), termine o bloco do inciso IV, “IV - operacionalizar o ressarcimento de:”, imediatamente antes de “a) despesas realizadas pelas autoridades...” e inicie bloco próprio para essa alínea.\n- No inciso VI do Art. 6º (pág. 2), mantenha no bloco iniciado por “VI - alimentar e manter atualizado...” todo o texto, inclusive o trecho final “Transparência Administrativa” no Portal TCU;.\n- No inciso III do Art. 14 (pág. 6), mantenha no bloco iniciado por “III - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no BTCU;” todo o texto, inclusive “publicação no BTCU;”.\n- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-5421/NORMA-5421_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 162,
+    "insights_aplicados": "- No Art. 4º (págs. 1 e 2), termine o bloco do inciso III, “III - realizar o desdobramento...”, imediatamente antes de “IV - orientar as demais unidades...” e inicie blocos próprios para cada inciso IV a VII, até “VII - promover a articulação...”.\n- No Art. 5º (pág. 2), termine o bloco do inciso IV, “IV - Gerências de Processos:”, imediatamente antes de “a) Gerência de Publicação de Atos Administrativos (Gpublic) ;” e inicie bloco próprio para essa alínea.\n- No Art. 10 (pág. 4), termine o bloco do inciso IV, “IV - operacionalizar o ressarcimento de:”, imediatamente antes de “a) despesas realizadas pelas autoridades...” e inicie bloco próprio para essa alínea.\n- No inciso VI do Art. 6º (pág. 2), mantenha no bloco iniciado por “VI - alimentar e manter atualizado...” todo o texto, inclusive o trecho final “Transparência Administrativa” no Portal TCU;.\n- No inciso III do Art. 14 (pág. 6), mantenha no bloco iniciado por “III - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no BTCU;” todo o texto, inclusive “publicação no BTCU;”.\n- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "alínea j) do inciso III do Art. 10, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O texto “j) concessão de vantagens e benefícios.” ficou fora de qualquer bloco, embora a alínea seja uma unidade própria."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º (págs. 1 e 2), termine o bloco do inciso III, “III - realizar o desdobramento...”, imediatamente antes de “IV - orientar as demais unidades...” e inicie blocos próprios para cada inciso IV a VII, até “VII - promover a articulação...”.\n- No Art. 5º (pág. 2), termine o bloco do inciso IV, “IV - Gerências de Processos:”, imediatamente antes de “a) Gerência de Publicação de Atos Administrativos (Gpublic) ;” e inicie bloco próprio para essa alínea.\n- No Art. 10 (pág. 4), termine o bloco do inciso IV, “IV - operacionalizar o ressarcimento de:”, imediatamente antes de “a) despesas realizadas pelas autoridades...” e inicie bloco próprio para essa alínea.\n- No inciso VI do Art. 6º (pág. 2), mantenha no bloco iniciado por “VI - alimentar e manter atualizado...” todo o texto, inclusive o trecho final “Transparência Administrativa” no Portal TCU;.\n- No inciso III do Art. 14 (pág. 6), mantenha no bloco iniciado por “III - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no BTCU;” todo o texto, inclusive “publicação no BTCU;”.\n- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”.\n- No inciso III do Art. 10 (pág. 4), inicie um bloco próprio para a alínea “j) concessão de vantagens e benefícios.”, imediatamente após a alínea “i) reconhecimento de direitos; e”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-5421/NORMA-5421_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 157,
+    "insights_aplicados": "- No Art. 4º (págs. 1 e 2), termine o bloco do inciso III, “III - realizar o desdobramento...”, imediatamente antes de “IV - orientar as demais unidades...” e inicie blocos próprios para cada inciso IV a VII, até “VII - promover a articulação...”.\n- No Art. 5º (pág. 2), termine o bloco do inciso IV, “IV - Gerências de Processos:”, imediatamente antes de “a) Gerência de Publicação de Atos Administrativos (Gpublic) ;” e inicie bloco próprio para essa alínea.\n- No Art. 10 (pág. 4), termine o bloco do inciso IV, “IV - operacionalizar o ressarcimento de:”, imediatamente antes de “a) despesas realizadas pelas autoridades...” e inicie bloco próprio para essa alínea.\n- No inciso VI do Art. 6º (pág. 2), mantenha no bloco iniciado por “VI - alimentar e manter atualizado...” todo o texto, inclusive o trecho final “Transparência Administrativa” no Portal TCU;.\n- No inciso III do Art. 14 (pág. 6), mantenha no bloco iniciado por “III - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no BTCU;” todo o texto, inclusive “publicação no BTCU;”.\n- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”.\n- No inciso III do Art. 10 (pág. 4), inicie um bloco próprio para a alínea “j) concessão de vantagens e benefícios.”, imediatamente após a alínea “i) reconhecimento de direitos; e”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "inciso IV do Art. 4º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final \"sultados alcançados;\", que completa \"re\" em \"resultados alcançados;\", ficou fora do bloco do inciso IV."
+        },
+        {
+          "onde": "alíneas e) a j) do inciso III do Art. 10, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "As alíneas \"e) pagamento de diárias;\" até \"j) concessão de vantagens e benefícios.\" não foram incluídas em blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 10 (pág. 4), termine o bloco da alínea d), “d) emissão de passagens;”, imediatamente antes de “e) pagamento de diárias;” e inicie blocos próprios para cada alínea e) a j), de “e) pagamento de diárias;” até “j) concessão de vantagens e benefícios.”.\n- No Art. 4º (pág. 1), mantenha no bloco iniciado por “IV - orientar as demais unidades integrantes...” todo o texto do inciso, incluindo o trecho “resultados alcançados;”, ainda que venha fragmentado como “re” seguido de “sultados alcançados;”.\n- No Art. 4º (págs. 1 e 2), termine o bloco do inciso III, “III - realizar o desdobramento...”, imediatamente antes de “IV - orientar as demais unidades...” e inicie blocos próprios para cada inciso IV a VII, até “VII - promover a articulação...”.\n- No Art. 5º (pág. 2), termine o bloco do inciso IV, “IV - Gerências de Processos:”, imediatamente antes de “a) Gerência de Publicação de Atos Administrativos (Gpublic) ;” e inicie bloco próprio para essa alínea.\n- No Art. 10 (pág. 4), termine o bloco do inciso IV, “IV - operacionalizar o ressarcimento de:”, imediatamente antes de “a) despesas realizadas pelas autoridades...” e inicie bloco próprio para essa alínea.\n- No inciso VI do Art. 6º (pág. 2), mantenha no bloco iniciado por “VI - alimentar e manter atualizado...” todo o texto, inclusive o trecho final “Transparência Administrativa” no Portal TCU;.\n- No inciso III do Art. 14 (pág. 6), mantenha no bloco iniciado por “III - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no BTCU;” todo o texto, inclusive “publicação no BTCU;”.\n- No Art. 8º (págs. 3 e 4), inicie blocos próprios para cada inciso I a VIII, de “I - elaborar pareceres, pronunciamentos, expedientes...” até “VIII - acompanhar o cumprimento das metas definidas...”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XVI, “XVI - autorizar a saída de veículos automotores...”, imediatamente antes de “XVII - desenvolver outras atividades inerentes à sua finalidade.” e inicie um bloco próprio para o inciso XVII.\n- No inciso V do Art. 12 (pág. 5), mantenha no bloco iniciado por “V - indiciar servidor...” todo o seu texto, inclusive o trecho final “ampla defesa;”.\n- Inicie blocos próprios para cada inciso XIII a XXIII do Art. 6º (pág. 3), desde “XIII - elaborar e atualizar manual de rotinas” até “XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto”.\n- Inicie blocos próprios para cada inciso X a XVI do Art. 14 (págs. 6 e 7), desde “X - atender às solicitações de pesquisa” até “XVI - desenvolver outras atividades inerentes à sua finalidade”.\n- No Art. 18 (pág. 8), termine o bloco do inciso XIII imediatamente antes de “XIV - instruir e gerir os processos de concessão de suprimento de fundos” e inicie blocos separados para os incisos XIV e XV.\n- Não deixe o preâmbulo da Portaria sem bloco: crie um bloco inicial para o texto iniciado por “O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO” e encerrado em “resolve:” (pág. 1), antes do Art. 1º.\n- Preserve integralmente os incisos I e II do Art. 18 (pág. 7): mantenha “iplinar Permanente;” no bloco do inciso I, completando “Comissão Disciplinar Permanente”, e “ervidores;” no bloco do inciso II, completando “servidores;”."
+    },
+    "arquivo_blocos": "resultados_amostra5/tcu/NORMA-5421/NORMA-5421_ciclo5.json"
+  }
+]
