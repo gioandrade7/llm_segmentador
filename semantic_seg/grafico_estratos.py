@@ -2,7 +2,7 @@
 grafico_estratos.py — F1 de blocos exatos por ciclo, agregado por estrato da amostra TCU.
 
 Lê o manifesto (`gabarito/tcu_amostra.json`) e o `{KEY}_avaliacao.json` de cada
-norma em `resultados/tcu/<KEY>/` (rode `avaliar.py` antes). Um painel por
+norma em `resultados_amostra5/tcu/<KEY>/` (rode `avaliar.py` antes). Um painel por
 profundidade (plana, profunda); em cada um, a média de cada faixa de tamanho e,
 ao fundo, a trajetória de cada norma.
 
@@ -11,7 +11,7 @@ Depois de parar, ela entra na média com o valor do seu último ciclo: é a
 segmentação que o pipeline entregaria se fosse interrompido naquele ciclo.
 
 Uso:
-    python grafico_estratos.py                       # → resultados/tcu/tcu_estratos.png
+    python grafico_estratos.py                       # → resultados_amostra5/tcu/tcu_estratos.png
     python grafico_estratos.py --saida outro.png
 """
 
@@ -106,7 +106,7 @@ def plotar(normas: list[dict], teto: int, caminho: str) -> None:
 def main():
     parser = argparse.ArgumentParser(description="F1 por ciclo, agregado por estrato da amostra TCU.")
     parser.add_argument("--manifesto", default=os.path.join(DIR, "gabarito", "tcu_amostra.json"))
-    parser.add_argument("--resultados", default=os.path.join(DIR, "resultados", "tcu"))
+    parser.add_argument("--resultados", default=os.path.join(DIR, "resultados_amostra5", "tcu"))
     parser.add_argument("--saida", default=os.path.join(DIR, "resultados", "tcu", "tcu_estratos.png"))
     args = parser.parse_args()
 

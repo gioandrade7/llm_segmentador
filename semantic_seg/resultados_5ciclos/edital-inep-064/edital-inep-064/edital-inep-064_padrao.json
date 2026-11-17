@@ -1,3 +1,0 @@
-{
-  "hierarquia": "Edital: título identificador do ato (ex.: “EDITAL INEP Nº 64, DE 21 DE MAIO DE 2026”)\nSeções principais numeradas: número inteiro + título (ex.: “1. DAS DISPOSIÇÕES PRELIMINARES”)\nItens: numeração decimal de primeiro nível (ex.: “1.1”)\nSubitens: numeração decimal de segundo nível (ex.: “1.5.1”)\nSubsubitens: numeração decimal de terceiro nível (ex.: “8.3.1.1”)\nAlíneas: letras minúsculas entre parênteses (ex.: “a)”)"
-}

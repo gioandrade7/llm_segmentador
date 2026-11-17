@@ -7,7 +7,7 @@ errado. Cada bloco cujo início não é nó do gabarito conta como corte espúri
 origens somam exatamente os nós perdidos, o que `main` confere.
 
 Uso:
-    python diagnostico_erros.py resultados_5ciclos/tcu            # último ciclo de cada norma da amostra
+    python diagnostico_erros.py resultados_amostra5/tcu           # último ciclo de cada norma da amostra
 """
 import contextlib, glob, io, json, os, re, sys
 S=os.path.dirname(os.path.abspath(__file__))

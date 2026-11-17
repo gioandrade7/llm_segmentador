@@ -11,9 +11,9 @@ de blocos exatos, e cobertura:
   - `{saida}_ciclos`: média das normas em cada ciclo.
 
 Uso:
-    python grafico_metricas.py                       # → resultados/tcu/tcu_metricas{,_ciclos}.png
-    python grafico_metricas.py --resultados resultados/lei_2017 --titulo "Leis de 2017" \
-        --saida resultados/lei_2017/lei_2017_metricas.png
+    python grafico_metricas.py                       # → resultados_amostra5/tcu/tcu_metricas{,_ciclos}.png
+    python grafico_metricas.py --resultados resultados_amostra5/lei_2017 --titulo "Leis de 2017" \
+        --saida resultados_amostra5/lei_2017/lei_2017_metricas.png
 """
 
 import argparse
@@ -232,7 +232,7 @@ def plotar_por_ciclo(medias: dict, ativas: list[int], n: int, titulo: str, camin
 
 
 def main():
-    tcu = os.path.join(DIR, "resultados", "tcu")
+    tcu = os.path.join(DIR, "resultados_amostra5", "tcu")
     parser = argparse.ArgumentParser(description="Média de todas as métricas num conjunto de documentos.")
     parser.add_argument("--resultados", default=tcu, help="pasta com uma subpasta por documento")
     parser.add_argument("--manifesto", default=None,
