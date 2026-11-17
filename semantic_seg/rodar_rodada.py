@@ -2,7 +2,7 @@
 rodar_rodada.py — Roda `main.py` e `avaliar.py` em lote, um processo por documento.
 
 Cobre as normas de `gabarito/tcu_amostra.json`, as leis de 2017 com gabarito, o edital
-e a `sec-rules`, na mesma organização de `resultados_5ciclos/`: `{raiz}/{grupo}/{KEY}/{KEY}`, com a saída de
+e a `sec-rules`, na mesma organização de `resultados_amostra5/`: `{raiz}/{grupo}/{KEY}/{KEY}`, com a saída de
 cada processo em `{KEY}.log` e início e fim de cada documento em `{raiz}/status.txt`.
 Os documentos mais longos entram primeiro, porque determinam a duração da rodada.
 
