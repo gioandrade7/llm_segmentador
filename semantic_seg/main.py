@@ -38,7 +38,7 @@ def main():
     parser.add_argument("--model",         default="gpt-5.6-terra",     help="Modelo OpenAI a utilizar.")
     parser.add_argument("--janela-paginas",default=10, type=int, help="Número de páginas por janela de contexto (padrão: 20).")
     parser.add_argument("--max-ciclos",    default=0, type=int,  help="Teto de ciclos de segmentação + correção. 0 (padrão) roda até o analisador aprovar.")
-    parser.add_argument("--paginas-amostra", default=2, type=int, help="Páginas por região (começo/meio/fim) enviadas ao identificador (padrão: 2).")
+    parser.add_argument("--paginas-amostra", default=5, type=int, help="Páginas por região (começo/meio/fim) enviadas ao identificador (padrão: 5).")
     args = parser.parse_args()
 
     # ── Carregamento ──────────────────────────────────────────────────────────

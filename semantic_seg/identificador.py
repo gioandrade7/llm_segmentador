@@ -29,7 +29,7 @@ SISTEMA_IDENTIFICACAO = (
 # Amostragem
 # ──────────────────────────────────────────────────────────────────────────────
 
-def amostrar_paginas(paginas: list[dict], n: int = 2) -> list[dict]:
+def amostrar_paginas(paginas: list[dict], n: int = 5) -> list[dict]:
     """
     Seleciona três regiões **contíguas** de `n` páginas: começo, meio e fim.
 
@@ -113,7 +113,7 @@ def construir_prompt_identificacao(
 def identificar_padrao(
     paginas: list[dict],
     model: str,
-    n_amostra: int = 2,
+    n_amostra: int = 5,
     verboso: bool = True,
 ) -> dict:
     """

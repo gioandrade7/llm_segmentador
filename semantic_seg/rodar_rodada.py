@@ -87,7 +87,7 @@ def main():
     parser.add_argument("--raiz", required=True, help="pasta da rodada, relativa a semantic_seg/")
     parser.add_argument("--janela-paginas", default=10, type=int)
     parser.add_argument("--max-ciclos", default=5, type=int)
-    parser.add_argument("--paginas-amostra", default=2, type=int,
+    parser.add_argument("--paginas-amostra", default=5, type=int,
                         help="páginas por região (começo/meio/fim) lidas pelo identificador")
     parser.add_argument("--paralelo", default=31, type=int, help="documentos ao mesmo tempo")
     parser.add_argument("--simular", action="store_true", help="lista os comandos sem rodar nada")
