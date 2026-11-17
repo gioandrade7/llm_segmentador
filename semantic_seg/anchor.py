@@ -201,18 +201,19 @@ def avancar_por_offset(
     return pos_fim
 
 
-def extrair_trecho(
+def localizar_trecho(
     texto_completo: str,
     offset_inicio: str,
     offset_fim: str,
     pos_busca_inicio: int = 0,
-) -> str | None:
+) -> tuple[int, int] | None:
     """
-    Extrai o trecho completo do bloco usando offset_inicio e offset_fim
+    Localiza o trecho completo do bloco usando offset_inicio e offset_fim
     como âncoras. Usa matching tolerante via `_localizar_ancora`.
 
-    Retorna o slice `texto_completo[pos_ini:pos_fim]` (inclui o próprio
-    offset_fim), ou None se qualquer âncora não for encontrada.
+    Retorna `(pos_ini, pos_fim)` — o bloco é `texto_completo[pos_ini:pos_fim]`
+    e inclui o próprio offset_fim —, ou None se qualquer âncora não for
+    encontrada.
     """
     if not offset_inicio or not offset_fim:
         return None
@@ -225,4 +226,4 @@ def extrair_trecho(
     if pos_fim == -1:
         return None
 
-    return texto_completo[pos_ini:pos_fim]
+    return pos_ini, pos_fim

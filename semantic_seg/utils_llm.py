@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 from utils_files import montar_texto_completo, _montar_janela
-from anchor import avancar_por_offset, extrair_trecho
+from anchor import avancar_por_offset, localizar_trecho
 
 load_dotenv()
 
@@ -368,12 +368,16 @@ def processar_documento_completo(
         # ── Extrai o trecho completo do documento original ────────────────
         # pos_busca_inicio aponta para antes do início da janela atual,
         # evitando que o match recaia sobre uma ocorrência anterior idêntica.
-        resultado["texto"] = extrair_trecho(
+        # As posições ficam no bloco: o auditor marca os cortes no texto a
+        # partir delas, sem refazer a busca das âncoras.
+        trecho = localizar_trecho(
             texto_completo,
             resultado.get("offset_inicio", ""),
             resultado.get("offset_fim", ""),
             pos_busca_inicio=pos_antes_do_bloco,
         )
+        resultado["pos_inicio"], resultado["pos_fim"] = trecho or (None, None)
+        resultado["texto"] = texto_completo[trecho[0]:trecho[1]] if trecho else None
 
         # ── Registra o bloco ───────────────────────────────────────────────
         blocos.append(resultado)

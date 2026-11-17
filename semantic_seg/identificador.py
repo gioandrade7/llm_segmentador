@@ -85,9 +85,7 @@ def construir_prompt_identificacao(
         Abaixo estão as **páginas {lista_pags} de um documento de {total_paginas} páginas** — uma amostra de três regiões (começo, meio e fim), não o documento inteiro. Os marcadores `<!-- PÁGINA N -->` indicam o número real de cada página, então os saltos entre as regiões são visíveis.
 
         ## Sua tarefa
-        Identifique a **hierarquia de marcadores** que abrem as unidades deste documento, para orientar um processo posterior de segmentação em blocos semânticos. Explique cada nível que aparece no documento. Liste os níveis do mais externo ao mais interno, até o mais fino que o documento marca.
-        Se um nível às vezes aparece direto sob um nível mais externo, pulando o intermediário, considere como um bloco a ser segmentado mesmo assim.
-
+        Identifique a **hierarquia de marcadores** que abrem os blocos semânticos deste documento, para orientar um processo posterior de segmentação. Explique cada nível que aparece no documento. Liste os níveis do mais externo ao mais interno, até o mais fino que o documento marca.
 
         ## O que NÃO é marcador
         - Legendas de figura e de tabela e o conteúdo de tabelas.

@@ -11,16 +11,22 @@ ciclo se repete até o analisador considerar os blocos estruturalmente
 consistentes (ou até esgotar `max_ciclos`).
 
 Cada ciclo custa uma re-segmentação completa do documento mais uma chamada de
-análise. Por isso a análise recebe apenas um *resumo* dos blocos (título,
-extensão e bordas), nunca o texto integral: o que se avalia são limites e
-granularidade, não o conteúdo.
+análise. A análise recebe o texto integral com os cortes do ciclo marcados:
+custa uma vez o documento, pouco perto das janelas que a segmentação reenvia,
+e mostra o que as bordas dos blocos escondem — unidades engolidas no miolo de
+um bloco e texto que ficou fora de qualquer bloco.
 """
 
+import re
+from collections import Counter
+
+from utils_files import montar_texto_completo
 from utils_llm import completar_json, processar_documento_completo, secao_estrutura
 
-# Quanto de cada bloco vai no resumo enviado ao analisador.
-INICIO_AMOSTRA = 300
-FIM_AMOSTRA    = 300
+# Marcações inseridas no texto enviado ao analisador. O segmentador não as vê.
+CORTE      = "───── corte ─────"
+SEM_BLOCO  = ("⟪SEM BLOCO⟫", "⟪/SEM BLOCO⟫")
+SOBREPOSTO = ("⟪SOBREPOSIÇÃO⟫", "⟪/SOBREPOSIÇÃO⟫")
 
 SISTEMA_ANALISE = (
     "Você é um auditor de segmentação de documentos. Avalia criticamente a "
@@ -30,41 +36,78 @@ SISTEMA_ANALISE = (
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# Resumo dos blocos
+# Texto marcado
 # ──────────────────────────────────────────────────────────────────────────────
 
-def _achatar(texto: str) -> str:
-    """Colapsa quebras de linha para manter uma linha por campo no resumo."""
-    return " ⏎ ".join(texto.split("\n")).strip()
+def _tem_texto(trecho: str) -> bool:
+    """Se o trecho tem conteúdo além de espaço e marcadores de página."""
+    return any(c.isalnum() for c in re.sub(r"<!--.*?-->", "", trecho))
 
 
-def resumir_blocos(blocos: list[dict]) -> str:
+def marcar_cortes(texto_completo: str, blocos: list[dict]) -> tuple[str, list[dict]]:
     """
-    Representação compacta dos blocos para a chamada de análise.
+    O texto do documento com a segmentação do ciclo marcada.
 
-    Enviar o texto integral custaria o mesmo que reenviar o documento inteiro a
-    cada ciclo. Como a análise é sobre limites e granularidade, bastam título,
-    extensão e as bordas de cada bloco.
+    Usa as posições que o pipeline gravou em cada bloco (`pos_inicio`,
+    `pos_fim`), sem refazer a busca das âncoras. Insere `CORTE` no início de
+    cada bloco e envolve em `SEM_BLOCO` o texto que nenhum bloco cobre e em
+    `SOBREPOSTO` o que mais de um cobre. Espaço e marcadores de página fora de
+    bloco não são marcados.
+
+    Retorna `(texto_marcado, blocos_sem_posicao)`: os blocos cujas âncoras não
+    foram localizadas não têm onde ser marcados e vão à parte.
     """
-    linhas = []
-    for i, b in enumerate(blocos, 1):
-        texto = b.get("texto") or ""
-        if texto:
-            tamanho = f"{len(texto):,} chars"
-            inicio  = texto[:INICIO_AMOSTRA]
-            fim     = texto[-FIM_AMOSTRA:] if len(texto) > INICIO_AMOSTRA + FIM_AMOSTRA else ""
+    spans = [
+        (b["pos_inicio"], b["pos_fim"]) for b in blocos
+        if b.get("pos_inicio") is not None and b.get("pos_fim") is not None
+    ]
+    sem_posicao = [b for b in blocos if b.get("pos_inicio") is None or b.get("pos_fim") is None]
+
+    inicios    = Counter(ini for ini, _ in spans)
+    fronteiras = sorted({0, len(texto_completo), *(p for span in spans for p in span)})
+
+    partes, estado = [], None
+    for a, b in zip(fronteiras, fronteiras[1:]):
+        trecho    = texto_completo[a:b]
+        cobertura = sum(1 for ini, fim in spans if ini <= a and b <= fim)
+        if cobertura > 1:
+            novo = SOBREPOSTO
+        elif cobertura == 0 and _tem_texto(trecho):
+            novo = SEM_BLOCO
         else:
-            tamanho = "⚠ TEXTO NÃO EXTRAÍDO (âncoras não localizadas no documento)"
-            inicio  = b.get("offset_inicio") or ""
-            fim     = b.get("offset_fim") or ""
+            novo = None
 
-        linhas.append(
-            f"[{i}] págs. {b.get('pagina_inicio', '?')}–{b.get('pagina_fim', '?')} | {tamanho}\n"
-            f"    início: {_achatar(inicio)}\n"
-            f"    fim   : {_achatar(fim)}"
-        )
+        if novo is not estado and estado:
+            partes.append(estado[1])
+        partes.extend([f"\n{CORTE}\n"] * inicios[a])
+        if novo is not estado and novo:
+            partes.append(novo[0])
+        estado = novo
+        partes.append(trecho)
 
-    return "\n".join(linhas)
+    if estado:
+        partes.append(estado[1])
+
+    return "".join(partes), sem_posicao
+
+
+def _listar_sem_posicao(blocos: list[dict]) -> str:
+    """Seção do prompt com os blocos que não puderam ser marcados no texto."""
+    if not blocos:
+        return ""
+    linhas = "\n".join(
+        f"- págs. {b.get('pagina_inicio', '?')}–{b.get('pagina_fim', '?')} | "
+        f"início: {b.get('offset_inicio') or ''} | fim: {b.get('offset_fim') or ''}"
+        for b in blocos
+    )
+    return f"""
+        ## Blocos não localizados
+        O segmentador devolveu estes blocos, mas suas âncoras não foram encontradas no texto, então eles não aparecem nas marcações acima:
+
+        ```
+        {linhas}
+        ```
+    """
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -72,13 +115,15 @@ def resumir_blocos(blocos: list[dict]) -> str:
 # ──────────────────────────────────────────────────────────────────────────────
 
 def construir_prompt_analise(
-    resumo: str,
+    texto_marcado: str,
     total_blocos: int,
+    sem_posicao: list[dict],
     insights_atuais: str,
     padrao: str = "",
 ) -> str:
     """
-    Monta o prompt do analisador a partir do resumo dos blocos de um ciclo.
+    Monta o prompt do analisador a partir do texto marcado com os cortes de um
+    ciclo (ver `marcar_cortes`).
 
     Com `padrao` (vindo do módulo `identificador`, que leu o texto fonte), o
     auditor **não deduz** a estrutura a partir dos blocos: ele confere a
@@ -88,7 +133,7 @@ def construir_prompt_analise(
     """
     secao_anterior = f"""
         ## Diretrizes usadas no ciclo anterior
-        As diretrizes abaixo já estavam no prompt que produziu os blocos acima. Se um problema que elas tratam não aparece mais, é porque elas funcionaram: mantenha-as. Refine ou substitua só as que não resolveram o problema ou causaram um novo. O campo `insights` da sua resposta deve conter o conjunto **completo** de diretrizes para o próximo ciclo — não apenas o que mudou.
+        As diretrizes abaixo já estavam no prompt que produziu a segmentação acima. Se um problema que elas tratam não aparece mais, é porque elas funcionaram: mantenha-as. Refine ou substitua só as que não resolveram o problema ou causaram um novo. O campo `insights` da sua resposta deve conter o conjunto **completo** de diretrizes para o próximo ciclo — não apenas o que mudou.
 
         ```
         {insights_atuais.strip()}
@@ -100,23 +145,28 @@ def construir_prompt_analise(
         Um pipeline automático segmentou um documento em {total_blocos} bloco(s). A estrutura do documento foi identificada de forma independente, a partir do texto fonte, e está descrita abaixo junto com as regras de corte que o segmentador recebeu. Sua tarefa é verificar se os blocos respeitam essa estrutura e essas regras e, se não respeitarem, escrever as diretrizes que corrigirão a próxima segmentação. Se respeitarem, apenas confirme a consistência e não escreva diretrizes.
 {secao_estrutura(padrao)}
 
-        ## Blocos produzidos
-        Cada bloco aparece com suas páginas, tamanho e os trechos iniciais e finais do texto capturado (`⏎` marca quebra de linha):
+        ## Documento segmentado
+        Abaixo está o texto integral do documento, na ordem em que o segmentador o leu, com a segmentação marcada:
+        - `{CORTE}`, numa linha própria, marca o início de cada bloco. O bloco vai até o corte seguinte, ou até um `{SEM_BLOCO[0]}`.
+        - `{SEM_BLOCO[0]} … {SEM_BLOCO[1]}` envolve texto que não entrou em nenhum bloco.
+        - `{SOBREPOSTO[0]} … {SOBREPOSTO[1]}` envolve texto que entrou em mais de um bloco.
+        - `<!-- PÁGINA N -->` marca o início de cada página.
+
+        Essas marcações existem só para você: o segmentador lê o texto sem elas.
 
         ```
-        {resumo}
+        {texto_marcado}
         ```
-{secao_anterior}
+{_listar_sem_posicao(sem_posicao)}{secao_anterior}
         ## O que verificar
-        1. **Bloco englobante**: um bloco contém, no início ou no fim, o marcador de outra unidade, que deveria ser um bloco próprio.
-        2. **Granularidade desigual**: unidades do mesmo nível são cortadas num trecho do documento e agrupadas em outro.
-        3. **Lacuna**: texto do documento fora de qualquer bloco — o fim de um bloco não encosta no início do seguinte, ou páginas sem bloco entre dois blocos.
-        4. **Sobreposição**: dois blocos com texto em comum.
-        6. **Sequência quebrada**: salto na numeração de unidades irmãs (`(3)` logo depois de `(1)`) ou uma lista que termina antes do que o texto anuncia.
-        7. **Corte indevido**: bloco aberto num ponto que, pelas regras de corte, não é unidade (legenda, item de lista fora da hierarquia, remissão, texto citado de outra norma).
+        1. **Bloco englobante**: dentro de um bloco aparece, sem corte antes dele, o marcador de outra unidade, que deveria ser um bloco próprio.
+        2. **Texto sem bloco**: um trecho `{SEM_BLOCO[0]}` com texto do documento — uma unidade pulada, ou texto antes do primeiro bloco ou depois do último. Ruído de página (cabeçalhos, rodapés, números de página) fora de bloco não é problema.
+        3. **Sobreposição**: um trecho `{SOBREPOSTO[0]}`.
+        4. **Sequência quebrada**: salto na numeração de unidades irmãs (`(3)` logo depois de `(1)`) ou uma lista que termina antes do que o texto anuncia.
+        5. **Corte indevido**: corte num ponto que, pelas regras de corte, não é unidade (legenda, item de lista fora da hierarquia, remissão, texto citado de outra norma), ou no meio do texto de uma unidade.
 
         ## Critério de aprovação
-        `consistente: true` somente se você não encontrar nenhum dos problemas acima. Reprove só com evidência concreta nas bordas dos blocos; mas, havendo evidência, não aprove — inclusive para um problema que você mesmo já apontou num ciclo anterior e que continua presente.
+        `consistente: true` somente se você não encontrar nenhum dos problemas acima. Reprove só com evidência concreta no texto marcado; mas, havendo evidência, não aprove — inclusive para um problema que você mesmo já apontou num ciclo anterior e que continua presente.
 
         ## Erro de extração
         Se o problema vier da extração do PDF — texto fora da ordem de leitura, um cabeçalho emitido longe da sua seção, colunas misturadas —, o segmentador não tem como corrigi-lo: ele lê o texto em ordem, com um ponteiro que só avança, e não pode reordená-lo. Nesse caso marque `erro_extracao: true`, descreva-o em `problemas` e não escreva diretriz sobre ele.
@@ -126,9 +176,9 @@ def construir_prompt_analise(
 
         - Escreva em português, no imperativo, endereçados a quem vai segmentar.
         - Sejam **concretos e específicos deste documento**, não descrições abstratas.
-        - Identifique cada unidade pelo marcador e pelo texto que a abre, com a página. **Nunca** pelo número `[n]` do bloco: o segmentador não conhece essa numeração.
-        - **Nunca instruam a agrupar unidades irmãs** num mesmo bloco só para deixar o resultado mais uniforme: o remédio para granularidade desigual é dividir o bloco englobante, nunca fundir os blocos menores.
-        - Máximo de 5 diretrizes, em lista com marcadores, priorizando as que afetam mais blocos.
+        - Identifique cada unidade pelo marcador e pelo texto que a abre, com a página. **Nunca** pelas marcações (`corte`, `SEM BLOCO`) nem pela posição do bloco na lista: o segmentador não as conhece.
+        - **Nunca instruam a agrupar unidades irmãs** num mesmo bloco: o remédio para um bloco englobante é dividi-lo, nunca fundir os blocos vizinhos.
+        - Em lista com marcadores, das que afetam mais blocos às que afetam menos.
 
         ## Resposta
         Retorne exclusivamente este JSON, com as chaves nesta ordem. Liste os problemas antes de decidir: cada diretriz deve corrigir um problema listado.
@@ -136,7 +186,7 @@ def construir_prompt_analise(
         ```
         {{
             "problemas": [
-                {{"bloco": 12, "tipo": "englobante", "descricao": "o bloco de `(4)` termina com o texto de `(5) Determinations Required`"}}
+                {{"onde": "`(4)`, pág. 7", "tipo": "englobante", "descricao": "o bloco de `(4)` contém também o texto de `(5) Determinations Required`"}}
             ],
             "erro_extracao": false,
             "consistente": false,
@@ -144,17 +194,18 @@ def construir_prompt_analise(
         }}
         ```
 
-        `tipo` é um de: `englobante`, `granularidade`, `lacuna`, `sobreposicao`, `ancora`, `sequencia`, `corte_indevido`. Sem problemas: `"problemas": []`, `"consistente": true`, `"insights": ""`.
+        `tipo` é um de: `englobante`, `sem_bloco`, `sobreposicao`, `ancora`, `sequencia`, `corte_indevido`. Sem problemas: `"problemas": []`, `"consistente": true`, `"insights": ""`.
         """
 
 
 def analisar_blocos(
     blocos: list[dict],
+    texto_completo: str,
     model: str,
     insights_atuais: str = "",
     padrao: str = "",
 ) -> dict:
-    """Submete o resumo dos blocos ao analisador e devolve seu veredito."""
+    """Submete o texto marcado com os blocos ao analisador e devolve seu veredito."""
     if not blocos:
         vazio = {
             "consistente": False,
@@ -167,8 +218,9 @@ def analisar_blocos(
         return vazio
 
 
+    texto_marcado, sem_posicao = marcar_cortes(texto_completo, blocos)
     prompt = construir_prompt_analise(
-        resumir_blocos(blocos), len(blocos), insights_atuais, padrao
+        texto_marcado, len(blocos), sem_posicao, insights_atuais, padrao
     )
     return completar_json(prompt, model, sistema=SISTEMA_ANALISE)
 
@@ -200,6 +252,9 @@ def segmentar_com_correcao(
 
     Retorna `(blocos_do_ultimo_ciclo, historico)`.
     """
+    # O mesmo texto que o pipeline monta: as posições gravadas nos blocos
+    # apontam para ele.
+    texto_completo = montar_texto_completo(paginas)
     insights  = ""
     historico = []
     blocos    = []
@@ -221,7 +276,7 @@ def segmentar_com_correcao(
             insights=insights,
             padrao=padrao,
         )
-        analise = analisar_blocos(blocos, model, insights, padrao)
+        analise = analisar_blocos(blocos, texto_completo, model, insights, padrao)
         print(f"\n  Auditor: consistente={analise.get('consistente')}")
         print(f"  Diretrizes: {analise.get('insights')}")
 

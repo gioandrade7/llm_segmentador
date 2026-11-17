@@ -1,0 +1,396 @@
+%%
+Gabarito de segmentação — edital-inep-064 (Edital Inep nº 64, de 21 de maio de 2026 — Enem 2026)
+Texto-fonte: text_extraction/out/edital-inep-064/paginas
+Status: gerado por script a partir dos marcadores do texto extraído (um parágrafo por linha) e conferido
+  por continuidade de numeração; os marcadores no meio de linha (b) e 4.2.3.7 na pág. 7, 12.1.24 na pág. 21,
+  14. e 14.6.1 na pág. 23, colados pelo pymupdf4llm) foram conferidos à mão. Não revisado nó a nó.
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`; indentação de 2 espaços por nível
+- Tipos: epígrafe (título, subtítulo e preâmbulo, até «1. DAS DISPOSIÇÕES PRELIMINARES»), seção (N. com a
+  rubrica), número (N.N, N.N.N, N.N.N.N — aninhados pela quantidade de segmentos), letra (alínea a)),
+  fecho (assinatura)
+- O cabeçalho do DOU («DIÁRIO OFICIAL DA UNIÃO», «Publicado em…») é carimbo de publicação: fica fora de
+  qualquer nó
+- Tabelas pertencem ao item que as introduz (1.3, 1.7, …)
+- Remissões («item 4.2.3 deste Edital») não são marcadores
+%%
+
+- Documento
+  - [epígrafe] EDITAL INEP Nº 64, DE 21 DE MAIO DE 2026
+    - [seção] 1. DAS DISPOSIÇÕES PRELIMINARES
+      - [número] 1.1 Este Edital, regido pela Portaria MEC nº 422,
+      - [número] 1.2 O participante, antes de efetuar a sua inscriç
+      - [número] 1.3 O Enem 2026 obedecerá ao cronograma a seguir e
+      - [número] 1.4 O participante ausente no Enem 2025 que aprese
+      - [número] 1.5 O participante que obtiver a isenção da taxa d
+        - [número] 1.5.1 A justificativa deverá ser realizada mediant
+      - [número] 1.6 A inscrição do Enem deve ser realizada pelo en
+        - [número] 1.6.1 O concluinte do ensino médio no ano de 2026,
+      - [número] 1.7 A aplicação do Enem seguirá o horário de Brasí
+      - [número] 1.8 O Enem será aplicado em todos os estados e no
+        - [número] 1.8.1 Os municípios de aplicação serão divulgados
+      - [número] 1.9 O Enem será aplicado por Instituição Aplicador
+      - [número] 1.10 O Enem para adulto submetido à pena privativa
+    - [seção] 2. DOS OBJETIVOS
+      - [número] 2.1 O Enem tem como principal finalidade a avaliaç
+      - [número] 2.2 De acordo com a Portaria MEC nº 422, de 15 de
+        - [número] 2.2.1 A avaliação da qualidade do ensino médio no
+        - [número] 2.2.2 A certificação de conclusão do ensino médio
+        - [número] 2.2.3 A utilização como mecanismo único, alternati
+        - [número] 2.2.4 O acesso a programas governamentais de finan
+        - [número] 2.2.5 O desenvolvimento de estudos, diagnósticos e
+        - [número] 2.2.6 A produção de indicadores educacionais relac
+      - [número] 2.3 A utilização dos resultados individuais do Ene
+      - [número] 2.4 Com base no estabelecido nos § §1º e 2º do art
+        - [número] 2.4.1 O participante "treineiro" estará submetido
+        - [número] 2.4.2 Os resultados individuais não poderão ser ut
+        - [número] 2.4.3 O participante "treineiro" deverá declarar,
+    - [seção] 3. DA ESTRUTURA DO EXAME
+      - [número] 3.1 O Enem é estruturado a partir de matrizes de r
+      - [número] 3.2 O Exame será constituído de quatro provas obje
+      - [número] 3.3 O Enem avaliará as áreas de conhecimento do en
+        - [número] 3.3.1 Para o participante com tempo adicional apro
+        - [número] 3.3.2 O participante responderá às questões da pro
+    - [seção] 4. DOS ATENDIMENTOS
+      - [número] 4.1 O Inep, nos termos da legislação, assegurará o
+      - [número] 4.2 O participante que necessitar de atendimento e
+        - [número] 4.2.1 Informar a(s) condição(ões) que motiva(m) a
+          - [número] 4.2.1.1 O participante que solicitar atendimento e
+          - [número] 4.2.1.2 O participante que solicitar atendimento p
+          - [número] 4.2.1.3 O participante que solicitar atendimento p
+          - [número] 4.2.1.4 A participante que solicitar atendimento p
+            - [número] 4.2.1.4.1 O acompanhante do participante não poder
+            - [número] 4.2.1.4.2 Durante a aplicação das provas, qualquer
+            - [número] 4.2.1.4.3 Não será permitida a entrada do lactente
+          - [número] 4.2.1.5 O participante em situação de classe hospi
+            - [número] 4.2.1.5.1 Não é considerado participante em situaç
+        - [número] 4.2.2 Solicitar o recurso de acessibilidade de que
+          - [letra] a) prova em Braille - prova escrita em sistema tát
+          - [letra] b) tradutor-intérprete de Língua Brasileira de Sin
+          - [letra] c) videoprova em Libras - prova em vídeo traduzida
+          - [letra] d) prova com letra ampliada - prova impressa com l
+          - [letra] e) prova com letra superampliada - prova impressa
+          - [letra] f) leitor de tela - prova compatível com os softwa
+          - [letra] g) guia-intérprete - profissional capacitado para
+          - [letra] h) auxílio para leitura - profissional capacitado
+          - [letra] i) auxílio para transcrição - profissional capacit
+          - [letra] j) leitura labial - profissional capacitado na com
+          - [letra] k) tempo adicional - tempo adicional de 60 (sessen
+          - [letra] l) calculadora - recurso fornecido pelo Inep no di
+          - [letra] m) sala com acessibilidade - sala para utilização
+          - [letra] n) apoio para pernas e pés - objeto para apoiar pe
+          - [letra] o) mesa para cadeira de rodas - mesa acessível par
+          - [letra] p) mesa e cadeira sem braços - mesa separada da ca
+          - [letra] q) sala reservada para acompanhante - sala reserva
+          - [número] 4.2.2.1 Se houver falha técnica na aplicação da vi
+          - [número] 4.2.2.2 Se houver falha técnica na aplicação da pr
+        - [número] 4.2.3 Inserir documento legível, em língua portugu
+          - [letra] a) nome completo do participante;
+          - [letra] b) diagnóstico com a descrição da condição que mot
+          - [letra] c) assinatura e identificação do profissional comp
+          - [número] 4.2.3.1 O participante com Transtorno do Espectro
+          - [número] 4.2.3.2 O participante com transtorno funcional es
+          - [número] 4.2.3.3 A participante lactante deverá anexar a ce
+          - [número] 4.2.3.4 O documento do participante que solicitar
+          - [número] 4.2.3.5 O documento do participante que solicitar
+          - [número] 4.2.3.6 O participante em situação de classe hospi
+            - [letra] a) o nome completo do participante internado e o s
+            - [letra] b) o diagnóstico, com a descrição da condição que
+            - [letra] c) o nome e o endereço completo do hospital, com U
+            - [letra] d) a assinatura e a identificação do médico e/ou p
+          - [número] 4.2.3.7 O participante que enviou documento compro
+          - [número] 4.2.3.8 O resultado da análise do documento compro
+          - [número] 4.2.3.9 Em caso de reprovação da documentação anex
+          - [número] 4.2.3.10 O resultado do recurso da solicitação de
+      - [número] 4.3 Se o documento, a declaração ou o parecer que
+        - [número] 4.3.1 Não será concedido tempo adicional à partici
+        - [número] 4.3.2 O participante que solicitar o recurso de vi
+        - [número] 4.3.3 O participante com o documento, a declaração
+      - [número] 4.4 O participante que solicitar atendimento para
+      - [número] 4.5 O Inep não se responsabiliza pelo não recebime
+      - [número] 4.6 Toda a documentação de que trata o item 4 deve
+      - [número] 4.7 Não será aceita documentação ou solicitação de
+      - [número] 4.8 O participante deverá prestar informações exat
+      - [número] 4.9 O Inep tem o direito de exigir, a qualquer mom
+      - [número] 4.10 O participante que necessitar utilizar cadeir
+      - [número] 4.11 O participante que necessitar de recurso de a
+        - [número] 4.11.1 O Inep analisará a situação e, se houver a
+      - [número] 4.12 O participante que necessitar de atendimento
+        - [número] 4.12.1 São considerados casos fortuitos as situaçõ
+        - [número] 4.12.2 O documento comprobatório deverá conter, al
+        - [número] 4.12.3 O Inep analisará a situação e, se houver a
+        - [número] 4.12.4 O resultado da solicitação será disponibili
+    - [seção] 5. DA INSCRIÇÃO
+      - [número] 5.1 A inscrição do participante deve ser realizada
+        - [número] 5.1.1 Não será permitida a inscrição fora do prazo
+      - [número] 5.2 Na inscrição, o participante deverá:
+        - [número] 5.2.1 Informar o número de seu Cadastro de Pessoa
+          - [número] 5.2.1.1 Será aceita apenas uma inscrição por númer
+          - [número] 5.2.1.2 Os dados pessoais informados devem ser igu
+        - [número] 5.2.2 Informar o endereço residencial com CEP.
+          - [número] 5.2.2.1 O participante poderá autorizar ao Inep a
+        - [número] 5.2.3 Solicitar, se necessário, atendimento especi
+        - [número] 5.2.4 Inserir documentos, se for o caso.
+        - [número] 5.2.5 Assinalar a opção tratamento pelo nome socia
+          - [número] 5.2.5.1 O tratamento pelo nome social é destinado
+          - [número] 5.2.5.2 O nome social cadastrado na Receita Federa
+        - [número] 5.2.6 Selecionar a língua (Inglês ou Espanhol) em
+          - [número] 5.2.6.1 O participante deverá responder apenas às
+        - [número] 5.2.7 Informar os dados referentes à situação do e
+          - [número] 5.2.7.1 Os dados referentes à situação do ensino m
+        - [número] 5.2.8 Indicar a pretensão, quando for o caso, de u
+          - [número] 5.2.8.1 O interessado em pleitear o Certificado de
+        - [número] 5.2.9 Indicar a unidade da federação e o município
+        - [número] 5.2.10 Preencher corretamente o Questionário Socio
+          - [número] 5.2.10.1 Os dados informados no Questionário Socio
+        - [número] 5.2.11 Informar endereço de e-mail único e válido
+          - [número] 5.2.11.1 O Inep poderá utilizar o e-mail cadastrad
+          - [número] 5.2.11.2 O Inep não se responsabiliza pelo envio d
+        - [número] 5.2.12 Verificar se a inscrição foi concluída com
+          - [número] 5.2.12.1 Depois de finalizada, a inscrição não pod
+        - [número] 5.2.13 Criar cadastro e senha de acesso para a Pág
+          - [letra] a) gerar a Guia de Recolhimento da União (GRU Cobr
+          - [letra] b) alterar dados cadastrais, de município de prova
+          - [letra] c) acompanhar a inscrição na Página do Participant
+          - [letra] d) consultar e imprimir o Cartão de Confirmação da
+          - [letra] e) consultar e imprimir a Declaração de Comparecim
+          - [letra] f) solicitar reaplicação, se for o caso;
+          - [letra] g) obter os resultados individuais via internet;
+          - [letra] h) inscrever-se em programas de acesso à educação
+          - [número] 5.2.13.1 A senha é pessoal, intransferível e de re
+          - [número] 5.2.13.2 O participante que esquecer a senha cadas
+      - [número] 5.3 O participante é responsável por preencher cor
+      - [número] 5.4 A alteração do nome civil ou social cadastrado
+      - [número] 5.5 O participante que prestar qualquer informação
+      - [número] 5.6 O Inep não se responsabiliza por inscrição não
+      - [número] 5.7 O concluinte do ensino médio no ano de 2026, m
+        - [número] 5.7.1 O participante inscrito de forma automática
+        - [número] 5.7.2 O participante inscrito de forma automática
+        - [número] 5.7.3 A UF e o município de realização das provas
+        - [número] 5.7.4 O participante inscrito de forma automática
+    - [seção] 6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO
+      - [número] 6.1 O pagamento da taxa de inscrição do Enem desti
+      - [número] 6.2 O valor da taxa de inscrição será de R$ 85,00
+      - [número] 6.3 A taxa de inscrição deverá ser paga no período
+      - [número] 6.4 Não haverá prorrogação do período estabelecido
+        - [número] 6.4.1 A inscrição cujo pagamento for efetuado após
+      - [número] 6.5 O pagamento da taxa de inscrição do Exame deve
+      - [número] 6.6 A GRU Cobrança utilizada para o pagamento da t
+      - [número] 6.7 O pagamento por Pix deve ser realizado por mei
+      - [número] 6.8 Não será confirmada a inscrição cujo pagamento
+        - [número] 6.8.1 Não serão aceitos pagamentos de inscrições p
+      - [número] 6.9 O valor referente ao pagamento da taxa de insc
+        - [número] 6.9.1 Não será devolvido o pagamento da taxa de in
+      - [número] 6.10 É proibido transferir o valor referente ao pa
+      - [número] 6.11 A inscrição não será confirmada caso o valor
+      - [número] 6.12 A inscrição será confirmada somente após o pr
+      - [número] 6.13 Não será gerada GRU Cobrança para o participa
+      - [número] 6.14 Não será gerada GRU Cobrança para o participa
+      - [número] 6.15 O Inep não se responsabiliza por pagamento nã
+    - [seção] 7. DA CONFIRMAÇÃO DA INSCRIÇÃO
+      - [número] 7.1 O participante que teve a solicitação de isenç
+      - [número] 7.2 O participante não isento deverá realizar sua
+      - [número] 7.3 É de responsabilidade do participante acompanh
+      - [número] 7.4 O Inep disponibilizará o Cartão de Confirmação
+    - [seção] 8. DO LOCAL DE REALIZAÇÃO DO EXAME
+      - [número] 8.1 O Enem será aplicado em todos os estados e no
+      - [número] 8.2 Ao Inep reserva-se o direito de acrescentar, s
+      - [número] 8.3 O local de prova do participante será informad
+        - [número] 8.3.1 É de responsabilidade do participante acessa
+          - [número] 8.3.1.1 O Inep não se responsabiliza por Cartão de
+        - [número] 8.3.2 É recomendado que o participante leve o Cart
+    - [seção] 9. DOS HORÁRIOS
+      - [número] 9.1 Nos dias de realização do Exame, os portões de
+      - [número] 9.2 É proibida a entrada do participante no local
+      - [número] 9.3 O acesso à sala de provas será permitido, dent
+      - [número] 9.4 A aplicação das provas terá início às 13h30 e
+        - [número] 9.4.1 A aplicação das provas para o participante c
+        - [número] 9.4.2 A aplicação das provas para o participante c
+      - [número] 9.5 Todas as salas de prova terão um marcador para
+        - [número] 9.5.1 Não haverá prorrogação do tempo previsto par
+        - [número] 9.5.2 O tempo mínimo de permanência na sala de pro
+    - [seção] 10. DA IDENTIFICAÇÃO DO PARTICIPANTE
+      - [número] 10.1 Para a participação de brasileiro, é obrigató
+        - [letra] a) Cédulas de Identidade expedidas por Secretarias
+        - [letra] b) Identificação fornecida por ordens ou conselhos
+        - [letra] c) Passaporte;
+        - [letra] d) Carteira Nacional de Habilitação (CNH), na form
+        - [letra] e) Carteira de Trabalho e Previdência Social emiti
+        - [letra] f) Carteira de Identidade Nacional (CIN);
+        - [letra] g) Documentos digitais com foto (e-Título, CNH e C
+      - [número] 10.2 Para a participação de estrangeiro, é obrigat
+        - [letra] a) Passaporte;
+        - [letra] b) Identidade expedida pelo Ministério da Justiça
+        - [letra] c) Carteira de Registro Nacional Migratório (CRNM)
+        - [letra] d) Documento Provisório de Registro Nacional Migra
+        - [letra] e) Cédula de identidade civil ou documento estrang
+        - [letra] f) Documentos digitais com foto (CRNM e DPRNM) apr
+      - [número] 10.3 O Inep não se responsabiliza pelo não funcion
+      - [número] 10.4 Não serão aceitos documentos de identificação
+      - [número] 10.5 O participante que apresentar a via original
+      - [número] 10.6 Caso o participante esteja utilizando máscara
+      - [número] 10.7 O participante não poderá permanecer no local
+        - [número] 10.7.1 Caso o participante precise aguardar o rece
+      - [número] 10.8 Ao Inep reserva-se o direito de efetuar proce
+    - [seção] 11. DAS OBRIGAÇÕES DO PARTICIPANTE
+      - [número] 11.1 São obrigações do participante do Enem:
+        - [número] 11.1.1 Certificar-se de que preenche todos os requ
+        - [número] 11.1.2 Certificar-se de todas as informações e reg
+        - [número] 11.1.3 Certificar-se, antes da inscrição, pelo end
+        - [número] 11.1.4 Guardar sua senha de acesso ao sistema do E
+        - [número] 11.1.5 Certificar-se, com antecedência, pelo ender
+        - [número] 11.1.6 Chegar ao local das provas indicado no Cart
+        - [número] 11.1.7 Apresentar-se no local de aplicação da prov
+          - [número] 11.1.7.1 O participante que comparecer ao local de
+          - [número] 11.1.7.2 A participante lactante que comparecer ao
+        - [número] 11.1.8 Apresentar-se na porta de sua sala de prova
+        - [número] 11.1.9 Apresentar ao chefe de sala, na porta da sa
+        - [número] 11.1.10 Guardar, antes de entrar na sala de provas
+        - [número] 11.1.11 Manter os aparelhos eletrônicos, como celu
+        - [número] 11.1.12 Não portar fora do envelope porta-objetos
+        - [número] 11.1.13 Não portar armas de qualquer espécie, exce
+        - [número] 11.1.14 Informar ao Coordenador de local sobre o u
+        - [número] 11.1.15 Manter, debaixo da carteira, o envelope po
+        - [número] 11.1.16 Submeter-se à identificação especial, conf
+        - [número] 11.1.17 Aguardar na sala de provas, das 13h às 13h
+          - [número] 11.1.17.1 A ida ao banheiro a partir das 13h (horá
+        - [número] 11.1.18 Fechar a prova e deixá-la com a capa para
+        - [número] 11.1.19 Permitir que o lanche seja vistoriado pelo
+        - [número] 11.1.20 Permitir que os artigos religiosos, como v
+        - [número] 11.1.21 Permitir que os materiais próprios, como m
+        - [número] 11.1.22 Submeter-se à revista eletrônica nos locai
+        - [número] 11.1.23 Iniciar as provas somente após a autorizaç
+        - [número] 11.1.24 Destacar, antes de iniciar as provas e qua
+        - [número] 11.1.25 Fazer anotações relativas às suas resposta
+        - [número] 11.1.26 Verificar se o Caderno de Questões contém
+        - [número] 11.1.27 Assinar, nos espaços designados, o Cartão-
+        - [número] 11.1.28 Marcar a cor da capa do seu Caderno de Que
+        - [número] 11.1.29 Transcrever a frase contida na capa do Cad
+        - [número] 11.1.30 Transcrever as respostas das questões obje
+        - [número] 11.1.31 Não destacar nenhuma página ou parte do Ca
+        - [número] 11.1.32 Submeter-se à nova identificação para reto
+        - [número] 11.1.33 Entregar ao chefe de sala o Cartão-Reposta
+        - [número] 11.1.34 Não se ausentar da sala de provas com qual
+        - [número] 11.1.35 Não se ausentar da sala de provas, em defi
+        - [número] 11.1.36 Não utilizar o banheiro do local de aplica
+        - [número] 11.1.37 Saírem juntos os três últimos participante
+        - [número] 11.1.38 Não estabelecer ou tentar estabelecer qual
+        - [número] 11.1.39 Não registrar ou divulgar, por imagem, víd
+        - [número] 11.1.40 Não levar e/ou ingerir bebidas alcoólicas
+        - [número] 11.1.41 Cumprir as determinações deste Edital e da
+    - [seção] 12. DAS ELIMINAÇÕES
+      - [número] 12.1 Será eliminado do Enem, a qualquer momento e
+        - [número] 12.1.1 Prestar, em qualquer documento e/ou no sist
+        - [número] 12.1.2 Desrespeitar e/ou descumprir as orientações
+        - [número] 12.1.3 Comunicar-se ou tentar comunicar-se verbalm
+        - [número] 12.1.4 Utilizar, ou tentar utilizar, meio fraudule
+        - [número] 12.1.5 Utilizar livros, notas, papéis ou impressos
+        - [número] 12.1.6 Receber, de qualquer pessoa, informações re
+        - [número] 12.1.7 Registrar ou divulgar, por imagem, vídeo ou
+        - [número] 12.1.8 Levar e/ou ingerir bebidas alcoólicas e/ou
+        - [número] 12.1.9 Ausentar-se da sala de provas, a partir das
+        - [número] 12.1.10 Ausentar-se da sala de provas, em definiti
+        - [número] 12.1.11 Recusar-se, injustificadamente, a qualquer
+          - [número] 12.1.11.1 Ter os artigos religiosos, como véu, qui
+          - [número] 12.1.11.2 Ser submetido à revista eletrônica;
+          - [número] 12.1.11.3 Ter seus objetos vistoriados eletronicam
+          - [número] 12.1.11.4 Ter seu lanche vistoriado pelo chefe de
+        - [número] 12.1.12 Não permitir que os materiais próprios, co
+        - [número] 12.1.13 Não aguardar na sala de provas, das 13h às
+        - [número] 12.1.14 Não se submeter à nova identificação para
+        - [número] 12.1.15 Iniciar as provas antes das 13h30 (horário
+        - [número] 12.1.16 Violar quaisquer das vedações constantes d
+        - [número] 12.1.17 Portar, fora do envelope porta-objetos for
+        - [número] 12.1.18 Portar armas de qualquer espécie, exceto p
+        - [número] 12.1.19 Recusar-se, injustificadamente, a realizar
+        - [número] 12.1.20 Não mantiver aparelhos eletrônicos desliga
+        - [número] 12.1.21 Realizar anotações no Caderno de Questões,
+        - [número] 12.1.22 Realizar anotações em outros objetos, part
+        - [número] 12.1.23 Destacar página ou parte do Caderno de Que
+        - [número] 12.1.24 Ausentar-se da sala com o Cartão-Resposta/
+        - [número] 12.1.25 Recusar-se a entregar ao chefe de sala o C
+        - [número] 12.1.26 Praticar, no local de provas, qualquer ato
+    - [seção] 13. DA REAPLICAÇÃO
+      - [número] 13.1 O Inep possibilita o direito à reaplicação ao
+        - [número] 13.1.1 O participante que esteja com tuberculose,
+          - [número] 13.1.1.1 Para a análise, o participante deverá ins
+          - [número] 13.1.1.2 O documento comprobatório deverá conter,
+      - [número] 13.2 O participante afetado por problemas logístic
+        - [número] 13.2.1 Não será aceita solicitação de reaplicação
+        - [número] 13.2.2 O participante afetado por problemas logíst
+        - [número] 13.2.3 Os dados informados ou os documentos anexad
+      - [número] 13.3 A aprovação ou a reprovação da solicitação de
+      - [número] 13.4 O Inep não se responsabiliza pelo não recebim
+      - [número] 13.5 O participante que alegar indisposição ou pro
+      - [número] 13.6 Os recursos de acessibilidade de videoprova e
+      - [número] 13.7 Haverá apenas uma reaplicação do Exame, em da
+    - [seção] 14. DAS CORREÇÕES DA PROVA
+      - [número] 14.1 Serão corrigidas somente as redações transcri
+        - [número] 14.1.1 O participante com surdocegueira ou cegueir
+      - [número] 14.2 Os rascunhos e as marcações assinaladas nos C
+      - [número] 14.3 O cálculo das proficiências dos participantes
+      - [número] 14.4 A nota da redação, variando entre 0 (zero) e
+      - [número] 14.5 A redação será corrigida por dois corretores
+        - [número] 14.5.1 Cada corretor atribuirá uma nota entre 0 (z
+        - [número] 14.5.2 A nota total de cada corretor corresponde à
+        - [número] 14.5.3 Considera-se que há discrepância entre dois
+      - [número] 14.6 A nota final da redação do participante será
+        - [número] 14.6.1 Caso não haja discrepância entre os dois co
+        - [número] 14.6.2 Caso haja discrepância entre os dois corret
+          - [número] 14.6.2.1 Caso não haja discrepância entre o tercei
+          - [número] 14.6.2.2 Sendo a nota total do terceiro corretor e
+          - [número] 14.6.2.3 Caso haja discrepância entre o terceiro c
+          - [número] 14.6.2.4 Caso o terceiro corretor apresente discre
+      - [número] 14.7 A banca avaliadora poderá atribuir nota 0 (ze
+        - [número] 14.7.1 Não atender à proposta solicitada ou possua
+        - [número] 14.7.2 Não apresente texto escrito na Folha de Red
+        - [número] 14.7.3 Apresente até 7 (sete) linhas manuscritas,
+        - [número] 14.7.4 Apresente impropérios, desenhos e outras fo
+        - [número] 14.7.5 Apresente parte do texto deliberadamente de
+        - [número] 14.7.6 Apresente nome, assinatura, rubrica ou qual
+        - [número] 14.7.7 Esteja escrita predominante ou integralment
+        - [número] 14.7.8 Apresente letra ilegível, que impossibilite
+      - [número] 14.8 A redação que apresentar cópia dos textos da
+      - [número] 14.9 Na correção da redação do participante com su
+      - [número] 14.10 Na correção da redação do participante com d
+    - [seção] 15. DOS RESULTADOS
+      - [número] 15.1 Os gabaritos das provas objetivas serão divul
+      - [número] 15.2 O participante poderá ter acesso aos seus res
+      - [número] 15.3 O participante poderá ter acesso à vista de s
+        - [número] 15.3.1 Para os resultados da redação citados nos i
+      - [número] 15.4 Os resultados individuais do Enem não serão d
+      - [número] 15.5 Somente o participante poderá autorizar a uti
+      - [número] 15.6 A utilização dos resultados individuais do En
+      - [número] 15.7 Os resultados do Enem poderão ser utilizados
+      - [número] 15.8 Os resultados do Enem poderão ser utilizados
+      - [número] 15.9 A inscrição do participante no Enem caracteri
+      - [número] 15.10 O Inep encaminhará os dados e os resultados
+      - [número] 15.11 O resultado do participante eliminado não se
+      - [número] 15.12 O participante que realizar a aplicação e a
+      - [número] 15.13 O resultado do Enem para fins exclusivos de
+        - [número] 15.13.1 As regras dos itens 15.7, 15.8 e 15.10 não
+    - [seção] 16. DA CERTIFICAÇÃO DE CONCLUSÃO DO ENSINO MÉDIO
+      - [número] 16.1 Os resultados do Enem podem ser utilizados pa
+      - [número] 16.2 Compete às Instituições Certificadoras defini
+      - [número] 16.3 O participante que pretenda obter o Certifica
+      - [número] 16.4 O participante, ao optar pela certificação no
+        - [número] 16.4.1 O participante que não optar pela certifica
+      - [número] 16.5 O participante que indicar a pretensão de uti
+        - [número] 16.5.1 O participante interessado em obter a Decla
+        - [número] 16.5.2 O participante que pretende obter a Declara
+      - [número] 16.6 Não compete ao Inep proceder à emissão do Cer
+    - [seção] 17. DAS DISPOSIÇÕES FINAIS
+      - [número] 17.1 O Inep disponibilizará a Declaração de Compar
+        - [número] 17.1.1 O participante interessado deverá apresenta
+        - [número] 17.1.2 O Inep não disponibilizará a Declaração de
+      - [número] 17.2 O Inep não se responsabiliza pela guarda, per
+      - [número] 17.3 O participante não poderá prestar o Exame for
+      - [número] 17.4 O não comparecimento nos locais de provas, na
+      - [número] 17.5 As informações pessoais, educacionais e socio
+      - [número] 17.6 O Inep não fornecerá atestados, certificados
+      - [número] 17.7 O Inep não enviará nenhum tipo de correspondê
+      - [número] 17.8 A inscrição do participante implica a aceitaç
+      - [número] 17.9 O presente Edital poderá ser alterado, revoga
+      - [número] 17.10 Os casos omissos e as eventuais dúvidas refe
+  - [fecho] MANUEL FERNANDO PALACIOS DA CUNHA E MELO
