@@ -1,0 +1,83 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 55,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório e os considerandos, até “resolve:”, ficaram fora de qualquer bloco antes do Art. 1º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e terminado em “resolve:”, imediatamente antes de “Art. 1º”."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20186/NORMA-20186_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 54,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e terminado em “resolve:”, imediatamente antes de “Art. 1º”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II - manejo florestal sustentável`, Art. 2º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final da unidade, “s bens e serviços de natureza florestal;”, ficou sem bloco após “a utilização de outro”."
+        },
+        {
+          "onde": "`IX - Plano Anual de Outorga Florestal (PAOF)`, Art. 2º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IX contém também o início do inciso irmão `X - Unidade Responsável:`."
+        },
+        {
+          "onde": "`XI - Órgão Gestor:`, Art. 2º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Todo o inciso XI ficou sem bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e terminado em “resolve:”, imediatamente antes de “Art. 1º”.\n- No inciso `II - manejo florestal sustentável`, do Art. 2º (pág. 1), mantenha no mesmo bloco o trecho final “s bens e serviços de natureza florestal;”, que completa a expressão iniciada por “a utilização de outro”.\n- No Art. 2º (pág. 2), termine o bloco de `IX - Plano Anual de Outorga Florestal (PAOF):` imediatamente antes de `X - Unidade Responsável:`; inicie blocos próprios em `X - Unidade Responsável:` e em `XI - Órgão Gestor:`."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20186/NORMA-20186_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 51,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e terminado em “resolve:”, imediatamente antes de “Art. 1º”.\n- No inciso `II - manejo florestal sustentável`, do Art. 2º (pág. 1), mantenha no mesmo bloco o trecho final “s bens e serviços de natureza florestal;”, que completa a expressão iniciada por “a utilização de outro”.\n- No Art. 2º (pág. 2), termine o bloco de `IX - Plano Anual de Outorga Florestal (PAOF):` imediatamente antes de `X - Unidade Responsável:`; inicie blocos próprios em `X - Unidade Responsável:` e em `XI - Órgão Gestor:`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 2º Para fins do disposto nesta Instrução Normativa, considera-se:” contém sem blocos próprios os incisos “I - floresta pública:”, “II - manejo florestal sustentável:”, “III - floresta nacional:” e “IV - gestão direta:”."
+        },
+        {
+          "onde": "alínea d) do inciso IV do Art. 7º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “d) em até 5 (cinco) dias após assinatura dos contratos de concessão:” contém também a alínea seguinte “e) em até 5 (cinco) dias após sua expedição, a Licença de Operação (LO)...”."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e terminado em “resolve:”, imediatamente antes de “Art. 1º”.\n- No Art. 2º (pág. 1), termine o bloco do caput “Art. 2º Para fins do disposto nesta Instrução Normativa, considera-se:” imediatamente antes de “I - floresta pública:” e inicie blocos próprios em “I - floresta pública:”, “II - manejo florestal sustentável:”, “III - floresta nacional:” e “IV - gestão direta:”.\n- No inciso “II - manejo florestal sustentável”, do Art. 2º (pág. 1), mantenha no mesmo bloco todo o trecho final “bem como a utilização de outros bens e serviços de natureza florestal;”, sem cortá-lo antes de seu término.\n- No Art. 2º (pág. 2), termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF):” imediatamente antes de “X - Unidade Responsável:”; inicie blocos próprios em “X - Unidade Responsável:” e em “XI - Órgão Gestor:”.\n- No inciso IV do Art. 7º (pág. 4), termine o bloco de “d) em até 5 (cinco) dias após assinatura dos contratos de concessão:” imediatamente antes de “e) em até 5 (cinco) dias após sua expedição, a Licença de Operação (LO)...” e inicie um bloco próprio nessa alínea e)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20186/NORMA-20186_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado em “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...” e terminado em “resolve:”, imediatamente antes de “Art. 1º”.\n- No Art. 2º (pág. 1), termine o bloco do caput “Art. 2º Para fins do disposto nesta Instrução Normativa, considera-se:” imediatamente antes de “I - floresta pública:” e inicie blocos próprios em “I - floresta pública:”, “II - manejo florestal sustentável:”, “III - floresta nacional:” e “IV - gestão direta:”.\n- No inciso “II - manejo florestal sustentável”, do Art. 2º (pág. 1), mantenha no mesmo bloco todo o trecho final “bem como a utilização de outros bens e serviços de natureza florestal;”, sem cortá-lo antes de seu término.\n- No Art. 2º (pág. 2), termine o bloco de “IX - Plano Anual de Outorga Florestal (PAOF):” imediatamente antes de “X - Unidade Responsável:”; inicie blocos próprios em “X - Unidade Responsável:” e em “XI - Órgão Gestor:”.\n- No inciso IV do Art. 7º (pág. 4), termine o bloco de “d) em até 5 (cinco) dias após assinatura dos contratos de concessão:” imediatamente antes de “e) em até 5 (cinco) dias após sua expedição, a Licença de Operação (LO)...” e inicie um bloco próprio nessa alínea e).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20186/NORMA-20186_ciclo4.json"
+  }
+]

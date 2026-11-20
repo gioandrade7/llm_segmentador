@@ -1,0 +1,111 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo do documento ficou sem bloco antes de `CAPÍTULO I`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20204/NORMA-20204_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`I- Primeira Etapa:`, no art. 4º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I também contém a alínea `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:`, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`I- projeto básico ou estudo de viabilidade técnica...`, no art. 5º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I também contém a alínea `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.\n- Termine o bloco de `I- Primeira Etapa:` do art. 4º imediatamente antes de `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `I- projeto básico ou estudo de viabilidade técnica da obra... contendo:` do art. 5º imediatamente antes de `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...` (pág. 2) e inicie um bloco novo nessa alínea."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20204/NORMA-20204_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 47,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.\n- Termine o bloco de `I- Primeira Etapa:` do art. 4º imediatamente antes de `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `I- projeto básico ou estudo de viabilidade técnica da obra... contendo:` do art. 5º imediatamente antes de `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...` (pág. 2) e inicie um bloco novo nessa alínea.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II- Segunda Etapa:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II contém, sem cortes próprios, as alíneas `a) contrato assinado...` e `b) justificativas técnicas...`, que devem iniciar blocos distintos."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.\n- Termine o bloco de `I- Primeira Etapa:` do art. 4º imediatamente antes de `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `II- Segunda Etapa:` do art. 4º imediatamente antes de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` imediatamente antes de `b) justificativas técnicas de alterações no escopo e no preço...` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `I- projeto básico ou estudo de viabilidade técnica da obra... contendo:` do art. 5º imediatamente antes de `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...` (pág. 2) e inicie um bloco novo nessa alínea."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20204/NORMA-20204_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 39,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.\n- Termine o bloco de `I- Primeira Etapa:` do art. 4º imediatamente antes de `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `II- Segunda Etapa:` do art. 4º imediatamente antes de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` imediatamente antes de `b) justificativas técnicas de alterações no escopo e no preço...` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `I- projeto básico ou estudo de viabilidade técnica da obra... contendo:` do art. 5º imediatamente antes de `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...` (pág. 2) e inicie um bloco novo nessa alínea.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 2º Para os fins do disposto nesta Instrução Normativa, consideram-se:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 2º contém, sem blocos próprios, os incisos `I- pré-contrato`, `II- contrato`, `III- empresa estatal` e `IV- unidade responsável`."
+        },
+        {
+          "onde": "`II- Segunda Etapa:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II contém também as alíneas `a) contrato assinado e a comprovação...` e `b) justificativas técnicas de alterações...`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`V- pareceres técnicos e jurídicos.`, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso V do art. 5º ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`CAPÍTULO III DISPOSIÇÕES FINAIS`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do Capítulo III contém também `Art. 8º Os documentos encaminhados...`, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 9º A fiscalização dos pré-contratos...`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 9º contém também os parágrafos `§ 1º Mediante solicitação...` e `§ 2º Durante o acompanhamento...`, sem cortes próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins do disposto nesta Instrução Normativa, consideram-se:` imediatamente antes de `I- pré-contrato:` (pág. 1) e inicie um bloco novo nesse inciso; termine cada inciso imediatamente antes do inciso seguinte, separando `I- pré-contrato:`, `II- contrato:`, `III- empresa estatal:` e `IV- unidade responsável:` em blocos próprios.\n- Termine o bloco de `I- Primeira Etapa:` do art. 4º imediatamente antes de `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `II- Segunda Etapa:` do art. 4º imediatamente antes de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` imediatamente antes de `b) justificativas técnicas de alterações no escopo e no preço...` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `I- projeto básico ou estudo de viabilidade técnica da obra... contendo:` do art. 5º imediatamente antes de `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...` (pág. 2) e inicie um bloco novo nessa alínea.\n- Inicie um bloco para `V- pareceres técnicos e jurídicos.` do art. 5º (pág. 2), imediatamente após o término de `IV- comprovação da regularidade fiscal e das qualificações técnica, econômica e financeira da empresa pré-contratada;`.\n- Termine o bloco de `CAPÍTULO III DISPOSIÇÕES FINAIS` imediatamente antes de `Art. 8º Os documentos encaminhados em obediência a esta Instrução Normativa...` (pág. 2) e inicie um bloco novo nesse artigo.\n- Termine o bloco de `Art. 9º A fiscalização dos pré-contratos e dos contratos...` imediatamente antes de `§ 1º Mediante solicitação da unidade responsável...` (pág. 3) e inicie um bloco novo nesse parágrafo; termine o bloco do `§ 1º` imediatamente antes de `§ 2º Durante o acompanhamento dos contratos firmados...` e inicie outro bloco nesse parágrafo."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20204/NORMA-20204_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo que abre com `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de sua competência... resolve:` (pág. 1) e termine-o imediatamente antes de `CAPÍTULO I`.\n- Termine o bloco de `Art. 2º Para os fins do disposto nesta Instrução Normativa, consideram-se:` imediatamente antes de `I- pré-contrato:` (pág. 1) e inicie um bloco novo nesse inciso; termine cada inciso imediatamente antes do inciso seguinte, separando `I- pré-contrato:`, `II- contrato:`, `III- empresa estatal:` e `IV- unidade responsável:` em blocos próprios.\n- Termine o bloco de `I- Primeira Etapa:` do art. 4º imediatamente antes de `a) proposta técnica da empresa escolhida para a assinatura do pré-contrato, contendo:` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `II- Segunda Etapa:` do art. 4º imediatamente antes de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `a) contrato assinado e a comprovação de publicação de seu extrato no Diário Oficial da União;` imediatamente antes de `b) justificativas técnicas de alterações no escopo e no preço...` (pág. 1) e inicie um bloco novo nessa alínea.\n- Termine o bloco de `I- projeto básico ou estudo de viabilidade técnica da obra... contendo:` do art. 5º imediatamente antes de `a) projeto de engenharia e estudos demonstrando a solução técnica adotada...` (pág. 2) e inicie um bloco novo nessa alínea.\n- Inicie um bloco para `V- pareceres técnicos e jurídicos.` do art. 5º (pág. 2), imediatamente após o término de `IV- comprovação da regularidade fiscal e das qualificações técnica, econômica e financeira da empresa pré-contratada;`.\n- Termine o bloco de `CAPÍTULO III DISPOSIÇÕES FINAIS` imediatamente antes de `Art. 8º Os documentos encaminhados em obediência a esta Instrução Normativa...` (pág. 2) e inicie um bloco novo nesse artigo.\n- Termine o bloco de `Art. 9º A fiscalização dos pré-contratos e dos contratos...` imediatamente antes de `§ 1º Mediante solicitação da unidade responsável...` (pág. 3) e inicie um bloco novo nesse parágrafo; termine o bloco do `§ 1º` imediatamente antes de `§ 2º Durante o acompanhamento dos contratos firmados...` e inicie outro bloco nesse parágrafo.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20204/NORMA-20204_ciclo5.json"
+  }
+]

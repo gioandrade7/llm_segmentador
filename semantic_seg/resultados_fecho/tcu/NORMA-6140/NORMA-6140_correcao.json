@@ -1,0 +1,138 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 265,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "Todo o preâmbulo, incluindo os considerandos e “resolve:”, ficou fora de qualquer bloco antes do Art. 1º."
+        },
+        {
+          "onde": "inciso I do Art. 9º, “I - propor políticas e práticas de gestão de pessoas por competências...”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso I contém também os incisos II a XIV do Art. 9º, o Art. 10, o Art. 11 e o inciso I do Art. 11, todos sem cortes próprios."
+        },
+        {
+          "onde": "inciso VIII do Art. 5º, “VIII - elaborar extratos referentes à publicação de decisões da Segep;”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos IX e X do Art. 5º."
+        },
+        {
+          "onde": "inciso XIII do Art. 13, “XIII - registrar, no Sisac, os dados relativos à admissão de servidores efetivos;”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XIII contém também os incisos XIV, XV e XVI do Art. 13º."
+        },
+        {
+          "onde": "inciso IX do Art. 15, “IX - tornar disponível às entidades consignatárias...”, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IX contém também os incisos X, XI, XII e XIII do Art. 15."
+        },
+        {
+          "onde": "Art. 20, “Art. 20. Compete ao Serviço de Promoção de Saúde e Bem-Estar:”, pág. 10",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 20 contém os incisos I a X, sem blocos individuais para esses incisos."
+        },
+        {
+          "onde": "inciso III do Art. 24, “III - apoiar o desenvolvimento e a manutenção do bem-estar físico...”, pág. 12",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém também os incisos IV, V, VI, VII e VIII do Art. 24."
+        },
+        {
+          "onde": "inciso IX do Art. 16, “IX - informar às autoridades e aos servidores ativos...”, pág. 8",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final “de 1990;” ficou fora de bloco, embora continue a frase do inciso IX."
+        },
+        {
+          "onde": "inciso I do Art. 17, “I - elaborar folha de pagamento de autoridades e servidores inativos e de pensio...”, pág. 9",
+          "tipo": "sem_bloco",
+          "descricao": "O fragmento “nistas civis e judiciais do TCU;” ficou fora de bloco, embora complete a palavra e a frase do inciso I."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO” e encerrado imediatamente antes de “Art. 1º”.\n- No Art. 9º (pág. 4), encerre o bloco de “I - propor políticas e práticas de gestão de pessoas por competências...” antes de “II - conduzir a implementação...”; inicie um bloco para cada inciso II a XIV; inicie também blocos próprios em “Art. 10. Compete à Diretoria de Legislação de Pessoal...”, “Art. 11. Compete ao SCV:” e “I - examinar a legalidade e opinar a respeito do mérito...” do Art. 11.\n- No Art. 5º (pág. 2), encerre o inciso VIII antes de “IX - consolidar e solicitar materiais...” e inicie blocos próprios nos incisos IX e X.\n- No Art. 13 (pág. 6), encerre o inciso XIII antes de “XIV - atualizar os registros funcionais...” e inicie blocos próprios nos incisos XIV, XV e XVI.\n- No Art. 15 (pág. 7), encerre o inciso IX antes de “X - fiscalizar o cumprimento dos convênios...” e inicie blocos próprios nos incisos X, XI, XII e XIII.\n- No Art. 20 (pág. 10), encerre o bloco do artigo antes de “I - realizar o mapeamento institucional das doenças...” e inicie um bloco para cada inciso I a X.\n- No Art. 24 (pág. 12), encerre o inciso III antes de “IV - reconhecer e celebrar...” e inicie blocos próprios nos incisos IV, V, VI, VII e VIII.\n- Mantenha no bloco do inciso IX do Art. 16 (pág. 8) o trecho “de 1990;”, pois ele completa a referência à Lei nº 8.112.\n- Mantenha no bloco do inciso I do Art. 17 (pág. 9) o fragmento “nistas civis e judiciais do TCU;”, pois ele completa “pensionistas” e a frase do inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6140/NORMA-6140_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 301,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO” e encerrado imediatamente antes de “Art. 1º”.\n- No Art. 9º (pág. 4), encerre o bloco de “I - propor políticas e práticas de gestão de pessoas por competências...” antes de “II - conduzir a implementação...”; inicie um bloco para cada inciso II a XIV; inicie também blocos próprios em “Art. 10. Compete à Diretoria de Legislação de Pessoal...”, “Art. 11. Compete ao SCV:” e “I - examinar a legalidade e opinar a respeito do mérito...” do Art. 11.\n- No Art. 5º (pág. 2), encerre o inciso VIII antes de “IX - consolidar e solicitar materiais...” e inicie blocos próprios nos incisos IX e X.\n- No Art. 13 (pág. 6), encerre o inciso XIII antes de “XIV - atualizar os registros funcionais...” e inicie blocos próprios nos incisos XIV, XV e XVI.\n- No Art. 15 (pág. 7), encerre o inciso IX antes de “X - fiscalizar o cumprimento dos convênios...” e inicie blocos próprios nos incisos X, XI, XII e XIII.\n- No Art. 20 (pág. 10), encerre o bloco do artigo antes de “I - realizar o mapeamento institucional das doenças...” e inicie um bloco para cada inciso I a X.\n- No Art. 24 (pág. 12), encerre o inciso III antes de “IV - reconhecer e celebrar...” e inicie blocos próprios nos incisos IV, V, VI, VII e VIII.\n- Mantenha no bloco do inciso IX do Art. 16 (pág. 8) o trecho “de 1990;”, pois ele completa a referência à Lei nº 8.112.\n- Mantenha no bloco do inciso I do Art. 17 (pág. 9) o fragmento “nistas civis e judiciais do TCU;”, pois ele completa “pensionistas” e a frase do inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`c) Serviço de Perícia em Saúde (SPS) ;`, Art. 4º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "As alíneas seguintes `d) Serviço de Apoio à Gestão de Contratos em Saúde (SCS) ; e` e `e) Serviço de Atenção Psicossocial (SAPS) .` ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`Art. 3º Compete à Segep:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 3º contém também o inciso `I - propor e coordenar, com a participação do Instituto Serzedello Corrêa...`, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`VI - preparar, para encaminhamento à Comissão de Coordenação Geral...`, Art. 8º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VI contém também o inciso `VII - instruir processos relativos à progressão funcional e promoção de servidores...`, sem corte antes deste marcador."
+        },
+        {
+          "onde": "`Art. 23. Compete ao SAPS:`, pág. 11",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 23 contém também o inciso `I - apoiar os gestores em relação às situações no trabalho...`, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 4º (pág. 2), inicie blocos próprios em `d) Serviço de Apoio à Gestão de Contratos em Saúde (SCS) ; e` e em `e) Serviço de Atenção Psicossocial (SAPS) .`.\n- No Art. 3º (pág. 1), encerre o bloco de `Art. 3º Compete à Segep:` antes de `I - propor e coordenar, com a participação do Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse inciso.\n- No Art. 8º (pág. 3), encerre o bloco de `VI - preparar, para encaminhamento à Comissão de Coordenação Geral...` antes de `VII - instruir processos relativos à progressão funcional e promoção de servidores...` e inicie um bloco próprio para o inciso VII.\n- No Art. 23 (pág. 11), encerre o bloco de `Art. 23. Compete ao SAPS:` antes de `I - apoiar os gestores em relação às situações no trabalho...` e inicie um bloco próprio para esse inciso.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por `O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO` e encerrado imediatamente antes de `Art. 1º`.\n- No Art. 9º (pág. 4), encerre o bloco de `I - propor políticas e práticas de gestão de pessoas por competências...` antes de `II - conduzir a implementação...`; inicie um bloco para cada inciso II a XIV; inicie também blocos próprios em `Art. 10. Compete à Diretoria de Legislação de Pessoal...`, `Art. 11. Compete ao SCV:` e `I - examinar a legalidade e opinar a respeito do mérito...` do Art. 11.\n- No Art. 5º (pág. 2), encerre o inciso VIII antes de `IX - consolidar e solicitar materiais...` e inicie blocos próprios nos incisos IX e X.\n- No Art. 13 (pág. 6), encerre o inciso XIII antes de `XIV - atualizar os registros funcionais...` e inicie blocos próprios nos incisos XIV, XV e XVI.\n- No Art. 15 (pág. 7), encerre o inciso IX antes de `X - fiscalizar o cumprimento dos convênios...` e inicie blocos próprios nos incisos X, XI, XII e XIII.\n- No Art. 20 (pág. 10), encerre o bloco do artigo antes de `I - realizar o mapeamento institucional das doenças...` e inicie um bloco para cada inciso I a X.\n- No Art. 24 (pág. 12), encerre o inciso III antes de `IV - reconhecer e celebrar...` e inicie blocos próprios nos incisos IV, V, VI, VII e VIII.\n- Mantenha no bloco do inciso IX do Art. 16 (pág. 8) o trecho `de 1990;`, pois ele completa a referência à Lei nº 8.112.\n- Mantenha no bloco do inciso I do Art. 17 (pág. 9) o fragmento `nistas civis e judiciais do TCU;`, pois ele completa `pensionistas` e a frase do inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6140/NORMA-6140_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 290,
+    "insights_aplicados": "- No Art. 4º (pág. 2), inicie blocos próprios em `d) Serviço de Apoio à Gestão de Contratos em Saúde (SCS) ; e` e em `e) Serviço de Atenção Psicossocial (SAPS) .`.\n- No Art. 3º (pág. 1), encerre o bloco de `Art. 3º Compete à Segep:` antes de `I - propor e coordenar, com a participação do Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse inciso.\n- No Art. 8º (pág. 3), encerre o bloco de `VI - preparar, para encaminhamento à Comissão de Coordenação Geral...` antes de `VII - instruir processos relativos à progressão funcional e promoção de servidores...` e inicie um bloco próprio para o inciso VII.\n- No Art. 23 (pág. 11), encerre o bloco de `Art. 23. Compete ao SAPS:` antes de `I - apoiar os gestores em relação às situações no trabalho...` e inicie um bloco próprio para esse inciso.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por `O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO` e encerrado imediatamente antes de `Art. 1º`.\n- No Art. 9º (pág. 4), encerre o bloco de `I - propor políticas e práticas de gestão de pessoas por competências...` antes de `II - conduzir a implementação...`; inicie um bloco para cada inciso II a XIV; inicie também blocos próprios em `Art. 10. Compete à Diretoria de Legislação de Pessoal...`, `Art. 11. Compete ao SCV:` e `I - examinar a legalidade e opinar a respeito do mérito...` do Art. 11.\n- No Art. 5º (pág. 2), encerre o inciso VIII antes de `IX - consolidar e solicitar materiais...` e inicie blocos próprios nos incisos IX e X.\n- No Art. 13 (pág. 6), encerre o inciso XIII antes de `XIV - atualizar os registros funcionais...` e inicie blocos próprios nos incisos XIV, XV e XVI.\n- No Art. 15 (pág. 7), encerre o inciso IX antes de `X - fiscalizar o cumprimento dos convênios...` e inicie blocos próprios nos incisos X, XI, XII e XIII.\n- No Art. 20 (pág. 10), encerre o bloco do artigo antes de `I - realizar o mapeamento institucional das doenças...` e inicie um bloco para cada inciso I a X.\n- No Art. 24 (pág. 12), encerre o inciso III antes de `IV - reconhecer e celebrar...` e inicie blocos próprios nos incisos IV, V, VI, VII e VIII.\n- Mantenha no bloco do inciso IX do Art. 16 (pág. 8) o trecho `de 1990;`, pois ele completa a referência à Lei nº 8.112.\n- Mantenha no bloco do inciso I do Art. 17 (pág. 9) o fragmento `nistas civis e judiciais do TCU;`, pois ele completa `pensionistas` e a frase do inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`XVII - gerenciar e assegurar a atualização das bases de informação necessárias à sua área de competência;`, Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso XVII contém também os incisos XVIII (`elaborar relatórios periódicos...`) e XIX (`desenvolver outras atividades...`), que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "`XIII - desenvolver outras atividades que lhe sejam atribuídas pelo dirigente da unidade.`, Art. 6º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso XIII do Art. 6º está fora de qualquer bloco."
+        },
+        {
+          "onde": "`IV - encaminhar resumo da folha de pagamento de autoridades e servidores inativos...`, Art. 17, pág. 9",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos V (`efetuar cálculos...`), VI (`alterar o registro financeiro funcional...`) e VII (`manter arquivo dos processos...`), que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "`Art. 22. Compete ao SCS:`, pág. 11",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 22 contém, sem cortes próprios, todos os incisos I a X, desde `I - elaborar termos de referência...` até `X - encaminhar à Dsaud estatística das atividades realizadas.`"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 22 (pág. 11), encerre o bloco de `Art. 22. Compete ao SCS:` antes de `I - elaborar termos de referência e projetos-base...`; inicie blocos próprios para cada inciso I a X, inclusive quando os marcadores estiverem na mesma linha do texto anterior.\n- No Art. 17 (pág. 9), encerre o bloco de `IV - encaminhar resumo da folha de pagamento de autoridades e servidores inativos...` antes de `V - efetuar cálculos, preparar os respectivos demonstrativos...`; inicie blocos próprios nos incisos V, VI e VII.\n- No Art. 3º (pág. 2), encerre o bloco de `XVII - gerenciar e assegurar a atualização das bases de informação necessárias...` antes de `XVIII - elaborar relatórios periódicos inerentes à gestão de pessoas;`; inicie também um bloco próprio em `XIX - desenvolver outras atividades inerentes à sua finalidade.`\n- No Art. 6º (pág. 3), inicie um bloco próprio em `XIII - desenvolver outras atividades que lhe sejam atribuídas pelo dirigente da unidade.`\n- No Art. 4º (pág. 2), inicie blocos próprios em `d) Serviço de Apoio à Gestão de Contratos em Saúde (SCS) ; e` e em `e) Serviço de Atenção Psicossocial (SAPS) .`.\n- No Art. 3º (pág. 1), encerre o bloco de `Art. 3º Compete à Segep:` antes de `I - propor e coordenar, com a participação do Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse inciso.\n- No Art. 8º (pág. 3), encerre o bloco de `VI - preparar, para encaminhamento à Comissão de Coordenação Geral...` antes de `VII - instruir processos relativos à progressão funcional e promoção de servidores...` e inicie um bloco próprio para o inciso VII.\n- No Art. 23 (pág. 11), encerre o bloco de `Art. 23. Compete ao SAPS:` antes de `I - apoiar os gestores em relação às situações no trabalho...` e inicie um bloco próprio para esse inciso.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por `O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO` e encerrado imediatamente antes de `Art. 1º`.\n- No Art. 9º (pág. 4), encerre o bloco de `I - propor políticas e práticas de gestão de pessoas por competências...` antes de `II - conduzir a implementação...`; inicie um bloco para cada inciso II a XIV; inicie também blocos próprios em `Art. 10. Compete à Diretoria de Legislação de Pessoal...`, `Art. 11. Compete ao SCV:` e `I - examinar a legalidade e opinar a respeito do mérito...` do Art. 11.\n- No Art. 5º (pág. 2), encerre o inciso VIII antes de `IX - consolidar e solicitar materiais...` e inicie blocos próprios nos incisos IX e X.\n- No Art. 13 (pág. 6), encerre o inciso XIII antes de `XIV - atualizar os registros funcionais...` e inicie blocos próprios nos incisos XIV, XV e XVI.\n- No Art. 15 (pág. 7), encerre o inciso IX antes de `X - fiscalizar o cumprimento dos convênios...` e inicie blocos próprios nos incisos X, XI, XII e XIII.\n- No Art. 20 (pág. 10), encerre o bloco do artigo antes de `I - realizar o mapeamento institucional das doenças...` e inicie um bloco para cada inciso I a X.\n- No Art. 24 (pág. 12), encerre o inciso III antes de `IV - reconhecer e celebrar...` e inicie blocos próprios nos incisos IV, V, VI, VII e VIII.\n- Mantenha no bloco do inciso IX do Art. 16 (pág. 8) o trecho `de 1990;`, pois ele completa a referência à Lei nº 8.112.\n- Mantenha no bloco do inciso I do Art. 17 (pág. 9) o fragmento `nistas civis e judiciais do TCU;`, pois ele completa `pensionistas` e a frase do inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6140/NORMA-6140_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 306,
+    "insights_aplicados": "- No Art. 22 (pág. 11), encerre o bloco de `Art. 22. Compete ao SCS:` antes de `I - elaborar termos de referência e projetos-base...`; inicie blocos próprios para cada inciso I a X, inclusive quando os marcadores estiverem na mesma linha do texto anterior.\n- No Art. 17 (pág. 9), encerre o bloco de `IV - encaminhar resumo da folha de pagamento de autoridades e servidores inativos...` antes de `V - efetuar cálculos, preparar os respectivos demonstrativos...`; inicie blocos próprios nos incisos V, VI e VII.\n- No Art. 3º (pág. 2), encerre o bloco de `XVII - gerenciar e assegurar a atualização das bases de informação necessárias...` antes de `XVIII - elaborar relatórios periódicos inerentes à gestão de pessoas;`; inicie também um bloco próprio em `XIX - desenvolver outras atividades inerentes à sua finalidade.`\n- No Art. 6º (pág. 3), inicie um bloco próprio em `XIII - desenvolver outras atividades que lhe sejam atribuídas pelo dirigente da unidade.`\n- No Art. 4º (pág. 2), inicie blocos próprios em `d) Serviço de Apoio à Gestão de Contratos em Saúde (SCS) ; e` e em `e) Serviço de Atenção Psicossocial (SAPS) .`.\n- No Art. 3º (pág. 1), encerre o bloco de `Art. 3º Compete à Segep:` antes de `I - propor e coordenar, com a participação do Instituto Serzedello Corrêa...` e inicie um bloco próprio para esse inciso.\n- No Art. 8º (pág. 3), encerre o bloco de `VI - preparar, para encaminhamento à Comissão de Coordenação Geral...` antes de `VII - instruir processos relativos à progressão funcional e promoção de servidores...` e inicie um bloco próprio para o inciso VII.\n- No Art. 23 (pág. 11), encerre o bloco de `Art. 23. Compete ao SAPS:` antes de `I - apoiar os gestores em relação às situações no trabalho...` e inicie um bloco próprio para esse inciso.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por `O SECRETÁRIO DE GESTÃO DE PESSOAS DO TRIBUNAL DE CONTAS DA UNIÃO` e encerrado imediatamente antes de `Art. 1º`.\n- No Art. 9º (pág. 4), encerre o bloco de `I - propor políticas e práticas de gestão de pessoas por competências...` antes de `II - conduzir a implementação...`; inicie um bloco para cada inciso II a XIV; inicie também blocos próprios em `Art. 10. Compete à Diretoria de Legislação de Pessoal...`, `Art. 11. Compete ao SCV:` e `I - examinar a legalidade e opinar a respeito do mérito...` do Art. 11.\n- No Art. 5º (pág. 2), encerre o inciso VIII antes de `IX - consolidar e solicitar materiais...` e inicie blocos próprios nos incisos IX e X.\n- No Art. 13 (pág. 6), encerre o inciso XIII antes de `XIV - atualizar os registros funcionais...` e inicie blocos próprios nos incisos XIV, XV e XVI.\n- No Art. 15 (pág. 7), encerre o inciso IX antes de `X - fiscalizar o cumprimento dos convênios...` e inicie blocos próprios nos incisos X, XI, XII e XIII.\n- No Art. 20 (pág. 10), encerre o bloco do artigo antes de `I - realizar o mapeamento institucional das doenças...` e inicie um bloco para cada inciso I a X.\n- No Art. 24 (pág. 12), encerre o inciso III antes de `IV - reconhecer e celebrar...` e inicie blocos próprios nos incisos IV, V, VI, VII e VIII.\n- Mantenha no bloco do inciso IX do Art. 16 (pág. 8) o trecho `de 1990;`, pois ele completa a referência à Lei nº 8.112.\n- Mantenha no bloco do inciso I do Art. 17 (pág. 9) o fragmento `nistas civis e judiciais do TCU;`, pois ele completa `pensionistas` e a frase do inciso.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6140/NORMA-6140_ciclo4.json"
+  }
+]

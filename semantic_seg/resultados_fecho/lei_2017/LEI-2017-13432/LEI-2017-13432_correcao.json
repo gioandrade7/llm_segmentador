@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 39,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 9º Ao final do prazo pactuado para a execução dos serviços profissionais`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 9º contém, sem blocos próprios, os incisos `I - os procedimentos técnicos adotados;`, `II - a conclusão em face do resultado dos trabalhos executados` e `III - data, identificação completa do detetive particular e sua assinatura.`"
+        },
+        {
+          "onde": "`Art. 11. São deveres do detetive particular:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 11 contém, sem blocos próprios, os incisos I a VII, de `I - preservar o sigilo das fontes de informação;` até `VII - prestar contas ao cliente.`"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 11, pág. 1, termine o bloco introdutório `Art. 11. São deveres do detetive particular:` antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco próprio para cada inciso I a VII, até `VII - prestar contas ao cliente.`\n- No Art. 9º, pág. 1, termine o bloco introdutório `Art. 9º Ao final do prazo pactuado para a execução dos serviços profissionais` antes de `I - os procedimentos técnicos adotados;` e inicie um bloco próprio para cada inciso I, II e III."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 49,
+    "insights_aplicados": "- No Art. 11, pág. 1, termine o bloco introdutório `Art. 11. São deveres do detetive particular:` antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco próprio para cada inciso I a VII, até `VII - prestar contas ao cliente.`\n- No Art. 9º, pág. 1, termine o bloco introdutório `Art. 9º Ao final do prazo pactuado para a execução dos serviços profissionais` antes de `I - os procedimentos técnicos adotados;` e inicie um bloco próprio para cada inciso I, II e III.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": "- No Art. 11, pág. 1, termine o bloco introdutório `Art. 11. São deveres do detetive particular:` antes de `I - preservar o sigilo das fontes de informação;` e inicie um bloco próprio para cada inciso I a VII, até `VII - prestar contas ao cliente.`\n- No Art. 9º, pág. 1, termine o bloco introdutório `Art. 9º Ao final do prazo pactuado para a execução dos serviços profissionais` antes de `I - os procedimentos técnicos adotados;` e inicie um bloco próprio para cada inciso I, II e III."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13432/LEI-2017-13432_ciclo2.json"
+  }
+]

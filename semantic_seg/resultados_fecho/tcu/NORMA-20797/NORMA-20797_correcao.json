@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 64,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`XI - unidade interessada`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso XI contém também o inciso XII, que se inicia em `XII - unidade responsável por base de dados` e deveria constituir bloco próprio."
+        },
+        {
+          "onde": "`Art. 11. Fica o Presidente autorizado`, pág. 6",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 11 contém também `Parágrafo único. Conforme o caso`, marcador de unidade hierárquica que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso `XI - unidade interessada: unidade da Secretaria do TCU...` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio para o inciso XII.\n- Termine o bloco de `Art. 11. Fica o Presidente autorizado a expedir os atos necessários...` imediatamente antes de `Parágrafo único. Conforme o caso...` (pág. 6) e inicie um bloco próprio para o parágrafo único."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20797/NORMA-20797_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 66,
+    "insights_aplicados": "- Termine o bloco do inciso `XI - unidade interessada: unidade da Secretaria do TCU...` imediatamente antes de `XII - unidade responsável por base de dados` (pág. 2) e inicie um bloco próprio para o inciso XII.\n- Termine o bloco de `Art. 11. Fica o Presidente autorizado a expedir os atos necessários...` imediatamente antes de `Parágrafo único. Conforme o caso...` (pág. 6) e inicie um bloco próprio para o parágrafo único.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20797/NORMA-20797_ciclo2.json"
+  }
+]

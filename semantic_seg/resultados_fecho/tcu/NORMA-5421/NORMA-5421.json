@@ -1,0 +1,832 @@
+[
+  {
+    "titulo": "Portaria",
+    "offset_inicio": "O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO, no uso de suas atribuições regulamentares e em",
+    "offset_fim": "necessidade de redistribuição interna das atividades, resolve:\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 18,
+    "pos_fim": 764,
+    "texto": "O SECRETÁRIO-ADJUNTO DE ADMINISTRAÇÃO, no uso de suas atribuições regulamentares e em observância ao disposto no inciso II do art. 86 da Resolução-TCU nº 240, de 23 de dezembro de 2010, bem como nos arts. 7º, 8º e 9º da Portaria-Segedam nº 1, de 3 de janeiro de 2011, consolidada,\nconsiderando as competências estabelecidas no art. 54 da Resolução-TCU nº 240, de 2010, e as subdelegações de competência atribuídas à Secretaria-Adjunta de Administração pela Portaria-Segedam nº 2, de 3 de janeiro de 2011; e\nconsiderando que a natural evolução dos processos de trabalho afetos à Secretaria-Adjunta, desde sua instituição em 2009, resultou no redesenho das atribuições da unidade e na necessidade de redistribuição interna das atividades, resolve:\n"
+  },
+  {
+    "titulo": "Art. 1º",
+    "offset_inicio": "Art. 1º As competências, a organização, o funcionamento, as atividades, a lotação e",
+    "offset_fim": "antes da Secretaria-Adjunta de Administração (Adadmin) são as constantes desta Portaria.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 764,
+    "pos_fim": 998,
+    "texto": "Art. 1º As competências, a organização, o funcionamento, as atividades, a lotação e a distribuição de funções de confiança das subunidades integrantes da Secretaria-Adjunta de Administração (Adadmin) são as constantes desta Portaria.\n"
+  },
+  {
+    "titulo": "Art. 2º",
+    "offset_inicio": "Art. 2º A Secretaria-Adjunta de Administração tem por finalidade assessorar a Secretaria-Geral de Administração no exercício de suas competências, especialmente no que se refere ao planejamento, à execução, à sistematização, à normatização,",
+    "offset_fim": "à coordenação e ao acompanhamento das ações estratégicas de administração, bem como na gestão das soluções de tecnologia da informação que dão suporte à área administrativa.\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 998,
+    "pos_fim": 1413,
+    "texto": "Art. 2º A Secretaria-Adjunta de Administração tem por finalidade assessorar a Secretaria-Geral de Administração no exercício de suas competências, especialmente no que se refere ao planejamento, à execução, à sistematização, à normatização, à coordenação e ao acompanhamento das ações estratégicas de administração, bem como na gestão das soluções de tecnologia da informação que dão suporte à área administrativa.\n"
+  },
+  {
+    "titulo": "Art. 3º",
+    "offset_inicio": "Art. 3º Para os efeitos desta norma, entende-se por gabinete da Secretaria-Geral de Administração o espaço",
+    "offset_fim": "ocupacional no qual se encontram os dirigentes e os assessores da Secretaria-Geral e de suas unidades integrantes.",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 1413,
+    "pos_fim": 1634,
+    "texto": "Art. 3º Para os efeitos desta norma, entende-se por gabinete da Secretaria-Geral de Administração o espaço ocupacional no qual se encontram os dirigentes e os assessores da Secretaria-Geral e de suas unidades integrantes."
+  },
+  {
+    "titulo": "Art. 4º",
+    "offset_inicio": "Art. 4º Compete à Secretaria-Adjunta de Administração:\n",
+    "offset_fim": "Art. 4º Compete à Secretaria-Adjunta de Administração:\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 1635,
+    "pos_fim": 1690,
+    "texto": "Art. 4º Compete à Secretaria-Adjunta de Administração:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - consolidar as propostas das unidades integrantes da Secretaria-Geral de Administração",
+    "offset_fim": "unidades integrantes da Secretaria-Geral de Administração relativas ao Plano de Diretrizes do Tribunal;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 1690,
+    "pos_fim": 1825,
+    "texto": "I - consolidar as propostas das unidades integrantes da Secretaria-Geral de Administração relativas ao Plano de Diretrizes do Tribunal;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - elaborar o Plano Diretor de Administração, em consonância com orientação emanada do Secretário-Geral de Administração e em alinhamento aos Planos Estratégico e de Diretrizes do Tribunal;",
+    "offset_fim": "II - elaborar o Plano Diretor de Administração, em consonância com orientação emanada do Secretário-Geral de Administração e em alinhamento aos Planos Estratégico e de Diretrizes do Tribunal;\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 1826,
+    "pos_fim": 2018,
+    "texto": "II - elaborar o Plano Diretor de Administração, em consonância com orientação emanada do Secretário-Geral de Administração e em alinhamento aos Planos Estratégico e de Diretrizes do Tribunal;\n"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - realizar o desdobramento, no âmbito das subunidades integrantes de sua estrutura,",
+    "offset_fim": "das diretrizes e iniciativas aprovadas pelo Secretário-Geral de Administração;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 2018,
+    "pos_fim": 2184,
+    "texto": "III - realizar o desdobramento, no âmbito das subunidades integrantes de sua estrutura, das diretrizes e iniciativas aprovadas pelo Secretário-Geral de Administração;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - orientar as demais unidades integrantes da Secretaria-Geral de Administração sobre o desdobramento das diretrizes definidas e a elaboração de indicadores,",
+    "offset_fim": "acompanhar as ações desenvolvidas, controlar o alcance das metas e avaliar os resultados alcançados;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 2185,
+    "pos_fim": 2445,
+    "texto": "IV - orientar as demais unidades integrantes da Secretaria-Geral de Administração sobre o desdobramento das diretrizes definidas e a elaboração de indicadores, acompanhar as ações desenvolvidas, controlar o alcance das metas e avaliar os resultados alcançados;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - coordenar a atualização de normas e manuais no âmbito da Secretaria-Geral de Administração e de suas unidades integrantes;",
+    "offset_fim": "V - coordenar a atualização de normas e manuais no âmbito da Secretaria-Geral de Administração e de suas unidades integrantes;\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 2446,
+    "pos_fim": 2573,
+    "texto": "V - coordenar a atualização de normas e manuais no âmbito da Secretaria-Geral de Administração e de suas unidades integrantes;\n"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - coordenar o desenvolvimento, a sistematização, a normatização, a implantação, a",
+    "offset_fim": "transparência da gestão, nos termos da Lei Complementar nº 131, de 27 de maio de 2009;\n",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 2573,
+    "pos_fim": 2844,
+    "texto": "VI - coordenar o desenvolvimento, a sistematização, a normatização, a implantação, a orientação e a publicação dos atos administrativos e informações do Tribunal, de modo a garantir a transparência da gestão, nos termos da Lei Complementar nº 131, de 27 de maio de 2009;\n"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - promover a articulação entre as unidades integrantes da Secretaria-Geral de Administração e as demais unidades do Tribunal;",
+    "offset_fim": "a Secretaria-Geral de Administração e as demais unidades do Tribunal;",
+    "pagina_inicio": 1,
+    "pagina_fim": 1,
+    "pos_inicio": 2844,
+    "pos_fim": 2973,
+    "texto": "VII - promover a articulação entre as unidades integrantes da Secretaria-Geral de Administração e as demais unidades do Tribunal;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - coordenar a gestão e o aprimoramento das soluções de TI que dão suporte à área administrativa;",
+    "offset_fim": "VIII - coordenar a gestão e o aprimoramento das soluções de TI que dão suporte à área administrativa;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 2994,
+    "pos_fim": 3095,
+    "texto": "VIII - coordenar a gestão e o aprimoramento das soluções de TI que dão suporte à área administrativa;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - organizar o encontro de chefes de SA e de gerentes de processo e apoiar, no",
+    "offset_fim": "Administração, a realização do encontro de dirigentes e do encontro de diretores;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 3096,
+    "pos_fim": 3288,
+    "texto": "IX - organizar o encontro de chefes de SA e de gerentes de processo e apoiar, no âmbito da Secretaria-Geral de Administração, a realização do encontro de dirigentes e do encontro de diretores;"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - disseminar boas práticas administrativas nas suas subunidades e nas unidades integrantes da",
+    "offset_fim": "nas suas subunidades e nas unidades integrantes da Secretaria-Geral de Administração;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 3289,
+    "pos_fim": 3419,
+    "texto": "X - disseminar boas práticas administrativas nas suas subunidades e nas unidades integrantes da Secretaria-Geral de Administração;"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - coordenar o atendimento das demandas administrativas emanadas pelas unidades de assessoramento a autoridades, bem como das solicitações da espécie apresentadas pelas autoridades ativas e inativas, e seus respectivos pensionistas;",
+    "offset_fim": "solicitações da espécie apresentadas pelas autoridades ativas e inativas, e seus respectivos pensionistas;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 3420,
+    "pos_fim": 3654,
+    "texto": "XI - coordenar o atendimento das demandas administrativas emanadas pelas unidades de assessoramento a autoridades, bem como das solicitações da espécie apresentadas pelas autoridades ativas e inativas, e seus respectivos pensionistas;"
+  },
+  {
+    "titulo": "XII",
+    "offset_inicio": "XII - tomar providências técnicas para apurar responsabilidade de servidor do Tribunal por infração praticada no exercício de suas atribuições;",
+    "offset_fim": "tomar providências técnicas para apurar responsabilidade de servidor do Tribunal por infração praticada no exercício de suas atribuições;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 3655,
+    "pos_fim": 3798,
+    "texto": "XII - tomar providências técnicas para apurar responsabilidade de servidor do Tribunal por infração praticada no exercício de suas atribuições;"
+  },
+  {
+    "titulo": "XIII",
+    "offset_inicio": "XIII - publicar atos administrativos do TCU no Diário Oficial da União (DOU) , no Boletim do Tribunal de Contas da União (BTCU) e em outros veículos oficiais;",
+    "offset_fim": "XIII - publicar atos administrativos do TCU no Diário Oficial da União (DOU) , no Boletim do Tribunal de Contas da União (BTCU) e em outros veículos oficiais;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 3799,
+    "pos_fim": 3957,
+    "texto": "XIII - publicar atos administrativos do TCU no Diário Oficial da União (DOU) , no Boletim do Tribunal de Contas da União (BTCU) e em outros veículos oficiais;"
+  },
+  {
+    "titulo": "XIV",
+    "offset_inicio": "XIV - prestar apoio técnico e operacional às unidades do Tribunal no que tange à atividade",
+    "offset_fim": "prestar apoio técnico e operacional às unidades do Tribunal no que tange à atividade administrativa; e",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 3958,
+    "pos_fim": 4066,
+    "texto": "XIV - prestar apoio técnico e operacional às unidades do Tribunal no que tange à atividade administrativa; e"
+  },
+  {
+    "titulo": "XV - desenvolver outras atividades inerentes à sua finalidade.",
+    "offset_inicio": "XV - desenvolver outras atividades inerentes à sua finalidade.",
+    "offset_fim": "XV - desenvolver outras atividades inerentes à sua finalidade.\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4067,
+    "pos_fim": 4130,
+    "texto": "XV - desenvolver outras atividades inerentes à sua finalidade.\n"
+  },
+  {
+    "titulo": "Art. 5º",
+    "offset_inicio": "Art. 5º A Secretaria-Adjunta de Administração tem a seguinte estrutura:\n",
+    "offset_fim": "Art. 5º A Secretaria-Adjunta de Administração tem a seguinte estrutura:\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4130,
+    "pos_fim": 4202,
+    "texto": "Art. 5º A Secretaria-Adjunta de Administração tem a seguinte estrutura:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - Assessoria (ASS) ;",
+    "offset_fim": "I - Assessoria (ASS) ;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4202,
+    "pos_fim": 4224,
+    "texto": "I - Assessoria (ASS) ;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - Diretoria de Apoio Estratégico (Dapes) ;",
+    "offset_fim": "II - Diretoria de Apoio Estratégico (Dapes) ;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4225,
+    "pos_fim": 4270,
+    "texto": "II - Diretoria de Apoio Estratégico (Dapes) ;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - Comissão Disciplinar Permanente (CDP) ;",
+    "offset_fim": "III - Comissão Disciplinar Permanente (CDP) ;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4271,
+    "pos_fim": 4316,
+    "texto": "III - Comissão Disciplinar Permanente (CDP) ;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - Gerências de Processos:\n",
+    "offset_fim": "IV - Gerências de Processos:\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4317,
+    "pos_fim": 4346,
+    "texto": "IV - Gerências de Processos:\n"
+  },
+  {
+    "titulo": "a)",
+    "offset_inicio": "a) Gerência de Publicação de Atos Administrativos (Gpublic) ;",
+    "offset_fim": "a) Gerência de Publicação de Atos Administrativos (Gpublic) ;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4346,
+    "pos_fim": 4407,
+    "texto": "a) Gerência de Publicação de Atos Administrativos (Gpublic) ;"
+  },
+  {
+    "titulo": "b)",
+    "offset_inicio": "b) Gerência de Diárias e Passagens (Gdip) ; e\n",
+    "offset_fim": "b) Gerência de Diárias e Passagens (Gdip) ; e\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4408,
+    "pos_fim": 4454,
+    "texto": "b) Gerência de Diárias e Passagens (Gdip) ; e\n"
+  },
+  {
+    "titulo": "c) Gerência de Patrimônio, Pessoal, Processos e Documentos (Gprod) .",
+    "offset_inicio": "c) Gerência de Patrimônio, Pessoal, Processos e Documentos (Gprod) .",
+    "offset_fim": "c) Gerência de Patrimônio, Pessoal, Processos e Documentos (Gprod) .",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4454,
+    "pos_fim": 4522,
+    "texto": "c) Gerência de Patrimônio, Pessoal, Processos e Documentos (Gprod) ."
+  },
+  {
+    "titulo": "Parágrafo único",
+    "offset_inicio": "Parágrafo único. A gestão das soluções de tecnologia da informação que dão suporte à área",
+    "offset_fim": "Administração mediante constituição de grupo (s) de trabalho específico (s) .",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4523,
+    "pos_fim": 4759,
+    "texto": "Parágrafo único. A gestão das soluções de tecnologia da informação que dão suporte à área administrativa será realizada pelo gabinete da Secretaria-Adjunta de Administração mediante constituição de grupo (s) de trabalho específico (s) ."
+  },
+  {
+    "titulo": "Art. 6º São atividades comuns às subunidades da Secretaria-Adjunta de Administração:",
+    "offset_inicio": "Art. 6º São atividades comuns às subunidades da Secretaria-Adjunta de Administração:",
+    "offset_fim": "Art. 6º São atividades comuns às subunidades da Secretaria-Adjunta de Administração:",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4760,
+    "pos_fim": 4844,
+    "texto": "Art. 6º São atividades comuns às subunidades da Secretaria-Adjunta de Administração:"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - receber, registrar, autuar, constituir, distribuir, tramitar, instruir, consultar, encerrar, arquivar e expedir documentos e processos;",
+    "offset_fim": "truir, consultar, encerrar, arquivar e expedir documentos e processos;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4845,
+    "pos_fim": 4984,
+    "texto": "I - receber, registrar, autuar, constituir, distribuir, tramitar, instruir, consultar, encerrar, arquivar e expedir documentos e processos;"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - prestar informações no âmbito de sua área de atuação;",
+    "offset_fim": "II - prestar informações no âmbito de sua área de atuação;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 4985,
+    "pos_fim": 5043,
+    "texto": "II - prestar informações no âmbito de sua área de atuação;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - alimentar e manter atualizadas as bases de informação relativas à subunidade;",
+    "offset_fim": "III - alimentar e manter atualizadas as bases de informação relativas à subunidade;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5044,
+    "pos_fim": 5127,
+    "texto": "III - alimentar e manter atualizadas as bases de informação relativas à subunidade;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - promover a colaboração e o compartilhamento de informações com as demais subunidades",
+    "offset_fim": "informações com as demais subunidades da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5128,
+    "pos_fim": 5257,
+    "texto": "IV - promover a colaboração e o compartilhamento de informações com as demais subunidades da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - alimentar e manter atualizado no Portal TCU, no âmbito de sua atuação, a área",
+    "offset_fim": "atuação, a área de conteúdo da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5258,
+    "pos_fim": 5391,
+    "texto": "V - alimentar e manter atualizado no Portal TCU, no âmbito de sua atuação, a área de conteúdo da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - alimentar e manter atualizado, se for o caso e no âmbito de sua área de atuação,",
+    "offset_fim": "\"Manual do Servidor\" e as informações relativas ao link \"Transparência Administrativa\" no Portal TCU;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5392,
+    "pos_fim": 5610,
+    "texto": "VI - alimentar e manter atualizado, se for o caso e no âmbito de sua área de atuação, o \"Catálogo de Formulários\", o \"Manual do Servidor\" e as informações relativas ao link \"Transparência Administrativa\" no Portal TCU;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - zelar pela segurança da informação e pelo sigilo profissional no âmbito da subunidade;",
+    "offset_fim": "VII - zelar pela segurança da informação e pelo sigilo profissional no âmbito da subunidade;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5611,
+    "pos_fim": 5703,
+    "texto": "VII - zelar pela segurança da informação e pelo sigilo profissional no âmbito da subunidade;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - elaborar expedientes atinentes à sua área de atuação;",
+    "offset_fim": "VIII - elaborar expedientes atinentes à sua área de atuação;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5704,
+    "pos_fim": 5764,
+    "texto": "VIII - elaborar expedientes atinentes à sua área de atuação;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - guardar, controlar e zelar pela integridade dos bens em uso na subunidade;",
+    "offset_fim": "IX - guardar, controlar e zelar pela integridade dos bens em uso na subunidade;",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5765,
+    "pos_fim": 5844,
+    "texto": "IX - guardar, controlar e zelar pela integridade dos bens em uso na subunidade;"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - acompanhar o inventário dos bens existentes na subunidade;\n\n",
+    "offset_fim": "X - acompanhar o inventário dos bens existentes na subunidade;\n\n",
+    "pagina_inicio": 2,
+    "pagina_fim": 2,
+    "pos_inicio": 5845,
+    "pos_fim": 5909,
+    "texto": "X - acompanhar o inventário dos bens existentes na subunidade;\n\n"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - realizar estudos e pesquisas relativas às matérias pertinentes à sua área de atuação e propor",
+    "offset_fim": " área de atuação e propor soluções de melhoria no desenvolvimento das atividades correlatas;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 5928,
+    "pos_fim": 6093,
+    "texto": "XI - realizar estudos e pesquisas relativas às matérias pertinentes à sua área de atuação e propor soluções de melhoria no desenvolvimento das atividades correlatas;"
+  },
+  {
+    "titulo": "XII",
+    "offset_inicio": "XII - propor normas e rotinas para as atividades desempenhadas na sua área de atuação;",
+    "offset_fim": "XII - propor normas e rotinas para as atividades desempenhadas na sua área de atuação;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6094,
+    "pos_fim": 6180,
+    "texto": "XII - propor normas e rotinas para as atividades desempenhadas na sua área de atuação;"
+  },
+  {
+    "titulo": "XIII",
+    "offset_inicio": "XIII - elaborar e atualizar manual de rotinas e procedimentos a cargo da subunidade;",
+    "offset_fim": "XIII - elaborar e atualizar manual de rotinas e procedimentos a cargo da subunidade;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6181,
+    "pos_fim": 6265,
+    "texto": "XIII - elaborar e atualizar manual de rotinas e procedimentos a cargo da subunidade;"
+  },
+  {
+    "titulo": "XIV",
+    "offset_inicio": "XIV - elaborar relatórios de suas atividades;\nXV - elaborar extratos, no âmbito de",
+    "offset_fim": "XIV - elaborar relatórios de suas atividades;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6266,
+    "pos_fim": 6312,
+    "texto": "XIV - elaborar relatórios de suas atividades;\n"
+  },
+  {
+    "titulo": "XV",
+    "offset_inicio": "XV - elaborar extratos, no âmbito de sua área de atuação, para publicação de decisões da Secretaria-Adjunta de Administração;",
+    "offset_fim": "elaborar extratos, no âmbito de sua área de atuação, para publicação de decisões da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6312,
+    "pos_fim": 6437,
+    "texto": "XV - elaborar extratos, no âmbito de sua área de atuação, para publicação de decisões da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "XVI",
+    "offset_inicio": "XVI - consolidar e solicitar materiais e serviços necessários ao funcionamento da Secretaria-Adjunta de Administração;",
+    "offset_fim": "tar materiais e serviços necessários ao funcionamento da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6438,
+    "pos_fim": 6556,
+    "texto": "XVI - consolidar e solicitar materiais e serviços necessários ao funcionamento da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "XVII",
+    "offset_inicio": "XVII - preparar certidões e declarações solicitadas, na sua área de competência, nos termos da Portaria-TCU nº 256, de 13 de novembro de 2000, e submetê-las ao Secretário-Adjunto;",
+    "offset_fim": "nos termos da Portaria-TCU nº 256, de 13 de novembro de 2000, e submetê-las ao Secretário-Adjunto;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6557,
+    "pos_fim": 6736,
+    "texto": "XVII - preparar certidões e declarações solicitadas, na sua área de competência, nos termos da Portaria-TCU nº 256, de 13 de novembro de 2000, e submetê-las ao Secretário-Adjunto;"
+  },
+  {
+    "titulo": "XVIII",
+    "offset_inicio": "XVIII - efetuar ações necessárias aos trabalhos desenvolvidos por profissionais de empresas contratadas cujas atividades são realizadas no âmbito da subunidade;",
+    "offset_fim": "desenvolvidos por profissionais de empresas contratadas cujas atividades são realizadas no âmbito da subunidade;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6737,
+    "pos_fim": 6897,
+    "texto": "XVIII - efetuar ações necessárias aos trabalhos desenvolvidos por profissionais de empresas contratadas cujas atividades são realizadas no âmbito da subunidade;"
+  },
+  {
+    "titulo": "XIX",
+    "offset_inicio": "XIX - participar do processo de formulação e de acompanhamento dos planos relativos à Secretaria-",
+    "offset_fim": "e de acompanhamento dos planos relativos à Secretaria-Adjunta de Administração;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 6898,
+    "pos_fim": 7021,
+    "texto": "XIX - participar do processo de formulação e de acompanhamento dos planos relativos à Secretaria-Adjunta de Administração;\n"
+  },
+  {
+    "titulo": "XX",
+    "offset_inicio": "XX - observar as boas práticas de gestão administrativa na condução dos trabalhos;",
+    "offset_fim": "XX - observar as boas práticas de gestão administrativa na condução dos trabalhos;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7021,
+    "pos_fim": 7103,
+    "texto": "XX - observar as boas práticas de gestão administrativa na condução dos trabalhos;"
+  },
+  {
+    "titulo": "XXI",
+    "offset_inicio": "XXI - zelar, no âmbito de sua área de atuação, pela satisfação dos clientes com os serviços prestados pela Secretaria-Adjunta de Administração;",
+    "offset_fim": "XXI - zelar, no âmbito de sua área de atuação, pela satisfação dos clientes com os serviços prestados pela Secretaria-Adjunta de Administração;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7104,
+    "pos_fim": 7248,
+    "texto": "XXI - zelar, no âmbito de sua área de atuação, pela satisfação dos clientes com os serviços prestados pela Secretaria-Adjunta de Administração;\n"
+  },
+  {
+    "titulo": "XXII",
+    "offset_inicio": "XXII - consoante diretriz emanada pela Secretaria-Adjunta de Administração, levantar oportunidades de melhoria nas demandas encaminhadas pelas unidades, comunicando o resultado do trabalho ao Secretário-Adjunto, para as providências cabíveis; e",
+    "offset_fim": "o resultado do trabalho ao Secretário-Adjunto, para as providências cabíveis; e\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7248,
+    "pos_fim": 7493,
+    "texto": "XXII - consoante diretriz emanada pela Secretaria-Adjunta de Administração, levantar oportunidades de melhoria nas demandas encaminhadas pelas unidades, comunicando o resultado do trabalho ao Secretário-Adjunto, para as providências cabíveis; e\n"
+  },
+  {
+    "titulo": "XXIII",
+    "offset_inicio": "XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto.",
+    "offset_fim": "XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto.\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7493,
+    "pos_fim": 7578,
+    "texto": "XXIII - prestar apoio administrativo-operacional solicitado pelo Secretário-Adjunto.\n"
+  },
+  {
+    "titulo": "Art. 7º",
+    "offset_inicio": "Art. 7º A Assessoria tem por finalidade auxiliar o dirigente da unidade, especialmente",
+    "offset_fim": "às atividades inerentes à elaboração e ao acompanhamento do Plano Diretor de Administração.",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7578,
+    "pos_fim": 7821,
+    "texto": "Art. 7º A Assessoria tem por finalidade auxiliar o dirigente da unidade, especialmente no que se refere à elaboração de pareceres e despachos, bem como às atividades inerentes à elaboração e ao acompanhamento do Plano Diretor de Administração."
+  },
+  {
+    "titulo": "Art. 8º Compete à Assessoria:",
+    "offset_inicio": "Art. 8º Compete à Assessoria:\n",
+    "offset_fim": "Art. 8º Compete à Assessoria:\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7822,
+    "pos_fim": 7852,
+    "texto": "Art. 8º Compete à Assessoria:\n"
+  },
+  {
+    "titulo": "I",
+    "offset_inicio": "I - elaborar pareceres, pronunciamentos, expedientes e comunicações do Secretário- Adjunto, bem como informativos da Secretaria-Adjunta de Administração;",
+    "offset_fim": "I - elaborar pareceres, pronunciamentos, expedientes e comunicações do Secretário- Adjunto, bem como informativos da Secretaria-Adjunta de Administração;\n",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 7852,
+    "pos_fim": 8006,
+    "texto": "I - elaborar pareceres, pronunciamentos, expedientes e comunicações do Secretário- Adjunto, bem como informativos da Secretaria-Adjunta de Administração;\n"
+  },
+  {
+    "titulo": "II",
+    "offset_inicio": "II - desenvolver estudos técnicos e pesquisas;",
+    "offset_fim": "II - desenvolver estudos técnicos e pesquisas;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8006,
+    "pos_fim": 8052,
+    "texto": "II - desenvolver estudos técnicos e pesquisas;"
+  },
+  {
+    "titulo": "III",
+    "offset_inicio": "III - instruir processos relativos à prestação de serviço extraordinário;",
+    "offset_fim": "III - instruir processos relativos à prestação de serviço extraordinário;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8053,
+    "pos_fim": 8126,
+    "texto": "III - instruir processos relativos à prestação de serviço extraordinário;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - instruir processos de solicitação de ressarcimento de despesas, à exceção daqueles",
+    "offset_fim": "formalmente a cargo das gerências de processo da Secretaria-Adjunta da Administração;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8127,
+    "pos_fim": 8300,
+    "texto": "IV - instruir processos de solicitação de ressarcimento de despesas, à exceção daqueles formalmente a cargo das gerências de processo da Secretaria-Adjunta da Administração;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - instruir os demais processos que lhe sejam distribuídos pelo dirigente da unidade,",
+    "offset_fim": "unidade, elaborando os extratos para publicação, quando necessário;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8301,
+    "pos_fim": 8446,
+    "texto": "V - instruir os demais processos que lhe sejam distribuídos pelo dirigente da unidade, elaborando os extratos para publicação, quando necessário;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - elaborar, em parceria com a subunidade responsável, as minutas dos atos normativos referentes à área de atuação da Secretaria-Adjunta de Administração;",
+    "offset_fim": "atos normativos referentes à área de atuação da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8447,
+    "pos_fim": 8603,
+    "texto": "VI - elaborar, em parceria com a subunidade responsável, as minutas dos atos normativos referentes à área de atuação da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - coordenar o acompanhamento das metas definidas no Plano Diretor de Administração pelas subunidades da Secretaria-Adjunta de Administração;",
+    "offset_fim": "VII - coordenar o acompanhamento das metas definidas no Plano Diretor de Administração pelas subunidades da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8604,
+    "pos_fim": 8748,
+    "texto": "VII - coordenar o acompanhamento das metas definidas no Plano Diretor de Administração pelas subunidades da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - acompanhar o cumprimento das metas definidas no Plano Diretor de Administração",
+    "offset_fim": "das unidades integrantes da Secretaria-Geral de Administração;",
+    "pagina_inicio": 3,
+    "pagina_fim": 3,
+    "pos_inicio": 8749,
+    "pos_fim": 20003,
+    "texto": "VIII - acompanhar o cumprimento das metas definidas no Plano Diretor de Administração pelas unidades integrantes da Secretaria-Geral de Administração;\n\n\n<!-- PÁGINA 4 -->\nIX - elaborar, em parceria com as demais subunidades da Secretaria-Adjunta de Administração, relatórios de gestão conforme periodicidade e modelo definidos pelo Secretário-Adjunto;\nX - consolidar, no âmbito da Secretaria-Geral de Administração, a proposta anual de áreas de interesse e de temas prioritários relativos à licença para capacitação consoante normativo específico, bem como, quando couber, as necessidades de treinamento dos servidores;\nXI - acompanhar a atualização de normas no âmbito da Secretaria-Geral de Administração e de suas unidades integrantes;\nXII - apoiar a participação do Secretário-Adjunto nos comitês e comissões institucionais dos quais ele participe;\nXIII - participar de grupos de trabalho e projetos de interesse da Secretaria-Adjunta de Administração;\nXIV - acompanhar a atualização, no Portal TCU, da área de conteúdo da Secretaria-Adjunta de Administração;\nXV - acompanhar a atualização, no Portal TCU, do link \"Transparência Administrativa\", do \"Catálogo de Formulários\" e do \"Manual do Servidor\" pelas unidades integrantes da Secretaria-Geral de Administração;\nXVI - auxiliar na celebração de instrumentos de cooperação técnica de interesse da Secretaria-Adjunta;\nXVII - promover a adoção de práticas de gestão do conhecimento no âmbito da Secretaria-Adjunta de Administração;\nXVIII - organizar as reuniões periódicas da Secretaria-Adjunta de Administração; e\nXIX - desenvolver outras atividades que lhe sejam atribuídas pelo dirigente da unidade.\nArt. 9º A Diretoria de Apoio Estratégico tem por finalidade atender, diretamente ou indiretamente, as demandas administrativas relativas às autoridades do Tribunal mediante interação com as partes envolvidas na solução, contribuindo para o incremento da qualidade e tempestividade da entrega dos produtos e serviços solicitados, bem como para o aprimoramento dos procedimentos adotados.\nArt. 10. Compete à Diretoria de Apoio Estratégico:\nI - criar e manter cadastro das autoridades ativas e inativas, bem como de seus dependentes e pensionistas;\nII - prestar às autoridades, e a seus pensionistas, informações e orientações de caráter geral acerca de solicitações e requerimentos de natureza administrativa;\nIII - receber demandas das autoridades e seus pensionistas, monitorar o atendimento e prestar aos interessados as informações e as orientações cabíveis, especialmente no que se refere a pleitos afetos a:\na) admissão;\nb) assistência à saúde;\nc) concessão de aposentadoria, pensão e montepio civil;\nd) emissão de passagens;\ne) pagamento de diárias;\nf) manutenção e reforma das unidades de assessoramento a autoridades;\ng) ocupação de imóveis funcionais;\nh) serviços de comunicação e segurança;\ni) reconhecimento de direitos; e\nj) concessão de vantagens e benefícios.\nIV - operacionalizar o ressarcimento de:\na) despesas realizadas pelas autoridades, seus dependentes e pensionistas, com a aquisição de medicação de uso contínuo, na forma disciplinada pela Resolução-TCU nº 222, de 11 de março de 2009; e\n\n\n<!-- PÁGINA 5 -->\nb) despesas médicas de pequeno vulto realizadas pelas autoridades, seus dependentes e pensionistas, em conformidade com a Resolução-TCU nº 222, de 2009, e com a Portaria-TCU nº 315, de 2 de outubro de 2009.\nV - instruir os processos que lhe sejam distribuídos pelo dirigente da unidade, elaborando os extratos para publicação, quando necessário;\nVI - promover a colaboração e o compartilhamento de informações com as demais áreas da Secretaria-Geral de Administração no que concerne às demandas administrativas das autoridades e seus pensionistas;\nVII - manter-se informada quanto às inovações afetas ao atendimento das demandas administrativas das autoridades, inclusive por meio do acompanhamento da atualização de normas e da interação com outros órgãos da administração pública;\nVIII - manifestar-se, sob demanda do dirigente da unidade, acerca da elaboração de minutas dos atos normativos que contemplem matérias inerentes a demandas administrativas das autoridades e seus pensionistas;\nIX - interagir com as unidades de assessoramento a autoridades com vistas a identificar oportunidades de melhoria no atendimento das demandas administrativas das autoridades e seus pensionistas; e\nX - desenvolver outras atividades inerentes à sua área de atuação.\nArt. 11. A Comissão Disciplinar Permanente é órgão colegiado da Secretaria do TCU, de natureza técnica e de caráter permanente, que tem por finalidade apurar responsabilidade de servidor do Tribunal por infração praticada no exercício de suas atribuições.\nParágrafo único. A Comissão Disciplinar Permanente constitui diretoria específica da Secretaria-Adjunta de Administração.\nArt. 12. Compete à Comissão Disciplinar Permanente:\nI - formalizar processo disciplinar objetivando apurar responsabilidade de servidor por infração praticada no exercício de suas atribuições ou que tenha relação com as atribuições do cargo em que se encontra investido;\nII - exercer suas atividades com independência e imparcialidade, assegurado o sigilo necessário à elucidação dos fatos ou exigido pelo interesse da Administração, com realização das reuniões e das audiências da Comissão em caráter reservado;\nIII - verificar eventuais impedimentos ou suspeição de seus membros;\nIV- convocar servidores, com ciência do dirigente da respectiva unidade de lotação, e terceiros para promover tomada de depoimentos, acareações, investigações, perícias e sindicâncias, bem como as providências que se fizerem necessárias visando à coleta de provas, propondo a requisição, quando necessário, de técnicos e peritos, de modo a permitir a completa elucidação dos fatos e das irregularidades administrativas;\nV - indiciar servidor, quando for o caso, com a especificação dos fatos a ele imputados e das respectivas provas, bem como os dispositivos legais ou regulamentares transgredidos, assegurando-lhe ampla defesa;\nVI - autorizar vista dos autos e cópias do processo ao acusado ou patrono da defesa;\n\n\n<!-- PÁGINA 6 -->\nVII - elaborar relatório conclusivo de processo disciplinar, propondo as providências cabíveis, e apresentá-lo, via Secretaria-Adjunta de Administração e Gabinete do Presidente, ao Corregedor do Tribunal, para julgamento, nos termos da Resolução-TCU nº 159, de 19 de março de 2003; e\nVIII - desenvolver outras atividades típicas da área que lhe forem determinadas pelo Corregedor do Tribunal.\nArt. 13. A Gerência de Publicação de Atos Administrativos tem por finalidade coordenar o processo de trabalho relativo à publicidade dos atos administrativos produzidos no âmbito do TCU mediante publicação no DOU, BTCU ou outro veículo oficial, consoante regulamentação específica.\nArt. 14. Compete à Gerência de Publicação de Atos Administrativos:\nI - elaborar minutas de normativo relativas à prática de atos de gestão, de interesse da Secretaria-Adjunta de Administração e da Secretaria-Geral de Administração;\nII - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no DOU;\nIII - receber, realizar triagem, formatar e organizar as matérias destinadas à publicação no BTCU;\nIV - elaborar, para publicação no BTCU, extratos de atos administrativos oriundos da Secretaria-Adjunta de Administração, da Secretaria-Geral de Administração e do Gabinete do Presidente;\nV - elaborar e formatar extratos referentes à ratificação de despesas, instrumentos de cooperação e contratos, encaminhando-os para publicação no DOU;\nVI - estruturar, controlar a numeração, editar e publicar o BTCU;\nVII - orientar às unidades do Tribunal no que concerne às normas de elaboração dos expedientes destinados à publicação no DOU e no BTCU;\nVIII - acompanhar, para fins de divulgação no BTCU, as matérias relativas ou de interesse do TCU publicadas no DOU;\nIX - manter registros e arquivos, bem como o controle das matérias publicadas nos boletins, organizando e atualizando o respectivo índice;\nX - atender às solicitações de pesquisa relacionadas às matérias publicadas nos BTCU;\nXI - acompanhar e fiscalizar a execução do contrato com a Imprensa Nacional para publicação de matérias no DOU, observada delegação de competência específica;\nXII - alimentar e manter atualizada, no Portal TCU, a área de conteúdo do BTCU e, no âmbito de sua atuação, da Secretaria-Geral de Administração;\nXIII - solicitar ao setor pertinente da Secretaria das Sessões a atualização de portaria-TCU que seja alterada mediante portaria-Segedam;\nXIV - disponibilizar, no Portal TCU, os informativos da Secretaria-Adjunta de Administração e da Secretaria-Geral de Administração;\nXV - instruir, nos processos de remoção de servidor, o cálculo da indenização com transporte de bagagens e bens pessoais, bem como acompanhar a comprovação do deslocamento do servidor e de seus dependentes; e\nXVI - desenvolver outras atividades inerentes à sua finalidade.\n\n\n<!-- PÁGINA 7 -->\nArt. 15. A Gerência de Diárias e Passagens tem por finalidade gerenciar o processo de trabalho afeto à emissão de passagens e ao pagamento de diárias requisitadas pelas unidades do TCU, em conformidade com norma específica.\nArt. 16. Compete à Gerência de Diárias e Passagens:\nI - instruir processos de concessão de diárias;\nII - instruir processos de solicitação de ressarcimento de despesas relativos a diárias e passagens;\nIII - analisar e elaborar as minutas de autorização de ressarcimento de despesas com transporte por quilômetro rodado;\nIV - atestar viagem a serviço dos dirigentes da Secretaria-Geral de Administração e das unidades que a integram;\nV - requisitar e autorizar a emissão de passagens aéreas;\nVI - acompanhar e fiscalizar a execução do contrato de emissão de passagens aéreas, observada delegação de competência específica;\nVII - realizar levantamentos estatísticos referentes ao pagamento de diárias e à emissão de passagens aéreas;\nVIII - cadastrar e conceder acesso, às unidades do Tribunal, na solução de TI de reserva de passagens aéreas;\nIX - instruir pedidos de ressarcimento de seguro internacional de saúde; e\nX - desenvolver outras atividades inerentes à sua finalidade.\nArt. 17. A Gerência de Patrimônio, Pessoal, Processos e Documentos tem por finalidade coordenar, no âmbito do gabinete da Secretaria-Geral de Administração, os processos de trabalho relativos ao patrimônio, aos registros de pessoal, e aos documentos e processos, bem como operacionalizar a concessão de suprimento de fundos para as unidades sediadas em Brasília-DF à exceção do Instituto Serzedello Corrêa.\nArt. 18. Compete à Gerência de Patrimônio, Pessoal, Processos e Documentos, no âmbito do gabinete da Secretaria-Geral de Administração:\nI - solicitar, guardar, controlar, zelar e inventariar os bens alocados, inclusive os existentes nas subunidades da Secretaria-Adjunta de Administração à exceção daqueles relativos à Comissão Disciplinar Permanente;\nII - lançar e alterar, na solução de TI corporativa, os registros de frequência, afastamento, férias, recesso e demais ocorrências dos servidores;\nIII - cadastrar, na solução de TI corporativa, a alteração de lotação de servidor no âmbito das unidades integrantes da Secretaria-Geral de Administração;"
+  },
+  {
+    "titulo": "IV",
+    "offset_inicio": "IV - solicitar, administrar e gerenciar as requisições de material de consumo, inclusive",
+    "offset_fim": "material de consumo, inclusive para as subunidades da Secretaria-Adjunta de Administração;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "pos_inicio": 20004,
+    "pos_fim": 20152,
+    "texto": "IV - solicitar, administrar e gerenciar as requisições de material de consumo, inclusive para as subunidades da Secretaria-Adjunta de Administração;"
+  },
+  {
+    "titulo": "V",
+    "offset_inicio": "V - controlar os limites máximos para concessão de licença para capacitação requerida por servidores lotados na Secretaria-Geral de Administração e em suas unidades integrantes;",
+    "offset_fim": "V - controlar os limites máximos para concessão de licença para capacitação requerida por servidores lotados na Secretaria-Geral de Administração e em suas unidades integrantes;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "pos_inicio": 20153,
+    "pos_fim": 20330,
+    "texto": "V - controlar os limites máximos para concessão de licença para capacitação requerida por servidores lotados na Secretaria-Geral de Administração e em suas unidades integrantes;"
+  },
+  {
+    "titulo": "VI",
+    "offset_inicio": "VI - manter arquivo sistemático e atualizado de documentos e processos;\n",
+    "offset_fim": "VI - manter arquivo sistemático e atualizado de documentos e processos;\n",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "pos_inicio": 20331,
+    "pos_fim": 20403,
+    "texto": "VI - manter arquivo sistemático e atualizado de documentos e processos;\n"
+  },
+  {
+    "titulo": "VII",
+    "offset_inicio": "VII - receber, registrar, distribuir e expedir documentos e correspondências;",
+    "offset_fim": "VII - receber, registrar, distribuir e expedir documentos e correspondências;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "pos_inicio": 20403,
+    "pos_fim": 20480,
+    "texto": "VII - receber, registrar, distribuir e expedir documentos e correspondências;"
+  },
+  {
+    "titulo": "VIII",
+    "offset_inicio": "VIII - constituir, receber, autuar, tramitar, consultar, encerrar e arquivar processos ",
+    "offset_fim": "tramitar, consultar, encerrar e arquivar processos mediante solução de TI de gestão processual;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "pos_inicio": 20481,
+    "pos_fim": 20612,
+    "texto": "VIII - constituir, receber, autuar, tramitar, consultar, encerrar e arquivar processos mediante solução de TI de gestão processual;"
+  },
+  {
+    "titulo": "IX",
+    "offset_inicio": "IX - inserir peças nos autos e realizar demais procedimentos inerentes à inserção;",
+    "offset_fim": "IX - inserir peças nos autos e realizar demais procedimentos inerentes à inserção;",
+    "pagina_inicio": 7,
+    "pagina_fim": 7,
+    "pos_inicio": 20613,
+    "pos_fim": 20695,
+    "texto": "IX - inserir peças nos autos e realizar demais procedimentos inerentes à inserção;"
+  },
+  {
+    "titulo": "X",
+    "offset_inicio": "X - operacionalizar critérios para distribuição de processos;\n",
+    "offset_fim": "X - operacionalizar critérios para distribuição de processos;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 20716,
+    "pos_fim": 20778,
+    "texto": "X - operacionalizar critérios para distribuição de processos;\n"
+  },
+  {
+    "titulo": "XI",
+    "offset_inicio": "XI - manter atualizado o rol de responsáveis do exercício relativos à unidade gestora 030001;",
+    "offset_fim": "XI - manter atualizado o rol de responsáveis do exercício relativos à unidade gestora 030001;",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 20778,
+    "pos_fim": 20871,
+    "texto": "XI - manter atualizado o rol de responsáveis do exercício relativos à unidade gestora 030001;"
+  },
+  {
+    "titulo": "XII",
+    "offset_inicio": "XII - controlar os serviços reprográficos;",
+    "offset_fim": "XII - controlar os serviços reprográficos;",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 20872,
+    "pos_fim": 20914,
+    "texto": "XII - controlar os serviços reprográficos;"
+  },
+  {
+    "titulo": "XIII",
+    "offset_inicio": "XIII - adotar os procedimentos necessários ao atendimento dos pedidos de vista e cópia de",
+    "offset_fim": "designado relator, ressalvadas eventuais delegações de competência específicas;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 20915,
+    "pos_fim": 21166,
+    "texto": "XIII - adotar os procedimentos necessários ao atendimento dos pedidos de vista e cópia de processos administrativos que estejam encerrados ou para os quais não tenha sido designado relator, ressalvadas eventuais delegações de competência específicas;\n"
+  },
+  {
+    "titulo": "XIV",
+    "offset_inicio": "XIV - instruir e gerir os processos de concessão de suprimento de fundos para as",
+    "offset_fim": "fundos para as unidades sediadas em Brasília-DF à exceção do Instituto Serzedello Corrêa;\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21166,
+    "pos_fim": 21322,
+    "texto": "XIV - instruir e gerir os processos de concessão de suprimento de fundos para as unidades sediadas em Brasília-DF à exceção do Instituto Serzedello Corrêa;\n"
+  },
+  {
+    "titulo": "XV",
+    "offset_inicio": "XV - emitir relatórios afetos aos profissionais de empresas contratadas;",
+    "offset_fim": "XV - emitir relatórios afetos aos profissionais de empresas contratadas;",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21322,
+    "pos_fim": 21394,
+    "texto": "XV - emitir relatórios afetos aos profissionais de empresas contratadas;"
+  },
+  {
+    "titulo": "XVI",
+    "offset_inicio": "XVI - autorizar a saída de veículos automotores pertencentes à frota do Tribunal, na Sede, para realização de trabalho externo por servidores; e",
+    "offset_fim": "XVI - autorizar a saída de veículos automotores pertencentes à frota do Tribunal, na Sede, para realização de trabalho externo por servidores; e",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21395,
+    "pos_fim": 21539,
+    "texto": "XVI - autorizar a saída de veículos automotores pertencentes à frota do Tribunal, na Sede, para realização de trabalho externo por servidores; e"
+  },
+  {
+    "titulo": "XVII",
+    "offset_inicio": "XVII - desenvolver outras atividades inerentes à sua finalidade.",
+    "offset_fim": "XVII - desenvolver outras atividades inerentes à sua finalidade.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21540,
+    "pos_fim": 21604,
+    "texto": "XVII - desenvolver outras atividades inerentes à sua finalidade."
+  },
+  {
+    "titulo": "Art. 19.",
+    "offset_inicio": "Art. 19. As funções de confiança alocadas à Secretaria-Adjunta de Administração estão distribuídas em conformidade com o Anexo I a esta Portaria.",
+    "offset_fim": "Art. 19. As funções de confiança alocadas à Secretaria-Adjunta de Administração estão distribuídas em conformidade com o Anexo I a esta Portaria.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21605,
+    "pos_fim": 21751,
+    "texto": "Art. 19. As funções de confiança alocadas à Secretaria-Adjunta de Administração estão distribuídas em conformidade com o Anexo I a esta Portaria.\n"
+  },
+  {
+    "titulo": "Art. 20.",
+    "offset_inicio": "Art. 20. A lotação de servidores na Secretaria-Adjunta de Administração encontra-se",
+    "offset_fim": "Secretaria-Adjunta de Administração encontra-se definida no Anexo II a esta Portaria.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21751,
+    "pos_fim": 21872,
+    "texto": "Art. 20. A lotação de servidores na Secretaria-Adjunta de Administração encontra-se definida no Anexo II a esta Portaria."
+  },
+  {
+    "titulo": "Art. 21.",
+    "offset_inicio": "Art. 21. A estrutura organizacional da Secretaria-Adjunta de Administração é aquela",
+    "offset_fim": "Secretaria-Adjunta de Administração é aquela constante do Anexo III a esta Portaria.",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21873,
+    "pos_fim": 21996,
+    "texto": "Art. 21. A estrutura organizacional da Secretaria-Adjunta de Administração é aquela constante do Anexo III a esta Portaria."
+  },
+  {
+    "titulo": "Art. 22",
+    "offset_inicio": "Art. 22. Ficam revogadas as Portarias-Adadmin nº 6, de 13 de maio de 2011, e nº 8, de 17 de outubro de 2011.\n",
+    "offset_fim": "Art. 22. Ficam revogadas as Portarias-Adadmin nº 6, de 13 de maio de 2011, e nº 8, de 17 de outubro de 2011.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 21997,
+    "pos_fim": 22106,
+    "texto": "Art. 22. Ficam revogadas as Portarias-Adadmin nº 6, de 13 de maio de 2011, e nº 8, de 17 de outubro de 2011.\n"
+  },
+  {
+    "titulo": "Art. 23",
+    "offset_inicio": "Art. 23. Esta Portaria entra em vigor na data de sua publicação.\n",
+    "offset_fim": "Art. 23. Esta Portaria entra em vigor na data de sua publicação.\n",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 22106,
+    "pos_fim": 22171,
+    "texto": "Art. 23. Esta Portaria entra em vigor na data de sua publicação.\n"
+  },
+  {
+    "titulo": "Fecho",
+    "offset_inicio": "CARLOS ROBERTO CAIXETA\nSecretário-Adjunto\n(* Republicada em virtude do que dispõe",
+    "offset_fim": "Secretário-Adjunto\n(* Republicada em virtude do que dispõe o art. 3º da Portaria-Adadmin nº 2, de 1º de agosto de 2012)",
+    "pagina_inicio": 8,
+    "pagina_fim": 8,
+    "pos_inicio": 22171,
+    "pos_fim": 22313,
+    "texto": "CARLOS ROBERTO CAIXETA\nSecretário-Adjunto\n(* Republicada em virtude do que dispõe o art. 3º da Portaria-Adadmin nº 2, de 1º de agosto de 2012)"
+  }
+]

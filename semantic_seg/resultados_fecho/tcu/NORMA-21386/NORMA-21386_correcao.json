@@ -1,0 +1,146 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 67,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto introdutório, incluindo os considerandos e a fórmula “resolve:”, ficou fora de qualquer bloco antes de “CAPÍTULO I”."
+        },
+        {
+          "onde": "Art. 7º “O BTCU é editado em quatro cadernos:”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém os incisos I a IV, que são unidades próprias e deveriam iniciar blocos separados."
+        },
+        {
+          "onde": "Parágrafo único do Art. 15 “Os atos mencionados no inciso I deste artigo contemplam”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do parágrafo único contém os incisos I a V, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém os incisos I e II, que deveriam iniciar blocos separados."
+        },
+        {
+          "onde": "Art. 4º, inciso III “substitui qualquer outro meio e publicação oficial”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso III contém também o inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "§ 2º do Art. 12 “Na aplicação do parágrafo anterior, observa-se que:”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 2º contém o inciso I e o inciso II, que deveriam iniciar blocos separados."
+        },
+        {
+          "onde": "Art. 17, inciso III “matérias de natureza patrimonial, orçamentária e financeira”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso III contém também o inciso IV “outros expedientes considerados de interesse geral”, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No § 2º do Art. 12 “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco do parágrafo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21386/NORMA-21386_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 70,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No § 2º do Art. 12 “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco do parágrafo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso I do Art. 4º, “é implementado mediante solução de tecnologia da informação” (pág. 1)",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no inciso I contém também o inciso II, “contempla o diário eletrônico do Tribunal”, sem corte antes desse marcador."
+        },
+        {
+          "onde": "Após o § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3)",
+          "tipo": "sem_bloco",
+          "descricao": "ficaram sem bloco os incisos I e II do § 2º, o Art. 13 e seus §§ 1º e 2º, e o início do Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”."
+        },
+        {
+          "onde": "Inciso II do Art. 15, “decisões administrativas decisórias sobre concessão de vantagens e benefícios” (pág. 4)",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso II não foi incluído em nenhum bloco entre o inciso I e o inciso III."
+        },
+        {
+          "onde": "Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4)",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 16 contém também o inciso I, “leis, medidas provisórias, decretos e normas afins”, sem corte antes do marcador."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco antes do inciso I “a Adgedam pode definir horário limite” e inicie blocos próprios nos incisos I e II; depois inicie blocos próprios no Art. 13, em seus §§ 1º e 2º e no Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 15, termine o bloco do inciso I “atos normativos do TCU” (pág. 4) imediatamente antes do inciso II “decisões administrativas decisórias sobre concessão de vantagens e benefícios” e inicie um bloco novo no inciso II.\n- No Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4), termine o bloco do artigo antes do inciso I “leis, medidas provisórias, decretos e normas afins” e inicie um bloco próprio nesse inciso.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 4º, termine o bloco do inciso I “é implementado mediante solução de tecnologia da informação” (pág. 1) imediatamente antes do inciso II “contempla o diário eletrônico do Tribunal” e inicie um bloco novo no inciso II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21386/NORMA-21386_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco antes do inciso I “a Adgedam pode definir horário limite” e inicie blocos próprios nos incisos I e II; depois inicie blocos próprios no Art. 13, em seus §§ 1º e 2º e no Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 15, termine o bloco do inciso I “atos normativos do TCU” (pág. 4) imediatamente antes do inciso II “decisões administrativas decisórias sobre concessão de vantagens e benefícios” e inicie um bloco novo no inciso II.\n- No Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4), termine o bloco do artigo antes do inciso I “leis, medidas provisórias, decretos e normas afins” e inicie um bloco próprio nesse inciso.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 4º, termine o bloco do inciso I “é implementado mediante solução de tecnologia da informação” (pág. 1) imediatamente antes do inciso II “contempla o diário eletrônico do Tribunal” e inicie um bloco novo no inciso II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 17. “Poderão, ainda, ser publicados no Caderno Administrativo...” (pág. 4)",
+          "tipo": "sem_bloco",
+          "descricao": "O caput do Art. 17 está marcado como texto sem bloco, embora seja uma unidade que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Bloco não localizado: Art. 17, págs. 4–4",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco iniciado no Art. 17 e terminado antes do inciso I, mas suas âncoras não foram localizadas no texto segmentado; o trecho correspondente ficou sem bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco antes do inciso I “a Adgedam pode definir horário limite” e inicie blocos próprios nos incisos I e II; depois inicie blocos próprios no Art. 13, em seus §§ 1º e 2º e no Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 15, termine o bloco do inciso I “atos normativos do TCU” (pág. 4) imediatamente antes do inciso II “decisões administrativas decisórias sobre concessão de vantagens e benefícios” e inicie um bloco novo no inciso II.\n- No Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4), termine o bloco do artigo antes do inciso I “leis, medidas provisórias, decretos e normas afins” e inicie um bloco próprio nesse inciso.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 4º, termine o bloco do inciso I “é implementado mediante solução de tecnologia da informação” (pág. 1) imediatamente antes do inciso II “contempla o diário eletrônico do Tribunal” e inicie um bloco novo no inciso II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV.\n- Na pág. 4, inicie um bloco próprio no “Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:” e termine-o imediatamente antes do inciso I “pareceres dos dirigentes das unidades institucionais”; registre esse bloco com âncoras localizáveis no texto."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21386/NORMA-21386_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco antes do inciso I “a Adgedam pode definir horário limite” e inicie blocos próprios nos incisos I e II; depois inicie blocos próprios no Art. 13, em seus §§ 1º e 2º e no Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 15, termine o bloco do inciso I “atos normativos do TCU” (pág. 4) imediatamente antes do inciso II “decisões administrativas decisórias sobre concessão de vantagens e benefícios” e inicie um bloco novo no inciso II.\n- No Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4), termine o bloco do artigo antes do inciso I “leis, medidas provisórias, decretos e normas afins” e inicie um bloco próprio nesse inciso.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 4º, termine o bloco do inciso I “é implementado mediante solução de tecnologia da informação” (pág. 1) imediatamente antes do inciso II “contempla o diário eletrônico do Tribunal” e inicie um bloco novo no inciso II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV.\n- Na pág. 4, inicie um bloco próprio no “Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:” e termine-o imediatamente antes do inciso I “pareceres dos dirigentes das unidades institucionais”; registre esse bloco com âncoras localizáveis no texto.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "CAPÍTULO II — “DO BTCU”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também “Art. 3º O BTCU, instituído pela Portaria nº 173...”, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 2º — “Para os fins desta Portaria, entende-se por:”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém, sem blocos próprios, os incisos I “autoridades do TCU”, II “colegiados da Secretaria do Tribunal” e III “unidades institucionais”."
+        },
+        {
+          "onde": "Art. 16 — “Serão publicados, também, no caderno Administrativo do BTCU...”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém também o inciso I “leis, medidas provisórias, decretos e normas afins...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No Art. 2º “Para os fins desta Portaria, entende-se por:” (pág. 1), termine o bloco do artigo antes do inciso I “autoridades do TCU” e inicie blocos próprios nos incisos I, II “colegiados da Secretaria do Tribunal” e III “unidades institucionais”.\n- No “CAPÍTULO II — DO BTCU” (pág. 1), termine o bloco do capítulo imediatamente antes de “Art. 3º O BTCU, instituído pela Portaria nº 173” e inicie um bloco próprio no Art. 3º.\n- No Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4), termine o bloco do artigo antes do inciso I “leis, medidas provisórias, decretos e normas afins” e inicie um bloco próprio nesse inciso.\n- No § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco antes do inciso I “a Adgedam pode definir horário limite” e inicie blocos próprios nos incisos I e II; depois inicie blocos próprios no Art. 13, em seus §§ 1º e 2º e no Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 15, termine o bloco do inciso I “atos normativos do TCU” (pág. 4) imediatamente antes do inciso II “decisões administrativas decisórias sobre concessão de vantagens e benefícios” e inicie um bloco novo no inciso II.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 4º, termine o bloco do inciso I “é implementado mediante solução de tecnologia da informação” (pág. 1) imediatamente antes do inciso II “contempla o diário eletrônico do Tribunal” e inicie um bloco novo no inciso II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV.\n- Na pág. 4, inicie um bloco próprio no “Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:” e termine-o imediatamente antes do inciso I “pareceres dos dirigentes das unidades institucionais”; registre esse bloco com âncoras localizáveis no texto."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21386/NORMA-21386_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Inicie um bloco para o preâmbulo da pág. 1, desde “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” até “resolve:”, antes de “CAPÍTULO I”.\n- No Art. 2º “Para os fins desta Portaria, entende-se por:” (pág. 1), termine o bloco do artigo antes do inciso I “autoridades do TCU” e inicie blocos próprios nos incisos I, II “colegiados da Secretaria do Tribunal” e III “unidades institucionais”.\n- No “CAPÍTULO II — DO BTCU” (pág. 1), termine o bloco do capítulo imediatamente antes de “Art. 3º O BTCU, instituído pela Portaria nº 173” e inicie um bloco próprio no Art. 3º.\n- No Art. 16, “Serão publicados, também, no caderno Administrativo do BTCU as seguintes matérias transcritas de outros veículos oficiais:” (pág. 4), termine o bloco do artigo antes do inciso I “leis, medidas provisórias, decretos e normas afins” e inicie um bloco próprio nesse inciso.\n- No § 2º do Art. 12, “Na aplicação do parágrafo anterior, observa-se que:” (pág. 3), termine o bloco antes do inciso I “a Adgedam pode definir horário limite” e inicie blocos próprios nos incisos I e II; depois inicie blocos próprios no Art. 13, em seus §§ 1º e 2º e no Art. 14, “O BTCU ficará disponível no Portal TCU, observando-se:”.\n- No Art. 14 “O BTCU ficará disponível no Portal TCU, observando-se:” (pág. 3), termine o bloco do artigo antes do inciso I e inicie blocos próprios nos incisos I e II.\n- No Parágrafo único do Art. 15, iniciado por “Os atos mencionados no inciso I deste artigo contemplam” (pág. 4), termine o bloco antes de cada inciso I, II, III, IV e V e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 15, termine o bloco do inciso I “atos normativos do TCU” (pág. 4) imediatamente antes do inciso II “decisões administrativas decisórias sobre concessão de vantagens e benefícios” e inicie um bloco novo no inciso II.\n- No Art. 7º “O BTCU é editado em quatro cadernos:” (pág. 2), termine o bloco antes de cada inciso I, II, III e IV e inicie um bloco próprio em cada um desses marcadores.\n- No Art. 4º, termine o bloco do inciso I “é implementado mediante solução de tecnologia da informação” (pág. 1) imediatamente antes do inciso II “contempla o diário eletrônico do Tribunal” e inicie um bloco novo no inciso II.\n- Termine o bloco do inciso III do Art. 4º, “substitui qualquer outro meio e publicação oficial” (pág. 1), imediatamente antes do inciso IV “deve ser disponibilizado com ferramenta de pesquisa de conteúdo” e inicie um bloco novo no inciso IV.\n- Termine o bloco do inciso III do Art. 17, “matérias de natureza patrimonial, orçamentária e financeira” (pág. 4), imediatamente antes do inciso IV “outros expedientes considerados de interesse geral” e inicie um bloco novo no inciso IV.\n- Na pág. 4, inicie um bloco próprio no “Art. 17. Poderão, ainda, ser publicados no Caderno Administrativo, a juízo do Presidente do TCU ou do Secretário-Geral de Administração:” e termine-o imediatamente antes do inciso I “pareceres dos dirigentes das unidades institucionais”; registre esse bloco com âncoras localizáveis no texto.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21386/NORMA-21386_ciclo5.json"
+  }
+]

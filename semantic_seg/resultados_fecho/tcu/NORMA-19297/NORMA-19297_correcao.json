@@ -1,0 +1,62 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 42,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A fórmula introdutória \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das suas atribuições...\" ficou fora de qualquer bloco antes dos considerandos."
+        },
+        {
+          "onde": "incisos III a VII do Art. 2º, págs. 1–2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"III - taxonomia\" contém também os incisos IV, V, VI e VII, que são unidades irmãs e deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 1º do Art. 5º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco de \"§ 1º O Comitê Gestor do Portal TCU é composto...\" contém os incisos I a VI, embora cada inciso deva iniciar seu próprio bloco."
+        },
+        {
+          "onde": "inciso I do Art. 6º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso \"I - definir padrões, diretrizes e elaborar orientações...\" não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "inciso I do Art. 6º, pág. 2",
+          "tipo": "ancora",
+          "descricao": "Há um bloco devolvido para o inciso I do Art. 6º cuja âncora não foi localizada no texto, e o respectivo texto permaneceu sem bloco."
+        },
+        {
+          "onde": "incisos V a VII do Art. 6º, págs. 2–3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"V - deliberar sobre a desativação\" contém também os incisos VI e VII, que deveriam ser blocos independentes."
+        },
+        {
+          "onde": "incisos V a X do Art. 7º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos V, VI, VII, VIII, IX e X do Art. 7º ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 7º (pág. 3), inicie um bloco próprio em cada um dos incisos V - \"decidir sobre publicações urgentes\", VI - \"articular a definição\", VII - \"aprovar atualizações\", VIII - \"autorizar alterações\", IX - \"analisar e decidir\" e X - \"promover avaliação periódica\".\n- No § 1º do Art. 5º (pág. 2), termine o bloco introdutório antes de \"I - Secretaria de Comunicação\" e inicie blocos próprios nos incisos I, II, III, IV, V e VI.\n- No Art. 2º (págs. 1–2), termine o bloco do inciso III - \"taxonomia\" antes do inciso IV - \"unidade gestora de conteúdo\" e inicie blocos próprios nos incisos IV, V, VI e VII.\n- No Art. 6º (pág. 2), inicie e localize um bloco no inciso I - \"definir padrões, diretrizes e elaborar orientações\"; use essa âncora textual completa para não deixar o inciso sem bloco.\n- No Art. 6º (págs. 2–3), termine o bloco do inciso V - \"deliberar sobre a desativação\" antes do inciso VI - \"deliberar sobre a retirada\" e inicie também um bloco próprio no inciso VII - \"deliberar sobre casos omissos\".\n- Na pág. 1, inclua a fórmula inicial \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das suas atribuições\" no bloco do preâmbulo, antes dos considerandos."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19297/NORMA-19297_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 60,
+    "insights_aplicados": "- No Art. 7º (pág. 3), inicie um bloco próprio em cada um dos incisos V - \"decidir sobre publicações urgentes\", VI - \"articular a definição\", VII - \"aprovar atualizações\", VIII - \"autorizar alterações\", IX - \"analisar e decidir\" e X - \"promover avaliação periódica\".\n- No § 1º do Art. 5º (pág. 2), termine o bloco introdutório antes de \"I - Secretaria de Comunicação\" e inicie blocos próprios nos incisos I, II, III, IV, V e VI.\n- No Art. 2º (págs. 1–2), termine o bloco do inciso III - \"taxonomia\" antes do inciso IV - \"unidade gestora de conteúdo\" e inicie blocos próprios nos incisos IV, V, VI e VII.\n- No Art. 6º (pág. 2), inicie e localize um bloco no inciso I - \"definir padrões, diretrizes e elaborar orientações\"; use essa âncora textual completa para não deixar o inciso sem bloco.\n- No Art. 6º (págs. 2–3), termine o bloco do inciso V - \"deliberar sobre a desativação\" antes do inciso VI - \"deliberar sobre a retirada\" e inicie também um bloco próprio no inciso VII - \"deliberar sobre casos omissos\".\n- Na pág. 1, inclua a fórmula inicial \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO, no uso das suas atribuições\" no bloco do preâmbulo, antes dos considerandos.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19297/NORMA-19297_ciclo2.json"
+  }
+]

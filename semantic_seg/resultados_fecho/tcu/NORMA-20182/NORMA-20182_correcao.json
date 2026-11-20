@@ -1,0 +1,80 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 114,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o preâmbulo, incluindo os considerandos e a fórmula \"resolve:\", ficou fora de qualquer bloco antes de \"CAPÍTULO I\"."
+        },
+        {
+          "onde": "`c) justificativa para a escolha do parâmetro`, sob o inciso `II - segundo estágio`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco de `c)` contém também as alíneas `d) comunicações e esclarecimentos`, `e) impugnações`, o inciso `III - terceiro estágio`, suas alíneas `a)`, `b)` e `c) relatório de julgamento`, e os itens `1.` a `6.` desta última alínea."
+        },
+        {
+          "onde": "`Art. 7º O órgão, a entidade federal concedente ou a agência reguladora informará`, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do art. 7º contém também o inciso `I - aprovação de solicitação de revisão, adequação ou reajuste da Tarifa Básica de Pedágio`."
+        },
+        {
+          "onde": "`XII - subconcessão do objeto contratual`, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos XII, XIII e XIV do art. 7º ficaram fora de bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que começa em \"O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais\" e inclui todos os considerandos até \"resolve:\" (pág. 1), antes de iniciar o bloco de \"CAPÍTULO I\".\n- No inciso `II - segundo estágio`, termine o bloco de `c) justificativa para a escolha do parâmetro` antes de `d) comunicações e esclarecimentos porventura encaminhados` (pág. 3). Inicie blocos próprios em `d)`, `e) impugnações apresentadas`, `III - terceiro estágio`, `a) questionamentos, comunicações e esclarecimentos`, `b) atas de abertura e de encerramento`, `c) relatório de julgamento da fase de habilitação` e em cada item `1. habilitação jurídica` a `6. compromisso do licitante` (pág. 3).\n- No `Art. 7º O órgão, a entidade federal concedente ou a agência reguladora informará` (pág. 5), termine o bloco do artigo imediatamente antes de `I - aprovação de solicitação de revisão, adequação ou reajuste da Tarifa Básica de Pedágio` e inicie um bloco próprio para esse inciso.\n- Inicie blocos próprios para `XII - subconcessão do objeto contratual`, `XIII - transferência da concessão ou do controle societário da concessionária` e `XIV - prorrogação do prazo contratual` (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20182/NORMA-20182_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 124,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que começa em \"O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais\" e inclui todos os considerandos até \"resolve:\" (pág. 1), antes de iniciar o bloco de \"CAPÍTULO I\".\n- No inciso `II - segundo estágio`, termine o bloco de `c) justificativa para a escolha do parâmetro` antes de `d) comunicações e esclarecimentos porventura encaminhados` (pág. 3). Inicie blocos próprios em `d)`, `e) impugnações apresentadas`, `III - terceiro estágio`, `a) questionamentos, comunicações e esclarecimentos`, `b) atas de abertura e de encerramento`, `c) relatório de julgamento da fase de habilitação` e em cada item `1. habilitação jurídica` a `6. compromisso do licitante` (pág. 3).\n- No `Art. 7º O órgão, a entidade federal concedente ou a agência reguladora informará` (pág. 5), termine o bloco do artigo imediatamente antes de `I - aprovação de solicitação de revisão, adequação ou reajuste da Tarifa Básica de Pedágio` e inicie um bloco próprio para esse inciso.\n- Inicie blocos próprios para `XII - subconcessão do objeto contratual`, `XIII - transferência da concessão ou do controle societário da concessionária` e `XIV - prorrogação do prazo contratual` (pág. 6).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 2º Para os fins do disposto nesta Instrução Normativa, considera-se:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém os incisos `I - concessão de serviço público` e `II - concessão de serviço público precedida da execução de obra pública`, sem blocos próprios para essas unidades."
+        },
+        {
+          "onde": "`10. fluxo de caixa projetado do empreendimento, coerente com o estudo de viabilidade;`, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "O item 10 não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "`4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O item 4 não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "`Art. 8º A fiscalização das rodovias federais delegadas pela União... será motivada por:`, págs. 6-7",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém os incisos `I - solicitação do Congresso Nacional`, `II - iniciativa própria do Tribunal de Contas da União` e `III - denúncia encaminhada por qualquer cidadão`, sem cortes antes desses marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No `Art. 8º A fiscalização das rodovias federais delegadas pela União a estado, ao Distrito Federal, a município, ou a consórcio entre eles, operadas diretamente ou mediante concessão à iniciativa privada, será motivada por:` (pág. 6), termine o bloco do artigo antes de `I - solicitação do Congresso Nacional` e crie blocos próprios para os incisos `I - solicitação do Congresso Nacional`, `II - iniciativa própria do Tribunal de Contas da União`, `III - denúncia encaminhada por qualquer cidadão` (pág. 6) e `IV - representação legitimamente formulada` (pág. 7).\n- No `Art. 2º Para os fins do disposto nesta Instrução Normativa, considera-se:` (pág. 1), termine o bloco do artigo antes de `I - concessão de serviço público` e inicie blocos próprios para `I - concessão de serviço público`, `II - concessão de serviço público precedida da execução de obra pública` (pág. 1) e `III - convênio de delegação` (pág. 2).\n- Inicie um bloco próprio em `10. fluxo de caixa projetado do empreendimento, coerente com o estudo de viabilidade;` (pág. 2), após o item `9. eventuais fontes de receitas alternativas, complementares, acessórias ou decorrentes de projetos associados;`.\n- Inicie um bloco próprio em `4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;` (pág. 4), após o item `3. relatório de julgamento das propostas econômico-financeiras`.\n- Crie um bloco inicial para o preâmbulo que começa em `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais` e inclui todos os considerandos até `resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No inciso `II - segundo estágio`, termine o bloco de `c) justificativa para a escolha do parâmetro` antes de `d) comunicações e esclarecimentos porventura encaminhados` (pág. 3). Inicie blocos próprios em `d)`, `e) impugnações apresentadas`, `III - terceiro estágio`, `a) questionamentos, comunicações e esclarecimentos`, `b) atas de abertura e de encerramento`, `c) relatório de julgamento da fase de habilitação` e em cada item `1. habilitação jurídica` a `6. compromisso do licitante` (pág. 3).\n- No `Art. 7º O órgão, a entidade federal concedente ou a agência reguladora informará` (pág. 5), termine o bloco do artigo imediatamente antes de `I - aprovação de solicitação de revisão, adequação ou reajuste da Tarifa Básica de Pedágio` e inicie um bloco próprio para esse inciso.\n- Inicie blocos próprios para `XII - subconcessão do objeto contratual`, `XIII - transferência da concessão ou do controle societário da concessionária` e `XIV - prorrogação do prazo contratual` (pág. 6)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20182/NORMA-20182_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 131,
+    "insights_aplicados": "- No `Art. 8º A fiscalização das rodovias federais delegadas pela União a estado, ao Distrito Federal, a município, ou a consórcio entre eles, operadas diretamente ou mediante concessão à iniciativa privada, será motivada por:` (pág. 6), termine o bloco do artigo antes de `I - solicitação do Congresso Nacional` e crie blocos próprios para os incisos `I - solicitação do Congresso Nacional`, `II - iniciativa própria do Tribunal de Contas da União`, `III - denúncia encaminhada por qualquer cidadão` (pág. 6) e `IV - representação legitimamente formulada` (pág. 7).\n- No `Art. 2º Para os fins do disposto nesta Instrução Normativa, considera-se:` (pág. 1), termine o bloco do artigo antes de `I - concessão de serviço público` e inicie blocos próprios para `I - concessão de serviço público`, `II - concessão de serviço público precedida da execução de obra pública` (pág. 1) e `III - convênio de delegação` (pág. 2).\n- Inicie um bloco próprio em `10. fluxo de caixa projetado do empreendimento, coerente com o estudo de viabilidade;` (pág. 2), após o item `9. eventuais fontes de receitas alternativas, complementares, acessórias ou decorrentes de projetos associados;`.\n- Inicie um bloco próprio em `4. decisões proferidas em recursos interpostos contra os resultados da fase de julgamento das propostas econômico-financeiras;` (pág. 4), após o item `3. relatório de julgamento das propostas econômico-financeiras`.\n- Crie um bloco inicial para o preâmbulo que começa em `O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais` e inclui todos os considerandos até `resolve:` (pág. 1), antes de iniciar o bloco de `CAPÍTULO I`.\n- No inciso `II - segundo estágio`, termine o bloco de `c) justificativa para a escolha do parâmetro` antes de `d) comunicações e esclarecimentos porventura encaminhados` (pág. 3). Inicie blocos próprios em `d)`, `e) impugnações apresentadas`, `III - terceiro estágio`, `a) questionamentos, comunicações e esclarecimentos`, `b) atas de abertura e de encerramento`, `c) relatório de julgamento da fase de habilitação` e em cada item `1. habilitação jurídica` a `6. compromisso do licitante` (pág. 3).\n- No `Art. 7º O órgão, a entidade federal concedente ou a agência reguladora informará` (pág. 5), termine o bloco do artigo imediatamente antes de `I - aprovação de solicitação de revisão, adequação ou reajuste da Tarifa Básica de Pedágio` e inicie um bloco próprio para esse inciso.\n- Inicie blocos próprios para `XII - subconcessão do objeto contratual`, `XIII - transferência da concessão ou do controle societário da concessionária` e `XIV - prorrogação do prazo contratual` (pág. 6).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20182/NORMA-20182_ciclo3.json"
+  }
+]

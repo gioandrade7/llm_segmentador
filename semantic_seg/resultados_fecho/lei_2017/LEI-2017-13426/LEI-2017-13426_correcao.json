@@ -1,0 +1,50 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 10,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`II - o quantitativo de animais a serem esterilizados`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II contém também o marcador e o texto do inciso III - `o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso `II - o quantitativo de animais a serem esterilizados` imediatamente antes de `III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda` (pág. 1) e inicie um bloco próprio para o inciso III."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13426/LEI-2017-13426_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 10,
+    "insights_aplicados": "- Termine o bloco do inciso `II - o quantitativo de animais a serem esterilizados` imediatamente antes de `III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda` (pág. 1) e inicie um bloco próprio para o inciso III.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`I - o estudo das localidades ou regiões que apontem para a necessidade de atendimento prioritário ou emergencial`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso I do Art. 2º está fora de qualquer bloco, embora todo inciso deva iniciar um bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco próprio no inciso `I - o estudo das localidades ou regiões que apontem para a necessidade de atendimento prioritário ou emergencial` do Art. 2º (pág. 1) e termine-o imediatamente antes de `II - o quantitativo de animais a serem esterilizados`.\n- Termine o bloco do inciso `II - o quantitativo de animais a serem esterilizados` imediatamente antes de `III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda` (pág. 1) e inicie um bloco próprio para o inciso III."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13426/LEI-2017-13426_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 11,
+    "insights_aplicados": "- Inicie um bloco próprio no inciso `I - o estudo das localidades ou regiões que apontem para a necessidade de atendimento prioritário ou emergencial` do Art. 2º (pág. 1) e termine-o imediatamente antes de `II - o quantitativo de animais a serem esterilizados`.\n- Termine o bloco do inciso `II - o quantitativo de animais a serem esterilizados` imediatamente antes de `III - o tratamento prioritário aos animais pertencentes ou localizados nas comunidades de baixa renda` (pág. 1) e inicie um bloco próprio para o inciso III.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13426/LEI-2017-13426_ciclo3.json"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 375,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`1.1 Este Edital, regido pela Portaria MEC nº 422...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por 1.1 contém também a unidade 1.2, que se inicia em `1.2 O participante, antes de efetuar a sua inscrição...`."
+        },
+        {
+          "onde": "`4.2.3.6 O participante em situação de classe hospitalar...`, alínea d), pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho final da alínea d), `ável.`, ficou fora de qualquer bloco, separando indevidamente a palavra `responsável`."
+        },
+        {
+          "onde": "`12.1.23 Destacar página ou parte do Caderno de Questões...`, pág. 21",
+          "tipo": "englobante",
+          "descricao": "o bloco de 12.1.23 contém também a unidade 12.1.24, que se inicia em `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...`."
+        },
+        {
+          "onde": "`13.7 Haverá apenas uma reaplicação do Exame...`, pág. 23",
+          "tipo": "corte_indevido",
+          "descricao": "há um corte no meio da unidade 13.7, entre `In` e `ep.`, separando indevidamente a palavra `Inep`."
+        },
+        {
+          "onde": "`14. DAS CORREÇÕES DA PROVA`, pág. 23",
+          "tipo": "englobante",
+          "descricao": "o marcador da seção 14 aparece no mesmo bloco que a continuação final da unidade 13.7, `ep.`, em vez de iniciar seu próprio bloco."
+        },
+        {
+          "onde": "`14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...`, pág. 23",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho `em/outros-documentos>.`, que completa o endereço eletrônico da unidade 14.4, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Mantenha no bloco de `4.2.3.6 O participante em situação de classe hospitalar...` toda a alínea d), incluindo o trecho final `responsável.` (pág. 7).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23)."
+    },
+    "arquivo_blocos": "resultados_fecho/edital-inep-064/edital-inep-064/edital-inep-064_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 358,
+    "insights_aplicados": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Mantenha no bloco de `4.2.3.6 O participante em situação de classe hospitalar...` toda a alínea d), incluindo o trecho final `responsável.` (pág. 7).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`4.2.2 Solicitar o recurso de acessibilidade...`, alíneas `l)` a `q)`, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em `l) calculadora...` contém também as alíneas autônomas `m) sala com acessibilidade`, `n) apoio para pernas e pés`, `o) mesa para cadeira de rodas`, `p) mesa e cadeira sem braços` e `q) sala reservada para acompanhante`, sem cortes entre elas."
+        },
+        {
+          "onde": "`4.2.3.6 O participante em situação de classe hospitalar...`, alíneas `a)` a `d)`, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco de 4.2.3.6 reúne as quatro alíneas subsequentes, embora cada alínea seja marcador hierárquico e deva iniciar bloco próprio."
+        },
+        {
+          "onde": "`4.2.3.6`, alínea `d)`, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "A letra `o` de `especializado responsável.` está marcada como texto sem bloco, separando indevidamente o final da alínea d) do restante de sua unidade."
+        },
+        {
+          "onde": "`13.1 O Inep possibilita o direito à reaplicação...` até `13.4 O Inep não se responsabiliza...`, págs. 22-23",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em 13.1 contém, sem blocos próprios, os marcadores 13.1.1, 13.1.1.1, 13.1.1.2, 13.2, 13.2.1, 13.2.2, 13.2.3, 13.3 e 13.4."
+        },
+        {
+          "onde": "`14.6 A nota final da redação do participante será atribuída...`, pág. 23",
+          "tipo": "englobante",
+          "descricao": "O marcador `14.6.1 Caso não haja discrepância entre os dois corretores...` aparece no mesmo bloco de 14.6, sem corte antes dele."
+        },
+        {
+          "onde": "`17.10 Os casos omissos e as eventuais dúvidas...` e assinatura `MANUEL FERNANDO PALACIOS DA CUNHA E MELO`, pág. 28",
+          "tipo": "englobante",
+          "descricao": "A assinatura final, que constitui o fecho, foi mantida no bloco de 17.10; o fecho deve iniciar um único bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o final `profissional especializado responsável.`, incluindo a letra `o` de `especializado`.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco de `13.1 O Inep possibilita o direito à reaplicação...` antes de `13.1.1 O participante que esteja com tuberculose...` e inicie blocos próprios em cada marcador subsequente: `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28)."
+    },
+    "arquivo_blocos": "resultados_fecho/edital-inep-064/edital-inep-064/edital-inep-064_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 371,
+    "insights_aplicados": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o final `profissional especializado responsável.`, incluindo a letra `o` de `especializado`.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco de `13.1 O Inep possibilita o direito à reaplicação...` antes de `13.1.1 O participante que esteja com tuberculose...` e inicie blocos próprios em cada marcador subsequente: `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`1.1 Este Edital, regido pela Portaria MEC nº 422...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado em 1.1 contém também a unidade autônoma `1.2 O participante, antes de efetuar a sua inscrição...`."
+        },
+        {
+          "onde": "`4.2.3 Inserir documento legível, em língua portuguesa...`, pág. 6",
+          "tipo": "englobante",
+          "descricao": "o bloco de 4.2.3 contém, sem blocos próprios, as alíneas `a) nome completo do participante`, `b) diagnóstico...` e `c) assinatura e identificação do profissional competente...`."
+        },
+        {
+          "onde": "`6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO`, pág. 12",
+          "tipo": "englobante",
+          "descricao": "o bloco da seção 6 contém também a unidade `6.1 O pagamento da taxa de inscrição do Enem destina-se...`."
+        },
+        {
+          "onde": "`13. DA REAPLICAÇÃO`, pág. 22",
+          "tipo": "englobante",
+          "descricao": "o bloco da seção 13 contém também a unidade `13.1 O Inep possibilita o direito à reaplicação...`."
+        },
+        {
+          "onde": "`17.10 Os casos omissos e as eventuais dúvidas...`, pág. 28",
+          "tipo": "englobante",
+          "descricao": "o bloco de 17.10 contém a assinatura `MANUEL FERNANDO PALACIOS DA CUNHA E MELO`, que deve constituir o bloco único de fecho."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na unidade `4.2.3 Inserir documento legível, em língua portuguesa...`, termine o bloco introdutório antes de `a) nome completo do participante;` e inicie blocos próprios nas alíneas `a)`, `b) diagnóstico com a descrição...` e `c) assinatura e identificação do profissional competente...` (pág. 6).\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o final `profissional especializado responsável.`, incluindo a letra `o` de `especializado`.\n- Termine o bloco de `6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO` imediatamente antes de `6.1 O pagamento da taxa de inscrição do Enem destina-se...` (pág. 12) e inicie um bloco próprio em 6.1.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco da seção imediatamente antes de `13.1 O Inep possibilita o direito à reaplicação...` e inicie um bloco próprio em 13.1. Em seguida, termine cada unidade antes do marcador subsequente e inicie blocos próprios em `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28)."
+    },
+    "arquivo_blocos": "resultados_fecho/edital-inep-064/edital-inep-064/edital-inep-064_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 377,
+    "insights_aplicados": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na unidade `4.2.3 Inserir documento legível, em língua portuguesa...`, termine o bloco introdutório antes de `a) nome completo do participante;` e inicie blocos próprios nas alíneas `a)`, `b) diagnóstico com a descrição...` e `c) assinatura e identificação do profissional competente...` (pág. 6).\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o final `profissional especializado responsável.`, incluindo a letra `o` de `especializado`.\n- Termine o bloco de `6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO` imediatamente antes de `6.1 O pagamento da taxa de inscrição do Enem destina-se...` (pág. 12) e inicie um bloco próprio em 6.1.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco da seção imediatamente antes de `13.1 O Inep possibilita o direito à reaplicação...` e inicie um bloco próprio em 13.1. Em seguida, termine cada unidade antes do marcador subsequente e inicie blocos próprios em `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`4.2.3.6`, alínea `d)`, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "o final da palavra `responsável.` ficou fora do bloco da alínea: o bloco termina em `profissional especializad... respons` e o trecho `ável.` está marcado como sem bloco."
+        },
+        {
+          "onde": "`17.10 Os casos omissos e as eventuais dúvidas...`, pág. 28",
+          "tipo": "englobante",
+          "descricao": "o bloco de 17.10 contém a assinatura `MANUEL FERNANDO PALACIOS DA CUNHA E MELO`, que constitui o fecho e deveria iniciar o bloco único final."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na unidade `4.2.3 Inserir documento legível, em língua portuguesa...`, termine o bloco introdutório antes de `a) nome completo do participante;` e inicie blocos próprios nas alíneas `a)`, `b) diagnóstico com a descrição...` e `c) assinatura e identificação do profissional competente...` (pág. 6).\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o trecho final `profissional especializado responsável.`, sem deixar `ável.` fora do bloco.\n- Termine o bloco de `6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO` imediatamente antes de `6.1 O pagamento da taxa de inscrição do Enem destina-se...` (pág. 12) e inicie um bloco próprio em 6.1.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco da seção imediatamente antes de `13.1 O Inep possibilita o direito à reaplicação...` e inicie um bloco próprio em 13.1. Em seguida, termine cada unidade antes do marcador subsequente e inicie blocos próprios em `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28)."
+    },
+    "arquivo_blocos": "resultados_fecho/edital-inep-064/edital-inep-064/edital-inep-064_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 377,
+    "insights_aplicados": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na unidade `4.2.3 Inserir documento legível, em língua portuguesa...`, termine o bloco introdutório antes de `a) nome completo do participante;` e inicie blocos próprios nas alíneas `a)`, `b) diagnóstico com a descrição...` e `c) assinatura e identificação do profissional competente...` (pág. 6).\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o trecho final `profissional especializado responsável.`, sem deixar `ável.` fora do bloco.\n- Termine o bloco de `6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO` imediatamente antes de `6.1 O pagamento da taxa de inscrição do Enem destina-se...` (pág. 12) e inicie um bloco próprio em 6.1.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco da seção imediatamente antes de `13.1 O Inep possibilita o direito à reaplicação...` e inicie um bloco próprio em 13.1. Em seguida, termine cada unidade antes do marcador subsequente e inicie blocos próprios em `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`12.1.10 Ausentar-se da sala de provas, em definitivo, antes de decorridas duas horas do`, pág. 20",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho final da unidade, `início das provas.`, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `1.1 Este Edital, regido pela Portaria MEC nº 422...` imediatamente antes de `1.2 O participante, antes de efetuar a sua inscrição...` (pág. 1) e inicie um bloco próprio em 1.2.\n- Na unidade `4.2.3 Inserir documento legível, em língua portuguesa...`, termine o bloco introdutório antes de `a) nome completo do participante;` e inicie blocos próprios nas alíneas `a)`, `b) diagnóstico com a descrição...` e `c) assinatura e identificação do profissional competente...` (pág. 6).\n- Na lista iniciada por `4.2.2 Solicitar o recurso de acessibilidade...`, termine o bloco de `l) calculadora...` imediatamente antes de `m) sala com acessibilidade...` e inicie blocos próprios em cada uma das alíneas `m)`, `n)`, `o)`, `p)` e `q)` (pág. 6).\n- Na unidade `4.2.3.6 O participante em situação de classe hospitalar...`, inicie blocos próprios nas alíneas `a) o nome completo...`, `b) o diagnóstico...`, `c) o nome e o endereço completo...` e `d) a assinatura e a identificação...` (pág. 7). Mantenha integralmente no bloco da alínea `d)` o trecho final `profissional especializado responsável.`, sem deixar `ável.` fora do bloco.\n- Termine o bloco de `6. DO PAGAMENTO DA TAXA DE INSCRIÇÃO` imediatamente antes de `6.1 O pagamento da taxa de inscrição do Enem destina-se...` (pág. 12) e inicie um bloco próprio em 6.1.\n- Na seção `13. DA REAPLICAÇÃO`, termine o bloco da seção imediatamente antes de `13.1 O Inep possibilita o direito à reaplicação...` e inicie um bloco próprio em 13.1. Em seguida, termine cada unidade antes do marcador subsequente e inicie blocos próprios em `13.1.1`, `13.1.1.1`, `13.1.1.2`, `13.2`, `13.2.1`, `13.2.2`, `13.2.3`, `13.3` e `13.4` (págs. 22-23).\n- Termine o bloco de `12.1.23 Destacar página ou parte do Caderno de Questões...` imediatamente antes de `12.1.24 Ausentar-se da sala com o Cartão-Resposta/Folha de Redação...` (pág. 21) e inicie um bloco próprio em 12.1.24.\n- Mantenha a unidade `12.1.10 Ausentar-se da sala de provas, em definitivo, antes de decorridas duas horas do início das provas.` integralmente no seu bloco, incluindo o trecho final `início das provas.` (pág. 20), e só inicie o bloco seguinte em `12.1.11 Recusar-se, injustificadamente, a qualquer momento, a:`.\n- Não corte a unidade `13.7 Haverá apenas uma reaplicação do Exame...` entre `In` e `ep.`; mantenha `Inep.` no bloco de 13.7 e inicie um novo bloco exatamente em `14. DAS CORREÇÕES DA PROVA` (pág. 23).\n- Termine o bloco de `14.6 A nota final da redação do participante será atribuída da seguinte forma...` imediatamente antes de `14.6.1 Caso não haja discrepância entre os dois corretores...` (pág. 23) e inicie bloco próprio em 14.6.1.\n- Mantenha integralmente no bloco de `14.4 A nota da redação, variando entre 0 (zero) e 1.000 (mil) pontos...` o final do endereço eletrônico, incluindo `enem/outros-documentos>.` (pág. 23).\n- Termine o bloco de `17.10 Os casos omissos e as eventuais dúvidas referentes a este Edital...` antes de `MANUEL FERNANDO PALACIOS DA CUNHA E MELO` e inicie ali o bloco único de fecho, contendo a assinatura até o fim do documento (pág. 28)."
+    },
+    "arquivo_blocos": "resultados_fecho/edital-inep-064/edital-inep-064/edital-inep-064_ciclo5.json"
+  }
+]

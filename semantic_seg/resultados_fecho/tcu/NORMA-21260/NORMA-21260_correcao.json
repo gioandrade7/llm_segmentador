@@ -1,0 +1,127 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 72,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O preâmbulo, os considerandos e a fórmula “RESOLVE:” ficaram fora de qualquer bloco antes de “CAPÍTULO I”."
+        },
+        {
+          "onde": "Inciso III de “Art. 7º ... será estruturado nas seguintes seções:”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “III - embasamento para a opinião sobre a execução orçamentária...” contém também os incisos irmãos “IV - embasamento para a opinião sobre os balanços gerais da União” e “V - monitoramento das deliberações...”, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Inciso I de “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “I - os balanços gerais da União” contém também o inciso irmão “II - a execução orçamentária e a gestão dos recursos públicos federais”, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco de “I - os balanços gerais da União” imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo neste inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21260/NORMA-21260_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 76,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco de “I - os balanços gerais da União” imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo neste inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 12, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “Art. 12. Para a emissão da conclusão do parecer prévio...” contém, sem corte próprio, o inciso “I - os balanços gerais da União;”, que deve iniciar bloco separado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21260/NORMA-21260_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 67,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 3º São etapas do processo das contas do Presidente da República` (pág. 2)",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 3º contém, sem cortes próprios, os marcadores e textos de `§ 1º`, `§ 2º`, `Art. 4º` e `§ 1º` do art. 4º."
+        },
+        {
+          "onde": "`II - a execução orçamentária e a gestão dos recursos públicos federais.` do Art. 12 (pág. 4)",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso II contém também o início de `Art. 13. A opinião do Tribunal sobre os balanços gerais da União...`."
+        },
+        {
+          "onde": "`§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:` do Art. 13 (pág. 4)",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º contém, sem corte próprio, o inciso `I - tendo sido obtida evidência de auditoria adequada e suficiente...`."
+        },
+        {
+          "onde": "`§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:` do Art. 14 (pág. 5)",
+          "tipo": "englobante",
+          "descricao": "O bloco do § 1º contém os incisos `I - impropriedades;`, `II - irregularidades...` e `III - distorção materialmente relevante...`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`III - distorções materialmente relevantes...` do § 2º do Art. 14 (pág. 5)",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III contém também os incisos `IV - aplicações em ações e serviços públicos de saúde...`, `V - execução orçamentária e financeira...` e `VI - inobservância dos princípios e regras...`."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso.\n- Em “Art. 3º São etapas do processo das contas do Presidente da República:” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º A Unidade Técnica especializada manifestar-se-á”; termine o bloco do § 1º imediatamente antes de “§ 2º O Ministério Público”; termine o bloco do § 2º imediatamente antes de “Art. 4º Identificados no relatório preliminar”; e inicie um bloco próprio em “§ 1º Na hipótese prevista no caput” do Art. 4º.\n- Em “II - a execução orçamentária e a gestão dos recursos públicos federais.” do Art. 12 (pág. 4), termine o bloco imediatamente antes de “Art. 13. A opinião do Tribunal sobre os balanços gerais da União” e inicie um bloco novo no art. 13.\n- Em “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” do Art. 13 (pág. 4), termine o bloco imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente” e inicie um bloco novo nesse inciso.\n- Em “§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:” do Art. 14 (pág. 5), inicie blocos próprios em “I - impropriedades;”, “II - irregularidades que, pela materialidade e gravidade” e “III - distorção materialmente relevante”, terminando cada bloco imediatamente antes do inciso seguinte.\n- No § 2º do Art. 14 (pág. 5), termine o bloco de “III - distorções materialmente relevantes” imediatamente antes de “IV - aplicações em ações e serviços públicos de saúde”; termine o bloco do inciso IV imediatamente antes de “V - execução orçamentária e financeira”; e termine o bloco do inciso V imediatamente antes de “VI - inobservância dos princípios e regras constitucionais e infraconstitucionais”, iniciando um bloco próprio em cada inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21260/NORMA-21260_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 77,
+    "insights_aplicados": "- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso.\n- Em “Art. 3º São etapas do processo das contas do Presidente da República:” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º A Unidade Técnica especializada manifestar-se-á”; termine o bloco do § 1º imediatamente antes de “§ 2º O Ministério Público”; termine o bloco do § 2º imediatamente antes de “Art. 4º Identificados no relatório preliminar”; e inicie um bloco próprio em “§ 1º Na hipótese prevista no caput” do Art. 4º.\n- Em “II - a execução orçamentária e a gestão dos recursos públicos federais.” do Art. 12 (pág. 4), termine o bloco imediatamente antes de “Art. 13. A opinião do Tribunal sobre os balanços gerais da União” e inicie um bloco novo no art. 13.\n- Em “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” do Art. 13 (pág. 4), termine o bloco imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente” e inicie um bloco novo nesse inciso.\n- Em “§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:” do Art. 14 (pág. 5), inicie blocos próprios em “I - impropriedades;”, “II - irregularidades que, pela materialidade e gravidade” e “III - distorção materialmente relevante”, terminando cada bloco imediatamente antes do inciso seguinte.\n- No § 2º do Art. 14 (pág. 5), termine o bloco de “III - distorções materialmente relevantes” imediatamente antes de “IV - aplicações em ações e serviços públicos de saúde”; termine o bloco do inciso IV imediatamente antes de “V - execução orçamentária e financeira”; e termine o bloco do inciso V imediatamente antes de “VI - inobservância dos princípios e regras constitucionais e infraconstitucionais”, iniciando um bloco próprio em cada inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso VII do Art. 2º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por “VII - efeitos generalizados:” contém também as alíneas “a)”, “b)” e “c)”, que são unidades próprias e deveriam iniciar blocos separados."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No inciso “VII - efeitos generalizados:” do Art. 2º (pág. 2), termine o bloco imediatamente antes de “a) os que não estão restritos...” e inicie um bloco próprio nessa alínea; termine-o antes de “b) se estiverem restritos...” e inicie outro bloco nessa alínea; termine-o antes de “c) são fundamentais...” e inicie outro bloco nessa alínea.\n- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso.\n- Em “Art. 3º São etapas do processo das contas do Presidente da República:” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º A Unidade Técnica especializada manifestar-se-á”; termine o bloco do § 1º imediatamente antes de “§ 2º O Ministério Público”; termine o bloco do § 2º imediatamente antes de “Art. 4º Identificados no relatório preliminar”; e inicie um bloco próprio em “§ 1º Na hipótese prevista no caput” do Art. 4º.\n- Em “II - a execução orçamentária e a gestão dos recursos públicos federais.” do Art. 12 (pág. 4), termine o bloco imediatamente antes de “Art. 13. A opinião do Tribunal sobre os balanços gerais da União” e inicie um bloco novo no art. 13.\n- Em “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” do Art. 13 (pág. 4), termine o bloco imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente” e inicie um bloco novo nesse inciso.\n- Em “§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:” do Art. 14 (pág. 5), inicie blocos próprios em “I - impropriedades;”, “II - irregularidades que, pela materialidade e gravidade” e “III - distorção materialmente relevante”, terminando cada bloco imediatamente antes do inciso seguinte.\n- No § 2º do Art. 14 (pág. 5), termine o bloco de “III - distorções materialmente relevantes” imediatamente antes de “IV - aplicações em ações e serviços públicos de saúde”; termine o bloco do inciso IV imediatamente antes de “V - execução orçamentária e financeira”; e termine o bloco do inciso V imediatamente antes de “VI - inobservância dos princípios e regras constitucionais e infraconstitucionais”, iniciando um bloco próprio em cada inciso."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21260/NORMA-21260_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "- No inciso “VII - efeitos generalizados:” do Art. 2º (pág. 2), termine o bloco imediatamente antes de “a) os que não estão restritos...” e inicie um bloco próprio nessa alínea; termine-o antes de “b) se estiverem restritos...” e inicie outro bloco nessa alínea; termine-o antes de “c) são fundamentais...” e inicie outro bloco nessa alínea.\n- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso.\n- Em “Art. 3º São etapas do processo das contas do Presidente da República:” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º A Unidade Técnica especializada manifestar-se-á”; termine o bloco do § 1º imediatamente antes de “§ 2º O Ministério Público”; termine o bloco do § 2º imediatamente antes de “Art. 4º Identificados no relatório preliminar”; e inicie um bloco próprio em “§ 1º Na hipótese prevista no caput” do Art. 4º.\n- Em “II - a execução orçamentária e a gestão dos recursos públicos federais.” do Art. 12 (pág. 4), termine o bloco imediatamente antes de “Art. 13. A opinião do Tribunal sobre os balanços gerais da União” e inicie um bloco novo no art. 13.\n- Em “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” do Art. 13 (pág. 4), termine o bloco imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente” e inicie um bloco novo nesse inciso.\n- Em “§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:” do Art. 14 (pág. 5), inicie blocos próprios em “I - impropriedades;”, “II - irregularidades que, pela materialidade e gravidade” e “III - distorção materialmente relevante”, terminando cada bloco imediatamente antes do inciso seguinte.\n- No § 2º do Art. 14 (pág. 5), termine o bloco de “III - distorções materialmente relevantes” imediatamente antes de “IV - aplicações em ações e serviços públicos de saúde”; termine o bloco do inciso IV imediatamente antes de “V - execução orçamentária e financeira”; e termine o bloco do inciso V imediatamente antes de “VI - inobservância dos princípios e regras constitucionais e infraconstitucionais”, iniciando um bloco próprio em cada inciso.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "CAPÍTULO I — “DAS DISPOSIÇÕES GERAIS”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “CAPÍTULO I” contém também o marcador e o texto de “Art. 1º Esta Resolução disciplina...”, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "CAPÍTULO IV — “DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “CAPÍTULO IV” contém também o marcador e o texto de “Art. 10. O parecer prévio...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No inciso “VII - efeitos generalizados:” do Art. 2º (pág. 2), termine o bloco imediatamente antes de “a) os que não estão restritos...” e inicie um bloco próprio nessa alínea; termine-o antes de “b) se estiverem restritos...” e inicie outro bloco nessa alínea; termine-o antes de “c) são fundamentais...” e inicie outro bloco nessa alínea.\n- Crie um bloco para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições”, incluindo os considerandos e “RESOLVE:”, e termine-o imediatamente antes de “CAPÍTULO I”.\n- Em “Art. 7º ... será estruturado nas seguintes seções:” (pág. 3), termine o bloco de “III - embasamento para a opinião sobre a execução orçamentária...” imediatamente antes de “IV - embasamento para a opinião sobre os balanços gerais da União” e inicie um bloco novo em cada um dos incisos IV e V.\n- Em “Art. 12. Para a emissão da conclusão ... serão consideradas as opiniões sobre:” (pág. 4), termine o bloco do artigo imediatamente antes de “I - os balanços gerais da União;” e inicie um bloco novo nesse inciso; termine também o bloco do inciso I imediatamente antes de “II - a execução orçamentária e a gestão dos recursos públicos federais” e inicie um bloco novo nesse inciso.\n- Em “Art. 3º São etapas do processo das contas do Presidente da República:” (pág. 2), termine o bloco do artigo imediatamente antes de “§ 1º A Unidade Técnica especializada manifestar-se-á”; termine o bloco do § 1º imediatamente antes de “§ 2º O Ministério Público”; termine o bloco do § 2º imediatamente antes de “Art. 4º Identificados no relatório preliminar”; e inicie um bloco próprio em “§ 1º Na hipótese prevista no caput” do Art. 4º.\n- Em “II - a execução orçamentária e a gestão dos recursos públicos federais.” do Art. 12 (pág. 4), termine o bloco imediatamente antes de “Art. 13. A opinião do Tribunal sobre os balanços gerais da União” e inicie um bloco novo no art. 13.\n- Em “§ 1º A opinião sobre os balanços gerais da União será com ressalva quando:” do Art. 13 (pág. 4), termine o bloco imediatamente antes de “I - tendo sido obtida evidência de auditoria adequada e suficiente” e inicie um bloco novo nesse inciso.\n- Em “§ 1º A opinião sobre a execução dos orçamentos será com ressalvas quando forem detectadas:” do Art. 14 (pág. 5), inicie blocos próprios em “I - impropriedades;”, “II - irregularidades que, pela materialidade e gravidade” e “III - distorção materialmente relevante”, terminando cada bloco imediatamente antes do inciso seguinte.\n- No § 2º do Art. 14 (pág. 5), termine o bloco de “III - distorções materialmente relevantes” imediatamente antes de “IV - aplicações em ações e serviços públicos de saúde”; termine o bloco do inciso IV imediatamente antes de “V - execução orçamentária e financeira”; e termine o bloco do inciso V imediatamente antes de “VI - inobservância dos princípios e regras constitucionais e infraconstitucionais”, iniciando um bloco próprio em cada inciso.\n- No “CAPÍTULO I — DAS DISPOSIÇÕES GERAIS” (pág. 1), termine o bloco do capítulo imediatamente antes de “Art. 1º Esta Resolução disciplina...” e inicie um bloco próprio nesse artigo.\n- No “CAPÍTULO IV — DO PARECER PRÉVIO SOBRE AS CONTAS DO PRESIDENTE DA REPÚBLICA” (pág. 3), termine o bloco do capítulo imediatamente antes de “Art. 10. O parecer prévio...” e inicie um bloco próprio nesse artigo."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21260/NORMA-21260_ciclo5.json"
+  }
+]

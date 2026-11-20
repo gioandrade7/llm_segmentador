@@ -1,0 +1,207 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 109,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório e os considerandos, até \"resolve:\", ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "inciso IV do art. 5º, \"IV- quando da publicação das informações...\", pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso IV do art. 5º ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Parágrafo único do art. 5º, \"É facultado aplicar provisoriamente...\", pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do parágrafo único contém os incisos I e II, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 3º do art. 8º, incisos II e III, \"II - pessoais relativas...\" e \"III - protegidas...\", pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III do § 3º do art. 8º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "art. 9º, incisos IV a VIII, iniciados por \"IV - oferecer elevado risco...\", págs. 3-4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV, V, VI, VII e VIII do art. 9º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "§ 2º do art. 9º, incisos II e III, \"II - secreta...\" e \"III - ultrassecreta...\", pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III do § 2º do art. 9º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "§ 1º do art. 10, incisos II e III, \"II - podem ter autorizada...\" e \"III - devem ter restrição...\", pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III do § 1º do art. 10 ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "§ 2º do art. 10, incisos III a V, iniciados por \"III - ao cumprimento de ordem judicial\", pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos III, IV e V do § 2º do art. 10 ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "inciso III do art. 11, \"III - protegidas por sigilo comercial...\", pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso III do art. 11 contém também os incisos IV e V, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "CAPÍTULO IV, \"DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\", pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do capítulo contém também o art. 13, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 14 contém os incisos I, II, III e IV, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3-4).\n- No § 2º do art. 9º, inicie blocos próprios nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 1º do art. 10, inicie blocos próprios nos incisos II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (pág. 5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18201/NORMA-18201_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 122,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3-4).\n- No § 2º do art. 9º, inicie blocos próprios nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 1º do art. 10, inicie blocos próprios nos incisos II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (pág. 5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "§ 3º do art. 8º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 3º São consideradas sigilosas as informações:\" contém também o inciso I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", sem bloco próprio para esse inciso."
+        },
+        {
+          "onde": "§ 2º do art. 9º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 2º Os prazos máximos de restrição de acesso...\" contém os incisos I, II e III, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 6º do art. 9º, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\", ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "§ 2º do art. 10, págs. 4-5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 2º O consentimento referido no inciso II do § 1º não é exigido...\" contém também o inciso I, \"I - à prevenção e diagnóstico médico...\", sem corte antes dele."
+        },
+        {
+          "onde": "CAPÍTULO III e art. 12, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" contém o art. 12, seus incisos I, II e III e o parágrafo único, embora todos esses marcadores devam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 21, pág. 7",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 21. Até a implementação dos ajustes necessários...\" contém o inciso I, \"I - sigilosas: quando classificadas...\", sem bloco próprio para o inciso."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3-4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, \"I - reservada: cinco anos;\", e inicie blocos próprios também nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\" (pág. 4).\n- No § 1º do art. 10, inicie blocos próprios nos incisos II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, \"I - à prevenção e diagnóstico médico...\", e inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (págs. 4-5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 12. A classificação da informação é de competência:\"; depois, inicie blocos próprios no art. 12, nos incisos I, \"I - no grau ultrassecreto...\", II, \"II - no grau secreto...\", III, \"III - no grau reservado...\", e no \"Parágrafo único. Após manifestação sobre classificação...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).\n- No art. 21, termine o bloco introdutório antes do inciso I, \"I - sigilosas: quando classificadas como imprescindíveis...\", e mantenha um bloco próprio para o inciso II, \"II - públicas: quando classificadas como públicas.\" (pág. 7)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18201/NORMA-18201_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 128,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3-4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, \"I - reservada: cinco anos;\", e inicie blocos próprios também nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\" (pág. 4).\n- No § 1º do art. 10, inicie blocos próprios nos incisos II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, \"I - à prevenção e diagnóstico médico...\", e inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (págs. 4-5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 12. A classificação da informação é de competência:\"; depois, inicie blocos próprios no art. 12, nos incisos I, \"I - no grau ultrassecreto...\", II, \"II - no grau secreto...\", III, \"III - no grau reservado...\", e no \"Parágrafo único. Após manifestação sobre classificação...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).\n- No art. 21, termine o bloco introdutório antes do inciso I, \"I - sigilosas: quando classificadas como imprescindíveis...\", e mantenha um bloco próprio para o inciso II, \"II - públicas: quando classificadas como públicas.\" (pág. 7).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Incisos X e XI do Art. 3º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos \"X - grupo de acesso explícito...\" e \"XI - documento eletrônico...\" não foram incluídos em nenhum bloco."
+        },
+        {
+          "onde": "§ 1º do Art. 10, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"§ 1º As informações a que se refere este artigo...\" contém também os incisos I e II, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Inciso III do § 1º do Art. 10, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso \"III - devem ter restrição de acesso pelo prazo máximo de cem anos...\" não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "Inciso V do § 2º do Art. 10, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso \"V - à proteção do interesse público e geral preponderante.\" não foi incluído em nenhum bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- No Art. 3º, inicie blocos próprios nos incisos X, \"X - grupo de acesso explícito...\", e XI, \"XI - documento eletrônico...\" (pág. 2).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3-4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, \"I - reservada: cinco anos;\", e inicie blocos próprios também nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\" (pág. 4).\n- No § 1º do art. 10, \"As informações a que se refere este artigo...\", termine o bloco introdutório antes do inciso I, \"I - devem ter o seu acesso restrito...\", e inicie blocos próprios nos incisos I, II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, \"I - à prevenção e diagnóstico médico...\", e inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (págs. 4-5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 12. A classificação da informação é de competência:\"; depois, inicie blocos próprios no art. 12, nos incisos I, \"I - no grau ultrassecreto...\", II, \"II - no grau secreto...\", III, \"III - no grau reservado...\", e no \"Parágrafo único. Após manifestação sobre classificação...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).\n- No art. 21, termine o bloco introdutório antes do inciso I, \"I - sigilosas: quando classificadas como imprescindíveis...\", e mantenha um bloco próprio para o inciso II, \"II - públicas: quando classificadas como públicas.\" (pág. 7)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18201/NORMA-18201_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 128,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- No Art. 3º, inicie blocos próprios nos incisos X, \"X - grupo de acesso explícito...\", e XI, \"XI - documento eletrônico...\" (pág. 2).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3-4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, \"I - reservada: cinco anos;\", e inicie blocos próprios também nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\" (pág. 4).\n- No § 1º do art. 10, \"As informações a que se refere este artigo...\", termine o bloco introdutório antes do inciso I, \"I - devem ter o seu acesso restrito...\", e inicie blocos próprios nos incisos I, II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, \"I - à prevenção e diagnóstico médico...\", e inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (págs. 4-5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 12. A classificação da informação é de competência:\"; depois, inicie blocos próprios no art. 12, nos incisos I, \"I - no grau ultrassecreto...\", II, \"II - no grau secreto...\", III, \"III - no grau reservado...\", e no \"Parágrafo único. Após manifestação sobre classificação...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).\n- No art. 21, termine o bloco introdutório antes do inciso I, \"I - sigilosas: quando classificadas como imprescindíveis...\", e mantenha um bloco próprio para o inciso II, \"II - públicas: quando classificadas como públicas.\" (pág. 7).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 2° e §§ 1º a 3º, págs. 1–2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 2° Esta Resolução integra...\" contém, sem cortes próprios, os marcadores \"§ 1º\", \"§ 2º\" e \"§ 3º\", que devem cada um iniciar uma unidade."
+        },
+        {
+          "onde": "§ 1º do art. 10, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"I - devem ter o seu acesso restrito...\" contém também os incisos \"II - podem ter autorizada sua divulgação...\" e \"III - devem ter restrição de acesso...\", sem blocos próprios."
+        },
+        {
+          "onde": "§ 1º do art. 16, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "A unidade \"§ 1º Qualquer interessado, nos termos da Lei 12.527...\" está fora de qualquer bloco."
+        },
+        {
+          "onde": "§ 1º do art. 16, pág. 6",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu separadamente o bloco iniciado em \"§ 1º Qualquer interessado...\", mas sua âncora não foi localizada no texto segmentado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- No Art. 2°, termine o bloco do artigo antes de \"§ 1º As autoridades do Tribunal...\" e inicie blocos próprios em \"§ 1º\", \"§ 2º O intercâmbio de informações...\" e \"§ 3º O tratamento de informação sigilosa...\" (págs. 1–2).\n- No Art. 3º, inicie blocos próprios nos incisos X, \"X - grupo de acesso explícito...\", e XI, \"XI - documento eletrônico...\" (pág. 2).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3–4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, \"I - reservada: cinco anos;\", e inicie blocos próprios também nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\" (pág. 4).\n- No § 1º do art. 10, \"As informações a que se refere este artigo...\", termine o bloco introdutório antes do inciso I, \"I - devem ter o seu acesso restrito...\", e inicie blocos próprios nos incisos I, II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, \"I - à prevenção e diagnóstico médico...\", e inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (págs. 4–5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 12. A classificação da informação é de competência:\"; depois, inicie blocos próprios no art. 12, nos incisos I, \"I - no grau ultrassecreto...\", II, \"II - no grau secreto...\", III, \"III - no grau reservado...\", e no \"Parágrafo único. Após manifestação sobre classificação...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).\n- No art. 16, inicie e localize um bloco próprio em \"§ 1º Qualquer interessado, nos termos da Lei 12.527, de 18 de novembro de 2011, pode provocar a Ouvidoria do TCU...\" (pág. 6), antes de \"§ 2º No caso de indeferimento...\".\n- No art. 21, termine o bloco introdutório antes do inciso I, \"I - sigilosas: quando classificadas como imprescindíveis...\", e mantenha um bloco próprio para o inciso II, \"II - públicas: quando classificadas como públicas.\" (pág. 7)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18201/NORMA-18201_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 130,
+    "insights_aplicados": "- Inclua o preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"resolve:\" em um bloco inicial próprio, antes de \"CAPÍTULO I\" (pág. 1).\n- No Art. 2°, termine o bloco do artigo antes de \"§ 1º As autoridades do Tribunal...\" e inicie blocos próprios em \"§ 1º\", \"§ 2º O intercâmbio de informações...\" e \"§ 3º O tratamento de informação sigilosa...\" (págs. 1–2).\n- No Art. 3º, inicie blocos próprios nos incisos X, \"X - grupo de acesso explícito...\", e XI, \"XI - documento eletrônico...\" (pág. 2).\n- Inicie um bloco próprio no inciso IV do art. 5º, \"IV- quando da publicação das informações na transparência ativa...\" (pág. 3).\n- No parágrafo único do art. 5º, \"É facultado aplicar provisoriamente a chancela...\", termine o bloco antes do inciso I, \"I - documentos não classificados pela origem...\", e inicie outro antes do inciso II, \"II - outras hipóteses previstas...\" (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, \"I - imprescindíveis à segurança da sociedade ou do Estado;\", II, \"II - pessoais relativas à intimidade...\", e III, \"III - protegidas por sigilo estabelecido...\" (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, \"IV - oferecer elevado risco...\", V, \"V - prejudicar ou causar risco a planos...\", VI, \"VI - prejudicar ou causar risco a projetos...\", VII, \"VII - pôr em risco a segurança...\", e VIII, \"VIII - comprometer atividades de inteligência...\" (págs. 3–4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, \"I - reservada: cinco anos;\", e inicie blocos próprios também nos incisos II, \"II - secreta: quinze anos;\", e III, \"III - ultrassecreta: vinte e cinco anos...\" (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, \"II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.\" (pág. 4).\n- No § 1º do art. 10, \"As informações a que se refere este artigo...\", termine o bloco introdutório antes do inciso I, \"I - devem ter o seu acesso restrito...\", e inicie blocos próprios nos incisos I, II, \"II - podem ter autorizada sua divulgação...\", e III, \"III - devem ter restrição de acesso...\" (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, \"I - à prevenção e diagnóstico médico...\", e inicie blocos próprios nos incisos III, \"III - ao cumprimento de ordem judicial;\", IV, \"IV - à defesa de direitos humanos;\", e V, \"V - à proteção do interesse público...\" (págs. 4–5).\n- No art. 11, termine o bloco do inciso III, \"III - protegidas por sigilo comercial...\", antes do inciso IV, \"IV - que envolvam segredo de justiça;\", e inicie outro bloco antes do inciso V, \"V - aquelas relativas a denúncias...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 12. A classificação da informação é de competência:\"; depois, inicie blocos próprios no art. 12, nos incisos I, \"I - no grau ultrassecreto...\", II, \"II - no grau secreto...\", III, \"III - no grau reservado...\", e no \"Parágrafo único. Após manifestação sobre classificação...\" (pág. 5).\n- Termine o bloco de \"CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO\" antes de \"Art. 13. Compete às autoridades...\" e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, \"A classificação da informação sigilosa deve ser formalizada...\", inicie blocos próprios nos incisos I, \"I - hipótese de sigilo...\", II, \"II - grau de sigilo...\", III, \"III - assunto sobre o qual versa...\", e IV, \"IV - fundamento da classificação;\" (pág. 5).\n- No art. 16, inicie e localize um bloco próprio em \"§ 1º Qualquer interessado, nos termos da Lei 12.527, de 18 de novembro de 2011, pode provocar a Ouvidoria do TCU...\" (pág. 6), antes de \"§ 2º No caso de indeferimento...\".\n- No art. 21, termine o bloco introdutório antes do inciso I, \"I - sigilosas: quando classificadas como imprescindíveis...\", e mantenha um bloco próprio para o inciso II, \"II - públicas: quando classificadas como públicas.\" (pág. 7).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso VII do art. 3º, “VII - classificação da informação...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso VII contém também os incisos VIII e IX, que são unidades próprias."
+        },
+        {
+          "onde": "Final do inciso IX do art. 3º, “...características da informação.”, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final “a informação.” ficou fora de qualquer bloco, embora pertença ao inciso IX."
+        },
+        {
+          "onde": "Inciso IV do art. 14, “IV - fundamento da classificação;”, págs. 5–6",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos V e VI do art. 14, que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua o preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...” e encerrado em “resolve:” em um bloco inicial próprio, antes de “CAPÍTULO I” (pág. 1).\n- No Art. 2°, termine o bloco do artigo antes de “§ 1º As autoridades do Tribunal...” e inicie blocos próprios em “§ 1º”, “§ 2º O intercâmbio de informações...” e “§ 3º O tratamento de informação sigilosa...” (págs. 1–2).\n- No Art. 3º, termine o bloco do inciso VII, “VII - classificação da informação...”, antes de “VIII - tratamento da informação...” e inicie um bloco próprio no inciso VIII; termine também o bloco do inciso VIII antes de “IX - grupo de acesso implícito...” e inicie um bloco próprio no inciso IX, incluindo integralmente o final “...de acordo com as características da informação.” (pág. 2).\n- No Art. 3º, inicie blocos próprios nos incisos X, “X - grupo de acesso explícito...”, e XI, “XI - documento eletrônico...” (pág. 2).\n- Inicie um bloco próprio no inciso IV do art. 5º, “IV- quando da publicação das informações na transparência ativa...” (pág. 3).\n- No parágrafo único do art. 5º, “É facultado aplicar provisoriamente a chancela...”, termine o bloco antes do inciso I, “I - documentos não classificados pela origem...”, e inicie outro antes do inciso II, “II - outras hipóteses previstas...” (pág. 3).\n- No § 3º do art. 8º, inicie blocos próprios nos incisos I, “I - imprescindíveis à segurança da sociedade ou do Estado;”, II, “II - pessoais relativas à intimidade...”, e III, “III - protegidas por sigilo estabelecido...” (pág. 3).\n- No art. 9º, inicie blocos próprios nos incisos IV, “IV - oferecer elevado risco...”, V, “V - prejudicar ou causar risco a planos...”, VI, “VI - prejudicar ou causar risco a projetos...”, VII, “VII - pôr em risco a segurança...”, e VIII, “VIII - comprometer atividades de inteligência...” (págs. 3–4).\n- No § 2º do art. 9º, termine o bloco introdutório antes do inciso I, “I - reservada: cinco anos;”, e inicie blocos próprios também nos incisos II, “II - secreta: quinze anos;”, e III, “III - ultrassecreta: vinte e cinco anos...” (pág. 4).\n- No § 6º do art. 9º, inicie um bloco próprio no inciso II, “II - o prazo máximo de restrição de acesso ou o evento que defina seu termo final.” (pág. 4).\n- No § 1º do art. 10, “As informações a que se refere este artigo...”, termine o bloco introdutório antes do inciso I, “I - devem ter o seu acesso restrito...”, e inicie blocos próprios nos incisos I, II, “II - podem ter autorizada sua divulgação...”, e III, “III - devem ter restrição de acesso...” (pág. 4).\n- No § 2º do art. 10, termine o bloco introdutório antes do inciso I, “I - à prevenção e diagnóstico médico...”, e inicie blocos próprios nos incisos III, “III - ao cumprimento de ordem judicial;”, IV, “IV - à defesa de direitos humanos;”, e V, “V - à proteção do interesse público...” (págs. 4–5).\n- No art. 11, termine o bloco do inciso III, “III - protegidas por sigilo comercial...”, antes do inciso IV, “IV - que envolvam segredo de justiça;”, e inicie outro bloco antes do inciso V, “V - aquelas relativas a denúncias...” (pág. 5).\n- Termine o bloco de “CAPÍTULO III — DA COMPETÊNCIA PARA A CLASSIFICAÇÃO DA INFORMAÇÃO” antes de “Art. 12. A classificação da informação é de competência:”; depois, inicie blocos próprios no art. 12, nos incisos I, “I - no grau ultrassecreto...”, II, “II - no grau secreto...”, III, “III - no grau reservado...”, e no “Parágrafo único. Após manifestação sobre classificação...” (pág. 5).\n- Termine o bloco de “CAPÍTULO IV — DOS PROCEDIMENTOS DE CLASSIFICAÇÃO DA INFORMAÇÃO” antes de “Art. 13. Compete às autoridades...” e inicie um bloco próprio no art. 13 (pág. 5).\n- No art. 14, “A classificação da informação sigilosa deve ser formalizada...”, inicie blocos próprios nos incisos I, “I - hipótese de sigilo...”, II, “II - grau de sigilo...”, III, “III - assunto sobre o qual versa...”, IV, “IV - fundamento da classificação;”, V, “V - indicação do prazo e do termo final de restrição de acesso...”, e VI, “VI - identificação do responsável pela classificação.” (págs. 5–6).\n- No art. 16, inicie e localize um bloco próprio em “§ 1º Qualquer interessado, nos termos da Lei 12.527, de 18 de novembro de 2011, pode provocar a Ouvidoria do TCU...” (pág. 6), antes de “§ 2º No caso de indeferimento...”.\n- No art. 21, termine o bloco introdutório antes do inciso I, “I - sigilosas: quando classificadas como imprescindíveis...”, e mantenha um bloco próprio para o inciso II, “II - públicas: quando classificadas como públicas.” (pág. 7)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18201/NORMA-18201_ciclo5.json"
+  }
+]

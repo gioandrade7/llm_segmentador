@@ -1,0 +1,88 @@
+{
+  "prefixo": "resultados_fecho/tcu/NORMA-20182/NORMA-20182",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/NORMA-20182.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 114,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 114,
+      "fronteiras_gabarito": 131,
+      "acertos": 114,
+      "precisao": 1.0,
+      "revocacao": 0.8702290076335878,
+      "f1": 0.9306122448979592,
+      "fins": {
+        "previstos": 114,
+        "gabarito": 131,
+        "fins_nao_localizados": 0,
+        "acertos": 114,
+        "precisao": 1.0,
+        "revocacao": 0.8702290076335878,
+        "f1": 0.9306122448979592
+      },
+      "blocos_exatos": {
+        "acertos": 112,
+        "precisao": 0.9824561403508771,
+        "revocacao": 0.8549618320610687,
+        "f1": 0.9142857142857141
+      },
+      "cobertura": 0.9126956112483822
+    },
+    {
+      "ciclo": 2,
+      "blocos": 124,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 124,
+      "fronteiras_gabarito": 131,
+      "acertos": 124,
+      "precisao": 1.0,
+      "revocacao": 0.9465648854961832,
+      "f1": 0.9725490196078431,
+      "fins": {
+        "previstos": 124,
+        "gabarito": 131,
+        "fins_nao_localizados": 0,
+        "acertos": 124,
+        "precisao": 1.0,
+        "revocacao": 0.9465648854961832,
+        "f1": 0.9725490196078431
+      },
+      "blocos_exatos": {
+        "acertos": 122,
+        "precisao": 0.9838709677419355,
+        "revocacao": 0.9312977099236641,
+        "f1": 0.9568627450980393
+      },
+      "cobertura": 0.9895281797858572
+    },
+    {
+      "ciclo": 3,
+      "blocos": 131,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 131,
+      "fronteiras_gabarito": 131,
+      "acertos": 131,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 131,
+        "gabarito": 131,
+        "fins_nao_localizados": 0,
+        "acertos": 131,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "blocos_exatos": {
+        "acertos": 131,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

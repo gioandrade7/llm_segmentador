@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 44,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais... resolve:\" ficou fora de qualquer bloco antes da Seção I."
+        },
+        {
+          "onde": "inciso III do Art. 5º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"III - propor ao Plenário...\" contém também os incisos IV, V e VI do Art. 5º, que são unidades irmãs e devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco próprio para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais, legais e regimentais... resolve:\" (pág. 1), antes de iniciar o bloco da Seção I.\n- Termine o bloco do inciso \"III - propor ao Plenário que seja compendiada em Súmula...\" do Art. 5º imediatamente antes de \"IV - selecionar, a título de cooperação...\" (pág. 1). Inicie blocos próprios em \"IV - selecionar...\", \"V - requisitar...\" e \"VI - manter contato...\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20082/NORMA-20082_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 48,
+    "insights_aplicados": "- Crie um bloco próprio para o preâmbulo \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas competências constitucionais, legais e regimentais... resolve:\" (pág. 1), antes de iniciar o bloco da Seção I.\n- Termine o bloco do inciso \"III - propor ao Plenário que seja compendiada em Súmula...\" do Art. 5º imediatamente antes de \"IV - selecionar, a título de cooperação...\" (pág. 1). Inicie blocos próprios em \"IV - selecionar...\", \"V - requisitar...\" e \"VI - manter contato...\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20082/NORMA-20082_ciclo2.json"
+  }
+]

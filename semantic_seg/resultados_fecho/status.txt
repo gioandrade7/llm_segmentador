@@ -1,0 +1,105 @@
+13:43:37 início lei_2017/LEI-2017-13423
+13:43:37 início lei_2017/LEI-2017-13416
+13:43:37 início lei_2017/LEI-2017-13422
+13:43:37 início lei_2017/LEI-2017-13432
+13:43:37 início lei_2017/LEI-2017-13426
+13:43:37 início lei_2017/LEI-2017-13429
+13:43:37 início lei_2017/LEI-2017-13418
+13:43:37 início lei_2017/LEI-2017-13421
+13:43:37 início lei_2017/LEI-2017-13435
+13:43:37 início lei_2017/LEI-2017-13430
+13:43:58 fim    lei_2017/LEI-2017-13418 exit=0
+13:44:00 fim    lei_2017/LEI-2017-13423 exit=0
+13:44:00 fim    lei_2017/LEI-2017-13422 exit=0
+13:44:04 fim    lei_2017/LEI-2017-13421 exit=0
+13:44:12 fim    lei_2017/LEI-2017-13429 exit=0
+13:44:22 fim    lei_2017/LEI-2017-13430 exit=0
+13:44:56 fim    lei_2017/LEI-2017-13435 exit=0
+13:45:48 fim    lei_2017/LEI-2017-13416 exit=0
+13:46:07 fim    lei_2017/LEI-2017-13426 exit=0
+13:50:00 fim    lei_2017/LEI-2017-13432 exit=0
+13:50:00 TODOS TERMINARAM (10 ok, 0 com erro)
+13:53:27 início sec-rules/sec-rules
+13:53:27 início tcu/NORMA-20055
+13:53:27 início tcu/NORMA-20542
+13:53:27 início tcu/NORMA-1516
+13:53:27 início tcu/NORMA-20186
+13:53:27 início tcu/NORMA-20797
+13:56:56 fim    tcu/NORMA-20542 exit=0
+14:03:35 fim    tcu/NORMA-20797 exit=0
+14:05:07 fim    tcu/NORMA-20055 exit=0
+14:09:41 fim    tcu/NORMA-20186 exit=0
+14:31:42 fim    tcu/NORMA-1516 exit=0
+20:10:26 fim    sec-rules/sec-rules exit=0
+20:10:26 TODOS TERMINARAM (6 ok, 0 com erro)
+21:21:01 pulado sec-rules/sec-rules
+21:21:01 início L13709compilado/L13709compilado
+21:21:01 início L13467/L13467
+21:21:01 início tcu/NORMA-26102
+21:21:01 início tcu/NORMA-6257
+21:21:01 início tcu/NORMA-6140
+21:21:01 início edital-inep-064/edital-inep-064
+21:21:01 início tcu/NORMA-21767
+21:21:01 início tcu/NORMA-20182
+21:21:01 início tcu/NORMA-18201
+21:21:01 início tcu/NORMA-6783
+21:21:01 pulado tcu/NORMA-20797
+21:21:01 início tcu/NORMA-21225
+21:21:01 pulado tcu/NORMA-20186
+21:21:01 início tcu/NORMA-1463
+21:21:01 início tcu/NORMA-19646
+21:21:01 início tcu/NORMA-5421
+21:21:01 pulado tcu/NORMA-1516
+21:21:01 início tcu/NORMA-21260
+21:21:01 início tcu/NORMA-18793
+21:21:01 pulado lei_2017/LEI-2017-13429
+21:21:01 início tcu/NORMA-21386
+21:21:01 pulado tcu/NORMA-20055
+21:21:01 início tcu/NORMA-19297
+21:21:01 início tcu/NORMA-20633
+21:21:01 início tcu/NORMA-20204
+21:21:01 início tcu/NORMA-19948
+21:21:01 início tcu/NORMA-24582
+21:21:01 início tcu/NORMA-20082
+21:21:01 início tcu/NORMA-19618
+21:21:01 início tcu/NORMA-20901
+21:21:01 início tcu/NORMA-20277
+21:21:01 pulado lei_2017/LEI-2017-13432
+21:21:01 pulado tcu/NORMA-20542
+21:21:01 início tcu/NORMA-21439
+21:21:01 pulado lei_2017/LEI-2017-13416
+21:21:01 pulado lei_2017/LEI-2017-13426
+21:21:01 pulado lei_2017/LEI-2017-13430
+21:21:01 pulado lei_2017/LEI-2017-13421
+21:21:01 pulado lei_2017/LEI-2017-13435
+21:21:01 pulado lei_2017/LEI-2017-13423
+21:21:01 pulado lei_2017/LEI-2017-13422
+21:21:01 pulado lei_2017/LEI-2017-13418
+21:22:50 fim    L13467/L13467 exit=0
+21:24:00 fim    tcu/NORMA-21439 exit=0
+21:24:14 fim    tcu/NORMA-20277 exit=0
+21:24:29 fim    tcu/NORMA-19948 exit=0
+21:25:23 fim    tcu/NORMA-20633 exit=0
+21:25:51 fim    tcu/NORMA-20901 exit=0
+21:27:09 fim    tcu/NORMA-20082 exit=0
+21:27:34 fim    tcu/NORMA-19297 exit=0
+21:27:54 fim    tcu/NORMA-18793 exit=0
+21:29:34 fim    tcu/NORMA-19618 exit=0
+21:36:53 fim    tcu/NORMA-20204 exit=0
+21:42:22 fim    tcu/NORMA-24582 exit=0
+21:43:52 fim    tcu/NORMA-21386 exit=0
+21:45:05 fim    tcu/NORMA-20182 exit=0
+21:45:25 fim    tcu/NORMA-21260 exit=0
+21:45:30 fim    tcu/NORMA-19646 exit=0
+21:46:10 fim    tcu/NORMA-1463 exit=0
+21:57:15 fim    tcu/NORMA-26102 exit=0
+21:58:08 fim    tcu/NORMA-21225 exit=0
+21:59:25 fim    tcu/NORMA-18201 exit=0
+22:05:18 fim    tcu/NORMA-5421 exit=0
+22:09:19 fim    tcu/NORMA-21767 exit=0
+22:09:49 fim    tcu/NORMA-6257 exit=0
+22:33:34 fim    tcu/NORMA-6140 exit=0
+22:39:14 fim    tcu/NORMA-6783 exit=0
+23:37:52 fim    edital-inep-064/edital-inep-064 exit=0
+23:46:15 fim    L13709compilado/L13709compilado exit=0
+23:46:15 TODOS TERMINARAM (43 ok, 0 com erro)

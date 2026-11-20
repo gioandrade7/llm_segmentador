@@ -1,0 +1,47 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 59,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 8º, “Compete ao Curador do Espaço Cultural”, págs. 1-2",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado pelo inciso IX - “definir a linguagem visual e estética...” contém também os incisos X a XV, que são unidades próprias."
+        },
+        {
+          "onde": "Art. 9º, “Compete ao Gestor do Espaço Cultural”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado pelo inciso IV - “fornecer apoio logístico e administrativo...” contém também os incisos V a X, que são unidades próprias."
+        },
+        {
+          "onde": "Art. 7º, “Compete ao Presidente do Conselho Curador”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 7º contém os incisos I, II e III sem blocos próprios para esses marcadores."
+        },
+        {
+          "onde": "preâmbulo anterior a “CAPÍTULO I”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto introdutório iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências...” ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Art. 8º, “Compete ao Curador do Espaço Cultural” (págs. 1-2), termine cada inciso em seu próprio bloco: inicie blocos separados em IX - “definir a linguagem visual e estética...”, X - “redigir os textos críticos...”, XI - “orientar e acompanhar...”, XII - “acompanhar o treinamento...”, XIII - “supervisionar as publicações...”, XIV - “indicar obras...” e XV - “comparecer às reuniões...” (pág. 2).\n- No Art. 9º, “Compete ao Gestor do Espaço Cultural” (pág. 2), inicie um bloco próprio para cada inciso de IV - “fornecer apoio logístico e administrativo...” até X - “apresentar à Presidência do Tribunal relatório anual de atividades”.\n- No Art. 7º, “Compete ao Presidente do Conselho Curador” (pág. 1), inicie blocos próprios em I - “representar o Conselho junto ao TCU”, II - “convocar reuniões do Conselho Curador” e III - “conduzir as reuniões do Conselho”.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais”, antes de “CAPÍTULO I”."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19618/NORMA-19618_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 75,
+    "insights_aplicados": "- No Art. 8º, “Compete ao Curador do Espaço Cultural” (págs. 1-2), termine cada inciso em seu próprio bloco: inicie blocos separados em IX - “definir a linguagem visual e estética...”, X - “redigir os textos críticos...”, XI - “orientar e acompanhar...”, XII - “acompanhar o treinamento...”, XIII - “supervisionar as publicações...”, XIV - “indicar obras...” e XV - “comparecer às reuniões...” (pág. 2).\n- No Art. 9º, “Compete ao Gestor do Espaço Cultural” (pág. 2), inicie um bloco próprio para cada inciso de IV - “fornecer apoio logístico e administrativo...” até X - “apresentar à Presidência do Tribunal relatório anual de atividades”.\n- No Art. 7º, “Compete ao Presidente do Conselho Curador” (pág. 1), inicie blocos próprios em I - “representar o Conselho junto ao TCU”, II - “convocar reuniões do Conselho Curador” e III - “conduzir as reuniões do Conselho”.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no exercício de suas competências constitucionais e legais”, antes de “CAPÍTULO I”.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19618/NORMA-19618_ciclo2.json"
+  }
+]

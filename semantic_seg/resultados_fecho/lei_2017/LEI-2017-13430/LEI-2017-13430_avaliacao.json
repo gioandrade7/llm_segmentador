@@ -1,0 +1,34 @@
+{
+  "prefixo": "resultados_fecho/lei_2017/LEI-2017-13430/LEI-2017-13430",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/LEI-2017-13430.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 6,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 6,
+      "fronteiras_gabarito": 6,
+      "acertos": 6,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 6,
+        "gabarito": 6,
+        "fins_nao_localizados": 0,
+        "acertos": 6,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "blocos_exatos": {
+        "acertos": 6,
+        "precisao": 1.0,
+        "revocacao": 1.0,
+        "f1": 1.0
+      },
+      "cobertura": 1.0
+    }
+  ]
+}

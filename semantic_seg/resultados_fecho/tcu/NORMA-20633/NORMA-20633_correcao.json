@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 28,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Parágrafo Único. \"Devem ser verificados em relação aos projetos e atividades da UG:\", pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Parágrafo Único contém os incisos I, II, III e IV, embora cada inciso seja uma unidade hierárquica que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto introdutório anterior ao Art. 1º ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- No Parágrafo Único \"Devem ser verificados em relação aos projetos e atividades da UG:\" (pág. 1), termine o bloco antes de \"I - se os atos\" e inicie blocos próprios em cada inciso: \"I - se os atos\", \"II - a exatidão\", \"III - o preenchimento\" e \"IV - se a aplicação\".\n- Crie um bloco para o preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\" (pág. 1), antes do bloco iniciado por \"Art. 1º\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20633/NORMA-20633_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 33,
+    "insights_aplicados": "- No Parágrafo Único \"Devem ser verificados em relação aos projetos e atividades da UG:\" (pág. 1), termine o bloco antes de \"I - se os atos\" e inicie blocos próprios em cada inciso: \"I - se os atos\", \"II - a exatidão\", \"III - o preenchimento\" e \"IV - se a aplicação\".\n- Crie um bloco para o preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\" (pág. 1), antes do bloco iniciado por \"Art. 1º\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20633/NORMA-20633_ciclo2.json"
+  }
+]

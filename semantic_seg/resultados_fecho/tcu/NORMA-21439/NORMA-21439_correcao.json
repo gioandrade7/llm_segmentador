@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 22,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo antes de `CAPÍTULO I — DAS DISPOSIÇÕES PRELIMINARES`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o texto de abertura, de `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...` até `resolve:`, ficou sem bloco."
+        },
+        {
+          "onde": "`Art. 12. Fica revogada a Resolução-TCU nº 88...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 12 contém também o fecho formado pela assinatura `JOSÉ MUCIO MONTEIRO` e pelo cargo `Presidente`, que deve constituir um único bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Antes de `CAPÍTULO I — DAS DISPOSIÇÕES PRELIMINARES` (pág. 1), inicie um bloco para o texto de abertura que começa em `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,` e termina em `resolve:`.\n- Termine o bloco de `Art. 12. Fica revogada a Resolução-TCU nº 88, de 14 de maio de 1997.` (pág. 2) antes de `JOSÉ MUCIO MONTEIRO` e inicie ali um único bloco de fecho, incluindo `JOSÉ MUCIO MONTEIRO` e `Presidente` até o fim do documento."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21439/NORMA-21439_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 24,
+    "insights_aplicados": "- Antes de `CAPÍTULO I — DAS DISPOSIÇÕES PRELIMINARES` (pág. 1), inicie um bloco para o texto de abertura que começa em `O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,` e termina em `resolve:`.\n- Termine o bloco de `Art. 12. Fica revogada a Resolução-TCU nº 88, de 14 de maio de 1997.` (pág. 2) antes de `JOSÉ MUCIO MONTEIRO` e inicie ali um único bloco de fecho, incluindo `JOSÉ MUCIO MONTEIRO` e `Presidente` até o fim do documento.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21439/NORMA-21439_ciclo2.json"
+  }
+]

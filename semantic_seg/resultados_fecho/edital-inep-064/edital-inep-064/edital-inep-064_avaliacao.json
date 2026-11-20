@@ -1,0 +1,142 @@
+{
+  "prefixo": "resultados_fecho/edital-inep-064/edital-inep-064/edital-inep-064",
+  "gabarito": "/Users/giovanna.santos/Documents/web_scrapper_pub_extractor/semantic_seg/gabarito/edital-inep-064.md",
+  "tolerancia": 0,
+  "ciclos": [
+    {
+      "ciclo": 1,
+      "blocos": 375,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 375,
+      "fronteiras_gabarito": 377,
+      "acertos": 374,
+      "precisao": 0.9973333333333333,
+      "revocacao": 0.9920424403183024,
+      "f1": 0.9946808510638298,
+      "fins": {
+        "previstos": 375,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 372,
+        "precisao": 0.992,
+        "revocacao": 0.986737400530504,
+        "f1": 0.9893617021276595
+      },
+      "blocos_exatos": {
+        "acertos": 369,
+        "precisao": 0.984,
+        "revocacao": 0.9787798408488063,
+        "f1": 0.9813829787234042
+      },
+      "cobertura": 0.9996406109613657
+    },
+    {
+      "ciclo": 2,
+      "blocos": 358,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 358,
+      "fronteiras_gabarito": 377,
+      "acertos": 358,
+      "precisao": 1.0,
+      "revocacao": 0.9496021220159151,
+      "f1": 0.9741496598639455,
+      "fins": {
+        "previstos": 358,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 357,
+        "precisao": 0.9972067039106145,
+        "revocacao": 0.946949602122016,
+        "f1": 0.9714285714285715
+      },
+      "blocos_exatos": {
+        "acertos": 354,
+        "precisao": 0.9888268156424581,
+        "revocacao": 0.9389920424403183,
+        "f1": 0.963265306122449
+      },
+      "cobertura": 0.9998039696152904
+    },
+    {
+      "ciclo": 3,
+      "blocos": 371,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 371,
+      "fronteiras_gabarito": 377,
+      "acertos": 371,
+      "precisao": 1.0,
+      "revocacao": 0.9840848806366048,
+      "f1": 0.9919786096256685,
+      "fins": {
+        "previstos": 371,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 371,
+        "precisao": 1.0,
+        "revocacao": 0.9840848806366048,
+        "f1": 0.9919786096256685
+      },
+      "blocos_exatos": {
+        "acertos": 367,
+        "precisao": 0.9892183288409704,
+        "revocacao": 0.9734748010610079,
+        "f1": 0.9812834224598931
+      },
+      "cobertura": 1.0
+    },
+    {
+      "ciclo": 4,
+      "blocos": 377,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 377,
+      "fronteiras_gabarito": 377,
+      "acertos": 377,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 377,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 376,
+        "precisao": 0.9973474801061007,
+        "revocacao": 0.9973474801061007,
+        "f1": 0.9973474801061007
+      },
+      "blocos_exatos": {
+        "acertos": 376,
+        "precisao": 0.9973474801061007,
+        "revocacao": 0.9973474801061007,
+        "f1": 0.9973474801061007
+      },
+      "cobertura": 0.9999346565384302
+    },
+    {
+      "ciclo": 5,
+      "blocos": 377,
+      "ancoras_nao_localizadas": 0,
+      "fronteiras_previstas": 377,
+      "fronteiras_gabarito": 377,
+      "acertos": 377,
+      "precisao": 1.0,
+      "revocacao": 1.0,
+      "f1": 1.0,
+      "fins": {
+        "previstos": 377,
+        "gabarito": 377,
+        "fins_nao_localizados": 0,
+        "acertos": 376,
+        "precisao": 0.9973474801061007,
+        "revocacao": 0.9973474801061007,
+        "f1": 0.9973474801061007
+      },
+      "blocos_exatos": {
+        "acertos": 376,
+        "precisao": 0.9973474801061007,
+        "revocacao": 0.9973474801061007,
+        "f1": 0.9973474801061007
+      },
+      "cobertura": 0.999754962019113
+    }
+  ]
+}

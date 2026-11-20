@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 24,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "texto inicial “O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A fórmula institucional que antecede o primeiro “Considerando” contém texto do documento e não foi incluída em nenhum bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inicie um bloco para a fórmula institucional de abertura “O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência que lhe confere...” (pág. 1), incluindo todo o texto até o ponto e vírgula imediatamente anterior a “Considerando a obrigatoriedade...”."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19948/NORMA-19948_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 25,
+    "insights_aplicados": "- Inicie um bloco para a fórmula institucional de abertura “O TRIBUNAL DE CONTAS DA UNIÃO, no uso da competência que lhe confere...” (pág. 1), incluindo todo o texto até o ponto e vírgula imediatamente anterior a “Considerando a obrigatoriedade...”.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19948/NORMA-19948_ciclo2.json"
+  }
+]

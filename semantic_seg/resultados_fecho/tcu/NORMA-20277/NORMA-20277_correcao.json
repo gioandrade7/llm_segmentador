@@ -1,0 +1,42 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 18,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório anterior ao Art. 1º, incluindo a fundamentação e a fórmula “resolve:”, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Inciso IV - “o Tribunal de Contas da União;”, no Art. 1º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso IV contém também os incisos V - “o Ministério Público da União;” até XVI - “a aplicação de subvenções, auxílios e contribuições.”, que são unidades irmãs e deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 4º - “As Secretarias de Controle Externo nos Estados”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 4º contém também o Parágrafo único. - “Os processos referentes às inspeções e auditorias previstas nesse artigo”, que deveria constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” e encerrado antes de “Art. 1º Constituem clientela das Secretarias de Controle Externo”.\n- No Art. 1º, pág. 1, termine o bloco de “IV - o Tribunal de Contas da União;” antes de “V - o Ministério Público da União;” e inicie um bloco próprio em cada inciso seguinte: “V - o Ministério Público da União;”, “VI - os serviços sociais autônomos;”, “VII - os conselhos de fiscalização das profissões liberais;”, “VIII - as contas nacionais das empresas supranacionais”, “IX - as empresas encampadas ou sob intervenção federal;”, “X - os Estados, o Distrito Federal e os Municípios”, “XI - as concessões civis e militares;”, “XII - os atos de admissão de pessoal”, “XIII - a arrecadação e a renúncia de receitas públicas federais;”, “XIV - os fundos constitucionais, de investimentos e demais fundos;”, “XV - as declarações de bens e rendas” e “XVI - a aplicação de subvenções, auxílios e contribuições.”\n- Na pág. 1, termine o bloco de “Art. 4º As Secretarias de Controle Externo nos Estados” imediatamente antes de “Parágrafo único. Os processos referentes às inspeções e auditorias previstas nesse artigo” e inicie um bloco próprio no Parágrafo único."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20277/NORMA-20277_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 32,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” e encerrado antes de “Art. 1º Constituem clientela das Secretarias de Controle Externo”.\n- No Art. 1º, pág. 1, termine o bloco de “IV - o Tribunal de Contas da União;” antes de “V - o Ministério Público da União;” e inicie um bloco próprio em cada inciso seguinte: “V - o Ministério Público da União;”, “VI - os serviços sociais autônomos;”, “VII - os conselhos de fiscalização das profissões liberais;”, “VIII - as contas nacionais das empresas supranacionais”, “IX - as empresas encampadas ou sob intervenção federal;”, “X - os Estados, o Distrito Federal e os Municípios”, “XI - as concessões civis e militares;”, “XII - os atos de admissão de pessoal”, “XIII - a arrecadação e a renúncia de receitas públicas federais;”, “XIV - os fundos constitucionais, de investimentos e demais fundos;”, “XV - as declarações de bens e rendas” e “XVI - a aplicação de subvenções, auxílios e contribuições.”\n- Na pág. 1, termine o bloco de “Art. 4º As Secretarias de Controle Externo nos Estados” imediatamente antes de “Parágrafo único. Os processos referentes às inspeções e auditorias previstas nesse artigo” e inicie um bloco próprio no Parágrafo único.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-20277/NORMA-20277_ciclo2.json"
+  }
+]

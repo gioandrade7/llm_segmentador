@@ -1,0 +1,50 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 9,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 1º Fica autorizado...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em Art. 1º contém também a unidade autônoma `Parágrafo único. As aquisições referidas no caput...`, sem início de bloco próprio para o parágrafo."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `Art. 1º Fica autorizado o Banco Central do Brasil...` imediatamente antes de `Parágrafo único. As aquisições referidas no caput...` (pág. 1) e inicie um bloco próprio no Parágrafo único."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13416/LEI-2017-13416_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 8,
+    "insights_aplicados": "- Termine o bloco de `Art. 1º Fica autorizado o Banco Central do Brasil...` imediatamente antes de `Parágrafo único. As aquisições referidas no caput...` (pág. 1) e inicie um bloco próprio no Parágrafo único.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`§ 1º Caracterizam a inviabilidade ou fundada incerteza...`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém, sem cortes próprios, os incisos `I - o atraso acumulado de 15%...` e `II - outras hipóteses de descumprimento...`, que são unidades hierárquicas distintas."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `§ 1º Caracterizam a inviabilidade ou fundada incerteza de que trata o caput:` imediatamente antes de `I - o atraso acumulado de 15%...` (pág. 1), inicie um bloco próprio no inciso I e termine-o imediatamente antes de `II - outras hipóteses de descumprimento...`, iniciando outro bloco próprio nesse inciso.\n- Termine o bloco de `Art. 1º Fica autorizado o Banco Central do Brasil...` imediatamente antes de `Parágrafo único. As aquisições referidas no caput...` (pág. 1) e inicie um bloco próprio no Parágrafo único."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13416/LEI-2017-13416_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 10,
+    "insights_aplicados": "- Termine o bloco de `§ 1º Caracterizam a inviabilidade ou fundada incerteza de que trata o caput:` imediatamente antes de `I - o atraso acumulado de 15%...` (pág. 1), inicie um bloco próprio no inciso I e termine-o imediatamente antes de `II - outras hipóteses de descumprimento...`, iniciando outro bloco próprio nesse inciso.\n- Termine o bloco de `Art. 1º Fica autorizado o Banco Central do Brasil...` imediatamente antes de `Parágrafo único. As aquisições referidas no caput...` (pág. 1) e inicie um bloco próprio no Parágrafo único.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13416/LEI-2017-13416_ciclo3.json"
+  }
+]

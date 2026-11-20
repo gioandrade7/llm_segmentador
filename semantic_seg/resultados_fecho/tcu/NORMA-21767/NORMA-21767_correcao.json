@@ -1,0 +1,192 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 138,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório anterior a “CAPÍTULO I” ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 3º “São objetivos do processo de responsabilização”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 3º contém também os incisos I e II, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 9º “A sanção de advertência será aplicada”, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do art. 9º contém também “Art. 10. A multa e o regramento de sua incidência”, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Parágrafo único do Art. 11 “Caso as infrações administrativas”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do parágrafo único contém também o inciso I da gradação de declaração de inidoneidade, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Incisos II a VI do parágrafo único do Art. 11, iniciados por “II - de quatro a seis anos” e terminados em “VI - de três a cinco anos”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "Cinco incisos do parágrafo único do art. 11 ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "Seção I “Disposições gerais e comuns”, CAPÍTULO III, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco da seção contém, sem blocos próprios, os arts. 13 a 16, os §§ 1º e 2º do art. 13, os incisos I e II e os §§ 1º e 2º do art. 14, e o parágrafo único do art. 16."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21767/NORMA-21767_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 146,
+    "insights_aplicados": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Incisos XIII e XIV do Art. 2º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos “XIII - fraudar a licitação ou o contrato dela decorrente” e “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza” ficaram sem bloco."
+        },
+        {
+          "onde": "Alíneas b e c do inciso III do Art. 4º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "As alíneas “b) dos princípios do contraditório e da ampla defesa” e “c) das vedações ao agente público...” ficaram sem bloco."
+        },
+        {
+          "onde": "Incisos X, XI e XII do Art. 5º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos “X - comportar-se de modo inidôneo...”, “XI - praticar atos ilícitos...” e “XII - praticar ato lesivo...” ficaram sem bloco."
+        },
+        {
+          "onde": "Art. 7º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 7º A aplicação das sanções...” contém, sem cortes próprios, os incisos I, II e III e o “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”."
+        },
+        {
+          "onde": "§§ 3º e 4º do Art. 7º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “§ 3º Quando a ação ou omissão...” contém também o “§ 4º A aplicação das sanções administrativas...”, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21767/NORMA-21767_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 151,
+    "insights_aplicados": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, alínea “c) das vedações ao agente público designado...”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco da alínea c) contém também os incisos IV - “a constituição da comissão responsável...” e V - “a notificação válida...”"
+        },
+        {
+          "onde": "Art. 4º, incisos IV e V, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos IV - “a constituição da comissão responsável, nos casos previstos; e” e V - “a notificação válida ao licitante ou ao contratado.” ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 12, inciso II - “de quatro a seis anos, na hipótese de fraudar...”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II contém também os incisos III, IV e V da gradação do art. 12."
+        },
+        {
+          "onde": "Art. 18, inciso II - “suspensa, nos seguintes casos:”, pág. 7",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II contém a alínea a) - “pela celebração de acordo de leniência previsto na Lei nº 12.846, de 2013; e”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 18, alínea “a) pela celebração de acordo de leniência...”, pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "o trecho “Lei nº 12.846, de 2013; e”, continuação da alínea a), ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "CAPÍTULO IV - “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS”, pág. 8",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o Art. 31 - “Aplicam-se subsidiariamente aos processos administrativos...”"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 4º (pág. 3), termine o bloco da alínea “c) das vedações ao agente público designado...” antes de “IV - a constituição da comissão responsável...” e inicie blocos próprios em “IV - a constituição da comissão responsável, nos casos previstos; e” e em “V - a notificação válida ao licitante ou ao contratado.”\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- No Art. 12 (pág. 6), termine o bloco de “II - de quatro a seis anos, na hipótese de fraudar a licitação...” antes de “III - de três a quatro anos, na hipótese de comportar-se...” e inicie blocos próprios em “III - de três a quatro anos...”, “IV - de três a cinco anos...” e “V - de quatro a seis anos...”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.\n- No Art. 18 (pág. 7), termine o bloco de “II - suspensa, nos seguintes casos:” antes de “a) pela celebração de acordo de leniência previsto na Lei nº 12.846, de 2013; e” e inicie um bloco próprio nessa alínea, incluindo integralmente o trecho “Lei nº 12.846, de 2013; e”.\n- No CAPÍTULO IV “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio no Art. 31."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21767/NORMA-21767_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 150,
+    "insights_aplicados": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 4º (pág. 3), termine o bloco da alínea “c) das vedações ao agente público designado...” antes de “IV - a constituição da comissão responsável...” e inicie blocos próprios em “IV - a constituição da comissão responsável, nos casos previstos; e” e em “V - a notificação válida ao licitante ou ao contratado.”\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- No Art. 12 (pág. 6), termine o bloco de “II - de quatro a seis anos, na hipótese de fraudar a licitação...” antes de “III - de três a quatro anos, na hipótese de comportar-se...” e inicie blocos próprios em “III - de três a quatro anos...”, “IV - de três a cinco anos...” e “V - de quatro a seis anos...”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.\n- No Art. 18 (pág. 7), termine o bloco de “II - suspensa, nos seguintes casos:” antes de “a) pela celebração de acordo de leniência previsto na Lei nº 12.846, de 2013; e” e inicie um bloco próprio nessa alínea, incluindo integralmente o trecho “Lei nº 12.846, de 2013; e”.\n- No CAPÍTULO IV “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio no Art. 31.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 6º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 6º Serão aplicadas...” contém, sem cortes próprios, os incisos I a IV e o Parágrafo único."
+        },
+        {
+          "onde": "§ 2º do Art. 7º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...” contém também os incisos I e II, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "§ 2º do Art. 23, pág. 8",
+          "tipo": "sem_bloco",
+          "descricao": "O texto da unidade “§ 2° A subunidade prevista no caput deste artigo poderá...” não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "§ 2º do Art. 23, pág. 8",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para “§ 2° A subunidade prevista no caput deste artigo poderá...”, mas sua âncora não foi localizada no texto segmentado."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 4º (pág. 3), termine o bloco da alínea “c) das vedações ao agente público designado...” antes de “IV - a constituição da comissão responsável...” e inicie blocos próprios em “IV - a constituição da comissão responsável, nos casos previstos; e” e em “V - a notificação válida ao licitante ou ao contratado.”\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 6º (pág. 3), termine o bloco do artigo antes de “I - advertência;” e inicie blocos próprios em cada inciso I, II, III e IV, bem como em “Parágrafo único. A aplicação da sanção de declaração de inidoneidade...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No § 2º do Art. 7º (pág. 4), termine o bloco de “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...” antes de “I - o licitante ou o contratado...” e inicie blocos próprios nos incisos I e II.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- No Art. 12 (pág. 6), termine o bloco de “II - de quatro a seis anos, na hipótese de fraudar a licitação...” antes de “III - de três a quatro anos, na hipótese de comportar-se...” e inicie blocos próprios em “III - de três a quatro anos...”, “IV - de três a cinco anos...” e “V - de quatro a seis anos...”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.\n- No Art. 18 (pág. 7), termine o bloco de “II - suspensa, nos seguintes casos:” antes de “a) pela celebração de acordo de leniência previsto na Lei nº 12.846, de 2013; e” e inicie um bloco próprio nessa alínea, incluindo integralmente o trecho “Lei nº 12.846, de 2013; e”.\n- No Art. 23 (pág. 8), inicie e localize um bloco próprio em “§ 2° A subunidade prevista no caput deste artigo poderá, a seu critério, designar um servidor para atuar especialmente na instrução do processo.”, entre os blocos do § 1º e do § 3º.\n- No CAPÍTULO IV “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio no Art. 31."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21767/NORMA-21767_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 155,
+    "insights_aplicados": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 4º (pág. 3), termine o bloco da alínea “c) das vedações ao agente público designado...” antes de “IV - a constituição da comissão responsável...” e inicie blocos próprios em “IV - a constituição da comissão responsável, nos casos previstos; e” e em “V - a notificação válida ao licitante ou ao contratado.”\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 6º (pág. 3), termine o bloco do artigo antes de “I - advertência;” e inicie blocos próprios em cada inciso I, II, III e IV, bem como em “Parágrafo único. A aplicação da sanção de declaração de inidoneidade...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No § 2º do Art. 7º (pág. 4), termine o bloco de “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...” antes de “I - o licitante ou o contratado...” e inicie blocos próprios nos incisos I e II.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- No Art. 12 (pág. 6), termine o bloco de “II - de quatro a seis anos, na hipótese de fraudar a licitação...” antes de “III - de três a quatro anos, na hipótese de comportar-se...” e inicie blocos próprios em “III - de três a quatro anos...”, “IV - de três a cinco anos...” e “V - de quatro a seis anos...”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.\n- No Art. 18 (pág. 7), termine o bloco de “II - suspensa, nos seguintes casos:” antes de “a) pela celebração de acordo de leniência previsto na Lei nº 12.846, de 2013; e” e inicie um bloco próprio nessa alínea, incluindo integralmente o trecho “Lei nº 12.846, de 2013; e”.\n- No Art. 23 (pág. 8), inicie e localize um bloco próprio em “§ 2° A subunidade prevista no caput deste artigo poderá, a seu critério, designar um servidor para atuar especialmente na instrução do processo.”, entre os blocos do § 1º e do § 3º.\n- No CAPÍTULO IV “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio no Art. 31.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 2º, inciso VI, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “VI - dar causa à inexecução parcial do contrato” contém também os incisos VII e VIII, que são unidades próprias."
+        },
+        {
+          "onde": "Art. 16, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "O texto integral de “Art. 16. O atraso injustificado na execução do contrato ou na entrega do objeto sujeitará o contratado à multa de mora...” está fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 16, pág. 6",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para o Art. 16, mas sua âncora não foi localizada, embora o texto da unidade esteja presente no documento."
+        },
+        {
+          "onde": "Art. 33, inciso IV, pág. 9",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “IV - cumprimento das condições de reabilitação definidas no ato punitivo; e” contém também o inciso V, que deve constituir bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial autônomo para o preâmbulo que começa por “O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO” (pág. 1) e termina imediatamente antes de “CAPÍTULO I”.\n- No Art. 2º (pág. 1), termine o bloco de “VI - dar causa à inexecução parcial do contrato...” antes de “VII - dar causa à inexecução parcial do contrato que cause grave dano...” e inicie blocos próprios nos incisos VII e VIII.\n- No Art. 2º (pág. 2), inicie blocos próprios em “XIII - fraudar a licitação ou o contrato dela decorrente” e em “XIV - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”.\n- No Art. 3º “São objetivos do processo de responsabilização” (pág. 2), termine o bloco do artigo antes de “I - garantir a adequada condução” e inicie blocos distintos em “I - garantir...” e “II - assegurar...”.\n- No Art. 4º (pág. 3), após a alínea “a) das fases do processo...”, inicie blocos próprios em “b) dos princípios do contraditório e da ampla defesa” e em “c) das vedações ao agente público designado...”.\n- No Art. 4º (pág. 3), termine o bloco da alínea “c) das vedações ao agente público designado...” antes de “IV - a constituição da comissão responsável...” e inicie blocos próprios em “IV - a constituição da comissão responsável, nos casos previstos; e” e em “V - a notificação válida ao licitante ou ao contratado.”\n- No Art. 5º (pág. 3), inicie blocos próprios em “X - comportar-se de modo inidôneo ou cometer fraude de qualquer natureza”, “XI - praticar atos ilícitos com vistas a frustrar os objetivos da licitação” e “XII - praticar ato lesivo previsto no art. 5º da Lei nº 12.846...”.\n- No Art. 6º (pág. 3), termine o bloco do artigo antes de “I - advertência;” e inicie blocos próprios em cada inciso I, II, III e IV, bem como em “Parágrafo único. A aplicação da sanção de declaração de inidoneidade...”.\n- No Art. 7º “A aplicação das sanções previstas nesta Portaria...” (pág. 3), termine o bloco do artigo antes de “I - danos causados à Administração Pública...” e inicie blocos próprios em cada inciso I, II e III, bem como em “§ 1º Para os fins desta Portaria, constituem circunstâncias agravantes...”.\n- No § 2º do Art. 7º (pág. 4), termine o bloco de “§ 2º Para os fins desta Portaria, constituem circunstâncias atenuantes...” antes de “I - o licitante ou o contratado...” e inicie blocos próprios nos incisos I e II.\n- No Art. 7º (pág. 4), termine o bloco de “§ 3º Quando a ação ou omissão...” imediatamente antes de “§ 4º A aplicação das sanções administrativas previstas nesta Portaria...” e inicie bloco próprio no § 4º.\n- Termine o bloco do Art. 9º “A sanção de advertência será aplicada” imediatamente antes de “Art. 10. A multa e o regramento de sua incidência” (pág. 4) e inicie um bloco novo no art. 10.\n- No parágrafo único do Art. 11 “Caso as infrações administrativas” (pág. 5), termine o bloco antes de “I - de três a cinco anos” e inicie blocos próprios em cada inciso I, II, III, IV, V e VI da gradação, até “VI - de três a cinco anos”.\n- No Art. 12 (pág. 6), termine o bloco de “II - de quatro a seis anos, na hipótese de fraudar a licitação...” antes de “III - de três a quatro anos, na hipótese de comportar-se...” e inicie blocos próprios em “III - de três a quatro anos...”, “IV - de três a cinco anos...” e “V - de quatro a seis anos...”.\n- Na Seção I “Disposições gerais e comuns” do CAPÍTULO III (pág. 6), termine o bloco da seção antes de “Art. 13.”. Em seguida, inicie blocos próprios em “Art. 13.”, “§ 1º A autuação”, “§ 2º O processo”, “Art. 14.”, “I - ordinário”, “II - sumário”, “§ 1º A opção”, “§ 2º Se durante”, “Art. 15.”, “Art. 16.” e “Parágrafo único. A aplicação de multa de mora”.\n- Localize e crie efetivamente o bloco do “Art. 16. O atraso injustificado na execução do contrato ou na entrega do objeto sujeitará o contratado à multa de mora...” (pág. 6), imediatamente após o Art. 15 e antes de “Parágrafo único. A aplicação de multa de mora...”.\n- No Art. 18 (pág. 7), termine o bloco de “II - suspensa, nos seguintes casos:” antes de “a) pela celebração de acordo de leniência previsto na Lei nº 12.846, de 2013; e” e inicie um bloco próprio nessa alínea, incluindo integralmente o trecho “Lei nº 12.846, de 2013; e”.\n- No Art. 23 (pág. 8), inicie e localize um bloco próprio em “§ 2° A subunidade prevista no caput deste artigo poderá, a seu critério, designar um servidor para atuar especialmente na instrução do processo.”, entre os blocos do § 1º e do § 3º.\n- No CAPÍTULO IV “DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS” (pág. 8), termine o bloco do capítulo antes de “Art. 31. Aplicam-se subsidiariamente...” e inicie um bloco próprio no Art. 31.\n- No Art. 33 (pág. 9), termine o bloco de “IV - cumprimento das condições de reabilitação definidas no ato punitivo; e” antes de “V - análise jurídica prévia, com posicionamento conclusivo...” e inicie um bloco próprio no inciso V."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21767/NORMA-21767_ciclo5.json"
+  }
+]

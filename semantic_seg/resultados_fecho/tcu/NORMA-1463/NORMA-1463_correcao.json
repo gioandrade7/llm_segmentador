@@ -1,0 +1,143 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 70,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, inciso I, e incisos II a XIII, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Após o bloco do inciso I, os incisos II a XIII de Art. 4º aparecem sem bloco próprio."
+        },
+        {
+          "onde": "Art. 2º, inciso II, págs. 1–2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - apoiar as unidades técnicas subordinadas à Segecex\" contém também os incisos III a X."
+        },
+        {
+          "onde": "Art. 10, inciso II, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - instruir processos de solicitação\" contém também os incisos III a XIII."
+        },
+        {
+          "onde": "Art. 5º, inciso VIII, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IX a XII de Art. 5º aparecem sem bloco próprio após o inciso VIII."
+        },
+        {
+          "onde": "Art. 6º, inciso I, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso I de Art. 6º aparece sem bloco próprio."
+        },
+        {
+          "onde": "Art. 7º, inciso I, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III de Art. 7º aparecem sem bloco próprio após o inciso I."
+        },
+        {
+          "onde": "Art. 8º, inciso VII, págs. 4–5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"VII - atuar em articulação com demais unidades desta Secretaria\" contém também o inciso VIII."
+        },
+        {
+          "onde": "Art. 9º, inciso II, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por \"II - desenvolver, dentro dos padrões estabelecidos\" contém também os incisos III e IV."
+        },
+        {
+          "onde": "Art. 1º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação final da frase de Art. 1º, \"ia.\", ficou fora do bloco que termina em \"Portar\"."
+        },
+        {
+          "onde": "Art. 8º, inciso IV, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação \"sido atribuídas (e-TCU);\" do inciso IV ficou fora de seu bloco."
+        },
+        {
+          "onde": "Art. 8º, inciso V, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" do inciso V ficou fora de seu bloco."
+        },
+        {
+          "onde": "Art. 6º, incisos I a VIII, págs. 3–4",
+          "tipo": "ancora",
+          "descricao": "Há um bloco devolvido, iniciado em \"I - propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões\" e terminado em \"qualidade dos registros de benefícios de controle externo;\", cuja âncora não foi localizada no texto marcado; ele abrange indevidamente diversos incisos irmãos de Art. 6º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de II - \"contribuir para a definição de competências profissionais\" até XIII - \"desempenhar outras atividades que lhes forem atribuídas pelo titular da Semec\".\n- Em Art. 10 (pág. 5), termine o bloco do inciso II - \"instruir processos de solicitação\" antes de III - \"responder a demandas da ouvidoria\" e inicie blocos próprios em cada inciso de III a XIII.\n- Em Art. 2º (págs. 1–2), termine o bloco do inciso II - \"apoiar as unidades técnicas subordinadas à Segecex\" antes de III - \"apoiar a supervisão de trabalhos de fiscalização\" e inicie um bloco próprio em cada inciso de III a X.\n- Em Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de IX - \"participar da elaboração das normas brasileiras de auditoria\" até XII - \"acompanhar o processo de entrega, instrução e julgamento das contas\".\n- Em Art. 6º (pág. 3), inicie um bloco no inciso I - \"propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões sobre processos de denúncia\". Não crie um bloco único que percorra os incisos I a VIII: mantenha cada inciso de Art. 6º como unidade própria.\n- Em Art. 7º (pág. 4), inicie blocos próprios em II - \"avaliar a qualidade de relatórios e instruções de controle externo\" e III - \"participar do desenvolvimento de soluções de tecnologia da informação\".\n- Em Art. 9º (pág. 5), termine o bloco do inciso II - \"desenvolver, dentro dos padrões estabelecidos\" antes de III - \"apoiar o desenvolvimento de soluções\" e inicie blocos próprios em III e IV.\n- Em Art. 8º (págs. 4–5), termine o bloco do inciso VII - \"atuar em articulação com demais unidades desta Secretaria\" antes de VIII - \"definir, em conjunto com a unidade gestora do negócio\" e inicie um bloco próprio no inciso VIII.\n- Em Art. 1º (pág. 1), mantenha a continuação \"ia.\" no mesmo bloco iniciado por \"Art. 1º A estrutura e as competências\"; não separe a palavra \"Portaria\".\n- Em Art. 8º (pág. 4), mantenha \"sido atribuídas (e-TCU);\" no bloco do inciso IV - \"realizar a gestão das soluções de tecnologia da informação\".\n- Em Art. 8º (pág. 4), mantenha \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" no bloco do inciso V - \"conceber novas soluções de tecnologia da informação\"; não separe a palavra \"externo\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-1463/NORMA-1463_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 105,
+    "insights_aplicados": "- Em Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de II - \"contribuir para a definição de competências profissionais\" até XIII - \"desempenhar outras atividades que lhes forem atribuídas pelo titular da Semec\".\n- Em Art. 10 (pág. 5), termine o bloco do inciso II - \"instruir processos de solicitação\" antes de III - \"responder a demandas da ouvidoria\" e inicie blocos próprios em cada inciso de III a XIII.\n- Em Art. 2º (págs. 1–2), termine o bloco do inciso II - \"apoiar as unidades técnicas subordinadas à Segecex\" antes de III - \"apoiar a supervisão de trabalhos de fiscalização\" e inicie um bloco próprio em cada inciso de III a X.\n- Em Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de IX - \"participar da elaboração das normas brasileiras de auditoria\" até XII - \"acompanhar o processo de entrega, instrução e julgamento das contas\".\n- Em Art. 6º (pág. 3), inicie um bloco no inciso I - \"propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões sobre processos de denúncia\". Não crie um bloco único que percorra os incisos I a VIII: mantenha cada inciso de Art. 6º como unidade própria.\n- Em Art. 7º (pág. 4), inicie blocos próprios em II - \"avaliar a qualidade de relatórios e instruções de controle externo\" e III - \"participar do desenvolvimento de soluções de tecnologia da informação\".\n- Em Art. 9º (pág. 5), termine o bloco do inciso II - \"desenvolver, dentro dos padrões estabelecidos\" antes de III - \"apoiar o desenvolvimento de soluções\" e inicie blocos próprios em III e IV.\n- Em Art. 8º (págs. 4–5), termine o bloco do inciso VII - \"atuar em articulação com demais unidades desta Secretaria\" antes de VIII - \"definir, em conjunto com a unidade gestora do negócio\" e inicie um bloco próprio no inciso VIII.\n- Em Art. 1º (pág. 1), mantenha a continuação \"ia.\" no mesmo bloco iniciado por \"Art. 1º A estrutura e as competências\"; não separe a palavra \"Portaria\".\n- Em Art. 8º (pág. 4), mantenha \"sido atribuídas (e-TCU);\" no bloco do inciso IV - \"realizar a gestão das soluções de tecnologia da informação\".\n- Em Art. 8º (pág. 4), mantenha \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" no bloco do inciso V - \"conceber novas soluções de tecnologia da informação\"; não separe a palavra \"externo\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 6º, incisos I e II, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os textos dos incisos I - \"propor, aperfeiçoar, atualizar e disseminar normas... sobre processos de denúncia\" e II - \"propor, aperfeiçoar, atualizar e disseminar normas... sobre procedimentos de constituição\" não foram incluídos em nenhum bloco."
+        },
+        {
+          "onde": "Art. 6º, inciso II, pág. 3",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para o inciso II, mas sua âncora não foi localizada no texto marcado; o inciso permanece sem bloco."
+        },
+        {
+          "onde": "Art. 6º, inciso XIII, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em XIII - \"colaborar com o Serav no planejamento\" contém também os incisos XIV - \"esclarecer dúvidas\" e XV - \"orientar e prestar suporte técnico\", que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 10, inciso X, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em X - \"apoiar a realização de eventos\" contém também os incisos XI - \"manter arquivo sistemático\", XII - \"manter atualizadas as informações\" e XIII - \"desempenhar outras atividades\", que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de I - \"propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões sobre processos de denúncia\" até XV - \"orientar e prestar suporte técnico às secretarias de controle externo\". Em especial, não deixe os incisos I e II sem bloco, termine o inciso XIII antes de XIV - \"esclarecer dúvidas\" e termine o inciso XIV antes de XV - \"orientar e prestar suporte técnico\".\n- Em Art. 10 (pág. 5), termine o bloco do inciso II - \"instruir processos de solicitação\" antes de III - \"responder a demandas da ouvidoria\" e inicie blocos próprios em cada inciso de III a XIII; em especial, termine o inciso X - \"apoiar a realização de eventos de disseminação\" antes de XI - \"manter arquivo sistemático\", o inciso XI antes de XII - \"manter atualizadas as informações\" e o inciso XII antes de XIII - \"desempenhar outras atividades\".\n- Em Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de II - \"contribuir para a definição de competências profissionais\" até XIII - \"desempenhar outras atividades que lhes forem atribuídas pelo titular da Semec\".\n- Em Art. 2º (págs. 1–2), termine o bloco do inciso II - \"apoiar as unidades técnicas subordinadas à Segecex\" antes de III - \"apoiar a supervisão de trabalhos de fiscalização\" e inicie um bloco próprio em cada inciso de III a X.\n- Em Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de IX - \"participar da elaboração das normas brasileiras de auditoria\" até XII - \"acompanhar o processo de entrega, instrução e julgamento das contas\".\n- Em Art. 7º (pág. 4), inicie blocos próprios em II - \"avaliar a qualidade de relatórios e instruções de controle externo\" e III - \"participar do desenvolvimento de soluções de tecnologia da informação\".\n- Em Art. 9º (pág. 5), termine o bloco do inciso II - \"desenvolver, dentro dos padrões estabelecidos\" antes de III - \"apoiar o desenvolvimento de soluções\" e inicie blocos próprios em III e IV.\n- Em Art. 8º (págs. 4–5), termine o bloco do inciso VII - \"atuar em articulação com demais unidades desta Secretaria\" antes de VIII - \"definir, em conjunto com a unidade gestora do negócio\" e inicie um bloco próprio no inciso VIII.\n- Em Art. 1º (pág. 1), mantenha a continuação \"ia.\" no mesmo bloco iniciado por \"Art. 1º A estrutura e as competências\"; não separe a palavra \"Portaria\".\n- Em Art. 8º (pág. 4), mantenha \"sido atribuídas (e-TCU);\" no bloco do inciso IV - \"realizar a gestão das soluções de tecnologia da informação\".\n- Em Art. 8º (pág. 4), mantenha \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" no bloco do inciso V - \"conceber novas soluções de tecnologia da informação\"; não separe a palavra \"externo\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-1463/NORMA-1463_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 109,
+    "insights_aplicados": "- Em Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de I - \"propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões sobre processos de denúncia\" até XV - \"orientar e prestar suporte técnico às secretarias de controle externo\". Em especial, não deixe os incisos I e II sem bloco, termine o inciso XIII antes de XIV - \"esclarecer dúvidas\" e termine o inciso XIV antes de XV - \"orientar e prestar suporte técnico\".\n- Em Art. 10 (pág. 5), termine o bloco do inciso II - \"instruir processos de solicitação\" antes de III - \"responder a demandas da ouvidoria\" e inicie blocos próprios em cada inciso de III a XIII; em especial, termine o inciso X - \"apoiar a realização de eventos de disseminação\" antes de XI - \"manter arquivo sistemático\", o inciso XI antes de XII - \"manter atualizadas as informações\" e o inciso XII antes de XIII - \"desempenhar outras atividades\".\n- Em Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de II - \"contribuir para a definição de competências profissionais\" até XIII - \"desempenhar outras atividades que lhes forem atribuídas pelo titular da Semec\".\n- Em Art. 2º (págs. 1–2), termine o bloco do inciso II - \"apoiar as unidades técnicas subordinadas à Segecex\" antes de III - \"apoiar a supervisão de trabalhos de fiscalização\" e inicie um bloco próprio em cada inciso de III a X.\n- Em Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de IX - \"participar da elaboração das normas brasileiras de auditoria\" até XII - \"acompanhar o processo de entrega, instrução e julgamento das contas\".\n- Em Art. 7º (pág. 4), inicie blocos próprios em II - \"avaliar a qualidade de relatórios e instruções de controle externo\" e III - \"participar do desenvolvimento de soluções de tecnologia da informação\".\n- Em Art. 9º (pág. 5), termine o bloco do inciso II - \"desenvolver, dentro dos padrões estabelecidos\" antes de III - \"apoiar o desenvolvimento de soluções\" e inicie blocos próprios em III e IV.\n- Em Art. 8º (págs. 4–5), termine o bloco do inciso VII - \"atuar em articulação com demais unidades desta Secretaria\" antes de VIII - \"definir, em conjunto com a unidade gestora do negócio\" e inicie um bloco próprio no inciso VIII.\n- Em Art. 1º (pág. 1), mantenha a continuação \"ia.\" no mesmo bloco iniciado por \"Art. 1º A estrutura e as competências\"; não separe a palavra \"Portaria\".\n- Em Art. 8º (pág. 4), mantenha \"sido atribuídas (e-TCU);\" no bloco do inciso IV - \"realizar a gestão das soluções de tecnologia da informação\".\n- Em Art. 8º (pág. 4), mantenha \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" no bloco do inciso V - \"conceber novas soluções de tecnologia da informação\"; não separe a palavra \"externo\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 2º, incisos IX e X, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IX - \"disseminar boas práticas de controle externo\" contém também o inciso X - \"manifestar-se sobre normas, métodos e técnicas sobre controle externo\"."
+        },
+        {
+          "onde": "Art. 5º, incisos X e XI, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso X - \"promover a integração entre os atores internos e externos ao Tribunal\" contém também o inciso XI - \"promover a integração do processo de prestação de contas anuais\"."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Em Art. 2º (págs. 1–2), termine o bloco do inciso II - \"apoiar as unidades técnicas subordinadas à Segecex\" antes de III - \"apoiar a supervisão de trabalhos de fiscalização\" e inicie um bloco próprio em cada inciso de III a X. Em especial, termine o inciso IX - \"disseminar boas práticas de controle externo\" antes de X - \"manifestar-se sobre normas, métodos e técnicas sobre controle externo\".\n- Em Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de II - \"contribuir para a definição de competências profissionais\" até XIII - \"desempenhar outras atividades que lhes forem atribuídas pelo titular da Semec\".\n- Em Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de IX - \"participar da elaboração das normas brasileiras de auditoria\" até XII - \"acompanhar o processo de entrega, instrução e julgamento das contas\". Em especial, termine o inciso X - \"promover a integração entre os atores internos e externos ao Tribunal\" antes de XI - \"promover a integração do processo de prestação de contas anuais\".\n- Em Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de I - \"propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões sobre processos de denúncia\" até XV - \"orientar e prestar suporte técnico às secretarias de controle externo\". Em especial, não deixe os incisos I e II sem bloco, termine o inciso XIII antes de XIV - \"esclarecer dúvidas\" e termine o inciso XIV antes de XV - \"orientar e prestar suporte técnico\".\n- Em Art. 10 (pág. 5), termine o bloco do inciso II - \"instruir processos de solicitação\" antes de III - \"responder a demandas da ouvidoria\" e inicie blocos próprios em cada inciso de III a XIII. Em especial, termine o inciso X - \"apoiar a realização de eventos de disseminação\" antes de XI - \"manter arquivo sistemático\", o inciso XI antes de XII - \"manter atualizadas as informações\" e o inciso XII antes de XIII - \"desempenhar outras atividades\".\n- Em Art. 7º (pág. 4), inicie blocos próprios em II - \"avaliar a qualidade de relatórios e instruções de controle externo\" e III - \"participar do desenvolvimento de soluções de tecnologia da informação\".\n- Em Art. 9º (pág. 5), termine o bloco do inciso II - \"desenvolver, dentro dos padrões estabelecidos\" antes de III - \"apoiar o desenvolvimento de soluções\" e inicie blocos próprios em III e IV.\n- Em Art. 8º (págs. 4–5), termine o bloco do inciso VII - \"atuar em articulação com demais unidades desta Secretaria\" antes de VIII - \"definir, em conjunto com a unidade gestora do negócio\" e inicie um bloco próprio no inciso VIII.\n- Em Art. 1º (pág. 1), mantenha a continuação \"ia.\" no mesmo bloco iniciado por \"Art. 1º A estrutura e as competências\"; não separe a palavra \"Portaria\".\n- Em Art. 8º (pág. 4), mantenha \"sido atribuídas (e-TCU);\" no bloco do inciso IV - \"realizar a gestão das soluções de tecnologia da informação\".\n- Em Art. 8º (pág. 4), mantenha \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" no bloco do inciso V - \"conceber novas soluções de tecnologia da informação\"; não separe a palavra \"externo\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-1463/NORMA-1463_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 110,
+    "insights_aplicados": "- Em Art. 2º (págs. 1–2), termine o bloco do inciso II - \"apoiar as unidades técnicas subordinadas à Segecex\" antes de III - \"apoiar a supervisão de trabalhos de fiscalização\" e inicie um bloco próprio em cada inciso de III a X. Em especial, termine o inciso IX - \"disseminar boas práticas de controle externo\" antes de X - \"manifestar-se sobre normas, métodos e técnicas sobre controle externo\".\n- Em Art. 4º (pág. 2), inicie um bloco próprio em cada inciso de II - \"contribuir para a definição de competências profissionais\" até XIII - \"desempenhar outras atividades que lhes forem atribuídas pelo titular da Semec\".\n- Em Art. 5º (pág. 3), inicie um bloco próprio em cada inciso de IX - \"participar da elaboração das normas brasileiras de auditoria\" até XII - \"acompanhar o processo de entrega, instrução e julgamento das contas\". Em especial, termine o inciso X - \"promover a integração entre os atores internos e externos ao Tribunal\" antes de XI - \"promover a integração do processo de prestação de contas anuais\".\n- Em Art. 6º (págs. 3–4), inicie um bloco próprio em cada inciso de I - \"propor, aperfeiçoar, atualizar e disseminar normas, orientações, modelos e padrões sobre processos de denúncia\" até XV - \"orientar e prestar suporte técnico às secretarias de controle externo\". Em especial, não deixe os incisos I e II sem bloco, termine o inciso XIII antes de XIV - \"esclarecer dúvidas\" e termine o inciso XIV antes de XV - \"orientar e prestar suporte técnico\".\n- Em Art. 10 (pág. 5), termine o bloco do inciso II - \"instruir processos de solicitação\" antes de III - \"responder a demandas da ouvidoria\" e inicie blocos próprios em cada inciso de III a XIII. Em especial, termine o inciso X - \"apoiar a realização de eventos de disseminação\" antes de XI - \"manter arquivo sistemático\", o inciso XI antes de XII - \"manter atualizadas as informações\" e o inciso XII antes de XIII - \"desempenhar outras atividades\".\n- Em Art. 7º (pág. 4), inicie blocos próprios em II - \"avaliar a qualidade de relatórios e instruções de controle externo\" e III - \"participar do desenvolvimento de soluções de tecnologia da informação\".\n- Em Art. 9º (pág. 5), termine o bloco do inciso II - \"desenvolver, dentro dos padrões estabelecidos\" antes de III - \"apoiar o desenvolvimento de soluções\" e inicie blocos próprios em III e IV.\n- Em Art. 8º (págs. 4–5), termine o bloco do inciso VII - \"atuar em articulação com demais unidades desta Secretaria\" antes de VIII - \"definir, em conjunto com a unidade gestora do negócio\" e inicie um bloco próprio no inciso VIII.\n- Em Art. 1º (pág. 1), mantenha a continuação \"ia.\" no mesmo bloco iniciado por \"Art. 1º A estrutura e as competências\"; não separe a palavra \"Portaria\".\n- Em Art. 8º (pág. 4), mantenha \"sido atribuídas (e-TCU);\" no bloco do inciso IV - \"realizar a gestão das soluções de tecnologia da informação\".\n- Em Art. 8º (pág. 4), mantenha \"erno, bem como novos módulos e funcionalidades para as soluções já existentes;\" no bloco do inciso V - \"conceber novas soluções de tecnologia da informação\"; não separe a palavra \"externo\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-1463/NORMA-1463_ciclo4.json"
+  }
+]

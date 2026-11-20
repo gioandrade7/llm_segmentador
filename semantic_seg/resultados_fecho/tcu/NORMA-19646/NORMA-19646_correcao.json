@@ -1,0 +1,107 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 82,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório, incluindo todos os considerandos e a conclusão \"resolve:\", ficou fora de qualquer bloco antes do Art. 1º."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19646/NORMA-19646_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 79,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Inciso I do Art. 5º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"I - públicas: informações que podem ser divulgadas a qualquer pessoa;\" contém também os incisos \"II - restritas\" e \"III - sigilosas\", que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Inciso I do Art. 13, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"I - baixo: quando a perda de integridade...\" contém também os incisos \"II - médio\" e \"III - alto\", que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19646/NORMA-19646_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 80,
+    "insights_aplicados": "- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Incisos III, IV e V do Art. 7º, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os textos iniciados por \"III - peças da etapa de instrução de processo...\", \"IV - informações contidas em processo de controle externo...\" e \"V - outros assuntos que, a juízo do gestor...\" ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 4, após o inciso II do Art. 7º, inicie blocos próprios em \"III - peças da etapa de instrução de processo sem parecer conclusivo...\", \"IV - informações contidas em processo de controle externo ainda não apreciado...\" e \"V - outros assuntos que, a juízo do gestor da informação...\".\n- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19646/NORMA-19646_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 69,
+    "insights_aplicados": "- Na pág. 4, após o inciso II do Art. 7º, inicie blocos próprios em \"III - peças da etapa de instrução de processo sem parecer conclusivo...\", \"IV - informações contidas em processo de controle externo ainda não apreciado...\" e \"V - outros assuntos que, a juízo do gestor da informação...\".\n- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"Art. 3º Para os efeitos desta Resolução...\" contém, sem blocos próprios, os incisos I a XII, de \"I - informação...\" até \"XII - rótulo...\"."
+        },
+        {
+          "onde": "Inciso V do Art. 6º, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"V - processos administrativos disciplinares e sindicâncias;\" contém também os incisos VI - \"dados funcionais e pessoais...\" e VII - \"outros assuntos considerados...\", que deveriam iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 2, termine o bloco do Art. 3º imediatamente antes de \"I - informação: conjunto de dados...\" e inicie um bloco próprio no inciso I. Em seguida, inicie blocos próprios em cada um dos incisos II - \"segurança da informação...\", III - \"confidencialidade...\", IV - \"criticidade...\", V - \"disponibilidade...\", VI - \"integridade...\", VII - \"gestor da informação...\", VIII - \"custodiante...\", IX - \"usuário interno...\", X - \"usuário colaborador...\", XI - \"usuário externo...\" e XII - \"rótulo: identificação física ou eletrônica...\".\n- Na pág. 4, termine o bloco do inciso V do Art. 6º imediatamente antes de \"VI - dados funcionais e pessoais...\" e inicie um bloco próprio no inciso VI; termine esse bloco imediatamente antes de \"VII - outros assuntos considerados pelo gestor da informação...\" e inicie outro bloco próprio no inciso VII.\n- Na pág. 4, após o inciso II do Art. 7º, inicie blocos próprios em \"III - peças da etapa de instrução de processo sem parecer conclusivo...\", \"IV - informações contidas em processo de controle externo ainda não apreciado...\" e \"V - outros assuntos que, a juízo do gestor da informação...\".\n- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19646/NORMA-19646_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 78,
+    "insights_aplicados": "- Na pág. 2, termine o bloco do Art. 3º imediatamente antes de \"I - informação: conjunto de dados...\" e inicie um bloco próprio no inciso I. Em seguida, inicie blocos próprios em cada um dos incisos II - \"segurança da informação...\", III - \"confidencialidade...\", IV - \"criticidade...\", V - \"disponibilidade...\", VI - \"integridade...\", VII - \"gestor da informação...\", VIII - \"custodiante...\", IX - \"usuário interno...\", X - \"usuário colaborador...\", XI - \"usuário externo...\" e XII - \"rótulo: identificação física ou eletrônica...\".\n- Na pág. 4, termine o bloco do inciso V do Art. 6º imediatamente antes de \"VI - dados funcionais e pessoais...\" e inicie um bloco próprio no inciso VI; termine esse bloco imediatamente antes de \"VII - outros assuntos considerados pelo gestor da informação...\" e inicie outro bloco próprio no inciso VII.\n- Na pág. 4, após o inciso II do Art. 7º, inicie blocos próprios em \"III - peças da etapa de instrução de processo sem parecer conclusivo...\", \"IV - informações contidas em processo de controle externo ainda não apreciado...\" e \"V - outros assuntos que, a juízo do gestor da informação...\".\n- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\".",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 3º, incisos XIII a XV, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em \"XIII - ciclo de vida da informação\" também contém os marcadores e textos dos incisos XIV - \"documento de natureza pública\" e XV - \"documento de domínio público\", que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 4º, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 4º contém também os §§ 1º, 2º e 3º, embora cada parágrafo deva iniciar um bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Na pág. 3, termine o bloco do Art. 4º imediatamente antes de \"§ 1º A classificação disposta por esta Resolução...\" e inicie um bloco próprio no § 1º; termine-o antes de \"§ 2º A regulamentação da classificação...\" e inicie outro bloco no § 2º; termine-o antes de \"§ 3º As informações produzidas ou custodiadas...\" e inicie outro bloco no § 3º.\n- Nas págs. 2 e 3, mantenha o Art. 3º separado de todos os seus incisos e inicie um bloco próprio em cada inciso I a XV. Na pág. 3, termine especificamente o bloco de \"XIII - ciclo de vida da informação...\" antes de \"XIV - documento de natureza pública...\" e inicie um bloco no inciso XIV; termine-o antes de \"XV - documento de domínio público...\" e inicie outro bloco no inciso XV.\n- Na pág. 4, termine o bloco do inciso V do Art. 6º imediatamente antes de \"VI - dados funcionais e pessoais...\" e inicie um bloco próprio no inciso VI; termine esse bloco imediatamente antes de \"VII - outros assuntos considerados pelo gestor da informação...\" e inicie outro bloco próprio no inciso VII.\n- Na pág. 4, após o inciso II do Art. 7º, inicie blocos próprios em \"III - peças da etapa de instrução de processo sem parecer conclusivo...\", \"IV - informações contidas em processo de controle externo ainda não apreciado...\" e \"V - outros assuntos que, a juízo do gestor da informação...\".\n- Na pág. 3, termine o bloco do inciso I do Art. 5º imediatamente antes de \"II - restritas: informações que...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - sigilosas: informações que...\" e inicie outro bloco próprio no inciso III.\n- Na pág. 5, termine o bloco do inciso I do Art. 13 imediatamente antes de \"II - médio: quando a perda de integridade...\" e inicie um bloco próprio no inciso II; termine esse bloco imediatamente antes de \"III - alto: quando a perda de integridade...\" e inicie outro bloco próprio no inciso III.\n- Crie um bloco inicial para o preâmbulo da pág. 1, iniciado por \"O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais...\" e encerrado em \"Considerando os estudos e os pareceres constantes do processo TC 015.158/2009-6, resolve:\"; inicie o bloco seguinte em \"Art. 1º\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-19646/NORMA-19646_ciclo5.json"
+  }
+]

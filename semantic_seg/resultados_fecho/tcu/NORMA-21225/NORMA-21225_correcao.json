@@ -1,0 +1,176 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 111,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições...”, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o preâmbulo, incluindo todos os considerandos e a fórmula “resolve:”, ficou fora de qualquer bloco antes de “Seção I”."
+        },
+        {
+          "onde": "§ 1º do Art. 2º, “As autoridades do Tribunal...”, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no § 1º contém também os §§ 2º, 3º e 4º do Art. 2º, que deveriam iniciar blocos próprios."
+        },
+        {
+          "onde": "Art. 5º, “As informações produzidas pelo TCU classificam-se...”, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 5º contém também os §§ 1º e 2º, embora cada parágrafo deva iniciar um bloco próprio."
+        },
+        {
+          "onde": "incisos VII e VIII do Art. 7º, “VII - pôr em risco a segurança...” e “VIII - comprometer atividades de inteligência...”, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos VII e VIII ficaram fora de bloco após o inciso VI."
+        },
+        {
+          "onde": "Parágrafo único do Art. 7º, “Para a classificação da informação...”, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do parágrafo único contém os incisos I e II, que são marcadores de unidades próprias."
+        },
+        {
+          "onde": "inciso II do Art. 9º, “II - no grau secreto...”, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso II ficou fora de bloco entre os blocos dos incisos I e III."
+        },
+        {
+          "onde": "§ 1º do Art. 14, “No momento em que for recebida a informação...”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém os incisos I a VI, que devem ser segmentados individualmente."
+        },
+        {
+          "onde": "§ 1º do Art. 17, “Para o cumprimento do disposto no caput...”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém os incisos I a IV, apesar de cada inciso iniciar bloco."
+        },
+        {
+          "onde": "Seção VII, “Da Proteção e do Controle da Informação”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "o bloco da Seção VII contém também o início do Art. 18, “Cabe ao TCU controlar o acesso...”, que deveria ser bloco próprio."
+        },
+        {
+          "onde": "§ 1º do Art. 19, “As informações a que se refere este artigo...”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém os incisos I e II, que deveriam iniciar blocos separados."
+        },
+        {
+          "onde": "inciso IV do § 2º do Art. 19, “IV - à defesa de direitos humanos; ou”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IV contém também o inciso V, “V - à proteção do interesse público e geral preponderante.”"
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada um dos incisos I a VI, até “VI - responsável pela classificação.”\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21225/NORMA-21225_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 127,
+    "insights_aplicados": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada um dos incisos I a VI, até “VI - responsável pela classificação.”\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 3º Para os efeitos desta Resolução...`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 3º contém, sem blocos próprios, os incisos I a VII, de “I - informação: conjunto de dados...” até “VII - rótulo: registro que visa a identificar claramente...”."
+        },
+        {
+          "onde": "`Seção III — Da Competência para a Classificação da Informação`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pela Seção III contém também o marcador e o texto do “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”."
+        },
+        {
+          "onde": "`Art. 12. Para fins de aplicação de controles...`, pág. 4",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 12 contém o inciso “I - grau de confidencialidade;”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`II - grupo de pessoas que pode acessar a informação;` e `III - termo final de restrição de acesso...`, pág. 4",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos II e III do Art. 12 ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, no Art. 3º, termine o texto introdutório antes de “I - informação: conjunto de dados...” e inicie blocos próprios em cada inciso I a VII, até “VII - rótulo: registro que visa a identificar claramente a classificação da informação.”\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Na pág. 3, inicie um bloco próprio em “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”, imediatamente após o bloco da “Seção III — Da Competência para a Classificação da Informação”.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 4, no Art. 12, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a III, até “III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.”\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada um dos incisos I a VI, até “VI - responsável pela classificação.”\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21225/NORMA-21225_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 133,
+    "insights_aplicados": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, no Art. 3º, termine o texto introdutório antes de “I - informação: conjunto de dados...” e inicie blocos próprios em cada inciso I a VII, até “VII - rótulo: registro que visa a identificar claramente a classificação da informação.”\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Na pág. 3, inicie um bloco próprio em “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”, imediatamente após o bloco da “Seção III — Da Competência para a Classificação da Informação”.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 4, no Art. 12, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a III, até “III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.”\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada um dos incisos I a VI, até “VI - responsável pela classificação.”\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 6º, incisos I a IV, págs. 2–3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 6º Os prazos máximos de restrição...” contém, sem cortes próprios, os incisos I - reservada, II - secreta, III - ultrassecreta e IV - pessoal."
+        },
+        {
+          "onde": "Art. 9º, inciso I, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 9º Em função do grau de confidencialidade...” contém também o inciso “I - no grau ultrassecreto...”, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 14, págs. 4–5",
+          "tipo": "sem_bloco",
+          "descricao": "O texto integral da unidade “Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada...” está marcado como sem bloco."
+        },
+        {
+          "onde": "Art. 14, págs. 4–4",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para o Art. 14, com início em “Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada” e fim em “atribuição na origem.”, mas sua âncora não foi localizada no texto."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, no Art. 3º, termine o texto introdutório antes de “I - informação: conjunto de dados...” e inicie blocos próprios em cada inciso I a VII, até “VII - rótulo: registro que visa a identificar claramente a classificação da informação.”\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Nas págs. 2–3, no Art. 6º, termine o texto introdutório antes de “I - reservada: 5 (cinco) anos;” e inicie blocos próprios em cada inciso I a IV, até “IV - pessoal: 100 (cem) anos.”\n- Na pág. 3, inicie um bloco próprio em “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”, imediatamente após o bloco da “Seção III — Da Competência para a Classificação da Informação”.\n- Na pág. 3, no Art. 9º, termine o texto introdutório antes de “I - no grau ultrassecreto, de colegiado do TCU...” e inicie um bloco próprio nesse inciso.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 4, no Art. 12, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a III, até “III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.”\n- Nas págs. 4–5, inicie e mantenha um bloco próprio em “Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada no momento de seu recebimento, em conformidade com a classificação atribuída na origem.”, antes de iniciar “§ 1º No momento em que for recebida a informação...”.\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada um dos incisos I a VI, até “VI - responsável pela classificação.”\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21225/NORMA-21225_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 133,
+    "insights_aplicados": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, no Art. 3º, termine o texto introdutório antes de “I - informação: conjunto de dados...” e inicie blocos próprios em cada inciso I a VII, até “VII - rótulo: registro que visa a identificar claramente a classificação da informação.”\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Nas págs. 2–3, no Art. 6º, termine o texto introdutório antes de “I - reservada: 5 (cinco) anos;” e inicie blocos próprios em cada inciso I a IV, até “IV - pessoal: 100 (cem) anos.”\n- Na pág. 3, inicie um bloco próprio em “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”, imediatamente após o bloco da “Seção III — Da Competência para a Classificação da Informação”.\n- Na pág. 3, no Art. 9º, termine o texto introdutório antes de “I - no grau ultrassecreto, de colegiado do TCU...” e inicie um bloco próprio nesse inciso.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 4, no Art. 12, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a III, até “III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.”\n- Nas págs. 4–5, inicie e mantenha um bloco próprio em “Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada no momento de seu recebimento, em conformidade com a classificação atribuída na origem.”, antes de iniciar “§ 1º No momento em que for recebida a informação...”.\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada um dos incisos I a VI, até “VI - responsável pela classificação.”\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Seção VI — “Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade”, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pela Seção VI contém também “Art. 16. As informações produzidas pelo Tribunal podem ser reclassificadas...”, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "IV - “assunto sobre o qual versa a informação;”, § 1º do Art. 14, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos “V - fundamento da classificação; e” e “VI - responsável pela classificação.”, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "Seção VIII — “Das Disposições Finais e Transitórias”, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pela Seção VIII contém também “Art. 21. Em caso de dúvida na identificação do gestor da informação...”, que deve iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, no Art. 3º, termine o texto introdutório antes de “I - informação: conjunto de dados...” e inicie blocos próprios em cada inciso I a VII, até “VII - rótulo: registro que visa a identificar claramente a classificação da informação.”\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Nas págs. 2–3, no Art. 6º, termine o texto introdutório antes de “I - reservada: 5 (cinco) anos;” e inicie blocos próprios em cada inciso I a IV, até “IV - pessoal: 100 (cem) anos.”\n- Na pág. 3, inicie um bloco próprio em “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”, imediatamente após o bloco da “Seção III — Da Competência para a Classificação da Informação”.\n- Na pág. 3, no Art. 9º, termine o texto introdutório antes de “I - no grau ultrassecreto, de colegiado do TCU...” e inicie um bloco próprio nesse inciso.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 4, no Art. 12, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a III, até “III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.”\n- Nas págs. 4–5, inicie e mantenha um bloco próprio em “Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada no momento de seu recebimento, em conformidade com a classificação atribuída na origem.”, antes de iniciar “§ 1º No momento em que for recebida a informação...”.\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a VI; em particular, termine o bloco de “IV - assunto sobre o qual versa a informação;” antes de “V - fundamento da classificação; e” e termine o de “V - fundamento da classificação; e” antes de “VI - responsável pela classificação.”\n- Na pág. 5, inicie um bloco próprio em “Art. 16. As informações produzidas pelo Tribunal podem ser reclassificadas...”, imediatamente após o bloco da “Seção VI — Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade”.\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V.\n- Na pág. 6, inicie um bloco próprio em “Art. 21. Em caso de dúvida na identificação do gestor da informação, compete à CCG defini-lo.”, imediatamente após o bloco da “Seção VIII — Das Disposições Finais e Transitórias”."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21225/NORMA-21225_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 137,
+    "insights_aplicados": "- Inclua em um bloco inicial o preâmbulo da pág. 1, iniciado por “O TRIBUNAL DE CONTAS DA UNIÃO, no uso de suas atribuições constitucionais, legais e regulamentares,” e encerrado em “Considerando os estudos e os pareceres constantes do processo TC 045.809/2012-7, resolve:”, antes de iniciar “Seção I”.\n- Na pág. 1, termine cada bloco dos §§ 1º, 2º e 3º do Art. 2º imediatamente antes do parágrafo seguinte e inicie blocos próprios em “§ 2º O intercâmbio de informações...”, “§ 3º O tratamento de informação não pública...” e “§ 4º Os controles administrativos e tecnológicos...”.\n- Na pág. 2, no Art. 3º, termine o texto introdutório antes de “I - informação: conjunto de dados...” e inicie blocos próprios em cada inciso I a VII, até “VII - rótulo: registro que visa a identificar claramente a classificação da informação.”\n- Na pág. 2, termine o bloco do Art. 5º antes de “§ 1º Classifica-se como pública...” e inicie também um bloco próprio em “§ 2º Classifica-se como reservada, secreta ou ultrassecreta...”.\n- Nas págs. 2–3, no Art. 6º, termine o texto introdutório antes de “I - reservada: 5 (cinco) anos;” e inicie blocos próprios em cada inciso I a IV, até “IV - pessoal: 100 (cem) anos.”\n- Na pág. 3, inicie um bloco próprio em “Art. 8º É responsabilidade do gestor da informação classificá-la quanto à confidencialidade.”, imediatamente após o bloco da “Seção III — Da Competência para a Classificação da Informação”.\n- Na pág. 3, no Art. 9º, termine o texto introdutório antes de “I - no grau ultrassecreto, de colegiado do TCU...” e inicie um bloco próprio nesse inciso.\n- Na pág. 3, inicie blocos próprios nos incisos “VII - pôr em risco a segurança de instituições...” e “VIII - comprometer atividades de inteligência do Tribunal...”, após o inciso VI do Art. 7º.\n- Na pág. 3, no Parágrafo único do Art. 7º, termine o texto introdutório antes de “I - a gravidade do risco...” e inicie outro bloco em “II - o prazo máximo de restrição de acesso...”.\n- Na pág. 4, inicie um bloco no inciso “II - no grau secreto, dos gestores da informação...”, do Art. 9º.\n- Na pág. 4, no Art. 12, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a III, até “III - termo final de restrição de acesso e, quando for o caso, evento que defina o termo final alternativo.”\n- Nas págs. 4–5, inicie e mantenha um bloco próprio em “Art. 14. A informação recebida de pessoa física ou jurídica externa deve ser rotulada no momento de seu recebimento, em conformidade com a classificação atribuída na origem.”, antes de iniciar “§ 1º No momento em que for recebida a informação...”.\n- Na pág. 5, no § 1º do Art. 14, termine o texto introdutório antes de “I - grau de confidencialidade;” e inicie blocos próprios em cada inciso I a VI; em particular, termine o bloco de “IV - assunto sobre o qual versa a informação;” antes de “V - fundamento da classificação; e” e termine o de “V - fundamento da classificação; e” antes de “VI - responsável pela classificação.”\n- Na pág. 5, inicie um bloco próprio em “Art. 16. As informações produzidas pelo Tribunal podem ser reclassificadas...”, imediatamente após o bloco da “Seção VI — Da Reclassificação e da Reavaliação da Classificação da Informação quanto à Confidencialidade”.\n- Na pág. 5, no § 1º do Art. 17, termine o texto introdutório antes de “I - o prazo máximo de restrição...” e inicie blocos próprios em cada um dos incisos I a IV.\n- Na pág. 5, termine o bloco de “Seção VII — Da Proteção e do Controle da Informação” antes de “Art. 18. Cabe ao TCU controlar o acesso...” e inicie um bloco novo no Art. 18.\n- Na pág. 6, no § 1º do Art. 19, termine o texto introdutório antes de “I - têm o seu acesso restrito...” e inicie outro bloco em “II - podem ter autorizada sua divulgação...”.\n- Na pág. 6, termine o bloco do inciso “IV - à defesa de direitos humanos; ou” do § 2º do Art. 19 antes de “V - à proteção do interesse público e geral preponderante.” e inicie um bloco novo no inciso V.\n- Na pág. 6, inicie um bloco próprio em “Art. 21. Em caso de dúvida na identificação do gestor da informação, compete à CCG defini-lo.”, imediatamente após o bloco da “Seção VIII — Das Disposições Finais e Transitórias”.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-21225/NORMA-21225_ciclo5.json"
+  }
+]

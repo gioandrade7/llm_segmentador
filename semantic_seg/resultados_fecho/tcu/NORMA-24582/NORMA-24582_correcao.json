@@ -1,0 +1,122 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 56,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`IV - corrupção`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado por `IV - corrupção` contém também os incisos irmãos `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`, que devem iniciar blocos próprios."
+        },
+        {
+          "onde": "`I - definir formalmente as competências`, sob o Art. 5º, pág. 2",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos I a VIII do Art. 5º estão sem bloco, embora cada inciso romano deva iniciar uma unidade própria."
+        },
+        {
+          "onde": "`III - correção: ações que assegurem`, sob o Art. 6º, págs. 2-3",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso III do Art. 6º está sem bloco; o texto começa no fim da pág. 2 e continua antes do marcador de página 3."
+        },
+        {
+          "onde": "`VIII - avaliar periodicamente a suficiência dos canais`, sob o Art. 9º, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "O trecho final `entos;`, continuação da palavra `aprimoramentos;` do inciso VIII, ficou sem bloco no meio do texto da unidade."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), inicie um bloco para cada inciso, de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade` até `VIII - detectar e tratar os riscos de integridade`.\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Inclua no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação `entos;`, que completa `aprimoramentos;`; não deixe esse trecho fora do bloco."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-24582/NORMA-24582_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 64,
+    "insights_aplicados": "- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), inicie um bloco para cada inciso, de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade` até `VIII - detectar e tratar os riscos de integridade`.\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Inclua no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação `entos;`, que completa `aprimoramentos;`; não deixe esse trecho fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 8º ... participação das seguintes unidades:, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos I - Comissão de Ética do TCU (CET), II - Corregedoria, III - Ouvidoria e IV - Secretaria-Geral Adjunta de Administração (Adgedam) estão sem bloco, embora cada inciso deva iniciar uma unidade própria."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), inicie um bloco para cada inciso, de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade` até `VIII - detectar e tratar os riscos de integridade`.\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Inclua no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação `entos;`, que completa `aprimoramentos;`; não deixe esse trecho fora do bloco."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-24582/NORMA-24582_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 59,
+    "insights_aplicados": "- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), inicie um bloco para cada inciso, de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade` até `VIII - detectar e tratar os riscos de integridade`.\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Inclua no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação `entos;`, que completa `aprimoramentos;`; não deixe esse trecho fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO III — DOS PRINCÍPIOS E DAS DIRETRIZES DA INTEGRIDADE NO TCU`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também `Art. 4º São princípios da integridade no TCU:` e todos os seus incisos, que são unidades próprias."
+        },
+        {
+          "onde": "`Art. 7º No planejamento das ações do Programa de Integridade do TCU`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém também `I - sistema de integridade: envolve a estruturação da política`, que deveria iniciar bloco próprio."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `CAPÍTULO III — DOS PRINCÍPIOS E DAS DIRETRIZES DA INTEGRIDADE NO TCU` imediatamente antes de `Art. 4º São princípios da integridade no TCU:` (pág. 2) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - supremacia do interesse público sobre o interesse privado;` e inicie blocos próprios em cada inciso, de `I` até `VI - observância de requisitos de conduta íntegra`.\n- Após `Art. 7º No planejamento das ações do Programa de Integridade do TCU, devem ser observados os seguintes eixos:` (pág. 3), termine o bloco do artigo antes de `I - sistema de integridade: envolve a estruturação da política` e inicie blocos próprios em cada inciso, de `I` até `III - gerenciamento da integridade`.\n- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), inicie um bloco para cada inciso, de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade` até `VIII - detectar e tratar os riscos de integridade`.\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Inclua no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) qualquer continuação da frase que complete `aprimoramentos;`; não deixe esse trecho fora do bloco."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-24582/NORMA-24582_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 67,
+    "insights_aplicados": "- Termine o bloco de `CAPÍTULO III — DOS PRINCÍPIOS E DAS DIRETRIZES DA INTEGRIDADE NO TCU` imediatamente antes de `Art. 4º São princípios da integridade no TCU:` (pág. 2) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - supremacia do interesse público sobre o interesse privado;` e inicie blocos próprios em cada inciso, de `I` até `VI - observância de requisitos de conduta íntegra`.\n- Após `Art. 7º No planejamento das ações do Programa de Integridade do TCU, devem ser observados os seguintes eixos:` (pág. 3), termine o bloco do artigo antes de `I - sistema de integridade: envolve a estruturação da política` e inicie blocos próprios em cada inciso, de `I` até `III - gerenciamento da integridade`.\n- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), inicie um bloco para cada inciso, de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade` até `VIII - detectar e tratar os riscos de integridade`.\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Inclua no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) qualquer continuação da frase que complete `aprimoramentos;`; não deixe esse trecho fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`CAPÍTULO II — DOS OBJETIVOS`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do capítulo contém também o marcador e o texto de `Art. 3º São objetivos da política de integridade:`, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias`, pág. 3",
+          "tipo": "sem_bloco",
+          "descricao": "a continuação `entos;`, que completa a palavra `aprimoramentos;` do inciso VIII, ficou fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco de `CAPÍTULO II — DOS OBJETIVOS` imediatamente antes de `Art. 3º São objetivos da política de integridade:` (pág. 1) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - definir os princípios e diretrizes que norteiam a integridade no âmbito do Tribunal;` (pág. 2) e inicie blocos próprios em cada inciso, de `I` até `V - alinhar as unidades envolvidas no sentido de fortalecer a integridade institucional.`\n- Termine o bloco de `CAPÍTULO III — DOS PRINCÍPIOS E DAS DIRETRIZES DA INTEGRIDADE NO TCU` imediatamente antes de `Art. 4º São princípios da integridade no TCU:` (pág. 2) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - supremacia do interesse público sobre o interesse privado;` e inicie blocos próprios em cada inciso, de `I` até `VI - observância de requisitos de conduta íntegra`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), termine o bloco do artigo antes de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade;` e inicie um bloco próprio em cada inciso, de `I` até `VIII - detectar e tratar os riscos de integridade.`\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Após `Art. 7º No planejamento das ações do Programa de Integridade do TCU, devem ser observados os seguintes eixos:` (pág. 3), termine o bloco do artigo antes de `I - sistema de integridade: envolve a estruturação da política` e inicie blocos próprios em cada inciso, de `I` até `III - gerenciamento da integridade`.\n- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Inclua integralmente no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação que completa `aprimoramentos;`; não deixe o trecho final `entos;` fora do bloco."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-24582/NORMA-24582_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 60,
+    "insights_aplicados": "- Termine o bloco de `CAPÍTULO II — DOS OBJETIVOS` imediatamente antes de `Art. 3º São objetivos da política de integridade:` (pág. 1) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - definir os princípios e diretrizes que norteiam a integridade no âmbito do Tribunal;` (pág. 2) e inicie blocos próprios em cada inciso, de `I` até `V - alinhar as unidades envolvidas no sentido de fortalecer a integridade institucional.`\n- Termine o bloco de `CAPÍTULO III — DOS PRINCÍPIOS E DAS DIRETRIZES DA INTEGRIDADE NO TCU` imediatamente antes de `Art. 4º São princípios da integridade no TCU:` (pág. 2) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - supremacia do interesse público sobre o interesse privado;` e inicie blocos próprios em cada inciso, de `I` até `VI - observância de requisitos de conduta íntegra`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), termine o bloco do artigo antes de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade;` e inicie um bloco próprio em cada inciso, de `I` até `VIII - detectar e tratar os riscos de integridade.`\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Após `Art. 7º No planejamento das ações do Programa de Integridade do TCU, devem ser observados os seguintes eixos:` (pág. 3), termine o bloco do artigo antes de `I - sistema de integridade: envolve a estruturação da política` e inicie blocos próprios em cada inciso, de `I` até `III - gerenciamento da integridade`.\n- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Termine o bloco de `IV - corrupção: ato ilícito ou ilegítimo` imediatamente antes de `V - risco de integridade` (pág. 1) e inicie blocos próprios também em `V - risco de integridade`, `VI - partes interessadas` e `VII - alta administração`.\n- Inclua integralmente no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação que completa `aprimoramentos;`; não deixe o trecho final `entos;` fora do bloco.",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`Art. 2º Para os efeitos desta Resolução, entende-se por:`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco do artigo contém, sem cortes próprios, todos os incisos `I - integridade` até `VII - alta administração`, embora cada inciso deva iniciar um bloco."
+        },
+        {
+          "onde": "`II - cultura de integridade: envolve a promoção de cultura de valorização da integridade`, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso II contém também `III - gerenciamento da integridade`, sem corte antes deste inciso."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Após `Art. 2º Para os efeitos desta Resolução, entende-se por:` (pág. 1), termine o bloco do artigo imediatamente antes de `I - integridade: adesão e alinhamento consistentes` e inicie blocos próprios em cada inciso, de `I - integridade` até `VII - alta administração`.\n- Após `Art. 7º No planejamento das ações do Programa de Integridade do TCU, devem ser observados os seguintes eixos:` (pág. 3), termine o bloco do artigo antes de `I - sistema de integridade: envolve a estruturação da política` e inicie blocos próprios em cada inciso, de `I` até `III - gerenciamento da integridade`; em particular, termine o bloco de `II - cultura de integridade` imediatamente antes de `III - gerenciamento da integridade`.\n- Termine o bloco de `CAPÍTULO II — DOS OBJETIVOS` imediatamente antes de `Art. 3º São objetivos da política de integridade:` (pág. 1) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - definir os princípios e diretrizes que norteiam a integridade no âmbito do Tribunal;` (pág. 2) e inicie blocos próprios em cada inciso, de `I` até `V - alinhar as unidades envolvidas no sentido de fortalecer a integridade institucional.`\n- Termine o bloco de `CAPÍTULO III — DOS PRINCÍPIOS E DAS DIRETRIZES DA INTEGRIDADE NO TCU` imediatamente antes de `Art. 4º São princípios da integridade no TCU:` (pág. 2) e inicie um bloco próprio no artigo; depois, termine o bloco do artigo antes de `I - supremacia do interesse público sobre o interesse privado;` e inicie blocos próprios em cada inciso, de `I` até `VI - observância de requisitos de conduta íntegra`.\n- Após `Art. 5º A integridade no TCU orienta-se pelas seguintes diretrizes:` (pág. 2), termine o bloco do artigo antes de `I - definir formalmente as competências das unidades responsáveis pela estrutura de integridade;` e inicie um bloco próprio em cada inciso, de `I` até `VIII - detectar e tratar os riscos de integridade.`\n- Inicie um bloco em `III - correção: ações que assegurem a interrupção das irregularidades` (pág. 2), mantendo nele sua continuação no início da pág. 3, antes de `IV - responsabilização`.\n- Após `Art. 8º As ações destinadas a implementar o Programa de Integridade do TCU serão definidas pela Comissão de Integridade Corporativa (CIC)` (pág. 3), termine o bloco do artigo antes de `I - Comissão de Ética do TCU (CET);` e inicie blocos próprios em cada inciso, de `I - Comissão de Ética do TCU (CET);` até `IV - Secretaria-Geral Adjunta de Administração (Adgedam). (NR)`.\n- Inclua integralmente no bloco de `VIII - avaliar periodicamente a suficiência dos canais específicos para recepção e tratamento de denúncias` (pág. 3) a continuação que completa `aprimoramentos;`; não deixe o trecho final `entos;` fora do bloco."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-24582/NORMA-24582_ciclo5.json"
+  }
+]

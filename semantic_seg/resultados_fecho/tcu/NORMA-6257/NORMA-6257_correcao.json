@@ -1,0 +1,156 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 149,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "preâmbulo \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO... resolve:\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório integral, anterior ao Art. 1º, não foi incluído em nenhum bloco."
+        },
+        {
+          "onde": "incisos X a XIII do Art. 3º, págs. 2–3",
+          "tipo": "sem_bloco",
+          "descricao": "Após o inciso IX, os incisos X, XI, XII e XIII estão fora de qualquer bloco, embora cada inciso deva iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 4º \"São competências privativas da STI...\", págs. 2–3",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo Art. 4º contém, sem cortes próprios, os incisos I a VII."
+        },
+        {
+          "onde": "inciso IV do Art. 7º, pág. 5",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso IV contém também os incisos V e VI, que são unidades irmãs e deveriam iniciar blocos separados."
+        },
+        {
+          "onde": "inciso VI do Art. 8º, pág. 6",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação final do inciso VI, \"as respectivas ordens de serviço;\", ficou fora do bloco que começa em \"VI - demandar de empresas contratadas...\"."
+        },
+        {
+          "onde": "inciso VIII do Art. 8º, pág. 6",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso VIII contém também os incisos IX a XIV, sem que esses marcadores iniciem seus blocos próprios."
+        },
+        {
+          "onde": "Art. 11 \"A área de atuação do Serviço de Apoio ao Desenvolvimento Descentralizado...\", pág. 7",
+          "tipo": "sem_bloco",
+          "descricao": "A continuação \"de soluções de tecnologia da informação.\" ficou fora do bloco do Art. 11."
+        },
+        {
+          "onde": "inciso III do Art. 13º \"III - definir padrões técnicos e de arquitetura...\", pág. 8",
+          "tipo": "sem_bloco",
+          "descricao": "O final do inciso II e todo o inciso III estão fora de bloco; o inciso III deve ser uma unidade própria."
+        },
+        {
+          "onde": "inciso III do Art. 13º, pág. 8",
+          "tipo": "ancora",
+          "descricao": "Foi devolvido um bloco cuja âncora começa em \"III - definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\" e termina em \"dade aos padrões estabelecidos;\", mas essa âncora não foi localizada no texto segmentado."
+        },
+        {
+          "onde": "inciso I do parágrafo único do Art. 17, págs. 10–11",
+          "tipo": "englobante",
+          "descricao": "O bloco do inciso I contém também os incisos II e III, sem cortes antes desses marcadores."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que começa em \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO\" e termina em \"resolve:\" (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X \"gerenciar identidade e acesso\", XI \"viabilizar o intercâmbio de dados\", XII \"participar de ações de controle externo\" e XIII \"desenvolver outras atividades\" (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I \"apoiar, em coordenação com a Secretaria de Planejamento\" e inicie blocos próprios em cada um dos incisos I a VII.\n- No Art. 7º, termine o bloco do inciso IV \"propor modalidade de provimento\" antes do inciso V \"acompanhar o andamento\" e inicie também um bloco próprio no inciso VI \"assegurar a necessária articulação\" (pág. 5).\n- Mantenha no bloco do inciso VI do Art. 8º todo o texto que começa em \"VI - demandar de empresas contratadas\" e termina em \"as respectivas ordens de serviço;\" (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII \"manter as unidades gestoras\" antes do inciso IX \"realizar testes funcionais\" e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final \"de soluções de tecnologia da informação.\" (pág. 7).\n- No Art. 13 (pág. 8), mantenha o final \"aderência aos padrões estabelecidos;\" no bloco do inciso II e inicie um bloco separado no inciso III \"definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\", com todo o seu texto até \"aderência aos padrões estabelecidos;\".\n- No parágrafo único do Art. 17, termine o bloco do inciso I \"coordenar o desenvolvimento\" antes do inciso II \"gerenciar as contas institucionais\" e inicie outro bloco no inciso III \"definir padrões, requisitos e restrições\" (pág. 10)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6257/NORMA-6257_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 154,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que começa em \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO\" e termina em \"resolve:\" (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X \"gerenciar identidade e acesso\", XI \"viabilizar o intercâmbio de dados\", XII \"participar de ações de controle externo\" e XIII \"desenvolver outras atividades\" (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I \"apoiar, em coordenação com a Secretaria de Planejamento\" e inicie blocos próprios em cada um dos incisos I a VII.\n- No Art. 7º, termine o bloco do inciso IV \"propor modalidade de provimento\" antes do inciso V \"acompanhar o andamento\" e inicie também um bloco próprio no inciso VI \"assegurar a necessária articulação\" (pág. 5).\n- Mantenha no bloco do inciso VI do Art. 8º todo o texto que começa em \"VI - demandar de empresas contratadas\" e termina em \"as respectivas ordens de serviço;\" (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII \"manter as unidades gestoras\" antes do inciso IX \"realizar testes funcionais\" e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final \"de soluções de tecnologia da informação.\" (pág. 7).\n- No Art. 13 (pág. 8), mantenha o final \"aderência aos padrões estabelecidos;\" no bloco do inciso II e inicie um bloco separado no inciso III \"definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\", com todo o seu texto até \"aderência aos padrões estabelecidos;\".\n- No parágrafo único do Art. 17, termine o bloco do inciso I \"coordenar o desenvolvimento\" antes do inciso II \"gerenciar as contas institucionais\" e inicie outro bloco no inciso III \"definir padrões, requisitos e restrições\" (pág. 10).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 4º, incisos III e IV, pág. 2",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso III, \"avaliar as regras de negócio e os requisitos definidos\", contém também o inciso IV, \"negociar níveis de serviço para cada solução de tecnologia da informação\", sem corte antes deste último."
+        },
+        {
+          "onde": "Art. 5º, incisos I a IV e alíneas subsequentes, pág. 3",
+          "tipo": "englobante",
+          "descricao": "O bloco do Art. 5º contém, sem cortes próprios, os incisos I a IV e todas as alíneas da estrutura organizacional, embora cada marcador de inciso e de alínea deva iniciar uma unidade."
+        },
+        {
+          "onde": "Art. 11, incisos IV a VI do § 2º, págs. 7–8",
+          "tipo": "sem_bloco",
+          "descricao": "Os incisos IV, \"auxiliar as unidades do Tribunal na seleção\", V, \"definir, implementar e manter visões\", e VI, \"consolidar e divulgar informações\", aparecem fora de qualquer bloco."
+        },
+        {
+          "onde": "Art. 11, § 2º, inciso IV, pág. 7",
+          "tipo": "ancora",
+          "descricao": "O bloco devolvido para o inciso IV, iniciado por \"IV - auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências\", não teve suas âncoras localizadas, e o respectivo texto está sem bloco."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que começa em \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO\" e termina em \"resolve:\" (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X \"gerenciar identidade e acesso\", XI \"viabilizar o intercâmbio de dados\", XII \"participar de ações de controle externo\" e XIII \"desenvolver outras atividades\" (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I \"apoiar, em coordenação com a Secretaria de Planejamento\" e inicie blocos próprios em cada um dos incisos I a VII; em especial, termine o inciso III \"avaliar as regras de negócio e os requisitos definidos\" antes do inciso IV \"negociar níveis de serviço para cada solução de tecnologia da informação\".\n- No Art. 5º (pág. 3), termine o bloco introdutório do artigo antes do inciso I \"Diretoria de Soluções de Controle Externo\" e inicie blocos próprios em cada inciso I a IV e em cada alínea que se segue, de \"a) 1º Serviço de Soluções de Tecnologia da Informação\" até \"d) Serviço de Integração e Métricas de Sistemas\".\n- No Art. 7º, termine o bloco do inciso IV \"propor modalidade de provimento\" antes do inciso V \"acompanhar o andamento\" e inicie também um bloco próprio no inciso VI \"assegurar a necessária articulação\" (pág. 5).\n- Mantenha no bloco do inciso VI do Art. 8º todo o texto que começa em \"VI - demandar de empresas contratadas\" e termina em \"as respectivas ordens de serviço;\" (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII \"manter as unidades gestoras\" antes do inciso IX \"realizar testes funcionais\" e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final \"de soluções de tecnologia da informação.\" (pág. 7).\n- No § 2º do Art. 11, após o inciso III \"promover e apoiar iniciativas de comunicação\", inicie blocos próprios nos incisos IV \"auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências\", V \"definir, implementar e manter visões dos bancos de dados corporativos\" e VI \"consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado\" (págs. 7–8).\n- No Art. 13 (pág. 8), mantenha o final \"aderência aos padrões estabelecidos;\" no bloco do inciso II e inicie um bloco separado no inciso III \"definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\", com todo o seu texto até \"aderência aos padrões estabelecidos;\".\n- No parágrafo único do Art. 17, termine o bloco do inciso I \"coordenar o desenvolvimento\" antes do inciso II \"gerenciar as contas institucionais\" e inicie outro bloco no inciso III \"definir padrões, requisitos e restrições\" (pág. 10)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6257/NORMA-6257_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 169,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que começa em \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO\" e termina em \"resolve:\" (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X \"gerenciar identidade e acesso\", XI \"viabilizar o intercâmbio de dados\", XII \"participar de ações de controle externo\" e XIII \"desenvolver outras atividades\" (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I \"apoiar, em coordenação com a Secretaria de Planejamento\" e inicie blocos próprios em cada um dos incisos I a VII; em especial, termine o inciso III \"avaliar as regras de negócio e os requisitos definidos\" antes do inciso IV \"negociar níveis de serviço para cada solução de tecnologia da informação\".\n- No Art. 5º (pág. 3), termine o bloco introdutório do artigo antes do inciso I \"Diretoria de Soluções de Controle Externo\" e inicie blocos próprios em cada inciso I a IV e em cada alínea que se segue, de \"a) 1º Serviço de Soluções de Tecnologia da Informação\" até \"d) Serviço de Integração e Métricas de Sistemas\".\n- No Art. 7º, termine o bloco do inciso IV \"propor modalidade de provimento\" antes do inciso V \"acompanhar o andamento\" e inicie também um bloco próprio no inciso VI \"assegurar a necessária articulação\" (pág. 5).\n- Mantenha no bloco do inciso VI do Art. 8º todo o texto que começa em \"VI - demandar de empresas contratadas\" e termina em \"as respectivas ordens de serviço;\" (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII \"manter as unidades gestoras\" antes do inciso IX \"realizar testes funcionais\" e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final \"de soluções de tecnologia da informação.\" (pág. 7).\n- No § 2º do Art. 11, após o inciso III \"promover e apoiar iniciativas de comunicação\", inicie blocos próprios nos incisos IV \"auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências\", V \"definir, implementar e manter visões dos bancos de dados corporativos\" e VI \"consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado\" (págs. 7–8).\n- No Art. 13 (pág. 8), mantenha o final \"aderência aos padrões estabelecidos;\" no bloco do inciso II e inicie um bloco separado no inciso III \"definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\", com todo o seu texto até \"aderência aos padrões estabelecidos;\".\n- No parágrafo único do Art. 17, termine o bloco do inciso I \"coordenar o desenvolvimento\" antes do inciso II \"gerenciar as contas institucionais\" e inicie outro bloco no inciso III \"definir padrões, requisitos e restrições\" (pág. 10).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Incisos IX e X do Art. 15, pág. 10",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso IX, \"apoiar as subunidades da STI e da Setic...\", contém também o inciso X, \"promover a adoção de práticas de gestão do conhecimento...\", sem bloco próprio para este último."
+        },
+        {
+          "onde": "Incisos IV e V do Art. 18, pág. 11",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado no inciso IV, \"assegurar o encaminhamento tempestivo...\", contém também o inciso V, \"promover a articulação e o bom relacionamento...\", sem bloco próprio para este último."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que começa em \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO\" e termina em \"resolve:\" (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X \"gerenciar identidade e acesso\", XI \"viabilizar o intercâmbio de dados\", XII \"participar de ações de controle externo\" e XIII \"desenvolver outras atividades\" (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I \"apoiar, em coordenação com a Secretaria de Planejamento\" e inicie blocos próprios em cada um dos incisos I a VII; em especial, termine o inciso III \"avaliar as regras de negócio e os requisitos definidos\" antes do inciso IV \"negociar níveis de serviço para cada solução de tecnologia da informação\".\n- No Art. 5º (pág. 3), termine o bloco introdutório do artigo antes do inciso I \"Diretoria de Soluções de Controle Externo\" e inicie blocos próprios em cada inciso I a IV e em cada alínea que se segue, de \"a) 1º Serviço de Soluções de Tecnologia da Informação\" até \"d) Serviço de Integração e Métricas de Sistemas\".\n- No Art. 7º, termine o bloco do inciso IV \"propor modalidade de provimento\" antes do inciso V \"acompanhar o andamento\" e inicie também um bloco próprio no inciso VI \"assegurar a necessária articulação\" (pág. 5).\n- Mantenha no bloco do inciso VI do Art. 8º todo o texto que começa em \"VI - demandar de empresas contratadas\" e termina em \"as respectivas ordens de serviço;\" (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII \"manter as unidades gestoras\" antes do inciso IX \"realizar testes funcionais\" e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final \"de soluções de tecnologia da informação.\" (pág. 7).\n- No § 2º do Art. 11, após o inciso III \"promover e apoiar iniciativas de comunicação\", inicie blocos próprios nos incisos IV \"auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências\", V \"definir, implementar e manter visões dos bancos de dados corporativos\" e VI \"consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado\" (págs. 7–8).\n- No Art. 13 (pág. 8), mantenha o final \"aderência aos padrões estabelecidos;\" no bloco do inciso II e inicie um bloco separado no inciso III \"definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\", com todo o seu texto até \"aderência aos padrões estabelecidos;\".\n- No parágrafo único do Art. 17, termine o bloco do inciso I \"coordenar o desenvolvimento\" antes do inciso II \"gerenciar as contas institucionais\" e inicie outro bloco no inciso III \"definir padrões, requisitos e restrições\" (pág. 10).\n- No Art. 15, termine o bloco do inciso IX \"apoiar as subunidades da STI e da Setic...\" antes do inciso X \"promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação\" e inicie um bloco próprio para o inciso X (pág. 10).\n- No Art. 18, termine o bloco do inciso IV \"assegurar o encaminhamento tempestivo...\" antes do inciso V \"promover a articulação e o bom relacionamento com clientes e usuários\" e inicie um bloco próprio para o inciso V (pág. 11)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6257/NORMA-6257_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 162,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que começa em \"O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO\" e termina em \"resolve:\" (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X \"gerenciar identidade e acesso\", XI \"viabilizar o intercâmbio de dados\", XII \"participar de ações de controle externo\" e XIII \"desenvolver outras atividades\" (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I \"apoiar, em coordenação com a Secretaria de Planejamento\" e inicie blocos próprios em cada um dos incisos I a VII; em especial, termine o inciso III \"avaliar as regras de negócio e os requisitos definidos\" antes do inciso IV \"negociar níveis de serviço para cada solução de tecnologia da informação\".\n- No Art. 5º (pág. 3), termine o bloco introdutório do artigo antes do inciso I \"Diretoria de Soluções de Controle Externo\" e inicie blocos próprios em cada inciso I a IV e em cada alínea que se segue, de \"a) 1º Serviço de Soluções de Tecnologia da Informação\" até \"d) Serviço de Integração e Métricas de Sistemas\".\n- No Art. 7º, termine o bloco do inciso IV \"propor modalidade de provimento\" antes do inciso V \"acompanhar o andamento\" e inicie também um bloco próprio no inciso VI \"assegurar a necessária articulação\" (pág. 5).\n- Mantenha no bloco do inciso VI do Art. 8º todo o texto que começa em \"VI - demandar de empresas contratadas\" e termina em \"as respectivas ordens de serviço;\" (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII \"manter as unidades gestoras\" antes do inciso IX \"realizar testes funcionais\" e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final \"de soluções de tecnologia da informação.\" (pág. 7).\n- No § 2º do Art. 11, após o inciso III \"promover e apoiar iniciativas de comunicação\", inicie blocos próprios nos incisos IV \"auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências\", V \"definir, implementar e manter visões dos bancos de dados corporativos\" e VI \"consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado\" (págs. 7–8).\n- No Art. 13 (pág. 8), mantenha o final \"aderência aos padrões estabelecidos;\" no bloco do inciso II e inicie um bloco separado no inciso III \"definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação\", com todo o seu texto até \"aderência aos padrões estabelecidos;\".\n- No parágrafo único do Art. 17, termine o bloco do inciso I \"coordenar o desenvolvimento\" antes do inciso II \"gerenciar as contas institucionais\" e inicie outro bloco no inciso III \"definir padrões, requisitos e restrições\" (pág. 10).\n- No Art. 15, termine o bloco do inciso IX \"apoiar as subunidades da STI e da Setic...\" antes do inciso X \"promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação\" e inicie um bloco próprio para o inciso X (pág. 10).\n- No Art. 18, termine o bloco do inciso IV \"assegurar o encaminhamento tempestivo...\" antes do inciso V \"promover a articulação e o bom relacionamento com clientes e usuários\" e inicie um bloco próprio para o inciso V (pág. 11).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Art. 6º, inciso XXIV “XXIV - desenvolver outras atividades inerentes à sua finalidade.”, pág. 5",
+          "tipo": "sem_bloco",
+          "descricao": "O inciso XXIV não foi incluído em nenhum bloco, embora seja uma unidade hierárquica que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "Art. 14, incisos I a VIII, pág. 9",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado em “Art. 14. Em complemento ao disposto no art. 6º...” contém, sem cortes próprios, os incisos I a VIII, todos marcadores de unidades que devem iniciar blocos separados."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo que começa em “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO” e termina em “resolve:” (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X “gerenciar identidade e acesso”, XI “viabilizar o intercâmbio de dados”, XII “participar de ações de controle externo” e XIII “desenvolver outras atividades” (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I “apoiar, em coordenação com a Secretaria de Planejamento” e inicie blocos próprios em cada um dos incisos I a VII; em especial, termine o inciso III “avaliar as regras de negócio e os requisitos definidos” antes do inciso IV “negociar níveis de serviço para cada solução de tecnologia da informação”.\n- No Art. 5º (pág. 3), termine o bloco introdutório do artigo antes do inciso I “Diretoria de Soluções de Controle Externo” e inicie blocos próprios em cada inciso I a IV e em cada alínea que se segue, de “a) 1º Serviço de Soluções de Tecnologia da Informação” até “d) Serviço de Integração e Métricas de Sistemas”.\n- No Art. 7º, termine o bloco do inciso IV “propor modalidade de provimento” antes do inciso V “acompanhar o andamento” e inicie também um bloco próprio no inciso VI “assegurar a necessária articulação” (pág. 5).\n- No Art. 8º, mantenha no bloco do inciso VI todo o texto que começa em “VI - demandar de empresas contratadas” e termina em “as respectivas ordens de serviço;” (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII “manter as unidades gestoras” antes do inciso IX “realizar testes funcionais” e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final “de soluções de tecnologia da informação.” (pág. 7).\n- No § 2º do Art. 11, após o inciso III “promover e apoiar iniciativas de comunicação”, inicie blocos próprios nos incisos IV “auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências”, V “definir, implementar e manter visões dos bancos de dados corporativos” e VI “consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado” (págs. 7–8).\n- No Art. 13 (pág. 8), mantenha o final “aderência aos padrões estabelecidos;” no bloco do inciso II e inicie um bloco separado no inciso III “definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação”, com todo o seu texto até “aderência aos padrões estabelecidos;”.\n- No Art. 14 (pág. 9), termine o bloco introdutório do artigo antes do inciso I “elaborar e administrar, com o apoio das subunidades” e inicie blocos próprios em cada inciso I, II, III, IV, V, VI, VII e VIII.\n- No Art. 15, termine o bloco do inciso IX “apoiar as subunidades da STI e da Setic...” antes do inciso X “promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação” e inicie um bloco próprio para o inciso X (pág. 10).\n- No parágrafo único do Art. 17, termine o bloco do inciso I “coordenar o desenvolvimento” antes do inciso II “gerenciar as contas institucionais” e inicie outro bloco no inciso III “definir padrões, requisitos e restrições” (pág. 10).\n- No Art. 18, termine o bloco do inciso IV “assegurar o encaminhamento tempestivo...” antes do inciso V “promover a articulação e o bom relacionamento com clientes e usuários” e inicie um bloco próprio para o inciso V (pág. 11).\n- No Art. 6º, após o inciso XXIII “prospectar e propor adoção de novas tecnologias para benefício do controle externo;”, inicie um bloco próprio no inciso XXIV “desenvolver outras atividades inerentes à sua finalidade.” (pág. 5)."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6257/NORMA-6257_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 171,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo que começa em “O SECRETÁRIO DE SOLUÇÕES DE TECNOLOGIA DA INFORMAÇÃO” e termina em “resolve:” (pág. 1), antes do bloco do Art. 1º.\n- No Art. 3º, inicie blocos separados nos incisos X “gerenciar identidade e acesso”, XI “viabilizar o intercâmbio de dados”, XII “participar de ações de controle externo” e XIII “desenvolver outras atividades” (pág. 2).\n- No Art. 4º (págs. 2–3), termine o bloco do artigo antes do inciso I “apoiar, em coordenação com a Secretaria de Planejamento” e inicie blocos próprios em cada um dos incisos I a VII; em especial, termine o inciso III “avaliar as regras de negócio e os requisitos definidos” antes do inciso IV “negociar níveis de serviço para cada solução de tecnologia da informação”.\n- No Art. 5º (pág. 3), termine o bloco introdutório do artigo antes do inciso I “Diretoria de Soluções de Controle Externo” e inicie blocos próprios em cada inciso I a IV e em cada alínea que se segue, de “a) 1º Serviço de Soluções de Tecnologia da Informação” até “d) Serviço de Integração e Métricas de Sistemas”.\n- No Art. 7º, termine o bloco do inciso IV “propor modalidade de provimento” antes do inciso V “acompanhar o andamento” e inicie também um bloco próprio no inciso VI “assegurar a necessária articulação” (pág. 5).\n- No Art. 8º, mantenha no bloco do inciso VI todo o texto que começa em “VI - demandar de empresas contratadas” e termina em “as respectivas ordens de serviço;” (pág. 6).\n- No Art. 8º, termine o bloco do inciso VIII “manter as unidades gestoras” antes do inciso IX “realizar testes funcionais” e inicie blocos próprios nos incisos IX, X, XI, XII, XIII e XIV (pág. 6).\n- Mantenha no bloco do Art. 11 o trecho final “de soluções de tecnologia da informação.” (pág. 7).\n- No § 2º do Art. 11, após o inciso III “promover e apoiar iniciativas de comunicação”, inicie blocos próprios nos incisos IV “auxiliar as unidades do Tribunal na seleção e no desenvolvimento de competências”, V “definir, implementar e manter visões dos bancos de dados corporativos” e VI “consolidar e divulgar informações sobre os projetos de desenvolvimento descentralizado” (págs. 7–8).\n- No Art. 13 (pág. 8), mantenha o final “aderência aos padrões estabelecidos;” no bloco do inciso II e inicie um bloco separado no inciso III “definir padrões técnicos e de arquitetura aplicáveis aos sistemas de informação”, com todo o seu texto até “aderência aos padrões estabelecidos;”.\n- No Art. 14 (pág. 9), termine o bloco introdutório do artigo antes do inciso I “elaborar e administrar, com o apoio das subunidades” e inicie blocos próprios em cada inciso I, II, III, IV, V, VI, VII e VIII.\n- No Art. 15, termine o bloco do inciso IX “apoiar as subunidades da STI e da Setic...” antes do inciso X “promover a adoção de práticas de gestão do conhecimento na área de tecnologia da informação” e inicie um bloco próprio para o inciso X (pág. 10).\n- No parágrafo único do Art. 17, termine o bloco do inciso I “coordenar o desenvolvimento” antes do inciso II “gerenciar as contas institucionais” e inicie outro bloco no inciso III “definir padrões, requisitos e restrições” (pág. 10).\n- No Art. 18, termine o bloco do inciso IV “assegurar o encaminhamento tempestivo...” antes do inciso V “promover a articulação e o bom relacionamento com clientes e usuários” e inicie um bloco próprio para o inciso V (pág. 11).\n- No Art. 6º, após o inciso XXIII “prospectar e propor adoção de novas tecnologias para benefício do controle externo;”, inicie um bloco próprio no inciso XXIV “desenvolver outras atividades inerentes à sua finalidade.” (pág. 5).",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-6257/NORMA-6257_ciclo5.json"
+  }
+]

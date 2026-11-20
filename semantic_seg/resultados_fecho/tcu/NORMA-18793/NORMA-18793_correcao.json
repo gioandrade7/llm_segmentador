@@ -1,0 +1,37 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 54,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "Preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\", pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O texto introdutório do documento, anterior ao Art. 1º, ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "Inciso I - \"editar e fazer publicar...\", do Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco iniciado pelo inciso I contém também os incisos II - \"definir os procedimentos operacionais...\" e III - \"homologar o resultado do concurso\", que são unidades próprias."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Crie um bloco inicial para o preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\" (pág. 1), imediatamente antes do bloco do Art. 1º.\n- Termine o bloco do inciso I - \"editar e fazer publicar...\" do Art. 2º (pág. 1) antes de II - \"definir os procedimentos operacionais...\"; inicie blocos próprios em II e em III - \"homologar o resultado do concurso\"."
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18793/NORMA-18793_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 57,
+    "insights_aplicados": "- Crie um bloco inicial para o preâmbulo \"O PRESIDENTE DO TRIBUNAL DE CONTAS DA UNIÃO... resolve:\" (pág. 1), imediatamente antes do bloco do Art. 1º.\n- Termine o bloco do inciso I - \"editar e fazer publicar...\" do Art. 2º (pág. 1) antes de II - \"definir os procedimentos operacionais...\"; inicie blocos próprios em II e em III - \"homologar o resultado do concurso\".",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/tcu/NORMA-18793/NORMA-18793_ciclo2.json"
+  }
+]

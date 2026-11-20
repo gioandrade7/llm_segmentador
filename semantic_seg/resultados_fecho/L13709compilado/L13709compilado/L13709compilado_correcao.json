@@ -1,0 +1,252 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 410,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`III - a liberdade de expressão`, Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no inciso III contém também os incisos IV, V, VI e VII do Art. 2º."
+        },
+        {
+          "onde": "`VIII - encarregado`, Art. 5º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no inciso VIII contém também os incisos IX a XIX do Art. 5º."
+        },
+        {
+          "onde": "`IV - livre acesso`, Art. 6º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado no inciso IV contém também os incisos V e VI do Art. 6º."
+        },
+        {
+          "onde": "`VII - segurança`, Art. 6º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos VII, VIII, IX e X do Art. 6º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`Art. 10. O legítimo interesse do controlador`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 10 contém também os incisos I e II."
+        },
+        {
+          "onde": "`Seção IV — Do Término do Tratamento de Dados`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco da Seção IV contém o Art. 15 e os incisos I a IV desse artigo."
+        },
+        {
+          "onde": "`Art. 16. Os dados pessoais serão eliminados`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 16 contém também os incisos I a IV."
+        },
+        {
+          "onde": "`§ 2º As informações e os dados poderão ser fornecidos`, Art. 19, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 2º contém também os incisos I e II."
+        },
+        {
+          "onde": "`§ 1º A fim de assegurar a efetiva indenização`, Art. 42, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém o inciso I, que deveria iniciar bloco próprio."
+        },
+        {
+          "onde": "`Art. 43. Os agentes de tratamento só não serão responsabilizados`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 43 contém também os incisos I, II e III."
+        },
+        {
+          "onde": "`I - Conselho Diretor, órgão máximo de direção`, Art. 55-C, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso I contém também os incisos II, III, IV, V, V-A, V-B e VI."
+        },
+        {
+          "onde": "`§ 1º Nos termos do cap t deste artigo`, Art. 55-E, pág. 1",
+          "tipo": "ancora",
+          "descricao": "há uma versão corrompida e truncada do § 1º antes da marca de página, seguida na página 2 por uma repetição íntegra do mesmo § 1º; a ordem e a duplicação decorrem da extração."
+        },
+        {
+          "onde": "`XIII - editar regulamentos e procedimentos`, Art. 55-J, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso XIII contém também os incisos XIV a XXIV."
+        },
+        {
+          "onde": "`IV - elaborar estudos e realizar debates`, Art. 58-B, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso IV contém também o inciso V."
+        },
+        {
+          "onde": "`§ 5º É vedado às operadoras de planos privados`, Art. 11, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o § 5º aparece fora de bloco entre o texto introdutório do § 4º e os incisos I e II que completam esse § 4º, evidenciando inversão de ordem de leitura na extração."
+        },
+        {
+          "onde": "`IV - executar as demais atribuições`, Art. 41, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso IV do § 2º ficou fora de qualquer bloco."
+        },
+        {
+          "onde": "`d) estabeleça políticas e salvaguardas adequadas`, Art. 50, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "as alíneas d a h do inciso I do § 2º ficaram fora de qualquer bloco."
+        },
+        {
+          "onde": "`VI - o grau do dano`, Art. 52, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "os incisos VI a XI do § 1º ficaram fora de qualquer bloco."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização` antes de `I - o operador responde solidariamente` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_fecho/L13709compilado/L13709compilado/L13709compilado_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 476,
+    "insights_aplicados": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização` antes de `I - o operador responde solidariamente` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`§ 1º Nos termos do cap t deste artigo`, Art. 55-E, págs. 1–2",
+          "tipo": "ancora",
+          "descricao": "o parágrafo aparece primeiro com texto corrompido no fim da pág. 1 e é repetido integralmente após `<!-- PÁGINA 2 -->`; trata-se de duplicação e corrupção de extração, não de um corte segmentável."
+        },
+        {
+          "onde": "`Art. 55-F. Aplica-se aos membros do Conselho Diretor`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 55-F contém também `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa.`"
+        },
+        {
+          "onde": "`§ 1º A fim de assegurar a efetiva indenização ao titular dos dados`, Art. 42, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 1º contém, sem corte próprio, o inciso `I - o operador responde solidariamente pelos danos causados pelo tratamento`."
+        },
+        {
+          "onde": "`§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI`, Art. 58-A, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do § 3º contém também o inciso `I - serão indicados na forma de regulamento`."
+        },
+        {
+          "onde": "`Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade`, pág. 2",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 58-B contém os incisos `I - propor diretrizes estratégicas`, `II - elaborar relatórios anuais`, `III - sugerir ações` e `IV - elaborar estudos e realizar debates`, sem blocos próprios para eles."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2)."
+    },
+    "arquivo_blocos": "resultados_fecho/L13709compilado/L13709compilado/L13709compilado_ciclo2.json"
+  },
+  {
+    "ciclo": 3,
+    "blocos_produzidos": 471,
+    "insights_aplicados": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`V - o desenvolvimento econômico e tecnológico e a inovação`, Art. 2º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso V contém também os incisos `VI - a livre iniciativa, a livre concorrência e a defesa do consumidor` e `VII - os direitos humanos...`."
+        },
+        {
+          "onde": "`II - dado pessoal sensível`, Art. 5º, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do inciso II contém também os incisos `III - dado anonimizado` e `IV - banco de dados`."
+        },
+        {
+          "onde": "`Art. 15. O término do tratamento de dados pessoais ocorrerá`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém, sem blocos próprios, os incisos I a IV."
+        },
+        {
+          "onde": "`Art. 34. O nível de proteção de dados do país estrangeiro`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do artigo contém também os incisos I, II, III, IV e V; apenas o inciso VI foi iniciado em bloco separado."
+        },
+        {
+          "onde": "`§ 1º Nos termos do cap t deste artigo`, Art. 55-E, pág. 1, seguido da repetição regular de `§ 1º Nos termos do caput deste artigo` na pág. 2",
+          "tipo": "sequencia",
+          "descricao": "há uma versão corrompida do § 1º, com palavras fragmentadas, seguida na página seguinte pela repetição íntegra do mesmo § 1º. Trata-se de duplicação e corrupção decorrentes da extração, não de uma segmentação corrigível."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `II - dado pessoal sensível` imediatamente antes de `III - dado anonimizado` e inicie blocos próprios para os incisos III e IV do Art. 5º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `Art. 34. O nível de proteção de dados do país estrangeiro` antes de `I - as normas gerais e setoriais da legislação em vigor no país de destino` e inicie blocos próprios para os incisos I, II, III, IV e V do Art. 34 (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2)."
+    },
+    "arquivo_blocos": "resultados_fecho/L13709compilado/L13709compilado/L13709compilado_ciclo3.json"
+  },
+  {
+    "ciclo": 4,
+    "blocos_produzidos": 466,
+    "insights_aplicados": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `II - dado pessoal sensível` imediatamente antes de `III - dado anonimizado` e inicie blocos próprios para os incisos III e IV do Art. 5º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `Art. 34. O nível de proteção de dados do país estrangeiro` antes de `I - as normas gerais e setoriais da legislação em vigor no país de destino` e inicie blocos próprios para os incisos I, II, III, IV e V do Art. 34 (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`a) segurança pública`, inciso III do Art. 4º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "as alíneas `b) defesa nacional`, `c) segurança do Estado` e `d) atividades de investigação e repressão de infrações penais` ficaram sem bloco próprio."
+        },
+        {
+          "onde": "`IX - não discriminação`, Art. 6º, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "o inciso `X - responsabilização e prestação de contas` ficou sem bloco próprio."
+        },
+        {
+          "onde": "`Art. 33. A transferência internacional de dados pessoais`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco do Art. 33 contém, sem cortes próprios, os incisos I a IX, as alíneas a) a d) do inciso II e o parágrafo único."
+        },
+        {
+          "onde": "`§ 1º Nos termos do cap t deste artigo`, Art. 55-E, fim da pág. 1/início da pág. 2",
+          "tipo": "sequencia",
+          "descricao": "há um trecho corrompido do § 1º seguido, após a mudança de página, pela repetição íntegra do mesmo § 1º; a duplicação e a corrupção decorrem da extração do PDF."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `II - dado pessoal sensível` imediatamente antes de `III - dado anonimizado` e inicie blocos próprios para os incisos III e IV do Art. 5º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `Art. 34. O nível de proteção de dados do país estrangeiro` antes de `I - as normas gerais e setoriais da legislação em vigor no país de destino` e inicie blocos próprios para os incisos I, II, III, IV e V do Art. 34 (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2).\n- Termine o bloco de `a) segurança pública` do inciso III do Art. 4º imediatamente antes de `b) defesa nacional` e inicie blocos próprios para as alíneas b), c) e d) desse inciso (pág. 1).\n- Termine o bloco de `IX - não discriminação` do Art. 6º imediatamente antes de `X - responsabilização e prestação de contas` e inicie bloco próprio para o inciso X (pág. 1).\n- Termine o bloco de `Art. 33. A transferência internacional de dados pessoais somente é permitida` antes de `I - para países ou organismos internacionais` e inicie blocos próprios para os incisos I a IX; no inciso II, inicie também blocos próprios para as alíneas a), b), c) e d); termine o inciso IX antes de `Parágrafo único. Para os fins do inciso I deste artigo` e inicie bloco próprio para o parágrafo único (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_fecho/L13709compilado/L13709compilado/L13709compilado_ciclo4.json"
+  },
+  {
+    "ciclo": 5,
+    "blocos_produzidos": 481,
+    "insights_aplicados": "- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `II - dado pessoal sensível` imediatamente antes de `III - dado anonimizado` e inicie blocos próprios para os incisos III e IV do Art. 5º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `Art. 34. O nível de proteção de dados do país estrangeiro` antes de `I - as normas gerais e setoriais da legislação em vigor no país de destino` e inicie blocos próprios para os incisos I, II, III, IV e V do Art. 34 (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2).\n- Termine o bloco de `a) segurança pública` do inciso III do Art. 4º imediatamente antes de `b) defesa nacional` e inicie blocos próprios para as alíneas b), c) e d) desse inciso (pág. 1).\n- Termine o bloco de `IX - não discriminação` do Art. 6º imediatamente antes de `X - responsabilização e prestação de contas` e inicie bloco próprio para o inciso X (pág. 1).\n- Termine o bloco de `Art. 33. A transferência internacional de dados pessoais somente é permitida` antes de `I - para países ou organismos internacionais` e inicie blocos próprios para os incisos I a IX; no inciso II, inicie também blocos próprios para as alíneas a), b), c) e d); termine o inciso IX antes de `Parágrafo único. Para os fins do inciso I deste artigo` e inicie bloco próprio para o parágrafo único (pág. 1).",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`c) realização de estudos por órgão de pesquisa`, alínea do inciso II do Art. 11, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "A alínea c) ficou fora de qualquer bloco entre as alíneas b) e d), embora seja unidade hierárquica própria."
+        },
+        {
+          "onde": "`Art. 27. A comunicação ou o uso compartilhado de dados pessoais`, pág. 1",
+          "tipo": "sem_bloco",
+          "descricao": "O Art. 27 ficou fora de qualquer bloco; apenas os seus incisos I a III e o parágrafo único foram segmentados."
+        },
+        {
+          "onde": "`Art. 27. A comunicação ou o uso compartilhado de dados pessoais`, págs. 1–1",
+          "tipo": "ancora",
+          "descricao": "O segmentador devolveu um bloco para o Art. 27, mas suas âncoras não foram localizadas no texto marcado; o conteúdo correspondente aparece como texto sem bloco."
+        },
+        {
+          "onde": "`Seção I — Do Controlador e do Operador`, seguida de `Art. 37. O controlador e o operador devem manter registro`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "O bloco da Seção I contém o marcador e o texto do Art. 37, que deve iniciar bloco próprio."
+        },
+        {
+          "onde": "`§ 1º Nos termos do cap t deste artigo...`, após o Art. 55-E, pág. 1",
+          "tipo": "ancora",
+          "descricao": "Há uma ocorrência corrompida do § 1º do Art. 55-E, seguida na página 2 por uma segunda ocorrência íntegra do mesmo parágrafo. A duplicação e a corrupção textual são indícios de erro de extração do PDF, não corrigíveis por segmentação."
+        }
+      ],
+      "erro_extracao": true,
+      "consistente": false,
+      "insights": "- Inicie bloco próprio em `c) realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais sensíveis` do inciso II do Art. 11 (pág. 1), entre as alíneas b) e d).\n- Inicie bloco próprio em `Art. 27. A comunicação ou o uso compartilhado de dados pessoais de pessoa jurídica de direito público a pessoa de direito privado` (pág. 1), antes do inciso I.\n- Termine o bloco de `Seção I — Do Controlador e do Operador` imediatamente antes de `Art. 37. O controlador e o operador devem manter registro das operações de tratamento` e inicie bloco próprio para o Art. 37 (pág. 1).\n- Termine o bloco de `III - a liberdade de expressão` imediatamente antes de `IV - a inviolabilidade da intimidade` e inicie blocos próprios para os incisos IV, V, VI e VII do Art. 2º (pág. 1).\n- Termine o bloco de `II - dado pessoal sensível` imediatamente antes de `III - dado anonimizado` e inicie blocos próprios para os incisos III e IV do Art. 5º (pág. 1).\n- Termine o bloco de `VIII - encarregado` imediatamente antes de `IX - agentes de tratamento` e inicie blocos próprios para os incisos IX a XIX do Art. 5º (pág. 1).\n- Termine o bloco de `IV - livre acesso` imediatamente antes de `V - qualidade dos dados`; inicie blocos próprios para os incisos V e VI, bem como para os incisos VII, VIII, IX e X do Art. 6º (pág. 1).\n- Termine o bloco de `Art. 10. O legítimo interesse do controlador` antes de `I - apoio e promoção de atividades do controlador` e inicie blocos próprios para os incisos I e II (pág. 1).\n- Termine o bloco de `Seção IV — Do Término do Tratamento de Dados` antes de `Art. 15. O término do tratamento`; inicie também blocos próprios para cada inciso I a IV do Art. 15 (pág. 1).\n- Termine o bloco de `Art. 16. Os dados pessoais serão eliminados` antes de `I - cumprimento de obrigação legal ou regulatória` e inicie blocos próprios para os incisos I a IV (pág. 1).\n- Termine o bloco de `§ 2º As informações e os dados poderão ser fornecidos` antes de `I - por meio eletrônico` e inicie blocos próprios para os incisos I e II do § 2º do Art. 19 (pág. 1).\n- Termine o bloco de `§ 1º A fim de assegurar a efetiva indenização ao titular dos dados` antes de `I - o operador responde solidariamente pelos danos causados pelo tratamento` e inicie bloco próprio para esse inciso do Art. 42 (pág. 1).\n- Termine o bloco de `Art. 43. Os agentes de tratamento só não serão responsabilizados` antes de `I - que não realizaram` e inicie blocos próprios para os incisos I, II e III (pág. 1).\n- Termine o bloco de `Art. 34. O nível de proteção de dados do país estrangeiro` antes de `I - as normas gerais e setoriais da legislação em vigor no país de destino` e inicie blocos próprios para os incisos I, II, III, IV e V do Art. 34 (pág. 1).\n- Termine o bloco de `I - Conselho Diretor, órgão máximo de direção` antes de `II - Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` e inicie blocos próprios para os incisos II, III, IV, V, V-A, V-B e VI do Art. 55-C (pág. 1).\n- Termine o bloco de `XIII - editar regulamentos e procedimentos` antes de `XIV - ouvir os agentes de tratamento` e inicie blocos próprios para os incisos XIV a XXIV do Art. 55-J (pág. 2).\n- Termine o bloco de `IV - elaborar estudos e realizar debates` antes de `V - disseminar o conhecimento` e inicie bloco próprio para o inciso V do Art. 58-B (pág. 2).\n- Inicie bloco próprio em `IV - executar as demais atribuições determinadas pelo controlador` do § 2º do Art. 41 (pág. 1).\n- Inicie blocos próprios nas alíneas `d) estabeleça políticas e salvaguardas adequadas` até `h) seja atualizado constantemente` do inciso I do § 2º do Art. 50 (pág. 1).\n- Inicie blocos próprios nos incisos `VI - o grau do dano` até `XI - a proporcionalidade entre a gravidade da falta e a intensidade da sanção` do § 1º do Art. 52 (pág. 1).\n- Termine o bloco de `Art. 55-F. Aplica-se aos membros do Conselho Diretor` imediatamente antes de `Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa` e inicie um bloco próprio para o parágrafo único (pág. 2).\n- Termine o bloco de `§ 3º Os representantes de que tratam os incisos VII, VIII, IX, X e XI` do Art. 58-A imediatamente antes de `I - serão indicados na forma de regulamento` e inicie um bloco próprio para esse inciso (pág. 2).\n- Termine o bloco de `Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade` antes de `I - propor diretrizes estratégicas` e inicie blocos próprios para os incisos I, II, III e IV do Art. 58-B (pág. 2).\n- Termine o bloco de `a) segurança pública` do inciso III do Art. 4º imediatamente antes de `b) defesa nacional` e inicie blocos próprios para as alíneas b), c) e d) desse inciso (pág. 1).\n- Termine o bloco de `IX - não discriminação` do Art. 6º imediatamente antes de `X - responsabilização e prestação de contas` e inicie bloco próprio para o inciso X (pág. 1).\n- Termine o bloco de `Art. 33. A transferência internacional de dados pessoais somente é permitida` antes de `I - para países ou organismos internacionais` e inicie blocos próprios para os incisos I a IX; no inciso II, inicie também blocos próprios para as alíneas a), b), c) e d); termine o inciso IX antes de `Parágrafo único. Para os fins do inciso I deste artigo` e inicie bloco próprio para o parágrafo único (pág. 1)."
+    },
+    "arquivo_blocos": "resultados_fecho/L13709compilado/L13709compilado/L13709compilado_ciclo5.json"
+  }
+]

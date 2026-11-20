@@ -1,0 +1,32 @@
+[
+  {
+    "ciclo": 1,
+    "blocos_produzidos": 8,
+    "insights_aplicados": "",
+    "analise": {
+      "problemas": [
+        {
+          "onde": "`III - reuniões com a comunidade;`, pág. 1",
+          "tipo": "englobante",
+          "descricao": "o bloco iniciado por `III - reuniões com a comunidade;` contém também os incisos irmãos `IV - ações de divulgação em espaços públicos;` e `V - iluminação ou decoração de espaços com a cor dourada.`, que devem iniciar blocos próprios."
+        }
+      ],
+      "erro_extracao": false,
+      "consistente": false,
+      "insights": "- Termine o bloco do inciso `III - reuniões com a comunidade;` (pág. 1) imediatamente antes de `IV - ações de divulgação em espaços públicos;` e inicie um bloco próprio em `IV`.\n- Termine o bloco do inciso `IV - ações de divulgação em espaços públicos;` (pág. 1) imediatamente antes de `V - iluminação ou decoração de espaços com a cor dourada.` e inicie um bloco próprio em `V`."
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13435/LEI-2017-13435_ciclo1.json"
+  },
+  {
+    "ciclo": 2,
+    "blocos_produzidos": 10,
+    "insights_aplicados": "- Termine o bloco do inciso `III - reuniões com a comunidade;` (pág. 1) imediatamente antes de `IV - ações de divulgação em espaços públicos;` e inicie um bloco próprio em `IV`.\n- Termine o bloco do inciso `IV - ações de divulgação em espaços públicos;` (pág. 1) imediatamente antes de `V - iluminação ou decoração de espaços com a cor dourada.` e inicie um bloco próprio em `V`.",
+    "analise": {
+      "problemas": [],
+      "erro_extracao": false,
+      "consistente": true,
+      "insights": ""
+    },
+    "arquivo_blocos": "resultados_fecho/lei_2017/LEI-2017-13435/LEI-2017-13435_ciclo2.json"
+  }
+]
