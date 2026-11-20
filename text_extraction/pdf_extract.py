@@ -182,16 +182,28 @@ def _extract_plain(pdf_path: str, page_nums: list[int]) -> dict[int, str]:
     return out
 
 
-# Função selecionada na inicialização (avalia uma única vez)
-_extract_chunk = (
-    _extract_pymupdf4llm if _HAS_PYMUPDF4LLM else _extract_blocks
-)
+# Estratégias por nome. `auto` é a escolha da inicialização: pymupdf4llm se
+# instalado, senão blocos. As outras forçam uma estratégia — `texto` serve, por
+# exemplo, a páginas que o pymupdf4llm lê como "picture text" e cola numa linha só.
+ESTRATEGIAS = {
+    "markdown": _extract_pymupdf4llm,
+    "blocos": _extract_blocks,
+    "texto": _extract_plain,
+}
 
 
-def _worker(args: tuple[str, list[int]]) -> dict[int, str]:
+def _resolver_estrategia(estrategia: str) -> str:
+    if estrategia == "auto":
+        return "markdown" if _HAS_PYMUPDF4LLM else "blocos"
+    if estrategia == "markdown" and not _HAS_PYMUPDF4LLM:
+        raise RuntimeError("estratégia 'markdown' pedida, mas pymupdf4llm não está instalado")
+    return estrategia
+
+
+def _worker(args: tuple[str, list[int], str]) -> dict[int, str]:
     """Entrypoint para ProcessPoolExecutor."""
-    pdf_path, page_nums = args
-    return _extract_chunk(pdf_path, page_nums)
+    pdf_path, page_nums, estrategia = args
+    return ESTRATEGIAS[estrategia](pdf_path, page_nums)
 
 
 # ── Pipeline ──────────────────────────────────────────────────────────────────
@@ -203,6 +215,7 @@ def extract_pdf(
     resume: bool = True,
     write_final: bool = True,
     chunk_size: int | None = None,
+    estrategia: str = "auto",
 ) -> dict[int, str]:
     """
     Extrai todas as páginas de um PDF para arquivos Markdown.
@@ -215,6 +228,7 @@ def extract_pdf(
     resume      : se True, pula páginas já existentes em output_dir
     write_final : se True, gera documento_final.md com tudo concatenado
     chunk_size  : nº de páginas por chunk de worker (None = auto)
+    estrategia  : auto | markdown | blocos | texto (ver `ESTRATEGIAS`)
 
     Retorna
     ───────
@@ -224,7 +238,8 @@ def extract_pdf(
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    if not _HAS_PYMUPDF4LLM:
+    estrategia = _resolver_estrategia(estrategia)
+    if not _HAS_PYMUPDF4LLM and estrategia == "blocos":
         print("⚠  pymupdf4llm não instalado — usando fallback de blocos puros.")
         print("   Recomendado: pip install pymupdf4llm")
 
@@ -253,12 +268,11 @@ def extract_pdf(
     if not pendentes:
         print(f"  Tudo já processado ({total} páginas).")
     else:
-        engine = "pymupdf4llm" if _HAS_PYMUPDF4LLM else "blocks+sort"
-        print(f"  Extraindo {len(pendentes)} páginas | engine={engine} | "
+        print(f"  Extraindo {len(pendentes)} páginas | estratégia={estrategia} | "
               f"workers={workers}")
 
         t0 = time.perf_counter()
-        mds = _executar_extracao(pdf_path, pendentes, workers, chunk_size)
+        mds = _executar_extracao(pdf_path, pendentes, workers, chunk_size, estrategia)
         elapsed = time.perf_counter() - t0
 
         avisos: list[tuple[int, int]] = []
@@ -294,11 +308,12 @@ def _executar_extracao(
     pendentes: list[int],
     workers: int,
     chunk_size: int | None,
+    estrategia: str,
 ) -> dict[int, str]:
     """Despacha a extração — sequencial (workers≤1) ou paralela."""
     if workers <= 1 or len(pendentes) <= 4:
         # Sequencial — uma única chamada cobre todas as páginas
-        return _extract_chunk(pdf_path, pendentes)
+        return ESTRATEGIAS[estrategia](pdf_path, pendentes)
 
     if chunk_size is None:
         chunk_size = max(1, len(pendentes) // workers)
@@ -307,7 +322,7 @@ def _executar_extracao(
 
     mds: dict[int, str] = {}
     with ProcessPoolExecutor(max_workers=workers) as ex:
-        for partial in ex.map(_worker, [(pdf_path, ch) for ch in chunks]):
+        for partial in ex.map(_worker, [(pdf_path, ch, estrategia) for ch in chunks]):
             mds.update(partial)
     return mds
 
@@ -332,6 +347,9 @@ def main(argv: list[str] | None = None) -> int:
                         help="Reprocessa todas as páginas, mesmo as já existentes.")
     parser.add_argument("--no-final", action="store_true",
                         help="Não gera documento_final.md, apenas as páginas.")
+    parser.add_argument("--estrategia", choices=["auto", *ESTRATEGIAS], default="auto",
+                        help="auto (pymupdf4llm se instalado, senão blocos), markdown, "
+                             "blocos ou texto (get_text puro).")
     args = parser.parse_args(argv)
 
     if not Path(args.input).is_file():
@@ -347,6 +365,7 @@ def main(argv: list[str] | None = None) -> int:
         resume=not args.no_resume,
         write_final=not args.no_final,
         chunk_size=args.chunk_size,
+        estrategia=args.estrategia,
     )
     print(f"\nTempo total: {time.perf_counter() - t0:.1f}s")
     return 0

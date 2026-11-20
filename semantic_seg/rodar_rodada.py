@@ -1,8 +1,8 @@
 """
 rodar_rodada.py — Roda `main.py` e `avaliar.py` em lote, um processo por documento.
 
-Cobre as normas de `gabarito/tcu_amostra.json`, as leis de 2017 com gabarito, o edital
-e a `sec-rules`, na mesma organização de `resultados_amostra5/`: `{raiz}/{grupo}/{KEY}/{KEY}`, com a saída de
+Cobre as normas de `gabarito/tcu_amostra.json`, as leis de 2017 com gabarito, o edital,
+a `sec-rules` e as leis extraídas de PDF (`L13467`, `L13709compilado`), na mesma organização de `resultados_amostra5/`: `{raiz}/{grupo}/{KEY}/{KEY}`, com a saída de
 cada processo em `{KEY}.log` e início e fim de cada documento em `{raiz}/status.txt`.
 Os documentos mais longos entram primeiro, porque determinam a duração da rodada.
 
@@ -13,6 +13,8 @@ processo que caiu não deixa resultado parcial e recomeça do zero.
 Uso:
     python rodar_rodada.py --raiz resultados_rodada --simular    # só lista os comandos
     python rodar_rodada.py --raiz resultados_rodada
+    python rodar_rodada.py --raiz resultados_rodada --grupos lei_2017   # só as leis
+    python rodar_rodada.py --raiz resultados_rodada --documentos NORMA-1516 sec-rules
 """
 
 import argparse
@@ -31,15 +33,17 @@ _trava = threading.Lock()
 
 
 def documentos() -> list[tuple[str, str, str]]:
-    """`(grupo, key, pasta das páginas)` de cada documento, do mais longo ao mais curto."""
+    """`(grupo, key, pasta das páginas)` de cada documento, do mais longo ao mais curto (em bytes)."""
     with open(os.path.join(DIR, "gabarito", "tcu_amostra.json"), encoding="utf-8") as f:
         docs = [("tcu", n["key"], os.path.join(PAGINAS, "tcu", n["key"])) for n in json.load(f)["normas"]]
     for gabarito in glob.glob(os.path.join(DIR, "gabarito", "LEI-2017-*.md")):
         key = os.path.splitext(os.path.basename(gabarito))[0]
         docs.append(("lei_2017", key, os.path.join(PAGINAS, "lei_2017", key)))
-    for key in ("edital-inep-064", "sec-rules"):
+    for key in ("edital-inep-064", "sec-rules", "L13467", "L13709compilado"):
         docs.append((key, key, os.path.join(PAGINAS, key, "paginas")))
-    return sorted(docs, key=lambda d: -len(os.listdir(d[2])))
+    # Por caracteres, não por páginas: L13467 e L13709compilado têm 2 páginas gigantes cada.
+    tamanho = lambda d: sum(os.path.getsize(os.path.join(d[2], f)) for f in os.listdir(d[2]))
+    return sorted(docs, key=lambda d: -tamanho(d))
 
 
 def registrar(raiz: str, mensagem: str) -> None:
@@ -90,10 +94,16 @@ def main():
     parser.add_argument("--paginas-amostra", default=5, type=int,
                         help="páginas por região (começo/meio/fim) lidas pelo identificador")
     parser.add_argument("--paralelo", default=31, type=int, help="documentos ao mesmo tempo")
+    parser.add_argument("--grupos", nargs="+", default=None,
+                        help="roda só estes grupos (tcu, lei_2017, edital-inep-064, sec-rules, L13467, L13709compilado)")
+    parser.add_argument("--documentos", nargs="+", default=None,
+                        help="roda só estes documentos (ex.: NORMA-1516 sec-rules)")
     parser.add_argument("--simular", action="store_true", help="lista os comandos sem rodar nada")
     args = parser.parse_args()
 
-    docs = documentos()
+    docs = [d for d in documentos()
+            if (args.grupos is None or d[0] in args.grupos)
+            and (args.documentos is None or d[1] in args.documentos)]
     if args.simular:
         for doc in docs:
             _, passos = comandos(doc, args.raiz, args.janela_paginas, args.max_ciclos, args.paginas_amostra)

@@ -1,0 +1,510 @@
+%%
+Gabarito de segmentação — L13709compilado
+Texto-fonte: text_extraction/out/L13709compilado/paginas
+Status: gerado por script a partir das páginas extraídas de text_extraction/data/pdf/L13709compilado.pdf com
+  `pdf_extract.py --estrategia texto` (get_text puro; o pymupdf4llm cola as páginas, impressas do navegador
+  com 14.400 pt de altura, numa linha só) e conferido à mão.
+
+Sintaxe:
+- Uma linha por nó: `- [tipo] início do trecho`; indentação de 2 espaços por nível
+- Tipos: epígrafe (de "LEI Nº…" até "a seguinte Lei:": título, notas "Vigência"/"Mensagem de veto"/"Vide", ementa
+  e preâmbulo num só nó), capítulo e seção (com a rubrica da linha seguinte), artigo, parágrafo (§ N / Parágrafo
+  único), inciso (I -, inclusive I-A, V-A), alínea (a)), fecho (Brasília… e assinaturas)
+- Cada marcador em início de linha é nó, inclusive unidades vetadas e revogadas
+- Incisos depois de um parágrafo pertencem ao parágrafo; alíneas, ao inciso anterior
+- Notas de compilação ("(Redação dada pela Lei nº…)", "(Incluído pela…)", "Vigência") pertencem à unidade em que estão
+- Texto citado de outra norma ("passa a vigorar com as seguintes alterações:") pertence ao artigo que altera, até o
+  fecho das aspas ou "(NR)": seus TÍTULO/Art./§/incisos não são nós
+- Ruído, fora de qualquer nó: o cabeçalho "Presidência da República / Secretaria-Geral / Subchefia para Assuntos
+  Jurídicos" antes da epígrafe e o aviso "Este texto não substitui o publicado no DOU…" depois das assinaturas
+  (por isso o fecho tem fim explícito)
+- Versão compilada: só o texto vigente, sem redações anteriores riscadas. A camada de texto do PDF
+  repete no fim da página 1, cortada ao meio pela borda da página e sem as letras que a atravessam ("cap t",
+  "constit ída por ser idores", "(Incl ído pela"), a primeira linha do § 1º do Art. 55-E, que abre a página 2. A cópia
+  cortada é ruído: o Art. 55-E tem fim explícito e o § 1º é o da página 2
+%%
+
+- Documento
+  - [epígrafe] LEI Nº 13.709, DE 14 DE AGOSTO DE 2018
+  - [capítulo] CAPÍTULO I
+    - [artigo] Art. 1º Esta Lei dispõe sobre o tratamento de
+      - [parágrafo] Parágrafo único. As normas gerais contidas nesta
+    - [artigo] Art. 2º A disciplina da proteção de dados
+      - [inciso] I - o respeito à privacidade;
+      - [inciso] II - a autodeterminação informativa;
+      - [inciso] III - a liberdade de expressão, de informação, de
+      - [inciso] IV - a inviolabilidade da intimidade, da honra e
+      - [inciso] V - o desenvolvimento econômico e tecnológico e a
+      - [inciso] VI - a livre iniciativa, a livre concorrência e a
+      - [inciso] VII - os direitos humanos, o livre
+    - [artigo] Art. 3º Esta Lei aplica-se a qualquer operação de
+      - [inciso] I - a operação de tratamento seja realizada no
+      - [inciso] II - a atividade de tratamento tenha por objetivo
+      - [inciso] III - os dados pessoais objeto do tratamento
+      - [parágrafo] § 1º Consideram-se coletados no território
+      - [parágrafo] § 2º Excetua-se do disposto no inciso I deste
+    - [artigo] Art. 4º Esta Lei não se aplica ao tratamento de
+      - [inciso] I - realizado por pessoa natural para fins
+      - [inciso] II - realizado para fins exclusivamente:
+        - [alínea] a) jornalístico e artísticos; ou
+        - [alínea] b) acadêmicos, aplicando-se a esta hipótese os
+      - [inciso] III - realizado para fins exclusivos de:
+        - [alínea] a) segurança pública;
+        - [alínea] b) defesa nacional;
+        - [alínea] c) segurança do Estado; ou
+        - [alínea] d) atividades de investigação e repressão de
+      - [inciso] IV - provenientes de fora do território nacional
+      - [parágrafo] § 1º O tratamento de dados pessoais previsto no
+      - [parágrafo] § 2º É vedado o tratamento dos dados a que se
+      - [parágrafo] § 3º A autoridade nacional emitirá opiniões
+      - [parágrafo] § 4º Em nenhum caso a totalidade dos dados
+    - [artigo] Art. 5º Para os fins desta Lei, considera-se:
+      - [inciso] I - dado pessoal: informação relacionada a pessoa
+      - [inciso] II - dado pessoal sensível: dado pessoal sobre
+      - [inciso] III - dado anonimizado: dado relativo a titular
+      - [inciso] IV - banco de dados: conjunto estruturado de
+      - [inciso] V - titular: pessoa natural a quem se referem os
+      - [inciso] VI - controlador: pessoa natural ou jurídica, de
+      - [inciso] VII - operador: pessoa natural ou jurídica, de
+      - [inciso] VIII - encarregado: pessoa indicada pelo
+      - [inciso] IX - agentes de tratamento: o controlador e o
+      - [inciso] X - tratamento: toda operação realizada com dados
+      - [inciso] XI - anonimização: utilização de meios técnicos
+      - [inciso] XII - consentimento: manifestação livre,
+      - [inciso] XIII - bloqueio: suspensão temporária de qualquer
+      - [inciso] XIV - eliminação: exclusão de dado ou de conjunto
+      - [inciso] XV - transferência internacional de dados:
+      - [inciso] XVI - uso compartilhado de dados: comunicação,
+      - [inciso] XVII - relatório de impacto à proteção de dados
+      - [inciso] XVIII - órgão de pesquisa: órgão ou entidade da
+      - [inciso] XIX - autoridade nacional: entidade da
+    - [artigo] Art. 6º As atividades de tratamento de dados
+      - [inciso] I - finalidade: realização do tratamento para
+      - [inciso] II - adequação: compatibilidade do tratamento com
+      - [inciso] III - necessidade: limitação do tratamento ao
+      - [inciso] IV - livre acesso: garantia, aos titulares, de
+      - [inciso] V - qualidade dos dados: garantia, aos titulares,
+      - [inciso] VI - transparência: garantia, aos titulares, de
+      - [inciso] VII - segurança: utilização de medidas técnicas e
+      - [inciso] VIII - prevenção: adoção de medidas para prevenir
+      - [inciso] IX - não discriminação: impossibilidade de
+      - [inciso] X - responsabilização e prestação de contas:
+  - [capítulo] CAPÍTULO II
+    - [seção] Seção I
+      - [artigo] Art. 7º O tratamento de dados pessoais somente
+        - [inciso] I - mediante o fornecimento de consentimento pelo
+        - [inciso] II - para o cumprimento de obrigação legal ou
+        - [inciso] III - pela administração pública, para o
+        - [inciso] IV - para a realização de estudos por órgão de
+        - [inciso] V - quando necessário para a execução de contrato
+        - [inciso] VI - para o exercício regular de direitos em
+        - [inciso] VII - para a proteção da vida ou da incolumidade
+        - [inciso] VIII - para a tutela da saúde, exclusivamente, em
+        - [inciso] IX - quando necessário para atender aos
+        - [inciso] X - para a proteção do crédito, inclusive quanto
+        - [parágrafo] § 1º (Revogado). (Redação dada pela Lei nº
+        - [parágrafo] § 2º (Revogado). (Redação dada pela Lei nº
+        - [parágrafo] § 3º O tratamento de dados pessoais cujo acesso é
+        - [parágrafo] § 4º É dispensada a exigência do consentimento
+        - [parágrafo] § 5º O controlador que obteve o consentimento
+        - [parágrafo] § 6º A eventual dispensa da exigência do
+        - [parágrafo] § 7º O tratamento posterior dos dados pessoais a
+      - [artigo] Art. 8º O consentimento previsto no inciso I do
+        - [parágrafo] § 1º Caso o consentimento seja fornecido por
+        - [parágrafo] § 2º Cabe ao controlador o ônus da prova de que o
+        - [parágrafo] § 3º É vedado o tratamento de dados pessoais
+        - [parágrafo] § 4º O consentimento deverá referir-se a
+        - [parágrafo] § 5º O consentimento pode ser revogado a qualquer
+        - [parágrafo] § 6º Em caso de alteração de informação referida
+      - [artigo] Art. 9º O titular tem direito ao acesso
+        - [inciso] I - finalidade específica do tratamento;
+        - [inciso] II - forma e duração do tratamento, observados os
+        - [inciso] III - identificação do controlador;
+        - [inciso] IV - informações de contato do controlador;
+        - [inciso] V - informações acerca do uso compartilhado de
+        - [inciso] VI - responsabilidades dos agentes que realizarão
+        - [inciso] VII - direitos do titular, com menção explícita
+        - [parágrafo] § 1º Na hipótese em que o consentimento é
+        - [parágrafo] § 2º Na hipótese em que o consentimento é
+        - [parágrafo] § 3º Quando o tratamento de dados pessoais for
+      - [artigo] Art. 10. O legítimo interesse do controlador
+        - [inciso] I - apoio e promoção de atividades do
+        - [inciso] II - proteção, em relação ao titular, do
+        - [parágrafo] § 1º Quando o tratamento for baseado no legítimo
+        - [parágrafo] § 2º O controlador deverá adotar medidas para
+        - [parágrafo] § 3º A autoridade nacional poderá solicitar ao
+    - [seção] Seção II
+      - [artigo] Art. 11. O tratamento de dados pessoais sensíveis
+        - [inciso] I - quando o titular ou seu responsável legal
+        - [inciso] II - sem fornecimento de consentimento do
+          - [alínea] a) cumprimento de obrigação legal ou regulatória
+          - [alínea] b) tratamento compartilhado de dados necessários
+          - [alínea] c) realização de estudos por órgão de pesquisa,
+          - [alínea] d) exercício regular de direitos, inclusive em
+          - [alínea] e) proteção da vida ou da incolumidade física do
+          - [alínea] f) tutela da saúde, exclusivamente, em
+          - [alínea] g) garantia da prevenção à fraude e à segurança
+        - [parágrafo] § 1º Aplica-se o disposto neste artigo a qualquer
+        - [parágrafo] § 2º Nos casos de aplicação do disposto nas
+        - [parágrafo] § 3º A comunicação ou o uso compartilhado de
+        - [parágrafo] § 4º É vedada a comunicação ou o uso
+          - [inciso] I - a portabilidade de dados quando solicitada
+          - [inciso] II - as transações financeiras e administrativas
+        - [parágrafo] § 5º É vedado às operadoras de planos privados de
+      - [artigo] Art. 12. Os dados anonimizados não serão
+        - [parágrafo] § 1º A determinação do que seja razoável deve
+        - [parágrafo] § 2º Poderão ser igualmente considerados como
+        - [parágrafo] § 3º A autoridade nacional poderá dispor sobre
+      - [artigo] Art. 13. Na realização de estudos em saúde
+        - [parágrafo] § 1º A divulgação dos resultados ou de qualquer
+        - [parágrafo] § 2º O órgão de pesquisa será o responsável pela
+        - [parágrafo] § 3º O acesso aos dados de que trata este artigo
+        - [parágrafo] § 4º Para os efeitos deste artigo, a
+    - [seção] Seção III
+      - [artigo] Art. 14. O tratamento de dados pessoais de
+        - [parágrafo] § 1º O tratamento de dados pessoais de crianças
+        - [parágrafo] § 2º No tratamento de dados de que trata o § 1º
+        - [parágrafo] § 3º Poderão ser coletados dados pessoais de
+        - [parágrafo] § 4º Os controladores não deverão condicionar a
+        - [parágrafo] § 5º O controlador deve realizar todos os
+        - [parágrafo] § 6º As informações sobre o tratamento de dados
+    - [seção] Seção IV
+      - [artigo] Art. 15. O término do tratamento de dados
+        - [inciso] I - verificação de que a finalidade foi alcançada
+        - [inciso] II - fim do período de tratamento;
+        - [inciso] III - comunicação do titular, inclusive no
+        - [inciso] IV - determinação da autoridade nacional, quando
+      - [artigo] Art. 16. Os dados pessoais serão eliminados após
+        - [inciso] I - cumprimento de obrigação legal ou regulatória
+        - [inciso] II - estudo por órgão de pesquisa, garantida,
+        - [inciso] III - transferência a terceiro, desde que
+        - [inciso] IV - uso exclusivo do controlador, vedado seu
+  - [capítulo] CAPÍTULO III
+    - [artigo] Art. 17. Toda pessoa natural tem assegurada a
+    - [artigo] Art. 18. O titular dos dados pessoais tem direito
+      - [inciso] I - confirmação da existência de tratamento;
+      - [inciso] II - acesso aos dados;
+      - [inciso] III - correção de dados incompletos, inexatos ou
+      - [inciso] IV - anonimização, bloqueio ou eliminação de
+      - [inciso] V - portabilidade dos dados a outro fornecedor de
+      - [inciso] VI - eliminação dos dados pessoais tratados com o
+      - [inciso] VII - informação das entidades públicas e
+      - [inciso] VIII - informação sobre a possibilidade de não
+      - [inciso] IX - revogação do consentimento, nos termos do §
+      - [parágrafo] § 1º O titular dos dados pessoais tem o direito
+      - [parágrafo] § 2º O titular pode opor-se a tratamento
+      - [parágrafo] § 3º Os direitos previstos neste artigo serão
+      - [parágrafo] § 4º Em caso de impossibilidade de adoção
+        - [inciso] I - comunicar que não é agente de tratamento dos
+        - [inciso] II - indicar as razões de fato ou de direito que
+      - [parágrafo] § 5º O requerimento referido no § 3º deste artigo
+      - [parágrafo] § 6º O responsável deverá informar, de maneira
+      - [parágrafo] § 7º A portabilidade dos dados pessoais a que se
+      - [parágrafo] § 8º O direito a que se refere o § 1º deste
+    - [artigo] Art. 19. A confirmação de existência ou o acesso
+      - [inciso] I - em formato simplificado, imediatamente; ou
+      - [inciso] II - por meio de declaração clara e completa, que
+      - [parágrafo] § 1º Os dados pessoais serão armazenados em
+      - [parágrafo] § 2º As informações e os dados poderão ser
+        - [inciso] I - por meio eletrônico, seguro e idôneo para
+        - [inciso] II - sob forma impressa.
+      - [parágrafo] § 3º Quando o tratamento tiver origem no
+      - [parágrafo] § 4º A autoridade nacional poderá dispor de forma
+    - [artigo] Art. 20. O titular dos dados tem direito a
+      - [parágrafo] § 1º O controlador deverá fornecer, sempre que
+      - [parágrafo] § 2º Em caso de não oferecimento de informações
+      - [parágrafo] § 3º (VETADO). (Incluído pela Lei nº 13.853, de
+    - [artigo] Art. 21. Os dados pessoais referentes ao
+    - [artigo] Art. 22. A defesa dos interesses e dos direitos
+  - [capítulo] CAPÍTULO IV
+    - [seção] Seção I
+      - [artigo] Art. 23. O tratamento de dados pessoais pelas
+        - [inciso] I - sejam informadas as hipóteses em que, no
+        - [inciso] II - (VETADO); e
+        - [inciso] III - seja indicado um encarregado quando
+        - [inciso] IV - (VETADO). (Incluído pela Lei nº 13.853, de
+        - [parágrafo] § 1º A autoridade nacional poderá dispor sobre as
+        - [parágrafo] § 2º O disposto nesta Lei não dispensa as pessoas
+        - [parágrafo] § 3º Os prazos e procedimentos para exercício dos
+        - [parágrafo] § 4º Os serviços notariais e de registro
+        - [parágrafo] § 5º Os órgãos notariais e de registro devem
+      - [artigo] Art. 24. As empresas públicas e as sociedades de
+        - [parágrafo] Parágrafo único. As empresas públicas e as
+      - [artigo] Art. 25. Os dados deverão ser mantidos em formato
+      - [artigo] Art. 26. O uso compartilhado de dados pessoais
+        - [parágrafo] § 1º É vedado ao Poder Público transferir a
+          - [inciso] I - em casos de execução descentralizada de
+          - [inciso] II - (VETADO);
+          - [inciso] III - nos casos em que os dados forem acessíveis
+          - [inciso] IV - quando houver previsão legal ou a
+          - [inciso] V - na hipótese de a transferência dos dados
+        - [parágrafo] § 2º Os contratos e convênios de que trata o § 1º
+      - [artigo] Art. 27. A comunicação ou o uso compartilhado de
+        - [inciso] I - nas hipóteses de dispensa de consentimento
+        - [inciso] II - nos casos de uso compartilhado de dados, em
+        - [inciso] III - nas exceções constantes do § 1º do art. 26
+        - [parágrafo] Parágrafo único. A informação à autoridade
+      - [artigo] Art. 28. (VETADO).
+      - [artigo] Art. 29. A autoridade nacional poderá solicitar,
+      - [artigo] Art. 30. A autoridade nacional poderá estabelecer
+    - [seção] Seção II
+      - [artigo] Art. 31. Quando houver infração a esta Lei em
+      - [artigo] Art. 32. A autoridade nacional poderá solicitar a
+  - [capítulo] CAPÍTULO V
+    - [artigo] Art. 33. A transferência internacional de dados
+      - [inciso] I - para países ou organismos internacionais que
+      - [inciso] II - quando o controlador oferecer e comprovar
+        - [alínea] a) cláusulas contratuais específicas para
+        - [alínea] b) cláusulas-padrão contratuais;
+        - [alínea] c) normas corporativas globais;
+        - [alínea] d) selos, certificados e códigos de conduta
+      - [inciso] III - quando a transferência for necessária para
+      - [inciso] IV - quando a transferência for necessária para a
+      - [inciso] V - quando a autoridade nacional autorizar a
+      - [inciso] VI - quando a transferência resultar em
+      - [inciso] VII - quando a transferência for necessária para
+      - [inciso] VIII - quando o titular tiver fornecido o seu
+      - [inciso] IX - quando necessário para atender as hipóteses
+      - [parágrafo] Parágrafo único. Para os fins do inciso I deste
+    - [artigo] Art. 34. O nível de proteção de dados do país
+      - [inciso] I - as normas gerais e setoriais da legislação em
+      - [inciso] II - a natureza dos dados;
+      - [inciso] III - a observância dos princípios gerais de
+      - [inciso] IV - a adoção de medidas de segurança previstas
+      - [inciso] V - a existência de garantias judiciais e
+      - [inciso] VI - outras circunstâncias específicas relativas
+    - [artigo] Art. 35. A definição do conteúdo de
+      - [parágrafo] § 1º Para a verificação do disposto no caput
+      - [parágrafo] § 2º Na análise de cláusulas contratuais, de
+      - [parágrafo] § 3º A autoridade nacional poderá designar
+      - [parágrafo] § 4º Os atos realizados por organismo de
+      - [parágrafo] § 5º As garantias suficientes de observância dos
+    - [artigo] Art. 36. As alterações nas garantias apresentadas
+  - [capítulo] CAPÍTULO VI
+    - [seção] Seção I
+      - [artigo] Art. 37. O controlador e o operador devem manter
+      - [artigo] Art. 38. A autoridade nacional poderá determinar
+        - [parágrafo] Parágrafo único. Observado o disposto no caput
+      - [artigo] Art. 39. O operador deverá realizar o tratamento
+      - [artigo] Art. 40. A autoridade nacional poderá dispor
+    - [seção] Seção II
+      - [artigo] Art. 41. O controlador deverá indicar encarregado
+        - [parágrafo] § 1º A identidade e as informações de contato do
+        - [parágrafo] § 2º As atividades do encarregado consistem em:
+          - [inciso] I - aceitar reclamações e comunicações dos
+          - [inciso] II - receber comunicações da autoridade nacional
+          - [inciso] III - orientar os funcionários e os contratados
+          - [inciso] IV - executar as demais atribuições determinadas
+        - [parágrafo] § 3º A autoridade nacional poderá estabelecer
+        - [parágrafo] § 4º (VETADO). (Incluído pela Lei nº 13.853, de
+    - [seção] Seção III
+      - [artigo] Art. 42. O controlador ou o operador que, em
+        - [parágrafo] § 1º A fim de assegurar a efetiva indenização ao
+          - [inciso] I - o operador responde solidariamente pelos
+          - [inciso] II - os controladores que estiverem diretamente
+        - [parágrafo] § 2º O juiz, no processo civil, poderá inverter o
+        - [parágrafo] § 3º As ações de reparação por danos coletivos
+        - [parágrafo] § 4º Aquele que reparar o dano ao titular tem
+      - [artigo] Art. 43. Os agentes de tratamento só não serão
+        - [inciso] I - que não realizaram o tratamento de dados
+        - [inciso] II - que, embora tenham realizado o tratamento de
+        - [inciso] III - que o dano é decorrente de culpa exclusiva
+      - [artigo] Art. 44. O tratamento de dados pessoais será
+        - [inciso] I - o modo pelo qual é realizado;
+        - [inciso] II - o resultado e os riscos que razoavelmente
+        - [inciso] III - as técnicas de tratamento de dados pessoais
+        - [parágrafo] Parágrafo único. Responde pelos danos decorrentes
+      - [artigo] Art. 45. As hipóteses de violação do direito do
+  - [capítulo] CAPÍTULO VII
+    - [seção] Seção I
+      - [artigo] Art. 46. Os agentes de tratamento devem adotar
+        - [parágrafo] § 1º A autoridade nacional poderá dispor sobre
+        - [parágrafo] § 2º As medidas de que trata o caput deste artigo
+      - [artigo] Art. 47. Os agentes de tratamento ou qualquer
+      - [artigo] Art. 48. O controlador deverá comunicar à
+        - [parágrafo] § 1º A comunicação será feita em prazo razoável,
+          - [inciso] I - a descrição da natureza dos dados pessoais
+          - [inciso] II - as informações sobre os titulares envolvidos;
+          - [inciso] III - a indicação das medidas técnicas e de
+          - [inciso] IV - os riscos relacionados ao incidente;
+          - [inciso] V - os motivos da demora, no caso de a
+          - [inciso] VI - as medidas que foram ou que serão adotadas
+        - [parágrafo] § 2º A autoridade nacional verificará a gravidade
+          - [inciso] I - ampla divulgação do fato em meios de
+          - [inciso] II - medidas para reverter ou mitigar os efeitos
+        - [parágrafo] § 3º No juízo de gravidade do incidente, será
+      - [artigo] Art. 49. Os sistemas utilizados para o tratamento
+    - [seção] Seção II
+      - [artigo] Art. 50. Os controladores e operadores, no âmbito
+        - [parágrafo] § 1º Ao estabelecer regras de boas práticas, o
+        - [parágrafo] § 2º Na aplicação dos princípios indicados nos
+          - [inciso] I - implementar programa de governança em
+            - [alínea] a) demonstre o comprometimento do controlador em
+            - [alínea] b) seja aplicável a todo o conjunto de dados
+            - [alínea] c) seja adaptado à estrutura, à escala e ao
+            - [alínea] d) estabeleça políticas e salvaguardas adequadas
+            - [alínea] e) tenha o objetivo de estabelecer relação de
+            - [alínea] f) esteja integrado a sua estrutura geral de
+            - [alínea] g) conte com planos de resposta a incidentes e
+            - [alínea] h) seja atualizado constantemente com base em
+          - [inciso] II - demonstrar a efetividade de seu programa de
+        - [parágrafo] § 3º As regras de boas práticas e de governança
+      - [artigo] Art. 51. A autoridade nacional estimulará a
+  - [capítulo] CAPÍTULO VIII
+    - [seção] Seção I
+      - [artigo] Art. 52. Os agentes de tratamento de dados, em
+        - [inciso] I - advertência, com indicação de prazo para
+        - [inciso] II - multa simples, de até 2% (dois por cento) do
+        - [inciso] III - multa diária, observado o limite total a
+        - [inciso] IV - publicização da infração após devidamente
+        - [inciso] V - bloqueio dos dados pessoais a que se refere a
+        - [inciso] VI - eliminação dos dados pessoais a que se
+        - [inciso] VII - (VETADO);
+        - [inciso] VIII - (VETADO);
+        - [inciso] IX - (VETADO).
+        - [inciso] X - suspensão parcial do funcionamento do banco
+        - [inciso] XI - suspensão do exercício da atividade de
+        - [inciso] XII - proibição parcial ou total do exercício de
+        - [parágrafo] § 1º As sanções serão aplicadas após procedimento
+          - [inciso] I - a gravidade e a natureza das infrações e dos
+          - [inciso] II - a boa-fé do infrator;
+          - [inciso] III - a vantagem auferida ou pretendida pelo
+          - [inciso] IV - a condição econômica do infrator;
+          - [inciso] V - a reincidência;
+          - [inciso] VI - o grau do dano;
+          - [inciso] VII - a cooperação do infrator;
+          - [inciso] VIII - a adoção reiterada e demonstrada de
+          - [inciso] IX - a adoção de política de boas práticas e
+          - [inciso] X - a pronta adoção de medidas corretivas; e
+          - [inciso] XI - a proporcionalidade entre a gravidade da
+        - [parágrafo] § 2º O disposto neste artigo não substitui a
+        - [parágrafo] § 3º O disposto nos incisos I, IV, V, VI, X, XI e
+        - [parágrafo] § 4º No cálculo do valor da multa de que trata o
+        - [parágrafo] § 5º O produto da arrecadação das multas
+        - [parágrafo] § 6º As sanções previstas nos incisos X, XI e XII
+          - [inciso] I - somente após já ter sido imposta ao menos 1
+          - [inciso] II - em caso de controladores submetidos a outros
+        - [parágrafo] § 7º Os vazamentos individuais ou os acessos não
+      - [artigo] Art. 53. A autoridade nacional definirá, por meio
+        - [parágrafo] § 1º As metodologias a que se refere o caput
+        - [parágrafo] § 2º O regulamento de sanções e metodologias
+      - [artigo] Art. 54. O valor da sanção de multa diária
+        - [parágrafo] Parágrafo único. A intimação da sanção de multa
+  - [capítulo] CAPÍTULO IX
+    - [seção] Seção I
+      - [artigo] Art. 55. (VETADO).
+      - [artigo] Art. 55-A. Fica criada a Agência Nacional de
+        - [parágrafo] § 1º (Revogado pela Lei nº 14.460, de 2022)
+        - [parágrafo] § 2º (Revogado pela Lei nº 14.460, de 2022)
+        - [parágrafo] § 3º (Revogado pela Lei nº 14.460, de 2022)
+      - [artigo] Art. 55-B. (Revogado pela Lei nº 14.460, de 2022)
+      - [artigo] Art. 55-C. A ANPD é composta de: (Incluído pela
+        - [inciso] I - Conselho Diretor, órgão máximo de direção;
+        - [inciso] II - Conselho Nacional de Proteção de Dados
+        - [inciso] III - Corregedoria; (Incluído pela Lei nº 13.853,
+        - [inciso] IV - Ouvidoria; (Incluído pela Lei nº 13.853, de
+        - [inciso] V - (revogado); (Redação dada pela Lei nº 14.460,
+        - [inciso] V-A - Procuradoria; (Redação dada pela Lei nº
+        - [inciso] V-B - Auditoria; e (Incluído pela Lei nº 15.352,
+        - [inciso] VI - unidades administrativas e unidades
+      - [artigo] Art. 55-D. O Conselho Diretor da ANPD será
+        - [parágrafo] § 1º Os membros do Conselho Diretor da ANPD serão
+        - [parágrafo] § 2º Os membros do Conselho Diretor serão
+        - [parágrafo] § 3º O mandato dos membros do Conselho Diretor
+        - [parágrafo] § 4º Os mandatos dos primeiros membros do
+        - [parágrafo] § 5º Na hipótese de vacância do cargo no curso do
+      - [artigo] Art. 55-E. Os membros do Conselho Diretor somente ⟶ processo administrativo disciplinar. (Incluído pela Lei nº 13.853, de 2019)
+        - [parágrafo] § 1º Nos termos do caput deste artigo, cabe ao
+        - [parágrafo] § 2º Compete ao Presidente da República
+      - [artigo] Art. 55-F. Aplica-se aos membros do Conselho
+        - [parágrafo] Parágrafo único. A infração ao disposto no caput
+      - [artigo] Art. 55-G. Ato do Presidente da República disporá
+        - [parágrafo] § 1º Até a data de entrada em vigor de sua
+        - [parágrafo] § 2º O Conselho Diretor disporá sobre o regimento
+      - [artigo] Art. 55-H. Os cargos em comissão e as funções de
+      - [artigo] Art. 55-I. Os ocupantes dos cargos em comissão e
+      - [artigo] Art. 55-J. Compete à ANPD: (Incluído pela Lei nº
+        - [inciso] I - zelar pela proteção dos dados pessoais, nos
+        - [inciso] II - zelar pela observância dos segredos
+        - [inciso] III - elaborar diretrizes para a Política
+        - [inciso] IV - fiscalizar e aplicar sanções em caso de
+        - [inciso] V - apreciar petições de titular contra
+        - [inciso] VI - promover na população o conhecimento das
+        - [inciso] VII - promover e elaborar estudos sobre as
+        - [inciso] VIII - estimular a adoção de padrões para
+        - [inciso] IX - promover ações de cooperação com autoridades
+        - [inciso] X - dispor sobre as formas de publicidade das
+        - [inciso] XI - solicitar, a qualquer momento, às entidades
+        - [inciso] XII - elaborar relatórios de gestão anuais acerca
+        - [inciso] XIII - editar regulamentos e procedimentos sobre
+        - [inciso] XIV - ouvir os agentes de tratamento e a
+        - [inciso] XV - arrecadar e aplicar suas receitas e
+        - [inciso] XVI - realizar auditorias, ou determinar sua
+        - [inciso] XVII - celebrar, a qualquer momento, compromisso
+        - [inciso] XVIII - editar normas, orientações e
+        - [inciso] XIX - garantir que o tratamento de dados de
+        - [inciso] XX - deliberar, na esfera administrativa, em
+        - [inciso] XXI - comunicar às autoridades competentes as
+        - [inciso] XXII - comunicar aos órgãos de controle interno o
+        - [inciso] XXIII - articular-se com as autoridades
+        - [inciso] XXIV - implementar mecanismos simplificados,
+        - [parágrafo] § 1º Ao impor condicionantes administrativas ao
+        - [parágrafo] § 2º Os regulamentos e as normas editados pela
+        - [parágrafo] § 3º A ANPD e os órgãos e entidades públicos
+        - [parágrafo] § 4º A ANPD manterá fórum permanente de
+        - [parágrafo] § 5º No exercício das competências de que trata o
+        - [parágrafo] § 6º As reclamações colhidas conforme o disposto
+      - [artigo] Art. 55-K. A aplicação das sanções previstas
+        - [parágrafo] Parágrafo único. A ANPD articulará sua atuação
+      - [artigo] Art. 55-L. Constituem receitas da ANPD: (Incluído
+        - [inciso] I - as dotações, consignadas no orçamento geral
+        - [inciso] II - as doações, os legados, as subvenções e
+        - [inciso] III - os valores apurados na venda ou aluguel de
+        - [inciso] IV - os valores apurados em aplicações no mercado
+        - [inciso] V - (VETADO); (Incluído pela Lei nº 13.853, de
+        - [inciso] VI - os recursos provenientes de acordos,
+        - [inciso] VII - o produto da venda de publicações, material
+      - [artigo] Art. 55-M. Constituem o patrimônio da ANPD os
+        - [inciso] I - que lhe forem transferidos pelos órgãos da
+        - [inciso] II - que venha a adquirir ou a incorporar.
+      - [artigo] Art. 56. (VETADO).
+      - [artigo] Art. 5 7. (VETADO).
+    - [seção] Seção II
+      - [artigo] Art. 58. (VETADO).
+      - [artigo] Art. 58-A. O Conselho Nacional de Proteção de
+        - [inciso] I - 5 (cinco) do Poder Executivo federal;
+        - [inciso] II - 1 (um) do Senado Federal; (Incluído pela Lei
+        - [inciso] III - 1 (um) da Câmara dos Deputados; (Incluído
+        - [inciso] IV - 1 (um) do Conselho Nacional de Justiça;
+        - [inciso] V - 1 (um) do Conselho Nacional do Ministério
+        - [inciso] VI - 1 (um) do Comitê Gestor da Internet no
+        - [inciso] VII - 3 (três) de entidades da sociedade civil
+        - [inciso] VIII - 3 (três) de instituições científicas,
+        - [inciso] IX - 3 (três) de confederações sindicais
+        - [inciso] X - 2 (dois) de entidades representativas do
+        - [inciso] XI - 2 (dois) de entidades representativas do
+        - [parágrafo] § 1º Os representantes serão designados por ato
+        - [parágrafo] § 2º Os representantes de que tratam os incisos
+        - [parágrafo] § 3º Os representantes de que tratam os incisos
+          - [inciso] I - serão indicados na forma de regulamento;
+          - [inciso] II - não poderão ser membros do Comitê Gestor da
+          - [inciso] III - terão mandato de 2 (dois) anos, permitida 1
+        - [parágrafo] § 4º A participação no Conselho Nacional de
+      - [artigo] Art. 58-B. Compete ao Conselho Nacional de
+        - [inciso] I - propor diretrizes estratégicas e fornecer
+        - [inciso] II - elaborar relatórios anuais de avaliação da
+        - [inciso] III - sugerir ações a serem realizadas pela ANPD;
+        - [inciso] IV - elaborar estudos e realizar debates e
+        - [inciso] V - disseminar o conhecimento sobre a proteção de
+      - [artigo] Art. 59. (VETADO).
+  - [capítulo] CAPÍTULO X
+    - [artigo] Art. 60. A Lei nº 12.965, de 23 de abril de 2014
+    - [artigo] Art. 61. A empresa estrangeira será notificada e
+    - [artigo] Art. 62. A autoridade nacional e o Instituto
+    - [artigo] Art. 63. A autoridade nacional estabelecerá
+    - [artigo] Art. 64. Os direitos e princípios expressos nesta
+    - [artigo] Art. 65. Esta Lei entra em vigor: (Redação dada
+      - [inciso] I - dia 28 de dezembro de 2018, quanto aos arts.
+      - [inciso] I-A – dia 1º de agosto de 2021, quanto aos arts.
+      - [inciso] II - 24 (vinte e quatro) meses após a data de sua
+  - [fecho] Brasília , 14 de agosto de 2018; 197º da ⟶ Eliseu Padilha

@@ -20,7 +20,8 @@ load_dotenv()
 REGRAS_DE_CORTE = """
 
         ## O que inicia bloco
-        - Todo marcador de um nível da hierarquia inicia bloco, mesmo quando o texto anterior apresenta os itens como continuação da sua frase (termina em `—` ou `:`, como em "among other things—"), e mesmo quando o nível intermediário é pulado (`(1)` direto sob a seção, sem `(a)`; inciso direto sob o artigo, sem parágrafo).
+        - Todo marcador de um nível da hierarquia inicia bloco, mesmo quando o texto anterior apresenta os itens como continuação da sua frase, e mesmo quando o nível intermediário é pulado (`(1)` direto sob a seção, sem `(a)`; inciso direto sob o artigo, sem parágrafo).
+        - O fecho inicia bloco, mesmo sem marcador da hierarquia, e encerra a última unidade. Fecho é o texto depois da última unidade que não continua o texto dela: local e data ("Brasília, 9 de março de 2017"), fórmulas de encerramento ("Publique-se", "Sala das Sessões") e assinaturas, nomes e cargos de quem assina. É **um único bloco**, da primeira dessas linhas até o fim do documento. Se não houver esse texto, não há fecho.
 
         ## O que NÃO inicia bloco
         - Texto citado de outra norma. Quando uma unidade altera ou acrescenta texto a outra norma ("passa a vigorar com a seguinte redação", "fica acrescido do seguinte", "is amended to read as follows"), todo o texto citado, até o fecho das aspas ou "(NR)", pertence à unidade que altera, mesmo que contenha "Art.", "§" ou incisos.
@@ -82,7 +83,7 @@ def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") ->
     return f"""Você é um especialista em segmentação de documentos estruturados.
 
         ## Sua tarefa
-        O texto abaixo é uma janela de um documento maior. Identifique **apenas o primeiro bloco**: que é aberto por um dos marcadores descritos em *Estrutura deste documento* que aparece na janela. Ele termina imediatamente antes do próximo marcador, que pode ser qualquer um a seguir, independentemente da hierarquia.
+        O texto abaixo é uma janela de um documento maior. Identifique **apenas o primeiro bloco**: que é aberto por um dos marcadores descritos em *Estrutura deste documento* que aparece na janela, ou pelo fecho, quando ele vem antes de qualquer marcador. Ele termina imediatamente antes do próximo marcador, que pode ser qualquer um a seguir, independentemente da hierarquia.
 
         O texto é composto por páginas, cada uma precedida por um marcador `<!-- PÁGINA N -->`. Um bloco pode se estender por mais de uma página. Se a janela acabar antes do marcador da unidade seguinte, não descarte o bloco: devolva-o até o fim do texto, com `pagina_fim` igual à última página da janela, e a janela será ampliada.
 {secao_estrutura(padrao)}
@@ -106,7 +107,7 @@ def construir_prompt(texto_janela: str, insights: str = "", padrao: str = "") ->
         - **Literalidade**: `offset_inicio` e `offset_fim` devem ser trechos **literalmente presentes** no texto acima, **copiados sem qualquer modificação** — incluindo formatação markdown, pontuação, quebras de linha e maiúsculas/minúsculas. **NUNCA parafraseie, descreva, abrevie ou explique** o bloco; os trechos servem apenas para localizá-lo no texto fonte.
         - Não inclua marcadores `<!-- PÁGINA N -->` nos trechos.
         - **Unicidade**: cada trecho deve ser longo e distintivo o bastante para ser localizado sem ambiguidade. Em caso de itens parecidos, escolha trechos mais longos.
-        - Se a janela não contiver nenhum marcador que abra uma unidade, retorne `"offset_inicio": null` e todos os valores como `null` ou `0`.
+        - Se a janela não contiver nenhum marcador que abra uma unidade nem o fecho, retorne `"offset_inicio": null` e todos os valores como `null` ou `0`.
         """
 
 
